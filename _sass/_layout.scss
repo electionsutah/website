@@ -40,10 +40,12 @@ main {
   padding: .8rem;
   margin-bottom: 1rem;
   ul {
-    display: inline;
     list-style: none;
     li {
       margin-bottom: .8rem;
+    }
+    li:last-child {
+      margin: 0;
     }
   }
 }
@@ -96,7 +98,7 @@ h5,
 h6 { -webkit-margin-before: 0; }
 
 ul, menu, dir {
-  -webkit-padding-start: 0rem;
+  -webkit-padding-start: 1rem;
 }
 
 @media screen and (max-width: 48rem) {
