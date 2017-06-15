@@ -9,4 +9,4 @@ permalink: /data/
 
 ### 2017 Municipal Election
 #### Primary Candidates
-[CSV](/data/2017-utah-elections-primary.csv) / [JSON](/data/2017-utah-elections-primary.json) (Last updated 14 June 2017)
+[CSV](2017-utah-elections-primary.csv) / [JSON](2017-utah-elections-primary.json) (Last updated 14 June 2017)
