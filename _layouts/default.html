@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Utah Elections Project" />
+    <meta property="og:description" content="The Utah Elections Project is an ongoing, community-driven open data project tracking Utah's elections. All of the data is openly licensed and is in the public domain." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://todrobbins/utah-elections/" />
+    <meta property="og:image" content="http://todrobbins.com/utah-elections/images/utah-elections.png" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <title>{{ site.title }}</title>
 </head>
 <body>
+  <header class="site-header">
+      <div class="inner">
+        <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a> <i class="em em-ballot_box_with_check"></i></h1>
+        <nav class="site-nav">
+            <a href="{{ site.baseurl }}/data/" class="{% if page.url == '/data/' %}active{% endif %}">Data</a>
+            <a href="{{ site.baseurl }}/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+        </nav>
+      </div>
+  </header>
     <main>
-        <header class="site-header">
-            <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-            <nav class="site-nav">
-                <a href="{{ site.baseurl }}/data/" class="{% if page.url == '/data/' %}active{% endif %}">Data</a>
-                <a href="{{ site.baseurl }}/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-            </nav>
-        </header>
 
         {{ content }}
 

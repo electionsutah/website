@@ -5,31 +5,38 @@ main {
     padding: 0 2rem;
 }
 .site-header {
-    .site-title {
-        font-weight: 300;
-        > a {
-            color: $color-blue;
-            text-decoration: none;
-        }
-    }
-    .site-nav {
-        > a {
-            color: $text-color;
-            &:hover {
-                text-decoration: none;
-            }
-            &.active {
-                border-bottom: 2px solid #666;
-            }
-            + a {
-                margin-left: 1rem;
-            }
-        }
+    background: $color-blue;
+    padding: 1rem 1rem .6rem 1rem;
+    .inner {
+      max-width: 46rem;
+      margin: 0 auto;
+      .site-title {
+          font-weight: 300;
+          > a {
+              color: $color-white;
+              text-decoration: none;
+          }
+          i { font-size: $small-font-size; }
+      }
+      .site-nav {
+          > a {
+              color: $color-white;
+              &:hover {
+                  text-decoration: none;
+              }
+              &.active {
+                  border-bottom: 2px solid $color-white;
+              }
+              + a {
+                  margin-left: 1rem;
+              }
+          }
+      }
     }
 }
+
 .posts {
     list-style: none;
-    padding: 0;
     > li {
         line-height: 1.75;
         span {
@@ -45,9 +52,10 @@ main {
 }
 .post {
     position: relative;
+    padding: 1rem;
     .post-header {
         text-align: center;
-        margin-bottom: 0;
+        margin: 1rem 0;
     }
     .post-meta {
         margin: 0;
@@ -59,6 +67,7 @@ main {
 
 footer {
   margin-top: 2rem;
+  padding: 1rem;
 }
 
 .bubble {
@@ -66,11 +75,39 @@ footer {
   border-radius: 6px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { -webkit-margin-before: 0; }
+
+ul, menu, dir {
+  -webkit-padding-start: 0rem;
+}
+
 @media screen and (max-width: 48rem) {
     .site-header {
+        padding: 1rem 0 1rem 0;
+        .site-title {
+          font-size: 1.4rem;
+          i { font-size: .8rem; }
+          }
+        }
         .site-title,
         .site-nav {
             text-align: center;
         }
+    main {
+      padding: 0;
     }
+    .home, article, footer {
+      padding: .8rem;
+    }
+    .post .post-header {
+        margin: 0 0 .6rem 0;
+      }
+    h3 { font-size: 1rem; }
+    h4 { font-size: $small-font-size; }
+    p, span { font-size: $small-font-size; }
 }

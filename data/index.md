@@ -5,7 +5,7 @@ permalink: /data/
 ---
 
 ### 2017 3rd Congressional District Special Election
-> Coming soon...
+_Coming soon..._
 
 ### 2017 Municipal Election
 #### Primary Candidates
