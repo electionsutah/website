@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{% assign person = site.data.2017.primary.candidates | where: 'id', page.person | first %}
+
+<article class="post">
+  <h2 class="post-header">{{ person.name }}</h2>
+    {{ content }}
+</article>

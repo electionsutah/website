@@ -1,0 +1,3173 @@
+-
+    id: ut0001
+    state: UT
+    county: 'Salt Lake'
+    city: Alta
+    body: Mayor
+    incumbent: ""
+    name: 'Jon Fay II'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0002
+    state: UT
+    county: 'Salt Lake'
+    city: Alta
+    body: Mayor
+    incumbent: ""
+    name: 'Harris Sondak'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0003
+    state: UT
+    county: 'Salt Lake'
+    city: Alta
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Margaret Bourke'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0004
+    state: UT
+    county: 'Salt Lake'
+    city: Alta
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Cliff Curry'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0005
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: Mayor
+    incumbent: yes
+    name: 'Derk Powell Timothy'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0006
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Wendy W. Aston'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0007
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Ulises Flynn'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0008
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Mark R. Hales'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0009
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Alan Jackson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0010
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Connie Robbins'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0011
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Courtney Hansen'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0012
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Dave Kallas'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0013
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Nancy Lord'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0014
+    state: UT
+    county: 'Salt Lake'
+    city: Bluffdale
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Carson L. Mitchell'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0015
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: Mayor
+    incumbent: ""
+    name: 'Tim Hallbeck'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0016
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: Mayor
+    incumbent: ""
+    name: 'Mike Peterson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0017
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: Mayor
+    incumbent: ""
+    name: 'Edward A. Schwartz'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0018
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Tali Bruce'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0019
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Tonia Dalton'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0020
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Michael Larry Hanson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0021
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Theodore “Ted” Boyer'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0022
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Eric Rijk Kraan'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0023
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Christine Wastson Mikell'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0024
+    state: UT
+    county: 'Salt Lake'
+    city: 'Cottonwood Heights'
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Aaron Lee Thompson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0025
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: Mayor
+    incumbent: ""
+    name: 'Troy Martinez'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0026
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: Mayor
+    incumbent: yes
+    name: 'Troy K. Walker'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0027
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: Mayor
+    incumbent: ""
+    name: 'Michele Weeks'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0028
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Jeff Graham'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0029
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Mike Green'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0030
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Hubert Huh'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0031
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Tasha Lowery'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0032
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'William E. Rappleye'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0033
+    state: UT
+    county: 'Salt Lake'
+    city: Draper
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Dan Wheatley'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0034
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: Mayor
+    incumbent: ""
+    name: 'Joe Darger'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0035
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: Mayor
+    incumbent: ""
+    name: 'David H. Howe'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0036
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: Mayor
+    incumbent: ""
+    name: 'David Watts'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0037
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: Mayor
+    incumbent: ""
+    name: 'Coralee Wessman-Moser'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0038
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Melissa John'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0039
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Jared D. Richardson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0040
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Clint Smith'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0041
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Doug Tolley'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0042
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Sherrie Ohrn'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0043
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Siloni Makarita Vimahi Pili'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0044
+    state: UT
+    county: 'Salt Lake'
+    city: Herriman
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Cody Stromberg'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0045
+    state: UT
+    county: 'Salt Lake'
+    city: Holladay
+    body: Mayor
+    incumbent: yes
+    name: 'Robert M. Dahle'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0046
+    state: UT
+    county: 'Salt Lake'
+    city: Holladay
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'Sabrina R. Petersen'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0047
+    state: UT
+    county: 'Salt Lake'
+    city: Holladay
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Paul S. Fotheringham'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0048
+    state: UT
+    county: 'Salt Lake'
+    city: Holladay
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Dennis Roach'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0049
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: Mayor
+    incumbent: ""
+    name: 'Robert M. Hale'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0050
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: Mayor
+    incumbent: ""
+    name: 'Matthew Hansen'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0051
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: Mayor
+    incumbent: ""
+    name: 'Sophia Hawes-Tingey'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-09'
+-
+    id: ut0052
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: Mayor
+    incumbent: ""
+    name: 'Mont L. Millerberg'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0053
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: Mayor
+    incumbent: ""
+    name: 'Andrea B. Person'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0054
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Stephen Brown'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0055
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Stephanie Johnson'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0056
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: 'Council District 4'
+    incumbent: yes
+    name: 'Wayne L. Sharp'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0057
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Jason Smith'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0058
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Andrew Stoddard'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0059
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Stephen Brown'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0060
+    state: UT
+    county: 'Salt Lake'
+    city: Midvale
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Dustin Gettel'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0061
+    state: UT
+    county: 'Salt Lake'
+    city: Millcreek
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Dwight Merchant'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0062
+    state: UT
+    county: 'Salt Lake'
+    city: Millcreek
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Dwayne A. Vance'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0063
+    state: UT
+    county: 'Salt Lake'
+    city: Millcreek
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Bev Uipi'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0064
+    state: UT
+    county: 'Salt Lake'
+    city: Murray
+    body: Mayor
+    incumbent: ""
+    name: 'D. Blair Camp'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0065
+    state: UT
+    county: 'Salt Lake'
+    city: Murray
+    body: Mayor
+    incumbent: ""
+    name: 'Verl Greenhalgh'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0066
+    state: UT
+    county: 'Salt Lake'
+    city: Murray
+    body: Mayor
+    incumbent: ""
+    name: 'Daniel C. Snarr'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0067
+    state: UT
+    county: 'Salt Lake'
+    city: Murray
+    body: Mayor
+    incumbent: ""
+    name: 'Richard Snelgrove'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0068
+    state: UT
+    county: 'Salt Lake'
+    city: Murray
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Dale M. Cox'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0069
+    state: UT
+    county: 'Salt Lake'
+    city: Murray
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Darrell Pehrson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0070
+    state: UT
+    county: 'Salt Lake'
+    city: Murray
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Diane Turner'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0071
+    state: UT
+    county: 'Salt Lake'
+    city: Riverton
+    body: Mayor
+    incumbent: yes
+    name: 'Bill Applegarth'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: 801-520-9947
+    email_address: billapplegarth@gmail.com
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0072
+    state: UT
+    county: 'Salt Lake'
+    city: Riverton
+    body: Mayor
+    incumbent: ""
+    name: 'Trent Staggs'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: 801-871-9129
+    email_address: tpstaggs@gmail.com
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0073
+    state: UT
+    county: 'Salt Lake'
+    city: Riverton
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Twanee McCay'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: 801-634-7692
+    email_address: tawneemccay@gmail.com
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0074
+    state: UT
+    county: 'Salt Lake'
+    city: Riverton
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Paul Wayman'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: 801-254-9033
+    email_address: info.waymanstudio.com
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0075
+    state: UT
+    county: 'Salt Lake'
+    city: Riverton
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Tish R. Buroker'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: 801-673-6103
+    email_address: tishburoker@gmail.com
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0076
+    state: UT
+    county: 'Salt Lake'
+    city: Riverton
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Darren J. Pack'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: 801-232-0825
+    email_address: dparkplace@q.com
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0077
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'David C. Atkin'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0077
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'Arnold M. Jones'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0078
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'James Rogers'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0079
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Phil Carroll'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0080
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Laura Cushman'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0081
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Brian W. Fukushima'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0082
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Jeffrey Garbett'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0083
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Courtney Swedenburg'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0084
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Chris Wharton'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0085
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'George Chapman'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0086
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Carol Goode-Rogozinski'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0087
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Vance Hansen'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0088
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Erin Mendenhall'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0089
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Benjamin Noah Rosenberg'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0090
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 7'
+    incumbent: ""
+    name: 'Samantha L. Finch'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0091
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 7'
+    incumbent: ""
+    name: 'Amy Fowler'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0092
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 7'
+    incumbent: ""
+    name: 'Ben Haynes'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0093
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 7'
+    incumbent: ""
+    name: 'Benjamin Sessions'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0094
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 7'
+    incumbent: ""
+    name: 'Jason Sills'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0095
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'Council District 7'
+    incumbent: ""
+    name: 'Abe Smith'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0096
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: Mayor
+    incumbent: ""
+    name: 'Kurt Bradburn'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0097
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: Mayor
+    incumbent: yes
+    name: 'Tom Dolan'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0098
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: Mayor
+    incumbent: ""
+    name: 'Gary T. Forbush'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0099
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: Mayor
+    incumbent: ""
+    name: 'Richard R. Vigorelli'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0100
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Terry Parkin'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0101
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Zach Robinson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0102
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Steve Smith'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0103
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Linda C. Stewart'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0104
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Josh Tillotson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0105
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'Brooke Christensen'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0106
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'Stephanie Dickey'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0107
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'Sean J. Kowallis'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0108
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'Randy Osborne'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0109
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'Terry Parkin'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0110
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 1'
+    incumbent: ""
+    name: 'Josh Sunde'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-12'
+-
+    id: ut0111
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Steven Calbert'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0112
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Jim Edwards'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0113
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Kris Nicholl'
+    gender: ""
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0114
+    state: UT
+    county: 'Salt Lake'
+    city: Sandy
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Dea Theodore'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0115
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: Mayor
+    incumbent: ""
+    name: 'Rich Cunningham'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0116
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: Mayor
+    incumbent: ""
+    name: 'Dawn Ramsey'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0117
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: Mayor
+    incumbent: ""
+    name: 'Mark T. Woolley'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0118
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Julie Holbrook'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0119
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Patrick J. Risk'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0120
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Don Shelton'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0121
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Martin J. Gale'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0122
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Sandra Kay Kirkendoll'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0123
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Jason T. Mcguire'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0124
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Greg Wise'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0125
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: Mayor
+    incumbent: ""
+    name: 'Mark C. Kindred'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0126
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: Mayor
+    incumbent: ""
+    name: 'L. Shane Siwik'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0127
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: Mayor
+    incumbent: yes
+    name: 'Cherie Wood'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0128
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Ray DeWolfe'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0128
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Aaron A. Frost'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0129
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'James D. Smith'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0130
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Eric Balken'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0131
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Corey Thomas'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0131
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Sharla Beverly'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0132
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Salt Lake'
+    body: 'Council District 3'
+    incumbent: ""
+    name: 'Adam Thompson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0133
+    state: UT
+    county: 'Salt Lake'
+    city: Taylorsville
+    body: Mayor
+    incumbent: ""
+    name: 'Harry Lloyd Hansen'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0133
+    state: UT
+    county: 'Salt Lake'
+    city: Taylorsville
+    body: Mayor
+    incumbent: yes
+    name: 'Larry Johnson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0134
+    state: UT
+    county: 'Salt Lake'
+    city: Taylorsville
+    body: Mayor
+    incumbent: ""
+    name: 'Kristie Steadman Overson'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0135
+    state: UT
+    county: 'Salt Lake'
+    city: Taylorsville
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Ronald Allred'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0136
+    state: UT
+    county: 'Salt Lake'
+    city: Taylorsville
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Meredith Harker'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0137
+    state: UT
+    county: 'Salt Lake'
+    city: Taylorsville
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'Daniel Jon Armstrong'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0138
+    state: UT
+    county: 'Salt Lake'
+    city: Taylorsville
+    body: 'Council District 5'
+    incumbent: ""
+    name: 'John E. Fuller'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0139
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: Mayor
+    incumbent: ""
+    name: 'Pamela Ann Berry'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0140
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: Mayor
+    incumbent: ""
+    name: 'Dirk Burton'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0141
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: Mayor
+    incumbent: ""
+    name: 'Erin Clavell'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0142
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: Mayor
+    incumbent: ""
+    name: 'Zach Jacob'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0143
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: Mayor
+    incumbent: ""
+    name: 'Jim Riding'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0144
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: Mayor
+    incumbent: yes
+    name: 'Kim Rolfe'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0145
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Max Johnson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0146
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Chad R. Lamb'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0147
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Hyrum Smith Matthews'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0148
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Jay Thomas'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0149
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Kayleen Whitelock'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0150
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Jordan'
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Alan R. Anderson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0151
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: Mayor
+    incumbent: yes
+    name: 'Ron Bigelow'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0152
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: Mayor
+    incumbent: ""
+    name: 'Joshua Cameron'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0153
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: Mayor
+    incumbent: ""
+    name: 'Tom Huynh'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0154
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: Mayor
+    incumbent: ""
+    name: 'Karen Lang'
+    gender: female
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0155
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: Mayor
+    incumbent: ""
+    name: 'Russell R. Sanderson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0156
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Frank Bedolla'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0157
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: 'Council at Large'
+    incumbent: ""
+    name: 'Lars Nordfelt'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0158
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Jeremy Anderson'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0159
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Steve Buhler'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0160
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: 'Council District 2'
+    incumbent: ""
+    name: 'Philip B. Wayman'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0161
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Jake Fitisemanu Jr.'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0162
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Lynn R. Sanderson'
+    gender: ""
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'
+-
+    id: ut0163
+    state: UT
+    county: 'Salt Lake'
+    city: 'West Valley City'
+    body: 'Council District 4'
+    incumbent: ""
+    name: 'Steve Vincent'
+    gender: male
+    address: ""
+    longitude: ""
+    latitude: ""
+    phone_number: ""
+    email_address: ""
+    party: ""
+    election_type: primary
+    election_date: ""
+    source: 'https://slco.org/clerk/elections/candidate-filing-list/'
+    last_updated: '2017-06-14'

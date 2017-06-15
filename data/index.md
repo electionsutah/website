@@ -10,11 +10,11 @@ _Coming soon..._
 <aside class="deadlines">
   <h4>Election Deadlines</h4>
   <ul>
-    <li><strong><i class="em em-white_check_mark"></i> Friday, 26 May 2017</strong> - Filing Deadline - Party candidates - Special Election CD 3.</li>
-    <li><strong><i class="em em-white_check_mark"></i> Monday, 12 June 2017</strong> - Signature Deadline - Petition candidates - Special Election CD 3.</li>
-    <li><strong>Tuesday, 15 August 2017</strong> - Special Primary House CD 3. Polling hours reportedly 7:00a-8:00p MDT (1300-0200 UTC).</li>
-    <li><strong>Friday, 8 September 2017</strong> - Filing Deadline Write-in Candidates - Special Election CD 3.</li>
-    <li><strong>Tuesday, 7 November 2017</strong> - Special Election House CD 3. Polling hours reportedly 7:00a-8:00p MST (1400-0300 UTC).</li>
+    <li><strong><i class="em em-white_check_mark"></i> Friday, 26 May 2017</strong> - Candidate Filing</li>
+    <li><strong><i class="em em-white_check_mark"></i> Monday, 12 June 2017</strong> - Signature Deadline</li>
+    <li><strong>Tuesday, 15 August 2017</strong> - Special Primary; polling hours reportedly 7:00a-8:00p MDT (1300-0200 UTC)</li>
+    <li><strong>Friday, 8 September 2017</strong> - Filing Deadline Write-in Candidates</li>
+    <li><strong>Tuesday, 7 November 2017</strong> - Special Election; polling hours reportedly 7:00a-8:00p MST (1400-0300 UTC)</li>
   </ul>
 </aside>
 
