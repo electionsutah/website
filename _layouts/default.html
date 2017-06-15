@@ -11,12 +11,13 @@
         <header class="site-header">
             <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
             <nav class="site-nav">
+                <a href="{{ site.baseurl }}/data/" class="{% if page.url == '/data/' %}active{% endif %}">Data</a>
                 <a href="{{ site.baseurl }}/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
             </nav>
         </header>
 
         {{ content }}
-        
+
         <footer>
           <hr>
           <span>Twitter: <a href="https://twitter.com/{{ site.twitter_username}}">{{ site.twitter_username }}</a></span><br>

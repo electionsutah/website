@@ -8,7 +8,7 @@ main {
     .site-title {
         font-weight: 300;
         > a {
-            color: $text-color;
+            color: $color-blue;
             text-decoration: none;
         }
     }
@@ -56,6 +56,16 @@ main {
         font-size: $small-font-size;
     }
 }
+
+footer {
+  margin-top: 2rem;
+}
+
+.bubble {
+  background: $color-aqua;
+  border-radius: 6px;
+}
+
 @media screen and (max-width: 48rem) {
     .site-header {
         .site-title,
