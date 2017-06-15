@@ -19,7 +19,7 @@ description: > An open data project tracking Utah elections
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: todrobbins
-github_username:  todrobbins
+github_username:  todrobbins/utah-elections
 
 # Build settings
 markdown: kramdown
