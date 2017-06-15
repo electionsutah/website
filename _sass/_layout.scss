@@ -35,6 +35,19 @@ main {
     }
 }
 
+.deadlines {
+  background: $color-yellow;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  ul {
+    display: inline;
+    list-style: none;
+    li {
+      margin-bottom: .8rem;
+    }
+  }
+}
+
 .posts {
     list-style: none;
     > li {
@@ -66,7 +79,7 @@ main {
 }
 
 footer {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
 }
 
