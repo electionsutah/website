@@ -35,8 +35,8 @@ main {
     }
 }
 
-.deadlines {
-  background: $color-yellow;
+.notice {
+  background: $color-aqua;
   padding: .8rem;
   margin-bottom: 1rem;
   ul {
@@ -67,7 +67,7 @@ main {
 }
 .post {
     position: relative;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     .post-header {
         text-align: center;
         margin: 1rem 0;

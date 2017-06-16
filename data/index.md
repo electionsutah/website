@@ -7,7 +7,7 @@ permalink: /data/
 ### 2017 3rd Congressional District Special Election
 _Coming soon..._
 
-<aside class="deadlines">
+<aside class="notice">
   <h4>Election Deadlines</h4>
   <ul>
     <li><strong><i class="em em-white_check_mark"></i> Friday, 26 May 2017</strong> - Candidate Filing</li>
@@ -22,7 +22,7 @@ _Coming soon..._
 #### Primary Candidates
 [CSV](2017-utah-elections-primary.csv) / [JSON](2017-utah-elections-primary.json) (Last updated 14 June 2017)
 
-<aside class="deadlines">
+<aside class="notice">
   <h4>Election Deadlines</h4>
   <ul>
     <li><strong><i class="em em-white_check_mark"></i> Wednesday, 7 June 2017</strong> - Candidate Filing</li>
