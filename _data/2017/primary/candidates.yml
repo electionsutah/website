@@ -1012,18 +1012,18 @@
     city: Midvale
     body: 'Council District 4'
     incumbent: ""
-    name: 'Stephen Brown'
+    name: 'Bryant Brown'
     gender: male
-    address: ""
+    address: "7819 S Coolidge St, Midvale, UT 84047"
     longitude: ""
     latitude: ""
-    phone_number: ""
-    email_address: ""
+    phone_number: "(801) 347-1804"
+    email_address: "bryantbrown@yahoo.com"
     party: ""
     election_type: primary
     election_date: ""
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-16'
 -
     id: ut0055
     state: UT
@@ -1033,16 +1033,16 @@
     incumbent: ""
     name: 'Stephanie Johnson'
     gender: female
-    address: ""
+    address: "7792 S Coolidge St, Midvale, UT 84047"
     longitude: ""
     latitude: ""
-    phone_number: ""
-    email_address: ""
+    phone_number: "(801) 870-6615"
+    email_address: "sassyjose@gmail.com"
     party: ""
     election_type: primary
     election_date: ""
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-16'
 -
     id: ut0056
     state: UT
@@ -1052,16 +1052,16 @@
     incumbent: yes
     name: 'Wayne L. Sharp'
     gender: male
-    address: ""
+    address: "347 W Wasatch St, Midvale, UT 84047"
     longitude: ""
     latitude: ""
-    phone_number: ""
-    email_address: ""
+    phone_number: "(801) 561-8709"
+    email_address: "sharpyardsllc@gmail.com"
     party: ""
     election_type: primary
     election_date: ""
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-16'
 -
     id: ut0057
     state: UT
@@ -1071,16 +1071,16 @@
     incumbent: ""
     name: 'Jason Smith'
     gender: male
-    address: ""
+    address: "8289 S Wilson St Apt 1, Midvale, UT 84047"
     longitude: ""
     latitude: ""
-    phone_number: ""
-    email_address: ""
+    phone_number: "(385) 232-6062"
+    email_address: "jrsmith9597@gmail.com"
     party: ""
     election_type: primary
     election_date: ""
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-16'
 -
     id: ut0058
     state: UT
@@ -1090,16 +1090,16 @@
     incumbent: ""
     name: 'Andrew Stoddard'
     gender: male
-    address: ""
+    address: "218 E 8135 S, Sandy, UT 84070"
     longitude: ""
     latitude: ""
-    phone_number: ""
-    email_address: ""
+    phone_number: "(801) 884-9943"
+    email_address: "drewcstoddard@gmail.com"
     party: ""
     election_type: primary
     election_date: ""
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-16'
 -
     id: ut0059
     state: UT
@@ -1340,7 +1340,7 @@
     address: ""
     longitude: ""
     latitude: ""
-    phone_number: 801-520-9947
+    phone_number: (801) 520-9947
     email_address: billapplegarth@gmail.com
     party: ""
     election_type: primary
@@ -1359,7 +1359,7 @@
     address: ""
     longitude: ""
     latitude: ""
-    phone_number: 801-871-9129
+    phone_number: (801) 871-9129
     email_address: tpstaggs@gmail.com
     party: ""
     election_type: primary
@@ -1378,7 +1378,7 @@
     address: ""
     longitude: ""
     latitude: ""
-    phone_number: 801-634-7692
+    phone_number: (801) 634-7692
     email_address: tawneemccay@gmail.com
     party: ""
     election_type: primary
@@ -1397,7 +1397,7 @@
     address: ""
     longitude: ""
     latitude: ""
-    phone_number: 801-254-9033
+    phone_number: (801) 254-9033
     email_address: info.waymanstudio.com
     party: ""
     election_type: primary
@@ -1416,7 +1416,7 @@
     address: ""
     longitude: ""
     latitude: ""
-    phone_number: 801-673-6103
+    phone_number: (801) 673-6103
     email_address: tishburoker@gmail.com
     party: ""
     election_type: primary
@@ -1435,7 +1435,7 @@
     address: ""
     longitude: ""
     latitude: ""
-    phone_number: 801-232-0825
+    phone_number: (801) 232-0825
     email_address: dparkplace@q.com
     party: ""
     election_type: primary
