@@ -8,7 +8,7 @@ layout: default
   <h2 class="post-header">{{ person.name }}</h2>
   <aside class="notice"><strong>Last Updated:</strong> {{ person.last_updated }}</aside>
   <h3>Candidate Biography</h3>
-  <p><strong>{{ person.name }}</strong> is <i class="em em-{{ person.gender | replace: 'female','womens' | replace: 'male','mens' }}" alt="{{ person.gender | capitalize }}"></i> and a candidate for <strong>{{ person.body }}</strong> of <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, {{ person.state }}</strong> (<a href="{{ person.source }}">Source</a>).</p>
+  <p><strong>{{ person.name }}</strong> <i class="em em-{{ person.gender | replace: 'female','womens' | replace: 'male','mens' }}" alt="{{ person.gender | capitalize }}"></i> is a candidate for <strong>{{ person.body }}</strong> of <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, {{ person.state }}</strong> (<a href="{{ person.source }}">Source</a>).</p>
 
   <h3>Contact Info</h3>
   <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}">{{ person.address }}</a></p>
