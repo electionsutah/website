@@ -35,8 +35,12 @@ main {
     }
 }
 
+.hero {
+  width: 100%;
+}
+
 .notice {
-  background: $color-aqua;
+  background: rgb(203, 239, 255);
   padding: .8rem;
   margin-bottom: 1rem;
   ul {
@@ -85,9 +89,15 @@ footer {
   padding: 1rem;
 }
 
-.bubble {
-  background: $color-aqua;
-  border-radius: 6px;
+.small {
+  font-size: $small-font-size;
+}
+
+.license {
+  font-size: $small-font-size;
+  background: rgb(235, 235, 235);
+  padding: .8rem;
+  text-align: left;
 }
 
 h1,

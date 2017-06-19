@@ -25,13 +25,16 @@
       </div>
   </header>
     <main>
+        {% if page.hero != null %}
+        <img src="images/{{page.hero}}" class="hero">
+        {% endif %}
 
         {{ content }}
 
         <footer>
           <hr>
-          <span>Twitter: <a href="https://twitter.com/{{ site.twitter_username}}">{{ site.twitter_username }}</a></span><br>
-          <span>Github: <a href="https://github.com/{{ site.github_username}}">{{ site.github_username }}</a></span>
+          <p><span><a href="https://twitter.com/{{ site.twitter_username}}">Twitter</a></span> | <span><a href="https://github.com/{{ site.github_username}}">Github</a></span></p>
+          <p class="license"><strong>Utah Elections Project</strong> is releasing these datasets with a <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 1.0 Universal Public Domain data license</a>. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.</p>
         </footer>
     </main>
     {% if site.google_analytics %}
