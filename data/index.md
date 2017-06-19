@@ -2,6 +2,7 @@
 layout: page
 title: Data
 permalink: /data/
+comments: true
 ---
 
 ### 2017 3rd Congressional District Special Election

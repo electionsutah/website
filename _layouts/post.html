@@ -5,7 +5,7 @@ layout: default
     <h2 class="post-header">{{ page.title }}</h2>
     <p class="post-meta">{{ page.date | date: site.date_format }}</p>
     {{ content }}
-    {% if site.disqus_shortname %}
+    {% if site.comments %}
       <div id="disqus_thread"></div>
       <script type="text/javascript">
         var disqus_shortname  = '{{ site.disqus_shortname }}';

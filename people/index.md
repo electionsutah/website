@@ -2,6 +2,7 @@
 layout: page
 title: People
 permalink: /people/
+comments: true
 ---
 
 ### 2017 Municipal Election

@@ -2,6 +2,7 @@
 layout: page
 title: Salt Lake County
 permalink: /places/salt-lake/
+comments: true
 ---
 
 - [Alta](alta)

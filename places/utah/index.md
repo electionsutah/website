@@ -2,6 +2,7 @@
 layout: page
 title: Utah County
 permalink: /places/utah/
+comments: true
 ---
 
 - [American Fork](american-fork)
