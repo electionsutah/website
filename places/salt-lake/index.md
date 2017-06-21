@@ -23,7 +23,7 @@ comments: true
 - [West Jordan](west-jordan)
 - [West Valley City](west-valley-city)
 
-### Primary Candidates
+### 2017 Primary Candidates
 {% assign county = site.data.2017.primary.candidates | where:'county','Salt Lake' %}
 {% for member in county  %}
 - <strong>[{{member.name}}](../../people/{{member.id}})</strong>, Candidate for <strong>{{ member.body }}</strong> of <strong>[{{ member.city }}](../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}), [{{ member.county }}](../../places/{{ member.county | downcase | replace: ' ','-' }}), [{{ member.state }}](../../places)</strong>
