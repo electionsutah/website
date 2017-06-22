@@ -148,5 +148,5 @@ ul, menu, dir {
       }
     h3 { font-size: 1rem; }
     h4 { font-size: $small-font-size; }
-    p, span { font-size: $small-font-size; }
+    p, span, th, td { font-size: $small-font-size; }
 }
