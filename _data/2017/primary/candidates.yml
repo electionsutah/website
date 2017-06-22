@@ -1535,11 +1535,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/Cushman4Council/'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-22'
 -
     id: ut0081
     state: UT
@@ -3363,25 +3364,6 @@
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-21'
 -
-    id: ut0173
-    state: UT
-    body: 'US Senate'
-    incumbent: ''
-    name: 'Danny Drew'
-    gender: 'male'
-    address: ''
-    longitude: ''
-    latitude: ''
-    phone_number: ''
-    email_address: ''
-    website: 'http://www.drewforutah.com/'
-    facebook: 'https://www.facebook.com/DrewforUtah/'
-    party: 'Democratic'
-    election_type: primary
-    election_date: ''
-    source: 'http://www.drewforutah.com/'
-    last_updated: '2017-06-21'
--
     id: ut0174
     state: UT
     county: 'Utah'
@@ -3438,9 +3420,29 @@
     phone_number: ''
     email_address: ''
     facebook: 'https://www.facebook.com/ortonforhouse/'
-    party: 'Democratic'
+    party: 'Utah State Democratic Party'
     election_type: primary
     election_date: '2017-08-15'
     source: 'https://www.facebook.com/ortonforhouse/'
     media: 'http://www.deseretnews.com/article/865681089/Jacquelyn-Orton-announces-plan-to-run-for-Chavez-Houcks-seat.html'
     last_updated: '2017-06-21'
+-
+    id: ut0177
+    state: UT
+    county: ''
+    city: ''
+    body: 'US Congressional District 3'
+    incumbent: ''
+    name: 'Brendan Phillips'
+    gender: 'male'
+    address: ''
+    longitude: ''
+    latitude: ''
+    phone_number: '(801) 833-5832'
+    email_address: 'brendanphilipsforcongress@gmail.com'
+    facebook: 'https://www.facebook.com/BrendanPhillipsforCongress/'
+    party: 'Green Party of Utah'
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.facebook.com/BrendanPhillipsforCongress/'
+    last_updated: '2017-06-22'

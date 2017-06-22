@@ -1,0 +1,38 @@
+-
+    id: ut0173
+    state: UT
+    body: 'US Senate'
+    incumbent: ''
+    name: 'Danny Drew'
+    gender: 'male'
+    address: ''
+    longitude: ''
+    latitude: ''
+    phone_number: ''
+    email_address: ''
+    website: 'http://www.drewforutah.com/'
+    facebook: 'https://www.facebook.com/DrewforUtah/'
+    party: 'Utah State Democratic Party'
+    election_type: primary
+    election_date: ''
+    source: 'http://www.drewforutah.com/'
+    last_updated: '2017-06-22'
+-
+    id: ut0178
+    state: UT
+    body: 'US Congressional District 1'
+    incumbent: ''
+    name: 'Jerold Adam Davis'
+    gender: 'male'
+    address: ''
+    longitude: ''
+    latitude: ''
+    phone_number: ''
+    email_address: ''
+    facebook: 'https://www.facebook.com/AdamDavisUT1/'
+    crowdpac: 'https://www.crowdpac.com/campaigns/232751/a-campaign-built-for-workers'
+    party: 'Green Party of Utah'
+    election_type: primary
+    election_date: ''
+    source: 'http://www.drewforutah.com/'
+    last_updated: '2017-06-22'
