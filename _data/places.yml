@@ -1,0 +1,24 @@
+---
+title: Places of Utah
+---
+
+alpine:
+    wikidata_url: 'https://www.wikidata.org/wiki/Q115481'
+    wikipedia_url: 'https://en.wikipedia.org/wiki/Alpine,_Utah'
+    wikipedia_snippet: |
+        Alpine is a city in Utah County, Utah, United States. The population was 9,555 at the 2010 census. Alpine has been one of the many quickly-growing cities of Utah since the 1970s, and especially the 1990s. It is located on the slopes of the Wasatch Range north of Highland and American Fork. The west side of the city runs above the Wasatch Fault. The city is so named because the views from the elevated town site were compared to the Swiss Alps.
+american_fork:
+    wikidata_url: 'https://www.wikidata.org/wiki/Q464598'
+    wikipedia_url: 'https://en.wikipedia.org/wiki/American_Fork,_Utah'
+    wikipedia_snippet: |
+        American Fork, often referred to by locals as A.F., is a city in Utah County, Utah, United States, at the foot of Mount Timpanogos in the Wasatch Range, north of Utah Lake. It is part of the Provo–Orem Metropolitan Statistical Area. The population was 28,326 in 2015, representing a nearly 20% growth since the 2000 census. The city has grown rapidly since the 1970s.
+utah:
+    wikidata_url: 'https://www.wikidata.org/wiki/Q829'
+    wikipedia_snippet: |
+        Utah is a state in the western United States. It became the 45th state admitted to the U.S. on January 4, 1896. Utah is the 13th-largest by area, 31st-most-populous, and 10th-least-densely populated of the 50 United States. Utah has a population of more than 3 million (Census estimate for July 1, 2016), approximately 80% of whom live along the Wasatch Front, centering on the state capital Salt Lake City. Utah is bordered by Colorado to the east, Wyoming to the northeast, Idaho to the north, Arizona to the south, and Nevada to the west. It also touches a corner of New Mexico in the southeast.'
+    wikipedia_url: 'https://en.wikipedia.org/wiki/Utah'
+utah_county:
+    wikidata_url: 'https://www.wikidata.org/wiki/Q27229'
+    wikipedia_url: 'https://en.wikipedia.org/wiki/Utah_County,_Utah'
+    wikipedia_snippet: |
+        Utah County is a county in the U.S. state of Utah. As of the 2010 census, the population was 516,564, thus making it Utah's second-most populous county. The county seat and largest city is Provo, which is the state's third-largest city. The county was created in 1850 and named for the Spanish name (Yuta) for the Ute Indians.'

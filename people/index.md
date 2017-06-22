@@ -7,6 +7,22 @@ comments: true
 
 ### 2017 Municipal Election
 #### Primary Candidates
-{% for member in site.data.2017.primary.candidates | where: 'id', page.person | first %}
-- <strong>[{{member.name}}]({{member.id}})</strong>, Candidate for <strong>{{ member.body }}</strong> of <strong>[{{ member.city }}](../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}), [{{ member.county }}](../places/{{ member.county | downcase | replace: ' ','-' }}), {{ member.state }}</strong>
+{% assign person = site.data.2017.primary.candidates | sort:'name' %}
+<table>
+<thead>
+  <th>Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in person  %}
+  <tr>
+    <td><a href="{{member.id}}">{{member.name}}</a></td>
+    <td>{{ member.body }}</td>
+    <td><a href="../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
 {% endfor %}
+</tbody>
+</table>

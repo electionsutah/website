@@ -14,7 +14,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -33,7 +33,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -52,7 +52,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -71,7 +71,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -90,7 +90,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -109,7 +109,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -128,7 +128,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -147,7 +147,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -166,7 +166,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -185,7 +185,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -204,7 +204,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -223,7 +223,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -242,7 +242,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -261,7 +261,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -280,7 +280,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -299,7 +299,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -318,7 +318,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -335,11 +335,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/TaliBrucePublicServant/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2017-06-21'
 -
     id: ut0019
     state: UT
@@ -356,7 +357,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -375,7 +376,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -394,7 +395,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -413,7 +414,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -432,7 +433,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -451,7 +452,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -470,7 +471,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -489,7 +490,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -508,7 +509,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -527,7 +528,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -546,7 +547,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -565,7 +566,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -584,7 +585,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -603,7 +604,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -622,7 +623,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -641,7 +642,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -660,7 +661,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -679,7 +680,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -698,7 +699,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -717,7 +718,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -736,7 +737,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -755,7 +756,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -774,7 +775,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -793,7 +794,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -812,7 +813,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -831,7 +832,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -850,7 +851,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -869,7 +870,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -888,7 +889,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -907,7 +908,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -926,7 +927,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -945,7 +946,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
@@ -962,11 +963,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/SophiaForMidvaleMayor/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2017-06-21'
 -
     id: ut0052
     state: UT
@@ -983,7 +985,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1002,7 +1004,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1021,7 +1023,7 @@
     email_address: 'bryantbrown@yahoo.com'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-16'
 -
@@ -1040,7 +1042,7 @@
     email_address: 'sassyjose@gmail.com'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-16'
 -
@@ -1059,7 +1061,7 @@
     email_address: 'sharpyardsllc@gmail.com'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-16'
 -
@@ -1078,7 +1080,7 @@
     email_address: 'jrsmith9597@gmail.com'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-16'
 -
@@ -1095,11 +1097,12 @@
     latitude: ''
     phone_number: '(801) 884-9943'
     email_address: 'drewcstoddard@gmail.com'
+    facebook: 'https://www.facebook.com/voteandrewstoddard/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-16'
+    last_updated: '2017-06-21'
 -
     id: ut0059
     state: UT
@@ -1116,7 +1119,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1135,7 +1138,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1154,7 +1157,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1173,7 +1176,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1192,7 +1195,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1211,7 +1214,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1230,7 +1233,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1249,7 +1252,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1268,7 +1271,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1287,7 +1290,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1306,7 +1309,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1325,7 +1328,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1344,7 +1347,7 @@
     email_address: billapplegarth@gmail.com
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1363,7 +1366,7 @@
     email_address: tpstaggs@gmail.com
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1382,7 +1385,7 @@
     email_address: tawneemccay@gmail.com
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1401,7 +1404,7 @@
     email_address: info.waymanstudio.com
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1420,7 +1423,7 @@
     email_address: tishburoker@gmail.com
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1439,7 +1442,7 @@
     email_address: dparkplace@q.com
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1458,7 +1461,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1477,7 +1480,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1496,7 +1499,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1515,7 +1518,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1534,7 +1537,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1553,7 +1556,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1572,7 +1575,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1591,7 +1594,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1608,11 +1611,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/ChrisWhartonforSLCCouncil/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-21'
 -
     id: ut0085
     state: UT
@@ -1629,7 +1633,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1648,7 +1652,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1667,7 +1671,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1686,7 +1690,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1705,7 +1709,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1724,7 +1728,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1741,11 +1745,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/voteamyfowler/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-21'
 -
     id: ut0092
     state: UT
@@ -1760,11 +1765,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/haynesforslc/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-06-21'
 -
     id: ut0093
     state: UT
@@ -1781,7 +1787,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1800,7 +1806,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1819,7 +1825,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1838,7 +1844,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1857,7 +1863,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1876,7 +1882,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1895,7 +1901,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1914,7 +1920,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1933,7 +1939,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1952,7 +1958,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1971,7 +1977,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -1990,7 +1996,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -2009,7 +2015,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -2028,7 +2034,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -2047,7 +2053,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -2066,7 +2072,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -2085,7 +2091,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -2104,7 +2110,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-12'
 -
@@ -2123,7 +2129,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2142,7 +2148,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2161,7 +2167,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2180,7 +2186,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2199,7 +2205,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2218,7 +2224,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2237,7 +2243,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2256,7 +2262,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2275,7 +2281,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2294,7 +2300,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2313,7 +2319,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2332,7 +2338,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2351,7 +2357,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2370,7 +2376,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2389,7 +2395,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2408,7 +2414,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2427,7 +2433,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2446,7 +2452,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2465,7 +2471,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2484,7 +2490,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2503,7 +2509,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2520,11 +2526,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/electcoreythomas/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-14'
+    last_updated: '2017-06-21'
 -
     id: ut0131
     state: UT
@@ -2541,7 +2548,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2560,7 +2567,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2579,7 +2586,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2598,7 +2605,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2617,7 +2624,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2636,7 +2643,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2655,7 +2662,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2674,7 +2681,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2693,7 +2700,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2712,7 +2719,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2731,7 +2738,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2750,7 +2757,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2769,7 +2776,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2788,7 +2795,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2807,7 +2814,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2826,7 +2833,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2845,7 +2852,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2862,11 +2869,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/HyrumforWestJordanCity/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-14'
+    last_updated: '2017-06-21'
 -
     id: ut0148
     state: UT
@@ -2883,7 +2891,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2902,7 +2910,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2921,7 +2929,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2936,11 +2944,12 @@
     address: ''
     longitude: ''
     latitude: ''
-    phone_number: ''
-    email_address: ''
+    phone_number: '(801) 968-4188'
+    email_address: '32ronb@gmail.com'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
+    pledge: 'http://www.wvc-ut.gov/DocumentCenter/View/11395'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2959,7 +2968,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2978,7 +2987,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -2997,7 +3006,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3016,7 +3025,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3035,7 +3044,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3054,7 +3063,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3073,7 +3082,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3092,7 +3101,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3111,7 +3120,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3128,11 +3137,12 @@
     latitude: ''
     phone_number: ''
     email_address: ''
+    facebook: 'https://www.facebook.com/Jake4WestValley/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-14'
+    last_updated: '2017-06-21'
 -
     id: ut0162
     state: UT
@@ -3149,7 +3159,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3168,7 +3178,7 @@
     email_address: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-14'
 -
@@ -3188,7 +3198,7 @@
     website: 'http://michelle4mayor.com/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3208,7 +3218,7 @@
     website: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3228,7 +3238,7 @@
     website: 'https://www.ericforprovo.org/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3248,7 +3258,7 @@
     website: 'https://sherriehalleverett.com/home'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3268,7 +3278,7 @@
     website: 'http://www.howardstone.org'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3288,7 +3298,7 @@
     website: 'http://www.votefenley.org/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3308,7 +3318,7 @@
     website: 'https://walters4mayor.com/'
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3328,6 +3338,109 @@
     website: ''
     party: ''
     election_type: primary
-    election_date: ''
+    election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
+-
+    id: ut0172
+    state: UT
+    county: 'Utah'
+    city: 'Highland'
+    body: 'Council at Large'
+    incumbent: ''
+    name: 'Elisabeth Luntz'
+    gender: 'female'
+    address: 'Highland, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: ''
+    email_address: ''
+    website: ''
+    facebook: 'https://www.facebook.com/elisabethluntzforhighlandcity/'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-21'
+-
+    id: ut0173
+    state: UT
+    body: 'US Senate'
+    incumbent: ''
+    name: 'Danny Drew'
+    gender: 'male'
+    address: ''
+    longitude: ''
+    latitude: ''
+    phone_number: ''
+    email_address: ''
+    website: 'http://www.drewforutah.com/'
+    facebook: 'https://www.facebook.com/DrewforUtah/'
+    party: 'Democratic'
+    election_type: primary
+    election_date: ''
+    source: 'http://www.drewforutah.com/'
+    last_updated: '2017-06-21'
+-
+    id: ut0174
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'Council District 5'
+    incumbent: ''
+    name: 'Tinesha Zandamela'
+    gender: 'female'
+    address: '547 N. 300 E. Apt 5, Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '(801) 814-8030'
+    email_address: 'electzandamela@gmail.com'
+    website: 'https://electzandamela.com/'
+    facebook: 'https://www.facebook.com/zandamela4provo/'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-21'
+-
+    id: ut0175
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'House District 50'
+    incumbent: ''
+    name: 'Jen Schwartz'
+    gender: 'female'
+    address: ''
+    longitude: ''
+    latitude: ''
+    phone_number: ''
+    email_address: ''
+    website: 'http://www.voteforjenschwartz.com/'
+    facebook: ''
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'http://www.voteforjenschwartz.com/'
+    last_updated: '2017-06-21'
+-
+    id: ut0176
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'House District 24'
+    incumbent: ''
+    name: 'Jacquelyn Orton'
+    gender: 'female'
+    address: ''
+    longitude: ''
+    latitude: ''
+    phone_number: ''
+    email_address: ''
+    facebook: 'https://www.facebook.com/ortonforhouse/'
+    party: 'Democratic'
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.facebook.com/ortonforhouse/'
+    media: 'http://www.deseretnews.com/article/865681089/Jacquelyn-Orton-announces-plan-to-run-for-Chavez-Houcks-seat.html'
+    last_updated: '2017-06-21'
