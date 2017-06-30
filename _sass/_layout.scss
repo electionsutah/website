@@ -124,6 +124,10 @@ ul, menu, dir {
   margin-top: 3rem;
 }
 
+th:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 48rem) {
     .site-header {
         padding: 1rem 0 1rem 0;

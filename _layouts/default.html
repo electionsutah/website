@@ -35,6 +35,9 @@
           <p class="license"><strong>Utah Elections Project</strong> is releasing these datasets with a <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 1.0 Universal Public Domain data license</a>. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.</p>
         </footer>
     </main>
+    <script src="https://use.fontawesome.com/b9080a0e6a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
     {% if site.google_analytics %}
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -45,6 +48,14 @@
         ga('send', 'pageview');
     </script>
     {% endif %}
-    <script src="https://use.fontawesome.com/b9080a0e6a.js"></script>
+    <script>
+		$(document).ready(function() {
+    	$("table").tablesorter({
+        widthFixed: true,
+        sortList: [[0,0],[2,0]],
+        widgets: ['zebra']
+      })
+		});
+    </script>
 </body>
 </html>
