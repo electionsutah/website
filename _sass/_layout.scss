@@ -32,10 +32,14 @@ main {
           }
           #search-box {
             float: right;
+            margin: 0;
+            padding: 0;
             input {
               font-family: $base-font-family;
               font-size: $base-font-size;
               padding: .4rem
+              border: none;
+              margin-top: -0.6rem;
             }
           }
       }

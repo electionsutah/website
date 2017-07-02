@@ -20,7 +20,7 @@
             <a href="{{ site.baseurl }}/people/" class="{% if page.url == '/people/' %}active{% endif %}">People</a>
             <a href="{{ site.baseurl }}/places/" class="{% if page.url == '/places/' %}active{% endif %}">Places</a>
             <a href="{{ site.baseurl }}/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-            <form action="/search" method="get" id="search-box">
+            <form action="{{ site.baseurl }}/search" method="get" id="search-box">
               <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
             </form>
         </nav>
