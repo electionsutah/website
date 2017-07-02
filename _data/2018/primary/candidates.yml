@@ -18,6 +18,48 @@
     source: 'http://www.drewforutah.com/'
     last_updated: '2017-06-22'
 -
+    id: ut0175
+    state: UT
+    county: 'Salt Lake'
+    city: 'South Jordan'
+    body: 'House District 50'
+    incumbent: ''
+    name: 'Jen Schwartz'
+    gender: 'female'
+    address: ''
+    longitude: ''
+    latitude: ''
+    phone_number: ''
+    email_address: ''
+    website: 'http://www.voteforjenschwartz.com/'
+    facebook: ''
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'http://www.voteforjenschwartz.com/'
+    last_updated: '2017-06-21'
+-
+    id: ut0176
+    state: UT
+    county: 'Salt Lake'
+    city: 'Salt Lake City'
+    body: 'House District 24'
+    incumbent: ''
+    name: 'Jacquelyn Orton'
+    gender: 'female'
+    address: ''
+    longitude: ''
+    latitude: ''
+    phone_number: ''
+    email_address: ''
+    facebook: 'https://www.facebook.com/ortonforhouse/'
+    party: 'Utah State Democratic Party'
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.facebook.com/ortonforhouse/'
+    media: 'http://www.deseretnews.com/article/865681089/Jacquelyn-Orton-announces-plan-to-run-for-Chavez-Houcks-seat.html'
+    last_updated: '2017-06-21'
+-
     id: ut0178
     state: UT
     body: 'US Congressional District 1'

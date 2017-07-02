@@ -20,6 +20,9 @@
             <a href="{{ site.baseurl }}/people/" class="{% if page.url == '/people/' %}active{% endif %}">People</a>
             <a href="{{ site.baseurl }}/places/" class="{% if page.url == '/places/' %}active{% endif %}">Places</a>
             <a href="{{ site.baseurl }}/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+            <form action="/search" method="get" id="search-box">
+              <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+            </form>
         </nav>
       </div>
   </header>
@@ -37,6 +40,8 @@
     </main>
     <script src="https://use.fontawesome.com/b9080a0e6a.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.tablesorter.js"></script>
     {% if site.google_analytics %}
     <script>
@@ -48,6 +53,17 @@
         ga('send', 'pageview');
     </script>
     {% endif %}
+    <script type="text/javascript">
+      $(function() {
+        $('#search-query').lunrSearch({
+          indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+          results   : '#search-results',          // selector for containing search results element
+          template  : '#search-results-template', // selector for Mustache.js template
+          titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+          emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+        });
+      });
+    </script>
     <script>
 		$(document).ready(function() {
     	$("table").tablesorter({

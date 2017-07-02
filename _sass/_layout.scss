@@ -30,6 +30,14 @@ main {
                   margin-left: 1rem;
               }
           }
+          #search-box {
+            float: right;
+            input {
+              font-family: $base-font-family;
+              font-size: $base-font-size;
+              padding: .4rem
+            }
+          }
       }
     }
 }
@@ -131,14 +139,20 @@ th:hover {
 @media screen and (max-width: 48rem) {
     .site-header {
         padding: 1rem 0 1rem 0;
-        .site-title {
-          font-size: 1.4rem;
-          i { font-size: .8rem; }
+        .inner {
+          .site-title {
+            font-size: 1.4rem;
+            i { font-size: .8rem; }
+            }
+          .site-nav #search-box {
+            float: none;
+            margin-top: 1rem;
           }
-        }
-        .site-title,
-        .site-nav {
-            text-align: center;
+          }
+          .site-title,
+          .site-nav {
+              text-align: center;
+          }
         }
     main {
       padding: 0;
