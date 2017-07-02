@@ -3404,3 +3404,192 @@
     election_date: '2017-08-15'
     source: 'https://www.facebook.com/BrendanPhillipsforCongress/'
     last_updated: '2017-06-22'
+-
+    id: ut0178
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'Council District 5'
+    incumbent: yes
+    name: 'David Harding'
+    gender: 'male'
+    address: '595 W. 400 N., Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.310.9970'
+    email_address: 'daveofprovo@gmail.com'
+    website: 'DaveHarding.org'
+    facebook: 'https://www.facebook.com/ProvoDistrict5'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-30'
+-
+    id: ut0179
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'Council District 2'
+    incumbent: ''
+    name: 'Leo Lines'
+    gender: 'male'
+    address: '371 N. 600 E., Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.636.0268'
+    email_address: 'leo@leo4provo.com'
+    website: ''
+    facebook: 'https://www.facebook.com/leo.lines.7'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-30'
+-
+    id: ut0180
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'Council District 2'
+    incumbent: ''
+    name: 'David Clark'
+    gender: 'male'
+    address: '1460 Cherry Lane, Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.377.1783'
+    email_address: ''
+    website: ''
+    facebook: ''
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-30'
+-
+    id: ut0181
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'Council District 2'
+    incumbent: ''
+    name: 'George Handley'
+    gender: 'male'
+    address: '1801 Oak Lane, Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.574.6672'
+    email_address: 'georgebhandley@gmail.com'
+    website: 'https://www.georgehandleyprovo.com/'
+    facebook: 'https://www.facebook.com/ProvoDistrict2/'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-30'
+-
+    id: ut0182
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'City Wide I'
+    incumbent: ''
+    name: 'Hunter Phillips'
+    gender: 'male'
+    address: '851 E. 350 N., Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '385.985.3257'
+    email_address: 'hunter@electhunter.com'
+    website: 'electhunter.com'
+    facebook: 'https://www.facebook.com/hunterforprovo/'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-30'
+-
+    id: ut0183
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'City Wide I'
+    incumbent: ''
+    name: 'Mike Roan'
+    gender: 'male'
+    address: '3212 N. Shadowbrook Dr., Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.830.3250'
+    email_address: 'mroan1@gmail.com'
+    website: 'mikeroan4provo.com'
+    facebook: 'https://www.facebook.com/mike.roan.908'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-30'
+-
+    id: ut0184
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'City Wide I'
+    incumbent: ''
+    name: 'Wesley Marriott'
+    gender: 'male'
+    address: '1458 E. 1250 S., Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.440.3333'
+    email_address: 'electmarriott@gmail.com'
+    website: 'wesleymarriott.com'
+    facebook: 'https://www.facebook.com/marriott4council'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-30'
+-
+    id: ut0185
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'City Wide I'
+    incumbent: ''
+    name: 'Dave Sewell'
+    gender: 'male'
+    address: '3877 N. 200 E., Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.380.5103'
+    email_address: 'davesewellprovo@gmail.com'
+    website: 'davesewell.org'
+    facebook: 'https://www.facebook.com/dave.sewell.provo.council.citywide/'
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-30'
+-
+    id: ut0186
+    state: UT
+    county: 'Utah'
+    city: 'Provo'
+    body: 'Mayor'
+    incumbent: ''
+    name: 'Elliot G. Craig'
+    gender: 'male'
+    address: '1168 Old Willow Lane, Provo, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.874.8372'
+    email_address: 'elliot.godfrey.craig@gmail.com'
+    website: ''
+    facebook: ''
+    party: ''
+    election_type: primary
+    election_date: '2017-08-15'
+    source: 'https://www.voteprovo.com/copy-of-candidate-information'
+    last_updated: '2017-06-20'
