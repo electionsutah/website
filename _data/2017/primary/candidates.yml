@@ -3197,6 +3197,9 @@
     phone_number: '(801) 319-4999'
     email_address: 'michelle@michelle4mayor.com'
     website: 'http://michelle4mayor.com/'
+    facebook: 'https://www.facebook.com/kaufusi4mayor'
+    instagram: 'https://www.instagram.com/kaufusi4mayor/'
+    twitter: 'https://twitter.com/kaufusi4mayor'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3218,6 +3221,8 @@
     phone_number: '(801) 734-0714'
     email_address: 'kwinger21@gmail.com'
     website: ''
+    facebook: 'https://www.facebook.com/kevin.wing.790'
+    twitter: 'https://twitter.com/@kevinwing19'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3238,6 +3243,8 @@
     phone_number: '(801) 377-6290'
     email_address: 'eric4provo@gmail.com'
     website: 'https://www.ericforprovo.org/'
+    facebook: 'https://www.facebook.com/visionwearinternational'
+    twitter: 'https://twitter.com/eric4provo'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3259,6 +3266,9 @@
     phone_number: '(801) 358-4147'
     email_address: 'sherrie.mayor@gmail.com'
     website: 'https://sherriehalleverett.com/home'
+    facebook: 'https://www.facebook.com/SherrieHallEverettProvo'
+    instagram: 'https://www.instagram.com/sherriehalleverett'
+    twitter: 'https://twitter.com/sherrieinprovo'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
