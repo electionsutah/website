@@ -3200,6 +3200,7 @@
     party: ''
     election_type: primary
     election_date: '2017-08-15'
+    soundcloud: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323970933&amp;color=ff5500'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3240,6 +3241,7 @@
     party: ''
     election_type: primary
     election_date: '2017-08-15'
+    soundcloud: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326670204&amp;color=ff5500'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3260,6 +3262,7 @@
     party: ''
     election_type: primary
     election_date: '2017-08-15'
+    soundcloud: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/325238779&amp;color=ff5500'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3300,6 +3303,7 @@
     party: ''
     election_type: primary
     election_date: '2017-08-15'
+    soundcloud: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328258217&amp;color=ff5500'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
     last_updated: '2017-06-20'
 -
@@ -3502,7 +3506,7 @@
     latitude: ''
     phone_number: '385.985.3257'
     email_address: 'hunter@electhunter.com'
-    website: 'electhunter.com'
+    website: 'https://www.electhunter.com/'
     facebook: 'https://www.facebook.com/hunterforprovo/'
     party: ''
     election_type: primary
@@ -3523,7 +3527,7 @@
     latitude: ''
     phone_number: '801.830.3250'
     email_address: 'mroan1@gmail.com'
-    website: 'mikeroan4provo.com'
+    website: 'http://mikeroan4provo.com/'
     facebook: 'https://www.facebook.com/mike.roan.908'
     party: ''
     election_type: primary
@@ -3544,7 +3548,7 @@
     latitude: ''
     phone_number: '801.440.3333'
     email_address: 'electmarriott@gmail.com'
-    website: 'wesleymarriott.com'
+    website: 'https://www.wesleymarriott.com/'
     facebook: 'https://www.facebook.com/marriott4council'
     party: ''
     election_type: primary
@@ -3565,7 +3569,7 @@
     latitude: ''
     phone_number: '801.380.5103'
     email_address: 'davesewellprovo@gmail.com'
-    website: 'davesewell.org'
+    website: 'http://www.davesewell.org/'
     facebook: 'https://www.facebook.com/dave.sewell.provo.council.citywide/'
     party: ''
     election_type: primary
