@@ -3300,6 +3300,8 @@
     phone_number: '(801) 427-3532'
     email_address: 'pontifier@gmail.com'
     website: 'http://www.votefenley.org/'
+    twitter: 'https://twitter.com/pontifier'
+    youtube: 'http://www.youtube.com/pontifier'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3321,6 +3323,7 @@
     phone_number: '(801) 372-7288'
     email_address: 'larrycwalters@gmail.com'
     website: 'https://walters4mayor.com/'
+    facebook: 'http://www.facebook.com/larrywalters'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3383,6 +3386,8 @@
     email_address: 'electzandamela@gmail.com'
     website: 'https://electzandamela.com/'
     facebook: 'https://www.facebook.com/zandamela4provo/'
+    instagram: 'https://www.instagram.com/electzandamela'
+    twitter: 'http://www.facebook.com/zandamela4provo'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3422,8 +3427,9 @@
     latitude: ''
     phone_number: '801.310.9970'
     email_address: 'daveofprovo@gmail.com'
-    website: 'DaveHarding.org'
+    website: 'http://votedrdave.blogspot.com/'
     facebook: 'https://www.facebook.com/ProvoDistrict5'
+    twitter: 'https://twitter.com/ProvoDave'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3508,6 +3514,8 @@
     email_address: 'hunter@electhunter.com'
     website: 'https://www.electhunter.com/'
     facebook: 'https://www.facebook.com/hunterforprovo/'
+    instagram: 'https://www.instagram.com/hunterbp/'
+    twitter: 'https://twitter.com/hunterbp'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3550,6 +3558,7 @@
     email_address: 'electmarriott@gmail.com'
     website: 'https://www.wesleymarriott.com/'
     facebook: 'https://www.facebook.com/marriott4council'
+    twitter: 'https://twitter.com/wmmarriott'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
@@ -3571,6 +3580,7 @@
     email_address: 'davesewellprovo@gmail.com'
     website: 'http://www.davesewell.org/'
     facebook: 'https://www.facebook.com/dave.sewell.provo.council.citywide/'
+    twitter: 'https://twitter.com/davesewellprovo'
     party: ''
     election_type: primary
     election_date: '2017-08-15'
