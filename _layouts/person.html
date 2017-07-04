@@ -17,6 +17,36 @@ comments: true
   <p>{% if person.facebook %}<a href="{{ person.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.instagram %}<a href="{{ person.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %} {% if person.twitter %}<a href="{{ person.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i> <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.website %}<a href="{{ person.website }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %} {% if person.youtube %}<a href="{{ person.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i> <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
   </p>
 
+  <div id="map"></div>
+  <script>
+    L.Mapzen.apiKey = 'vector-tiles-Nd21ihQ';
+
+    var map = L.Mapzen.map('map', {
+      center: [39.3210, -111.0937],
+      zoom: 6,
+      tangramOptions: {
+        scene: L.Mapzen.BasemapStyles.Cinnabar
+      }
+    });
+
+
+    var geocoder = L.Mapzen.geocoder();
+    geocoder.addTo(map);
+
+    var geocoderOptions = {
+      placeholder: 'Provo, UT',
+      params: {
+        sources: 'wof',
+                 'boundary.region': 'Utah',
+        layers: 'address,neighborhood,locality,county,postalcode'
+      }
+    };
+
+    var locator = L.Mapzen.locator();
+      locator.setPosition('topleft');
+      locator.addTo(map);
+  </script>
+
   <h3>Contact Info</h3>
   <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}">{{ person.address }}</a></p>
   <p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone_number | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone_number }}</a></p>

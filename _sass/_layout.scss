@@ -50,6 +50,13 @@ main {
   width: 100%;
 }
 
+#map {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
 .notice {
   background: rgb(203, 239, 255);
   padding: .8rem;
