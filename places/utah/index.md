@@ -9,6 +9,24 @@ comments: true
   <p>{{ site.data.places.utah_county.wikipedia_snippet }} (<a href="{{ site.data.places.utah_county.wikipedia_url }}"><span>Wikipedia</span></a>)</p>
 </section> -->
 
+<section class="notice">
+<h3>Voter Registration Deadlines</h3>
+
+<strong>For Municipal Primary Election August 15, 2017</strong>
+
+<ul>
+  <li>July 17, 2017 last day the County will accept mail-in voter registration forms for the Primary Election UCA 20A-2-102.5(2).</li>
+  <li>July 31, 2017 last day the County Clerk can register voters in office and online for the Primary Election UCA 20A-2-201, 206.</li>
+</ul>
+
+<strong>For Municipal General Election November 7, 2017</strong>
+
+<ul>
+  <li>October 10, 2017 last day the County will accept mail-in voter registration forms for the General Election UCA 20A-2-102.5(2)</li>
+  <li>October 23, 2017 last day the County Clerk can register voters in office or online UCA 20A-2-201, 206</li>
+</ul>
+</section>
+
 <div class="columns">
 <ul>
   <li><a href="alpine">Alpine</a></li>
