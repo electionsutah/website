@@ -35,7 +35,7 @@
     facebook: ''
     party: ''
     election_type: primary
-    election_date: '2017-08-15'
+    election_date: ''
     source: 'http://www.voteforjenschwartz.com/'
     last_updated: '2017-06-21'
 -
@@ -55,7 +55,7 @@
     facebook: 'https://www.facebook.com/ortonforhouse/'
     party: 'Utah State Democratic Party'
     election_type: primary
-    election_date: '2017-08-15'
+    election_date: ''
     source: 'https://www.facebook.com/ortonforhouse/'
     media: 'http://www.deseretnews.com/article/865681089/Jacquelyn-Orton-announces-plan-to-run-for-Chavez-Houcks-seat.html'
     last_updated: '2017-06-21'

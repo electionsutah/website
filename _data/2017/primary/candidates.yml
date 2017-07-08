@@ -3207,7 +3207,7 @@
     election_date: '2017-08-15'
     soundcloud: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323970933&amp;color=ff5500'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
 -
     id: ut0165
     state: UT
@@ -3229,7 +3229,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
 -
     id: ut0166
     state: UT
@@ -3252,7 +3252,7 @@
     election_date: '2017-08-15'
     soundcloud: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326670204&amp;color=ff5500'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
 -
     id: ut0167
     state: UT
@@ -3276,7 +3276,7 @@
     election_date: '2017-08-15'
     soundcloud: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/325238779&amp;color=ff5500'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
 -
     id: ut0168
     state: UT
@@ -3296,7 +3296,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
 -
     id: ut0169
     state: UT
@@ -3319,7 +3319,7 @@
     election_date: '2017-08-15'
     soundcloud: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328258217&amp;color=ff5500'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
 -
     id: ut0170
     state: UT
@@ -3340,7 +3340,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
 -
     id: ut0171
     state: UT
@@ -3360,7 +3360,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
 -
     id: ut0172
     state: UT
@@ -3446,7 +3446,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-30'
+    last_updated: '2017-07-04'
 -
     id: ut0179
     state: UT
@@ -3467,7 +3467,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-30'
+    last_updated: '2017-07-04'
 -
     id: ut0180
     state: UT
@@ -3488,7 +3488,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-30'
+    last_updated: '2017-07-04'
 -
     id: ut0181
     state: UT
@@ -3509,7 +3509,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-30'
+    last_updated: '2017-07-04'
 -
     id: ut0182
     state: UT
@@ -3532,7 +3532,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-30'
+    last_updated: '2017-07-04'
 -
     id: ut0183
     state: UT
@@ -3553,7 +3553,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-30'
+    last_updated: '2017-07-04'
 -
     id: ut0184
     state: UT
@@ -3575,7 +3575,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-30'
+    last_updated: '2017-07-04'
 -
     id: ut0185
     state: UT
@@ -3597,7 +3597,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-30'
+    last_updated: '2017-07-04'
 -
     id: ut0186
     state: UT
@@ -3618,4 +3618,139 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-20'
+    last_updated: '2017-07-04'
+-
+    id: ut0188
+    state: UT
+    county: 'Utah'
+    city: 'Saratoga Springs'
+    body: 'Mayor'
+    incumbent: ''
+    name: 'Craig W. Parry'
+    gender: 'male'
+    address: '385 Bayside Dr., Saratoga Springs, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.651.2681'
+    email_address: 'cparry1995@gmail.com'
+    party: ''
+    election_type: 'primary'
+    election_date: '2017-08-15'
+    source: 'http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC'
+    last_updated: '2017-07-07'
+-
+    id: ut0189
+    state: UT
+    county: 'Utah'
+    city: 'Saratoga Springs'
+    body: 'Mayor'
+    incumbent: 'yes'
+    name: 'Jim Miller'
+    gender: 'male'
+    address: '493 Rolling Sage Way, Saratoga Springs, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.766.0339'
+    email_address: 'milstuff5@gmail.com'
+    party: ''
+    election_type: 'primary'
+    election_date: '2017-08-15'
+    source: 'http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC'
+    last_updated: '2017-07-07'
+-
+    id: ut0190
+    state: UT
+    county: 'Utah'
+    city: 'Saratoga Springs'
+    body: 'City Council'
+    incumbent: ''
+    name: 'Leah Hansen'
+    gender: 'female'
+    address: '341 Songbird Lane, Saratoga Springs, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.766.1575'
+    email_address: 'leahhansen.saratogasprings@gmail.com'
+    party: ''
+    election_type: 'primary'
+    election_date: '2017-08-15'
+    source: 'http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC'
+    last_updated: '2017-07-07'
+-
+    id: ut0191
+    state: UT
+    county: 'Utah'
+    city: 'Saratoga Springs'
+    body: 'City Council'
+    incumbent: ''
+    name: 'Josh Daniels'
+    gender: 'male'
+    address: '397 Cinnamon Circle, Saratoga Springs, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.234.0676'
+    email_address: 'jaldendaniels+city@gmail.com'
+    party: ''
+    election_type: 'primary'
+    election_date: '2017-08-15'
+    source: 'http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC'
+    last_updated: '2017-07-07'
+-
+    id: ut0192
+    state: UT
+    county: 'Utah'
+    city: 'Saratoga Springs'
+    body: 'City Council'
+    incumbent: ''
+    name: 'Raymond B. Campbell'
+    gender: 'male'
+    address: '1637 S. Landview Dr., Saratoga Springs UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.705.9918'
+    email_address: 'ray4saratoga@gmail.com'
+    party: ''
+    election_type: 'primary'
+    election_date: '2017-08-15'
+    source: 'http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC'
+    last_updated: '2017-07-07'
+-
+    id: ut0193
+    state: UT
+    county: 'Utah'
+    city: 'Saratoga Springs'
+    body: 'City Council'
+    incumbent: 'yes'
+    name: 'Michael D.S. McOmber'
+    gender: 'male'
+    address: '1767 Centennial Blvd., Saratoga Springs, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.643.6707'
+    email_address: 'michaelmcomber@yahoo.com'
+    party: ''
+    election_type: 'primary'
+    election_date: '2017-08-15'
+    source: 'http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC'
+    last_updated: '2017-07-07'
+-
+    id: ut0194
+    state: UT
+    county: 'Utah'
+    city: 'Saratoga Springs'
+    body: 'City Council'
+    incumbent: 'yes'
+    name: 'Stephen Willden'
+    gender: 'male'
+    address: '1883 N. Goldenrod Way, Saratoga Springs, UT'
+    longitude: ''
+    latitude: ''
+    phone_number: '801.901.0441'
+    email_address: 'steve@vote4willden.com'
+    website: 'https://vote4willden.com/'
+    facebook: 'https://www.facebook.com/Willden-for-Council-Saratoga-Springs-Utah-124852480935956'
+    party: ''
+    election_type: 'primary'
+    election_date: '2017-08-15'
+    source: 'http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC'
+    last_updated: '2017-07-07'
