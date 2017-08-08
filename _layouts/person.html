@@ -6,11 +6,11 @@ comments: true
 {% assign person = site.data.2017.primary.candidates | where: 'id', page.person | first %}
 
 <article class="post">
-  <h2 class="post-header">{{ person.name }} {{ person.incumbent | replace: 'true','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
+  <h2 class="post-header">{{ person.name }} {{ person.incumbent | replace: 'yes','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
   <aside class="notice"><strong>Last Updated:</strong> {{ person.last_updated }}</aside>
 
   <h3>Candidate Biography</h3>
-  <p><strong>{{ person.name }}</strong> is a candidate for <strong>{{ person.body }}</strong> of <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, <a href="../../places">{{ person.state }}</a></strong> (<a href="{{ person.source }}">Source</a>).</p>
+  <p><strong>{{ person.name }}</strong> is {% if person.incumbent %}the incumbent and {% endif %} a candidate for <strong>{{ person.body }}</strong> of <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, <a href="../../places">{{ person.state }}</a></strong> (<a href="{{ person.source }}">Source</a>).</p>
 
   <hr>
 
@@ -51,7 +51,7 @@ comments: true
   <p><strong>Email Address:</strong> <a href="mailto:{{ person.email_address }}">{{ person.email_address }}</a></p>
 
   <h3>Media</h3>
-  {% if person.media %}<p><a href="{{ person.media }}">{{ person.media }}</a></p>{% endif %}
+  {% if person.media %}<p><a href="{{ person.media.url }}">{{ person.media.title }}</a></p>{% endif %}
 
   {% if person.soundcloud %}<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ person.soundcloud }}"></iframe>{% endif %}
 
