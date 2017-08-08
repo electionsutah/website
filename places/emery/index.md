@@ -1,31 +1,13 @@
 ---
 layout: page
-title: Salt Lake County
-permalink: /places/salt-lake/
+title: Emery County
+permalink: /places/emery/
 comments: true
 ---
 
-<div class="columns">
-<ul>
-  <li><a href="alta">Alta</a></li>
-  <li><a href="bluffdale">Bluffdale</a></li>
-  <li><a href="cottonwood-heights">Cottonwood Heights</a></li>
-  <li><a href="draper">Draper</a></li>
-  <li><a href="herriman">Herriman</a></li>
-  <li><a href="holladay">Holladay</a></li>
-  <li><a href="midvale">Midvale</a></li>
-  <li><a href="millcreek">Millcreek</a></li>
-  <li><a href="murray">Murray</a></li>
-  <li><a href="riverton">Riverton</a></li>
-  <li><a href="salt-lake-city">Salt Lake City</a></li>
-  <li><a href="sandy">Sandy</a></li>
-  <li><a href="south-jordan">South Jordan</a></li>
-  <li><a href="south-salt-lake">South Salt Lake</a></li>
-  <li><a href="taylorsville">Taylorsville</a></li>
-  <li><a href="west-jordan">West Jordan</a></li>
-  <li><a href="west-valley-city">West Valley City</a></li>
-</ul>
-</div>
+<!-- <section class="notice">
+  <p>{{ site.data.places.utah_county.wikipedia_snippet }} (<a href="{{ site.data.places.utah_county.wikipedia_url }}"><span>Wikipedia</span></a>)</p>
+</section> -->
 
 ### 2017 3rd Congressional District Special Election
 
@@ -52,7 +34,7 @@ comments: true
 </aside>
 
 ### 2017 Primary Candidates
-{% assign county = site.data.2017.primary.candidates | where:'county','Salt Lake' | sort:'name' %}
+{% assign county = site.data.2017.primary.candidates | where:'county','Emery' | sort:'name' %}
 <table>
 <thead>
   <th>Name</th>
@@ -71,8 +53,3 @@ comments: true
 {% endfor %}
 </tbody>
 </table>
-
-<!-- {% assign county = site.data.2017.primary.candidates | where:'county','Salt Lake' | sort:'name' %}
-{% for member in county  %}
-- <strong>[{{member.name }}](../../people/{{member.id}})</strong>, Candidate for <strong>{{ member.body }}</strong> of <strong>[{{ member.city }}](../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}), [{{ member.county }}](../../places/{{ member.county | downcase | replace: ' ','-' }}), [{{ member.state }}](../../places)</strong>
-{% endfor %} -->

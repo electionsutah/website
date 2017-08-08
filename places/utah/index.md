@@ -9,24 +9,6 @@ comments: true
   <p>{{ site.data.places.utah_county.wikipedia_snippet }} (<a href="{{ site.data.places.utah_county.wikipedia_url }}"><span>Wikipedia</span></a>)</p>
 </section> -->
 
-<section class="notice">
-<h3>Voter Registration Deadlines</h3>
-
-<strong>For Municipal Primary Election August 15, 2017</strong>
-
-<ul>
-  <li>July 17, 2017 last day the County will accept mail-in voter registration forms for the Primary Election UCA 20A-2-102.5(2).</li>
-  <li>July 31, 2017 last day the County Clerk can register voters in office and online for the Primary Election UCA 20A-2-201, 206.</li>
-</ul>
-
-<strong>For Municipal General Election November 7, 2017</strong>
-
-<ul>
-  <li>October 10, 2017 last day the County will accept mail-in voter registration forms for the General Election UCA 20A-2-102.5(2)</li>
-  <li>October 23, 2017 last day the County Clerk can register voters in office or online UCA 20A-2-201, 206</li>
-</ul>
-</section>
-
 <div class="columns">
 <ul>
   <li><a href="alpine">Alpine</a></li>
@@ -55,6 +37,48 @@ comments: true
   <li><a href="woodland-hills">Woodland Hills</a></li>
 </ul>
 </div>
+
+### 2017 Voter Registration Deadlines
+
+<section class="notice">
+<strong>For Municipal Primary Election August 15, 2017</strong>
+
+<ul>
+  <li>July 17, 2017 last day the County will accept mail-in voter registration forms for the Primary Election UCA 20A-2-102.5(2).</li>
+  <li>July 31, 2017 last day the County Clerk can register voters in office and online for the Primary Election UCA 20A-2-201, 206.</li>
+</ul>
+
+<strong>For Municipal General Election November 7, 2017</strong>
+
+<ul>
+  <li>October 10, 2017 last day the County will accept mail-in voter registration forms for the General Election UCA 20A-2-102.5(2)</li>
+  <li>October 23, 2017 last day the County Clerk can register voters in office or online UCA 20A-2-201, 206</li>
+</ul>
+</section>
+
+### 2017 3rd Congressional District Special Election
+
+<aside class="notice">
+  <h4>Election Deadlines</h4>
+  <ul>
+    <li><strong><i class="fa fa-check-square"></i>&nbsp; Friday, 26 May 2017</strong> - Candidate Filing</li>
+    <li><strong><i class="fa fa-check-square"></i>&nbsp; Monday, 12 June 2017</strong> - Signature Deadline</li>
+    <li><strong>Tuesday, 15 August 2017</strong> - Special Primary; polling hours reportedly 7:00a-8:00p MDT (1300-0200 UTC)</li>
+    <li><strong>Friday, 8 September 2017</strong> - Filing Deadline Write-in Candidates</li>
+    <li><strong>Tuesday, 7 November 2017</strong> - Special Election; polling hours reportedly 7:00a-8:00p MST (1400-0300 UTC)</li>
+  </ul>
+</aside>
+
+### 2017 Municipal Election
+
+<aside class="notice">
+  <h4>Election Deadlines</h4>
+  <ul>
+    <li><strong><i class="fa fa-check-square"></i>&nbsp; Wednesday, 7 June 2017</strong> - Candidate Filing</li>
+    <li><strong>August 15, 2017</strong> - Primary Election</li>
+    <li><strong>November 7, 2017</strong> - General Election</li>
+  </ul>
+</aside>
 
 ### 2017 Primary Candidates
 {% assign county = site.data.2017.primary.candidates | where:'county','Utah' | sort:'name' %}
