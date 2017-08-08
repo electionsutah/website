@@ -5,6 +5,9 @@ permalink: /places/salt-lake/cottonwood-heights/
 ---
 
 ### 2017 Primary Candidates
+
+{% include 2017-municipal-election.html %}
+
 {% assign city = site.data.2017.primary.candidates | where:'city','Cottonwood Heights' | sort:'name' %}
 <table>
 <thead>

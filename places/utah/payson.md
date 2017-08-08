@@ -5,6 +5,9 @@ permalink: /places/utah/payson/
 ---
 
 ### 2017 Primary Candidates
+
+{% include 2017-municipal-election.html %}
+
 {% assign city = site.data.2017.primary.candidates | where:'city','Payson' | sort:'name' %}
 <table>
 <thead>

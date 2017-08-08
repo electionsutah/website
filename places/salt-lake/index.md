@@ -42,14 +42,7 @@ comments: true
 
 ### 2017 Municipal Election
 
-<aside class="notice">
-  <h4>Election Deadlines</h4>
-  <ul>
-    <li><strong><i class="fa fa-check-square"></i>&nbsp; Wednesday, 7 June 2017</strong> - Candidate Filing</li>
-    <li><strong>August 15, 2017</strong> - Primary Election</li>
-    <li><strong>November 7, 2017</strong> - General Election</li>
-  </ul>
-</aside>
+{% include 2017-municipal-election.html %}
 
 ### 2017 Primary Candidates
 {% assign county = site.data.2017.primary.candidates | where:'county','Salt Lake' | sort:'name' %}

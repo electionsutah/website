@@ -5,6 +5,9 @@ permalink: /places/utah/elk-ridge/
 ---
 
 ### 2017 Primary Candidates
+
+{% include 2017-municipal-election.html %}
+
 {% assign city = site.data.2017.primary.candidates | where:'city','Elk Ridge' | sort:'name' %}
 <table>
 <thead>

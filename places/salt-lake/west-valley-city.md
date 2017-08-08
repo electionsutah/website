@@ -5,6 +5,9 @@ permalink: /places/salt-lake/west-valley-city/
 ---
 
 ### 2017 Primary Candidates
+
+{% include 2017-municipal-election.html %}
+
 {% assign city = site.data.2017.primary.candidates | where:'city','West Valley City' | sort:'name' %}
 <table>
 <thead>

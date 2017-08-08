@@ -5,6 +5,9 @@ permalink: /places/salt-lake/south-jordan/
 ---
 
 ### 2017 Primary Candidates
+
+{% include 2017-municipal-election.html %}
+
 {% assign city = site.data.2017.primary.candidates | where:'city','South Jordan' | sort:'name' %}
 <table>
 <thead>

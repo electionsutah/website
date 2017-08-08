@@ -5,6 +5,9 @@ permalink: /places/salt-lake/south-salt-lake/
 ---
 
 ### 2017 Primary Candidates
+
+{% include 2017-municipal-election.html %}
+
 {% assign city = site.data.2017.primary.candidates | where:'city','South Salt Lake' | sort:'name' %}
 <table>
 <thead>

@@ -9,6 +9,9 @@ permalink: /places/utah/american-fork/
 </section> -->
 
 ### 2017 Primary Candidates
+
+{% include 2017-municipal-election.html %}
+
 {% assign city = site.data.2017.primary.candidates | where:'city','American Fork' | sort:'name' %}
 <table>
 <thead>
