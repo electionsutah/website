@@ -20,6 +20,7 @@ baseurl: "http://todrobbins.com/utah-elections" # the subpath of your site, e.g.
 url: "http://todrobbins.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: todrobbins
 github_username:  todrobbins/utah-elections
+facebook_username: utahelectionsproject
 
 date_format: "%Y-%m-%d"
 

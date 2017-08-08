@@ -1,168 +1,201 @@
-id,state,county,city,body,incumbent,name,gender,address,longitude,latitude,phone_number,email_address,party,election_type,election_date,source,last_updated
-ut0001,UT,Salt Lake,Alta,Mayor,,Jon Fay II,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0002,UT,Salt Lake,Alta,Mayor,,Harris Sondak,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0003,UT,Salt Lake,Alta,Council at Large,,Margaret Bourke,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0004,UT,Salt Lake,Alta,Council at Large,,Cliff Curry,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0005,UT,Salt Lake,Bluffdale,Mayor,yes,Derk Powell Timothy,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0006,UT,Salt Lake,Bluffdale,Council at Large,,Wendy W. Aston,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0007,UT,Salt Lake,Bluffdale,Council at Large,,Ulises Flynn,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0008,UT,Salt Lake,Bluffdale,Council at Large,,Mark R. Hales,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0009,UT,Salt Lake,Bluffdale,Council at Large,,Alan Jackson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0010,UT,Salt Lake,Bluffdale,Council at Large,,Connie Robbins,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0011,UT,Salt Lake,Bluffdale,Council at Large,,Courtney Hansen,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0012,UT,Salt Lake,Bluffdale,Council at Large,,Dave Kallas,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0013,UT,Salt Lake,Bluffdale,Council at Large,,Nancy Lord,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0014,UT,Salt Lake,Bluffdale,Council at Large,,Carson L. Mitchell,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0015,UT,Salt Lake,Cottonwood Heights,Mayor,,Tim Hallbeck,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0016,UT,Salt Lake,Cottonwood Heights,Mayor,,Mike Peterson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0017,UT,Salt Lake,Cottonwood Heights,Mayor,,Edward A. Schwartz,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0018,UT,Salt Lake,Cottonwood Heights,Council District 3,,Tali Bruce,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0019,UT,Salt Lake,Cottonwood Heights,Council District 3,,Tonia Dalton,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0020,UT,Salt Lake,Cottonwood Heights,Council District 3,,Michael Larry Hanson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0021,UT,Salt Lake,Cottonwood Heights,Council District 4,,Theodore “Ted” Boyer,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0022,UT,Salt Lake,Cottonwood Heights,Council District 4,,Eric Rijk Kraan,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0023,UT,Salt Lake,Cottonwood Heights,Council District 4,,Christine Wastson Mikell,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0024,UT,Salt Lake,Cottonwood Heights,Council District 4,,Aaron Lee Thompson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0025,UT,Salt Lake,Draper,Mayor,,Troy Martinez,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0026,UT,Salt Lake,Draper,Mayor,yes,Troy K. Walker,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0027,UT,Salt Lake,Draper,Mayor,,Michele Weeks,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0028,UT,Salt Lake,Draper,Council at Large,,Jeff Graham,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0029,UT,Salt Lake,Draper,Council at Large,,Mike Green,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0030,UT,Salt Lake,Draper,Council at Large,,Hubert Huh,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0031,UT,Salt Lake,Draper,Council at Large,,Tasha Lowery,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0032,UT,Salt Lake,Draper,Council at Large,,William E. Rappleye,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0033,UT,Salt Lake,Draper,Council at Large,,Dan Wheatley,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0034,UT,Salt Lake,Herriman,Mayor,,Joe Darger,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0035,UT,Salt Lake,Herriman,Mayor,,David H. Howe,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0036,UT,Salt Lake,Herriman,Mayor,,David Watts,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0037,UT,Salt Lake,Herriman,Mayor,,Coralee Wessman-Moser,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0038,UT,Salt Lake,Herriman,Council District 2,,Melissa John,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0039,UT,Salt Lake,Herriman,Council District 2,,Jared D. Richardson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0040,UT,Salt Lake,Herriman,Council District 2,,Clint Smith,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0041,UT,Salt Lake,Herriman,Council District 2,,Doug Tolley,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0042,UT,Salt Lake,Herriman,Council District 3,,Sherrie Ohrn,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0043,UT,Salt Lake,Herriman,Council District 3,,Siloni Makarita Vimahi Pili,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0044,UT,Salt Lake,Herriman,Council District 3,,Cody Stromberg,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0045,UT,Salt Lake,Holladay,Mayor,yes,Robert M. Dahle,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0046,UT,Salt Lake,Holladay,Council District 1,,Sabrina R. Petersen,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0047,UT,Salt Lake,Holladay,Council District 3,,Paul S. Fotheringham,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0048,UT,Salt Lake,Holladay,Council District 3,,Dennis Roach,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0049,UT,Salt Lake,Midvale,Mayor,,Robert M. Hale,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0050,UT,Salt Lake,Midvale,Mayor,,Matthew Hansen,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0051,UT,Salt Lake,Midvale,Mayor,,Sophia Hawes-Tingey,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-09
-ut0052,UT,Salt Lake,Midvale,Mayor,,Mont L. Millerberg,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0053,UT,Salt Lake,Midvale,Mayor,,Andrea B. Person,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0054,UT,Salt Lake,Midvale,Council District 4,,Stephen Brown,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0055,UT,Salt Lake,Midvale,Council District 4,,Stephanie Johnson,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0056,UT,Salt Lake,Midvale,Council District 4,yes,Wayne L. Sharp,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0057,UT,Salt Lake,Midvale,Council District 4,,Jason Smith,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0058,UT,Salt Lake,Midvale,Council District 4,,Andrew Stoddard,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0059,UT,Salt Lake,Midvale,Council District 5,,Stephen Brown,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0060,UT,Salt Lake,Midvale,Council District 5,,Dustin Gettel,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0061,UT,Salt Lake,Millcreek,Council District 2,,Dwight Merchant,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0062,UT,Salt Lake,Millcreek,Council District 2,,Dwayne A. Vance,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0063,UT,Salt Lake,Millcreek,Council District 4,,Bev Uipi,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0064,UT,Salt Lake,Murray,Mayor,,D. Blair Camp,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0065,UT,Salt Lake,Murray,Mayor,,Verl Greenhalgh,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0066,UT,Salt Lake,Murray,Mayor,,Daniel C. Snarr,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0067,UT,Salt Lake,Murray,Mayor,,Richard Snelgrove,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0068,UT,Salt Lake,Murray,Council District 2,,Dale M. Cox,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0069,UT,Salt Lake,Murray,Council District 2,,Darrell Pehrson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0070,UT,Salt Lake,Murray,Council District 4,,Diane Turner,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0071,UT,Salt Lake,Riverton,Mayor,yes,Bill Applegarth,male,,,,801-520-9947,billapplegarth@gmail.com,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0072,UT,Salt Lake,Riverton,Mayor,,Trent Staggs,male,,,,801-871-9129,tpstaggs@gmail.com,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0073,UT,Salt Lake,Riverton,Council District 3,,Twanee McCay,female,,,,801-634-7692,tawneemccay@gmail.com,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0074,UT,Salt Lake,Riverton,Council District 3,,Paul Wayman,male,,,,801-254-9033,info.waymanstudio.com,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0075,UT,Salt Lake,Riverton,Council District 4,,Tish R. Buroker,female,,,,801-673-6103,tishburoker@gmail.com,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0076,UT,Salt Lake,Riverton,Council District 4,,Darren J. Pack,male,,,,801-232-0825,dparkplace@q.com,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0077,UT,Salt Lake,Salt Lake City,Council District 1,,David C. Atkin,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0077,UT,Salt Lake,Salt Lake City,Council District 1,,Arnold M. Jones,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0078,UT,Salt Lake,Salt Lake City,Council District 1,,James Rogers,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0079,UT,Salt Lake,Salt Lake City,Council District 3,,Phil Carroll,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0080,UT,Salt Lake,Salt Lake City,Council District 3,,Laura Cushman,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0081,UT,Salt Lake,Salt Lake City,Council District 3,,Brian W. Fukushima,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0082,UT,Salt Lake,Salt Lake City,Council District 3,,Jeffrey Garbett,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0083,UT,Salt Lake,Salt Lake City,Council District 3,,Courtney Swedenburg,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0084,UT,Salt Lake,Salt Lake City,Council District 3,,Chris Wharton,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0085,UT,Salt Lake,Salt Lake City,Council District 5,,George Chapman,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0086,UT,Salt Lake,Salt Lake City,Council District 5,,Carol Goode-Rogozinski,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0087,UT,Salt Lake,Salt Lake City,Council District 5,,Vance Hansen,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0088,UT,Salt Lake,Salt Lake City,Council District 5,,Erin Mendenhall,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0089,UT,Salt Lake,Salt Lake City,Council District 5,,Benjamin Noah Rosenberg,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0090,UT,Salt Lake,Salt Lake City,Council District 7,,Samantha L. Finch,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0091,UT,Salt Lake,Salt Lake City,Council District 7,,Amy Fowler,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0092,UT,Salt Lake,Salt Lake City,Council District 7,,Ben Haynes,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0093,UT,Salt Lake,Salt Lake City,Council District 7,,Benjamin Sessions,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0094,UT,Salt Lake,Salt Lake City,Council District 7,,Jason Sills,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0095,UT,Salt Lake,Salt Lake City,Council District 7,,Abe Smith,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0096,UT,Salt Lake,Sandy,Mayor,,Kurt Bradburn,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0097,UT,Salt Lake,Sandy,Mayor,yes,Tom Dolan,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0098,UT,Salt Lake,Sandy,Mayor,,Gary T. Forbush,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0099,UT,Salt Lake,Sandy,Mayor,,Richard R. Vigorelli,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0100,UT,Salt Lake,Sandy,Council at Large,,Terry Parkin,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0101,UT,Salt Lake,Sandy,Council at Large,,Zach Robinson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0102,UT,Salt Lake,Sandy,Council at Large,,Steve Smith,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0103,UT,Salt Lake,Sandy,Council at Large,,Linda C. Stewart,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0104,UT,Salt Lake,Sandy,Council at Large,,Josh Tillotson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0105,UT,Salt Lake,Sandy,Council District 1,,Brooke Christensen,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0106,UT,Salt Lake,Sandy,Council District 1,,Stephanie Dickey,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0107,UT,Salt Lake,Sandy,Council District 1,,Sean J. Kowallis,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0108,UT,Salt Lake,Sandy,Council District 1,,Randy Osborne,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0109,UT,Salt Lake,Sandy,Council District 1,,Terry Parkin,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0110,UT,Salt Lake,Sandy,Council District 1,,Josh Sunde,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-12
-ut0111,UT,Salt Lake,Sandy,Council District 3,,Steven Calbert,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0112,UT,Salt Lake,Sandy,Council District 3,,Jim Edwards,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0113,UT,Salt Lake,Sandy,Council District 3,,Kris Nicholl,,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0114,UT,Salt Lake,Sandy,Council District 3,,Dea Theodore,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0115,UT,Salt Lake,South Jordan,Mayor,,Rich Cunningham,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0116,UT,Salt Lake,South Jordan,Mayor,,Dawn Ramsey,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0117,UT,Salt Lake,South Jordan,Mayor,,Mark T. Woolley,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0118,UT,Salt Lake,South Jordan,Council District 3,,Julie Holbrook,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0119,UT,Salt Lake,South Jordan,Council District 3,,Patrick J. Risk,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0120,UT,Salt Lake,South Jordan,Council District 3,,Don Shelton,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0121,UT,Salt Lake,South Jordan,Council District 5,,Martin J. Gale,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0122,UT,Salt Lake,South Jordan,Council District 5,,Sandra Kay Kirkendoll,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0123,UT,Salt Lake,South Jordan,Council District 5,,Jason T. Mcguire,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0124,UT,Salt Lake,South Jordan,Council District 5,,Greg Wise,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0125,UT,Salt Lake,South Salt Lake,Mayor,,Mark C. Kindred,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0126,UT,Salt Lake,South Salt Lake,Mayor,,L. Shane Siwik,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0127,UT,Salt Lake,South Salt Lake,Mayor,yes,Cherie Wood,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0128,UT,Salt Lake,South Salt Lake,Council at Large,,Ray DeWolfe,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0128,UT,Salt Lake,South Salt Lake,Council at Large,,Aaron A. Frost,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0129,UT,Salt Lake,South Salt Lake,Council at Large,,James D. Smith,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0130,UT,Salt Lake,South Salt Lake,Council District 2,,Eric Balken,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0131,UT,Salt Lake,South Salt Lake,Council District 2,,Corey Thomas,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0131,UT,Salt Lake,South Salt Lake,Council District 3,,Sharla Beverly,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0132,UT,Salt Lake,South Salt Lake,Council District 3,,Adam Thompson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0133,UT,Salt Lake,Taylorsville,Mayor,,Harry Lloyd Hansen,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0133,UT,Salt Lake,Taylorsville,Mayor,yes,Larry Johnson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0134,UT,Salt Lake,Taylorsville,Mayor,,Kristie Steadman Overson,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0135,UT,Salt Lake,Taylorsville,Council District 4,,Ronald Allred,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0136,UT,Salt Lake,Taylorsville,Council District 4,,Meredith Harker,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0137,UT,Salt Lake,Taylorsville,Council District 5,,Daniel Jon Armstrong,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0138,UT,Salt Lake,Taylorsville,Council District 5,,John E. Fuller,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0139,UT,Salt Lake,West Jordan,Mayor,,Pamela Ann Berry,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0140,UT,Salt Lake,West Jordan,Mayor,,Dirk Burton,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0141,UT,Salt Lake,West Jordan,Mayor,,Erin Clavell,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0142,UT,Salt Lake,West Jordan,Mayor,,Zach Jacob,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0143,UT,Salt Lake,West Jordan,Mayor,,Jim Riding,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0144,UT,Salt Lake,West Jordan,Mayor,yes,Kim Rolfe,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0145,UT,Salt Lake,West Jordan,Council at Large,,Max Johnson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0146,UT,Salt Lake,West Jordan,Council at Large,,Chad R. Lamb,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0147,UT,Salt Lake,West Jordan,Council at Large,,Hyrum Smith Matthews,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0148,UT,Salt Lake,West Jordan,Council at Large,,Jay Thomas,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0149,UT,Salt Lake,West Jordan,Council at Large,,Kayleen Whitelock,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0150,UT,Salt Lake,West Jordan,Council District 4,,Alan R. Anderson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0151,UT,Salt Lake,West Valley City,Mayor,yes,Ron Bigelow,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0152,UT,Salt Lake,West Valley City,Mayor,,Joshua Cameron,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0153,UT,Salt Lake,West Valley City,Mayor,,Tom Huynh,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0154,UT,Salt Lake,West Valley City,Mayor,,Karen Lang,female,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0155,UT,Salt Lake,West Valley City,Mayor,,Russell R. Sanderson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0156,UT,Salt Lake,West Valley City,Council at Large,,Frank Bedolla,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0157,UT,Salt Lake,West Valley City,Council at Large,,Lars Nordfelt,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0158,UT,Salt Lake,West Valley City,Council District 2,,Jeremy Anderson,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0159,UT,Salt Lake,West Valley City,Council District 2,,Steve Buhler,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0160,UT,Salt Lake,West Valley City,Council District 2,,Philip B. Wayman,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0161,UT,Salt Lake,West Valley City,Council District 4,,Jake Fitisemanu Jr.,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0162,UT,Salt Lake,West Valley City,Council District 4,,Lynn R. Sanderson,,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
-ut0163,UT,Salt Lake,West Valley City,Council District 4,,Steve Vincent,male,,,,,,,primary,,https://slco.org/clerk/elections/candidate-filing-list/,2017-06-14
+"id","state","county","city","body","name","gender","address","phone_number","email_address","party","election_type","election_date","source","last_updated","incumbent","facebook","pledge","status","website","instagram","twitter","soundcloud","youtube","media","longitude","latitude"
+"ut0001","UT","Salt Lake","Alta","Mayor","Jon Fay II","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0002","UT","Salt Lake","Alta","Mayor","Harris Sondak","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0003","UT","Salt Lake","Alta","Council at Large","Margaret Bourke","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0004","UT","Salt Lake","Alta","Council at Large","Cliff Curry","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0005","UT","Salt Lake","Bluffdale","Mayor","Derk Powell Timothy","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09","yes",,,,,,,,,,,
+"ut0006","UT","Salt Lake","Bluffdale","Council at Large","Wendy W. Aston","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0007","UT","Salt Lake","Bluffdale","Council at Large","Ulises Flynn","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0008","UT","Salt Lake","Bluffdale","Council at Large","Mark R. Hales","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0009","UT","Salt Lake","Bluffdale","Council at Large","Alan Jackson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0010","UT","Salt Lake","Bluffdale","Council at Large","Connie Robbins","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0011","UT","Salt Lake","Bluffdale","Council at Large","Courtney Hansen","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0012","UT","Salt Lake","Bluffdale","Council at Large","Dave Kallas","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0013","UT","Salt Lake","Bluffdale","Council at Large","Nancy Lord","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0014","UT","Salt Lake","Bluffdale","Council at Large","Carson L. Mitchell","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0015","UT","Salt Lake","Cottonwood Heights","Mayor","Tim Hallbeck","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0016","UT","Salt Lake","Cottonwood Heights","Mayor","Mike Peterson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0017","UT","Salt Lake","Cottonwood Heights","Mayor","Edward A. Schwartz","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0018","UT","Salt Lake","Cottonwood Heights","Council District 3","Tali Bruce","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/TaliBrucePublicServant/",,,,,,,,,,
+"ut0019","UT","Salt Lake","Cottonwood Heights","Council District 3","Tonia Dalton","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0020","UT","Salt Lake","Cottonwood Heights","Council District 3","Michael Larry Hanson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0021","UT","Salt Lake","Cottonwood Heights","Council District 4","Theodore “Ted” Boyer","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0022","UT","Salt Lake","Cottonwood Heights","Council District 4","Eric Rijk Kraan","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0023","UT","Salt Lake","Cottonwood Heights","Council District 4","Christine Wastson Mikell","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0024","UT","Salt Lake","Cottonwood Heights","Council District 4","Aaron Lee Thompson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0025","UT","Salt Lake","Draper","Mayor","Troy Martinez","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0026","UT","Salt Lake","Draper","Mayor","Troy K. Walker","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09","yes",,,,,,,,,,,
+"ut0027","UT","Salt Lake","Draper","Mayor","Michele Weeks","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0028","UT","Salt Lake","Draper","Council at Large","Jeff Graham","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0029","UT","Salt Lake","Draper","Council at Large","Mike Green","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0030","UT","Salt Lake","Draper","Council at Large","Hubert Huh","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0031","UT","Salt Lake","Draper","Council at Large","Tasha Lowery","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0032","UT","Salt Lake","Draper","Council at Large","William E. Rappleye","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0033","UT","Salt Lake","Draper","Council at Large","Dan Wheatley","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0034","UT","Salt Lake","Herriman","Mayor","Joe Darger","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0035","UT","Salt Lake","Herriman","Mayor","David H. Howe","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0036","UT","Salt Lake","Herriman","Mayor","David Watts","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0037","UT","Salt Lake","Herriman","Mayor","Coralee Wessman-Moser","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0038","UT","Salt Lake","Herriman","Council District 2","Melissa John","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0039","UT","Salt Lake","Herriman","Council District 2","Jared D. Richardson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0040","UT","Salt Lake","Herriman","Council District 2","Clint Smith","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0041","UT","Salt Lake","Herriman","Council District 2","Doug Tolley","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0042","UT","Salt Lake","Herriman","Council District 3","Sherrie Ohrn","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0043","UT","Salt Lake","Herriman","Council District 3","Siloni Makarita Vimahi Pili","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0044","UT","Salt Lake","Herriman","Council District 3","Cody Stromberg","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0045","UT","Salt Lake","Holladay","Mayor","Robert M. Dahle","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09","yes",,,,,,,,,,,
+"ut0046","UT","Salt Lake","Holladay","Council District 1","Sabrina R. Petersen","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0047","UT","Salt Lake","Holladay","Council District 3","Paul S. Fotheringham","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0048","UT","Salt Lake","Holladay","Council District 3","Dennis Roach","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0049","UT","Salt Lake","Midvale","Mayor","Robert M. Hale","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0050","UT","Salt Lake","Midvale","Mayor","Matthew Hansen","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-09",,,,,,,,,,,,
+"ut0051","UT","Salt Lake","Midvale","Mayor","Sophia Hawes-Tingey","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/SophiaForMidvaleMayor/",,,,,,,,,,
+"ut0052","UT","Salt Lake","Midvale","Mayor","Mont L. Millerberg","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0053","UT","Salt Lake","Midvale","Mayor","Andrea B. Person","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0054","UT","Salt Lake","Midvale","Council District 4","Bryant Brown","male","7819 S Coolidge St, Midvale, UT 84047","(801) 347-1804","bryantbrown@yahoo.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-16",,,,,,,,,,,,
+"ut0055","UT","Salt Lake","Midvale","Council District 4","Stephanie Johnson","female","7792 S Coolidge St, Midvale, UT 84047","(801) 870-6615","sassyjose@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-16",,,,,,,,,,,,
+"ut0056","UT","Salt Lake","Midvale","Council District 4","Wayne L. Sharp","male","347 W Wasatch St, Midvale, UT 84047","(801) 561-8709","sharpyardsllc@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-16","yes",,,,,,,,,,,
+"ut0057","UT","Salt Lake","Midvale","Council District 4","Jason Smith","male","8289 S Wilson St Apt 1, Midvale, UT 84047","(385) 232-6062","jrsmith9597@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-16",,,,,,,,,,,,
+"ut0058","UT","Salt Lake","Midvale","Council District 4","Andrew Stoddard","male","218 E 8135 S, Sandy, UT 84070","(801) 884-9943","drewcstoddard@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/voteandrewstoddard/",,,,,,,,,,
+"ut0059","UT","Salt Lake","Midvale","Council District 5","Stephen Brown","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0060","UT","Salt Lake","Midvale","Council District 5","Dustin Gettel","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0061","UT","Salt Lake","Millcreek","Council District 2","Dwight Merchant","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0062","UT","Salt Lake","Millcreek","Council District 2","Dwayne A. Vance","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0063","UT","Salt Lake","Millcreek","Council District 4","Bev Uipi","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0064","UT","Salt Lake","Murray","Mayor","D. Blair Camp","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0065","UT","Salt Lake","Murray","Mayor","Verl Greenhalgh","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0066","UT","Salt Lake","Murray","Mayor","Daniel C. Snarr","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0067","UT","Salt Lake","Murray","Mayor","Richard Snelgrove","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0068","UT","Salt Lake","Murray","Council District 2","Dale M. Cox","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0069","UT","Salt Lake","Murray","Council District 2","Darrell Pehrson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0070","UT","Salt Lake","Murray","Council District 4","Diane Turner","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0071","UT","Salt Lake","Riverton","Mayor","Bill Applegarth","male","","(801) 520-9947","billapplegarth@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12","yes",,,,,,,,,,,
+"ut0072","UT","Salt Lake","Riverton","Mayor","Trent Staggs","male","","(801) 871-9129","tpstaggs@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0073","UT","Salt Lake","Riverton","Council District 3","Twanee McCay","female","","(801) 634-7692","tawneemccay@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0074","UT","Salt Lake","Riverton","Council District 3","Paul Wayman","male","","(801) 254-9033","info.waymanstudio.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0075","UT","Salt Lake","Riverton","Council District 4","Tish R. Buroker","female","","(801) 673-6103","tishburoker@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0076","UT","Salt Lake","Riverton","Council District 4","Darren J. Pack","male","","(801) 232-0825","dparkplace@q.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0077","UT","Salt Lake","Salt Lake City","Council District 1","David C. Atkin","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0077","UT","Salt Lake","Salt Lake City","Council District 1","Arnold M. Jones","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0078","UT","Salt Lake","Salt Lake City","Council District 1","James Rogers","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0079","UT","Salt Lake","Salt Lake City","Council District 3","Phil Carroll","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0080","UT","Salt Lake","Salt Lake City","Council District 3","Laura Cushman","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-22",,"https://www.facebook.com/Cushman4Council/",,,,,,,,,,
+"ut0081","UT","Salt Lake","Salt Lake City","Council District 3","Brian W. Fukushima","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0082","UT","Salt Lake","Salt Lake City","Council District 3","Jeffrey Garbett","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0083","UT","Salt Lake","Salt Lake City","Council District 3","Courtney Swedenburg","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0084","UT","Salt Lake","Salt Lake City","Council District 3","Chris Wharton","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/ChrisWhartonforSLCCouncil/",,,,,,,,,,
+"ut0085","UT","Salt Lake","Salt Lake City","Council District 5","George Chapman","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0086","UT","Salt Lake","Salt Lake City","Council District 5","Carol Goode-Rogozinski","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0087","UT","Salt Lake","Salt Lake City","Council District 5","Vance Hansen","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0088","UT","Salt Lake","Salt Lake City","Council District 5","Erin Mendenhall","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0089","UT","Salt Lake","Salt Lake City","Council District 5","Benjamin Noah Rosenberg","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0090","UT","Salt Lake","Salt Lake City","Council District 7","Samantha L. Finch","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0091","UT","Salt Lake","Salt Lake City","Council District 7","Amy Fowler","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/voteamyfowler/",,,,,,,,,,
+"ut0092","UT","Salt Lake","Salt Lake City","Council District 7","Ben Haynes","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/haynesforslc/",,,,,,,,,,
+"ut0093","UT","Salt Lake","Salt Lake City","Council District 7","Benjamin Sessions","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0094","UT","Salt Lake","Salt Lake City","Council District 7","Jason Sills","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0095","UT","Salt Lake","Salt Lake City","Council District 7","Abe Smith","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0096","UT","Salt Lake","Sandy","Mayor","Kurt Bradburn","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0097","UT","Salt Lake","Sandy","Mayor","Tom Dolan","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12","yes",,,,,,,,,,,
+"ut0098","UT","Salt Lake","Sandy","Mayor","Gary T. Forbush","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0099","UT","Salt Lake","Sandy","Mayor","Richard R. Vigorelli","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0100","UT","Salt Lake","Sandy","Council at Large","Terry Parkin","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0101","UT","Salt Lake","Sandy","Council at Large","Zach Robinson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0102","UT","Salt Lake","Sandy","Council at Large","Steve Smith","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0103","UT","Salt Lake","Sandy","Council at Large","Linda C. Stewart","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0104","UT","Salt Lake","Sandy","Council at Large","Josh Tillotson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0105","UT","Salt Lake","Sandy","Council District 1","Brooke Christensen","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0106","UT","Salt Lake","Sandy","Council District 1","Stephanie Dickey","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0107","UT","Salt Lake","Sandy","Council District 1","Sean J. Kowallis","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0108","UT","Salt Lake","Sandy","Council District 1","Randy Osborne","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0109","UT","Salt Lake","Sandy","Council District 1","Terry Parkin","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0110","UT","Salt Lake","Sandy","Council District 1","Josh Sunde","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-12",,,,,,,,,,,,
+"ut0111","UT","Salt Lake","Sandy","Council District 3","Steven Calbert","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0112","UT","Salt Lake","Sandy","Council District 3","Jim Edwards","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0113","UT","Salt Lake","Sandy","Council District 3","Kris Nicholl","","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0114","UT","Salt Lake","Sandy","Council District 3","Dea Theodore","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0115","UT","Salt Lake","South Jordan","Mayor","Rich Cunningham","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0116","UT","Salt Lake","South Jordan","Mayor","Dawn Ramsey","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0117","UT","Salt Lake","South Jordan","Mayor","Mark T. Woolley","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0118","UT","Salt Lake","South Jordan","Council District 3","Julie Holbrook","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0119","UT","Salt Lake","South Jordan","Council District 3","Patrick J. Risk","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0120","UT","Salt Lake","South Jordan","Council District 3","Don Shelton","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0121","UT","Salt Lake","South Jordan","Council District 5","Martin J. Gale","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0122","UT","Salt Lake","South Jordan","Council District 5","Sandra Kay Kirkendoll","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0123","UT","Salt Lake","South Jordan","Council District 5","Jason T. Mcguire","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0124","UT","Salt Lake","South Jordan","Council District 5","Greg Wise","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0125","UT","Salt Lake","South Salt Lake","Mayor","Mark C. Kindred","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0126","UT","Salt Lake","South Salt Lake","Mayor","L. Shane Siwik","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0127","UT","Salt Lake","South Salt Lake","Mayor","Cherie Wood","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14","yes",,,,,,,,,,,
+"ut0128","UT","Salt Lake","South Salt Lake","Council at Large","Ray DeWolfe","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0187","UT","Salt Lake","South Salt Lake","Council at Large","Aaron A. Frost","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0129","UT","Salt Lake","South Salt Lake","Council at Large","James D. Smith","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0130","UT","Salt Lake","South Salt Lake","Council District 2","Eric Balken","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0131","UT","Salt Lake","South Salt Lake","Council District 2","Corey Thomas","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/electcoreythomas/",,,,,,,,,,
+"ut0131","UT","Salt Lake","South Salt Lake","Council District 3","Sharla Beverly","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0132","UT","Salt Lake","South Salt Lake","Council District 3","Adam Thompson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0133","UT","Salt Lake","Taylorsville","Mayor","Harry Lloyd Hansen","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0133","UT","Salt Lake","Taylorsville","Mayor","Larry Johnson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14","yes",,,,,,,,,,,
+"ut0134","UT","Salt Lake","Taylorsville","Mayor","Kristie Steadman Overson","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0135","UT","Salt Lake","Taylorsville","Council District 4","Ronald Allred","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0136","UT","Salt Lake","Taylorsville","Council District 4","Meredith Harker","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0137","UT","Salt Lake","Taylorsville","Council District 5","Daniel Jon Armstrong","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0138","UT","Salt Lake","Taylorsville","Council District 5","John E. Fuller","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0139","UT","Salt Lake","West Jordan","Mayor","Pamela Ann Berry","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0140","UT","Salt Lake","West Jordan","Mayor","Dirk Burton","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0141","UT","Salt Lake","West Jordan","Mayor","Erin Clavell","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0142","UT","Salt Lake","West Jordan","Mayor","Zach Jacob","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0143","UT","Salt Lake","West Jordan","Mayor","Jim Riding","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0144","UT","Salt Lake","West Jordan","Mayor","Kim Rolfe","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14","yes",,,,,,,,,,,
+"ut0145","UT","Salt Lake","West Jordan","Council at Large","Max Johnson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0146","UT","Salt Lake","West Jordan","Council at Large","Chad R. Lamb","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0147","UT","Salt Lake","West Jordan","Council at Large","Hyrum Smith Matthews","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/HyrumforWestJordanCity/",,,,,,,,,,
+"ut0148","UT","Salt Lake","West Jordan","Council at Large","Jay Thomas","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0149","UT","Salt Lake","West Jordan","Council at Large","Kayleen Whitelock","female","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0150","UT","Salt Lake","West Jordan","Council District 4","Alan R. Anderson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0151","UT","Salt Lake","West Valley City","Mayor","Ron Bigelow","male","4658 S Water Wood Dr, West Valley City, UT 84120","801.968.4188","32ronb@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-07-04","yes",,"http://www.wvc-ut.gov/DocumentCenter/View/11395",,,,,,,,,
+"ut0152","UT","Salt Lake","West Valley City","Mayor","Joshua Cameron","male","3082 W Roxborough Park St, West Valley City, UT 84119","801.231.1573","jmcam80@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-07-04",,"https://www.facebook.com/JCameronWVCMayor/",,,,,,,,,,
+"ut0153","UT","Salt Lake","West Valley City","Mayor","Tom Huynh","male","1423 W 2400 S, West Valley City, UT 84119","801.673.1049","tom@homeandfamilyrealty.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-07-04",,,,,,,,,,,,
+"ut0154","UT","Salt Lake","West Valley City","Mayor","Karen Lang","female","3448 Greenmont Cir, West Valley City, UT 84120","801.259.6761","karen.lang6763@gmail.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-07-04",,,,,,,,,,,,
+"ut0155","UT","Salt Lake","West Valley City","Mayor","Russell R. Sanderson","male","7048 W Fieldview Dr, West Valley City, UT 84128","801.671.1312","asandmanone@yahoo.com","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,"withdrew",,,,,,,,
+"ut0156","UT","Salt Lake","West Valley City","Council at Large","Frank Bedolla","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0157","UT","Salt Lake","West Valley City","Council at Large","Lars Nordfelt","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0158","UT","Salt Lake","West Valley City","Council District 2","Jeremy Anderson","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0159","UT","Salt Lake","West Valley City","Council District 2","Steve Buhler","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0160","UT","Salt Lake","West Valley City","Council District 2","Philip B. Wayman","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0161","UT","Salt Lake","West Valley City","Council District 4","Jake Fitisemanu Jr.","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-21",,"https://www.facebook.com/Jake4WestValley/",,,,,,,,,,
+"ut0162","UT","Salt Lake","West Valley City","Council District 4","Lynn R. Sanderson","","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0163","UT","Salt Lake","West Valley City","Council District 4","Steve Vincent","male","","","","","primary","2017-08-15","https://slco.org/clerk/elections/candidate-filing-list/","2017-06-14",,,,,,,,,,,,
+"ut0164","UT","Utah","Provo","Mayor","Michelle G. Kaufusi","female","3018 N. Comanche Lane, Provo, UT","(801) 319-4999","michelle@michelle4mayor.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/kaufusi4mayor",,,"http://michelle4mayor.com/","https://www.instagram.com/kaufusi4mayor/","https://twitter.com/kaufusi4mayor","https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323970933&amp;color=ff5500",,,,
+"ut0165","UT","Utah","Provo","Mayor","Kevin Wing","male","542 S. 2470 W., Provo, UT","(801) 734-0714","kwinger21@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/kevin.wing.790",,,"",,"https://twitter.com/@kevinwing19",,,,,
+"ut0166","UT","Utah","Provo","Mayor","Eric Speckhard","male","410 W. 700 S., Provo, UT","(801) 377-6290","eric4provo@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/visionwearinternational",,,"https://www.ericforprovo.org/",,"https://twitter.com/eric4provo","https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326670204&amp;color=ff5500",,,,
+"ut0167","UT","Utah","Provo","Mayor","Sherrie Hall Everett","female","1428 N. 2630 W., Provo, UT","(801) 358-4147","sherrie.mayor@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/SherrieHallEverettProvo",,,"https://sherriehalleverett.com/home","https://www.instagram.com/sherriehalleverett","https://twitter.com/sherrieinprovo","https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/325238779&amp;color=ff5500",,,,
+"ut0168","UT","Utah","Provo","Mayor","Howard Stone","male","1248 W. 1400 N., Provo, UT","(801) 921-3642","mail4howards@yahoo.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,,,,"http://www.howardstone.org",,,,,,,
+"ut0169","UT","Utah","Provo","Mayor","John Fenley","male","1985 N. 360 E., Provo, UT","(801) 427-3532","pontifier@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,,,,"http://www.votefenley.org/",,"https://twitter.com/pontifier","https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328258217&amp;color=ff5500","http://www.youtube.com/pontifier",,,
+"ut0170","UT","Utah","Provo","Mayor","Larry Walters","male","1231 W. Camelot Dr., Provo, UT","(801) 372-7288","larrycwalters@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"http://www.facebook.com/larrywalters",,,"https://walters4mayor.com/",,,,,,,
+"ut0171","UT","Utah","Provo","Mayor","Odell Miner","male","4605 Eastlawn Drive, Provo, UT","(801) 226-3272","edwinominer@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,,,,"",,,,,,,
+"ut0172","UT","Utah","Highland","Council at Large","Elisabeth Luntz","female","Highland, UT","","","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-06-21",,"https://www.facebook.com/elisabethluntzforhighlandcity/",,,"",,,,,,,
+"ut0174","UT","Utah","Provo","Council District 5","Tinesha Zandamela","female","547 N. 300 E. Apt 5, Provo, UT","(801) 814-8030","electzandamela@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-06-21",,"https://www.facebook.com/zandamela4provo/",,,"https://electzandamela.com/","https://www.instagram.com/electzandamela","http://www.facebook.com/zandamela4provo",,,,,
+"ut0177","UT","","","US Congressional District 3","Brendan Phillips","male","","(801) 833-5832","brendanphilipsforcongress@gmail.com","Green Party of Utah","primary","2017-08-15","https://www.facebook.com/BrendanPhillipsforCongress/","2017-06-22",,"https://www.facebook.com/BrendanPhillipsforCongress/",,,,,,,,,,
+"ut0178","UT","Utah","Provo","Council District 5","David Harding","male","595 W. 400 N., Provo, UT","801.310.9970","daveofprovo@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04","yes","https://www.facebook.com/ProvoDistrict5",,,"http://votedrdave.blogspot.com/",,"https://twitter.com/ProvoDave",,,,,
+"ut0179","UT","Utah","Provo","Council District 2","Leo Lines","male","371 N. 600 E., Provo, UT","801.636.0268","leo@leo4provo.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/leo.lines.7",,,"",,,,,,,
+"ut0180","UT","Utah","Provo","Council District 2","David Clark","male","1460 Cherry Lane, Provo, UT","801.377.1783","","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"",,,"",,,,,,,
+"ut0181","UT","Utah","Provo","Council District 2","George Handley","male","1801 Oak Lane, Provo, UT","801.574.6672","georgebhandley@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/ProvoDistrict2/",,,"https://www.georgehandleyprovo.com/",,,,,,,
+"ut0182","UT","Utah","Provo","City Wide I","Hunter Phillips","male","851 E. 350 N., Provo, UT","385.985.3257","hunter@electhunter.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/hunterforprovo/",,,"https://www.electhunter.com/","https://www.instagram.com/hunterbp/","https://twitter.com/hunterbp",,,,,
+"ut0183","UT","Utah","Provo","City Wide I","Mike Roan","male","3212 N. Shadowbrook Dr., Provo, UT","801.830.3250","mroan1@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/mike.roan.908",,,"http://mikeroan4provo.com/",,,,,,,
+"ut0184","UT","Utah","Provo","City Wide I","Wesley Marriott","male","1458 E. 1250 S., Provo, UT","801.440.3333","electmarriott@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/marriott4council",,,"https://www.wesleymarriott.com/",,"https://twitter.com/wmmarriott",,,,,
+"ut0185","UT","Utah","Provo","City Wide I","Dave Sewell","male","3877 N. 200 E., Provo, UT","801.380.5103","davesewellprovo@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"https://www.facebook.com/dave.sewell.provo.council.citywide/",,,"http://www.davesewell.org/",,"https://twitter.com/davesewellprovo",,,,,
+"ut0186","UT","Utah","Provo","Mayor","Elliot G. Craig","male","1168 Old Willow Lane, Provo, UT","801.874.8372","elliot.godfrey.craig@gmail.com","","primary","2017-08-15","https://www.voteprovo.com/copy-of-candidate-information","2017-07-04",,"",,,"",,,,,,,
+"ut0188","UT","Utah","Saratoga Springs","Mayor","Craig W. Parry","male","385 Bayside Dr., Saratoga Springs, UT","801.651.2681","cparry1995@gmail.com","","primary","2017-08-15","http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC","2017-08-08",,"https://www.facebook.com/craigparryformayorofsaratogasprings/",,,,,,,,,,
+"ut0189","UT","Utah","Saratoga Springs","Mayor","Jim Miller","male","493 Rolling Sage Way, Saratoga Springs, UT","801.766.0339","milstuff5@gmail.com","","primary","2017-08-15","http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC","2017-08-08","yes","https://www.facebook.com/jimmiller4mayor/",,,"http://www.jimmiller4mayor.com/",,,,,,,
+"ut0190","UT","Utah","Saratoga Springs","City Council","Leah Hansen","female","341 Songbird Lane, Saratoga Springs, UT","801.766.1575","leahhansen.saratogasprings@gmail.com","","primary","2017-08-15","http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC","2017-08-08",,"https://www.facebook.com/leahhanseninthecity/",,,"http://leahhanseninthecity.blogspot.com/",,,,,,,
+"ut0191","UT","Utah","Saratoga Springs","City Council","Josh Daniels","male","397 Cinnamon Circle, Saratoga Springs, UT","801.234.0676","jaldendaniels+city@gmail.com","","primary","2017-08-15","http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC","2017-08-08",,"https://www.facebook.com/JoshDanielsUtah/",,,"https://www.joshdanielsutah.com/",,,,,,,
+"ut0192","UT","Utah","Saratoga Springs","City Council","Raymond B. Campbell","male","1637 S. Landview Dr., Saratoga Springs UT","801.705.9918","ray4saratoga@gmail.com","","primary","2017-08-15","http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC","2017-08-08",,"https://www.facebook.com/ray4saratoga/",,,,,,,,,,
+"ut0193","UT","Utah","Saratoga Springs","City Council","Michael D.S. McOmber","male","1767 Centennial Blvd., Saratoga Springs, UT","801.643.6707","michaelmcomber@yahoo.com","","primary","2017-08-15","http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC","2017-08-08","yes",,,,"http://michaelmcomber.blogspot.com/",,,,,,,
+"ut0194","UT","Utah","Saratoga Springs","City Council","Stephen Willden","male","1883 N. Goldenrod Way, Saratoga Springs, UT","801.901.0441","steve@vote4willden.com","","primary","2017-08-15","http://www.saratogaspringscity.com/index.asp?SEC=C9A6DAF3-9C62-48B6-8233-1AEFB9FAE975&DE=05868619-FA98-474F-ADDB-DD2DB57D82F5&Type=B_BASIC","2017-08-08","yes","https://www.facebook.com/Willden-for-Council-Saratoga-Springs-Utah-124852480935956",,,"https://vote4willden.com/",,,,,"[{""title"":""Stephen Willden | 2017 Election Candidate Guide | heraldextra.com""},{""url"":""http://www.heraldextra.com/special-section/candidates/2017/stephen-willden/article_c5d9820c-f5c5-5d72-8622-57eab10635fb.html""}]",,
+"ut0195","UT","Utah","Lehi","Mayor","Cody Black","male","2023 N. 600 W., Lehi, UT",,"cody@checkerflag.biz",,"primary","2017-08-15","https://www.lehi-ut.gov/government/elections/","2017-08-08",,"https://www.facebook.com/CODY-BLACK-for-MAYOR-866207300197512/",,,"http://www.codyblackformayor.com/",,,,,,"-111.8622473","40.412496"
+"ut0196","UT","Utah","Lehi","Mayor","R. Curtis Payne","male","1982 W. 300 N., Lehi, UT","801.824.9200","rcurtispayne@gmail.com",,"primary","2017-08-15","https://www.lehi-ut.gov/government/elections/","2017-08-08",,"https://www.facebook.com/rcurtis.payne",,,"http://www.lehimayorpayne.com/",,,,,,"-111.8845242","40.391479"
+"ut0197","UT","Utah","Lehi","Mayor","Mark I. Johnson","male","273 E. Davis Lane, Lehi, UT","801.768.8811","mark@esage.com",,"primary","2017-08-15","https://www.lehi-ut.gov/government/elections/","2017-08-08",,"https://www.facebook.com/markforlehicitymayor/",,,"http://lehiwatchdog.com/",,,,,,,
+"ut0198","UT","Utah","Lehi","Mayor","Nolan J. Johnson","male","10632 N. 8800 W., Lehi, UT",,,,"primary","2017-08-15","https://www.lehi-ut.gov/government/elections/","2017-08-08",,,,,,,,,,,"-111.8681549","40.4249964"
+"ut0199","UT","Utah","Lehi","Mayor","Bert Wilson","male","1643 N. 180 E., Lehi, UT","801.362.9999","bertmwilson@yahoo.com",,"primary","2017-08-15","https://www.lehi-ut.gov/government/elections/","2017-08-08","yes","https://www.facebook.com/bert.wilson.330",,,"https://www.mayorbertwilson.com/",,,,,,"-111.8489194","40.4081147"
+"ut0200","UT","Weber","Marriott-Slaterville City","Mayor","Stacy Palen","female","212 N 1500 W, Ogden, UT 84404","801.920.6463","spalen@gmail.com",,"primary","2017-08-15","http://www.marriott-slaterville.org/content/uploads/files/2017%20Candidate%20List.docx","2017-08-08",,"https://www.facebook.com/stacyformayor/",,,"http://stacypalen.com/",,"https://twitter.com/StacyPalen",,,,"-112.015917","41.262767"
