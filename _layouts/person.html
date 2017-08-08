@@ -22,14 +22,19 @@ comments: true
     L.Mapzen.apiKey = 'vector-tiles-Nd21ihQ';
 
     var map = L.Mapzen.map('map', {
+      {% if person.latitude %}
+      center: [{{person.latitude}}, {{person.longitude}}],
+      zoom: 15,
+      {% else %}
       center: [39.3210, -111.0937],
       zoom: 6,
+      {% endif %}
       tangramOptions: {
         scene: L.Mapzen.BasemapStyles.Cinnabar
       }
     });
 
-
+    {% if person.latitude %}L.marker([{{person.latitude}}, {{person.longitude}}]).addTo(map);{% endif %}
     var geocoder = L.Mapzen.geocoder();
     geocoder.addTo(map);
 
