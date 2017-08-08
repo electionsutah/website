@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Utah Elections Project"
-email: todd.d.robbins@gmail.com
+title: "Elections Utah"
+email: utahelectionsproject@gmail.com
 description: "An open data project tracking Utah elections."
-baseurl: "http://todrobbins.com/utah-elections" # the subpath of your site, e.g. /blog
-url: "http://todrobbins.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://electionsutah.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: todrobbins
-github_username:  todrobbins/utah-elections
-facebook_username: utahelectionsproject
+github_username:  electionsutah
+facebook_username: electionsutah
 
 date_format: "%Y-%m-%d"
 

@@ -34,8 +34,8 @@ _Coming soon..._
 </aside>
 
 #### Primary Candidates
-[CSV](http://todrobbins.com/utah-elections/data/2017-utah-elections-primary.csv) / [JSON](http://todrobbins.com/utah-elections/data/2017-utah-elections-primary.json) (Last updated 8 August 2017)
+[CSV](http://electionsutah.org/data/2017-utah-elections-primary.csv) / [JSON](http://electionsutah.org/data/2017-utah-elections-primary.json) (Last updated 8 August 2017)
 
 #### Recorders
 ##### Utah County
-[CSV](http://todrobbins.com/utah-elections/data/2017-utah-county-city-recorders.csv) (Last updated 21 June 2017)
+[CSV](http://electionsutah.org/data/2017-utah-county-city-recorders.csv) (Last updated 21 June 2017)
