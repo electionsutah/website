@@ -16,9 +16,9 @@
 title: "Elections Utah"
 email: utahelectionsproject@gmail.com
 description: "An open data project tracking Utah elections."
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "http://electionsutah.org" # the subpath of your site, e.g. /blog
 url: "http://electionsutah.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: todrobbins
+twitter_username: elections_utah
 github_username:  electionsutah
 facebook_username: electionsutah
 
