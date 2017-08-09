@@ -3573,5 +3573,53 @@
     "election_date": "2017-08-15",
     "source": "http://www.marriott-slaterville.org/content/uploads/files/2017%20Candidate%20List.docx",
     "last_updated": "2017-08-08"
+  },
+  {
+    "id": "ut0204",
+    "state": "UT",
+    "county": "Summit",
+    "city": "Park City",
+    "body": "Mayor",
+    "name": "Andy Beerman",
+    "gender": "male",
+    "address": "310 Park Avenue",
+    "phone_number": "435.731.8366",
+    "email_address": "andy@parkcityandy.com",
+    "election_type": "primary",
+    "election_date": "2017-08-15",
+    "source": "http://www.parkcity.org/government/document-central/-folder-406",
+    "last_updated": "2017-08-08"
+  },
+  {
+    "id": "ut0205",
+    "state": "UT",
+    "county": "Summit",
+    "city": "Park City",
+    "body": "Mayor",
+    "name": "Dana Williams",
+    "gender": "male",
+    "address": "2384 Doc Holladay Drive",
+    "phone_number": "435.901.8135",
+    "email_address": "danawilliams7012@gmail.com",
+    "website": "dana4parkcity.com",
+    "election_type": "primary",
+    "election_date": "2017-08-15",
+    "source": "http://www.parkcity.org/government/document-central/-folder-406",
+    "last_updated": "2017-08-08"
+  },
+  {
+    "id": "ut0206",
+    "state": "UT",
+    "county": "Summit",
+    "city": "Park City",
+    "body": "Mayor",
+    "name": "Roger Armstrong",
+    "gender": "male",
+    "address": "2574 Aspen Springs Drive",
+    "phone_number": "435.487.9324",
+    "election_type": "primary",
+    "election_date": "2017-08-15",
+    "source": "http://www.parkcity.org/government/document-central/-folder-406",
+    "last_updated": "2017-08-08"
   }
 ]
