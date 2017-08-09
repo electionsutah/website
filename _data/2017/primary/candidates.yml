@@ -3374,13 +3374,15 @@
     body: Mayor
     name: 'Andy Beerman'
     gender: male
-    address: '310 Park Avenue'
-    phone_number: 435.731.8366
-    email_address: andy@parkcityandy.com
+    address: '310 Park Avenue, Park City, UT 84060'
+    latitude: '40.64195'
+    longitude: '-111.49546'
+    phone_number: '435.731.8366'
+    email_address: 'andy@parkcityandy.com'
     election_type: primary
     election_date: '2017-08-15'
     source: 'http://www.parkcity.org/government/document-central/-folder-406'
-    last_updated: '2017-08-08'
+    last_updated: '2017-08-09'
 -
     id: ut0205
     state: UT
@@ -3389,14 +3391,16 @@
     body: Mayor
     name: 'Dana Williams'
     gender: male
-    address: '2384 Doc Holladay Drive'
+    address: '2384 Doc Holladay Drive, Park City, UT 84060'
+    latitude: '40.66716'
+    longitude: '-111.49024'
     phone_number: 435.901.8135
     email_address: danawilliams7012@gmail.com
     website: dana4parkcity.com
     election_type: primary
     election_date: '2017-08-15'
     source: 'http://www.parkcity.org/government/document-central/-folder-406'
-    last_updated: '2017-08-08'
+    last_updated: '2017-08-09'
 -
     id: ut0206
     state: UT
@@ -3405,9 +3409,11 @@
     body: Mayor
     name: 'Roger Armstrong'
     gender: male
-    address: '2574 Aspen Springs Drive'
+    address: '2574 Aspen Springs Drive, Park City, UT 84060'
+    latitude: '40.67129'
+    longitude: '-111.52072'
     phone_number: 435.487.9324
     election_type: primary
     election_date: '2017-08-15'
     source: 'http://www.parkcity.org/government/document-central/-folder-406'
-    last_updated: '2017-08-08'
+    last_updated: '2017-08-09'
