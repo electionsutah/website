@@ -24,9 +24,11 @@
             <a href="{{ site.baseurl }}/places/" class="{% if page.url == '/places/' %}active{% endif %}">Places</a>
             <a href="{{ site.baseurl }}/resources/" class="{% if page.url == '/resources/' %}active{% endif %}">Resources</a>
 
-            <form action="{{ site.baseurl }}/search" method="get" id="search-box">
+            <a href="https://venmo.com/?txn=pay&audience=private&recipients=todrobbins&note=I%20%E2%9D%A4%EF%B8%8F%20ElectionsUtah.org" style="float: right">Donate <i class="fa fa-heart" aria-hidden="true"></i></a>
+
+            <!-- <form action="{{ site.baseurl }}/search" method="get" id="search-box">
               <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
-            </form>
+            </form> -->
         </nav>
       </div>
   </header>
@@ -38,14 +40,18 @@
         {{ content }}
 
         <footer>
-          <p><a href="https://facebook.com/utahelectionsproject"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://github.com/{{ site.github_username}}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://twitter.com/{{ site.twitter_username}}"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></p>
+          <p>
+            <a href="https://facebook.com/utahelectionsproject"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+            <a href="https://github.com/{{ site.github_username}}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+            <a href="https://twitter.com/{{ site.twitter_username}}"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          </p>
           <p class="license"><strong>Elections Utah</strong> is releasing these datasets with a <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 1.0 Universal Public Domain data license</a>. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.</p>
         </footer>
     </main>
     <script src="https://use.fontawesome.com/b9080a0e6a.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/search.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script type="text/javascript" src="{{ site.baseurl }}/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/lunr.min.js" type="text/javascript" charset="utf-8"></script> -->
     <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.tablesorter.js"></script>
     {% if site.google_analytics %}
     <script>

@@ -1472,15 +1472,14 @@
     body: 'Council District 7'
     name: 'Amy Fowler'
     gender: 'female'
-    address: ''
-    phone_number: ''
-    email_address: ''
+    phone_number: '801.824.9698'
+    email_address: 'amy@electamyfowler.com'
     facebook: 'https://www.facebook.com/voteamyfowler/'
-    party: ''
+    website: 'http://www.electamyfowler.com/'
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-21'
+    last_updated: '2017-08-08'
 -
     id: ut0092
     state: UT
@@ -1619,14 +1618,15 @@
     body: 'Council at Large'
     name: 'Terry Parkin'
     gender: 'male'
-    address: ''
-    phone_number: ''
-    email_address: ''
-    party: ''
+    address: '385 E Pioneer Ave, Sandy, UT 84070'
+    latitude: '40.5965272'
+    longitude: '-111.8823841'
+    phone_number: '801.699.0153'
+    email_address: 'parkinlot5@yahoo.com'
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-08-08'
 -
     id: ut0101
     state: UT
@@ -1667,14 +1667,17 @@
     body: 'Council at Large'
     name: 'Linda C. Stewart'
     gender: 'female'
-    address: ''
-    phone_number: ''
-    email_address: ''
+    address: '213 W Civic Center Dr Apt 140, Sandy, UT 84070'
+    latitude: '40.5724033'
+    longitude: '-111.8987189'
+    phone_number: '801.915.8600'
+    email_address: 'stewartcrew@comcast.net'
     party: ''
     election_type: 'primary'
+    election_status: 'withdrew'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-12'
+    last_updated: '2017-08-08'
 -
     id: ut0104
     state: UT
@@ -2874,17 +2877,18 @@
     name: 'Tinesha Zandamela'
     gender: 'female'
     address: '547 N. 300 E. Apt 5, Provo, UT'
+    latitude: '40.2410025'
+    longitude: '-111.6560064'
     phone_number: '(801) 814-8030'
     email_address: 'electzandamela@gmail.com'
     website: 'https://electzandamela.com/'
     facebook: 'https://www.facebook.com/zandamela4provo/'
     instagram: 'https://www.instagram.com/electzandamela'
     twitter: 'http://www.facebook.com/zandamela4provo'
-    party: ''
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-06-21'
+    last_updated: '2017-08-08'
 -
     id: ut0177
     state: UT
@@ -3042,6 +3046,8 @@
     name: 'Dave Sewell'
     gender: 'male'
     address: '3877 N. 200 E., Provo, UT'
+    latitude: '40.2850162'
+    longitude: '-111.6574033'
     phone_number: '801.380.5103'
     email_address: 'davesewellprovo@gmail.com'
     website: 'http://www.davesewell.org/'
@@ -3051,7 +3057,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://www.voteprovo.com/copy-of-candidate-information'
-    last_updated: '2017-07-04'
+    last_updated: '2017-08-08'
 -
     id: ut0186
     state: UT
