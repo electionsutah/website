@@ -144,6 +144,10 @@ permalink: /places/
     <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
+    <td><a href="summit/park-city">Park City</a></td>
+    <td><a href="summit">Summit</a></td>
+  </tr>  
+  <tr>
     <td><a href="utah/payson">Payson</a></td>
     <td><a href="utah">Utah</a></td>
   </tr>
