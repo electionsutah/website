@@ -932,7 +932,8 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-21'
+    candidate_status: 'defeated'
+    last_updated: '2017-08-31'
 -
     id: ut0059
     state: UT
@@ -1672,12 +1673,12 @@
     longitude: '-111.8987189'
     phone_number: '801.915.8600'
     email_address: 'stewartcrew@comcast.net'
-    party: ''
+    party: 'None'
     election_type: 'primary'
-    election_status: 'withdrew'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-08-08'
+    candidate_status: 'withdrew'
+    last_updated: '2017-08-31'
 -
     id: ut0104
     state: UT
