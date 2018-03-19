@@ -34,7 +34,7 @@ permalink: pretty
 google_analytics:
 disqus_shortname: utah-elections-project
 comments: true
-gems:
+plugins:
   - jekyll-feed
   - jekyll-lunr-js-search
 exclude:
