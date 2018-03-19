@@ -4,13 +4,9 @@ title: Places
 permalink: /places/
 ---
 
-### 2017 3rd Congressional District Special Election
-
-{% include 2017-3rd-district-special-election.html %}
+{% include 2018-elections.html %}
 
 ### 2017 Municipal Election
-
-{% include 2017-municipal-election.html %}
 
 <table>
 <thead>

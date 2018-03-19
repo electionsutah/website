@@ -5,6 +5,8 @@ permalink: /people/
 comments: true
 ---
 
+{% include 2018-elections.html %}
+
 ### 2017 Municipal Election
 #### Primary Candidates
 {% assign person = site.data.2017.primary.candidates | sort:'name' %}

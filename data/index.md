@@ -5,6 +5,12 @@ permalink: /data/
 comments: true
 ---
 
+### 2018 Elections
+
+{% include 2018-elections.html %}
+
+<hr>
+
 ### 2017 3rd Congressional District Special Election
 
 {% include 2017-3rd-district-special-election.html %}
