@@ -5,9 +5,12 @@ permalink: /places/utah/
 comments: true
 ---
 
-<!-- <section class="notice">
-  <p>{{ site.data.places.utah_county.wikipedia_snippet }} (<a href="{{ site.data.places.utah_county.wikipedia_url }}"><span>Wikipedia</span></a>)</p>
-</section> -->
+{% assign place = site.data.places.utah_county %}
+
+<section class="info">
+  <p><a href="{{ place.wikipedia_url }}">From Wikipedia:</a></p>
+  <p class="citation">{{ place.wikipedia_snippet }}</p>
+</section>
 
 <div class="columns">
 <ul>
@@ -62,9 +65,9 @@ comments: true
 
 ### 2017 Municipal Election
 
-{% include 2017-municipal-election.html %}
+{% include 2018-elections.html %}
 
-### 2017 Primary Candidates
+### 2018 Primary Candidates
 {% assign county = site.data.2017.primary.candidates | where:'county','Utah' | sort:'name' %}
 <table>
 <thead>

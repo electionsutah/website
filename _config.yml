@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "Elections Utah"
 email: utahelectionsproject@gmail.com
-description: "An open data project tracking Utah elections."
+description: "Elections Utah is an ongoing, community-driven open data project tracking Utah’s elections."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://electionsutah.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: elections_utah

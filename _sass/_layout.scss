@@ -59,8 +59,29 @@ main {
 
 .notice {
   background: rgb(203, 239, 255);
-  padding: .8rem;
-  margin-bottom: 1rem;
+  padding: .6rem 1.2rem;
+  margin-bottom: 2rem;
+  p {
+    text-align: left;
+  }
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: .8rem;
+    }
+    li:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.info {
+  background: #e7e7e7;
+  padding: .6rem 1.2rem;
+  margin-bottom: 2rem;
+  p {
+    text-align: left;
+  }
   ul {
     list-style: none;
     li {
@@ -100,6 +121,14 @@ main {
         color: $meta-color;
         font-size: $small-font-size;
     }
+}
+
+.citation {
+  background: #fff;
+  font-style: italic;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-left: 2px solid $link-color;
 }
 
 iframe {

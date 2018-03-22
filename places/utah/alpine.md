@@ -4,9 +4,16 @@ title: Alpine
 permalink: /places/utah/alpine/
 ---
 
-### 2017 Primary Candidates
+{% assign place = site.data.places.alpine %}
 
-{% include 2017-municipal-election.html %}
+<section class="info">
+  <p><a href="{{ place.wikipedia_url }}">From Wikipedia:</a></p>
+  <p class="citation">{{ place.wikipedia_snippet }}</p>
+</section>
+
+### 2018 Primary Candidates
+
+{% include 2018-elections.html %}
 
 {% assign city = site.data.2017.primary.candidates | where:'city','Alpine' | sort:'name' %}
 <table>

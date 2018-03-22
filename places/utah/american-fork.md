@@ -4,13 +4,16 @@ title: American Fork
 permalink: /places/utah/american-fork/
 ---
 
-<!-- <section class="notice">
-  <p>{{ site.data.places.american_fork.wikipedia_snippet }} (<a href="{{ site.data.places.american_fork.wikipedia_url }}"><span>Wikipedia</span></a>)</p>
-</section> -->
+{% assign place = site.data.places.american_fork %}
 
-### 2017 Primary Candidates
+<section class="info">
+  <p><a href="{{ place.wikipedia_url }}">From Wikipedia:</a></p>
+  <p class="citation">{{ place.wikipedia_snippet }}</p>
+</section>
 
-{% include 2017-municipal-election.html %}
+### 2018 Primary Candidates
+
+{% include 2018-elections.html %}
 
 {% assign city = site.data.2017.primary.candidates | where:'city','American Fork' | sort:'name' %}
 <table>

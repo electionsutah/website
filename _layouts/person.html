@@ -17,11 +17,13 @@ comments: true
   <p>{% if person.facebook %}<a href="{{ person.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.instagram %}<a href="{{ person.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %} {% if person.twitter %}<a href="{{ person.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i> <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.website %}<a href="{{ person.website }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %} {% if person.youtube %}<a href="{{ person.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i> <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
   </p>
 
-  <div id="map"></div>
+  <!-- <div id="map"></div>
+  <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+  <script type="text/javascript" src="https://www.nextzen.org/tangram/0.14/tangram.min.js"></script>
   <script>
-    L.Mapzen.apiKey = 'vector-tiles-Nd21ihQ';
 
-    var map = L.Mapzen.map('map', {
+    // OLD MAPZEN
+    var map = L.map('map', {
       {% if person.latitude %}
       center: [{{person.latitude}}, {{person.longitude}}],
       zoom: 15,
@@ -29,26 +31,33 @@ comments: true
       center: [39.3210, -111.0937],
       zoom: 6,
       {% endif %}
-      tangramOptions: {
-        scene: L.Mapzen.BasemapStyles.Cinnabar
-      }
     });
 
-    {% if person.latitude %}L.marker([{{person.latitude}}, {{person.longitude}}]).addTo(map);{% endif %}
-    var geocoder = L.Mapzen.geocoder();
-    geocoder.addTo(map);
+    var layer = Tangram.leafletLayer({
+      scene: {
+        import: [
+          'https://www.nextzen.org/carto/bubble-wrap-style/8/bubble-wrap-style.zip',
+          'https://www.nextzen.org/carto/bubble-wrap-style/8/themes/label-10.zip'
+        ],
+        sources: {
+          mapzen: {
+              url: 'https://{s}.tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.mvt',
+              url_subdomains: ['a', 'b', 'c', 'd'],
+              url_params: {
+                  api_key: 'XMhbx83WTzyLMBlykvOytA'
+              },
+              tile_size: 512,
+              max_zoom: 17
+          }
+        }
+      },
+      attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | <a href="http://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a> | <a href="https://mapzen.com/" target="_blank">Mapzen</a>'
+    });
 
-    var geocoderOptions = {
-      params: {
-        placeholder: 'Provo, UT',
-        layers: 'address,neighborhood,locality,county,postalcode'
-      }
-    };
+    layer.addTo(map);
+    // var marker = L.marker([{{person.latitude}}, {{person.longitude}}]).addTo(map);
 
-    var locator = L.Mapzen.locator();
-      locator.setPosition('topleft');
-      locator.addTo(map);
-  </script>
+  </script> -->
 
   <h3>Contact Info</h3>
   <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}">{{ person.address }}</a></p>
@@ -65,7 +74,7 @@ comments: true
 
 
   {{ content }}
-  {% if site.comments %}
+  <!-- {% if site.comments %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_shortname  = '{{ site.disqus_shortname }}';
@@ -76,5 +85,5 @@ comments: true
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
     </script>
-  {% endif %}
+  {% endif %} -->
 </article>

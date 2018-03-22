@@ -4,7 +4,18 @@ title: Places
 permalink: /places/
 ---
 
+{% assign place = site.data.places.utah %}
+
+<section class="info">
+  <p><a href="{{ place.wikipedia_url }}">From Wikipedia:</a></p>
+  <p class="citation">{{ place.wikipedia_snippet }}</p>
+</section>
+
+### 2018 Election
+
 {% include 2018-elections.html %}
+
+_Coming soon..._
 
 ### 2017 Municipal Election
 

@@ -42,9 +42,9 @@ comments: true
 
 ### 2017 Municipal Election
 
-{% include 2017-municipal-election.html %}
+{% include 2018-elections.html %}
 
-### 2017 Primary Candidates
+### 2018 Primary Candidates
 {% assign county = site.data.2017.primary.candidates | where:'county','Salt Lake' | sort:'name' %}
 <table>
 <thead>
