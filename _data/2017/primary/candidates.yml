@@ -925,6 +925,8 @@
     name: 'Andrew Stoddard'
     gender: 'male'
     address: '218 E 8135 S, Sandy, UT 84070'
+    latitude: '40.603059'
+    longitude: '-111.884317'
     phone_number: '(801) 884-9943'
     email_address: 'drewcstoddard@gmail.com'
     facebook: 'https://www.facebook.com/voteandrewstoddard/'
@@ -933,7 +935,7 @@
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     candidate_status: 'defeated'
-    last_updated: '2017-08-31'
+    last_updated: '2018-03-22'
 -
     id: ut0059
     state: UT

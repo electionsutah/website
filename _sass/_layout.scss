@@ -1,6 +1,6 @@
 @charset "utf-8";
 main {
-    max-width: 48rem;
+    max-width: 52rem;
     margin: 0 auto 3rem;
     padding: 0 2rem;
 }
@@ -8,7 +8,7 @@ main {
     background: $color-blue;
     padding: 1rem 1rem .6rem 1rem;
     .inner {
-      max-width: 46rem;
+      max-width: 50rem;
       margin: 0 auto;
       .site-title {
           font-weight: 300;
@@ -179,6 +179,8 @@ ul, menu, dir {
 th:hover {
   cursor: pointer;
 }
+
+/* MEDIA QUERIES! */
 
 @media screen and (max-width: 48rem) {
     .site-header {
