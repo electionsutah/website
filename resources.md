@@ -9,7 +9,7 @@ comments: true
 
 #### What are the eligibility requirements to vote in Utah?
 
-To register to vote in UtaE, you must:
+To register to vote in Utah, you must:
 
 - Be a citizen of the United States of America
 - Have resided in Utah for 30 days before the election
