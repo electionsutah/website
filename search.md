@@ -9,18 +9,17 @@ comments: disable
 
 {% raw %}
 <script id="search-results-template" type="text/mustache">
-  {{#entries}}
     <article>
-      <h3>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-        <a href="{{url}}">{{title}}</a>
-      </h3>
-      {{#is_post}}
-      <ul>
-        {{#tags}}<li>{{.}} </li>{{/tags}}
-      </ul>
-      {{/is_post}}
+      {{#entries}}
+        <h3>
+          <a href="{{url}}">{{title}}</a> {{#date}}&mdash; <small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        </h3>
+        {{#is_post}}
+        <ul>
+          {{#tags}}<li>{{.}} </li>{{/tags}}
+        </ul>
+        {{/is_post}}
+      {{/entries}}
     </article>
-  {{/entries}}
 </script>
 {% endraw %}
