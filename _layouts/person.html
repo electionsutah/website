@@ -18,7 +18,6 @@ comments: true
   </p>
 
   <div id="map"></div>
-  <!-- <script type="text/javascript" src="https://www.nextzen.org/tangram/0.14/tangram.min.js"></script> -->
   <script>
 
     var map = L.map('map', {
@@ -33,28 +32,6 @@ comments: true
 
     L.tileLayer('https://api.mapbox.com/styles/v1/todrobbins/cigbdndmz00019eksg7qvqbzu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidG9kcm9iYmlucyIsImEiOiJ3cTUyNjVrIn0.8ozG-L3QDKblEshkqiEHFg', { maxZoom: 18, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}).addTo(map);
 
-    // var layer = Tangram.leafletLayer({
-    //   scene: {
-    //     import: [
-    //       'https://www.nextzen.org/carto/bubble-wrap-style/8/bubble-wrap-style.zip',
-    //       'https://www.nextzen.org/carto/bubble-wrap-style/8/themes/label-10.zip'
-    //     ],
-    //     sources: {
-    //       mapzen: {
-    //           url: 'https://{s}.tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.mvt',
-    //           url_subdomains: ['a', 'b', 'c', 'd'],
-    //           url_params: {
-    //               api_key: 'XMhbx83WTzyLMBlykvOytA'
-    //           },
-    //           tile_size: 512,
-    //           max_zoom: 17
-    //       }
-    //     }
-    //   },
-    //   attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | <a href="http://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a> | <a href="https://mapzen.com/" target="_blank">Mapzen</a>'
-    // });
-    //
-    // layer.addTo(map);
     var marker = L.marker([{{person.latitude}}, {{person.longitude}}]).addTo(map);
 
   </script>
@@ -65,7 +42,11 @@ comments: true
   <p><strong>Email Address:</strong> <a href="mailto:{{ person.email_address }}">{{ person.email_address }}</a></p>
 
   <h3>Media</h3>
-  {% if person.media %}<p><a href="{{ person.media.url }}">{{ person.media.title }}</a></p>{% endif %}
+  {% if person.media.url %}
+  <ul>
+    <li><a href="{{ person.media.url }}">{{ person.media.title }}</a></li>
+  </ul>
+  {% endif %}
 
   {% if person.soundcloud %}<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ person.soundcloud }}"></iframe>{% endif %}
 
@@ -74,7 +55,7 @@ comments: true
 
 
   {{ content }}
-  <!-- {% if site.comments %}
+  {% if site.comments %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_shortname  = '{{ site.disqus_shortname }}';
@@ -85,5 +66,5 @@ comments: true
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
     </script>
-  {% endif %} -->
+  {% endif %}
 </article>
