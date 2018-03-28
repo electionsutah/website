@@ -14,7 +14,7 @@ utah:
     name: 'Utah'
     wikidata_url: 'https://www.wikidata.org/wiki/Q829'
     wikipedia_snippet: |
-        Utah is a state in the western United States. It became the 45th state admitted to the U.S. on January 4, 1896. Utah is the 13th-largest by area, 31st-most-populous, and 10th-least-densely populated of the 50 United States. Utah has a population of more than 3 million (Census estimate for July 1, 2016), approximately 80% of whom live along the Wasatch Front, centering on the state capital Salt Lake City. Utah is bordered by Colorado to the east, Wyoming to the northeast, Idaho to the north, Arizona to the south, and Nevada to the west. It also touches a corner of New Mexico in the southeast.
+        <strong>Utah</strong> is a state in the western United States. It became the 45th state admitted to the U.S. on January 4, 1896. Utah is the 13th-largest by area, 31st-most-populous, and 10th-least-densely populated of the 50 United States. Utah has a population of more than 3 million (Census estimate for July 1, 2016), approximately 80% of whom live along the Wasatch Front, centering on the state capital Salt Lake City. Utah is bordered by Colorado to the east, Wyoming to the northeast, Idaho to the north, Arizona to the south, and Nevada to the west. It also touches a corner of New Mexico in the southeast.
     wikipedia_url: 'https://en.wikipedia.org/wiki/Utah'
 utah_county:
     name: 'Utah County'

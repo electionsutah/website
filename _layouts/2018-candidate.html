@@ -1,70 +1,156 @@
 ---
-layout: default
 comments: true
 ---
 
 {% assign person = site.data.2018.primary.candidates | where: 'id', page.person | first %}
 
-<article class="post">
-  <h2 class="post-header">{% if person.first_name %}{{ person.first_name}}&nbsp;{{ person.last_name}}{% else %}{{ person.name }}{% endif %} {{ person.incumbent | replace: 'yes','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
-  <aside class="notice"><strong>Last Updated:</strong> {{ person.last_updated }}</aside>
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="{{ person.name }} - Elections Utah" />
+    <meta property="og:description" content="{{ person.name }} {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %}a {% if person.party %}{{ person.party }}{% endif %} candidate for {{ person.office }} from {{ person.city }}, {{ person.county }}, {{ person.state }}." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://electionsutah.org" />
+    <meta property="og:image" content="{{ site.baseurl }}/images/utah-elections.png" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <title>{{ person.name }} - Elections Utah</title>
+</head>
+<body>
+  <header class="site-header">
+      <div class="inner">
+        <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }} <i class="fa fa-check-square"></i></a></h1>
+        <nav class="site-nav">
+            <a href="{{ site.baseurl }}/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+            <a href="{{ site.baseurl }}/data/" class="{% if page.url == '/data/' %}active{% endif %}">Data</a>
+            <a href="{{ site.baseurl }}/people/" class="{% if page.url == '/people/' %}active{% endif %}">People</a>
+            <a href="{{ site.baseurl }}/places/" class="{% if page.url == '/places/' %}active{% endif %}">Places</a>
+            <a href="{{ site.baseurl }}/resources/" class="{% if page.url == '/resources/' %}active{% endif %}">Resources</a>
+            <a href="https://venmo.com/?txn=pay&audience=private&recipients=todrobbins&note=I%20%E2%9D%A4%EF%B8%8F%20ElectionsUtah.org" class="donate">Donate <i class="fa fa-heart" aria-hidden="true"></i></a>
 
-  <h3>Candidate Biography</h3>
-  <p><strong>{{ person.name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %} a {% if person.party %}<strong>{{ person.party }}</strong>{% endif %} candidate for <strong>{{ person.office }}</strong> from <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, <a href="../../places">{{ person.state }}</a></strong> (<a href="{{ person.source }}">Source</a>).</p>
-
-  <hr>
-
-  <p>{% if person.facebook %}<a href="{{ person.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.instagram %}<a href="{{ person.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %} {% if person.twitter %}<a href="{{ person.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i> <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.website %}<a href="{{ person.website }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %} {% if person.youtube %}<a href="{{ person.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i> <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
-  </p>
-
-  <div id="map"></div>
-  <script>
-
-    var map = L.map('map', {
-      {% if person.latitude %}
-      center: [{{person.latitude}}, {{person.longitude}}],
-      zoom: 15,
-      {% else %}
-      center: [39.3210, -111.0937],
-      zoom: 6,
+            <form action="{{ site.baseurl }}/search" method="get" id="search-box">
+              <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+            </form>
+        </nav>
+      </div>
+  </header>
+    <main>
+      {% if page.hero %}
+      <img src="images/{{page.hero}}" class="hero">
       {% endif %}
-    });
 
-    L.tileLayer('https://api.mapbox.com/styles/v1/todrobbins/cigbdndmz00019eksg7qvqbzu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidG9kcm9iYmlucyIsImEiOiJ3cTUyNjVrIn0.8ozG-L3QDKblEshkqiEHFg', { maxZoom: 18, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}).addTo(map);
+      <article class="post">
+        <h2 class="post-header">{% if person.first_name %}{{ person.first_name}}&nbsp;{{ person.last_name}}{% else %}{{ person.name }}{% endif %} {{ person.incumbent | replace: 'yes','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
+        <aside class="notice"><strong>Last Updated:</strong> {{ person.last_updated }}</aside>
 
-    var marker = L.marker([{{person.latitude}}, {{person.longitude}}]).addTo(map);
+        <h3>Candidate Biography</h3>
+        <p><strong>{{ person.name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %} a {% if person.party %}<strong>{{ person.party }}</strong>{% endif %} candidate for <strong>{{ person.office }}</strong> from <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, <a href="../../places">{{ person.state }}</a></strong> (<a href="{{ person.source }}">Source</a>).</p>
 
-  </script>
+        <hr>
 
-  <h3>Contact Info</h3>
-  <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.city | replace: ' ','+' }}+{{ person.state | replace: ' ','+' }}+{{ person.zip | replace: ' ','+' }}">{{ person.address }}, {{ person.city }}, {{ person.state }} {{ person.zip }}</a></p>
-  <p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone }}</a></p>
-  <p><strong>Email Address:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+        <p>{% if person.facebook %}<a href="{{ person.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.instagram %}<a href="{{ person.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %} {% if person.twitter %}<a href="{{ person.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i> <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.website %}<a href="{{ person.website }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %} {% if person.youtube %}<a href="{{ person.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i> <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
+        </p>
 
-  <h3>Media</h3>
-  {% if person.media.url %}
-  <ul>
-    <li><a href="{{ person.media.url }}">{{ person.media.title }}</a></li>
-  </ul>
-  {% endif %}
+        <div id="map"></div>
+        <script>
 
-  {% if person.soundcloud %}<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ person.soundcloud }}"></iframe>{% endif %}
+          var map = L.map('map', {
+            {% if person.latitude %}
+            center: [{{person.latitude}}, {{person.longitude}}],
+            zoom: 15,
+            {% else %}
+            center: [39.3210, -111.0937],
+            zoom: 6,
+            {% endif %}
+          });
 
-  <h3>Documents</h3>
-  {% if person.pledge %}<p><strong><a href="{{ person.pledge }}">Pledge of Fair Campaign Practices</a></strong></p>{% endif %}
+          L.tileLayer('https://api.mapbox.com/styles/v1/todrobbins/cigbdndmz00019eksg7qvqbzu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidG9kcm9iYmlucyIsImEiOiJ3cTUyNjVrIn0.8ozG-L3QDKblEshkqiEHFg', { maxZoom: 18, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}).addTo(map);
+
+          var marker = L.marker([{{person.latitude}}, {{person.longitude}}]).addTo(map);
+
+        </script>
+
+        <h3>Contact Info</h3>
+        <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.city | replace: ' ','+' }}+{{ person.state | replace: ' ','+' }}+{{ person.zip | replace: ' ','+' }}">{{ person.address }}, {{ person.city }}, {{ person.state }} {{ person.zip }}</a></p>
+        <p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone }}</a></p>
+        <p><strong>Email Address:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+
+        <h3>Media</h3>
+        {% if person.media.url %}
+        <ul>
+          <li><a href="{{ person.media.url }}">{{ person.media.title }}</a></li>
+        </ul>
+        {% endif %}
+
+        {% if person.soundcloud %}<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ person.soundcloud }}"></iframe>{% endif %}
+
+        <h3>Documents</h3>
+        {% if person.pledge %}<p><strong><a href="{{ person.pledge }}">Pledge of Fair Campaign Practices</a></strong></p>{% endif %}
 
 
-  {{ content }}
-  {% if site.comments %}
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname  = '{{ site.disqus_shortname }}';
-      var disqus_identifier = '{{ page.id }}';
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
+        {{ content }}
+        {% if site.comments %}
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_shortname  = '{{ site.disqus_shortname }}';
+            var disqus_identifier = '{{ page.id }}';
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+        {% endif %}
+      </article>
+
+      {{ content }}
+
+      <footer>
+        <p>
+          <a href="https://facebook.com/utahelectionsproject"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+          <a href="https://github.com/{{ site.github_username}}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+          <a href="https://twitter.com/{{ site.twitter_username}}"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        </p>
+        <p class="license"><strong>Elections Utah</strong> is releasing these datasets with a <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 1.0 Universal Public Domain data license</a>. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.</p>
+      </footer>
+    </main>
+    <script src="https://use.fontawesome.com/b9080a0e6a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.tablesorter.js"></script>
+    {% if site.google_analytics %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
     </script>
-  {% endif %}
-</article>
+    {% endif %}
+    <script type="text/javascript">
+      $(function() {
+        $('#search-query').lunrSearch({
+          indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+          results   : '#search-results',          // selector for containing search results element
+          template  : '#search-results-template', // selector for Mustache.js template
+          titleMsg  : '<h1><em>Search results:</em><h1>',   // message attached in front of results (can be empty)
+          emptyMsg  : '<p>No results.</p>'     // shown message if search returns no results
+        });
+      });
+    </script>
+    <script>
+		$(document).ready(function() {
+    	$("table").tablesorter({
+        widthFixed: true,
+        sortList: [[0,0],[2,0]],
+        widgets: ['zebra']
+      })
+		});
+    </script>
+</body>
+</html>
