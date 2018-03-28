@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Carbon County
-permalink: /places/carbon/
+title: Price
+permalink: /places/carbon/price
 comments: true
 ---
 
@@ -9,16 +9,12 @@ comments: true
   <p>{{ site.data.places.utah_county.wikipedia_snippet }} (<a href="{{ site.data.places.utah_county.wikipedia_url }}"><span>Wikipedia</span></a>)</p>
 </section> -->
 
-<!-- ### 2017 3rd Congressional District Special Election
-
-### 2017 Municipal Election -->
-
 ### 2018 Election
 
 {% include 2018-elections.html %}
 
 ### 2018 Primary Candidates
-{% assign county = site.data.2018.primary.candidates | where:'county','Carbon' | sort:'name' %}
+{% assign county = site.data.2018.primary.candidates | where:'city','Price' | sort:'name' %}
 <table>
 <thead>
   <th>Name</th>

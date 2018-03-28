@@ -61,8 +61,8 @@ comments: true
 
   <h3>Contact Info</h3>
   <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}">{{ person.address }}</a></p>
-  <p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone_number | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone_number }}</a></p>
-  <p><strong>Email Address:</strong> <a href="mailto:{{ person.email_address }}">{{ person.email_address }}</a></p>
+  <p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone }}</a></p>
+  <p><strong>Email Address:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
 
   <h3>Media</h3>
   {% if person.media.url %}

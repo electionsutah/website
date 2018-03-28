@@ -9,7 +9,7 @@ comments: true
 
 ### 2018 Election
 #### Primary Candidates
-{% assign person = site.data.2018.primary.candidates | sort:'name' %}
+{% assign person = site.data.2018.primary.candidates | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
