@@ -1,0 +1,93 @@
+---
+layout: default
+comments: true
+---
+
+{% assign person = site.data.2017.primary.candidates | where: 'id', page.person | first %}
+
+<article class="post">
+  <h2 class="post-header">{{ person.name }} {{ person.incumbent | replace: 'yes','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
+  <aside class="notice"><strong>Last Updated:</strong> {{ person.last_updated }}</aside>
+
+  <h3>Candidate Biography</h3>
+  <p><strong>{{ person.name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' %}was{% else %}was{% endif %} {% if person.incumbent %}the incumbent and {% endif %} a candidate for <strong>{{ person.body }}</strong> of <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, <a href="../../places">{{ person.state }}</a></strong> (<a href="{{ person.source }}">Source</a>).</p>
+
+  <hr>
+
+  <p>{% if person.facebook %}<a href="{{ person.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.instagram %}<a href="{{ person.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %} {% if person.twitter %}<a href="{{ person.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i> <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.website %}<a href="{{ person.website }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %} {% if person.youtube %}<a href="{{ person.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i> <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
+  </p>
+
+  <div id="map"></div>
+  <!-- <script type="text/javascript" src="https://www.nextzen.org/tangram/0.14/tangram.min.js"></script> -->
+  <script>
+
+    var map = L.map('map', {
+      {% if person.latitude %}
+      center: [{{person.latitude}}, {{person.longitude}}],
+      zoom: 15,
+      {% else %}
+      center: [39.3210, -111.0937],
+      zoom: 6,
+      {% endif %}
+    });
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/todrobbins/cigbdndmz00019eksg7qvqbzu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidG9kcm9iYmlucyIsImEiOiJ3cTUyNjVrIn0.8ozG-L3QDKblEshkqiEHFg', { maxZoom: 18, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}).addTo(map);
+
+    // var layer = Tangram.leafletLayer({
+    //   scene: {
+    //     import: [
+    //       'https://www.nextzen.org/carto/bubble-wrap-style/8/bubble-wrap-style.zip',
+    //       'https://www.nextzen.org/carto/bubble-wrap-style/8/themes/label-10.zip'
+    //     ],
+    //     sources: {
+    //       mapzen: {
+    //           url: 'https://{s}.tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.mvt',
+    //           url_subdomains: ['a', 'b', 'c', 'd'],
+    //           url_params: {
+    //               api_key: 'XMhbx83WTzyLMBlykvOytA'
+    //           },
+    //           tile_size: 512,
+    //           max_zoom: 17
+    //       }
+    //     }
+    //   },
+    //   attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | <a href="http://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a> | <a href="https://mapzen.com/" target="_blank">Mapzen</a>'
+    // });
+    //
+    // layer.addTo(map);
+    var marker = L.marker([{{person.latitude}}, {{person.longitude}}]).addTo(map);
+
+  </script>
+
+  <h3>Contact Info</h3>
+  <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}">{{ person.address }}</a></p>
+  <p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone_number | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone_number }}</a></p>
+  <p><strong>Email Address:</strong> <a href="mailto:{{ person.email_address }}">{{ person.email_address }}</a></p>
+
+  <h3>Media</h3>
+  {% if person.media.url %}
+  <ul>
+    <li><a href="{{ person.media.url }}">{{ person.media.title }}</a></p>
+  </ul>
+  {% endif %}
+
+  {% if person.soundcloud %}<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ person.soundcloud }}"></iframe>{% endif %}
+
+  <h3>Documents</h3>
+  {% if person.pledge %}<p><strong><a href="{{ person.pledge }}">Pledge of Fair Campaign Practices</a></strong></p>{% endif %}
+
+
+  {{ content }}
+  {% if site.comments %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname  = '{{ site.disqus_shortname }}';
+      var disqus_identifier = '{{ page.id }}';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  {% endif %}
+</article>
