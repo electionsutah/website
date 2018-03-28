@@ -24,7 +24,7 @@ comments: true
     <td><a href="{{member.id}}">{{member.first_name}}</a></td>
     <td><a href="{{member.id}}">{{member.last_name}}</a></td>
     <!-- <td><a href="{{member.id}}">{{member.first_name}}&nbsp;{{member.last_name}}</a></td> -->
-    <td>{{ member.body }}</td>
+    <td>{{ member.office }}</td>
     <td><a href="../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
   </tr>
