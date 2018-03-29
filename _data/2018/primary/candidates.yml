@@ -1042,6 +1042,7 @@
   middle_name: ''
   last_name: Foard
   suffix:  ''
+  gender: 'female'
   office: 'State Senate 2'
   district: '2'
   address: '1421 University Village'
@@ -1065,6 +1066,7 @@
   middle_name: ''
   last_name: Chambless
   suffix:  ''
+  gender: 'male'
   office: 'State Senate 2'
   district: '2'
   address: '1977 S Scenic Dr'
@@ -1085,6 +1087,7 @@
   middle_name: S.
   last_name: Andreason
   suffix:  ''
+  gender: 'male'
   office: 'State Senate 2'
   district: '2'
   address: '230 E Broadway #809'
@@ -1105,6 +1108,7 @@
   middle_name: ''
   last_name: Mahallati
   suffix:  ''
+  gender: 'female'
   office: 'State Senate 2'
   district: '2'
   address: '1203 E 4th Ave Apt B'
@@ -1125,6 +1129,7 @@
   middle_name: ''
   last_name: Mehl
   suffix:  ''
+  gender: 'male'
   office: 'State Senate 2'
   district: '2'
   address: '157 E. Yale Ave.'
@@ -1144,6 +1149,7 @@
   middle_name: ''
   last_name: Winder
   suffix:  ''
+  gender: 'male'
   office: 'State Senate 2'
   district: '2'
   address: '433 I Street'
@@ -1151,7 +1157,7 @@
   county: 'Salt Lake'
   state: UT
   zip: '84103'
-  phone: (801)243-9028
+  phone: (801) 243-9028
   party: 'Republican'
   email: chasewinder53@gmail.com
   website: ''
@@ -1164,6 +1170,7 @@
   middle_name: ''
   last_name: Robinson
   suffix:  ''
+  gender: 'male'
   office: 'State Senate 2'
   district: '2'
   address: '55 North Virginia Street'
@@ -1171,7 +1178,7 @@
   county: 'Salt Lake'
   state: UT
   zip: '84103'
-  phone: (801)635-5855
+  phone: (801) 635-5855
   party: 'Democratic'
   email: srobinsonlaw@hotmail.com
   website: ''
@@ -1184,6 +1191,7 @@
   middle_name: ''
   last_name: Hansen
   suffix:  ''
+  gender: 'male'
   office: 'State Senate 2'
   district: '2'
   address: '530 Wood Ave'
@@ -1191,17 +1199,19 @@
   county: 'Salt Lake'
   state: UT
   zip: '84105'
-  phone: (801)467-9255
+  phone: (801) 467-9255
   party: Unaffiliated
   email: vhansen@utahweb.com
   website: ''
   candidate_status: 'write-in'
 -
+  id: ut0261
   name: 'Derek Kitchen'
   first_name: Derek
   middle_name: Lloyd
   last_name: Kitchen
   suffix:  ''
+  gender: 'male'
   office: 'State Senate 2'
   district: '2'
   address: '850 S 400 W Apt 300'
@@ -1209,18 +1219,20 @@
   county: 'Salt Lake'
   state: UT
   zip: '84101'
-  phone: (801)674-6141
+  phone: (801) 674-6141
   party: 'Democratic'
   email: derek.kitchen@gmail.com
   website: ''
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
+  id: ut0262
   name: 'Jennifer Plumb'
   first_name: Jennifer
   middle_name: ''
   last_name: Plumb
   suffix:  ''
+  gender: 'female'
   office: 'State Senate 2'
   district: '2'
   address: '4893 Skycrest Cir'
@@ -1228,66 +1240,63 @@
   county: 'Salt Lake'
   state: UT
   zip: '84108'
-  phone: (801)232-5410
+  phone: (801) 232-5410
   party: 'Democratic'
   email: voteplumb@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'ROBERT PINON'
+  id: ut0263
+  name: 'Robert Pinon'
   first_name: Robert
   middle_name: ''
-
   last_name: Pinon
   suffix:  ''
-
+  gender: 'male'
   office: 'State Senate 2'
   district: '2'
   address: '309 Maryfield Dr'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84108'
-  phone: (801)450-4114
+  phone: (801) 450-4114
   party: 'Democratic'
-  email: pinon4utah@gmail.com
-  website: pinon4utah.com
+  email: 'pinon4utah@gmail.com'
+  twitter: 'https://twitter.com/pinon4utah'
   candidate_status: 'withdrew'
+  source: 'https://elections.utah.gov/Media/Default/2018%20Election/Intent%20to%20Gather%20Signatures/Legislative%20Candidates/Senate%202%20-%20Robert%20Pinon.pdf'
 -
-  name: 'MARLIN R. BAER'
+  id: ut0264
+  name: 'Marlin R. Baer'
   first_name: Marlin
   middle_name: R.
   last_name: Baer
   suffix:  ''
-
+  gender: 'male'
   office: 'State Senate 3'
   district: '3'
   address: '4007 So Jester Dr'
-
   city: 'Salt Lake City'
   state: UT
   zip: '84123'
-  phone: (801)831-7649
+  phone: (801) 831-7649
   party: 'Republican'
   email: ''
-
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
+  id: ut0265
   name: 'JEREMY D. EGAN'
   first_name: Jeremy
   middle_name: D.
   last_name: Egan
   suffix:  ''
-
   office: 'State Senate 3'
   district: '3'
   address: '3970 S. Howick St. Apt B123'
-
   city: 'Salt Lake City'
   state: UT
   zip: '84107'
@@ -1298,39 +1307,33 @@
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
+  id: ut0266
   name: 'LUKE GUSTAFSON'
   first_name: Luke
   middle_name: ''
-
   last_name: Gustafson
   suffix:  ''
-
   office: 'State Senate 3'
   district: '3'
   address: '3500 S West Temple'
-
   city: 'South Salt Lake'
   state: UT
   zip: '84115'
   phone: (801)520-0934
   party: 'Republican'
   email: ''
-
   website: ''
-
   candidate_status: 'withdrew'
 -
+  id: ut0267
   name: 'GENE DAVIS'
   first_name: Gene
   middle_name: ''
-
   last_name: Davis
   suffix:  ''
-
   office: 'State Senate 3'
   district: '3'
   address: '865 Parkway Ave'
-
   city: 'Salt Lake City'
   state: UT
   zip: '84106'
@@ -1338,44 +1341,37 @@
   party: 'Democratic'
   email: wgdavis@msn.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
+  id: ut0268
   name: 'ALAN MONSEN'
   first_name: Alan
   middle_name: ''
-
   last_name: Monsen
   suffix:  ''
-
   office: 'State Senate 4'
   district: '4'
   address: 'PO Box 17913'
-
   city: 'Salt Lake City'
   state: UT
   zip: '84117'
   phone: (801)558-2567
   party: 'Republican'
   email: ''
-
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
+  id: ut0269
   name: 'JANI IWAMOTO'
   first_name: Jani
   middle_name: ''
-
   last_name: Iwamoto
   suffix:  ''
-
   office: 'State Senate 4'
   district: '4'
   address: '4760 South Highland Dr #427'
-
   city: Holladay
   state: UT
   zip: '84117'
@@ -1386,6 +1382,7 @@
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
+  id: ut0270
   name: 'KIMDYL ALLEN'
   first_name: Kimdyl
   middle_name: ''
