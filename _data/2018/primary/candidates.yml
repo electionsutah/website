@@ -1488,6 +1488,7 @@
   middle_name: ''
   last_name: Jackson
   suffix:  ''
+  gender: male
   office: 'State Senate 8 (2 year term)'
   district: '8'
   address: '8908 S 60 E'
@@ -1508,6 +1509,7 @@
   middle_name: L.
   last_name: Davis
   suffix:  ''
+  gender: male
   office: 'State Senate 8 (2 year term)'
   district: '8'
   address: '2845 Palma'
@@ -1523,11 +1525,12 @@
   last_updated: '2018-03-27'
 -
   id: ut0277
-  name: 'ALEXANDER CASTAGNO'
+  name: 'Alexander Castagno'
   first_name: Alexander
   middle_name: ''
   last_name: Castagno
   suffix:  ''
+  gender: male
   office: 'State Senate 9'
   district: '9'
   address: '10286 S Vilas Dr.'
@@ -1548,6 +1551,7 @@
   middle_name: A.
   last_name: Cullimore
   suffix:  Jr.
+  gender: male
   office: 'State Senate 9'
   district: '9'
   address: '8359 Snow Basin Dr.'
@@ -2209,324 +2213,322 @@
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'BRIAN K. GORUM'
+  id: ut0311
+  name: 'Brian K. Gorum'
   first_name: Brian
   middle_name: K.
   last_name: Gorum
   suffix:  ''
-
+  gender: 'male'
   office: 'State Senate 26 (Multi County)'
   district: '26'
   address: '758 W. Main St'
-
   city: Vernal
+  county: 'Uintah'
   state: UT
   zip: '84078'
-  phone: (435)828-1557
+  phone: (435) 828-1557
   party: 'Republican'
   email: gorum4ut@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'EILEEN GALLAGHER'
+  id: ut0312
+  name: 'Eileen Gallagher'
   first_name: Eileen
   middle_name: ''
-
   last_name: Gallagher
   suffix:  ''
-
+  gender: 'female'
   office: 'State Senate 26 (Multi County)'
   district: '26'
   address: '1317 Ptarmigan Loop'
-
   city: 'Park City'
+  county: 'Summit'
   state: UT
   zip: '84098'
-  phone: (801)634-8915
+  phone: (801) 634-8915
   party: 'Democratic'
   email: gallagherforutahstatesenate@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MARK CHAMBERS'
-  first_name: MARK
+  id: ut0313
+  name: 'Mark Chambers'
+  first_name: Mark
   middle_name: ''
-
-  last_name: CHAMBERS
+  last_name: Chambers
   suffix:  ''
-
+  gender: 'male'
   office: 'State Senate 28 (Multi County)'
   district: '28'
   address: 'PO Box 29'
-
   city: Springdale
+  county: 'Washington'
   state: UT
   zip: '84767'
-  phone: (435)773-0039
+  phone: (435) 773-0039
   party: 'Democratic'
   email: mark@undertheeaves.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'EVAN J VICKERS'
+  id: ut0314
+  name: 'Evan J. Vickers'
   first_name: Evan
   middle_name: J
   last_name: Vickers
   suffix:  ''
-
   office: 'State Senate 28 (Multi County)'
   district: '28'
   address: '2166 North Cobble Creek Drive'
-
   city: 'Cedar City'
+  county: 'Iron'
   state: UT
   zip: '84721'
-  phone: (435)586-4399
+  phone: (435) 586-4399
   party: 'Republican'
   email: bullochdrug@infowest.com
-  website: evanvickers.com
+  website: 'http://evanvickers.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JOEL FERRY'
+  id: ut0315
+  name: 'Joel Ferry'
   first_name: Joel
   middle_name: ''
-
   last_name: Ferry
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 1 (Multi County)'
   district: '1'
   address: '780 N 1100 W'
-
   city: 'Brigham City'
+  county: 'Box Elder'
   state: UT
   zip: '84302'
-  phone: (801)726-4032
+  phone: (801) 726-4032
   party: 'Republican'
   email: joelmferry@gmail.com
-  website: joelferry.com
+  website: 'https://www.votejoelferry.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'KRIS UDY'
+  id: ut0316
+  name: 'Kris Udy'
   first_name: Kris
   middle_name: ''
-
   last_name: Udy
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 1 (Multi County)'
   district: '1'
   address: '10910 N 8400 W'
-
   city: Tremonton
+  county: 'Box Elder'
   state: UT
   zip: '84337'
-  phone: (435)279-7777
+  phone: (435) 279-7777
   party: 'Republican'
   email: krisudy@krisudy4house1@gmail.com
-  website: krisudy4house1.com
+  website: 'https://www.krisudy4house1.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JOSHUA HARDY'
+  id: ut0317
+  name: 'Joshua Hardy'
   first_name: Joshua
   middle_name: ''
   last_name: Hardy
   suffix:  ''
+  gender: 'male'
   office: 'State House 1 (Multi County)'
   district: '1'
   address: 'PO Box 211'
   city: Corinne
+  county: 'Box Elder'
   state: UT
   zip: '84307'
-  phone: (385)264-5192
+  phone: (385) 264-5192
   party: 'Democratic'
   email: jgh191@yahoo.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'SHERRY PHIPPS'
+  id: ut0318
+  name: 'Sherry Phipps'
   first_name: Sherry
   middle_name: ''
-
   last_name: Phipps
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 1 (Multi County)'
   district: '1'
   address: '667 S 200 W'
-
   city: 'Brigham City'
+  county: 'Box Elder'
   state: UT
   zip: '84302'
-  phone: (435)237-9822
+  phone: (435) 237-9822
   party: Constitution
   email: phipps4utahhouse@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'TYLER ALLRED'
+  id: ut0319
+  name: 'Tyler Allred'
   first_name: Tyler
   middle_name: ''
-
   last_name: Allred
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 2'
   district: '2'
   address: '1779 E Canary Way'
-
   city: 'Eagle Mountain'
+  county: 'Utah'
   state: UT
   zip: '84005'
-  phone: (385)216-4435
+  phone: (385) 216-4435
   party: 'Democratic'
   email: thenamelesshero@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JEFFERSON R. MOSS'
+  id: ut0320
+  name: 'Jefferson R. Moss'
   first_name: Jefferson
   middle_name: R.
   last_name: Moss
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 2'
   district: '2'
   address: '1668 N. Aspen Circle'
-
   city: 'Saratoga Springs'
+  county: 'Utah'
   state: UT
   zip: '84045'
-  phone: (801)916-7386
+  phone: (801) 916-7386
   party: 'Republican'
   email: jeffersonrmoss@gmail.com
-  website: www.jefferson4utah.com
+  website: 'http://jefferson4utah.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MARILYN MECHAM'
+  id: ut0320
+  name: 'Marilyn Mecham'
   first_name: Marilyn
   middle_name: ''
-
   last_name: Mecham
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 3'
   district: '3'
   address: '166 S 380 E'
-
   city: Smithfield
+  county: 'Cache'
   state: UT
   zip: '84335'
-  phone: (435)563-1969
+  phone: (435) 563-1969
   party: 'Democratic'
   email: marilyn@hot-shot.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'VAL K. POTTER'
+  id: ut0321
+  name: 'Val K. Potter'
   first_name: Val
   middle_name: K.
   last_name: Potter
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 3'
   district: '3'
   address: '2185 North 1400 East'
-
   city: 'North Logan'
+  county: 'Cache'
   state: UT
   zip: '84341'
-  phone: (435)757-9834
+  phone: (435) 757-9834
   party: 'Republican'
   email: val.potter@comcast.net
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JOSH BRUNDAGE'
+  id: ut0322
+  name: 'Josh Brundage'
   first_name: Josh
   middle_name: ''
-
   last_name: Brundage
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 4'
   district: '4'
   address: '1475 E 1140 N'
-
   city: Logan
+  county: 'Cache'
   state: UT
   zip: '84341'
-  phone: (435)932-1006
+  phone: (435) 932-1006
   party: 'Democratic'
   email: joshbrundage4utah@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'GREG MERRILL'
+  id: ut0323
+  name: 'Greg Merrill'
   first_name: Greg
   middle_name: ''
-
   last_name: Merrill
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 4'
   district: '4'
   address: '1289 North 1500 East'
-
   city: Logan
+  county: 'Cache'
   state: UT
   zip: '84341'
-  phone: (435)753-8090
+  phone: (435) 753-8090
   party: 'Republican'
   email: merrill.greg@comcast.net
-  website: gregmerrillut.com
+  website: 'http://www.gregmerrillut.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DAN N. JOHNSON'
+  id: ut0324
+  name: 'Dan N. Johnson'
   first_name: Dan
   middle_name: N.
   last_name: Johnson
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 4'
   district: '4'
   address: '526 West 600 South'
-
   city: Logan
+  county: 'Cache'
   state: UT
   zip: '84321'
-  phone: (435)770-7051
+  phone: (435) 770-7051
   party: 'Republican'
   email: danjohnsonhouse4@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'KARINA ANDELIN BROWN'
+  id: ut0325
+  name: 'Karina Andelin Brown'
   first_name: Karina
   middle_name: Andelin
   last_name: Brown
@@ -2535,521 +2537,537 @@
   district: '5'
   address: '5331 Sleepy Hollow Lane'
   city: Nibley
+  county: 'Cache'
   state: UT
   zip: '84321'
-  phone: (435)881-2798
+  phone: (435) 881-2798
   party: 'Democratic'
   email: karina@karinaforutah.com
-  website: www.karinaforutah.com
+  website: 'https://www.karinaforutah.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'CASEY SNIDER'
+  id: ut0326
+  name: 'Casey Snider'
   first_name: Casey
   middle_name: ''
   last_name: Snider
   suffix:  ''
+  gender: 'male'
   office: 'State House 5'
   district: '5'
   address: 'PO Box 450'
   city: Paradise
+  county: 'Cache'
   state: UT
   zip: '84328'
-  phone: (435)770-4081
+  phone: (435) 770-4081
   party: 'Republican'
   email: csnider5@gmail.com
-  website: www.caseysnider.com
+  website: 'https://www.caseysnider.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'STEVEN B HANSON'
+  id: ut0327
+  name: 'Steven B Hanson'
   first_name: Steven
   middle_name: B
   last_name: Hanson
   suffix:  ''
+  gender: 'male'
   office: 'State House 5'
   district: '5'
   address: 'PO Box 328'
   city: Millville
+  county: 'Cache'
   state: UT
   zip: '84326'
-  phone: (435)757-2529
+  phone: (435) 757-2529
   party: 'Republican'
   email: stevenbhanson@gmail.com
   website: ''
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MATTHEW FREESTONE'
+  id: ut0328
+  name: 'Matthew Freestone'
   first_name: Matthew
   middle_name: ''
   last_name: Freestone
   suffix:  ''
+  gender: 'male'
   office: 'State House 6'
   district: '6'
   address: '5032 N Shady Bend Lane'
   city: Lehi
+  county: 'Utah'
   state: UT
   zip: '84043'
-  phone: (801)822-7472
+  phone: (801) 822-7472
   party: 'Republican'
   email: matt@matthewfreestone.com
-  website: matthewfreestone.com
+  website: 'https://www.matthewfreestone.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'CORY MALOY'
+  id: ut0329
+  name: 'Cory Maloy'
   first_name: Cory
   middle_name: ''
   last_name: Maloy
   suffix:  ''
+  gender: 'male'
   office: 'State House 6'
   district: '6'
   address: '283 E 500 N'
   city: Lehi
+  county: 'Utah'
   state: UT
   zip: '84043'
-  phone: (801)477-0019
+  phone: (801) 477-0019
   party: 'Republican'
   email: cory@corymaloy.com
-  website: carymaloy.com
+  website: 'https://www.corymaloy.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DAVID OWEN'
+  id: ut0330
+  name: 'David Owen'
   first_name: David
   middle_name: ''
   last_name: Owen
   suffix:  ''
+  gender: 'male'
   office: 'State House 7'
   district: '7'
   address: '753 E 3800 N'
   city: 'North Ogden'
+  county: 'Weber'
   state: UT
   zip: '84414'
-  phone: (801)644-7027
+  phone: (801) 644-7027
   party: 'Democratic'
   email: davidowenutah7@gmail.com
   facebook: www.facebook.com/davidowenutah7
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'KYLE R. ANDERSEN'
+  id: ut0331
+  name: 'Kyle R. Andersen'
   first_name: Kyle
   middle_name: R.
   last_name: Andersen
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 7'
   district: '7'
   address: '1257 E 2250 N'
-
   city: 'North Ogden'
+  county: 'Weber'
   state: UT
   zip: '84414'
-  phone: (801)686-7428
+  phone: (801) 686-7428
   party: 'Republican'
   email: kylerandersen@comcast.net
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'LISA ROSKELLEY'
+  id: ut0332
+  name: 'Lisa Roskelley'
   first_name: Lisa
   middle_name: ''
-
   last_name: Roskelley
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 7'
   district: '7'
   address: '1531 N 775 E'
-
   city: 'North Ogden'
+  county: 'Weber'
   state: UT
   zip: '84404'
-  phone: (801)560-0137
+  phone: (801) 560-0137
   party: 'Republican'
   email: lisa@roskelley.us
-  website: lisaroskelley.com
+  website: 'https://lisaroskelley.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'ROBERT D. PETERSEN'
+  id: ut0333
+  name: 'Robert D. Petersen'
   first_name: Robert
   middle_name: D.
   last_name: Petersen
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 7'
   district: '7'
   address: '719 E. 2675 N.'
-
   city: 'North Ogden'
+  county: 'Weber'
   state: UT
   zip: '84414'
-  phone: (801)725-7676
+  phone: (801) 725-7676
   party: 'Republican'
   email: repeterunner@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DAN DEUEL'
+  id: ut0334
+  name: 'Dan Deuel'
   first_name: Dan
   middle_name: ''
-
   last_name: Deuel
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 7'
   district: '7'
   address: '788 Simoron Dr'
-
   city: Ogden
+  county: 'Weber'
   state: UT
   zip: '84404'
-  phone: (801)896-3668
+  phone: (801) 896-3668
   party: 'Republican'
   email: vote@dandeuel.com
-  website: www.dandeuel.com
+  website: 'https://www.dandeuel.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DEANA FROERER'
+  id: ut0335
+  name: 'Deana Froerer'
   first_name: Deana
   middle_name: ''
-
   last_name: Froerer
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 8'
   district: '8'
   address: 'PO Box 94'
-
   city: Huntsville
+  county: 'Weber'
   state: UT
   zip: '84317'
-  phone: (801)388-7162
+  phone: (801) 388-7162
   party: 'Democratic'
   email: deana@froerer4house.com
-  website: froerer4house.com
+  website: 'https://www.froerer4house.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'KIMBERLY L. STEVENS'
+  id: ut0336
+  name: 'Kimberly L. Stevens'
   first_name: Kimberly
   middle_name: L.
   last_name: Stevens
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 8'
   district: '8'
   address: '3133 E 4650 N'
-
   city: Liberty
+  county: 'Weber'
   state: UT
   zip: '84310'
-  phone: (801)675-6599
+  phone: (801) 675-6599
   party: 'Republican'
   email: electkimberlystevens@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DEONE EHLERS-RHORER'
+  id: ut0337
+  name: 'Deone Ehlers-Rhorer'
   first_name: Deone
   middle_name: ''
-
   last_name: Ehlers-Rhorer
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 8'
   district: '8'
   address: 'PO Box 821'
-
   city: Eden
+  county: 'Weber'
   state: UT
   zip: '84310'
-  phone: (801)391-6240
+  phone: (801) 391-6240
   party: 'Republican'
   email: deone@ladybugrealty.net
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'STEVE WALDRIP'
+  id: ut0338
+  name: 'Steve Waldrip'
   first_name: Steve
   middle_name: ''
-
   last_name: Waldrip
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 8'
   district: '8'
   address: '1911 N 5700 E'
-
   city: Eden
+  county: 'Weber'
   state: UT
   zip: '84310'
-  phone: (801)389-9329
+  phone: (801) 389-9329
   party: 'Republican'
   email: electstevewaldrip@gmail.com
-  website: electstevewaldrip.com
+  website: 'https://electstevewaldrip.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JASON B. KYLE'
+  id: ut0339
+  name: 'Jason B. Kyle'
   first_name: Jason
   middle_name: B.
   last_name: Kyle
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 8'
   district: '8'
   address: 'PO Box 13'
-
   city: Huntsville
+  county: 'Weber'
   state: UT
   zip: '84317'
-  phone: (801)259-4703
+  phone: (801) 259-4703
   party: 'Republican'
   email: jasonbkyleut@gmail.com
-  website: facebook.com/electjasonkyle
+  facebook: https://www.facebook.com/electjasonkyle
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'EMILY BEELI'
+  id: ut0340
+  name: 'Emily Beeli'
   first_name: Emily
   middle_name: ''
-
   last_name: Beeli
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 9'
   district: '9'
   address: '2247 Van Buren Ave Apt B'
-
   city: Ogden
+  county: 'Weber'
   state: UT
   zip: '84401'
-  phone: (801)825-3306
+  phone: (801) 825-3306
   party: 'Republican'
   email: emilybeeli@gmail.com
   website: ''
-
   candidate_status: 'withdrew'
 -
-  name: 'CALVIN R. MUSSELMAN'
+  id: ut0341
+  name: 'Calvin R. Musselman'
   first_name: Calvin
   middle_name: R.
   last_name: Musselman
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 9'
   district: '9'
   address: '4137 S 4100 W'
-
   city: 'West Haven'
+  county: 'Weber'
   state: UT
   zip: '84401'
-  phone: (801)941-6188
+  phone: (801) 941-6188
   party: 'Republican'
   email: calmusselman@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'ADRIAN WILLIAM EADS'
+  id: ut0342
+  name: 'Adrian William Eads'
   first_name: Adrian
   middle_name: William
   last_name: Eads
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 9'
   district: '9'
   address: '2555 Quincy Ave'
-
   city: Ogden
+  county: 'Weber'
   state: UT
   zip: '84401'
-  phone: (801)499-9878
+  phone: (801) 499-9878
   party: 'Republican'
   email: adrianeads@live.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MARY KHALAF'
+  id: ut0343
+  name: 'Mary Khalaf'
   first_name: Mary
   middle_name: ''
-
   last_name: Khalaf
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 9'
   district: '9'
   address: '2114 Monroe Blvd Apt 1'
-
   city: Ogden
+  county: 'Weber'
   state: UT
   zip: '84401'
-  phone: (801)564-2526
+  phone: (801) 564-2526
   party: 'Republican'
   email: thekhalafhouse@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'KATHIE J. DARBY'
+  id: ut0344
+  name: 'Kathie J. Darby'
   first_name: Kathie
   middle_name: J.
   last_name: Darby
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 9'
   district: '9'
   address: '4069 S 3600 W'
-
   city: 'West Haven'
+  county: 'Weber'
   state: UT
   zip: '84401'
-  phone: (801)726-0736
+  phone: (801) 726-0736
   party: 'Democratic'
   email: kjdarby@hotmail.com
-  website: kathiedarby.org
+  website: 'http://www.kathiedarby.org/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'LORRAINE P. BROWN'
+  id: ut0345
+  name: 'Lorraine P. Brown'
   first_name: Lorraine
   middle_name: P.
   last_name: Brown
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 10'
   district: '10'
   address: '4994 Skyline Pkwy'
-
   city: Ogden
+  county: 'Weber'
   state: UT
   zip: '84403'
-  phone: (801)643-3832
+  phone: (801) 643-3832
   party: 'Republican'
   email: lorrainepbrown@gmail.com
-  website: www.votelorrainebrown.com
+  website: 'https://www.votelorrainebrown.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'TERRY D SCHOW'
+  id: ut0346
+  name: 'Terry D. Schow'
   first_name: Terry
   middle_name: D
   last_name: Schow
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 10'
   district: '10'
   address: '935 E 4100 S'
-
   city: 'South Ogden'
+  county: 'Weber'
   state: UT
   zip: '84403'
-  phone: (801)627-2058
+  phone: (801) 627-2058
   party: 'Republican'
   email: tschow48@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'LAWANNA ''LOU'' SHURTLIFF'
+  id: ut0347
+  name: 'LaWanna “Lou” Shurtliff'
   first_name: LaWanna
-  middle_name: '''Lou'''
+  middle_name: '“Lou”'
   last_name: Shurtliff
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 10'
   district: '10'
   address: '5085 Aztec Dr'
-
   city: Ogden
+  county: 'Weber'
   state: UT
   zip: '84403'
-  phone: (801)479-0289
+  phone: (801) 479-0289
   party: 'Democratic'
   email: lmshurtliff@comcast.net
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JASON M. ALLEN'
+  id: ut0348
+  name: 'Jason M. Allen'
   first_name: Jason
   middle_name: M.
   last_name: Allen
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 11 (Multi County)'
   district: '11'
   address: '149 E 5200 S'
-
   city: 'Washington Terrace'
+  county: 'Weber'
   state: UT
   zip: '84405'
-  phone: (801)540-0334
+  phone: (801) 540-0334
   party: 'Democratic'
   email: jason.mark.allen@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'KELLY B. MILES'
+  id: ut0349
+  name: 'Kelly B. Miles'
   first_name: Kelly
   middle_name: B.
   last_name: Miles
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 11 (Multi County)'
   district: '11'
   address: '6288 S 1575 E'
-
   city: Ogden
+  county: 'Weber'
   state: UT
   zip: '84405'
-  phone: (801)458-8270
+  phone: (801) 458-8270
   party: 'Republican'
   email: kellymilesforutah@gmail.com
-  website: kellymiles.org
+  website: 'https://kellymiles.org/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MIKE SCHULTZ'
+  id: ut0350
+  name: 'Mike Schultz'
   first_name: Mike
   middle_name: ''
-
   last_name: Schultz
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 12 (Multi County)'
   district: '12'
   address: '4904 W 5850 S'
-
   city: Hooper
+  county: 'Weber'
   state: UT
   zip: '84315'
-  phone: (801)564-7618
+  phone: (801) 564-7618
   party: 'Republican'
   email: mikeschultzcch@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
@@ -5444,9 +5462,10 @@
   district: '45'
   address: '8157 S Grambling Way'
   city: Sandy
+  county: 'Salt Lake'
   state: UT
   zip: '84094'
-  phone: (801)673-4748
+  phone: (801) 673-4748
   party: 'Republican'
   email: sealiason@le.utah.gov
   website: steveeliason.com
