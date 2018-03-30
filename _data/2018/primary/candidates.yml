@@ -3071,1146 +3071,1124 @@
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'RICK EDWIN JONES'
+  id: ut0351
+  name: 'Rick Edwin Jones'
   first_name: Rick
   middle_name: Edwin
   last_name: Jones
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 12 (Multi County)'
   district: '12'
   address: '4825 W 4000 S'
-
   city: 'West Haven'
+  county: 'Weber'
   state: UT
   zip: '84401'
-  phone: (801)731-0391
+  phone: (801) 731-0391
   party: 'Democratic'
   email: rickejones@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'TAB LYN UNO'
+  id: ut0352
+  name: 'Tab Lyn Uno'
   first_name: Tab
   middle_name: Lyn
   last_name: Uno
   suffix:  ''
-
   office: 'State House 13'
   district: '13'
   address: '46 S. 1050 W.'
-
   city: Clearfield
   state: UT
   zip: '84015'
-  phone: (801)458-6743
+  phone: (801) 458-6743
   party: 'Democratic'
   email: tablynuno@msn.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'PAUL RAY'
+  id: ut0353
+  name: 'Paul Ray'
   first_name: Paul
   middle_name: ''
-
   last_name: Ray
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 13'
   district: '13'
   address: 'PO Box 977'
-
   city: Clearfield
+  county: 'Davis'
   state: UT
   zip: '84089'
-  phone: (801)725-2719
+  phone: (801) 725-2719
   party: 'Republican'
   email: Paul@PaulRay.org
-  website: www.PaulRay.org
+  website: 'http://www.paulray.org/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'KARIANNE LISONBEE'
+  id: ut0354
+  name: 'Karianne Lisonbee'
   first_name: Karianne
   middle_name: ''
-
   last_name: Lisonbee
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 14'
   district: '14'
   address: 'PO Box 160152'
-
   city: Clearfield
+  county: 'Davis'
   state: UT
   zip: '84016'
-  phone: (801)589-2934
+  phone: (801) 589-2934
   party: 'Republican'
   email: kari.lisonbee@gmail.com
-  website: karianne.org
+  website: 'http://karianne.org/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'SHANELL DAY'
+  id: ut0355
+  name: 'Shanell Day'
   first_name: Shanell
   middle_name: ''
-
   last_name: Day
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 14'
   district: '14'
   address: '1053 W. 1060 N.'
-
   city: Layton
+  county: 'Davis'
   state: UT
   zip: '84041'
-  phone: (385)424-5939
+  phone: (385) 424-5939
   party: 'Democratic'
   email: shanelldayut@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'RICH MILLER'
+  id: ut0356
+  name: 'Rich Miller'
   first_name: Rich
   middle_name: ''
-
   last_name: Miller
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 15'
   district: '15'
   address: '1698 W. 200 N.'
-
   city: Kaysville
+  county: 'Davis'
   state: UT
   zip: '84037'
-  phone: (801)876-0001
+  phone: (801) 876-0001
   party: 'Democratic'
   email: electrich@gmail.com
-  website: richmiller.us
+  website: 'http://richmiller.us/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'BRAD WILSON'
+  id: ut0357
+  name: 'Brad Wilson'
   first_name: Brad
   middle_name: ''
-
   last_name: Wilson
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 15'
   district: '15'
   address: '1135 Foxtrotter Court'
-
   city: Kaysville
+  county: 'Davis'
   state: UT
   zip: '84037'
-  phone: (801)309-3602
+  phone: (801) 309-3602
   party: 'Republican'
   email: electbradwilson@gmail.com
-  website: www.ElectBradWilson.com
+  website: 'https://www.votebradwilson.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'BRENT ZIMMERMAN'
+  id: ut0358
+  name: 'Brent Zimmerman'
   first_name: Brent
   middle_name: ''
-
   last_name: Zimmerman
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 16'
   district: '16'
   address: '1617 North 350 East'
-
   city: Layton
+  county: 'Davis'
   state: UT
   zip: '84041'
-  phone: (801)773-4162
+  phone: (801) 773-4162
   party: Libertarian
   email: brent@zimfam.org
-  website: www.bdz.zimfam.org
+  website: 'http://bdz.zimfam.org/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'STEVE HANDY'
+  id: ut0359
+  name: 'Steve Handy'
   first_name: Steve
   middle_name: ''
-
   last_name: Handy
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 16'
   district: '16'
   address: '1355 E 625 N'
-
   city: Layton
+  county: 'Davis'
   state: UT
   zip: '84040'
-  phone: (801)699-2737
+  phone: (801) 699-2737
   party: 'Republican'
   email: sghandy@comcast.net
-  website: Stevehandyutah.com
+  website: 'http://www.stevehandyutah.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'CHERYL NUNN'
+  id: ut0360
+  name: 'Cheryl Nunn'
   first_name: Cheryl
   middle_name: ''
-
   last_name: Nunn
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 16'
   district: '16'
   address: '2779 Hobbs Creek Dr'
-
   city: Layton
+  county: 'Davis'
   state: UT
   zip: '84040'
-  phone: (385)231-0150
+  phone: (385) 231-0150
   party: 'Democratic'
   email: cheryl.nunn@gmail.com
-  website: cherylnunn.com
+  website: 'http://cherylnunn.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'STEWART E. BARLOW'
+  id: ut0361
+  name: 'Stewart E. Barlow'
   first_name: Stewart
   middle_name: E.
   last_name: Barlow
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 17'
   district: '17'
   address: '940 Signal Hill'
-
   city: 'Fruit Heights'
+  county: 'Davis'
   state: UT
   zip: '84037'
-  phone: (801)721-5551
+  phone: (801) 721-5551
   party: 'Republican'
   email: stewartebarlow@aol.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DAWN NUNN'
+  id: ut0362
+  name: 'Dawn Nunn'
   first_name: Dawn
   middle_name: ''
-
   last_name: Nunn
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 17'
   district: '17'
   address: '1325 Oakmont Ln'
-
   city: 'Fruit Heights'
+  county: 'Davis'
   state: UT
   zip: '84037'
-  phone: (385)231-3958
+  phone: (385) 231-3958
   party: 'Democratic'
   email: dawnasuenunn@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'ADAM ALBA'
+  id: ut0363
+  name: 'Adam Alba'
   first_name: Adam
   middle_name: ''
-
   last_name: Alba
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 18'
   district: '18'
   address: '759 E. 850 S.'
-
   city: Centerville
+  county: 'Davis'
   state: UT
   zip: '84014'
-  phone: (801)792-8785
+  phone: (801) 792-8785
   party: 'Democratic'
   email: adam.alba@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'TIMOTHY D. HAWKES'
+  id: ut0364
+  name: 'Timothy D. Hawkes'
   first_name: Timothy
   middle_name: D.
   last_name: Hawkes
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 18'
   district: '18'
   address: '443 S. 225 E.'
-
   city: Centerville
+  county: 'Davis'
   state: UT
   zip: '84015'
-  phone: (801)928-9008
+  phone: (801) 928-9008
   party: 'Republican'
   email: timothy.d.hawkes@gmail.com
-  website: timhawkes.org
+  website: 'https://timothyhawkes.wordpress.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JOE SPECIALE'
+  id: ut0365
+  name: 'Joe Speciale'
   first_name: Joe
   middle_name: ''
-
   last_name: Speciale
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 19'
   district: '19'
   address: '1295 S. 400 E.'
-
   city: Bountiful
+  county: 'Davis'
   state: UT
   zip: '84010'
-  phone: (801)382-7070
+  phone: (801) 382-7070
   party: Libertarian
   email: jmspeciale@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'RAYMOND WARD'
+  id: ut0366
+  name: 'Raymond Ward'
   first_name: Raymond
   middle_name: ''
-
   last_name: Ward
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 19'
   district: '19'
   address: '954 E Millbrook Way'
-
   city: Bountiful
+  county: 'Davis'
   state: UT
   zip: '84010'
-  phone: (801)440-8765
+  phone: (801) 440-8765
   party: 'Republican'
   email: rayward1024@yahoo.com
-  website: raywardutah.com
+  website: 'https://www.raywardutah.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'PHILL WRIGHT'
+  id: ut0367
+  name: 'Phill Wright'
   first_name: Phill
   middle_name: ''
-
   last_name: Wright
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 19'
   district: '19'
   address: '1253 Cassidy Circle'
-
   city: Bountiful
+  county: 'Davis'
   state: UT
   zip: '84010'
-  phone: (801)540-3598
+  phone: (801) 540-3598
   party: 'Republican'
   email: phillwright@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'COURTNEY JONES'
+  id: ut0368
+  name: 'Courtney Jones'
   first_name: Courtney
   middle_name: ''
-
   last_name: Jones
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 19'
   district: '19'
   address: '452 Oakview Lane'
-
   city: Bountiful
+  county: 'Davis'
   state: UT
   zip: '84010'
-  phone: (801)556-4730
+  phone: (801) 556-4730
   party: 'Democratic'
   email: courtneyjames801@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MELISSA GARFF BALLARD'
+  id: ut0369
+  name: 'Melissa Garff Ballard'
   first_name: Melissa
   middle_name: Garff
   last_name: Ballard
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 20'
   district: '20'
   address: '407 Elk Hollow Circle'
-
   city: 'North Salt Lake'
+  county: 'Davis'
   state: UT
   zip: '84054'
-  phone: (801)633-6561
+  phone: (801) 633-6561
   party: 'Republican'
   email: info@melissagarffballard.com
-  website: melissagarffballard.com
+  website: 'https://melissagarffballard.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'CASSIDY HINE'
+  id: ut0370
+  name: 'Cassidy Hine'
   first_name: Cassidy
   middle_name: ''
-
   last_name: Hine
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 20'
   district: '20'
   address: '206 N. 800 W.'
-
   city: 'West Bountiful'
+  county: 'Davis'
   state: UT
   zip: '84087'
-  phone: (801)721-6027
+  phone: (801) 721-6027
   party: 'Democratic'
   email: cassidyhine@gmail.com
   website: ''
-
   candidate_status: 'withdrew'
 -
-  name: 'RYAN L JONES'
+  id: ut0371
+  name: 'Ryan L. Jones'
   first_name: Ryan
-  middle_name: L
+  middle_name: L.
   last_name: Jones
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 20'
   district: '20'
   address: '2208 W. 2260 S.'
-
   city: 'Woods Cross'
+  county: 'Davis'
   state: UT
   zip: '84087'
-  phone: (385)489-9353
+  phone: (385) 489-9353
   party: 'Democratic'
-  email: RyanLJones801@gmail.com
+  email: ryanljones801@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MATT JENSEN'
+  id: ut0372
+  name: 'Matt Jensen'
   first_name: Matt
   middle_name: ''
-
   last_name: Jensen
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 20'
   district: '20'
   address: '980 W. Manchester Dr'
-
   city: 'North Salt Lake'
+  county: 'Davis'
   state: UT
   zip: '84054'
-  phone: (801)550-0778
+  phone: (801) 550-0778
   party: 'Republican'
   email: mattjensenutah@gmail.com
-  website: mattjgop.com
+  website: 'http://jensengop.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'GLEN G. JENKINS'
+  id: ut0373
+  name: 'Glen G. Jenkins'
   first_name: Glen
   middle_name: G.
   last_name: Jenkins
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 20'
   district: '20'
   address: '972 S. 1100 W.'
-
   city: 'Woods Cross'
+  county: 'Davis'
   state: UT
   zip: '84087'
-  phone: (801)298-1649
+  phone: (801) 298-1649
   party: 'Republican'
   email: glenjwx@yahoo.com
-  website: glenjenkins.com
+  website: 'http://www.glenjenkins.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DOUGLAS SAGERS'
+  id: ut0374
+  name: 'Douglas Sagers'
   first_name: Douglas
   middle_name: ''
-
   last_name: Sagers
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 21'
   district: '21'
   address: '243 Home Town Court'
-
   city: Tooele
+  county: 'Tooele'
   state: UT
   zip: '84074'
-  phone: (435)882-0931
+  phone: (435) 882-0931
   party: 'Republican'
   email: doug_sagers@yahoo.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DEBBIE K. VIGIL'
+  id: ut0375
+  name: 'Debbie K. Vigil'
   first_name: Debbie
   middle_name: K.
   last_name: Vigil
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 21'
   district: '21'
   address: '21 Columbia Dr.'
-
   city: Tooele
+  county: 'Tooele'
   state: UT
   zip: '84074'
-  phone: (435)255-5470
+  phone: (435) 255-5470
   party: 'Democratic'
   email: vigil.debbie@yahoo.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DONNA CASE'
+  id: ut0376
+  name: 'Donna Case'
   first_name: Donna
   middle_name: ''
-
   last_name: Case
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 22'
   district: '22'
   address: '2889 S 8500 W'
-
   city: Magna
+  county: 'Salt Lake'
   state: UT
   zip: '84044'
-  phone: (801)651-2292
+  phone: (801) 651-2292
   party: 'Republican'
   email: donnacase22@gmail.com
-  website: donnacase.weebly.com
+  website: 'https://donnacase.weebly.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'AMBER CHRISTIANSEN BELTRAN'
+  id: ut0377
+  name: 'Amber Christiansen Beltran'
   first_name: Amber
   middle_name: ''
-
   last_name: 'Christiansen Beltran'
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 22'
   district: '22'
   address: '3393 S Oquir Lane Street'
-
   city: Magna
+  county: 'Salt Lake'
   state: UT
   zip: '84044'
-  phone: (801)318-4256
+  phone: (801) 318-4256
   party: Libertarian
   email: amberbeltran22@gmail.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'BARBARA M. STALLONE'
+  id: ut0378
+  name: 'Barbara M. Stallone'
   first_name: Barbara
   middle_name: M.
   last_name: Stallone
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 22'
   district: '22'
   address: '6352 City Vistas Way'
-
   city: 'West Valley City'
+  county: 'Salt Lake'
   state: UT
   zip: '84128'
-  phone: (801)638-1494
+  phone: (801) 638-1494
   party: 'Republican'
   email: barbara.stallone@yahoo.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MARILEE ROOSE'
+  id: ut0379
+  name: 'Marilee Roose'
   first_name: Marilee
   middle_name: ''
-
   last_name: Roose
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 22'
   district: '22'
   address: '3125 S 8520 W'
   city: Magna
+  county: 'Salt Lake'
   state: UT
   zip: '84044'
-  phone: (801)688-0228
+  phone: (801) 688-0228
   party: Constitution
   email: crmrfamily@msn.com
   website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'SUSAN D DUCKWORTH'
+  id: ut0380
+  name: 'Susan D. Duckworth'
   first_name: Susan
-  middle_name: D
+  middle_name: D.
   last_name: Duckworth
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 22'
   district: '22'
   address: '2901 S Merton Way'
-
   city: Magna
+  county: 'Salt Lake'
   state: UT
   zip: '84044'
-  phone: (801)250-0728
+  phone: (801) 250-0728
   party: 'Democratic'
   email: suefor22@gmail.com
-  website: www.suefor22.com
+  website: 'http://www.suefor22.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'SANDRA HOLLINS'
+  id: ut0381
+  name: 'Sandra Hollins'
   first_name: Sandra
   middle_name: ''
-
   last_name: Hollins
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 23'
   district: '23'
   address: '518 North 800 West'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84116'
-  phone: (801)363-4257
+  phone: (801) 363-4257
   party: 'Democratic'
   email: hollinssandra@gmail.com
-  website: sandrahollins.com
+  website: 'https://www.sandrahollins.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'ARNOLD M JONES'
+  id: ut0382
+  name: 'Arnold M. Jones'
   first_name: Arnold
   middle_name: M
   last_name: Jones
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 23'
   district: '23'
   address: '1246 West 1000 N'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84116'
-  phone: (801)347-5153
+  phone: (801) 347-5153
   party: 'Republican'
   email: electarnoldjones@gmail.com
-  website: www.electarnoldjones.com
+  website: 'http://www.electarnoldjones.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JACQUELYN ORTON'
+  id: ut0383
+  name: 'Jacquelyn Orton'
   first_name: Jacquelyn
   middle_name: ''
-
   last_name: Orton
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 24'
   district: '24'
   address: '1283 E 4th Ave'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84103'
-  phone: (801)533-2455
+  phone: (801) 533-2455
   party: 'Democratic'
   email: jo@ortonforhouse.com
-  website: ortonforhouse.com
+  website: 'http://ortonforhouse.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'IGOR LIMANSKY'
+  id: ut0384
+  name: 'Igor Limansky'
   first_name: Igor
   middle_name: ''
-
   last_name: Limansky
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 24'
   district: '24'
   address: '146 S Lincoln St. #4'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84102'
-  phone: (801)243-6457
+  phone: (801) 243-6457
   party: 'Democratic'
   email: igor@igorlimansky.com
-  website: www.igorlimansky.com
+  website: 'http://www.igorlimansky.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'DARIN MANN'
+  id: ut0385
+  name: 'Darin Mann'
   first_name: Darin
   middle_name: ''
-
   last_name: Mann
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 24'
   district: '24'
   address: '1266 E Alameda Ave Apt 3'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84102'
-  phone: (385)228-8603
+  phone: (385) 228-8603
   party: 'Democratic'
   email: darinfor24@gmail.com
-  website: darinmann.com
+  website: 'https://darinmann.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'SHAWN ROBINSON'
+  id: ut0386
+  name: 'Shawn Robinson'
   first_name: Shawn
   middle_name: ''
-
   last_name: Robinson
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 24'
   district: '24'
   address: '55 N Virginia St'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84103'
-  phone: (801)635-5855
+  phone: (801) 635-5855
   party: 'Democratic'
   email: srobinsonlaw@hotmail.com
-  website: ''
-
   candidate_status: 'withdrew'
 -
-  name: 'SCOTT ROSENBUSH'
+  id: ut0387
+  name: 'Scott Rosenbush'
   first_name: Scott
   middle_name: ''
-
   last_name: Rosenbush
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 24'
   district: '24'
   address: '1027 N Terrace Hills Dr'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84103'
-  phone: (801)901-0973
+  phone: (801) 901-0973
   party: 'Republican'
   email: scott@rosenbush4utah.com
-  website: rosenbush4utah.org
+  website: 'https://rosenbush4utah.org/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'RICHARD NAHUM GOLDBERGER'
+  id: ut0388
+  name: 'Richard Nahum Goldberger'
   first_name: Richard
   middle_name: Nahum
   last_name: Goldberger
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 24'
   district: '24'
   address: '255 N 400 W'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84103'
-  phone: (801)355-3336
+  phone: (801) 355-3336
   party: 'Democratic'
-  email: RNGREP@gmail.com
-  website: ''
-
+  email: rngrep@gmail.com
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'RYAN J. PARKER'
+  id: ut0389
+  name: 'Ryan J. Parker'
   first_name: Ryan
   middle_name: J.
   last_name: Parker
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 24'
   district: '24'
   address: '544 E 100 S Apt 35'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84102'
-  phone: (801)300-0431
+  phone: (801) 300-0431
   party: 'Democratic'
   email: contact@voteryan24.com
-  website: voteryan24.com
+  website: 'https://www.voteryan24.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JEN DAILEY-PROVOST'
+  id: ut0390
+  name: 'Jen Dailey-Provost'
   first_name: Jen
   middle_name: ''
-
   last_name: Dailey-Provost
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 24'
   district: '24'
   address: '812 N Sandhurst Dr'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84103'
-  phone: (801)502-1889
+  phone: (801) 502-1889
   party: 'Democratic'
   email: jldprovost@gmail.com
-  website: www.jenforutah.com
+  website: 'http://jenforutah.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JOEL K. BRISCOE'
+  id: ut0391
+  name: 'Joel K. Briscoe'
   first_name: Joel
   middle_name: K.
   last_name: Briscoe
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 25'
   district: '25'
   address: '1124 E 600 S'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84102'
-  phone: (801)425-3038
+  phone: (801) 425-3038
   party: 'Democratic'
   email: joelfor25@gmail.com
-  website: www.joelbriscoe.com
+  website: 'https://joelbriscoe.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'GARY ERNEST GABRIELSON'
+  id: ut0392
+  name: 'Gary Ernest Gabrielson'
   first_name: Gary
   middle_name: Ernest
   last_name: Gabrielson
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 25'
   district: '25'
   address: '176 Macarthur Ave'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84115'
-  phone: (801)560-3350
+  phone: (801) 560-3350
   party: 'Republican'
   email: bonnie8@gmail.com
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'CABOT W. NELSON'
+  id: ut0393
+  name: 'Cabot W. Nelson'
   first_name: Cabot
   middle_name: W.
   last_name: Nelson
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 25'
   district: '25'
   address: '984 Simpson Ave'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84106'
-  phone: (801)466-9315
+  phone: (801) 466-9315
   party: 'United Utah'
   email: cabot.nelson@yahoo.com
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'SCOTT B. MADSEN'
+  id: ut0394
+  name: 'Scott B. Madsen'
   first_name: Scott
   middle_name: B.
   last_name: Madsen
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 26'
   district: '26'
   address: '1419 Stetson Way'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84104'
-  phone: (801)819-6277
+  phone: (801) 819-6277
   party: 'Republican'
   email: scott_b_madsen@yahoo.com
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'ANGELA ROMERO'
+  id: ut0395
+  name: 'Angela Romero'
   first_name: Angela
   middle_name: ''
-
   last_name: Romero
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 26'
   district: '26'
   address: 'PO Box 25732'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84125'
-  phone: (801)243-2719
+  phone: (801) 243-2719
   party: 'Democratic'
   email: angela.romero37@gmail.com
-  website: www.angelaromero.com
+  website: 'http://www.angelaromero.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MAN HUNG'
+  id: ut0396
+  name: 'Man Hung'
   first_name: Man
   middle_name: ''
-
   last_name: Hung
   suffix:  ''
-
+  gender: 'female'
   office: 'State House 26'
   district: '26'
   address: '822 S 500 E'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84102'
-  phone: (801)355-3028
+  phone: (801) 355-3028
   party: 'Republican'
   email: hung4utah@gmail.com
-  website: hung4utah.wordpress.com
+  website: 'https://hung4utah.wordpress.com/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JONATHAN GREENE'
+  id: ut0397
+  name: 'Jonathan Greene'
   first_name: Jonathan
   middle_name: ''
-
   last_name: Greene
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 26'
   district: '26'
   address: '625 S 600 E Apt 5'
-
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84102'
-  phone: (925)998-5403
+  phone: (925) 998-5403
   party: Libertarian
   email: jon@jongreene.works
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'SAMUEL COTTON-BETTERIDGE'
+  id: ut0398
+  name: 'Samuel Cotton-Betteridge'
   first_name: Samuel
   middle_name: ''
-
   last_name: Cotton-Betteridge
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 27'
   district: '27'
   address: '5586 W 10130 N'
-
   city: Highland
+  county: 'Utah'
   state: UT
   zip: '84003'
-  phone: (801)999-0839
+  phone: (801) 999-0839
   party: 'Republican'
   email: sam4house27@gmail.com
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JARED CARMAN'
+  id: ut0399
+  name: 'Jared Carman'
   first_name: Jared
   middle_name: ''
-
   last_name: Carman
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 27'
   district: '27'
   address: '6748 Canterbury Drive'
-
   city: Highland
+  county: 'Utah'
   state: UT
   zip: '84003'
-  phone: (385)249-4434
+  phone: (385) 249-4434
   party: 'Republican'
   email: utahdad@thecarmans.org
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'CURT CROSBY'
+  id: ut0400
+  name: 'Curt Crosby'
   first_name: Curt
   middle_name: ''
-
   last_name: Crosby
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 27'
   district: '27'
   address: '9835 N Meadows Dr'
-
   city: 'Cedar Hills'
+  county: 'Utah'
   state: UT
   zip: '84062'
-  phone: (801)669-2211
+  phone: (801) 669-2211
   party: 'Independent American'
   email: curt@libertyroundtable.com
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'MARK N. BAIR'
+  id: ut0401
+  name: 'Mark N. Bair'
   first_name: Mark
   middle_name: N.
   last_name: Bair
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 27'
   district: '27'
   address: '6048 W Dry Creek Circle'
-
   city: Highland
+  county: 'Utah'
   state: UT
   zip: '84003'
-  phone: (801)918-1144
+  phone: (801) 918-1144
   party: 'Republican'
   email: mark4success@gmail.com
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'JOSEPH GEDDES BUCHMAN'
+  id: ut0402
+  name: 'Joseph Geddes Buchman'
   first_name: Joseph
   middle_name: Geddes
   last_name: Buchman
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 27'
   district: '27'
   address: '584 Hillside Circle'
-
   city: Alpine
+  county: 'Utah'
   state: UT
   zip: '84004'
-  phone: (435)602-0798
+  phone: (435) 602-0798
   party: Libertarian
-  email: Joe4Liberty@gmail.com
-  website: www.joe4liberty.vote
+  email: joe4liberty@gmail.com
+  website: 'https://joe4liberty.vote/'
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'BRADY BRAMMER'
+  id: ut0403
+  name: 'Brady Brammer'
   first_name: Brady
   middle_name: ''
-
   last_name: Brammer
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 27'
   district: '27'
   address: '1955 W Grove Parkway, Suite 250'
-
   city: 'Pleasant Grove'
+  county: 'Utah'
   state: UT
   zip: '84062'
-  phone: (801)839-4653
+  phone: (801) 839-4653
   party: 'Republican'
   email: bbrammer@spauldinglaw.com
-  website: ''
-
   candidate_status: 'filed'
   last_updated: '2018-03-27'
 -
-  name: 'KEVIN BRADDY'
+  id: ut0404
+  name: 'Kevin Braddy'
   first_name: Kevin
   middle_name: ''
-
   last_name: Braddy
   suffix:  ''
-
+  gender: 'male'
   office: 'State House 27'
   district: '27'
   address: '6615 W 9500 N'
-
   city: Highland
+  county: 'Utah'
   state: UT
   zip: '84003'
-  phone: (801)358-0777
+  phone: (801) 358-0777
   party: 'Republican'
   email: electbraddy@gmail.com
-  website: ''
-
   candidate_status: 'withdrew'
 -
-  name: 'ELISABETH LUNTZ'
+  name: 'Elisabeth Luntz'
   first_name: Elisabeth
   middle_name: ''
 
