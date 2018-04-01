@@ -35,7 +35,8 @@ comments: true
 {% assign county = site.data.2018.primary.candidates | where:'county','Salt Lake' | sort:'name' %}
 <table>
 <thead>
-  <th>Name</th>
+  <th>First Name</th>
+  <th>Last Name</th>
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>
@@ -43,7 +44,8 @@ comments: true
 <tbody>
 {% for member in county  %}
   <tr>
-    <td><a href="../../people/{{member.id}}">{{member.name}}</a></td>
+    <td><a href="{{member.id}}">{{member.first_name}}</a></td>
+    <td><a href="{{member.id}}">{{member.last_name}}</a></td>
     <td>{{ member.office }}</td>
     <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>

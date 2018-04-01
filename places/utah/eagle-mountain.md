@@ -4,25 +4,28 @@ title: Eagle Mountain
 permalink: /places/utah/eagle-mountain/
 ---
 
-### 2018 Primary Candidates
+### 2018 Election
 
 {% include 2018-elections.html %}
 
+### 2018 Primary Candidates
 {% assign city = site.data.2017.primary.candidates | where:'city','Eagle Mountain' | sort:'name' %}
 <table>
 <thead>
-  <th>Name</th>
+  <th>First Name</th>
+  <th>Last Name</th>
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>
 </thead>
 <tbody>
-{% for member in city  %}
+{% for member in county  %}
   <tr>
-    <td><a href="../../../people/{{member.id}}">{{member.name}}</a></td>
-    <td>{{ member.body }}</td>
-    <td><a href="../../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
-    <td><a href="../../../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+    <td><a href="{{member.id}}">{{member.first_name}}</a></td>
+    <td><a href="{{member.id}}">{{member.last_name}}</a></td>
+    <td>{{ member.office }}</td>
+    <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
   </tr>
 {% endfor %}
 </tbody>
