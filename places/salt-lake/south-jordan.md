@@ -4,13 +4,13 @@ title: South Jordan
 permalink: /places/salt-lake/south-jordan/
 ---
 
-### 2018 Primary Candidates
+#### 2018 Primary Candidates
 ### 2018 Election
 
 {% include 2018-elections.html %}
 
-### 2018 Primary Candidates
-{% assign county = site.data.2018.primary.candidates | where:'city','South Jordan' | sort:'name' %}
+#### 2018 Primary Candidates
+{% assign city = site.data.2018.primary.candidates | where:'city','South Jordan' | sort: 'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
@@ -20,13 +20,13 @@ permalink: /places/salt-lake/south-jordan/
   <th>County</th>
 </thead>
 <tbody>
-{% for member in county  %}
+{% for member in city  %}
   <tr>
-    <td><a href="{{member.id}}">{{member.first_name}}</a></td>
-    <td><a href="{{member.id}}">{{member.last_name}}</a></td>
-    <td>{{ member.office }}</td>
-    <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
-    <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
   </tr>
 {% endfor %}
 </tbody>

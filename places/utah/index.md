@@ -41,37 +41,16 @@ comments: true
 </ul>
 </div>
 
-### 2017 Voter Registration Deadlines
-
-<section class="notice">
-<strong>For Municipal Primary Election August 15, 2017</strong>
-
-<ul>
-  <li>July 17, 2017 last day the County will accept mail-in voter registration forms for the Primary Election UCA 20A-2-102.5(2).</li>
-  <li>July 31, 2017 last day the County Clerk can register voters in office and online for the Primary Election UCA 20A-2-201, 206.</li>
-</ul>
-
-<strong>For Municipal General Election November 7, 2017</strong>
-
-<ul>
-  <li>October 10, 2017 last day the County will accept mail-in voter registration forms for the General Election UCA 20A-2-102.5(2)</li>
-  <li>October 23, 2017 last day the County Clerk can register voters in office or online UCA 20A-2-201, 206</li>
-</ul>
-</section>
-
-### 2017 3rd Congressional District Special Election
-
-{% include 2017-3rd-district-special-election.html %}
-
-### 2017 Municipal Election
+### 2018 Election
 
 {% include 2018-elections.html %}
 
-### 2018 Primary Candidates
-{% assign county = site.data.2017.primary.candidates | where:'county','Utah' | sort:'name' %}
+#### 2018 Primary Candidates
+{% assign county = site.data.2018.primary.candidates | where:'county','Utah' | sort: 'last_name' %}
 <table>
 <thead>
-  <th>Name</th>
+  <th>First Name</th>
+  <th>Last Name</th>
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>
@@ -79,10 +58,11 @@ comments: true
 <tbody>
 {% for member in county  %}
   <tr>
-    <td><a href="../../people/{{member.id}}">{{member.name}}</a></td>
-    <td>{{ member.body }}</td>
-    <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
-    <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
   </tr>
 {% endfor %}
 </tbody>

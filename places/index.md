@@ -13,11 +13,11 @@ permalink: /places/
 
 ### 2018 Election
 
-{% include 2018-elections.html %}
+<!-- {% include 2018-elections.html %}
 
 _Coming soon..._
 
-### 2017 Municipal Election
+### 2017 Municipal Election -->
 
 <table>
 <thead>
@@ -84,6 +84,10 @@ _Coming soon..._
   <tr>
     <td><a href="weber/harrisville">Harrisville</a></td>
     <td><a href="weber">Weber</a></td>
+  </tr>
+  <tr>
+    <td><a href="wasatch/heber-city">Heber City</a></td>
+    <td><a href="wasatch">Wasatch</a></td>
   </tr>
   <tr>
     <td><a href="salt-lake/herriman">Herriman</a></td>

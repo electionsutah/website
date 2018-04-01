@@ -13,6 +13,8 @@ comments: true
   <li><a href="draper">Draper</a></li>
   <li><a href="herriman">Herriman</a></li>
   <li><a href="holladay">Holladay</a></li>
+  <li><a href="kearns">Kearns</a></li>
+  <li><a href="magna">Magna</a></li>
   <li><a href="midvale">Midvale</a></li>
   <li><a href="millcreek">Millcreek</a></li>
   <li><a href="murray">Murray</a></li>
@@ -31,8 +33,8 @@ comments: true
 
 {% include 2018-elections.html %}
 
-### 2018 Primary Candidates
-{% assign county = site.data.2018.primary.candidates | where:'county','Salt Lake' | sort:'name' %}
+#### 2018 Primary Candidates
+{% assign county = site.data.2018.primary.candidates | where:'county','Salt Lake' | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
@@ -44,11 +46,11 @@ comments: true
 <tbody>
 {% for member in county  %}
   <tr>
-    <td><a href="{{member.id}}">{{member.first_name}}</a></td>
-    <td><a href="{{member.id}}">{{member.last_name}}</a></td>
-    <td>{{ member.office }}</td>
-    <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
-    <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
   </tr>
 {% endfor %}
 </tbody>

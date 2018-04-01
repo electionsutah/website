@@ -3,7 +3,7 @@
   state: UT
   county: 'Salt Lake'
   city: 'South Jordan'
-  office: 'House District 50'
+  office: 'State House 50'
   name: 'Jen Schwartz'
   first_name: 'Jen'
   last_name: 'Schwartz'
@@ -19,7 +19,7 @@
   state: UT
   county: 'Salt Lake'
   city: 'Salt Lake City'
-  office: 'House District 24'
+  office: 'State House 24'
   incumbent: ''
   name: 'Jacquelyn Orton'
   first_name: 'Jacquelyn'
@@ -42,7 +42,7 @@
 -
   id: ut0187
   state: UT
-  office: 'US Congressional District 1'
+  office: 'U.S. House 1'
   name: 'Adam Davis'
   first_name: 'Adam'
   last_name: 'Davis'
@@ -69,6 +69,7 @@
   first_name: 'Stoney'
   middle_name: ''
   last_name: Fonua
+  gender: 'male'
   office: 'U.S. Senate'
   district: ''
   address: '5526 West 13400 South STE: 309'
@@ -81,13 +82,14 @@
   email: 'g.o.d.s.pmeuinc@gmail.com'
   facebook: 'https://www.facebook.com/SignofthePeaceMakers/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0208
   name: 'Jeremy Lewis Friedbaum'
   first_name: Jeremy
   middle_name: Lewis
   last_name: Friedbaum
+  gender: 'male'
   office: 'U.S. Senate'
   district: ''
   address: '1072 West 1100 North'
@@ -99,7 +101,7 @@
   party: 'Republican'
   email: jeremyfriedbaum@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0209
   name: 'Alicia Colvin'
@@ -120,7 +122,7 @@
   email: aliciadhcolvin@gmail.com
   website: 'https://www.aliciacolvin.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0210
   name: 'Tim Aalders'
@@ -138,7 +140,7 @@
   party: Constitution
   email: 'timaalders@live.com'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0211
   name: 'Craig R. Bowden'
@@ -176,7 +178,7 @@
   email: loy@7discoveries.com
   website: 'https://7discoveries.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0213
   name: 'Joshua C. Lee'
@@ -194,7 +196,7 @@
   party: 'Republican'
   email: ''
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0214
   name: 'Larry Livingston'
@@ -212,7 +214,7 @@
   party: 'Democratic'
   email: 'utahdane@gmail.com'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0215
   name: 'Reed C. McCandless'
@@ -230,7 +232,7 @@
   party: 'Independent American'
   email: reedforussenateutah@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0216
   name: 'Larry Meyers'
@@ -249,7 +251,7 @@
   email: larry@meyersforsenate.com
   website: www.meyersforsenate.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0217
   name: 'Mitchell Vice'
@@ -268,7 +270,7 @@
   email: hello@votevice.com
   website: 'http://votevice.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0218
   name: 'Jenny Wilson'
@@ -287,7 +289,7 @@
   email: 'jenny@wilsonforsenate.com'
   website: 'https://wilsonforsenate.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0219
   name: 'Mitt Romney'
@@ -306,7 +308,7 @@
   email: mitt@romneyforutah.com
   website: 'https://www.romneyforutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0220
   name: 'Mike Kennedy'
@@ -325,7 +327,7 @@
   email: info@kennedyforutah.com
   website: 'http://www.kennedyforutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0221
   name: 'Samuel B. Parker'
@@ -344,7 +346,7 @@
   email: samparkerussenate@gmail.com
   website: samparkersenate.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0222
   name: 'Abe Lincoln Brian Jenkins'
@@ -366,7 +368,7 @@
   email: 'abe@abelincolnforutah.com'
   website: 'https://abelincolnforutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0223
   name: 'Torrey Jenkins'
@@ -384,7 +386,7 @@
   party: 'Republican'
   email: ''
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0224
   name: 'Tim Jimenez'
@@ -404,14 +406,14 @@
   email: ''
   website: 'https://www.timforutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0225
   name: 'Jeff Dransfield'
   first_name: 'Jeff'
   middle_name: ''
   last_name: 'Dransfield'
-
+  gender: 'male'
   office: 'U.S. Senate'
   district: ''
   address: '504 W. 2850 S.'
@@ -422,9 +424,8 @@
   phone: (435) 881-2008
   party: 'Democratic'
   email: jeffdransfield@gmail.com
-
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0173
   name: 'Chadwick H. Fairbanks III'
@@ -432,6 +433,7 @@
   middle_name: H.
   last_name: Fairbanks
   suffix:  III
+  gender: 'male'
   office: 'U.S. House 1'
   district: '1'
   address: '1776 Park Avenue Suite 4-492'
@@ -444,35 +446,35 @@
   phone: (385) 265-2423
   party: 'Republican'
   email: 'chadwick4utah@gmail.com'
-
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0226
   name: 'Lee Castillo'
   first_name: Lee
   middle_name: ''
   last_name: Castillo
-
+  gender: 'male'
   office: 'U.S. House 1'
   district: '1'
   address: '1102 N. Fort Lane'
   city: Layton
+  county: 'Davis'
   state: UT
   zip: '84041'
   phone: (801) 900-7558
   party: 'Democratic'
-  email: LeeCastillo@LeeCastillo4Congress.com
-  website: utahisforeverybody.com
+  email: leecastillo@leecastillo4congress.com
+  website: 'https://utahisforeverybody.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0227
   name: 'Rob Bishop'
   first_name: Rob
   middle_name: ''
   last_name: Bishop
-
+  gender: 'male'
   office: 'U.S. House 1'
   district: '1'
   address: 'PO Box 1776'
@@ -483,16 +485,16 @@
   phone: (385) 266-9331
   party: 'Republican'
   email: votebishop@gmail.com
-  website: votebishop.com
+  website: 'https://votebishop.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0228
   name: 'Eric Eliason'
   first_name: Eric
   middle_name: ''
   last_name: Eliason
-
+  gender: 'male'
   office: 'U.S. House 1'
   district: '1'
   address: '255 S 300 W Ste B'
@@ -503,16 +505,16 @@
   phone: (801) 550-9371
   party: 'United Utah'
   email: eric@eliasonforcongress.com
-  website: www.eliasonforcongress.com
+  website: 'https://eliasonforcongress.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0229
-  name: 'kurt Weiland'
+  name: 'Kurt Weiland'
   first_name: Kurt
   middle_name: ''
   last_name: Weiland
-
+  gender: 'male'
   office: 'U.S. House 1'
   district: '1'
   address: '2182 Claremont Drive'
@@ -525,14 +527,14 @@
   email: kurt@kurtforuscongress.com
   website: 'http://kurtforuscongress.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0230
   name: 'Kevin Probasco'
   first_name: Kevin
   middle_name: ''
   last_name: Probasco
-
+  gender: 'male'
   office: 'U.S. House 1'
   district: '1'
   address: '1852 E. Whitetail Drive'
@@ -543,36 +545,15 @@
   phone: (801) 825-2413
   party: 'Republican'
   email: kevinprobascoforcongress@gmail.com
-
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
--
-  id: ut0231
-  name: 'Adam Davis'
-  first_name: Adam
-  middle_name: ''
-  last_name: Davis
-
-  office: 'U.S. House 1'
-  district: '1'
-  address: '420 W Cadbury Dr Apt E106'
-  city: 'South Jordan'
-  county: 'Salt Lake'
-  state: UT
-  zip: '84095'
-  phone: (801) 690-0096
-  party: Green
-  email: ''
-  website: 'https://www.davisforutah.com/'
-  candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0232
   name: 'Ken Clark'
   first_name: 'Ken'
   middle_name: ''
   last_name: Clark
-
+  gender: 'male'
   office: 'U.S. House 2'
   district: '2'
   address: '991 South 900 East'
@@ -583,16 +564,15 @@
   phone: (385) 529-9902
   party: 'Republican'
   email: kenclarkutah@gmail.com
-
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0233
   name: 'Mary Burkett'
   first_name: Mary
   middle_name: ''
   last_name: Burkett
-
+  gender: 'female'
   office: 'U.S. House 2'
   district: '2'
   address: '782 S. River Rd. #297'
@@ -605,7 +585,7 @@
   email: maryburkett@maryburkett.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0234
   name: 'Chris Stewart'
@@ -625,7 +605,7 @@
   email: info@stewartforutah.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0235
   name: 'Jeffrey Whipple'
@@ -645,7 +625,7 @@
   email: 'jdwhipple@gmail.com'
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0236
   name: 'Randy Hopkins'
@@ -665,7 +645,7 @@
   email: 'randy@randyhopkinsforcongress.org'
   website: 'http://randyhopkinsforcongress.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0237
   name: 'Jan Garbett'
@@ -685,7 +665,7 @@
   email: hello@jangarbettforcongress.com
   website: 'https://www.jangarbettforcongress.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0238
   name: 'Shireen Ghorbani'
@@ -705,7 +685,7 @@
   email: shireen@shireen2018.com
   website: 'https://www.shireenforcongress.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0239
   name: 'John Curtis'
@@ -725,7 +705,7 @@
   email: 'john@johncurtis.org'
   website: 'https://www.johncurtis.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0240
   name: 'James Courage Singer'
@@ -745,7 +725,7 @@
   email: 'jcouragesinger@gmail.com'
   website: 'http://www.jamessinger.org'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0241
   name: 'Steven Stromness'
@@ -765,7 +745,7 @@
   email: steven.stromness@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0242
   name: 'Michael David Leavitt'
@@ -785,7 +765,7 @@
   email: ''
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0243
   name: 'Melanie McCoard'
@@ -805,7 +785,7 @@
   email: melanie.mccoard@gmail.com
   website: 'http://thecredibilitygap.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0244
   name: 'Kent Moon'
@@ -825,7 +805,7 @@
   email: kent.moon@icloud.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0244
   name: 'Christopher N. Herrod'
@@ -845,7 +825,7 @@
   email: chris.herrod1@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0245
   name: 'Henry Rudolph Kneitz III'
@@ -865,7 +845,7 @@
   email: henrykneitz@yahoo.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0246
   name: 'Gregory C. Duerden'
@@ -885,7 +865,7 @@
   email: gcduerden@gmail.com
   website: 'http://www.gregorycduerden.us/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0247
   name: 'Morgan Shepherd'
@@ -908,7 +888,7 @@
   twitter: https://www.morgan4utah.com/
   website: 'https://www.morgan4utah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0248
   name: 'Mia B. Love'
@@ -928,7 +908,7 @@
   email: mia@love4utah.com
   website: love4utah.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0249
   name: 'Ben McAdams'
@@ -948,7 +928,7 @@
   email: ben@benmcadamsforcongress.com
   website: 'http://www.benmcadamsforcongress.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0250
   name: 'Darlene McDonald'
@@ -968,7 +948,7 @@
   email: darlene@votedarlene.com
   website: 'http://www.votedarlene.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0251
   name: 'Sheldon Kirkham'
@@ -988,7 +968,7 @@
   email: kirkhamforcongress@gmail.com
   website: 'http://kirkhamforcongress.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0252
   name: 'Tom Taylor'
@@ -1008,7 +988,7 @@
   email: tom@tomforutah.com
   website: 'https://www.tomforutah.com'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0253
   name: 'Jessica Foard'
@@ -1032,7 +1012,7 @@
   twitter: 'https://www.twitter.com/jessicaxfoard'
   website: 'https://www.votejessicafoard.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0254
   name: 'Tim Chambless'
@@ -1053,7 +1033,7 @@
   email: timchambless@gmail.com
   website: 'https://www.chambless4senate2.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0255
   name: 'David S. Andreason'
@@ -1074,7 +1054,7 @@
   email: davidsandreason@comcast.net
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0256
   name: 'Nadia Mahallati'
@@ -1095,7 +1075,7 @@
   email: nadia@electnadia.com
   website: 'https://www.electnadia.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0257
   name: 'Rickie Mehl'
@@ -1136,7 +1116,7 @@
   email: chasewinder53@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0259
   name: 'Shawn Robinson'
@@ -1157,7 +1137,7 @@
   email: srobinsonlaw@hotmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0260
   name: 'Vance Hansen'
@@ -1198,7 +1178,7 @@
   email: derek.kitchen@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0262
   name: 'Jennifer Plumb'
@@ -1219,7 +1199,7 @@
   email: voteplumb@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0263
   name: 'Robert Pinon'
@@ -1247,31 +1227,31 @@
   first_name: Marlin
   middle_name: R.
   last_name: Baer
-
   gender: 'male'
   office: 'State Senate 3'
   district: '3'
   address: '4007 So Jester Dr'
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84123'
   phone: (801) 831-7649
   party: 'Republican'
   email: ''
-
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0265
   name: 'Jeremy D. Egan'
   first_name: Jeremy
   middle_name: D.
   last_name: Egan
-
+  gender: 'male'
   office: 'State Senate 3'
   district: '3'
   address: '3970 S. Howick St. Apt B123'
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84107'
   phone: (801) 725-7965
@@ -1279,24 +1259,24 @@
   email: eager4egan@gmail.com
   website: egan4utah.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0266
   name: 'Luke Gustafson'
   first_name: Luke
   middle_name: ''
   last_name: Gustafson
-
+  gender: 'male'
   office: 'State Senate 3'
   district: '3'
   address: '3500 S West Temple'
   city: 'South Salt Lake'
+  county: 'Salt Lake'
   state: UT
   zip: '84115'
   phone: (801) 520-0934
   party: 'Republican'
   email: ''
-
   candidate_status: 'withdrew'
 -
   id: ut0267
@@ -1304,19 +1284,19 @@
   first_name: Gene
   middle_name: ''
   last_name: Davis
-
+  gender: 'male'
   office: 'State Senate 3'
   district: '3'
   address: '865 Parkway Ave'
   city: 'Salt Lake City'
+  county: 'Salt Lake'
   state: UT
   zip: '84106'
   phone: (801) 484-9428
   party: 'Democratic'
   email: wgdavis@msn.com
-
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0268
   name: 'Alan Monsen'
@@ -1335,7 +1315,7 @@
   email: ''
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0269
   name: 'Jani Iwamoto'
@@ -1355,7 +1335,7 @@
   email: iwamoto.jani@gmail.com
   website: 'http://www.votejani.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0270
   name: 'Kimdyl Allen'
@@ -1374,7 +1354,7 @@
   party: 'Republican'
   email: kcallen001@aol.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0271
   name: 'Karen Mayne'
@@ -1394,7 +1374,7 @@
   email: karenmayne@gmail.com
   website: www.karenmayne.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0272
   name: 'Kathie Allen'
@@ -1414,7 +1394,7 @@
   email: kathrynallenmd@gmail.com
   website: www.vote4kathie.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0273
   name: 'Brian Zehnder'
@@ -1433,7 +1413,7 @@
   email: brian@votebrianz.com
   website: 'https://votebrianz.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0274
   name: 'Kathleen Riebe'
@@ -1453,7 +1433,7 @@
   email: mskriebe@gmail.com
   website: 'http://www.kathleenriebe.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0275
   name: 'John Jackson'
@@ -1472,7 +1452,7 @@
   party: 'United Utah'
   email: ''
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0276
   name: 'Jaren L. Davis'
@@ -1492,7 +1472,7 @@
   email: jarenldavis@gmail.com
   website: jarenldavis.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0277
   name: 'Alexander Castagno'
@@ -1514,7 +1494,7 @@
   twitter: 'https://twitter.com/votecastagno'
   website: 'https://www.votecastagno.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0278
   name: 'Kirk A. Cullimore Jr.'
@@ -1535,7 +1515,7 @@
   email: kcullimorejr@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0279
   name: 'Steve Eliason'
@@ -1574,7 +1554,7 @@
   email: abigail@jwright.biz
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0281
   name: 'Monica M. Zoltanski'
@@ -1594,7 +1574,7 @@
   email: votezoltanski@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0282
   name: 'David Hart'
@@ -1614,7 +1594,7 @@
   email: votedavehart@gmail.com
   website: votedavehart.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0283
   name: 'LaVar Christensen'
@@ -1634,7 +1614,7 @@
   email: lavar@lavarutahsenate.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0284
   name: 'Christian Burridge'
@@ -1654,7 +1634,7 @@
   email: christian.burridge@gmail.com
   website: www.christianburridge.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0285
   name: 'Dan McCay'
@@ -1674,7 +1654,7 @@
   email: vote@danmccay.com
   website: danmccay.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0286
   name: 'Delaina Tonks'
@@ -1694,7 +1674,7 @@
   email: delainatonks@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0287
   name: 'Clare Collard'
@@ -1714,7 +1694,7 @@
   email: electclarecollard@gmail.com
   website: www.electclarecollard.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0288
   name: 'Abrian B. Velarde'
@@ -1734,7 +1714,7 @@
   email: abrian4senate@gmail.com
   website: 'https://abrianvelarde.nationbuilder.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0289
   name: 'Daniel W. Thatcher'
@@ -1754,7 +1734,7 @@
   email: danielwthatcher@gmail.com
   website: www.votethatcher.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0290
   name: 'Emily Ellsworth'
@@ -1775,7 +1755,7 @@
   twitter: 'https://twitter.com/editoremilye'
   website: 'https://emilyforutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0291
   name: 'Tommy Williams'
@@ -1795,7 +1775,7 @@
   email: twrules@ymail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0292
   name: 'Lee D. Houghton'
@@ -1815,7 +1795,7 @@
   email: lhoughton@yesco.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0293
   name: 'Keith Grover'
@@ -1835,7 +1815,7 @@
   email: kgrover2014@gmail.com
   website: keithgrover.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0294
   name: 'Margaret Dayton'
@@ -1855,7 +1835,7 @@
   email: 'ltdmd@comcast.net'
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0295
   name: 'Chad Soffe'
@@ -1875,7 +1855,7 @@
   email: chadsoffe@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0296
   name: 'Scott Sandall'
@@ -1895,7 +1875,7 @@
   email: sandallscott@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0297
   name: 'Michael A. Keil'
@@ -1915,7 +1895,7 @@
   email: mike.keil@comcast.net
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0298
   name: 'Clark N. Davis'
@@ -1935,7 +1915,7 @@
   email: davisclark98@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0299
   name: 'Jason Yu'
@@ -1955,7 +1935,7 @@
   email: jason4senate18@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0300
   name: 'Kevin L. Bryan'
@@ -1975,7 +1955,7 @@
   email: info_servo@yahoo.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0301
   name: 'Ann Millner'
@@ -1996,7 +1976,7 @@
   email: ann@annmillner.com
   website: 'https://voteannmillner.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0302
   name: 'Jerry W. Stevenson'
@@ -2017,7 +1997,7 @@
   email: jerry@jjnursery.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0303
   name: 'Cory Green'
@@ -2058,7 +2038,7 @@
   email: jacob.penrod@outlook.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0305
   name: 'Stuart Adams'
@@ -2079,7 +2059,7 @@
   email: sadams1776@gmail.com
   website: 'https://www.votestuartadams.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0306
   name: 'Cathy Callow-Heusser'
@@ -2100,7 +2080,7 @@
   email: cathy4congress@gmail.com
   website: 'http://www.vote4cathy.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0307
   name: 'Pat Vaughn'
@@ -2119,7 +2099,7 @@
   email: patvaughnspeaks@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0308
   name: 'Alisa Ellis'
@@ -2140,7 +2120,7 @@
   email: alisa.ellis@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0309
   name: 'Ronald Winterton'
@@ -2161,7 +2141,7 @@
   email: wintertonron@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0310
   name: 'Jack Rubin'
@@ -2182,7 +2162,7 @@
   email: utahjack26@gmail.com
   website: 'http://www.utahjack.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0311
   name: 'Brian K. Gorum'
@@ -2203,7 +2183,7 @@
   email: gorum4ut@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0312
   name: 'Eileen Gallagher'
@@ -2224,7 +2204,7 @@
   email: gallagherforutahstatesenate@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0313
   name: 'Mark Chambers'
@@ -2245,7 +2225,7 @@
   email: mark@undertheeaves.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0314
   name: 'Evan J. Vickers'
@@ -2265,7 +2245,7 @@
   email: bullochdrug@infowest.com
   website: 'http://evanvickers.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0315
   name: 'Joel Ferry'
@@ -2286,7 +2266,7 @@
   email: joelmferry@gmail.com
   website: 'https://www.votejoelferry.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0316
   name: 'Kris Udy'
@@ -2307,7 +2287,7 @@
   email: krisudy@krisudy4house1@gmail.com
   website: 'https://www.krisudy4house1.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0317
   name: 'Joshua Hardy'
@@ -2328,7 +2308,7 @@
   email: jgh191@yahoo.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0318
   name: 'Sherry Phipps'
@@ -2349,7 +2329,7 @@
   email: phipps4utahhouse@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0319
   name: 'Tyler Allred'
@@ -2370,7 +2350,7 @@
   email: thenamelesshero@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0320
   name: 'Jefferson R. Moss'
@@ -2391,7 +2371,7 @@
   email: jeffersonrmoss@gmail.com
   website: 'http://jefferson4utah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0320
   name: 'Marilyn Mecham'
@@ -2412,7 +2392,7 @@
   email: marilyn@hot-shot.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0321
   name: 'Val K. Potter'
@@ -2433,7 +2413,7 @@
   email: val.potter@comcast.net
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0322
   name: 'Josh Brundage'
@@ -2454,7 +2434,7 @@
   email: joshbrundage4utah@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0323
   name: 'Greg Merrill'
@@ -2475,7 +2455,7 @@
   email: merrill.greg@comcast.net
   website: 'http://www.gregmerrillut.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0324
   name: 'Dan N. Johnson'
@@ -2496,7 +2476,7 @@
   email: danjohnsonhouse4@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0325
   name: 'Karina Andelin Brown'
@@ -2516,7 +2496,7 @@
   email: karina@karinaforutah.com
   website: 'https://www.karinaforutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0326
   name: 'Casey Snider'
@@ -2537,7 +2517,7 @@
   email: csnider5@gmail.com
   website: 'https://www.caseysnider.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0327
   name: 'Steven B Hanson'
@@ -2558,7 +2538,7 @@
   email: stevenbhanson@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0328
   name: 'Matthew Freestone'
@@ -2579,7 +2559,7 @@
   email: matt@matthewfreestone.com
   website: 'https://www.matthewfreestone.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0329
   name: 'Cory Maloy'
@@ -2600,7 +2580,7 @@
   email: cory@corymaloy.com
   website: 'https://www.corymaloy.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0330
   name: 'David Owen'
@@ -2621,7 +2601,7 @@
   email: davidowenutah7@gmail.com
   facebook: www.facebook.com/davidowenutah7
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0331
   name: 'Kyle R. Andersen'
@@ -2642,7 +2622,7 @@
   email: kylerandersen@comcast.net
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0332
   name: 'Lisa Roskelley'
@@ -2663,7 +2643,7 @@
   email: lisa@roskelley.us
   website: 'https://lisaroskelley.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0333
   name: 'Robert D. Petersen'
@@ -2684,7 +2664,7 @@
   email: repeterunner@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0334
   name: 'Dan Deuel'
@@ -2705,7 +2685,7 @@
   email: vote@dandeuel.com
   website: 'https://www.dandeuel.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0335
   name: 'Deana Froerer'
@@ -2726,14 +2706,13 @@
   email: deana@froerer4house.com
   website: 'https://www.froerer4house.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0336
   name: 'Kimberly L. Stevens'
   first_name: Kimberly
   middle_name: L.
   last_name: Stevens
-
   gender: 'female'
   office: 'State House 8'
   district: '8'
@@ -2745,9 +2724,8 @@
   phone: (801) 675-6599
   party: 'Republican'
   email: electkimberlystevens@gmail.com
-
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0337
   name: 'Deone Ehlers-Rhorer'
@@ -2768,7 +2746,7 @@
   email: deone@ladybugrealty.net
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0338
   name: 'Steve Waldrip'
@@ -2789,7 +2767,7 @@
   email: electstevewaldrip@gmail.com
   website: 'https://electstevewaldrip.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0339
   name: 'Jason B. Kyle'
@@ -2810,7 +2788,7 @@
   email: jasonbkyleut@gmail.com
   facebook: https://www.facebook.com/electjasonkyle
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0340
   name: 'Emily Beeli'
@@ -2851,7 +2829,7 @@
   email: calmusselman@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0342
   name: 'Adrian William Eads'
@@ -2872,7 +2850,7 @@
   email: adrianeads@live.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0343
   name: 'Mary Khalaf'
@@ -2893,7 +2871,7 @@
   email: thekhalafhouse@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0344
   name: 'Kathie J. Darby'
@@ -2914,7 +2892,7 @@
   email: kjdarby@hotmail.com
   website: 'http://www.kathiedarby.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0345
   name: 'Lorraine P. Brown'
@@ -2935,7 +2913,7 @@
   email: lorrainepbrown@gmail.com
   website: 'https://www.votelorrainebrown.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0346
   name: 'Terry D. Schow'
@@ -2956,7 +2934,7 @@
   email: tschow48@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0347
   name: 'LaWanna “Lou” Shurtliff'
@@ -2977,7 +2955,7 @@
   email: lmshurtliff@comcast.net
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0348
   name: 'Jason M. Allen'
@@ -2998,7 +2976,7 @@
   email: jason.mark.allen@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0349
   name: 'Kelly B. Miles'
@@ -3019,7 +2997,7 @@
   email: kellymilesforutah@gmail.com
   website: 'https://kellymiles.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0350
   name: 'Mike Schultz'
@@ -3040,14 +3018,13 @@
   email: mikeschultzcch@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0351
   name: 'Rick Edwin Jones'
   first_name: Rick
   middle_name: Edwin
   last_name: Jones
-
   gender: 'male'
   office: 'State House 12 (Multi County)'
   district: '12'
@@ -3059,20 +3036,20 @@
   phone: (801) 731-0391
   party: 'Democratic'
   email: rickejones@gmail.com
-
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0352
   name: 'Tab Lyn Uno'
   first_name: Tab
   middle_name: Lyn
   last_name: Uno
-
+  gender: 'male'
   office: 'State House 13'
   district: '13'
   address: '46 S. 1050 W.'
   city: Clearfield
+  county: 'Davis'
   state: UT
   zip: '84015'
   phone: (801) 458-6743
@@ -3080,14 +3057,13 @@
   email: tablynuno@msn.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0353
   name: 'Paul Ray'
   first_name: Paul
   middle_name: ''
   last_name: Ray
-
   gender: 'male'
   office: 'State House 13'
   district: '13'
@@ -3101,14 +3077,13 @@
   email: Paul@PaulRay.org
   website: 'http://www.paulray.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0354
   name: 'Karianne Lisonbee'
   first_name: Karianne
   middle_name: ''
   last_name: Lisonbee
-
   gender: 'female'
   office: 'State House 14'
   district: '14'
@@ -3122,7 +3097,7 @@
   email: kari.lisonbee@gmail.com
   website: 'http://karianne.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0355
   name: 'Shanell Day'
@@ -3143,7 +3118,7 @@
   email: shanelldayut@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0356
   name: 'Rich Miller'
@@ -3164,7 +3139,7 @@
   email: electrich@gmail.com
   website: 'http://richmiller.us/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0357
   name: 'Brad Wilson'
@@ -3185,7 +3160,7 @@
   email: electbradwilson@gmail.com
   website: 'https://www.votebradwilson.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0358
   name: 'Brent Zimmerman'
@@ -3206,7 +3181,7 @@
   email: brent@zimfam.org
   website: 'http://bdz.zimfam.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0359
   name: 'Steve Handy'
@@ -3227,7 +3202,7 @@
   email: sghandy@comcast.net
   website: 'http://www.stevehandyutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0360
   name: 'Cheryl Nunn'
@@ -3248,7 +3223,7 @@
   email: cheryl.nunn@gmail.com
   website: 'http://cherylnunn.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0361
   name: 'Stewart E. Barlow'
@@ -3269,7 +3244,7 @@
   email: stewartebarlow@aol.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0362
   name: 'Dawn Nunn'
@@ -3290,7 +3265,7 @@
   email: dawnasuenunn@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0363
   name: 'Adam Alba'
@@ -3311,7 +3286,7 @@
   email: adam.alba@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0364
   name: 'Timothy D. Hawkes'
@@ -3332,7 +3307,7 @@
   email: timothy.d.hawkes@gmail.com
   website: 'https://timothyhawkes.wordpress.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0365
   name: 'Joe Speciale'
@@ -3353,7 +3328,7 @@
   email: jmspeciale@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0366
   name: 'Raymond Ward'
@@ -3374,7 +3349,7 @@
   email: rayward1024@yahoo.com
   website: 'https://www.raywardutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0367
   name: 'Phill Wright'
@@ -3395,7 +3370,7 @@
   email: phillwright@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0368
   name: 'Courtney Jones'
@@ -3416,7 +3391,7 @@
   email: courtneyjames801@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0369
   name: 'Melissa Garff Ballard'
@@ -3437,7 +3412,7 @@
   email: info@melissagarffballard.com
   website: 'https://melissagarffballard.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0370
   name: 'Cassidy Hine'
@@ -3478,7 +3453,7 @@
   email: ryanljones801@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0372
   name: 'Matt Jensen'
@@ -3499,7 +3474,7 @@
   email: mattjensenutah@gmail.com
   website: 'http://jensengop.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0373
   name: 'Glen G. Jenkins'
@@ -3520,7 +3495,7 @@
   email: glenjwx@yahoo.com
   website: 'http://www.glenjenkins.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0374
   name: 'Douglas Sagers'
@@ -3541,7 +3516,7 @@
   email: doug_sagers@yahoo.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0375
   name: 'Debbie K. Vigil'
@@ -3562,7 +3537,7 @@
   email: vigil.debbie@yahoo.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0376
   name: 'Donna Case'
@@ -3583,7 +3558,7 @@
   email: donnacase22@gmail.com
   website: 'https://donnacase.weebly.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0377
   name: 'Amber Christiansen Beltran'
@@ -3604,7 +3579,7 @@
   email: amberbeltran22@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0378
   name: 'Barbara M. Stallone'
@@ -3625,7 +3600,7 @@
   email: barbara.stallone@yahoo.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0379
   name: 'Marilee Roose'
@@ -3646,7 +3621,7 @@
   email: crmrfamily@msn.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0380
   name: 'Susan D. Duckworth'
@@ -3667,7 +3642,7 @@
   email: suefor22@gmail.com
   website: 'http://www.suefor22.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0381
   name: 'Sandra Hollins'
@@ -3688,7 +3663,7 @@
   email: hollinssandra@gmail.com
   website: 'https://www.sandrahollins.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0382
   name: 'Arnold M. Jones'
@@ -3709,7 +3684,7 @@
   email: electarnoldjones@gmail.com
   website: 'http://www.electarnoldjones.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0383
   name: 'Jacquelyn Orton'
@@ -3730,7 +3705,7 @@
   email: jo@ortonforhouse.com
   website: 'http://ortonforhouse.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0384
   name: 'Igor Limansky'
@@ -3751,7 +3726,7 @@
   email: igor@igorlimansky.com
   website: 'http://www.igorlimansky.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0385
   name: 'Darin Mann'
@@ -3772,7 +3747,7 @@
   email: darinfor24@gmail.com
   website: 'https://darinmann.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0386
   name: 'Shawn Robinson'
@@ -3812,7 +3787,7 @@
   email: scott@rosenbush4utah.com
   website: 'https://rosenbush4utah.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0388
   name: 'Richard Nahum Goldberger'
@@ -3832,7 +3807,7 @@
   party: 'Democratic'
   email: rngrep@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0389
   name: 'Ryan J. Parker'
@@ -3853,7 +3828,7 @@
   email: contact@voteryan24.com
   website: 'https://www.voteryan24.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0390
   name: 'Jen Dailey-Provost'
@@ -3874,7 +3849,7 @@
   email: jldprovost@gmail.com
   website: 'http://jenforutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0391
   name: 'Joel K. Briscoe'
@@ -3895,7 +3870,7 @@
   email: joelfor25@gmail.com
   website: 'https://joelbriscoe.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0392
   name: 'Gary Ernest Gabrielson'
@@ -3915,7 +3890,7 @@
   party: 'Republican'
   email: bonnie8@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0393
   name: 'Cabot W. Nelson'
@@ -3935,7 +3910,7 @@
   party: 'United Utah'
   email: cabot.nelson@yahoo.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0394
   name: 'Scott B. Madsen'
@@ -3955,7 +3930,7 @@
   party: 'Republican'
   email: scott_b_madsen@yahoo.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0395
   name: 'Angela Romero'
@@ -3976,7 +3951,7 @@
   email: angela.romero37@gmail.com
   website: 'http://www.angelaromero.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0396
   name: 'Man Hung'
@@ -3997,7 +3972,7 @@
   email: hung4utah@gmail.com
   website: 'https://hung4utah.wordpress.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0397
   name: 'Jonathan Greene'
@@ -4017,7 +3992,7 @@
   party: Libertarian
   email: jon@jongreene.works
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0398
   name: 'Samuel Cotton-Betteridge'
@@ -4037,7 +4012,7 @@
   party: 'Republican'
   email: sam4house27@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0399
   name: 'Jared Carman'
@@ -4057,7 +4032,7 @@
   party: 'Republican'
   email: utahdad@thecarmans.org
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0400
   name: 'Curt Crosby'
@@ -4077,7 +4052,7 @@
   party: 'Independent American'
   email: curt@libertyroundtable.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0401
   name: 'Mark N. Bair'
@@ -4097,7 +4072,7 @@
   party: 'Republican'
   email: mark4success@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0402
   name: 'Joseph Geddes Buchman'
@@ -4118,7 +4093,7 @@
   email: joe4liberty@gmail.com
   website: 'https://joe4liberty.vote/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0403
   name: 'Brady Brammer'
@@ -4138,7 +4113,7 @@
   party: 'Republican'
   email: bbrammer@spauldinglaw.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0404
   name: 'Kevin Braddy'
@@ -4176,7 +4151,7 @@
   party: 'Democratic'
   email: elisabethluntz@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0406
   name: 'Joe Hart'
@@ -4197,7 +4172,7 @@
   email: hart.joseph@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0407
   name: 'Damian W. Kidd'
@@ -4218,7 +4193,7 @@
   email: damianwkidd@gmail.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0408
   name: 'Brian S. King'
@@ -4239,7 +4214,7 @@
   email: brian@briansking.com
   website: 'http://www.kingforrep.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0409
   name: 'Kerry M. Wayne'
@@ -4260,7 +4235,7 @@
   email: kerry.wayne@comcast.net
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0410
   name: 'Lee B. Perry'
@@ -4281,7 +4256,7 @@
   email: lperry977@comcast.net
   website: 'http://www.leeperryutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0411
   name: 'Derrick Fullum'
@@ -4302,7 +4277,7 @@
   email: dfullum@live.com
 
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0412
   name: 'Fred C. Cox'
@@ -4322,7 +4297,7 @@
   email: fred@fredcox4utah.com
   website: 'http://fredcox4utah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0413
   name: 'Robert Burch, Jr.'
@@ -4362,7 +4337,7 @@
   email: mike@mikewinder.com
   website: 'http://www.mikewinder.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0415
   name: 'Chelsey Rose'
@@ -4382,7 +4357,7 @@
   party: 'Democratic'
   email: chelsey.mae.rose@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0416
   name: 'Brian L. Fabbi'
@@ -4403,7 +4378,7 @@
   email: brian.fabbi@fabbiforutah.com
   website: 'http://www.fabbiforutah.com'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0417
   name: 'Elizabeth Weight'
@@ -4424,7 +4399,7 @@
   email: repelizabethweight@gmail.com
   website: 'http://www.liz4utah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0418
   name: 'Fred Johnson'
@@ -4444,7 +4419,7 @@
   party: 'Republican'
   email: fjbricky@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0419
   name: 'Brad Bonham'
@@ -4464,7 +4439,7 @@
   party: 'Republican'
   email: bradforhouse32@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0420
   name: 'David C. Werts'
@@ -4483,7 +4458,7 @@
   party: 'Republican'
   email: david.werts@comcast.net
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0421
   name: 'Suzanne Harrison'
@@ -4504,7 +4479,7 @@
   email: votesuzanneharrison@gmail.com
   website: 'http://www.votesuz.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0422
   name: 'Bjorn N. Jones'
@@ -4525,7 +4500,7 @@
   email: bjornjonesutah@gmail.com
   website: 'https://www.bjornjonesutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0423
   name: 'Edward Bodily'
@@ -4546,7 +4521,7 @@
   email: candidate@edwardbodily.org
   website: 'http://edwardbodily.org/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0424
   name: 'Kay Van Patter'
@@ -4566,7 +4541,7 @@
   party: 'Democratic'
   email: vanpatterkay@aol.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0425
   name: 'Craig Hall'
@@ -4587,7 +4562,7 @@
   email: hcraighall@yahoo.com
   website: 'http://votecraighall.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0426
   name: 'Ira D. Hatch'
@@ -4607,7 +4582,7 @@
   party: 'Democratic'
   email: irahatch@comcast.net
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0427
   name: 'David Young'
@@ -4627,7 +4602,7 @@
   party: 'Republican'
   email: votedavidyoung@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0428
   name: 'Eric T. Behunin'
@@ -4647,7 +4622,7 @@
   party: 'Republican'
   email: behunineric@hotmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0429
   name: 'Karen Kwan'
@@ -4667,7 +4642,7 @@
   party: 'Democratic'
   email: votekarenkwan@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0430
   name: 'Robert Edgel'
@@ -4688,7 +4663,7 @@
   email: edgel4house@gmail.com
   facebook: www.facebook.com/edgel4house
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0431
   name: 'Mark A. Wheatley'
@@ -4708,7 +4683,7 @@
   party: 'Democratic'
   email: markwheatley35@hotmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0432
   name: 'Chelsea Travis'
@@ -4729,7 +4704,7 @@
   email: xxcannabisisnotacrimexx@yahoo.com
   facebook: 'https://www.facebook.com/chelseaforhouse'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0433
   name: 'Patrice Arent'
@@ -4750,7 +4725,7 @@
   email: patrice@patricearent.com
   website: 'https://www.patricearent.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0434
   name: 'Phillip B. Millett'
@@ -4789,7 +4764,7 @@
   party: 'Republican'
   email: todd@toddezenger.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0436
   name: 'Gian F. Ruiz'
@@ -4828,7 +4803,7 @@
   party: 'Republican'
   email: dnsundwall@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0438
   name: 'Carol Spackman Moss'
@@ -4849,7 +4824,7 @@
   email: carolspackmoss@gmail.com
   website: 'http://carolmossforhouse.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0439
   name: 'Edgar Harwood'
@@ -4870,7 +4845,7 @@
   email: edgar@harwoodforhouse.com
   website: 'http://harwoodforhouse.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0440
   name: 'Eric Hutchings'
@@ -4890,7 +4865,7 @@
   party: 'Republican'
   email: erickhutchings@yahoo.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0441
   name: 'Stephen Peck'
@@ -4910,7 +4885,7 @@
   party: 'Democratic'
   email: stephenlpeck@yahoo.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0442
   name: 'Jim Dunnigan'
@@ -4931,7 +4906,7 @@
   email: electdunnigan@gmail.com
   website: http://electdunnigan.com/
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0443
   name: 'David Else'
@@ -4951,7 +4926,7 @@
   party: 'Independent American'
   email: daelse49@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0444
   name: 'Lynn N. Hemingway'
@@ -4971,7 +4946,7 @@
   party: 'Democratic'
   email: lynnhemingway999@msn.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0445
   name: 'Peter L. Kraus'
@@ -4991,7 +4966,7 @@
   party: 'Republican'
   email: 'peterkraus2545@gmail.com'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0446
   name: 'Stephanie Pitcher'
@@ -5012,7 +4987,7 @@
   email: stephanie@electstephanie.com
   website: 'http://www.electstephanie.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0447
   name: 'Mark A. Strong'
@@ -5032,7 +5007,7 @@
   party: 'Republican'
   email: bestrong4utah@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0448
   name: 'Paul Wayman'
@@ -5053,7 +5028,7 @@
   email: info@waymanstudio.com
   website: 'http://www.votewayman.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0449
   name: 'Steve Walston'
@@ -5073,7 +5048,7 @@
   party: 'United Utah'
   email: steve.walston@utah.edu
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0450
   name: 'Mike Hales'
@@ -5093,43 +5068,45 @@
   party: 'Republican'
   email: mikehalesutah41@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
+  last_updated: '2018-04-01'
 -
   id: ut0451
   name: 'Wendy Garvin'
   first_name: Wendy
   middle_name: ''
   last_name: Garvin
-
+  gender: 'female'
   office: 'State House 41'
   district: '41'
   address: '2560 Victorian Dr'
   city: Riverton
+  county: 'Salt Lake'
   state: UT
   zip: '84065'
-  phone: (408)464-1351
+  phone: (408) 464-1351
   party: 'Democratic'
   email: wgarvin@wendamus.com
   website: 'http://www.wendyforutah.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-27'
-# -
-#   name: 'James W. Platt'
-#   first_name: James
-#   middle_name: W.
-#   last_name: Platt
-#
-#   office: 'State House 41'
-#   district: '41'
-#   address: '13734 S 2550 W'
-#   city: Riverton
-#   state: UT
-#   zip: '84065'
-#   phone: (801)450-1325
-#   party: 'Democratic'
-#   email: jimplatt@hotmail.com
-#
-#   candidate_status: 'withdrew'
+  last_updated: '2018-04-01'
+-
+  id: ut0231
+  name: 'James W. Platt'
+  first_name: James
+  middle_name: W.
+  last_name: Platt
+  office: 'State House 41'
+  district: '41'
+  address: '13734 S 2550 W'
+  city: Riverton
+  county: 'Salt Lake'
+  state: UT
+  zip: '84065'
+  phone: (801)450-1325
+  party: 'Democratic'
+  email: jimplatt@hotmail.com
+  candidate_status: 'withdrew'
+  last_updated: '2018-04-01'
 # -
 #   name: 'Becky A. Pickle'
 #   first_name: Becky
@@ -5147,7 +5124,7 @@
 #   email: becky.pickle@cfafranchisee.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Nic Dunn'
 #   first_name: Nic
@@ -5165,7 +5142,7 @@
 #   email: 'njamesdunn@gmail.com'
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Kim Coleman'
 #   first_name: Kim
@@ -5183,7 +5160,7 @@
 #   email: kimfcoleman@gmail.com
 #   website: 'http://www.kimcoleman4utah42.com/'
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Amy L Martz'
 #   first_name: Amy
@@ -5201,7 +5178,7 @@
 #   email: amylmartz@gmail.com
 #   website: electamylmartz.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Nicholas R. Holland'
 #   first_name: Nicholas
@@ -5219,7 +5196,7 @@
 #   email: nicholasrholland@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Shawn Curtis'
 #   first_name: Shawn
@@ -5237,7 +5214,7 @@
 #   email: amaduli@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Cheryl K. Acton'
 #   first_name: Cheryl
@@ -5258,7 +5235,7 @@
 #     url: 'https://house.utah.gov/rep/ACTONCK'
 #     note: 'House of Representatives page'
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Diane Lewis'
 #   first_name: Diane
@@ -5276,7 +5253,7 @@
 #   email: votedianelewis@gmail.com
 #   website: www.dianelewiscampaign.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Frank A. Torina Jr.'
 #   first_name: Frank
@@ -5294,7 +5271,7 @@
 #   email: torinafrank70@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Bruce R. Cutler'
 #   first_name: Bruce
@@ -5312,7 +5289,7 @@
 #   email: bruce@electbrucecutler.org
 #   website: electbrucecutler.org
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Robert H. Openshaw'
 #   first_name: Robert
@@ -5331,7 +5308,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   id: ut0058
 #   name: 'Andrew Stoddard'
@@ -5390,7 +5367,7 @@
 #   email: nikki4rep@gmail.com
 #   website: votenikki.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Steve Eliason'
 #   first_name: Steve
@@ -5409,7 +5386,7 @@
 #   email: sealiason@le.utah.gov
 #   website: steveeliason.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Dwight Epperson'
 #   first_name: Dwight
@@ -5444,7 +5421,7 @@
 #   email: meganmskiles@gmail.com
 #   website: meganskiles.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Lee Anne Walker'
 #   first_name: Lee
@@ -5462,7 +5439,7 @@
 #   email: lawalkerslc@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Marie H. Poulson'
 #   first_name: Marie
@@ -5480,7 +5457,7 @@
 #   email: marie.poulson@gmail.com
 #   website: www.mariepoulson.org
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Greg Johnson'
 #   first_name: Greg
@@ -5498,7 +5475,7 @@
 #   email: gcvj@standingtogether.org
 #   website: gregjohnson46.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'SCOTT BELL'
 #   first_name: Scott
@@ -5520,7 +5497,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'STACY MICHAEL NORTON'
 #   first_name: Stacy
@@ -5542,7 +5519,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'KEN IVORY'
 #   first_name: Ken
@@ -5563,7 +5540,7 @@
 #   email: voteivory@gmail.com
 #   website: voteivory.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'KEVEN J. STRATTON'
 #   first_name: Keven
@@ -5583,7 +5560,7 @@
 #   email: keven@strattonlawgroup.com
 #   website: kevenstratton.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'AARON HEINEMAN'
 #   first_name: Aaron
@@ -5605,7 +5582,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ANTHONY SUDWEEKS'
 #   first_name: Anthony
@@ -5626,7 +5603,7 @@
 #   email: anthony.sudweeks@gmail.com
 #   website: www.anthonysudweeks.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ROBERT SPENDLOVE'
 #   first_name: Robert
@@ -5647,7 +5624,7 @@
 #   email: rspendlove@gmail.com
 #   website: robertspendloveutah.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MARK RUSSELL'
 #   first_name: Mark
@@ -5669,7 +5646,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'TY FOSTER'
 #   first_name: Ty
@@ -5690,7 +5667,7 @@
 #   email: ty@tyronefoster.com
 #   website: www.votetyfoster.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MEGAN WIESEN'
 #   first_name: Megan
@@ -5711,7 +5688,7 @@
 #   email: megansforyou@gmail.com
 #   website: meganwiesen.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'SUSAN PULSIPHER'
 #   first_name: Susan
@@ -5732,7 +5709,7 @@
 #   email: susankdp@gmail.com
 #   website: susanpulsipher.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ALAN SUMMERHAYS'
 #   first_name: Alan
@@ -5754,7 +5731,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'JEFF STENQUIST'
 #   first_name: Jeff
@@ -5775,7 +5752,7 @@
 #   email: jeff4utah@outlook.com
 #   website: jeffstenquist.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MICHELE WEEKS'
 #   first_name: Michele
@@ -5796,7 +5773,7 @@
 #   email: mweeksutah@gmail.com
 #   website: www.micheleweeks.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'DAN MCCLELLAN'
 #   first_name: Dan
@@ -5818,7 +5795,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'JOHN KNOTWELL'
 #   first_name: John
@@ -5839,7 +5816,7 @@
 #   email: vote@johnknotwell.com
 #   website: johnknotwell.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'LOGAN WILDE'
 #   first_name: Logan
@@ -5863,7 +5840,7 @@
 #   email: votelogan53@gmail.com
 #   website: votelogan53.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'CHRISTOPHER NEVILLE'
 #   first_name: Christopher
@@ -5884,7 +5861,7 @@
 #   email: chris@chris53.com
 #   website: www.chris53.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ROBERTO M. LOPEZ'
 #   first_name: Roberto
@@ -5905,7 +5882,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MEAGHAN MILLER'
 #   first_name: Meaghan
@@ -5926,7 +5903,7 @@
 #   email: meaghan@votemiller54.com
 #   website: votemiller54.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'TIM QUINN'
 #   first_name: Tim
@@ -5947,7 +5924,7 @@
 #   email: tim@orasicorp.com
 #   website: tim@orasicorp.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'SCOTT H. CHEW'
 #   first_name: Scott
@@ -5968,7 +5945,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'CHRISTINA HIGGINS'
 #   first_name: Christina
@@ -5993,7 +5970,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'KAY J. CHRISTOFFERSON'
 #   first_name: Kay
@@ -6013,7 +5990,7 @@
 #   email: kay@christofferson56.com
 #   website: christofferson56.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ISAAC WALTERS'
 #   first_name: Isaac
@@ -6034,7 +6011,7 @@
 #   email: isaac@waltersfor56.com
 #   website: waltersfor56.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ALEXANDER CARTER'
 #   first_name: Alexander
@@ -6056,7 +6033,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'CARLTON BOWEN'
 #   first_name: Carlton
@@ -6077,7 +6054,7 @@
 #   email: Carlton4Utah@gmail.com
 #   website: Carlton4Utah.blogspot.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'HILLARY STIRLING'
 #   first_name: Hillary
@@ -6098,7 +6075,7 @@
 #   email: contact@hillarystirling.com
 #   website: www.hillarystirling.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'JON HAWKINS'
 #   first_name: Jon
@@ -6119,7 +6096,7 @@
 #   email: jon@electjonhawkins.com
 #   website: www.electjonhawkins.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'DERRIN R. OWENS'
 #   first_name: Derrin
@@ -6140,7 +6117,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'LYNN ZARITSKY'
 #   first_name: Lynn
@@ -6161,7 +6138,7 @@
 #   email: lynnzaritsky58@gmail.com
 #   website: www.votelynnzaritsky.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'RUSSELL G. HATCH'
 #   first_name: Russell
@@ -6182,7 +6159,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'CLAUDIA P. JARRETT'
 #   first_name: Claudia
@@ -6203,7 +6180,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'GREGORY HMURA'
 #   first_name: Gregory
@@ -6228,7 +6205,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'VAL L PETERSON'
 #   first_name: Val
@@ -6248,7 +6225,7 @@
 #   email: Val.Peterson@hotmail.com
 #   website: www.valpeterson.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'CHARLES LARSON'
 #   first_name: Charles
@@ -6270,7 +6247,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ALAN F. KEELE'
 #   first_name: Alan
@@ -6291,7 +6268,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'BRAD DAW'
 #   first_name: Brad
@@ -6312,7 +6289,7 @@
 #   email: brad@braddaw.com
 #   website: www.braddaw.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ERIC CHASE'
 #   first_name: Eric
@@ -6333,7 +6310,7 @@
 #   email: eric.s.chase@gmail.com
 #   website: voteericchase.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MATT STYLES'
 #   first_name: Matt
@@ -6355,7 +6332,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'HOWARD STONE'
 #   first_name: Howard
@@ -6377,7 +6354,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'PARL JOHNSON'
 #   first_name: Parl
@@ -6399,7 +6376,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MARSHA JUDKINS'
 #   first_name: Marsha
@@ -6421,7 +6398,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'TRAVIS M. SEEGMILLER'
 #   first_name: Travis
@@ -6441,7 +6418,7 @@
 #   email: tmseegmiller@gmail.com
 #   website: www.house.utah.gov/rep/seegmtm
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'ADAM ROBERTSON'
 #   first_name: Adam
@@ -6462,7 +6439,7 @@
 #   email: adam@adamrobertson.vote
 #   website: adamrobertson.vote
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'DANIEL CRAIG FRIEND'
 #   first_name: Daniel
@@ -6482,7 +6459,7 @@
 #   email: daniel@friendforutah.com
 #   website: friendforutah.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'HAL MILLER'
 #   first_name: Hal
@@ -6504,7 +6481,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MARY L. WARNER'
 #   first_name: Mary
@@ -6525,7 +6502,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'PAUL REEB'
 #   first_name: Paul
@@ -6548,7 +6525,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'NORM THURSTON'
 #   first_name: Norm
@@ -6569,7 +6546,7 @@
 #   email: electnorm@gmail.com
 #   website: normthurston.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'SUE A. WOMACK'
 #   first_name: Sue
@@ -6590,7 +6567,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'FRANCIS D. GIBSON'
 #   first_name: Francis
@@ -6611,7 +6588,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'SCOTT BRANDON NEILSON'
 #   first_name: Scott
@@ -6636,7 +6613,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MIKE MCKELL'
 #   first_name: Mike
@@ -6657,7 +6634,7 @@
 #   email: mike@mikemckell.com
 #   website: www.mikemckell.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'PAUL JONES DAYTON'
 #   first_name: Paul
@@ -6680,7 +6657,7 @@
 #   email: paul@ximz.com
 #   website: twitter.com/pdayton
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'RICHARD L. BEHLING'
 #   first_name: Richard
@@ -6704,7 +6681,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MARC ROBERTS'
 #   first_name: Marc
@@ -6725,7 +6702,7 @@
 #   email: marc@robertsmarc.com
 #   website: robertsmarc.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'DENYSE  HOUSLEY COX'
 #   first_name: 'Denyse'
@@ -6746,7 +6723,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MERLE TRAVIS WALL'
 #   first_name: Merle
@@ -6767,7 +6744,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'WARREN ROGERS'
 #   first_name: Warren
@@ -6789,7 +6766,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'KIRK D PEARSON'
 #   first_name: Kirk
@@ -6809,7 +6786,7 @@
 #   email: kirk4congress@gmail.com
 #   website: constitutionpartyofutah.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Merrill Nelson'
 #   first_name: Merrill
@@ -6828,7 +6805,7 @@
 #   email: mnelson@kmclaw.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Christine F. Watkins'
 #   first_name: Christine
@@ -6847,7 +6824,7 @@
 #   email: cwatkins_68@yahoo.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Tim Glenn'
 #   first_name: Tim
@@ -6867,7 +6844,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Jae Potter'
 #   first_name: Jae
@@ -6886,7 +6863,7 @@
 #   email: jae.potter2018@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Danielle Howa Pendergrass'
 #   first_name: Danielle
@@ -6905,7 +6882,7 @@
 #   email: ''
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Carl R. Albrecht'
 #   first_name: Carl
@@ -6924,7 +6901,7 @@
 #   email: cralbrecht52@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Robert Greenberg'
 #   first_name: Robert
@@ -6943,7 +6920,7 @@
 #   email: bobgmoab@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Ashley Korenblat'
 #   first_name: Ashley
@@ -6962,7 +6939,7 @@
 #   email: ashley@westernspirit.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Mark S. Borowiak'
 #   first_name: Mark
@@ -6981,7 +6958,7 @@
 #   email: markboro1@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Brad Last'
 #   first_name: 'Brad'
@@ -7000,7 +6977,7 @@
 #   email: district71@infowest.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Chuck Goode'
 #   first_name: Chuck
@@ -7019,7 +6996,7 @@
 #   email: chuckgoode@gmail.com
 #   website: chuckgoode.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Barry Evan Short'
 #   first_name: 'Barry'
@@ -7038,7 +7015,7 @@
 #   email: barryshort@q.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Rex P. Shipp'
 #   first_name: Rex
@@ -7057,7 +7034,7 @@
 #   email: electrexshipp@gmail.com
 #   website: electrexshipp.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Zeno B. Parry'
 #   first_name: 'Zeno'
@@ -7076,7 +7053,7 @@
 #   email: zenoparry@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Kelly Stowell'
 #   first_name: Kelly
@@ -7095,7 +7072,7 @@
 #   email: stowell@kanab.net
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Phil Lyman'
 #   first_name: Phil
@@ -7114,7 +7091,7 @@
 #   email: phil@lymancpa.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Marsha M. Holland'
 #   first_name: Marsha
@@ -7133,7 +7110,7 @@
 #   email: marshaholland2018@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'V. Lowry Snow'
 #   first_name: V.
@@ -7152,7 +7129,7 @@
 #   email: vlsnow74@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Daniel Holloway'
 #   first_name: Daniel
@@ -7171,7 +7148,7 @@
 #   email: holloway4utah74@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Walt Brooks'
 #   first_name: Walt
@@ -7189,7 +7166,7 @@
 #   email: walt@waltbrooks.com
 #   website: www.waltbrooks.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MICHAEL A GARDNER'
 #   first_name: Michael
@@ -7210,7 +7187,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'KEITH R. KELSCH'
 #   first_name: Keith
@@ -7230,7 +7207,7 @@
 #   email: keith@genuineoptimist.com
 #   website: genuineoptimist.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'JENNIE L. EARL'
 #   first_name: Jennie
@@ -7254,7 +7231,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'TERRYL WARNER'
 #   first_name: Terryl
@@ -7276,7 +7253,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'LEANNE A. RICH'
 #   first_name: Leanne
@@ -7297,7 +7274,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'SCOTT L. HANSEN'
 #   first_name: Scott
@@ -7318,7 +7295,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'CRAIG K. PITTS'
 #   first_name: Craig
@@ -7339,7 +7316,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'LINDA B. HANSEN'
 #   first_name: Linda
@@ -7359,7 +7336,7 @@
 #   email: lbhansen8@yahoo.com
 #   website: lindabhansen.weebly.com
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'THOMAS E. NEDREBERG'
 #   first_name: Thomas
@@ -7380,7 +7357,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'LAURA COLLIER BELNAP'
 #   first_name: LAURA
@@ -7401,7 +7378,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'PATRICK D. RILEY'
 #   first_name: Patrick
@@ -7422,7 +7399,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'BRITTNEY CUMMINS'
 #   first_name: Brittney
@@ -7444,7 +7421,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'VALERIE VELEZ-HALL'
 #   first_name: Valerie
@@ -7466,7 +7443,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'MEGAN RUFF'
 #   first_name: Megan
@@ -7488,7 +7465,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'KAMI ALVAREZ'
 #   first_name: Kami
@@ -7510,7 +7487,7 @@
 #
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Kirsten A. Arnold'
 #   first_name: Kirsten
@@ -7545,7 +7522,7 @@
 #   email: 'electsensinger@gmail.com'
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Joylin Lincoln'
 #   first_name: 'Joylin'
@@ -7563,7 +7540,7 @@
 #   email: JoylinLincoln@gmail.com
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Avalie Muhlestein'
 #   first_name: Avalie
@@ -7581,7 +7558,7 @@
 #   email: 'info@voteavalie.com'
 #
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Cindy Davis'
 #   first_name: Cindy
@@ -7599,7 +7576,7 @@
 #   email: 'info@cindydavisforschoolboard.com'
 #   website: 'cindydavisforschoolboard.com'
 #   candidate_status: 'filed'
-#   last_updated: '2018-03-27'
+#   last_updated: '2018-04-01'
 # -
 #   name: 'Mark A. Huntsman'
 #   first_name: Mark
