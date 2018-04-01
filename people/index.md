@@ -9,7 +9,7 @@ comments: true
 
 ### 2018 Election
 #### Primary Candidates
-{% assign person = site.data.2018.primary.candidates | sort:'last_name' %}
+{% assign person = site.data.2018.primary.candidates | sort: 'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
@@ -23,7 +23,6 @@ comments: true
   <tr>
     <td><a href="{{member.id}}">{{member.first_name}}</a></td>
     <td><a href="{{member.id}}">{{member.last_name}}</a></td>
-    <!-- <td><a href="{{member.id}}">{{member.first_name}}&nbsp;{{member.last_name}}</a></td> -->
     <td>{{ member.office }}</td>
     <td><a href="../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>

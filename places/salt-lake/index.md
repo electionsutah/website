@@ -27,25 +27,12 @@ comments: true
 </ul>
 </div>
 
-### 2017 3rd Congressional District Special Election
-
-<aside class="notice">
-  <h4>Election Deadlines</h4>
-  <ul>
-    <li><strong><i class="fa fa-check-square"></i>&nbsp; Friday, 26 May 2017</strong> - Candidate Filing</li>
-    <li><strong><i class="fa fa-check-square"></i>&nbsp; Monday, 12 June 2017</strong> - Signature Deadline</li>
-    <li><strong>Tuesday, 15 August 2017</strong> - Special Primary; polling hours reportedly 7:00a-8:00p MDT (1300-0200 UTC)</li>
-    <li><strong>Friday, 8 September 2017</strong> - Filing Deadline Write-in Candidates</li>
-    <li><strong>Tuesday, 7 November 2017</strong> - Special Election; polling hours reportedly 7:00a-8:00p MST (1400-0300 UTC)</li>
-  </ul>
-</aside>
-
-### 2017 Municipal Election
+### 2018 Election
 
 {% include 2018-elections.html %}
 
 ### 2018 Primary Candidates
-{% assign county = site.data.2017.primary.candidates | where:'county','Salt Lake' | sort:'name' %}
+{% assign county = site.data.2018.primary.candidates | where:'county','Salt Lake' | sort:'name' %}
 <table>
 <thead>
   <th>Name</th>
@@ -57,15 +44,10 @@ comments: true
 {% for member in county  %}
   <tr>
     <td><a href="../../people/{{member.id}}">{{member.name}}</a></td>
-    <td>{{ member.body }}</td>
+    <td>{{ member.office }}</td>
     <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="../../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
   </tr>
 {% endfor %}
 </tbody>
 </table>
-
-<!-- {% assign county = site.data.2017.primary.candidates | where:'county','Salt Lake' | sort:'name' %}
-{% for member in county  %}
-- <strong>[{{member.name }}](../../people/{{member.id}})</strong>, Candidate for <strong>{{ member.body }}</strong> of <strong>[{{ member.city }}](../../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}), [{{ member.county }}](../../places/{{ member.county | downcase | replace: ' ','-' }}), [{{ member.state }}](../../places)</strong>
-{% endfor %} -->
