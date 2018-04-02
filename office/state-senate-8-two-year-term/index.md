@@ -1,7 +1,7 @@
 ---
 layout: page
-title: State Senate 2
-permalink: /office/state-senate-2
+title: State Senate 8 (2 year term)
+permalink: /office/state-senate-8-2-year-term
 comments: true
 ---
 
@@ -10,7 +10,7 @@ comments: true
 {% include 2018-elections.html %}
 
 #### 2018 Primary Candidates
-{% assign office = site.data.2018.primary.candidates | where:'office','State Senate 2' | sort:'last_name' %}
+{% assign office = site.data.2018.primary.candidates | where:'office','State Senate 8 (2 year term)' | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: State House 21
-permalink: /office/state-house-21
+title: State House 18
+permalink: /office/state-house-18
 comments: true
 ---
 
@@ -10,7 +10,7 @@ comments: true
 {% include 2018-elections.html %}
 
 #### 2018 Primary Candidates
-{% assign office = site.data.2018.primary.candidates | where:'office','State House 21' | sort:'last_name' %}
+{% assign office = site.data.2018.primary.candidates | where:'office','State House 18' | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>

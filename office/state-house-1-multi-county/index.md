@@ -8,6 +8,7 @@ comments: true
 ### 2018 Election
 
 {% include 2018-elections.html %}
+
 #### 2018 Primary Candidates
 {% assign office = site.data.2018.primary.candidates | where:'office','State House 1 (Multi County)' | sort:'last_name' %}
 <table>

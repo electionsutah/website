@@ -1,7 +1,7 @@
 ---
 layout: page
-title: State Senate 15
-permalink: /office/state-senate-15
+title: State Senate 9
+permalink: /office/state-senate-9
 comments: true
 ---
 
@@ -10,7 +10,7 @@ comments: true
 {% include 2018-elections.html %}
 
 #### 2018 Primary Candidates
-{% assign office = site.data.2018.primary.candidates | where:'office','State Senate 15' | sort:'last_name' %}
+{% assign office = site.data.2018.primary.candidates | where:'office','State Senate 9' | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>

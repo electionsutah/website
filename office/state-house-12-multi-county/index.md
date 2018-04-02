@@ -1,7 +1,7 @@
 ---
 layout: page
-title: State House 11 (Multi County)
-permalink: /office/state-house-11-multi-county
+title: State House 12 (Multi County)
+permalink: /office/state-house-12-multi-county
 comments: true
 ---
 
@@ -10,7 +10,7 @@ comments: true
 {% include 2018-elections.html %}
 
 #### 2018 Primary Candidates
-{% assign office = site.data.2018.primary.candidates | where:'office','State House 11 (Multi County)' | sort:'last_name' %}
+{% assign office = site.data.2018.primary.candidates | where:'office','State House 12 (Multi County)' | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
