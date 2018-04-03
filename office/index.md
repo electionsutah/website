@@ -59,8 +59,8 @@ comments: true
   <li><a href="state-senate-15">State Senate 15</a></li>
   <li><a href="state-senate-17-multi-county">State Senate 17 (Multi County)</a></li>
   <li><a href="state-senate-18-multi-county">State Senate 18 (Multi County)</a></li>
-<li><a href="state-senate-21">State Senate 21</a></li>
-<li><a href="state-senate-22">State Senate 22</a></li>
+  <li><a href="state-senate-21">State Senate 21</a></li>
+  <li><a href="state-senate-22">State Senate 22</a></li>
   <li><a href="state-senate-26-multi-county">State Senate 26 (Multi County)</a></li>
   <li><a href="state-senate-28-multi-county">State Senate 28 (Multi County)</a></li>
   <li><a href="us-house-1">U.S. House 1</a></li>
@@ -168,6 +168,222 @@ comments: true
 </thead>
 <tbody>
 {% for member in state-house-4  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### State House 5
+
+#### 2018 Primary Candidates
+{% assign state-house-5 = site.data.2018.primary.candidates | where:'office','State House 5' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in state-house-5  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### State House 6
+
+#### 2018 Primary Candidates
+{% assign state-house-6 = site.data.2018.primary.candidates | where:'office','State House 6' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in state-house-6  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### State House 7
+
+#### 2018 Primary Candidates
+{% assign state-house-7 = site.data.2018.primary.candidates | where:'office','State House 7' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in state-house-7  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### State House 8
+
+#### 2018 Primary Candidates
+{% assign state-house-8 = site.data.2018.primary.candidates | where:'office','State House 8' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in state-house-8  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### State House 9
+
+#### 2018 Primary Candidates
+{% assign state-house-9 = site.data.2018.primary.candidates | where:'office','State House 9' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in state-house-9  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### State House 10
+
+#### 2018 Primary Candidates
+{% assign state-house-10 = site.data.2018.primary.candidates | where:'office','State House 10' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in state-house-10  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### State House 11 (Multi County)
+
+#### 2018 Primary Candidates
+{% assign state-house-11-multi-county = site.data.2018.primary.candidates | where:'office','State House 11 (Multi County)' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in state-house-11-multi-county  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### State House 12 (Multi County)
+
+#### 2018 Primary Candidates
+{% assign state-house-12-multi-county = site.data.2018.primary.candidates | where:'office','State House 12 (Multi County)' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in state-house-12-multi-county  %}
   <tr>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
