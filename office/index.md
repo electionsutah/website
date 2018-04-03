@@ -73,7 +73,7 @@ comments: true
 <br>
 
 
-### State House 1 (Multi County)
+### [State House 1 (Multi County)](state-house-1-multi-county)
 
 #### 2018 Primary Candidates
 {% assign state-house-1-multi-county = site.data.2018.primary.candidates | where:'office','State House 1 (Multi County)' | sort:'last_name' %}
@@ -100,7 +100,7 @@ comments: true
 <br>
 
 
-### State House 2
+### [State House 2](state-house-2)
 
 #### 2018 Primary Candidates
 {% assign state-house-2 = site.data.2018.primary.candidates | where:'office','State House 2' | sort:'last_name' %}
@@ -127,7 +127,7 @@ comments: true
 <br>
 
 
-### State House 3
+### [State House 3](state-house-3)
 
 #### 2018 Primary Candidates
 {% assign state-house-3 = site.data.2018.primary.candidates | where:'office','State House 3' | sort:'last_name' %}
@@ -154,7 +154,7 @@ comments: true
 <br>
 
 
-### State House 4
+### [State House 4](state-house-4)
 
 #### 2018 Primary Candidates
 {% assign state-house-4 = site.data.2018.primary.candidates | where:'office','State House 4' | sort:'last_name' %}
@@ -181,7 +181,7 @@ comments: true
 <br>
 
 
-### State House 5
+### [State House 5](state-house-5)
 
 #### 2018 Primary Candidates
 {% assign state-house-5 = site.data.2018.primary.candidates | where:'office','State House 5' | sort:'last_name' %}
@@ -208,7 +208,7 @@ comments: true
 <br>
 
 
-### State House 6
+### [State House 6](state-house-6)
 
 #### 2018 Primary Candidates
 {% assign state-house-6 = site.data.2018.primary.candidates | where:'office','State House 6' | sort:'last_name' %}
@@ -235,7 +235,7 @@ comments: true
 <br>
 
 
-### State House 7
+### [State House 7](state-house-7)
 
 #### 2018 Primary Candidates
 {% assign state-house-7 = site.data.2018.primary.candidates | where:'office','State House 7' | sort:'last_name' %}
@@ -262,7 +262,7 @@ comments: true
 <br>
 
 
-### State House 8
+### [State House 8](state-house-8)
 
 #### 2018 Primary Candidates
 {% assign state-house-8 = site.data.2018.primary.candidates | where:'office','State House 8' | sort:'last_name' %}
@@ -289,7 +289,7 @@ comments: true
 <br>
 
 
-### State House 9
+### [State House 9](state-house-9)
 
 #### 2018 Primary Candidates
 {% assign state-house-9 = site.data.2018.primary.candidates | where:'office','State House 9' | sort:'last_name' %}
@@ -316,7 +316,7 @@ comments: true
 <br>
 
 
-### State House 10
+### [State House 10](state-house-10)
 
 #### 2018 Primary Candidates
 {% assign state-house-10 = site.data.2018.primary.candidates | where:'office','State House 10' | sort:'last_name' %}

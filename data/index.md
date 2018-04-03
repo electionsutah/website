@@ -10,8 +10,8 @@ comments: true
 {% include 2018-elections.html %}
 
 #### Primary Candidates
-[CSV](http://electionsutah.org/data/2018-utah-elections-primary.csv) / [JSON](http://electionsutah.org/data/2018-utah-elections-primary.json) (Last updated 1 April 2018)
-<br>
+[CSV](http://electionsutah.org/data/2018/primary/candidates.csv) / [JSON](http://electionsutah.org/data/2018/primary/candidates.json) (Last updated 1 April 2018)
+<br><br>
 <hr>
 
 ### 2017 3rd Congressional District Special Election
@@ -19,7 +19,7 @@ comments: true
 {% include 2017-3rd-district-special-election.html %}
 
 _Coming soon..._
-<br>
+<br><br>
 <hr>
 
 ### 2017 Municipal Election
@@ -27,8 +27,8 @@ _Coming soon..._
 {% include 2017-municipal-election.html %}
 
 #### Primary Candidates
-[CSV](http://electionsutah.org/data/2017-utah-elections-primary.csv) / [JSON](http://electionsutah.org/data/2017-utah-elections-primary.json) (Last updated 9 August 2017)
-<br>
+[CSV](http://electionsutah.org/data/2017/primary/candidates.csv) / [JSON](http://electionsutah.org/data/2017/primary/candidates.json) (Last updated 9 August 2017)
+<br><br>
 
 #### Recorders
 ##### Utah County
