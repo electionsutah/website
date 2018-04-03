@@ -32,4 +32,4 @@ _Coming soon..._
 
 #### Recorders
 ##### Utah County
-[CSV](http://electionsutah.org/data/2017-utah-county-city-recorders.csv) (Last updated 21 June 2017)
+[CSV](http://electionsutah.org/data/2017/utah-county-city-recorders.csv) (Last updated 21 June 2017)
