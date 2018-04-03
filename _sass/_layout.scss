@@ -195,7 +195,7 @@ th:hover {
             }
           .site-nav #search-box {
             float: none;
-            margin-top: 1rem;
+            margin-top: 1.4rem;
           }
           }
           .site-title,
@@ -215,7 +215,4 @@ th:hover {
     h3 { font-size: 1rem; }
     h4 { font-size: $small-font-size; }
     p, span, th, td { font-size: $small-font-size; }
-    .donate {
-      display: block;
-    }
 }
