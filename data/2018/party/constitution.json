@@ -1,0 +1,75 @@
+[
+  {
+    "id": "pp0001",
+    "name": "Bryce Hamilton",
+    "first_name": "Bryce",
+    "last_name": "Hamilton",
+    "office": "Chair",
+    "party": "Constitution",
+    "state": "UT",
+    "phone": "(435) 822-5630",
+    "email": "statechairman@constitutionpartyofutah.com",
+    "last_updated": "2018-04-03"
+  },
+  {
+    "id": "pp0002",
+    "name": "Kirk Pearson",
+    "first_name": "Kirk",
+    "last_name": "Pearson",
+    "office": "First Vice-Chair",
+    "party": "Constitution",
+    "state": "UT",
+    "phone": "(801) 856-1471",
+    "email": "kirk@kdphomes.com",
+    "skype": "KirkandJill",
+    "last_updated": "2018-04-03"
+  },
+  {
+    "id": "pp0003",
+    "name": "Reed Miller",
+    "first_name": "Reed",
+    "last_name": "Miller",
+    "office": "Second Vice-Chair",
+    "party": "Constitution",
+    "state": "UT",
+    "phone": "(801) 390-3999",
+    "email": "reedskeeter@gmail.com",
+    "last_updated": "2018-04-03"
+  },
+  {
+    "id": "pp0004",
+    "name": "Valerie Fauver",
+    "first_name": "Valerie",
+    "last_name": "Fauver",
+    "office": "Secretary",
+    "party": "Constitution",
+    "state": "UT",
+    "phone": "(801) 792-3872",
+    "email": "valerietoone@yahoo.com",
+    "last_updated": "2018-04-03"
+  },
+  {
+    "id": "pp0005",
+    "name": "Sherry Phipps",
+    "first_name": "Sherry",
+    "last_name": "Phipps",
+    "office": "Treasurer",
+    "party": "Constitution",
+    "state": "UT",
+    "phone": "(435) 237-9822",
+    "email": "tips.lodge@gmail.com",
+    "last_updated": "2018-04-03"
+  },
+  {
+    "id": "pp0006",
+    "name": "Eric Wright",
+    "first_name": "Eric",
+    "last_name": "Wright",
+    "office": "Webmaster",
+    "party": "Constitution",
+    "state": "UT",
+    "phone": "(801) 410-2315",
+    "email": "aerickw@gmail.com",
+    "last_updated": "2018-04-03"
+  }
+]

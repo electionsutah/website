@@ -5,7 +5,19 @@ permalink: /party/
 comments: true
 ---
 
-### Green Party of Utah
+<div class="columns">
+<ul>
+  <li><a href="green">Green Party of Utah</a></li>
+  <li><a href="independent-american">Independent American Party</a></li>
+  <li><a href="united-utah">United Utah Party</a></li>
+  <li><a href="constitution">Utah Constitution Party</a></li>
+  <li><a href="democratic">Utah Democratic Party</a></li>
+  <li><a href="libertarian">Utah Libertarian Party</a></li>
+  <li><a href="republican">Utah Republican Party</a></li>
+</ul>
+</div>
+
+### [Green Party of Utah](green)
 
 #### 2018 Primary Candidates
 {% assign green = site.data.2018.primary.candidates | where:'party','Green' | sort:'last_name' %}
@@ -31,7 +43,7 @@ comments: true
 </table>
 <br>
 
-### Independent American Party
+### [Independent American Party](independent-american)
 
 #### 2018 Primary Candidates
 {% assign independent = site.data.2018.primary.candidates | where:'party','Independent American' | sort:'last_name' %}
@@ -58,7 +70,7 @@ comments: true
 <br>
 
 
-### United Utah Party
+### [United Utah Party](united-utah)
 
 #### 2018 Primary Candidates
 {% assign united = site.data.2018.primary.candidates | where:'party','United Utah' | sort:'last_name' %}
@@ -85,10 +97,10 @@ comments: true
 <br>
 
 
-### Utah Constitution Party
+### [Utah Constitution Party](constitution)
 
 #### 2018 Primary Candidates
-{% assign consitution = site.data.2018.primary.candidates | where:'party','Constitution' | sort:'last_name' %}
+{% assign constitution = site.data.2018.primary.candidates | where:'party','Constitution' | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
@@ -98,7 +110,7 @@ comments: true
   <th>County</th>
 </thead>
 <tbody>
-{% for member in consitution  %}
+{% for member in constitution  %}
   <tr>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
@@ -112,7 +124,7 @@ comments: true
 <br>
 
 
-### Utah Democratic Party
+### [Utah Democratic Party](democratic)
 
 #### 2018 Primary Candidates
 {% assign democratic = site.data.2018.primary.candidates | where:'party','Democratic' | sort:'last_name' %}
@@ -139,7 +151,7 @@ comments: true
 <br>
 
 
-### Utah Libertarian Party
+### [Utah Libertarian Party](libertarian)
 
 #### 2018 Primary Candidates
 {% assign libertarian = site.data.2018.primary.candidates | where:'party','Libertarian' | sort:'last_name' %}
@@ -166,7 +178,7 @@ comments: true
 <br>
 
 
-### Utah Republican Party
+### [Utah Republican Party](republican)
 
 #### 2018 Primary Candidates
 {% assign republican = site.data.2018.primary.candidates | where:'party','Republican' | sort:'last_name' %}
