@@ -2270,14 +2270,14 @@
 -
   id: ut0316
   name: 'Kris Udy'
-  first_name: Kris
-  middle_name: ''
-  last_name: Udy
-
+  first_name: 'Kris'
+  last_name: 'Udy'
   gender: 'female'
   office: 'State House 1 (Multi County)'
   district: '1'
   address: '10910 N 8400 W'
+  latitude: '41.7053579'
+  longitude: '-112.2211317'
   city: Tremonton
   county: 'Box Elder'
   state: UT
@@ -2285,6 +2285,8 @@
   phone: (435) 279-7777
   party: 'Republican'
   email: 'krisudy@krisudy4house1.com'
+  facebook: 'https://www.facebook.com/Krisudy4house1-1364945086943504/'
+  twitter: 'https://twitter.com/KrisUdy4House1'
   website: 'https://www.krisudy4house1.com/'
   candidate_status: 'filed'
   last_updated: '2018-05-03'
