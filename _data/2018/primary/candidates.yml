@@ -4996,7 +4996,6 @@
   first_name: Mark
   middle_name: A.
   last_name: Strong
-
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -5016,7 +5015,6 @@
   first_name: Paul
   middle_name: ''
   last_name: Wayman
-
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -5037,7 +5035,6 @@
   first_name: Steve
   middle_name: ''
   last_name: Walston
-
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -5057,7 +5054,6 @@
   first_name: Mike
   middle_name: ''
   last_name: Hales
-
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -5104,176 +5100,186 @@
   county: 'Salt Lake'
   state: UT
   zip: '84065'
-  phone: (801)450-1325
+  phone: (801) 450-1325
   party: 'Democratic'
   email: jimplatt@hotmail.com
   candidate_status: 'withdrew'
-  last_updated: '2018-04-01'
-# -
-#   name: 'Becky A. Pickle'
-#   first_name: Becky
-#   middle_name: A.
-#   last_name: Pickle
-#
-#   office: 'State House 41'
-#   district: '41'
-#   address: '3697 Wasatch Vista Dr'
-#   city: Bluffdale
-#   state: UT
-#   zip: '84065'
-#   phone: (801)755-1821
-#   party: 'Republican'
-#   email: becky.pickle@cfafranchisee.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Nic Dunn'
-#   first_name: Nic
-#   middle_name: ''
-#   last_name: Dunn
-#
-#   office: 'State House 41'
-#   district: '41'
-#   address: '14056 S Chardonnay Way'
-#   city: Bluffdale
-#   state: UT
-#   zip: '84065'
-#   phone: (801)349-5961
-#   party: 'Republican'
-#   email: 'njamesdunn@gmail.com'
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Kim Coleman'
-#   first_name: Kim
-#   middle_name: ''
-#   last_name: Coleman
-#
-#   office: 'State House 42'
-#   district: '42'
-#   address: '8303 S 5260 W'
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84081'
-#   phone: (801)865-8970
-#   party: 'Republican'
-#   email: kimfcoleman@gmail.com
-#   website: 'http://www.kimcoleman4utah42.com/'
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Amy L Martz'
-#   first_name: Amy
-#   middle_name: L
-#   last_name: Martz
-#
-#   office: 'State House 42'
-#   district: '42'
-#   address: '5438 W Bridle Vista Cir'
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84081'
-#   phone: (801)231-0286
-#   party: 'United Utah'
-#   email: amylmartz@gmail.com
-#   website: electamylmartz.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Nicholas R. Holland'
-#   first_name: Nicholas
-#   middle_name: R.
-#   last_name: Holland
-#
-#   office: 'State House 42'
-#   district: '42'
-#   address: '8517 S Otter Creek Dr'
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84081'
-#   phone: (801)815-4158
-#   party: 'Democratic'
-#   email: nicholasrholland@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Shawn Curtis'
-#   first_name: Shawn
-#   middle_name: ''
-#   last_name: Curtis
-#
-#   office: 'State House 43'
-#   district: '43'
-#   address: '7684 Sunrise Pl'
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84084'
-#   phone: (435)764-1382
-#   party: Libertarian
-#   email: amaduli@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Cheryl K. Acton'
-#   first_name: Cheryl
-#   middle_name: K.
-#   last_name: Acton
-#
-#   office: 'State House 43'
-#   district: '43'
-#   address: '5143 W Wheatcrest Circle'
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84081'
-#   phone: (801)809-3571
-#   party: 'Republican'
-#   email: cherylkacton@yahoo.com
-#   website: 'http://cherylacton.cherylacton.com/'
-#   links:
-#     url: 'https://house.utah.gov/rep/ACTONCK'
-#     note: 'House of Representatives page'
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Diane Lewis'
-#   first_name: Diane
-#   middle_name: ''
-#   last_name: Lewis
-#
-#   office: 'State House 43'
-#   district: '43'
-#   address: 'PO Box 27641'
-#   city: 'Salt Lake City'
-#   state: UT
-#   zip: '84127'
-#   phone: (801)963-1784
-#   party: 'Democratic'
-#   email: votedianelewis@gmail.com
-#   website: www.dianelewiscampaign.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Frank A. Torina Jr.'
-#   first_name: Frank
-#   middle_name: A.
-#   last_name: Torina
-#   suffix:  Jr.
-#   office: 'State House 43'
-#   district: '43'
-#   address: 'PO Box 711801'
-#   city: 'Salt Lake City'
-#   state: UT
-#   zip: '84171'
-#   phone: (801)971-8648
-#   party: 'Democratic'
-#   email: torinafrank70@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
+  last_updated: '2018-05-04'
+-
+  id: ut0452
+  name: 'Becky A. Pickle'
+  first_name: Becky
+  middle_name: A.
+  last_name: Pickle
+  gender: 'female'
+  office: 'State House 41'
+  district: '41'
+  address: '3697 Wasatch Vista Dr'
+  city: Bluffdale
+  county: 'Salt Lake'
+  state: UT
+  zip: '84065'
+  phone: (801) 755-1821
+  party: 'Republican'
+  email: becky.pickle@cfafranchisee.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
+-
+  id: ut0453
+  name: 'Nic Dunn'
+  first_name: Nic
+  last_name: Dunn
+  gender: 'male'
+  office: 'State House 41'
+  district: '41'
+  address: '14056 S Chardonnay Way'
+  city: Bluffdale
+  county: 'Salt Lake'
+  state: UT
+  zip: '84065'
+  phone: (801) 349-5961
+  party: 'Republican'
+  email: 'njamesdunn@gmail.com'
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
+-
+  id: ut0454
+  name: 'Kim Coleman'
+  first_name: Kim
+  last_name: Coleman
+  gender: 'female'
+  office: 'State House 42'
+  district: '42'
+  address: '8303 S 5260 W'
+  city: 'West Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84081'
+  phone: (801) 865-8970
+  party: 'Republican'
+  email: kimfcoleman@gmail.com
+  website: 'http://www.kimcoleman4utah42.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
+-
+  id: ut0455
+  name: 'Amy L. Martz'
+  first_name: Amy
+  middle_name: L.
+  last_name: Martz
+  gender: 'female'
+  office: 'State House 42'
+  district: '42'
+  address: '5438 W Bridle Vista Cir'
+  city: 'West Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84081'
+  phone: (801) 231-0286
+  party: 'United Utah'
+  email: amylmartz@gmail.com
+  website: http://electamylmartz.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
+-
+  id: ut0456
+  name: 'Nicholas R. Holland'
+  first_name: Nicholas
+  middle_name: R.
+  last_name: Holland
+  gender: 'male'
+  office: 'State House 42'
+  district: '42'
+  address: '8517 S Otter Creek Dr'
+  city: 'West Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84081'
+  phone: (801) 815-4158
+  party: 'Democratic'
+  email: nicholasrholland@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
+-
+  id: ut0457
+  name: 'Shawn Curtis'
+  first_name: Shawn
+  last_name: Curtis
+  gender: 'male'
+  office: 'State House 43'
+  district: '43'
+  address: '7684 Sunrise Pl'
+  city: 'West Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84084'
+  phone: (435) 764-1382
+  party: Libertarian
+  email: amaduli@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
+-
+  id: ut0458
+  name: 'Cheryl K. Acton'
+  first_name: Cheryl
+  middle_name: K.
+  last_name: Acton
+  gender: 'female'
+  office: 'State House 43'
+  district: '43'
+  address: '5143 W Wheatcrest Circle'
+  city: 'West Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84081'
+  phone: (801) 809-3571
+  party: 'Republican'
+  email: cherylkacton@yahoo.com
+  website: 'http://cherylacton.cherylacton.com/'
+  links:
+    url: 'https://house.utah.gov/rep/ACTONCK'
+    note: 'House of Representatives page'
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
+-
+  id: ut0459
+  name: 'Diane Lewis'
+  first_name: Diane
+  last_name: Lewis
+  gender: 'female'
+  office: 'State House 43'
+  district: '43'
+  address: 'PO Box 27641'
+  city: 'Salt Lake City'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84127'
+  phone: (801) 963-1784
+  party: 'Democratic'
+  email: votedianelewis@gmail.com
+  website: http://www.dianelewiscampaign.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
+-
+  id: ut0460
+  name: 'Frank A. Torina Jr.'
+  first_name: Frank
+  middle_name: A.
+  last_name: Torina
+  suffix:  Jr.
+  gender: 'male'
+  office: 'State House 43'
+  district: '43'
+  address: 'PO Box 711801'
+  city: 'Salt Lake City'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84171'
+  phone: (801) 971-8648
+  party: 'Democratic'
+  email: torinafrank70@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
 # -
 #   name: 'Bruce R. Cutler'
 #   first_name: Bruce
