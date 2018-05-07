@@ -30,4 +30,3 @@ permalink: /places/utah/genola/
 {% endfor %}
 </tbody>
 </table>
-</table>

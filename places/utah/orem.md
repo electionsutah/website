@@ -30,4 +30,3 @@ permalink: /places/utah/orem/
 {% endfor %}
 </tbody>
 </table>
-</table>

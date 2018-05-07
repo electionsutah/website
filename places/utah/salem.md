@@ -30,4 +30,3 @@ permalink: /places/utah/salem/
 {% endfor %}
 </tbody>
 </table>
-</table>

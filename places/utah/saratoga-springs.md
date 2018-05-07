@@ -30,4 +30,3 @@ permalink: /places/utah/saratoga-springs/
 {% endfor %}
 </tbody>
 </table>
-</table>

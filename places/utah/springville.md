@@ -30,4 +30,3 @@ permalink: /places/utah/springville/
 {% endfor %}
 </tbody>
 </table>
-</table>

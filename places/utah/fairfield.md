@@ -30,4 +30,3 @@ permalink: /places/utah/fairfield/
 {% endfor %}
 </tbody>
 </table>
-</table>

@@ -30,4 +30,3 @@ permalink: /places/utah/highland/
 {% endfor %}
 </tbody>
 </table>
-</table>

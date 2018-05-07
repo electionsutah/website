@@ -30,4 +30,3 @@ permalink: /places/utah/spanish-fork/
 {% endfor %}
 </tbody>
 </table>
-</table>

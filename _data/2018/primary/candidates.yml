@@ -31,7 +31,7 @@
   phone_number: ''
   email_address: ''
   facebook: 'https://www.facebook.com/ortonforhouse/'
-  party: 'Utah State Democratic Party'
+  party: 'Democratic'
   election_type: primary
   election_date: ''
   source: 'https://www.facebook.com/ortonforhouse/'
@@ -5280,50 +5280,54 @@
   email: torinafrank70@gmail.com
   candidate_status: 'filed'
   last_updated: '2018-05-04'
-# -
-#   name: 'Bruce R. Cutler'
-#   first_name: Bruce
-#   middle_name: R.
-#   last_name: Cutler
-#
-#   office: 'State House 44'
-#   district: '44'
-#   address: '6051 Mohican Circle'
-#   city: Murray
-#   state: UT
-#   zip: '84123'
-#   phone: (801)556-4600
-#   party: 'Republican'
-#   email: bruce@electbrucecutler.org
-#   website: electbrucecutler.org
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Robert H. Openshaw'
-#   first_name: Robert
-#   middle_name: H.
-#   last_name: Openshaw
-#
-#   office: 'State House 44'
-#   district: '44'
-#   address: '425 Alta View Dr'
-#   city: Midvale
-#   state: UT
-#   zip: '84047'
-#   phone: (801)560-2805
-#   party: Libertarian
-#   email: robbyopenshaw@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
+-
+  id: ut0461
+  name: 'Bruce R. Cutler'
+  first_name: Bruce
+  middle_name: R.
+  last_name: Cutler
+  gender: 'male'
+  office: 'State House 44'
+  district: '44'
+  address: '6051 Mohican Circle'
+  city: Murray
+  county: 'Salt Lake'
+  state: UT
+  zip: '84123'
+  phone: (801) 556-4600
+  party: 'Republican'
+  email: bruce@electbrucecutler.org
+  website: http://electbrucecutler.org
+  candidate_status: 'filed'
+  last_updated: '2018-05-05'
+-
+  id: ut0462
+  name: 'Robert H. Openshaw'
+  first_name: Robert
+  middle_name: H.
+  last_name: Openshaw
+  gender: 'male'
+  office: 'State House 44'
+  district: '44'
+  address: '425 Alta View Dr'
+  city: Midvale
+  county: 'Salt Lake'
+  state: UT
+  zip: '84047'
+  phone: (801) 560-2805
+  party: Libertarian
+  email: robbyopenshaw@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-04'
 -
   id: ut0058
+  # identifiers:
+  #   indentifier: '1415014'
+  #   scheme: 'State of Utah Financial Disclosures'
   name: 'Andrew Stoddard'
   first_name: 'Andrew'
-  middle_name: ''
   last_name: 'Stoddard'
-
+  gender: 'male'
   office: 'State House 44'
   district: '44'
   gender: 'male'
@@ -5340,384 +5344,364 @@
   facebook: 'https://www.facebook.com/voteandrewstoddard/'
   website: 'https://www.voteandrewstoddard.com/'
   candidate_status: 'filed'
-  last_updated: '2018-03-28'
-# -
-#   name: 'John Jackson'
-#   first_name: John
-#   middle_name: ''
-#   last_name: Jackson
-#
-#   office: 'State House 44'
-#   district: '44'
-#   address: '8908 S 60 E'
-#   city: Sandy
-#   state: UT
-#   zip: '84070'
-#   phone: (801)996-3348
-#   party: 'United Utah'
-#   email: ''
-#   website: 'newsasnewstravelsfast.blogspot.com'
-#   candidate_status: 'withdrew'
-# -
-#   name: 'Nikki Cunard'
-#   first_name: Nikki
-#   middle_name: ''
-#   last_name: Cunard
-#
-#   office: 'State House 45'
-#   district: '45'
-#   address: '8408 S Colene Dr'
-#   city: Sandy
-#   state: UT
-#   zip: '84094'
-#   phone: (801)350-1233
-#   party: 'Democratic'
-#   email: nikki4rep@gmail.com
-#   website: votenikki.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Steve Eliason'
-#   first_name: Steve
-#   middle_name: ''
-#   last_name: Eliason
-#
-#   office: 'State House 45'
-#   district: '45'
-#   address: '8157 S Grambling Way'
-#   city: Sandy
-#   county: 'Salt Lake'
-#   state: UT
-#   zip: '84094'
-#   phone: (801) 673-4748
-#   party: 'Republican'
-#   email: sealiason@le.utah.gov
-#   website: steveeliason.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Dwight Epperson'
-#   first_name: Dwight
-#   middle_name: ''
-#   last_name: Epperson
-#
-#   office: 'State House 45'
-#   district: '45'
-#   address: '8156 S 1000 E'
-#   city: Sandy
-#   state: UT
-#   zip: '84094'
-#   phone: (801)676-9108
-#   party: 'Republican'
-#   email: dwightepperson@msn.com
-#
-#   candidate_status: 'withdrew'
-# -
-#   name: 'MEGAN SKILES'
-#   first_name: Megan
-#   middle_name: ''
-#   last_name: Skiles
-#
-#   office: 'State House 46'
-#   district: '46'
-#   address: '6916 S 725 E Unit G'
-#   city: Midvale
-#   state: UT
-#   zip: '84047'
-#   phone: (802)881-1847
-#   party: 'Democratic'
-#   email: meganmskiles@gmail.com
-#   website: meganskiles.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Lee Anne Walker'
-#   first_name: Lee
-#   middle_name: Anne
-#   last_name: Walker
-#
-#   office: 'State House 46'
-#   district: '46'
-#   address: '8940 Alpen Way'
-#   city: 'Cottonwood Heights'
-#   state: UT
-#   zip: '84121'
-#   phone: (801)942-6814
-#   party: Libertarian
-#   email: lawalkerslc@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Marie H. Poulson'
-#   first_name: Marie
-#   middle_name: H.
-#   last_name: Poulson
-#
-#   office: 'State House 46'
-#   district: '46'
-#   address: '7037 Horizon Circle'
-#   city: 'Cottonwood Heights'
-#   state: UT
-#   zip: '84121'
-#   phone: (801)942-5390
-#   party: 'Democratic'
-#   email: marie.poulson@gmail.com
-#   website: www.mariepoulson.org
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Greg Johnson'
-#   first_name: Greg
-#   middle_name: ''
-#   last_name: Johnson
-#
-#   office: 'State House 46'
-#   district: '46'
-#   address: '2415 E Cinnabar Ln'
-#   city: 'Cottonwood Heights'
-#   state: UT
-#   zip: '84121'
-#   phone: (801)897-5666
-#   party: 'Republican'
-#   email: gcvj@standingtogether.org
-#   website: gregjohnson46.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'SCOTT BELL'
-#   first_name: Scott
-#   middle_name: ''
-#
-#   last_name: Bell
-#
-#
-#   office: 'State House 47'
-#   district: '47'
-#   address: '9178 S Edenbrook Way'
-#
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84088'
-#   phone: (801)573-8195
-#   party: 'Democratic'
-#   email: sebell1975@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'STACY MICHAEL NORTON'
-#   first_name: Stacy
-#   middle_name: Michael
-#   last_name: Norton
-#
-#
-#   office: 'State House 47'
-#   district: '47'
-#   address: '8549 S 3830 W'
-#
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84088'
-#   phone: ''
-#
-#   party: 'Republican'
-#   email: stacynorton@mail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'KEN IVORY'
-#   first_name: Ken
-#   middle_name: ''
-#
-#   last_name: Ivory
-#
-#
-#   office: 'State House 47'
-#   district: '47'
-#   address: '8393 S 2010 W'
-#
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84088'
-#   phone: (801)694-8380
-#   party: 'Republican'
-#   email: voteivory@gmail.com
-#   website: voteivory.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'KEVEN J. STRATTON'
-#   first_name: Keven
-#   middle_name: J.
-#   last_name: Stratton
-#
-#
-#   office: 'State House 48'
-#   district: '48'
-#   address: '702 E 1160 N'
-#
-#   city: Orem
-#   state: UT
-#   zip: '84097'
-#   phone: (801)836-6010
-#   party: 'Republican'
-#   email: keven@strattonlawgroup.com
-#   website: kevenstratton.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'AARON HEINEMAN'
-#   first_name: Aaron
-#   middle_name: ''
-#
-#   last_name: Heineman
-#
-#
-#   office: 'State House 48'
-#   district: '48'
-#   address: '4390 N 250 E'
-#
-#   city: Provo
-#   state: UT
-#   zip: '84604'
-#   phone: (801)290-8659
-#   party: 'Independent American'
-#   email: aaron.m.heineman@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'ANTHONY SUDWEEKS'
-#   first_name: Anthony
-#   middle_name: ''
-#
-#   last_name: Sudweeks
-#
-#
-#   office: 'State House 49'
-#   district: '49'
-#   address: '10122 S Bell Canyon Rd'
-#
-#   city: Sandy
-#   state: UT
-#   zip: '84092'
-#   phone: (801)884-7950
-#   party: 'Democratic'
-#   email: anthony.sudweeks@gmail.com
-#   website: www.anthonysudweeks.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'ROBERT SPENDLOVE'
-#   first_name: Robert
-#   middle_name: ''
-#
-#   last_name: Spendlove
-#
-#
-#   office: 'State House 49'
-#   district: '49'
-#   address: '2492 E Barcelona Dr'
-#
-#   city: Sandy
-#   state: UT
-#   zip: '84093'
-#   phone: (801)560-5394
-#   party: 'Republican'
-#   email: rspendlove@gmail.com
-#   website: robertspendloveutah.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MARK RUSSELL'
-#   first_name: Mark
-#   middle_name: ''
-#
-#   last_name: Russell
-#
-#
-#   office: 'State House 49'
-#   district: '49'
-#   address: '1755 E Millbury Way'
-#
-#   city: Sandy
-#   state: UT
-#   zip: '84092'
-#   phone: (801)915-7055
-#   party: 'United Utah'
-#   email: markrussell439@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'TY FOSTER'
-#   first_name: Ty
-#   middle_name: ''
-#
-#   last_name: Foster
-#
-#
-#   office: 'State House 50'
-#   district: '50'
-#   address: '4342 Pentenwell Ln'
-#
-#   city: 'South Jordan'
-#   state: UT
-#   zip: '84009'
-#   phone: (801)380-9966
-#   party: 'Republican'
-#   email: ty@tyronefoster.com
-#   website: www.votetyfoster.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MEGAN WIESEN'
-#   first_name: Megan
-#   middle_name: ''
-#
-#   last_name: Wiesen
-#
-#
-#   office: 'State House 50'
-#   district: '50'
-#   address: '3876 W Holyoke Pl'
-#
-#   city: 'South Jordan'
-#   state: UT
-#   zip: '84009'
-#   phone: (801)502-4360
-#   party: 'Democratic'
-#   email: megansforyou@gmail.com
-#   website: meganwiesen.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'SUSAN PULSIPHER'
-#   first_name: Susan
-#   middle_name: ''
-#
-#   last_name: Pulsipher
-#
-#
-#   office: 'State House 50'
-#   district: '50'
-#   address: '1179 Chapel Ridge Dr'
-#
-#   city: 'South Jordan'
-#   state: UT
-#   zip: '84095'
-#   phone: (801)446-6334
-#   party: 'Republican'
-#   email: susankdp@gmail.com
-#   website: susanpulsipher.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
+  last_updated: '2018-05-05'
+-
+  id: ut0463
+  name: 'John Jackson'
+  first_name: John
+  last_name: Jackson
+  gender: 'male'
+  office: 'State House 44'
+  district: '44'
+  address: '8908 S 60 E'
+  city: Sandy
+  county: 'Salt Lake'
+  state: UT
+  zip: '84070'
+  phone: (801) 996-3348
+  party: 'United Utah'
+  website: 'https://newsasnewstravelsfast.blogspot.com'
+  candidate_status: 'withdrew'
+  last_updated: '2018-05-05'
+-
+  id: ut0464
+  name: 'Nikki Cunard'
+  first_name: Nikki
+  last_name: Cunard
+  gender: 'female'
+  office: 'State House 45'
+  district: '45'
+  address: '8408 S Colene Dr'
+  city: Sandy
+  county: 'Salt Lake'
+  state: UT
+  zip: '84094'
+  phone: (801) 350-1233
+  party: 'Democratic'
+  email: nikki4rep@gmail.com
+  website: 'http://votenikki.com'
+  candidate_status: 'filed'
+  last_updated: '2018-05-05'
+-
+  id: ut0465
+  name: 'Steve Eliason'
+  first_name: Steve
+  last_name: Eliason
+  gender: 'male'
+  office: 'State House 45'
+  district: '45'
+  address: '8157 S Grambling Way'
+  city: Sandy
+  county: 'Salt Lake'
+  state: UT
+  zip: '84094'
+  phone: (801) 673-4748
+  party: 'Republican'
+  email: sealiason@le.utah.gov
+  website: 'http://www.steveisinthehouse.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0466
+  name: 'Dwight Epperson'
+  first_name: Dwight
+  last_name: Epperson
+  gender: 'male'
+  office: 'State House 45'
+  district: '45'
+  address: '8156 S 1000 E'
+  city: Sandy
+  county: 'Salt Lake'
+  state: UT
+  zip: '84094'
+  phone: (801) 676-9108
+  party: 'Republican'
+  email: dwightepperson@msn.com
+  candidate_status: 'withdrew'
+  last_updated: '2018-05-07'
+-
+  id: ut0467
+  name: 'Megan Skiles'
+  first_name: Megan
+  last_name: Skiles
+  gender: 'female'
+  office: 'State House 46'
+  district: '46'
+  address: '6916 S 725 E Unit G'
+  city: Midvale
+  county: 'Salt Lake'
+  state: UT
+  zip: '84047'
+  phone: '(802) 881-1847'
+  party: 'Democratic'
+  email: meganmskiles@gmail.com
+  website: 'http://meganskiles.com'
+  candidate_status: 'filed'
+  declaration_of_candidacy: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20House/House%2046%20-%20Megan%20Skiles.pdf'
+  last_updated: '2018-05-07'
+-
+  id: ut0468
+  name: 'Lee Anne Walker'
+  first_name: Lee
+  middle_name: Anne
+  last_name: Walker
+  gender: 'female'
+  office: 'State House 46'
+  district: '46'
+  address: '8940 Alpen Way'
+  city: 'Cottonwood Heights'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84121'
+  phone: (801) 942-6814
+  party: Libertarian
+  email: lawalkerslc@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0469
+  name: 'Marie H. Poulson'
+  first_name: Marie
+  middle_name: H.
+  last_name: Poulson
+  gender: 'female'
+  office: 'State House 46'
+  district: '46'
+  address: '7037 Horizon Circle'
+  city: 'Cottonwood Heights'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84121'
+  phone: (801) 942-5390
+  party: 'Democratic'
+  email: marie.poulson@gmail.com
+  website: 'http://www.mariepoulson.org/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0470
+  name: 'Greg Johnson'
+  first_name: Greg
+  last_name: Johnson
+  gender: 'male'
+  office: 'State House 46'
+  district: '46'
+  address: '2415 E Cinnabar Ln'
+  city: 'Cottonwood Heights'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84121'
+  phone: (801) 897-5666
+  party: 'Republican'
+  email: gcvj@standingtogether.org
+  website: 'https://www.gregjohnson46.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0471
+  name: 'Scott Bell'
+  first_name: Scott
+  last_name: Bell
+  gender: 'male'
+  office: 'State House 47'
+  district: '47'
+  address: '9178 S Edenbrook Way'
+  city: 'West Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84088'
+  phone: (801) 573-8195
+  party: 'Democratic'
+  email: sebell1975@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  name: 'Stacy Michael Norton'
+  first_name: Stacy
+  middle_name: Michael
+  last_name: Norton
+  gender: 'male'
+  office: 'State House 47'
+  district: '47'
+  address: '8549 S 3830 W'
+  city: 'West Jordan'
+  gender: 'male'
+  state: UT
+  zip: '84088'
+  party: 'Republican'
+  email: stacynorton@mail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0472
+  name: 'Ken Ivory'
+  first_name: Ken
+  last_name: Ivory
+  gender: 'male'
+  office: 'State House 47'
+  district: '47'
+  address: '8393 S 2010 W'
+  city: 'West Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84088'
+  phone: (801) 694-8380
+  party: 'Republican'
+  email: voteivory@gmail.com
+  website: 'http://www.voteivory.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0473
+  name: 'Keven J. Stratton'
+  first_name: Keven
+  middle_name: J.
+  last_name: Stratton
+  gender: 'male'
+  office: 'State House 48'
+  district: '48'
+  address: '702 E 1160 N'
+  city: Orem
+  county: 'Utah'
+  state: UT
+  zip: '84097'
+  phone: (801) 836-6010
+  party: 'Republican'
+  email: keven@strattonlawgroup.com
+  website: 'http://kevenstratton.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0474
+  name: 'Aaron Heineman'
+  first_name: Aaron
+  last_name: Heineman
+  gender: 'male'
+  office: 'State House 48'
+  district: '48'
+  address: '4390 N 250 E'
+  city: Provo
+  county: 'Utah'
+  state: UT
+  zip: '84604'
+  phone: (801) 290-8659
+  party: 'Independent American'
+  email: aaron.m.heineman@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0475
+  name: 'Anthony Sudweeks'
+  first_name: Anthony
+  last_name: Sudweeks
+  gender: 'male'
+  office: 'State House 49'
+  district: '49'
+  address: '10122 S Bell Canyon Rd'
+  city: Sandy
+  county: 'Salt Lake'
+  state: UT
+  zip: '84092'
+  phone: (801) 884-7950
+  party: 'Democratic'
+  email: anthony.sudweeks@gmail.com
+  website: 'http://www.anthonysudweeks.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0476
+  name: 'Robert Spendlove'
+  first_name: Robert
+  last_name: Spendlove
+  gender: 'male'
+  office: 'State House 49'
+  district: '49'
+  address: '2492 E Barcelona Dr'
+  city: Sandy
+  county: 'Salt Lake'
+  state: UT
+  zip: '84093'
+  phone: (801) 560-5394
+  party: 'Republican'
+  email: rspendlove@gmail.com
+  website: 'http://robertspendloveutah.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0477
+  name: 'Mark Russell'
+  first_name: Mark
+  last_name: Russell
+  gender: 'male'
+  office: 'State House 49'
+  district: '49'
+  address: '1755 E Millbury Way'
+  city: Sandy
+  county: 'Salt Lake'
+  state: UT
+  zip: '84092'
+  phone: (801) 915-7055
+  party: 'United Utah'
+  email: markrussell439@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0478
+  name: 'Ty Foster'
+  first_name: Ty
+  last_name: Foster
+  gender: 'male'
+  office: 'State House 50'
+  district: '50'
+  address: '4342 Pentenwell Ln'
+  city: 'South Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84009'
+  phone: (801) 380-9966
+  party: 'Republican'
+  email: ty@tyronefoster.com
+  website: 'https://votetyfoster.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0479
+  name: 'Megan Wiesen'
+  first_name: Megan
+  last_name: Wiesen
+  gender: 'female'
+  office: 'State House 50'
+  district: '50'
+  address: '3876 W Holyoke Pl'
+  city: 'South Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84009'
+  phone: (801) 502-4360
+  party: 'Democratic'
+  email: megansforyou@gmail.com
+  website: 'https://www.meganweisen.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
+-
+  id: ut0480
+  name: 'Susan Pulsipher'
+  first_name: Susan
+  last_name: Pulsipher
+  gender: 'female'
+  office: 'State House 50'
+  district: '50'
+  address: '1179 Chapel Ridge Dr'
+  city: 'South Jordan'
+  county: 'Salt Lake'
+  state: UT
+  zip: '84095'
+  phone: (801) 446-6334
+  party: 'Republican'
+  email: susankdp@gmail.com
+  website: 'http://susanpulsipher.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-07'
 # -
 #   name: 'ALAN SUMMERHAYS'
 #   first_name: Alan

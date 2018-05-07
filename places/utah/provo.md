@@ -30,4 +30,3 @@ permalink: /places/utah/provo/
 {% endfor %}
 </tbody>
 </table>
-</table>

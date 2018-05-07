@@ -30,4 +30,3 @@ permalink: /places/utah/pleasant-grove/
 {% endfor %}
 </tbody>
 </table>
-</table>

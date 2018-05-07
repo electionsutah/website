@@ -30,4 +30,3 @@ permalink: /places/utah/payson/
 {% endfor %}
 </tbody>
 </table>
-</table>

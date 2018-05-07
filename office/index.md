@@ -47,6 +47,13 @@ comments: true
   <li><a href="state-house-39">State House 39</a></li>
   <li><a href="state-house-40">State House 40</a></li>
   <li><a href="state-house-41">State House 41</a></li>
+  <li><a href="state-house-43">State House 43</a></li>
+  <li><a href="state-house-44">State House 44</a></li>
+  <li><a href="state-house-45">State House 45</a></li>
+  <li><a href="state-house-46">State House 46</a></li>
+  <li><a href="state-house-47">State House 47</a></li>
+  <li><a href="state-house-48">State House 48</a></li>
+  <li><a href="state-house-49">State House 49</a></li>
   <li><a href="state-house-50">State House 50</a></li>
   <li><a href="state-senate-2">State Senate 2</a></li>
   <li><a href="state-senate-3">State Senate 3</a></li>

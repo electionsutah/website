@@ -30,4 +30,3 @@ permalink: /places/utah/mapleton/
 {% endfor %}
 </tbody>
 </table>
-</table>

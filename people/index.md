@@ -5,9 +5,10 @@ permalink: /people/
 comments: true
 ---
 
+### 2018 Election
+
 {% include 2018-elections.html %}
 
-### 2018 Election
 #### Primary Candidates
 {% assign person = site.data.2018.primary.candidates | sort: 'last_name' %}
 <table>

@@ -30,4 +30,3 @@ permalink: /places/utah/goshen/
 {% endfor %}
 </tbody>
 </table>
-</table>

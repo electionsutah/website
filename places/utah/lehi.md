@@ -30,4 +30,3 @@ permalink: /places/utah/lehi/
 {% endfor %}
 </tbody>
 </table>
-</table>

@@ -30,4 +30,3 @@ permalink: /places/utah/lindon/
 {% endfor %}
 </tbody>
 </table>
-</table>

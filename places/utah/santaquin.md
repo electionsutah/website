@@ -30,4 +30,3 @@ permalink: /places/utah/santaquin/
 {% endfor %}
 </tbody>
 </table>
-</table>

@@ -30,4 +30,3 @@ permalink: /places/utah/woodland-hills/
 {% endfor %}
 </tbody>
 </table>
-</table>

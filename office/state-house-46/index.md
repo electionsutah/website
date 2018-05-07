@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Vineyard
-permalink: /places/utah/vineyard/
+title: State House 46
+permalink: /office/state-house-46
+comments: true
 ---
 
 ### 2018 Election
@@ -9,7 +10,7 @@ permalink: /places/utah/vineyard/
 {% include 2018-elections.html %}
 
 #### 2018 Primary Candidates
-{% assign city = site.data.2018.primary.candidates | where:'city','Vineyard' | sort: 'last_name' %}
+{% assign office = site.data.2018.primary.candidates | where:'office','State House 46' | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
@@ -19,11 +20,11 @@ permalink: /places/utah/vineyard/
   <th>County</th>
 </thead>
 <tbody>
-{% for member in city  %}
+{% for member in office  %}
   <tr>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
-    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.office }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
   </tr>
