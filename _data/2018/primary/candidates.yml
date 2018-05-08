@@ -4202,7 +4202,6 @@
   first_name: Brian
   middle_name: S.
   last_name: King
-
   gender: 'male'
   office: 'State House 28 (Multi County)'
   district: '28'
@@ -4223,7 +4222,6 @@
   first_name: Kerry
   middle_name: M.
   last_name: Wayne
-
   gender: 'male'
   office: 'State House 29 (Multi County)'
   district: '29'
@@ -4235,7 +4233,6 @@
   phone: (801) 675-2107
   party: 'Democratic'
   email: kerry.wayne@comcast.net
-
   candidate_status: 'filed'
   last_updated: '2018-04-01'
 -
@@ -4244,7 +4241,6 @@
   first_name: Lee
   middle_name: B.
   last_name: Perry
-
   gender: 'male'
   office: 'State House 29 (Multi County)'
   district: '29'
@@ -4265,7 +4261,6 @@
   first_name: Derrick
   middle_name: ''
   last_name: Fullum
-
   gender: 'male'
   office: 'State House 30'
   district: '30'
@@ -4277,7 +4272,6 @@
   phone: (801) 520-9714
   party: 'Democratic'
   email: dfullum@live.com
-
   candidate_status: 'filed'
   last_updated: '2018-04-01'
 -
@@ -4286,7 +4280,6 @@
   first_name: Fred
   middle_name: 'C.'
   last_name: Cox
-
   office: 'State House 30'
   district: '30'
   address: '4466 Early Duke St.'
@@ -4325,7 +4318,6 @@
   first_name: Mike
   middle_name: ''
   last_name: Winder
-
   gender: 'male'
   office: 'State House 30'
   district: '30'
@@ -4346,7 +4338,6 @@
   first_name: Chelsey
   middle_name: ''
   last_name: Rose
-
   gender: 'female'
   office: 'State House 30'
   district: '30'
@@ -4387,7 +4378,6 @@
   first_name: Elizabeth
   middle_name: ''
   last_name: Weight
-
   gender: 'female'
   office: 'State House 31'
   district: '31'
@@ -4408,7 +4398,6 @@
   first_name: Fred
   middle_name: ''
   last_name: Johnson
-
   gender: 'male'
   office: 'State House 31'
   district: '31'
@@ -4428,7 +4417,6 @@
   first_name: Brad
   middle_name: ''
   last_name: Bonham
-
   gender: 'male'
   office: 'State House 32'
   district: '32'
@@ -4448,7 +4436,6 @@
   first_name: David
   middle_name: C.
   last_name: Werts
-
   office: 'State House 32'
   district: '32'
   address: '1962 E Stag Hill'
@@ -4467,7 +4454,6 @@
   first_name: Suzanne
   middle_name: ''
   last_name: Harrison
-
   gender: 'female'
   office: 'State House 32'
   district: '32'
@@ -5321,9 +5307,13 @@
   last_updated: '2018-05-04'
 -
   id: ut0058
-  # identifiers:
-  #   indentifier: '1415014'
-  #   scheme: 'State of Utah Financial Disclosures'
+  identifiers:
+    -
+      identifier: '1415014'
+      scheme: 'State of Utah Financial Disclosures'
+    -
+      identifier: ''
+      scheme: ''
   name: 'Andrew Stoddard'
   first_name: 'Andrew'
   last_name: 'Stoddard'
@@ -5344,7 +5334,10 @@
   facebook: 'https://www.facebook.com/voteandrewstoddard/'
   website: 'https://www.voteandrewstoddard.com/'
   candidate_status: 'filed'
-  last_updated: '2018-05-05'
+  declaration_of_candidacy: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
+  intent_to_gather_signatures: 'https://elections.utah.gov/Media/Default/2018%20Election/Intent%20to%20Gather%20Signatures/Legislative%20Candidates/House%2044%20-%20Andrew%20Stoddard.pdf'
+  source: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
+  last_updated: '2018-05-07'
 -
   id: ut0463
   name: 'John Jackson'
@@ -5437,6 +5430,7 @@
   email: meganmskiles@gmail.com
   website: 'http://meganskiles.com'
   candidate_status: 'filed'
+  source: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20House/House%2046%20-%20Megan%20Skiles.pdf'
   declaration_of_candidacy: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20House/House%2046%20-%20Megan%20Skiles.pdf'
   last_updated: '2018-05-07'
 -
@@ -5525,7 +5519,7 @@
   district: '47'
   address: '8549 S 3830 W'
   city: 'West Jordan'
-  gender: 'male'
+  county: 'Salt Lake'
   state: UT
   zip: '84088'
   party: 'Republican'
