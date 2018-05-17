@@ -75,14 +75,21 @@ comments: true
         </script><br>
 
         <h3>Contact Info</h3>
-        <p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.city | replace: ' ','+' }}+{{ person.state | replace: ' ','+' }}+{{ person.zip | replace: ' ','+' }}">{{ person.address }}, {{ person.city }}, {{ person.state }} {{ person.zip }}</a></p>
-        <p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone }}</a></p>
-        <p><strong>Email Address:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+        {% if person.address %}<p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.city | replace: ' ','+' }}+{{ person.state | replace: ' ','+' }}+{{ person.zip | replace: ' ','+' }}">{{ person.address }}, {{ person.city }}, {{ person.state }} {{ person.zip }}</a></p>{% endif %}
+
+        {% if person.phone %}<p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone }}</a></p>{% endif %}
+
+        {% if person.email %}<p><strong>Email Address:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>{% endif %}
         <br>
 
         <h3>Documents</h3>
-        {% if person.declaration_of_candidacy %}<p><a href="{{ person.declaration_of_candidacy }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Declaration of Candidacy</strong></a></p>{% endif %}
-        {% if person.intent_to_gather_signatures %}<p><a href="{{ person.intent_to_gather_signatures }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Intent to Gather Signatures</strong></a></p>{% endif %}
+
+        {% if person.documents[0].document[0].url %}
+        {% for document in person.documents[0] %}
+        <p><a href="{{ document[0].url }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>{{ document[0].note }}</strong> ({{ document[0].date }})</a></p>
+        {% endfor %}
+        {% endif %}
+
         {% if person.pledge %}<p><a href="{{ person.pledge }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Pledge of Fair Campaign Practices</strong></a></p>{% endif %}
         <br>
 

@@ -5311,20 +5311,19 @@
     -
       identifier: '1415014'
       scheme: 'State of Utah Financial Disclosures'
-    -
-      identifier: ''
-      scheme: ''
+    # -
+    #   identifier: ''
+    #   scheme: ''
   name: 'Andrew Stoddard'
   first_name: 'Andrew'
   last_name: 'Stoddard'
   gender: 'male'
   office: 'State House 44'
   district: '44'
-  gender: 'male'
   address: '218 E 8135 S'
   latitude: '40.603059'
   longitude: '-111.884317'
-  phone_number: '(801) 884-9943'
+  phone: '(801) 884-9943'
   city: 'Sandy'
   county: 'Salt Lake'
   state: 'UT'
@@ -5334,8 +5333,18 @@
   facebook: 'https://www.facebook.com/voteandrewstoddard/'
   website: 'https://www.voteandrewstoddard.com/'
   candidate_status: 'filed'
-  declaration_of_candidacy: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
-  intent_to_gather_signatures: 'https://elections.utah.gov/Media/Default/2018%20Election/Intent%20to%20Gather%20Signatures/Legislative%20Candidates/House%2044%20-%20Andrew%20Stoddard.pdf'
+  documents:
+    -
+        document:
+          -
+            date: '2018-03-14'
+            note: 'Declaration of Candidacy'
+            url: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
+        document:
+          -
+            date: '2018-01-16'
+            note: 'Intent to Gather Signatures'
+            url: 'https://elections.utah.gov/Media/Default/2018%20Election/Intent%20to%20Gather%20Signatures/Legislative%20Candidates/House%2044%20-%20Andrew%20Stoddard.pdf'
   source: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
   last_updated: '2018-05-07'
 -
@@ -5696,435 +5705,375 @@
   website: 'http://susanpulsipher.com/'
   candidate_status: 'filed'
   last_updated: '2018-05-07'
-# -
-#   name: 'ALAN SUMMERHAYS'
-#   first_name: Alan
-#   middle_name: ''
-#
-#   last_name: Summerhays
-#
-#
-#   office: 'State House 51'
-#   district: '51'
-#   address: '975 E 13450 S'
-#
-#   city: Draper
-#   state: UT
-#   zip: '84020'
-#   phone: (801)556-8838
-#   party: 'Democratic'
-#   email: alan@guadalahonkys.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'JEFF STENQUIST'
-#   first_name: Jeff
-#   middle_name: ''
-#
-#   last_name: Stenquist
-#
-#
-#   office: 'State House 51'
-#   district: '51'
-#   address: '14121 Winfield Scott Way'
-#
-#   city: Draper
-#   state: UT
-#   zip: '84020'
-#   phone: (801)558-6875
-#   party: 'Republican'
-#   email: jeff4utah@outlook.com
-#   website: jeffstenquist.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MICHELE WEEKS'
-#   first_name: Michele
-#   middle_name: ''
-#
-#   last_name: Weeks
-#
-#
-#   office: 'State House 51'
-#   district: '51'
-#   address: '1873 E New River Dr'
-#
-#   city: Draper
-#   state: UT
-#   zip: '84020'
-#   phone: (801)550-1922
-#   party: 'United Utah'
-#   email: mweeksutah@gmail.com
-#   website: www.micheleweeks.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'DAN MCCLELLAN'
-#   first_name: Dan
-#   middle_name: ''
-#
-#   last_name: McClellan
-#
-#
-#   office: 'State House 52'
-#   district: '52'
-#   address: '5413 W Moorfield Dr.'
-#
-#   city: Herriman
-#   state: UT
-#   zip: '84096'
-#   phone: (801)448-3406
-#   party: 'Democratic'
-#   email: dan.mcclellan@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'JOHN KNOTWELL'
-#   first_name: John
-#   middle_name: ''
-#
-#   last_name: Knotwell
-#
-#
-#   office: 'State House 52'
-#   district: '52'
-#   address: '5328 W Shooters Ridge Cir'
-#
-#   city: Herriman
-#   state: UT
-#   zip: '84096'
-#   phone: (801)449-1834
-#   party: 'Republican'
-#   email: vote@johnknotwell.com
-#   website: johnknotwell.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'LOGAN WILDE'
-#   first_name: Logan
-#   middle_name: ''
-#
-#   last_name: Wilde
-#
-#
-#   office: 'State House 53 (Multi County)'
-#   district: '53'
-#   address: ''
-#
-#
-#   city: ''
-#
-#   state: UT
-#   zip: ''
-#
-#   phone: (801)940-2995
-#   party: 'Republican'
-#   email: votelogan53@gmail.com
-#   website: votelogan53.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'CHRISTOPHER NEVILLE'
-#   first_name: Christopher
-#   middle_name: ''
-#
-#   last_name: Neville
-#
-#
-#   office: 'State House 53 (Multi County)'
-#   district: '53'
-#   address: '8912 Northcove Dr'
-#
-#   city: 'Park City'
-#   state: UT
-#   zip: '84098'
-#   phone: (435)602-9712
-#   party: 'Democratic'
-#   email: chris@chris53.com
-#   website: www.chris53.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'ROBERTO M. LOPEZ'
-#   first_name: Roberto
-#   middle_name: M.
-#   last_name: Lopez
-#
-#
-#   office: 'State House 54 (Multi County)'
-#   district: '54'
-#   address: 'PO Box 1612'
-#
-#   city: 'Park City'
-#   state: UT
-#   zip: '84060'
-#   phone: (435)659-8782
-#   party: 'Democratic'
-#   email: armydriven1@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MEAGHAN MILLER'
-#   first_name: Meaghan
-#   middle_name: ''
-#
-#   last_name: Miller
-#
-#
-#   office: 'State House 54 (Multi County)'
-#   district: '54'
-#   address: 'PO Box 683909'
-#
-#   city: 'Park City'
-#   state: UT
-#   zip: '84068'
-#   phone: (801)635-4129
-#   party: 'Democratic'
-#   email: meaghan@votemiller54.com
-#   website: votemiller54.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'TIM QUINN'
-#   first_name: Tim
-#   middle_name: ''
-#
-#   last_name: Quinn
-#
-#
-#   office: 'State House 54 (Multi County)'
-#   district: '54'
-#   address: '1882 S. 4800 E'
-#
-#   city: 'Heber City'
-#   state: UT
-#   zip: '84032'
-#   phone: (801)830-5765
-#   party: 'Republican'
-#   email: tim@orasicorp.com
-#   website: tim@orasicorp.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'SCOTT H. CHEW'
-#   first_name: Scott
-#   middle_name: H.
-#   last_name: Chew
-#
-#
-#   office: 'State House 55 (Multi County)'
-#   district: '55'
-#   address: 'PO Box 126'
-#
-#   city: Jensen
-#   state: UT
-#   zip: '84035'
-#   phone: (435)789-6710
-#   party: 'Republican'
-#   email: scottchew@le.utah.gov
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'CHRISTINA HIGGINS'
-#   first_name: Christina
-#   middle_name: ''
-#
-#   last_name: Higgins
-#
-#
-#   office: 'State House 55 (Multi County)'
-#   district: '55'
-#   address: ''
-#
-#
-#   city: ''
-#
-#   state: UT
-#   zip: ''
-#
-#   phone: (435)828-3255
-#   party: 'Democratic'
-#   email: christina@higginsfamilycenter.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'KAY J. CHRISTOFFERSON'
-#   first_name: Kay
-#   middle_name: J.
-#   last_name: Christofferson
-#
-#
-#   office: 'State House 56'
-#   district: '56'
-#   address: '1256 E 1500 N'
-#
-#   city: Lehi
-#   state: UT
-#   zip: '84043'
-#   phone: (801)592-5709
-#   party: 'Republican'
-#   email: kay@christofferson56.com
-#   website: christofferson56.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'ISAAC WALTERS'
-#   first_name: Isaac
-#   middle_name: ''
-#
-#   last_name: Walters
-#
-#
-#   office: 'State House 56'
-#   district: '56'
-#   address: '321 W 2375 N'
-#
-#   city: Lehi
-#   state: UT
-#   zip: '84043'
-#   phone: (801)864-9469
-#   party: 'United Utah'
-#   email: isaac@waltersfor56.com
-#   website: waltersfor56.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'ALEXANDER CARTER'
-#   first_name: Alexander
-#   middle_name: ''
-#
-#   last_name: Carter
-#
-#
-#   office: 'State House 57'
-#   district: '57'
-#   address: '1949 N. 600 W'
-#
-#   city: 'Pleasant Grove'
-#   state: UT
-#   zip: '84062'
-#   phone: (801)822-1595
-#   party: 'Republican'
-#   email: rhsbpropertiesllc@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'CARLTON BOWEN'
-#   first_name: Carlton
-#   middle_name: ''
-#
-#   last_name: Bowen
-#
-#
-#   office: 'State House 57'
-#   district: '57'
-#   address: '1141 E 1350 N'
-#
-#   city: 'American Fork'
-#   state: UT
-#   zip: '84003'
-#   phone: (801)770-3154
-#   party: 'Republican'
-#   email: Carlton4Utah@gmail.com
-#   website: Carlton4Utah.blogspot.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'HILLARY STIRLING'
-#   first_name: Hillary
-#   middle_name: ''
-#
-#   last_name: Stirling
-#
-#
-#   office: 'State House 57'
-#   district: '57'
-#   address: '1020 N 100 E'
-#
-#   city: 'Pleasant Grove'
-#   state: UT
-#   zip: '84062'
-#   phone: (385)404-5592
-#   party: 'United Utah'
-#   email: contact@hillarystirling.com
-#   website: www.hillarystirling.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'JON HAWKINS'
-#   first_name: Jon
-#   middle_name: ''
-#
-#   last_name: Hawkins
-#
-#
-#   office: 'State House 57'
-#   district: '57'
-#   address: '1536 E. 300 S.'
-#
-#   city: 'Pleasant Grove'
-#   state: UT
-#   zip: '84062'
-#   phone: (385)352-0980
-#   party: 'Republican'
-#   email: jon@electjonhawkins.com
-#   website: www.electjonhawkins.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'DERRIN R. OWENS'
-#   first_name: Derrin
-#   middle_name: R.
-#   last_name: Owens
-#
-#
-#   office: 'State House 58 (Multi County)'
-#   district: '58'
-#   address: 'PO Box 127'
-#
-#   city: 'Fountain Green'
-#   state: UT
-#   zip: '84632'
-#   phone: (435)851-1284
-#   party: 'Republican'
-#   email: derrinowens40@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'LYNN ZARITSKY'
-#   first_name: Lynn
-#   middle_name: ''
-#
-#   last_name: Zaritsky
-#
-#
-#   office: 'State House 58 (Multi County)'
-#   district: '58'
-#   address: '150 North 300 West'
-#
-#   city: 'Mount Pleasant'
-#   state: UT
-#   zip: '84647'
-#   phone: (435)469-2314
-#   party: 'Democratic'
-#   email: lynnzaritsky58@gmail.com
-#   website: www.votelynnzaritsky.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
+-
+  id: ut0481
+  name: 'Alan Summerhays'
+  first_name: Alan
+  last_name: Summerhays
+  gender: 'male'
+  office: 'State House 51'
+  district: '51'
+  address: '975 E 13450 S'
+  city: Draper
+  county: 'Salt Lake'
+  state: UT
+  zip: '84020'
+  phone: (801) 556-8838
+  party: 'Democratic'
+  email: alan@guadalahonkys.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0482
+  name: 'Jeff Stenquist'
+  first_name: Jeff
+  last_name: Stenquist
+  gender: 'male'
+  office: 'State House 51'
+  district: '51'
+  address: '14121 Winfield Scott Way'
+  city: Draper
+  county: 'Salt Lake'
+  state: UT
+  zip: '84020'
+  phone: '(801) 558-6875'
+  party: 'Republican'
+  email: jeff4utah@outlook.com
+  website: 'http://jeffstenquist.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0483
+  name: 'Michele Weeks'
+  first_name: Michele
+  last_name: Weeks
+  gender: 'female'
+  office: 'State House 51'
+  district: '51'
+  address: '1873 E New River Dr'
+  city: Draper
+  county: 'Salt Lake'
+  state: UT
+  zip: '84020'
+  phone: '(801)550-1922'
+  party: 'United Utah'
+  email: 'mweeksutah@gmail.com'
+  website: 'www.micheleweeks.com'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0484
+  name: 'Dan Mcclellan'
+  first_name: Dan
+  last_name: McClellan
+  gender: 'male'
+  office: 'State House 52'
+  district: '52'
+  address: '5413 W Moorfield Dr.'
+  city: Herriman
+  county: 'Salt Lake'
+  state: UT
+  zip: '84096'
+  phone: '(801) 448-3406'
+  party: 'Democratic'
+  email: 'dan.mcclellan@gmail.com'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0485
+  name: 'John Knotwell'
+  first_name: John
+  last_name: Knotwell
+  gender: 'male'
+  office: 'State House 52'
+  district: '52'
+  address: '5328 W Shooters Ridge Cir'
+  city: Herriman
+  county: 'Salt Lake'
+  state: UT
+  zip: '84096'
+  phone: (801) 449-1834
+  party: 'Republican'
+  email: 'vote@johnknotwell.com'
+  website: 'http://www.johnknotwell.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0486
+  name: 'Logan Wilde'
+  first_name: Logan
+  last_name: Wilde
+  gender: 'male'
+  office: 'State House 53 (Multi County)'
+  district: '53'
+  county: 'Morgan'
+  state: UT
+  phone: '(801) 940-2995'
+  party: 'Republican'
+  email: 'votelogan53@gmail.com'
+  website: 'http://www.votelogan53.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0487
+  name: 'Christopher Neville'
+  first_name: Christopher
+  last_name: Neville
+  gender: 'male'
+  office: 'State House 53 (Multi County)'
+  district: '53'
+  address: '8912 Northcove Dr'
+  city: 'Park City'
+  county: 'Summit'
+  state: UT
+  zip: '84098'
+  phone: '(435) 602-9712'
+  party: 'Democratic'
+  email: chris@chris53.com
+  website: 'https://www.chris53.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0488
+  name: 'Roberto M. Lopez'
+  first_name: Roberto
+  middle_name: M.
+  last_name: Lopez
+  gender: 'male'
+  office: 'State House 54 (Multi County)'
+  district: '54'
+  address: 'PO Box 1612'
+  city: 'Park City'
+  county: 'Summit'
+  state: UT
+  zip: '84060'
+  phone: (435)659-8782
+  party: 'Democratic'
+  email: armydriven1@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0489
+  name: 'Meaghan Miller'
+  first_name: Meaghan
+  last_name: Miller
+  gender: 'female'
+  office: 'State House 54 (Multi County)'
+  district: '54'
+  address: 'PO Box 683909'
+  city: 'Park City'
+  county: 'Summit'
+  state: UT
+  zip: '84068'
+  phone: (801) 635-4129
+  party: 'Democratic'
+  email: meaghan@votemiller54.com
+  website: 'https://www.votemiller54.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0490
+  name: 'Tim Quinn'
+  first_name: Tim
+  last_name: Quinn
+  gender: 'male'
+  office: 'State House 54 (Multi County)'
+  district: '54'
+  address: '1882 S. 4800 E'
+  city: 'Heber City'
+  county: 'Wasatch'
+  state: UT
+  zip: '84032'
+  phone: '(801) 830-5765'
+  party: 'Republican'
+  email: tim@orasicorp.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0491
+  name: 'Scott H. Chew'
+  first_name: Scott
+  middle_name: H.
+  last_name: Chew
+  gender: 'male'
+  office: 'State House 55 (Multi County)'
+  district: '55'
+  address: 'PO Box 126'
+  city: Jensen
+  county: 'Uintah'
+  state: UT
+  zip: '84035'
+  phone: '(435) 789-6710'
+  party: 'Republican'
+  email: scottchew@le.utah.gov
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0492
+  name: 'Christina Higgins'
+  first_name: Christina
+  last_name: Higgins
+  gender: 'female'
+  office: 'State House 55 (Multi County)'
+  district: '55'
+  state: UT
+  phone: '(435) 828-3255'
+  party: 'Democratic'
+  email: 'christina@higginsfamilycenter.com'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0493
+  name: 'Kay J. Christofferson'
+  first_name: Kay
+  middle_name: J.
+  last_name: Christofferson
+  gender: 'male'
+  office: 'State House 56'
+  district: '56'
+  address: '1256 E 1500 N'
+  city: Lehi
+  county: 'Utah'
+  state: UT
+  zip: '84043'
+  phone: '(801) 592-5709'
+  party: 'Republican'
+  email: 'kay@christofferson56.com'
+  website: 'http://christofferson56.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0494
+  name: 'Isaac Walters'
+  first_name: Isaac
+  last_name: Walters
+  gender: 'male'
+  office: 'State House 56'
+  district: '56'
+  address: '321 W 2375 N'
+  city: Lehi
+  county: 'Utah'
+  state: UT
+  zip: '84043'
+  phone: '(801) 864-9469'
+  party: 'United Utah'
+  email: isaac@waltersfor56.com
+  website: 'http://waltersfor56.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0495
+  name: 'Alexander Carter'
+  first_name: Alexander
+  last_name: Carter
+  gender: 'male'
+  office: 'State House 57'
+  district: '57'
+  address: '1949 N. 600 W'
+  city: 'Pleasant Grove'
+  county: 'Utah'
+  state: UT
+  zip: '84062'
+  phone: '(801) 822-1595'
+  party: 'Republican'
+  email: 'rhsbpropertiesllc@gmail.com'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0496
+  name: 'Carlton Bowen'
+  first_name: Carlton
+  last_name: Bowen
+  gender: 'male'
+  office: 'State House 57'
+  district: '57'
+  address: '1141 E 1350 N'
+  city: 'American Fork'
+  county: 'Utah'
+  state: UT
+  zip: '84003'
+  phone: (801) 770-3154
+  party: 'Republican'
+  email: carlton4Utah@gmail.com
+  website: 'http://carlton4utah.blogspot.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0497
+  name: 'Hillary Stirling'
+  first_name: Hillary
+  last_name: Stirling
+  gender: 'female'
+  office: 'State House 57'
+  district: '57'
+  address: '1020 N 100 E'
+  city: 'Pleasant Grove'
+  county: 'Utah'
+  state: UT
+  zip: '84062'
+  phone: (385) 404-5592
+  party: 'United Utah'
+  email: contact@hillarystirling.com
+  website: 'https://www.hillarystirling.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0498
+  name: 'Jon Hawkins'
+  first_name: Jon
+  last_name: Hawkins
+  gender: 'male'
+  office: 'State House 57'
+  district: '57'
+  address: '1536 E. 300 S.'
+  city: 'Pleasant Grove'
+  county: 'Utah'
+  state: UT
+  zip: '84062'
+  phone: (385) 352-0980
+  party: 'Republican'
+  email: jon@electjonhawkins.com
+  website: 'http://www.electjonhawkins.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0499
+  name: 'Derrin R. Owens'
+  first_name: Derrin
+  middle_name: R.
+  last_name: Owens
+  gender: 'male'
+  office: 'State House 58 (Multi County)'
+  district: '58'
+  address: 'PO Box 127'
+  city: 'Fountain Green'
+  county: 'Sanpete'
+  state: UT
+  zip: '84632'
+  phone: (435) 851-1284
+  party: 'Republican'
+  email: derrinowens40@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-17'
+-
+  id: ut0500
+  name: 'Lynn Zaritsky'
+  first_name: Lynn
+  last_name: Zaritsky
+  gender: ''
+  office: 'State House 58 (Multi County)'
+  district: '58'
+  address: '150 North 300 West'
+  city: 'Mount Pleasant'
+  county: 'Sanpete'
+  state: UT
+  zip: '84647'
+  phone: (435) 469-2314
+  party: 'Democratic'
+  email: lynnzaritsky58@gmail.com
+  website: 'http://votelynnzaritsky.com/'
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
 # -
 #   name: 'RUSSELL G. HATCH'
 #   first_name: Russell
