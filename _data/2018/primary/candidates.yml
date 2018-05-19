@@ -67,7 +67,7 @@
   id: ut0207
   name: 'Stoney Fonua'
   first_name: 'Stoney'
-    last_name: Fonua
+  last_name: Fonua
   gender: 'male'
   office: 'U.S. Senate'
   district: ''
@@ -105,7 +105,7 @@
   id: ut0209
   name: 'Alicia Colvin'
   first_name: Alicia
-    last_name: Colvin
+  last_name: Colvin
   office: 'U.S. Senate'
   district: ''
   address: '1453 Stanford St'
@@ -125,7 +125,7 @@
   id: ut0210
   name: 'Tim Aalders'
   first_name: 'Tim'
-    last_name: 'Aalders'
+  last_name: 'Aalders'
   office: 'U.S. Senate'
   district: ''
   address: '5306 West 10320 N'
@@ -161,7 +161,7 @@
   id: ut0212
   name: 'Loy Brunson'
   first_name: 'Loy'
-    last_name: 'Brunson'
+  last_name: 'Brunson'
   office: 'U.S. Senate'
   district: ''
   address: '2675 North 1060 East'
@@ -197,7 +197,7 @@
   id: ut0214
   name: 'Larry Livingston'
   first_name: Larry
-    last_name: Livingston
+  last_name: Livingston
   office: 'U.S. Senate'
   district: ''
   address: '830 N 500 W #51'
@@ -232,7 +232,7 @@
   id: ut0216
   name: 'Larry Meyers'
   first_name: Larry
-    last_name: Meyers
+  last_name: Meyers
   office: 'U.S. Senate'
   district: ''
   address: '5391 N 2000 W'
@@ -250,7 +250,7 @@
   id: ut0217
   name: 'Mitchell Vice'
   first_name: Mitchell
-    last_name: Vice
+  last_name: Vice
   office: 'U.S. Senate'
   district: ''
   address: 'PO Box 526110'
@@ -268,7 +268,7 @@
   id: ut0218
   name: 'Jenny Wilson'
   first_name: Jenny
-    last_name: Wilson
+  last_name: Wilson
   office: 'U.S. Senate'
   district: ''
   address: '1651 E. Federal Heights Dr.'
@@ -286,7 +286,7 @@
   id: ut0219
   name: 'Mitt Romney'
   first_name: Mitt
-    last_name: Romney
+  last_name: Romney
   office: 'U.S. Senate'
   district: ''
   address: 'PO Box 7000'
@@ -304,7 +304,7 @@
   id: ut0220
   name: 'Mike Kennedy'
   first_name: Mike
-    last_name: Kennedy
+  last_name: Kennedy
   office: 'U.S. Senate'
   district: ''
   address: '659 E. 200 N.'
@@ -341,7 +341,7 @@
   id: ut0222
   name: 'Abe Lincoln Brian Jenkins'
   first_name: 'Abe Lincoln Brian'
-    last_name: Jenkins
+  last_name: Jenkins
 
   office: 'U.S. Senate'
   district: ''
@@ -362,7 +362,7 @@
   id: ut0223
   name: 'Torrey Jenkins'
   first_name: Torrey
-    last_name: Jenkins
+  last_name: Jenkins
   office: 'U.S. Senate'
   district: ''
   address: '75 West 1600 South'
@@ -379,7 +379,7 @@
   id: ut0224
   name: 'Tim Jimenez'
   first_name: Tim
-    last_name: Jimenez
+  last_name: Jimenez
 
   office: 'U.S. Senate'
   district: ''
@@ -398,7 +398,7 @@
   id: ut0225
   name: 'Jeff Dransfield'
   first_name: 'Jeff'
-    last_name: 'Dransfield'
+  last_name: 'Dransfield'
   gender: 'male'
   office: 'U.S. Senate'
   district: ''
@@ -438,7 +438,7 @@
   id: ut0226
   name: 'Lee Castillo'
   first_name: Lee
-    last_name: Castillo
+  last_name: Castillo
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -457,7 +457,7 @@
   id: ut0227
   name: 'Rob Bishop'
   first_name: Rob
-    last_name: Bishop
+  last_name: Bishop
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -476,7 +476,7 @@
   id: ut0228
   name: 'Eric Eliason'
   first_name: Eric
-    last_name: Eliason
+  last_name: Eliason
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -495,7 +495,7 @@
   id: ut0229
   name: 'Kurt Weiland'
   first_name: Kurt
-    last_name: Weiland
+  last_name: Weiland
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -514,7 +514,7 @@
   id: ut0230
   name: 'Kevin Probasco'
   first_name: Kevin
-    last_name: Probasco
+  last_name: Probasco
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -532,7 +532,7 @@
   id: ut0232
   name: 'Ken Clark'
   first_name: 'Ken'
-    last_name: Clark
+  last_name: Clark
   gender: 'male'
   office: 'U.S. House 2'
   district: '2'
@@ -550,7 +550,7 @@
   id: ut0233
   name: 'Mary Burkett'
   first_name: Mary
-    last_name: Burkett
+  last_name: Burkett
   gender: 'female'
   office: 'U.S. House 2'
   district: '2'
@@ -569,7 +569,7 @@
   id: ut0234
   name: 'Chris Stewart'
   first_name: 'Chris'
-    last_name: Stewart
+  last_name: Stewart
 
   office: 'U.S. House 2'
   district: '2'
@@ -588,7 +588,7 @@
   id: ut0235
   name: 'Jeffrey Whipple'
   first_name: Jeffrey
-    last_name: Whipple
+  last_name: Whipple
 
   office: 'U.S. House 2'
   district: '2'
@@ -607,7 +607,7 @@
   id: ut0236
   name: 'Randy Hopkins'
   first_name: Randy
-    last_name: Hopkins
+  last_name: Hopkins
 
   office: 'U.S. House 2'
   district: '2'
@@ -626,7 +626,7 @@
   id: ut0237
   name: 'Jan Garbett'
   first_name: Jan
-    last_name: Garbett
+  last_name: Garbett
 
   office: 'U.S. House 2'
   district: '2'
@@ -645,7 +645,7 @@
   id: ut0238
   name: 'Shireen Ghorbani'
   first_name: Shireen
-    last_name: Ghorbani
+  last_name: Ghorbani
 
   office: 'U.S. House 2'
   district: '2'
@@ -664,7 +664,7 @@
   id: ut0239
   name: 'John Curtis'
   first_name: John
-    last_name: Curtis
+  last_name: Curtis
 
   office: 'U.S. House 3'
   district: '3'
@@ -703,7 +703,7 @@
   id: ut0241
   name: 'Steven Stromness'
   first_name: Steven
-    last_name: Stromness
+  last_name: Stromness
 
   office: 'U.S. House 3'
   district: '3'
@@ -742,7 +742,7 @@
   id: ut0243
   name: 'Melanie McCoard'
   first_name: Melanie
-    last_name: McCoard
+  last_name: McCoard
 
   office: 'U.S. House 3'
   district: '3'
@@ -761,7 +761,7 @@
   id: ut0244
   name: 'Kent Moon'
   first_name: Kent
-    last_name: Moon
+  last_name: Moon
 
   office: 'U.S. House 3'
   district: '3'
@@ -840,7 +840,7 @@
   id: ut0247
   name: 'Morgan Shepherd'
   first_name: Morgan
-    last_name: Shepherd
+  last_name: Shepherd
 
   office: 'U.S. House 4'
   district: '4'
@@ -882,7 +882,7 @@
   id: ut0249
   name: 'Ben McAdams'
   first_name: Ben
-    last_name: McAdams
+  last_name: McAdams
 
   office: 'U.S. House 4'
   district: '4'
@@ -901,7 +901,7 @@
   id: ut0250
   name: 'Darlene McDonald'
   first_name: Darlene
-    last_name: McDonald
+  last_name: McDonald
 
   office: 'U.S. House 4'
   district: '4'
@@ -920,7 +920,7 @@
   id: ut0251
   name: 'Sheldon Kirkham'
   first_name: Sheldon
-    last_name: Kirkham
+  last_name: Kirkham
 
   office: 'U.S. House 4'
   district: '4'
@@ -939,7 +939,7 @@
   id: ut0252
   name: 'Tom Taylor'
   first_name: Tom
-    last_name: Taylor
+  last_name: Taylor
 
   office: 'U.S. House 4'
   district: '4'
@@ -958,7 +958,7 @@
   id: ut0253
   name: 'Jessica Foard'
   first_name: Jessica
-    last_name: Foard
+  last_name: Foard
 
   gender: 'female'
   office: 'State Senate 2'
@@ -981,7 +981,7 @@
   id: ut0254
   name: 'Tim Chambless'
   first_name: Tim
-    last_name: Chambless
+  last_name: Chambless
 
   gender: 'male'
   office: 'State Senate 2'
@@ -1022,7 +1022,7 @@
   id: ut0256
   name: 'Nadia Mahallati'
   first_name: Nadia
-    last_name: Mahallati
+  last_name: Mahallati
 
   gender: 'female'
   office: 'State Senate 2'
@@ -1042,7 +1042,7 @@
   id: ut0257
   name: 'Rickie Mehl'
   first_name: Rickie
-    last_name: Mehl
+  last_name: Mehl
 
   gender: 'male'
   office: 'State Senate 2'
@@ -1061,7 +1061,7 @@
   id: ut0258
   name: 'Chase Winder'
   first_name: Chase
-    last_name: Winder
+  last_name: Winder
 
   gender: 'male'
   office: 'State Senate 2'
@@ -1081,7 +1081,7 @@
   id: ut0259
   name: 'Shawn Robinson'
   first_name: Shawn
-    last_name: Robinson
+  last_name: Robinson
 
   gender: 'male'
   office: 'State Senate 2'
@@ -1101,7 +1101,7 @@
   id: ut0260
   name: 'Vance Hansen'
   first_name: Vance
-    last_name: Hansen
+  last_name: Hansen
 
   gender: 'male'
   office: 'State Senate 2'
@@ -1141,7 +1141,7 @@
   id: ut0262
   name: 'Jennifer Plumb'
   first_name: Jennifer
-    last_name: Plumb
+  last_name: Plumb
 
   gender: 'female'
   office: 'State Senate 2'
@@ -1161,7 +1161,7 @@
   id: ut0263
   name: 'Robert Pinon'
   first_name: Robert
-    last_name: Pinon
+  last_name: Pinon
 
   gender: 'male'
   office: 'State Senate 2'
@@ -1220,7 +1220,7 @@
   id: ut0266
   name: 'Luke Gustafson'
   first_name: Luke
-    last_name: Gustafson
+  last_name: Gustafson
   gender: 'male'
   office: 'State Senate 3'
   district: '3'
@@ -1237,7 +1237,7 @@
   id: ut0267
   name: 'Gene Davis'
   first_name: Gene
-    last_name: Davis
+  last_name: Davis
   gender: 'male'
   office: 'State Senate 3'
   district: '3'
@@ -1255,7 +1255,7 @@
   id: ut0268
   name: 'Alan Monsen'
   first_name: Alan
-    last_name: Monsen
+  last_name: Monsen
 
   office: 'State Senate 4'
   district: '4'
@@ -1273,7 +1273,7 @@
   id: ut0269
   name: 'Jani Iwamoto'
   first_name: Jani
-    last_name: Iwamoto
+  last_name: Iwamoto
   gender: 'female'
   office: 'State Senate 4'
   district: '4'
@@ -1292,7 +1292,7 @@
   id: ut0270
   name: 'Kimdyl Allen'
   first_name: Kimdyl
-    last_name: Allen
+  last_name: Allen
   gender: 'female'
   office: 'State Senate 5'
   district: '5'
@@ -1310,7 +1310,7 @@
   id: ut0271
   name: 'Karen Mayne'
   first_name: Karen
-    last_name: Mayne
+  last_name: Mayne
   gender: 'female'
   office: 'State Senate 5'
   district: '5'
@@ -1329,7 +1329,7 @@
   id: ut0272
   name: 'Kathie Allen'
   first_name: Kathie
-    last_name: Allen
+  last_name: Allen
   gender: 'female'
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1348,7 +1348,7 @@
   id: ut0273
   name: 'Brian Zehnder'
   first_name: Brian
-    last_name: Zehnder
+  last_name: Zehnder
   gender: 'male'
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1366,7 +1366,7 @@
   id: ut0274
   name: 'Kathleen Riebe'
   first_name: Kathleen
-    last_name: Riebe
+  last_name: Riebe
   gender: 'female'
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1385,7 +1385,7 @@
   id: ut0275
   name: 'John Jackson'
   first_name: John
-    last_name: Jackson
+  last_name: Jackson
   gender: male
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1423,7 +1423,7 @@
   id: ut0277
   name: 'Alexander Castagno'
   first_name: Alexander
-    last_name: Castagno
+  last_name: Castagno
   gender: male
   office: 'State Senate 9'
   district: '9'
@@ -1465,7 +1465,7 @@
   id: ut0279
   name: 'Steve Eliason'
   first_name: Steve
-    last_name: Eliason
+  last_name: Eliason
 
   office: 'State Senate 9'
   district: '9'
@@ -1483,7 +1483,7 @@
   id: ut0280
   name: 'Abbey Wright'
   first_name: Abbey
-    last_name: Wright
+  last_name: Wright
 
   office: 'State Senate 9'
   district: '9'
@@ -1522,7 +1522,7 @@
   id: ut0282
   name: 'David Hart'
   first_name: David
-    last_name: Hart
+  last_name: Hart
 
   office: 'State Senate 9'
   district: '9'
@@ -1541,7 +1541,7 @@
   id: ut0283
   name: 'LaVar Christensen'
   first_name: LaVar
-    last_name: Christensen
+  last_name: Christensen
 
   office: 'State Senate 11 (Multi County)'
   district: '11'
@@ -1560,7 +1560,7 @@
   id: ut0284
   name: 'Christian Burridge'
   first_name: Christian
-    last_name: Burridge
+  last_name: Burridge
 
   office: 'State Senate 11 (Multi County)'
   district: '11'
@@ -1579,7 +1579,7 @@
   id: ut0285
   name: 'Dan McCay'
   first_name: Dan
-    last_name: McCay
+  last_name: McCay
 
   office: 'State Senate 11 (Multi County)'
   district: '11'
@@ -1598,7 +1598,7 @@
   id: ut0286
   name: 'Delaina Tonks'
   first_name: DeLaina
-    last_name: Tonks
+  last_name: Tonks
 
   office: 'State Senate 11 (Multi County)'
   district: '11'
@@ -1617,7 +1617,7 @@
   id: ut0287
   name: 'Clare Collard'
   first_name: Clare
-    last_name: Collard
+  last_name: Collard
 
   office: 'State Senate 12 (Multi County)'
   district: '12'
@@ -1676,7 +1676,7 @@
   id: ut0290
   name: 'Emily Ellsworth'
   first_name: Emily
-    last_name: Ellsworth
+  last_name: Ellsworth
 
   office: 'State Senate 15'
   district: '15'
@@ -1696,7 +1696,7 @@
   id: ut0291
   name: 'Tommy Williams'
   first_name: Tommy
-    last_name: Williams
+  last_name: Williams
 
   office: 'State Senate 15'
   district: '15'
@@ -1735,7 +1735,7 @@
   id: ut0293
   name: 'Keith Grover'
   first_name: Keith
-    last_name: Grover
+  last_name: Grover
 
   office: 'State Senate 15'
   district: '15'
@@ -1754,7 +1754,7 @@
   id: ut0294
   name: 'Margaret Dayton'
   first_name: Margaret
-    last_name: Dayton
+  last_name: Dayton
 
   office: 'State Senate 15'
   district: '15'
@@ -1773,7 +1773,7 @@
   id: ut0295
   name: 'Chad Soffe'
   first_name: Chad
-    last_name: Soffe
+  last_name: Soffe
 
   office: 'State Senate 17 (Multi County)'
   district: '17'
@@ -1792,7 +1792,7 @@
   id: ut0296
   name: 'Scott Sandall'
   first_name: Scott
-    last_name: Sandall
+  last_name: Sandall
 
   office: 'State Senate 17 (Multi County)'
   district: '17'
@@ -1851,7 +1851,7 @@
   id: ut0299
   name: 'Jason Yu'
   first_name: Jason
-    last_name: Yu
+  last_name: Yu
 
   office: 'State Senate 18 (Multi County)'
   district: '18'
@@ -1890,7 +1890,7 @@
   id: ut0301
   name: 'Ann Millner'
   first_name: Ann
-    last_name: Millner
+  last_name: Millner
 
   gender: 'female'
   office: 'State Senate 18 (Multi County)'
@@ -1931,7 +1931,7 @@
   id: ut0303
   name: 'Cory Green'
   first_name: Cory
-    last_name: Green
+  last_name: Green
 
   gender: 'male'
   office: 'State Senate 21'
@@ -1950,7 +1950,7 @@
   id: ut0304
   name: 'Jake Penrod'
   first_name: Jake
-    last_name: Penrod
+  last_name: Penrod
 
   gender: 'male'
   office: 'State Senate 21'
@@ -1970,7 +1970,7 @@
   id: ut0305
   name: 'Stuart Adams'
   first_name: Stuart
-    last_name: Adams
+  last_name: Adams
 
   gender: 'male'
   office: 'State Senate 22'
@@ -1990,7 +1990,7 @@
   id: ut0306
   name: 'Cathy Callow-Heusser'
   first_name: Cathy
-    last_name: Callow-Heusser
+  last_name: Callow-Heusser
 
   gender: 'female'
   office: 'State Senate 26 (Multi County)'
@@ -2010,7 +2010,7 @@
   id: ut0307
   name: 'Pat Vaughn'
   first_name: Pat
-    last_name: Vaughn
+  last_name: Vaughn
 
   office: 'State Senate 26 (Multi County)'
   district: '26'
@@ -2028,7 +2028,7 @@
   id: ut0308
   name: 'Alisa Ellis'
   first_name: Alisa
-    last_name: Ellis
+  last_name: Ellis
 
   gender: 'female'
   office: 'State Senate 26 (Multi County)'
@@ -2048,7 +2048,7 @@
   id: ut0309
   name: 'Ronald Winterton'
   first_name: Ronald
-    last_name: Winterton
+  last_name: Winterton
 
   gender: 'male'
   office: 'State Senate 26 (Multi County)'
@@ -2068,7 +2068,7 @@
   id: ut0310
   name: 'Jack Rubin'
   first_name: Jack
-    last_name: Rubin
+  last_name: Rubin
 
   gender: 'male'
   office: 'State Senate 26 (Multi County)'
@@ -2109,7 +2109,7 @@
   id: ut0312
   name: 'Eileen Gallagher'
   first_name: Eileen
-    last_name: Gallagher
+  last_name: Gallagher
 
   gender: 'female'
   office: 'State Senate 26 (Multi County)'
@@ -2129,7 +2129,7 @@
   id: ut0313
   name: 'Mark Chambers'
   first_name: Mark
-    last_name: Chambers
+  last_name: Chambers
 
   gender: 'male'
   office: 'State Senate 28 (Multi County)'
@@ -2169,7 +2169,7 @@
   id: ut0315
   name: 'Joel Ferry'
   first_name: Joel
-    last_name: Ferry
+  last_name: Ferry
 
   gender: 'male'
   office: 'State House 1 (Multi County)'
@@ -2212,7 +2212,7 @@
   id: ut0317
   name: 'Joshua Hardy'
   first_name: Joshua
-    last_name: Hardy
+  last_name: Hardy
 
   gender: 'male'
   office: 'State House 1 (Multi County)'
@@ -2232,7 +2232,7 @@
   id: ut0318
   name: 'Sherry Phipps'
   first_name: Sherry
-    last_name: Phipps
+  last_name: Phipps
 
   gender: 'female'
   office: 'State House 1 (Multi County)'
@@ -2252,7 +2252,7 @@
   id: ut0319
   name: 'Tyler Allred'
   first_name: Tyler
-    last_name: Allred
+  last_name: Allred
 
   gender: 'male'
   office: 'State House 2'
@@ -2293,7 +2293,7 @@
   id: ut0320
   name: 'Marilyn Mecham'
   first_name: Marilyn
-    last_name: Mecham
+  last_name: Mecham
 
   gender: 'female'
   office: 'State House 3'
@@ -2334,7 +2334,7 @@
   id: ut0322
   name: 'Josh Brundage'
   first_name: Josh
-    last_name: Brundage
+  last_name: Brundage
 
   gender: 'male'
   office: 'State House 4'
@@ -2354,7 +2354,7 @@
   id: ut0323
   name: 'Greg Merrill'
   first_name: Greg
-    last_name: Merrill
+  last_name: Merrill
 
   gender: 'male'
   office: 'State House 4'
@@ -2415,7 +2415,7 @@
   id: ut0326
   name: 'Casey Snider'
   first_name: Casey
-    last_name: Snider
+  last_name: Snider
 
   gender: 'male'
   office: 'State House 5'
@@ -2456,7 +2456,7 @@
   id: ut0328
   name: 'Matthew Freestone'
   first_name: Matthew
-    last_name: Freestone
+  last_name: Freestone
 
   gender: 'male'
   office: 'State House 6'
@@ -2476,7 +2476,7 @@
   id: ut0329
   name: 'Cory Maloy'
   first_name: Cory
-    last_name: Maloy
+  last_name: Maloy
 
   gender: 'male'
   office: 'State House 6'
@@ -2496,7 +2496,7 @@
   id: ut0330
   name: 'David Owen'
   first_name: David
-    last_name: Owen
+  last_name: Owen
 
   gender: 'male'
   office: 'State House 7'
@@ -2537,7 +2537,7 @@
   id: ut0332
   name: 'Lisa Roskelley'
   first_name: Lisa
-    last_name: Roskelley
+  last_name: Roskelley
 
   gender: 'female'
   office: 'State House 7'
@@ -2578,7 +2578,7 @@
   id: ut0334
   name: 'Dan Deuel'
   first_name: Dan
-    last_name: Deuel
+  last_name: Deuel
 
   gender: 'male'
   office: 'State House 7'
@@ -2598,7 +2598,7 @@
   id: ut0335
   name: 'Deana Froerer'
   first_name: Deana
-    last_name: Froerer
+  last_name: Froerer
 
   gender: 'female'
   office: 'State House 8'
@@ -2637,7 +2637,7 @@
   id: ut0337
   name: 'Deone Ehlers-Rhorer'
   first_name: Deone
-    last_name: Ehlers-Rhorer
+  last_name: Ehlers-Rhorer
 
   gender: 'female'
   office: 'State House 8'
@@ -2657,7 +2657,7 @@
   id: ut0338
   name: 'Steve Waldrip'
   first_name: Steve
-    last_name: Waldrip
+  last_name: Waldrip
 
   gender: 'male'
   office: 'State House 8'
@@ -2698,7 +2698,7 @@
   id: ut0340
   name: 'Emily Beeli'
   first_name: Emily
-    last_name: Beeli
+  last_name: Beeli
 
   gender: 'female'
   office: 'State House 9'
@@ -2759,7 +2759,7 @@
   id: ut0343
   name: 'Mary Khalaf'
   first_name: Mary
-    last_name: Khalaf
+  last_name: Khalaf
 
   gender: 'female'
   office: 'State House 9'
@@ -2905,7 +2905,7 @@
   id: ut0350
   name: 'Mike Schultz'
   first_name: Mike
-    last_name: Schultz
+  last_name: Schultz
 
   gender: 'male'
   office: 'State House 12 (Multi County)'
@@ -2964,7 +2964,7 @@
   id: ut0353
   name: 'Paul Ray'
   first_name: Paul
-    last_name: Ray
+  last_name: Ray
   gender: 'male'
   office: 'State House 13'
   district: '13'
@@ -2983,7 +2983,7 @@
   id: ut0354
   name: 'Karianne Lisonbee'
   first_name: Karianne
-    last_name: Lisonbee
+  last_name: Lisonbee
   gender: 'female'
   office: 'State House 14'
   district: '14'
@@ -3002,7 +3002,7 @@
   id: ut0355
   name: 'Shanell Day'
   first_name: Shanell
-    last_name: Day
+  last_name: Day
 
   gender: 'female'
   office: 'State House 14'
@@ -3022,7 +3022,7 @@
   id: ut0356
   name: 'Rich Miller'
   first_name: Rich
-    last_name: Miller
+  last_name: Miller
 
   gender: 'male'
   office: 'State House 15'
@@ -3042,7 +3042,7 @@
   id: ut0357
   name: 'Brad Wilson'
   first_name: Brad
-    last_name: Wilson
+  last_name: Wilson
 
   gender: 'male'
   office: 'State House 15'
@@ -3062,7 +3062,7 @@
   id: ut0358
   name: 'Brent Zimmerman'
   first_name: Brent
-    last_name: Zimmerman
+  last_name: Zimmerman
 
   gender: 'male'
   office: 'State House 16'
@@ -3082,7 +3082,7 @@
   id: ut0359
   name: 'Steve Handy'
   first_name: Steve
-    last_name: Handy
+  last_name: Handy
 
   gender: 'male'
   office: 'State House 16'
@@ -3102,7 +3102,7 @@
   id: ut0360
   name: 'Cheryl Nunn'
   first_name: Cheryl
-    last_name: Nunn
+  last_name: Nunn
 
   gender: 'female'
   office: 'State House 16'
@@ -3143,7 +3143,7 @@
   id: ut0362
   name: 'Dawn Nunn'
   first_name: Dawn
-    last_name: Nunn
+  last_name: Nunn
 
   gender: 'female'
   office: 'State House 17'
@@ -3163,7 +3163,7 @@
   id: ut0363
   name: 'Adam Alba'
   first_name: Adam
-    last_name: Alba
+  last_name: Alba
 
   gender: 'male'
   office: 'State House 18'
@@ -3204,7 +3204,7 @@
   id: ut0365
   name: 'Joe Speciale'
   first_name: Joe
-    last_name: Speciale
+  last_name: Speciale
 
   gender: 'male'
   office: 'State House 19'
@@ -3224,7 +3224,7 @@
   id: ut0366
   name: 'Raymond Ward'
   first_name: Raymond
-    last_name: Ward
+  last_name: Ward
 
   gender: 'male'
   office: 'State House 19'
@@ -3244,7 +3244,7 @@
   id: ut0367
   name: 'Phill Wright'
   first_name: Phill
-    last_name: Wright
+  last_name: Wright
 
   gender: 'male'
   office: 'State House 19'
@@ -3264,7 +3264,7 @@
   id: ut0368
   name: 'Courtney Jones'
   first_name: Courtney
-    last_name: Jones
+  last_name: Jones
 
   gender: 'female'
   office: 'State House 19'
@@ -3305,7 +3305,7 @@
   id: ut0370
   name: 'Cassidy Hine'
   first_name: Cassidy
-    last_name: Hine
+  last_name: Hine
 
   gender: 'female'
   office: 'State House 20'
@@ -3345,7 +3345,7 @@
   id: ut0372
   name: 'Matt Jensen'
   first_name: Matt
-    last_name: Jensen
+  last_name: Jensen
 
   gender: 'male'
   office: 'State House 20'
@@ -3386,7 +3386,7 @@
   id: ut0374
   name: 'Douglas Sagers'
   first_name: Douglas
-    last_name: Sagers
+  last_name: Sagers
 
   gender: 'male'
   office: 'State House 21'
@@ -3427,7 +3427,7 @@
   id: ut0376
   name: 'Donna Case'
   first_name: Donna
-    last_name: Case
+  last_name: Case
 
   gender: 'female'
   office: 'State House 22'
@@ -3447,7 +3447,7 @@
   id: ut0377
   name: 'Amber Christiansen Beltran'
   first_name: Amber
-    last_name: 'Christiansen Beltran'
+  last_name: 'Christiansen Beltran'
 
   gender: 'female'
   office: 'State House 22'
@@ -3488,7 +3488,7 @@
   id: ut0379
   name: 'Marilee Roose'
   first_name: Marilee
-    last_name: Roose
+  last_name: Roose
 
   gender: 'female'
   office: 'State House 22'
@@ -3529,8 +3529,7 @@
   id: ut0381
   name: 'Sandra Hollins'
   first_name: Sandra
-    last_name: Hollins
-
+  last_name: Hollins
   gender: 'female'
   office: 'State House 23'
   district: '23'
@@ -3551,7 +3550,6 @@
   first_name: Arnold
   middle_name: M
   last_name: Jones
-
   gender: 'male'
   office: 'State House 23'
   district: '23'
@@ -3570,8 +3568,7 @@
   id: ut0383
   name: 'Jacquelyn Orton'
   first_name: Jacquelyn
-    last_name: Orton
-
+  last_name: Orton
   gender: 'female'
   office: 'State House 24'
   district: '24'
@@ -3590,8 +3587,7 @@
   id: ut0384
   name: 'Igor Limansky'
   first_name: Igor
-    last_name: Limansky
-
+  last_name: Limansky
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3610,8 +3606,7 @@
   id: ut0385
   name: 'Darin Mann'
   first_name: Darin
-    last_name: Mann
-
+  last_name: Mann
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3630,8 +3625,7 @@
   id: ut0386
   name: 'Shawn Robinson'
   first_name: Shawn
-    last_name: Robinson
-
+  last_name: Robinson
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3648,8 +3642,7 @@
   id: ut0387
   name: 'Scott Rosenbush'
   first_name: Scott
-    last_name: Rosenbush
-
+  last_name: Rosenbush
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3670,7 +3663,6 @@
   first_name: Richard
   middle_name: Nahum
   last_name: Goldberger
-
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3690,7 +3682,6 @@
   first_name: Ryan
   middle_name: J.
   last_name: Parker
-
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3709,8 +3700,7 @@
   id: ut0390
   name: 'Jen Dailey-Provost'
   first_name: Jen
-    last_name: Dailey-Provost
-
+  last_name: Dailey-Provost
   gender: 'female'
   office: 'State House 24'
   district: '24'
@@ -3731,7 +3721,6 @@
   first_name: Joel
   middle_name: K.
   last_name: Briscoe
-
   gender: 'male'
   office: 'State House 25'
   district: '25'
@@ -3752,7 +3741,6 @@
   first_name: Gary
   middle_name: Ernest
   last_name: Gabrielson
-
   gender: 'male'
   office: 'State House 25'
   district: '25'
@@ -3772,7 +3760,6 @@
   first_name: Cabot
   middle_name: W.
   last_name: Nelson
-
   gender: 'male'
   office: 'State House 25'
   district: '25'
@@ -3810,7 +3797,7 @@
   id: ut0395
   name: 'Angela Romero'
   first_name: Angela
-    last_name: Romero
+  last_name: Romero
 
   gender: 'female'
   office: 'State House 26'
@@ -3830,7 +3817,7 @@
   id: ut0396
   name: 'Man Hung'
   first_name: Man
-    last_name: Hung
+  last_name: Hung
 
   gender: 'female'
   office: 'State House 26'
@@ -3850,7 +3837,7 @@
   id: ut0397
   name: 'Jonathan Greene'
   first_name: Jonathan
-    last_name: Greene
+  last_name: Greene
 
   gender: 'male'
   office: 'State House 26'
@@ -3869,7 +3856,7 @@
   id: ut0398
   name: 'Samuel Cotton-Betteridge'
   first_name: Samuel
-    last_name: Cotton-Betteridge
+  last_name: Cotton-Betteridge
 
   gender: 'male'
   office: 'State House 27'
@@ -3888,7 +3875,7 @@
   id: ut0399
   name: 'Jared Carman'
   first_name: Jared
-    last_name: Carman
+  last_name: Carman
 
   gender: 'male'
   office: 'State House 27'
@@ -3907,7 +3894,7 @@
   id: ut0400
   name: 'Curt Crosby'
   first_name: Curt
-    last_name: Crosby
+  last_name: Crosby
 
   gender: 'male'
   office: 'State House 27'
@@ -3967,7 +3954,7 @@
   id: ut0403
   name: 'Brady Brammer'
   first_name: Brady
-    last_name: Brammer
+  last_name: Brammer
 
   gender: 'male'
   office: 'State House 27'
@@ -3986,7 +3973,7 @@
   id: ut0404
   name: 'Kevin Braddy'
   first_name: Kevin
-    last_name: Braddy
+  last_name: Braddy
 
   gender: 'male'
   office: 'State House 27'
@@ -4004,7 +3991,7 @@
   id: ut0405
   name: 'Elisabeth Luntz'
   first_name: Elisabeth
-    last_name: Luntz
+  last_name: Luntz
 
   gender: 'female'
   office: 'State House 27'
@@ -4022,7 +4009,7 @@
   id: ut0406
   name: 'Joe Hart'
   first_name: Joe
-    last_name: Hart
+  last_name: Hart
 
   gender: 'male'
   office: 'State House 27'
@@ -4122,7 +4109,7 @@
   id: ut0411
   name: 'Derrick Fullum'
   first_name: Derrick
-    last_name: Fullum
+  last_name: Fullum
   gender: 'male'
   office: 'State House 30'
   district: '30'
@@ -4159,7 +4146,7 @@
   id: ut0413
   name: 'Robert Burch, Jr.'
   first_name: Robert
-    last_name: Burch
+  last_name: Burch
   suffix:  'Jr.'
   gender: 'male'
   office: 'State House 30'
@@ -4177,7 +4164,7 @@
   id: ut0414
   name: 'Mike Winder'
   first_name: Mike
-    last_name: Winder
+  last_name: Winder
   gender: 'male'
   office: 'State House 30'
   district: '30'
@@ -4196,7 +4183,7 @@
   id: ut0415
   name: 'Chelsey Rose'
   first_name: Chelsey
-    last_name: Rose
+  last_name: Rose
   gender: 'female'
   office: 'State House 30'
   district: '30'
@@ -4235,7 +4222,7 @@
   id: ut0417
   name: 'Elizabeth Weight'
   first_name: Elizabeth
-    last_name: Weight
+  last_name: Weight
   gender: 'female'
   office: 'State House 31'
   district: '31'
@@ -4254,7 +4241,7 @@
   id: ut0418
   name: 'Fred Johnson'
   first_name: Fred
-    last_name: Johnson
+  last_name: Johnson
   gender: 'male'
   office: 'State House 31'
   district: '31'
@@ -4272,7 +4259,7 @@
   id: ut0419
   name: 'Brad Bonham'
   first_name: Brad
-    last_name: Bonham
+  last_name: Bonham
   gender: 'male'
   office: 'State House 32'
   district: '32'
@@ -4308,7 +4295,7 @@
   id: ut0421
   name: 'Suzanne Harrison'
   first_name: Suzanne
-    last_name: Harrison
+  last_name: Harrison
   gender: 'female'
   office: 'State House 32'
   district: '32'
@@ -4348,7 +4335,7 @@
   id: ut0423
   name: 'Edward Bodily'
   first_name: Edward
-    last_name: Bodily
+  last_name: Bodily
 
   gender: 'male'
   office: 'State House 33'
@@ -4368,7 +4355,7 @@
   id: ut0424
   name: 'Kay Van Patter'
   first_name: Kay
-    last_name: 'Van Patter'
+  last_name: 'Van Patter'
 
   gender: 'male'
   office: 'State House 33'
@@ -4387,7 +4374,7 @@
   id: ut0425
   name: 'Craig Hall'
   first_name: Craig
-    last_name: Hall
+  last_name: Hall
 
   gender: 'male'
   office: 'State House 33'
@@ -4427,7 +4414,7 @@
   id: ut0427
   name: 'David Young'
   first_name: David
-    last_name: Young
+  last_name: Young
 
   gender: 'male'
   office: 'State House 34'
@@ -4466,7 +4453,7 @@
   id: ut0429
   name: 'Karen Kwan'
   first_name: Karen
-    last_name: Kwan
+  last_name: Kwan
 
   gender: 'female'
   office: 'State House 34'
@@ -4485,7 +4472,7 @@
   id: ut0430
   name: 'Robert Edgel'
   first_name: Robert
-    last_name: Edgel
+  last_name: Edgel
 
   gender: 'male'
   office: 'State House 35'
@@ -4525,7 +4512,7 @@
   id: ut0432
   name: 'Chelsea Travis'
   first_name: Chelsea
-    last_name: Travis
+  last_name: Travis
 
   gender: 'female'
   office: 'State House 35'
@@ -4545,7 +4532,7 @@
   id: ut0433
   name: 'Patrice Arent'
   first_name: Patrice
-    last_name: Arent
+  last_name: Arent
 
   gender: 'female'
   office: 'State House 36'
@@ -4664,7 +4651,7 @@
   id: ut0439
   name: 'Edgar Harwood'
   first_name: Edgar
-    last_name: Harwood
+  last_name: Harwood
 
   gender: 'male'
   office: 'State House 38'
@@ -4684,7 +4671,7 @@
   id: ut0440
   name: 'Eric Hutchings'
   first_name: Eric
-    last_name: Hutchings
+  last_name: Hutchings
 
   gender: 'male'
   office: 'State House 38'
@@ -4703,7 +4690,7 @@
   id: ut0441
   name: 'Stephen Peck'
   first_name: Stephen
-    last_name: Peck
+  last_name: Peck
 
   gender: 'male'
   office: 'State House 39'
@@ -4722,7 +4709,7 @@
   id: ut0442
   name: 'Jim Dunnigan'
   first_name: Jim
-    last_name: Dunnigan
+  last_name: Dunnigan
 
   gender: 'male'
   office: 'State House 39'
@@ -4742,7 +4729,7 @@
   id: ut0443
   name: 'David Else'
   first_name: David
-    last_name: Else
+  last_name: Else
 
   gender: 'male'
   office: 'State House 40'
@@ -4801,7 +4788,7 @@
   id: ut0446
   name: 'Stephanie Pitcher'
   first_name: Stephanie
-    last_name: Pitcher
+  last_name: Pitcher
 
   gender: 'female'
   office: 'State House 40'
@@ -4840,7 +4827,7 @@
   id: ut0448
   name: 'Paul Wayman'
   first_name: Paul
-    last_name: Wayman
+  last_name: Wayman
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -4859,7 +4846,7 @@
   id: ut0449
   name: 'Steve Walston'
   first_name: Steve
-    last_name: Walston
+  last_name: Walston
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -4877,7 +4864,7 @@
   id: ut0450
   name: 'Mike Hales'
   first_name: Mike
-    last_name: Hales
+  last_name: Hales
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -4895,7 +4882,7 @@
   id: ut0451
   name: 'Wendy Garvin'
   first_name: Wendy
-    last_name: Garvin
+  last_name: Garvin
   gender: 'female'
   office: 'State House 41'
   district: '41'
@@ -6113,1192 +6100,1187 @@
   website: 'http://parljohnson.com/'
   candidate_status: 'filed'
   last_updated: '2018-05-18'
-# -
-#   name: 'MARSHA JUDKINS'
-#   first_name: Marsha
-#   #
-#   last_name: Judkins
-#
-#
-#   office: 'State House 61'
-#   district: '61'
-#   address: '838 N 2400 W'
-#
-#   city: Provo
-#   state: UT
-#   zip: '84601'
-#   phone: (801)669-6962
-#   party: 'Republican'
-#   email: marshajudkins@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'TRAVIS M. SEEGMILLER'
-#   first_name: Travis
-#   middle_name: M.
-#   last_name: Seegmiller
-#
-#
-#   office: 'State House 62'
-#   district: '62'
-#   address: '308 W Taberncale Street, Suite 300'
-#
-#   city: 'St George'
-#   state: UT
-#   zip: '84770'
-#   phone: (435)236-5118
-#   party: 'Republican'
-#   email: tmseegmiller@gmail.com
-#   website: www.house.utah.gov/rep/seegmtm
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'ADAM ROBERTSON'
-#   first_name: Adam
-#   #
-#   last_name: Robertson
-#
-#
-#   office: 'State House 63'
-#   district: '63'
-#   address: '1684 N 1500 E'
-#
-#   city: Provo
-#   state: UT
-#   zip: '84604'
-#   phone: (385)325-2877
-#   party: 'Republican'
-#   email: adam@adamrobertson.vote
-#   website: adamrobertson.vote
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'DANIEL CRAIG FRIEND'
-#   first_name: Daniel
-#   middle_name: Craig
-#   last_name: Friend
-#
-#
-#   office: 'State House 64'
-#   district: '64'
-#   address: '974 S Freedom Blvd'
-#
-#   city: Provo
-#   state: UT
-#   zip: '84601'
-#   phone: (972)345-0856
-#   party: 'Democratic'
-#   email: daniel@friendforutah.com
-#   website: friendforutah.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'HAL MILLER'
-#   first_name: Hal
-#   #
-#   last_name: Miller
-#
-#
-#   office: 'State House 64'
-#   district: '64'
-#   address: '1200 S. Nevada Ave'
-#
-#   city: Provo
-#   state: UT
-#   zip: '84606'
-#   phone: (801)691-5737
-#   party: 'United Utah'
-#   email: halmillerprovo3@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MARY L. WARNER'
-#   first_name: Mary
-#   middle_name: L.
-#   last_name: Warner
-#
-#
-#   office: 'State House 64'
-#   district: '64'
-#   address: '728 E 50 S'
-#
-#   city: Provo
-#   state: UT
-#   zip: '84606'
-#   phone: (801)607-1659
-#   party: 'Republican'
-#   email: maryforutah@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'PAUL REEB'
-#   first_name: Paul
-#   #
-#   last_name: Reeb
-#
-#
-#   office: 'State House 64'
-#   district: '64'
-#   address: '1267 S 1410 E'
-#
-#   city: Provo
-#   state: UT
-#   zip: '84606'
-#   phone: ''
-#
-#   party: 'Republican'
-#   email: paul@reebbrokerage.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'NORM THURSTON'
-#   first_name: Norm
-#   #
-#   last_name: Thurston
-#
-#
-#   office: 'State House 64'
-#   district: '64'
-#   address: '965 E Center St.'
-#
-#   city: Provo
-#   state: UT
-#   zip: '84606'
-#   phone: (801)477-5348
-#   party: 'Republican'
-#   email: electnorm@gmail.com
-#   website: normthurston.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'SUE A. WOMACK'
-#   first_name: Sue
-#   middle_name: A.
-#   last_name: Womack
-#
-#
-#   office: 'State House 65'
-#   district: '65'
-#   address: '2144 Silverado Dr'
-#
-#   city: Springville
-#   state: UT
-#   zip: '84663'
-#   phone: (801)319-7194
-#   party: 'Democratic'
-#   email: suewomackcandidate@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'FRANCIS D. GIBSON'
-#   first_name: Francis
-#   middle_name: D.
-#   last_name: Gibson
-#
-#
-#   office: 'State House 65'
-#   district: '65'
-#   address: '208 S 680 W'
-#
-#   city: Mapleton
-#   state: UT
-#   zip: '84664'
-#   phone: (801)361-0082
-#   party: 'Republican'
-#   email: Francisgibson@comcast.net
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'SCOTT BRANDON NEILSON'
-#   first_name: Scott
-#   middle_name: Brandon
-#   last_name: Neilson
-#
-#
-#   office: 'State House 65'
-#   district: '65'
-#   address: ''
-#
-#
-#   city: ''
-#
-#   state: UT
-#   zip: ''
-#
-#   phone: (801)834-5228
-#   party: 'Republican'
-#   email: ''
-#
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MIKE MCKELL'
-#   first_name: Mike
-#   #
-#   last_name: McKell
-#
-#
-#   office: 'State House 66'
-#   district: '66'
-#   address: '1444 E 1820 S'
-#
-#   city: 'Spanish Fork'
-#   state: UT
-#   zip: '84660'
-#   phone: (801)210-1495
-#   party: 'Republican'
-#   email: mike@mikemckell.com
-#   website: www.mikemckell.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'PAUL JONES DAYTON'
-#   first_name: Paul
-#   middle_name: Jones
-#   last_name: Dayton
-#
-#
-#   office: 'State House 66'
-#   district: '66'
-#   address: ''
-#
-#
-#   city: ''
-#
-#   state: UT
-#   zip: ''
-#
-#   phone: (801)706-4622
-#   party: 'Democratic'
-#   email: paul@ximz.com
-#   website: twitter.com/pdayton
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'RICHARD L. BEHLING'
-#   first_name: Richard
-#   middle_name: L.
-#   last_name: Behling
-#
-#
-#   office: 'State House 67'
-#   district: '67'
-#   address: ''
-#
-#
-#   city: ''
-#
-#   state: UT
-#   zip: ''
-#
-#   phone: (801)361-3121
-#   party: 'Republican'
-#   email: rbehling@behlings.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MARC ROBERTS'
-#   first_name: Marc
-#   #
-#   last_name: Roberts
-#
-#
-#   office: 'State House 67'
-#   district: '67'
-#   address: '383 E. Salem Park Cir'
-#
-#   city: Salem
-#   state: UT
-#   zip: '84653'
-#   phone: (801)210-0155
-#   party: 'Republican'
-#   email: marc@robertsmarc.com
-#   website: robertsmarc.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'DENYSE  HOUSLEY COX'
-#   first_name: 'Denyse'
-#   middle_name: Housley
-#   last_name: Cox
-#
-#
-#   office: 'State House 68 (Multi County)'
-#   district: '68'
-#   address: '68 Booth St.'
-#
-#   city: Grantsville
-#   state: UT
-#   zip: '84029'
-#   phone: (435)841-1263
-#   party: Libertarian
-#   email: kowgirlmail@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MERLE TRAVIS WALL'
-#   first_name: Merle
-#   middle_name: Travis
-#   last_name: Wall
-#
-#
-#   office: 'State House 68 (Multi County)'
-#   district: '68'
-#   address: 'PO Box 691'
-#
-#   city: Delta
-#   state: UT
-#   zip: '84624'
-#   phone: (435)406-6525
-#   party: 'Democratic'
-#   email: merle_wall@yahoo.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'WARREN ROGERS'
-#   first_name: Warren
-#   #
-#   last_name: Rogers
-#
-#
-#   office: 'State House 68 (Multi County)'
-#   district: '68'
-#   address: 'PO Box 325'
-#
-#   city: 'Oak City'
-#   state: UT
-#   zip: '84649'
-#   phone: (435)846-2178
-#   party: 'Independent American'
-#   email: warrentrogers5@outlook.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'KIRK D PEARSON'
-#   first_name: Kirk
-#   middle_name: D
-#   last_name: Pearson
-#
-#
-#   office: 'State House 68 (Multi County)'
-#   district: '68'
-#   address: '7240 N Adobe Lane'
-#
-#   city: 'Lake Point'
-#   state: UT
-#   zip: '84074'
-#   phone: (801)856-1471
-#   party: Constitution
-#   email: kirk4congress@gmail.com
-#   website: constitutionpartyofutah.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Merrill Nelson'
-#   first_name: Merrill
-#   #   last_name: Nelson
-#
-#   office: 'State House 68 (Multi County)'
-#   district: '68'
-#   address: '164 S 800 E'
-#   city: Grantsville
-#   county: 'Tooele'
-#   state: UT
-#   zip: '84029'
-#   phone: (801)471-2172
-#   party: 'Republican'
-#   email: mnelson@kmclaw.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Christine F. Watkins'
-#   first_name: Christine
-#   middle_name: F.
-#   last_name: Watkins
-#
-#   office: 'State House 69 (Multi County)'
-#   district: '69'
-#   address: '1548 E. 5700 S.'
-#   city: Price
-#   county: 'Carbon'
-#   state: UT
-#   zip: '84501'
-#   phone: (435)650-1969
-#   party: 'Republican'
-#   email: cwatkins_68@yahoo.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Tim Glenn'
-#   first_name: Tim
-#   #   last_name: Glenn
-#
-#   office: 'State House 69 (Multi County)'
-#   district: '69'
-#   address: 'PO Box 16'
-#   city: 'Green River'
-#   county: 'Emery'
-#   state: UT
-#   zip: '84525'
-#   phone: (801)633-0330
-#   party: 'Democratic'
-#   email: timothy.aaron.glenn@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Jae Potter'
-#   first_name: Jae
-#   #   last_name: Potter
-#
-#   office: 'State House 69 (Multi County)'
-#   district: '69'
-#   address: '771 Windsor Circle'
-#   city: Price
-#   county: 'Carbon'
-#   state: UT
-#   zip: '84501'
-#   phone: (435)650-0436
-#   party: 'Republican'
-#   email: jae.potter2018@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Danielle Howa Pendergrass'
-#   first_name: Danielle
-#   middle_name: Howa
-#   last_name: Pendergrass
-#
-#   office: 'State House 69 (Multi County)'
-#   district: '69'
-#   address: '341 N. 400 E.'
-#   city: Price
-#   county: 'Carbon'
-#   state: UT
-#   zip: '84501'
-#   phone: (435)650-6796
-#   party: 'Democratic'
-#   email: ''
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Carl R. Albrecht'
-#   first_name: Carl
-#   middle_name: R.
-#   last_name: Albrecht
-#
-#   office: 'State House 70 (Multi County)'
-#   district: '70'
-#   address: '752 Crestview Dr'
-#   city: Richfield
-#   county: 'Sevier'
-#   state: UT
-#   zip: '84701'
-#   phone: (435)979-6578
-#   party: 'Republican'
-#   email: cralbrecht52@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Robert Greenberg'
-#   first_name: Robert
-#   #   last_name: Greenberg
-#
-#   office: 'State House 70 (Multi County)'
-#   district: '70'
-#   address: '453 E. Center St.'
-#   city: Moab
-#   county: 'Grand'
-#   state: UT
-#   zip: '84532'
-#   phone: (435)259-7013
-#   party: 'Democratic'
-#   email: bobgmoab@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Ashley Korenblat'
-#   first_name: Ashley
-#   #   last_name: Korenblat
-#
-#   office: 'State House 70 (Multi County)'
-#   district: '70'
-#   address: '478 Millcreek Dr.'
-#   city: Moab
-#   county: 'Grand'
-#   state: UT
-#   zip: '84532'
-#   phone: (801)910-3205
-#   party: 'Republican'
-#   email: ashley@westernspirit.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Mark S. Borowiak'
-#   first_name: Mark
-#   middle_name: S.
-#   last_name: Borowiak
-#
-#   office: 'State House 71 (Multi County)'
-#   district: '71'
-#   address: '2641 S Tanner Cir'
-#   city: Hurricane
-#   county: 'Washington'
-#   state: UT
-#   zip: '84737'
-#   phone: (219)629-3618
-#   party: 'Republican'
-#   email: markboro1@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Brad Last'
-#   first_name: 'Brad'
-#   #   last_name: Last
-#
-#   office: 'State House 71 (Multi County)'
-#   district: '71'
-#   address: '1194 S 180 West'
-#   city: Hurricane
-#   county: 'Washington'
-#   state: UT
-#   zip: '84737'
-#   phone: (435)817-0064
-#   party: 'Republican'
-#   email: district71@infowest.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Chuck Goode'
-#   first_name: Chuck
-#   #   last_name: Goode
-#
-#   office: 'State House 71 (Multi County)'
-#   district: '71'
-#   address: 'PO Box 71'
-#   city: Toquerville
-#   county: 'Washington'
-#   state: UT
-#   zip: 84774-0071
-#   phone: (435)229-8950
-#   party: 'Democratic'
-#   email: chuckgoode@gmail.com
-#   website: chuckgoode.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Barry Evan Short'
-#   first_name: 'Barry'
-#   middle_name: Evan
-#   last_name: Short
-#
-#   office: 'State House 72'
-#   district: '72'
-#   address: '396 S Ridge Rd'
-#   city: 'Cedar City'
-#   county: 'Iron'
-#   state: UT
-#   zip: '84720'
-#   phone: (435)865-7369
-#   party: Libertarian
-#   email: barryshort@q.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Rex P. Shipp'
-#   first_name: Rex
-#   middle_name: P
-#   last_name: Shipp
-#
-#   office: 'State House 72'
-#   district: '72'
-#   address: '749 S St James St'
-#   city: 'Cedar City'
-#   county: 'Iron'
-#   state: UT
-#   zip: '84720'
-#   phone: (435)590-1073
-#   party: 'Republican'
-#   email: electrexshipp@gmail.com
-#   website: electrexshipp.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Zeno B. Parry'
-#   first_name: 'Zeno'
-#   middle_name: B.
-#   last_name: Parry
-#
-#   office: 'State House 72'
-#   district: '72'
-#   address: '2430 W 5550 North'
-#   city: 'Cedar City'
-#   county: 'Iron'
-#   state: UT
-#   zip: '84721'
-#   phone: (435)867-4404
-#   party: 'Democratic'
-#   email: zenoparry@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Kelly Stowell'
-#   first_name: Kelly
-#   #   last_name: Stowell
-#
-#   office: 'State House 73 (Multi County)'
-#   district: '73'
-#   address: '449 W Rawhide Dr'
-#   city: Kanab
-#   county: 'Kane'
-#   state: UT
-#   zip: '84741'
-#   phone: (435)899-0443
-#   party: 'Republican'
-#   email: stowell@kanab.net
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Phil Lyman'
-#   first_name: Phil
-#   #   last_name: Lyman
-#
-#   office: 'State House 73 (Multi County)'
-#   district: '73'
-#   address: '1402 N Blue Mountain Rd'
-#   city: Blanding
-#   county: 'San Juan'
-#   state: UT
-#   zip: '84511'
-#   phone: (435)459-2800
-#   party: 'Republican'
-#   email: phil@lymancpa.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Marsha M. Holland'
-#   first_name: Marsha
-#   middle_name: M
-#   last_name: Holland
-#
-#   office: 'State House 73 (Multi County)'
-#   district: '73'
-#   address: 'PO Box 132'
-#   city: Tropic
-#   county: 'Garfield'
-#   state: UT
-#   zip: '84776'
-#   phone: (435)679-8987
-#   party: Unaffiliated
-#   email: marshaholland2018@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'V. Lowry Snow'
-#   first_name: V.
-#   middle_name: Lowry
-#   last_name: Snow
-#
-#   office: 'State House 74'
-#   district: '74'
-#   address: '3655 Rim View Circle'
-#   city: 'Santa Clara'
-#   county: 'Washington'
-#   state: UT
-#   zip: '84765'
-#   phone: (435)703-3688
-#   party: 'Republican'
-#   email: vlsnow74@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Daniel Holloway'
-#   first_name: Daniel
-#   #   last_name: Holloway
-#
-#   office: 'State House 74'
-#   district: '74'
-#   address: '370 E 855 S'
-#   city: Ivins
-#   county: 'Washington'
-#   state: UT
-#   zip: '84738'
-#   phone: (435)817-3787
-#   party: Libertarian
-#   email: holloway4utah74@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Walt Brooks'
-#   first_name: Walt
-#   #   last_name: Brooks
-#
-#   office: 'State House 75'
-#   district: '75'
-#   address: '393 W 300 N'
-#   city: 'St George'
-#   state: UT
-#   zip: '84770'
-#   phone: (435)817-3530
-#   party: 'Republican'
-#   email: walt@waltbrooks.com
-#   website: www.waltbrooks.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MICHAEL A GARDNER'
-#   first_name: Michael
-#   middle_name: A
-#   last_name: Gardner
-#
-#
-#   office: 'State House 75'
-#   district: '75'
-#   address: 'PO Box 3180'
-#
-#   city: 'St George'
-#   state: UT
-#   zip: 84771-3180
-#   phone: (801)837-9822
-#   party: Libertarian
-#   email: trainerboy72@hotmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'KEITH R. KELSCH'
-#   first_name: Keith
-#   middle_name: R.
-#   last_name: Kelsch
-#
-#
-#   office: 'State House 75'
-#   district: '75'
-#   address: '154 S 100 W'
-#
-#   city: 'St George'
-#   state: UT
-#   zip: '84770'
-#   phone: (435)619-9350
-#   party: 'Independent American'
-#   email: keith@genuineoptimist.com
-#   website: genuineoptimist.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'JENNIE L. EARL'
-#   first_name: Jennie
-#   middle_name: L.
-#   last_name: Earl
-#
-#
-#   office: 'State School Board 1 (Multi County)'
-#   district: '1'
-#   address: ''
-#
-#
-#   city: ''
-#
-#   state: UT
-#   zip: ''
-#
-#   phone: (801)644-0622
-#   party: Unaffiliated
-#   email: jinnamon@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'TERRYL WARNER'
-#   first_name: Terryl
-#   #
-#   last_name: Warner
-#
-#
-#   office: 'State School Board 1 (Multi County)'
-#   district: '1'
-#   address: '623 Anderson Ave'
-#
-#   city: Hyrum
-#   state: UT
-#   zip: '84319'
-#   phone: (435)512-5241
-#   party: Unaffiliated
-#   email: Terryl.Warner6@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'LEANNE A. RICH'
-#   first_name: Leanne
-#   middle_name: A.
-#   last_name: Rich
-#
-#
-#   office: 'State School Board 2'
-#   district: '2'
-#   address: '2040 Hampton Green Way'
-#
-#   city: Ogden
-#   state: UT
-#   zip: '84403'
-#   phone: (801)388-4756
-#   party: Unaffiliated
-#   email: richleanne@comcast.net
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'SCOTT L. HANSEN'
-#   first_name: Scott
-#   middle_name: L.
-#   last_name: Hansen
-#
-#
-#   office: 'State School Board 2'
-#   district: '2'
-#   address: '6065 N 2250 E'
-#
-#   city: Liberty
-#   state: UT
-#   zip: '84310'
-#   phone: (801)648-6476
-#   party: Unaffiliated
-#   email: scottlhansen@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'CRAIG K. PITTS'
-#   first_name: Craig
-#   middle_name: K.
-#   last_name: Pitts
-#
-#
-#   office: 'State School Board 2'
-#   district: '2'
-#   address: '677 Cook St'
-#
-#   city: Ogden
-#   state: UT
-#   zip: '84404'
-#   phone: (385)321-5722
-#   party: Unaffiliated
-#   email: craigpitts@reagan.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'LINDA B. HANSEN'
-#   first_name: Linda
-#   middle_name: B.
-#   last_name: Hansen
-#
-#
-#   office: 'State School Board 3 (Multi County)'
-#   district: '3'
-#   address: '5149 Village Wood Drive'
-#
-#   city: 'West Valley City'
-#   state: UT
-#   zip: '84120'
-#   phone: (801)966-5492
-#   party: Unaffiliated
-#   email: lbhansen8@yahoo.com
-#   website: lindabhansen.weebly.com
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'THOMAS E. NEDREBERG'
-#   first_name: Thomas
-#   middle_name: E.
-#   last_name: Nedreberg
-#
-#
-#   office: 'State School Board 3 (Multi County)'
-#   district: '3'
-#   address: 'PO Box 291'
-#
-#   city: Eureka
-#   state: UT
-#   zip: '84628'
-#   phone: (435)433-6634
-#   party: Unaffiliated
-#   email: thomas.nedreberg@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'LAURA COLLIER BELNAP'
-#   first_name: LAURA
-#   middle_name: COLLIER
-#   last_name: BELNAP
-#
-#
-#   office: 'State School Board 5 (Multi County)'
-#   district: '5'
-#   address: '845 E. 1500 S.'
-#
-#   city: Bountiful
-#   state: UT
-#   zip: '84010'
-#   phone: (801)699-7588
-#   party: Unaffiliated
-#   email: lbelnap@utahonline.org
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'PATRICK D. RILEY'
-#   first_name: Patrick
-#   middle_name: D.
-#   last_name: Riley
-#
-#
-#   office: 'State School Board 5 (Multi County)'
-#   district: '5'
-#   address: '78 W. 1850 N.'
-#
-#   city: Centerville
-#   state: UT
-#   zip: '84014'
-#   phone: (801)292-7742
-#   party: Unaffiliated
-#   email: priley7742@aol.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'BRITTNEY CUMMINS'
-#   first_name: Brittney
-#   #
-#   last_name: Cummins
-#
-#
-#   office: 'State School Board 6'
-#   district: '6'
-#   address: '4601 Poseidon Dr'
-#
-#   city: 'West Valley City'
-#   state: UT
-#   zip: '84120'
-#   phone: (801)969-5712
-#   party: Unaffiliated
-#   email: b4cummins@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'VALERIE VELEZ-HALL'
-#   first_name: Valerie
-#   #
-#   last_name: Velez-Hall
-#
-#
-#   office: 'State School Board 6'
-#   district: '6'
-#   address: '4797 Mocha Dr'
-#
-#   city: Taylorsville
-#   state: UT
-#   zip: '84129'
-#   phone: (801)808-0971
-#   party: Unaffiliated
-#   email: valeriehall217@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'MEGAN RUFF'
-#   first_name: Megan
-#   #
-#   last_name: Ruff
-#
-#
-#   office: 'State School Board 6'
-#   district: '6'
-#   address: '6760 South 2795 West'
-#
-#   city: 'West Jordan'
-#   state: UT
-#   zip: '84084'
-#   phone: (801)574-4120
-#   party: Unaffiliated
-#   email: megacruff15@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'KAMI ALVAREZ'
-#   first_name: Kami
-#   #
-#   last_name: Alvarez
-#
-#
-#   office: 'State School Board 9'
-#   district: '9'
-#   address: '1529 S Lake View Terrance Rd'
-#
-#   city: 'Saratoga Springs'
-#   state: UT
-#   zip: '84045'
-#   phone: (385)215-5979
-#   party: Unaffiliated
-#   email: electkamialvarez@gmail.com
-#
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Kirsten A. Arnold'
-#   first_name: Kirsten
-#   middle_name: 'A.'
-#   last_name: Arnold
-#
-#   office: 'State School Board 9'
-#   district: '9'
-#   address: '1002 N Apple Creek Circle'
-#   city: Alpine
-#   state: UT
-#   zip: '84004'
-#   phone: (801)558-7483
-#   party: Unaffiliated
-#   email: Kirsten4board.of.ed@gmail.com
-#
-#   candidate_status: 'withdrew'
-# -
-#   name: 'Alexandria Sensinger'
-#   first_name: Alexandria
-#   #   last_name: Sensinger
-#
-#   office: 'State School Board 9'
-#   district: '9'
-#   address: '125 S Main St'
-#   city: Genola
-#   state: UT
-#   zip: '84655'
-#   phone: (801)358-2345
-#   party: Unaffiliated
-#   email: 'electsensinger@gmail.com'
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Joylin Lincoln'
-#   first_name: 'Joylin'
-#   #   last_name: Lincoln
-#
-#   office: 'State School Board 9'
-#   district: '9'
-#   address: '958 S Austin Ct.'
-#   city: 'Saratoga Springs'
-#   state: UT
-#   zip: '84045'
-#   phone: (801)367-8191
-#   party: Unaffiliated
-#   email: JoylinLincoln@gmail.com
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Avalie Muhlestein'
-#   first_name: Avalie
-#   #   last_name: Muhlestein
-#
-#   office: 'State School Board 9'
-#   district: '9'
-#   address: ''
-#   city: ''
-#   state: UT
-#   zip: ''
-#   phone: (801)770-2575
-#   party: Unaffiliated
-#   email: 'info@voteavalie.com'
-#
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Cindy Davis'
-#   first_name: Cindy
-#   #   last_name: Davis
-#
-#   office: 'State School Board 9'
-#   district: '9'
-#   address: '1794 N 940 E'
-#   city: 'American Fork'
-#   state: UT
-#   zip: '84003'
-#   phone: '(801) 319-4117'
-#   party: 'Unaffiliated'
-#   email: 'info@cindydavisforschoolboard.com'
-#   website: 'cindydavisforschoolboard.com'
-#   candidate_status: 'filed'
-#   last_updated: '2018-04-01'
-# -
-#   name: 'Mark A. Huntsman'
-#   first_name: Mark
-#   middle_name: A.
-#   last_name: Huntsman
-#
-#   office: 'State School Board 14 (Multi County)'
-#   district: '14'
-#   address: '435 S 700 E'
-#   city: Fillmore
-#   state: UT
-#   zip: '84631'
-#   phone: (435)743-5166
-#   party: Unaffiliated
-#   email: mhuntsman@sunrise-eng.com
-#
-#   candidate_status: 'filed'
+-
+  id: ut0511
+  name: 'Marsha Judkins'
+  first_name: Marsha
+  last_name: Judkins
+  gender: 'female'
+  office: 'State House 61'
+  district: '61'
+  address: '838 N 2400 W'
+  city: Provo
+  county: 'Utah'
+  state: UT
+  zip: '84601'
+  phone: (801) 669-6962
+  party: 'Republican'
+  email: marshajudkins@gmail.com
+  candidate_status: 'filed'
+  last_updated: '2018-05-18'
+-
+  name: 'TRAVIS M. SEEGMILLER'
+  first_name: Travis
+  middle_name: M.
+  last_name: Seegmiller
+
+
+  office: 'State House 62'
+  district: '62'
+  address: '308 W Taberncale Street, Suite 300'
+
+  city: 'St George'
+  state: UT
+  zip: '84770'
+  phone: (435)236-5118
+  party: 'Republican'
+  email: tmseegmiller@gmail.com
+  website: www.house.utah.gov/rep/seegmtm
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'ADAM ROBERTSON'
+  first_name: Adam
+  #
+  last_name: Robertson
+
+
+  office: 'State House 63'
+  district: '63'
+  address: '1684 N 1500 E'
+
+  city: Provo
+  state: UT
+  zip: '84604'
+  phone: (385)325-2877
+  party: 'Republican'
+  email: adam@adamrobertson.vote
+  website: adamrobertson.vote
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'DANIEL CRAIG FRIEND'
+  first_name: Daniel
+  middle_name: Craig
+  last_name: Friend
+
+
+  office: 'State House 64'
+  district: '64'
+  address: '974 S Freedom Blvd'
+
+  city: Provo
+  state: UT
+  zip: '84601'
+  phone: (972)345-0856
+  party: 'Democratic'
+  email: daniel@friendforutah.com
+  website: friendforutah.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'HAL MILLER'
+  first_name: Hal
+  #
+  last_name: Miller
+
+
+  office: 'State House 64'
+  district: '64'
+  address: '1200 S. Nevada Ave'
+
+  city: Provo
+  state: UT
+  zip: '84606'
+  phone: (801)691-5737
+  party: 'United Utah'
+  email: halmillerprovo3@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'MARY L. WARNER'
+  first_name: Mary
+  middle_name: L.
+  last_name: Warner
+
+
+  office: 'State House 64'
+  district: '64'
+  address: '728 E 50 S'
+
+  city: Provo
+  state: UT
+  zip: '84606'
+  phone: (801)607-1659
+  party: 'Republican'
+  email: maryforutah@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'PAUL REEB'
+  first_name: Paul
+  #
+  last_name: Reeb
+
+
+  office: 'State House 64'
+  district: '64'
+  address: '1267 S 1410 E'
+
+  city: Provo
+  state: UT
+  zip: '84606'
+  phone: ''
+
+  party: 'Republican'
+  email: paul@reebbrokerage.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'NORM THURSTON'
+  first_name: Norm
+  #
+  last_name: Thurston
+
+
+  office: 'State House 64'
+  district: '64'
+  address: '965 E Center St.'
+
+  city: Provo
+  state: UT
+  zip: '84606'
+  phone: (801)477-5348
+  party: 'Republican'
+  email: electnorm@gmail.com
+  website: normthurston.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'SUE A. WOMACK'
+  first_name: Sue
+  middle_name: A.
+  last_name: Womack
+
+
+  office: 'State House 65'
+  district: '65'
+  address: '2144 Silverado Dr'
+
+  city: Springville
+  state: UT
+  zip: '84663'
+  phone: (801)319-7194
+  party: 'Democratic'
+  email: suewomackcandidate@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'FRANCIS D. GIBSON'
+  first_name: Francis
+  middle_name: D.
+  last_name: Gibson
+
+
+  office: 'State House 65'
+  district: '65'
+  address: '208 S 680 W'
+
+  city: Mapleton
+  state: UT
+  zip: '84664'
+  phone: (801)361-0082
+  party: 'Republican'
+  email: Francisgibson@comcast.net
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'SCOTT BRANDON NEILSON'
+  first_name: Scott
+  middle_name: Brandon
+  last_name: Neilson
+
+
+  office: 'State House 65'
+  district: '65'
+  address: ''
+
+
+  city: ''
+
+  state: UT
+  zip: ''
+
+  phone: (801)834-5228
+  party: 'Republican'
+  email: ''
+
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'MIKE MCKELL'
+  first_name: Mike
+  #
+  last_name: McKell
+
+
+  office: 'State House 66'
+  district: '66'
+  address: '1444 E 1820 S'
+
+  city: 'Spanish Fork'
+  state: UT
+  zip: '84660'
+  phone: (801)210-1495
+  party: 'Republican'
+  email: mike@mikemckell.com
+  website: www.mikemckell.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'PAUL JONES DAYTON'
+  first_name: Paul
+  middle_name: Jones
+  last_name: Dayton
+
+
+  office: 'State House 66'
+  district: '66'
+  address: ''
+
+
+  city: ''
+
+  state: UT
+  zip: ''
+
+  phone: (801)706-4622
+  party: 'Democratic'
+  email: paul@ximz.com
+  website: twitter.com/pdayton
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'RICHARD L. BEHLING'
+  first_name: Richard
+  middle_name: L.
+  last_name: Behling
+
+
+  office: 'State House 67'
+  district: '67'
+  address: ''
+
+
+  city: ''
+
+  state: UT
+  zip: ''
+
+  phone: (801)361-3121
+  party: 'Republican'
+  email: rbehling@behlings.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'MARC ROBERTS'
+  first_name: Marc
+  #
+  last_name: Roberts
+
+
+  office: 'State House 67'
+  district: '67'
+  address: '383 E. Salem Park Cir'
+
+  city: Salem
+  state: UT
+  zip: '84653'
+  phone: (801)210-0155
+  party: 'Republican'
+  email: marc@robertsmarc.com
+  website: robertsmarc.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'DENYSE  HOUSLEY COX'
+  first_name: 'Denyse'
+  middle_name: Housley
+  last_name: Cox
+
+
+  office: 'State House 68 (Multi County)'
+  district: '68'
+  address: '68 Booth St.'
+
+  city: Grantsville
+  state: UT
+  zip: '84029'
+  phone: (435)841-1263
+  party: Libertarian
+  email: kowgirlmail@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'MERLE TRAVIS WALL'
+  first_name: Merle
+  middle_name: Travis
+  last_name: Wall
+
+
+  office: 'State House 68 (Multi County)'
+  district: '68'
+  address: 'PO Box 691'
+
+  city: Delta
+  state: UT
+  zip: '84624'
+  phone: (435)406-6525
+  party: 'Democratic'
+  email: merle_wall@yahoo.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'WARREN ROGERS'
+  first_name: Warren
+  #
+  last_name: Rogers
+
+
+  office: 'State House 68 (Multi County)'
+  district: '68'
+  address: 'PO Box 325'
+
+  city: 'Oak City'
+  state: UT
+  zip: '84649'
+  phone: (435)846-2178
+  party: 'Independent American'
+  email: warrentrogers5@outlook.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'KIRK D PEARSON'
+  first_name: Kirk
+  middle_name: D
+  last_name: Pearson
+
+
+  office: 'State House 68 (Multi County)'
+  district: '68'
+  address: '7240 N Adobe Lane'
+
+  city: 'Lake Point'
+  state: UT
+  zip: '84074'
+  phone: (801)856-1471
+  party: Constitution
+  email: kirk4congress@gmail.com
+  website: constitutionpartyofutah.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Merrill Nelson'
+  first_name: Merrill
+  last_name: Nelson
+
+  office: 'State House 68 (Multi County)'
+  district: '68'
+  address: '164 S 800 E'
+  city: Grantsville
+  county: 'Tooele'
+  state: UT
+  zip: '84029'
+  phone: (801)471-2172
+  party: 'Republican'
+  email: mnelson@kmclaw.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Christine F. Watkins'
+  first_name: Christine
+  middle_name: F.
+  last_name: Watkins
+
+  office: 'State House 69 (Multi County)'
+  district: '69'
+  address: '1548 E. 5700 S.'
+  city: Price
+  county: 'Carbon'
+  state: UT
+  zip: '84501'
+  phone: (435)650-1969
+  party: 'Republican'
+  email: cwatkins_68@yahoo.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Tim Glenn'
+  first_name: Tim
+  last_name: Glenn
+
+  office: 'State House 69 (Multi County)'
+  district: '69'
+  address: 'PO Box 16'
+  city: 'Green River'
+  county: 'Emery'
+  state: UT
+  zip: '84525'
+  phone: (801)633-0330
+  party: 'Democratic'
+  email: timothy.aaron.glenn@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Jae Potter'
+  first_name: Jae
+  last_name: Potter
+
+  office: 'State House 69 (Multi County)'
+  district: '69'
+  address: '771 Windsor Circle'
+  city: Price
+  county: 'Carbon'
+  state: UT
+  zip: '84501'
+  phone: (435)650-0436
+  party: 'Republican'
+  email: jae.potter2018@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Danielle Howa Pendergrass'
+  first_name: Danielle
+  middle_name: Howa
+  last_name: Pendergrass
+
+  office: 'State House 69 (Multi County)'
+  district: '69'
+  address: '341 N. 400 E.'
+  city: Price
+  county: 'Carbon'
+  state: UT
+  zip: '84501'
+  phone: (435)650-6796
+  party: 'Democratic'
+  email: ''
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Carl R. Albrecht'
+  first_name: Carl
+  middle_name: R.
+  last_name: Albrecht
+
+  office: 'State House 70 (Multi County)'
+  district: '70'
+  address: '752 Crestview Dr'
+  city: Richfield
+  county: 'Sevier'
+  state: UT
+  zip: '84701'
+  phone: (435)979-6578
+  party: 'Republican'
+  email: cralbrecht52@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Robert Greenberg'
+  first_name: Robert
+  last_name: Greenberg
+
+  office: 'State House 70 (Multi County)'
+  district: '70'
+  address: '453 E. Center St.'
+  city: Moab
+  county: 'Grand'
+  state: UT
+  zip: '84532'
+  phone: (435)259-7013
+  party: 'Democratic'
+  email: bobgmoab@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Ashley Korenblat'
+  first_name: Ashley
+  last_name: Korenblat
+
+  office: 'State House 70 (Multi County)'
+  district: '70'
+  address: '478 Millcreek Dr.'
+  city: Moab
+  county: 'Grand'
+  state: UT
+  zip: '84532'
+  phone: (801)910-3205
+  party: 'Republican'
+  email: ashley@westernspirit.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Mark S. Borowiak'
+  first_name: Mark
+  middle_name: S.
+  last_name: Borowiak
+
+  office: 'State House 71 (Multi County)'
+  district: '71'
+  address: '2641 S Tanner Cir'
+  city: Hurricane
+  county: 'Washington'
+  state: UT
+  zip: '84737'
+  phone: (219)629-3618
+  party: 'Republican'
+  email: markboro1@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Brad Last'
+  first_name: 'Brad'
+  last_name: Last
+
+  office: 'State House 71 (Multi County)'
+  district: '71'
+  address: '1194 S 180 West'
+  city: Hurricane
+  county: 'Washington'
+  state: UT
+  zip: '84737'
+  phone: (435)817-0064
+  party: 'Republican'
+  email: district71@infowest.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Chuck Goode'
+  first_name: Chuck
+  last_name: Goode
+
+  office: 'State House 71 (Multi County)'
+  district: '71'
+  address: 'PO Box 71'
+  city: Toquerville
+  county: 'Washington'
+  state: UT
+  zip: 84774-0071
+  phone: (435)229-8950
+  party: 'Democratic'
+  email: chuckgoode@gmail.com
+  website: chuckgoode.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Barry Evan Short'
+  first_name: 'Barry'
+  middle_name: Evan
+  last_name: Short
+
+  office: 'State House 72'
+  district: '72'
+  address: '396 S Ridge Rd'
+  city: 'Cedar City'
+  county: 'Iron'
+  state: UT
+  zip: '84720'
+  phone: (435)865-7369
+  party: Libertarian
+  email: barryshort@q.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Rex P. Shipp'
+  first_name: Rex
+  middle_name: P
+  last_name: Shipp
+
+  office: 'State House 72'
+  district: '72'
+  address: '749 S St James St'
+  city: 'Cedar City'
+  county: 'Iron'
+  state: UT
+  zip: '84720'
+  phone: (435)590-1073
+  party: 'Republican'
+  email: electrexshipp@gmail.com
+  website: electrexshipp.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Zeno B. Parry'
+  first_name: 'Zeno'
+  middle_name: B.
+  last_name: Parry
+
+  office: 'State House 72'
+  district: '72'
+  address: '2430 W 5550 North'
+  city: 'Cedar City'
+  county: 'Iron'
+  state: UT
+  zip: '84721'
+  phone: (435)867-4404
+  party: 'Democratic'
+  email: zenoparry@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Kelly Stowell'
+  first_name: Kelly
+  last_name: Stowell
+
+  office: 'State House 73 (Multi County)'
+  district: '73'
+  address: '449 W Rawhide Dr'
+  city: Kanab
+  county: 'Kane'
+  state: UT
+  zip: '84741'
+  phone: (435)899-0443
+  party: 'Republican'
+  email: stowell@kanab.net
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Phil Lyman'
+  first_name: Phil
+  last_name: Lyman
+
+  office: 'State House 73 (Multi County)'
+  district: '73'
+  address: '1402 N Blue Mountain Rd'
+  city: Blanding
+  county: 'San Juan'
+  state: UT
+  zip: '84511'
+  phone: (435)459-2800
+  party: 'Republican'
+  email: phil@lymancpa.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Marsha M. Holland'
+  first_name: Marsha
+  middle_name: M
+  last_name: Holland
+
+  office: 'State House 73 (Multi County)'
+  district: '73'
+  address: 'PO Box 132'
+  city: Tropic
+  county: 'Garfield'
+  state: UT
+  zip: '84776'
+  phone: (435)679-8987
+  party: Unaffiliated
+  email: marshaholland2018@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'V. Lowry Snow'
+  first_name: V.
+  middle_name: Lowry
+  last_name: Snow
+
+  office: 'State House 74'
+  district: '74'
+  address: '3655 Rim View Circle'
+  city: 'Santa Clara'
+  county: 'Washington'
+  state: UT
+  zip: '84765'
+  phone: (435)703-3688
+  party: 'Republican'
+  email: vlsnow74@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Daniel Holloway'
+  first_name: Daniel
+  last_name: Holloway
+
+  office: 'State House 74'
+  district: '74'
+  address: '370 E 855 S'
+  city: Ivins
+  county: 'Washington'
+  state: UT
+  zip: '84738'
+  phone: (435)817-3787
+  party: Libertarian
+  email: holloway4utah74@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Walt Brooks'
+  first_name: Walt
+  last_name: Brooks
+
+  office: 'State House 75'
+  district: '75'
+  address: '393 W 300 N'
+  city: 'St George'
+  state: UT
+  zip: '84770'
+  phone: (435)817-3530
+  party: 'Republican'
+  email: walt@waltbrooks.com
+  website: www.waltbrooks.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'MICHAEL A GARDNER'
+  first_name: Michael
+  middle_name: A
+  last_name: Gardner
+
+
+  office: 'State House 75'
+  district: '75'
+  address: 'PO Box 3180'
+
+  city: 'St George'
+  state: UT
+  zip: 84771-3180
+  phone: (801)837-9822
+  party: Libertarian
+  email: trainerboy72@hotmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'KEITH R. KELSCH'
+  first_name: Keith
+  middle_name: R.
+  last_name: Kelsch
+
+
+  office: 'State House 75'
+  district: '75'
+  address: '154 S 100 W'
+
+  city: 'St George'
+  state: UT
+  zip: '84770'
+  phone: (435)619-9350
+  party: 'Independent American'
+  email: keith@genuineoptimist.com
+  website: genuineoptimist.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'JENNIE L. EARL'
+  first_name: Jennie
+  middle_name: L.
+  last_name: Earl
+
+
+  office: 'State School Board 1 (Multi County)'
+  district: '1'
+  address: ''
+
+
+  city: ''
+
+  state: UT
+  zip: ''
+
+  phone: (801)644-0622
+  party: Unaffiliated
+  email: jinnamon@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'TERRYL WARNER'
+  first_name: Terryl
+  #
+  last_name: Warner
+
+
+  office: 'State School Board 1 (Multi County)'
+  district: '1'
+  address: '623 Anderson Ave'
+
+  city: Hyrum
+  state: UT
+  zip: '84319'
+  phone: (435)512-5241
+  party: Unaffiliated
+  email: Terryl.Warner6@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'LEANNE A. RICH'
+  first_name: Leanne
+  middle_name: A.
+  last_name: Rich
+
+
+  office: 'State School Board 2'
+  district: '2'
+  address: '2040 Hampton Green Way'
+
+  city: Ogden
+  state: UT
+  zip: '84403'
+  phone: (801)388-4756
+  party: Unaffiliated
+  email: richleanne@comcast.net
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'SCOTT L. HANSEN'
+  first_name: Scott
+  middle_name: L.
+  last_name: Hansen
+
+
+  office: 'State School Board 2'
+  district: '2'
+  address: '6065 N 2250 E'
+
+  city: Liberty
+  state: UT
+  zip: '84310'
+  phone: (801)648-6476
+  party: Unaffiliated
+  email: scottlhansen@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'CRAIG K. PITTS'
+  first_name: Craig
+  middle_name: K.
+  last_name: Pitts
+
+
+  office: 'State School Board 2'
+  district: '2'
+  address: '677 Cook St'
+
+  city: Ogden
+  state: UT
+  zip: '84404'
+  phone: (385)321-5722
+  party: Unaffiliated
+  email: craigpitts@reagan.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'LINDA B. HANSEN'
+  first_name: Linda
+  middle_name: B.
+  last_name: Hansen
+
+
+  office: 'State School Board 3 (Multi County)'
+  district: '3'
+  address: '5149 Village Wood Drive'
+
+  city: 'West Valley City'
+  state: UT
+  zip: '84120'
+  phone: (801)966-5492
+  party: Unaffiliated
+  email: lbhansen8@yahoo.com
+  website: lindabhansen.weebly.com
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'THOMAS E. NEDREBERG'
+  first_name: Thomas
+  middle_name: E.
+  last_name: Nedreberg
+
+
+  office: 'State School Board 3 (Multi County)'
+  district: '3'
+  address: 'PO Box 291'
+
+  city: Eureka
+  state: UT
+  zip: '84628'
+  phone: (435)433-6634
+  party: Unaffiliated
+  email: thomas.nedreberg@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'LAURA COLLIER BELNAP'
+  first_name: LAURA
+  middle_name: COLLIER
+  last_name: BELNAP
+
+
+  office: 'State School Board 5 (Multi County)'
+  district: '5'
+  address: '845 E. 1500 S.'
+
+  city: Bountiful
+  state: UT
+  zip: '84010'
+  phone: (801)699-7588
+  party: Unaffiliated
+  email: lbelnap@utahonline.org
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'PATRICK D. RILEY'
+  first_name: Patrick
+  middle_name: D.
+  last_name: Riley
+
+
+  office: 'State School Board 5 (Multi County)'
+  district: '5'
+  address: '78 W. 1850 N.'
+
+  city: Centerville
+  state: UT
+  zip: '84014'
+  phone: (801)292-7742
+  party: Unaffiliated
+  email: priley7742@aol.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'BRITTNEY CUMMINS'
+  first_name: Brittney
+  #
+  last_name: Cummins
+
+
+  office: 'State School Board 6'
+  district: '6'
+  address: '4601 Poseidon Dr'
+
+  city: 'West Valley City'
+  state: UT
+  zip: '84120'
+  phone: (801)969-5712
+  party: Unaffiliated
+  email: b4cummins@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'VALERIE VELEZ-HALL'
+  first_name: Valerie
+  #
+  last_name: Velez-Hall
+
+
+  office: 'State School Board 6'
+  district: '6'
+  address: '4797 Mocha Dr'
+
+  city: Taylorsville
+  state: UT
+  zip: '84129'
+  phone: (801)808-0971
+  party: Unaffiliated
+  email: valeriehall217@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'MEGAN RUFF'
+  first_name: Megan
+  last_name: Ruff
+
+
+  office: 'State School Board 6'
+  district: '6'
+  address: '6760 South 2795 West'
+
+  city: 'West Jordan'
+  state: UT
+  zip: '84084'
+  phone: (801)574-4120
+  party: Unaffiliated
+  email: megacruff15@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'KAMI ALVAREZ'
+  first_name: Kami
+  last_name: Alvarez
+
+
+  office: 'State School Board 9'
+  district: '9'
+  address: '1529 S Lake View Terrance Rd'
+
+  city: 'Saratoga Springs'
+  state: UT
+  zip: '84045'
+  phone: (385)215-5979
+  party: Unaffiliated
+  email: electkamialvarez@gmail.com
+
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Kirsten A. Arnold'
+  first_name: Kirsten
+  middle_name: 'A.'
+  last_name: Arnold
+
+  office: 'State School Board 9'
+  district: '9'
+  address: '1002 N Apple Creek Circle'
+  city: Alpine
+  state: UT
+  zip: '84004'
+  phone: (801)558-7483
+  party: Unaffiliated
+  email: Kirsten4board.of.ed@gmail.com
+
+  candidate_status: 'withdrew'
+-
+  name: 'Alexandria Sensinger'
+  first_name: Alexandria
+  last_name: Sensinger
+
+  office: 'State School Board 9'
+  district: '9'
+  address: '125 S Main St'
+  city: Genola
+  state: UT
+  zip: '84655'
+  phone: (801)358-2345
+  party: Unaffiliated
+  email: 'electsensinger@gmail.com'
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Joylin Lincoln'
+  first_name: 'Joylin'
+  last_name: Lincoln
+
+  office: 'State School Board 9'
+  district: '9'
+  address: '958 S Austin Ct.'
+  city: 'Saratoga Springs'
+  state: UT
+  zip: '84045'
+  phone: (801)367-8191
+  party: Unaffiliated
+  email: JoylinLincoln@gmail.com
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Avalie Muhlestein'
+  first_name: Avalie
+  last_name: Muhlestein
+
+  office: 'State School Board 9'
+  district: '9'
+  address: ''
+  city: ''
+  state: UT
+  zip: ''
+  phone: (801)770-2575
+  party: Unaffiliated
+  email: 'info@voteavalie.com'
+
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Cindy Davis'
+  first_name: Cindy
+  last_name: Davis
+
+  office: 'State School Board 9'
+  district: '9'
+  address: '1794 N 940 E'
+  city: 'American Fork'
+  state: UT
+  zip: '84003'
+  phone: '(801) 319-4117'
+  party: 'Unaffiliated'
+  email: 'info@cindydavisforschoolboard.com'
+  website: 'cindydavisforschoolboard.com'
+  candidate_status: 'filed'
+  last_updated: '2018-04-01'
+-
+  name: 'Mark A. Huntsman'
+  first_name: Mark
+  middle_name: A.
+  last_name: Huntsman
+
+  office: 'State School Board 14 (Multi County)'
+  district: '14'
+  address: '435 S 700 E'
+  city: Fillmore
+  state: UT
+  zip: '84631'
+  phone: (435)743-5166
+  party: Unaffiliated
+  email: mhuntsman@sunrise-eng.com
+
+  candidate_status: 'filed'

@@ -55,6 +55,17 @@ comments: true
   <li><a href="state-house-48">State House 48</a></li>
   <li><a href="state-house-49">State House 49</a></li>
   <li><a href="state-house-50">State House 50</a></li>
+  <li><a href="state-house-51">State House 51</a></li>
+  <li><a href="state-house-52">State House 52</a></li>
+  <li><a href="state-house-53-multi-county">State House 53 (Multi County)</a></li>
+  <li><a href="state-house-54-multi-county">State House 54 (Multi County)</a></li>
+  <li><a href="state-house-55-multi-county">State House 55 (Multi County)</a></li>
+  <li><a href="state-house-56">State House 56</a></li>
+  <li><a href="state-house-57">State House 57</a></li>
+  <li><a href="state-house-58-multi-county">State House 58 (Multi County)</a></li>
+  <li><a href="state-house-59">State House 59</a></li>
+  <li><a href="state-house-60">State House 60</a></li>
+  <li><a href="state-house-61">State House 61</a></li>
   <li><a href="state-senate-2">State Senate 2</a></li>
   <li><a href="state-senate-3">State Senate 3</a></li>
   <li><a href="state-senate-4">State Senate 4</a></li>
