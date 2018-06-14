@@ -30,9 +30,8 @@
   election_type: 'primary'
   source: 'https://www.facebook.com/ortonforhouse/'
   links:
-    link:
-      url: 'https://www.deseretnews.com/article/865681089/Jacquelyn-Orton-announces-plan-to-run-for-Chavez-Houcks-seat.html'
-      note: 'Ryan Morgan, “Jacquelyn Orton announces plan to run for Chavez-Houck‘s seat,” <em>Deseret News</em>.'
+    url: 'https://www.deseretnews.com/article/865681089/Jacquelyn-Orton-announces-plan-to-run-for-Chavez-Houcks-seat.html'
+    note: 'Ryan Morgan, “Jacquelyn Orton announces plan to run for Chavez-Houck‘s seat,” <em>Deseret News</em>.'
   last_updated: '2018-06-13'
 -
   id: 'ut0187'
@@ -4886,7 +4885,7 @@
   candidate_status: 'filed'
   last_updated: '2018-05-05'
 -
-  id: ut0462
+  id: 'robert-h-openshaw'
   name: 'Robert H. Openshaw'
   first_name: Robert
   middle_name: H.
@@ -4903,9 +4902,9 @@
   party: Libertarian
   email: robbyopenshaw@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-04'
+  last_updated: '2018-06-13'
 -
-  id: ut0058
+  id: 'andrew-stoddard'
   identifiers:
     -
       identifier: '1415014'
@@ -4939,7 +4938,7 @@
       note: 'Intent to Gather Signatures'
       url: 'https://elections.utah.gov/Media/Default/2018%20Election/Intent%20to%20Gather%20Signatures/Legislative%20Candidates/House%2044%20-%20Andrew%20Stoddard.pdf'
   source: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
-  last_updated: '2018-05-07'
+  last_updated: '2018-06-13'
 -
   id: ut0463
   name: 'John Jackson'
@@ -6207,18 +6206,17 @@
   candidate_status: 'filed'
   last_updated: '2018-04-01'
 -
-  id: ut0529
-  name: 'KIRK D PEARSON'
+  id: 'kirk-d-pearson'
+  name: 'Kirk D. Pearson'
   first_name: Kirk
   middle_name: D
   last_name: Pearson
-
-
+  gender: 'male'
   office: 'State House 68 (Multi County)'
   district: '68'
   address: '7240 N Adobe Lane'
-
   city: 'Lake Point'
+  county: 'Tooele'
   state: UT
   zip: '84074'
   phone: (801)856-1471

@@ -84,9 +84,9 @@ comments: true
 
         <h3>Documents</h3>
 
-        {% if person.documents[0].document[0].url %}
-        {% for document in person.documents[0] %}
-        <p><a href="{{ document[0].url }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>{{ document[0].note }}</strong> ({{ document[0].date }})</a></p>
+        {% if person.documents %}
+        {% for document in person.documents %}
+        <p><a href="{{ document.url }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>{{ document.note }}</strong> ({{ document.date }})</a></p>
         {% endfor %}
         {% endif %}
 
@@ -96,15 +96,17 @@ comments: true
         <h3>Identifiers</h3>
         <p>
         {% if person.identifiers[0].scheme == 'State of Utah Financial Disclosures' %}
-          <a href="https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/{{ person.identifiers[0].identifier }}"><i class="fa fa-external-link-square" aria-hidden="true"></i>  <strong>{{ person.identifiers[0].identifier }}</strong> ({{ person.identifiers[0].scheme }})</a>
+          <a href="https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/{{ person.identifiers.identifier }}"><i class="fa fa-external-link-square" aria-hidden="true"></i>  <strong>{{ person.identifiers.identifier }}</strong> ({{ person.identifiers.scheme }})</a>
         {% endif %}
         </p><br>
 
         <h3>Media</h3>
-        {% if person.media %}
+        {% if person.links %}
+        {% for link in person.links %}
         <ul>
-          <li><a href="{{ person.media.url }}">{{ person.media.title }}</a></li>
+          <li><a href="{{ person.links.url }}">{{ person.links.note }}</a></li>
         </ul>
+        {% endfor %}
         {% endif %}
         <br>
 
