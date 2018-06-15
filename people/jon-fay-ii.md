@@ -1,4 +1,4 @@
 ---
 layout: 2017-candidate
-person: ut0002
+person: jon-fay-ii
 ---

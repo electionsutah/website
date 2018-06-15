@@ -24,13 +24,13 @@ comments: true
       <div class="inner">
         <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }} <i class="fa fa-check-square"></i></a></h1>
         <nav class="site-nav">
-          <a href="{{ site.baseurl }}/about/" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-          <a href="{{ site.baseurl }}/data/" class="{% if page.url == '/data/' %}active{% endif %}">Data</a>
-          <a href="{{ site.baseurl }}/office/" class="{% if page.url == '/office/' %}active{% endif %}">Office</a>
-          <a href="{{ site.baseurl }}/party/" class="{% if page.url == '/party/' %}active{% endif %}">Party</a>
-          <a href="{{ site.baseurl }}/people/" class="{% if page.url == '/people/' %}active{% endif %}">People</a>
-          <a href="{{ site.baseurl }}/places/" class="{% if page.url == '/places/' %}active{% endif %}">Places</a>
-          <a href="{{ site.baseurl }}/resources/" class="{% if page.url == '/resources/' %}active{% endif %}">Resources</a>
+          <a href="{{ site.baseurl }}/about/">About</a>
+          <a href="{{ site.baseurl }}/data/">Data</a>
+          <a href="{{ site.baseurl }}/office/">Office</a>
+          <a href="{{ site.baseurl }}/party/">Party</a>
+          <a href="{{ site.baseurl }}/people/" class="active">People</a>
+          <a href="{{ site.baseurl }}/places/">Places</a>
+          <a href="{{ site.baseurl }}/resources/">Resources</a>
           <a href="https://venmo.com/?txn=pay&audience=private&recipients=todrobbins&note=I%20%E2%9D%A4%EF%B8%8F%20ElectionsUtah.org" class="donate"><i class="fa fa-heart" aria-hidden="true"></i> Donate</a>
           <!-- <form action="{{ site.baseurl }}/search" method="get" id="search-box">
             <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
@@ -45,10 +45,20 @@ comments: true
 
       <article class="post">
         <h2 class="post-header">{% if person.first_name %}{{ person.first_name}}&nbsp;{{ person.last_name}}{% else %}{{ person.name }}{% endif %} {{ person.incumbent | replace: 'yes','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
+
+        <nav class="candidate-nav">
+          <a href="#biography">Biography</a>
+          <a href="#contact">Contact</a>
+          <a href="#documents">Documents</a>
+          <a href="#endorsements">Endorsements</a>
+          <a href="#identifiers">Identifiers</a>
+          <a href="#media">Media</a>
+        </nav>
+
         <aside class="notice"><strong>Last Updated:</strong> {{ person.last_updated }}</aside>
 
-        <h3>Candidate Biography</h3>
-        <p><strong>{{ person.name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %} a {% if person.party %}<strong><a href="{{ site.url }}/party/{{ person.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.party }}</a></strong>{% endif %} candidate for <strong><a href="{{ site.url }}/office/{{ person.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.office }}</a></strong> from <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, <a href="../../places">{{ person.state }}</a></strong> (<a href="{{ person.source }}">Source</a>).</p><br>
+        <h3 id="biography">Biography</h3>
+        <p><strong>{{ person.name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %} {% if person.party == 'Independent American' or person.party == 'Unaffiliated' or person.party == 'United Utah' %}an {% else %} a {% endif %}{% if person.party %}<strong><a href="{{ site.url }}/party/{{ person.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.party }}</a></strong>{% endif %} candidate for <strong><a href="{{ site.url }}/office/{{ person.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.office }}</a></strong> from <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, <a href="../../places">{{ person.state }}</a></strong> (<a href="{{ person.source }}">Source</a>).</p><br>
 
         <hr>
 
@@ -74,7 +84,7 @@ comments: true
 
         </script><br>
 
-        <h3>Contact Info</h3>
+        <h3 id="contact">Contact</h3>
         {% if person.address %}<p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.city | replace: ' ','+' }}+{{ person.state | replace: ' ','+' }}+{{ person.zip | replace: ' ','+' }}">{{ person.address }}, {{ person.city }}, {{ person.state }} {{ person.zip }}</a></p>{% endif %}
 
         {% if person.phone %}<p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone }}</a></p>{% endif %}
@@ -82,7 +92,7 @@ comments: true
         {% if person.email %}<p><strong>Email Address:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>{% endif %}
         <br>
 
-        <h3>Documents</h3>
+        <h3 id="documents">Documents</h3>
 
         {% if person.documents %}
         {% for document in person.documents %}
@@ -93,14 +103,28 @@ comments: true
         {% if person.pledge %}<p><a href="{{ person.pledge }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Pledge of Fair Campaign Practices</strong></a></p>{% endif %}
         <br>
 
-        <h3>Identifiers</h3>
+        <h3 id="endorsements">Endorsements</h3>
+
+        {% if person.endorsements %}
+        {% for endorsement in person.endorsements %}
+        <blockquote cite="{{ endorsement.url }}">
+          <p>“{{ endorsement.note }}”</p>
+          <p><a href="{{ endorsement.url }}">– {{ endorsement.author }} ({{ endorsement.relationship }})</a></p>
+        </blockquote>
+        {% endfor %}
+        {% endif %}
+
+        {% if person.pledge %}<p><a href="{{ person.pledge }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Pledge of Fair Campaign Practices</strong></a></p>{% endif %}
+        <br>
+
+        <h3 id="identifiers">Identifiers</h3>
         <p>
         {% if person.identifiers[0].scheme == 'State of Utah Financial Disclosures' %}
-          <a href="https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/{{ person.identifiers.identifier }}"><i class="fa fa-external-link-square" aria-hidden="true"></i>  <strong>{{ person.identifiers.identifier }}</strong> ({{ person.identifiers.scheme }})</a>
+          <a href="https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/{{ person.identifiers[0].identifier }}"><i class="fa fa-external-link-square" aria-hidden="true"></i>  <strong>{{ person.identifiers[0].identifier }}</strong> ({{ person.identifiers[0].scheme }})</a>
         {% endif %}
         </p><br>
 
-        <h3>Media</h3>
+        <h3 id="media">Media</h3>
         {% if person.links %}
         {% for link in person.links %}
         <ul>

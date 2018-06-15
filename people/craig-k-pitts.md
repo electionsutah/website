@@ -1,4 +1,4 @@
 ---
 layout: 2018-candidate
-person: ut0559
+person: craig-k-pitts
 ---

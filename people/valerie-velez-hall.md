@@ -1,4 +1,4 @@
 ---
 layout: 2018-candidate
-person: ut0562
+person: valerie-velez-hall
 ---

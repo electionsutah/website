@@ -1,4 +1,4 @@
 ---
 layout: 2018-candidate
-person: ut0552
+person: kami-alvarez
 ---

@@ -9,6 +9,7 @@ comments: true
 <ul>
   <li><a href="green">Green Party of Utah</a></li>
   <li><a href="independent-american">Independent American Party</a></li>
+  <li><a href="unaffiliated">Unaffiliated</a></li>
   <li><a href="united-utah">United Utah Party</a></li>
   <li><a href="constitution">Utah Constitution Party</a></li>
   <li><a href="democratic">Utah Democratic Party</a></li>
@@ -57,6 +58,33 @@ comments: true
 </thead>
 <tbody>
 {% for member in independent  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
+    <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+
+
+### [Unaffiliated](unaffiliated)
+
+#### 2018 Primary Candidates
+{% assign united = site.data.2018.primary.candidates | where:'party','Unaffiliated' | sort:'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>City</th>
+  <th>County</th>
+</thead>
+<tbody>
+{% for member in united  %}
   <tr>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>

@@ -49,6 +49,17 @@ main {
     }
 }
 
+.candidate-nav {
+    margin-bottom: 2rem;
+    > a {
+        font-weight: bold;
+        color: $color-blue;
+        + a {
+            margin-left: 1rem;
+        }
+    }
+  }
+
 .hero {
   width: 100%;
 }

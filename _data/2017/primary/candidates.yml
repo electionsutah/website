@@ -1,47 +1,35 @@
 -
-    id: ut0001
+    id: jon-fay-ii
     state: UT
     county: 'Salt Lake'
     city: Alta
     body: Mayor
     name: 'Jon Fay II'
     gender: 'male'
-    address: ''
-    phone: ''
-    email: ''
-    party: ''
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2018-06-14'
 -
-    id: ut0002
+    id: harris-sondak
     state: UT
     county: 'Salt Lake'
     city: Alta
     body: Mayor
     name: 'Harris Sondak'
     gender: 'male'
-    address: ''
-    phone: ''
-    email: ''
-    party: ''
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2018-06-14'
 -
-    id: ut0003
+    id: margaret-bourke
     state: UT
     county: 'Salt Lake'
     city: Alta
     body: 'Council at Large'
     name: 'Margaret Bourke'
     gender: 'female'
-    address: ''
-    phone: ''
-    email: ''
-    party: ''
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'

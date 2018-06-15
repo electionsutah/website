@@ -1,4 +1,4 @@
 ---
 layout: 2018-candidate
-person: ut0566
+person: michael-a-gardner
 ---

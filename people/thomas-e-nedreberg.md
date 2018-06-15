@@ -1,4 +1,4 @@
 ---
 layout: 2018-candidate
-person: ut0550
+person: thomas-e-nedreberg
 ---

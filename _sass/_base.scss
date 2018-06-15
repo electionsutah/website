@@ -43,8 +43,10 @@ h5 {
 }
 
 blockquote {
+    margin: 1rem 0 2rem 0;
+    background: #eee;
     font-style: italic;
-    padding-left: 1rem;
+    padding: .6rem 2rem;
     border-left: 3px solid $border-color;
 }
 img {

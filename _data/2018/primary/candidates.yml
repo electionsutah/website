@@ -4926,6 +4926,7 @@
   party: 'Democratic'
   email: 'voteandrewstoddard@gmail.com'
   facebook: 'https://www.facebook.com/voteandrewstoddard/'
+  twitter: 'https://twitter.com/VoteStoddard'
   website: 'https://www.voteandrewstoddard.com/'
   candidate_status: 'filed'
   documents:
@@ -4938,7 +4939,7 @@
       note: 'Intent to Gather Signatures'
       url: 'https://elections.utah.gov/Media/Default/2018%20Election/Intent%20to%20Gather%20Signatures/Legislative%20Candidates/House%2044%20-%20Andrew%20Stoddard.pdf'
   source: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
-  last_updated: '2018-06-13'
+  last_updated: '2018-06-14'
 -
   id: ut0463
   name: 'John Jackson'
@@ -6601,7 +6602,7 @@
   candidate_status: 'filed'
   last_updated: '2018-05-20'
 -
-  id: ut0550
+  id: 'michael-a-gardner'
   name: 'Michael A. Gardner'
   first_name: Michael
   middle_name: A.
@@ -6618,9 +6619,9 @@
   party: Libertarian
   email: trainerboy72@hotmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0551
+  id: 'keith-r-kelsch'
   name: 'Keith R. Kelsch'
   first_name: Keith
   middle_name: R.
@@ -6638,9 +6639,9 @@
   email: keith@genuineoptimist.com
   website: 'https://genuineoptimist.com/'
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0552
+  id: 'jennie-l-earl'
   name: 'Jennie L. Earl'
   first_name: Jennie
   middle_name: L.
@@ -6653,9 +6654,9 @@
   party: Unaffiliated
   email: jinnamon@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0553
+  id: 'terryl-warner'
   name: 'Terryl Warner'
   first_name: Terryl
   last_name: Warner
@@ -6672,9 +6673,9 @@
   party: Unaffiliated
   email: terryl.warner6@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0554
+  id: 'leanne-a-rich'
   name: 'Leanne A. Rich'
   first_name: Leanne
   middle_name: A.
@@ -6691,9 +6692,9 @@
   party: Unaffiliated
   email: richleanne@comcast.net
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0555
+  id: 'scott-l-hansen'
   name: 'Scott L. Hansen'
   first_name: Scott
   middle_name: L.
@@ -6710,9 +6711,9 @@
   party: Unaffiliated
   email: scottlhansen@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0556
+  id: 'craig-k-pitts'
   name: 'Craig K. Pitts'
   first_name: Craig
   middle_name: K.
@@ -6729,9 +6730,9 @@
   party: Unaffiliated
   email: craigpitts@reagan.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0557
+  id: 'linda-b-hansen'
   name: 'Linda B. Hansen'
   first_name: Linda
   middle_name: B.
@@ -6749,9 +6750,9 @@
   email: lbhansen8@yahoo.com
   website: 'https://lindabhansen.weebly.com/'
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0558
+  id: 'thomas-e-nedreberg'
   name: 'Thomas E. Nedreberg'
   first_name: Thomas
   middle_name: E.
@@ -6768,9 +6769,9 @@
   party: Unaffiliated
   email: thomas.nedreberg@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0559
+  id: 'laura-collier-belnap'
   name: 'Laura Collier Belnap'
   first_name: Laura
   middle_name: Collier
@@ -6787,9 +6788,9 @@
   party: Unaffiliated
   email: lbelnap@utahonline.org
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0560
+  id: 'patrick-d-riley'
   name: 'Patrick D. Riley'
   first_name: Patrick
   middle_name: D.
@@ -6806,10 +6807,10 @@
   party: Unaffiliated
   email: priley7742@aol.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0561
-  name: 'BRITTNEY CUMMINS'
+  id: 'brittney-cummins'
+  name: 'Brittney Cummins'
   first_name: Brittney
   last_name: Cummins
   gender: 'female'
@@ -6824,9 +6825,9 @@
   party: Unaffiliated
   email: b4cummins@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0562
+  id: 'valerie-velez-hall'
   name: 'Valerie Velez-Hall'
   first_name: Valerie
   last_name: Velez-Hall
@@ -6842,9 +6843,9 @@
   party: Unaffiliated
   email: valeriehall217@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-14'
 -
-  id: ut0563
+  id: 'megan-ruff'
   name: 'Megan Ruff'
   first_name: Megan
   last_name: Ruff
@@ -6860,9 +6861,9 @@
   party: Unaffiliated
   email: megacruff15@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-19'
+  last_updated: '2018-06-14'
 -
-  id: ut0564
+  id: 'kami-alvarez'
   name: 'Kami Alvarez'
   first_name: Kami
   last_name: Alvarez
@@ -6878,9 +6879,9 @@
   party: Unaffiliated
   email: electkamialvarez@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-19'
+  last_updated: '2018-06-14'
 -
-  id: ut0565
+  id: 'kirsten-a-arnold'
   name: 'Kirsten A. Arnold'
   first_name: Kirsten
   middle_name: 'A.'
@@ -6897,9 +6898,9 @@
   party: Unaffiliated
   email: kirsten4board.of.ed@gmail.com
   candidate_status: 'withdrew'
-  last_updated: '2018-05-19'
+  last_updated: '2018-06-14'
 -
-  id: ut0566
+  id: 'alexandria-sensinger'
   name: 'Alexandria Sensinger'
   first_name: Alexandria
   last_name: Sensinger
@@ -6911,13 +6912,15 @@
   county: 'Utah'
   state: UT
   zip: '84655'
-  phone: (801) 358-2345
+  latitude: '39.9947023'
+  longitude: '-111.8449341'
+  phone: '(801) 358-2345'
   party: Unaffiliated
   email: 'electsensinger@gmail.com'
   candidate_status: 'filed'
-  last_updated: '2018-05-19'
+  last_updated: '2018-06-14'
 -
-  id: ut0567
+  id: 'joylin-lincoln'
   name: 'Joylin Lincoln'
   first_name: 'Joylin'
   last_name: Lincoln
@@ -6933,9 +6936,9 @@
   party: Unaffiliated
   email: joylinlincoln@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-05-19'
+  last_updated: '2018-06-14'
 -
-  id: ut0568
+  id: 'avalie-muhlestein'
   name: 'Avalie Muhlestein'
   first_name: Avalie
   last_name: Muhlestein
@@ -6946,11 +6949,18 @@
   phone: (801) 770-2575
   party: Unaffiliated
   email: 'info@voteavalie.com'
+  facebook: 'https://www.facebook.com/voteavalie/'
+  twitter: 'https://twitter.com/voteavalie'
   website: 'http://www.voteavalie.com/'
+  links:
+    - note: 'Avalie Muhlestein | 2018 Primary Election Candidate Guide | heraldextra.com'
+      url: 'https://www.heraldextra.com/special-section/candidates/2018/avalie-muhlestein/article_4ab38e20-6dbf-11e8-a236-13ca4cfaffe0.html'
+    - note: 'Two state school board debates set for this week | utahpolicy.com'
+      url: 'http://utahpolicy.com/index.php/features/today-at-utah-policy/16862-two-state-school-board-debates-set-for-this-week'
   candidate_status: 'filed'
-  last_updated: '2018-05-19'
+  last_updated: '2018-06-14'
 -
-  id: ut0569
+  id: 'cindy-davis'
   name: 'Cindy Davis'
   first_name: Cindy
   last_name: Davis
@@ -6962,14 +6972,58 @@
   county: 'Utah'
   state: UT
   zip: '84003'
+  latitude: '40.411444'
+  longitude: '-111.774298'
   phone: '(801) 319-4117'
   party: 'Unaffiliated'
   email: 'info@cindydavisforschoolboard.com'
+  facebook: 'https://www.facebook.com/CindyDavisforSchoolBoard/'
   website: 'http://cindydavisforschoolboard.com/'
+  endorsements:
+    - note: 'Cindy is passionate about education and children. She will do great things on the Utah state school board.'
+      author: 'Angi LeBaron Cummings'
+      relationship: 'Teacher Shelley Elementary School'
+      url: 'http://cindydavisforschoolboard.com/#endorse'
+
+    - note: 'Hands Down. Cindy Davis. Brilliant mind. Fierce defender of kids and Deeper Learning..'
+      author: 'Denise Wetmore Lund'
+      relationship: 'Curriculum Specialist'
+      url: 'http://cindydavisforschoolboard.com/#endorse'
+
+    - note: 'I am so impressed with Cindy’s understanding of Utah’s education system and her willingness to listen to all sides.'
+      author: 'Jami Evans Edmund'
+      relationship: 'Parent'
+      url: 'http://cindydavisforschoolboard.com/#endorse'
+
+    - note: 'Yes, YES, a thousand votes yes!!'
+      author: 'Jennifer Morello'
+      relationship: 'Parent'
+      url: 'http://cindydavisforschoolboard.com/#endorse'
+
+    - note: 'She truly walks the walk when it comes to supporting our schools and our children. She is running for state school board in District 9, covering most of the Alpine School District area. She will be a fantastic advocate and I encourage you to vote for her in June and November.'
+      author: 'Kara Rasband Edwards'
+      relationship: 'Parent'
+      url: 'http://cindydavisforschoolboard.com/#endorse'
+
+    - note: 'I remember that first day at Oak Canyon when, as new colleagues, I met you. You were amazing then and have maintained your enthusiasm and expertise. I hope the voters will help you serve all the children in the State of Utah as you seek this opportunity.'
+      author: 'Karl Gadd'
+      relationship: 'Math Teacher'
+      url: 'http://cindydavisforschoolboard.com/#endorse'
+
+    - note: 'So excited to cast my vote for Cindy Davis for state school board! She embodies everything I value in a candidate: experience, poise, understanding of issues and perspectives, genuine concern, honesty, and on and on... Cindy is the kind of candidate that you hope with all your heart will run (for anything), and then it feels like Christmas morning when she does!'
+      author: 'Kate Ross'
+      relationship: 'Lindon Elementary School Principal'
+      url: 'http://cindydavisforschoolboard.com/#endorse'
+
+    - note: 'I cannot think of anyone more qualified to be on the state school board. Every once in a while we get a chance to vote for someone who we really believe in, who is a true leader, who is good to the core, and brilliant- well, that is Cindy Davis. I support her whole-heartedly… she will make all the difference for our children.'
+      author: 'Ryan Burke'
+      relationship: 'District Special Education Director'
+      url: 'http://cindydavisforschoolboard.com/#endorse'
+
   candidate_status: 'filed'
-  last_updated: '2018-05-19'
+  last_updated: '2018-06-14'
 -
-  id: ut0570
+  id: 'mark-a-huntsman'
   name: 'Mark A. Huntsman'
   first_name: Mark
   middle_name: A.
@@ -6986,4 +7040,4 @@
   party: Unaffiliated
   email: mhuntsman@sunrise-eng.com
   candidate_status: 'filed'
-  last_updated: '2018-05-19'
+  last_updated: '2018-06-14'

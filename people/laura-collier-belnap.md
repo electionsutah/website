@@ -1,4 +1,4 @@
 ---
 layout: 2018-candidate
-person: ut0568
+person: laura-collier-belnap
 ---
