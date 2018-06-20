@@ -1,6 +1,6 @@
 ---
 -
-  id: 'ut0175'
+  id: 'jen-schwartz'
   state: 'UT'
   county: 'Salt Lake'
   city: 'South Jordan'
@@ -14,9 +14,9 @@
   election_type: 'primary'
   source: 'http://www.voteforjenschwartz.com/'
   candidate_status: 'withdrew'
-  last_updated: '2017-06-21'
+  last_updated: '2018-06-15'
 -
-  id: 'ut0176'
+  id: 'jacquelyn-orton'
   state: 'UT'
   county: 'Salt Lake'
   city: 'Salt Lake City'
@@ -30,11 +30,11 @@
   election_type: 'primary'
   source: 'https://www.facebook.com/ortonforhouse/'
   links:
-    url: 'https://www.deseretnews.com/article/865681089/Jacquelyn-Orton-announces-plan-to-run-for-Chavez-Houcks-seat.html'
-    note: 'Ryan Morgan, “Jacquelyn Orton announces plan to run for Chavez-Houck‘s seat,” <em>Deseret News</em>.'
-  last_updated: '2018-06-13'
+    - url: 'https://www.deseretnews.com/article/865681089/Jacquelyn-Orton-announces-plan-to-run-for-Chavez-Houcks-seat.html'
+      note: 'Ryan Morgan, “Jacquelyn Orton announces plan to run for Chavez-Houck‘s seat,” <em>Deseret News</em>.'
+  last_updated: '2018-06-15'
 -
-  id: 'ut0187'
+  id: 'adam-davis'
   office: 'U.S. House 1'
   name: 'Adam Davis'
   first_name: 'Adam'
@@ -55,9 +55,9 @@
   election_type: 'primary'
   source: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/US%20House%20Candidates/US%20House%201%20-%20Adam%20Davis.pdf'
   candidate_status: 'filed'
-  last_updated: '2018-06-13'
+  last_updated: '2018-06-15'
 -
-  id: ut0207
+  id: 'stoney-fonua'
   name: 'Stoney Fonua'
   first_name: 'Stoney'
   last_name: Fonua
@@ -68,14 +68,16 @@
   county: Salt Lake
   state: UT
   zip: '84096'
+  latitude: '40.509114'
+  longitude: '-112.0250402'
   phone: (385) 313-1116
   party: 'Republican'
   email: 'g.o.d.s.pmeuinc@gmail.com'
   facebook: 'https://www.facebook.com/SignofthePeaceMakers/'
   candidate_status: 'filed'
-  last_updated: '2018-05-20'
+  last_updated: '2018-06-15'
 -
-  id: ut0208
+  id: 'jeremy-lewis-friedbaum'
   name: 'Jeremy Lewis Friedbaum'
   first_name: Jeremy
   middle_name: Lewis
@@ -91,7 +93,7 @@
   party: 'Republican'
   email: jeremyfriedbaum@gmail.com
   candidate_status: 'filed'
-  last_updated: '2018-04-01'
+  last_updated: '2018-06-15'
 -
   id: ut0209
   name: 'Alicia Colvin'
