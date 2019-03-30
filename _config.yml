@@ -31,7 +31,7 @@ permalink: pretty
 
 # Third-party services
 # just leave someone empty to disable it
-google_analytics:
+google_analytics: 'UA-137382505-1'
 disqus_shortname: utah-elections-project
 comments: true
 plugins:
