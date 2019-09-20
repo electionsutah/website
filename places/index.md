@@ -738,7 +738,7 @@ _Coming soon..._
     <td><a href="weber">Weber</a></td>
   </tr>
   <tr>
-    <td><a href=box-elder/plymouth">Plymouth</a></td>
+    <td><a href="box-elder/plymouth">Plymouth</a></td>
     <td><a href="box-elder">Box Elder</a></td>
   </tr>
   <tr>
@@ -807,99 +807,99 @@ _Coming soon..._
   </tr>
   <tr>
     <td><a href="washington/st-george">St. George*</a></td>
-    <td><a href="washington">Washington</td>
+    <td><a href="washington">Washington</a></td>
   </tr>
   <tr>
     <td><a href="utah/salem">Salem</a></td>
-    <td><a href="utah">Utah</td>
+    <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
     <td><a href="sevier/salina">Salina</a></td>
-    <td><a href="sevier">Sevier</td>
+    <td><a href="sevier">Sevier</a></td>
   </tr>
   <tr>
     <td><a href="salt-lake/salt-lake-city">Salt Lake City*</a></td>
-    <td><a href="salt-lake">Salt Lake</td>
+    <td><a href="salt-lake">Salt Lake</a></td>
   </tr>
   <tr>
     <td><a href="salt-lake/sandy">Sandy</a></td>
-    <td><a href="salt-lake">Salt Lake</td>
+    <td><a href="salt-lake">Salt Lake</a></td>
   </tr>
   <tr>
     <td><a href="washington/santa-clara">Santa Clara</a></td>
-    <td><a href="washington">Washington</td>
+    <td><a href="washington">Washington</a></td>
   </tr>
   <tr>
     <td><a href="utah/santaquin">Santaquin</a></td>
-    <td><a href="utah">Utah</td>
+    <td><a href="utah">Utah</a></a></td>
   </tr>
   <tr>
     <td><a href="utah/saratoga-spring">Saratoga Springs</a></td>
-    <td><a href="utah">Utah</td>
+    <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
     <td><a href="millard/scipio">Scipio</a></td>
-    <td><a href="millard">Millard</td>
+    <td><a href="millard">Millard</a></td>
   </tr>
   <tr>
     <td><a href="carbon/scofield">Scofield</a></td>
-    <td><a href="carbon">Carbon</td>
+    <td><a href="carbon">Carbon</a></td>
   </tr>
   <tr>
     <td><a href="sevier/sigurd">Sigurd</a></td>
-    <td><a href="sevier">Sevier</td>
+    <td><a href="sevier">Sevier</a></td>
   </tr>
   <tr>
     <td><a href="cache/smithfield">Smithfield</a></td>
-    <td><a href="cache">Cache</td>
+    <td><a href="cache">Cache</a></td>
   </tr>
   <tr>
     <td><a href="box-elder/snowville">Snowville</a></td>
-    <td><a href="box-elder">Box Elder</td>
+    <td><a href="box-elder">Box Elder</a></td>
   </tr>
   <tr>
     <td><a href="salt-lake/south-jordan">South Jordan</a></td>
-    <td><a href="salt-lake">Salt Lake</td>
+    <td><a href="salt-lake">Salt Lake</a></td>
   </tr>
   <tr>
     <td><a href="weber/south-ogden">South Ogden</a></td>
-    <td><a href="weber">Weber</td>
+    <td><a href="weber">Weber</a></td>
   </tr>
   <tr>
     <td><a href="salt-lake/south-salt-lake">South Salt Lake</a></td>
-    <td><a href="salt-lake">Salt Lake</td>
+    <td><a href="salt-lake">Salt Lake</a></td>
   </tr>
   <tr>
     <td><a href="davis/south-weber">South Weber</a></td>
-    <td><a href="davis">Davis</td>
+    <td><a href="davis">Davis</a></td>
   </tr>
   <tr>
     <td><a href="utah/spanish-fork">Spanish Fork</a></td>
-    <td><a href="utah">Utah</td>
+    <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
     <td><a href="sanpete/spring-city">Spring City</a></td>
-    <td><a href="sanpete">Sanpete</td>
+    <td><a href="sanpete">Sanpete</a></td>
   </tr>
   <tr>
     <td><a href="washington/springdale">Springdale</a></td>
-    <td><a href="washington">Washington</td>
+    <td><a href="washington">Washington</a></td>
   </tr>
   <tr>
     <td><a href="utah/springville">Springville</a></td>
-    <td><a href="utah">Utah</td>
+    <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
     <td><a href="sanpete/sterling">Sterling</a></td>
-    <td><a href="sanpete">Sanpete</td>
+    <td><a href="sanpete">Sanpete</a></td>
   </tr>
   <tr>
     <td><a href="tooele/stockton">Stockton</a></td>
-    <td><a href="tooele">Tooele</td>
+    <td><a href="tooele">Tooele</a></td>
   </tr>
   <tr>
     <td><a href="davis/sunset">Sunset</a></td>
-    <td><a href="davis">Davis</td>
+    <td><a href="davis">Davis</a></td>
   </tr>
   <tr>
     <td><a href="davis/syracuse">Syracuse</a></td>
