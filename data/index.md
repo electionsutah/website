@@ -5,7 +5,11 @@ permalink: /data/
 comments: true
 ---
 
-### 2018 Elections
+### 2019 Municipal Elections
+
+{% include 2019-municipal-elections.html %}
+
+### 2018 General Elections
 
 {% include 2018-elections.html %}
 

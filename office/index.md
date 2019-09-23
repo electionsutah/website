@@ -5,6 +5,10 @@ permalink: /office/
 comments: true
 ---
 
+### 2019 Municipal Elections
+
+{% include 2019-municipal-elections.html %}
+
 <div class="columns">
 <ul>
   <li><a href="state-house-1-multi-county">State House 1 (Multi County)</a></li>

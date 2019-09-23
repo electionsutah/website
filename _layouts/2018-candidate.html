@@ -61,11 +61,6 @@ comments: true
         <h3 id="biography">Biography</h3>
         <p><strong>{{ person.name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %} {% if person.party == 'Independent American' or person.party == 'Unaffiliated' or person.party == 'United Utah' %}an {% else %} a {% endif %}{% if person.party %}<strong><a href="{{ site.url }}/party/{{ person.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.party }}</a></strong>{% endif %} candidate for <strong><a href="{{ site.url }}/office/{{ person.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.office }}</a></strong> from <strong><a href="../../places/{{ person.county | downcase | replace: ' ','-' }}/{{ person.city | downcase | replace: ' ','-' }}">{{ person.city }}</a>, <a href="../../places/{{ person.county | downcase | replace: ' ','-' }}">{{ person.county }}</a>, <a href="../../places">{{ person.state }}</a></strong> (<a href="{{ person.source }}">Source</a>).</p><br>
 
-        <hr>
-
-        <p>{% if person.facebook %}<a href="{{ person.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.instagram %}<a href="{{ person.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %} {% if person.twitter %}<a href="{{ person.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i> <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.website %}<a href="{{ person.website }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %} {% if person.youtube %}<a href="{{ person.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i> <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
-        </p><br>
-
         <div id="map"></div>
         <script>
 
@@ -86,6 +81,16 @@ comments: true
         </script><br>
 
         <h3 id="contact">Contact</h3>
+        <p>{% if person.facebook %}<a href="{{ person.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.instagram %}<a href="{{ person.instagram }}"><i
+              class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %}
+          {% if person.twitter %}<a href="{{ person.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.website %}<a href="{{ person.website }}"><i
+              class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %}
+          {% if person.youtube %}<a href="{{ person.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i>
+            <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
+        </p>
+
         {% if person.address %}<p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.city | replace: ' ','+' }}+{{ person.state | replace: ' ','+' }}+{{ person.zip | replace: ' ','+' }}">{{ person.address }}, {{ person.city }}, {{ person.state }} {{ person.zip }}</a></p>{% endif %}
 
         {% if person.phone %}<p><strong>Phone Number:</strong> <a href="tel:1{{ person.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.phone }}</a></p>{% endif %}

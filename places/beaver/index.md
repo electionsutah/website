@@ -1,20 +1,31 @@
 ---
 layout: page
-title: People
-permalink: /people/
+title: Beaver County
+permalink: /places/beaver/
 comments: true
 ---
 
-### 2019 Municipal Elections
+{% assign place = site.data.places.beaver_county %}
 
-{% include 2019-municipal-elections.html %}
+<section class="info">
+  <p><a href="{{ place.wikipedia_url }}">From Wikipedia:</a></p>
+  <p class="citation">{{ place.wikipedia_snippet }}</p>
+</section>
+
+<div class="columns">
+<ul>
+  <li><a href="beaver">Beaver</a></li>
+  <li><a href="milford">Milford</a></li>
+  <li><a href="minersville">Minersville</a></li>
+</ul>
+</div>
 
 ### 2018 Election
 
 {% include 2018-elections.html %}
 
-#### Primary Candidates
-{% assign person = site.data.2018.primary.candidates | sort: 'last_name' %}
+#### 2018 Primary Candidates
+{% assign county = site.data.2018.primary.candidates | where:'county','Beaver' | sort: 'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
@@ -24,36 +35,13 @@ comments: true
   <th>County</th>
 </thead>
 <tbody>
-{% for member in person  %}
+{% for member in county  %}
   <tr>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
     <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
-  </tr>
-{% endfor %}
-</tbody>
-</table>
-
-<br><br>
-### 2017 Municipal Election
-#### Primary Candidates
-{% assign person = site.data.2017.primary.candidates %}
-<table>
-<thead>
-  <th>Name</th>
-  <th>Candidate for</th>
-  <th>City</th>
-  <th>County</th>
-</thead>
-<tbody>
-{% for member in person  %}
-  <tr>
-    <td><a href="{{member.id}}">{{member.name}}</a></td>
-    <td>{{ member.body }}</td>
-    <td><a href="../places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
-    <td><a href="../places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
   </tr>
 {% endfor %}
 </tbody>

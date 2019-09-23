@@ -196,6 +196,10 @@ th:hover {
   cursor: pointer;
 }
 
+details:hover {
+  cursor: pointer;
+}
+
 /* MEDIA QUERIES! */
 
 @media screen and (max-width: 48rem) {

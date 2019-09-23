@@ -5,6 +5,10 @@ permalink: /party/
 comments: true
 ---
 
+### 2019 Municipal Elections
+
+{% include 2019-municipal-elections.html %}
+
 <div class="columns">
 <ul>
   <li><a href="green">Green Party of Utah</a></li>

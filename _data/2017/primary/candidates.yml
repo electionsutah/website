@@ -35,7 +35,7 @@
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2017-06-09'
 -
-    id: ut0004
+    id: cliff-curry
     state: UT
     county: 'Salt Lake'
     city: Alta
@@ -49,9 +49,9 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2019-09-22'
 -
-    id: ut0005
+    id: derk-powell-timothy
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
@@ -66,14 +66,16 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2019-09-22'
 -
-    id: ut0006
+    id: wendy-w-aston
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
     body: 'Council at Large'
     name: 'Wendy W. Aston'
+    first_name: 'Wendy W.'
+    last_name: 'Aston'
     gender: 'female'
     address: ''
     phone: ''
@@ -82,7 +84,7 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2019-09-22'
 -
     id: ut0007
     state: UT

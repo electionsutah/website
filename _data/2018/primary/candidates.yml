@@ -3017,6 +3017,8 @@
   office: 'State House 18'
   district: '18'
   address: '759 E. 850 S.'
+  latitude: "40.9084674"
+  longitude: '-111.8669697'
   city: Centerville
   county: 'Davis'
   state: UT
