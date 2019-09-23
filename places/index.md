@@ -11,18 +11,14 @@ permalink: /places/
   <p class="citation">{{ place.wikipedia_snippet }}</p>
 </section>
 
-### 2018 Election
-
-<!-- {% include 2018-elections.html %}
-
-_Coming soon..._
-
-### 2017 Municipal Election -->
+<p><i class="fa fa-star"></i> represents a county seat.</p>
 
 <table>
 <thead>
-  <th>City</th>
-  <th>County</th>
+  <tr>
+    <th>City</th>
+    <th>County</th>
+  </tr>
 </thead>
 <tbody>
   <tr>
@@ -74,7 +70,7 @@ _Coming soon..._
     <td><a href="box-elder">Box Elder</a></td>
   </tr>
   <tr>
-    <td><a href="beaver/beaver">Beaver*</a></td>
+    <td><a href="beaver/beaver">Beaver <i class="fa fa-star"></i></a></td>
     <td><a href="beaver">Beaver</a></td>
   </tr>
   <tr>
@@ -106,7 +102,7 @@ _Coming soon..._
     <td><a href="iron">Iron</a></td>
   </tr>
   <tr>
-    <td><a href="box-elder/brigham-city">Brigham City*</a></td>
+    <td><a href="box-elder/brigham-city">Brigham City <i class="fa fa-star"></i></a></td>
     <td><a href="box-elder">Box Elder</a></td>
   </tr>
   <tr>
@@ -118,7 +114,7 @@ _Coming soon..._
     <td><a href="garfield">Garfield</a></td>
   </tr>
   <tr>
-    <td><a href="emery/castle-dale">Castle Dale*</a></td>
+    <td><a href="emery/castle-dale">Castle Dale <i class="fa fa-star"></i></a></td>
     <td><a href="emery">Emery</a></td>
   </tr>
   <tr>
@@ -178,7 +174,7 @@ _Coming soon..._
     <td><a href="davis">Davis</a></td>
   </tr>
   <tr>
-    <td><a href="summit/coalville">Coalville*</a></td>
+    <td><a href="summit/coalville">Coalville <i class="fa fa-star"></i></a></td>
     <td><a href="summit">Summit</a></td>
   </tr>
   <tr>
@@ -210,7 +206,7 @@ _Coming soon..._
     <td><a href="salt-lake">Salt Lake</a> / <a href="utah">Utah</a></td>
   </tr>
   <tr>
-    <td><a href="duchesne/duchesne">Duchesne*</a></td>
+    <td><a href="duchesne/duchesne">Duchesne <i class="fa fa-star"></i></a></td>
     <td><a href="duchesne">Duchesne</a></td>
   </tr>
   <tr>
@@ -274,7 +270,7 @@ _Coming soon..._
     <td><a href="sanpete">Sanpete</a></td>
   </tr>
   <tr>
-    <td><a href="davis/farmington">Farmington*</a></td>
+    <td><a href="davis/farmington">Farmington <i class="fa fa-star"></i></a></td>
     <td><a href="davis">Davis</a></td>
   </tr>
   <tr>
@@ -294,7 +290,7 @@ _Coming soon..._
     <td><a href="box-elder">Box Elder</a></td>
   </tr>
   <tr>
-    <td><a href="millard/fillmore">Fillmore*</a></td>
+    <td><a href="millard/fillmore">Fillmore <i class="fa fa-star"></i></a></td>
     <td><a href="millard">Millard</a></td>
   </tr>
   <tr>
@@ -358,7 +354,7 @@ _Coming soon..._
     <td><a href="garfield">Garfield</a></td>
   </tr>
   <tr>
-    <td><a href="wasatch/heber-city">Heber City*</a></td>
+    <td><a href="wasatch/heber-city">Heber City <i class="fa fa-star"></i></a></td>
     <td><a href="wasatch">Wasatch</a></td>
   </tr>
   <tr>
@@ -450,7 +446,7 @@ _Coming soon..._
     <td><a href="sevier">Sevier</a></td>
   </tr>
   <tr>
-    <td><a href="piute/junction">Junction*</a></td>
+    <td><a href="piute/junction">Junction <i class="fa fa-star"></i></a></td>
     <td><a href="piute">Piute</a></td>
   </tr>
   <tr>
@@ -458,7 +454,7 @@ _Coming soon..._
     <td><a href="summit">Summit</a></td>
   </tr>
   <tr>
-    <td><a href="kane/kanab">Kanab*</a></td>
+    <td><a href="kane/kanab">Kanab <i class="fa fa-star"></i></a></td>
     <td><a href="kane">Kane</a></td>
   </tr>
   <tr>
@@ -522,11 +518,11 @@ _Coming soon..._
     <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
-    <td><a href="loa/">Loa*</a></td>
+    <td><a href="loa/">Loa <i class="fa fa-star"></i></a></td>
     <td><a href="wayne">Wayne</a></td>
   </tr>
   <tr>
-    <td><a href="cache/logan">Logan*</a></td>
+    <td><a href="cache/logan">Logan <i class="fa fa-star"></i></a></td>
     <td><a href="cache">Cache</a></td>
   </tr>
   <tr>
@@ -542,11 +538,11 @@ _Coming soon..._
     <td><a href="salt-lake">Salt Lake</a></td>
   </tr>
   <tr>
-    <td><a href="daggett/manila">Manila*</a></td>
+    <td><a href="daggett/manila">Manila <i class="fa fa-star"></i></a></td>
     <td><a href="daggett">Daggett</a></td>
   </tr>
   <tr>
-    <td><a href="sanpete/manti">Manti*</a></td>
+    <td><a href="sanpete/manti">Manti <i class="fa fa-star"></i></a></td>
     <td><a href="sanpete">Sanpete</a></td>
   </tr>
   <tr>
@@ -602,7 +598,7 @@ _Coming soon..._
     <td><a href="beaver">Beaver</a></td>
   </tr>
   <tr>
-    <td><a href="grand/moab">Moab*</a></td>
+    <td><a href="grand/moab">Moab <i class="fa fa-star"></i></a></td>
     <td><a href="grand">Grand</a></td>
   </tr>
   <tr>
@@ -614,11 +610,11 @@ _Coming soon..._
     <td><a href="sevier">Sevier</a></td>
   </tr>
   <tr>
-    <td><a href="san-juan/monticello">Monticello*</a></td>
+    <td><a href="san-juan/monticello">Monticello <i class="fa fa-star"></i></a></td>
     <td><a href="san-juan">San Juan</a></td>
   </tr>
   <tr>
-    <td><a href="morgan/morgan">Morgan*</a></td>
+    <td><a href="morgan/morgan">Morgan <i class="fa fa-star"></i></a></td>
     <td><a href="morgan">Morgan</a></td>
   </tr>
   <tr>
@@ -642,7 +638,7 @@ _Coming soon..._
     <td><a href="uintah">Uintah</a></td>
   </tr>
   <tr>
-    <td><a href="juab/nephi">Nephi*</a></td>
+    <td><a href="juab/nephi">Nephi <i class="fa fa-star"></i></a></td>
     <td><a href="juab">Juab</a></td>
   </tr>
   <tr>
@@ -678,7 +674,7 @@ _Coming soon..._
     <td><a href="summit">Summit</a></td>
   </tr>
   <tr>
-    <td><a href="weber/ogden">Ogden*</a></td>
+    <td><a href="weber/ogden">Ogden <i class="fa fa-star"></i></a></td>
     <td><a href="weber">Weber</a></td>
   </tr>
   <tr>
@@ -698,7 +694,7 @@ _Coming soon..._
     <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
-    <td><a href="garfield/panguitch">Panguitch*</a></td>
+    <td><a href="garfield/panguitch">Panguitch <i class="fa fa-star"></i></a></td>
     <td><a href="garfield">Garfield</a></td>
   </tr>
   <tr>
@@ -714,7 +710,7 @@ _Coming soon..._
     <td><a href="summit">Summit</a></td>
   </tr>
   <tr>
-    <td><a href="iron/parowan">Parowan*</a></td>
+    <td><a href="iron/parowan">Parowan <i class="fa fa-star"></i></a></td>
     <td><a href="iron">Iron</a></td>
   </tr>
   <tr>
@@ -746,7 +742,7 @@ _Coming soon..._
     <td><a href="box-elder">Box Elder</a></td>
   </tr>
   <tr>
-    <td><a href="carbon/price">Price*</a></td>
+    <td><a href="carbon/price">Price <i class="fa fa-star"></i></a></td>
     <td><a href="carbon">Carbon</a></td>
   </tr>
   <tr>
@@ -754,11 +750,11 @@ _Coming soon..._
     <td><a href="cache">Cache</a></td>
   </tr>
   <tr>
-    <td><a href="utaht/provo">Provo*</a></td>
+    <td><a href="utaht/provo">Provo <i class="fa fa-star"></i></a></td>
     <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
-    <td><a href="rich/randolph">Randolph*</a></td>
+    <td><a href="rich/randolph">Randolph <i class="fa fa-star"></i></a></td>
     <td><a href="rich">Rich</a></td>
   </tr>
   <tr>
@@ -766,7 +762,7 @@ _Coming soon..._
     <td><a href="sevier">Sevier</a></td>
   </tr>
   <tr>
-    <td><a href="sevier/richfield">Richfield*</a></td>
+    <td><a href="sevier/richfield">Richfield <i class="fa fa-star"></i></a></td>
     <td><a href="sevier">Sevier</a></td>
   </tr>
   <tr>
@@ -806,7 +802,7 @@ _Coming soon..._
     <td><a href="tooele">Tooele</a></td>
   </tr>
   <tr>
-    <td><a href="washington/st-george">St. George*</a></td>
+    <td><a href="washington/st-george">St. George <i class="fa fa-star"></i></a></td>
     <td><a href="washington">Washington</a></td>
   </tr>
   <tr>
@@ -818,7 +814,7 @@ _Coming soon..._
     <td><a href="sevier">Sevier</a></td>
   </tr>
   <tr>
-    <td><a href="salt-lake/salt-lake-city">Salt Lake City*</a></td>
+    <td><a href="salt-lake/salt-lake-city">Salt Lake City <i class="fa fa-star"></i></a></td>
     <td><a href="salt-lake">Salt Lake</a></td>
   </tr>
   <tr>
@@ -831,7 +827,7 @@ _Coming soon..._
   </tr>
   <tr>
     <td><a href="utah/santaquin">Santaquin</a></td>
-    <td><a href="utah">Utah</a></a></td>
+    <td><a href="utah">Utah</a></td>
   </tr>
   <tr>
     <td><a href="utah/saratoga-spring">Saratoga Springs</a></td>
@@ -903,7 +899,7 @@ _Coming soon..._
   </tr>
   <tr>
     <td><a href="davis/syracuse">Syracuse</a></td>
-    <td><a href="davis">Davis</td>
+    <td><a href="davis">Davis</a></td>
   </tr>
   <tr>
     <td><a href="duchesne/tabiona">Tabiona</a></td>
@@ -914,7 +910,7 @@ _Coming soon..._
     <td><a href="salt-lake">Salt Lake</a></td>
   </tr>
   <tr>
-    <td><a href="tooele/tooele">Tooele*</a></td>
+    <td><a href="tooele/tooele">Tooele <i class="fa fa-star"></i></a></td>
     <td><a href="tooele">Tooele</a></td>
   </tr>
   <tr>
@@ -942,7 +938,7 @@ _Coming soon..._
     <td><a href="weber">Weber</a></td>
   </tr>
   <tr>
-    <td><a href="uintah/vernal">Vernal*</a></td>
+    <td><a href="uintah/vernal">Vernal <i class="fa fa-star"></i></a></td>
     <td><a href="uintah">Uintah</a></td>
   </tr>
   <tr>
@@ -1002,7 +998,7 @@ _Coming soon..._
     <td><a href="davis">Davis</a></td>
   </tr>
   <tr>
-    <td><a href="salt-lake/west-valley-city">West Valley City</td>
+    <td><a href="salt-lake/west-valley-city">West Valley City</a></td>
     <td><a href="salt-lake">Salt Lake</a></td>
   </tr>
   <tr>
