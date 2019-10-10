@@ -1,4 +1,4 @@
 ---
-layout: 2018-candidate
+layout: person
 person: adam-davis
 ---
