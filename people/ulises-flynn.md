@@ -1,6 +1,6 @@
 ---
 layout: 2017-candidate
-person: ut0006
+person: ulises-flynn
 ---
 
 

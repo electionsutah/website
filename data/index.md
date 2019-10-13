@@ -28,7 +28,7 @@ _Coming soon..._
 
 ### 2017 Municipal Election
 
-{% include 2017-municipal-election.html %}
+{% include 2017-municipal-elections.html %}
 
 #### Primary Candidates
 [CSV](http://electionsutah.org/data/2017/primary/candidates.csv) / [JSON](http://electionsutah.org/data/2017/primary/candidates.json) (Last updated 9 August 2017)

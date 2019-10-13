@@ -1,4 +1,6 @@
 ---
 layout: 2017-candidate
-person: ut0004
+person: mark-r-hales
 ---
+
+

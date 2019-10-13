@@ -1,6 +1,4 @@
 ---
 layout: 2017-candidate
-person: ut0008
+person: cliff-curry
 ---
-
-

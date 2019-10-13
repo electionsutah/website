@@ -47,7 +47,7 @@ comments: true
       <article class="post">
         <h2 class="post-header">{% if person.first_name %}{{ person.first_name}}&nbsp;{{ person.last_name}}{% else %}{{ person.name }}{% endif %} {{ person.incumbent | replace: 'yes','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
 
-        <nav class="candidate-nav">
+        <nav class="content-nav">
           <a href="#biography">Biography</a>
           <a href="#contact">Contact</a>
           <a href="#documents">Documents</a>

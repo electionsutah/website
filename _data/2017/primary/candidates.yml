@@ -3,44 +3,52 @@
     state: UT
     county: 'Salt Lake'
     city: Alta
-    body: Mayor
+    office: Mayor
     name: 'Jon Fay II'
+    first_name: 'Jon'
+    last_name: 'Fay'
     gender: 'male'
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2018-06-14'
+    last_updated: '2019-10-13'
 -
     id: harris-sondak
     state: UT
     county: 'Salt Lake'
     city: Alta
-    body: Mayor
+    office: Mayor
     name: 'Harris Sondak'
+    first_name: 'Harris'
+    last_name: 'Sondak'
     gender: 'male'
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2018-06-14'
+    last_updated: '2019-10-13'
 -
     id: margaret-bourke
     state: UT
     county: 'Salt Lake'
     city: Alta
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Margaret Bourke'
+    first_name: 'Margaret'
+    last_name: 'Bourke'
     gender: 'female'
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2019-10-13'
 -
     id: cliff-curry
     state: UT
     county: 'Salt Lake'
     city: Alta
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Cliff Curry'
+    first_name: 'Cliff'
+    last_name: 'Curry'
     gender: 'male'
     address: ''
     phone: ''
@@ -49,15 +57,17 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2019-09-22'
+    last_updated: '2019-10-13'
 -
     id: derk-powell-timothy
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: Mayor
+    office: Mayor
     incumbent: yes
     name: 'Derk Powell Timothy'
+    first_name: 'Derk Powell'
+    last_name: 'Timothy'
     gender: 'male'
     address: ''
     phone: ''
@@ -66,13 +76,13 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2019-09-22'
+    last_updated: '2019-10-13'
 -
     id: wendy-w-aston
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Wendy W. Aston'
     first_name: 'Wendy W.'
     last_name: 'Aston'
@@ -86,12 +96,14 @@
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
     last_updated: '2019-09-22'
 -
-    id: ut0007
+    id: 'ulises-flynn'
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Ulises Flynn'
+    first_name: 'Ulises'
+    last_name: 'Flynn'
     gender: 'male'
     address: ''
     phone: ''
@@ -100,14 +112,16 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2019-10-13'
 -
-    id: ut0008
+    id: 'mark-r-hales'
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Mark R. Hales'
+    first_name: 'Mark R.'
+    last_name: 'Hales'
     gender: 'male'
     address: ''
     phone: ''
@@ -116,13 +130,13 @@
     election_type: 'primary'
     election_date: '2017-08-15'
     source: 'https://slco.org/clerk/elections/candidate-filing-list/'
-    last_updated: '2017-06-09'
+    last_updated: '2019-10-13'
 -
     id: ut0009
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Alan Jackson'
     gender: 'male'
     address: ''
@@ -138,7 +152,7 @@
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Connie Robbins'
     gender: 'female'
     address: ''
@@ -154,7 +168,7 @@
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Courtney Hansen'
     gender: 'female'
     address: ''
@@ -170,7 +184,7 @@
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Dave Kallas'
     gender: 'male'
     address: ''
@@ -186,7 +200,7 @@
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Nancy Lord'
     gender: 'female'
     address: ''
@@ -202,7 +216,7 @@
     state: UT
     county: 'Salt Lake'
     city: Bluffdale
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Carson L. Mitchell'
     gender: 'male'
     address: ''
@@ -218,7 +232,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: Mayor
+    office: Mayor
     name: 'Tim Hallbeck'
     gender: 'male'
     address: ''
@@ -234,7 +248,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: Mayor
+    office: Mayor
     name: 'Mike Peterson'
     gender: 'male'
     address: ''
@@ -250,7 +264,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: Mayor
+    office: Mayor
     name: 'Edward A. Schwartz'
     gender: 'male'
     address: ''
@@ -266,7 +280,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Tali Bruce'
     gender: 'female'
     address: ''
@@ -283,7 +297,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Tonia Dalton'
     gender: 'female'
     address: ''
@@ -299,7 +313,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Michael Larry Hanson'
     gender: 'male'
     address: ''
@@ -315,7 +329,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Theodore “Ted” Boyer'
     gender: 'male'
     address: ''
@@ -331,7 +345,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Eric Rijk Kraan'
     gender: 'male'
     address: ''
@@ -347,7 +361,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Christine Wastson Mikell'
     gender: 'female'
     address: ''
@@ -363,7 +377,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Cottonwood Heights'
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Aaron Lee Thompson'
     gender: 'male'
     address: ''
@@ -379,7 +393,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: Mayor
+    office: Mayor
     name: 'Troy Martinez'
     gender: 'male'
     address: ''
@@ -395,7 +409,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: Mayor
+    office: Mayor
     incumbent: yes
     name: 'Troy K. Walker'
     gender: 'male'
@@ -412,7 +426,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: Mayor
+    office: Mayor
     name: 'Michele Weeks'
     gender: 'female'
     address: ''
@@ -428,7 +442,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Jeff Graham'
     gender: 'male'
     address: ''
@@ -444,7 +458,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Mike Green'
     gender: 'male'
     address: ''
@@ -460,7 +474,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Hubert Huh'
     gender: 'male'
     address: ''
@@ -476,7 +490,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Tasha Lowery'
     gender: 'female'
     address: ''
@@ -492,7 +506,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'William E. Rappleye'
     gender: 'male'
     address: ''
@@ -508,7 +522,7 @@
     state: UT
     county: 'Salt Lake'
     city: Draper
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Dan Wheatley'
     gender: 'male'
     address: ''
@@ -524,7 +538,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: Mayor
+    office: Mayor
     name: 'Joe Darger'
     gender: 'male'
     address: ''
@@ -540,7 +554,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: Mayor
+    office: Mayor
     name: 'David H. Howe'
     gender: 'male'
     address: ''
@@ -556,7 +570,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: Mayor
+    office: Mayor
     name: 'David Watts'
     gender: 'male'
     address: ''
@@ -572,7 +586,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: Mayor
+    office: Mayor
     name: 'Coralee Wessman-Moser'
     gender: 'female'
     address: ''
@@ -588,7 +602,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Melissa John'
     gender: 'female'
     address: ''
@@ -604,7 +618,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Jared D. Richardson'
     gender: 'male'
     address: ''
@@ -620,7 +634,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Clint Smith'
     gender: 'male'
     address: ''
@@ -636,7 +650,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Doug Tolley'
     gender: 'male'
     address: ''
@@ -652,7 +666,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Sherrie Ohrn'
     gender: 'female'
     address: ''
@@ -668,7 +682,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Siloni Makarita Vimahi Pili'
     gender: 'male'
     address: ''
@@ -684,7 +698,7 @@
     state: UT
     county: 'Salt Lake'
     city: Herriman
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Cody Stromberg'
     gender: 'male'
     address: ''
@@ -700,7 +714,7 @@
     state: UT
     county: 'Salt Lake'
     city: Holladay
-    body: Mayor
+    office: Mayor
     incumbent: yes
     name: 'Robert M. Dahle'
     gender: 'male'
@@ -717,7 +731,7 @@
     state: UT
     county: 'Salt Lake'
     city: Holladay
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'Sabrina R. Petersen'
     gender: 'female'
     address: ''
@@ -733,7 +747,7 @@
     state: UT
     county: 'Salt Lake'
     city: Holladay
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Paul S. Fotheringham'
     gender: 'male'
     address: ''
@@ -749,7 +763,7 @@
     state: UT
     county: 'Salt Lake'
     city: Holladay
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Dennis Roach'
     gender: 'male'
     address: ''
@@ -765,7 +779,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: Mayor
+    office: Mayor
     name: 'Robert M. Hale'
     gender: 'male'
     address: ''
@@ -781,7 +795,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: Mayor
+    office: Mayor
     name: 'Matthew Hansen'
     gender: 'male'
     address: ''
@@ -797,7 +811,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: Mayor
+    office: Mayor
     name: 'Sophia Hawes-Tingey'
     gender: 'female'
     address: ''
@@ -814,7 +828,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: Mayor
+    office: Mayor
     name: 'Mont L. Millerberg'
     gender: 'male'
     address: ''
@@ -830,7 +844,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: Mayor
+    office: Mayor
     name: 'Andrea B. Person'
     gender: 'female'
     address: ''
@@ -846,7 +860,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Bryant Brown'
     gender: 'male'
     address: '7819 S Coolidge St, Midvale, UT 84047'
@@ -862,7 +876,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Stephanie Johnson'
     gender: 'female'
     address: '7792 S Coolidge St, Midvale, UT 84047'
@@ -878,7 +892,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: 'Council District 4'
+    office: 'Council District 4'
     incumbent: yes
     name: 'Wayne L. Sharp'
     gender: 'male'
@@ -895,7 +909,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Jason Smith'
     gender: 'male'
     address: '8289 S Wilson St Apt 1, Midvale, UT 84047'
@@ -911,7 +925,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Andrew Stoddard'
     gender: 'male'
     address: '218 E 8135 S, Sandy, UT 84070'
@@ -931,7 +945,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Stephen Brown'
     gender: 'male'
     address: ''
@@ -947,7 +961,7 @@
     state: UT
     county: 'Salt Lake'
     city: Midvale
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Dustin Gettel'
     gender: 'male'
     address: ''
@@ -963,7 +977,7 @@
     state: UT
     county: 'Salt Lake'
     city: Millcreek
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Dwight Merchant'
     gender: 'male'
     address: ''
@@ -979,7 +993,7 @@
     state: UT
     county: 'Salt Lake'
     city: Millcreek
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Dwayne A. Vance'
     gender: 'male'
     address: ''
@@ -995,7 +1009,7 @@
     state: UT
     county: 'Salt Lake'
     city: Millcreek
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Bev Uipi'
     gender: 'female'
     address: ''
@@ -1011,7 +1025,7 @@
     state: UT
     county: 'Salt Lake'
     city: Murray
-    body: Mayor
+    office: Mayor
     name: 'D. Blair Camp'
     gender: 'male'
     address: ''
@@ -1027,7 +1041,7 @@
     state: UT
     county: 'Salt Lake'
     city: Murray
-    body: Mayor
+    office: Mayor
     name: 'Verl Greenhalgh'
     gender: 'male'
     address: ''
@@ -1043,7 +1057,7 @@
     state: UT
     county: 'Salt Lake'
     city: Murray
-    body: Mayor
+    office: Mayor
     name: 'Daniel C. Snarr'
     gender: 'male'
     address: ''
@@ -1059,7 +1073,7 @@
     state: UT
     county: 'Salt Lake'
     city: Murray
-    body: Mayor
+    office: Mayor
     name: 'Richard Snelgrove'
     gender: 'male'
     address: ''
@@ -1075,7 +1089,7 @@
     state: UT
     county: 'Salt Lake'
     city: Murray
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Dale M. Cox'
     gender: 'male'
     address: ''
@@ -1091,7 +1105,7 @@
     state: UT
     county: 'Salt Lake'
     city: Murray
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Darrell Pehrson'
     gender: 'male'
     address: ''
@@ -1107,7 +1121,7 @@
     state: UT
     county: 'Salt Lake'
     city: Murray
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Diane Turner'
     gender: 'female'
     address: ''
@@ -1123,7 +1137,7 @@
     state: UT
     county: 'Salt Lake'
     city: Riverton
-    body: Mayor
+    office: Mayor
     incumbent: yes
     name: 'Bill Applegarth'
     gender: 'male'
@@ -1140,7 +1154,7 @@
     state: UT
     county: 'Salt Lake'
     city: Riverton
-    body: Mayor
+    office: Mayor
     name: 'Trent Staggs'
     gender: 'male'
     address: ''
@@ -1156,7 +1170,7 @@
     state: UT
     county: 'Salt Lake'
     city: Riverton
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Twanee McCay'
     gender: 'female'
     address: ''
@@ -1172,7 +1186,7 @@
     state: UT
     county: 'Salt Lake'
     city: Riverton
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Paul Wayman'
     gender: 'male'
     address: ''
@@ -1188,7 +1202,7 @@
     state: UT
     county: 'Salt Lake'
     city: Riverton
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Tish R. Buroker'
     gender: 'female'
     address: ''
@@ -1204,7 +1218,7 @@
     state: UT
     county: 'Salt Lake'
     city: Riverton
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Darren J. Pack'
     gender: 'male'
     address: ''
@@ -1220,7 +1234,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'David C. Atkin'
     gender: 'male'
     address: ''
@@ -1236,7 +1250,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'Arnold M. Jones'
     gender: 'male'
     address: ''
@@ -1252,7 +1266,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'James Rogers'
     gender: 'male'
     address: ''
@@ -1268,7 +1282,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Phil Carroll'
     gender: 'male'
     address: ''
@@ -1284,7 +1298,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Laura Cushman'
     gender: 'female'
     address: ''
@@ -1301,7 +1315,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Brian W. Fukushima'
     gender: 'male'
     address: ''
@@ -1317,7 +1331,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Jeffrey Garbett'
     gender: 'male'
     address: ''
@@ -1333,7 +1347,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Courtney Swedenburg'
     gender: 'female'
     address: ''
@@ -1349,7 +1363,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Chris Wharton'
     gender: 'male'
     address: ''
@@ -1366,7 +1380,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'George Chapman'
     gender: 'male'
     address: ''
@@ -1382,7 +1396,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Carol Goode-Rogozinski'
     gender: 'female'
     address: ''
@@ -1398,7 +1412,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Vance Hansen'
     gender: 'male'
     address: ''
@@ -1414,7 +1428,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Erin Mendenhall'
     gender: 'female'
     address: ''
@@ -1430,7 +1444,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Benjamin Noah Rosenberg'
     gender: 'male'
     address: ''
@@ -1446,7 +1460,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 7'
+    office: 'Council District 7'
     name: 'Samantha L. Finch'
     gender: 'female'
     address: ''
@@ -1462,7 +1476,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 7'
+    office: 'Council District 7'
     name: 'Amy Fowler'
     gender: 'female'
     phone: '801.824.9698'
@@ -1478,7 +1492,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 7'
+    office: 'Council District 7'
     name: 'Ben Haynes'
     gender: 'male'
     address: ''
@@ -1495,7 +1509,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 7'
+    office: 'Council District 7'
     name: 'Benjamin Sessions'
     gender: 'male'
     address: ''
@@ -1511,7 +1525,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 7'
+    office: 'Council District 7'
     name: 'Jason Sills'
     gender: 'male'
     address: ''
@@ -1527,7 +1541,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'Salt Lake City'
-    body: 'Council District 7'
+    office: 'Council District 7'
     name: 'Abe Smith'
     gender: 'male'
     address: ''
@@ -1543,7 +1557,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: Mayor
+    office: Mayor
     name: 'Kurt Bradburn'
     gender: 'male'
     address: ''
@@ -1559,7 +1573,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: Mayor
+    office: Mayor
     incumbent: yes
     name: 'Tom Dolan'
     gender: 'male'
@@ -1576,7 +1590,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: Mayor
+    office: Mayor
     name: 'Gary T. Forbush'
     gender: 'male'
     address: ''
@@ -1592,7 +1606,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: Mayor
+    office: Mayor
     name: 'Richard R. Vigorelli'
     gender: 'male'
     address: ''
@@ -1608,7 +1622,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Terry Parkin'
     gender: 'male'
     address: '385 E Pioneer Ave, Sandy, UT 84070'
@@ -1625,7 +1639,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Zach Robinson'
     gender: 'male'
     address: ''
@@ -1641,7 +1655,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Steve Smith'
     gender: 'male'
     address: ''
@@ -1657,7 +1671,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Linda C. Stewart'
     gender: 'female'
     address: '213 W Civic Center Dr Apt 140, Sandy, UT 84070'
@@ -1676,7 +1690,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Josh Tillotson'
     gender: 'male'
     address: ''
@@ -1692,7 +1706,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'Brooke Christensen'
     gender: 'female'
     address: ''
@@ -1708,7 +1722,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'Stephanie Dickey'
     gender: 'female'
     address: ''
@@ -1724,7 +1738,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'Sean J. Kowallis'
     gender: 'male'
     address: ''
@@ -1740,7 +1754,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'Randy Osborne'
     gender: 'male'
     address: ''
@@ -1756,7 +1770,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'Terry Parkin'
     gender: 'male'
     address: ''
@@ -1772,7 +1786,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 1'
+    office: 'Council District 1'
     name: 'Josh Sunde'
     gender: 'male'
     address: ''
@@ -1788,7 +1802,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Steven Calbert'
     gender: 'male'
     address: ''
@@ -1804,7 +1818,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Jim Edwards'
     gender: 'male'
     address: ''
@@ -1820,7 +1834,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Kris Nicholl'
     gender: ''
     address: ''
@@ -1836,7 +1850,7 @@
     state: UT
     county: 'Salt Lake'
     city: Sandy
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Dea Theodore'
     gender: 'female'
     address: ''
@@ -1852,7 +1866,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: Mayor
+    office: Mayor
     name: 'Rich Cunningham'
     gender: 'male'
     address: ''
@@ -1868,7 +1882,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: Mayor
+    office: Mayor
     name: 'Dawn Ramsey'
     gender: 'female'
     address: ''
@@ -1884,7 +1898,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: Mayor
+    office: Mayor
     name: 'Mark T. Woolley'
     gender: 'male'
     address: ''
@@ -1900,7 +1914,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Julie Holbrook'
     gender: 'female'
     address: ''
@@ -1916,7 +1930,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Patrick J. Risk'
     gender: 'male'
     address: ''
@@ -1932,7 +1946,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Don Shelton'
     gender: 'male'
     address: ''
@@ -1948,7 +1962,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Martin J. Gale'
     gender: 'male'
     address: ''
@@ -1964,7 +1978,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Sandra Kay Kirkendoll'
     gender: 'female'
     address: ''
@@ -1980,7 +1994,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Jason T. Mcguire'
     gender: 'male'
     address: ''
@@ -1996,7 +2010,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Jordan'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Greg Wise'
     gender: 'male'
     address: ''
@@ -2012,7 +2026,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: Mayor
+    office: Mayor
     name: 'Mark C. Kindred'
     gender: 'male'
     address: ''
@@ -2028,7 +2042,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: Mayor
+    office: Mayor
     name: 'L. Shane Siwik'
     gender: 'male'
     address: ''
@@ -2044,7 +2058,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: Mayor
+    office: Mayor
     incumbent: yes
     name: 'Cherie Wood'
     gender: 'female'
@@ -2061,7 +2075,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Ray DeWolfe'
     gender: 'male'
     address: ''
@@ -2077,7 +2091,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Aaron A. Frost'
     gender: 'male'
     address: '3835 S River Run Wy Unit 7, South Salt Lake, UT 84119'
@@ -2094,7 +2108,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'James D. Smith'
     gender: 'male'
     address: ''
@@ -2110,7 +2124,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Eric Balken'
     gender: 'male'
     address: ''
@@ -2126,7 +2140,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Corey Thomas'
     gender: 'male'
     address: ''
@@ -2143,7 +2157,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Sharla Beverly'
     gender: 'female'
     address: ''
@@ -2159,7 +2173,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'South Salt Lake'
-    body: 'Council District 3'
+    office: 'Council District 3'
     name: 'Adam Thompson'
     gender: 'male'
     address: ''
@@ -2175,7 +2189,7 @@
     state: UT
     county: 'Salt Lake'
     city: Taylorsville
-    body: Mayor
+    office: Mayor
     name: 'Harry Lloyd Hansen'
     gender: 'male'
     address: ''
@@ -2191,7 +2205,7 @@
     state: UT
     county: 'Salt Lake'
     city: Taylorsville
-    body: Mayor
+    office: Mayor
     incumbent: yes
     name: 'Larry Johnson'
     gender: 'male'
@@ -2208,7 +2222,7 @@
     state: UT
     county: 'Salt Lake'
     city: Taylorsville
-    body: Mayor
+    office: Mayor
     name: 'Kristie Steadman Overson'
     gender: 'female'
     address: ''
@@ -2224,7 +2238,7 @@
     state: UT
     county: 'Salt Lake'
     city: Taylorsville
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Ronald Allred'
     gender: 'male'
     address: ''
@@ -2240,7 +2254,7 @@
     state: UT
     county: 'Salt Lake'
     city: Taylorsville
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Meredith Harker'
     gender: 'female'
     address: ''
@@ -2256,7 +2270,7 @@
     state: UT
     county: 'Salt Lake'
     city: Taylorsville
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Daniel Jon Armstrong'
     gender: 'male'
     address: ''
@@ -2272,7 +2286,7 @@
     state: UT
     county: 'Salt Lake'
     city: Taylorsville
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'John E. Fuller'
     gender: 'male'
     address: ''
@@ -2288,7 +2302,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: Mayor
+    office: Mayor
     name: 'Pamela Ann Berry'
     gender: 'female'
     address: ''
@@ -2304,7 +2318,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: Mayor
+    office: Mayor
     name: 'Dirk Burton'
     gender: 'male'
     address: ''
@@ -2320,7 +2334,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: Mayor
+    office: Mayor
     name: 'Erin Clavell'
     gender: 'female'
     address: ''
@@ -2336,7 +2350,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: Mayor
+    office: Mayor
     name: 'Zach Jacob'
     gender: 'male'
     address: ''
@@ -2352,7 +2366,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: Mayor
+    office: Mayor
     name: 'Jim Riding'
     gender: 'male'
     address: ''
@@ -2368,7 +2382,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: Mayor
+    office: Mayor
     incumbent: yes
     name: 'Kim Rolfe'
     gender: 'male'
@@ -2385,7 +2399,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Max Johnson'
     gender: 'male'
     address: ''
@@ -2401,7 +2415,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Chad R. Lamb'
     gender: 'male'
     address: ''
@@ -2417,7 +2431,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Hyrum Smith Matthews'
     gender: 'male'
     address: ''
@@ -2434,7 +2448,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Jay Thomas'
     gender: 'male'
     address: ''
@@ -2450,7 +2464,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Kayleen Whitelock'
     gender: 'female'
     address: ''
@@ -2466,7 +2480,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Jordan'
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Alan R. Anderson'
     gender: 'male'
     address: ''
@@ -2482,7 +2496,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Mayor'
+    office: 'Mayor'
     incumbent: 'yes'
     name: 'Ron Bigelow'
     gender: 'male'
@@ -2500,7 +2514,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: Mayor
+    office: Mayor
     name: 'Joshua Cameron'
     gender: 'male'
     address: '3082 W Roxborough Park St, West Valley City, UT 84119'
@@ -2517,7 +2531,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: Mayor
+    office: Mayor
     name: 'Tom Huynh'
     gender: 'male'
     address: '1423 W 2400 S, West Valley City, UT 84119'
@@ -2533,7 +2547,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: Mayor
+    office: Mayor
     name: 'Karen Lang'
     gender: 'female'
     address: '3448 Greenmont Cir, West Valley City, UT 84120'
@@ -2549,7 +2563,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: Mayor
+    office: Mayor
     name: 'Russell R. Sanderson'
     gender: 'male'
     address: '7048 W Fieldview Dr, West Valley City, UT 84128'
@@ -2566,7 +2580,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Frank Bedolla'
     gender: 'male'
     address: ''
@@ -2582,7 +2596,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Lars Nordfelt'
     gender: 'male'
     address: ''
@@ -2598,7 +2612,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Jeremy Anderson'
     gender: 'male'
     address: ''
@@ -2614,7 +2628,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Steve Buhler'
     gender: 'male'
     address: ''
@@ -2630,7 +2644,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Philip B. Wayman'
     gender: 'male'
     address: ''
@@ -2646,7 +2660,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Jake Fitisemanu Jr.'
     gender: 'male'
     address: ''
@@ -2663,7 +2677,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Lynn R. Sanderson'
     gender: ''
     address: ''
@@ -2679,7 +2693,7 @@
     state: UT
     county: 'Salt Lake'
     city: 'West Valley City'
-    body: 'Council District 4'
+    office: 'Council District 4'
     name: 'Steve Vincent'
     gender: 'male'
     address: ''
@@ -2695,7 +2709,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Michelle G. Kaufusi'
     gender: 'female'
     address: '3018 N. Comanche Lane, Provo, UT'
@@ -2716,7 +2730,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Kevin Wing'
     gender: 'male'
     address: '542 S. 2470 W., Provo, UT'
@@ -2735,7 +2749,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Eric Speckhard'
     gender: 'male'
     address: '410 W. 700 S., Provo, UT'
@@ -2755,7 +2769,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Sherrie Hall Everett'
     gender: 'female'
     address: '1428 N. 2630 W., Provo, UT'
@@ -2776,7 +2790,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Howard Stone'
     gender: 'male'
     address: '1248 W. 1400 N., Provo, UT'
@@ -2793,7 +2807,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'John Fenley'
     gender: 'male'
     address: '1985 N. 360 E., Provo, UT'
@@ -2813,7 +2827,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Larry Walters'
     gender: 'male'
     address: '1231 W. Camelot Dr., Provo, UT'
@@ -2831,7 +2845,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Odell Miner'
     gender: 'male'
     address: '4605 Eastlawn Drive, Provo, UT'
@@ -2848,7 +2862,7 @@
     state: UT
     county: 'Utah'
     city: 'Highland'
-    body: 'Council at Large'
+    office: 'Council at Large'
     name: 'Elisabeth Luntz'
     gender: 'female'
     address: 'Highland, UT'
@@ -2866,7 +2880,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Council District 5'
+    office: 'Council District 5'
     name: 'Tinesha Zandamela'
     gender: 'female'
     address: '547 N. 300 E. Apt 5, Provo, UT'
@@ -2887,7 +2901,7 @@
     state: UT
     county: ''
     city: ''
-    body: 'US Congressional District 3'
+    office: 'US Congressional District 3'
     name: 'Brendan Phillips'
     gender: 'male'
     address: ''
@@ -2904,7 +2918,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Council District 5'
+    office: 'Council District 5'
     incumbent: yes
     name: 'David Harding'
     gender: 'male'
@@ -2924,7 +2938,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'Leo Lines'
     gender: 'male'
     address: '371 N. 600 E., Provo, UT'
@@ -2942,7 +2956,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'David Clark'
     gender: 'male'
     address: '1460 Cherry Lane, Provo, UT'
@@ -2960,7 +2974,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Council District 2'
+    office: 'Council District 2'
     name: 'George Handley'
     gender: 'male'
     address: '1801 Oak Lane, Provo, UT'
@@ -2978,7 +2992,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'City Wide I'
+    office: 'City Wide I'
     name: 'Hunter Phillips'
     gender: 'male'
     address: '851 E. 350 N., Provo, UT'
@@ -2998,7 +3012,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'City Wide I'
+    office: 'City Wide I'
     name: 'Mike Roan'
     gender: 'male'
     address: '3212 N. Shadowbrook Dr., Provo, UT'
@@ -3016,7 +3030,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'City Wide I'
+    office: 'City Wide I'
     name: 'Wesley Marriott'
     gender: 'male'
     address: '1458 E. 1250 S., Provo, UT'
@@ -3035,7 +3049,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'City Wide I'
+    office: 'City Wide I'
     name: 'Dave Sewell'
     gender: 'male'
     address: '3877 N. 200 E., Provo, UT'
@@ -3056,7 +3070,7 @@
     state: UT
     county: 'Utah'
     city: 'Provo'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Elliot G. Craig'
     gender: 'male'
     address: '1168 Old Willow Lane, Provo, UT'
@@ -3074,7 +3088,7 @@
     state: UT
     county: 'Utah'
     city: 'Saratoga Springs'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Craig W. Parry'
     gender: 'male'
     address: '385 Bayside Dr., Saratoga Springs, UT'
@@ -3092,7 +3106,7 @@
     state: UT
     county: 'Utah'
     city: 'Saratoga Springs'
-    body: 'Mayor'
+    office: 'Mayor'
     incumbent: 'yes'
     name: 'Jim Miller'
     gender: 'male'
@@ -3111,7 +3125,7 @@
     state: UT
     county: 'Utah'
     city: 'Saratoga Springs'
-    body: 'City Council'
+    office: 'City Council'
     name: 'Leah Hansen'
     gender: 'female'
     address: '341 Songbird Lane, Saratoga Springs, UT'
@@ -3129,7 +3143,7 @@
     state: UT
     county: 'Utah'
     city: 'Saratoga Springs'
-    body: 'City Council'
+    office: 'City Council'
     name: 'Josh Daniels'
     gender: 'male'
     address: '397 Cinnamon Circle, Saratoga Springs, UT'
@@ -3147,7 +3161,7 @@
     state: UT
     county: 'Utah'
     city: 'Saratoga Springs'
-    body: 'City Council'
+    office: 'City Council'
     name: 'Raymond B. Campbell'
     gender: 'male'
     address: '1637 S. Landview Dr., Saratoga Springs UT'
@@ -3164,7 +3178,7 @@
     state: UT
     county: 'Utah'
     city: 'Saratoga Springs'
-    body: 'City Council'
+    office: 'City Council'
     incumbent: 'yes'
     name: 'Michael D.S. McOmber'
     gender: 'male'
@@ -3182,7 +3196,7 @@
     state: UT
     county: 'Utah'
     city: 'Saratoga Springs'
-    body: 'City Council'
+    office: 'City Council'
     incumbent: 'yes'
     name: 'Stephen Willden'
     gender: 'male'
@@ -3204,7 +3218,7 @@
     state: UT
     county: 'Utah'
     city: 'Lehi'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Cody Black'
     gender: 'male'
     address: '2023 N. 600 W., Lehi, UT'
@@ -3222,7 +3236,7 @@
     state: UT
     county: 'Utah'
     city: 'Lehi'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'R. Curtis Payne'
     gender: 'male'
     address: '1982 W. 300 N., Lehi, UT'
@@ -3241,7 +3255,7 @@
     state: UT
     county: 'Utah'
     city: 'Lehi'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Mark I. Johnson'
     gender: 'male'
     address: '273 E. Davis Lane, Lehi, UT'
@@ -3258,7 +3272,7 @@
     state: UT
     county: 'Utah'
     city: 'Lehi'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Nolan J. Johnson'
     gender: 'male'
     address: '10632 N. 8800 W., Lehi, UT'
@@ -3273,7 +3287,7 @@
     state: UT
     county: 'Utah'
     city: 'Lehi'
-    body: 'Mayor'
+    office: 'Mayor'
     incumbent: 'yes'
     name: 'Bert Wilson'
     gender: 'male'
@@ -3293,7 +3307,7 @@
     state: UT
     county: 'Weber'
     city: 'Marriott-Slaterville'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Stacy Palen'
     gender: 'female'
     address: '212 N 1500 W, Ogden, UT 84404'
@@ -3313,7 +3327,7 @@
     state: UT
     county: 'Weber'
     city: 'Marriott-Slaterville'
-    body: 'Mayor'
+    office: 'Mayor'
     name: 'Scott Van Leeuwen'
     gender: 'male'
     address: '899 S 2000 W, Ogden, UT 84404'
@@ -3330,7 +3344,7 @@
     state: UT
     county: 'Weber'
     city: 'Marriott-Slaterville'
-    body: 'City Council East District'
+    office: 'City Council East District'
     name: 'Delbert Hodson'
     gender: 'male'
     address: '475 S 1200 W, Ogden, UT 84404'
@@ -3347,7 +3361,7 @@
     state: UT
     county: 'Weber'
     city: 'Marriott-Slaterville'
-    body: 'City Council West District'
+    office: 'City Council West District'
     name: 'Erin Holley'
     gender: 'female'
     address: '190 S 2250 W, Ogden, UT 84404'
@@ -3364,7 +3378,7 @@
     state: UT
     county: Summit
     city: 'Park City'
-    body: Mayor
+    office: Mayor
     name: 'Andy Beerman'
     gender: male
     address: '310 Park Avenue, Park City, UT 84060'
@@ -3381,7 +3395,7 @@
     state: UT
     county: Summit
     city: 'Park City'
-    body: Mayor
+    office: Mayor
     name: 'Dana Williams'
     gender: male
     address: '2384 Doc Holladay Drive, Park City, UT 84060'
@@ -3399,7 +3413,7 @@
     state: UT
     county: Summit
     city: 'Park City'
-    body: Mayor
+    office: Mayor
     name: 'Roger Armstrong'
     gender: male
     address: '2574 Aspen Springs Drive, Park City, UT 84060'
