@@ -9,12 +9,17 @@ comments: true
 
 {% include 2019-municipal-elections.html %}
 
+#### Candidates
+[CSV](https://www.electionsutah.org/data/2019/candidates.csv) / [JSON](https://www.electionsutah.org/data/2019/candidates.json) (Last updated 13 October 2019)
+<br><br>
+<hr>
+
 ### 2018 General Elections
 
 {% include 2018-elections.html %}
 
 #### Primary Candidates
-[CSV](http://electionsutah.org/data/2018/primary/candidates.csv) / [JSON](http://electionsutah.org/data/2018/primary/candidates.json) (Last updated 1 April 2018)
+[CSV](https://www.electionsutah.org/data/2018/primary/candidates.csv) / [JSON](https://www.electionsutah.org/data/2018/primary/candidates.json) (Last updated 13 October 2019)
 <br><br>
 <hr>
 
@@ -31,9 +36,9 @@ _Coming soon..._
 {% include 2017-municipal-elections.html %}
 
 #### Primary Candidates
-[CSV](http://electionsutah.org/data/2017/primary/candidates.csv) / [JSON](http://electionsutah.org/data/2017/primary/candidates.json) (Last updated 9 August 2017)
+[CSV](https://www.electionsutah.org/data/2017/primary/candidates.csv) / [JSON](https://www.electionsutah.org/data/2017/primary/candidates.json) (Last updated 13 October 2019)
 <br><br>
 
 #### Recorders
 ##### Utah County
-[CSV](http://electionsutah.org/data/2017/utah-county-city-recorders.csv) (Last updated 21 June 2017)
+[CSV](https://www.electionsutah.org/data/2017/utah-county-city-recorders.csv) (Last updated 13 October 2019)
