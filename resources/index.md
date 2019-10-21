@@ -5,6 +5,11 @@ permalink: /resources/
 comments: true
 ---
 
+<nav class="content-nav">
+  <a href="#voting-eligibility">Voting Eligibility</a>
+  <a href="#web-resources">Web Resources</a>
+</nav>
+
 ### Voting Eligibility
 
 #### What are the eligibility requirements to vote in Utah?
@@ -20,10 +25,14 @@ To register to vote in Utah, you must:
 
 ### Web Resources
 
+- [OpenElections: Utah Results](http://www.openelections.net/results/#ut)
+
 #### State of Utah
-* [Lieutenant Governor's Office: Elections](https://elections.utah.gov/)
-* [State of Utah Financial Disclosures](https://disclosures.utah.gov/)
+
+- [Lieutenant Governor's Office: Elections](https://elections.utah.gov/)
+- [State of Utah Financial Disclosures](https://disclosures.utah.gov/)
 
 #### Wikipedia
-* [Elections in Utah](https://en.wikipedia.org/wiki/Elections_in_Utah)
-* [Utah on Ballotpedia](https://ballotpedia.org/Utah)
+
+- [Elections in Utah](https://en.wikipedia.org/wiki/Elections_in_Utah)
+- [Utah on Ballotpedia](https://ballotpedia.org/Utah)

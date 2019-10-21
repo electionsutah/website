@@ -5,6 +5,12 @@ permalink: /docs/schema/
 comments: false
 ---
 
+<nav class="content-nav">
+  <a href="#person">Person</a>
+</nav>
+
+## Person
+
 ```
 person
   id
@@ -12,7 +18,7 @@ person
   first_names
   last_names
   gender
-  election_2018
+  {YYYY}_election
     election_type
     office
     candidate_status: { defeated, disqualified, elected, withdrew }
