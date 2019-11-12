@@ -7,8 +7,8 @@ permalink: /places/utah/alpine/
 {% assign place = site.data.places.alpine %}
 
 <section class="info">
-  <p><a href="{{ place.wikipedia_url }}">From Wikipedia:</a></p>
-  <p class="citation">{{ place.wikipedia_snippet }}</p>
+  <p class="citation"><wd-entity id="Q115481" label lang="en"/></p>
+  <p>is a <wd-entity id="Q115481" description lang="en"/></p>
 </section>
 
 ### 2018 Election
