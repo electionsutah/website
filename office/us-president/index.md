@@ -16,17 +16,15 @@ comments: true
   <th>First Name</th>
   <th>Last Name</th>
   <th>Candidate for</th>
-  <th>City</th>
-  <th>County</th>
+  <th>Party</th>
 </thead>
 <tbody>
 {% for member in office  %}
   <tr>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_names }}</a></td>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_names }}</a></td>
-    <td>{{ member.election_2020.office }}</td>
-    <td>{{ member.election_2020.city }}</td>
-    <td>{{ member.election_2020.county }}</td>
+    <td><a href="{{ site.url }}/office/{{ member.election_2020.office | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.election_2020.office }}</a></td>
+    <td><a href="{{ site.url }}/party/{{ member.election_2020.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.election_2020.party }}</a></td>
   </tr>
 {% endfor %}
 </tbody>

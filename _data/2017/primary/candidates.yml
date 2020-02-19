@@ -64,7 +64,7 @@
     county: 'Salt Lake'
     city: Bluffdale
     office: Mayor
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Derk Powell Timothy'
     first_name: 'Derk Powell'
     last_name: 'Timothy'
@@ -410,7 +410,7 @@
     county: 'Salt Lake'
     city: Draper
     office: Mayor
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Troy K. Walker'
     gender: 'male'
     address: ''
@@ -715,7 +715,7 @@
     county: 'Salt Lake'
     city: Holladay
     office: Mayor
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Robert M. Dahle'
     gender: 'male'
     address: ''
@@ -893,7 +893,7 @@
     county: 'Salt Lake'
     city: Midvale
     office: 'Council District 4'
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Wayne L. Sharp'
     gender: 'male'
     address: '347 W Wasatch St, Midvale, UT 84047'
@@ -1138,7 +1138,7 @@
     county: 'Salt Lake'
     city: Riverton
     office: Mayor
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Bill Applegarth'
     gender: 'male'
     address: ''
@@ -1574,7 +1574,7 @@
     county: 'Salt Lake'
     city: Sandy
     office: Mayor
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Tom Dolan'
     gender: 'male'
     address: ''
@@ -2059,7 +2059,7 @@
     county: 'Salt Lake'
     city: 'South Salt Lake'
     office: Mayor
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Cherie Wood'
     gender: 'female'
     address: ''
@@ -2206,7 +2206,7 @@
     county: 'Salt Lake'
     city: Taylorsville
     office: Mayor
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Larry Johnson'
     gender: 'male'
     address: ''
@@ -2383,7 +2383,7 @@
     county: 'Salt Lake'
     city: 'West Jordan'
     office: Mayor
-    incumbent: yes
+    incumbent: 'yes'
     name: 'Kim Rolfe'
     gender: 'male'
     address: ''
@@ -2919,7 +2919,7 @@
     county: 'Utah'
     city: 'Provo'
     office: 'Council District 5'
-    incumbent: yes
+    incumbent: 'yes'
     name: 'David Harding'
     gender: 'male'
     address: '595 W. 400 N., Provo, UT'

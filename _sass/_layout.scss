@@ -64,6 +64,12 @@ main {
   width: 100%;
 }
 
+#bio-image {
+  float: left;
+  max-width: 125px;
+  margin: 0 1rem 0 0;
+}
+
 #map {
     height: 350px;
     width: 100%;

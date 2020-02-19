@@ -10,7 +10,7 @@ comments: true
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="{{ person.full_name }} - Elections Utah" />
-    <meta property="og:description" content="{{ person.full_name }} {% if person.election_2020.candidate_status == 'withdrew' or person.election_2020.candidate_status == 'disqualified' or person.election_2020.candidate_status == 'defeated' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %}a {% if person.party %}{{ person.party }}{% endif %} candidate for {{ person.election_2020.office }} from {{ person.election_2020.city }}, {{ person.election_2020.county }}, {{ person.election_2020.state }}." />
+    <meta property="og:description" content="{{ person.full_name }} {% if person.election_2020.candidate_status == 'withdrew' or person.election_2020.candidate_status == 'disqualified' or person.election_2020.candidate_status == 'defeated' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %}a {% if person.election_2020.party %}{{ person.election_2020.party }}{% endif %} candidate for {{ person.election_2020.office }} from {{ person.election_2020.city }}, {{ person.election_2020.county }}, {{ person.election_2020.state }}." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://electionsutah.org" />
     <meta property="og:image" content="{{ site.baseurl }}/images/utah-elections.png" />
@@ -46,7 +46,7 @@ comments: true
       {% endif %}
 
       <article class="post">
-        <h2 class="post-header">{% if person.first_names %}{{ person.first_names}}&nbsp;{{ person.last_names}}{% else %}{{ person.full_name }}{% endif %} {{ person.incumbent | replace: 'yes','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
+        <h2 class="post-header">{% if person.first_names %}{{ person.first_names}}&nbsp;{{ person.last_names}}{% else %}{{ person.full_name }}{% endif %} {{ person.election_2020.incumbent | replace: 'yes','<span alt="Incumbent">(I)</span>'}} &nbsp;<i class="fa fa-{{person.gender}}" aria-hidden="true" alt="{{ person.gender | capitalize }}"></i></h2>
 
         <nav class="content-nav">
           <a href="#biography">Biography</a>
@@ -57,18 +57,29 @@ comments: true
           <a href="#media">Media</a>
         </nav>
 
-        <aside class="notice"><strong>Last Updated:</strong> {{ person.last_updated }}</aside>
-
         <h3 id="biography">Biography</h3>
-        <p><strong>{{ person.full_name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' or person.candidate_status == 'elected' %}was{% else %}is{% endif %} {% if person.incumbent %}the incumbent and {% endif %} {% if person.party == 'Independent American' or person.party == 'Unaffiliated' or person.party == 'United Utah' %}an {% else %} a {% endif %}{% if person.party %}<strong><a href="{{ site.url }}/party/{{ person.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.party }}</a></strong>{% endif %} candidate for <strong><a href="{{ site.url }}/office/{{ person.election_2020.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.office }}</a></strong> from <strong>{{ person.election_2020.city }}, {{ person.election_2020.county }}, {{ person.election_2020.state }}</strong> (<a href="{{ person.election_2020.source }}">Source</a>).</p><br>
+        {% if person.image %}
+        <img id="bio-image" src="{{ person.image }}" alt="{{ person.full_name }}">
+        {% endif %}
+        <p><strong>{{ person.full_name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' or person.candidate_status == 'elected' %}was{% else %}is{% endif %} {% if person.election_2020.incumbent %}the incumbent and {% endif %} {% if person.election_2020.party == 'Independent American' or person.election_2020.party == 'Unaffiliated' or person.election_2020.party == 'United Utah' %}an {% else %} a {% endif %}{% if person.election_2020.party %}<strong><a href="{{ site.url }}/party/{{ person.election_2020.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.election_2020.party }}</a></strong>{% endif %} candidate for <strong><a href="{{ site.url }}/office/{{ person.election_2020.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.office }}</a></strong> from <strong>{{ person.election_2020.city }}, {{ person.election_2020.state }}</strong> (<a href="{{ person.election_2020.source }}">Source</a>).</p>
+        <hr>
+        <p>{% if person.election_2020.facebook %}<a href="{{ person.election_2020.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.election_2020.instagram %}<a href="{{ person.election_2020.instagram }}"><i
+            class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %}
+        {% if person.election_2020.twitter %}<a href="{{ person.election_2020.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.election_2020.website %}<a href="{{ person.election_2020.website }}"><i
+            class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %}
+        {% if person.election_2020.youtube %}<a href="{{ person.election_2020.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i>
+          <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
+      </p>
 
         <div id="map"></div>
         <script>
 
           var map = L.map('map', {
-            {% if person.latitude %}
-            center: [{{person.latitude}}, {{person.longitude}}],
-            zoom: 15,
+            {% if person.election_2020.latitude %}
+            center: [{{person.election_2020.latitude}}, {{person.election_2020.longitude}}],
+            zoom: 10,
             {% else %}
             center: [39.3210, -111.0937],
             zoom: 6,
@@ -77,59 +88,47 @@ comments: true
 
           L.tileLayer('https://api.mapbox.com/styles/v1/todrobbins/cigbdndmz00019eksg7qvqbzu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidG9kcm9iYmlucyIsImEiOiJ3cTUyNjVrIn0.8ozG-L3QDKblEshkqiEHFg', { maxZoom: 18, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}).addTo(map);
 
-          var marker = L.marker([{{person.latitude}}, {{person.longitude}}]).addTo(map);
+          var marker = L.marker([{{person.election_2020.latitude}}, {{person.election_2020.longitude}}]).addTo(map);
 
-        </script><br>
+        </script>
 
         <h3 id="contact">Contact</h3>
-        <p>{% if person.facebook %}<a href="{{ person.election_2020.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-            <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.instagram %}<a href="{{ person.election_2020.instagram }}"><i
-              class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %}
-          {% if person.twitter %}<a href="{{ person.election_2020.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i>
-            <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.website %}<a href="{{ person.election_2020.website }}"><i
-              class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %}
-          {% if person.youtube %}<a href="{{ person.election_2020.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i>
-            <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
-        </p>
 
-        {% if person.address %}<p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.election_2020.city | replace: ' ','+' }}+{{ person.election_2020.state | replace: ' ','+' }}+{{ person.election_2020.zip | replace: ' ','+' }}">{{ person.election_2020.address }}, {{ person.election_2020.city }}, {{ person.election_2020.state }} {{ person.election_2020.zip }}</a></p>{% endif %}
+        {% if person.election_2020.address %}<p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.election_2020.city | replace: ' ','+' }}+{{ person.election_2020.state | replace: ' ','+' }}+{{ person.election_2020.zip | replace: ' ','+' }}">{{ person.election_2020.address }}, {{ person.election_2020.city }}, {{ person.election_2020.state }} {{ person.election_2020.zip }}</a></p>{% endif %}
 
-        {% if person.phone %}<p><strong>Phone Number:</strong> <a href="tel:1{{ person.election_2020.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.phone }}</a></p>{% endif %}
+        {% if person.election_2020.phone %}<p><strong>Phone Number:</strong> <a href="tel:1{{ person.election_2020.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.phone }}</a></p>{% endif %}
 
-        {% if person.email %}<p><strong>Email Address:</strong> <a href="mailto:{{ person.election_2020.email }}">{{ person.email }}</a></p>{% endif %}
-        <br>
+        {% if person.election_2020.email %}<p><strong>Email Address:</strong> <a href="mailto:{{ person.election_2020.email }}">{{ person.election_2020.email }}</a></p>{% endif %}
 
         <h3 id="documents">Documents</h3>
 
-        {% if person.documents %}
+        {% if person.election_2020.documents %}
         {% for document in person.documents %}
-        <p><a href="{{ person.election_2020.document.url }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>{{ document.note }}</strong> ({{ document.date }})</a></p>
+        <p><a href="{{ person.election_2020.document.url }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>{{ person.election_2020.document.note }}</strong> ({{ person.election_2020.document.date }})</a></p>
         {% endfor %}
         {% endif %}
 
-        {% if person.pledge %}<p><a href="{{ person.election_2020.pledge }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Pledge of Fair Campaign Practices</strong></a></p>{% endif %}
-        <br>
+        {% if person.election_2020.pledge %}<p><a href="{{ person.election_2020.pledge }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Pledge of Fair Campaign Practices</strong></a></p>{% endif %}
 
         <h3 id="endorsements">Endorsements</h3>
 
-        {% if person.endorsements %}
-        {% for endorsement in person.endorsements %}
+        {% if person.election_2020.endorsements %}
+        {% for endorsement in person.election_2020.endorsements %}
         <blockquote cite="{{ person.election_2020.endorsement.url }}">
           <p>“{{ endorsement.note }}”</p>
-          <p><a href="{{ person.election_2020.endorsement.url }}">– {{ endorsement.author }} ({{ endorsement.relationship }})</a></p>
+          <p><a href="{{ person.election_2020.endorsement.url }}">– {{ person.election_2020.endorsement.author }} ({{ person.election_2020.endorsement.relationship }})</a></p>
         </blockquote>
         {% endfor %}
         {% endif %}
 
-        {% if person.pledge %}<p><a href="{{ person.election_2020.pledge }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Pledge of Fair Campaign Practices</strong></a></p>{% endif %}
-        <br>
+        {% if person.election_2020.pledge %}<p><a href="{{ person.election_2020.pledge }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Pledge of Fair Campaign Practices</strong></a></p>{% endif %}
 
         <h3 id="identifiers">Identifiers</h3>
         <p>
         {% if person.identifiers[0].scheme == 'State of Utah Financial Disclosures' %}
           <a href="https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/{{ person.identifiers[0].identifier }}"><i class="fa fa-external-link-square" aria-hidden="true"></i>  <strong>{{ person.identifiers[0].identifier }}</strong> ({{ person.identifiers[0].scheme }})</a>
         {% endif %}
-        </p><br>
+        </p>
 
         <h3 id="media">Media</h3>
         {% if person.election_2020.links %}
@@ -139,11 +138,10 @@ comments: true
         </ul>
         {% endfor %}
         {% endif %}
-        <br>
 
-        {% if person.soundcloud %}<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ person.election_2020.soundcloud }}"></iframe>{% endif %}
-        <br>
+        {% if person.election_2020.soundcloud %}<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ person.election_2020.soundcloud }}"></iframe>{% endif %}
 
+        <aside class="notice"><strong>Last Updated:</strong> {{ person.last_updated }}</aside>
 
         {{ content }}
         {% if site.comments %}
@@ -173,7 +171,7 @@ comments: true
       </footer>
     </main>
     <script src="https://use.fontawesome.com/b9080a0e6a.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>]
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.tablesorter.js"></script>
     {% if site.google_analytics %}
     <script>
@@ -185,17 +183,6 @@ comments: true
         ga('send', 'pageview');
     </script>
     {% endif %}
-    <script type="text/javascript">
-      $(function() {
-        $('#search-query').lunrSearch({
-          indexUrl  : '/js/index.json',           // url for the .json file containing search index data
-          results   : '#search-results',          // selector for containing search results element
-          template  : '#search-results-template', // selector for Mustache.js template
-          titleMsg  : '<h1><em>Search results:</em><h1>',   // message attached in front of results (can be empty)
-          emptyMsg  : '<p>No results.</p>'     // shown message if search returns no results
-        });
-      });
-    </script>
     <script>
 		$(document).ready(function() {
     	$("table").tablesorter({

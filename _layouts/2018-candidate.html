@@ -185,17 +185,6 @@ comments: true
         ga('send', 'pageview');
     </script>
     {% endif %}
-    <script type="text/javascript">
-      $(function() {
-        $('#search-query').lunrSearch({
-          indexUrl  : '/js/index.json',           // url for the .json file containing search index data
-          results   : '#search-results',          // selector for containing search results element
-          template  : '#search-results-template', // selector for Mustache.js template
-          titleMsg  : '<h1><em>Search results:</em><h1>',   // message attached in front of results (can be empty)
-          emptyMsg  : '<p>No results.</p>'     // shown message if search returns no results
-        });
-      });
-    </script>
     <script>
 		$(document).ready(function() {
     	$("table").tablesorter({

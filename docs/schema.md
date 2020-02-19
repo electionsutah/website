@@ -18,8 +18,11 @@ person
   first_names
   last_names
   gender
+  identifiers
+  image
   {YYYY}_election
     election_type
+    incumbent: { yes }
     office
     candidate_status: { filed, defeated, disqualified, elected, withdrew }
     address
@@ -30,12 +33,15 @@ person
     state
     zip
     phone
-    crowdpac
+    donate
     email
     facebook
     twitter
     website
+    youtube
     party
+    documents
+    endorsements
     source
   last_updated
 ```
