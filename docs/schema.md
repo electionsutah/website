@@ -21,7 +21,7 @@ person
   {YYYY}_election
     election_type
     office
-    candidate_status: { defeated, disqualified, elected, withdrew }
+    candidate_status: { filed, defeated, disqualified, elected, withdrew }
     address
     latitude
     longitude
