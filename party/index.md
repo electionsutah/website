@@ -5,6 +5,10 @@ permalink: /party/
 comments: true
 ---
 
+### 2020 Elections
+
+{% include 2020-elections.html %}
+
 ### 2019 Municipal Elections
 
 {% include 2019-municipal-elections.html %}

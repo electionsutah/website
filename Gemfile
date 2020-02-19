@@ -4,7 +4,6 @@ gem "jekyll", "3.8.5"
 
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.12.1"
-   gem "jekyll-lunr-js-search", "~> 3.3.0"
    # gem "jekyll-wikidata"
 end
 

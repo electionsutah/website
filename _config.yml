@@ -19,7 +19,6 @@ disqus_shortname: utah-elections-project
 comments: true
 plugins:
   - jekyll-feed
-  - jekyll-lunr-js-search
   # - jekyll-wikidata
 exclude:
   - Gemfile
