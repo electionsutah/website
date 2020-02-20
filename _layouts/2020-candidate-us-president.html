@@ -20,7 +20,6 @@ comments: true
     <title>{{ person.full_name }} - Elections Utah</title>
 </head>
 <body>
-  {% include welcome.html %}
   <header class="site-header">
       <div class="inner">
         <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }} <i class="fa fa-check-square"></i></a></h1>
@@ -61,17 +60,18 @@ comments: true
         {% if person.image %}
         <img id="bio-image" src="{{ person.image }}" alt="{{ person.full_name }}">
         {% endif %}
-        <p><strong>{{ person.full_name }}</strong> {% if person.candidate_status == 'withdrew' or person.candidate_status == 'disqualified' or person.candidate_status == 'defeated' or person.candidate_status == 'elected' %}was{% else %}is{% endif %} {% if person.election_2020.incumbent %}the incumbent and {% endif %} {% if person.election_2020.party == 'Independent American' or person.election_2020.party == 'Unaffiliated' or person.election_2020.party == 'United Utah' %}an {% else %} a {% endif %}{% if person.election_2020.party %}<strong><a href="{{ site.url }}/party/{{ person.election_2020.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.election_2020.party }}</a></strong>{% endif %} candidate for <strong><a href="{{ site.url }}/office/{{ person.election_2020.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.office }}</a></strong> from <strong>{{ person.election_2020.city }}, {{ person.election_2020.state }}</strong> (<a href="{{ person.election_2020.source }}">Source</a>).</p>
+        <p><strong>{{ person.full_name }}</strong> {% if person.election_2020.candidate_status == 'withdrew' or person.election_2020.candidate_status == 'disqualified' or person.election_2020.candidate_status == 'defeated' or person.election_2020.candidate_status == 'elected' %}was{% else %}is{% endif %} {% if person.election_2020.incumbent %}the incumbent and {% endif %} {% if person.election_2020.party == 'Independent American' or person.election_2020.party == 'Unaffiliated' or person.election_2020.party == 'United Utah' %}an {% else %} a {% endif %}{% if person.election_2020.party %}<strong><a href="{{ site.url }}/party/{{ person.election_2020.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.election_2020.party }}</a></strong>{% endif %} candidate for <strong><a href="{{ site.url }}/office/{{ person.election_2020.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.office }}</a></strong> from <strong>{{ person.election_2020.city }}, {{ person.election_2020.state }}</strong> (<a href="{{ person.election_2020.source }}">Source</a>).</p>
         <hr>
-        <p>{% if person.election_2020.facebook %}<a href="{{ person.election_2020.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-          <strong>Facebook</strong></a>&nbsp;&nbsp;{% endif %} {% if person.election_2020.instagram %}<a href="{{ person.election_2020.instagram }}"><i
-            class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a>&nbsp;&nbsp;{% endif %}
-        {% if person.election_2020.twitter %}<a href="{{ person.election_2020.twitter }}"><i class="fa fa-twitter-square" aria-hidden="true"></i>
-          <strong>Twitter</strong></a>&nbsp;&nbsp;{% endif %} {% if person.election_2020.website %}<a href="{{ person.election_2020.website }}"><i
-            class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a>&nbsp;&nbsp;{% endif %}
-        {% if person.election_2020.youtube %}<a href="{{ person.election_2020.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i>
-          <strong>YouTube</strong></a>&nbsp;&nbsp;{% endif %}
-      </p>
+        <div class="icon-grid">
+          {% if person.election_2020.facebook %}<div class="social-icon"><a href="{{ person.election_2020.facebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i> <strong>Facebook</strong></a></div>{% endif %}
+          {% if person.election_2020.instagram %}<div class="social-icon"><a href="{{ person.election_2020.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i> <strong>Instagram</strong></a></div>{% endif %}
+          {% if person.election_2020.medium %}<div class="social-icon"><a href="{{ person.election_2020.medium }}"><i class=  "fa fa-medium" aria-hidden="true"></i> <strong>Medium</strong></a></div>{% endif %}
+          {% if person.election_2020.reddit %}<div class="social-icon"><a href="{{ person.election_2020.reddit }}"><i class=  "fa fa-reddit-square" aria-hidden="true"></i> <strong>Reddit</strong></a></div>{% endif %}
+          {% if person.election_2020.snapchat %}<div class="social-icon"><a href="{{ person.election_2020.snapchat }}"><i class=  "fa fa-snapchat-square" aria-hidden="true"></i> <strong>Snapchat</strong></a></div>{% endif %}
+          {% if person.election_2020.twitter %}<div class="social-icon"><a href="{{ person.election_2020.twitter }}"><i class=  "fa fa-twitter-square" aria-hidden="true"></i> <strong>Twitter</strong></a></div>{% endif %}
+          {% if person.election_2020.website %}<div class="social-icon"><a href="{{ person.election_2020.website }}"><i class="fa fa-external-link-square" aria-hidden="true"></i> <strong>Website</strong></a></div>{% endif %}
+          {% if person.election_2020.youtube %}<div class="social-icon"><a href="{{ person.election_2020.youtube }}"><i class="fa fa-youtube-square" aria-hidden="true"></i> <strong>YouTube</strong></a></div>{% endif %}
+        </div>
 
         <div id="map"></div>
         <script>
@@ -96,7 +96,7 @@ comments: true
 
         {% if person.election_2020.address %}<p><strong>Address:</strong> <a href="https://www.google.com/maps/place/{{ person.address | replace: ' ','+' }}+{{ person.election_2020.city | replace: ' ','+' }}+{{ person.election_2020.state | replace: ' ','+' }}+{{ person.election_2020.zip | replace: ' ','+' }}">{{ person.election_2020.address }}, {{ person.election_2020.city }}, {{ person.election_2020.state }} {{ person.election_2020.zip }}</a></p>{% endif %}
 
-        {% if person.election_2020.phone %}<p><strong>Phone Number:</strong> <a href="tel:1{{ person.election_2020.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.phone }}</a></p>{% endif %}
+        {% if person.election_2020.phone %}<p><strong>Phone Number:</strong> <a href="tel:{{ person.election_2020.phone | replace: '-','' | replace: ' ','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.phone }}</a></p>{% endif %}
 
         {% if person.election_2020.email %}<p><strong>Email Address:</strong> <a href="mailto:{{ person.election_2020.email }}">{{ person.election_2020.email }}</a></p>{% endif %}
 
@@ -162,9 +162,9 @@ comments: true
 
       <footer>
         <p>
-          <a href="mailto:{{ site.email }}"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
-          <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
-          <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+          <a href="mailto:{{ site.email }}"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
+          <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></div>
+          <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></div>
           <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
         </p>
         <p class="license"><strong>Elections Utah</strong> is releasing these datasets with a <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 1.0 Universal Public Domain data license</a>. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.</p>

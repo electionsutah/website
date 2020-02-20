@@ -24,7 +24,15 @@ person
     election_type
     incumbent: { yes }
     office
-    candidate_status: { filed, defeated, disqualified, elected, withdrew }
+    candidate_status: {
+                        defeated
+                        disqualified
+                        elected
+                        filed
+                        general_election
+                        primary_election
+                        withdrew
+                      }
     address
     latitude
     longitude

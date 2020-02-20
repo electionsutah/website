@@ -14,6 +14,8 @@ main {
       max-width: 50rem;
       margin: 0 auto;
       .site-title {
+          display: flex;
+          justify-content: center;
           font-weight: 300;
           > a {
               color: $color-white;
@@ -21,7 +23,12 @@ main {
           }
       }
       .site-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
           > a {
+              margin-bottom: .5rem;
               color: $color-white;
               &:hover {
                   text-decoration: none;
@@ -50,14 +57,18 @@ main {
 }
 
 .content-nav {
-    margin-bottom: 2rem;
-    > a {
-        font-weight: bold;
-        color: $color-blue;
-        + a {
-            margin-left: 1rem;
-        }
-    }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0 -1rem 0;
+  > a {
+      color: $color-blue;
+      
+      + a {
+          margin-left: 1rem;
+      }
+  }
   }
 
 .hero {
@@ -68,6 +79,21 @@ main {
   float: left;
   max-width: 125px;
   margin: 0 1rem 0 0;
+}
+
+.icon-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  padding: .2rem .6rem;
+  border-radius: 10px;
+  border: 1px solid #0074d9;
+  background: aliceblue;
+  margin: 0 .4rem .4rem 0;
 }
 
 #map {
