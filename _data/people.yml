@@ -82,6 +82,7 @@
   last_names: 'Buttigieg'
   full_name: 'Pete Buttigieg'
   gender: 'male'
+  image: '/images/people/pete-buttigieg-wikipedia.jpg'
   election_2020:
     office: 'U.S. President'
     address: ''
@@ -134,6 +135,7 @@
   last_names: 'Bloomberg'
   full_name: 'Michael R. Bloomberg'
   gender: 'male'
+  image: '/images/people/michael-r-bloomberg-wikipedia.jpg'
   election_2020:
     office: 'U.S. President'
     address: ''
@@ -160,6 +162,7 @@
   last_names: 'Biden'
   full_name: 'Joseph R. Biden'
   gender: 'male'
+  image: '/images/people/joseph-r-biden-wikipedia.jpg'
   election_2020:
     office: 'U.S. President'
     address: ''
@@ -239,6 +242,7 @@
   last_names: 'Warren'
   full_name: 'Elizabeth Warren'
   gender: 'female'
+  image: '/images/people/elizabeth-warren-wikipedia.jpg'
   election_2020:
     office: 'U.S. President'
     address: ''
@@ -291,6 +295,7 @@
   last_names: 'Gabbard'
   full_name: 'Tulsi Gabbard'
   gender: 'female'
+  image: '/images/people/tulsi-gabbard-wikipedia.jpg'
   election_2020:
     office: 'U.S. President'
     address: ''
