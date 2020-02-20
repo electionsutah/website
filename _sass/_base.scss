@@ -42,6 +42,10 @@ h5 {
   text-decoration: underline;
 }
 
+strong {
+  font-weight: 400;
+}
+
 article {
   background: $color-silver;
 }
@@ -87,4 +91,5 @@ code {
 hr {
     border: none;
     border-top: 2px solid $border-color;
+    margin-bottom: 1.2rem;
 }

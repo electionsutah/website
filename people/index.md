@@ -5,6 +5,33 @@ permalink: /people/
 comments: true
 ---
 
+### 2020 Elections
+
+{% include 2020-elections.html %}
+
+#### 2020 U.S. Presidential Candidates
+{% assign person = site.data.people | where:'election_2020.office','U.S. President' | sort: 'last_name' %}
+<table>
+<thead>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>Party</th>
+</thead>
+<tbody>
+{% for member in person  %}
+  <tr>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_names }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_names }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.election_2020.office }}</a></td>
+    <td><a href="{{ site.url }}/party/{{ member.election_2020.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.election_2020.party }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+
+<br>
+
 ### 2019 Municipal Elections
 
 {% include 2019-municipal-elections.html %}
@@ -31,7 +58,7 @@ comments: true
 </tbody>
 </table>
 
-<br><br>
+<br>
 
 ### 2018 Election
 
@@ -60,7 +87,7 @@ comments: true
 </tbody>
 </table>
 
-<br><br>
+<br>
 ### 2017 Municipal Election
 #### Primary Candidates
 {% assign person = site.data.2017.primary.candidates %}
