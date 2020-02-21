@@ -54,7 +54,7 @@
     candidate_status: 'withdrew'
   last_updated: '2020-02-20'
 -
- id: 'cory-booker'
+  id: 'cory-booker'
   first_names: 'Cory'
   last_names: 'Booker'
   full_name: 'Cory Booker'
