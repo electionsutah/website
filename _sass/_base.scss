@@ -76,6 +76,9 @@ th {
     vertical-align: bottom;
     border-bottom: 2px solid $border-color;
 }
+tr:hover {
+    background: #e7e7e7;
+}
 td {
     vertical-align: top;
     border-bottom: 1px solid $border-color;

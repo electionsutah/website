@@ -75,6 +75,11 @@ main {
   width: 100%;
 }
 
+.table-image {
+  float: left;
+  max-width: 75px;
+}
+
 #bio-image {
   float: left;
   max-width: 125px;
@@ -124,7 +129,7 @@ main {
 .info {
   background: #e7e7e7;
   padding: .6rem 1.2rem;
-  margin-bottom: 2rem;
+  margin: 2rem;
   p {
     text-align: left;
   }
