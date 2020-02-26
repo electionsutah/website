@@ -13,6 +13,7 @@ comments: true
 <ul>
   <li><a href="us-president">U.S. President</a></li>
 </ul>
+</div>
 <br>
 
 ### 2019 Municipal Elections
