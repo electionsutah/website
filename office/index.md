@@ -9,6 +9,12 @@ comments: true
 
 {% include 2020-elections.html %}
 
+<div class="columns">
+<ul>
+  <li><a href="us-president">U.S. President</a></li>
+</ul>
+<br>
+
 ### 2019 Municipal Elections
 
 {% include 2019-municipal-elections.html %}
@@ -93,7 +99,6 @@ comments: true
   <li><a href="us-house-2">U.S. House 2</a></li>
   <li><a href="us-house-3">U.S. House 3</a></li>
   <li><a href="us-house-4">U.S. House 4</a></li>
-  <li><a href="us-president">U.S. President</a></li>
   <li><a href="us-senate">U.S. Senate</a></li>
 </ul>
 </div>

@@ -10,7 +10,7 @@ comments: true
 {% include 2020-elections.html %}
 
 #### 2020 U.S. Presidential Candidates
-{% assign person = site.data.people | where:'election_2020.office','U.S. President' | sort: 'last_name' %}
+{% assign person = site.data.people | where:election_2020.office,'U.S. President' | sort: 'last_name' %}
 <table>
 <thead>
   <th></th>
