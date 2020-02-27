@@ -5,26 +5,52 @@ permalink: /party/
 comments: true
 ---
 
+<div class="columns">
+  <ul>
+    <li><a href="green">Green Party of Utah</a></li>
+    <li><a href="independent-american">Independent American Party</a></li>
+    <li><a href="unaffiliated">Unaffiliated</a></li>
+    <li><a href="united-utah">United Utah Party</a></li>
+    <li><a href="constitution">Utah Constitution Party</a></li>
+    <li><a href="democratic">Utah Democratic Party</a></li>
+    <li><a href="libertarian">Utah Libertarian Party</a></li>
+    <li><a href="republican">Utah Republican Party</a></li>
+  </ul>
+</div>
+
 ### 2020 Elections
 
 {% include 2020-elections.html %}
 
-### 2019 Municipal Elections
-
-{% include 2019-municipal-elections.html %}
-
-<div class="columns">
-<ul>
-  <li><a href="green">Green Party of Utah</a></li>
-  <li><a href="independent-american">Independent American Party</a></li>
-  <li><a href="unaffiliated">Unaffiliated</a></li>
-  <li><a href="united-utah">United Utah Party</a></li>
-  <li><a href="constitution">Utah Constitution Party</a></li>
-  <li><a href="democratic">Utah Democratic Party</a></li>
-  <li><a href="libertarian">Utah Libertarian Party</a></li>
-  <li><a href="republican">Utah Republican Party</a></li>
-</ul>
-</div>
+#### 2020 Presidential Primary Candidates
+{% assign people = site.data.people | where: election_2020.office, 'U.S. President' | sort: 'last_names' %}
+<table>
+<thead>
+  <th></th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Candidate for</th>
+  <th>Party</th>
+</thead>
+<tbody>
+{% for member in people  %}
+  <tr>
+    <td>
+      {% if member.image %}
+      <a href="{{ site.url }}/people/{{ member.id }}">
+        <img class="table-image" src="{{ member.image }}" alt="{{ member.full_name }}">
+      </a>
+      {% endif %}
+    </td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_names }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_names }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.election_2020.office | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.election_2020.office }}</a></td>
+    <td><a href="{{ site.url }}/party/{{ member.election_2020.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.election_2020.party }}</a></td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
 
 ### [Green Party of Utah](green)
 
