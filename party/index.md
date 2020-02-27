@@ -5,6 +5,8 @@ permalink: /party/
 comments: true
 ---
 
+{% include 2020-elections.html %}
+
 <div class="columns">
   <ul>
     <li><a href="green">Green Party of Utah</a></li>

@@ -5,8 +5,6 @@ permalink: /people/
 comments: true
 ---
 
-### 2020 Elections
-
 {% include 2020-elections.html %}
 
 #### 2020 U.S. Presidential Candidates
