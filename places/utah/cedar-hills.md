@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Cedar Hills
-permalink: /places/utah/cedar-hills/
+permalink: "/places/utah/cedar-hills/"
+layout: page
 ---
 
 ### 2018 Election

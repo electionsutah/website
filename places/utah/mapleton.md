@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Mapleton
-permalink: /places/utah/mapleton/
+permalink: "/places/utah/mapleton/"
+layout: page
 ---
 
 ### 2018 Election

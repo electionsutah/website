@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Schema
-permalink: /docs/schema/
+permalink: "/docs/schema/"
+layout: page
 comments: false
 ---
 

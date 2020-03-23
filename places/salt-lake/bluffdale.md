@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Bluffdale
-permalink: /places/salt-lake/bluffdale/
+permalink: "/places/salt-lake/bluffdale/"
+layout: page
 ---
 
 ### 2018 Election

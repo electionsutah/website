@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Utah Constitution Party
-permalink: /party/constitution
+permalink: "/party/constitution"
+layout: page
 comments: true
 ---
 

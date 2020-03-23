@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Unaffiliated
-permalink: /party/unaffiliated
+permalink: "/party/unaffiliated"
+layout: page
 comments: true
 ---
 

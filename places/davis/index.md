@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Davis County
-permalink: /places/davis/
+permalink: "/places/davis/"
+layout: page
 comments: true
 ---
 

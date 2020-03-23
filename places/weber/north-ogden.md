@@ -1,7 +1,7 @@
 ---
-layout: page
 title: North Ogden
-permalink: /places/weber/north-ogden/
+permalink: "/places/weber/north-ogden/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

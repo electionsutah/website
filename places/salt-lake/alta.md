@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Alta
-permalink: /places/salt-lake/alta/
+permalink: "/places/salt-lake/alta/"
+layout: page
 ---
 
 ### 2018 Election

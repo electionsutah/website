@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Spanish Fork
-permalink: /places/utah/spanish-fork/
+permalink: "/places/utah/spanish-fork/"
+layout: page
 ---
 
 ### 2018 Election

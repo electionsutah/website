@@ -1,7 +1,7 @@
 ---
-layout: page
 title: U.S. Senate
-permalink: /office/us-senate
+permalink: "/office/us-senate"
+layout: page
 comments: true
 ---
 

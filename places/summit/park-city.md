@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Park City
-permalink: /places/summit/park-city
+permalink: "/places/summit/park-city"
+layout: page
 comments: true
 ---
 

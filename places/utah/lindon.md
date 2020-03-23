@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Lindon
-permalink: /places/utah/lindon/
+permalink: "/places/utah/lindon/"
+layout: page
 ---
 
 ### 2018 Election

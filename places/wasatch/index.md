@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Wasatch County
-permalink: /places/wasatch/
+permalink: "/places/wasatch/"
+layout: page
 comments: true
 ---
 

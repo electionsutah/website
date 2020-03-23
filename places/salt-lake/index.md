@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Salt Lake County
-permalink: /places/salt-lake/
+permalink: "/places/salt-lake/"
+layout: page
 comments: true
 ---
 

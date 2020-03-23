@@ -1,7 +1,7 @@
 ---
-layout: page
 title: United Utah Party
-permalink: /party/united-utah
+permalink: "/party/united-utah"
+layout: page
 comments: true
 ---
 

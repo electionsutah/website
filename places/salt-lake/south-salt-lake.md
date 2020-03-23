@@ -1,7 +1,7 @@
 ---
-layout: page
 title: South Salt Lake
-permalink: /places/salt-lake/south-salt-lake/
+permalink: "/places/salt-lake/south-salt-lake/"
+layout: page
 ---
 
 ### 2018 Election

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Ogden
-permalink: /places/weber/ogden/
+permalink: "/places/weber/ogden/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

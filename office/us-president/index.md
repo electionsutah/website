@@ -1,7 +1,7 @@
 ---
-layout: page
 title: U.S. President
-permalink: /office/us-president
+permalink: "/office/us-president"
+layout: page
 comments: true
 ---
 

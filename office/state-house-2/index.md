@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State House 2
-permalink: /office/state-house-2
+permalink: "/office/state-house-2"
+layout: page
 comments: true
 ---
 

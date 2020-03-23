@@ -1,7 +1,7 @@
 ---
-layout: page
 title: American Fork
-permalink: /places/utah/american-fork/
+permalink: "/places/utah/american-fork/"
+layout: page
 ---
 
 {% assign place = site.data.places.american_fork %}

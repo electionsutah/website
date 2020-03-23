@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Marriott-Slaterville
-permalink: /places/weber/marriott-slaterville/
+permalink: "/places/weber/marriott-slaterville/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

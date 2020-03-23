@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Independent American Party
-permalink: /party/independent-american
+permalink: "/party/independent-american"
+layout: page
 comments: true
 ---
 

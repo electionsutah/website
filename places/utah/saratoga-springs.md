@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Saratoga Springs
-permalink: /places/utah/saratoga-springs/
+permalink: "/places/utah/saratoga-springs/"
+layout: page
 ---
 
 ### 2018 Election

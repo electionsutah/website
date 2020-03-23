@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Riverton
-permalink: /places/salt-lake/riverton/
+permalink: "/places/salt-lake/riverton/"
+layout: page
 ---
 
 ### 2018 Election

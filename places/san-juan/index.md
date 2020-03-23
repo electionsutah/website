@@ -1,7 +1,7 @@
 ---
-layout: page
 title: San Juan County
-permalink: /places/san-juan/
+permalink: "/places/san-juan/"
+layout: page
 comments: true
 ---
 

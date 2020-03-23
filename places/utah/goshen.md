@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Goshen
-permalink: /places/utah/goshen/
+permalink: "/places/utah/goshen/"
+layout: page
 ---
 
 ### 2018 Election

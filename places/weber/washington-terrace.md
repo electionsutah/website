@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Washington Terrace
-permalink: /places/weber/washington-terrace/
+permalink: "/places/weber/washington-terrace/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

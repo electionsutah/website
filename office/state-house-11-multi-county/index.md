@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State House 11 (Multi County)
-permalink: /office/state-house-11-multi-county
+permalink: "/office/state-house-11-multi-county"
+layout: page
 comments: true
 ---
 

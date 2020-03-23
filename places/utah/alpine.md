@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Alpine
-permalink: /places/utah/alpine/
+permalink: "/places/utah/alpine/"
+layout: page
 ---
 
 {% assign place = site.data.places.alpine %}

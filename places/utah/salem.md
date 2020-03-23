@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Salem
-permalink: /places/utah/salem/
+permalink: "/places/utah/salem/"
+layout: page
 ---
 
 ### 2018 Election

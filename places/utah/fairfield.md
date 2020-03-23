@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Fairfield
-permalink: /places/utah/fairfield/
+permalink: "/places/utah/fairfield/"
+layout: page
 ---
 
 ### 2018 Election

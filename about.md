@@ -1,8 +1,8 @@
 ---
-layout: page
 title: About
-permalink: /about/
-hero: ../../images/capitol_building.jpg
+permalink: "/about/"
+layout: page
+hero: "../../images/capitol_building.jpg"
 comments: true
 ---
 

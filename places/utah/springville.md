@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Springville
-permalink: /places/utah/springville/
+permalink: "/places/utah/springville/"
+layout: page
 ---
 
 ### 2018 Election

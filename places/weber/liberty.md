@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Liberty
-permalink: /places/weber/liberty/
+permalink: "/places/weber/liberty/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

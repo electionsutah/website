@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Draper
-permalink: /places/salt-lake/draper/
+permalink: "/places/salt-lake/draper/"
+layout: page
 ---
 
 ### 2018 Election

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Herriman
-permalink: /places/salt-lake/herriman/
+permalink: "/places/salt-lake/herriman/"
+layout: page
 ---
 
 ### 2018 Election

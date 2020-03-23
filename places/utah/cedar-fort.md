@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Cedar Fort
-permalink: /places/utah/cedar-fort/
+permalink: "/places/utah/cedar-fort/"
+layout: page
 ---
 
 ### 2018 Election

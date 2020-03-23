@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Grand County
-permalink: /places/grand/
+permalink: "/places/grand/"
+layout: page
 comments: true
 ---
 

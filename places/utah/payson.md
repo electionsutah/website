@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Payson
-permalink: /places/utah/payson/
+permalink: "/places/utah/payson/"
+layout: page
 ---
 
 ### 2018 Election

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Millcreek
-permalink: /places/salt-lake/millcreek/
+permalink: "/places/salt-lake/millcreek/"
+layout: page
 ---
 
 ### 2018 Election

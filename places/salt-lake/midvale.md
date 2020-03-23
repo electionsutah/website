@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Midvale
-permalink: /places/salt-lake/midvale/
+permalink: "/places/salt-lake/midvale/"
+layout: page
 ---
 
 ### 2018 Election

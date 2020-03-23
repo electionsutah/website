@@ -1,7 +1,7 @@
 ---
-layout: page
 title: People
-permalink: /people/
+permalink: "/people/"
+layout: page
 comments: true
 ---
 

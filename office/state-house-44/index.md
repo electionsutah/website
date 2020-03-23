@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State House 44
-permalink: /office/state-house-44
+permalink: "/office/state-house-44"
+layout: page
 comments: true
 ---
 

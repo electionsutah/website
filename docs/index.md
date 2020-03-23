@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Documentation
-permalink: /docs/
+permalink: "/docs/"
+layout: page
 comments: false
 ---
 

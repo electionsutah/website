@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Utah County
-permalink: /places/utah/
+permalink: "/places/utah/"
+layout: page
 comments: true
 ---
 

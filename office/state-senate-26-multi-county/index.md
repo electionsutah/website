@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State Senate 26 (Multi County)
-permalink: /office/state-senate-26-multi-county
+permalink: "/office/state-senate-26-multi-county"
+layout: page
 comments: true
 ---
 

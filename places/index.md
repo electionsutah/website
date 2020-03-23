@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Places
-permalink: /places/
+permalink: "/places/"
+layout: page
 ---
 
 <p><i class="fa fa-star"></i> represents a county seat.</p>

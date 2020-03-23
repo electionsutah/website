@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Salt Lake City
-permalink: /places/salt-lake/salt-lake-city/
+permalink: "/places/salt-lake/salt-lake-city/"
+layout: page
 ---
 
 ### 2018 Election

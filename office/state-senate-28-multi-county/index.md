@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State Senate 28 (Multi County)
-permalink: /office/state-senate-28-multi-county
+permalink: "/office/state-senate-28-multi-county"
+layout: page
 comments: true
 ---
 

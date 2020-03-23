@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State House 9
-permalink: /office/state-house-9
+permalink: "/office/state-house-9"
+layout: page
 comments: true
 ---
 

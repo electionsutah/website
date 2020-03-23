@@ -1,7 +1,7 @@
 ---
-layout: page
 title: U.S. House 3
-permalink: /office/us-house-3
+permalink: "/office/us-house-3"
+layout: page
 comments: true
 ---
 

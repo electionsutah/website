@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Orem
-permalink: /places/utah/orem/
+permalink: "/places/utah/orem/"
+layout: page
 ---
 
 ### 2018 Election

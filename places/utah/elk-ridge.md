@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Elk Ridge
-permalink: /places/utah/elk-ridge/
+permalink: "/places/utah/elk-ridge/"
+layout: page
 ---
 
 ### 2018 Election

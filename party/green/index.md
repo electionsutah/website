@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Green Party of Utah
-permalink: /party/green
+permalink: "/party/green"
+layout: page
 comments: true
 ---
 

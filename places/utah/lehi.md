@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Lehi
-permalink: /places/utah/lehi/
+permalink: "/places/utah/lehi/"
+layout: page
 ---
 
 ### 2018 Election

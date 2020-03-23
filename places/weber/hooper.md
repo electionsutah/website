@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Hooper
-permalink: /places/weber/hooper/
+permalink: "/places/weber/hooper/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

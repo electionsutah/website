@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Murray
-permalink: /places/salt-lake/murray/
+permalink: "/places/salt-lake/murray/"
+layout: page
 ---
 
 ### 2018 Election

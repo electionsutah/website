@@ -1,7 +1,7 @@
 ---
-layout: page
 title: West Valley City
-permalink: /places/salt-lake/west-valley-city/
+permalink: "/places/salt-lake/west-valley-city/"
+layout: page
 ---
 
 ### 2018 Election

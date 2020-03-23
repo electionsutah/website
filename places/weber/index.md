@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Weber County
-permalink: /places/weber/
+permalink: "/places/weber/"
+layout: page
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Sandy
-permalink: /places/salt-lake/sandy/
+permalink: "/places/salt-lake/sandy/"
+layout: page
 ---
 
 ### 2018 Election

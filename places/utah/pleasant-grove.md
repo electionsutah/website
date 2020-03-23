@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Pleasant Grove
-permalink: /places/utah/pleasant-grove/
+permalink: "/places/utah/pleasant-grove/"
+layout: page
 ---
 
 ### 2018 Election

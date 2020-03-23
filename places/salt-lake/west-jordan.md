@@ -1,7 +1,7 @@
 ---
-layout: page
 title: West Jordan
-permalink: /places/salt-lake/west-jordan/
+permalink: "/places/salt-lake/west-jordan/"
+layout: page
 ---
 
 ### 2018 Election

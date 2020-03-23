@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Carbon County
-permalink: /places/carbon/
+permalink: "/places/carbon/"
+layout: page
 comments: true
 ---
 

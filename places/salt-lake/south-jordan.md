@@ -1,7 +1,7 @@
 ---
-layout: page
 title: South Jordan
-permalink: /places/salt-lake/south-jordan/
+permalink: "/places/salt-lake/south-jordan/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

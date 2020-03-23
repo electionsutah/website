@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Political Offices
-permalink: /office/
+permalink: "/office/"
+layout: page
 comments: true
 ---
 

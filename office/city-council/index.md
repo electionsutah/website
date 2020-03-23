@@ -1,7 +1,7 @@
 ---
-layout: page
 title: City Council
-permalink: /office/city-council
+permalink: "/office/city-council"
+layout: page
 comments: true
 ---
 

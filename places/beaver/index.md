@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Beaver County
-permalink: /places/beaver/
+permalink: "/places/beaver/"
+layout: page
 comments: true
 ---
 

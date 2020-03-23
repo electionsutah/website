@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Utah Republican Party
-permalink: /party/republican
+permalink: "/party/republican"
+layout: page
 comments: true
 ---
 

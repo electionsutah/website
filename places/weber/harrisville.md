@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Harrisville
-permalink: /places/weber/harrisville/
+permalink: "/places/weber/harrisville/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Emery County
-permalink: /places/emery/
+permalink: "/places/emery/"
+layout: page
 comments: true
 ---
 

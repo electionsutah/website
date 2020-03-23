@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Kane County
-permalink: /places/kane/
+permalink: "/places/kane/"
+layout: page
 comments: true
 ---
 

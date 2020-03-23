@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State Senate 8 (2 year term)
-permalink: /office/state-senate-8-2-year-term
+permalink: "/office/state-senate-8-2-year-term"
+layout: page
 comments: true
 ---
 

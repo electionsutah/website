@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Price
-permalink: /places/carbon/price
+permalink: "/places/carbon/price"
+layout: page
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Political Parties
-permalink: /party/
+permalink: "/party/"
+layout: page
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Holladay
-permalink: /places/salt-lake/holladay/
+permalink: "/places/salt-lake/holladay/"
+layout: page
 ---
 
 ### 2018 Election

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Farr West
-permalink: /places/weber/farr-west/
+permalink: "/places/weber/farr-west/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

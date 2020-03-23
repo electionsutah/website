@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State House 29 (Multi County)
-permalink: /office/state-house-29-multi-county
+permalink: "/office/state-house-29-multi-county"
+layout: page
 comments: true
 ---
 

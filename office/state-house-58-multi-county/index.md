@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State House 58 (Multi County)
-permalink: /office/state-house-58-multi-county
+permalink: "/office/state-house-58-multi-county"
+layout: page
 comments: true
 ---
 

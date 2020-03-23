@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Taylorsville
-permalink: /places/salt-lake/taylorsville/
+permalink: "/places/salt-lake/taylorsville/"
+layout: page
 ---
 
 ### 2018 Election

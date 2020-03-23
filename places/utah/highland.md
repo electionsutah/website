@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Highland
-permalink: /places/utah/highland/
+permalink: "/places/utah/highland/"
+layout: page
 ---
 
 ### 2018 Election

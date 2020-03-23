@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Huntsville
-permalink: /places/weber/huntsville/
+permalink: "/places/weber/huntsville/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

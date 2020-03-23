@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Kearns
-permalink: /places/salt-lake/kearns/
+permalink: "/places/salt-lake/kearns/"
+layout: page
 ---
 
 ### 2018 Election

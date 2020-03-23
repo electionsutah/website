@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Glossary
-permalink: /docs/glossary/
+permalink: "/docs/glossary/"
+layout: page
 comments: false
 ---
 

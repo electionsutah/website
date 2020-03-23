@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Genola
-permalink: /places/utah/genola/
+permalink: "/places/utah/genola/"
+layout: page
 ---
 
 ### 2018 Election

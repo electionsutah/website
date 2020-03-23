@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Fountain Green
-permalink: /places/sanpete/fountain-green
+permalink: "/places/sanpete/fountain-green"
+layout: page
 comments: true
 ---
 

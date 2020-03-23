@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State Senate 11 (Multi County)
-permalink: /office/state-senate-11-multi-county
+permalink: "/office/state-senate-11-multi-county"
+layout: page
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Cottonwood Heights
-permalink: /places/salt-lake/cottonwood-heights/
+permalink: "/places/salt-lake/cottonwood-heights/"
+layout: page
 ---
 
 ### 2018 Election

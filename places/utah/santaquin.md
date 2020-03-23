@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Santaquin
-permalink: /places/utah/santaquin/
+permalink: "/places/utah/santaquin/"
+layout: page
 ---
 
 ### 2018 Election

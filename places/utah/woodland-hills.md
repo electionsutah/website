@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Woodland Hills
-permalink: /places/utah/woodland-hills/
+permalink: "/places/utah/woodland-hills/"
+layout: page
 ---
 
 ### 2018 Election

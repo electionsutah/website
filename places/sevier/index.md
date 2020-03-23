@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Sevier County
-permalink: /places/sevier/
+permalink: "/places/sevier/"
+layout: page
 comments: true
 ---
 

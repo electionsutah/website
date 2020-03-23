@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Eden
-permalink: /places/weber/eden/
+permalink: "/places/weber/eden/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

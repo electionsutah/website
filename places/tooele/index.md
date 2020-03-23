@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Tooele County
-permalink: /places/tooele/
+permalink: "/places/tooele/"
+layout: page
 comments: true
 ---
 

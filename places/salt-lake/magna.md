@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Magna
-permalink: /places/salt-lake/magna/
+permalink: "/places/salt-lake/magna/"
+layout: page
 ---
 
 ### 2018 Election

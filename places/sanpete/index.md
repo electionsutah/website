@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Sanpete County
-permalink: /places/sanpete/
+permalink: "/places/sanpete/"
+layout: page
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: State Senate 3
-permalink: /office/state-senate-3
+permalink: "/office/state-senate-3"
+layout: page
 comments: true
 ---
 

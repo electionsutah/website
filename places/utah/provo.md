@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Provo
-permalink: /places/utah/provo/
+permalink: "/places/utah/provo/"
+layout: page
 ---
 
 ### 2018 Election

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: West Haven
-permalink: /places/weber/west-haven/
+permalink: "/places/weber/west-haven/"
+layout: page
 ---
 
 #### 2018 Primary Candidates

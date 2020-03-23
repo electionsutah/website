@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Eagle Mountain
-permalink: /places/utah/eagle-mountain/
+permalink: "/places/utah/eagle-mountain/"
+layout: page
 ---
 
 ### 2018 Election

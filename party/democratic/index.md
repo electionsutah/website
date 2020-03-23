@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Utah Democratic Party
-permalink: /party/democratic
+permalink: "/party/democratic"
+layout: page
 comments: true
 ---
 

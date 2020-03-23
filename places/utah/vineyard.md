@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Vineyard
-permalink: /places/utah/vineyard/
+permalink: "/places/utah/vineyard/"
+layout: page
 ---
 
 ### 2018 Election

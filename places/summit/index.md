@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Summit County
-permalink: /places/summit/
+permalink: "/places/summit/"
+layout: page
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Utah Libertarian Party
-permalink: /party/libertarian
+permalink: "/party/libertarian"
+layout: page
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Mount Pleasant
-permalink: /places/sanpete/mount-pleasant
+permalink: "/places/sanpete/mount-pleasant"
+layout: page
 comments: true
 ---
 
