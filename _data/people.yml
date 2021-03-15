@@ -103,7 +103,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: ''
+    candidate_status: 'withdrew'
   last_updated: '2020-02-20'
 -
   id: 'nathan-bloxham'
@@ -153,7 +153,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: ''
+    candidate_status: 'withdrew'
   last_updated: '2020-02-20'
 -
   id: 'joseph-r-biden'
@@ -180,7 +180,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: ''
+    candidate_status: 'elected'
   last_updated: '2020-02-20'
 -
   id: 'bernie-sanders'
@@ -207,7 +207,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: ''
+    candidate_status: 'withdrew'
   last_updated: '2020-02-19'
 -
   id: 'tom-steyer'
@@ -234,7 +234,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: ''
+    candidate_status: 'withdrew'
   last_updated: '2020-02-20'
 -
   id: 'elizabeth-warren'
@@ -261,7 +261,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: 'primary_election'
+    candidate_status: 'withdrew'
   last_updated: '2020-02-20'
 -
   id: 'marianne-williamson'
@@ -316,7 +316,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: 'primary_election'
+    candidate_status: 'withdrew'
   last_updated: '2020-02-20'
 -
   id: 'amy-klobuchar'
@@ -342,7 +342,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: ''
+    candidate_status: 'withdrew'
   last_updated: '2020-02-19'
 -
   id: 'deval-patrick'
@@ -395,7 +395,7 @@
     party: 'Democratic'
     election_type: 'primary'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: ''
+    candidate_status: 'withdrew'
   last_updated: '2020-02-19'
 -
   id: 'robert-ardini'
@@ -556,7 +556,7 @@
         url: 'https://voteinfo.utah.gov/wp-content/uploads/sites/42/2019/11/2020-Presidential-Primary-Election-Donald-J.-Trump.pdf'
         note: 'Declaration of Candidacy'
     source: 'https://voteinfo.utah.gov/2020-presidential-candidates/'
-    candidate_status: 'filed'
+    candidate_status: 'defeated'
   last_updated: '2020-02-19'
 -
   id: 'andrew-stoddard'

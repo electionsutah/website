@@ -79,7 +79,7 @@ comments: true
 {% include 2018-elections.html %}
 
 #### Primary Candidates
-{% assign person = site.data.people | where: 'election_2018', true | sort: 'last_name' %}
+{% assign person = site.data.2018.primary | where: 'election_2018', true | sort: 'last_name' %}
 <table>
 <thead>
   <th></th>

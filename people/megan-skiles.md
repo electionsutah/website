@@ -1,5 +1,5 @@
 ---
 layout: 2018-candidate
-person: ut0467
+person: megan-skiles
 ---
 

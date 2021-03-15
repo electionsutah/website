@@ -11,7 +11,7 @@ comments: true
 
 #### 2020 Presidential Primary Candidates
 
-{% assign people = site.data.people | where_exp: "someone", "someone.election_2020.office == 'U.S. President' and someone.election_2020.party == 'Republican'" | sort: "last_names" %}
+{% assign people = site.data.people | where_exp: "someone", "someone.election_2020.office == 'U.S. President'" and "someone.election_2020.party == 'Republican'" | sort: "last_names" %}
 
 <table>
 <thead>

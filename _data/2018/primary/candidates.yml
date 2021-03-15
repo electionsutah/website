@@ -5018,19 +5018,17 @@
   candidate_status: 'withdrew'
   last_updated: '2018-05-07'
 -
-  id: ut0467
+  id: megan-skiles
   name: 'Megan Skiles'
   first_name: Megan
   last_name: Skiles
   gender: 'female'
   office: 'State House 46'
   district: '46'
-  address: ''
   city: Midvale
   county: 'Salt Lake'
   state: UT
   zip: '84047'
-  phone: ''
   party: 'Democratic'
   email: meganmskiles@gmail.com
   website: 'http://meganskiles.com'
@@ -7022,7 +7020,6 @@
       author: 'Ryan Burke'
       relationship: 'District Special Education Director'
       url: 'http://cindydavisforschoolboard.com/#endorse'
-
   candidate_status: 'filed'
   last_updated: '2018-06-14'
 -
