@@ -25,7 +25,6 @@ disqus_shortname: utah-elections-project
 comments: true
 plugins:
 - jekyll-feed
-- jekyll-lunr-js-search
 exclude:
 - Gemfile
 - Gemfile.lock

@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
-gem "jekyll", "4.0.0"
+gem "jekyll", "3.9.0"
+gem "github-pages"
 
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.13"
+   gem "jekyll-feed", "~> 0.15.1"
    gem "jekyll-sitemap", "~> 1.4.0"
 end
 
