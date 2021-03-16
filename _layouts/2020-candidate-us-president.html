@@ -1,5 +1,5 @@
 ---
-comments: true
+
 ---
 
 {% assign person = site.data.people | where: 'id', page.person  and 'election_2020.office' == 'U.S. President' | first %}
@@ -58,7 +58,7 @@ comments: true
 
         <h3 id="biography">Biography</h3>
         {% if person.image %}
-        <img id="bio-image" src="{{ person.image }}" alt="{{ person.full_name }}">
+        <img id="bio-image" src="{{ person.image }}" alt="A photo of {{ person.full_name }}">
         {% endif %}
         <p><strong>{{ person.full_name }}</strong> {% if person.election_2020.candidate_status == 'withdrew' or person.election_2020.candidate_status == 'disqualified' or person.election_2020.candidate_status == 'defeated' or person.election_2020.candidate_status == 'elected' %}was{% else %}is{% endif %} {% if person.election_2020.incumbent %}the incumbent and {% endif %} {% if person.election_2020.party == 'Independent American' or person.election_2020.party == 'Unaffiliated' or person.election_2020.party == 'United Utah' %}an {% else %} a {% endif %}{% if person.election_2020.party %}<strong><a href="{{ site.url }}/party/{{ person.election_2020.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.election_2020.party }}</a></strong>{% endif %} candidate for <strong><a href="{{ site.url }}/office/{{ person.election_2020.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.election_2020.office }}</a></strong> from <strong>{{ person.election_2020.city }}, {{ person.election_2020.state }}</strong> (<a href="{{ person.election_2020.source }}">Source</a>).</p>
         <hr>

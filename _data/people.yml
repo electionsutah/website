@@ -568,7 +568,6 @@
   identifiers:
     identifier: '1415014'
     scheme: 'State of Utah Financial Disclosures'
-  gender: 'male'
   election_2018:
     office: 'State House 44'
     district: '44'
@@ -587,14 +586,14 @@
     website: 'https://www.voteandrewstoddard.com/'
     candidate_status: 'elected'
     documents:
-      document:
-        date: '2018-03-14'
-        note: 'Declaration of Candidacy'
-        url: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
-      document:
+      document1:
         date: '2018-01-16'
         note: 'Intent to Gather Signatures'
         url: 'https://elections.utah.gov/Media/Default/2018%20Election/Intent%20to%20Gather%20Signatures/Legislative%20Candidates/House%2044%20-%20Andrew%20Stoddard.pdf'
+      document2:
+        date: '2018-03-14'
+        note: 'Declaration of Candidacy'
+        url: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
     source: 'https://elections.utah.gov/Media/Default/2018%20Election%2FDeclarations%20of%20Candidacy%2FUtah%20House%2FHouse%2044%20-%20Andrew%20Stoddard.pdf'
   election_2017:
     state: UT
@@ -603,6 +602,7 @@
     office: 'Council District 4'
     name: 'Andrew Stoddard'
     address: '218 E 8135 S, Sandy, UT 84070'
+    party: 'Unaffiliated'
     latitude: '40.603059'
     longitude: '-111.884317'
     phone: '+1-801-884-9943'
@@ -637,3 +637,23 @@
     source: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/US%20House%20Candidates/US%20House%201%20-%20Adam%20Davis.pdf'
     candidate_status: 'filed'
   last_updated: '2020-02-27'
+-
+  id: megan-skiles
+  name: 'Megan Skiles'
+  first_names: Megan
+  last_names: Skiles
+  gender: 'female'
+  election_2018:
+    office: 'State House 46'
+    district: '46'
+    city: Midvale
+    county: 'Salt Lake'
+    state: UT
+    zip: '84047'
+    party: 'Democratic'
+    email: meganmskiles@gmail.com
+    website: 'http://meganskiles.com'
+    candidate_status: 'filed'
+    source: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20House/House%2046%20-%20Megan%20Skiles.pdf'
+    declaration_of_candidacy: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20House/House%2046%20-%20Megan%20Skiles.pdf'
+  last_updated: '2021-05-16'

@@ -5018,25 +5018,6 @@
   candidate_status: 'withdrew'
   last_updated: '2018-05-07'
 -
-  id: megan-skiles
-  name: 'Megan Skiles'
-  first_name: Megan
-  last_name: Skiles
-  gender: 'female'
-  office: 'State House 46'
-  district: '46'
-  city: Midvale
-  county: 'Salt Lake'
-  state: UT
-  zip: '84047'
-  party: 'Democratic'
-  email: meganmskiles@gmail.com
-  website: 'http://meganskiles.com'
-  candidate_status: 'filed'
-  source: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20House/House%2046%20-%20Megan%20Skiles.pdf'
-  declaration_of_candidacy: 'https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20House/House%2046%20-%20Megan%20Skiles.pdf'
-  last_updated: '2018-05-07'
--
   id: ut0468
   name: 'Lee Anne Walker'
   first_name: Lee

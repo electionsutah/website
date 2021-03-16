@@ -25,10 +25,10 @@ person
     incumbent: { yes }
     office
     candidate_status: {
+                        filed
                         defeated
                         disqualified
                         elected
-                        filed
                         general_election
                         primary_election
                         withdrew
@@ -49,7 +49,9 @@ person
     youtube
     party
     documents
+      document_{###}
     endorsements
+      endorsement_{###}
     source
   last_updated
 ```

@@ -1,5 +1,5 @@
 ---
-layout: 2017-candidate
+layout: person
 person: derk-powell-timothy
 ---
 
