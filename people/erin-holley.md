@@ -1,5 +1,5 @@
 ---
 layout: person
-person: 'erin-holley'
+person: erin-holley
 ---
 
