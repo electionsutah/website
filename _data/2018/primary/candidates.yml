@@ -4,9 +4,9 @@
   county: 'Salt Lake'
   city: 'South Jordan'
   office: 'State House 50'
-  name: 'Jen Schwartz'
-  first_name: 'Jen'
-  last_name: 'Schwartz'
+  full_name: 'Jen Schwartz'
+  first_names: 'Jen'
+  last_names: 'Schwartz'
   gender: 'female'
   website: 'http://www.voteforjenschwartz.com/'
   facebook: 'https://www.facebook.com/pages/Jen-Schwartz-for-Utah-HD-50/125789208178042'
@@ -20,9 +20,9 @@
   county: 'Salt Lake'
   city: 'Salt Lake City'
   office: 'State House 24'
-  name: 'Jacquelyn Orton'
-  first_name: 'Jacquelyn'
-  last_name: 'Orton'
+  full_name: 'Jacquelyn Orton'
+  first_names: 'Jacquelyn'
+  last_names: 'Orton'
   gender: 'female'
   facebook: 'https://www.facebook.com/ortonforhouse/'
   party: 'Democratic'
@@ -35,9 +35,9 @@
 -
   id: 'adam-davis'
   office: 'U.S. House 1'
-  name: 'Adam Davis'
-  first_name: 'Adam'
-  last_name: 'Davis'
+  full_name: 'Adam Davis'
+  first_names: 'Adam'
+  last_names: 'Davis'
   gender: 'male'
   address: '420 W Cadbury Dr Apt E106'
   city: 'South Jordan'
@@ -57,9 +57,9 @@
   last_updated: '2018-06-15'
 -
   id: 'stoney-fonua'
-  name: 'Stoney Fonua'
-  first_name: 'Stoney'
-  last_name: Fonua
+  full_name: 'Stoney Fonua'
+  first_names: 'Stoney'
+  last_names: Fonua
   gender: 'male'
   office: 'U.S. Senate'
   address: '5526 West 13400 South Ste 309'
@@ -77,10 +77,10 @@
   last_updated: '2018-06-15'
 -
   id: 'jeremy-lewis-friedbaum'
-  name: 'Jeremy Lewis Friedbaum'
-  first_name: Jeremy
+  full_name: 'Jeremy Lewis Friedbaum'
+  first_names: Jeremy
   middle_name: Lewis
-  last_name: Friedbaum
+  last_names: Friedbaum
   gender: 'male'
   office: 'U.S. Senate'
   address: '1072 West 1100 North'
@@ -95,9 +95,9 @@
   last_updated: '2018-06-15'
 -
   id: ut0209
-  name: 'Alicia Colvin'
-  first_name: Alicia
-  last_name: Colvin
+  full_name: 'Alicia Colvin'
+  first_names: Alicia
+  last_names: Colvin
   gender: 'female'
   office: 'U.S. Senate'
   address: '1453 Stanford St'
@@ -115,9 +115,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0210
-  name: 'Tim Aalders'
-  first_name: 'Tim'
-  last_name: 'Aalders'
+  full_name: 'Tim Aalders'
+  first_names: 'Tim'
+  last_names: 'Aalders'
   gender: 'male'
   office: 'U.S. Senate'
   address: '5306 West 10320 N'
@@ -132,10 +132,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0211
-  name: 'Craig R. Bowden'
-  first_name: 'Craig'
+  full_name: 'Craig R. Bowden'
+  first_names: 'Craig'
   middle_name: 'R.'
-  last_name: 'Bowden'
+  last_names: 'Bowden'
   gender: 'male'
   office: 'U.S. Senate'
   address: '2888 N 400 E'
@@ -151,9 +151,9 @@
   last_updated: '2018-03-28'
 -
   id: ut0212
-  name: 'Loy Brunson'
-  first_name: 'Loy'
-  last_name: 'Brunson'
+  full_name: 'Loy Brunson'
+  first_names: 'Loy'
+  last_names: 'Brunson'
   gender: 'male'
   office: 'U.S. Senate'
   address: '2675 North 1060 East'
@@ -169,10 +169,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0213
-  name: 'Joshua C. Lee'
-  first_name: Joshua
+  full_name: 'Joshua C. Lee'
+  first_names: Joshua
   middle_name: C.
-  last_name: Lee
+  last_names: Lee
   gender: 'male'
   office: 'U.S. Senate'
   address: 'P.O Box 683'
@@ -186,9 +186,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0214
-  name: 'Larry Livingston'
-  first_name: Larry
-  last_name: Livingston
+  full_name: 'Larry Livingston'
+  first_names: Larry
+  last_names: Livingston
   gender: 'male'
   office: 'U.S. Senate'
   address: '830 N 500 W #51'
@@ -203,10 +203,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0215
-  name: 'Reed C. McCandless'
-  first_name: Reed
+  full_name: 'Reed C. McCandless'
+  first_names: Reed
   middle_name: C.
-  last_name: McCandless
+  last_names: McCandless
   gender: 'male'
   office: 'U.S. Senate'
   address: '8116 N. Ridge Loop West N. 4'
@@ -221,9 +221,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0216
-  name: 'Larry Meyers'
-  first_name: Larry
-  last_name: Meyers
+  full_name: 'Larry Meyers'
+  first_names: Larry
+  last_names: Meyers
   gender: 'male'
   office: 'U.S. Senate'
   address: '5391 N 2000 W'
@@ -239,9 +239,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0217
-  name: 'Mitchell Vice'
-  first_name: Mitchell
-  last_name: Vice
+  full_name: 'Mitchell Vice'
+  first_names: Mitchell
+  last_names: Vice
   gender: 'male'
   office: 'U.S. Senate'
   address: 'PO Box 526110'
@@ -257,9 +257,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0218
-  name: 'Jenny Wilson'
-  first_name: Jenny
-  last_name: Wilson
+  full_name: 'Jenny Wilson'
+  first_names: Jenny
+  last_names: Wilson
   gender: 'female'
   office: 'U.S. Senate'
   address: '1651 E. Federal Heights Dr.'
@@ -275,9 +275,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0219
-  name: 'Mitt Romney'
-  first_name: Mitt
-  last_name: Romney
+  full_name: 'Mitt Romney'
+  first_names: Mitt
+  last_names: Romney
   gender: 'male'
   office: 'U.S. Senate'
   address: 'PO Box 7000'
@@ -293,9 +293,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0220
-  name: 'Mike Kennedy'
-  first_name: Mike
-  last_name: Kennedy
+  full_name: 'Mike Kennedy'
+  first_names: Mike
+  last_names: Kennedy
   gender: 'male'
   office: 'U.S. Senate'
   address: '659 E. 200 N.'
@@ -311,10 +311,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0221
-  name: 'Samuel B. Parker'
-  first_name: 'Samuel'
+  full_name: 'Samuel B. Parker'
+  first_names: 'Samuel'
   middle_name: 'B.'
-  last_name: Parker
+  last_names: Parker
   gender: 'male'
   office: 'U.S. Senate'
   address: '473 Brandt. Ct. #31'
@@ -330,9 +330,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0222
-  name: 'Abe Lincoln Brian Jenkins'
-  first_name: 'Abe Lincoln Brian'
-  last_name: Jenkins
+  full_name: 'Abe Lincoln Brian Jenkins'
+  first_names: 'Abe Lincoln Brian'
+  last_names: Jenkins
   gender: 'male'
   office: 'U.S. Senate'
   address: '222 North 1200 West #178'
@@ -350,9 +350,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0223
-  name: 'Torrey Jenkins'
-  first_name: Torrey
-  last_name: Jenkins
+  full_name: 'Torrey Jenkins'
+  first_names: Torrey
+  last_names: Jenkins
   gender: 'male'
   office: 'U.S. Senate'
   address: '75 West 1600 South'
@@ -366,9 +366,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0224
-  name: 'Tim Jimenez'
-  first_name: Tim
-  last_name: Jimenez
+  full_name: 'Tim Jimenez'
+  first_names: Tim
+  last_names: Jimenez
   gender: 'male'
   office: 'U.S. Senate'
   address: '573 East 1420 North'
@@ -383,9 +383,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0225
-  name: 'Jeff Dransfield'
-  first_name: 'Jeff'
-  last_name: 'Dransfield'
+  full_name: 'Jeff Dransfield'
+  first_names: 'Jeff'
+  last_names: 'Dransfield'
   gender: 'male'
   office: 'U.S. Senate'
   address: '504 W. 2850 S.'
@@ -400,10 +400,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0173
-  name: 'Chadwick H. Fairbanks III'
-  first_name: Chadwick
+  full_name: 'Chadwick H. Fairbanks III'
+  first_names: Chadwick
   middle_name: H.
-  last_name: Fairbanks
+  last_names: Fairbanks
   suffix: III
   gender: 'male'
   office: 'U.S. House 1'
@@ -422,9 +422,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0226
-  name: 'Lee Castillo'
-  first_name: Lee
-  last_name: Castillo
+  full_name: 'Lee Castillo'
+  first_names: Lee
+  last_names: Castillo
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -441,9 +441,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0227
-  name: 'Rob Bishop'
-  first_name: Rob
-  last_name: Bishop
+  full_name: 'Rob Bishop'
+  first_names: Rob
+  last_names: Bishop
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -460,9 +460,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0228
-  name: 'Eric Eliason'
-  first_name: Eric
-  last_name: Eliason
+  full_name: 'Eric Eliason'
+  first_names: Eric
+  last_names: Eliason
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -479,9 +479,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0229
-  name: 'Kurt Weiland'
-  first_name: Kurt
-  last_name: Weiland
+  full_name: 'Kurt Weiland'
+  first_names: Kurt
+  last_names: Weiland
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -498,9 +498,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0230
-  name: 'Kevin Probasco'
-  first_name: Kevin
-  last_name: Probasco
+  full_name: 'Kevin Probasco'
+  first_names: Kevin
+  last_names: Probasco
   gender: 'male'
   office: 'U.S. House 1'
   district: '1'
@@ -516,9 +516,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0232
-  name: 'Ken Clark'
-  first_name: 'Ken'
-  last_name: Clark
+  full_name: 'Ken Clark'
+  first_names: 'Ken'
+  last_names: Clark
   gender: 'male'
   office: 'U.S. House 2'
   district: '2'
@@ -534,9 +534,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0233
-  name: 'Mary Burkett'
-  first_name: Mary
-  last_name: Burkett
+  full_name: 'Mary Burkett'
+  first_names: Mary
+  last_names: Burkett
   gender: 'female'
   office: 'U.S. House 2'
   district: '2'
@@ -552,9 +552,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0234
-  name: 'Chris Stewart'
-  first_name: 'Chris'
-  last_name: Stewart
+  full_name: 'Chris Stewart'
+  first_names: 'Chris'
+  last_names: Stewart
   office: 'U.S. House 2'
   district: '2'
   address: 'P/O Box 540370'
@@ -569,9 +569,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0235
-  name: 'Jeffrey Whipple'
-  first_name: Jeffrey
-  last_name: Whipple
+  full_name: 'Jeffrey Whipple'
+  first_names: Jeffrey
+  last_names: Whipple
   office: 'U.S. House 2'
   district: '2'
   address: '1117 Oxford Pl'
@@ -586,9 +586,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0236
-  name: 'Randy Hopkins'
-  first_name: Randy
-  last_name: Hopkins
+  full_name: 'Randy Hopkins'
+  first_names: Randy
+  last_names: Hopkins
   office: 'U.S. House 2'
   district: '2'
   address: 'PO Box 888'
@@ -604,9 +604,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0237
-  name: 'Jan Garbett'
-  first_name: Jan
-  last_name: Garbett
+  full_name: 'Jan Garbett'
+  first_names: Jan
+  last_names: Garbett
   office: 'U.S. House 2'
   district: '2'
   address: '273 N East Capitol Street'
@@ -622,9 +622,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0238
-  name: 'Shireen Ghorbani'
-  first_name: Shireen
-  last_name: Ghorbani
+  full_name: 'Shireen Ghorbani'
+  first_names: Shireen
+  last_names: Ghorbani
   office: 'U.S. House 2'
   district: '2'
   address: '358 S 700 E Suite B134'
@@ -640,9 +640,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0239
-  name: 'John Curtis'
-  first_name: John
-  last_name: Curtis
+  full_name: 'John Curtis'
+  first_names: John
+  last_names: Curtis
   office: 'U.S. House 3'
   district: '3'
   address: '536 Sheffield Drive'
@@ -658,10 +658,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0240
-  name: 'James Courage Singer'
-  first_name: James
+  full_name: 'James Courage Singer'
+  first_names: James
   middle_name: Courage
-  last_name: Singer
+  last_names: Singer
   office: 'U.S. House 3'
   district: '3'
   address: '4524 Stonewood Drive'
@@ -677,9 +677,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0241
-  name: 'Steven Stromness'
-  first_name: Steven
-  last_name: Stromness
+  full_name: 'Steven Stromness'
+  first_names: Steven
+  last_names: Stromness
   office: 'U.S. House 3'
   district: '3'
   address: '785 South 600 West'
@@ -694,10 +694,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0242
-  name: 'Michael David Leavitt'
-  first_name: Michael
+  full_name: 'Michael David Leavitt'
+  first_names: Michael
   middle_name: David
-  last_name: Leavitt
+  last_names: Leavitt
   gender: 'male'
   office: 'U.S. House 3'
   district: '3'
@@ -712,9 +712,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0243
-  name: 'Melanie McCoard'
-  first_name: Melanie
-  last_name: McCoard
+  full_name: 'Melanie McCoard'
+  first_names: Melanie
+  last_names: McCoard
   gender: 'female'
   office: 'U.S. House 3'
   district: '3'
@@ -731,9 +731,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0244
-  name: 'Kent Moon'
-  first_name: Kent
-  last_name: Moon
+  full_name: 'Kent Moon'
+  first_names: Kent
+  last_names: Moon
   gender: 'male'
   office: 'U.S. House 3'
   district: '3'
@@ -749,10 +749,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0244
-  name: 'Christopher N. Herrod'
-  first_name: Christopher
+  full_name: 'Christopher N. Herrod'
+  first_names: Christopher
   middle_name: N.
-  last_name: Herrod
+  last_names: Herrod
   gender: 'male'
   office: 'U.S. House 3'
   district: '3'
@@ -768,10 +768,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0245
-  name: 'Henry Rudolph Kneitz III'
-  first_name: 'Henry'
+  full_name: 'Henry Rudolph Kneitz III'
+  first_names: 'Henry'
   middle_name: Rudolph
-  last_name: Kneitz
+  last_names: Kneitz
   gender: 'male'
   suffix: III
   office: 'U.S. House 3'
@@ -788,10 +788,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0246
-  name: 'Gregory C. Duerden'
-  first_name: 'Gregory'
+  full_name: 'Gregory C. Duerden'
+  first_names: 'Gregory'
   middle_name: 'C.'
-  last_name: Duerden
+  last_names: Duerden
   gender: 'male'
   office: 'U.S. House 3'
   district: '3'
@@ -808,9 +808,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0247
-  name: 'Morgan Shepherd'
-  first_name: Morgan
-  last_name: Shepherd
+  full_name: 'Morgan Shepherd'
+  first_names: Morgan
+  last_names: Shepherd
   gender: 'female'
   office: 'U.S. House 4'
   district: '4'
@@ -830,10 +830,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0248
-  name: 'Mia B. Love'
-  first_name: Mia
+  full_name: 'Mia B. Love'
+  first_names: Mia
   middle_name: B.
-  last_name: Love
+  last_names: Love
   gender: 'female'
   office: 'U.S. House 4'
   district: '4'
@@ -850,9 +850,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0249
-  name: 'Ben McAdams'
-  first_name: Ben
-  last_name: McAdams
+  full_name: 'Ben McAdams'
+  first_names: Ben
+  last_names: McAdams
   gender: 'male'
   office: 'U.S. House 4'
   district: '4'
@@ -868,9 +868,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0250
-  name: 'Darlene McDonald'
-  first_name: Darlene
-  last_name: McDonald
+  full_name: 'Darlene McDonald'
+  first_names: Darlene
+  last_names: McDonald
   gender: 'female'
   office: 'U.S. House 4'
   district: '4'
@@ -887,9 +887,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0251
-  name: 'Sheldon Kirkham'
-  first_name: Sheldon
-  last_name: Kirkham
+  full_name: 'Sheldon Kirkham'
+  first_names: Sheldon
+  last_names: Kirkham
   gender: 'male'
   office: 'U.S. House 4'
   district: '4'
@@ -906,9 +906,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0252
-  name: 'Tom Taylor'
-  first_name: Tom
-  last_name: Taylor
+  full_name: 'Tom Taylor'
+  first_names: Tom
+  last_names: Taylor
   gender: 'male'
   office: 'U.S. House 4'
   district: '4'
@@ -925,9 +925,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0253
-  name: 'Jessica Foard'
-  first_name: Jessica
-  last_name: Foard
+  full_name: 'Jessica Foard'
+  first_names: Jessica
+  last_names: Foard
   gender: 'female'
   office: 'State Senate 2'
   district: '2'
@@ -947,9 +947,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0254
-  name: 'Tim Chambless'
-  first_name: Tim
-  last_name: Chambless
+  full_name: 'Tim Chambless'
+  first_names: Tim
+  last_names: Chambless
   gender: 'male'
   office: 'State Senate 2'
   district: '2'
@@ -966,10 +966,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0255
-  name: 'David S. Andreason'
-  first_name: David
+  full_name: 'David S. Andreason'
+  first_names: David
   middle_name: S.
-  last_name: Andreason
+  last_names: Andreason
 
   gender: 'male'
   office: 'State Senate 2'
@@ -987,9 +987,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0256
-  name: 'Nadia Mahallati'
-  first_name: Nadia
-  last_name: Mahallati
+  full_name: 'Nadia Mahallati'
+  first_names: Nadia
+  last_names: Mahallati
   gender: 'female'
   office: 'State Senate 2'
   district: '2'
@@ -1006,9 +1006,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0257
-  name: 'Rickie Mehl'
-  first_name: Rickie
-  last_name: Mehl
+  full_name: 'Rickie Mehl'
+  first_names: Rickie
+  last_names: Mehl
   gender: 'male'
   office: 'State Senate 2'
   district: '2'
@@ -1022,9 +1022,9 @@
   candidate_status: 'withdrew'
 -
   id: ut0258
-  name: 'Chase Winder'
-  first_name: Chase
-  last_name: Winder
+  full_name: 'Chase Winder'
+  first_names: Chase
+  last_names: Winder
   gender: 'male'
   office: 'State Senate 2'
   district: '2'
@@ -1040,9 +1040,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0259
-  name: 'Shawn Robinson'
-  first_name: Shawn
-  last_name: Robinson
+  full_name: 'Shawn Robinson'
+  first_names: Shawn
+  last_names: Robinson
   gender: 'male'
   office: 'State Senate 2'
   district: '2'
@@ -1058,9 +1058,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0260
-  name: 'Vance Hansen'
-  first_name: Vance
-  last_name: Hansen
+  full_name: 'Vance Hansen'
+  first_names: Vance
+  last_names: Hansen
   gender: 'male'
   office: 'State Senate 2'
   district: '2'
@@ -1075,10 +1075,10 @@
   candidate_status: 'write-in'
 -
   id: ut0261
-  name: 'Derek Kitchen'
-  first_name: Derek
+  full_name: 'Derek Kitchen'
+  first_names: Derek
   middle_name: Lloyd
-  last_name: Kitchen
+  last_names: Kitchen
   gender: 'male'
   office: 'State Senate 2'
   district: '2'
@@ -1094,9 +1094,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0262
-  name: 'Jennifer Plumb'
-  first_name: Jennifer
-  last_name: Plumb
+  full_name: 'Jennifer Plumb'
+  first_names: Jennifer
+  last_names: Plumb
   gender: 'female'
   office: 'State Senate 2'
   district: '2'
@@ -1112,9 +1112,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0263
-  name: 'Robert Pinon'
-  first_name: Robert
-  last_name: Pinon
+  full_name: 'Robert Pinon'
+  first_names: Robert
+  last_names: Pinon
   gender: 'male'
   office: 'State Senate 2'
   district: '2'
@@ -1131,10 +1131,10 @@
   source: 'https://elections.utah.gov/Media/Default/2018%20Election/Intent%20to%20Gather%20Signatures/Legislative%20Candidates/Senate%202%20-%20Robert%20Pinon.pdf'
 -
   id: ut0264
-  name: 'Marlin R. Baer'
-  first_name: Marlin
+  full_name: 'Marlin R. Baer'
+  first_names: Marlin
   middle_name: R.
-  last_name: Baer
+  last_names: Baer
   gender: 'male'
   office: 'State Senate 3'
   district: '3'
@@ -1149,10 +1149,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0265
-  name: 'Jeremy D. Egan'
-  first_name: Jeremy
+  full_name: 'Jeremy D. Egan'
+  first_names: Jeremy
   middle_name: D.
-  last_name: Egan
+  last_names: Egan
   gender: 'male'
   office: 'State Senate 3'
   district: '3'
@@ -1169,9 +1169,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0266
-  name: 'Luke Gustafson'
-  first_name: Luke
-  last_name: Gustafson
+  full_name: 'Luke Gustafson'
+  first_names: Luke
+  last_names: Gustafson
   gender: 'male'
   office: 'State Senate 3'
   district: '3'
@@ -1185,9 +1185,9 @@
   candidate_status: 'withdrew'
 -
   id: ut0267
-  name: 'Gene Davis'
-  first_name: Gene
-  last_name: Davis
+  full_name: 'Gene Davis'
+  first_names: Gene
+  last_names: Davis
   gender: 'male'
   office: 'State Senate 3'
   district: '3'
@@ -1203,9 +1203,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0268
-  name: 'Alan Monsen'
-  first_name: Alan
-  last_name: Monsen
+  full_name: 'Alan Monsen'
+  first_names: Alan
+  last_names: Monsen
   gender: 'male'
   office: 'State Senate 4'
   district: '4'
@@ -1219,9 +1219,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0269
-  name: 'Jani Iwamoto'
-  first_name: Jani
-  last_name: Iwamoto
+  full_name: 'Jani Iwamoto'
+  first_names: Jani
+  last_names: Iwamoto
   gender: 'female'
   office: 'State Senate 4'
   district: '4'
@@ -1238,9 +1238,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0270
-  name: 'Kimdyl Allen'
-  first_name: Kimdyl
-  last_name: Allen
+  full_name: 'Kimdyl Allen'
+  first_names: Kimdyl
+  last_names: Allen
   gender: 'female'
   office: 'State Senate 5'
   district: '5'
@@ -1256,9 +1256,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0271
-  name: 'Karen Mayne'
-  first_name: Karen
-  last_name: Mayne
+  full_name: 'Karen Mayne'
+  first_names: Karen
+  last_names: Mayne
   gender: 'female'
   office: 'State Senate 5'
   district: '5'
@@ -1275,9 +1275,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0272
-  name: 'Kathie Allen'
-  first_name: Kathie
-  last_name: Allen
+  full_name: 'Kathie Allen'
+  first_names: Kathie
+  last_names: Allen
   gender: 'female'
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1294,9 +1294,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0273
-  name: 'Brian Zehnder'
-  first_name: Brian
-  last_name: Zehnder
+  full_name: 'Brian Zehnder'
+  first_names: Brian
+  last_names: Zehnder
   gender: 'male'
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1312,9 +1312,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0274
-  name: 'Kathleen Riebe'
-  first_name: Kathleen
-  last_name: Riebe
+  full_name: 'Kathleen Riebe'
+  first_names: Kathleen
+  last_names: Riebe
   gender: 'female'
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1331,9 +1331,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0275
-  name: 'John Jackson'
-  first_name: John
-  last_name: Jackson
+  full_name: 'John Jackson'
+  first_names: John
+  last_names: Jackson
   gender: male
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1348,10 +1348,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0276
-  name: 'Jaren L. Davis'
-  first_name: Jaren
+  full_name: 'Jaren L. Davis'
+  first_names: Jaren
   middle_name: L.
-  last_name: Davis
+  last_names: Davis
   gender: male
   office: 'State Senate 8 (2 year term)'
   district: '8'
@@ -1368,9 +1368,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0277
-  name: 'Alexander Castagno'
-  first_name: Alexander
-  last_name: Castagno
+  full_name: 'Alexander Castagno'
+  first_names: Alexander
+  last_names: Castagno
   gender: male
   office: 'State Senate 9'
   district: '9'
@@ -1389,10 +1389,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0278
-  name: 'Kirk A. Cullimore Jr.'
-  first_name: Kirk
+  full_name: 'Kirk A. Cullimore Jr.'
+  first_names: Kirk
   middle_name: A.
-  last_name: Cullimore
+  last_names: Cullimore
   suffix: Jr.
   gender: male
   office: 'State Senate 9'
@@ -1409,9 +1409,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0279
-  name: 'Steve Eliason'
-  first_name: Steve
-  last_name: Eliason
+  full_name: 'Steve Eliason'
+  first_names: Steve
+  last_names: Eliason
   gender: 'male'
   office: 'State Senate 9'
   district: '9'
@@ -1426,9 +1426,9 @@
   candidate_status: 'withdrew'
 -
   id: ut0280
-  name: 'Abbey Wright'
-  first_name: Abbey
-  last_name: Wright
+  full_name: 'Abbey Wright'
+  first_names: Abbey
+  last_names: Wright
   gender: 'female'
   office: 'State Senate 9'
   district: '9'
@@ -1445,10 +1445,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0281
-  name: 'Monica M. Zoltanski'
-  first_name: Monica
+  full_name: 'Monica M. Zoltanski'
+  first_names: Monica
   middle_name: M.
-  last_name: Zoltanski
+  last_names: Zoltanski
   gender: 'female'
   office: 'State Senate 9'
   district: '9'
@@ -1464,9 +1464,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0282
-  name: 'David Hart'
-  first_name: David
-  last_name: Hart
+  full_name: 'David Hart'
+  first_names: David
+  last_names: Hart
   gender: 'male'
   office: 'State Senate 9'
   district: '9'
@@ -1483,9 +1483,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0283
-  name: 'LaVar Christensen'
-  first_name: LaVar
-  last_name: Christensen
+  full_name: 'LaVar Christensen'
+  first_names: LaVar
+  last_names: Christensen
   gender: 'male'
   office: 'State Senate 11 (Multi County)'
   district: '11'
@@ -1501,9 +1501,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0284
-  name: 'Christian Burridge'
-  first_name: Christian
-  last_name: Burridge
+  full_name: 'Christian Burridge'
+  first_names: Christian
+  last_names: Burridge
   gender: 'male'
   office: 'State Senate 11 (Multi County)'
   district: '11'
@@ -1520,9 +1520,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0285
-  name: 'Dan McCay'
-  first_name: Dan
-  last_name: McCay
+  full_name: 'Dan McCay'
+  first_names: Dan
+  last_names: McCay
   gender: 'male'
   office: 'State Senate 11 (Multi County)'
   district: '11'
@@ -1539,9 +1539,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0286
-  name: 'Delaina Tonks'
-  first_name: DeLaina
-  last_name: Tonks
+  full_name: 'Delaina Tonks'
+  first_names: DeLaina
+  last_names: Tonks
   gender: 'female'
   office: 'State Senate 11 (Multi County)'
   district: '11'
@@ -1557,9 +1557,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0287
-  name: 'Clare Collard'
-  first_name: Clare
-  last_name: Collard
+  full_name: 'Clare Collard'
+  first_names: Clare
+  last_names: Collard
   gender: 'female'
   office: 'State Senate 12 (Multi County)'
   district: '12'
@@ -1576,10 +1576,10 @@
   last_updated: '2018-06-13'
 -
   id: ut0288
-  name: 'Abrian B. Velarde'
-  first_name: Abrian
+  full_name: 'Abrian B. Velarde'
+  first_names: Abrian
   middle_name: B.
-  last_name: Velarde
+  last_names: Velarde
   gender: 'male'
   office: 'State Senate 12 (Multi County)'
   district: '12'
@@ -1596,10 +1596,10 @@
   last_updated: '2018-06-13'
 -
   id: ut0289
-  name: 'Daniel W. Thatcher'
-  first_name: Daniel
+  full_name: 'Daniel W. Thatcher'
+  first_names: Daniel
   middle_name: W.
-  last_name: Thatcher
+  last_names: Thatcher
   gender: 'male'
   office: 'State Senate 12 (Multi County)'
   district: '12'
@@ -1616,9 +1616,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0290
-  name: 'Emily Ellsworth'
-  first_name: Emily
-  last_name: Ellsworth
+  full_name: 'Emily Ellsworth'
+  first_names: Emily
+  last_names: Ellsworth
   gender: 'female'
   office: 'State Senate 15'
   district: '15'
@@ -1636,9 +1636,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0291
-  name: 'Tommy Williams'
-  first_name: Tommy
-  last_name: Williams
+  full_name: 'Tommy Williams'
+  first_names: Tommy
+  last_names: Williams
   gender: 'male'
   office: 'State Senate 15'
   district: '15'
@@ -1654,10 +1654,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0292
-  name: 'Lee D. Houghton'
-  first_name: Lee
+  full_name: 'Lee D. Houghton'
+  first_names: Lee
   middle_name: D
-  last_name: Houghton
+  last_names: Houghton
   gender: 'male'
   office: 'State Senate 15'
   district: '15'
@@ -1673,9 +1673,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0293
-  name: 'Keith Grover'
-  first_name: Keith
-  last_name: Grover
+  full_name: 'Keith Grover'
+  first_names: Keith
+  last_names: Grover
   gender: 'male'
   office: 'State Senate 15'
   district: '15'
@@ -1692,9 +1692,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0294
-  name: 'Margaret Dayton'
-  first_name: Margaret
-  last_name: Dayton
+  full_name: 'Margaret Dayton'
+  first_names: Margaret
+  last_names: Dayton
   gender: 'female'
   office: 'State Senate 15'
   district: '15'
@@ -1710,9 +1710,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0295
-  name: 'Chad Soffe'
-  first_name: Chad
-  last_name: Soffe
+  full_name: 'Chad Soffe'
+  first_names: Chad
+  last_names: Soffe
   gender: 'male'
   office: 'State Senate 17 (Multi County)'
   district: '17'
@@ -1728,9 +1728,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0296
-  name: 'Scott Sandall'
-  first_name: Scott
-  last_name: Sandall
+  full_name: 'Scott Sandall'
+  first_names: Scott
+  last_names: Sandall
   gender: 'male'
   office: 'State Senate 17 (Multi County)'
   district: '17'
@@ -1746,10 +1746,10 @@
   last_updated: '2018-06-13'
 -
   id: ut0297
-  name: 'Michael A. Keil'
-  first_name: 'Michael'
+  full_name: 'Michael A. Keil'
+  first_names: 'Michael'
   middle_name: A.
-  last_name: Keil
+  last_names: Keil
   gender: 'male'
   office: 'State Senate 17 (Multi County)'
   district: '17'
@@ -1765,10 +1765,10 @@
   last_updated: '2018-06-13'
 -
   id: ut0298
-  name: 'Clark N. Davis'
-  first_name: Clark
+  full_name: 'Clark N. Davis'
+  first_names: Clark
   middle_name: N.
-  last_name: Davis
+  last_names: Davis
   gender: 'male'
   office: 'State Senate 17 (Multi County)'
   district: '17'
@@ -1784,9 +1784,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0299
-  name: 'Jason Yu'
-  first_name: Jason
-  last_name: Yu
+  full_name: 'Jason Yu'
+  first_names: Jason
+  last_names: Yu
   gender: 'male'
   office: 'State Senate 18 (Multi County)'
   district: '18'
@@ -1802,10 +1802,10 @@
   last_updated: '2018-06-13'
 -
   id: ut0300
-  name: 'Kevin L. Bryan'
-  first_name: Kevin
+  full_name: 'Kevin L. Bryan'
+  first_names: Kevin
   middle_name: L.
-  last_name: Bryan
+  last_names: Bryan
   gender: 'male'
   office: 'State Senate 18 (Multi County)'
   district: '18'
@@ -1821,9 +1821,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0301
-  name: 'Ann Millner'
-  first_name: Ann
-  last_name: Millner
+  full_name: 'Ann Millner'
+  first_names: Ann
+  last_names: Millner
   gender: 'female'
   office: 'State Senate 18 (Multi County)'
   district: '18'
@@ -1840,10 +1840,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0302
-  name: 'Jerry W. Stevenson'
-  first_name: Jerry
+  full_name: 'Jerry W. Stevenson'
+  first_names: Jerry
   middle_name: W.
-  last_name: Stevenson
+  last_names: Stevenson
   gender: 'male'
   office: 'State Senate 21'
   district: '21'
@@ -1859,9 +1859,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0303
-  name: 'Cory Green'
-  first_name: Cory
-  last_name: Green
+  full_name: 'Cory Green'
+  first_names: Cory
+  last_names: Green
   gender: 'male'
   office: 'State Senate 21'
   district: '21'
@@ -1876,9 +1876,9 @@
   candidate_status: 'withdrew'
 -
   id: ut0304
-  name: 'Jake Penrod'
-  first_name: Jake
-  last_name: Penrod
+  full_name: 'Jake Penrod'
+  first_names: Jake
+  last_names: Penrod
   gender: 'male'
   office: 'State Senate 21'
   district: '21'
@@ -1894,9 +1894,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0305
-  name: 'Stuart Adams'
-  first_name: Stuart
-  last_name: Adams
+  full_name: 'Stuart Adams'
+  first_names: Stuart
+  last_names: Adams
   gender: 'male'
   office: 'State Senate 22'
   district: '22'
@@ -1913,9 +1913,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0306
-  name: 'Cathy Callow-Heusser'
-  first_name: Cathy
-  last_name: Callow-Heusser
+  full_name: 'Cathy Callow-Heusser'
+  first_names: Cathy
+  last_names: Callow-Heusser
   gender: 'female'
   office: 'State Senate 26 (Multi County)'
   district: '26'
@@ -1932,9 +1932,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0307
-  name: 'Pat Vaughn'
-  first_name: Pat
-  last_name: Vaughn
+  full_name: 'Pat Vaughn'
+  first_names: Pat
+  last_names: Vaughn
   gender: 'male'
   office: 'State Senate 26 (Multi County)'
   district: '26'
@@ -1949,9 +1949,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0308
-  name: 'Alisa Ellis'
-  first_name: Alisa
-  last_name: Ellis
+  full_name: 'Alisa Ellis'
+  first_names: Alisa
+  last_names: Ellis
   gender: 'female'
   office: 'State Senate 26 (Multi County)'
   district: '26'
@@ -1967,9 +1967,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0309
-  name: 'Ronald Winterton'
-  first_name: Ronald
-  last_name: Winterton
+  full_name: 'Ronald Winterton'
+  first_names: Ronald
+  last_names: Winterton
   gender: 'male'
   office: 'State Senate 26 (Multi County)'
   district: '26'
@@ -1985,9 +1985,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0310
-  name: 'Jack Rubin'
-  first_name: Jack
-  last_name: Rubin
+  full_name: 'Jack Rubin'
+  first_names: Jack
+  last_names: Rubin
   gender: 'male'
   office: 'State Senate 26 (Multi County)'
   district: '26'
@@ -2004,10 +2004,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0311
-  name: 'Brian K. Gorum'
-  first_name: Brian
+  full_name: 'Brian K. Gorum'
+  first_names: Brian
   middle_name: K.
-  last_name: Gorum
+  last_names: Gorum
   gender: 'male'
   office: 'State Senate 26 (Multi County)'
   district: '26'
@@ -2023,9 +2023,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0312
-  name: 'Eileen Gallagher'
-  first_name: Eileen
-  last_name: Gallagher
+  full_name: 'Eileen Gallagher'
+  first_names: Eileen
+  last_names: Gallagher
   gender: 'female'
   office: 'State Senate 26 (Multi County)'
   district: '26'
@@ -2041,9 +2041,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0313
-  name: 'Mark Chambers'
-  first_name: Mark
-  last_name: Chambers
+  full_name: 'Mark Chambers'
+  first_names: Mark
+  last_names: Chambers
   gender: 'male'
   office: 'State Senate 28 (Multi County)'
   district: '28'
@@ -2059,10 +2059,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0314
-  name: 'Evan J. Vickers'
-  first_name: Evan
+  full_name: 'Evan J. Vickers'
+  first_names: Evan
   middle_name: J
-  last_name: Vickers
+  last_names: Vickers
   gender: 'male'
   office: 'State Senate 28 (Multi County)'
   district: '28'
@@ -2079,9 +2079,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0315
-  name: 'Joel Ferry'
-  first_name: Joel
-  last_name: Ferry
+  full_name: 'Joel Ferry'
+  first_names: Joel
+  last_names: Ferry
   gender: 'male'
   office: 'State House 1 (Multi County)'
   district: '1'
@@ -2098,9 +2098,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0316
-  name: 'Kris Udy'
-  first_name: 'Kris'
-  last_name: 'Udy'
+  full_name: 'Kris Udy'
+  first_names: 'Kris'
+  last_names: 'Udy'
   gender: 'female'
   office: 'State House 1 (Multi County)'
   district: '1'
@@ -2121,9 +2121,9 @@
   last_updated: '2018-05-03'
 -
   id: ut0317
-  name: 'Joshua Hardy'
-  first_name: Joshua
-  last_name: Hardy
+  full_name: 'Joshua Hardy'
+  first_names: Joshua
+  last_names: Hardy
   gender: 'male'
   office: 'State House 1 (Multi County)'
   district: '1'
@@ -2139,9 +2139,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0318
-  name: 'Sherry Phipps'
-  first_name: Sherry
-  last_name: Phipps
+  full_name: 'Sherry Phipps'
+  first_names: Sherry
+  last_names: Phipps
   gender: 'female'
   office: 'State House 1 (Multi County)'
   district: '1'
@@ -2157,9 +2157,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0319
-  name: 'Tyler Allred'
-  first_name: Tyler
-  last_name: Allred
+  full_name: 'Tyler Allred'
+  first_names: Tyler
+  last_names: Allred
   gender: 'male'
   office: 'State House 2'
   district: '2'
@@ -2175,10 +2175,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0320
-  name: 'Jefferson R. Moss'
-  first_name: Jefferson
+  full_name: 'Jefferson R. Moss'
+  first_names: Jefferson
   middle_name: R.
-  last_name: Moss
+  last_names: Moss
   gender: 'male'
   office: 'State House 2'
   district: '2'
@@ -2195,9 +2195,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0320
-  name: 'Marilyn Mecham'
-  first_name: Marilyn
-  last_name: Mecham
+  full_name: 'Marilyn Mecham'
+  first_names: Marilyn
+  last_names: Mecham
   gender: 'female'
   office: 'State House 3'
   district: '3'
@@ -2213,10 +2213,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0321
-  name: 'Val K. Potter'
-  first_name: Val
+  full_name: 'Val K. Potter'
+  first_names: Val
   middle_name: K.
-  last_name: Potter
+  last_names: Potter
   gender: 'male'
   office: 'State House 3'
   district: '3'
@@ -2232,9 +2232,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0322
-  name: 'Josh Brundage'
-  first_name: Josh
-  last_name: Brundage
+  full_name: 'Josh Brundage'
+  first_names: Josh
+  last_names: Brundage
   gender: 'male'
   office: 'State House 4'
   district: '4'
@@ -2250,9 +2250,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0323
-  name: 'Greg Merrill'
-  first_name: Greg
-  last_name: Merrill
+  full_name: 'Greg Merrill'
+  first_names: Greg
+  last_names: Merrill
   gender: 'male'
   office: 'State House 4'
   district: '4'
@@ -2269,10 +2269,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0324
-  name: 'Dan N. Johnson'
-  first_name: Dan
+  full_name: 'Dan N. Johnson'
+  first_names: Dan
   middle_name: N.
-  last_name: Johnson
+  last_names: Johnson
   gender: 'male'
   office: 'State House 4'
   district: '4'
@@ -2288,10 +2288,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0325
-  name: 'Karina Andelin Brown'
-  first_name: Karina
+  full_name: 'Karina Andelin Brown'
+  first_names: Karina
   middle_name: Andelin
-  last_name: Brown
+  last_names: Brown
   gender: 'female'
   office: 'State House 5'
   district: '5'
@@ -2308,9 +2308,9 @@
   last_updated: '2018-06-13'
 -
   id: ut0326
-  name: 'Casey Snider'
-  first_name: Casey
-  last_name: Snider
+  full_name: 'Casey Snider'
+  first_names: Casey
+  last_names: Snider
   gender: 'male'
   office: 'State House 5'
   district: '5'
@@ -2327,10 +2327,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0327
-  name: 'Steven B Hanson'
-  first_name: Steven
+  full_name: 'Steven B Hanson'
+  first_names: Steven
   middle_name: B
-  last_name: Hanson
+  last_names: Hanson
   gender: 'male'
   office: 'State House 5'
   district: '5'
@@ -2346,9 +2346,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0328
-  name: 'Matthew Freestone'
-  first_name: Matthew
-  last_name: Freestone
+  full_name: 'Matthew Freestone'
+  first_names: Matthew
+  last_names: Freestone
   gender: 'male'
   office: 'State House 6'
   district: '6'
@@ -2365,9 +2365,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0329
-  name: 'Cory Maloy'
-  first_name: Cory
-  last_name: Maloy
+  full_name: 'Cory Maloy'
+  first_names: Cory
+  last_names: Maloy
   gender: 'male'
   office: 'State House 6'
   district: '6'
@@ -2384,9 +2384,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0330
-  name: 'David Owen'
-  first_name: David
-  last_name: Owen
+  full_name: 'David Owen'
+  first_names: David
+  last_names: Owen
   gender: 'male'
   office: 'State House 7'
   district: '7'
@@ -2403,10 +2403,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0331
-  name: 'Kyle R. Andersen'
-  first_name: Kyle
+  full_name: 'Kyle R. Andersen'
+  first_names: Kyle
   middle_name: R.
-  last_name: Andersen
+  last_names: Andersen
   gender: 'male'
   office: 'State House 7'
   district: '7'
@@ -2423,9 +2423,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0332
-  name: 'Lisa Roskelley'
-  first_name: Lisa
-  last_name: Roskelley
+  full_name: 'Lisa Roskelley'
+  first_names: Lisa
+  last_names: Roskelley
   gender: 'female'
   office: 'State House 7'
   district: '7'
@@ -2442,10 +2442,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0333
-  name: 'Robert D. Petersen'
-  first_name: Robert
+  full_name: 'Robert D. Petersen'
+  first_names: Robert
   middle_name: D.
-  last_name: Petersen
+  last_names: Petersen
   gender: 'male'
   office: 'State House 7'
   district: '7'
@@ -2461,9 +2461,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0334
-  name: 'Dan Deuel'
-  first_name: Dan
-  last_name: Deuel
+  full_name: 'Dan Deuel'
+  first_names: Dan
+  last_names: Deuel
   gender: 'male'
   office: 'State House 7'
   district: '7'
@@ -2480,9 +2480,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0335
-  name: 'Deana Froerer'
-  first_name: Deana
-  last_name: Froerer
+  full_name: 'Deana Froerer'
+  first_names: Deana
+  last_names: Froerer
   gender: 'female'
   office: 'State House 8'
   district: '8'
@@ -2499,10 +2499,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0336
-  name: 'Kimberly L. Stevens'
-  first_name: Kimberly
+  full_name: 'Kimberly L. Stevens'
+  first_names: Kimberly
   middle_name: L.
-  last_name: Stevens
+  last_names: Stevens
   gender: 'female'
   office: 'State House 8'
   district: '8'
@@ -2518,9 +2518,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0337
-  name: 'Deone Ehlers-Rhorer'
-  first_name: Deone
-  last_name: Ehlers-Rhorer
+  full_name: 'Deone Ehlers-Rhorer'
+  first_names: Deone
+  last_names: Ehlers-Rhorer
   gender: 'female'
   office: 'State House 8'
   district: '8'
@@ -2536,9 +2536,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0338
-  name: 'Steve Waldrip'
-  first_name: Steve
-  last_name: Waldrip
+  full_name: 'Steve Waldrip'
+  first_names: Steve
+  last_names: Waldrip
   gender: 'male'
   office: 'State House 8'
   district: '8'
@@ -2555,10 +2555,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0339
-  name: 'Jason B. Kyle'
-  first_name: Jason
+  full_name: 'Jason B. Kyle'
+  first_names: Jason
   middle_name: B.
-  last_name: Kyle
+  last_names: Kyle
   gender: 'male'
   office: 'State House 8'
   district: '8'
@@ -2575,9 +2575,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0340
-  name: 'Emily Beeli'
-  first_name: Emily
-  last_name: Beeli
+  full_name: 'Emily Beeli'
+  first_names: Emily
+  last_names: Beeli
   gender: 'female'
   office: 'State House 9'
   district: '9'
@@ -2592,10 +2592,10 @@
   candidate_status: 'withdrew'
 -
   id: ut0341
-  name: 'Calvin R. Musselman'
-  first_name: Calvin
+  full_name: 'Calvin R. Musselman'
+  first_names: Calvin
   middle_name: R.
-  last_name: Musselman
+  last_names: Musselman
   gender: 'male'
   office: 'State House 9'
   district: '9'
@@ -2611,10 +2611,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0342
-  name: 'Adrian William Eads'
-  first_name: Adrian
+  full_name: 'Adrian William Eads'
+  first_names: Adrian
   middle_name: William
-  last_name: Eads
+  last_names: Eads
   gender: 'male'
   office: 'State House 9'
   district: '9'
@@ -2630,9 +2630,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0343
-  name: 'Mary Khalaf'
-  first_name: Mary
-  last_name: Khalaf
+  full_name: 'Mary Khalaf'
+  first_names: Mary
+  last_names: Khalaf
   gender: 'female'
   office: 'State House 9'
   district: '9'
@@ -2648,10 +2648,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0344
-  name: 'Kathie J. Darby'
-  first_name: Kathie
+  full_name: 'Kathie J. Darby'
+  first_names: Kathie
   middle_name: J.
-  last_name: Darby
+  last_names: Darby
   gender: 'female'
   office: 'State House 9'
   district: '9'
@@ -2668,10 +2668,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0345
-  name: 'Lorraine P. Brown'
-  first_name: Lorraine
+  full_name: 'Lorraine P. Brown'
+  first_names: Lorraine
   middle_name: P.
-  last_name: Brown
+  last_names: Brown
   gender: 'female'
   office: 'State House 10'
   district: '10'
@@ -2688,10 +2688,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0346
-  name: 'Terry D. Schow'
-  first_name: Terry
+  full_name: 'Terry D. Schow'
+  first_names: Terry
   middle_name: D
-  last_name: Schow
+  last_names: Schow
   gender: 'male'
   office: 'State House 10'
   district: '10'
@@ -2707,10 +2707,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0347
-  name: 'LaWanna “Lou” Shurtliff'
-  first_name: LaWanna
+  full_name: 'LaWanna “Lou” Shurtliff'
+  first_names: LaWanna
   middle_name: '“Lou”'
-  last_name: Shurtliff
+  last_names: Shurtliff
   gender: 'female'
   office: 'State House 10'
   district: '10'
@@ -2726,10 +2726,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0348
-  name: 'Jason M. Allen'
-  first_name: Jason
+  full_name: 'Jason M. Allen'
+  first_names: Jason
   middle_name: M.
-  last_name: Allen
+  last_names: Allen
   gender: 'male'
   office: 'State House 11 (Multi County)'
   district: '11'
@@ -2745,10 +2745,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0349
-  name: 'Kelly B. Miles'
-  first_name: Kelly
+  full_name: 'Kelly B. Miles'
+  first_names: Kelly
   middle_name: B.
-  last_name: Miles
+  last_names: Miles
   gender: 'male'
   office: 'State House 11 (Multi County)'
   district: '11'
@@ -2765,9 +2765,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0350
-  name: 'Mike Schultz'
-  first_name: Mike
-  last_name: Schultz
+  full_name: 'Mike Schultz'
+  first_names: Mike
+  last_names: Schultz
   gender: 'male'
   office: 'State House 12 (Multi County)'
   district: '12'
@@ -2783,10 +2783,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0351
-  name: 'Rick Edwin Jones'
-  first_name: Rick
+  full_name: 'Rick Edwin Jones'
+  first_names: Rick
   middle_name: Edwin
-  last_name: Jones
+  last_names: Jones
   gender: 'male'
   office: 'State House 12 (Multi County)'
   district: '12'
@@ -2802,10 +2802,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0352
-  name: 'Tab Lyn Uno'
-  first_name: Tab
+  full_name: 'Tab Lyn Uno'
+  first_names: Tab
   middle_name: Lyn
-  last_name: Uno
+  last_names: Uno
   gender: 'male'
   office: 'State House 13'
   district: '13'
@@ -2821,9 +2821,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0353
-  name: 'Paul Ray'
-  first_name: Paul
-  last_name: Ray
+  full_name: 'Paul Ray'
+  first_names: Paul
+  last_names: Ray
   gender: 'male'
   office: 'State House 13'
   district: '13'
@@ -2840,9 +2840,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0354
-  name: 'Karianne Lisonbee'
-  first_name: Karianne
-  last_name: Lisonbee
+  full_name: 'Karianne Lisonbee'
+  first_names: Karianne
+  last_names: Lisonbee
   gender: 'female'
   office: 'State House 14'
   district: '14'
@@ -2859,9 +2859,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0355
-  name: 'Shanell Day'
-  first_name: Shanell
-  last_name: Day
+  full_name: 'Shanell Day'
+  first_names: Shanell
+  last_names: Day
   gender: 'female'
   office: 'State House 14'
   district: '14'
@@ -2877,9 +2877,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0356
-  name: 'Rich Miller'
-  first_name: Rich
-  last_name: Miller
+  full_name: 'Rich Miller'
+  first_names: Rich
+  last_names: Miller
   gender: 'male'
   office: 'State House 15'
   district: '15'
@@ -2896,9 +2896,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0357
-  name: 'Brad Wilson'
-  first_name: Brad
-  last_name: Wilson
+  full_name: 'Brad Wilson'
+  first_names: Brad
+  last_names: Wilson
   gender: 'male'
   office: 'State House 15'
   district: '15'
@@ -2915,9 +2915,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0358
-  name: 'Brent Zimmerman'
-  first_name: Brent
-  last_name: Zimmerman
+  full_name: 'Brent Zimmerman'
+  first_names: Brent
+  last_names: Zimmerman
   gender: 'male'
   office: 'State House 16'
   district: '16'
@@ -2934,9 +2934,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0359
-  name: 'Steve Handy'
-  first_name: Steve
-  last_name: Handy
+  full_name: 'Steve Handy'
+  first_names: Steve
+  last_names: Handy
   gender: 'male'
   office: 'State House 16'
   district: '16'
@@ -2953,9 +2953,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0360
-  name: 'Cheryl Nunn'
-  first_name: Cheryl
-  last_name: Nunn
+  full_name: 'Cheryl Nunn'
+  first_names: Cheryl
+  last_names: Nunn
   gender: 'female'
   office: 'State House 16'
   district: '16'
@@ -2972,10 +2972,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0361
-  name: 'Stewart E. Barlow'
-  first_name: Stewart
+  full_name: 'Stewart E. Barlow'
+  first_names: Stewart
   middle_name: E.
-  last_name: Barlow
+  last_names: Barlow
   gender: 'male'
   office: 'State House 17'
   district: '17'
@@ -2991,9 +2991,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0362
-  name: 'Dawn Nunn'
-  first_name: Dawn
-  last_name: Nunn
+  full_name: 'Dawn Nunn'
+  first_names: Dawn
+  last_names: Nunn
   gender: 'female'
   office: 'State House 17'
   district: '17'
@@ -3009,9 +3009,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0363
-  name: 'Adam Alba'
-  first_name: Adam
-  last_name: Alba
+  full_name: 'Adam Alba'
+  first_names: Adam
+  last_names: Alba
   gender: 'male'
   office: 'State House 18'
   district: '18'
@@ -3029,10 +3029,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0364
-  name: 'Timothy D. Hawkes'
-  first_name: Timothy
+  full_name: 'Timothy D. Hawkes'
+  first_names: Timothy
   middle_name: D.
-  last_name: Hawkes
+  last_names: Hawkes
   gender: 'male'
   office: 'State House 18'
   district: '18'
@@ -3049,9 +3049,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0365
-  name: 'Joe Speciale'
-  first_name: Joe
-  last_name: Speciale
+  full_name: 'Joe Speciale'
+  first_names: Joe
+  last_names: Speciale
   gender: 'male'
   office: 'State House 19'
   district: '19'
@@ -3067,9 +3067,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0366
-  name: 'Raymond Ward'
-  first_name: Raymond
-  last_name: Ward
+  full_name: 'Raymond Ward'
+  first_names: Raymond
+  last_names: Ward
   gender: 'male'
   office: 'State House 19'
   district: '19'
@@ -3086,9 +3086,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0367
-  name: 'Phill Wright'
-  first_name: Phill
-  last_name: Wright
+  full_name: 'Phill Wright'
+  first_names: Phill
+  last_names: Wright
   gender: 'male'
   office: 'State House 19'
   district: '19'
@@ -3104,9 +3104,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0368
-  name: 'Courtney Jones'
-  first_name: Courtney
-  last_name: Jones
+  full_name: 'Courtney Jones'
+  first_names: Courtney
+  last_names: Jones
   gender: 'female'
   office: 'State House 19'
   district: '19'
@@ -3122,10 +3122,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0369
-  name: 'Melissa Garff Ballard'
-  first_name: Melissa
+  full_name: 'Melissa Garff Ballard'
+  first_names: Melissa
   middle_name: Garff
-  last_name: Ballard
+  last_names: Ballard
   gender: 'female'
   office: 'State House 20'
   district: '20'
@@ -3142,9 +3142,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0370
-  name: 'Cassidy Hine'
-  first_name: Cassidy
-  last_name: Hine
+  full_name: 'Cassidy Hine'
+  first_names: Cassidy
+  last_names: Hine
   gender: 'female'
   office: 'State House 20'
   district: '20'
@@ -3159,10 +3159,10 @@
   candidate_status: 'withdrew'
 -
   id: ut0371
-  name: 'Ryan L. Jones'
-  first_name: Ryan
+  full_name: 'Ryan L. Jones'
+  first_names: Ryan
   middle_name: L.
-  last_name: Jones
+  last_names: Jones
   gender: 'male'
   office: 'State House 20'
   district: '20'
@@ -3178,9 +3178,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0372
-  name: 'Matt Jensen'
-  first_name: Matt
-  last_name: Jensen
+  full_name: 'Matt Jensen'
+  first_names: Matt
+  last_names: Jensen
   gender: 'male'
   office: 'State House 20'
   district: '20'
@@ -3197,10 +3197,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0373
-  name: 'Glen G. Jenkins'
-  first_name: Glen
+  full_name: 'Glen G. Jenkins'
+  first_names: Glen
   middle_name: G.
-  last_name: Jenkins
+  last_names: Jenkins
   gender: 'male'
   office: 'State House 20'
   district: '20'
@@ -3217,9 +3217,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0374
-  name: 'Douglas Sagers'
-  first_name: Douglas
-  last_name: Sagers
+  full_name: 'Douglas Sagers'
+  first_names: Douglas
+  last_names: Sagers
   gender: 'male'
   office: 'State House 21'
   district: '21'
@@ -3235,10 +3235,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0375
-  name: 'Debbie K. Vigil'
-  first_name: Debbie
+  full_name: 'Debbie K. Vigil'
+  first_names: Debbie
   middle_name: K.
-  last_name: Vigil
+  last_names: Vigil
   gender: 'female'
   office: 'State House 21'
   district: '21'
@@ -3254,9 +3254,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0376
-  name: 'Donna Case'
-  first_name: Donna
-  last_name: Case
+  full_name: 'Donna Case'
+  first_names: Donna
+  last_names: Case
   gender: 'female'
   office: 'State House 22'
   district: '22'
@@ -3273,9 +3273,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0377
-  name: 'Amber Christiansen Beltran'
-  first_name: Amber
-  last_name: 'Christiansen Beltran'
+  full_name: 'Amber Christiansen Beltran'
+  first_names: Amber
+  last_names: 'Christiansen Beltran'
   gender: 'female'
   office: 'State House 22'
   district: '22'
@@ -3291,10 +3291,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0378
-  name: 'Barbara M. Stallone'
-  first_name: Barbara
+  full_name: 'Barbara M. Stallone'
+  first_names: Barbara
   middle_name: M.
-  last_name: Stallone
+  last_names: Stallone
   gender: 'female'
   office: 'State House 22'
   district: '22'
@@ -3310,9 +3310,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0379
-  name: 'Marilee Roose'
-  first_name: Marilee
-  last_name: Roose
+  full_name: 'Marilee Roose'
+  first_names: Marilee
+  last_names: Roose
   gender: 'female'
   office: 'State House 22'
   district: '22'
@@ -3328,10 +3328,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0380
-  name: 'Susan D. Duckworth'
-  first_name: Susan
+  full_name: 'Susan D. Duckworth'
+  first_names: Susan
   middle_name: D.
-  last_name: Duckworth
+  last_names: Duckworth
   gender: 'female'
   office: 'State House 22'
   district: '22'
@@ -3348,9 +3348,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0381
-  name: 'Sandra Hollins'
-  first_name: Sandra
-  last_name: Hollins
+  full_name: 'Sandra Hollins'
+  first_names: Sandra
+  last_names: Hollins
   gender: 'female'
   office: 'State House 23'
   district: '23'
@@ -3367,10 +3367,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0382
-  name: 'Arnold M. Jones'
-  first_name: Arnold
+  full_name: 'Arnold M. Jones'
+  first_names: Arnold
   middle_name: M
-  last_name: Jones
+  last_names: Jones
   gender: 'male'
   office: 'State House 23'
   district: '23'
@@ -3387,9 +3387,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0383
-  name: 'Jacquelyn Orton'
-  first_name: Jacquelyn
-  last_name: Orton
+  full_name: 'Jacquelyn Orton'
+  first_names: Jacquelyn
+  last_names: Orton
   gender: 'female'
   office: 'State House 24'
   district: '24'
@@ -3406,9 +3406,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0384
-  name: 'Igor Limansky'
-  first_name: Igor
-  last_name: Limansky
+  full_name: 'Igor Limansky'
+  first_names: Igor
+  last_names: Limansky
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3425,9 +3425,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0385
-  name: 'Darin Mann'
-  first_name: Darin
-  last_name: Mann
+  full_name: 'Darin Mann'
+  first_names: Darin
+  last_names: Mann
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3444,9 +3444,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0386
-  name: 'Shawn Robinson'
-  first_name: Shawn
-  last_name: Robinson
+  full_name: 'Shawn Robinson'
+  first_names: Shawn
+  last_names: Robinson
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3461,9 +3461,9 @@
   candidate_status: 'withdrew'
 -
   id: ut0387
-  name: 'Scott Rosenbush'
-  first_name: Scott
-  last_name: Rosenbush
+  full_name: 'Scott Rosenbush'
+  first_names: Scott
+  last_names: Rosenbush
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3480,10 +3480,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0388
-  name: 'Richard Nahum Goldberger'
-  first_name: Richard
+  full_name: 'Richard Nahum Goldberger'
+  first_names: Richard
   middle_name: Nahum
-  last_name: Goldberger
+  last_names: Goldberger
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3499,10 +3499,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0389
-  name: 'Ryan J. Parker'
-  first_name: Ryan
+  full_name: 'Ryan J. Parker'
+  first_names: Ryan
   middle_name: J.
-  last_name: Parker
+  last_names: Parker
   gender: 'male'
   office: 'State House 24'
   district: '24'
@@ -3519,9 +3519,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0390
-  name: 'Jen Dailey-Provost'
-  first_name: Jen
-  last_name: Dailey-Provost
+  full_name: 'Jen Dailey-Provost'
+  first_names: Jen
+  last_names: Dailey-Provost
   gender: 'female'
   office: 'State House 24'
   district: '24'
@@ -3538,10 +3538,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0391
-  name: 'Joel K. Briscoe'
-  first_name: Joel
+  full_name: 'Joel K. Briscoe'
+  first_names: Joel
   middle_name: K.
-  last_name: Briscoe
+  last_names: Briscoe
   gender: 'male'
   office: 'State House 25'
   district: '25'
@@ -3558,10 +3558,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0392
-  name: 'Gary Ernest Gabrielson'
-  first_name: Gary
+  full_name: 'Gary Ernest Gabrielson'
+  first_names: Gary
   middle_name: Ernest
-  last_name: Gabrielson
+  last_names: Gabrielson
   gender: 'male'
   office: 'State House 25'
   district: '25'
@@ -3577,10 +3577,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0393
-  name: 'Cabot W. Nelson'
-  first_name: Cabot
+  full_name: 'Cabot W. Nelson'
+  first_names: Cabot
   middle_name: W.
-  last_name: Nelson
+  last_names: Nelson
   gender: 'male'
   office: 'State House 25'
   district: '25'
@@ -3596,10 +3596,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0394
-  name: 'Scott B. Madsen'
-  first_name: Scott
+  full_name: 'Scott B. Madsen'
+  first_names: Scott
   middle_name: B.
-  last_name: Madsen
+  last_names: Madsen
   gender: 'male'
   office: 'State House 26'
   district: '26'
@@ -3615,9 +3615,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0395
-  name: 'Angela Romero'
-  first_name: Angela
-  last_name: Romero
+  full_name: 'Angela Romero'
+  first_names: Angela
+  last_names: Romero
   gender: 'female'
   office: 'State House 26'
   district: '26'
@@ -3634,9 +3634,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0396
-  name: 'Man Hung'
-  first_name: Man
-  last_name: Hung
+  full_name: 'Man Hung'
+  first_names: Man
+  last_names: Hung
   gender: 'female'
   office: 'State House 26'
   district: '26'
@@ -3653,9 +3653,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0397
-  name: 'Jonathan Greene'
-  first_name: Jonathan
-  last_name: Greene
+  full_name: 'Jonathan Greene'
+  first_names: Jonathan
+  last_names: Greene
   gender: 'male'
   office: 'State House 26'
   district: '26'
@@ -3671,9 +3671,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0398
-  name: 'Samuel Cotton-Betteridge'
-  first_name: Samuel
-  last_name: Cotton-Betteridge
+  full_name: 'Samuel Cotton-Betteridge'
+  first_names: Samuel
+  last_names: Cotton-Betteridge
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3689,9 +3689,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0399
-  name: 'Jared Carman'
-  first_name: Jared
-  last_name: Carman
+  full_name: 'Jared Carman'
+  first_names: Jared
+  last_names: Carman
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3707,9 +3707,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0400
-  name: 'Curt Crosby'
-  first_name: Curt
-  last_name: Crosby
+  full_name: 'Curt Crosby'
+  first_names: Curt
+  last_names: Crosby
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3725,10 +3725,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0401
-  name: 'Mark N. Bair'
-  first_name: Mark
+  full_name: 'Mark N. Bair'
+  first_names: Mark
   middle_name: N.
-  last_name: Bair
+  last_names: Bair
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3744,10 +3744,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0402
-  name: 'Joseph Geddes Buchman'
-  first_name: Joseph
+  full_name: 'Joseph Geddes Buchman'
+  first_names: Joseph
   middle_name: Geddes
-  last_name: Buchman
+  last_names: Buchman
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3764,9 +3764,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0403
-  name: 'Brady Brammer'
-  first_name: Brady
-  last_name: Brammer
+  full_name: 'Brady Brammer'
+  first_names: Brady
+  last_names: Brammer
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3782,9 +3782,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0404
-  name: 'Kevin Braddy'
-  first_name: Kevin
-  last_name: Braddy
+  full_name: 'Kevin Braddy'
+  first_names: Kevin
+  last_names: Braddy
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3799,9 +3799,9 @@
   candidate_status: 'withdrew'
 -
   id: ut0405
-  name: 'Elisabeth Luntz'
-  first_name: Elisabeth
-  last_name: Luntz
+  full_name: 'Elisabeth Luntz'
+  first_names: Elisabeth
+  last_names: Luntz
   gender: 'female'
   office: 'State House 27'
   district: '27'
@@ -3812,9 +3812,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0406
-  name: 'Joe Hart'
-  first_name: Joe
-  last_name: Hart
+  full_name: 'Joe Hart'
+  first_names: Joe
+  last_names: Hart
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3830,10 +3830,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0407
-  name: 'Damian W. Kidd'
-  first_name: Damian
+  full_name: 'Damian W. Kidd'
+  first_names: Damian
   middle_name: W.
-  last_name: Kidd
+  last_names: Kidd
   gender: 'male'
   office: 'State House 27'
   district: '27'
@@ -3849,10 +3849,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0408
-  name: 'Brian S. King'
-  first_name: Brian
+  full_name: 'Brian S. King'
+  first_names: Brian
   middle_name: S.
-  last_name: King
+  last_names: King
   gender: 'male'
   office: 'State House 28 (Multi County)'
   district: '28'
@@ -3869,10 +3869,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0409
-  name: 'Kerry M. Wayne'
-  first_name: Kerry
+  full_name: 'Kerry M. Wayne'
+  first_names: Kerry
   middle_name: M.
-  last_name: Wayne
+  last_names: Wayne
   gender: 'male'
   office: 'State House 29 (Multi County)'
   district: '29'
@@ -3888,10 +3888,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0410
-  name: 'Lee B. Perry'
-  first_name: Lee
+  full_name: 'Lee B. Perry'
+  first_names: Lee
   middle_name: B.
-  last_name: Perry
+  last_names: Perry
   gender: 'male'
   office: 'State House 29 (Multi County)'
   district: '29'
@@ -3908,9 +3908,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0411
-  name: 'Derrick Fullum'
-  first_name: Derrick
-  last_name: Fullum
+  full_name: 'Derrick Fullum'
+  first_names: Derrick
+  last_names: Fullum
   gender: 'male'
   office: 'State House 30'
   district: '30'
@@ -3926,10 +3926,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0412
-  name: 'Fred C. Cox'
-  first_name: Fred
+  full_name: 'Fred C. Cox'
+  first_names: Fred
   middle_name: 'C.'
-  last_name: Cox
+  last_names: Cox
   office: 'State House 30'
   district: '30'
   address: '4466 Early Duke St.'
@@ -3945,9 +3945,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0413
-  name: 'Robert Burch, Jr.'
-  first_name: Robert
-  last_name: Burch
+  full_name: 'Robert Burch, Jr.'
+  first_names: Robert
+  last_names: Burch
   suffix: 'Jr.'
   gender: 'male'
   office: 'State House 30'
@@ -3963,9 +3963,9 @@
   candidate_status: 'filed'
 -
   id: ut0414
-  name: 'Mike Winder'
-  first_name: Mike
-  last_name: Winder
+  full_name: 'Mike Winder'
+  first_names: Mike
+  last_names: Winder
   gender: 'male'
   office: 'State House 30'
   district: '30'
@@ -3982,9 +3982,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0415
-  name: 'Chelsey Rose'
-  first_name: Chelsey
-  last_name: Rose
+  full_name: 'Chelsey Rose'
+  first_names: Chelsey
+  last_names: Rose
   gender: 'female'
   office: 'State House 30'
   district: '30'
@@ -4000,10 +4000,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0416
-  name: 'Brian L. Fabbi'
-  first_name: Brian
+  full_name: 'Brian L. Fabbi'
+  first_names: Brian
   middle_name: L.
-  last_name: Fabbi
+  last_names: Fabbi
   gender: 'male'
   office: 'State House 31'
   district: '31'
@@ -4020,9 +4020,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0417
-  name: 'Elizabeth Weight'
-  first_name: Elizabeth
-  last_name: Weight
+  full_name: 'Elizabeth Weight'
+  first_names: Elizabeth
+  last_names: Weight
   gender: 'female'
   office: 'State House 31'
   district: '31'
@@ -4039,9 +4039,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0418
-  name: 'Fred Johnson'
-  first_name: Fred
-  last_name: Johnson
+  full_name: 'Fred Johnson'
+  first_names: Fred
+  last_names: Johnson
   gender: 'male'
   office: 'State House 31'
   district: '31'
@@ -4057,9 +4057,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0419
-  name: 'Brad Bonham'
-  first_name: Brad
-  last_name: Bonham
+  full_name: 'Brad Bonham'
+  first_names: Brad
+  last_names: Bonham
   gender: 'male'
   office: 'State House 32'
   district: '32'
@@ -4075,10 +4075,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0420
-  name: 'David C. Werts'
-  first_name: David
+  full_name: 'David C. Werts'
+  first_names: David
   middle_name: C.
-  last_name: Werts
+  last_names: Werts
   office: 'State House 32'
   district: '32'
   address: '1962 E Stag Hill'
@@ -4093,9 +4093,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0421
-  name: 'Suzanne Harrison'
-  first_name: Suzanne
-  last_name: Harrison
+  full_name: 'Suzanne Harrison'
+  first_names: Suzanne
+  last_names: Harrison
   gender: 'female'
   office: 'State House 32'
   district: '32'
@@ -4112,10 +4112,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0422
-  name: 'Bjorn N. Jones'
-  first_name: Bjorn
+  full_name: 'Bjorn N. Jones'
+  first_names: Bjorn
   middle_name: N.
-  last_name: Jones
+  last_names: Jones
   gender: 'male'
   office: 'State House 32'
   district: '32'
@@ -4132,9 +4132,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0423
-  name: 'Edward Bodily'
-  first_name: Edward
-  last_name: Bodily
+  full_name: 'Edward Bodily'
+  first_names: Edward
+  last_names: Bodily
   gender: 'male'
   office: 'State House 33'
   district: '33'
@@ -4151,9 +4151,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0424
-  name: 'Kay Van Patter'
-  first_name: Kay
-  last_name: 'Van Patter'
+  full_name: 'Kay Van Patter'
+  first_names: Kay
+  last_names: 'Van Patter'
   gender: 'male'
   office: 'State House 33'
   district: '33'
@@ -4169,9 +4169,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0425
-  name: 'Craig Hall'
-  first_name: Craig
-  last_name: Hall
+  full_name: 'Craig Hall'
+  first_names: Craig
+  last_names: Hall
   gender: 'male'
   office: 'State House 33'
   district: '33'
@@ -4188,10 +4188,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0426
-  name: 'Ira D. Hatch'
-  first_name: Ira
+  full_name: 'Ira D. Hatch'
+  first_names: Ira
   middle_name: 'D.'
-  last_name: Hatch
+  last_names: Hatch
   gender: 'male'
   office: 'State House 33'
   district: '33'
@@ -4207,9 +4207,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0427
-  name: 'David Young'
-  first_name: David
-  last_name: Young
+  full_name: 'David Young'
+  first_names: David
+  last_names: Young
   gender: 'male'
   office: 'State House 34'
   district: '34'
@@ -4225,10 +4225,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0428
-  name: 'Eric T. Behunin'
-  first_name: Eric
+  full_name: 'Eric T. Behunin'
+  first_names: Eric
   middle_name: T.
-  last_name: Behunin
+  last_names: Behunin
   gender: 'male'
   office: 'State House 34'
   district: '34'
@@ -4244,9 +4244,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0429
-  name: 'Karen Kwan'
-  first_name: Karen
-  last_name: Kwan
+  full_name: 'Karen Kwan'
+  first_names: Karen
+  last_names: Kwan
   gender: 'female'
   office: 'State House 34'
   district: '34'
@@ -4262,9 +4262,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0430
-  name: 'Robert Edgel'
-  first_name: Robert
-  last_name: Edgel
+  full_name: 'Robert Edgel'
+  first_names: Robert
+  last_names: Edgel
   gender: 'male'
   office: 'State House 35'
   district: '35'
@@ -4281,10 +4281,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0431
-  name: 'Mark A. Wheatley'
-  first_name: Mark
+  full_name: 'Mark A. Wheatley'
+  first_names: Mark
   middle_name: A.
-  last_name: Wheatley
+  last_names: Wheatley
   gender: 'male'
   office: 'State House 35'
   district: '35'
@@ -4300,9 +4300,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0432
-  name: 'Chelsea Travis'
-  first_name: Chelsea
-  last_name: Travis
+  full_name: 'Chelsea Travis'
+  first_names: Chelsea
+  last_names: Travis
   gender: 'female'
   office: 'State House 35'
   district: '35'
@@ -4319,9 +4319,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0433
-  name: 'Patrice Arent'
-  first_name: Patrice
-  last_name: Arent
+  full_name: 'Patrice Arent'
+  first_names: Patrice
+  last_names: Arent
   gender: 'female'
   office: 'State House 36'
   district: '36'
@@ -4338,10 +4338,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0434
-  name: 'Phillip B. Millett'
-  first_name: Phillip
+  full_name: 'Phillip B. Millett'
+  first_names: Phillip
   middle_name: B.
-  last_name: Millett
+  last_names: Millett
   gender: 'male'
   office: 'State House 36'
   district: '36'
@@ -4356,10 +4356,10 @@
   candidate_status: 'withdrew'
 -
   id: ut0435
-  name: 'Todd E. Zenger'
-  first_name: Todd
+  full_name: 'Todd E. Zenger'
+  first_names: Todd
   middle_name: 'E.'
-  last_name: Zenger
+  last_names: Zenger
   gender: 'male'
   office: 'State House 36'
   district: '36'
@@ -4375,10 +4375,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0436
-  name: 'Gian F. Ruiz'
-  first_name: Gian
+  full_name: 'Gian F. Ruiz'
+  first_names: Gian
   middle_name: F.
-  last_name: Ruiz
+  last_names: Ruiz
   gender: 'male'
   office: 'State House 36'
   district: '36'
@@ -4393,10 +4393,10 @@
   candidate_status: 'withdrew'
 -
   id: ut0437
-  name: 'David N. Sundwall'
-  first_name: David
+  full_name: 'David N. Sundwall'
+  first_names: David
   middle_name: N.
-  last_name: Sundwall
+  last_names: Sundwall
   gender: 'male'
   office: 'State House 37'
   district: '37'
@@ -4412,10 +4412,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0438
-  name: 'Carol Spackman Moss'
-  first_name: Carol
+  full_name: 'Carol Spackman Moss'
+  first_names: Carol
   middle_name: Spackman
-  last_name: Moss
+  last_names: Moss
   gender: 'female'
   office: 'State House 37'
   district: '37'
@@ -4432,9 +4432,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0439
-  name: 'Edgar Harwood'
-  first_name: Edgar
-  last_name: Harwood
+  full_name: 'Edgar Harwood'
+  first_names: Edgar
+  last_names: Harwood
   gender: 'male'
   office: 'State House 38'
   district: '38'
@@ -4451,9 +4451,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0440
-  name: 'Eric Hutchings'
-  first_name: Eric
-  last_name: Hutchings
+  full_name: 'Eric Hutchings'
+  first_names: Eric
+  last_names: Hutchings
   gender: 'male'
   office: 'State House 38'
   district: '38'
@@ -4469,9 +4469,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0441
-  name: 'Stephen Peck'
-  first_name: Stephen
-  last_name: Peck
+  full_name: 'Stephen Peck'
+  first_names: Stephen
+  last_names: Peck
   gender: 'male'
   office: 'State House 39'
   district: '39'
@@ -4487,9 +4487,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0442
-  name: 'Jim Dunnigan'
-  first_name: Jim
-  last_name: Dunnigan
+  full_name: 'Jim Dunnigan'
+  first_names: Jim
+  last_names: Dunnigan
   gender: 'male'
   office: 'State House 39'
   district: '39'
@@ -4506,9 +4506,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0443
-  name: 'David Else'
-  first_name: David
-  last_name: Else
+  full_name: 'David Else'
+  first_names: David
+  last_names: Else
   gender: 'male'
   office: 'State House 40'
   district: '40'
@@ -4524,10 +4524,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0444
-  name: 'Lynn N. Hemingway'
-  first_name: Lynn
+  full_name: 'Lynn N. Hemingway'
+  first_names: Lynn
   middle_name: 'N.'
-  last_name: Hemingway
+  last_names: Hemingway
   gender: 'male'
   office: 'State House 40'
   district: '40'
@@ -4543,10 +4543,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0445
-  name: 'Peter L. Kraus'
-  first_name: Peter
+  full_name: 'Peter L. Kraus'
+  first_names: Peter
   middle_name: L.
-  last_name: Kraus
+  last_names: Kraus
   gender: 'male'
   office: 'State House 40'
   district: '40'
@@ -4562,9 +4562,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0446
-  name: 'Stephanie Pitcher'
-  first_name: Stephanie
-  last_name: Pitcher
+  full_name: 'Stephanie Pitcher'
+  first_names: Stephanie
+  last_names: Pitcher
   gender: 'female'
   office: 'State House 40'
   district: '40'
@@ -4581,10 +4581,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0447
-  name: 'Mark A. Strong'
-  first_name: Mark
+  full_name: 'Mark A. Strong'
+  first_names: Mark
   middle_name: A.
-  last_name: Strong
+  last_names: Strong
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -4600,9 +4600,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0448
-  name: 'Paul Wayman'
-  first_name: Paul
-  last_name: Wayman
+  full_name: 'Paul Wayman'
+  first_names: Paul
+  last_names: Wayman
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -4619,9 +4619,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0449
-  name: 'Steve Walston'
-  first_name: Steve
-  last_name: Walston
+  full_name: 'Steve Walston'
+  first_names: Steve
+  last_names: Walston
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -4637,9 +4637,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0450
-  name: 'Mike Hales'
-  first_name: Mike
-  last_name: Hales
+  full_name: 'Mike Hales'
+  first_names: Mike
+  last_names: Hales
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -4655,9 +4655,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0451
-  name: 'Wendy Garvin'
-  first_name: Wendy
-  last_name: Garvin
+  full_name: 'Wendy Garvin'
+  first_names: Wendy
+  last_names: Garvin
   gender: 'female'
   office: 'State House 41'
   district: '41'
@@ -4674,10 +4674,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0231
-  name: 'James W. Platt'
-  first_name: James
+  full_name: 'James W. Platt'
+  first_names: James
   middle_name: W.
-  last_name: Platt
+  last_names: Platt
   office: 'State House 41'
   district: '41'
   address: '13734 S 2550 W'
@@ -4692,10 +4692,10 @@
   last_updated: '2018-05-04'
 -
   id: ut0452
-  name: 'Becky A. Pickle'
-  first_name: Becky
+  full_name: 'Becky A. Pickle'
+  first_names: Becky
   middle_name: A.
-  last_name: Pickle
+  last_names: Pickle
   gender: 'female'
   office: 'State House 41'
   district: '41'
@@ -4711,9 +4711,9 @@
   last_updated: '2018-05-04'
 -
   id: ut0453
-  name: 'Nic Dunn'
-  first_name: Nic
-  last_name: Dunn
+  full_name: 'Nic Dunn'
+  first_names: Nic
+  last_names: Dunn
   gender: 'male'
   office: 'State House 41'
   district: '41'
@@ -4729,9 +4729,9 @@
   last_updated: '2018-05-04'
 -
   id: ut0454
-  name: 'Kim Coleman'
-  first_name: Kim
-  last_name: Coleman
+  full_name: 'Kim Coleman'
+  first_names: Kim
+  last_names: Coleman
   gender: 'female'
   office: 'State House 42'
   district: '42'
@@ -4748,10 +4748,10 @@
   last_updated: '2018-05-04'
 -
   id: ut0455
-  name: 'Amy L. Martz'
-  first_name: Amy
+  full_name: 'Amy L. Martz'
+  first_names: Amy
   middle_name: L.
-  last_name: Martz
+  last_names: Martz
   gender: 'female'
   office: 'State House 42'
   district: '42'
@@ -4768,10 +4768,10 @@
   last_updated: '2018-05-04'
 -
   id: ut0456
-  name: 'Nicholas R. Holland'
-  first_name: Nicholas
+  full_name: 'Nicholas R. Holland'
+  first_names: Nicholas
   middle_name: R.
-  last_name: Holland
+  last_names: Holland
   gender: 'male'
   office: 'State House 42'
   district: '42'
@@ -4787,9 +4787,9 @@
   last_updated: '2018-05-04'
 -
   id: ut0457
-  name: 'Shawn Curtis'
-  first_name: Shawn
-  last_name: Curtis
+  full_name: 'Shawn Curtis'
+  first_names: Shawn
+  last_names: Curtis
   gender: 'male'
   office: 'State House 43'
   district: '43'
@@ -4805,10 +4805,10 @@
   last_updated: '2018-05-04'
 -
   id: ut0458
-  name: 'Cheryl K. Acton'
-  first_name: Cheryl
+  full_name: 'Cheryl K. Acton'
+  first_names: Cheryl
   middle_name: K.
-  last_name: Acton
+  last_names: Acton
   gender: 'female'
   office: 'State House 43'
   district: '43'
@@ -4830,9 +4830,9 @@
   last_updated: '2018-05-04'
 -
   id: ut0459
-  name: 'Diane Lewis'
-  first_name: Diane
-  last_name: Lewis
+  full_name: 'Diane Lewis'
+  first_names: Diane
+  last_names: Lewis
   gender: 'female'
   office: 'State House 43'
   district: '43'
@@ -4849,10 +4849,10 @@
   last_updated: '2018-05-04'
 -
   id: ut0460
-  name: 'Frank A. Torina Jr.'
-  first_name: Frank
+  full_name: 'Frank A. Torina Jr.'
+  first_names: Frank
   middle_name: A.
-  last_name: Torina
+  last_names: Torina
   suffix: Jr.
   gender: 'male'
   office: 'State House 43'
@@ -4869,10 +4869,10 @@
   last_updated: '2018-05-04'
 -
   id: ut0461
-  name: 'Bruce R. Cutler'
-  first_name: Bruce
+  full_name: 'Bruce R. Cutler'
+  first_names: Bruce
   middle_name: R.
-  last_name: Cutler
+  last_names: Cutler
   gender: 'male'
   office: 'State House 44'
   district: '44'
@@ -4889,10 +4889,10 @@
   last_updated: '2018-05-05'
 -
   id: 'robert-h-openshaw'
-  name: 'Robert H. Openshaw'
-  first_name: Robert
+  full_name: 'Robert H. Openshaw'
+  first_names: Robert
   middle_name: H.
-  last_name: Openshaw
+  last_names: Openshaw
   gender: 'male'
   office: 'State House 44'
   district: '44'
@@ -4912,9 +4912,9 @@
     -
       identifier: '1415014'
       scheme: 'State of Utah Financial Disclosures'
-  name: 'Andrew Stoddard'
-  first_name: 'Andrew'
-  last_name: 'Stoddard'
+  full_name: 'Andrew Stoddard'
+  first_names: 'Andrew'
+  last_names: 'Stoddard'
   gender: 'male'
   office: 'State House 44'
   district: '44'
@@ -4945,9 +4945,9 @@
   last_updated: '2018-06-14'
 -
   id: ut0463
-  name: 'John Jackson'
-  first_name: John
-  last_name: Jackson
+  full_name: 'John Jackson'
+  first_names: John
+  last_names: Jackson
   gender: 'male'
   office: 'State House 44'
   district: '44'
@@ -4963,9 +4963,9 @@
   last_updated: '2018-05-05'
 -
   id: ut0464
-  name: 'Nikki Cunard'
-  first_name: Nikki
-  last_name: Cunard
+  full_name: 'Nikki Cunard'
+  first_names: Nikki
+  last_names: Cunard
   gender: 'female'
   office: 'State House 45'
   district: '45'
@@ -4982,9 +4982,9 @@
   last_updated: '2018-05-05'
 -
   id: ut0465
-  name: 'Steve Eliason'
-  first_name: Steve
-  last_name: Eliason
+  full_name: 'Steve Eliason'
+  first_names: Steve
+  last_names: Eliason
   gender: 'male'
   office: 'State House 45'
   district: '45'
@@ -5001,9 +5001,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0466
-  name: 'Dwight Epperson'
-  first_name: Dwight
-  last_name: Epperson
+  full_name: 'Dwight Epperson'
+  first_names: Dwight
+  last_names: Epperson
   gender: 'male'
   office: 'State House 45'
   district: '45'
@@ -5019,10 +5019,10 @@
   last_updated: '2018-05-07'
 -
   id: ut0468
-  name: 'Lee Anne Walker'
-  first_name: Lee
+  full_name: 'Lee Anne Walker'
+  first_names: Lee
   middle_name: Anne
-  last_name: Walker
+  last_names: Walker
   gender: 'female'
   office: 'State House 46'
   district: '46'
@@ -5038,10 +5038,10 @@
   last_updated: '2018-05-07'
 -
   id: ut0469
-  name: 'Marie H. Poulson'
-  first_name: Marie
+  full_name: 'Marie H. Poulson'
+  first_names: Marie
   middle_name: H.
-  last_name: Poulson
+  last_names: Poulson
   gender: 'female'
   office: 'State House 46'
   district: '46'
@@ -5058,9 +5058,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0470
-  name: 'Greg Johnson'
-  first_name: Greg
-  last_name: Johnson
+  full_name: 'Greg Johnson'
+  first_names: Greg
+  last_names: Johnson
   gender: 'male'
   office: 'State House 46'
   district: '46'
@@ -5077,9 +5077,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0471
-  name: 'Scott Bell'
-  first_name: Scott
-  last_name: Bell
+  full_name: 'Scott Bell'
+  first_names: Scott
+  last_names: Bell
   gender: 'male'
   office: 'State House 47'
   district: '47'
@@ -5094,10 +5094,10 @@
   candidate_status: 'filed'
   last_updated: '2018-05-07'
 -
-  name: 'Stacy Michael Norton'
-  first_name: Stacy
+  full_name: 'Stacy Michael Norton'
+  first_names: Stacy
   middle_name: Michael
-  last_name: Norton
+  last_names: Norton
   gender: 'male'
   office: 'State House 47'
   district: '47'
@@ -5112,9 +5112,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0472
-  name: 'Ken Ivory'
-  first_name: Ken
-  last_name: Ivory
+  full_name: 'Ken Ivory'
+  first_names: Ken
+  last_names: Ivory
   gender: 'male'
   office: 'State House 47'
   district: '47'
@@ -5131,10 +5131,10 @@
   last_updated: '2018-05-07'
 -
   id: ut0473
-  name: 'Keven J. Stratton'
-  first_name: Keven
+  full_name: 'Keven J. Stratton'
+  first_names: Keven
   middle_name: J.
-  last_name: Stratton
+  last_names: Stratton
   gender: 'male'
   office: 'State House 48'
   district: '48'
@@ -5151,9 +5151,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0474
-  name: 'Aaron Heineman'
-  first_name: Aaron
-  last_name: Heineman
+  full_name: 'Aaron Heineman'
+  first_names: Aaron
+  last_names: Heineman
   gender: 'male'
   office: 'State House 48'
   district: '48'
@@ -5169,9 +5169,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0475
-  name: 'Anthony Sudweeks'
-  first_name: Anthony
-  last_name: Sudweeks
+  full_name: 'Anthony Sudweeks'
+  first_names: Anthony
+  last_names: Sudweeks
   gender: 'male'
   office: 'State House 49'
   district: '49'
@@ -5188,9 +5188,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0476
-  name: 'Robert Spendlove'
-  first_name: Robert
-  last_name: Spendlove
+  full_name: 'Robert Spendlove'
+  first_names: Robert
+  last_names: Spendlove
   gender: 'male'
   office: 'State House 49'
   district: '49'
@@ -5207,9 +5207,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0477
-  name: 'Mark Russell'
-  first_name: Mark
-  last_name: Russell
+  full_name: 'Mark Russell'
+  first_names: Mark
+  last_names: Russell
   gender: 'male'
   office: 'State House 49'
   district: '49'
@@ -5225,9 +5225,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0478
-  name: 'Ty Foster'
-  first_name: Ty
-  last_name: Foster
+  full_name: 'Ty Foster'
+  first_names: Ty
+  last_names: Foster
   gender: 'male'
   office: 'State House 50'
   district: '50'
@@ -5244,9 +5244,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0479
-  name: 'Megan Wiesen'
-  first_name: Megan
-  last_name: Wiesen
+  full_name: 'Megan Wiesen'
+  first_names: Megan
+  last_names: Wiesen
   gender: 'female'
   office: 'State House 50'
   district: '50'
@@ -5263,9 +5263,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0480
-  name: 'Susan Pulsipher'
-  first_name: Susan
-  last_name: Pulsipher
+  full_name: 'Susan Pulsipher'
+  first_names: Susan
+  last_names: Pulsipher
   gender: 'female'
   office: 'State House 50'
   district: '50'
@@ -5282,9 +5282,9 @@
   last_updated: '2018-05-07'
 -
   id: ut0481
-  name: 'Alan Summerhays'
-  first_name: Alan
-  last_name: Summerhays
+  full_name: 'Alan Summerhays'
+  first_names: Alan
+  last_names: Summerhays
   gender: 'male'
   office: 'State House 51'
   district: '51'
@@ -5300,9 +5300,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0482
-  name: 'Jeff Stenquist'
-  first_name: Jeff
-  last_name: Stenquist
+  full_name: 'Jeff Stenquist'
+  first_names: Jeff
+  last_names: Stenquist
   gender: 'male'
   office: 'State House 51'
   district: '51'
@@ -5319,9 +5319,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0483
-  name: 'Michele Weeks'
-  first_name: Michele
-  last_name: Weeks
+  full_name: 'Michele Weeks'
+  first_names: Michele
+  last_names: Weeks
   gender: 'female'
   office: 'State House 51'
   district: '51'
@@ -5338,9 +5338,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0484
-  name: 'Dan McClellan'
-  first_name: Dan
-  last_name: McClellan
+  full_name: 'Dan McClellan'
+  first_names: Dan
+  last_names: McClellan
   gender: 'male'
   office: 'State House 52'
   district: '52'
@@ -5356,9 +5356,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0485
-  name: 'John Knotwell'
-  first_name: John
-  last_name: Knotwell
+  full_name: 'John Knotwell'
+  first_names: John
+  last_names: Knotwell
   gender: 'male'
   office: 'State House 52'
   district: '52'
@@ -5375,9 +5375,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0486
-  name: 'Logan Wilde'
-  first_name: Logan
-  last_name: Wilde
+  full_name: 'Logan Wilde'
+  first_names: Logan
+  last_names: Wilde
   gender: 'male'
   office: 'State House 53 (Multi County)'
   district: '53'
@@ -5391,9 +5391,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0487
-  name: 'Christopher Neville'
-  first_name: Christopher
-  last_name: Neville
+  full_name: 'Christopher Neville'
+  first_names: Christopher
+  last_names: Neville
   gender: 'male'
   office: 'State House 53 (Multi County)'
   district: '53'
@@ -5410,10 +5410,10 @@
   last_updated: '2018-05-17'
 -
   id: ut0488
-  name: 'Roberto M. Lopez'
-  first_name: Roberto
+  full_name: 'Roberto M. Lopez'
+  first_names: Roberto
   middle_name: M.
-  last_name: Lopez
+  last_names: Lopez
   gender: 'male'
   office: 'State House 54 (Multi County)'
   district: '54'
@@ -5429,9 +5429,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0489
-  name: 'Meaghan Miller'
-  first_name: Meaghan
-  last_name: Miller
+  full_name: 'Meaghan Miller'
+  first_names: Meaghan
+  last_names: Miller
   gender: 'female'
   office: 'State House 54 (Multi County)'
   district: '54'
@@ -5448,9 +5448,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0490
-  name: 'Tim Quinn'
-  first_name: Tim
-  last_name: Quinn
+  full_name: 'Tim Quinn'
+  first_names: Tim
+  last_names: Quinn
   gender: 'male'
   office: 'State House 54 (Multi County)'
   district: '54'
@@ -5466,10 +5466,10 @@
   last_updated: '2018-05-17'
 -
   id: ut0491
-  name: 'Scott H. Chew'
-  first_name: Scott
+  full_name: 'Scott H. Chew'
+  first_names: Scott
   middle_name: H.
-  last_name: Chew
+  last_names: Chew
   gender: 'male'
   office: 'State House 55 (Multi County)'
   district: '55'
@@ -5485,9 +5485,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0492
-  name: 'Christina Higgins'
-  first_name: Christina
-  last_name: Higgins
+  full_name: 'Christina Higgins'
+  first_names: Christina
+  last_names: Higgins
   gender: 'female'
   office: 'State House 55 (Multi County)'
   district: '55'
@@ -5499,10 +5499,10 @@
   last_updated: '2018-05-17'
 -
   id: ut0493
-  name: 'Kay J. Christofferson'
-  first_name: Kay
+  full_name: 'Kay J. Christofferson'
+  first_names: Kay
   middle_name: J.
-  last_name: Christofferson
+  last_names: Christofferson
   gender: 'male'
   office: 'State House 56'
   district: '56'
@@ -5519,9 +5519,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0494
-  name: 'Isaac Walters'
-  first_name: Isaac
-  last_name: Walters
+  full_name: 'Isaac Walters'
+  first_names: Isaac
+  last_names: Walters
   gender: 'male'
   office: 'State House 56'
   district: '56'
@@ -5538,9 +5538,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0495
-  name: 'Alexander Carter'
-  first_name: Alexander
-  last_name: Carter
+  full_name: 'Alexander Carter'
+  first_names: Alexander
+  last_names: Carter
   gender: 'male'
   office: 'State House 57'
   district: '57'
@@ -5556,9 +5556,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0496
-  name: 'Carlton Bowen'
-  first_name: Carlton
-  last_name: Bowen
+  full_name: 'Carlton Bowen'
+  first_names: Carlton
+  last_names: Bowen
   gender: 'male'
   office: 'State House 57'
   district: '57'
@@ -5575,9 +5575,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0497
-  name: 'Hillary Stirling'
-  first_name: Hillary
-  last_name: Stirling
+  full_name: 'Hillary Stirling'
+  first_names: Hillary
+  last_names: Stirling
   gender: 'female'
   office: 'State House 57'
   district: '57'
@@ -5594,9 +5594,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0498
-  name: 'Jon Hawkins'
-  first_name: Jon
-  last_name: Hawkins
+  full_name: 'Jon Hawkins'
+  first_names: Jon
+  last_names: Hawkins
   gender: 'male'
   office: 'State House 57'
   district: '57'
@@ -5613,10 +5613,10 @@
   last_updated: '2018-05-17'
 -
   id: ut0499
-  name: 'Derrin R. Owens'
-  first_name: Derrin
+  full_name: 'Derrin R. Owens'
+  first_names: Derrin
   middle_name: R.
-  last_name: Owens
+  last_names: Owens
   gender: 'male'
   office: 'State House 58 (Multi County)'
   district: '58'
@@ -5632,9 +5632,9 @@
   last_updated: '2018-05-17'
 -
   id: ut0500
-  name: 'Lynn Zaritsky'
-  first_name: Lynn
-  last_name: Zaritsky
+  full_name: 'Lynn Zaritsky'
+  first_names: Lynn
+  last_names: Zaritsky
   gender: 'female'
   office: 'State House 58 (Multi County)'
   district: '58'
@@ -5651,10 +5651,10 @@
   last_updated: '2018-05-17'
 -
   id: ut0501
-  name: 'Russell G. Hatch'
-  first_name: Russell
+  full_name: 'Russell G. Hatch'
+  first_names: Russell
   middle_name: G.
-  last_name: Hatch
+  last_names: Hatch
   gender: 'male'
   office: 'State House 58 (Multi County)'
   district: '58'
@@ -5670,10 +5670,10 @@
   last_updated: '2018-05-18'
 -
   id: ut0502
-  name: 'Claudia P. Jarrett'
-  first_name: Claudia
+  full_name: 'Claudia P. Jarrett'
+  first_names: Claudia
   middle_name: P.
-  last_name: Jarrett
+  last_names: Jarrett
   gender: 'female'
   office: 'State House 58 (Multi County)'
   district: '58'
@@ -5689,9 +5689,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0503
-  name: 'Gregory Hmura'
-  first_name: Gregory
-  last_name: Hmura
+  full_name: 'Gregory Hmura'
+  first_names: Gregory
+  last_names: Hmura
   gender: 'male'
   office: 'State House 59'
   district: '59'
@@ -5703,10 +5703,10 @@
   last_updated: '2018-05-18'
 -
   id: ut0504
-  name: 'Val L. Peterson'
-  first_name: Val
+  full_name: 'Val L. Peterson'
+  first_names: Val
   middle_name: L.
-  last_name: Peterson© 'male'
+  last_names: Peterson© 'male'
   office: 'State House 59'
   district: '59'
   address: '528 W. 1160 N.'
@@ -5722,9 +5722,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0505
-  name: 'Charles Larson'
-  first_name: Charles
-  last_name: Larson
+  full_name: 'Charles Larson'
+  first_names: Charles
+  last_names: Larson
   gender: 'male'
   office: 'State House 60'
   district: '60'
@@ -5740,10 +5740,10 @@
   last_updated: '2018-05-18'
 -
   id: ut0506
-  name: 'Alan F. Keele'
-  first_name: Alan
+  full_name: 'Alan F. Keele'
+  first_names: Alan
   middle_name: F.
-  last_name: Keele
+  last_names: Keele
   gender: 'male'
   office: 'State House 60'
   district: '60'
@@ -5759,9 +5759,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0506
-  name: 'Brad Daw'
-  first_name: Brad
-  last_name: Daw
+  full_name: 'Brad Daw'
+  first_names: Brad
+  last_names: Daw
   gender: 'male'
   office: 'State House 60'
   district: '60'
@@ -5778,9 +5778,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0507
-  name: 'Eric Chase'
-  first_name: Eric
-  last_name: Chase
+  full_name: 'Eric Chase'
+  first_names: Eric
+  last_names: Chase
   gender: 'male'
   office: 'State House 61'
   district: '61'
@@ -5797,9 +5797,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0508
-  name: 'Matt Styles'
-  first_name: Matt
-  last_name: Styles
+  full_name: 'Matt Styles'
+  first_names: Matt
+  last_names: Styles
   gender: 'male'
   office: 'State House 61'
   district: '61'
@@ -5815,9 +5815,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0509
-  name: 'Howard Stone'
-  first_name: Howard
-  last_name: Stone
+  full_name: 'Howard Stone'
+  first_names: Howard
+  last_names: Stone
   gender: 'male'
   office: 'State House 61'
   district: '61'
@@ -5833,9 +5833,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0510
-  name: 'Parl Johnson'
-  first_name: Parl
-  last_name: Johnson
+  full_name: 'Parl Johnson'
+  first_names: Parl
+  last_names: Johnson
   gender: 'male'
   office: 'State House 61'
   district: '61'
@@ -5852,9 +5852,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0511
-  name: 'Marsha Judkins'
-  first_name: Marsha
-  last_name: Judkins
+  full_name: 'Marsha Judkins'
+  first_names: Marsha
+  last_names: Judkins
   gender: 'female'
   office: 'State House 61'
   district: '61'
@@ -5870,10 +5870,10 @@
   last_updated: '2018-05-18'
 -
   id: ut0512
-  name: 'Travis M. Seegmiller'
-  first_name: Travis
+  full_name: 'Travis M. Seegmiller'
+  first_names: Travis
   middle_name: M.
-  last_name: Seegmiller
+  last_names: Seegmiller
   gender: 'male'
   office: 'State House 62'
   district: '62'
@@ -5890,9 +5890,9 @@
   last_updated: '2018-05-18'
 -
   id: ut0513
-  name: 'Adam Robertson'
-  first_name: Adam
-  last_name: Robertson
+  full_name: 'Adam Robertson'
+  first_names: Adam
+  last_names: Robertson
   gender: 'male'
   office: 'State House 63'
   district: '63'
@@ -5909,10 +5909,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0514
-  name: 'Daniel Craig Friend'
-  first_name: Daniel
+  full_name: 'Daniel Craig Friend'
+  first_names: Daniel
   middle_name: Craig
-  last_name: Friend
+  last_names: Friend
   gender: 'male'
   office: 'State House 64'
   district: '64'
@@ -5929,9 +5929,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0515
-  name: 'Hal Miller'
-  first_name: Hal
-  last_name: Miller
+  full_name: 'Hal Miller'
+  first_names: Hal
+  last_names: Miller
   gender: 'male'
   office: 'State House 64'
   district: '64'
@@ -5947,10 +5947,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0516
-  name: 'Mary L. Warner'
-  first_name: Mary
+  full_name: 'Mary L. Warner'
+  first_names: Mary
   middle_name: L.
-  last_name: Warner
+  last_names: Warner
   gender: 'female'
   office: 'State House 64'
   district: '64'
@@ -5966,9 +5966,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0517
-  name: 'Paul Reeb'
-  first_name: Paul
-  last_name: Reeb
+  full_name: 'Paul Reeb'
+  first_names: Paul
+  last_names: Reeb
   gender: 'male'
   office: 'State House 64'
   district: '64'
@@ -5983,9 +5983,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0518
-  name: 'Norm Thurston'
-  first_name: Norm
-  last_name: Thurston
+  full_name: 'Norm Thurston'
+  first_names: Norm
+  last_names: Thurston
   gender: 'male'
   office: 'State House 64'
   district: '64'
@@ -6002,10 +6002,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0519
-  name: 'Sue A. Womack'
-  first_name: Sue
+  full_name: 'Sue A. Womack'
+  first_names: Sue
   middle_name: A.
-  last_name: Womack
+  last_names: Womack
   gender: 'female'
   office: 'State House 65'
   district: '65'
@@ -6021,10 +6021,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0520
-  name: 'Francis D. Gibson'
-  first_name: Francis
+  full_name: 'Francis D. Gibson'
+  first_names: Francis
   middle_name: D.
-  last_name: Gibson
+  last_names: Gibson
   gender: 'male'
   office: 'State House 65'
   district: '65'
@@ -6040,10 +6040,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0521
-  name: 'Scott Brandon Neilson'
-  first_name: Scott
+  full_name: 'Scott Brandon Neilson'
+  first_names: Scott
   middle_name: Brandon
-  last_name: Neilson
+  last_names: Neilson
   gender: 'male'
   office: 'State House 65'
   district: '65'
@@ -6054,9 +6054,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0522
-  name: 'Mike McKell'
-  first_name: Mike
-  last_name: McKell
+  full_name: 'Mike McKell'
+  first_names: Mike
+  last_names: McKell
   gender: 'male'
   office: 'State House 66'
   district: '66'
@@ -6073,10 +6073,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0523
-  name: 'Paul Jones Dayton'
-  first_name: Paul
+  full_name: 'Paul Jones Dayton'
+  first_names: Paul
   middle_name: Jones
-  last_name: Dayton
+  last_names: Dayton
   gender: 'male'
   office: 'State House 66'
   district: '66'
@@ -6090,10 +6090,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0524
-  name: 'Richard L. Behling'
-  first_name: Richard
+  full_name: 'Richard L. Behling'
+  first_names: Richard
   middle_name: L.
-  last_name: Behling
+  last_names: Behling
   gender: 'male'
   office: 'State House 67'
   district: '67'
@@ -6105,9 +6105,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0525
-  name: 'Marc Roberts'
-  first_name: Marc
-  last_name: Roberts
+  full_name: 'Marc Roberts'
+  first_names: Marc
+  last_names: Roberts
   gender: 'male'
   office: 'State House 67'
   district: '67'
@@ -6124,10 +6124,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0526
-  name: 'DENYSE  HOUSLEY COX'
-  first_name: 'Denyse'
+  full_name: 'DENYSE  HOUSLEY COX'
+  first_names: 'Denyse'
   middle_name: Housley
-  last_name: Cox
+  last_names: Cox
 
 
   office: 'State House 68 (Multi County)'
@@ -6146,10 +6146,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0527
-  name: 'MERLE TRAVIS WALL'
-  first_name: Merle
+  full_name: 'MERLE TRAVIS WALL'
+  first_names: Merle
   middle_name: Travis
-  last_name: Wall
+  last_names: Wall
 
 
   office: 'State House 68 (Multi County)'
@@ -6168,10 +6168,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0528
-  name: 'WARREN ROGERS'
-  first_name: Warren
+  full_name: 'WARREN ROGERS'
+  first_names: Warren
   #
-  last_name: Rogers
+  last_names: Rogers
 
 
   office: 'State House 68 (Multi County)'
@@ -6190,10 +6190,10 @@
   last_updated: '2018-04-01'
 -
   id: 'kirk-d-pearson'
-  name: 'Kirk D. Pearson'
-  first_name: Kirk
+  full_name: 'Kirk D. Pearson'
+  first_names: Kirk
   middle_name: D
-  last_name: Pearson
+  last_names: Pearson
   gender: 'male'
   office: 'State House 68 (Multi County)'
   district: '68'
@@ -6210,9 +6210,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0530
-  name: 'Merrill Nelson'
-  first_name: Merrill
-  last_name: Nelson
+  full_name: 'Merrill Nelson'
+  first_names: Merrill
+  last_names: Nelson
 
   office: 'State House 68 (Multi County)'
   district: '68'
@@ -6229,10 +6229,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0531
-  name: 'Christine F. Watkins'
-  first_name: Christine
+  full_name: 'Christine F. Watkins'
+  first_names: Christine
   middle_name: F.
-  last_name: Watkins
+  last_names: Watkins
 
   office: 'State House 69 (Multi County)'
   district: '69'
@@ -6249,9 +6249,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0532
-  name: 'Tim Glenn'
-  first_name: Tim
-  last_name: Glenn
+  full_name: 'Tim Glenn'
+  first_names: Tim
+  last_names: Glenn
 
   office: 'State House 69 (Multi County)'
   district: '69'
@@ -6269,9 +6269,9 @@
   last_updated: '2018-04-01'
 -
   id: ut0533
-  name: 'Jae Potter'
-  first_name: Jae
-  last_name: Potter
+  full_name: 'Jae Potter'
+  first_names: Jae
+  last_names: Potter
   gender: 'male'
   office: 'State House 69 (Multi County)'
   district: '69'
@@ -6287,10 +6287,10 @@
   last_updated: '2018-04-01'
 -
   id: ut0534
-  name: 'Danielle Howa Pendergrass'
-  first_name: Danielle
+  full_name: 'Danielle Howa Pendergrass'
+  first_names: Danielle
   middle_name: Howa
-  last_name: Pendergrass
+  last_names: Pendergrass
   gender: 'female'
   office: 'State House 69 (Multi County)'
   district: '69'
@@ -6305,10 +6305,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0535
-  name: 'Carl R. Albrecht'
-  first_name: Carl
+  full_name: 'Carl R. Albrecht'
+  first_names: Carl
   middle_name: R.
-  last_name: Albrecht
+  last_names: Albrecht
   gender: 'male'
   office: 'State House 70 (Multi County)'
   district: '70'
@@ -6324,9 +6324,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0536
-  name: 'Robert Greenberg'
-  first_name: Robert
-  last_name: Greenberg
+  full_name: 'Robert Greenberg'
+  first_names: Robert
+  last_names: Greenberg
   gender: 'male'
   office: 'State House 70 (Multi County)'
   district: '70'
@@ -6342,9 +6342,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0537
-  name: 'Ashley Korenblat'
-  first_name: Ashley
-  last_name: Korenblat
+  full_name: 'Ashley Korenblat'
+  first_names: Ashley
+  last_names: Korenblat
   gender: 'female'
   office: 'State House 70 (Multi County)'
   district: '70'
@@ -6360,10 +6360,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0538
-  name: 'Mark S. Borowiak'
-  first_name: Mark
+  full_name: 'Mark S. Borowiak'
+  first_names: Mark
   middle_name: S.
-  last_name: Borowiak
+  last_names: Borowiak
   gender: 'male'
   office: 'State House 71 (Multi County)'
   district: '71'
@@ -6379,9 +6379,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0539
-  name: 'Brad Last'
-  first_name: 'Brad'
-  last_name: Last
+  full_name: 'Brad Last'
+  first_names: 'Brad'
+  last_names: Last
   gender: 'male'
   office: 'State House 71 (Multi County)'
   district: '71'
@@ -6397,9 +6397,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0540
-  name: 'Chuck Goode'
-  first_name: Chuck
-  last_name: Goode
+  full_name: 'Chuck Goode'
+  first_names: Chuck
+  last_names: Goode
   gender: 'male'
   office: 'State House 71 (Multi County)'
   district: '71'
@@ -6416,10 +6416,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0541
-  name: 'Barry Evan Short'
-  first_name: 'Barry'
+  full_name: 'Barry Evan Short'
+  first_names: 'Barry'
   middle_name: Evan
-  last_name: Short
+  last_names: Short
   gender: 'male'
   office: 'State House 72'
   district: '72'
@@ -6435,10 +6435,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0542
-  name: 'Rex P. Shipp'
-  first_name: Rex
+  full_name: 'Rex P. Shipp'
+  first_names: Rex
   middle_name: P
-  last_name: Shipp
+  last_names: Shipp
   gender: 'male'
   office: 'State House 72'
   district: '72'
@@ -6455,10 +6455,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0543
-  name: 'Zeno B. Parry'
-  first_name: 'Zeno'
+  full_name: 'Zeno B. Parry'
+  first_names: 'Zeno'
   middle_name: B.
-  last_name: Parry
+  last_names: Parry
   gender: 'male'
   office: 'State House 72'
   district: '72'
@@ -6474,9 +6474,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0544
-  name: 'Kelly Stowell'
-  first_name: Kelly
-  last_name: Stowell
+  full_name: 'Kelly Stowell'
+  first_names: Kelly
+  last_names: Stowell
   gender: 'male'
   office: 'State House 73 (Multi County)'
   district: '73'
@@ -6492,9 +6492,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0545
-  name: 'Phil Lyman'
-  first_name: Phil
-  last_name: Lyman
+  full_name: 'Phil Lyman'
+  first_names: Phil
+  last_names: Lyman
   gender: 'male'
   office: 'State House 73 (Multi County)'
   district: '73'
@@ -6510,10 +6510,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0546
-  name: 'Marsha M. Holland'
-  first_name: Marsha
+  full_name: 'Marsha M. Holland'
+  first_names: Marsha
   middle_name: M.
-  last_name: Holland
+  last_names: Holland
   gender: 'female'
   office: 'State House 73 (Multi County)'
   district: '73'
@@ -6529,10 +6529,10 @@
   last_updated: '2018-05-20'
 -
   id: ut0547
-  name: 'V. Lowry Snow'
-  first_name: V.
+  full_name: 'V. Lowry Snow'
+  first_names: V.
   middle_name: Lowry
-  last_name: Snow
+  last_names: Snow
   gender: 'male'
   office: 'State House 74'
   district: '74'
@@ -6548,9 +6548,9 @@
   last_updated: '2018-05-20'
 -
   id: ut0548
-  name: 'Daniel Holloway'
-  first_name: Daniel
-  last_name: Holloway
+  full_name: 'Daniel Holloway'
+  first_names: Daniel
+  last_names: Holloway
   gender: 'male'
   office: 'State House 74'
   district: '74'
@@ -6566,9 +6566,9 @@
   last_updated: '2018-05-20'
 -
   id: 'walt-brooks'
-  name: 'Walt Brooks'
-  first_name: Walt
-  last_name: Brooks
+  full_name: 'Walt Brooks'
+  first_names: Walt
+  last_names: Brooks
   gender: 'male'
   office: 'State House 75'
   district: '75'
@@ -6585,10 +6585,10 @@
   last_updated: '2018-05-20'
 -
   id: 'michael-a-gardner'
-  name: 'Michael A. Gardner'
-  first_name: Michael
+  full_name: 'Michael A. Gardner'
+  first_names: Michael
   middle_name: A.
-  last_name: Gardner
+  last_names: Gardner
   gender: 'male'
   office: 'State House 75'
   district: '75'
@@ -6604,10 +6604,10 @@
   last_updated: '2018-06-14'
 -
   id: 'keith-r-kelsch'
-  name: 'Keith R. Kelsch'
-  first_name: Keith
+  full_name: 'Keith R. Kelsch'
+  first_names: Keith
   middle_name: R.
-  last_name: Kelsch
+  last_names: Kelsch
   gender: 'male'
   office: 'State House 75'
   district: '75'
@@ -6624,10 +6624,10 @@
   last_updated: '2018-06-14'
 -
   id: 'jennie-l-earl'
-  name: 'Jennie L. Earl'
-  first_name: Jennie
+  full_name: 'Jennie L. Earl'
+  first_names: Jennie
   middle_name: L.
-  last_name: Earl
+  last_names: Earl
   gender: 'female'
   office: 'State School Board 1 (Multi County)'
   district: '1'
@@ -6639,9 +6639,9 @@
   last_updated: '2018-06-14'
 -
   id: 'terryl-warner'
-  name: 'Terryl Warner'
-  first_name: Terryl
-  last_name: Warner
+  full_name: 'Terryl Warner'
+  first_names: Terryl
+  last_names: Warner
   gender: 'female'
   office: 'State School Board 1 (Multi County)'
   district: '1'
@@ -6658,10 +6658,10 @@
   last_updated: '2018-06-14'
 -
   id: 'leanne-a-rich'
-  name: 'Leanne A. Rich'
-  first_name: Leanne
+  full_name: 'Leanne A. Rich'
+  first_names: Leanne
   middle_name: A.
-  last_name: Rich
+  last_names: Rich
   gender: 'female'
   office: 'State School Board 2'
   district: '2'
@@ -6677,10 +6677,10 @@
   last_updated: '2018-06-14'
 -
   id: 'scott-l-hansen'
-  name: 'Scott L. Hansen'
-  first_name: Scott
+  full_name: 'Scott L. Hansen'
+  first_names: Scott
   middle_name: L.
-  last_name: Hansen
+  last_names: Hansen
   gender: 'male'
   office: 'State School Board 2'
   district: '2'
@@ -6696,10 +6696,10 @@
   last_updated: '2018-06-14'
 -
   id: 'craig-k-pitts'
-  name: 'Craig K. Pitts'
-  first_name: Craig
+  full_name: 'Craig K. Pitts'
+  first_names: Craig
   middle_name: K.
-  last_name: Pitts
+  last_names: Pitts
   gender: 'male'
   office: 'State School Board 2'
   district: '2'
@@ -6715,10 +6715,10 @@
   last_updated: '2018-06-14'
 -
   id: 'linda-b-hansen'
-  name: 'Linda B. Hansen'
-  first_name: Linda
+  full_name: 'Linda B. Hansen'
+  first_names: Linda
   middle_name: B.
-  last_name: Hansen
+  last_names: Hansen
   gender: 'female'
   office: 'State School Board 3 (Multi County)'
   district: '3'
@@ -6735,10 +6735,10 @@
   last_updated: '2018-06-14'
 -
   id: 'thomas-e-nedreberg'
-  name: 'Thomas E. Nedreberg'
-  first_name: Thomas
+  full_name: 'Thomas E. Nedreberg'
+  first_names: Thomas
   middle_name: E.
-  last_name: Nedreberg
+  last_names: Nedreberg
   gender: 'male'
   office: 'State School Board 3 (Multi County)'
   district: '3'
@@ -6754,10 +6754,10 @@
   last_updated: '2018-06-14'
 -
   id: 'laura-collier-belnap'
-  name: 'Laura Collier Belnap'
-  first_name: Laura
+  full_name: 'Laura Collier Belnap'
+  first_names: Laura
   middle_name: Collier
-  last_name: Belnap
+  last_names: Belnap
   gender: 'female'
   office: 'State School Board 5 (Multi County)'
   district: '5'
@@ -6773,10 +6773,10 @@
   last_updated: '2018-06-14'
 -
   id: 'patrick-d-riley'
-  name: 'Patrick D. Riley'
-  first_name: Patrick
+  full_name: 'Patrick D. Riley'
+  first_names: Patrick
   middle_name: D.
-  last_name: Riley
+  last_names: Riley
   gender: 'male'
   office: 'State School Board 5 (Multi County)'
   district: '5'
@@ -6792,9 +6792,9 @@
   last_updated: '2018-06-14'
 -
   id: 'brittney-cummins'
-  name: 'Brittney Cummins'
-  first_name: Brittney
-  last_name: Cummins
+  full_name: 'Brittney Cummins'
+  first_names: Brittney
+  last_names: Cummins
   gender: 'female'
   office: 'State School Board 6'
   district: '6'
@@ -6810,9 +6810,9 @@
   last_updated: '2018-06-14'
 -
   id: 'valerie-velez-hall'
-  name: 'Valerie Velez-Hall'
-  first_name: Valerie
-  last_name: Velez-Hall
+  full_name: 'Valerie Velez-Hall'
+  first_names: Valerie
+  last_names: Velez-Hall
   gender: 'female'
   office: 'State School Board 6'
   district: '6'
@@ -6828,9 +6828,9 @@
   last_updated: '2018-06-14'
 -
   id: 'megan-ruff'
-  name: 'Megan Ruff'
-  first_name: Megan
-  last_name: Ruff
+  full_name: 'Megan Ruff'
+  first_names: Megan
+  last_names: Ruff
   gender: 'female'
   office: 'State School Board 6'
   district: '6'
@@ -6846,9 +6846,9 @@
   last_updated: '2018-06-14'
 -
   id: 'kami-alvarez'
-  name: 'Kami Alvarez'
-  first_name: Kami
-  last_name: Alvarez
+  full_name: 'Kami Alvarez'
+  first_names: Kami
+  last_names: Alvarez
   gender: 'female'
   office: 'State School Board 9'
   district: '9'
@@ -6864,10 +6864,10 @@
   last_updated: '2018-06-14'
 -
   id: 'kirsten-a-arnold'
-  name: 'Kirsten A. Arnold'
-  first_name: Kirsten
+  full_name: 'Kirsten A. Arnold'
+  first_names: Kirsten
   middle_name: 'A.'
-  last_name: Arnold
+  last_names: Arnold
   gender: 'female'
   office: 'State School Board 9'
   district: '9'
@@ -6883,9 +6883,9 @@
   last_updated: '2018-06-14'
 -
   id: 'alexandria-sensinger'
-  name: 'Alexandria Sensinger'
-  first_name: Alexandria
-  last_name: Sensinger
+  full_name: 'Alexandria Sensinger'
+  first_names: Alexandria
+  last_names: Sensinger
   gender: 'female'
   office: 'State School Board 9'
   district: '9'
@@ -6903,9 +6903,9 @@
   last_updated: '2018-06-14'
 -
   id: 'joylin-lincoln'
-  name: 'Joylin Lincoln'
-  first_name: 'Joylin'
-  last_name: Lincoln
+  full_name: 'Joylin Lincoln'
+  first_names: 'Joylin'
+  last_names: Lincoln
   gender: 'female'
   office: 'State School Board 9'
   district: '9'
@@ -6921,9 +6921,9 @@
   last_updated: '2018-06-14'
 -
   id: 'avalie-muhlestein'
-  name: 'Avalie Muhlestein'
-  first_name: Avalie
-  last_name: Muhlestein
+  full_name: 'Avalie Muhlestein'
+  first_names: Avalie
+  last_names: Muhlestein
   gender: 'female'
   office: 'State School Board 9'
   district: '9'
@@ -6943,9 +6943,9 @@
   last_updated: '2018-06-14'
 -
   id: 'cindy-davis'
-  name: 'Cindy Davis'
-  first_name: Cindy
-  last_name: Davis
+  full_name: 'Cindy Davis'
+  first_names: Cindy
+  last_names: Davis
   gender: 'female'
   office: 'State School Board 9'
   district: '9'
@@ -7005,10 +7005,10 @@
   last_updated: '2018-06-14'
 -
   id: 'mark-a-huntsman'
-  name: 'Mark A. Huntsman'
-  first_name: Mark
+  full_name: 'Mark A. Huntsman'
+  first_names: Mark
   middle_name: A.
-  last_name: Huntsman
+  last_names: Huntsman
   gender: 'male'
   office: 'State School Board 14 (Multi County)'
   district: '14'

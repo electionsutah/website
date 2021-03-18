@@ -7,8 +7,7 @@ layout: page
 {% assign place = site.data.places.alpine %}
 
 <section class="info">
-  <p class="citation"><wd-entity id="Q115481" label lang="en"/></p>
-  <p>is a <wd-entity id="Q115481" description lang="en"/></p>
+  <p>{{ place.wikipedia_snippet }}</p>
 </section>
 
 ### 2018 Election
@@ -28,8 +27,8 @@ layout: page
 <tbody>
 {% for member in city  %}
   <tr>
-    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
-    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_names }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_names }}</a></td>
     <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>

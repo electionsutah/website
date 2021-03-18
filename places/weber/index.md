@@ -40,8 +40,8 @@ comments: true
 <tbody>
 {% for member in county  %}
   <tr>
-    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
-    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_names }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_names }}</a></td>
     <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>

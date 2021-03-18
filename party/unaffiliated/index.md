@@ -2,15 +2,9 @@
 title: Unaffiliated
 permalink: "/party/unaffiliated"
 layout: page
-comments: true
 ---
 
-### 2018 Election
-
-{% include 2018-elections.html %}
-
-#### 2018 Primary Candidates
-{% assign office = site.data.2018.primary.candidates | where:'party','Unaffiliated' | sort:'last_name' %}
+{% assign office = site.data.people | where: 'party','Unaffiliated' | sort:'last_name' %}
 <table>
 <thead>
   <th>First Name</th>
@@ -18,15 +12,17 @@ comments: true
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>
+  <th>Status</th>
 </thead>
 <tbody>
 {% for member in office  %}
   <tr>
-    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_name }}</a></td>
-    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_name }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_names }}</a></td>
+    <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_names }}</a></td>
     <td><a href="{{ site.url }}/office/{{ member.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ member.office }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}/{{ member.city | downcase | replace: ' ','-' }}">{{ member.city }}</a></td>
     <td><a href="{{ site.url }}/places/{{ member.county | downcase | replace: ' ','-' }}">{{ member.county }}</a></td>
+    <td>{{ person.2017_election.candidate_status | capitalize }}</td>
   </tr>
 {% endfor %}
 </tbody>

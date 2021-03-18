@@ -1,5 +1,5 @@
 ---
-layout: 2019-candidate
+layout: person
 person: mike-v-southwick
 ---
 

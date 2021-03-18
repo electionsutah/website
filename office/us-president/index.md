@@ -10,7 +10,7 @@ comments: true
 {% include 2020-elections.html %}
 
 #### 2020 Presidential Primary Candidates
-{% assign people = site.data.people | where: election_2020.office, 'U.S. President' | sort: 'last_names' %}
+{% assign people = site.data.people | where: 2020_election.office, 'U.S. President' | sort: 'last_names' %}
 <table>
 <thead>
   <th></th>
@@ -31,8 +31,8 @@ comments: true
     </td>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.first_names }}</a></td>
     <td><a href="{{ site.url }}/people/{{ member.id }}">{{ member.last_names }}</a></td>
-    <td><a href="{{ site.url }}/office/{{ member.election_2020.office | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.election_2020.office }}</a></td>
-    <td><a href="{{ site.url }}/party/{{ member.election_2020.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.election_2020.party }}</a></td>
+    <td><a href="{{ site.url }}/office/{{ member.2020_election.office | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.2020_election.office }}</a></td>
+    <td><a href="{{ site.url }}/party/{{ member.2020_election.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ member.2020_election.party }}</a></td>
   </tr>
 {% endfor %}
 </tbody>

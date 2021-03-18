@@ -2,7 +2,6 @@
 title: Political Parties
 permalink: "/party/"
 layout: page
-comments: true
 ---
 
 {% include 2020-elections.html %}

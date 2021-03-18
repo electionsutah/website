@@ -143,23 +143,9 @@
         {% if person.soundcloud %}<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ person.soundcloud }}"></iframe>{% endif %}
         <br>
 
-
         {{ content }}
-        {% if site.comments %}
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-            var disqus_shortname  = '{{ site.disqus_shortname }}';
-            var disqus_identifier = '{{ page.id }}';
-            (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-          </script>
-        {% endif %}
+        
       </article>
-
-      {{ content }}
 
       <footer>
         <p>
