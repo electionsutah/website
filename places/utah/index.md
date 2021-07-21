@@ -54,8 +54,8 @@ comments: true
 {% assign county = site.data.2019.candidates | where:'county','Utah' | sort:'last_name' %}
 <table>
 <thead>
-  <th>First Name</th>
-  <th>Last Name</th>
+  <th>First Names</th>
+  <th>Last Names</th>
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>
@@ -81,8 +81,8 @@ comments: true
 {% assign county = site.data.2018.primary.candidates | where:'county','Utah' | sort:'last_name' %}
 <table>
 <thead>
-  <th>First Name</th>
-  <th>Last Name</th>
+  <th>First Names</th>
+  <th>Last Names</th>
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>
@@ -107,8 +107,8 @@ comments: true
 {% assign county = site.data.2017.primary.candidates | where:'county','Utah' | sort:'last_name' %}
 <table>
 <thead>
-  <th>First Name</th>
-  <th>Last Name</th>
+  <th>First Names</th>
+  <th>Last Names</th>
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>

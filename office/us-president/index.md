@@ -14,8 +14,8 @@ comments: true
 <table>
 <thead>
   <th></th>
-  <th>First Name</th>
-  <th>Last Name</th>
+  <th>First Names</th>
+  <th>Last Names</th>
   <th>Candidate for</th>
   <th>Party</th>
 </thead>

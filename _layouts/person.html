@@ -71,6 +71,15 @@ comments: none
             <th>Status</th>
           </thead>
           <tbody>
+            {% if person.2021_election %}  
+            <tr>
+              <td><a href="{{ site.url }}/office/{{ person.2021_election.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.2021_election.office }} (2021)</a></td>
+              <td><a href="{{ site.url }}/party/{{ person.2021_election.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.2020_election.party }}</a></td>
+              <td><a href="{{ site.url }}/places/{{ person.2021_election.county | downcase | replace: ' ','-' }}/{{ person.2021_election.city | downcase | replace: ' ','-' }}">{{ person.2021_election.city }}</a></td>
+              <td><a href="{{ site.url }}/places/{{ person.2021_election.county | downcase | replace: ' ','-' }}">{{ person.2021_election.county }}</a></td>
+              <td>{{ person.2021_election.candidate_status | replace: '_',' ' | capitalize }}</a></td>
+            </tr>
+            {% endif %}
             {% if person.2020_election %}  
             <tr>
               <td><a href="{{ site.url }}/office/{{ person.2020_election.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.2020_election.office }} (2020)</a></td>
@@ -125,7 +134,10 @@ comments: none
         <script>
 
           var map = L.map('map', {
-            {% if person.2020_election.latitude %}
+            {% if person.2021_election.latitude %}
+            center: [{{person.2021_election.latitude}}, {{person.2021_election.longitude}}],
+            zoom: 12,
+            {% elsif person.2020_election.latitude %}
             center: [{{person.2020_election.latitude}}, {{person.2020_election.longitude}}],
             zoom: 12,
             {% elsif person.2019_election.latitude %}
@@ -145,7 +157,9 @@ comments: none
 
           L.tileLayer('https://api.mapbox.com/styles/v1/todrobbins/cigbdndmz00019eksg7qvqbzu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidG9kcm9iYmlucyIsImEiOiJ3cTUyNjVrIn0.8ozG-L3QDKblEshkqiEHFg', { maxZoom: 18, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'}).addTo(map);
 
-          {% if person.2020_election.latitude %}
+          {% if person.2021_election.latitude %}
+          var marker = L.marker([{{person.2021_election.latitude}}, {{person.2021_election.longitude}}]).addTo(map);
+          {% elsif person.2020_election.latitude %}
           var marker = L.marker([{{person.2020_election.latitude}}, {{person.2020_election.longitude}}]).addTo(map);
           {% elsif person.2019_election.latitude %}
           var marker = L.marker([{{person.2019_election.latitude}}, {{person.2019_election.longitude}}]).addTo(map);

@@ -12,8 +12,8 @@ layout: page
 {% assign office = site.data.2018.primary.candidates | where:'party','Green' | sort:'last_name' %}
 <table>
 <thead>
-  <th>First Name</th>
-  <th>Last Name</th>
+  <th>First Names</th>
+  <th>Last Names</th>
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>

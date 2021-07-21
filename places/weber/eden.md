@@ -11,8 +11,8 @@ layout: page
 {% assign city = site.data.2018.primary.candidates | where:'city','Eden' | sort:'last_name' %}
 <table>
 <thead>
-  <th>First Name</th>
-  <th>Last Name</th>
+  <th>First Names</th>
+  <th>Last Names</th>
   <th>Candidate for</th>
   <th>City</th>
   <th>County</th>
