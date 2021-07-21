@@ -86,7 +86,7 @@ comments: none
               <td><a href="{{ site.url }}/party/{{ person.2020_election.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.2020_election.party }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2020_election.county | downcase | replace: ' ','-' }}/{{ person.2020_election.city | downcase | replace: ' ','-' }}">{{ person.2020_election.city }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2020_election.county | downcase | replace: ' ','-' }}">{{ person.2020_election.county }}</a></td>
-              <td>{{ person.2020_election.candidate_status | capitalize }}</a></td>
+              <td>{{ person.2020_election.candidate_status | replace: '_',' ' | capitalize }}</a></td>
             </tr>
             {% endif %}
             {% if person.2019_election %}
@@ -95,7 +95,7 @@ comments: none
               <td><a href="{{ site.url }}/party/{{ person.2019_election.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.2019_election.party }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2019_election.county | downcase | replace: ' ','-' }}/{{ person.2019_election.city | downcase | replace: ' ','-' }}">{{ person.2019_election.city }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2019_election.county | downcase | replace: ' ','-' }}">{{ person.2019_election.county }}</a></td>
-              <td>{{ person.2019_election.candidate_status | capitalize }}</td>
+              <td>{{ person.2019_election.candidate_status | replace: '_',' ' | capitalize }}</td>
             </tr>
             {% endif %}
             {% if person.2018_election %}
@@ -104,7 +104,7 @@ comments: none
               <td><a href="{{ site.url }}/party/{{ person.2018_election.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.2018_election.party }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2018_election.county | downcase | replace: ' ','-' }}/{{ person.2018_election.city | downcase | replace: ' ','-' }}">{{ person.2018_election.city }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2018_election.county | downcase | replace: ' ','-' }}">{{ person.2018_election.county }}</a></td>
-              <td>{{ person.2018_election.candidate_status | capitalize }}</td>
+              <td>{{ person.2018_election.candidate_status | replace: '_',' ' | capitalize }}</td>
             </tr>
             {% endif %}
             {% if person.2017_election %}
@@ -113,7 +113,7 @@ comments: none
               <td><a href="{{ site.url }}/party/{{ person.2017_election.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.2017_election.party }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2017_election.county | downcase | replace: ' ','-' }}/{{ person.2017_election.city | downcase | replace: ' ','-' }}">{{ person.2017_election.city }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2017_election.county | downcase | replace: ' ','-' }}">{{ person.2017_election.county }}</a></td>
-              <td>{{ person.2017_election.candidate_status | capitalize }}</td>
+              <td>{{ person.2017_election.candidate_status | replace: '_',' ' | capitalize }}</td>
             </tr>
             {% endif %}
           </tbody>
