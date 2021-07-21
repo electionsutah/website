@@ -74,7 +74,7 @@ comments: none
             {% if person.2021_election %}  
             <tr>
               <td><a href="{{ site.url }}/office/{{ person.2021_election.office | downcase | replace: ' ','-' | replace: '.','' | replace: '(','' | replace: ')','' }}">{{ person.2021_election.office }} (2021)</a></td>
-              <td><a href="{{ site.url }}/party/{{ person.2021_election.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.2020_election.party }}</a></td>
+              <td><a href="{{ site.url }}/party/{{ person.2021_election.party | downcase | replace: ' ','-' | replace: '.','' }}">{{ person.2021_election.party }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2021_election.county | downcase | replace: ' ','-' }}/{{ person.2021_election.city | downcase | replace: ' ','-' }}">{{ person.2021_election.city }}</a></td>
               <td><a href="{{ site.url }}/places/{{ person.2021_election.county | downcase | replace: ' ','-' }}">{{ person.2021_election.county }}</a></td>
               <td>{{ person.2021_election.candidate_status | replace: '_',' ' | capitalize }}</a></td>
