@@ -3,3 +3,6 @@ dist
 .DS_Store
 *.local
 __pycache__
+
+# Local Netlify folder
+.netlify
