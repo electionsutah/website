@@ -86,7 +86,7 @@ def display_name(value: str) -> str:
     value = re.sub(r"\s+", " ", value).strip().replace('"', "”")
     if not value or not value.upper() == value:
         return value
-    keep = {"II", "III", "IV", "Jr.", "Sr."}
+    keep = {"II", "III", "IV", "Jr.", "Sr.", "JD"}
     words = []
     for word in value.split():
         bare = word.strip("“”.,")
@@ -124,7 +124,14 @@ def clean_office(value: str) -> str:
     value = re.sub(r"State School Board\s*[-–]?\s*District\s*(\d+)$", r"State School Board District \1", value, flags=re.I)
     value = re.sub(r"\s+\(Multi[- ]County\)$", "", value, flags=re.I)
     value = re.sub(r"\s+\(2 year term\)$", " (2-Year Term)", value, flags=re.I)
+    # 2024 lists the presidential ticket as plain "President"; keep one office across cycles.
+    if value == "President":
+        value = "U.S. President & Vice President"
     return value
+
+
+# Offices filed as a ticket: the ballot name covers both the candidate and the running mate.
+TICKET_OFFICES = {"U.S. President & Vice President", "Governor & Lieutenant Governor", "Governor"}
 
 
 def record(
@@ -138,12 +145,17 @@ def record(
     *,
     email: str = "",
     website: str = "",
+    running_mate: str = "",
 ) -> dict[str, object]:
-    name = display_name(name)
     office = clean_office(office)
+    # 2020 canvass tickets read "Candidate, Running Mate".
+    if office in TICKET_OFFICES and not running_mate and ", " in name:
+        name, running_mate = name.split(", ", 1)
+    name = display_name(name)
     return {
         "id": slug(name),
         "name": name,
+        "runningMate": display_name(running_mate),
         "office": office,
         "party": party.strip(),
         "status": status,
@@ -384,10 +396,16 @@ def parse_2024(path: Path) -> list[dict[str, object]]:
         if cells.get(7):
             office += f" {cells[7]}"
         source_status = cells.get(11, "Filed")
+        name, running_mate = cells[1], ""
+        # Tickets join both names on the ballot line with no separator; the workbook puts the
+        # candidate in First Name and the running mate in Last Name, leaving Middle Name empty.
+        first, middle, last = (cells.get(column, "").strip() for column in (2, 3, 4))
+        if clean_office(office) in TICKET_OFFICES and " " in first and not middle and f"{first} {last}" == name.strip():
+            name, running_mate = first, last
         results.append(record(
-            2024, cells[1], office, cells.get(8, ""), STATUS_MAP.get(source_status, "filed"), source_status,
+            2024, name, office, cells.get(8, ""), STATUS_MAP.get(source_status, "filed"), source_status,
             "primary" if source_status in {"Primary", "Out in Primary"} else "general",
-            email=cells.get(9, ""), website=cells.get(10, ""),
+            email=cells.get(9, ""), website=cells.get(10, ""), running_mate=running_mate,
         ))
     return results
 

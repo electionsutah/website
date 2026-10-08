@@ -31,6 +31,9 @@ export type Filing = {
   state: string;
   placeIds: string[];
   personId: string;
+  /** Running mate on a ticket filing (Vice President or Lieutenant Governor); '' otherwise. */
+  runningMate: string;
+  runningMateId: string;
   source: string;
   lastUpdated: string;
   contact?: Contact;
@@ -107,8 +110,24 @@ export function slug(value: string): string {
     .replace(/^-|-$/g, '');
 }
 
+// Source spellings of the same person that the identity key would otherwise keep apart.
+const identityAliases: Record<string, string> = {
+  josephrbidenjr: 'josephrbiden'
+};
+
 export function identityKey(value: string): string {
-  return slug(value).replaceAll('-', '');
+  const key = slug(value).replaceAll('-', '');
+  return identityAliases[key] ?? key;
+}
+
+/** The running mate's role on a ticket filing. */
+export function runningMateRole(filing: Filing): string {
+  return filing.officeName.includes('President') ? 'Vice President' : 'Lieutenant Governor';
+}
+
+/** Office types read as a single office on its own pages: "Federal Offices" → "Federal office". */
+export function sectionLabel(section: string): string {
+  return section.replace(/^(\w+) Offices$/, (_, kind: string) => `${kind} office`);
 }
 
 /** Link text for a filing's source: a filing PDF, a pamphlet page, or an archived capture. */
@@ -229,6 +248,8 @@ export const filings: Filing[] = [
       state: row.state,
       placeIds: placeIds(row.county, row.city),
       personId,
+      runningMate: displayName(row.runningMate ?? ''),
+      runningMateId: slug(row.runningMate ?? ''),
       source: candidateDocument(row.year, row) ?? row.source,
       lastUpdated: row.lastUpdated,
       contact: row.contact
@@ -257,6 +278,8 @@ export const filings: Filing[] = [
       state: 'UT',
       placeIds: [],
       personId,
+      runningMate: '',
+      runningMateId: '',
       source: candidateDocument(2026, row) ?? 'https://vote.utah.gov/2026-candidate-filings/',
       lastUpdated: '2026-07-20'
     } satisfies Filing;
@@ -342,27 +365,29 @@ function officeResources(name: string): OfficeResource[] {
   return [];
 }
 
+const initialsOf = (name: string) => name.split(/\s+/).slice(0, 2).map((part) => part.replace(/[^A-Za-z]/g, '').charAt(0)).join('');
+
+// A ticket filing belongs to both the candidate and the running mate, so each appears on the other's record.
 const personMap = new Map<string, Person>();
-for (const filing of filings) {
-  const matchKey = identityKey(filing.name);
-  const person = personMap.get(matchKey) ?? {
-    id: filing.personId,
-    name: filing.name,
-    initials: filing.name.split(/\s+/).slice(0, 2).map((part) => part.replace(/[^A-Za-z]/g, '').charAt(0)).join(''),
-    filings: [],
-    years: []
-  };
+const filingPeople = filings.flatMap((filing) => [filing.name, filing.runningMate].filter(Boolean).map((name) => ({ filing, name })));
+for (const { filing, name } of filingPeople) {
+  const matchKey = identityKey(name);
+  const person = personMap.get(matchKey) ?? { id: slug(name), name, initials: initialsOf(name), filings: [], years: [] };
   person.filings.push(filing);
   if (filing.year >= Math.max(...person.filings.map((item) => item.year))) {
-    person.name = filing.name;
-    person.id = slug(filing.name);
+    person.name = name;
+    person.id = slug(name);
+    person.initials = initialsOf(name);
   }
   person.years = uniqueNumbers(person.filings.map((item) => item.year));
   personMap.set(matchKey, person);
 }
 for (const person of personMap.values()) {
   person.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName, undefined, { numeric: true }));
-  for (const filing of person.filings) filing.personId = person.id;
+}
+for (const filing of filings) {
+  filing.personId = personMap.get(identityKey(filing.name))!.id;
+  if (filing.runningMate) filing.runningMateId = personMap.get(identityKey(filing.runningMate))!.id;
 }
 export const people = naturalSort([...personMap.values()], (person) => person.name);
 
@@ -378,7 +403,7 @@ for (const filing of filings) {
     resources: officeResources(filing.officeName)
   };
   office.filings.push(filing);
-  office.sections = [...new Set(office.filings.map((item) => item.section))];
+  office.sections = [...new Set(office.filings.map((item) => sectionLabel(item.section)))];
   office.years = uniqueNumbers(office.filings.map((item) => item.year));
   office.placeIds = [...new Set(office.filings.flatMap((item) => item.placeIds))];
   officeMap.set(filing.officeId, office);

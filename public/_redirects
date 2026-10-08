@@ -296,6 +296,48 @@
 /party/republican                             /parties/utah-republican-party/                    301
 /party/united-utah                            /parties/united-utah-party/                        301
 
+# Running-mate tickets that were briefly one combined person page
+/people/brian-smith-king-rebekah-cummings     /people/brian-smith-king/                          301
+/people/brock-pierce-karla-ballard            /people/brock-pierce/                              301
+/people/charlie-tautuaa-sylvia-miera-fisk     /people/charlie-tautuaa/                           301
+/people/chase-oliver-mike-ter-maat            /people/chase-oliver/                              301
+/people/chris-peterson-karina-brown           /people/chris-peterson/                            301
+/people/claudia-de-la-cruz-karina-alexandra-garcia /people/claudia-de-la-cruz/                        301
+/people/cornel-ronald-west-melina-abdullah    /people/cornel-ronald-west/                        301
+/people/daniel-rhead-cottam-barry-evan-short  /people/daniel-rhead-cottam/                       301
+/people/don-blankenship-william-mohr          /people/don-blankenship/                           301
+/people/donald-j-trump-jd-vance               /people/donald-j-trump/                            301
+/people/donald-j-trump-michael-r-pence        /people/donald-j-trump/                            301
+/people/greg-duerden-wayne-hill               /people/greg-duerden/                              301
+/people/greg-hughes-victor-iverson            /people/greg-hughes/                               301
+/people/howie-hawkins-angela-walker           /people/howie-hawkins/                             301
+/people/j-robert-latham-barry-evan-short      /people/j-robert-latham/                           301
+/people/jade-simmons-claudeliah-j-roze        /people/jade-simmons/                              301
+/people/jay-j-bowman-de-d-bowman              /people/jay-j-bowman/                              301
+/people/jill-stein-rudolph-ware               /people/jill-stein/                                301
+/people/jo-jorgensen-jeremy-cohen             /people/jo-jorgensen/                              301
+/people/joe-mchugh-elizabeth-storm            /people/joe-mchugh/                                301
+/people/joel-skousen-rik-combs                /people/joel-skousen/                              301
+/people/jon-huntsman-jr-michelle-kaufusi      /people/jon-huntsman-jr/                           301
+/people/joseph-r-biden-kamala-d-harris        /people/joseph-r-biden-jr/                         301
+/people/kamala-d-harris-tim-walz              /people/kamala-d-harris/                           301
+/people/kanye-west-michelle-tidball           /people/kanye-west/                                301
+/people/madeline-kazantzis-ed-kennedy         /people/madeline-kazantzis/                        301
+/people/peter-sonski-lauren-michelle-onak     /people/peter-sonski/                              301
+/people/phil-lyman-natalie-clawson            /people/phil-lyman/                                301
+/people/president-r-boddie-eric-c-stoneham    /people/president-r-boddie/                        301
+/people/princess-khadijah-m-jacob-fambro-khadijah-maryam-jacob-sr /people/princess-khadijah-m-jacob-fambro/          301
+/people/richard-kennedy-lyman-carol-ann-lyman /people/richard-kennedy-lyman/                     301
+/people/robert-f-kennedy-jr-nicole-shanahan   /people/robert-f-kennedy-jr/                       301
+/people/spencer-j-cox-deidre-m-henderson      /people/spencer-j-cox/                             301
+/people/thomas-e-wright-rob-bishop            /people/thomas-e-wright/                           301
+/people/tom-tomeny-william-lansing-taylor     /people/tom-tomeny/                                301
+/people/tommy-williams-archie-a-williams-iii  /people/tommy-williams/                            301
+/people/tyler-scott-batty-gregory-c-johnson   /people/tyler-scott-batty/                         301
+
+# The 2024 "President" office merged into the presidential ticket office
+/offices/president                            /offices/u-s-president-vice-president/             301
+
 # Legacy section names
 /office/*                                     /offices/:splat                                    301
 /party/*                                      /parties/:splat                                    301

@@ -15,6 +15,8 @@
     peopleById,
     places,
     placesById,
+    runningMateRole,
+    sectionLabel,
     sourceAvailable,
     sourceLinkLabel,
     statusLabel
@@ -67,7 +69,7 @@
   $: pageTitle = !found
     ? 'Record not found'
     : person?.name || office?.name || party?.name || place?.name || labels[section].plural;
-  $: contactFiling = person?.filings.find((filing) => filing.contact && Object.values(filing.contact).some(Boolean));
+  $: contactFiling = person?.filings.find((filing) => filing.personId === person.id && filing.contact && Object.values(filing.contact).some(Boolean));
   $: contact = contactFiling?.contact;
   $: contactItems = contact ? [
     contact.phone && { label: 'Phone', text: contact.phone, href: `tel:${contact.phone}`, icon: 'call', external: false },
@@ -300,8 +302,9 @@
         <div class="filing-list">
           {#each person.filings as filing}
             <div class="filing-card">
-              <div><small>{filing.year} · {filing.section}</small><h3><a href={hrefFor('offices', filing.officeId)} onclick={(event) => open(event, hrefFor('offices', filing.officeId))}>{filing.officeName}</a></h3></div>
+              <div><small>{filing.year} · {sectionLabel(filing.section)}{#if filing.runningMateId === person.id}{' · '}{runningMateRole(filing)} candidate{/if}</small><h3><a href={hrefFor('offices', filing.officeId)} onclick={(event) => open(event, hrefFor('offices', filing.officeId))}>{filing.officeName}</a></h3></div>
               <dl>
+                {#if filing.runningMate}<div class="ticket-row"><dt>{filing.runningMateId === person.id ? 'Running mate to' : 'Running mate'}</dt><dd>{#if filing.runningMateId === person.id}<a href={hrefFor('people', filing.personId)} onclick={(event) => open(event, hrefFor('people', filing.personId))}>{filing.name}</a>{:else}<a href={hrefFor('people', filing.runningMateId)} onclick={(event) => open(event, hrefFor('people', filing.runningMateId))}>{filing.runningMate}</a>{/if}</dd></div>{/if}
                 <div><dt>Party</dt><dd><a href={hrefFor('parties', filing.partyId)} onclick={(event) => open(event, hrefFor('parties', filing.partyId))}>{filing.partyName}</a></dd></div>
                 <div><dt>Place</dt><dd>{#if filing.placeIds.length}{#each filing.placeIds as placeId, index}{#if index}<span class="place-separator" aria-hidden="true">/</span>{/if}<a href={hrefFor('places', placeId)} onclick={(event) => open(event, hrefFor('places', placeId))}>{placesById.get(placeId)?.name}</a>{/each}{:else}Not published{/if}</dd></div>
                 <div><dt>Status</dt><dd>{filing.sourceStatus}</dd></div>
@@ -319,7 +322,7 @@
       <header class="detail-hero compact-hero"><div><p class="eyebrow">{office.sections.join(' · ')}</p><h1>{office.name}</h1><p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div></header>
       <section class="detail-stats">
         <div><small>TOTAL FILINGS</small><strong>{formatCount(office.filings.length)}</strong></div>
-        <div><small>PEOPLE</small><strong>{new Set(office.filings.map((filing) => filing.personId)).size}</strong></div>
+        <div><small>PEOPLE</small><strong>{new Set(office.filings.flatMap((filing) => [filing.personId, filing.runningMateId].filter(Boolean))).size}</strong></div>
         <div><small>ELECTION YEARS</small><strong>{office.years.length}</strong></div>
       </section>
       <section class="record-section split-detail">
@@ -327,7 +330,7 @@
         <div><p class="eyebrow">Candidate field</p><div class="candidate-list">
           {#each office.filings as filing}
             <a class="candidate-row" href={hrefFor('people', filing.personId)} onclick={(event) => open(event, hrefFor('people', filing.personId))}>
-              <span class="mini-avatar" aria-hidden="true">{peopleById.get(filing.personId)?.initials}</span><span><strong>{filing.name}</strong><small>{filing.year} · {filing.partyName}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
+              <span class="mini-avatar" aria-hidden="true">{peopleById.get(filing.personId)?.initials}</span><span><strong>{filing.name}</strong><small>{filing.year} · {filing.partyName}{#if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
             </a>
           {/each}
         </div></div>
