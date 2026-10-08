@@ -5,6 +5,7 @@
   import IndexControls from './IndexControls.svelte';
   import SortHeader from './SortHeader.svelte';
   import placeProfiles from './data/place-enrichment.json';
+  import EntityViews from './EntityViews.svelte';
   import {
     activeStatuses,
     candidacies,
@@ -20,7 +21,9 @@
     sectionLabel,
     sourceAvailable,
     sourceLinkLabel,
-    statusLabel
+    statusLabel,
+    type Filing,
+    type Person
   } from './lib/entities';
   import { formatCount } from './lib/format';
   import { matchesQuery, queryTokens, searchText } from './lib/search';
@@ -29,6 +32,9 @@
   export let section: 'people' | 'offices' | 'parties' | 'places';
   export let id = '';
   export let navigate: (href: string) => void;
+  /** Limit the index to people on these filings, rendered inside another record's page (a party's people). */
+  export let scope: Filing[] | null = null;
+  export let embedded = false;
 
   let query = '';
   let limit = 36;
@@ -81,8 +87,29 @@
     contact.twitter && { label: 'Social', text: 'X / Twitter', href: externalUrl(contact.twitter), icon: 'arrow_outward', external: true }
   ].filter((item) => !!item) : [];
 
+  // Within a scope, each person keeps only the scoped filings, so offices, years, and counts describe that scope.
+  function scopedPeople(list: Filing[]): Person[] {
+    const included = new Set(list);
+    return people
+      .filter((person) => person.filings.some((filing) => included.has(filing)))
+      .map((person) => {
+        const filings = person.filings.filter((filing) => included.has(filing));
+        return { ...person, filings, years: [...new Set(filings.map((filing) => filing.year))].sort((a, b) => b - a) };
+      });
+  }
+
+  $: stateKey = embedded ? `${section}-in-record` : section;
+  // Clear the candidate search when moving to another place.
+  let placeQuery = '';
+  let placeQueryFor = '';
+  $: if (place && place.id !== placeQueryFor) {
+    placeQueryFor = place.id;
+    placeQuery = '';
+  }
+  $: placeCandidacies = place ? candidacies(place.filings).filter(({ filing, name }) => matchesQuery(`${name} ${filing.year} ${filing.officeName} ${filing.partyName}`, queryTokens(placeQuery))) : [];
+
   $: cards = section === 'people'
-    ? people.map((item) => ({
+    ? (scope ? scopedPeople(scope) : people).map((item) => ({
         id: item.id,
         title: item.name,
         eyebrow: item.filings[0].partyName,
@@ -171,7 +198,7 @@
   $: if (id) loadedIndex = '';
   $: if (!id && loadedIndex !== section) {
     loadedIndex = section;
-    const state = restoreState(section, cards, tableColumns.map((column) => column.key));
+    const state = restoreState(stateKey, cards, tableColumns.map((column) => column.key));
     selection = state.selection;
     query = state.query;
     view = state.view;
@@ -218,23 +245,23 @@
   function updateSelection(next: Selection) {
     selection = next;
     limit = 36;
-    persistState(section, { selection, view, query, sort });
+    persistState(stateKey, { selection, view, query, sort });
   }
 
   function updateView(next: 'grid' | 'list') {
     view = next;
-    persistState(section, { selection, view, query, sort });
+    persistState(stateKey, { selection, view, query, sort });
   }
 
   function updateSort(key: string) {
     sort = nextSort(sort, key);
-    persistState(section, { selection, view, query, sort });
+    persistState(stateKey, { selection, view, query, sort });
   }
 
   function updateQuery(next: string) {
     query = next;
     limit = 36;
-    persistState(section, { selection, view, query, sort });
+    persistState(stateKey, { selection, view, query, sort });
   }
 
   function hrefFor(kind: typeof section, entityId: string) {
@@ -261,7 +288,7 @@
 
 </script>
 
-<svelte:head><title>{pageTitle} — Elections Utah</title></svelte:head>
+<svelte:head>{#if !embedded}<title>{pageTitle} — Elections Utah</title>{/if}</svelte:head>
 
 {#if id}
   {#if !found}
@@ -346,11 +373,7 @@
         <div><small>PEOPLE</small><strong>{new Set(candidacies(party.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
         <div><small>ELECTION YEARS</small><strong>{party.years.length}</strong></div>
       </section>
-      <section class="record-section"><div class="record-heading"><p class="eyebrow">Candidate history</p><h2>People</h2></div>{#if party.filings.length}<div class="candidate-grid">
-          {#each candidacies(party.filings) as { filing, personId, name, runningMate }}
-            <a class="person-tile" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><span aria-hidden="true">{peopleById.get(personId)?.initials}</span><div><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></div></a>
-          {/each}
-        </div>{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
+      <section class="record-section"><div class="record-heading"><p class="eyebrow">Candidate history</p><h2>People</h2></div>{#if party.filings.length}{#key party.id}<EntityViews section="people" scope={party.filings} embedded {navigate} />{/key}{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
     </article>
   {:else if place}
     <article class="entity-detail">
@@ -395,16 +418,19 @@
       </section>
       <section class="record-section split-detail">
         <div class="record-heading"><p class="eyebrow">Representation</p><h2>{place.type === 'County' ? 'Cities & offices' : 'Offices'}</h2>{#if place.children.length}{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
-        <div><p class="eyebrow">Filed candidates</p><div class="candidate-list">{#each place.filings as filing}<a class="candidate-row" href={hrefFor('people', filing.personId)} onclick={(event) => open(event, hrefFor('people', filing.personId))}><span class="mini-avatar" aria-hidden="true">{peopleById.get(filing.personId)?.initials}</span><span><strong>{filing.name}</strong><small>{filing.year} · {filing.officeName}</small></span><b>{filing.partyName}</b></a>{/each}</div></div>
+        <div>
+          <div class="filed-heading"><p class="eyebrow">Filed candidates</p><label><Icon name="search" /><input bind:value={placeQuery} placeholder="Search candidates…" aria-label={`Search ${place.name} candidates`} /></label></div>
+          <div class="candidate-list">{#each placeCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
+        </div>
       </section>
     </article>
   {/if}
 {:else}
-  <section class="entity-index" class:places-index={section === 'places'}>
-    <header>
+  <section class="entity-index" class:places-index={section === 'places'} class:embedded-index={embedded}>
+    {#if !embedded}<header>
       <div><p class="eyebrow">Election archive</p><h1>{labels[section].plural}</h1></div>
       <p>{labels[section].intro}</p>
-    </header>
+    </header>{/if}
     <IndexControls
       {facets}
       {selection}
