@@ -1,16 +1,18 @@
----
-title: Welcome
-layout: default
-hero: capitol_building.jpg
----
-
-<div class="post">
-    <h2 class="post-header">Blog</h2>
-    <ul class="posts">
-        {% for post in site.posts %}
-        <li><span>{{ post.date | date: site.date_format }}</span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
-<br><br>
-{% include 2020-elections.html %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173b35" />
+    <meta name="description" content="Open civic data and historical election information for Utah." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/material-symbols-outlined-subset.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/source-serif-4-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/noto-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Elections Utah — Open civic data</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

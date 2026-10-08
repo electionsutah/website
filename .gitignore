@@ -1,7 +1,5 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+node_modules
+dist
 .DS_Store
-
-!*/js/index.json
+*.local
+__pycache__

@@ -1,0 +1,3566 @@
+[
+  {
+    "id": "ben-mcadams",
+    "name": "Ben McAdams",
+    "office": "U.S. House District 1",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "riley-owen",
+    "name": "Riley Owen",
+    "office": "U.S. House District 1",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "jesse-west",
+    "name": "Jesse West",
+    "office": "U.S. House District 1",
+    "party": "Libertarian",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "elias-henry-montgomery",
+    "name": "Elias Henry Montgomery",
+    "office": "U.S. House District 1",
+    "party": "Unaffiliated",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "stone-fonua",
+    "name": "Stone Fonua",
+    "office": "U.S. House District 1",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "jonathan-lopez",
+    "name": "Jonathan Lopez",
+    "office": "U.S. House District 1",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "january-walker",
+    "name": "January Walker",
+    "office": "U.S. House District 1",
+    "party": "Forward",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "luis-a-villarreal",
+    "name": "Luis A. Villarreal",
+    "office": "U.S. House District 1",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "dave-robinson",
+    "name": "Dave Robinson",
+    "office": "U.S. House District 1",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "eva-lopez",
+    "name": "Eva Lopez",
+    "office": "U.S. House District 1",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "nate-blouin",
+    "name": "Nate Blouin",
+    "office": "U.S. House District 1",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "liban-mohamed",
+    "name": "Liban Mohamed",
+    "office": "U.S. House District 1",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "michael-farrell",
+    "name": "Michael Farrell",
+    "office": "U.S. House District 1",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "kathleen-a-riebe",
+    "name": "Kathleen A. Riebe",
+    "office": "U.S. House District 1",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "derek-l-kitchen",
+    "name": "Derek L Kitchen",
+    "office": "U.S. House District 1",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "adam-clayton",
+    "name": "Adam Clayton",
+    "office": "U.S. House District 1",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "daniel-cottam",
+    "name": "Daniel Cottam",
+    "office": "U.S. House District 2",
+    "party": "Libertarian",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "carlton-e-bowen",
+    "name": "Carlton E. Bowen",
+    "office": "U.S. House District 2",
+    "party": "Independent American",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "robert-m-moesinger",
+    "name": "Robert M. Moesinger",
+    "office": "U.S. House District 2",
+    "party": "Unaffiliated",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "peter-crosby",
+    "name": "Peter Crosby",
+    "office": "U.S. House District 2",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "blake-d-moore",
+    "name": "Blake D. Moore",
+    "office": "U.S. House District 2",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "tyler-farnsworth",
+    "name": "Tyler Farnsworth",
+    "office": "U.S. House District 2",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "ian-parrish",
+    "name": "Ian Parrish",
+    "office": "U.S. House District 2",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "jarom-gillins",
+    "name": "Jarom Gillins",
+    "office": "U.S. House District 2",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "neil-hansen",
+    "name": "Neil Hansen",
+    "office": "U.S. House District 2",
+    "party": "Independent American",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "colton-r-hatch",
+    "name": "Colton R Hatch",
+    "office": "U.S. House District 2",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "karianne-lisonbee",
+    "name": "Karianne Lisonbee",
+    "office": "U.S. House District 2",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "cassie-easley",
+    "name": "Cassie Easley",
+    "office": "U.S. House District 3",
+    "party": "Constitution",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "kent-s-udell",
+    "name": "Kent S. Udell",
+    "office": "U.S. House District 3",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "celeste-maloy",
+    "name": "Celeste Maloy",
+    "office": "U.S. House District 3",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "adonis-hooslyn",
+    "name": "Adonis Hooslyn",
+    "office": "U.S. House District 3",
+    "party": "Unaffiliated",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "michael-r-stoddard",
+    "name": "Michael R. Stoddard",
+    "office": "U.S. House District 3",
+    "party": "Libertarian",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "ayden-scott",
+    "name": "Ayden Scott",
+    "office": "U.S. House District 3",
+    "party": "Unaffiliated",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "tyler-murset",
+    "name": "Tyler Murset",
+    "office": "U.S. House District 3",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "steven-merrill",
+    "name": "Steven Merrill",
+    "office": "U.S. House District 3",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "david-a-harris",
+    "name": "David A. Harris",
+    "office": "U.S. House District 3",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "phil-lyman",
+    "name": "Phil Lyman",
+    "office": "U.S. House District 3",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "jacob-paul-gottfredson",
+    "name": "Jacob Paul Gottfredson",
+    "office": "U.S. House District 4",
+    "party": "Unaffiliated",
+    "status": "disqualified",
+    "sourceStatus": "Disqualified",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "mike-kennedy",
+    "name": "Mike Kennedy",
+    "office": "U.S. House District 4",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "steven-burt",
+    "name": "Steven Burt",
+    "office": "U.S. House District 4",
+    "party": "Unaffiliated",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "jonny-larsen",
+    "name": "Jonny Larsen",
+    "office": "U.S. House District 4",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "taylor-wright",
+    "name": "Taylor Wright",
+    "office": "U.S. House District 4",
+    "party": "Libertarian",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "pasitale-f-lupeamanu",
+    "name": "Pasitale F. Lupeamanu",
+    "office": "U.S. House District 4",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "isaiah-hardman",
+    "name": "Isaiah Hardman",
+    "office": "U.S. House District 4",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "tyrone-jensen",
+    "name": "Tyrone Jensen",
+    "office": "U.S. House District 4",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "seth-a-stewart",
+    "name": "Seth A Stewart",
+    "office": "U.S. House District 4",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "scott-hatfield",
+    "name": "Scott Hatfield",
+    "office": "U.S. House District 4",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "archie-williams",
+    "name": "Archie Williams",
+    "office": "U.S. House District 4",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "Federal Offices"
+  },
+  {
+    "id": "fred-hayes",
+    "name": "Fred Hayes",
+    "office": "State Senate District 1 (Multi-County)",
+    "party": "",
+    "status": "disqualified",
+    "sourceStatus": "Disqualified",
+    "section": "State Senate"
+  },
+  {
+    "id": "claudia-bigler",
+    "name": "Claudia Bigler",
+    "office": "State Senate District 1 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "scott-sandall",
+    "name": "Scott Sandall",
+    "office": "State Senate District 1 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "julie-quinlan",
+    "name": "Julie Quinlan",
+    "office": "State Senate District 1 (Multi-County)",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "fred-hayes",
+    "name": "Fred Hayes",
+    "office": "State Senate District 1 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State Senate"
+  },
+  {
+    "id": "emily-buss",
+    "name": "Emily Buss",
+    "office": "State Senate District 11 (Multi-County)",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "mackenzie-miller",
+    "name": "MacKenzie Miller",
+    "office": "State Senate District 11 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "brooks-benson",
+    "name": "Brooks Benson",
+    "office": "State Senate District 11 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "chris-sloan",
+    "name": "Chris Sloan",
+    "office": "State Senate District 11 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State Senate"
+  },
+  {
+    "id": "john-knotwell",
+    "name": "John Knotwell",
+    "office": "State Senate District 11 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State Senate"
+  },
+  {
+    "id": "karen-kwan",
+    "name": "Karen Kwan",
+    "office": "State Senate District 12",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "deidre-tyler",
+    "name": "Deidre Tyler",
+    "office": "State Senate District 12",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "colin-smith",
+    "name": "Colin Smith",
+    "office": "State Senate District 13",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "ryan-l-mahoney",
+    "name": "Ryan L. Mahoney",
+    "office": "State Senate District 13",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "silvia-catten",
+    "name": "Silvia Catten",
+    "office": "State Senate District 13",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "richard-t-whitney",
+    "name": "Richard T. Whitney",
+    "office": "State Senate District 13",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State Senate"
+  },
+  {
+    "id": "taylor-j-paden",
+    "name": "Taylor J Paden",
+    "office": "State Senate District 13",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "evan-done",
+    "name": "Evan Done",
+    "office": "State Senate District 13",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "stephanie-pitcher",
+    "name": "Stephanie Pitcher",
+    "office": "State Senate District 14",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "tayler-khater",
+    "name": "Tayler Khater",
+    "office": "State Senate District 14",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "a-dane-anderson",
+    "name": "A Dane Anderson",
+    "office": "State Senate District 18 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "doug-fiefia",
+    "name": "Doug Fiefia",
+    "office": "State Senate District 18 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "tracie-halvorsen",
+    "name": "Tracie Halvorsen",
+    "office": "State Senate District 18 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State Senate"
+  },
+  {
+    "id": "daniel-mccay",
+    "name": "Daniel McCay",
+    "office": "State Senate District 18 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "kirk-cullimore",
+    "name": "Kirk Cullimore",
+    "office": "State Senate District 19 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "shana-anderson",
+    "name": "Shana Anderson",
+    "office": "State Senate District 19 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "salvador-giove",
+    "name": "Salvador Giove",
+    "office": "State Senate District 19 (Multi-County)",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State Senate"
+  },
+  {
+    "id": "annette-mcrae",
+    "name": "Annette McRae",
+    "office": "State Senate District 20 (Multi-County)",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "ronald-m-winterton",
+    "name": "Ronald M Winterton",
+    "office": "State Senate District 20 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "seth-stewart",
+    "name": "Seth Stewart",
+    "office": "State Senate District 21",
+    "party": "",
+    "status": "disqualified",
+    "sourceStatus": "Disqualified",
+    "section": "State Senate"
+  },
+  {
+    "id": "kandee-myers",
+    "name": "Kandee Myers",
+    "office": "State Senate District 21",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "brady-brammer",
+    "name": "Brady Brammer",
+    "office": "State Senate District 21",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "wayne-woodfield",
+    "name": "Wayne Woodfield",
+    "office": "State Senate District 21",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "kelly-smith",
+    "name": "Kelly Smith",
+    "office": "State Senate District 21",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "seth-stewart",
+    "name": "Seth Stewart",
+    "office": "State Senate District 21",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State Senate"
+  },
+  {
+    "id": "tucker-smith",
+    "name": "Tucker Smith",
+    "office": "State Senate District 23",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "keith-grover",
+    "name": "Keith Grover",
+    "office": "State Senate District 23",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "evan-j-vickers",
+    "name": "Evan J Vickers",
+    "office": "State Senate District 28 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "richard-s-robillard",
+    "name": "Richard S Robillard",
+    "office": "State Senate District 28 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "jill-f-koford",
+    "name": "Jill F. Koford",
+    "office": "State Senate District 5 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "dakota-wurth",
+    "name": "Dakota Wurth",
+    "office": "State Senate District 5 (Multi-County)",
+    "party": "Democratic",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "cj-christina-hernandez",
+    "name": "“CJ” Christina Hernandez",
+    "office": "State Senate District 5 (Multi-County)",
+    "party": "Democratic",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "tami-tran",
+    "name": "Tami Tran",
+    "office": "State Senate District 6",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "josh-smith",
+    "name": "Josh Smith",
+    "office": "State Senate District 6",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "jared-neal",
+    "name": "Jared Neal",
+    "office": "State Senate District 6",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "robert-wanlass",
+    "name": "Robert Wanlass",
+    "office": "State Senate District 6",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "jeffrey-ostler",
+    "name": "Jeffrey Ostler",
+    "office": "State Senate District 7 (Multi-County)",
+    "party": "Constitution",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "garret-rushforth",
+    "name": "Garret Rushforth",
+    "office": "State Senate District 7 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "jennifer-garner",
+    "name": "Jennifer Garner",
+    "office": "State Senate District 7 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State Senate"
+  },
+  {
+    "id": "stephanie-hollist",
+    "name": "Stephanie Hollist",
+    "office": "State Senate District 7 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "stuart-adams",
+    "name": "Stuart Adams",
+    "office": "State Senate District 7 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "braden-hess",
+    "name": "Braden Hess",
+    "office": "State Senate District 7 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State Senate"
+  },
+  {
+    "id": "jen-plumb",
+    "name": "Jen Plumb",
+    "office": "State Senate District 9",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "thaddeus-a-evans",
+    "name": "Thaddeus A Evans",
+    "office": "State Senate District 9",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "j-lowry-snow",
+    "name": "J. Lowry Snow",
+    "office": "State Senate District 9",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Senate"
+  },
+  {
+    "id": "thomas-peterson",
+    "name": "Thomas Peterson",
+    "office": "State House District 1 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "chris-reid",
+    "name": "Chris Reid",
+    "office": "State House District 1 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jason-o-dell",
+    "name": "Jason O’Dell",
+    "office": "State House District 1 (Multi-County)",
+    "party": "Constitution",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jim-alvey",
+    "name": "Jim Alvey",
+    "office": "State House District 10",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "rosemary-t-lesser",
+    "name": "Rosemary T Lesser",
+    "office": "State House District 10",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "juliene-m-snyder",
+    "name": "Juliene M Snyder",
+    "office": "State House District 10",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "daniel-c-matern",
+    "name": "Daniel C. Matern",
+    "office": "State House District 10",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "dave-calder",
+    "name": "Dave Calder",
+    "office": "State House District 11 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "katy-hall",
+    "name": "Katy Hall",
+    "office": "State House District 11 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "josh-r-koskan",
+    "name": "Josh R Koskan",
+    "office": "State House District 11 (Multi-County)",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "mike-schultz",
+    "name": "Mike Schultz",
+    "office": "State House District 12 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "anna-graff",
+    "name": "Anna Graff",
+    "office": "State House District 12 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "dava-ann-neal",
+    "name": "Dava Ann Neal",
+    "office": "State House District 12 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "shawn-ferriola",
+    "name": "Shawn Ferriola",
+    "office": "State House District 12 (Multi-County)",
+    "party": "Forward",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "jeffrey-anderson",
+    "name": "Jeffrey Anderson",
+    "office": "State House District 13",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "tony-de-mille",
+    "name": "Tony De Mille",
+    "office": "State House District 13",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "erik-r-craythorne",
+    "name": "Erik R. Craythorne",
+    "office": "State House District 13",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "roxayn-elmer",
+    "name": "Roxayn Elmer",
+    "office": "State House District 13",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "brandon-young",
+    "name": "Brandon Young",
+    "office": "State House District 14",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "john-taylor",
+    "name": "John Taylor",
+    "office": "State House District 14",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "kara-toone",
+    "name": "Kara Toone",
+    "office": "State House District 14",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "anne-berbert",
+    "name": "Anne Berbert",
+    "office": "State House District 15",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "ariel-defay",
+    "name": "Ariel Defay",
+    "office": "State House District 15",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "erik-klauser",
+    "name": "Erik Klauser",
+    "office": "State House District 15",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "abigail-treasure",
+    "name": "Abigail Treasure",
+    "office": "State House District 16",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "bob-j-stevenson",
+    "name": "Bob J Stevenson",
+    "office": "State House District 16",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "trevor-lee",
+    "name": "Trevor Lee",
+    "office": "State House District 16",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "lili-bitner",
+    "name": "Lili Bitner",
+    "office": "State House District 17",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "eric-last",
+    "name": "Eric Last",
+    "office": "State House District 17",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "adam-sorenson",
+    "name": "Adam Sorenson",
+    "office": "State House District 17",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "sam-barlow",
+    "name": "Sam Barlow",
+    "office": "State House District 17",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "jorge-quinones",
+    "name": "Jorge Quinones",
+    "office": "State House District 17",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "kimberly-wagner",
+    "name": "Kimberly Wagner",
+    "office": "State House District 17",
+    "party": "Forward",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "paul-cutler",
+    "name": "Paul Cutler",
+    "office": "State House District 18",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "scott-troxel",
+    "name": "Scott Troxel",
+    "office": "State House District 18",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "raymond-p-ward",
+    "name": "Raymond P. Ward",
+    "office": "State House District 19",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "barbara-j-haggerty",
+    "name": "Barbara J. Haggerty",
+    "office": "State House District 2",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "mike-petersen",
+    "name": "Mike Petersen",
+    "office": "State House District 2",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "phil-graves",
+    "name": "Phil Graves",
+    "office": "State House District 20",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "melissa-ballard",
+    "name": "Melissa Ballard",
+    "office": "State House District 20",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "lew-jeppson",
+    "name": "Lew Jeppson",
+    "office": "State House District 20",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "stephen-otterstrom",
+    "name": "Stephen Otterstrom",
+    "office": "State House District 21",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "darin-w-mann",
+    "name": "Darin W Mann",
+    "office": "State House District 21",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "anthony-washburn",
+    "name": "Anthony Washburn",
+    "office": "State House District 21",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "jeneanne-lock",
+    "name": "Jeneanne Lock",
+    "office": "State House District 21",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "aaron-wiley",
+    "name": "Aaron Wiley",
+    "office": "State House District 21",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "james-ord",
+    "name": "James Ord",
+    "office": "State House District 21",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "jen-dailey-provost",
+    "name": "Jen Dailey-Provost",
+    "office": "State House District 22",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "char-varga",
+    "name": "Char Varga",
+    "office": "State House District 22",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "paul-rockwood",
+    "name": "Paul Rockwood",
+    "office": "State House District 22",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "franklin-d-robinson",
+    "name": "Franklin D. Robinson",
+    "office": "State House District 23 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "cabot-w-nelson",
+    "name": "Cabot W Nelson",
+    "office": "State House District 23 (Multi-County)",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "hoang-nguyen",
+    "name": "Hoang Nguyen",
+    "office": "State House District 23 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "michael-farrell",
+    "name": "Michael Farrell",
+    "office": "State House District 23 (Multi-County)",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "judy-y-darby",
+    "name": "Judy Y Darby",
+    "office": "State House District 23 (Multi-County)",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "braeden-j-oswald",
+    "name": "Braeden J. Oswald",
+    "office": "State House District 24",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "grant-amjad-miller",
+    "name": "Grant Amjad Miller",
+    "office": "State House District 24",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "angela-romero",
+    "name": "Angela Romero",
+    "office": "State House District 25",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "richard-t-nowak",
+    "name": "Richard T Nowak",
+    "office": "State House District 25",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "giovanni-hernandez",
+    "name": "Giovanni Hernandez",
+    "office": "State House District 25",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "matt-macpherson",
+    "name": "Matt MacPherson",
+    "office": "State House District 26",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "travis-alico",
+    "name": "Travis Alico",
+    "office": "State House District 26",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "michael-e-finch",
+    "name": "Michael E Finch",
+    "office": "State House District 26",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "darrell-r-curtis",
+    "name": "Darrell R Curtis",
+    "office": "State House District 26",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "jeffrey-marshall",
+    "name": "Jeffrey Marshall",
+    "office": "State House District 27",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "anthony-loubet",
+    "name": "Anthony Loubet",
+    "office": "State House District 27",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "liz-oates",
+    "name": "Liz Oates",
+    "office": "State House District 27",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "wales-nematollahi",
+    "name": "Wales Nematollahi",
+    "office": "State House District 28",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "anita-dalrymple",
+    "name": "Anita Dalrymple",
+    "office": "State House District 28",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "nicholeen-peck",
+    "name": "Nicholeen Peck",
+    "office": "State House District 28",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "stephanie-bagwell",
+    "name": "Stephanie Bagwell",
+    "office": "State House District 28",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "sara-snow",
+    "name": "Sara Snow",
+    "office": "State House District 29 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "tynley-bean",
+    "name": "Tynley Bean",
+    "office": "State House District 29 (Multi-County)",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jonathan-garrard",
+    "name": "Jonathan Garrard",
+    "office": "State House District 29 (Multi-County)",
+    "party": "Constitution",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "justin-nielson",
+    "name": "Justin Nielson",
+    "office": "State House District 29 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "alexis-wheeler",
+    "name": "Alexis Wheeler",
+    "office": "State House District 29 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State House"
+  },
+  {
+    "id": "sheldon-birch",
+    "name": "Sheldon Birch",
+    "office": "State House District 29 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State House"
+  },
+  {
+    "id": "holly-crowley",
+    "name": "Holly Crowley",
+    "office": "State House District 29 (Multi-County)",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "jason-e-thompson",
+    "name": "Jason E. Thompson",
+    "office": "State House District 3",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "patrick-belmont",
+    "name": "Patrick Belmont",
+    "office": "State House District 3",
+    "party": "Unaffiliated",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "ben-shaw",
+    "name": "Ben Shaw",
+    "office": "State House District 3",
+    "party": "Forward",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "jake-fitisemanu",
+    "name": "Jake Fitisemanu",
+    "office": "State House District 30",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "dave-parke",
+    "name": "Dave Parke",
+    "office": "State House District 30",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "fred-c-cox",
+    "name": "Fred C. Cox",
+    "office": "State House District 30",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "melody-jones",
+    "name": "Melody Jones",
+    "office": "State House District 31",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "verona-mauga",
+    "name": "Verona Mauga",
+    "office": "State House District 31",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "sahara-hayes",
+    "name": "Sahara Hayes",
+    "office": "State House District 32",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "aileen-hampton",
+    "name": "Aileen Hampton",
+    "office": "State House District 32",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "doug-owens",
+    "name": "Doug Owens",
+    "office": "State House District 33",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "anna-reeves",
+    "name": "Anna Reeves",
+    "office": "State House District 33",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "gerald-burt",
+    "name": "Gerald Burt",
+    "office": "State House District 33",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "julie-jackson",
+    "name": "Julie Jackson",
+    "office": "State House District 34",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "erin-jemison",
+    "name": "Erin Jemison",
+    "office": "State House District 34",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "monique-i-ketcham",
+    "name": "Monique I. Ketcham",
+    "office": "State House District 35",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "rosalba-dominguez",
+    "name": "Rosalba Dominguez",
+    "office": "State House District 35",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "marlow-draney",
+    "name": "Marlow Draney",
+    "office": "State House District 35",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "andrew-uz",
+    "name": "Andrew Uz",
+    "office": "State House District 35",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "jim-dunnigan",
+    "name": "Jim Dunnigan",
+    "office": "State House District 36",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "albert-mosley-ii",
+    "name": "Albert Mosley II",
+    "office": "State House District 36",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "jon-hanson",
+    "name": "Jon Hanson",
+    "office": "State House District 36",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "ashlee-matthews",
+    "name": "Ashlee Matthews",
+    "office": "State House District 37",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "casey-saxton",
+    "name": "Casey Saxton",
+    "office": "State House District 37",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "sergio-sotelo",
+    "name": "Sergio Sotelo",
+    "office": "State House District 38",
+    "party": "Unaffiliated",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "chris-mcconnehey",
+    "name": "Chris McConnehey",
+    "office": "State House District 38",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "gloria-vindas",
+    "name": "Gloria Vindas",
+    "office": "State House District 38",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "drew-howells",
+    "name": "Drew Howells",
+    "office": "State House District 39",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "ken-ivory",
+    "name": "Ken Ivory",
+    "office": "State House District 39",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "ryan-jackson",
+    "name": "Ryan Jackson",
+    "office": "State House District 39",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "sarah-brough",
+    "name": "Sarah Brough",
+    "office": "State House District 39",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "lisa-dean",
+    "name": "Lisa Dean",
+    "office": "State House District 39",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "kevin-seal",
+    "name": "Kevin Seal",
+    "office": "State House District 39",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "tiara-auxier",
+    "name": "Tiara Auxier",
+    "office": "State House District 4 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "zane-woolstenhulme",
+    "name": "Zane Woolstenhulme",
+    "office": "State House District 4 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "kris-campbell",
+    "name": "Kris Campbell",
+    "office": "State House District 4 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "brandi-connolly",
+    "name": "Brandi Connolly",
+    "office": "State House District 4 (Multi-County)",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "zeppelin-zeerip",
+    "name": "Zeppelin Zeerip",
+    "office": "State House District 4 (Multi-County)",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "john-jackson",
+    "name": "John Jackson",
+    "office": "State House District 40",
+    "party": "Forward",
+    "status": "withdrew",
+    "sourceStatus": "Deceased",
+    "section": "State House"
+  },
+  {
+    "id": "andrew-stoddard",
+    "name": "Andrew Stoddard",
+    "office": "State House District 40",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "wendy-davis",
+    "name": "Wendy Davis",
+    "office": "State House District 40",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "john-arthur",
+    "name": "John Arthur",
+    "office": "State House District 41",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "darren-croft",
+    "name": "Darren Croft",
+    "office": "State House District 41",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "stephen-miller",
+    "name": "Stephen Miller",
+    "office": "State House District 41",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "steve-aste",
+    "name": "Steve Aste",
+    "office": "State House District 41",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "eryn-a-russo",
+    "name": "Eryn A Russo",
+    "office": "State House District 41",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "clint-okerlund",
+    "name": "Clint Okerlund",
+    "office": "State House District 42",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "iva-williams",
+    "name": "Iva Williams",
+    "office": "State House District 42",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "steve-eliason",
+    "name": "Steve Eliason",
+    "office": "State House District 43",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "ofa-matagi",
+    "name": "Ofa Matagi",
+    "office": "State House District 43",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jordan-teuscher",
+    "name": "Jordan Teuscher",
+    "office": "State House District 44",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jess-birtcher",
+    "name": "Jess Birtcher",
+    "office": "State House District 44",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "scott-stephenson",
+    "name": "Scott Stephenson",
+    "office": "State House District 44",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "rod-moser",
+    "name": "Rod Moser",
+    "office": "State House District 45",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "tracy-miller",
+    "name": "Tracy Miller",
+    "office": "State House District 45",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "cal-roberts",
+    "name": "Cal Roberts",
+    "office": "State House District 46",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "braxten-rutherford",
+    "name": "Braxten Rutherford",
+    "office": "State House District 46",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "serena-aeschilman",
+    "name": "Serena Aeschilman",
+    "office": "State House District 47",
+    "party": "Unaffiliated",
+    "status": "disqualified",
+    "sourceStatus": "Disqualified",
+    "section": "State House"
+  },
+  {
+    "id": "mark-a-strong",
+    "name": "Mark A. Strong",
+    "office": "State House District 47",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jake-hunsaker",
+    "name": "Jake Hunsaker",
+    "office": "State House District 48",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "benyde-walker",
+    "name": "Benyde Walker",
+    "office": "State House District 48",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "merrill-kunz",
+    "name": "Merrill Kunz",
+    "office": "State House District 48",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "johnathan-brooks",
+    "name": "Johnathan Brooks",
+    "office": "State House District 48",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "nik-anderson",
+    "name": "Nik Anderson",
+    "office": "State House District 48",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State House"
+  },
+  {
+    "id": "candice-b-pierucci",
+    "name": "Candice B. Pierucci",
+    "office": "State House District 49",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "lillian-bowles",
+    "name": "Lillian Bowles",
+    "office": "State House District 49",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "kendra-penry",
+    "name": "Kendra Penry",
+    "office": "State House District 5",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "casey-snider",
+    "name": "Casey Snider",
+    "office": "State House District 5",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jim-atkinson",
+    "name": "Jim Atkinson",
+    "office": "State House District 5",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "stephanie-gricius",
+    "name": "Stephanie Gricius",
+    "office": "State House District 50",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "kristin-meyer",
+    "name": "Kristin Meyer",
+    "office": "State House District 50",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "brett-nielsen",
+    "name": "Brett Nielsen",
+    "office": "State House District 51",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "leah-hansen",
+    "name": "Leah Hansen",
+    "office": "State House District 51",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "cory-maloy",
+    "name": "Cory Maloy",
+    "office": "State House District 52",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "nicole-melling",
+    "name": "Nicole Melling",
+    "office": "State House District 52",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "charlie-tautuaa",
+    "name": "Charlie Tautuaa",
+    "office": "State House District 52",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "kay-j-christofferson",
+    "name": "Kay J. Christofferson",
+    "office": "State House District 53",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "john-boyd",
+    "name": "John Boyd",
+    "office": "State House District 53",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "kevin-r-slater",
+    "name": "Kevin R Slater",
+    "office": "State House District 53",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "kristen-s-chevrier",
+    "name": "Kristen S. Chevrier",
+    "office": "State House District 54",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "kristina-robinson",
+    "name": "Kristina Robinson",
+    "office": "State House District 54",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jon-hawkins",
+    "name": "Jon Hawkins",
+    "office": "State House District 55",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "travis-hysell",
+    "name": "Travis Hysell",
+    "office": "State House District 55",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "chelsey-cook",
+    "name": "Chelsey Cook",
+    "office": "State House District 55",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "natassja-grossman",
+    "name": "Natassja Grossman",
+    "office": "State House District 56",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "val-l-peterson",
+    "name": "Val L. Peterson",
+    "office": "State House District 56",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "brett-gonzalez",
+    "name": "Brett Gonzalez",
+    "office": "State House District 56",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "nelson-abbott",
+    "name": "Nelson Abbott",
+    "office": "State House District 57",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "archie-williams",
+    "name": "Archie Williams",
+    "office": "State House District 57",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "karli-black",
+    "name": "Karli Black",
+    "office": "State House District 58",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "david-shallenberger",
+    "name": "David Shallenberger",
+    "office": "State House District 58",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "celeste-t-johnson",
+    "name": "Celeste T. Johnson",
+    "office": "State House District 59 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "micah-kagan",
+    "name": "Micah Kagan",
+    "office": "State House District 59 (Multi-County)",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "mark-s-allen",
+    "name": "Mark S. Allen",
+    "office": "State House District 59 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "luke-searle",
+    "name": "Luke Searle",
+    "office": "State House District 59 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State House"
+  },
+  {
+    "id": "jeffrey-pierce",
+    "name": "Jeffrey Pierce",
+    "office": "State House District 59 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State House"
+  },
+  {
+    "id": "james-rich",
+    "name": "James Rich",
+    "office": "State House District 6 (Multi-County)",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "rob-bishop",
+    "name": "Rob Bishop",
+    "office": "State House District 6 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "brad-b-barrowes",
+    "name": "Brad B. Barrowes",
+    "office": "State House District 6 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "kerry-m-wayne",
+    "name": "Kerry M Wayne",
+    "office": "State House District 6 (Multi-County)",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "mckay-jensen",
+    "name": "McKay Jensen",
+    "office": "State House District 60",
+    "party": "Republican",
+    "status": "disqualified",
+    "sourceStatus": "Disqualified",
+    "section": "State House"
+  },
+  {
+    "id": "grant-pace",
+    "name": "Grant Pace",
+    "office": "State House District 60",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "nikaela-penrod",
+    "name": "Nikaela Penrod",
+    "office": "State House District 60",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "alan-jimenez",
+    "name": "Alan Jimenez",
+    "office": "State House District 61",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "lisa-shepherd",
+    "name": "Lisa Shepherd",
+    "office": "State House District 61",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jennifer-k-doud",
+    "name": "Jennifer K Doud",
+    "office": "State House District 61",
+    "party": "Constitution",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "cynthia-wren",
+    "name": "Cynthia Wren",
+    "office": "State House District 61",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "melanie-craghead",
+    "name": "Melanie Craghead",
+    "office": "State House District 61",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "tom-waqa",
+    "name": "Tom Waqa",
+    "office": "State House District 61",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "david-chappell",
+    "name": "David Chappell",
+    "office": "State House District 62",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "norm-thurston",
+    "name": "Norm Thurston",
+    "office": "State House District 62",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jonah-johnson",
+    "name": "Jonah Johnson",
+    "office": "State House District 62",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "julie-smith",
+    "name": "Julie Smith",
+    "office": "State House District 63",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "mark-youngquist",
+    "name": "Mark Youngquist",
+    "office": "State House District 63",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "stephen-l-whyte",
+    "name": "Stephen L. Whyte",
+    "office": "State House District 63",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jackie-larson",
+    "name": "Jackie Larson",
+    "office": "State House District 64",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "alan-wessman",
+    "name": "Alan Wessman",
+    "office": "State House District 64",
+    "party": "Unaffiliated",
+    "status": "filed",
+    "sourceStatus": "Filed",
+    "section": "State House"
+  },
+  {
+    "id": "jeff-burton",
+    "name": "Jeff Burton",
+    "office": "State House District 64",
+    "party": "Republican",
+    "status": "filed",
+    "sourceStatus": "Filed",
+    "section": "State House"
+  },
+  {
+    "id": "matthew-durrant",
+    "name": "Matthew Durrant",
+    "office": "State House District 64",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "doug-welton",
+    "name": "Doug Welton",
+    "office": "State House District 65",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "breanne-mashek",
+    "name": "Breanne Mashek",
+    "office": "State House District 66 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "russ-hatch",
+    "name": "Russ Hatch",
+    "office": "State House District 66 (Multi-County)",
+    "party": "Constitution",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "troy-shelley",
+    "name": "Troy Shelley",
+    "office": "State House District 66 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "justin-zohner",
+    "name": "Justin Zohner",
+    "office": "State House District 66 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "carl-ingwell",
+    "name": "Carl Ingwell",
+    "office": "State House District 67 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "gina-gagon",
+    "name": "Gina Gagon",
+    "office": "State House District 67 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "jr-bird",
+    "name": "JR Bird",
+    "office": "State House District 67 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State House"
+  },
+  {
+    "id": "yvonne-h-jensen",
+    "name": "Yvonne H Jensen",
+    "office": "State House District 67 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State House"
+  },
+  {
+    "id": "scott-h-chew",
+    "name": "Scott H Chew",
+    "office": "State House District 68 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "sonya-ray",
+    "name": "Sonya Ray",
+    "office": "State House District 68 (Multi-County)",
+    "party": "Constitution",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "tracie-yellowman-tso",
+    "name": "Tracie Yellowman Tso",
+    "office": "State House District 69 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "logan-j-monson",
+    "name": "Logan J. Monson",
+    "office": "State House District 69 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State House"
+  },
+  {
+    "id": "daniel-gardner",
+    "name": "Daniel Gardner",
+    "office": "State House District 69 (Multi-County)",
+    "party": "Republican",
+    "status": "primary_election",
+    "sourceStatus": "Primary",
+    "section": "State House"
+  },
+  {
+    "id": "tara-benally",
+    "name": "Tara Benally",
+    "office": "State House District 69 (Multi-County)",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "ryan-d-wilcox",
+    "name": "Ryan D. Wilcox",
+    "office": "State House District 7",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "bianca-mittendorf",
+    "name": "Bianca Mittendorf",
+    "office": "State House District 7",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "zeno-b-parry",
+    "name": "Zeno B. Parry",
+    "office": "State House District 70 (Multi-County)",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "stacey-d-pendergraft",
+    "name": "Stacey D. Pendergraft",
+    "office": "State House District 70 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "carl-r-albrecht",
+    "name": "Carl R. Albrecht",
+    "office": "State House District 70 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "rex-p-shipp",
+    "name": "Rex P Shipp",
+    "office": "State House District 71",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "thomas-loveheart",
+    "name": "Thomas Loveheart",
+    "office": "State House District 71",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "eva-m-weldon",
+    "name": "Eva M Weldon",
+    "office": "State House District 72",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "april-a-pinkston",
+    "name": "April A Pinkston",
+    "office": "State House District 72",
+    "party": "Constitution",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "joseph-elison",
+    "name": "Joseph Elison",
+    "office": "State House District 72",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "glenn-d-webb",
+    "name": "Glenn D Webb",
+    "office": "State House District 73",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "colin-w-jack",
+    "name": "Colin W. Jack",
+    "office": "State House District 73",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "r-neil-walter",
+    "name": "R. Neil Walter",
+    "office": "State House District 74",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jeffrey-n-lipe",
+    "name": "Jeffrey N Lipe",
+    "office": "State House District 74",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "april-subashe",
+    "name": "April Subashe",
+    "office": "State House District 75",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "walt-brooks",
+    "name": "Walt Brooks",
+    "office": "State House District 75",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jason-b-kyle",
+    "name": "Jason B Kyle",
+    "office": "State House District 8 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "libby-shelton",
+    "name": "Libby Shelton",
+    "office": "State House District 8 (Multi-County)",
+    "party": "Forward",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "kim-james",
+    "name": "Kim James",
+    "office": "State House District 8 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "angela-choberka",
+    "name": "Angela Choberka",
+    "office": "State House District 9",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "jake-sawyer",
+    "name": "Jake Sawyer",
+    "office": "State House District 9",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State House"
+  },
+  {
+    "id": "roger-bordley",
+    "name": "Roger Bordley",
+    "office": "State House District 9",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State House"
+  },
+  {
+    "id": "allen-e-miller",
+    "name": "Allen E. Miller",
+    "office": "State House District 9",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State House"
+  },
+  {
+    "id": "tracy-j-nuttall",
+    "name": "Tracy J. Nuttall",
+    "office": "State School Board Distrct 11 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "lacey-peterson",
+    "name": "Lacey Peterson",
+    "office": "State School Board Distrct 11 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "terry-l-hutchinson",
+    "name": "Terry L. Hutchinson",
+    "office": "State School Board Distrct 11 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State School Board"
+  },
+  {
+    "id": "cathy-callow-heusser",
+    "name": "Cathy Callow-Heusser",
+    "office": "State School Board District 1 (Multi-County)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "jennie-earl",
+    "name": "Jennie Earl",
+    "office": "State School Board District 1 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "milo-anderson",
+    "name": "Milo Anderson",
+    "office": "State School Board District 1 (Multi-County)",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State School Board"
+  },
+  {
+    "id": "curtis-benjamin",
+    "name": "Curtis Benjamin",
+    "office": "State School Board District 1 (Multi-County)",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State School Board"
+  },
+  {
+    "id": "linda-hanks",
+    "name": "Linda Hanks",
+    "office": "State School Board District 14 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "will-pierce",
+    "name": "Will Pierce",
+    "office": "State School Board District 14 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State School Board"
+  },
+  {
+    "id": "nichole-beecher-isom",
+    "name": "Nichole Beecher Isom",
+    "office": "State School Board District 14 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State School Board"
+  },
+  {
+    "id": "danielle-stratton",
+    "name": "Danielle Stratton",
+    "office": "State School Board District 14 (Multi-County)",
+    "party": "Democratic",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State School Board"
+  },
+  {
+    "id": "courtnee-s-justice",
+    "name": "Courtnee S. Justice",
+    "office": "State School Board District 14 (Multi-County)",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State School Board"
+  },
+  {
+    "id": "joseph-kerry",
+    "name": "Joseph Kerry",
+    "office": "State School Board District 2",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "kacee-weaver",
+    "name": "Kacee Weaver",
+    "office": "State School Board District 2",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "kati-jo-christensen",
+    "name": "Kati Jo Christensen",
+    "office": "State School Board District 2",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State School Board"
+  },
+  {
+    "id": "leann-wood",
+    "name": "Leann Wood",
+    "office": "State School Board District 4 (Multi-County)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "gary-widders",
+    "name": "Gary Widders",
+    "office": "State School Board District 4 (Multi-County)",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State School Board"
+  },
+  {
+    "id": "heather-dopp",
+    "name": "Heather Dopp",
+    "office": "State School Board District 4 (Multi-County)",
+    "party": "Democratic",
+    "status": "defeated",
+    "sourceStatus": "Out in Convention",
+    "section": "State School Board"
+  },
+  {
+    "id": "adam-gerlach",
+    "name": "Adam Gerlach",
+    "office": "State School Board District 4 (Multi-County)",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State School Board"
+  },
+  {
+    "id": "sarah-reale",
+    "name": "Sarah Reale",
+    "office": "State School Board District 5",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "j-michael-clara",
+    "name": "J. Michael Clara",
+    "office": "State School Board District 5",
+    "party": "Republican",
+    "status": "withdrew",
+    "sourceStatus": "Withdrew",
+    "section": "State School Board"
+  },
+  {
+    "id": "erin-longacre",
+    "name": "Erin Longacre",
+    "office": "State School Board District 7 (2-Year Term)",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "james-martin",
+    "name": "James Martin",
+    "office": "State School Board District 7 (2-Year Term)",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "nicole-mcdermott",
+    "name": "Nicole McDermott",
+    "office": "State School Board District 8",
+    "party": "Republican",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "araueni-olivares",
+    "name": "Araueni Olivares",
+    "office": "State School Board District 8",
+    "party": "Democratic",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State School Board"
+  },
+  {
+    "id": "trina-christensen",
+    "name": "Trina Christensen",
+    "office": "State School Board District 8",
+    "party": "Republican",
+    "status": "defeated",
+    "sourceStatus": "Out in Primary",
+    "section": "State School Board"
+  },
+  {
+    "id": "aaron-william-flater",
+    "name": "Aaron William Flater",
+    "office": "Judge of the Juvenile Court of the Third Juvenile Court District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "alex-goble",
+    "name": "Alex Goble",
+    "office": "Judge of the Juvenile Court of the Sixth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "amy-jo-oliver",
+    "name": "Amy Jo Oliver",
+    "office": "Judge of the Court of Appeals of Utah",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "anthony-leonard-howell",
+    "name": "Anthony Leonard Howell",
+    "office": "Judge of the District Court of the Fourth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "charles-a-stormont",
+    "name": "Charles A. Stormont",
+    "office": "Judge of the District Court of the Third Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "coral-sanchez",
+    "name": "Coral Sanchez",
+    "office": "Judge of the District Court of the Third Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "craig-miles-bunnell",
+    "name": "Craig Miles Bunnell",
+    "office": "Judge of the Juvenile Court of the Seventh Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "david-ned-mortensen",
+    "name": "David Ned Mortensen",
+    "office": "Judge of the Court of Appeals of Utah",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "douglas-john-nielsen",
+    "name": "Douglas John Nielsen",
+    "office": "Judge of the Distirct Court of the Fourth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "eldred-blaine-rawson",
+    "name": "Eldred Blaine Rawson",
+    "office": "Judge of the District Court of the Second Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "eric-russell-gentry",
+    "name": "Eric Russell Gentry",
+    "office": "Judge of the District Court of the Fifth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "gregory-keith-orme",
+    "name": "Gregory Keith Orme",
+    "office": "Judge of the Court of Appeals of Utah",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "jared-eldridge",
+    "name": "Jared Eldridge",
+    "office": "Judge of the District Court of the Fourth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "jason-craig-nelson",
+    "name": "Jason Craig Nelson",
+    "office": "Judge of the District Court of the Second Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "jay-winward",
+    "name": "Jay Winward",
+    "office": "Judge of the District Court of the Fifth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "jeffrey-j-noland",
+    "name": "Jeffrey J. Noland",
+    "office": "Judge of the Juvenile Court of the Second Juvenile Court District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "jennifer-lyn-valencia",
+    "name": "Jennifer Lyn Valencia",
+    "office": "Judge of the District Court of the Second Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "jill-m-pohlman",
+    "name": "Jill M. Pohlman",
+    "office": "Justice of the Supreme Court of Utah",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "john-david-luthy",
+    "name": "John David Luthy",
+    "office": "Judge of the Court of Appeals of Utah",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "kirk-max-morgan",
+    "name": "Kirk Max Morgan",
+    "office": "Judge of the District Court of the First Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "kraig-powell",
+    "name": "Kraig Powell",
+    "office": "Judge of the District Court of the Fourth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "mandy-larsen",
+    "name": "Mandy Larsen",
+    "office": "Judge of the District Court of the Sixth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "matthew-david-bates",
+    "name": "Matthew David Bates",
+    "office": "Judge of the District Court of the Third Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "matthew-l-bell",
+    "name": "Matthew L. Bell",
+    "office": "Judge of the District Court of the Fifth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "michelle-m-christiansen-forster",
+    "name": "Michelle M Christiansen Forster",
+    "office": "Judge of the Court of Appeals of Utah",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "rick-westmoreland",
+    "name": "Rick Westmoreland",
+    "office": "Judge of the Juvenile Court of the Second Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "robert-garrett-neill",
+    "name": "Robert Garrett Neill",
+    "office": "Judge of the Juvenile Court of the Second Juvenile Court District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "ryan-m-harris",
+    "name": "Ryan M. Harris",
+    "office": "Judge of the Court of Appeals of Utah",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "steven-k-beck",
+    "name": "Steven K. Beck",
+    "office": "Judge of the Juvenile Court of the Third Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "susan-heather-eisenman",
+    "name": "Susan Heather Eisenman",
+    "office": "Judge of the Juvenile Court of the Third Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "thomas-low",
+    "name": "Thomas Low",
+    "office": "Judge of the District Court of the Fourth Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  },
+  {
+    "id": "todd-shaughnessy",
+    "name": "Todd Shaughnessy",
+    "office": "Judge of the District Court of the Third Judicial District",
+    "party": "",
+    "status": "general_election",
+    "sourceStatus": "Election Candidate",
+    "section": "State Judicial"
+  }
+]
