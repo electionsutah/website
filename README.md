@@ -95,6 +95,15 @@ published schema has no deceased status.
 
 ## Directory routes
 
+Current campaign information is maintained separately in
+`src/data/person-enrichment.json`, keyed by the person's directory ID. Each
+profile records its campaign source and verification date, a short biography,
+attributed priorities, contact details, and resource links. Profile contacts
+take precedence on person pages without replacing contacts in archived filings
+or changing the state's candidate status and dataset update date. Use
+`pressEmail` for a published media contact rather than treating it as a general
+campaign email.
+
 The app uses shareable client-side routes that follow the original Elections
 Utah information architecture:
 

@@ -179,6 +179,14 @@ main:focus,main h1:focus{outline:0}
 .record-heading .office-group-heading{margin-top:36px}
 .card-record-link>.candidate-status{margin:12px 0;color:#31302d;font:400 12px/1.5 'Noto Sans',sans-serif;white-space:normal;overflow:visible}
 .verify-records{display:inline-block;margin-top:14px;color:#006eb7;font-size:11px;font-weight:700}
+.contact-source{display:block;padding:13px 16px;color:#006eb7;font-size:12px;font-weight:700}
+.person-profile{border-bottom:1px solid #e3e2dd}
+.person-biography{max-width:800px;color:#5f5e59;font:400 17px/1.65 'Source Serif 4',serif}
+.person-profile h3{margin:28px 0 12px;font:700 24px 'Source Serif 4',serif}
+.person-profile ul{max-width:800px;margin:0;padding-left:22px;list-style:disc;color:#5f5e59;font-size:14px;line-height:1.8}
+.profile-source{margin:22px 0 0;color:#5f5e59;font-size:12px;line-height:1.6}
+.profile-source a{color:#006eb7;text-decoration:underline}
+.contact-heading{flex-wrap:wrap}
 .all-records{flex-wrap:wrap;align-items:center}
 .finder input,.index-tools input{min-width:0}
 

@@ -5,6 +5,7 @@
   import IndexControls from './IndexControls.svelte';
   import SortHeader from './SortHeader.svelte';
   import placeProfiles from './data/place-enrichment.json';
+  import personProfiles from './data/person-enrichment.json';
   import EntityViews from './EntityViews.svelte';
   import {
     activeStatuses,
@@ -22,10 +23,11 @@
     sourceAvailable,
     sourceLinkLabel,
     statusLabel,
+    type Contact,
     type Filing,
     type Person
   } from './lib/entities';
-  import { formatCount } from './lib/format';
+  import { formatCount, formatDate } from './lib/format';
   import { matchesQuery, queryTokens, searchText } from './lib/search';
   import { buildFacets, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
 
@@ -64,6 +66,15 @@
   };
 
   const profilesById = placeProfiles as Record<string, PlaceProfile>;
+  type PersonProfile = {
+    sourceUrl: string;
+    lastVerified: string;
+    biography: string;
+    priorities: string[];
+    contact: Partial<Contact>;
+    resources: { label: string; description: string; url: string }[];
+  };
+  const personProfilesById = personProfiles as Record<string, PersonProfile>;
 
   const labels = {
     people: { singular: 'Person', plural: 'People', intro: 'Every person in the combined Utah election archive.' },
@@ -73,6 +84,7 @@
   };
 
   $: person = section === 'people' && id ? peopleById.get(id) : undefined;
+  $: personProfile = person ? personProfilesById[person.id] : undefined;
   $: office = section === 'offices' && id ? officesById.get(id) : undefined;
   $: party = section === 'parties' && id ? partiesById.get(id) : undefined;
   $: place = section === 'places' && id ? placesById.get(id) : undefined;
@@ -82,14 +94,17 @@
     ? 'Record not found'
     : person?.name || office?.name || party?.name || place?.name || labels[section].plural;
   $: contactFiling = person?.filings.find((filing) => filing.personId === person.id && filing.contact && Object.values(filing.contact).some(Boolean));
-  $: contact = contactFiling?.contact;
+  // Current campaign information has its own source and date; archived contacts stay in the filing data.
+  $: contact = personProfile?.contact ?? contactFiling?.contact;
   $: contactItems = contact ? [
     contact.phone && { label: 'Phone', text: contact.phone, href: `tel:${contact.phone}`, icon: 'call', external: false },
     contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'mail', external: false },
+    contact.pressEmail && { label: 'Press email', text: contact.pressEmail, href: `mailto:${contact.pressEmail}`, icon: 'mail', external: false },
     contact.website && { label: 'Website', text: 'Visit website', href: externalUrl(contact.website), icon: 'arrow_outward', external: true },
     contact.facebook && { label: 'Social', text: 'Facebook', href: externalUrl(contact.facebook), icon: 'arrow_outward', external: true },
     contact.instagram && { label: 'Social', text: 'Instagram', href: externalUrl(contact.instagram), icon: 'arrow_outward', external: true },
-    contact.twitter && { label: 'Social', text: 'X / Twitter', href: externalUrl(contact.twitter), icon: 'arrow_outward', external: true }
+    contact.twitter && { label: 'Social', text: 'X / Twitter', href: externalUrl(contact.twitter), icon: 'arrow_outward', external: true },
+    contact.bluesky && { label: 'Social', text: 'Bluesky', href: externalUrl(contact.bluesky), icon: 'arrow_outward', external: true }
   ].filter((item) => !!item) : [];
 
   // Within a scope, each person keeps only the scoped filings, so offices, years, and counts describe that scope.
@@ -324,15 +339,17 @@
           <p class="eyebrow">Person record</p>
           <h1>{person.name}</h1>
           <p class="detail-summary">{person.filings.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${person.filings.length} separate filings across ${person.years.join(', ')}.`}</p>
-          {#if contact && contactFiling}
+          {#if contact && (personProfile || contactFiling)}
             <section class="person-contact" aria-label={`${person.name} contact information`}>
-              <div class="contact-heading"><span>Public contact</span><small>{contactFiling.year} filing</small></div>
+              <div class="contact-heading"><span>{personProfile ? 'Campaign contact' : 'Public contact'}</span><small>{#if personProfile}Verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>{:else if contactFiling}{contactFiling.year} filing{/if}</small></div>
               <div class="contact-grid">
-                {#if contact.address}<a class="contact-item contact-address" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.address)}`} target="_blank" rel="noreferrer"><small>Address</small><strong>{contact.address}</strong><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/if}
+                {#if contact.address}<a class="contact-item contact-address" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.address)}`} target="_blank" rel="noreferrer"><small>{personProfile ? 'Campaign office' : 'Address'}</small><strong>{contact.address}</strong><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/if}
+                {#if contact.mailingAddress}<div class="contact-item contact-address"><small>Contribution mailing address</small><strong>{contact.mailingAddress}</strong></div>{/if}
                 {#each contactItems as item, index}
                   <a class="contact-item" class:wide={index === contactItems.length - 1 && contactItems.length % 2 === 1} href={item.href} target={item.external ? '_blank' : undefined} rel={item.external ? 'noreferrer' : undefined}><small>{item.label}</small><strong>{item.text}</strong><b><Icon name={item.icon} />{#if item.external}<span class="sr-only"> (opens in new tab)</span>{/if}</b></a>
                 {/each}
               </div>
+              {#if personProfile}<a class="contact-source" href={personProfile.sourceUrl} target="_blank" rel="noreferrer">Source: campaign website <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}
             </section>
           {/if}
         </div>
@@ -342,6 +359,16 @@
         <div><small>ELECTION YEARS</small><strong>{person.years.length}</strong></div>
         <div><small>LATEST CYCLE</small><strong>{person.years[0]}</strong></div>
       </section>
+      {#if personProfile}
+        <section class="record-section person-profile" aria-labelledby="person-profile-title">
+          <div class="record-heading"><p class="eyebrow">Campaign website information</p><h2 id="person-profile-title">About {person.name}</h2></div>
+          <p class="person-biography">{personProfile.biography}</p>
+          <h3>Published campaign priorities</h3>
+          <ul>{#each personProfile.priorities as priority}<li>{priority}</li>{/each}</ul>
+          <div class="office-resources" role="group" aria-label={`${person.name} campaign resources`}>{#each personProfile.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>
+          <p class="profile-source">Summarized from <a href={personProfile.sourceUrl} target="_blank" rel="noreferrer">his campaign website<span class="sr-only"> (opens in new tab)</span></a>, verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>.</p>
+        </section>
+      {/if}
       <section class="record-section">
         <div class="record-heading"><p class="eyebrow">Candidate history</p><h2>All filings</h2></div>
         <div class="filing-list">

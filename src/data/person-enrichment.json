@@ -1,0 +1,45 @@
+{
+  "ben-mcadams": {
+    "sourceUrl": "https://benmcadams.com/",
+    "lastVerified": "2026-10-08",
+    "biography": "Ben McAdams grew up in West Bountiful and has served in the Utah State Senate, as Salt Lake County mayor, and in the U.S. House of Representatives. His campaign website says he lives in Salt Lake City with his wife, Julie, and their four children.",
+    "priorities": [
+      "Housing, health care, and household affordability",
+      "Democracy and the rule of law",
+      "Environmental protection",
+      "Human rights and opportunity"
+    ],
+    "contact": {
+      "website": "https://benmcadams.com/",
+      "pressEmail": "press@benmcadams.com",
+      "address": "McAdams Campaign Office, c/o Utah Democratic Party, 825 N 300 W, C400, Salt Lake City, UT 84103",
+      "mailingAddress": "Friends of Ben McAdams, P.O. Box 522340, Salt Lake City, UT 84152",
+      "facebook": "https://www.facebook.com/benmcadamsutah",
+      "twitter": "https://x.com/BenMcAdams",
+      "instagram": "https://www.instagram.com/benmcadamsforcongress/",
+      "bluesky": "https://bsky.app/profile/benmcadams.bsky.social"
+    },
+    "resources": [
+      {
+        "label": "Campaign platform",
+        "description": "His published positions and priorities.",
+        "url": "https://benmcadams.com/platform/"
+      },
+      {
+        "label": "Campaign news",
+        "description": "Campaign announcements and press releases.",
+        "url": "https://benmcadams.com/news/"
+      },
+      {
+        "label": "Volunteer",
+        "description": "Campaign events and volunteer opportunities.",
+        "url": "https://www.mobilize.us/benmcadamsforcongressut01/"
+      },
+      {
+        "label": "Campaign donations",
+        "description": "The contribution page linked by his campaign.",
+        "url": "https://secure.actblue.com/donate/bm-website"
+      }
+    ]
+  }
+}

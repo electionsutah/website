@@ -2,7 +2,7 @@ import currentRows from '../data/2026-candidates.json';
 import historicalRows from '../data/historical-candidates.json';
 import candidateDocuments from '../data/candidate-documents.json';
 
-type Contact = {
+export type Contact = {
   address: string;
   phone: string;
   email: string;
@@ -10,6 +10,9 @@ type Contact = {
   facebook: string;
   instagram?: string;
   twitter: string;
+  bluesky?: string;
+  pressEmail?: string;
+  mailingAddress?: string;
 };
 
 export type Filing = {
