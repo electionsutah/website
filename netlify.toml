@@ -5,8 +5,5 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Client-side routing: serve the app shell for any path without a matching file.
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Every known route is prerendered into dist/, and unknown paths fall through to
+# dist/404.html with HTTP 404. Redirects for old Jekyll URLs live in public/_redirects.
