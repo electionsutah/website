@@ -100,7 +100,7 @@
     contact.phone && { label: 'Phone', text: contact.phone, href: `tel:${contact.phone}`, icon: 'call', external: false },
     contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'mail', external: false },
     contact.pressEmail && { label: 'Press email', text: contact.pressEmail, href: `mailto:${contact.pressEmail}`, icon: 'mail', external: false },
-    contact.website && { label: 'Website', text: 'Visit website', href: externalUrl(contact.website), icon: 'arrow_outward', external: true },
+    contact.website && { label: 'Website', text: externalUrl(contact.website), href: externalUrl(contact.website), icon: 'arrow_outward', external: true },
     contact.facebook && { label: 'Social', text: 'Facebook', href: externalUrl(contact.facebook), icon: 'arrow_outward', external: true },
     contact.instagram && { label: 'Social', text: 'Instagram', href: externalUrl(contact.instagram), icon: 'arrow_outward', external: true },
     contact.twitter && { label: 'Social', text: 'X / Twitter', href: externalUrl(contact.twitter), icon: 'arrow_outward', external: true },
