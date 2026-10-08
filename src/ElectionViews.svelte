@@ -4,8 +4,8 @@
   import IndexControls from './IndexControls.svelte';
   import EntityViews from './EntityViews.svelte';
   import SortHeader from './SortHeader.svelte';
-  import { elections, electionsByYear, type ElectionCycle } from './lib/entities';
-  import { formatCount } from './lib/format';
+  import { currentDatasetUpdated, elections, electionsByYear, type ElectionCycle } from './lib/entities';
+  import { formatCount, formatDate } from './lib/format';
   import { matchesQuery, queryTokens, searchText } from './lib/search';
   import { buildFacets, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
 
@@ -70,6 +70,7 @@
   }
 
   function filingCount(cycle: ElectionCycle & { matching: unknown[] }) {
+    if (!cycle.filings.length) return 'Not archived';
     const total = `${formatCount(cycle.filings.length)} filing${cycle.filings.length === 1 ? '' : 's'}`;
     return filtering ? `${formatCount(cycle.matching.length)} of ${total}` : total;
   }
@@ -114,17 +115,20 @@
         <h1>{election.year}</h1>
         <p class="detail-summary">{election.description}</p>
         <a class="source-link" href={election.source} target="_blank" rel="noreferrer">{election.sourceLabel} <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
+        {#if election.year === 2026}
+          <p class="archive-context">This filing archive includes withdrawn and defeated candidates as well as candidates advancing to the general election. Check the official source for the latest ballot information.<span>Dataset last updated <time datetime={currentDatasetUpdated}>{formatDate(currentDatasetUpdated)}</time>.</span></p>
+        {/if}
       </div>
     </header>
     <section class="detail-stats">
-      <div><small>FILINGS</small><strong>{formatCount(election.filings.length)}</strong></div>
-      <div><small>OFFICES</small><strong>{officeCount}</strong></div>
-      <div><small>AFFILIATIONS</small><strong>{partyCount}</strong></div>
+      <div><small>ARCHIVED FILINGS</small><strong class:unavailable={!election.filings.length}>{election.filings.length ? formatCount(election.filings.length) : 'Not archived'}</strong></div>
+      <div><small>OFFICES</small><strong>{election.filings.length ? officeCount : '—'}</strong></div>
+      <div><small>AFFILIATIONS</small><strong>{election.filings.length ? partyCount : '—'}</strong></div>
     </section>
     <section class="record-section">
       <div class="record-heading"><p class="eyebrow">Cycle records</p><h2>Candidates</h2></div>
       {#if election.filings.length}
-        {#key election.year}<EntityViews section="people" scope={election.filings} embedded stateId="election-people" {navigate} />{/key}
+        {#key election.year}<EntityViews section="people" scope={election.filings} embedded stateId="election-people" omitColumns={['years']} showStatus={election.year === 2026} {navigate} />{/key}
       {:else}
         <div class="empty-slate cycle-empty"><strong>No statewide candidate table published</strong><p>{election.description} Follow the official source above for the records Utah does make available for this cycle.</p></div>
       {/if}
@@ -132,7 +136,7 @@
   </article>
 {:else}
   <section class="entity-index election-index">
-    <header><div><p class="eyebrow">2017–2026 archive</p><h1>Election years</h1></div><p>Browse every cycle in the archive. Statewide records are included where Utah published a candidate table, workbook, pamphlet, or canvass; locally administered cycles are clearly identified.</p></header>
+    <header><div><p class="eyebrow">2017–2026 archive</p><h1>Election years</h1></div><p>Browse every cycle in the archive. Statewide records are included where Utah published a candidate table, workbook, pamphlet, or canvass. “Not archived” means this site has no candidate dataset for that year.</p></header>
     <IndexControls
       {facets}
       {selection}
@@ -141,6 +145,8 @@
       searchLabel="Search election years"
       resultLabel={`${matchedCycles.length} of ${elections.length} election years`}
       resultCount={matchedCycles.length}
+      resultSingular="election year"
+      resultPlural="election years"
       onSelection={updateSelection}
       onView={updateView}
       onQuery={updateQuery}

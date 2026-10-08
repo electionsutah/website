@@ -37,6 +37,9 @@
   export let embedded = false;
   /** Where an embedded index remembers its filters, layout, and sort, so each kind of host page keeps its own. */
   export let stateId = '';
+  /** Scoped indexes omit columns already described by their host page. */
+  export let omitColumns: string[] = [];
+  export let showStatus = false;
 
   let query = '';
   let limit = 36;
@@ -185,8 +188,8 @@
             wikidataUrl: profilesById[item.id]?.wikidataUrl ?? ''
           }));
   // List-view columns between the name and the year and filing counts; keys appear in the URL as ?sort=.
-  const listColumns = {
-    people: [{ key: 'office', label: 'Office' }, { key: 'party', label: 'Party' }],
+  $: listColumns = {
+    people: [{ key: 'office', label: 'Office' }, { key: 'party', label: 'Party' }, ...(showStatus ? [{ key: 'status', label: 'Status' }] : [])],
     offices: [{ key: 'type', label: 'Office type' }],
     parties: [{ key: 'affiliation', label: 'Affiliation' }, { key: 'offices', label: 'Offices' }],
     places: [{ key: 'type', label: 'Type' }, { key: 'county', label: 'County' }]
@@ -197,7 +200,7 @@
     ...listColumns[section],
     { key: 'years', label: 'Election years' },
     { key: 'filings', label: 'Filings' }
-  ];
+  ].filter((column) => !omitColumns.includes(column.key));
 
   // Restore filters, layout, and sort from the URL whenever the index is (re)entered.
   $: if (id) loadedIndex = '';
@@ -219,7 +222,8 @@
       // People are described by their most recent filing; when filtering, by the most recent match.
       const columns = section === 'people' && filtering && matching.length ? [matching[0].officeName, matching[0].partyName] : card.columns;
       const years = filtering ? [...new Set(matching.map((filing) => filing.year))].sort((a, b) => b - a) : card.years;
-      return { ...card, matching, columns, years };
+      const statuses = [...new Set(matching.map((filing) => filing.sourceStatus))];
+      return { ...card, matching, columns, years, statuses };
     })
     .filter((card) => !filtering || card.matching.length);
   $: facets = buildFacets(searchedCards, selection);
@@ -230,11 +234,19 @@
     if (key === 'name') return card.title;
     if (key === 'years') return card.years[0] ?? 0;
     if (key === 'filings') return card.matching.length;
+    if (key === 'status') return card.statuses.join(' · ');
     return card.columns[listColumns[section].findIndex((column) => column.key === key)] ?? '';
   }
 
   function filingCount(card: { filings: unknown[]; matching: unknown[] }) {
     return filtering ? `${card.matching.length} of ${card.filings.length} filing${card.filings.length === 1 ? '' : 's'}` : `${card.filings.length} filing${card.filings.length === 1 ? '' : 's'}`;
+  }
+
+  function cellValue(card: (typeof matchedCards)[number], key: string) {
+    if (key === 'years') return card.years.join(', ');
+    if (key === 'filings') return filingCount(card);
+    if (key === 'status') return card.statuses.join(' · ');
+    return card.columns[listColumns[section].findIndex((column) => column.key === key)] ?? '';
   }
 
   /** Reveal the next page of records and move focus to the first new one, which renders above the button. */
@@ -309,7 +321,7 @@
       <header class="detail-hero">
         <div class="detail-avatar" aria-hidden="true">{person.initials}</div>
         <div>
-          <p class="eyebrow">Multi-year person record</p>
+          <p class="eyebrow">Person record</p>
           <h1>{person.name}</h1>
           <p class="detail-summary">{person.filings.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${person.filings.length} separate filings across ${person.years.join(', ')}.`}</p>
           {#if contact && contactFiling}
@@ -331,7 +343,7 @@
         <div><small>LATEST CYCLE</small><strong>{person.years[0]}</strong></div>
       </section>
       <section class="record-section">
-        <div class="record-heading"><p class="eyebrow">Ballot history</p><h2>All filings</h2></div>
+        <div class="record-heading"><p class="eyebrow">Candidate history</p><h2>All filings</h2></div>
         <div class="filing-list">
           {#each person.filings as filing}
             <div class="filing-card">
@@ -379,13 +391,13 @@
         <div><small>PEOPLE</small><strong>{new Set(candidacies(party.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
         <div><small>ELECTION YEARS</small><strong>{party.years.length}</strong></div>
       </section>
-      <section class="record-section"><div class="record-heading"><p class="eyebrow">Candidate history</p><h2>People</h2></div>{#if party.filings.length}{#key party.id}<EntityViews section="people" scope={party.filings} embedded stateId="party-people" {navigate} />{/key}{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
+      <section class="record-section"><div class="record-heading"><p class="eyebrow">Candidate history</p><h2>People</h2></div>{#if party.filings.length}{#key party.id}<EntityViews section="people" scope={party.filings} embedded stateId="party-people" omitColumns={['party']} {navigate} />{/key}{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
     </article>
   {:else if place}
     <article class="entity-detail">
       <Breadcrumbs parent={{ label: 'Places', href: '/places/' }} current={place.name} {navigate} />
       <header class="detail-hero compact-hero place-hero">
-        <div class="place-hero-detail"><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p></div>
+        <div class="place-hero-detail"><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p></div>
         {#if placeProfile}
           <section class="place-profile" aria-labelledby="place-profile-title">
             <div class="place-summary">
@@ -396,9 +408,9 @@
             </div>
             <div class="place-facts">
               <article class="population-card">
-                <small>Current population</small>
+                <small>{placeProfile.populationAsOf === '2020-04-01' ? '2020 census population' : `${placeProfile.populationAsOf.slice(0, 4)} population`}</small>
                 <strong>{placeProfile.population.toLocaleString('en-US')}</strong>
-                <p>Latest available figure · {placeProfile.populationAsOf.slice(0, 4)}</p>
+                <p>Reported figure · {placeProfile.populationAsOf.slice(0, 4)}</p>
                 <a href={placeProfile.populationSource === 'Wikidata' ? placeProfile.wikidataUrl : placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">{placeProfile.populationSource} <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
               </article>
               <article class="inception-card">
@@ -423,7 +435,7 @@
         <div><small>ELECTION YEARS</small><strong>{place.years.length}</strong></div>
       </section>
       <section class="record-section split-detail">
-        <div class="record-heading"><p class="eyebrow">Representation</p><h2>{place.type === 'County' ? 'Cities & offices' : 'Offices'}</h2>{#if place.children.length}{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
+        <div class="record-heading"><p class="eyebrow">Archived locations</p>{#if place.children.length}<h2>Cities in the archive</h2>{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}<h2 class:office-group-heading={place.children.length > 0}>Offices in archived filings</h2>{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
         <div>
           <div class="filed-heading"><p class="eyebrow">Filed candidates</p><label><Icon name="search" /><input bind:value={candidateQuery} placeholder="Search candidates…" aria-label={`Search ${place.name} candidates`} /></label></div>
           <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
@@ -443,12 +455,15 @@
       {view}
       {query}
       searchLabel={`Search ${labels[section].plural.toLowerCase()}`}
-      resultLabel={`${formatCount(matchedCards.length)} of ${formatCount(cards.length)} records`}
+      resultLabel={`${formatCount(matchedCards.length)} of ${formatCount(cards.length)} ${labels[section].plural.toLowerCase()}`}
       resultCount={matchedCards.length}
+      resultSingular={labels[section].singular.toLowerCase()}
+      resultPlural={labels[section].plural.toLowerCase()}
       onSelection={updateSelection}
       onView={updateView}
       onQuery={updateQuery}
     />
+    {#if section === 'people'}<p class="index-note">People are counted once in this list, including running mates. A filing is one archived candidacy or ticket record; one person can appear in several filings.</p>{/if}
     {#if view === 'list'}
       <div class="entity-table-wrap" bind:this={resultsList}>
         <table class="entity-table">
@@ -458,9 +473,7 @@
             {#each visibleCards as card (card.id)}
               <tr>
                 <th scope="row"><a href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>{#if card.logo}<span class="table-logo" class:inverse-logo={card.id === 'utah-republican-party'} style={card.accent ? `--card-accent:${card.accent}` : ''}><img src={card.logo} alt="" /></span>{:else}<span class="mini-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}<span>{card.title}</span></a></th>
-                {#each card.columns as column, index}<td data-label={listColumns[section][index].label}>{column}</td>{/each}
-                <td data-label="Election years">{card.years.join(', ')}</td>
-                <td data-label="Filings" class="numeric">{filingCount(card)}</td>
+                {#each tableColumns.slice(1) as column (column.key)}<td data-label={column.label} class:numeric={column.key === 'filings'}>{cellValue(card, column.key)}</td>{/each}
               </tr>
             {:else}
               <tr><td class="no-records" colspan={tableColumns.length}>No matching {labels[section].plural.toLowerCase()}.</td></tr>
@@ -493,7 +506,7 @@
             {/if}
             <a class="card-record-link" href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>
               {#if card.logo}<span class="card-logo" class:inverse-logo={card.id === 'utah-republican-party'}><img src={card.logo} alt={`${card.title} logo`} /></span>{:else}<span class="card-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}
-              <small>{card.eyebrow}</small><h2>{card.title}</h2><p>{card.meta}</p><div class="card-footer"><span>{filtering ? filingCount(card) : card.count}</span><b>View record <Icon name="arrow_forward" /></b></div>
+              {#if !omitColumns.includes('party')}<small>{section === 'people' ? card.columns[1] : card.eyebrow}</small>{/if}<h2>{card.title}</h2><p>{section === 'people' ? card.columns[0] : card.meta}</p>{#if showStatus}<p class="candidate-status">Status: {card.statuses.join(' · ')}</p>{/if}<div class="card-footer"><span>{section === 'people' || filtering ? filingCount(card) : card.count}{#if !omitColumns.includes('years') && section === 'people'} · {card.years.join(', ')}{/if}</span><b>View record <Icon name="arrow_forward" /></b></div>
             </a>
           </article>
         {:else}

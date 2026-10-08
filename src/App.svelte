@@ -7,8 +7,9 @@
   import EntityViews from './EntityViews.svelte';
   import DocsViews from './DocsViews.svelte';
   import SearchPalette from './SearchPalette.svelte';
-  import { offices as officeEntities, parties as partyEntities, people as peopleEntities, totals } from './lib/entities';
-  import { formatCount } from './lib/format';
+  import { currentDatasetUpdated, offices as officeEntities, parties as partyEntities, people as peopleEntities, totals } from './lib/entities';
+  import { formatCount, formatDate } from './lib/format';
+  import { browseUrl, matchesQuery, queryTokens, searchText } from './lib/search';
 
   let menuOpen = false;
   let menuButton: HTMLButtonElement;
@@ -51,7 +52,8 @@
     id: person.id,
     href: `/people/${person.id}/`,
     name: person.name,
-    meta: `${person.filings[0].officeName} · ${person.filings[0].partyName}`,
+    meta: `${person.filings[0].year} · ${person.filings[0].officeName} · ${person.filings[0].partyName}`,
+    text: searchText.people(person),
     status: person.filings[0].sourceStatus
   }));
   const homeOffices = officeEntities.map((office) => ({
@@ -59,6 +61,7 @@
     href: `/offices/${office.id}/`,
     name: office.name,
     meta: office.sections.join(' · '),
+    text: searchText.offices(office),
     status: `${office.filings.length} filings`
   }));
 
@@ -79,7 +82,7 @@
   $: isKnownRoute = isHome || ['people', 'offices', 'parties', 'places', 'elections', 'docs'].includes(routeSection);
 
   $: source = directory === 'People' ? homePeople : homeOffices;
-  $: filtered = source.filter((item) => `${item.name} ${item.meta} ${item.status}`.toLowerCase().includes(query.toLowerCase()));
+  $: filtered = source.filter((item) => matchesQuery(item.text, queryTokens(query)));
   $: visible = filtered.slice(0, 12);
 
   function navigate(href: string) {
@@ -219,7 +222,7 @@
   <section class="data section" id="data">
     <div class="section-heading compact">
       <div><p class="eyebrow light">Open records</p><h2>Download the<br /><em>source data.</em></h2></div>
-      <p>Machine-readable 2026 records normalized from Utah’s official filing workbook. Free to copy, modify, and distribute.</p>
+      <p>Machine-readable 2026 records normalized from Utah’s official filing workbook. Dataset last updated <time datetime={currentDatasetUpdated}>{formatDate(currentDatasetUpdated)}</time>. Free to copy, modify, and distribute.</p>
     </div>
     <div class="data-grid">
       <article><span>01</span><small>2026</small><h3>Current<br />Listings</h3><p>{formatCount(totals.currentFilings)} federal, legislative, school-board, and judicial-retention records in the Elections Utah schema.</p><div><a href={candidateYamlUrl} download="elections-utah-2026-candidates.yml">YAML <Icon name="download" /></a></div></article>
@@ -245,7 +248,8 @@
           <a class="result" href={item.href} onclick={(event) => open(event, item.href)}><span class="initial" aria-hidden="true">{item.name.charAt(0)}</span><div><strong>{item.name}</strong><small>{item.meta}</small></div><b>{item.status}</b></a>
         {:else}<p class="empty">No matching records found.</p>{/each}
       </div>
-      <div class="all-records"><span role="status">Showing {visible.length} of {formatCount(filtered.length)} matching {directory.toLowerCase()}</span><a href="https://vote.utah.gov/2026-candidate-filings/" target="_blank" rel="noreferrer">Verify at Vote.Utah.gov <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a></div>
+      <div class="all-records"><span role="status">Showing {visible.length} of {formatCount(filtered.length)} matching {directory.toLowerCase()}</span><a href={browseUrl(`/${directory.toLowerCase()}/`, query)} onclick={(event) => open(event, browseUrl(`/${directory.toLowerCase()}/`, query))}>Browse all {directory.toLowerCase()} <Icon name="arrow_forward" /></a></div>
+      <a class="verify-records" href="https://vote.utah.gov/2026-candidate-filings/" target="_blank" rel="noreferrer">Official 2026 candidate filings <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
     </div>
   </section>
 

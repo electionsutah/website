@@ -10,6 +10,8 @@
   export let searchLabel: string;
   export let resultLabel: string;
   export let resultCount: number;
+  export let resultSingular = 'record';
+  export let resultPlural = 'records';
   export let onSelection: (selection: Selection) => void;
   export let onView: (view: 'grid' | 'list') => void;
   export let onQuery: (query: string) => void = () => {};
@@ -42,11 +44,11 @@
     <div class="filter-panel" id={panelId}>
       {#each facets as facet (facet.key)}
         <fieldset class="facet">
-          <legend>{facet.label}<small>{facet.schemaField}</small></legend>
+          <legend>{facet.label}</legend>
           <div class="facet-values">
             {#each expanded[facet.key] ? facet.values : facet.values.slice(0, collapsedSize) as option (option.value)}
               <button class="facet-chip" aria-pressed={option.selected} disabled={!option.count && !option.selected} onclick={() => onSelection(toggle(selection, facet.key, option.value))}>
-                {option.value}<span><span class="sr-only">, </span>{formatCount(option.count)}<span class="sr-only"> {option.count === 1 ? 'record' : 'records'}</span></span>
+                {option.value}<span><span class="sr-only">, </span>{formatCount(option.count)}<span class="sr-only"> {option.count === 1 ? resultSingular : resultPlural}</span></span>
               </button>
             {/each}
             {#if facet.values.length > collapsedSize}

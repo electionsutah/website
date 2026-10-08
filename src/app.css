@@ -170,3 +170,27 @@ main:focus,main h1:focus{outline:0}
   .filter-done{grid-column:1/-1;position:sticky;bottom:0;display:block;width:calc(100% + 36px);margin:0 -18px -18px;padding:15px;border:0;background:#006eb7;color:#fff;font-size:14px;font-weight:700}
 }
 .filter-panel .facet-chip,.filter-panel .facet-more{scroll-margin-bottom:72px}
+
+/* Archive context uses the existing text and border colors with a smaller type scale. */
+.detail-hero .archive-context{max-width:720px;margin:20px 0 0;color:#5f5e59;font:400 14px/1.6 'Noto Sans',sans-serif}
+.archive-context span{display:block;margin-top:8px}
+.index-note{max-width:800px;margin:0 0 24px;color:#5f5e59;font:400 13px/1.6 'Noto Sans',sans-serif}
+.detail-stats strong.unavailable{font-size:22px}
+.record-heading .office-group-heading{margin-top:36px}
+.card-record-link>.candidate-status{margin:12px 0;color:#31302d;font:400 12px/1.5 'Noto Sans',sans-serif;white-space:normal;overflow:visible}
+.verify-records{display:inline-block;margin-top:14px;color:#006eb7;font-size:11px;font-weight:700}
+.all-records{flex-wrap:wrap;align-items:center}
+.finder input,.index-tools input{min-width:0}
+
+/* The schema scrolls within its own column, including at 320px and when zoomed. */
+.docs-article{min-width:0}
+.docs-article pre{width:100%;max-width:100%}
+.docs-article pre:focus-visible{outline:3px solid #006eb7;outline-offset:3px}
+@media(max-width:700px){
+  .docs-article pre{margin:0;padding:18px}
+  .index-tools label{flex:none;min-width:0;width:100%;max-width:none}
+  .index-actions{width:100%}
+  .filed-heading{flex-direction:column;align-items:stretch}
+  .filed-heading label{flex:none;min-width:0;width:100%}
+  .entity-table td{overflow-wrap:anywhere}
+}

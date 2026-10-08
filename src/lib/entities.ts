@@ -297,6 +297,9 @@ export const filings: Filing[] = [
   })
 ];
 
+export const currentDatasetUpdated = filings.filter((filing) => filing.year === 2026)
+  .map((filing) => filing.lastUpdated).sort().at(-1) ?? '';
+
 function naturalSort<T>(items: T[], getter: (item: T) => string): T[] {
   const collator = new Intl.Collator(undefined, { numeric: true, ignorePunctuation: true });
   return items.sort((a, b) => collator.compare(getter(a), getter(b)));
@@ -516,7 +519,7 @@ export const partiesById = new Map(parties.map((party) => [party.id, party]));
 export const placesById = new Map(places.map((place) => [place.id, place]));
 
 const cycleDetails: Omit<ElectionCycle, 'filings'>[] = [
-  { year: 2026, title: '2026 regular election', description: 'Current declarations for federal, state, legislative, school-board, and judicial-retention offices.', source: 'https://vote.utah.gov/2026-candidate-filings/', sourceLabel: 'Official 2026 candidate filings', availability: 'statewide' },
+  { year: 2026, title: '2026 regular election', description: 'Archived declarations for federal, state, legislative, school-board, and judicial-retention offices.', source: 'https://vote.utah.gov/2026-candidate-filings/', sourceLabel: 'Official 2026 candidate filings', availability: 'statewide' },
   { year: 2025, title: '2025 municipal elections', description: 'Municipal candidates file with local clerks. Utah publishes county canvass links, but no comparable statewide candidate-filing table.', source: 'https://vote.utah.gov/county-canvass-certifications-and-results/', sourceLabel: 'Official county canvass directory', availability: 'local' },
   { year: 2024, title: '2024 regular election', description: 'State candidate filings covering federal, constitutional, legislative, school-board, and judicial offices.', source: 'https://vote.utah.gov/2024-candidate-filings/', sourceLabel: 'Official 2024 candidate filings', availability: 'statewide' },
   { year: 2023, title: '2023 congressional special election', description: 'Candidates who filed for Utah’s special election in U.S. House District 2.', source: 'https://vote.utah.gov/2023-candidate-filings/', sourceLabel: 'Official 2023 candidate filings', availability: 'special' },

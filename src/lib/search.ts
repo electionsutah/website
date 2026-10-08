@@ -6,7 +6,7 @@ import type { ElectionCycle, Office, Party, Person, Place } from './entities';
  */
 export const searchText = {
   elections: (election: ElectionCycle) => `${election.year} ${election.title} ${election.description}`,
-  people: (person: Person) => `${person.name} ${person.filings.map((filing) => `${filing.officeName} ${filing.partyName}`).join(' ')}`,
+  people: (person: Person) => `${person.name} ${person.filings.map((filing) => `${filing.year} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus} ${filing.city} ${filing.county}`).join(' ')}`,
   offices: (office: Office) => `${office.name} ${office.sections.join(' ')} ${office.filings.map((filing) => `${filing.name} ${filing.year}`).join(' ')}`,
   parties: (party: Party) => `${party.name} ${party.shortName} ${party.filings.map((filing) => `${filing.name} ${filing.year}`).join(' ')}`,
   places: (place: Place) => `${place.name} ${place.type} ${place.county} ${place.offices.map((office) => office.name).join(' ')} ${place.filings.map((filing) => filing.name).join(' ')}`

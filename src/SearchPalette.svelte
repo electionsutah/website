@@ -21,7 +21,7 @@
         id: String(election.year),
         title: String(election.year),
         text: searchText.elections(election),
-        displayMeta: `${formatCount(election.filings.length)} filings · ${election.title}`,
+        displayMeta: `${election.filings.length ? `${formatCount(election.filings.length)} filings` : 'Not archived'} · ${election.title}`,
         href: `/elections/${election.year}/`,
         initials: 'YR'
       }))

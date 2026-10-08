@@ -108,7 +108,11 @@
     <header class="docs-hero"><div><p class="eyebrow">Reference</p><h1>Data schema</h1><p>The original Elections Utah person record structure, including identity fields, election-year filings, contact details, documents, endorsements, and source metadata.</p></div></header>
     <section class="docs-content schema-layout">
       <aside class="docs-aside"><p class="eyebrow">On this page</p><a href="#person">Person</a></aside>
-      <div class="docs-article"><h2 id="person">Person</h2><pre><code>{schema}</code></pre></div>
+      <div class="docs-article">
+        <h2 id="person">Person</h2>
+        <!-- svelte-ignore a11y_no_noninteractive_tabindex (Keyboard users need to reach and scroll the code block.) -->
+        <pre tabindex="0" role="region" aria-label="Person data schema"><code>{schema}</code></pre>
+      </div>
     </section>
   </article>
 {:else if id === 'glossary'}
