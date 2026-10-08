@@ -335,8 +335,9 @@
 /people/tommy-williams-archie-a-williams-iii  /people/tommy-williams/                            301
 /people/tyler-scott-batty-gregory-c-johnson   /people/tyler-scott-batty/                         301
 
-# The 2024 "President" office merged into the presidential ticket office
+# 2024 "President" and "Governor" offices merged into their ticket offices
 /offices/president                            /offices/u-s-president-vice-president/             301
+/offices/governor                             /offices/governor-lieutenant-governor/             301
 
 # Legacy section names
 /office/*                                     /offices/:splat                                    301

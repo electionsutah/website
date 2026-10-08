@@ -100,7 +100,7 @@ def display_name(value: str) -> str:
 def section_for(office: str) -> str:
     if office.startswith("U.S."):
         return "Federal Offices"
-    if office in {"Governor", "Attorney General", "State Auditor", "State Treasurer"}:
+    if office in {"Governor & Lieutenant Governor", "Attorney General", "State Auditor", "State Treasurer"}:
         return "State Offices"
     if office.startswith("State Senate"):
         return "State Senate"
@@ -127,11 +127,14 @@ def clean_office(value: str) -> str:
     # 2024 lists the presidential ticket as plain "President"; keep one office across cycles.
     if value == "President":
         value = "U.S. President & Vice President"
+    # Likewise 2024 lists the governor's ticket as plain "Governor".
+    if value == "Governor":
+        value = "Governor & Lieutenant Governor"
     return value
 
 
 # Offices filed as a ticket: the ballot name covers both the candidate and the running mate.
-TICKET_OFFICES = {"U.S. President & Vice President", "Governor & Lieutenant Governor", "Governor"}
+TICKET_OFFICES = {"U.S. President & Vice President", "Governor & Lieutenant Governor"}
 
 
 def record(
