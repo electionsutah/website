@@ -35,6 +35,8 @@
   /** Limit the index to people on these filings, rendered inside another record's page (a party's people). */
   export let scope: Filing[] | null = null;
   export let embedded = false;
+  /** Where an embedded index remembers its filters, layout, and sort, so each kind of host page keeps its own. */
+  export let stateId = '';
 
   let query = '';
   let limit = 36;
@@ -98,15 +100,18 @@
       });
   }
 
-  $: stateKey = embedded ? `${section}-in-record` : section;
-  // Clear the candidate search when moving to another place.
-  let placeQuery = '';
-  let placeQueryFor = '';
-  $: if (place && place.id !== placeQueryFor) {
-    placeQueryFor = place.id;
-    placeQuery = '';
+  $: stateKey = stateId || section;
+  // Office and place pages search their candidate list; the search clears when moving to another record.
+  let candidateQuery = '';
+  let candidateQueryFor = '';
+  $: candidateRecord = office ? `offices/${office.id}` : place ? `places/${place.id}` : '';
+  $: if (candidateRecord !== candidateQueryFor) {
+    candidateQueryFor = candidateRecord;
+    candidateQuery = '';
   }
-  $: placeCandidacies = place ? candidacies(place.filings).filter(({ filing, name }) => matchesQuery(`${name} ${filing.year} ${filing.officeName} ${filing.partyName}`, queryTokens(placeQuery))) : [];
+  $: shownCandidacies = candidacies(office?.filings ?? place?.filings ?? [])
+    // Match on both ticket names so a ticket's rows stay together.
+    .filter(({ filing }) => matchesQuery(`${filing.name} ${filing.runningMate} ${filing.year} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus}`, queryTokens(candidateQuery)));
 
   $: cards = section === 'people'
     ? (scope ? scopedPeople(scope) : people).map((item) => ({
@@ -355,11 +360,12 @@
       </section>
       <section class="record-section split-detail">
         <div class="record-heading"><p class="eyebrow">Candidate locations</p><h2>Places</h2>{#if office.placeIds.length}{#each office.placeIds as placeId}<a class="place-callout" href={hrefFor('places', placeId)} onclick={(event) => open(event, hrefFor('places', placeId))}>{placesById.get(placeId)?.name}<span>Browse candidates <Icon name="arrow_forward" /></span></a>{/each}{:else}<p class="missing-place">The source data does not publish city or county values for this office’s candidates.</p>{/if}</div>
-        <div><p class="eyebrow">Candidate field</p><div class="candidate-list">
-          {#each candidacies(office.filings) as { filing, personId, name, runningMate }}
+        <div><div class="filed-heading"><p class="eyebrow">Candidate field</p><label><Icon name="search" /><input bind:value={candidateQuery} placeholder="Search candidates…" aria-label={`Search ${office.name} candidates`} /></label></div><div class="candidate-list">
+          {#each shownCandidacies as { filing, personId, name, runningMate }}
             <a class="candidate-row" class:running-mate-row={runningMate} href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}>
               <span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.partyName}{#if runningMate}{' · '}Running mate{:else if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
             </a>
+          {:else}<p class="no-records">No matching candidates.</p>
           {/each}
         </div></div>
       </section>
@@ -373,7 +379,7 @@
         <div><small>PEOPLE</small><strong>{new Set(candidacies(party.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
         <div><small>ELECTION YEARS</small><strong>{party.years.length}</strong></div>
       </section>
-      <section class="record-section"><div class="record-heading"><p class="eyebrow">Candidate history</p><h2>People</h2></div>{#if party.filings.length}{#key party.id}<EntityViews section="people" scope={party.filings} embedded {navigate} />{/key}{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
+      <section class="record-section"><div class="record-heading"><p class="eyebrow">Candidate history</p><h2>People</h2></div>{#if party.filings.length}{#key party.id}<EntityViews section="people" scope={party.filings} embedded stateId="party-people" {navigate} />{/key}{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
     </article>
   {:else if place}
     <article class="entity-detail">
@@ -419,8 +425,8 @@
       <section class="record-section split-detail">
         <div class="record-heading"><p class="eyebrow">Representation</p><h2>{place.type === 'County' ? 'Cities & offices' : 'Offices'}</h2>{#if place.children.length}{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
         <div>
-          <div class="filed-heading"><p class="eyebrow">Filed candidates</p><label><Icon name="search" /><input bind:value={placeQuery} placeholder="Search candidates…" aria-label={`Search ${place.name} candidates`} /></label></div>
-          <div class="candidate-list">{#each placeCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
+          <div class="filed-heading"><p class="eyebrow">Filed candidates</p><label><Icon name="search" /><input bind:value={candidateQuery} placeholder="Search candidates…" aria-label={`Search ${place.name} candidates`} /></label></div>
+          <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
         </div>
       </section>
     </article>

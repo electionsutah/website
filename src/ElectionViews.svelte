@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { tick } from 'svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
   import Icon from './Icon.svelte';
   import IndexControls from './IndexControls.svelte';
+  import EntityViews from './EntityViews.svelte';
   import SortHeader from './SortHeader.svelte';
-  import { candidacies, elections, electionsByYear, peopleById, statusLabel, type ElectionCycle } from './lib/entities';
+  import { elections, electionsByYear, type ElectionCycle } from './lib/entities';
   import { formatCount } from './lib/format';
   import { matchesQuery, queryTokens, searchText } from './lib/search';
   import { buildFacets, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
@@ -12,8 +12,6 @@
   export let id = '';
   export let navigate: (href: string) => void;
 
-  let query = '';
-  let limit = 80;
   let indexQuery = '';
   let selection: Selection = {};
   let view: 'grid' | 'list' = 'list';
@@ -27,23 +25,12 @@
     { key: 'filings', label: 'Filings' }
   ];
   let indexLoaded = false;
-  let candidateList: HTMLElement;
-
-  /** Reveal more candidates and move focus to the first new row, which renders above the button. */
-  async function showMore() {
-    const first = limit;
-    limit += 80;
-    await tick();
-    candidateList?.querySelectorAll<HTMLElement>('.candidate-row')[first]?.focus();
-  }
 
   $: tableCaption = `Election years${sort ? `, sorted by ${tableColumns.find((column) => column.key === sort?.key)?.label ?? sort.key} ${sort.direction === 'asc' ? 'ascending' : 'descending'}` : ''}`;
 
   $: numericYear = /^\d{4}$/.test(id) ? Number(id) : 0;
   $: election = numericYear ? electionsByYear.get(numericYear) : undefined;
   $: found = !id || Boolean(election);
-  $: matching = election ? candidacies(election.filings).filter(({ filing, name }) => `${name} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus}`.toLowerCase().includes(query.toLowerCase())) : [];
-  $: visible = matching.slice(0, limit);
   $: officeCount = election ? new Set(election.filings.map((filing) => filing.officeId)).size : 0;
   $: partyCount = election ? new Set(election.filings.map((filing) => filing.partyId)).size : 0;
 
@@ -137,19 +124,7 @@
     <section class="record-section">
       <div class="record-heading"><p class="eyebrow">Cycle records</p><h2>Candidates</h2></div>
       {#if election.filings.length}
-        <div class="election-tools"><label><span><Icon name="search" /></span><input bind:value={query} placeholder={`Search ${election.year} candidates…`} aria-label={`Search ${election.year} candidates`} /></label><small role="status">{formatCount(matching.length)} matching records</small></div>
-        <div class="candidate-list election-candidate-list" bind:this={candidateList}>
-          {#each visible as { filing, personId, name, runningMate }}
-            <a class="candidate-row" class:running-mate-row={runningMate} href={`/people/${personId}/`} onclick={(event) => open(event, `/people/${personId}/`)}>
-              <span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span>
-              <span><strong>{name}</strong><small>{filing.officeName} · {filing.partyName}{#if runningMate}{' · '}Running mate{/if}</small></span>
-              <b>{filing.sourceStatus || statusLabel(filing.status)}</b>
-            </a>
-          {:else}
-            <div class="empty-slate"><strong>No matching candidates</strong><p>Try a different name, office, party, or status.</p></div>
-          {/each}
-        </div>
-        {#if visible.length < matching.length}<button class="load-more" onclick={showMore}>Show more <span>{formatCount(matching.length - visible.length)} remaining</span></button>{/if}
+        {#key election.year}<EntityViews section="people" scope={election.filings} embedded stateId="election-people" {navigate} />{/key}
       {:else}
         <div class="empty-slate cycle-empty"><strong>No statewide candidate table published</strong><p>{election.description} Follow the official source above for the records Utah does make available for this cycle.</p></div>
       {/if}
