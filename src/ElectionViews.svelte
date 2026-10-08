@@ -4,7 +4,7 @@
   import Icon from './Icon.svelte';
   import IndexControls from './IndexControls.svelte';
   import SortHeader from './SortHeader.svelte';
-  import { elections, electionsByYear, peopleById, statusLabel, type ElectionCycle } from './lib/entities';
+  import { candidacies, elections, electionsByYear, peopleById, statusLabel, type ElectionCycle } from './lib/entities';
   import { formatCount } from './lib/format';
   import { matchesQuery, queryTokens, searchText } from './lib/search';
   import { buildFacets, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
@@ -42,7 +42,7 @@
   $: numericYear = /^\d{4}$/.test(id) ? Number(id) : 0;
   $: election = numericYear ? electionsByYear.get(numericYear) : undefined;
   $: found = !id || Boolean(election);
-  $: matching = election?.filings.filter((filing) => `${filing.name} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus}`.toLowerCase().includes(query.toLowerCase())) ?? [];
+  $: matching = election ? candidacies(election.filings).filter(({ filing, name }) => `${name} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus}`.toLowerCase().includes(query.toLowerCase())) : [];
   $: visible = matching.slice(0, limit);
   $: officeCount = election ? new Set(election.filings.map((filing) => filing.officeId)).size : 0;
   $: partyCount = election ? new Set(election.filings.map((filing) => filing.partyId)).size : 0;
@@ -139,10 +139,10 @@
       {#if election.filings.length}
         <div class="election-tools"><label><span><Icon name="search" /></span><input bind:value={query} placeholder={`Search ${election.year} candidates…`} aria-label={`Search ${election.year} candidates`} /></label><small role="status">{formatCount(matching.length)} matching records</small></div>
         <div class="candidate-list election-candidate-list" bind:this={candidateList}>
-          {#each visible as filing}
-            <a class="candidate-row" href={`/people/${filing.personId}/`} onclick={(event) => open(event, `/people/${filing.personId}/`)}>
-              <span class="mini-avatar" aria-hidden="true">{peopleById.get(filing.personId)?.initials}</span>
-              <span><strong>{filing.name}</strong><small>{filing.officeName} · {filing.partyName}</small></span>
+          {#each visible as { filing, personId, name, runningMate }}
+            <a class="candidate-row" class:running-mate-row={runningMate} href={`/people/${personId}/`} onclick={(event) => open(event, `/people/${personId}/`)}>
+              <span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span>
+              <span><strong>{name}</strong><small>{filing.officeName} · {filing.partyName}{#if runningMate}{' · '}Running mate{/if}</small></span>
               <b>{filing.sourceStatus || statusLabel(filing.status)}</b>
             </a>
           {:else}

@@ -7,6 +7,7 @@
   import placeProfiles from './data/place-enrichment.json';
   import {
     activeStatuses,
+    candidacies,
     offices,
     officesById,
     parties,
@@ -322,15 +323,15 @@
       <header class="detail-hero compact-hero"><div><p class="eyebrow">{office.sections.join(' · ')}</p><h1>{office.name}</h1><p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div></header>
       <section class="detail-stats">
         <div><small>TOTAL FILINGS</small><strong>{formatCount(office.filings.length)}</strong></div>
-        <div><small>PEOPLE</small><strong>{new Set(office.filings.flatMap((filing) => [filing.personId, filing.runningMateId].filter(Boolean))).size}</strong></div>
+        <div><small>PEOPLE</small><strong>{new Set(candidacies(office.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
         <div><small>ELECTION YEARS</small><strong>{office.years.length}</strong></div>
       </section>
       <section class="record-section split-detail">
         <div class="record-heading"><p class="eyebrow">Candidate locations</p><h2>Places</h2>{#if office.placeIds.length}{#each office.placeIds as placeId}<a class="place-callout" href={hrefFor('places', placeId)} onclick={(event) => open(event, hrefFor('places', placeId))}>{placesById.get(placeId)?.name}<span>Browse candidates <Icon name="arrow_forward" /></span></a>{/each}{:else}<p class="missing-place">The source data does not publish city or county values for this office’s candidates.</p>{/if}</div>
         <div><p class="eyebrow">Candidate field</p><div class="candidate-list">
-          {#each office.filings as filing}
-            <a class="candidate-row" href={hrefFor('people', filing.personId)} onclick={(event) => open(event, hrefFor('people', filing.personId))}>
-              <span class="mini-avatar" aria-hidden="true">{peopleById.get(filing.personId)?.initials}</span><span><strong>{filing.name}</strong><small>{filing.year} · {filing.partyName}{#if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
+          {#each candidacies(office.filings) as { filing, personId, name, runningMate }}
+            <a class="candidate-row" class:running-mate-row={runningMate} href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}>
+              <span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.partyName}{#if runningMate}{' · '}Running mate{:else if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
             </a>
           {/each}
         </div></div>
@@ -342,12 +343,12 @@
       <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} logo`} /></div>{:else}<div class="party-mark" aria-hidden="true">{party.shortName.charAt(0)}</div>{/if}<div><p class="eyebrow">{party.recognized ? 'Recognized Utah political party' : party.historical ? 'Historical Utah political party' : 'Election affiliation'}</p><h1>{party.name}</h1><p>{party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'}</p>{#if party.website}<a class="source-link" href={party.website} target="_blank" rel="noreferrer">Official party information <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}</div></header>
       <section class="detail-stats">
         <div><small>TOTAL FILINGS</small><strong>{formatCount(party.filings.length)}</strong></div>
-        <div><small>PEOPLE</small><strong>{new Set(party.filings.map((filing) => filing.personId)).size}</strong></div>
+        <div><small>PEOPLE</small><strong>{new Set(candidacies(party.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
         <div><small>ELECTION YEARS</small><strong>{party.years.length}</strong></div>
       </section>
       <section class="record-section"><div class="record-heading"><p class="eyebrow">Candidate history</p><h2>People</h2></div>{#if party.filings.length}<div class="candidate-grid">
-          {#each party.filings as filing}
-            <a class="person-tile" href={hrefFor('people', filing.personId)} onclick={(event) => open(event, hrefFor('people', filing.personId))}><span aria-hidden="true">{peopleById.get(filing.personId)?.initials}</span><div><strong>{filing.name}</strong><small>{filing.year} · {filing.officeName}</small></div></a>
+          {#each candidacies(party.filings) as { filing, personId, name, runningMate }}
+            <a class="person-tile" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><span aria-hidden="true">{peopleById.get(personId)?.initials}</span><div><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></div></a>
           {/each}
         </div>{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
     </article>

@@ -125,6 +125,17 @@ export function runningMateRole(filing: Filing): string {
   return filing.officeName.includes('President') ? 'Vice President' : 'Lieutenant Governor';
 }
 
+/** One person's place on a filing: the candidate, or the running mate on a ticket. */
+export type Candidacy = { filing: Filing; personId: string; name: string; runningMate: boolean };
+
+/** Each filing's candidate, followed by its running mate when the filing is a ticket. */
+export function candidacies(list: Filing[]): Candidacy[] {
+  return list.flatMap((filing) => [
+    { filing, personId: filing.personId, name: filing.name, runningMate: false },
+    ...(filing.runningMate ? [{ filing, personId: filing.runningMateId, name: filing.runningMate, runningMate: true }] : [])
+  ]);
+}
+
 /** Office types read as a single office on its own pages: "Federal Offices" → "Federal office". */
 export function sectionLabel(section: string): string {
   return section.replace(/^(\w+) Offices$/, (_, kind: string) => `${kind} office`);
