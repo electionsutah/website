@@ -258,7 +258,6 @@
   }
 
   function cellValue(card: (typeof matchedCards)[number], key: string) {
-    if (key === 'years') return card.years.join(', ');
     if (key === 'filings') return filingCount(card);
     if (key === 'status') return card.statuses.join(' · ');
     return card.columns[listColumns[section].findIndex((column) => column.key === key)] ?? '';
@@ -500,7 +499,15 @@
             {#each visibleCards as card (card.id)}
               <tr>
                 <th scope="row"><a href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>{#if card.logo}<span class="table-logo" class:inverse-logo={card.id === 'utah-republican-party'} style={card.accent ? `--card-accent:${card.accent}` : ''}><img src={card.logo} alt="" /></span>{:else}<span class="mini-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}<span>{card.title}</span></a></th>
-                {#each tableColumns.slice(1) as column (column.key)}<td data-label={column.label} class:numeric={column.key === 'filings'}>{cellValue(card, column.key)}</td>{/each}
+                {#each tableColumns.slice(1) as column (column.key)}
+                  <td data-label={column.label} class:numeric={column.key === 'filings'}>
+                    {#if column.key === 'years'}
+                      <span class="election-year-links">{#each card.years as year, index}{#if index}{', '}{/if}<a href={`/elections/${year}/`} onclick={(event) => open(event, `/elections/${year}/`)}>{year}</a>{/each}</span>
+                    {:else}
+                      {cellValue(card, column.key)}
+                    {/if}
+                  </td>
+                {/each}
               </tr>
             {:else}
               <tr><td class="no-records" colspan={tableColumns.length}>No matching {labels[section].plural.toLowerCase()}.</td></tr>
