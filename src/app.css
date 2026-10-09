@@ -54,6 +54,7 @@
   .filing-cycle{display:flex;align-items:center;flex-wrap:wrap;gap:16px}
   .filing-cycle small{flex:1;min-width:0}
   .filing-year{display:inline-block;flex:none;padding:9px 13px;background:#006eb7;color:#fff;font:700 28px/1 'Noto Sans',sans-serif;letter-spacing:0}
+  @media(max-width:700px){.filing-year{font-size:22.4px;padding:7.2px 10.4px}}
   .filing-heading h3{margin-top:14px}
   @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
 }
