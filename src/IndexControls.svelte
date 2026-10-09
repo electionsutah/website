@@ -1,5 +1,6 @@
 <script lang="ts">
   import Icon from './Icon.svelte';
+  import SearchField from './SearchField.svelte';
   import { toggle, type Facet, type FacetKey, type Selection } from './lib/facets';
   import { formatCount } from './lib/format';
 
@@ -23,11 +24,16 @@
 
   $: active = facets.flatMap((facet) => facet.values.filter((value) => value.selected).map((value) => ({ key: facet.key, label: facet.label, value: value.value })));
   $: panelId = `filters-${searchLabel.replace(/\W+/g, '-').toLowerCase()}`;
+
+  function closePanel() {
+    panelOpen = false;
+    filterToggle.focus();
+  }
 </script>
 
 <div class="index-controls">
   <div class="index-tools">
-    <label><span><Icon name="search" /></span><input value={query} oninput={(event) => onQuery(event.currentTarget.value)} placeholder={`${searchLabel}…`} aria-label={searchLabel} /></label>
+    <SearchField value={query} label={searchLabel} {onQuery} />
     <div class="index-actions">
       <button class="filter-toggle" class:open={panelOpen} bind:this={filterToggle} aria-expanded={panelOpen} aria-controls={panelId} onclick={() => panelOpen = !panelOpen}>
         <Icon name="filter_list" /> Filters{#if active.length}<b>{active.length}</b>{/if}
@@ -42,6 +48,10 @@
 
   {#if panelOpen}
     <div class="filter-panel" id={panelId}>
+      <div class="filter-panel-header">
+        <span class="eyebrow">Filters</span>
+        <button type="button" class="filter-close" aria-label="Close filters" title="Close filters" onclick={closePanel}><Icon name="close" /></button>
+      </div>
       {#each facets as facet (facet.key)}
         <fieldset class="facet">
           <legend>{facet.label}</legend>
@@ -62,7 +72,7 @@
         <p class="facet-empty">No filters apply to these records.</p>
       {/each}
       <!-- On narrow screens the panel is taller than the viewport; this closes it to reveal the results. -->
-      <button class="filter-done" onclick={() => { panelOpen = false; filterToggle.focus(); }}>Show {formatCount(resultCount)} {resultCount === 1 ? 'result' : 'results'}</button>
+      <button class="filter-done" onclick={closePanel}>Show {formatCount(resultCount)} {resultCount === 1 ? 'result' : 'results'}</button>
     </div>
   {/if}
 

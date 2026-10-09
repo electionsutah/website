@@ -7,6 +7,7 @@
   import EntityViews from './EntityViews.svelte';
   import DocsViews from './DocsViews.svelte';
   import SearchPalette from './SearchPalette.svelte';
+  import SearchField from './SearchField.svelte';
   import { currentDatasetUpdated, offices as officeEntities, parties as partyEntities, people as peopleEntities, totals } from './lib/entities';
   import { formatCount, formatDate } from './lib/format';
   import { browseUrl, matchesQuery, queryTokens, searchText } from './lib/search';
@@ -242,7 +243,7 @@
     </div>
     <div class="finder">
       <div class="tabs" role="group" aria-label="Search in"><button class:active={directory === 'People'} aria-pressed={directory === 'People'} onclick={() => directory = 'People'}>People</button><button class:active={directory === 'Offices'} aria-pressed={directory === 'Offices'} onclick={() => directory = 'Offices'}>Offices</button></div>
-      <label><span><Icon name="search" /></span><input bind:value={query} placeholder={`Search ${directory.toLowerCase()}…`} aria-label={`Search ${directory.toLowerCase()}`} /></label>
+      <SearchField bind:value={query} label={`Search ${directory.toLowerCase()}`} />
       <div class="results">
         {#each visible as item}
           <a class="result" href={item.href} onclick={(event) => open(event, item.href)}><span class="initial" aria-hidden="true">{item.name.charAt(0)}</span><div><strong>{item.name}</strong><small>{item.meta}</small></div><b>{item.status}</b></a>

@@ -2,6 +2,7 @@
   import { tick } from 'svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
   import Icon from './Icon.svelte';
+  import SearchField from './SearchField.svelte';
   import IndexControls from './IndexControls.svelte';
   import SortHeader from './SortHeader.svelte';
   import placeProfiles from './data/place-enrichment.json';
@@ -409,7 +410,7 @@
       </section>
       <section class="record-section split-detail">
         <div class="record-heading"><p class="eyebrow">Candidate locations</p><h2>Places</h2>{#if office.placeIds.length}{#each office.placeIds as placeId}<a class="place-callout" href={hrefFor('places', placeId)} onclick={(event) => open(event, hrefFor('places', placeId))}>{placesById.get(placeId)?.name}<span>Browse candidates <Icon name="arrow_forward" /></span></a>{/each}{:else}<p class="missing-place">The source data does not publish city or county values for this office’s candidates.</p>{/if}</div>
-        <div><div class="filed-heading"><p class="eyebrow">Candidate field</p><label><Icon name="search" /><input bind:value={candidateQuery} placeholder="Search candidates…" aria-label={`Search ${office.name} candidates`} /></label></div><div class="candidate-list">
+        <div><div class="filed-heading"><p class="eyebrow">Candidate field</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${office.name} candidates`} /></div><div class="candidate-list">
           {#each shownCandidacies as { filing, personId, name, runningMate }}
             <a class="candidate-row" class:running-mate-row={runningMate} href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}>
               <span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.partyName}{#if runningMate}{' · '}Running mate{:else if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
@@ -472,9 +473,9 @@
         <div><small>ELECTION YEARS</small><strong>{place.years.length}</strong></div>
       </section>
       <section class="record-section split-detail">
-        <div class="record-heading"><p class="eyebrow">Archived locations</p>{#if place.children.length}<h2>Cities in the archive</h2>{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}<h2 class:office-group-heading={place.children.length > 0}>Offices in archived filings</h2>{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
+        <div class="record-heading"><p class="eyebrow">Archived locations</p>{#if place.children.length}<h2>Cities in the archive</h2>{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}<h2 class:office-group-heading={place.children.length > 0}>Area offices</h2>{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
         <div>
-          <div class="filed-heading"><p class="eyebrow">Filed candidates</p><label><Icon name="search" /><input bind:value={candidateQuery} placeholder="Search candidates…" aria-label={`Search ${place.name} candidates`} /></label></div>
+          <div class="filed-heading"><p class="eyebrow">Filed candidates</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${place.name} candidates`} /></div>
           <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
         </div>
       </section>

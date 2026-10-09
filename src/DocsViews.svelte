@@ -1,6 +1,7 @@
 <script lang="ts">
   import Breadcrumbs from './Breadcrumbs.svelte';
   import Icon from './Icon.svelte';
+  import SearchField from './SearchField.svelte';
   export let id = '';
   export let navigate: (href: string) => void;
 
@@ -121,7 +122,7 @@
     <header class="docs-hero"><div><p class="eyebrow">Reference</p><h1>Election glossary</h1><p>Terms used within Elections Utah administration and throughout the project.</p></div></header>
     <section class="docs-content glossary-layout">
       <aside class="docs-aside glossary-aside">
-        <label class="glossary-search"><span><Icon name="search" /></span><input bind:value={glossaryQuery} type="search" placeholder="Filter terms…" aria-label="Filter glossary terms" /></label>
+        <SearchField className="glossary-search" bind:value={glossaryQuery} placeholder="Filter terms…" label="Filter glossary terms" />
         <p class="eyebrow" role="status">{filteredGlossary.length} {filteredGlossary.length === 1 ? 'term' : 'terms'}</p>
         {#each filteredGlossary as [term]}<a href={`#${slug(term)}`}>{term}</a>{/each}
       </aside>

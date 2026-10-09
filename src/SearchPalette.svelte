@@ -1,5 +1,6 @@
 <script lang="ts">
   import Icon from './Icon.svelte';
+  import SearchField from './SearchField.svelte';
   import { onMount } from 'svelte';
   import { elections, offices, parties, people, places } from './lib/entities';
   import { formatCount } from './lib/format';
@@ -10,7 +11,7 @@
   export let close: (restoreFocus?: boolean) => void;
 
   let query = '';
-  let searchInput: HTMLInputElement;
+  let searchInput: HTMLInputElement | undefined;
   let dialog: HTMLElement;
 
   const groups = [
@@ -126,7 +127,7 @@
       <div><p class="eyebrow">Search every election year</p><h2 id="site-search-title">Find a record</h2></div>
       <button class="search-close" aria-label="Close search" onclick={() => close()}><Icon name="close" /></button>
     </div>
-    <label class="global-search-input"><span><Icon name="search" /></span><input bind:this={searchInput} bind:value={query} placeholder="Search a year, person, office, party, or place…" aria-label="Search a year, person, office, party, or place" autocomplete="off" /><kbd aria-hidden="true">ESC</kbd></label>
+    <SearchField className="global-search-input" bind:input={searchInput} bind:value={query} label="Search a year, person, office, party, or place" shortcut="ESC" />
     <p class="sr-only" role="status">{tokens.length ? `${formatCount(total)} matching records` : ''}</p>
 
     {#if tokens.length}

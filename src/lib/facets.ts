@@ -127,6 +127,11 @@ export function toggle(selection: Selection, key: FacetKey, value: string): Sele
 
 export type View = 'grid' | 'list';
 
+/** Small directories are easier to scan as tiles; larger ones start as tables. */
+export function defaultView(rowCount: number): View {
+  return rowCount >= 10 ? 'list' : 'grid';
+}
+
 export type Sort = { key: string; direction: 'asc' | 'desc' };
 
 export type IndexState = { selection: Selection; view: View; query: string; sort: Sort | null };
@@ -205,7 +210,7 @@ export function sortRows<T>(rows: T[], sort: Sort | null, value: (row: T, key: s
   });
 }
 
-export function restoreState(page: string, entries: { filings: Filing[] }[], sortKeys: string[] = []): IndexState {
+export function restoreState(page: string, entries: { filings: Filing[] }[], sortKeys: string[] = [], fallbackView: View = defaultView(entries.length)): IndexState {
   const params = new URLSearchParams(window.location.search);
   const stored = readStorage();
   const saved = stored.pages[page];
@@ -223,8 +228,8 @@ export function restoreState(page: string, entries: { filings: Filing[] }[], sor
   }
   const state = {
     selection: knownSelection(selection, entries),
-    // List is the default and never written to the URL, so a link without a layout keeps the visitor's own.
-    view: parseView(params.get('view')) ?? parseView(saved?.view) ?? stored.lastView,
+    // A page's saved choice wins over its default; another directory's layout does not.
+    view: parseView(params.get('view')) ?? parseView(saved?.view) ?? fallbackView,
     query,
     // Sorting only reorders, so a saved sort applies unless the link sets its own.
     sort: params.has('sort') ? parseSort(params.get('sort'), params.get('order'), sortKeys) : parseSort(saved?.sort?.key, saved?.sort?.direction, sortKeys)
@@ -237,7 +242,8 @@ export function persistState(page: string, { selection, view, query, sort }: Ind
   const params = new URLSearchParams();
   for (const key of facetKeys) for (const value of selection[key] ?? []) params.append(key, value);
   if (query) params.set('search', query);
-  if (view === 'grid') params.set('view', 'grid');
+  // Both layouts must survive shared links now that defaults differ by directory size.
+  params.set('view', view);
   if (sort) params.set('sort', sort.key);
   if (sort?.direction === 'desc') params.set('order', 'desc');
   const search = params.toString();

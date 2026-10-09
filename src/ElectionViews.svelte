@@ -14,7 +14,7 @@
 
   let indexQuery = '';
   let selection: Selection = {};
-  let view: 'grid' | 'list' = 'list';
+  let view: 'grid' | 'list' = 'grid';
   let sort: Sort | null = null;
 
   // List-view columns; keys appear in the URL as ?sort=.
@@ -38,7 +38,8 @@
   $: if (id) indexLoaded = false;
   $: if (!id && !indexLoaded) {
     indexLoaded = true;
-    const state = restoreState('elections', elections, tableColumns.map((column) => column.key));
+    // Election years remain a compact tile overview, including at the ten-row threshold.
+    const state = restoreState('elections', elections, tableColumns.map((column) => column.key), 'grid');
     selection = state.selection;
     indexQuery = state.query;
     view = state.view;
