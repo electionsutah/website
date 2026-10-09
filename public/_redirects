@@ -89,6 +89,10 @@
 /office/us-president                          /offices/u-s-president-vice-president/             301
 /office/us-senate                             /offices/u-s-senate/                               301
 
+# Corrected county spelling; city slugs already ignore punctuation in St. George
+/places/washingotn                            /places/washington/                                301
+/places/washingotn/*                          /places/washington/:splat                           301
+
 # Places with no records in the new data: send to the county or places index
 /places/beaver                                /places/                                           301
 /places/utah/cedar-fort                       /places/utah/                                      301

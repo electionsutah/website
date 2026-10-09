@@ -13,6 +13,11 @@ def clean_url(value: str) -> str:
     return (value or "").replace("https: //", "https://").replace("http: //", "http://")
 
 
+def clean_city(value: object) -> str:
+    city = str(value or "").strip()
+    return {"St George": "St. George"}.get(city, city)
+
+
 def clean_office(year: int, row: dict[str, object]) -> str:
     raw = str(row.get("body") if year == 2017 else row.get("office") or "").strip()
     raw = raw.replace("US Congressional", "U.S. House")
@@ -20,7 +25,7 @@ def clean_office(year: int, row: dict[str, object]) -> str:
     raw = re.sub(r"\s+\(2 year term\)", " (2-Year Term)", raw, flags=re.I)
     raw = re.sub(r"^(U\.S\. House|State Senate|State House|State School Board) (\d+)", r"\1 District \2", raw)
 
-    city = str(row.get("city") or "").strip()
+    city = clean_city(row.get("city"))
     if year == 2017 and city and not raw.startswith("U.S. House"):
         return f"{city} {raw}"
     if year == 2019 and city and raw == "City Council":
@@ -51,8 +56,9 @@ def normalize(year: int, row: dict[str, object]) -> dict[str, object]:
     if status not in {"filed", "defeated", "disqualified", "elected", "general_election", "primary_election", "withdrew"}:
         status = "filed"
     party = str(row.get("party") or "").strip()
-    city = str(row.get("city") or "").strip()
+    city = clean_city(row.get("city"))
     county = str(row.get("county") or "").strip()
+    county = {"Washingotn": "Washington"}.get(county, county)
     return {
         "sourceId": str(row.get("id") or ""),
         "name": str(row.get("name") or "").strip(),

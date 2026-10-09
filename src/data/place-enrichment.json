@@ -1377,32 +1377,6 @@
     "inceptionDate": "1859-00-00",
     "inceptionPrecision": 9
   },
-  "washingotn": {
-    "wikipediaTitle": "Washington County, Utah",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Washington_County%2C_Utah",
-    "summary": "Washington County is a county in the southwestern corner of Utah, United States. As of the 2020 United States census, the population was 180,279, making it the fifth-most populous county in Utah. Its county seat and largest city is St. George. The county was created in 1852 and organized in 1856. It was named after the first President of the United States, George Washington. A portion of the Paiute Indian Reservation is in western Washington County. Washington County comprises the St. George, UT Metropolitan Statistical Area.",
-    "wikidataId": "Q27240",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q27240",
-    "officialWebsite": "https://www.washco.utah.gov/",
-    "population": 180279,
-    "populationAsOf": "2020-04-01",
-    "populationSource": "Wikidata",
-    "inceptionDate": "1852-00-00",
-    "inceptionPrecision": 9
-  },
-  "washingotn/st-george": {
-    "wikipediaTitle": "St. George, Utah",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._George%2C_Utah",
-    "summary": "St. George or Saint George is a city in and the county seat of Washington County, Utah, United States. It is Utah's fifth-most populous city and the largest outside the Wasatch Front, with a population of 95,342 at the 2020 census. The St. George metropolitan statistical area has an estimated 208,000 residents. Located in southwestern Utah on the Arizona-Utah border, it lies in the northeasternmost part of the Mojave Desert, immediately south of the Pine Valley Mountains, which mark the southern boundary of the Great Basin. St. George lies slightly northwest of the Colorado Plateau, which ends at the Hurricane Fault.",
-    "wikidataId": "Q52472",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q52472",
-    "officialWebsite": "https://sgcityutah.gov/",
-    "population": 95342,
-    "populationAsOf": "2020-04-01",
-    "populationSource": "Wikidata",
-    "inceptionDate": "1861-01-01",
-    "inceptionPrecision": 9
-  },
   "washington": {
     "wikipediaTitle": "Washington County, Utah",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Washington_County%2C_Utah",

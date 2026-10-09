@@ -235,10 +235,11 @@
     .map((card) => {
       const matching = matchingFilings(card.filings, selection);
       // People are described by their most recent filing; when filtering, by the most recent match.
-      const columns = section === 'people' && filtering && matching.length ? [matching[0].officeName, matching[0].partyName] : card.columns;
+      const displayFiling = filtering && matching.length ? matching[0] : card.filings[0];
+      const columns = section === 'people' ? [displayFiling.officeName, displayFiling.partyName] : card.columns;
       const years = filtering ? [...new Set(matching.map((filing) => filing.year))].sort((a, b) => b - a) : card.years;
       const statuses = [...new Set(matching.map((filing) => filing.sourceStatus))];
-      return { ...card, matching, columns, years, statuses };
+      return { ...card, matching, displayFiling, columns, years, statuses };
     })
     .filter((card) => !filtering || card.matching.length);
   $: facets = buildFacets(searchedCards, selection);
@@ -261,6 +262,13 @@
     if (key === 'filings') return filingCount(card);
     if (key === 'status') return card.statuses.join(' · ');
     return card.columns[listColumns[section].findIndex((column) => column.key === key)] ?? '';
+  }
+
+  function cellHref(card: (typeof matchedCards)[number], key: string) {
+    if (section !== 'people') return '';
+    if (key === 'office') return hrefFor('offices', card.displayFiling.officeId);
+    if (key === 'party') return hrefFor('parties', card.displayFiling.partyId);
+    return '';
   }
 
   /** Reveal the next page of records and move focus to the first new one, which renders above the button. */
@@ -503,6 +511,8 @@
                   <td data-label={column.label} class:numeric={column.key === 'filings'}>
                     {#if column.key === 'years'}
                       <span class="election-year-links">{#each card.years as year, index}{#if index}{', '}{/if}<a href={`/elections/${year}/`} onclick={(event) => open(event, `/elections/${year}/`)}>{year}</a>{/each}</span>
+                    {:else if cellHref(card, column.key)}
+                      <a href={cellHref(card, column.key)} onclick={(event) => open(event, cellHref(card, column.key))}>{cellValue(card, column.key)}</a>
                     {:else}
                       {cellValue(card, column.key)}
                     {/if}
