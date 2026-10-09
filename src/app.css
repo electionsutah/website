@@ -107,7 +107,7 @@
 .active-filters button small{color:#5f5e59;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .active-filters button:hover{background:#006eb7;color:#fff}
 .active-filters button:hover small{color:#bcd9ed}
-.active-filters .clear-filters{border-color:transparent;padding-right:9px;color:#5f5e59;text-decoration:underline}
+.active-filters .clear-filters{border-color:transparent;padding-right:9px;color:#015086;font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
 .active-filters .clear-filters:hover{background:none;color:#111110}
 .entity-table-wrap{overflow-x:auto;border:1px solid #c8c6c0;background:#fff}
 .entity-table{width:100%;border-collapse:collapse;font-size:13px}
