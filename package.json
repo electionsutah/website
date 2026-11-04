@@ -14,7 +14,8 @@
     "refresh:history": "python3 scripts/import-result-history.py",
     "check:shifts": "node scripts/check-shifts.mjs",
     "refresh:boundaries": "python3 scripts/import-legislative-boundaries.py",
-    "check:map": "node scripts/check-legislative-map.mjs"
+    "check:map": "node scripts/check-legislative-map.mjs",
+    "mcp": "node scripts/mcp-dev.mjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "5.1.1",
@@ -24,5 +25,9 @@
     "tailwindcss": "^4.3.3",
     "typescript": "5.9.2",
     "vite": "6.4.5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.76"
   }
 }

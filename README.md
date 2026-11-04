@@ -93,6 +93,44 @@ source status in JSON and maps it into the schema's fixed `candidate_status`
 values in YAML. The one lossy mapping is `Deceased` to `withdrew`, because the
 published schema has no deceased status.
 
+## AI assistants (MCP connector)
+
+The site runs a read-only [Model Context Protocol](https://modelcontextprotocol.io)
+server at `https://www.electionsutah.org/mcp` (Streamable HTTP, stateless, no
+sign-in). It is a Netlify Function (`netlify/functions/mcp.mts`) that wraps
+`src/mcp/server.ts`, which reuses the site's own data libraries, so answers match
+the website.
+
+| Tool | Returns |
+|---|---|
+| `search` | People, offices, parties, places, and 2026 contests matching a query, with ids and site URLs |
+| `fetch` | The full record for a `search` id |
+| `list_contests` | 2026 contests filtered by category, county, or text |
+| `get_contest_results` | Votes for one contest, statewide or for one county |
+| `get_district_shift` | Change in the D–R margin since 2024 or 2022 for a legislative or State School Board race |
+
+`search` and `fetch` follow the shape ChatGPT expects for connectors and deep
+research. Results responses state whether the numbers are unofficial and when
+they were last updated.
+
+Connect it:
+
+- **Claude** (claude.ai or desktop): Settings → Connectors → Add custom connector, URL `https://www.electionsutah.org/mcp`.
+  Claude Code: `claude mcp add --transport http elections-utah https://www.electionsutah.org/mcp`.
+- **ChatGPT**: Settings → Apps & Connectors → enable developer mode under Advanced, then create a connector with the same URL and no authentication.
+
+Menus and plan requirements change; check each app's current help pages.
+
+Run and test it locally:
+
+```sh
+npm run mcp                                   # http://127.0.0.1:8787/mcp
+npx @modelcontextprotocol/inspector           # choose Streamable HTTP and that URL
+```
+
+The build also writes `dist/llms.txt` (a guide to the site and its data for AI
+tools) and `dist/data/filings.json` (every candidate filing as JSON).
+
 ## Directory routes
 
 Current campaign information is maintained separately in

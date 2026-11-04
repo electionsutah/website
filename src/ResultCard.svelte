@@ -1,6 +1,8 @@
 <script lang="ts">
   import Icon from './Icon.svelte';
   import CountyMap from './CountyMap.svelte';
+  import CountUp from './CountUp.svelte';
+  const formatPercent = (value: number) => `${value.toFixed(2)}%`;
   import ShiftArrow from './ShiftArrow.svelte';
   import { raceComparison, type HistoricalSnapshot } from './lib/shifts';
   import ResultPersonName from './ResultPersonName.svelte';
@@ -38,11 +40,11 @@
       <div class="vote-bar" aria-hidden="true">{#each result.options as option}<span style={`width:${result.total ? option.votes / result.total * 100 : 0}%;background:${color(option)}`}></span>{/each}</div>
       <div class="candidate-results">
         {#each options as option}
-          <div class="candidate-result"><span class="party-dot" style={`background:${color(option)}`}></span><div><strong><ResultPersonName name={option.name} {contest} /></strong><small><ResultPartyName name={option.party} /></small></div><b>{percent(option.votes, result.total)}<small>{count(option.votes)} votes</small></b></div>
+          <div class="candidate-result"><span class="party-dot" style={`background:${color(option)}`}></span><div><strong><ResultPersonName name={option.name} {contest} /></strong><small><ResultPartyName name={option.party} /></small></div><b>{#if result.total}<CountUp value={option.votes / result.total * 100} format={formatPercent} />{:else}—{/if}<small><CountUp value={option.votes} /> votes</small></b></div>
         {/each}
       </div>
       {#if !detailed && remaining.length}<p class="others">+ {remaining.length} other {remaining.length === 1 ? 'candidate' : 'candidates'} · {count(remaining.reduce((sum, row) => sum + row.votes, 0))} votes</p>{/if}
-      <p class="votes-total">{count(result.total)} votes reported{#if selected}<button onclick={() => selected = ''}>Reset county</button>{/if}</p>
+      <p class="votes-total"><CountUp value={result.total} /> votes reported{#if selected}<button onclick={() => selected = ''}>Reset county</button>{/if}</p>
     </div>
   </div>
   {#if detailed}

@@ -1,5 +1,6 @@
 <script lang="ts">
   import Icon from './Icon.svelte';
+  import CountUp from './CountUp.svelte';
   import { onMount } from 'svelte';
   import ResultCard from './ResultCard.svelte';
   import Combobox from './Combobox.svelte';
@@ -114,7 +115,7 @@
   {#if loading && !data}<p class="labs-message" role="status">Loading the official results snapshot…</p>{/if}
   {#if error}<div class="labs-message" role="alert"><p>{error}</p><button onclick={load}>Try again</button><a href="https://electionresults.utah.gov/results/public/Utah">Official results <Icon name="arrow_outward" /></a></div>{/if}
   {#if data}
-    <div class="results-status"><div><span class="status-dot"></span><strong>{data.official ? 'Official results' : 'Unofficial results'}</strong><span>State updated {updated(data.asOf)}</span></div></div>
+    <div class="results-status"><div><strong class="status-badge" class:official={data.official}><span class="status-dot"></span>{data.official ? 'Official results' : 'Unofficial results'}</strong><span>State updated {updated(data.asOf)}</span></div></div>
     <p class="snapshot-note">Saved snapshot · Retrieved {updated(data.fetchedAt)}. Results do not update automatically. Votes may still be counted.</p>
     <section class="congress-section" id="congress" aria-labelledby="congress-title">
       <div class="labs-section-heading"><div><p class="labs-kicker">The race for Congress</p><h2 id="congress-title">Four districts. Every vote.</h2></div><p>County maps show who leads in each part of a district.<br />Hover or select a county to explore.</p></div>
@@ -122,7 +123,7 @@
       <div class="house-grid">{#each house as contest}<div><ResultCard {contest} {countyNames} history={historyData} {historyLoading} /><button class="explore-race" onclick={() => show(contest)}>Explore district {contest.name.match(/\d+/)?.[0]} <Icon name="arrow_forward" /></button></div>{/each}</div>
       <p class="map-note">County boundaries, not district boundaries. Colored counties include only votes cast in this contest; a district may cover part of a county. Leaders are not projected winners.</p>
     </section>
-    <div class="labs-numbers"><div><strong>{count(data.contests.length)}</strong><span>Published contests</span></div><div><strong>29</strong><span>Utah counties</span></div><div><strong>01</strong><span>Official state source</span></div><p>From Congress to your community.<br /><em>The whole ballot, in one place.</em></p></div>
+    <div class="labs-numbers"><div><strong><CountUp value={data.contests.length} /></strong><span>Published contests</span></div><div><strong><CountUp value={29} /></strong><span>Utah counties</span></div><div><strong>01</strong><span>Official state source</span></div><p>From Congress to your community.<br /><em>The whole ballot, in one place.</em></p></div>
     <LegislativeMap {data} explore={(id) => { const contest = data?.contests.find(row => row.id === id); if (contest) show(contest); }} />
     <ShiftExplorer {data} history={historyData} loading={historyLoading} error={historyError} explore={(id) => { const contest = data?.contests.find(row => row.id === id); if (contest) show(contest); }} />
     <section id="all-results" class="all-results" aria-labelledby="all-title">

@@ -7,3 +7,7 @@
 
 # Every known route is prerendered into dist/, and unknown paths fall through to
 # dist/404.html with HTTP 404. Redirects for old Jekyll URLs live in public/_redirects.
+
+[functions]
+  # Bundle the MCP function (and the site data it imports) with esbuild.
+  node_bundler = "esbuild"

@@ -16,7 +16,7 @@ try {
 } finally {
   await server.close();
 }
-const { people, offices, parties, places, elections } = entities;
+const { people, offices, parties, places, elections, filings, currentDatasetUpdated } = entities;
 
 /** @type {{ path: string; title: string }[]} */
 const routes = [
@@ -68,4 +68,40 @@ const sitemap = [
 ].join('\n');
 await writeFile(join(dist, 'sitemap.xml'), sitemap);
 
-console.log(`Prerendered ${routes.length} routes, 404.html, and sitemap.xml`);
+// Machine-readable copies of the directory for AI tools and scripts that can't use MCP.
+const filingsExport = {
+  source: siteUrl,
+  updated: currentDatasetUpdated,
+  license: 'Public candidate-filing records compiled from official Utah sources; see each record\'s source URL.',
+  filings: filings.map(({ contact, ...filing }) => ({ ...filing, url: `${siteUrl}/people/${filing.personId}/`, contact: contact ?? null }))
+};
+await mkdir(join(dist, 'data'), { recursive: true });
+await writeFile(join(dist, 'data', 'filings.json'), JSON.stringify(filingsExport));
+
+const llms = `# Elections Utah
+
+> Open civic data about Utah elections: candidate filings from 2017 to 2026 for ${people.length.toLocaleString('en-US')} people, ${offices.length.toLocaleString('en-US')} offices, ${parties.length} parties, and ${places.length} counties and cities, plus 2026 general-election results by county.
+
+Every page links its official source. 2026 results are unofficial until the state canvass is certified; check the \`official\` and \`asOf\` fields before citing them. Candidate filings were last updated ${currentDatasetUpdated}.
+
+## Connect an AI assistant (MCP)
+
+- [MCP server](${siteUrl}/mcp): read-only Streamable HTTP endpoint, no sign-in. Add it as a custom connector in Claude or ChatGPT. Tools: \`search\`, \`fetch\`, \`list_contests\`, \`get_contest_results\`, \`get_district_shift\`.
+
+## Data files
+
+- [Candidate filings](${siteUrl}/data/filings.json): every filing with office, party, place, status, source, and public contact details.
+- [2026 general-election results](${siteUrl}/data/2026-results.json): contests, candidates, votes, and county breakdowns from the Utah election results API.
+- [2024 certified results](${siteUrl}/data/2024-results.json) and [2022 legislative baselines](${siteUrl}/data/2022-shift-baseline.json): used for political-shift comparisons.
+- [Legislative district boundaries](${siteUrl}/data/utah-legislative-boundaries.json)
+
+## Pages
+
+- [2026 results lab](${siteUrl}/labs/): results, county maps, and political shifts.
+- [People](${siteUrl}/people/), [Offices](${siteUrl}/offices/), [Parties](${siteUrl}/parties/), [Places](${siteUrl}/places/), [Election years](${siteUrl}/elections/)
+- [Data schema](${siteUrl}/docs/data-schema/) and [Glossary](${siteUrl}/docs/glossary/)
+- [Sitemap](${siteUrl}/sitemap.xml)
+`;
+await writeFile(join(dist, 'llms.txt'), llms);
+
+console.log(`Prerendered ${routes.length} routes, 404.html, sitemap.xml, llms.txt, and data/filings.json`);
