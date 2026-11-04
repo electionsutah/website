@@ -233,3 +233,7 @@ main:focus,main h1:focus{outline:0}
 
 .search-shortcut-tip{margin:0 clamp(20px,4vw,45px);padding:16px 0 22px;border-top:1px solid #e3e2dd;color:#5f5e59;font-size:13px;line-height:1.5}
 .search-shortcut-tip kbd{display:inline-block;min-width:22px;padding:1px 6px;border:1px solid #c8c6c0;border-bottom-width:2px;background:#f7f6f3;color:#31302d;font:600 12px/1.5 'Noto Sans',sans-serif;text-align:center}
+/* Editorial wordmark in the header (replaces the UT box and text title). */
+.brand-logo{display:block;height:58px;width:auto}
+@media(max-width:700px){.brand-logo{height:50px}}
+.footer-logo{display:block;height:64px;width:auto}
