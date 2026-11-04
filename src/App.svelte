@@ -173,8 +173,7 @@
 
 <header class="site-header" inert={searchOpen}>
   <a class="brand" href="/" onclick={(event) => open(event, '/')}>
-    <span class="mark" aria-hidden="true"><span>UT</span></span>
-    <span>Elections <b>Utah</b></span>
+    <img class="brand-logo" src="/images/logo-editorial-nav.svg" alt="Elections Utah" width="374" height="238" />
   </a>
   <button class="menu" aria-label="Menu" aria-expanded={menuOpen} aria-controls="main-nav" bind:this={menuButton} onclick={() => menuOpen = !menuOpen}><Icon name={menuOpen ? 'close' : 'menu'} /></button>
   <nav id="main-nav" class:open={menuOpen} aria-label="Main navigation">
@@ -294,7 +293,7 @@
 {/if}
 
 <footer inert={searchOpen}>
-  <div class="footer-brand"><span class="mark" aria-hidden="true"><span>UT</span></span><span>Elections <b>Utah</b></span></div>
+  <div class="footer-brand"><img class="footer-logo" src="/images/logo-editorial-nav.svg" alt="Elections Utah" width="374" height="238" /></div>
   <p>Open election data for a more informed Utah.</p>
   <div class="footer-links"><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noreferrer">CC0 1.0 Public Domain<span class="sr-only"> (opens in new tab)</span></a><a href={isHome ? '#top' : '/'} onclick={(event) => { if (!isHome) open(event, '/'); }}>{isHome ? 'Back to top' : 'Home'} <Icon name="arrow_upward" /></a></div>
 </footer>
