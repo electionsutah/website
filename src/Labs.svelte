@@ -12,6 +12,7 @@
   import { resultPerson, retainedJudgeName, personHref, contestTitle } from './lib/result-people';
   import { count, color, margin, percent, leader, hasSingleLeader, seatsOf, updated, type Snapshot, type Contest } from './lib/results';
   import { tidySnapshot } from './lib/result-names';
+  import { raceSlugs } from './lib/contest-slugs';
   import './labs.css';
   let data: Snapshot | null = null;
   let error = '';
@@ -37,14 +38,16 @@
   let sort = params.get('sort') === 'margin' ? 'margin' : 'ballot';
   let selectedId = params.get('race') || '';
   let page = 1;
+  let slugs: ReturnType<typeof raceSlugs> | null = null;
   async function load() {
     loading = true; error = '';
     try {
       const response = await fetch('/data/2026-results.json', { cache: 'no-cache' });
       if (!response.ok) throw new Error('The results snapshot could not be loaded.');
       data = tidySnapshot(await response.json() as Snapshot);
-      // Drop URL values that don't match this snapshot instead of keeping them silently.
-      if (selectedId && !data.contests.some(row => row.id === selectedId)) selectedId = '';
+      slugs = raceSlugs(data.contests);
+      // ?race= takes a readable slug or a legacy contest id. Drop values that don't match this snapshot instead of keeping them silently.
+      if (selectedId) selectedId = slugs.id(selectedId) ?? '';
       if (county && !data.counties.some(row => row.id === county)) county = '';
     } catch { error = 'We couldn’t load the results. Please try again or visit the official source.'; }
     finally { loading = false; }
@@ -90,7 +93,7 @@
     if (category !== 'All contests') next.set('category', category);
     if (county) next.set('county', county);
     if (sort !== 'ballot') next.set('sort', sort);
-    if (selectedId) next.set('race', selectedId);
+    if (selectedId) next.set('race', slugs?.slug(selectedId) ?? selectedId);
     history.replaceState(history.state, '', `${window.location.pathname}${next.toString() ? `?${next}` : ''}${window.location.hash}`);
   }
   function show(contest: Contest) {
