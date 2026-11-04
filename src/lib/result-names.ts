@@ -46,12 +46,19 @@ function tidyOption(option: Option, contest: Contest): Option {
 }
 
 /** Normalize the display casing of contest, candidate, and party names in a snapshot. */
+// Some feeds wrap the office in "County ... County" ("County Attorney County"); read it as "Utah County Attorney".
+function contestName(name: string, county: string | undefined) {
+  const wrapped = /^County\s+(.+?)\s+County$/i.exec(name);
+  return wrapped && county ? `${county} County ${wrapped[1]}` : name;
+}
+
 export function tidySnapshot(snapshot: Snapshot): Snapshot {
+  const countyNames = new Map(snapshot.counties.map(row => [row.id, row.name.replace(/\s+County$/i, '')]));
   return {
     ...snapshot,
     contests: snapshot.contests.map(contest => {
       const tidy = (option: Option) => tidyOption(option, contest);
-      return { ...contest, name: recase(contest.name), options: contest.options.map(tidy), counties: contest.counties.map(row => ({ ...row, options: row.options.map(tidy) })) };
+      return { ...contest, name: contestName(recase(contest.name), contest.county ? countyNames.get(contest.county) : undefined), options: contest.options.map(tidy), counties: contest.counties.map(row => ({ ...row, options: row.options.map(tidy) })) };
     })
   };
 }

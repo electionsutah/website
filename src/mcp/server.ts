@@ -33,14 +33,15 @@ const contestUrl = (contest: Contest) => `${SITE_URL}/labs/?race=${slugs.slug(co
 
 type Kind = 'person' | 'office' | 'party' | 'place' | 'contest';
 type Doc = { id: string; kind: Kind; title: string; url: string; text: string };
-const normalize = (value: string) => value.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+// Drop periods so abbreviations read as one word ("U.S." -> "us", not "u s").
+const normalize = (value: string) => value.toLowerCase().replace(/\./g, '').normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 
 const docs = ([
   ...people.map(person => ({ id: `person:${person.id}`, kind: 'person' as const, title: person.name, url: `${SITE_URL}/people/${person.id}/`, text: person.filings.map(filing => `${filing.year} ${filing.officeName} ${filing.partyName} ${filing.county} ${filing.city}`).join(' ') })),
   ...offices.map(office => ({ id: `office:${office.id}`, kind: 'office' as const, title: office.name, url: `${SITE_URL}/offices/${office.id}/`, text: office.sections.join(' ') })),
   ...parties.map(party => ({ id: `party:${party.id}`, kind: 'party' as const, title: party.name, url: `${SITE_URL}/parties/${party.id}/`, text: party.shortName })),
   ...places.map(place => ({ id: `place:${place.id}`, kind: 'place' as const, title: place.type === 'County' ? place.name : `${place.name}, ${place.county}`, url: `${SITE_URL}/places/${place.id}/`, text: `${place.type} ${place.county}` })),
-  ...snapshot.contests.map(contest => ({ id: `contest:${slugs.slug(contest.id)}`, kind: 'contest' as const, title: `2026 results: ${contestLabel(contest)}`, url: contestUrl(contest), text: `${contest.name} ${contest.category} ${contest.options.map(option => `${option.name} ${option.party}`).join(' ')} election results` }))
+  ...snapshot.contests.map(contest => ({ id: `contest:${slugs.slug(contest.id)}`, kind: 'contest' as const, title: `2026 results: ${contestLabel(contest)}`, url: contestUrl(contest), text: `${slugs.slug(contest.id)} ${contest.name} ${contest.category} ${contest.options.map(option => `${option.name} ${option.party}`).join(' ')} election results` }))
 ] as Doc[]).map(doc => ({ ...doc, normTitle: normalize(doc.title), normText: normalize(doc.text) }));
 
 function search(query: string, kinds: Kind[] | undefined, limit: number) {
@@ -57,6 +58,8 @@ function search(query: string, kinds: Kind[] | undefined, limit: number) {
         else if (doc.normText.includes(term)) score += 1;
         else return null;
       }
+      // A query that spells a contest slug ("us house district 1") goes straight to that contest.
+      if (doc.kind === 'contest' && normalize(doc.id.slice('contest:'.length)) === phrase) score += 20;
       if (doc.normTitle === phrase) score += 10;
       else if (doc.normTitle.includes(phrase)) score += 4;
       return { doc, score };
