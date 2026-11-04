@@ -24,3 +24,148 @@
   .detailed .card-visual{grid-template-columns:minmax(0,1fr);gap:20px}
   .detailed .county-map{max-width:200px;margin-inline:auto}
 }
+
+/* Historical party margins: shared arrow scale and explicit text alternatives. */
+.shift-section{padding:50px 0;border-top:3px solid var(--lab-ink);scroll-margin-top:100px}
+.shift-intro,.shift-context,.shift-methodology p{max-width:1000px;font-size:16px;line-height:1.75;color:var(--lab-muted)}
+.shift-context a,.shift-evidence a,.shift-methodology a{color:#246187;text-decoration:underline}
+.shift-controls{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:15px;margin-bottom:20px}
+.shift-table-scroll{overflow-x:auto}
+.shift-table{width:100%;border-collapse:collapse;font-size:16px}
+.shift-table th,.shift-table td{padding:16px 14px;border-bottom:1px solid var(--lab-line);vertical-align:top;text-align:left}
+.shift-table thead th{border-top:2px solid var(--lab-ink);border-bottom:2px solid var(--lab-line);font-size:14px}
+.shift-table th:first-child{width:32%}.shift-table th:last-child{width:34%}
+.shift-table th small{display:block;margin-top:5px;font-size:12px;font-weight:400;color:var(--lab-muted)}
+.shift-table td.democratic,.shift-table td.republican{font-size:21px;font-variant-numeric:tabular-nums}
+.shift-table .democratic,.shift-arrow.democratic{color:#176fa6}
+.shift-table .republican,.shift-arrow.republican{color:#b53330}
+.shift-table .democratic.party-leading{background:#e5f2f9;font-weight:700}
+.shift-table .republican.party-leading{background:#fae9e7;font-weight:700}
+.shift-arrow{display:flex;align-items:center;gap:8px;color:var(--lab-muted);font-variant-numeric:tabular-nums}
+.shift-arrow svg{width:150px;max-width:50%;height:30px;flex:none}
+.shift-arrow strong{font-size:19px;white-space:nowrap}.shift-arrow strong small{font-size:12px;font-weight:400}
+.shift-race-link{padding:0;border:0;background:none;text-align:left;color:#246187;font-size:16px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.shift-unavailable{font-size:14px;color:var(--lab-muted)}
+.shift-evidence{font-size:13px;line-height:1.65;margin-top:7px}
+.shift-evidence summary,.shift-methodology summary{cursor:pointer;color:#246187}
+.shift-evidence p{margin:9px 0;color:var(--lab-muted)}
+.shift-methodology{margin-top:25px;border-top:1px solid var(--lab-line);padding-top:20px;font-size:16px}
+.shift-warning{padding:12px;border-left:3px solid #a57c29;background:#f5efdf;font-size:14px;line-height:1.6}
+.race-shift{margin:0 0 22px;padding:18px 0;border-top:1px solid var(--lab-line);border-bottom:1px solid var(--lab-line)}
+.race-shift h4{margin:0 0 10px;font-size:14px;font-weight:600}
+.race-shift p{font-size:14px;line-height:1.7;margin:10px 0 0;color:var(--lab-muted)}
+.race-shift a{color:#246187;text-decoration:underline}
+@media(max-width:700px){
+  .shift-controls{grid-template-columns:1fr 1fr}.shift-controls>label:first-child{grid-column:1/-1}
+  .shift-table{font-size:14px;min-width:540px}
+  .shift-table th,.shift-table td{padding:14px 10px}.shift-table td.democratic,.shift-table td.republican{font-size:18px}
+  .shift-arrow svg{width:100px}.shift-arrow strong{font-size:16px}
+  .shift-section{padding:38px 0}
+}
+
+/* Keep the shift itself visible on phones instead of placing it offscreen. */
+.shift-section .results-pagination{flex-wrap:wrap;gap:12px}
+@media(max-width:700px){
+  .shift-table{min-width:0;border-top:2px solid var(--lab-ink)}
+  .shift-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .shift-table tbody{display:block}
+  .shift-table tbody tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-bottom:1px solid var(--lab-line)}
+  .shift-table tbody th:first-child{grid-column:1/-1;width:auto;border:0;padding:16px 10px 12px}
+  .shift-table tbody td{min-width:0;border:0;padding:12px 10px}
+  .shift-table tbody td:last-child{grid-column:1/-1}
+  .shift-table td.democratic::before,.shift-table td.republican::before{display:block;margin-bottom:6px;font-size:12px;font-weight:400}
+  .shift-table td.democratic::before{content:'Democrats · 2026'}
+  .shift-table td.republican::before{content:'Republicans · 2026'}
+  .shift-table tbody td:last-child::before{content:'Shift in party margin';display:block;margin-bottom:7px;color:var(--lab-muted);font-size:12px}
+  .shift-table .shift-arrow svg{width:160px;max-width:60%}
+  .shift-evidence summary{padding-block:6px}
+}
+
+/* Statewide legislative map and district results. */
+.legislative-section{padding:50px 0;border-top:3px solid var(--lab-ink);scroll-margin-top:100px}
+.legislative-toolbar{position:relative;z-index:1;display:flex;align-items:end;flex-wrap:wrap;gap:22px;margin:25px 0}
+.chamber-toggle{display:flex;border:1px solid #a7aeae;background:#fffefa}
+.chamber-toggle button{min-height:46px;padding:10px 28px;border:0;background:transparent;color:var(--lab-ink);font-size:16px;font-weight:600}
+.chamber-toggle button+button{border-left:1px solid #a7aeae}
+.chamber-toggle button[aria-pressed=true]{background:#202e39;color:#fff}
+.legislative-toolbar>label:not(.county-overlay){min-width:210px;flex:1;max-width:340px}
+.labs .county-overlay{display:flex;align-items:center;gap:9px;min-height:44px;font-size:14px}
+.labs .county-overlay input{width:18px;min-height:18px;height:18px;padding:0;accent-color:#246187}
+.legislative-summary{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:15px 0;border-top:1px solid var(--lab-line);border-bottom:1px solid var(--lab-line);font-size:14px;line-height:1.6}
+.legislative-summary>span{display:flex;flex-wrap:wrap;gap:15px;color:var(--lab-muted)}
+.legislative-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,1fr);gap:36px;margin-top:26px;align-items:start}
+.legislative-map-panel{min-width:0}.legislative-map-stage{position:relative;isolation:isolate;contain:paint;height:clamp(440px,50vw,680px);background:#fffefa;border:1px solid var(--lab-line);overflow:hidden}
+.legislative-map-stage>svg{display:block;overflow:hidden;width:100%;height:100%;touch-action:none;cursor:grab;user-select:none}
+/* SVG paths receive native focus on pointer-down, before selection updates on
+   pointer-up. Suppress the browser's rectangular focus ring at that stage;
+   keyboard users retain the district-shaped stroke and an inset map ring. */
+.legislative-map-stage>svg:focus{outline:none}
+.legislative-map-stage>svg:focus-visible{outline:3px solid #006eb7;outline-offset:-3px}
+.legislative-map-stage>svg.dragging{cursor:grabbing}
+.legislative-district{outline:none;stroke:#fffefa;stroke-width:.7;stroke-linejoin:round;vector-effect:non-scaling-stroke;cursor:pointer}
+.legislative-district:hover{filter:brightness(1.12)}
+.legislative-district.active,.legislative-district:focus-visible{stroke:#efc15a;stroke-width:3;outline:none}
+.legislative-selection-layer{pointer-events:none}
+.legislative-selection-halo,.legislative-selection-border{fill:none;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.legislative-selection-halo{stroke:#243039;stroke-width:5.5}
+.legislative-selection-border{stroke:#efc15a;stroke-width:3}
+.legislative-county-border{fill:none;stroke:#26363c;stroke-width:.75;stroke-opacity:.4;vector-effect:non-scaling-stroke;pointer-events:none}
+.legislative-county-border.chosen{stroke:#111110;stroke-width:2;stroke-opacity:1}
+.legislative-county-label{fill:#1d2b33;paint-order:stroke;stroke:#fffefa;stroke-width:3px;stroke-linejoin:round;pointer-events:none;font-weight:700;vector-effect:non-scaling-stroke}
+.map-zoom-controls{position:absolute;right:14px;top:14px;display:flex;flex-direction:column;border:1px solid #abb1ae;background:#fffefa}
+.map-zoom-controls button{display:grid;place-items:center;width:48px;min-height:48px;padding:4px;border:0;background:#fffefa;color:#202a32;font-size:27px;line-height:1}
+.map-zoom-controls button+button{border-top:1px solid var(--lab-line)}
+.map-zoom-controls .map-reset{font-size:12px;font-weight:700}
+.map-zoom-controls button:hover:not(:disabled),.map-pan-controls button:hover{background:#e5f2f9}
+.map-pan-controls{position:absolute;bottom:14px;left:14px;display:flex;flex-wrap:wrap;max-width:calc(100% - 85px);border:1px solid #abb1ae;background:#fffefa}
+.map-pan-controls button{width:40px;min-height:42px;padding:5px;border:0;background:#fffefa;color:#202a32;font-size:18px}
+.map-pan-controls button+button{border-left:1px solid var(--lab-line)}
+.map-zoom-level{position:absolute;bottom:18px;right:16px;padding:3px 6px;background:#fffefa;color:#4e585f;font-size:13px;font-variant-numeric:tabular-nums}
+.map-hover-status{min-height:44px;margin:0;padding:12px 0;font-size:14px;line-height:1.6}
+.legislative-legend{font-size:13px;gap:13px;margin-top:10px}.map-pattern{background:repeating-linear-gradient(135deg,#d6d4cf 0,#d6d4cf 3px,#faf9f6 3px,#faf9f6 5px)}
+.legislative-details{position:relative;z-index:1;min-width:0;border-top:3px solid var(--lab-ink);padding-top:18px}
+.legislative-details>label{margin-bottom:28px}.district-detail-heading .labs-kicker{margin-bottom:8px}
+.district-detail-heading h3,.district-intro h3{margin:0 0 18px;font:600 32px/1.1 'Source Serif 4',serif;letter-spacing:-.8px}
+.district-intro p,.district-empty{font-size:16px;line-height:1.75;color:var(--lab-muted)}
+.district-total-scope{font-size:14px;font-weight:600;margin:0 0 12px}.district-current-leader{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:18px}
+.district-current-leader small{display:block;font-size:12px;color:var(--lab-muted);font-weight:400}
+.district-detail-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:24px;font-size:14px}
+.district-detail-actions button{padding:11px 15px;border:1px solid #246187;background:#246187;color:white;font-weight:600}
+.district-detail-actions a,.legislative-source a{color:#246187;text-decoration:underline}
+.county-race-list{max-height:400px;overflow-y:auto;overscroll-behavior:contain;border-top:1px solid var(--lab-line)}
+.county-race-list button{display:block;width:100%;text-align:left;padding:14px 4px;background:none;border:0;border-bottom:1px solid var(--lab-line);color:var(--lab-ink)}
+.county-race-list button:hover{background:#eeeee7}.county-race-list strong{font-size:15px;font-weight:600}
+.county-race-list span{display:block;margin-top:5px;font-size:13px;line-height:1.5;color:var(--lab-muted)}
+.legislative-source{margin-top:22px;padding-top:18px;border-top:1px solid var(--lab-line)}
+@media(max-width:1000px){.legislative-layout{grid-template-columns:minmax(0,1fr) minmax(260px,.85fr);gap:24px}}
+@media(max-width:700px){
+  .legislative-section{padding:38px 0}.legislative-layout{grid-template-columns:minmax(0,1fr)}
+  .legislative-toolbar{gap:16px}.chamber-toggle{width:100%}.chamber-toggle button{flex:1;padding-inline:12px}
+  .legislative-toolbar>label:not(.county-overlay){max-width:none;min-width:0;width:100%;flex-basis:100%}
+  .legislative-map-stage{height:500px}.legislative-summary>span{gap:12px}
+  .legislative-details{padding-top:22px}.county-race-list{max-height:300px}
+}
+
+/* Editable district selector: listbox focus stays in the text field. */
+.district-combobox{position:relative;margin-bottom:28px}
+.district-combobox>label{margin-bottom:7px}
+.combobox-field{display:flex;align-items:center;min-height:46px;border:1px solid #c4c6c2;background:#fffefa}
+.combobox-field:focus-within{outline:3px solid #006eb7;outline-offset:3px}
+.labs .combobox-field input{flex:1;min-width:0;width:0;border:0;background:transparent;outline:none;padding:10px 12px}
+.combobox-field button{flex:none;min-width:36px;min-height:44px;padding:4px;border:0;background:transparent;color:#4e585e;font-size:20px}
+.combobox-field button:hover{background:#e5f2f9}
+.combobox-hint{margin:8px 0 0;font-size:12px;line-height:1.6;color:var(--lab-muted)}
+.combobox-popup{position:absolute;z-index:5;top:calc(100% + 6px);left:0;right:0;background:#fffefa;border:1px solid #a7aeae;box-shadow:0 6px 18px #202e391a}
+.combobox-popup ul{max-height:300px;overflow-y:auto;overscroll-behavior:contain;margin:0;padding:4px;list-style:none}
+.combobox-popup [role=option]{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:48px;padding:11px 10px;cursor:pointer;border-bottom:1px solid var(--lab-line)}
+.combobox-popup [role=option]:last-child{border:0}
+.combobox-popup [role=option].highlighted{background:#e5f2f9;box-shadow:inset 3px 0 #246187}
+.combobox-popup strong{display:block;font-size:15px;line-height:1.5;font-weight:600}
+.combobox-popup small{display:block;margin-top:4px;font-size:12px;line-height:1.6;color:var(--lab-muted);overflow-wrap:anywhere}
+.combobox-check{color:#246187;font-weight:700}
+.combobox-count,.combobox-empty{margin:0;padding:10px 14px;font-size:12px;line-height:1.6;color:var(--lab-muted)}
+.combobox-count{border-top:1px solid var(--lab-line)}
+@media(max-width:700px){.combobox-popup ul{max-height:260px}}
+
+.labs .result-office-link,.labs .result-party-link{color:#246187;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.labs .result-office-link:hover,.labs .result-party-link:hover{color:#111110;text-decoration-thickness:2px}

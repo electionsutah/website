@@ -10,7 +10,11 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build && node scripts/prerender-routes.mjs",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "refresh:results": "python3 scripts/refresh-election-results.py"
+    "refresh:results": "python3 scripts/refresh-election-results.py",
+    "refresh:history": "python3 scripts/import-result-history.py",
+    "check:shifts": "node scripts/check-shifts.mjs",
+    "refresh:boundaries": "python3 scripts/import-legislative-boundaries.py",
+    "check:map": "node scripts/check-legislative-map.mjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "5.1.1",

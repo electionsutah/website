@@ -188,3 +188,113 @@ future results refreshes and directory additions use the same rules automaticall
 
 Run `node scripts/check-result-people.mjs` to validate identity edge cases and
 print the current reconciliation counts and unmatched statewide candidates.
+
+### Historical political shifts
+
+The lab includes a political-shift table for State House, State Senate, State
+School Board, and countywide U.S. House votes, with district/county search,
+filters, magnitude sorting, source details, and matching comparisons in the race
+explorer. Blue arrows indicate a shift toward Democrats; red arrows indicate a
+shift toward Republicans. Arrow lengths share a scale within the table.
+
+The calculation uses all reported votes, including other parties and write-ins:
+
+```
+margin = 100 × (Democratic votes − Republican votes) / total contest votes
+shift = margin in 2026 − margin in the prior comparable election
+```
+
+For example, D 61%, R 37% against a prior D 42%, R 56% produces **D+38 percentage
+points** of margin change. This is not a 38-point increase in Democratic vote
+share and does not establish that individual voters changed parties.
+
+The included data supports **45 direct race comparisons** (39 State House,
+4 State Senate, 2 school board) plus **29 countywide congressional comparisons**.
+All 2026 values come from the saved, unofficial snapshot. Prior race baselines
+use the most recent imported result, preferring 2024 over 2022; every row labels
+its baseline year. The 2022 state canvass covers multi-county races only, so some
+single-county Senate/school-board races lack imported baselines.
+
+Comparison rules are in `src/lib/shifts.ts`:
+
+- District matching uses the office and district number. It is permitted for
+  State House, State Senate, and State School Board using Utah GIS’s documented
+  [2022–2032 boundary vintages](https://gis.utah.gov/products/sgid/political/).
+- **Congressional district numbers cannot be compared directly:** Utah’s
+  [2026 congressional boundaries supersede the previous map](https://gis.utah.gov/products/sgid/political/us-congressional-districts/).
+  The countywide comparison sums all U.S. House districts within each county
+  once per year, preserving county geography despite the district change.
+- Both parties must receive votes in each election. Missing parties are not a
+  zero-percent baseline, and an older contested race never replaces a more
+  recent uncontested baseline just to produce a numeric shift.
+- Local boundaries/office matching are not verified; nonpartisan races,
+  retention questions, and measures do not receive a D–R comparison.
+- Zero, missing, duplicate, or inconsistent source data is withheld as applicable.
+  The 2024 State House 68 district total is 17,491, but published county totals
+  sum to 17,480. Its county breakdown is flagged and unavailable for shift
+  calculations. Its full-race comparison is independently excluded as uncontested.
+- Other-party voting, different candidates, competitiveness, and midterm versus
+  presidential turnout can affect these election-to-election shifts.
+
+Historical data is bundled in `public/data/2024-results.json` and
+`public/data/2022-shift-baseline.json`. The 2024 importer queries the same public
+results API as the 2026 importer. The 2022 importer reads Firecrawl OCR of the
+scanned [official signed canvass](https://vote.utah.gov/wp-content/uploads/2022/12/Signed-2022-General-Election-State-Canvass-Certification.pdf).
+Its 13 imported Senate/school-board contests must reconcile every candidate’s
+county sum and each contest’s total before the output replaces the last snapshot.
+
+```bash
+npm run refresh:history
+# Rebuild 2022 baselines after extracting the official PDF:
+firecrawl parse /path/to/Signed-2022-General-Election-State-Canvass-Certification.pdf \
+  -o .firecrawl/2022-canvass.md
+python3 scripts/import-2022-shift-baseline.py .firecrawl/2022-canvass.md
+npm run check:shifts
+npm run check
+npm run build
+```
+
+`import-result-history.py --use-cache` supports cached API responses. The shift
+checks cover the formula, sign, denominator, uncontested races, missing votes,
+baseline selection, boundary exclusions, and county aggregation against statewide
+totals. Historical loading failures preserve the current-results experience and
+never silently select an older baseline if the 2024 baseline failed to load.
+
+### Statewide Utah legislature map
+
+The statewide interactive at `/labs/#statewide-map` toggles between the **Utah
+House** and **Utah Senate**, drawing actual district polygons from Utah GIS’s
+2022–2032 plans. It bundles all 75 House and 29 Senate districts and joins them
+by office/district number to the 2026 snapshot (75 House and 15 Senate results).
+Seats with no published 2026 result use a neutral pattern; no incumbent party,
+race call, flip, or legislative-control result is inferred.
+
+Select a county to center on its area-weighted geometry centroid and fit its full
+extent, then select a district for candidate
+profiles, vote counts, and full-race links. Map colors always show the full
+district leader; when a selected district has county-level data, the detail panel
+explicitly labels those county-only votes. Chamber switching keeps the selected
+county and map position. Reset returns to the statewide view in the current
+chamber. Plus/minus buttons zoom from 1× to 24×; pointer dragging, directional
+buttons, and keyboard arrows pan with the map center constrained to Utah’s extent.
+County labels stay at the same geographic centroid as the zoom target; border
+counties can show whitespace outside Utah so they remain centered. `+` / `-` zoom, `Home`
+resets, and `Escape` clears the selected district. The native county selector and searchable district combobox provide alternatives
+to selecting small polygons. The district combobox filters by district number or
+candidate name, uses Arrow keys and Enter for selection, and restores the current
+selection on Escape or blur. County and chamber changes reset its search scope. Map errors leave the
+results desk available and provide a retry control.
+
+The boundary file is fetched only for this map, keeping the initial results
+snapshot separate. Rebuild the geometry and check its joins and navigation math:
+
+```bash
+npm run refresh:boundaries
+npm run check:map
+```
+
+`import-legislative-boundaries.py --use-cache` uses ignored cached GeoJSON. The
+query simplifies to 0.0005 degrees (roughly 50 metres), and the projection matches
+the existing county map. This is a visualization, not an address/district lookup.
+Official boundary sources: [House](https://gis.utah.gov/products/sgid/political/state-house-districts/)
+and [Senate](https://gis.utah.gov/products/sgid/political/state-senate-districts/).
