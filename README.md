@@ -150,8 +150,10 @@ npm run check
 npm run build
 ```
 
-This is a **saved snapshot**, not a live feed. The reload control checks for a
-newer snapshot on this site; it does not scrape the state on demand. The importer
+This is a **saved snapshot**, not a live feed. Results update when a refreshed
+snapshot is built and deployed; there is no on-demand reload control. Congressional
+map cards show the top three candidates, with the remaining candidates and votes
+summarized separately. The importer
 uses the state-published contest breakdowns for county comparisons, then includes
 county-only contests without duplicating their parent statewide contests. Raw
 responses are cached in the ignored `.firecrawl/results/` directory;
@@ -279,7 +281,7 @@ chamber. Plus/minus buttons zoom from 1× to 24×; pointer dragging, directional
 buttons, and keyboard arrows pan with the map center constrained to Utah’s extent.
 County labels stay at the same geographic centroid as the zoom target; border
 counties can show whitespace outside Utah so they remain centered. `+` / `-` zoom, `Home`
-resets, and `Escape` clears the selected district. The native county selector and searchable district combobox provide alternatives
+resets, and `Escape` clears the selected district. Searchable county and district comboboxes provide alternatives
 to selecting small polygons. The district combobox filters by district number or
 candidate name, uses Arrow keys and Enter for selection, and restores the current
 selection on Escape or blur. County and chamber changes reset its search scope. Map errors leave the

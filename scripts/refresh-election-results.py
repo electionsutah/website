@@ -10,6 +10,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
+import re
 from pathlib import Path
 import time
 from urllib.request import Request, urlopen
@@ -31,12 +32,18 @@ def options(rows):
 def category(name):
     for prefix, label in [('U.S. House', 'U.S. House'), ('State Senate', 'State Senate'), ('State House', 'State House'), ('State School', 'School board')]:
         if name.startswith(prefix): return label
-    if 'retained' in name.lower(): return 'Judicial retention'
+    # State feeds ask "Shall X be retained…"; county feeds name them "X Judicial Retention".
+    if 'retained' in name.lower() or 'judicial retention' in name.lower(): return 'Judicial retention'
     return 'Local & measures'
+
+def seats(row):
+    """Number of winners from the published "Vote for N" label; 1 when absent."""
+    match = re.search(r'\d+', text(row.get('voteFor')))
+    return max(1, int(match.group())) if match else 1
 
 def contest(row, county=None):
     name = text(row['name'])
-    return {'id': row['id'], 'name': name, 'category': category(name), 'county': county,
+    return {'id': row['id'], 'name': name, 'category': category(name), 'county': county, 'seats': seats(row),
             'total': row['voteTotal'], 'reporting': row.get('reportingStatus'),
             'options': options(row['summaryResults']['ballotOptions']),
             'source': f"{SOURCE.split('/Utah/')[0]}/{county or 'Utah'}/elections/{ELECTION}/ballot-items/{row['id']}",
@@ -47,8 +54,10 @@ def main():
     parser.add_argument('--use-cache', action='store_true')
     args = parser.parse_args()
     CACHE.mkdir(parents=True, exist_ok=True)
+    used = []
     def fetch(path):
         file = CACHE / (path.replace('/', '_') + '.json')
+        used.append(file)
         if args.use_cache and file.exists(): return json.loads(file.read_text())
         for attempt in range(3):
             try:
@@ -70,7 +79,8 @@ def main():
         item.update(total=result['voteTotal'], options=options(result['summaryResults']['ballotOptions']), reporting=result['reportingStatus'])
         for x in result.get('breakdownResults') or []:
             locality = x.get('locality')
-            if locality:
+            # Match the 2024 importer: counties with no votes in this contest are omitted.
+            if locality and x['voteTotal'] > 0:
                 item['counties'].append({'id': locality['shortName'], 'total': x['voteTotal'], 'options': options(x['ballotOptions']), 'reporting': x.get('precinctReportingStatus')})
         return item
     with ThreadPoolExecutor(max_workers=6) as pool:
@@ -93,10 +103,13 @@ def main():
         assert len({x['id'] for x in item['counties']}) == len(item['counties'])
         assert all(x['id'] in known_counties for x in item['counties'])
         assert sum(x['votes'] for x in item['options']) == item['total'], f"Candidate totals do not reconcile: {item['name']}"
-        assert sum(x['total'] for x in item['counties']) == item['total'], f"County totals do not reconcile: {item['name']}"
+        # A source discrepancy in one contest is flagged rather than blocking every update.
+        item['countyTotalsReconcile'] = sum(x['total'] for x in item['counties']) == item['total']
+        if not item['countyTotalsReconcile']:
+            print(f"County breakdown flagged (source totals differ): {item['name']}")
     snapshot = {'source': SOURCE, 'election': '2026 General Election', 'electionDate': '2026-11-03',
                 'asOf': state['election']['asOf'], 'official': state['election']['isOfficialResults'],
-                'fetchedAt': datetime.fromtimestamp(max(file.stat().st_mtime for file in CACHE.glob('*.json')), timezone.utc).isoformat(), 'counties': counties, 'contests': contests}
+                'fetchedAt': datetime.fromtimestamp(min(file.stat().st_mtime for file in used), timezone.utc).isoformat(), 'counties': counties, 'contests': contests}
     output = ROOT / 'public/data/2026-results.json'
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix('.tmp')

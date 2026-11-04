@@ -8,6 +8,7 @@
   import EntityViews from './EntityViews.svelte';
   import DocsViews from './DocsViews.svelte';
   import SearchPalette from './SearchPalette.svelte';
+  import { isSearchShortcut } from './lib/shortcuts';
   import SearchField from './SearchField.svelte';
   import { currentDatasetUpdated, offices as officeEntities, parties as partyEntities, people as peopleEntities, totals } from './lib/entities';
   import { formatCount, formatDate } from './lib/format';
@@ -118,7 +119,10 @@
   }
 
   function onPopState() {
-    path = currentPath();
+    const next = currentPath();
+    // In-page anchor links also fire popstate; leave focus where the browser put it.
+    if (next === path) return;
+    path = next;
     focusPage();
   }
 
@@ -138,6 +142,13 @@
   }
 
   function onKeydown(event: KeyboardEvent) {
+    // Cmd/Ctrl+K opens search from anywhere on the site, and closes it again.
+    if (isSearchShortcut(event)) {
+      event.preventDefault();
+      if (searchOpen) closeSearch();
+      else openSearch();
+      return;
+    }
     if (event.key === 'Escape' && menuOpen && !searchOpen) {
       menuOpen = false;
       menuButton?.focus();
@@ -172,7 +183,7 @@
       <a class:active={current} aria-current={current ? 'page' : undefined} href={item.href} onclick={(event) => open(event, item.href)}>{item.label}</a>
     {/each}
   </nav>
-  <div class="header-actions"><button class="site-search" aria-label="Search the site" aria-haspopup="dialog" onclick={openSearch}><span><Icon name="search" /></span> Search</button><a class="donate" href="https://venmo.com/user/todrobbins" target="_blank" rel="noreferrer">Donate <span><Icon name="arrow_outward" /></span><span class="sr-only"> (opens in new tab)</span></a></div>
+  <div class="header-actions"><button class="site-search" aria-label="Search the site" aria-haspopup="dialog" aria-keyshortcuts="Meta+K Control+K" onclick={openSearch}><span><Icon name="search" /></span> Search</button><a class="donate" href="https://venmo.com/user/todrobbins" target="_blank" rel="noreferrer">Donate <span><Icon name="arrow_outward" /></span><span class="sr-only"> (opens in new tab)</span></a></div>
 </header>
 
 {#if searchOpen}<SearchPalette {navigate} close={closeSearch} />{/if}

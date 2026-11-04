@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Icon from './Icon.svelte';
   import { tick } from 'svelte';
   export let id: string;
   export let label: string;
@@ -6,6 +7,11 @@
   export let valueLabel = '';
   export let options: { value: string; label: string; description?: string; searchText?: string }[] = [];
   export let placeholder = 'Type to search…';
+  export let clearable = true;
+  export let itemLabel = 'district';
+  export let itemsLabel = 'districts';
+  export let hint = 'Type a district number or candidate name.';
+  export let emptyMessage = 'No matching districts in this view. Try another number or name.';
   export let onSelect: (value: string) => void;
   let input: HTMLInputElement;
   let root: HTMLDivElement;
@@ -16,9 +22,10 @@
   let previousValue = value;
   const normalize = (text: string) => text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   $: selectedLabel = options.find(option => option.value === value)?.label || valueLabel || value;
+  $: numericValues = options.length > 0 && options.every(option => /^\d+$/.test(option.value));
   $: filtered = options.filter(option => {
     const search = normalize(query);
-    if (/^\d+$/.test(search)) return option.value.startsWith(search);
+    if (numericValues && /^\d+$/.test(search)) return option.value.startsWith(search);
     return search.split(/\s+/).every(token => normalize(`${option.label} ${option.description || ''} ${option.searchText || ''}`).includes(token));
   });
   $: if (value !== previousValue) {
@@ -37,7 +44,7 @@
     if (activeId) document.getElementById(activeId)?.scrollIntoView({ block: 'nearest' });
   }
   async function move(step: number) {
-    if (!open) { await show(); active = step > 0 ? 0 : filtered.length - 1; }
+    if (!open) { await show(); if (active < 0) active = step > 0 ? 0 : filtered.length - 1; }
     else if (filtered.length) active = Math.max(0, Math.min(filtered.length - 1, active < 0 ? (step > 0 ? 0 : filtered.length - 1) : active + step));
     await tick(); reveal();
   }
@@ -65,10 +72,10 @@
       value={text} aria-autocomplete="list" aria-expanded={open} aria-controls={open ? `${id}-listbox` : undefined} aria-activedescendant={activeId} aria-describedby={`${id}-hint`}
       onfocus={() => { void show(); }} onclick={() => { void show(); }} onkeydown={onKeydown}
       oninput={onInput} />
-    {#if value}<button type="button" class="combobox-clear" aria-label="Clear selected district" onpointerdown={(event) => event.preventDefault()} onclick={() => choose('')}>×</button>{/if}
-    <button type="button" class="combobox-toggle" aria-label={open ? 'Hide district options' : 'Show district options'} aria-expanded={open} aria-controls={open ? `${id}-listbox` : undefined} tabindex="-1" onpointerdown={(event) => event.preventDefault()} onclick={() => { if (open) dismiss(); else { input?.focus(); void show(); } }}><span aria-hidden="true">⌄</span></button>
+    {#if value && clearable}<button type="button" class="combobox-clear" aria-label={`Clear selected ${itemLabel}`} onpointerdown={(event) => event.preventDefault()} onclick={() => choose('')}><Icon name="close" /></button>{/if}
+    <button type="button" class="combobox-toggle" aria-label={`${open ? 'Hide' : 'Show'} ${itemLabel} options`} aria-expanded={open} aria-controls={open ? `${id}-listbox` : undefined} tabindex="-1" onpointerdown={(event) => event.preventDefault()} onclick={() => { if (open) dismiss(); else { input?.focus(); void show(); } }}><Icon name="expand_more" /></button>
   </div>
-  <p id={`${id}-hint`} class="combobox-hint">Type a district number or candidate name.</p>
+  <p id={`${id}-hint`} class="combobox-hint">{hint}</p>
   {#if open}
     <div class="combobox-popup">
       <ul role="listbox" id={`${id}-listbox`} aria-labelledby={`${id}-label`}>
@@ -79,8 +86,8 @@
           </li>
         {/each}
       </ul>
-      {#if !filtered.length}<p class="combobox-empty">No matching districts in this view. Try another number or name.</p>{/if}
-      <p class="combobox-count" role="status">{filtered.length} {filtered.length === 1 ? 'district' : 'districts'} available</p>
+      {#if !filtered.length}<p class="combobox-empty">{emptyMessage}</p>{/if}
+      <p class="combobox-count" role="status">{filtered.length} {filtered.length === 1 ? itemLabel : itemsLabel} available</p>
     </div>
   {/if}
 </div>

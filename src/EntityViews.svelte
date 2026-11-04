@@ -99,8 +99,8 @@
   $: contact = personProfile?.contact ?? contactFiling?.contact;
   $: contactItems = contact ? [
     contact.phone && { label: 'Phone', text: contact.phone, href: `tel:${contact.phone}`, icon: 'call', external: false },
-    contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'mail', external: false },
-    contact.pressEmail && { label: 'Press email', text: contact.pressEmail, href: `mailto:${contact.pressEmail}`, icon: 'mail', external: false },
+    contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'send', external: false },
+    contact.pressEmail && { label: 'Press email', text: contact.pressEmail, href: `mailto:${contact.pressEmail}`, icon: 'send', external: false },
     contact.website && { label: 'Website', text: externalUrl(contact.website), href: externalUrl(contact.website), icon: 'arrow_outward', external: true },
     contact.facebook && { label: 'Social', text: 'Facebook', href: externalUrl(contact.facebook), icon: 'arrow_outward', external: true },
     contact.instagram && { label: 'Social', text: 'Instagram', href: externalUrl(contact.instagram), icon: 'arrow_outward', external: true },
@@ -374,7 +374,7 @@
           <h3>Published campaign priorities</h3>
           <ul>{#each personProfile.priorities as priority}<li>{priority}</li>{/each}</ul>
           <div class="office-resources" role="group" aria-label={`${person.name} campaign resources`}>{#each personProfile.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>
-          <p class="profile-source">Summarized from <a href={personProfile.sourceUrl} target="_blank" rel="noreferrer">his campaign website<span class="sr-only"> (opens in new tab)</span></a>, verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>.</p>
+          <p class="profile-source">Summarized from <a href={personProfile.sourceUrl} target="_blank" rel="noreferrer">the candidate’s campaign website<span class="sr-only"> (opens in new tab)</span></a>, verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>.</p>
         </section>
       {/if}
       <section class="record-section">

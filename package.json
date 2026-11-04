@@ -7,7 +7,7 @@
     "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
   },
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "vite --host 127.0.0.1",
     "build": "vite build && node scripts/prerender-routes.mjs",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "refresh:results": "python3 scripts/refresh-election-results.py",
@@ -23,6 +23,6 @@
     "svelte-check": "4.3.1",
     "tailwindcss": "^4.3.3",
     "typescript": "5.9.2",
-    "vite": "6.4.3"
+    "vite": "6.4.5"
   }
 }

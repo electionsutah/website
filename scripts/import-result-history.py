@@ -68,7 +68,7 @@ def main():
     with ThreadPoolExecutor(max_workers=6) as pool:
         contests = list(pool.map(detail, rows))
     output = {'source': SOURCE, 'election': '2024 General Election', 'electionDate': '2024-11-05', 'official': True,
-              'asOf': state['election']['asOf'], 'fetchedAt': datetime.fromtimestamp(max(file.stat().st_mtime for file in used), timezone.utc).isoformat(),
+              'asOf': state['election']['asOf'], 'fetchedAt': datetime.fromtimestamp(min(file.stat().st_mtime for file in used), timezone.utc).isoformat(),
               'counties': counties, 'contests': contests}
     file = ROOT / 'public/data/2024-results.json'
     temporary = file.with_suffix('.tmp')

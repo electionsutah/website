@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Icon from './Icon.svelte';
   import { onMount } from 'svelte';
   import counties from './data/utah-county-paths.json';
   import ResultPersonName from './ResultPersonName.svelte';
@@ -22,6 +23,7 @@
   let showCounties = false;
   let drag: { clientX: number; clientY: number; view: MapView; scale: number; district: string; pointer: number } | null = null;
   let suppressClick = false;
+  $: countyOptions = [{ value: '', label: 'All Utah' }, ...data.counties.map(row => ({ value: row.id, label: row.name }))];
   const countyShapes = counties.map(row => ({ ...row, bounds: pathBounds(row.path), centroid: pathCentroid(row.path) }));
   async function loadGeometry() {
     loading = true; error = '';
@@ -99,7 +101,7 @@
 
 <section class="legislative-section" id="statewide-map" aria-labelledby="legislative-title">
   <div class="labs-section-heading"><div><p class="labs-kicker">The state legislature</p><h2 id="legislative-title">Utah, district by district.</h2></div><p>Explore House and Senate results. Zoom into a county, then select a district to see its vote.</p></div>
-  <div class="legislative-toolbar"><div class="chamber-toggle" role="group" aria-label="Legislative chamber"><button aria-pressed={chamber === 'senate'} onclick={() => setChamber('senate')}>Utah Senate</button><button aria-pressed={chamber === 'house'} onclick={() => setChamber('house')}>Utah House</button></div><label>Zoom to a county<select bind:value={county} onchange={chooseCounty}><option value="">All Utah</option>{#each data.counties as row}<option value={row.id}>{row.name}</option>{/each}</select></label><label class="county-overlay"><input type="checkbox" bind:checked={showCounties} /> County boundaries</label></div>
+  <div class="legislative-toolbar"><div class="chamber-toggle" role="group" aria-label="Legislative chamber"><button aria-pressed={chamber === 'senate'} onclick={() => setChamber('senate')}>Utah Senate</button><button aria-pressed={chamber === 'house'} onclick={() => setChamber('house')}>Utah House</button></div><Combobox id="legislative-county-select" label="Zoom to a county" value={county} options={countyOptions} placeholder="Find a county…" itemLabel="county" itemsLabel="counties" hint="Type a county name." emptyMessage="No matching counties. Try another name." onSelect={(value) => { county = value; chooseCounty(); }} /><label class="county-overlay"><input type="checkbox" bind:checked={showCounties} /> County boundaries</label></div>
   <div class="legislative-summary" role="status"><strong>{results.size} of {chamber === 'house' ? 75 : 29} districts have published 2026 results</strong><span>{#each leaderCounts.filter(row => row.count) as row}<span><ResultPartyName name={row.party} />: <b>{row.count}</b> leading</span>{/each}</span></div>
   {#if loading}<p class="labs-message" role="status">Loading Utah’s legislative map…</p>{:else if error}<div class="labs-message" role="alert"><p>{error}</p><button onclick={loadGeometry}>Retry map</button><a href="#all-results">Browse results</a></div>{:else}
   <div class="legislative-layout">
@@ -123,8 +125,8 @@
           <g aria-hidden="true" class="legislative-selection-layer">{#each highlightedShapes as district (district.number)}<path class="legislative-selection-halo" d={district.path} /><path class="legislative-selection-border" d={district.path} />{/each}</g>
           {#if selectedCounty}<text class="legislative-county-label" x={selectedCounty.centroid[0]} y={selectedCounty.centroid[1]} font-size={8 / zoom} text-anchor="middle" dominant-baseline="middle">{countyName}</text>{/if}
         </svg>
-        <div class="map-zoom-controls" role="group" aria-label="Map zoom controls"><button aria-label="Zoom in" disabled={zoom >= MAX_ZOOM - .01} onclick={() => view = zoomView(view, 1.5)}>+</button><button aria-label="Zoom out" disabled={zoom <= 1.01} onclick={() => view = zoomView(view, 1 / 1.5)}>−</button><button class="map-reset" aria-label="Reset map to all Utah" onclick={reset}>Reset</button></div>
-        {#if zoom > 1.01}<div class="map-pan-controls" role="group" aria-label="Pan map"><button aria-label="Pan left" onclick={() => pan(-.2, 0)}>←</button><button aria-label="Pan up" onclick={() => pan(0, -.2)}>↑</button><button aria-label="Pan down" onclick={() => pan(0, .2)}>↓</button><button aria-label="Pan right" onclick={() => pan(.2, 0)}>→</button></div>{/if}
+        <div class="map-zoom-controls" role="group" aria-label="Map zoom controls"><button aria-label="Zoom in" disabled={zoom >= MAX_ZOOM - .01} onclick={() => view = zoomView(view, 1.5)}><Icon name="add" /></button><button aria-label="Zoom out" disabled={zoom <= 1.01} onclick={() => view = zoomView(view, 1 / 1.5)}><Icon name="remove" /></button><button class="map-reset" aria-label="Reset map to all Utah" onclick={reset}><Icon name="zoom_out_map" /></button></div>
+        {#if zoom > 1.01}<div class="map-pan-controls" role="group" aria-label="Pan map"><button aria-label="Pan left" onclick={() => pan(-.2, 0)}><Icon name="arrow_back" /></button><button aria-label="Pan up" onclick={() => pan(0, -.2)}><Icon name="arrow_upward" /></button><button aria-label="Pan down" onclick={() => pan(0, .2)}><Icon name="arrow_downward" /></button><button aria-label="Pan right" onclick={() => pan(.2, 0)}><Icon name="arrow_forward" /></button></div>{/if}
         <span class="map-zoom-level" aria-live="polite">{zoom.toFixed(1)}×</span>
       </div>
       <p class="map-hover-status" aria-live="polite">{hovered ? `${chamberLabel(chamber)} District ${hovered} · ${resultState(hoveredResult)}` : 'Select a district on the map or choose one from the list.'}</p>
@@ -136,7 +138,7 @@
       {#if selectedShape}<div class="district-detail-heading"><p class="labs-kicker">{chamberLabel(chamber)}</p><h3>{#if districtHref}<a class="result-office-link" href={districtHref}>District {selected}</a>{:else}District {selected}{/if}</h3></div>
         {#if contest && currentResult}<p class="district-total-scope">{countyResult ? `${countyName} votes in this district` : 'Full district results'}</p><p class="district-current-leader">{resultState(contest)} <small>District-wide</small></p><div class="vote-bar" aria-hidden="true">{#each currentResult.options as option}<span style={`width:${currentResult.total ? option.votes / currentResult.total * 100 : 0}%;background:${color(option)}`}></span>{/each}</div>
           {#each currentResult.options as option}<div class="candidate-result"><span class="party-dot" style={`background:${color(option)}`}></span><div><strong><ResultPersonName name={option.name} {contest} /></strong><small><ResultPartyName name={option.party} fallback="Unaffiliated / write-in" /></small></div><b>{percent(option.votes, currentResult.total)}<small>{count(option.votes)} votes</small></b></div>{/each}
-          <p class="votes-total">{count(currentResult.total)} votes reported</p><div class="district-detail-actions"><button onclick={() => explore(contest.id)}>Explore full race ↗</button><a href={contest.source}>Official results ↗</a></div>
+          <p class="votes-total">{count(currentResult.total)} votes reported</p><div class="district-detail-actions"><button onclick={() => explore(contest.id)}>Explore full race <Icon name="arrow_forward" /></button><a href={contest.source}>Official results <Icon name="arrow_outward" /></a></div>
         {:else}<p class="district-empty">No 2026 result is published for this district. Senate seats have staggered elections; this may be a seat not on this year’s ballot. No incumbent-party result is inferred.</p>{/if}
       {:else}<div class="district-intro"><p class="labs-kicker">{countyName || 'Start exploring'}</p><h3>{countyName ? 'Your county’s races.' : 'Find your district.'}</h3><p>Select a district for candidate names, vote counts, and a link to the full race.</p></div>
         <div class="county-race-list" aria-label={countyName ? `${countyName} races` : `${chamberLabel(chamber)} races`}>{#each choices.filter(row => results.has(row.number)) as district}{@const result = results.get(district.number)!}<button onclick={() => selectDistrict(String(district.number))}><strong>District {district.number}</strong><span>{resultState(result)}</span></button>{:else}<p>No {chamberLabel(chamber)} results are published for this county.</p>{/each}</div>
@@ -144,5 +146,5 @@
     </aside>
   </div>
   {/if}
-  <p class="map-note legislative-source">{data.official ? 'Official' : 'Unofficial'} 2026 results · Colors show vote leaders, not projected winners or legislative control. Patterns indicate no published result or a tie. Districts can cross county lines. Boundaries: <a href="https://gis.utah.gov/products/sgid/political/state-house-districts/">Utah House</a> / <a href="https://gis.utah.gov/products/sgid/political/state-senate-districts/">Utah Senate</a>, 2022–2032 plans. Simplified for visualization; use official tools for address lookup.</p>
+  <div class="map-note legislative-source"><p>{data.official ? 'Official' : 'Unofficial'} 2026 results · Colors show vote leaders, not projected winners or legislative control. Patterns indicate no published result or a tie.</p><p>Districts can cross county lines. Boundaries: <a href="https://gis.utah.gov/products/sgid/political/state-house-districts/">Utah House</a> / <a href="https://gis.utah.gov/products/sgid/political/state-senate-districts/">Utah Senate</a>, 2022–2032 plans. Simplified for visualization; use official tools for address lookup.</p></div>
 </section>

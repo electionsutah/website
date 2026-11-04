@@ -5,6 +5,9 @@
   import { elections, offices, parties, people, places } from './lib/entities';
   import { formatCount } from './lib/format';
   import { browseUrl, matchesQuery, queryTokens, searchText } from './lib/search';
+  import { isApplePlatform } from './lib/shortcuts';
+
+  const shortcutKeys = isApplePlatform() ? ['⌘', 'K'] : ['Ctrl', 'K'];
 
   export let navigate: (href: string) => void;
   /** Pass false when navigating away, so focus goes to the new page instead of back to the trigger. */
@@ -159,5 +162,6 @@
         <div>{#each groups as group}<a href={group.browseHref} onclick={(event) => open(event, group.browseHref)}><strong>{formatCount(group.items.length)}</strong><span>{group.label}</span></a>{/each}</div>
       </div>
     {/if}
+    <p class="search-shortcut-tip">Tip: press {#each shortcutKeys as key, index}{#if index}{' + '}{/if}<kbd>{key}</kbd>{/each} on any page to search the whole site.</p>
   </div>
 </div>

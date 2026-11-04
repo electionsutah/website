@@ -1,4 +1,4 @@
-import { cleanOfficeName, identityKey, people, type Person } from './entities';
+import { cleanOfficeName, displayName, identityKey, people, type Person } from './entities';
 import type { Contest } from './results';
 
 // Keep ballot responses and write-in aggregates out of person reconciliation.
@@ -23,6 +23,7 @@ export function createResultPersonResolver(directory: Person[]) {
     const matches = [...(byName.get(key)?.values() ?? [])];
     if (matches.length === 1) return matches[0];
     // Only disambiguate identical names with a filing in this election and race.
+    // 2026 filings carry no county, so county-level races stay unlinked rather than risk a wrong match.
     const contextual = matches.filter(person => person.filings.some(filing =>
       filing.year === 2026 && identityKey(cleanOfficeName(filing.officeName)) === identityKey(cleanOfficeName(race.name)) &&
       (!race.county || `${filing.county.toLowerCase().replaceAll(' ', '-')}-county-ut` === race.county)
@@ -32,5 +33,22 @@ export function createResultPersonResolver(directory: Person[]) {
 }
 
 export const resultPerson = createResultPersonResolver(people);
-export const retainedJudgeName = (contest: Race) => /^Shall\s+(.+?)\s+be retained\b/i.exec(contest.name)?.[1];
+// State feeds: "Shall X be retained…"; county feeds: "X Judicial Retention".
+export const retainedJudgeName = (contest: Race) => (/^Shall\s+(.+?)\s+be retained\b/i.exec(contest.name) ?? /^(.+?)\s+Judicial Retention$/i.exec(contest.name.trim()))?.[1];
+/**
+ * Display title for a contest. Retention questions read "{Name}, {Office}", e.g.
+ * "Shall JANE DOE be retained in the office of Justice of the Supreme Court of Utah?"
+ * becomes "Jane Doe, Justice of the Supreme Court of Utah". County feeds name only the
+ * judge ("JANE DOE Judicial Retention"), so those read "Jane Doe, Judge".
+ */
+export function contestTitle(contest: Race) {
+  const name = contest.name.replace(' (Multi-County)', '').trim();
+  const state = /^Shall\s+(.+?)\s+be retained in the office of\s+(.+?)\?/i.exec(name);
+  const county = state ? null : /^(.+?)\s+Judicial Retention$/i.exec(name);
+  const judge = state?.[1] ?? county?.[1];
+  if (!judge) return name;
+  // Prefer the directory's spelling; otherwise recase the all-caps ballot name (MCIFF → McIff).
+  const judgeName = resultPerson(judge, contest)?.name ?? displayName(judge).replace(/\bMc(\p{Ll})/gu, (_, letter) => `Mc${letter.toUpperCase()}`);
+  return `${judgeName}, ${state ? state[2] : 'Judge'}`;
+}
 export const personHref = (person: Person) => `/people/${person.id}/`;
