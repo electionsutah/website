@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick } from 'svelte';
   import Icon from './Icon.svelte';
+  import Labs from './Labs.svelte';
   import candidateYamlUrl from './data/2026-candidates.yml?url';
   import historicalDataUrl from './data/historical-candidates.json?url';
   import ElectionViews from './ElectionViews.svelte';
@@ -73,14 +74,15 @@
     { label: 'Parties', href: '/parties/' },
     { label: 'People', href: '/people/' },
     { label: 'Places', href: '/places/' },
-    { label: 'Docs', href: '/docs/' }
+    { label: 'Docs', href: '/docs/' },
+    { label: 'Labs', href: '/labs/' }
   ];
 
   $: segments = path.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
-  $: routeSection = (segments[0] ?? '') as 'people' | 'offices' | 'parties' | 'places' | 'elections' | 'docs' | '';
+  $: routeSection = (segments[0] ?? '') as 'people' | 'offices' | 'parties' | 'places' | 'elections' | 'docs' | 'labs' | '';
   $: routeId = routeSection === 'places' ? segments.slice(1).join('/') : (segments[1] ?? '');
   $: isHome = !segments.length;
-  $: isKnownRoute = isHome || ['people', 'offices', 'parties', 'places', 'elections', 'docs'].includes(routeSection);
+  $: isKnownRoute = isHome || ['people', 'offices', 'parties', 'places', 'elections', 'docs', 'labs'].includes(routeSection);
 
   $: source = directory === 'People' ? homePeople : homeOffices;
   $: filtered = source.filter((item) => matchesQuery(item.text, queryTokens(query)));
@@ -268,6 +270,8 @@
   </section>
 
 </main>
+{:else if routeSection === 'labs' && !routeId}
+  <main id="top" tabindex="-1" inert={searchOpen}><Labs /></main>
 {:else if routeSection === 'elections'}
   <main class="entity-main" id="top" tabindex="-1" inert={searchOpen}><ElectionViews id={routeId} {navigate} /></main>
 {:else if routeSection === 'docs'}

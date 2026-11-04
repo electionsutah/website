@@ -129,3 +129,62 @@ model: county routes use `/places/{county-id}/`, and city routes use
 `/places/{county-id}/{city-id}/`. The 2026 workbook does not publish candidate
 city or county values, so those filings correctly show “Not published” instead
 of being assigned to an electoral district as a place.
+
+## Election results lab
+
+`/labs/` is an editorial-style explorer for the **2026 general election**. Its
+compact interactive county maps accompany U.S. House race cards and a detailed
+explorer for every imported contest. Search, county/category filters, closest-race
+sorting, pagination, shareable query parameters, keyboard map selection, and
+county result tables are included. The existing site’s serif/sans fonts, blue
+links, dark rules, and warm backgrounds carry into the lab.
+
+The bundled snapshot at `public/data/2026-results.json` contains 135
+state-published contests plus 329 additional local contests across all 29 counties.
+It was retrieved from the [official public results API](https://electionresults.utah.gov/results/public/Utah/General11032026).
+Refresh it before rebuilding/deploying:
+
+```bash
+python3 scripts/refresh-election-results.py
+npm run check
+npm run build
+```
+
+This is a **saved snapshot**, not a live feed. The reload control checks for a
+newer snapshot on this site; it does not scrape the state on demand. The importer
+uses the state-published contest breakdowns for county comparisons, then includes
+county-only contests without duplicating their parent statewide contests. Raw
+responses are cached in the ignored `.firecrawl/results/` directory;
+`--use-cache` supports offline regeneration. A failed import preserves the previous
+snapshot. The JSON retains state/county source timestamps, reporting counts,
+source links, exact candidate names, votes, and the source’s winner indicators.
+All vote totals and county breakdown sums were reconciled for the included import.
+
+Maps show **county aggregates**, including only votes for the chosen contest;
+they do not depict 2026 district boundaries. Geometry is bundled in
+`src/data/utah-county-paths.json`, projected from the Utah features in
+[Plotly’s U.S. Census county GeoJSON](https://github.com/plotly/datasets/blob/master/geojson-counties-fips.json).
+These simplified county shapes should not be used for address or district lookup.
+Leaders are not projected winners, and “reporting” does not mean every ballot has
+been counted. The accessible county selector and data table follow W3C’s
+[text-alternative guidance for complex images](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html).
+
+### Linking results to existing people
+
+Results use the same identity normalization as the directory (case, spacing,
+accents, and punctuation) and recognize names already recorded in a person's
+filings. Links use the directory's actual person ID. A unique exact identity
+match links automatically; duplicate names need a matching 2026 office and,
+for local contests, county. Similar spellings, missing middle names, and nicknames
+are not guessed. Ballot responses and write-in aggregates never become person
+links. Judicial-retention questions link the named judge's profile while Yes/No
+responses remain ballot responses. Official result names and votes stay unchanged.
+
+The included snapshot reconciles to 226 candidate profiles plus 29 judicial
+profiles (255 existing people). The three unmatched statewide candidate names are
+Babak “Bobby” Darvish, Blake Townsend, and Rebecca Winsor. Unmatched local names
+also remain plain text. The matcher reads the current directory at runtime, so
+future results refreshes and directory additions use the same rules automatically.
+
+Run `node scripts/check-result-people.mjs` to validate identity edge cases and
+print the current reconciliation counts and unmatched statewide candidates.

@@ -6,3 +6,6 @@ __pycache__
 
 # Local Netlify folder
 .netlify
+
+# Public source responses cached during data imports
+.firecrawl/

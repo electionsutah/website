@@ -21,6 +21,7 @@ const { people, offices, parties, places, elections } = entities;
 /** @type {{ path: string; title: string }[]} */
 const routes = [
   { path: '/', title: 'Elections Utah — Open civic data' },
+  { path: '/labs/', title: '2026 Utah election results — Elections Utah Labs' },
   { path: '/elections/', title: 'Election years' },
   ...elections.map((election) => ({ path: `/elections/${election.year}/`, title: election.title })),
   { path: '/people/', title: 'People' },
