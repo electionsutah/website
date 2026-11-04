@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><title>Favicon options</title>
+<style>
+body{margin:0;padding:28px;background:#f8f8f6;font:14px/1.4 system-ui,sans-serif;color:#111110}
+h1{font:700 22px Georgia,serif;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#fff;border:1px solid #d8d6d0;padding:16px}
+.card h2{font-size:14px;margin:0 0 12px}
+.sizes{display:flex;align-items:flex-end;gap:14px;margin-bottom:14px}
+.sizes figure{margin:0;text-align:center;font-size:10px;color:#77756f}
+.sizes img{display:block;margin:0 auto 4px}
+.tab{display:flex;align-items:center;gap:7px;width:max-content;padding:7px 12px;border-radius:8px 8px 0 0;background:#dee1e6;font-size:12px}
+.tab.dark{background:#35363a;color:#e8eaed}
+.tabs{display:grid;gap:6px}
+p{margin:12px 0 0;color:#5f5e59;font-size:12px}
+</style>
+<h1>Favicon options: ascending stars on black</h1>
+<div class="grid" id="grid"></div>
+<script>
+const opts = [['1-trail','1 · Trail','The logo’s vertical star trail, centered.'],['2-diagonal','2 · Diagonal','The trail climbs corner to corner and fills the square.'],['3-rule','3 · Trail + rule','The trail over the header’s salmon bottom rule.'],['4-rounded','4 · Rounded tile','The diagonal trail on a rounded app-style tile.']];
+document.getElementById('grid').innerHTML = opts.map(([f,t,d]) => `<div class="card"><h2>${t}</h2><div class="sizes">${[128,64,32,16].map(s=>`<figure><img src="${f}.svg" width="${s}" height="${s}"><figcaption>${s}px</figcaption></figure>`).join('')}</div><div class="tabs"><div class="tab"><img src="${f}.svg" width="16" height="16">Elections Utah</div><div class="tab dark"><img src="${f}.svg" width="16" height="16">Elections Utah</div></div><p>${d}</p></div>`).join('');
+</script>
