@@ -272,10 +272,10 @@
     return '';
   }
 
-  /** Reveal the next page of records and move focus to the first new one, which renders above the button. */
+  /** Reveal the next 100 records and move focus to the first new one, which renders above the button. */
   async function showMore() {
     const first = limit;
-    limit += 36;
+    limit += 100;
     await tick();
     resultsList?.querySelectorAll<HTMLElement>('tbody th a, .card-record-link')[first]?.focus();
   }

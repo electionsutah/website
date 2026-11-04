@@ -10,6 +10,7 @@
   import ResultPartyName from './ResultPartyName.svelte';
   import { resultPerson, retainedJudgeName, personHref, contestTitle } from './lib/result-people';
   import { count, color, margin, percent, leader, hasSingleLeader, seatsOf, updated, type Snapshot, type Contest } from './lib/results';
+  import { tidySnapshot } from './lib/result-names';
   import './labs.css';
   let data: Snapshot | null = null;
   let error = '';
@@ -40,7 +41,7 @@
     try {
       const response = await fetch('/data/2026-results.json', { cache: 'no-cache' });
       if (!response.ok) throw new Error('The results snapshot could not be loaded.');
-      data = await response.json() as Snapshot;
+      data = tidySnapshot(await response.json() as Snapshot);
       // Drop URL values that don't match this snapshot instead of keeping them silently.
       if (selectedId && !data.contests.some(row => row.id === selectedId)) selectedId = '';
       if (county && !data.counties.some(row => row.id === county)) county = '';
