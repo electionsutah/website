@@ -19,37 +19,44 @@ try {
 }
 const { people, offices, parties, places, elections, filings, currentDatasetUpdated } = entities;
 
-// Brief, data-driven descriptions for link previews and search results.
+// Data-driven descriptions for link previews and search results. LinkedIn wants
+// at least 100 characters; search engines truncate around 160.
 const plural = (n, word) => `${n.toLocaleString('en-US')} ${word}${n === 1 ? '' : 's'}`;
-const span = (years) => { const sorted = [...years].sort((a, b) => a - b); return sorted.length ? (sorted[0] === sorted.at(-1) ? `${sorted[0]}` : `${sorted[0]}–${sorted.at(-1)}`) : ''; };
+const span = (years) => { const sorted = [...years].sort((a, b) => a - b); return sorted.length ? (sorted[0] === sorted.at(-1) ? `in ${sorted[0]}` : `from ${sorted[0]} to ${sorted.at(-1)}`) : ''; };
 const latest = (list) => [...list].sort((a, b) => b.year - a.year)[0];
-const partyLabel = (name) => (name && !/^(unaffiliated|nonpartisan|unknown)?$/i.test(name) ? `, ${name}` : '');
+const hasParty = (name) => name && !/^(unaffiliated|nonpartisan|unknown)?$/i.test(name);
+const sources = 'with offices, parties, filing status, and links to official sources';
 function personDescription(person) {
   const filing = latest(person.filings);
-  if (!filing) return `${person.name} in Utah election records.`;
-  const more = person.filings.length > 1 ? ` ${plural(person.filings.length, 'filing')}, ${span(person.years)}.` : '';
-  return `Candidate for ${filing.officeName} in ${filing.year}${partyLabel(filing.partyName)}.${more}`;
+  if (!filing) return `${person.name} in Utah election records on Elections Utah, with offices, parties, and links to official sources.`;
+  const ran = `${person.name} filed for ${filing.officeName} in ${filing.year}${hasParty(filing.partyName) ? ` with the ${filing.partyName.replace(/^the /i, '')}` : ''}.`;
+  return person.filings.length > 1
+    ? `${ran} See all ${plural(person.filings.length, 'Utah candidate filing')} ${span(person.years)}, with status and official sources.`
+    : `${ran} See the filing, its status, and the official source on Elections Utah.`;
 }
-const filingsSummary = (filings, years) => (filings.length ? `${plural(filings.length, 'candidate filing')}, ${span(years)}.` : 'No candidate filings on record.');
+const filed = (filings, years) => (filings.length ? `${plural(filings.length, 'candidate filing')} ${span(years)}` : 'no candidate filings on record yet');
 
 /** @type {{ path: string; title: string; description: string; image: string; type?: string }[]} */
 const routes = [
-  { path: '/', title: 'Elections Utah — Open civic data', description: 'Open civic data for Utah elections: candidates, offices, parties, places, and 2026 results.', image: 'default' },
-  { path: '/labs/', title: '2026 Utah election results — Elections Utah Labs', description: 'Unofficial 2026 Utah general election results for every contest, with county maps.', image: 'labs' },
-  { path: '/elections/', title: 'Election years', description: 'Candidate filings for each Utah election year.', image: 'elections' },
-  ...elections.map((election) => ({ path: `/elections/${election.year}/`, title: election.title, description: `${election.title}: ${filingsSummary(election.filings, [election.year]).replace(/, \d{4}\.$/, '.')}`, image: 'elections' })),
-  { path: '/people/', title: 'People', description: `${plural(people.length, 'candidate')} who have filed to run in Utah.`, image: 'people' },
+  { path: '/', title: 'Elections Utah — Open civic data', description: 'Open civic data for Utah elections: candidate filings since 2017, offices, parties, counties and cities, and 2026 results by county.', image: 'default' },
+  { path: '/labs/', title: '2026 Utah election results — Elections Utah Labs', description: 'Unofficial 2026 Utah general election results for every contest, with county-by-county maps and shifts from past elections.', image: 'labs' },
+  { path: '/elections/', title: 'Election years', description: 'Candidate filings for each Utah election year since 2017, with offices, parties, filing status, and links to official sources.', image: 'elections' },
+  ...elections.map((election) => ({ path: `/elections/${election.year}/`, title: election.title, description: `Candidates in Utah’s ${election.title}: ${plural(election.filings.length, 'candidate filing')}, ${sources}.`, image: 'elections' })),
+  { path: '/people/', title: 'People', description: `${plural(people.length, 'candidate')} who have filed to run for office in Utah, with the offices they sought, their parties, and official sources.`, image: 'people' },
   ...people.map((person) => ({ path: `/people/${person.id}/`, title: person.name, description: personDescription(person), image: 'people', type: 'profile' })),
-  { path: '/offices/', title: 'Offices', description: `${plural(offices.length, 'Utah office')} and who has run for each.`, image: 'offices' },
-  ...offices.map((office) => ({ path: `/offices/${office.id}/`, title: office.name, description: `${office.name}: ${filingsSummary(office.filings, office.years)}`, image: 'offices' })),
-  { path: '/parties/', title: 'Parties', description: 'Utah political parties and their candidates.', image: 'parties' },
-  ...parties.map((party) => ({ path: `/parties/${party.id}/`, title: party.name, description: `${party.name}${party.recognized ? ', a recognized Utah party' : ''}: ${filingsSummary(party.filings, party.years)}`, image: 'parties' })),
-  { path: '/places/', title: 'Places', description: 'Elections in every Utah county and city.', image: 'places' },
-  ...places.map((place) => ({ path: `/places/${place.id}/`, title: place.name, description: `${place.type === 'City' ? `${place.name}, ${place.county} County` : place.name}: ${plural(place.offices.length, 'office')}, ${filingsSummary(place.filings, place.years).replace(/^./, (c) => c.toLowerCase())}`, image: 'places' })),
-  { path: '/docs/', title: 'Documentation', description: 'How to use Elections Utah’s open data.', image: 'docs' },
-  { path: '/docs/data-schema/', title: 'Data schema', description: 'Fields and formats in the Elections Utah datasets.', image: 'docs' },
-  { path: '/docs/glossary/', title: 'Glossary', description: 'Utah election terms, defined.', image: 'docs' }
+  { path: '/offices/', title: 'Offices', description: `${plural(offices.length, 'Utah office')}, from U.S. House to local school boards, and every candidate who has filed to run for each one.`, image: 'offices' },
+  ...offices.map((office) => ({ path: `/offices/${office.id}/`, title: office.name, description: `Who has run for ${office.name} in Utah: ${filed(office.filings, office.years)}, with parties, filing status, and official sources.`, image: 'offices' })),
+  { path: '/parties/', title: 'Parties', description: 'Utah’s recognized and historical political parties, with their candidates, the offices they sought, and links to official sources.', image: 'parties' },
+  ...parties.map((party) => ({ path: `/parties/${party.id}/`, title: party.name, description: `${party.name}${party.recognized ? ', a recognized Utah political party' : party.historical ? ', a historical Utah political party' : ', a party in Utah elections'}: ${filed(party.filings, party.years)}, with candidates, offices, and official sources.`, image: 'parties' })),
+  { path: '/places/', title: 'Places', description: 'Elections in every Utah county and city, with the local offices on the ballot, the candidates who filed, and links to official sources.', image: 'places' },
+  ...places.map((place) => ({ path: `/places/${place.id}/`, title: place.name, description: `Elections in ${place.type === 'City' ? `${place.name}, ${place.county} County` : `${place.name}, Utah`}: ${plural(place.offices.length, 'office')} and ${filed(place.filings, place.years)}, with candidates and official sources.`, image: 'places' })),
+  { path: '/docs/', title: 'Documentation', description: 'How to use Elections Utah’s open election data: downloads, the data schema, a glossary, and an MCP connector for AI assistants.', image: 'docs' },
+  { path: '/docs/data-schema/', title: 'Data schema', description: 'Every field in the Elections Utah datasets, from candidate filings to 2026 results, with formats, examples, and source notes.', image: 'docs' },
+  { path: '/docs/glossary/', title: 'Glossary', description: 'Plain-language definitions of Utah election terms, from declarations of candidacy and filing status to retention elections and canvass.', image: 'docs' }
 ];
+
+const shortDescriptions = routes.filter((route) => route.description.length < 100);
+if (shortDescriptions.length) console.warn(`${shortDescriptions.length} descriptions are under 100 characters, e.g. ${shortDescriptions[0].path}: "${shortDescriptions[0].description}"`);
 
 const escapeHtml = (value) => value.replace(/[&<>"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[char]);
 const fullTitle = (title) => (title.includes('Elections Utah') ? title : `${title} — Elections Utah`);
@@ -93,7 +100,7 @@ for (const route of routes) {
 }
 
 // Netlify serves dist/404.html with HTTP 404 for any path without a file; the app renders its not-found view.
-await writeFile(join(dist, '404.html'), page('Page not found', `\n    <meta name="robots" content="noindex" />${metaTags({ title: 'Page not found', description: 'This page could not be found on Elections Utah.', image: 'default' })}`));
+await writeFile(join(dist, '404.html'), page('Page not found', `\n    <meta name="robots" content="noindex" />${metaTags({ title: 'Page not found', description: 'This page could not be found on Elections Utah. Search Utah candidates, offices, parties, places, and 2026 election results.', image: 'default' })}`));
 
 const sitemap = [
   '<?xml version="1.0" encoding="UTF-8"?>',
@@ -118,7 +125,7 @@ await writeFile(join(dist, 'data', 'filings.json'), JSON.stringify(filingsExport
 const snapshot = namesLib.tidySnapshot(JSON.parse(await readFile(join(root, 'public/data/2026-results.json'), 'utf8')));
 const slugs = slugsLib.raceSlugs(snapshot.contests);
 const countyNames = new Map(snapshot.counties.map((row) => [row.id, row.name]));
-const status = snapshot.official ? 'Official 2026 results.' : 'Unofficial 2026 results.';
+const status = `${snapshot.official ? 'Official' : 'Unofficial'} 2026 Utah results with county maps.`;
 const racePreviews = Object.fromEntries(snapshot.contests.map((contest) => {
   const title = peopleLib.contestTitle(contest);
   const county = contest.county ? countyNames.get(contest.county) ?? '' : '';
@@ -126,8 +133,16 @@ const racePreviews = Object.fromEntries(snapshot.contests.map((contest) => {
   const seats = resultsLib.seatsOf(contest);
   const top = contest.options[0];
   const votes = resultsLib.count(contest.total);
-  const result = !contest.total ? resultsLib.leader(contest, seats) : seats === 1 && top ? `${resultsLib.leader(contest, seats)} with ${resultsLib.percent(top.votes, contest.total)} of ${votes} votes` : `${resultsLib.leader(contest, seats).replace(" · ", " for ")}, ${votes} votes`;
-  return [slugs.slug(contest.id), { title: `${label}: 2026 results`, description: `${result}. ${status}` }];
+  const share = top && contest.total ? `${resultsLib.percent(top.votes, contest.total)} of ${votes} votes` : '';
+  const measure = contest.options.length > 0 && contest.options.every((option) => /^(yes|no|for|against)\b/i.test(option.name));
+  const judge = measure && /(Judge|Justice)\b/.test(title);
+  let result;
+  if (!contest.total) result = `${label}: no votes reported yet.`;
+  else if (judge) result = `Retain ${label}? “${top.name}” leads with ${share}.`;
+  else if (measure) result = `${label}: “${top.name}” leads with ${share}.`;
+  else if (seats > 1) result = `${label}: ${resultsLib.leader(contest, seats).replace('Top', 'the top').replace(' · ', ' for ')}, with ${votes} votes counted.`.replace(': the', ': The');
+  else result = `${top.name} leads with ${share} in ${label}.`;
+  return [slugs.slug(contest.id), { title: `${label}: 2026 results`, description: `${result} ${status}` }];
 }));
 await writeFile(join(dist, 'data', 'race-previews.json'), JSON.stringify(racePreviews));
 
