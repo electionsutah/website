@@ -121,7 +121,8 @@
 .map-tooltip strong{display:block;font-weight:700}.map-tooltip span{display:block;color:#c7d0d6;font-size:12px}
 @media (hover:none){.map-tooltip{display:none}}
 .legislative-map-stage{position:relative;isolation:isolate;contain:paint;height:clamp(440px,50vw,680px);background:#fffefa;border:1px solid var(--lab-line);overflow:hidden}
-.legislative-map-stage>svg{display:block;overflow:hidden;width:100%;height:100%;touch-action:none;cursor:grab;user-select:none}
+.legislative-map-stage .legislative-map-canvas{position:absolute;inset:0}.legislative-map-canvas .maplibregl-canvas:focus-visible{outline:3px solid #006eb7;outline-offset:-3px}
+.legislative-map-stage .maptiler-logo{position:absolute;z-index:2;left:12px;top:12px;bottom:auto;width:72px}.legislative-map-stage .maptiler-logo img{display:block;width:100%}
 /* SVG paths receive native focus on pointer-down, before selection updates on
    pointer-up. Suppress the browser's rectangular focus ring at that stage;
    keyboard users retain the district-shaped stroke and an inset map ring. */
@@ -155,16 +156,13 @@
 .legislative-details{position:relative;z-index:1;min-width:0;border-top:3px solid var(--lab-ink);padding-top:18px}
 .legislative-details>label{margin-bottom:28px}.district-detail-heading .labs-kicker{margin-bottom:8px}
 .district-detail-heading h3,.district-intro h3{margin:0 0 18px;font:600 32px/1.1 'Source Serif 4',serif;letter-spacing:-.8px}
+.district-intro{margin-bottom:28px}.district-intro h3+p{margin:0}
 .district-intro p,.district-empty{font-size:16px;line-height:1.75;color:var(--lab-muted)}
 .district-total-scope{font-size:14px;font-weight:600;margin:0 0 12px}.district-current-leader{font-size:14px;font-weight:600;line-height:1.7;margin-bottom:18px}
 .district-current-leader small{display:block;font-size:12px;color:var(--lab-muted);font-weight:400}
 .district-detail-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:24px;font-size:14px}
 .district-detail-actions button{padding:11px 15px;border:1px solid #246187;background:#246187;color:white;font-weight:600}
 .district-detail-actions a,.legislative-source a{color:#246187;text-decoration:underline}
-.county-race-list{max-height:400px;overflow-y:auto;overscroll-behavior:contain;border-top:1px solid var(--lab-line)}
-.county-race-list button{display:block;width:100%;text-align:left;padding:14px 4px;background:none;border:0;border-bottom:1px solid var(--lab-line);color:var(--lab-ink)}
-.county-race-list button:hover{background:#eeeee7}.county-race-list strong{font-size:15px;font-weight:600}
-.county-race-list span{display:block;margin-top:5px;font-size:13px;line-height:1.5;color:var(--lab-muted)}
 .legislative-source{margin-top:22px;padding-top:18px;border-top:1px solid var(--lab-line)}
 @media(max-width:1000px){.legislative-layout{grid-template-columns:minmax(0,1fr) minmax(260px,.85fr);gap:24px}}
 @media(max-width:700px){
@@ -172,7 +170,7 @@
   .legislative-toolbar{gap:16px}.chamber-toggle{width:100%}.chamber-toggle button{flex:1;padding-inline:12px}
   .legislative-toolbar>.district-combobox{max-width:none;min-width:0;width:100%;flex-basis:100%}
   .legislative-map-stage{height:500px}.legislative-summary>span{gap:12px}
-  .legislative-details{padding-top:22px}.county-race-list{max-height:300px}
+  .legislative-details{padding-top:22px}
 }
 
 /* Editable district selector: listbox focus stays in the text field. */
