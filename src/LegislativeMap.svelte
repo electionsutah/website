@@ -66,8 +66,10 @@
   const empty = { type: 'FeatureCollection' as const, features: [] };
   $: if (geometry && container && !map) void createMap();
   async function createMap() {
-    const [{ default: maplibregl }] = await Promise.all([import('maplibre-gl'), import('maplibre-gl/dist/maplibre-gl.css')]);
-    const instance = new maplibregl.Map({ container, style: key ? `https://api.maptiler.com/maps/dataviz-light/style.json?key=${key}` : blankStyle, bounds: UTAH_BOUNDS, fitBoundsOptions: FIT, attributionControl: { compact: true }, cooperativeGestures: true, dragRotate: false, pitchWithRotate: false, touchPitch: false, maxZoom: 13 });
+    const [{ Map: MapLibre, setWorkerUrl }, { default: workerUrl }] = await Promise.all([import('maplibre-gl'), import('maplibre-gl/dist/maplibre-gl-worker.mjs?url'), import('maplibre-gl/dist/maplibre-gl.css')]);
+    // MapLibre 6 runs its worker from a separate module file; ship it as an asset and point the library at it.
+    setWorkerUrl(workerUrl);
+    const instance = new MapLibre({ container, style: key ? `https://api.maptiler.com/maps/dataviz-light/style.json?key=${key}` : blankStyle, bounds: UTAH_BOUNDS, fitBoundsOptions: FIT, attributionControl: { compact: true }, cooperativeGestures: true, dragRotate: false, pitchWithRotate: false, touchPitch: false, maxZoom: 13 });
     instance.touchZoomRotate.disableRotation();
     instance.keyboard.disableRotation();
     map = instance;
