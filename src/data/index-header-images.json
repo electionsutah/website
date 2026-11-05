@@ -1,0 +1,42 @@
+{
+  "elections": {
+    "src": "/images/index-headers/elections.webp",
+    "position": "center 48%",
+    "title": "Polling Station Nashua New Hampshire",
+    "artist": "MarkBuckawicki",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polling_Station_Nashua_New_Hampshire.JPG",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Polling_Station_Nashua_New_Hampshire.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  "offices": {
+    "src": "/images/index-headers/offices.webp",
+    "position": "center 54%",
+    "title": "Councilmember Sally Clark's Final Full Council Meeting, April 6, 15 (16702983814)",
+    "artist": "Seattle City Council from Seattle",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Councilmember_Sally_Clark%27s_Final_Full_Council_Meeting,_April_6,_15_(16702983814).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Councilmember_Sally_Clark%27s_Final_Full_Council_Meeting%2C_April_6%2C_15_%2816702983814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  "parties": {
+    "src": "/images/index-headers/parties.webp",
+    "position": "center 25%",
+    "title": "Seattle City Council Community Meeting, 2010 (9017202109)",
+    "artist": "Seattle City Council from Seattle",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seattle_City_Council_Community_Meeting,_2010_(9017202109).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Seattle_City_Council_Community_Meeting%2C_2010_%289017202109%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  },
+  "places": {
+    "src": "/images/index-headers/places.webp",
+    "position": "center 55%",
+    "title": "Salt Lake City Wasatch Mountains",
+    "artist": "GoingsOn-YT",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salt_Lake_City_Wasatch_Mountains.png",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Salt_Lake_City_Wasatch_Mountains.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  }
+}

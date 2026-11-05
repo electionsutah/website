@@ -4,6 +4,8 @@
   import Icon from './Icon.svelte';
   import SearchField from './SearchField.svelte';
   import IndexControls from './IndexControls.svelte';
+  import IndexHeader from './IndexHeader.svelte';
+  import indexHeaderImages from './data/index-header-images.json';
   import SortHeader from './SortHeader.svelte';
   import placeProfiles from './data/place-enrichment.json';
   import placeImageData from './data/place-images.json';
@@ -521,10 +523,7 @@
   {/if}
 {:else}
   <section class="entity-index" class:places-index={section === 'places'} class:embedded-index={embedded}>
-    {#if !embedded}<header>
-      <div><p class="eyebrow">Election archive</p><h1>{labels[section].plural}</h1></div>
-      <p>{labels[section].intro}</p>
-    </header>{/if}
+    {#if !embedded}<IndexHeader title={labels[section].plural} intro={labels[section].intro} photo={section === 'people' ? undefined : indexHeaderImages[section]} />{/if}
     <IndexControls
       {facets}
       {selection}

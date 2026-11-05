@@ -2,6 +2,8 @@
   import Breadcrumbs from './Breadcrumbs.svelte';
   import Icon from './Icon.svelte';
   import IndexControls from './IndexControls.svelte';
+  import IndexHeader from './IndexHeader.svelte';
+  import indexHeaderImages from './data/index-header-images.json';
   import EntityViews from './EntityViews.svelte';
   import SortHeader from './SortHeader.svelte';
   import { currentDatasetUpdated, elections, electionsByYear, type ElectionCycle } from './lib/entities';
@@ -137,7 +139,7 @@
   </article>
 {:else}
   <section class="entity-index election-index">
-    <header><div><p class="eyebrow">2017–2026 archive</p><h1>Election years</h1></div><p>Browse every cycle in the archive. Statewide records are included where Utah published a candidate table, workbook, pamphlet, or canvass. “Not archived” means this site has no candidate dataset for that year.</p></header>
+    <IndexHeader title="Election years" eyebrow="2017–2026 archive" intro="Browse every cycle in the archive. Statewide records are included where Utah published a candidate table, workbook, pamphlet, or canvass. “Not archived” means this site has no candidate dataset for that year." photo={indexHeaderImages.elections} />
     <IndexControls
       {facets}
       {selection}
