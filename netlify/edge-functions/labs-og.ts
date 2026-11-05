@@ -6,13 +6,21 @@
 type Context = { next: () => Promise<Response> };
 
 type Preview = { title: string; description: string };
-let previews: Promise<Record<string, Preview>> | null = null;
+let previews: Promise<unknown> | null = null;
+
+function findPreview(map: unknown, race: string): Preview | undefined {
+  if (!map || typeof map !== 'object' || !Object.hasOwn(map, race)) return undefined;
+  const preview = (map as Record<string, unknown>)[race];
+  if (!preview || typeof preview !== 'object') return undefined;
+  const { title, description } = preview as Partial<Preview>;
+  return typeof title === 'string' && typeof description === 'string' ? { title, description } : undefined;
+}
 
 const escapeHtml = (value: string) => value.replace(/[&<>"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[char]!);
 
 function setMeta(html: string, attr: 'name' | 'property', key: string, content: string) {
   const tag = new RegExp(`<meta ${attr}="${key}" content="[^"]*" />`);
-  return html.replace(tag, `<meta ${attr}="${key}" content="${escapeHtml(content)}" />`);
+  return html.replace(tag, () => `<meta ${attr}="${key}" content="${escapeHtml(content)}" />`);
 }
 
 export default async (request: Request, context: Context) => {
@@ -20,13 +28,13 @@ export default async (request: Request, context: Context) => {
   const race = url.searchParams.get('race')?.toLowerCase();
   if (!race) return context.next();
   previews ??= fetch(new URL('/data/race-previews.json', url)).then((res) => (res.ok ? res.json() : {})).catch(() => ({}));
-  const [preview, response] = await Promise.all([previews.then((map) => map[race]), context.next()]);
+  const [preview, response] = await Promise.all([previews.then((map) => findPreview(map, race)), context.next()]);
   if (!preview || !response.headers.get('content-type')?.includes('text/html')) return response;
 
   const pageUrl = `${url.origin}/labs/?race=${encodeURIComponent(race)}`;
   const title = `${preview.title} — Elections Utah`;
   let html = await response.text();
-  html = html.replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(title)}</title>`);
+  html = html.replace(/<title>[^<]*<\/title>/, () => `<title>${escapeHtml(title)}</title>`);
   html = setMeta(html, 'name', 'description', preview.description);
   html = setMeta(html, 'property', 'og:title', title);
   html = setMeta(html, 'property', 'og:description', preview.description);
