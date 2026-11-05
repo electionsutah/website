@@ -31,7 +31,7 @@ export default async (request: Request, context: Context) => {
   html = setMeta(html, 'property', 'og:title', title);
   html = setMeta(html, 'property', 'og:description', preview.description);
   html = setMeta(html, 'property', 'og:url', pageUrl);
-  html = setMeta(html, 'property', 'og:image:alt', `Elections Utah — ${preview.title}`);
+  html = setMeta(html, "property", "og:image:alt", title);
   const headers = new Headers(response.headers);
   headers.delete('content-length');
   return new Response(html, { status: response.status, headers });

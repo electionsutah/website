@@ -73,7 +73,7 @@ function metaTags({ title, description, url, image, type = 'website' }) {
     ['property', 'og:image', `${siteUrl}/og/${image}.png`],
     ['property', 'og:image:width', '1200'],
     ['property', 'og:image:height', '630'],
-    ['property', 'og:image:alt', `Elections Utah — ${fullTitle(title)}`],
+    ['property', 'og:image:alt', fullTitle(title)],
     ['name', 'twitter:card', 'summary_large_image']
   ];
   return [...(url ? [`<link rel="canonical" href="${escapeHtml(url)}" />`] : []), ...tags.map(([key, name, content]) => `<meta ${key}="${name}" content="${escapeHtml(content)}" />`)].map((tag) => `\n    ${tag}`).join('');
