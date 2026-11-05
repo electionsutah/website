@@ -45,6 +45,11 @@ export function officeMap(office: Office, placesById: Map<string, Place>): Bound
     const match = office.id.match(pattern);
     if (match) return find(layer, match[1]);
   }
+  // Countywide offices (sheriff, clerk, a commission seat) cover the whole county; council districts do not.
+  if (office.sections.includes('County office') && !/district|council/i.test(office.name)) {
+    const counties = office.placeIds.map((id) => placesById.get(id)).filter((place) => place?.type === 'County');
+    if (counties.length === 1) return placeMap(counties[0]!);
+  }
   // Citywide seats (mayor, at-large council) cover the whole municipality; council districts do not.
   const cities = office.placeIds.map((id) => placesById.get(id)).filter((place) => place?.type === 'City');
   if (cities.length === 1 && !/district|seat|east|west/i.test(office.name)) return placeMap(cities[0]!);

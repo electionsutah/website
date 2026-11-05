@@ -15,6 +15,7 @@
   import PhotoCredit from './PhotoCredit.svelte';
   import PersonAvatar from './PersonAvatar.svelte';
   import personPhotoData from './data/person-photos.json';
+  import voterRegistration from './data/voter-registration.json';
   import {
     activeStatuses,
     candidacies,
@@ -66,11 +67,11 @@
     wikidataId: string;
     wikidataUrl: string;
     officialWebsite: string;
-    population: number;
-    populationAsOf: string;
-    populationSource: 'Wikidata' | 'Wikipedia';
-    inceptionDate: string | null;
-    inceptionPrecision: number | null;
+    population?: number;
+    populationAsOf?: string;
+    populationSource?: 'Wikidata' | 'Wikipedia';
+    inceptionDate?: string | null;
+    inceptionPrecision?: number | null;
   };
 
   const profilesById = placeProfiles as Record<string, PlaceProfile>;
@@ -105,9 +106,12 @@
   $: placeImage = place ? placeImages[place.id] : undefined;
   $: personPhoto = person ? (personPhotoData as Record<string, PlaceImage & { via: string }>)[person.id] : undefined;
   $: placeEmblem = place ? placeEmblems[place.id] : undefined;
-  // Municipal offices (mayor, council) show their city's photo. District offices list candidates' home
-  // cities, which only partly overlap the district, so they keep the plain hero.
-  $: officeCity = office?.sections.includes('Municipal office') ? office.placeIds.map((id) => placesById.get(id)).filter((row) => row && row.type !== 'County') : [];
+  // The state publishes active voters by county only; nothing by city or district.
+  $: placeVoters = place?.type === 'County' ? (voterRegistration.counties as Record<string, { active: number }>)[place.id] : undefined;
+  // Municipal offices (mayor, council) show their city's photo and county offices their county's. District
+  // offices list candidates' home cities, which only partly overlap the district, so they keep the plain hero.
+  $: officeCity = office?.sections.includes('Municipal office') ? office.placeIds.map((id) => placesById.get(id)).filter((row) => row && row.type !== 'County')
+    : office?.sections.includes('County office') ? office.placeIds.map((id) => placesById.get(id)).filter((row) => row?.type === 'County') : [];
   $: officeImage = officeCity.length === 1 ? placeImages[officeCity[0]!.id] : undefined;
   // Cities sit under their county in the breadcrumb: Places › Duchesne County › Roosevelt.
   $: placeCounty = place?.type !== 'County' && place?.parentId ? placesById.get(place.parentId) : undefined;
@@ -469,25 +473,32 @@
               {#if placeEmblem}<PhotoCredit image={placeEmblem} label={placeEmblem.kind.charAt(0).toUpperCase() + placeEmblem.kind.slice(1)} className="emblem-credit" />{/if}
             </div>
             <div class="place-facts-row" class:has-boundary={!!boundary}>
-            <div class="place-facts">
-              <article class="population-card">
-                <small>{placeProfile.populationAsOf === '2020-04-01' ? '2020 census population' : `${placeProfile.populationAsOf.slice(0, 4)} population`}</small>
+            <div class="place-facts" class:has-voters={!!placeVoters}>
+              {#if placeProfile.population}<article class="population-card">
+                <small>{placeProfile.populationAsOf === '2020-04-01' ? '2020 census population' : placeProfile.populationAsOf ? `${placeProfile.populationAsOf.slice(0, 4)} population` : 'Population'}</small>
                 <strong>{placeProfile.population.toLocaleString('en-US')}</strong>
-                <p>Reported figure · {placeProfile.populationAsOf.slice(0, 4)}</p>
+                <p>Reported figure{placeProfile.populationAsOf ? ` · ${placeProfile.populationAsOf.slice(0, 4)}` : ''}</p>
                 <a href={placeProfile.populationSource === 'Wikidata' ? placeProfile.wikidataUrl : placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">{placeProfile.populationSource} <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
-              </article>
-              <article class="inception-card">
+              </article>{/if}
+              {#if placeVoters}
+                <article class="voters-card">
+                  <small>Active registered voters</small>
+                  <strong>{formatCount(placeVoters.active)}</strong>
+                  <p>Lt. Governor's office · {formatDate(voterRegistration.asOf)}</p>
+                  <a href={voterRegistration.sources.statistics} target="_blank" rel="noreferrer">vote.utah.gov <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
+                </article>
+              {/if}
+              {#if placeProfile.inceptionDate}<article class="inception-card">
                 <small>Founded / established</small>
                 <strong>{formatInception(placeProfile)}</strong>
-                {#if !placeProfile.inceptionDate}<p>No inception date is currently recorded.</p>{/if}
                 <a href={placeProfile.wikidataUrl} target="_blank" rel="noreferrer">Wikidata <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
-              </article>
-              <article class="website-card">
+              </article>{/if}
+              {#if placeProfile.officialWebsite}<article class="website-card">
                 <small>Official Website</small>
                 <strong><a href={placeProfile.officialWebsite} target="_blank" rel="noreferrer">{new URL(placeProfile.officialWebsite).hostname.replace(/^www\./, '')}<span class="sr-only"> (opens in new tab)</span></a></strong>
                 <p>{place.type === 'County' ? 'County government website' : 'Local government website'}</p>
                 <a href={placeProfile.officialWebsite} target="_blank" rel="noreferrer">Visit website <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
-              </article>
+              </article>{/if}
             </div>
             {#if boundary}<BoundaryMap map={boundary} fit="fill" className="place-boundary" />{/if}
             </div>

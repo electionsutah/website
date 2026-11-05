@@ -99,17 +99,8 @@
 /places/sanpete/mt-pleasant                   /places/sanpete/mount-pleasant/                    301
 
 # Places with no records in the new data: send to the county or places index
-/places/beaver                                /places/                                           301
-/places/utah/cedar-fort                       /places/utah/                                      301
-/places/utah/elk-ridge                        /places/utah/                                      301
 /places/utah/fairfield                        /places/utah/                                      301
-/places/utah/goshen                           /places/utah/                                      301
-/places/utah/payson                           /places/utah/                                      301
 /places/utah/santaquin                        /places/utah/                                      301
-/places/utah/vineyard                         /places/utah/                                      301
-/places/utah/woodland-hills                   /places/utah/                                      301
-/places/weber/farr-west                       /places/weber/                                     301
-/places/weber/harrisville                     /places/weber/                                     301
 
 # People: old ID-based URLs
 /people/michael-mcomber                       /people/michael-d-s-mcomber/                       301

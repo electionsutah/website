@@ -1,5 +1,7 @@
 import currentRows from '../data/2026-candidates.json';
 import historicalRows from '../data/historical-candidates.json';
+// County, municipal, school-board, and special-district candidates from the state results feed (2024 on).
+import localRows from '../data/local-candidates.json';
 import candidateDocuments from '../data/candidate-documents.json';
 
 export type Contact = {
@@ -165,8 +167,11 @@ export function cleanOfficeName(value: string): string {
     .replace(/^(U\.S\. House|State Senate|State House|State School Board) (\d+)/, '$1 District $2');
 }
 
+// Offices that are elected on nonpartisan ballots; candidates without a party read as nonpartisan.
+const nonpartisanSections = new Set(['Municipal Offices', 'School Board Offices', 'Special District Offices']);
+
 function partyDetails(rawParty: string, section: string) {
-  if (section === 'State Judicial' || (section === 'Municipal Offices' && !rawParty)) {
+  if (section === 'State Judicial' || (nonpartisanSections.has(section) && !rawParty)) {
     return { name: 'Nonpartisan', shortName: 'Nonpartisan', color: '#668f7f' };
   }
   const details: Record<string, { name: string; shortName: string; color: string }> = {
@@ -241,8 +246,10 @@ export function sourceAvailable(url: string): boolean {
   return !unavailableSources.some((prefix) => url.startsWith(prefix));
 }
 
+type ArchiveRow = (typeof historicalRows)[number];
+
 export const filings: Filing[] = [
-  ...historicalRows.map((row) => {
+  ...[...historicalRows, ...(localRows as ArchiveRow[])].map((row) => {
     const officeName = cleanOfficeName(row.office);
     const party = partyDetails(row.party, row.section);
     const personId = slug(row.name);
@@ -525,10 +532,10 @@ export const partiesById = new Map(parties.map((party) => [party.id, party]));
 export const placesById = new Map(places.map((place) => [place.id, place]));
 
 const cycleDetails: Omit<ElectionCycle, 'filings'>[] = [
-  { year: 2026, title: '2026 regular election', description: 'Archived declarations for federal, state, legislative, school-board, and judicial-retention offices.', source: 'https://vote.utah.gov/2026-candidate-filings/', sourceLabel: 'Official 2026 candidate filings', availability: 'statewide' },
-  { year: 2025, title: '2025 municipal elections', description: 'Municipal candidates file with local clerks. Utah publishes county canvass links, but no comparable statewide candidate-filing table.', source: 'https://vote.utah.gov/county-canvass-certifications-and-results/', sourceLabel: 'Official county canvass directory', availability: 'local' },
-  { year: 2024, title: '2024 regular election', description: 'State candidate filings covering federal, constitutional, legislative, school-board, and judicial offices.', source: 'https://vote.utah.gov/2024-candidate-filings/', sourceLabel: 'Official 2024 candidate filings', availability: 'statewide' },
-  { year: 2023, title: '2023 congressional special election', description: 'Candidates who filed for Utah’s special election in U.S. House District 2.', source: 'https://vote.utah.gov/2023-candidate-filings/', sourceLabel: 'Official 2023 candidate filings', availability: 'special' },
+  { year: 2026, title: '2026 regular election', description: 'Archived declarations for federal, state, legislative, school-board, and judicial-retention offices, plus county, local school-board, and special-district candidates from the state results system.', source: 'https://vote.utah.gov/2026-candidate-filings/', sourceLabel: 'Official 2026 candidate filings', availability: 'statewide' },
+  { year: 2025, title: '2025 municipal elections', description: 'Mayor, city and town council, and local district candidates from the primary and general ballots in Utah’s election results system.', source: 'https://electionresults.utah.gov/results/public/Utah/General11042025', sourceLabel: 'Official 2025 municipal results', availability: 'local' },
+  { year: 2024, title: '2024 regular election', description: 'State candidate filings covering federal, constitutional, legislative, school-board, and judicial offices, plus county, local school-board, and special-district candidates from the state results system.', source: 'https://vote.utah.gov/2024-candidate-filings/', sourceLabel: 'Official 2024 candidate filings', availability: 'statewide' },
+  { year: 2023, title: '2023 municipal and special elections', description: 'Candidates who filed for Utah’s special election in U.S. House District 2, plus mayor, city and town council, and local district candidates from the municipal primary and general ballots in Utah’s election results system.', source: 'https://vote.utah.gov/2023-candidate-filings/', sourceLabel: 'Official 2023 candidate filings', availability: 'local' },
   { year: 2022, title: '2022 regular election', description: 'General-election candidates published in Utah’s official voter information pamphlet and statewide canvass.', source: 'https://vote.utah.gov/2022-2023-election-records/', sourceLabel: 'Official 2022 election records', availability: 'statewide' },
   { year: 2021, title: '2021 municipal elections', description: 'Municipal candidates filed with local election officers; the state archive has no comparable statewide candidate table for this cycle.', source: 'https://vote.utah.gov/historical-election-records-and-documents/', sourceLabel: 'Official historical records index', availability: 'local' },
   { year: 2020, title: '2020 regular election', description: 'Primary and general-election candidates recovered from Utah’s official statewide canvass workbooks.', source: 'https://vote.utah.gov/2020-election-records/', sourceLabel: 'Official 2020 election records', availability: 'statewide' },
@@ -550,5 +557,6 @@ export const totals = {
   places: places.length,
   filings: filings.length,
   currentFilings: currentRows.length,
-  historicalFilings: historicalRows.length
+  historicalFilings: historicalRows.length,
+  localFilings: localRows.length
 };

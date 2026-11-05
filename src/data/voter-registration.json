@@ -1,0 +1,461 @@
+{
+ "asOf": "2026-11-02",
+ "sources": {
+  "statistics": "https://vote.utah.gov/current-voter-registration-statistics/",
+  "counties": "https://vote.utah.gov/wp-content/uploads/2026/11/11.02.2026-Active-Voters-by-County-and-Party.pdf"
+ },
+ "checks": {
+  "countySumMatchesState": true
+ },
+ "state": {
+  "active": 1784255,
+  "inactive": 314971,
+  "total": 2099225,
+  "parties": {
+   "Constitution": {
+    "active": 6682,
+    "inactive": 1839,
+    "total": 8521
+   },
+   "Democratic": {
+    "active": 255244,
+    "inactive": 47077,
+    "total": 302321
+   },
+   "Forward": {
+    "active": 2193,
+    "inactive": 841,
+    "total": 3034
+   },
+   "Green": {
+    "active": 1302,
+    "inactive": 115,
+    "total": 1417
+   },
+   "Independent American": {
+    "active": 76535,
+    "inactive": 19061,
+    "total": 95596
+   },
+   "Libertarian": {
+    "active": 18243,
+    "inactive": 6095,
+    "total": 24338
+   },
+   "Republican": {
+    "active": 911345,
+    "inactive": 118364,
+    "total": 1029708
+   },
+   "Unaffiliated": {
+    "active": 512711,
+    "inactive": 121579,
+    "total": 634290
+   }
+  }
+ },
+ "counties": {
+  "beaver": {
+   "name": "Beaver County",
+   "active": 3847,
+   "parties": {
+    "Republican": 2917,
+    "Unaffiliated": 574,
+    "Democratic": 178,
+    "Independent American": 134,
+    "Libertarian": 20,
+    "Constitution": 18,
+    "Forward": 5,
+    "Green": 1
+   }
+  },
+  "box-elder": {
+   "name": "Box Elder County",
+   "active": 33827,
+   "parties": {
+    "Republican": 21842,
+    "Unaffiliated": 8558,
+    "Democratic": 1707,
+    "Independent American": 1216,
+    "Libertarian": 296,
+    "Constitution": 176,
+    "Forward": 24,
+    "Green": 8
+   }
+  },
+  "cache": {
+   "name": "Cache County",
+   "active": 70585,
+   "parties": {
+    "Republican": 40254,
+    "Unaffiliated": 20396,
+    "Democratic": 6852,
+    "Independent American": 1947,
+    "Libertarian": 689,
+    "Constitution": 318,
+    "Forward": 73,
+    "Green": 56
+   }
+  },
+  "carbon": {
+   "name": "Carbon County",
+   "active": 10911,
+   "parties": {
+    "Republican": 5884,
+    "Unaffiliated": 2903,
+    "Democratic": 1460,
+    "Independent American": 512,
+    "Libertarian": 83,
+    "Constitution": 60,
+    "Forward": 4,
+    "Green": 5
+   }
+  },
+  "daggett": {
+   "name": "Daggett County",
+   "active": 688,
+   "parties": {
+    "Republican": 496,
+    "Unaffiliated": 101,
+    "Democratic": 51,
+    "Independent American": 29,
+    "Libertarian": 4,
+    "Constitution": 2,
+    "Forward": 4,
+    "Green": 1
+   }
+  },
+  "davis": {
+   "name": "Davis County",
+   "active": 200033,
+   "parties": {
+    "Republican": 109062,
+    "Unaffiliated": 58796,
+    "Democratic": 21479,
+    "Independent American": 7775,
+    "Libertarian": 1983,
+    "Constitution": 604,
+    "Forward": 201,
+    "Green": 133
+   }
+  },
+  "duchesne": {
+   "name": "Duchesne County",
+   "active": 10440,
+   "parties": {
+    "Republican": 7810,
+    "Unaffiliated": 1640,
+    "Democratic": 472,
+    "Independent American": 330,
+    "Libertarian": 86,
+    "Constitution": 87,
+    "Forward": 13,
+    "Green": 2
+   }
+  },
+  "emery": {
+   "name": "Emery County",
+   "active": 5754,
+   "parties": {
+    "Republican": 4042,
+    "Unaffiliated": 1242,
+    "Democratic": 227,
+    "Independent American": 196,
+    "Libertarian": 28,
+    "Constitution": 14,
+    "Forward": 3,
+    "Green": 2
+   }
+  },
+  "garfield": {
+   "name": "Garfield County",
+   "active": 3250,
+   "parties": {
+    "Republican": 2392,
+    "Unaffiliated": 520,
+    "Democratic": 202,
+    "Independent American": 103,
+    "Libertarian": 15,
+    "Constitution": 16,
+    "Forward": 1,
+    "Green": 1
+   }
+  },
+  "grand": {
+   "name": "Grand County",
+   "active": 5873,
+   "parties": {
+    "Republican": 2095,
+    "Unaffiliated": 2214,
+    "Democratic": 1266,
+    "Independent American": 220,
+    "Libertarian": 52,
+    "Constitution": 13,
+    "Forward": 5,
+    "Green": 8
+   }
+  },
+  "iron": {
+   "name": "Iron County",
+   "active": 32827,
+   "parties": {
+    "Republican": 21247,
+    "Unaffiliated": 7069,
+    "Democratic": 2305,
+    "Independent American": 1538,
+    "Libertarian": 385,
+    "Constitution": 228,
+    "Forward": 37,
+    "Green": 18
+   }
+  },
+  "juab": {
+   "name": "Juab County",
+   "active": 7677,
+   "parties": {
+    "Republican": 5454,
+    "Unaffiliated": 1614,
+    "Democratic": 299,
+    "Independent American": 217,
+    "Libertarian": 51,
+    "Constitution": 33,
+    "Forward": 8,
+    "Green": 1
+   }
+  },
+  "kane": {
+   "name": "Kane County",
+   "active": 5113,
+   "parties": {
+    "Republican": 3438,
+    "Unaffiliated": 903,
+    "Democratic": 463,
+    "Independent American": 240,
+    "Libertarian": 42,
+    "Constitution": 19,
+    "Forward": 6,
+    "Green": 2
+   }
+  },
+  "millard": {
+   "name": "Millard County",
+   "active": 7264,
+   "parties": {
+    "Republican": 5451,
+    "Unaffiliated": 1283,
+    "Democratic": 273,
+    "Independent American": 151,
+    "Libertarian": 37,
+    "Constitution": 59,
+    "Forward": 8,
+    "Green": 2
+   }
+  },
+  "morgan": {
+   "name": "Morgan County",
+   "active": 8313,
+   "parties": {
+    "Republican": 5673,
+    "Unaffiliated": 1894,
+    "Democratic": 381,
+    "Independent American": 261,
+    "Libertarian": 69,
+    "Constitution": 28,
+    "Forward": 2,
+    "Green": 5
+   }
+  },
+  "piute": {
+   "name": "Piute County",
+   "active": 1112,
+   "parties": {
+    "Republican": 905,
+    "Unaffiliated": 138,
+    "Democratic": 33,
+    "Independent American": 26,
+    "Libertarian": 4,
+    "Constitution": 6
+   }
+  },
+  "rich": {
+   "name": "Rich County",
+   "active": 1591,
+   "parties": {
+    "Republican": 1245,
+    "Unaffiliated": 238,
+    "Democratic": 65,
+    "Independent American": 30,
+    "Libertarian": 9,
+    "Constitution": 3,
+    "Green": 1
+   }
+  },
+  "salt-lake": {
+   "name": "Salt Lake County",
+   "active": 604683,
+   "parties": {
+    "Republican": 234929,
+    "Unaffiliated": 194801,
+    "Democratic": 138905,
+    "Independent American": 27072,
+    "Libertarian": 5936,
+    "Constitution": 1667,
+    "Forward": 805,
+    "Green": 568
+   }
+  },
+  "san-juan": {
+   "name": "San Juan County",
+   "active": 8095,
+   "parties": {
+    "Republican": 3531,
+    "Unaffiliated": 2104,
+    "Democratic": 2145,
+    "Independent American": 223,
+    "Libertarian": 40,
+    "Constitution": 25,
+    "Forward": 18,
+    "Green": 9
+   }
+  },
+  "sanpete": {
+   "name": "Sanpete County",
+   "active": 15536,
+   "parties": {
+    "Republican": 10696,
+    "Unaffiliated": 3321,
+    "Democratic": 681,
+    "Independent American": 532,
+    "Libertarian": 113,
+    "Constitution": 161,
+    "Forward": 26,
+    "Green": 6
+   }
+  },
+  "sevier": {
+   "name": "Sevier County",
+   "active": 12493,
+   "parties": {
+    "Republican": 9145,
+    "Unaffiliated": 2409,
+    "Democratic": 416,
+    "Independent American": 363,
+    "Libertarian": 78,
+    "Constitution": 65,
+    "Forward": 14,
+    "Green": 3
+   }
+  },
+  "summit": {
+   "name": "Summit County",
+   "active": 29388,
+   "parties": {
+    "Republican": 10864,
+    "Unaffiliated": 9323,
+    "Democratic": 7222,
+    "Independent American": 1640,
+    "Libertarian": 266,
+    "Constitution": 46,
+    "Forward": 15,
+    "Green": 12
+   }
+  },
+  "tooele": {
+   "name": "Tooele County",
+   "active": 41900,
+   "parties": {
+    "Republican": 20997,
+    "Unaffiliated": 13874,
+    "Democratic": 4170,
+    "Independent American": 2058,
+    "Libertarian": 439,
+    "Constitution": 270,
+    "Forward": 68,
+    "Green": 24
+   }
+  },
+  "uintah": {
+   "name": "Uintah County",
+   "active": 18088,
+   "parties": {
+    "Republican": 13162,
+    "Unaffiliated": 3104,
+    "Democratic": 867,
+    "Independent American": 638,
+    "Libertarian": 161,
+    "Constitution": 131,
+    "Forward": 21,
+    "Green": 4
+   }
+  },
+  "utah": {
+   "name": "Utah County",
+   "active": 374875,
+   "parties": {
+    "Republican": 219383,
+    "Unaffiliated": 101997,
+    "Democratic": 31112,
+    "Independent American": 15540,
+    "Libertarian": 4475,
+    "Constitution": 1539,
+    "Forward": 563,
+    "Green": 266
+   }
+  },
+  "wasatch": {
+   "name": "Wasatch County",
+   "active": 21951,
+   "parties": {
+    "Republican": 11747,
+    "Unaffiliated": 5812,
+    "Democratic": 2827,
+    "Independent American": 1230,
+    "Libertarian": 249,
+    "Constitution": 54,
+    "Forward": 23,
+    "Green": 9
+   }
+  },
+  "washington": {
+   "name": "Washington County",
+   "active": 113079,
+   "parties": {
+    "Republican": 71175,
+    "Unaffiliated": 24265,
+    "Democratic": 9694,
+    "Independent American": 6025,
+    "Libertarian": 1242,
+    "Constitution": 547,
+    "Forward": 74,
+    "Green": 57
+   }
+  },
+  "wayne": {
+   "name": "Wayne County",
+   "active": 1835,
+   "parties": {
+    "Republican": 1312,
+    "Unaffiliated": 316,
+    "Democratic": 132,
+    "Independent American": 60,
+    "Libertarian": 7,
+    "Constitution": 7,
+    "Forward": 1
+   }
+  },
+  "weber": {
+   "name": "Weber County",
+   "active": 133227,
+   "parties": {
+    "Republican": 64197,
+    "Unaffiliated": 41302,
+    "Democratic": 19360,
+    "Independent American": 6229,
+    "Libertarian": 1384,
+    "Constitution": 486,
+    "Forward": 171,
+    "Green": 98
+   }
+  }
+ }
+}

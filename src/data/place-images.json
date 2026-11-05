@@ -1,4 +1,37 @@
 {
+ "beaver": {
+  "src": "/images/places/beaver.webp",
+  "width": 969,
+  "height": 1280,
+  "title": "Old Beaver County Ut courthouse",
+  "artist": "Unknown author",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Beaver_County_Ut_courthouse.jpg",
+  "file": "Old Beaver County Ut courthouse.jpg"
+ },
+ "beaver/beaver": {
+  "src": "/images/places/beaver/beaver.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Beaver Utah Opera House",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaver_Utah_Opera_House.jpeg",
+  "file": "Beaver Utah Opera House.jpeg"
+ },
+ "beaver/milford": {
+  "src": "/images/places/beaver/milford.webp",
+  "width": 1280,
+  "height": 853,
+  "title": "Milford Utah train station",
+  "artist": "Bill Golladay",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Milford_Utah_train_station.jpg",
+  "file": "Milford Utah train station.jpg"
+ },
  "box-elder": {
   "src": "/images/places/box-elder.webp",
   "width": 1280,
@@ -32,6 +65,28 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corinne_Methodist_Episcopal_Church.jpg",
   "file": "Corinne Methodist Episcopal Church.jpg"
  },
+ "box-elder/deweyville": {
+  "src": "/images/places/box-elder/deweyville.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Fryer Hotel Deweyville Utah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fryer_Hotel_Deweyville_Utah.jpeg",
+  "file": "Fryer Hotel Deweyville Utah.jpeg"
+ },
+ "box-elder/elwood": {
+  "src": "/images/places/box-elder/elwood.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "08-64-City of Elwood,UT,with,Mendon Peak in background as seen from I-15. June 8,2008",
+  "artist": "Allbillsnomoney",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:08-64-City_of_Elwood,UT,with,Mendon_Peak_in_background_as_seen_from_I-15._June_8,2008.jpg",
+  "file": "08-64-City of Elwood,UT,with,Mendon Peak in background as seen from I-15. June 8,2008.jpg"
+ },
  "box-elder/garland": {
   "src": "/images/places/box-elder/garland.webp",
   "width": 1280,
@@ -42,6 +97,28 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garland_Tabernacle_of_the_LDS_Church.jpg",
   "file": "Garland Tabernacle of the LDS Church.jpg"
+ },
+ "box-elder/howell": {
+  "src": "/images/places/box-elder/howell.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Howell Utah School",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Howell_Utah_School.jpeg",
+  "file": "Howell Utah School.jpeg"
+ },
+ "box-elder/mantua": {
+  "src": "/images/places/box-elder/mantua.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "MantuaUtah",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:MantuaUtah.jpeg",
+  "file": "MantuaUtah.jpeg"
  },
  "box-elder/perry": {
   "src": "/images/places/box-elder/perry.webp",
@@ -54,6 +131,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heritage_Theatre_Perry_Utah.jpeg",
   "file": "Heritage Theatre Perry Utah.jpeg"
  },
+ "box-elder/plymouth": {
+  "src": "/images/places/box-elder/plymouth.webp",
+  "width": 1280,
+  "height": 853,
+  "title": "Plymouth1",
+  "artist": "GreenGlass1972",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plymouth1.jpg",
+  "file": "Plymouth1.jpg"
+ },
  "box-elder/tremonton": {
   "src": "/images/places/box-elder/tremonton.webp",
   "width": 768,
@@ -64,6 +152,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tremonton_diner.JPG",
   "file": "Tremonton diner.JPG"
+ },
+ "box-elder/willard": {
+  "src": "/images/places/box-elder/willard.webp",
+  "width": 869,
+  "height": 578,
+  "title": "Willard3",
+  "artist": "GreenGlass1972",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Willard3.jpg",
+  "file": "Willard3.jpg"
  },
  "cache": {
   "src": "/images/places/cache.webp",
@@ -76,6 +175,28 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:LoganUtahCourthouse.jpg",
   "file": "LoganUtahCourthouse.jpg"
  },
+ "cache/clarkston": {
+  "src": "/images/places/cache/clarkston.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Martin Harris monument",
+  "artist": "Leon7",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martin_Harris_monument.JPG",
+  "file": "Martin Harris monument.JPG"
+ },
+ "cache/hyde-park": {
+  "src": "/images/places/cache/hyde-park.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Lee House Hyde Park Utah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_House_Hyde_Park_Utah.jpeg",
+  "file": "Lee House Hyde Park Utah.jpeg"
+ },
  "cache/hyrum": {
   "src": "/images/places/cache/hyrum.webp",
   "width": 1280,
@@ -87,6 +208,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyrum,_Utah_Civic_Center.jpeg",
   "file": "Hyrum, Utah Civic Center.jpeg"
  },
+ "cache/lewiston": {
+  "src": "/images/places/cache/lewiston.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Lewiston Utah Community Building",
+  "artist": "Ntsimp",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lewiston_Utah_Community_Building.jpeg",
+  "file": "Lewiston Utah Community Building.jpeg"
+ },
  "cache/logan": {
   "src": "/images/places/cache/logan.webp",
   "width": 1000,
@@ -97,6 +229,17 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:LoganUtahCourthouse.jpg",
   "file": "LoganUtahCourthouse.jpg"
+ },
+ "cache/newton": {
+  "src": "/images/places/cache/newton.webp",
+  "width": 1280,
+  "height": 853,
+  "title": "Newton, Utah (9097673526)",
+  "artist": "Andrew Filer from Seattle (ex-Minneapolis)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Newton,_Utah_(9097673526).jpg",
+  "file": "Newton, Utah (9097673526).jpg"
  },
  "cache/nibley": {
   "src": "/images/places/cache/nibley.webp",
@@ -131,6 +274,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paradise_Utah_Tithing_Office.jpeg",
   "file": "Paradise Utah Tithing Office.jpeg"
  },
+ "cache/richmond": {
+  "src": "/images/places/cache/richmond.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Richmond Utah Community Building",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richmond_Utah_Community_Building.jpeg",
+  "file": "Richmond Utah Community Building.jpeg"
+ },
  "cache/smithfield": {
   "src": "/images/places/cache/smithfield.webp",
   "width": 1280,
@@ -141,6 +295,28 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smithfield,_Utah.jpg",
   "file": "Smithfield, Utah.jpg"
+ },
+ "cache/trenton": {
+  "src": "/images/places/cache/trenton.webp",
+  "width": 1280,
+  "height": 853,
+  "title": "Trenton, Utah (8114907787)",
+  "artist": "Andrew Filer from Seattle (ex-Minneapolis)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trenton,_Utah_(8114907787).jpg",
+  "file": "Trenton, Utah (8114907787).jpg"
+ },
+ "cache/wellsville": {
+  "src": "/images/places/cache/wellsville.webp",
+  "width": 1111,
+  "height": 1280,
+  "title": "Wellsville Tabernacle of the LDS Church",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wellsville_Tabernacle_of_the_LDS_Church.jpg",
+  "file": "Wellsville Tabernacle of the LDS Church.jpg"
  },
  "carbon": {
   "src": "/images/places/carbon.webp",
@@ -153,6 +329,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carbon_power_plant_at_Castle_Gate_Utah_-_panoramio.jpg",
   "file": "Carbon power plant at Castle Gate Utah - panoramio.jpg"
  },
+ "carbon/helper": {
+  "src": "/images/places/carbon/helper.webp",
+  "width": 960,
+  "height": 1280,
+  "title": "HelperUtah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:HelperUtah.jpeg",
+  "file": "HelperUtah.jpeg"
+ },
  "carbon/price": {
   "src": "/images/places/carbon/price.webp",
   "width": 1280,
@@ -163,6 +350,50 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Price_Utah.jpg",
   "file": "Price Utah.jpg"
+ },
+ "carbon/scofield": {
+  "src": "/images/places/carbon/scofield.webp",
+  "width": 228,
+  "height": 140,
+  "title": "Scofield School",
+  "artist": "Stundra",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scofield_School.jpg",
+  "file": "Scofield School.jpg"
+ },
+ "carbon/wellington": {
+  "src": "/images/places/carbon/wellington.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "WellingtonUtahCabin",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:WellingtonUtahCabin.jpeg",
+  "file": "WellingtonUtahCabin.jpeg"
+ },
+ "daggett": {
+  "src": "/images/places/daggett.webp",
+  "width": 896,
+  "height": 597,
+  "title": "Daggett County Courthouse, Manila, Utah",
+  "artist": "Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daggett_County_Courthouse,_Manila,_Utah.jpg",
+  "file": "Daggett County Courthouse, Manila, Utah.jpg"
+ },
+ "daggett/manila": {
+  "src": "/images/places/daggett/manila.webp",
+  "width": 896,
+  "height": 597,
+  "title": "Daggett County Courthouse, Manila, Utah",
+  "artist": "Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daggett_County_Courthouse,_Manila,_Utah.jpg",
+  "file": "Daggett County Courthouse, Manila, Utah.jpg"
  },
  "davis": {
   "src": "/images/places/davis.webp",
@@ -207,6 +438,17 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clearfield_Utah_City_Center.jpg",
   "file": "Clearfield Utah City Center.jpg"
+ },
+ "davis/clinton": {
+  "src": "/images/places/davis/clinton.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Clinton Utah City Hall",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clinton_Utah_City_Hall.jpeg",
+  "file": "Clinton Utah City Hall.jpeg"
  },
  "davis/farmington": {
   "src": "/images/places/davis/farmington.webp",
@@ -263,6 +505,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_North_Salt_Lake_City_hall.jpg",
   "file": "New North Salt Lake City hall.jpg"
  },
+ "davis/sunset": {
+  "src": "/images/places/davis/sunset.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Sunset Utah City Offices",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunset_Utah_City_Offices.jpeg",
+  "file": "Sunset Utah City Offices.jpeg"
+ },
  "davis/syracuse": {
   "src": "/images/places/davis/syracuse.webp",
   "width": 1280,
@@ -284,6 +537,17 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Bountiful_Utah_City_Hall.jpeg",
   "file": "West Bountiful Utah City Hall.jpeg"
+ },
+ "davis/west-point": {
+  "src": "/images/places/davis/west-point.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "West Point Utah Municipal Center",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Point_Utah_Municipal_Center.jpeg",
+  "file": "West Point Utah Municipal Center.jpeg"
  },
  "davis/woods-cross": {
   "src": "/images/places/davis/woods-cross.webp",
@@ -329,6 +593,28 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:MuseumOfTheSanRafael.jpg",
   "file": "MuseumOfTheSanRafael.jpg"
  },
+ "emery/castle-dale": {
+  "src": "/images/places/emery/castle-dale.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "CastleDaleUtah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:CastleDaleUtah.jpeg",
+  "file": "CastleDaleUtah.jpeg"
+ },
+ "emery/emery": {
+  "src": "/images/places/emery/emery.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Emery LDS Church Emery Utah",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emery_LDS_Church_Emery_Utah.jpeg",
+  "file": "Emery LDS Church Emery Utah.jpeg"
+ },
  "emery/green-river": {
   "src": "/images/places/emery/green-river.webp",
   "width": 1280,
@@ -340,6 +626,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010-Aerial_photograph_of_Green_River,_Utah.jpg",
   "file": "2010-Aerial photograph of Green River, Utah.jpg"
  },
+ "emery/orangeville": {
+  "src": "/images/places/emery/orangeville.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Orangeville Utah",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orangeville_Utah.jpeg",
+  "file": "Orangeville Utah.jpeg"
+ },
  "garfield": {
   "src": "/images/places/garfield.webp",
   "width": 999,
@@ -350,6 +647,50 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garfield_County,_Utah_courthouse.jpg",
   "file": "Garfield County, Utah courthouse.jpg"
+ },
+ "garfield/boulder": {
+  "src": "/images/places/garfield/boulder.webp",
+  "width": 1280,
+  "height": 857,
+  "title": "BoulderUT Overview",
+  "artist": "A.E. Crane",
+  "license": "Attribution",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:BoulderUT_Overview.jpg",
+  "file": "BoulderUT Overview.jpg"
+ },
+ "garfield/cannonville": {
+  "src": "/images/places/garfield/cannonville.webp",
+  "width": 1280,
+  "height": 818,
+  "title": "LDS church in Cannonville, Utah",
+  "artist": "John Fowler from Placitas, NM, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:LDS_church_in_Cannonville,_Utah.jpg",
+  "file": "LDS church in Cannonville, Utah.jpg"
+ },
+ "garfield/henrieville": {
+  "src": "/images/places/garfield/henrieville.webp",
+  "width": 1280,
+  "height": 1024,
+  "title": "HenrievilleUT farmland",
+  "artist": "Allysia Angus",
+  "license": "Copyrighted free use",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:HenrievilleUT_farmland.jpg",
+  "file": "HenrievilleUT farmland.jpg"
+ },
+ "garfield/panguitch": {
+  "src": "/images/places/garfield/panguitch.webp",
+  "width": 1280,
+  "height": 853,
+  "title": "Utah-Panguitch",
+  "artist": "Jean-Christophe BENOIST",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Utah-Panguitch.jpg",
+  "file": "Utah-Panguitch.jpg"
  },
  "garfield/tropic": {
   "src": "/images/places/garfield/tropic.webp",
@@ -395,6 +736,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parowan_Gap.jpg",
   "file": "Parowan Gap.jpg"
  },
+ "iron/brian-head": {
+  "src": "/images/places/iron/brian-head.webp",
+  "width": 1280,
+  "height": 283,
+  "title": "Brianhead - panoramio",
+  "artist": "Panaram \"Jade\"",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brianhead_-_panoramio.jpg",
+  "file": "Brianhead - panoramio.jpg"
+ },
  "iron/cedar-city": {
   "src": "/images/places/iron/cedar-city.webp",
   "width": 1280,
@@ -405,6 +757,39 @@
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cedar_City_Utah_02.jpg",
   "file": "Cedar City Utah 02.jpg"
+ },
+ "iron/kanarraville": {
+  "src": "/images/places/iron/kanarraville.webp",
+  "width": 1280,
+  "height": 853,
+  "title": "Kanarraville, United States (Unsplash)",
+  "artist": "Jacob Ufkes jakeufkes",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanarraville,_United_States_(Unsplash).jpg",
+  "file": "Kanarraville, United States (Unsplash).jpg"
+ },
+ "iron/paragonah": {
+  "src": "/images/places/iron/paragonah.webp",
+  "width": 717,
+  "height": 610,
+  "title": "Ensign-Smith House 1982 - Paragonah Utah",
+  "artist": "Tom Carter",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ensign-Smith_House_1982_-_Paragonah_Utah.jpeg",
+  "file": "Ensign-Smith House 1982 - Paragonah Utah.jpeg"
+ },
+ "iron/parowan": {
+  "src": "/images/places/iron/parowan.webp",
+  "width": 1280,
+  "height": 976,
+  "title": "Parowan Utah Church",
+  "artist": "Unknown author",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parowan_Utah_Church.jpg",
+  "file": "Parowan Utah Church.jpg"
  },
  "juab": {
   "src": "/images/places/juab.webp",
@@ -428,6 +813,39 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:BPOE_Block_Eureka.jpg",
   "file": "BPOE Block Eureka.jpg"
  },
+ "juab/levan": {
+  "src": "/images/places/juab/levan.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Sr28 78 jct i1462",
+  "artist": "Marykdan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sr28_78_jct_i1462.jpg",
+  "file": "Sr28 78 jct i1462.jpg"
+ },
+ "juab/mona": {
+  "src": "/images/places/juab/mona.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Mona Utah city office",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mona_Utah_city_office.jpeg",
+  "file": "Mona Utah city office.jpeg"
+ },
+ "juab/nephi": {
+  "src": "/images/places/juab/nephi.webp",
+  "width": 852,
+  "height": 1280,
+  "title": "Nephi city 2007",
+  "artist": "Rolf Müller (User:Rolfmueller)",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nephi_city_2007.jpg",
+  "file": "Nephi city 2007.jpg"
+ },
  "kane": {
   "src": "/images/places/kane.webp",
   "width": 567,
@@ -438,6 +856,28 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narrows_in_Dianas_Throne_Canyon_-_DyeClan.com_-_panoramio_(2).jpg",
   "file": "Narrows in Dianas Throne Canyon - DyeClan.com - panoramio (2).jpg"
+ },
+ "kane/big-water": {
+  "src": "/images/places/kane/big-water.webp",
+  "width": 1280,
+  "height": 758,
+  "title": "Big Water UT",
+  "artist": "P199",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Big_Water_UT.JPG",
+  "file": "Big Water UT.JPG"
+ },
+ "kane/glendale": {
+  "src": "/images/places/kane/glendale.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "US 89 Glendale",
+  "artist": "Ken Lund from Reno, NV, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_89_Glendale.jpg",
+  "file": "US 89 Glendale.jpg"
  },
  "kane/kanab": {
   "src": "/images/places/kane/kanab.webp",
@@ -450,6 +890,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanab_UT_1.JPG",
   "file": "Kanab UT 1.JPG"
  },
+ "kane/orderville": {
+  "src": "/images/places/kane/orderville.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Orderville Utah DUP museum",
+  "artist": "Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orderville_Utah_DUP_museum.jpg",
+  "file": "Orderville Utah DUP museum.jpg"
+ },
  "millard": {
   "src": "/images/places/millard.webp",
   "width": 1280,
@@ -460,6 +911,17 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Millard_County_Utah_courthouse.jpeg",
   "file": "Millard County Utah courthouse.jpeg"
+ },
+ "millard/delta": {
+  "src": "/images/places/millard/delta.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Delta utah mainstreet christmas parade",
+  "artist": "Arthurrh",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delta_utah_mainstreet_christmas_parade.jpg",
+  "file": "Delta utah mainstreet christmas parade.jpg"
  },
  "millard/fillmore": {
   "src": "/images/places/millard/fillmore.webp",
@@ -472,6 +934,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Territorial_Statehouse_in_Fillmore_Utah.jpg",
   "file": "Territorial Statehouse in Fillmore Utah.jpg"
  },
+ "millard/kanosh": {
+  "src": "/images/places/millard/kanosh.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Kanosh Utah town hall",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanosh_Utah_town_hall.jpeg",
+  "file": "Kanosh Utah town hall.jpeg"
+ },
  "morgan": {
   "src": "/images/places/morgan.webp",
   "width": 851,
@@ -482,6 +955,105 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Devils_Slide_Utah.jpg",
   "file": "Devils Slide Utah.jpg"
+ },
+ "piute": {
+  "src": "/images/places/piute.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Piute County Utah",
+  "artist": "Unknown author",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piute_County_Utah.jpg",
+  "file": "Piute County Utah.jpg"
+ },
+ "piute/circleville": {
+  "src": "/images/places/piute/circleville.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Circleville Utah FD",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circleville_Utah_FD.jpeg",
+  "file": "Circleville Utah FD.jpeg"
+ },
+ "piute/junction": {
+  "src": "/images/places/piute/junction.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Piute County Courthouse Junction Utah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piute_County_Courthouse_Junction_Utah.jpeg",
+  "file": "Piute County Courthouse Junction Utah.jpeg"
+ },
+ "piute/marysvale": {
+  "src": "/images/places/piute/marysvale.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Marysvale Utah PO",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marysvale_Utah_PO.jpeg",
+  "file": "Marysvale Utah PO.jpeg"
+ },
+ "rich": {
+  "src": "/images/places/rich.webp",
+  "width": 1280,
+  "height": 487,
+  "title": "Rich County UT courthouse1",
+  "artist": "Acroterion",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rich_County_UT_courthouse1.jpg",
+  "file": "Rich County UT courthouse1.jpg"
+ },
+ "rich/garden-city": {
+  "src": "/images/places/rich/garden-city.webp",
+  "width": 1280,
+  "height": 792,
+  "title": "GrandmasPantry GardenCityUT",
+  "artist": "Unknown author",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:GrandmasPantry_GardenCityUT.jpg",
+  "file": "GrandmasPantry GardenCityUT.jpg"
+ },
+ "rich/laketown": {
+  "src": "/images/places/rich/laketown.webp",
+  "width": 1280,
+  "height": 1241,
+  "title": "Laketown, Rich County",
+  "artist": "LikeGrantTookRichmond",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laketown,_Rich_County.jpg",
+  "file": "Laketown, Rich County.jpg"
+ },
+ "rich/randolph": {
+  "src": "/images/places/rich/randolph.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Randolph Utah Tabernacle",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Randolph_Utah_Tabernacle.jpeg",
+  "file": "Randolph Utah Tabernacle.jpeg"
+ },
+ "rich/woodruff": {
+  "src": "/images/places/rich/woodruff.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Woodruff Utah Stake House",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woodruff_Utah_Stake_House.jpeg",
+  "file": "Woodruff Utah Stake House.jpeg"
  },
  "salt-lake": {
   "src": "/images/places/salt-lake.webp",
@@ -537,6 +1109,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:0807_Draper_Historic_Park.jpg",
   "file": "0807 Draper Historic Park.jpg"
+ },
+ "salt-lake/emigration-canyon": {
+  "src": "/images/places/salt-lake/emigration-canyon.webp",
+  "width": 600,
+  "height": 450,
+  "title": "EmigrationCanyon",
+  "artist": "Thecause at English Wikipedia",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:EmigrationCanyon.jpg",
+  "file": "EmigrationCanyon.jpg"
  },
  "salt-lake/holladay": {
   "src": "/images/places/salt-lake/holladay.webp",
@@ -725,6 +1308,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blanding_Utah_city_office.jpeg",
   "file": "Blanding Utah city office.jpeg"
  },
+ "san-juan/monticello": {
+  "src": "/images/places/san-juan/monticello.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "San Juan County Courthouse, Monticello, Utah",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Juan_County_Courthouse,_Monticello,_Utah.jpeg",
+  "file": "San Juan County Courthouse, Monticello, Utah.jpeg"
+ },
  "sanpete": {
   "src": "/images/places/sanpete.webp",
   "width": 1280,
@@ -735,6 +1329,39 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanpete_county_courthouse_utah_9-18-2010.jpg",
   "file": "Sanpete county courthouse utah 9-18-2010.jpg"
+ },
+ "sanpete/ephraim": {
+  "src": "/images/places/sanpete/ephraim.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Ephraim utah 09-18-2010",
+  "artist": "Flickr user Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ephraim_utah_09-18-2010.jpg",
+  "file": "Ephraim utah 09-18-2010.jpg"
+ },
+ "sanpete/fairview": {
+  "src": "/images/places/sanpete/fairview.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Fairview, Utah (4)",
+  "artist": "Ken Lund from Las Vegas, Nevada, USA",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fairview,_Utah_(4).jpg",
+  "file": "Fairview, Utah (4).jpg"
+ },
+ "sanpete/gunnison": {
+  "src": "/images/places/sanpete/gunnison.webp",
+  "width": 1000,
+  "height": 618,
+  "title": "Gunnison Utah",
+  "artist": "No machine-readable author provided. C.Maylett assumed (based on copyright claims).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gunnison_Utah.jpg",
+  "file": "Gunnison Utah.jpg"
  },
  "sanpete/manti": {
   "src": "/images/places/sanpete/manti.webp",
@@ -747,6 +1374,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manti_Utah.jpg",
   "file": "Manti Utah.jpg"
  },
+ "sanpete/moroni": {
+  "src": "/images/places/sanpete/moroni.webp",
+  "width": 1280,
+  "height": 709,
+  "title": "Moroni main street",
+  "artist": "The original uploader was Talshiarr at English Wikipedia.",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moroni_main_street.jpg",
+  "file": "Moroni main street.jpg"
+ },
  "sanpete/mount-pleasant": {
   "src": "/images/places/sanpete/mount-pleasant.webp",
   "width": 1280,
@@ -757,6 +1395,39 @@
   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Pleasant_Utah.jpg",
   "file": "Mount Pleasant Utah.jpg"
+ },
+ "sanpete/spring-city": {
+  "src": "/images/places/sanpete/spring-city.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Spring City Utah School",
+  "artist": "Unknown author",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spring_City_Utah_School.jpg",
+  "file": "Spring City Utah School.jpg"
+ },
+ "sanpete/sterling": {
+  "src": "/images/places/sanpete/sterling.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Sterling UT",
+  "artist": "Unknown author",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sterling_UT.jpg",
+  "file": "Sterling UT.jpg"
+ },
+ "sanpete/wales": {
+  "src": "/images/places/sanpete/wales.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Wales Utah Community Hall",
+  "artist": "Ntsimp",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wales_Utah_Community_Hall.jpeg",
+  "file": "Wales Utah Community Hall.jpeg"
  },
  "sevier": {
   "src": "/images/places/sevier.webp",
@@ -769,6 +1440,72 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sevier_County_Courthouse,_Richfield,_Utah..jpg",
   "file": "Sevier County Courthouse, Richfield, Utah..jpg"
  },
+ "sevier/annabella": {
+  "src": "/images/places/sevier/annabella.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "AnnabellaUtah",
+  "artist": "Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:AnnabellaUtah.jpg",
+  "file": "AnnabellaUtah.jpg"
+ },
+ "sevier/aurora": {
+  "src": "/images/places/sevier/aurora.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Aurora Utah town office",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurora_Utah_town_office.jpeg",
+  "file": "Aurora Utah town office.jpeg"
+ },
+ "sevier/elsinore": {
+  "src": "/images/places/sevier/elsinore.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "White Rock Schoolhouse Elsinore Utah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Rock_Schoolhouse_Elsinore_Utah.jpeg",
+  "file": "White Rock Schoolhouse Elsinore Utah.jpeg"
+ },
+ "sevier/koosharem": {
+  "src": "/images/places/sevier/koosharem.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Koosharem Utah",
+  "artist": "Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koosharem_Utah.jpg",
+  "file": "Koosharem Utah.jpg"
+ },
+ "sevier/monroe": {
+  "src": "/images/places/sevier/monroe.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Monroe, Utah",
+  "artist": "Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monroe,_Utah.jpg",
+  "file": "Monroe, Utah.jpg"
+ },
+ "sevier/redmond": {
+  "src": "/images/places/sevier/redmond.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Redmond Utah town hall",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Redmond_Utah_town_hall.jpeg",
+  "file": "Redmond Utah town hall.jpeg"
+ },
  "sevier/richfield": {
   "src": "/images/places/sevier/richfield.webp",
   "width": 1280,
@@ -780,6 +1517,28 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sevier_County_Courthouse,_Richfield,_Utah..jpg",
   "file": "Sevier County Courthouse, Richfield, Utah..jpg"
  },
+ "sevier/salina": {
+  "src": "/images/places/sevier/salina.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Salina Utah",
+  "artist": "Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salina_Utah.jpg",
+  "file": "Salina Utah.jpg"
+ },
+ "sevier/sigurd": {
+  "src": "/images/places/sevier/sigurd.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Sigurd Utah town hall",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sigurd_Utah_town_hall.jpeg",
+  "file": "Sigurd Utah town hall.jpeg"
+ },
  "summit": {
   "src": "/images/places/summit.webp",
   "width": 1280,
@@ -790,6 +1549,61 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Summit_County_Courthouse_Coalville_Utah.jpeg",
   "file": "Summit County Courthouse Coalville Utah.jpeg"
+ },
+ "summit/coalville": {
+  "src": "/images/places/summit/coalville.webp",
+  "width": 1280,
+  "height": 686,
+  "title": "Coalvillemain",
+  "artist": "Milonica",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coalvillemain.jpg",
+  "file": "Coalvillemain.jpg"
+ },
+ "summit/francis": {
+  "src": "/images/places/summit/francis.webp",
+  "width": 1280,
+  "height": 961,
+  "title": "Mitchell House Francis Utah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitchell_House_Francis_Utah.jpeg",
+  "file": "Mitchell House Francis Utah.jpeg"
+ },
+ "summit/henefer": {
+  "src": "/images/places/summit/henefer.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Henefer Utah post office",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henefer_Utah_post_office.jpeg",
+  "file": "Henefer Utah post office.jpeg"
+ },
+ "summit/kamas": {
+  "src": "/images/places/summit/kamas.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Welcome to Kamas sign on SR-248, Apr 16",
+  "artist": "An Errant Knight",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Welcome_to_Kamas_sign_on_SR-248,_Apr_16.jpg",
+  "file": "Welcome to Kamas sign on SR-248, Apr 16.jpg"
+ },
+ "summit/oakley": {
+  "src": "/images/places/summit/oakley.webp",
+  "width": 1280,
+  "height": 773,
+  "title": "Oakley Utah Town Hall",
+  "artist": "Antonio Cavallo",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oakley_Utah_Town_Hall.jpg",
+  "file": "Oakley Utah Town Hall.jpg"
  },
  "summit/park-city": {
   "src": "/images/places/summit/park-city.webp",
@@ -813,6 +1627,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tooele_Utah_Courthouse.jpeg",
   "file": "Tooele Utah Courthouse.jpeg"
  },
+ "tooele/erda": {
+  "src": "/images/places/tooele/erda.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Erda overlooking the Great Salt Lake",
+  "artist": "Jackpeck at English Wikipedia",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erda_overlooking_the_Great_Salt_Lake.jpg",
+  "file": "Erda overlooking the Great Salt Lake.jpg"
+ },
  "tooele/grantsville": {
   "src": "/images/places/tooele/grantsville.webp",
   "width": 1280,
@@ -835,6 +1660,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Point.jpg",
   "file": "Lake Point.jpg"
  },
+ "tooele/rush-valley": {
+  "src": "/images/places/tooele/rush-valley.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Davis House Rush Valley Utah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Davis_House_Rush_Valley_Utah.jpeg",
+  "file": "Davis House Rush Valley Utah.jpeg"
+ },
  "tooele/tooele": {
   "src": "/images/places/tooele/tooele.webp",
   "width": 1280,
@@ -856,6 +1692,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinosaur_National_Monument_(6856251672).jpg",
   "file": "Dinosaur National Monument (6856251672).jpg"
+ },
+ "uintah/naples": {
+  "src": "/images/places/uintah/naples.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Naples Utah city office",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naples_Utah_city_office.jpeg",
+  "file": "Naples Utah city office.jpeg"
  },
  "uintah/vernal": {
   "src": "/images/places/uintah/vernal.webp",
@@ -901,6 +1748,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Fork_Utah_City_Hall.jpeg",
   "file": "American Fork Utah City Hall.jpeg"
  },
+ "utah/cedar-fort": {
+  "src": "/images/places/utah/cedar-fort.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Cedar Fort Utah Post Office",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cedar_Fort_Utah_Post_Office.jpeg",
+  "file": "Cedar Fort Utah Post Office.jpeg"
+ },
  "utah/eagle-mountain": {
   "src": "/images/places/utah/eagle-mountain.webp",
   "width": 1280,
@@ -912,6 +1770,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phone_009.jpg",
   "file": "Phone 009.jpg"
  },
+ "utah/elk-ridge": {
+  "src": "/images/places/utah/elk-ridge.webp",
+  "width": 1280,
+  "height": 320,
+  "title": "Elk Ridge, UT",
+  "artist": "Kbashby",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elk_Ridge,_UT.jpg",
+  "file": "Elk Ridge, UT.jpg"
+ },
  "utah/genola": {
   "src": "/images/places/utah/genola.webp",
   "width": 1280,
@@ -922,6 +1791,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Domes--Genola,_Utah.jpg",
   "file": "Domes--Genola, Utah.jpg"
+ },
+ "utah/goshen": {
+  "src": "/images/places/utah/goshen.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Goshen Utah Town Office",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Goshen_Utah_Town_Office.jpeg",
+  "file": "Goshen Utah Town Office.jpeg"
  },
  "utah/highland": {
   "src": "/images/places/utah/highland.webp",
@@ -978,6 +1858,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orem_Utah_City_Center.jpeg",
   "file": "Orem Utah City Center.jpeg"
  },
+ "utah/payson": {
+  "src": "/images/places/utah/payson.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Peteetneet School",
+  "artist": "National Scenic Byways Online",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peteetneet_School.jpg",
+  "file": "Peteetneet School.jpg"
+ },
  "utah/pleasant-grove": {
   "src": "/images/places/utah/pleasant-grove.webp",
   "width": 1280,
@@ -1022,6 +1913,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:City_Offices.jpg",
   "file": "City Offices.jpg"
  },
+ "utah/spring-lake": {
+  "src": "/images/places/utah/spring-lake.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "South across Spring Lake, Spring Lake, Utah, May 16",
+  "artist": "An Errant Knight",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_across_Spring_Lake,_Spring_Lake,_Utah,_May_16.jpg",
+  "file": "South across Spring Lake, Spring Lake, Utah, May 16.jpg"
+ },
  "utah/springville": {
   "src": "/images/places/utah/springville.webp",
   "width": 1280,
@@ -1032,6 +1934,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Folkfest.JPG",
   "file": "Folkfest.JPG"
+ },
+ "utah/vineyard": {
+  "src": "/images/places/utah/vineyard.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Vineyard Utah Town Office",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vineyard_Utah_Town_Office.jpeg",
+  "file": "Vineyard Utah Town Office.jpeg"
  },
  "wasatch": {
   "src": "/images/places/wasatch.webp",
@@ -1044,6 +1957,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heber_Tabernacle_2.jpg",
   "file": "Heber Tabernacle 2.jpg"
  },
+ "wasatch/charleston": {
+  "src": "/images/places/wasatch/charleston.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Charleston Utah Town Hall",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charleston_Utah_Town_Hall.jpeg",
+  "file": "Charleston Utah Town Hall.jpeg"
+ },
  "wasatch/heber-city": {
   "src": "/images/places/wasatch/heber-city.webp",
   "width": 750,
@@ -1055,6 +1979,39 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hebervalley.jpg",
   "file": "Hebervalley.jpg"
  },
+ "wasatch/hideout": {
+  "src": "/images/places/wasatch/hideout.webp",
+  "width": 1280,
+  "height": 720,
+  "title": "Hideout Town Hall",
+  "artist": "Localdistrict",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hideout_Town_Hall.jpg",
+  "file": "Hideout Town Hall.jpg"
+ },
+ "wasatch/interlaken": {
+  "src": "/images/places/wasatch/interlaken.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "North from Midway to Donkey Ridge in Interlaken, Apr 2015",
+  "artist": "An Errant Knight",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_from_Midway_to_Donkey_Ridge_in_Interlaken,_Apr_2015.jpg",
+  "file": "North from Midway to Donkey Ridge in Interlaken, Apr 2015.jpg"
+ },
+ "wasatch/midway": {
+  "src": "/images/places/wasatch/midway.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "East across Midway, Utah from SR-222. Apr 16",
+  "artist": "An Errant Knight",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_across_Midway,_Utah_from_SR-222._Apr_16.jpg",
+  "file": "East across Midway, Utah from SR-222. Apr 16.jpg"
+ },
  "washington": {
   "src": "/images/places/washington.webp",
   "width": 672,
@@ -1065,6 +2022,28 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:WashingtonCountyCourthouseStGeorgeUT1992.jpg",
   "file": "WashingtonCountyCourthouseStGeorgeUT1992.jpg"
+ },
+ "washington/apple-valley": {
+  "src": "/images/places/washington/apple-valley.webp",
+  "width": 1280,
+  "height": 852,
+  "title": "House in Apple Valley, Utah",
+  "artist": "Alan Levine from Strawberry, United States",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:House_in_Apple_Valley,_Utah.jpg",
+  "file": "House in Apple Valley, Utah.jpg"
+ },
+ "washington/hildale": {
+  "src": "/images/places/washington/hildale.webp",
+  "width": 1280,
+  "height": 695,
+  "title": "Hildale, Utah",
+  "artist": "No machine-readable author provided. Ricardo630 assumed (based on copyright claims).",
+  "license": "CC BY-SA 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hildale,_Utah.jpg",
+  "file": "Hildale, Utah.jpg"
  },
  "washington/hurricane": {
   "src": "/images/places/washington/hurricane.webp",
@@ -1087,6 +2066,39 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ivins_UT.JPG",
   "file": "Ivins UT.JPG"
+ },
+ "washington/la-verkin": {
+  "src": "/images/places/washington/la-verkin.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "La Verkin, near Zion",
+  "artist": "Elin Beckmann",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Verkin,_near_Zion.jpg",
+  "file": "La Verkin, near Zion.jpg"
+ },
+ "washington/leeds": {
+  "src": "/images/places/washington/leeds.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Leeds, Utah Town Hall",
+  "artist": "An Errant Knight",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leeds,_Utah_Town_Hall.jpg",
+  "file": "Leeds, Utah Town Hall.jpg"
+ },
+ "washington/rockville": {
+  "src": "/images/places/washington/rockville.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Rockville, Utah",
+  "artist": "Ken Lund",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rockville,_Utah.jpg",
+  "file": "Rockville, Utah.jpg"
  },
  "washington/santa-clara": {
   "src": "/images/places/washington/santa-clara.webp",
@@ -1132,6 +2144,39 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_on_SR-17_in_Toquerville,_UT,_Oct_16.jpg",
   "file": "North on SR-17 in Toquerville, UT, Oct 16.jpg"
  },
+ "washington/virgin": {
+  "src": "/images/places/washington/virgin.webp",
+  "width": 1280,
+  "height": 915,
+  "title": "Virgin Utah",
+  "artist": "Orsen",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Virgin_Utah.JPG",
+  "file": "Virgin Utah.JPG"
+ },
+ "washington/washington": {
+  "src": "/images/places/washington/washington.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Washington, Utah",
+  "artist": "Raymond Shobe",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Washington,_Utah.jpg",
+  "file": "Washington, Utah.jpg"
+ },
+ "wayne": {
+  "src": "/images/places/wayne.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Loa Tithing Office Loa Utah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loa_Tithing_Office_Loa_Utah.jpeg",
+  "file": "Loa Tithing Office Loa Utah.jpeg"
+ },
  "weber": {
   "src": "/images/places/weber.webp",
   "width": 1280,
@@ -1153,6 +2198,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eden_Utah.jpg",
   "file": "Eden Utah.jpg"
+ },
+ "weber/harrisville": {
+  "src": "/images/places/weber/harrisville.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Harrisville Utah City Hall",
+  "artist": "Ntsimp",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harrisville_Utah_City_Hall.jpeg",
+  "file": "Harrisville Utah City Hall.jpeg"
  },
  "weber/hooper": {
   "src": "/images/places/weber/hooper.webp",
@@ -1198,6 +2254,61 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_ogden.jpg",
   "file": "Downtown ogden.jpg"
  },
+ "weber/ogden-valley-city": {
+  "src": "/images/places/weber/ogden-valley-city.webp",
+  "width": 1280,
+  "height": 1280,
+  "title": "Coldcanyon",
+  "artist": "Gyejournal",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coldcanyon.jpg",
+  "file": "Coldcanyon.jpg"
+ },
+ "weber/plain-city": {
+  "src": "/images/places/weber/plain-city.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Plain City Hall Utah",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plain_City_Hall_Utah.jpeg",
+  "file": "Plain City Hall Utah.jpeg"
+ },
+ "weber/pleasant-view": {
+  "src": "/images/places/weber/pleasant-view.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Pleasant View Utah City Hall",
+  "artist": "Ntsimp",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pleasant_View_Utah_City_Hall.jpeg",
+  "file": "Pleasant View Utah City Hall.jpeg"
+ },
+ "weber/riverdale": {
+  "src": "/images/places/weber/riverdale.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Riverdale Utah city hall",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riverdale_Utah_city_hall.jpeg",
+  "file": "Riverdale Utah city hall.jpeg"
+ },
+ "weber/roy": {
+  "src": "/images/places/weber/roy.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Roy Utah Municipal Center",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roy_Utah_Municipal_Center.jpeg",
+  "file": "Roy Utah Municipal Center.jpeg"
+ },
  "weber/south-ogden": {
   "src": "/images/places/weber/south-ogden.webp",
   "width": 1280,
@@ -1208,6 +2319,17 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:South_Ogden_city_hall.jpeg",
   "file": "South Ogden city hall.jpeg"
+ },
+ "weber/uintah": {
+  "src": "/images/places/weber/uintah.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Uintah Utah City Hall",
+  "artist": "Ntsimp",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uintah_Utah_City_Hall.jpeg",
+  "file": "Uintah Utah City Hall.jpeg"
  },
  "weber/washington-terrace": {
   "src": "/images/places/weber/washington-terrace.webp",

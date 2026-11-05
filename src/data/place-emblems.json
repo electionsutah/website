@@ -99,6 +99,16 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seal_of_West_Valley_City,_Utah.png"
  },
+ "sanpete/ephraim": {
+  "src": "/images/place-emblems/sanpete/ephraim.webp",
+  "kind": "flag",
+  "file": "Flag of Ephraim, Utah.svg",
+  "title": "Flag of Ephraim, Utah",
+  "artist": "Tara Daniel (original), vectorization by Flagvisioner",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Ephraim,_Utah.svg"
+ },
  "summit/park-city": {
   "src": "/images/place-emblems/summit/park-city.webp",
   "kind": "logo",
