@@ -201,3 +201,5 @@
 
 .explorer-intro>.district-combobox{margin-top:24px}
 .multi-seat-note{margin:-6px 0 12px;font-size:13px;line-height:1.5;color:var(--lab-muted)}
+/* Phones pan by dragging, so the arrow buttons only crowd the map (and the attribution). */
+@media(max-width:700px){.legislative-map-stage .map-pan-controls{display:none}}
