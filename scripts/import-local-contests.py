@@ -230,8 +230,19 @@ def classify(raw, county, cities, year):
     return 'Special District Offices', office_case(name), '', party
 
 
-def candidate_party(option, contest_party):
+def candidate_name(option):
+    """Separate named write-ins from aggregate/invalid ballot responses."""
     name = squash(text(option['name']))
+    marker = re.match(r'^write[- ]?ins?\b', name, flags=re.I)
+    if marker:
+        name = name[marker.end():].strip(' :-()')
+    if not name or name.lower() in {'not assigned', 'unassigned', 'invalid', 'not valid', 'delete'}:
+        return ''
+    return name
+
+
+def candidate_party(option, contest_party):
+    name = candidate_name(option)
     raw = squash(text((option.get('party') or {}).get('name'))).upper()
     prefix = re.match(r'^(REP|DEM|UNA|CON|LIB|IAP|FWD|GRN)\s+(.+)$', name)
     party = contest_party or (PARTIES.get(raw) if raw not in NONPARTISAN else '') or (raw.title() if raw not in NONPARTISAN else '')
@@ -254,6 +265,51 @@ def options_of(item):
     if item.get('summaryResults'): return item['summaryResults']['ballotOptions']
     rounds = item.get('rankedChoiceSummaryResults') or []
     return rounds[-1]['ballotOptions'] if rounds else []
+
+
+def deduplicate_contests(contests):
+    """Only collapse matching candidate slates repeated across counties."""
+    groups = defaultdict(list)
+    for contest in contests:
+        slate = tuple(sorted((slug(candidate_party(entry['option'], entry['party'])[0]),
+                              candidate_party(entry['option'], entry['party'])[1])
+                             for entry in contest['candidates']))
+        groups[(contest['election'], contest['office'], contest['seats'], slate)].append(contest)
+    retained = set()
+    for group in groups.values():
+        # Older ranked-choice feeds repeat the same slate for each preference.
+        # Preserve the existing representative (the item with the most votes).
+        if all(re.search(r'\d+(?:st|nd|rd|th) (?:Choice|Preference)\b', contest.get('raw', ''), flags=re.I) for contest in group):
+            by_county = defaultdict(list)
+            for contest in group: by_county[contest['county']].append(contest)
+            group = [max(copies, key=lambda contest: contest['total']) for copies in by_county.values()]
+        counties = Counter(contest['county'] for contest in group)
+        if len(counties) > 1 and max(counties.values()) == 1:
+            retained.add(id(max(group, key=lambda contest: contest['total'])))
+        else:
+            # Separate seats and party primaries in one county must survive, even
+            # when their normalized office names happen to be identical.
+            retained.update(id(contest) for contest in group)
+    return [contest for contest in contests if id(contest) in retained]
+
+
+def reconcile_primary_offices(contests):
+    """Resolve a primary's office using its own slate, never another primary's."""
+    general_offices = defaultdict(set)
+    for contest in contests:
+        if contest['kind'] != 'general': continue
+        for entry in contest['candidates']:
+            name, _ = candidate_party(entry['option'], entry['party'])
+            general_offices[(contest['year'], contest['county'], slug(name))].add(contest['office'])
+    for contest in contests:
+        if contest['kind'] != 'primary': continue
+        targets = set()
+        for entry in contest['candidates']:
+            name, _ = candidate_party(entry['option'], entry['party'])
+            targets.update(general_offices.get((contest['year'], contest['county'], slug(name)), set()))
+        if len(targets) == 1:
+            target = next(iter(targets))
+            if target.startswith(contest['office'] + ' '): contest['office'] = target
 
 
 def main():
@@ -298,6 +354,7 @@ def main():
                 # General-election placeholders with no votes at all (a second "Town of Bluff" contest) are dropped.
                 # The 2023 primary feed lists every ballot but no votes; it still shows who did not advance.
                 if final and kind == 'general' and not any(o.get('voteCount') for o in options): skipped['empty contest'] += 1; continue
+                options = [option for option in options if candidate_name(option)]
                 ranked = sorted(options, key=lambda o: -(o.get('voteCount') or 0))
                 count = seats(item, office)
                 winners = {o['id'] for o in ranked[:count]} if kind == 'general' and final and count else set()
@@ -306,18 +363,13 @@ def main():
                                  'total': item.get('voteTotal') or 0, 'seats': count, 'contestType': item.get('contestType'),
                                  'candidates': [{'option': o, 'party': contest_party, 'won': o['id'] in winners, 'votes': o.get('voteCount') or 0} for o in options]})
 
-    # A contest covering several counties appears in each county's feed; keep the county with the most votes.
-    best = {}
-    for contest in contests:
-        key = (contest['election'], contest['office'])
-        if key not in best or contest['total'] > best[key]['total']: best[key] = contest
-    contests = [contest for contest in contests if best[(contest['election'], contest['office'])] is contest]
+    contests = deduplicate_contests(contests)
+    reconcile_primary_offices(contests)
 
     records = {}
     for contest in sorted(contests, key=lambda c: c['date']):
         for entry in contest['candidates']:
             raw_name = squash(text(entry['option']['name']))
-            if re.match(r'^write[- ]?in', raw_name, flags=re.I) or not raw_name: continue
             name, party = candidate_party(entry['option'], entry['party'])
             key = (contest['year'], contest['office'], slug(name))
             source = f"{PUBLIC}/{contest['locality']}/elections/{contest['election']}/ballot-items/{contest['id']}"
@@ -326,6 +378,8 @@ def main():
                 status, label = ('elected', 'Elected') if entry['won'] else (('defeated', 'Defeated') if decided else ('general_election', 'General Election Candidate'))
             else:
                 status, label = ('defeated', 'Out in Primary')  # replaced if the candidate reaches the general
+            if re.match(r'^write[- ]?in\b', raw_name, flags=re.I) or entry['option'].get('isWriteIn') or entry['option'].get('isQualifiedWriteIn'):
+                label += ' (Write-in)'
             previous = records.get(key)
             records[key] = {
                 'id': slug(name), 'name': name, 'office': contest['office'], 'party': party or (previous or {}).get('party', ''),
@@ -334,22 +388,6 @@ def main():
                 'votes': entry['votes'], 'contestVotes': contest['total'], 'seats': contest['seats'], 'rawOffice': contest['raw'],
                 'contact': {'address': '', 'phone': '', 'email': '', 'website': '', 'facebook': '', 'twitter': ''},
             }
-    # Some primaries name the office less precisely than the general ("County Commissioner" vs "...
-    # Commissioner C"). When a primary's candidates reach exactly one differently named general office
-    # in the same county and year, and that office extends the primary's name, file the primary under it.
-    general_offices = defaultdict(set)
-    for (year, office, person), row in records.items():
-        if row['electionType'] == 'general': general_offices[(year, row['county'], person)].add(office)
-    renamed = {}
-    for (year, office, person), row in records.items():
-        if row['electionType'] != 'primary': continue
-        targets = {target for target in general_offices.get((year, row['county'], person), set()) if target != office and target.startswith(office + ' ')}
-        if len(targets) == 1: renamed[(year, row['county'], office)] = next(iter(targets))
-    for (year, office, person), row in list(records.items()):
-        target = renamed.get((year, row['county'], office))
-        if not target or row['electionType'] != 'primary': continue
-        del records[(year, office, person)]
-        if (year, target, person) not in records: records[(year, target, person)] = {**row, 'office': target}
     rows = sorted(records.values(), key=lambda r: (r['year'], r['county'], r['office'], r['name']))
     unmatched = [r for r in rows if r['section'] == 'Unmatched']
     output = [{key: value for key, value in row.items() if key not in {'votes', 'contestVotes', 'seats', 'rawOffice'}} for row in rows if row['section'] != 'Unmatched']
