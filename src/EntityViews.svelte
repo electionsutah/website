@@ -523,7 +523,7 @@
   {/if}
 {:else}
   <section class="entity-index" class:places-index={section === 'places'} class:embedded-index={embedded}>
-    {#if !embedded}<IndexHeader title={labels[section].plural} intro={labels[section].intro} photo={section === 'people' ? undefined : indexHeaderImages[section]} />{/if}
+    {#if !embedded}<IndexHeader title={labels[section].plural} intro={labels[section].intro} photo={indexHeaderImages[section]} />{/if}
     <IndexControls
       {facets}
       {selection}
