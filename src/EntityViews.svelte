@@ -6,6 +6,7 @@
   import IndexControls from './IndexControls.svelte';
   import SortHeader from './SortHeader.svelte';
   import placeProfiles from './data/place-enrichment.json';
+  import placeImageData from './data/place-images.json';
   import personProfiles from './data/person-enrichment.json';
   import EntityViews from './EntityViews.svelte';
   import { officeMap, placeMap } from './lib/boundary-maps';
@@ -69,6 +70,9 @@
   };
 
   const profilesById = placeProfiles as Record<string, PlaceProfile>;
+  /** Wikidata image (P18) per place, from scripts/fetch-place-images.py. */
+  type PlaceImage = { src: string; title: string; artist: string; license: string; licenseUrl: string; sourceUrl: string };
+  const placeImages = placeImageData as Record<string, PlaceImage>;
   type PersonProfile = {
     sourceUrl: string;
     lastVerified: string;
@@ -92,6 +96,7 @@
   $: party = section === 'parties' && id ? partiesById.get(id) : undefined;
   $: place = section === 'places' && id ? placesById.get(id) : undefined;
   $: placeProfile = place ? profilesById[place.id] : undefined;
+  $: placeImage = place ? placeImages[place.id] : undefined;
   $: boundary = office ? officeMap(office, placesById) : place ? placeMap(place) : null;
   $: found = !id || Boolean(person || office || party || place);
   $: pageTitle = !found
@@ -438,7 +443,7 @@
     <article class="entity-detail">
       <Breadcrumbs parent={{ label: 'Places', href: '/places/' }} current={place.name} {navigate} />
       <header class="detail-hero compact-hero place-hero">
-        <div class="place-hero-detail"><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p></div>
+        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<p class="place-photo-credit">Photo: <a href={placeImage.sourceUrl} target="_blank" rel="noreferrer">{placeImage.title}<span class="sr-only"> (opens in new tab)</span></a> by {placeImage.artist}, {#if placeImage.licenseUrl}<a href={placeImage.licenseUrl} target="_blank" rel="noreferrer">{placeImage.license}<span class="sr-only"> (opens in new tab)</span></a>{:else}{placeImage.license}{/if}, via Wikimedia Commons.</p>{/if}</div>
         {#if placeProfile}
           <section class="place-profile" aria-labelledby="place-profile-title">
             <div class="place-summary">

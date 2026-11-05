@@ -267,3 +267,12 @@ main:focus,main h1:focus{outline:0}
 @media(max-width:1000px){.detail-hero.has-boundary{grid-template-columns:1fr}.office-boundary{max-width:560px}}
 /* Too narrow for a side column: stack the map under the facts at its natural portrait shape. */
 @media(max-width:700px),(min-width:1001px) and (max-width:1240px){.place-facts-row.has-boundary{grid-template-columns:1fr}.place-boundary{display:block}.place-boundary .boundary-frame{flex:none;aspect-ratio:var(--aspect);max-height:440px}}
+
+/* Place hero photo (Wikidata P18 via Wikimedia Commons), darkened so the text stays readable. */
+.place-hero-detail.has-photo{position:relative;padding-bottom:clamp(84px,9vw,120px);background:linear-gradient(180deg,rgba(17,17,16,.5),rgba(17,17,16,.78)),var(--place-photo) center/cover no-repeat #3b3a36;color:#fff}
+.place-hero-detail.has-photo .eyebrow,.place-hero-detail.has-photo h1,.place-hero-detail.has-photo p{color:#fff}
+.place-hero-detail.has-photo .archive-context{color:rgba(255,255,255,.86)}
+.place-hero-detail.has-photo .place-county-link{color:#fff}
+.place-photo-credit{position:absolute;left:clamp(24px,7vw,108px);right:clamp(24px,7vw,108px);bottom:18px;margin:0;font:400 12px/1.5 'Noto Sans',sans-serif;color:rgba(255,255,255,.78)!important}
+.place-photo-credit a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:700px){.place-hero-detail.has-photo{padding-bottom:28px}.place-photo-credit{position:static;margin-top:28px!important}}
