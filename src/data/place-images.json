@@ -582,17 +582,6 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:7900_S_State_St.jpg",
   "file": "7900 S State St.jpg"
  },
- "salt-lake/milcreek": {
-  "src": "/images/places/salt-lake/milcreek.webp",
-  "width": 1280,
-  "height": 960,
-  "title": "Baldwin Radio Factory Millcreek Utah",
-  "artist": "Ntsimp",
-  "license": "CC0",
-  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baldwin_Radio_Factory_Millcreek_Utah.jpeg",
-  "file": "Baldwin Radio Factory Millcreek Utah.jpeg"
- },
  "salt-lake/millcreek": {
   "src": "/images/places/salt-lake/millcreek.webp",
   "width": 1280,
@@ -769,17 +758,6 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Pleasant_Utah.jpg",
   "file": "Mount Pleasant Utah.jpg"
  },
- "sanpete/mt-pleasant": {
-  "src": "/images/places/sanpete/mt-pleasant.webp",
-  "width": 1280,
-  "height": 851,
-  "title": "Mount Pleasant Utah",
-  "artist": "Unknown author",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Pleasant_Utah.jpg",
-  "file": "Mount Pleasant Utah.jpg"
- },
  "sevier": {
   "src": "/images/places/sevier.webp",
   "width": 1280,
@@ -922,17 +900,6 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Fork_Utah_City_Hall.jpeg",
   "file": "American Fork Utah City Hall.jpeg"
- },
- "utah/apline": {
-  "src": "/images/places/utah/apline.webp",
-  "width": 1280,
-  "height": 960,
-  "title": "Alpine UT aerial",
-  "artist": "Original uploader was Manderson164 at en.wikipedia",
-  "license": "Public domain",
-  "licenseUrl": "",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpine_UT_aerial.JPG",
-  "file": "Alpine UT aerial.JPG"
  },
  "utah/eagle-mountain": {
   "src": "/images/places/utah/eagle-mountain.webp",

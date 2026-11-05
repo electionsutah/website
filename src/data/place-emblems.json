@@ -1,0 +1,182 @@
+{
+ "cache/nibley": {
+  "src": "/images/place-emblems/cache/nibley.webp",
+  "kind": "flag",
+  "file": "Flag of Nibley, Utah.svg",
+  "title": "Flag of Nibley, Utah",
+  "artist": "Owner: City of Nibley, Utah Vector: Frank Zigler (Formally TheVexillologistofKingwood)",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Nibley,_Utah.svg"
+ },
+ "emery": {
+  "src": "/images/place-emblems/emery.webp",
+  "kind": "seal",
+  "file": "Emery County Seal.png",
+  "title": "Emery County Seal",
+  "artist": "Stundra",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emery_County_Seal.png"
+ },
+ "emery/green-river": {
+  "src": "/images/place-emblems/emery/green-river.webp",
+  "kind": "flag",
+  "file": "Flag of Green River, Utah.svg",
+  "title": "Flag of Green River, Utah",
+  "artist": "Owner: City of Green River, Utah Vector: Frank Zigler (Formally TheVexillologistofKingwood)",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Green_River,_Utah.svg"
+ },
+ "iron/cedar-city": {
+  "src": "/images/place-emblems/iron/cedar-city.webp",
+  "kind": "flag",
+  "file": "Flag of Cedar City, Iron County, Utah.png",
+  "title": "Flag of Cedar City, Iron County, Utah",
+  "artist": "Cedar City, Utah",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Cedar_City,_Iron_County,_Utah.png"
+ },
+ "salt-lake": {
+  "src": "/images/place-emblems/salt-lake.webp",
+  "kind": "logo",
+  "file": "Salt Lake County, Utah logo.png",
+  "title": "Salt Lake County, Utah logo",
+  "artist": "Salt Lake County government",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salt_Lake_County,_Utah_logo.png"
+ },
+ "salt-lake/murray": {
+  "src": "/images/place-emblems/salt-lake/murray.webp",
+  "kind": "seal",
+  "file": "Murray Seal.jpg",
+  "title": "Murray Seal",
+  "artist": "Murray City Corporation",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Murray_Seal.jpg"
+ },
+ "salt-lake/salt-lake-city": {
+  "src": "/images/place-emblems/salt-lake/salt-lake-city.webp",
+  "kind": "flag",
+  "file": "Flag of Salt Lake City (2020).svg",
+  "title": "Flag of Salt Lake City (2020)",
+  "artist": "Arianna Meinking and Elio Kennedy-Yoon",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Salt_Lake_City_(2020).svg"
+ },
+ "salt-lake/sandy": {
+  "src": "/images/place-emblems/salt-lake/sandy.webp",
+  "kind": "flag",
+  "file": "Flag of Sandy, Utah.svg",
+  "title": "Flag of Sandy, Utah",
+  "artist": "Cypp0847",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Sandy,_Utah.svg"
+ },
+ "salt-lake/taylorsville": {
+  "src": "/images/place-emblems/salt-lake/taylorsville.webp",
+  "kind": "seal",
+  "file": "Taylorsville Seal.svg",
+  "title": "Taylorsville Seal",
+  "artist": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taylorsville_Seal.svg"
+ },
+ "salt-lake/west-valley-city": {
+  "src": "/images/place-emblems/salt-lake/west-valley-city.webp",
+  "kind": "seal",
+  "file": "Seal of West Valley City, Utah.png",
+  "title": "Seal of West Valley City, Utah",
+  "artist": "Source: [1]",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seal_of_West_Valley_City,_Utah.png"
+ },
+ "summit/park-city": {
+  "src": "/images/place-emblems/summit/park-city.webp",
+  "kind": "logo",
+  "file": "Logo of Park City, Utah.jpg",
+  "title": "Logo of Park City, Utah",
+  "artist": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Park_City,_Utah.jpg"
+ },
+ "tooele": {
+  "src": "/images/place-emblems/tooele.webp",
+  "kind": "seal",
+  "file": "Seal of Tooele County, Utah.png",
+  "title": "Seal of Tooele County, Utah",
+  "artist": "Jim Falken",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seal_of_Tooele_County,_Utah.png"
+ },
+ "utah": {
+  "src": "/images/place-emblems/utah.webp",
+  "kind": "flag",
+  "file": "Flag of Utah County, Utah.svg",
+  "title": "Flag of Utah County, Utah",
+  "artist": "Flagvisioner",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Utah_County,_Utah.svg"
+ },
+ "utah/orem": {
+  "src": "/images/place-emblems/utah/orem.webp",
+  "kind": "flag",
+  "file": "Flag of Orem, Utah, a very graphic design.png",
+  "title": "Flag of Orem, Utah, a very graphic design",
+  "artist": "Storyask527",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Orem,_Utah,_a_very_graphic_design.png"
+ },
+ "utah/provo": {
+  "src": "/images/place-emblems/utah/provo.webp",
+  "kind": "flag",
+  "file": "Flag of Provo, Utah (2015–).svg",
+  "title": "Flag of Provo, Utah (2015–)",
+  "artist": "City of Provo",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Provo,_Utah_(2015%E2%80%93).svg"
+ },
+ "wasatch": {
+  "src": "/images/place-emblems/wasatch.webp",
+  "kind": "logo",
+  "file": "Logo of Wasatch County, Utah.svg",
+  "title": "Logo of Wasatch County, Utah",
+  "artist": "Unknown authorUnknown author",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_Wasatch_County,_Utah.svg"
+ },
+ "washington/st-george": {
+  "src": "/images/place-emblems/washington/st-george.webp",
+  "kind": "logo",
+  "file": "Seal of the City of St. George.png",
+  "title": "Seal of the City of St. George",
+  "artist": "City of St. George",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seal_of_the_City_of_St._George.png"
+ },
+ "weber/ogden": {
+  "src": "/images/place-emblems/weber/ogden.webp",
+  "kind": "flag",
+  "file": "Flag of Ogden, Utah.svg",
+  "title": "Flag of Ogden, Utah",
+  "artist": "City of Ogden, Utah",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Ogden,_Utah.svg"
+ }
+}

@@ -1,11 +1,13 @@
 <script lang="ts">
   import Icon from './Icon.svelte';
+  import PersonAvatar from './PersonAvatar.svelte';
   import SearchField from './SearchField.svelte';
   import { onMount } from 'svelte';
   import { elections, offices, parties, people, places } from './lib/entities';
   import { formatCount } from './lib/format';
   import { browseUrl, matchesQuery, queryTokens, searchText } from './lib/search';
   import { isApplePlatform } from './lib/shortcuts';
+  import placeEmblems from './data/place-emblems.json';
 
   const shortcutKeys = isApplePlatform() ? ['⌘', 'K'] : ['Ctrl', 'K'];
 
@@ -27,7 +29,8 @@
         text: searchText.elections(election),
         displayMeta: `${election.filings.length ? `${formatCount(election.filings.length)} filings` : 'Not archived'} · ${election.title}`,
         href: `/elections/${election.year}/`,
-        initials: 'YR'
+        initials: 'YR',
+        logo: ''
       }))
     },
     {
@@ -39,7 +42,8 @@
         text: searchText.people(person),
         displayMeta: person.filings[0].officeName,
         href: `/people/${person.id}/`,
-        initials: person.initials
+        initials: person.initials,
+        logo: ''
       }))
     },
     {
@@ -51,7 +55,8 @@
         text: searchText.offices(office),
         displayMeta: `${office.sections.join(' · ')} · ${office.filings.length} filings`,
         href: `/offices/${office.id}/`,
-        initials: 'OF'
+        initials: 'OF',
+        logo: ''
       }))
     },
     {
@@ -63,7 +68,8 @@
         text: searchText.parties(party),
         displayMeta: party.recognized ? `Recognized party · ${party.filings.length} filings` : `${party.filings.length} filings`,
         href: `/parties/${party.id}/`,
-        initials: party.shortName.charAt(0)
+        initials: party.shortName.charAt(0),
+        logo: ''
       }))
     },
     {
@@ -75,7 +81,8 @@
         text: searchText.places(place),
         displayMeta: `${place.type}${place.type === 'City' ? ` · ${place.county} County` : ''} · ${place.filings.length} filings`,
         href: `/places/${place.id}/`,
-        initials: 'PL'
+        initials: 'PL',
+        logo: (placeEmblems as Record<string, { src: string }>)[place.id]?.src ?? ''
       }))
     }
   ];
@@ -144,7 +151,7 @@
                 <div>
                   {#each group.visible as item}
                     <a class="search-result" href={item.href} onclick={(event) => open(event, item.href)}>
-                      <span aria-hidden="true">{item.initials}</span><div><strong>{item.title}</strong><small>{item.displayMeta}</small></div><b><Icon name="arrow_forward" /></b>
+                      {#if item.logo}<span class="search-logo" aria-hidden="true"><img src={item.logo} alt="" /></span>{:else if group.label === 'People'}<PersonAvatar personId={item.id} />{:else if group.label === 'Places' || group.label === 'Offices'}<span class="icon-avatar" aria-hidden="true"><Icon name={group.label === 'Places' ? 'location_on' : 'workspace_premium'} /></span>{:else}<span aria-hidden="true">{item.initials}</span>{/if}<div><strong>{item.title}</strong><small>{item.displayMeta}</small></div><b><Icon name="arrow_forward" /></b>
                     </a>
                   {/each}
                 </div>

@@ -20,8 +20,8 @@ const notes: Record<string, string> = {
   county: 'County boundary.',
   city: 'Municipal boundary.'
 };
-// Archive spellings that differ from the official municipality names.
-const cityAliases: Record<string, string> = { milcreek: 'millcreek', apline: 'alpine', 'mt-pleasant': 'mount-pleasant', magna: 'magna-city' };
+// Archive names that differ from the official municipality names (Magna is a metro township).
+const cityAliases: Record<string, string> = { magna: 'magna-city' };
 
 function find(layer: string, key: string): BoundaryMap | null {
   const entry = index[layer]?.[key];
