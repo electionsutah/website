@@ -172,7 +172,10 @@ function partyDetails(rawParty: string, section: string) {
   const details: Record<string, { name: string; shortName: string; color: string }> = {
     Democratic: { name: 'Utah Democratic Party', shortName: 'Democratic', color: '#4d75b7' },
     Republican: { name: 'Utah Republican Party', shortName: 'Republican', color: '#c94f43' },
-    Forward: { name: 'Forward Party Utah', shortName: 'Forward', color: '#8b5aa6' },
+    Forward: { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6' },
+    'Utah Forward': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6' },
+    'Forward Party Utah': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6' },
+    'Forward Party of Utah': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6' },
     Constitution: { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#a36d38' },
     'Constitution Party': { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#a36d38' },
     Green: { name: 'Green Party of Utah', shortName: 'Green', color: '#43845a' },
@@ -432,7 +435,7 @@ const partyMap = new Map<string, Party>();
 const partyLogos: Record<string, string> = {
   'Utah Constitution Party': '/party-logos/constitution-party.png',
   'Utah Democratic Party': '/party-logos/utah-democratic-party.webp',
-  'Forward Party Utah': '/party-logos/forward-party-utah.png',
+  'Forward Party of Utah': '/party-logos/forward-party-utah.png',
   'Green Party of Utah': '/party-logos/green-party-utah.png',
   'Independent American Party': '/party-logos/independent-american-party.png',
   'Utah Libertarian Party': '/party-logos/utah-libertarian-party.png',
@@ -443,7 +446,7 @@ const partyLogos: Record<string, string> = {
 const recognizedParties = [
   { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#a36d38', website: 'https://www.constitutionpartyofutah.com/' },
   { name: 'Utah Democratic Party', shortName: 'Democratic', color: '#4d75b7', website: 'https://www.utahdemocrats.org/' },
-  { name: 'Forward Party Utah', shortName: 'Forward', color: '#8b5aa6', website: 'https://www.utahforwardparty.org/' },
+  { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6', website: 'https://www.utahforwardparty.org/' },
   { name: 'Green Party of Utah', shortName: 'Green', color: '#43845a', website: 'https://greenpartyofutah.org/' },
   { name: 'Independent American Party', shortName: 'Independent American', color: '#5b7f65', website: 'https://iaput.org/' },
   { name: 'Utah Libertarian Party', shortName: 'Libertarian', color: '#c8961d', website: 'https://www.libertarianutah.org/' },
