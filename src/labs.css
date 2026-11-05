@@ -36,7 +36,7 @@
 /* Historical party margins: shared arrow scale and explicit text alternatives. */
 .shift-section{padding:50px 0;border-top:3px solid var(--lab-ink);scroll-margin-top:100px}
 .shift-intro,.shift-context,.shift-methodology p{max-width:1000px;font-size:16px;line-height:1.75;color:var(--lab-muted)}
-.shift-context a,.shift-evidence a,.shift-methodology a{color:#246187;text-decoration:underline}
+.shift-context a,.shift-methodology a{color:#246187;text-decoration:underline}
 .shift-controls{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:15px;margin-bottom:20px}
 .shift-table-scroll{overflow-x:auto}
 .shift-table{width:100%;border-collapse:collapse;font-size:16px}
@@ -54,9 +54,24 @@
 .shift-arrow strong{font-size:19px;white-space:nowrap}.shift-arrow strong small{font-size:12px;font-weight:400}
 .shift-race-link{padding:0;border:0;background:none;text-align:left;color:#246187;font-size:16px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .shift-unavailable{font-size:14px;color:var(--lab-muted)}
-.shift-evidence{font-size:13px;line-height:1.65;margin-top:7px}
-.shift-evidence summary,.shift-methodology summary{cursor:pointer;color:#246187}
-.shift-evidence p{margin:9px 0;color:var(--lab-muted)}
+.shift-methodology summary{cursor:pointer;color:#246187}
+.shift-evidence-toggle{margin-top:7px;padding:0;border:0;background:none;color:#246187;font-size:13px;line-height:1.65;text-decoration:underline;text-underline-offset:3px}
+.shift-evidence-toggle:hover{color:#111110}
+/* Evidence opens over the table (native popover: Esc and outside click close it) so rows keep their height. */
+.shift-popover{position:fixed;inset:auto;margin:0;width:min(340px,calc(100vw - 24px));padding:16px 18px 14px;border:1px solid var(--lab-line);border-top:3px solid var(--lab-ink);background:#fffefa;color:var(--lab-ink);box-shadow:0 12px 32px rgba(32,42,50,.18);font-size:14px;line-height:1.6}
+.shift-popover header{display:flex;align-items:start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.shift-popover header strong{font:600 17px/1.3 'Source Serif 4',serif}
+.shift-popover header button{display:grid;place-items:center;flex:none;width:28px;height:28px;margin:-4px -6px 0 0;padding:0;border:0;background:none;color:var(--lab-muted)}
+.shift-popover header button:hover{color:var(--lab-ink)}
+.shift-popover p{margin:8px 0;color:var(--lab-muted)}
+.shift-popover table{width:100%;border-collapse:collapse;margin:6px 0 10px;font-variant-numeric:tabular-nums}
+.shift-popover th,.shift-popover td{padding:7px 0;border-bottom:1px solid var(--lab-line);text-align:right;font-size:14px}
+.shift-popover thead th{font-size:12px;font-weight:600;color:var(--lab-muted)}
+.shift-popover th:first-child{text-align:left}
+.shift-popover tbody th{font-weight:600}
+.shift-popover .democratic{color:#176fa6}.shift-popover .republican{color:#b53330}
+.shift-popover-sources{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px}
+.shift-popover a{color:#246187;text-decoration:underline}
 .shift-methodology{margin-top:25px;border-top:1px solid var(--lab-line);padding-top:20px;font-size:16px}
 .shift-warning{padding:12px;border-left:3px solid #a57c29;background:#f5efdf;font-size:14px;line-height:1.6}
 .race-shift{margin:0 0 22px;padding:18px 0;border-top:1px solid var(--lab-line);border-bottom:1px solid var(--lab-line)}
@@ -86,7 +101,7 @@
   .shift-table td.republican::before{content:'Republicans · 2026'}
   .shift-table tbody td:last-child::before{content:'Shift in party margin';display:block;margin-bottom:7px;color:var(--lab-muted);font-size:12px}
   .shift-table .shift-arrow svg{width:160px;max-width:60%}
-  .shift-evidence summary{padding-block:6px}
+  .shift-evidence-toggle{padding-block:6px}
 }
 
 /* Statewide legislative map and district results. */
