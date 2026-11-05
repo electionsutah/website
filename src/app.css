@@ -237,3 +237,33 @@ main:focus,main h1:focus{outline:0}
 .brand-logo{display:block;height:58px;width:auto}
 @media(max-width:700px){.brand-logo{height:50px}}
 .footer-logo{display:block;height:64px;width:auto}
+/* Cropped boundary maps (scripts/generate-boundary-maps.py) over live MapTiler hillshade (src/BoundaryMap.svelte). */
+.boundary-map{margin:0;min-width:0}
+.boundary-frame{position:relative;aspect-ratio:var(--aspect)}
+.boundary-drawing{position:absolute;top:0;right:0;overflow:hidden;outline:1px solid #c8c6c0;outline-offset:-1px;background:#fff}
+.boundary-terrain{position:absolute;inset:0}
+.boundary-terrain img{position:absolute;max-width:none;opacity:.8}
+/* Multiply lets the relief shade through the land, the neighbors and the highlighted boundary alike. */
+.boundary-shape{position:absolute;inset:0;display:block;width:100%;height:100%}
+.boundary-drawing.terrain .boundary-shape{mix-blend-mode:multiply}
+.boundary-locator{position:absolute;box-sizing:content-box;background:rgba(242,241,237,.94);border:1px solid #d4d1c8}
+.boundary-locator img{display:block;width:100%;height:100%}
+.boundary-locator>div{position:relative;width:100%;height:100%}
+.boundary-locator i{position:absolute;display:block;box-sizing:border-box;background:#ff5a4b;border:1px solid #111110}
+.maptiler-logo{position:absolute;left:8px;bottom:6px;display:block;width:62px;opacity:.85}
+.maptiler-logo img{display:block;width:100%;height:auto}
+.boundary-map figcaption{margin-top:9px;color:#5f5e59;font:400 12px/1.45 'Noto Sans',sans-serif}
+.boundary-map figcaption a{color:#006eb7;text-decoration:underline;text-underline-offset:2px}
+.detail-hero.has-boundary{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,1fr);align-items:center}
+.office-boundary .boundary-frame{max-height:420px}
+/* The facts panel is about the same height at every width, so a capped column keeps the map box near the map's shape. */
+.place-facts-row.has-boundary{display:grid;grid-template-columns:minmax(0,1fr) clamp(210px,17vw,260px);gap:20px;align-items:stretch}
+.place-facts-row.has-boundary .place-facts{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+.place-facts-row.has-boundary .place-facts article{padding:20px}
+/* Map plus caption match the facts panel's full height; the map fits inside, pinned top right with its Utah inset. */
+.place-boundary{display:flex;flex-direction:column}
+.place-boundary .boundary-frame{flex:1 1 0;min-height:220px;aspect-ratio:auto}
+.place-facts-row.has-boundary .population-card>strong,.place-facts-row.has-boundary .inception-card>strong{font-size:clamp(28px,2.3vw,48px);white-space:nowrap}
+@media(max-width:1000px){.detail-hero.has-boundary{grid-template-columns:1fr}.office-boundary{max-width:560px}}
+/* Too narrow for a side column: stack the map under the facts at its natural portrait shape. */
+@media(max-width:700px),(min-width:1001px) and (max-width:1240px){.place-facts-row.has-boundary{grid-template-columns:1fr}.place-boundary{display:block}.place-boundary .boundary-frame{flex:none;aspect-ratio:var(--aspect);max-height:440px}}

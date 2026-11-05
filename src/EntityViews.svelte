@@ -8,6 +8,8 @@
   import placeProfiles from './data/place-enrichment.json';
   import personProfiles from './data/person-enrichment.json';
   import EntityViews from './EntityViews.svelte';
+  import { officeMap, placeMap } from './lib/boundary-maps';
+  import BoundaryMap from './BoundaryMap.svelte';
   import {
     activeStatuses,
     candidacies,
@@ -90,6 +92,7 @@
   $: party = section === 'parties' && id ? partiesById.get(id) : undefined;
   $: place = section === 'places' && id ? placesById.get(id) : undefined;
   $: placeProfile = place ? profilesById[place.id] : undefined;
+  $: boundary = office ? officeMap(office, placesById) : place ? placeMap(place) : null;
   $: found = !id || Boolean(person || office || party || place);
   $: pageTitle = !found
     ? 'Record not found'
@@ -402,7 +405,7 @@
   {:else if office}
     <article class="entity-detail">
       <Breadcrumbs parent={{ label: 'Offices', href: '/offices/' }} current={office.name} {navigate} />
-      <header class="detail-hero compact-hero"><div><p class="eyebrow">{office.sections.join(' · ')}</p><h1>{office.name}</h1><p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div></header>
+      <header class="detail-hero compact-hero" class:has-boundary={!!boundary}><div class="office-hero-detail"><p class="eyebrow">{office.sections.join(' · ')}</p><h1>{office.name}</h1><p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div>{#if boundary}<BoundaryMap map={boundary} className="office-boundary" />{/if}</header>
       <section class="detail-stats">
         <div><small>TOTAL FILINGS</small><strong>{formatCount(office.filings.length)}</strong></div>
         <div><small>PEOPLE</small><strong>{new Set(candidacies(office.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
@@ -444,6 +447,7 @@
               <p>{placeProfile.summary}</p>
               <a href={placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">Wikipedia <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
             </div>
+            <div class="place-facts-row" class:has-boundary={!!boundary}>
             <div class="place-facts">
               <article class="population-card">
                 <small>{placeProfile.populationAsOf === '2020-04-01' ? '2020 census population' : `${placeProfile.populationAsOf.slice(0, 4)} population`}</small>
@@ -463,6 +467,8 @@
                 <p>{place.type === 'County' ? 'County government website' : 'Local government website'}</p>
                 <a href={placeProfile.officialWebsite} target="_blank" rel="noreferrer">Visit website <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
               </article>
+            </div>
+            {#if boundary}<BoundaryMap map={boundary} fit="fill" className="place-boundary" />{/if}
             </div>
           </section>
         {/if}
