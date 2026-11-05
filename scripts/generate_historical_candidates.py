@@ -15,7 +15,8 @@ def clean_url(value: str) -> str:
 
 def clean_city(value: object) -> str:
     city = str(value or "").strip()
-    return {"St George": "St. George"}.get(city, city)
+    # Source typos and abbreviations, corrected to the official municipality names.
+    return {"St George": "St. George", "Apline": "Alpine", "Milcreek": "Millcreek", "Mt Pleasant": "Mount Pleasant"}.get(city, city)
 
 
 def clean_office(year: int, row: dict[str, object]) -> str:

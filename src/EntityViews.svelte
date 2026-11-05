@@ -7,10 +7,14 @@
   import SortHeader from './SortHeader.svelte';
   import placeProfiles from './data/place-enrichment.json';
   import placeImageData from './data/place-images.json';
+  import placeEmblemData from './data/place-emblems.json';
   import personProfiles from './data/person-enrichment.json';
   import EntityViews from './EntityViews.svelte';
   import { officeMap, placeMap } from './lib/boundary-maps';
   import BoundaryMap from './BoundaryMap.svelte';
+  import PhotoCredit from './PhotoCredit.svelte';
+  import PersonAvatar from './PersonAvatar.svelte';
+  import personPhotoData from './data/person-photos.json';
   import {
     activeStatuses,
     candidacies,
@@ -73,6 +77,8 @@
   /** Wikidata image (P18) per place, from scripts/fetch-place-images.py. */
   type PlaceImage = { src: string; title: string; artist: string; license: string; licenseUrl: string; sourceUrl: string };
   const placeImages = placeImageData as Record<string, PlaceImage>;
+  /** County and city seals, logos, and flags from Wikimedia Commons (scripts/fetch-place-emblems.py). */
+  const placeEmblems = placeEmblemData as Record<string, PlaceImage & { kind: string; file: string }>;
   type PersonProfile = {
     sourceUrl: string;
     lastVerified: string;
@@ -97,6 +103,14 @@
   $: place = section === 'places' && id ? placesById.get(id) : undefined;
   $: placeProfile = place ? profilesById[place.id] : undefined;
   $: placeImage = place ? placeImages[place.id] : undefined;
+  $: personPhoto = person ? (personPhotoData as Record<string, PlaceImage & { via: string }>)[person.id] : undefined;
+  $: placeEmblem = place ? placeEmblems[place.id] : undefined;
+  // Municipal offices (mayor, council) show their city's photo. District offices list candidates' home
+  // cities, which only partly overlap the district, so they keep the plain hero.
+  $: officeCity = office?.sections.includes('Municipal office') ? office.placeIds.map((id) => placesById.get(id)).filter((row) => row && row.type !== 'County') : [];
+  $: officeImage = officeCity.length === 1 ? placeImages[officeCity[0]!.id] : undefined;
+  // Cities sit under their county in the breadcrumb: Places › Duchesne County › Roosevelt.
+  $: placeCounty = place?.type !== 'County' && place?.parentId ? placesById.get(place.parentId) : undefined;
   $: boundary = office ? officeMap(office, placesById) : place ? placeMap(place) : null;
   $: found = !id || Boolean(person || office || party || place);
   $: pageTitle = !found
@@ -205,7 +219,7 @@
             text: searchText.places(item),
             years: item.years,
             initials: item.name.replace(/[^A-Z0-9]/g, '').slice(0, 2),
-            logo: '',
+            logo: placeEmblems[item.id]?.src ?? '',
             accent: '',
             officialWebsite: profilesById[item.id]?.officialWebsite ?? '',
             wikipediaUrl: profilesById[item.id]?.wikipediaUrl ?? '',
@@ -350,11 +364,12 @@
     <article class="entity-detail">
       <Breadcrumbs parent={{ label: 'People', href: '/people/' }} current={person.name} {navigate} />
       <header class="detail-hero">
-        <div class="detail-avatar" aria-hidden="true">{person.initials}</div>
+        <PersonAvatar personId={person.id} className="detail-avatar" tag="div" />
         <div>
           <p class="eyebrow">Person record</p>
           <h1>{person.name}</h1>
           <p class="detail-summary">{person.filings.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${person.filings.length} separate filings across ${person.years.join(', ')}.`}</p>
+          {#if personPhoto}<PhotoCredit image={personPhoto} className="emblem-credit" />{/if}
           {#if contact && (personProfile || contactFiling)}
             <section class="person-contact" aria-label={`${person.name} contact information`}>
               <div class="contact-heading"><span>{personProfile ? 'Campaign contact' : 'Public contact'}</span><small>{#if personProfile}Verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>{:else if contactFiling}{contactFiling.year} filing{/if}</small></div>
@@ -410,7 +425,7 @@
   {:else if office}
     <article class="entity-detail">
       <Breadcrumbs parent={{ label: 'Offices', href: '/offices/' }} current={office.name} {navigate} />
-      <header class="detail-hero compact-hero" class:has-boundary={!!boundary}><div class="office-hero-detail"><p class="eyebrow">{office.sections.join(' · ')}</p><h1>{office.name}</h1><p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div>{#if boundary}<BoundaryMap map={boundary} className="office-boundary" />{/if}</header>
+      <header class="detail-hero compact-hero" class:has-boundary={!!boundary} class:has-photo={!!officeImage} style:--place-photo={officeImage ? `url("${officeImage.src}")` : undefined}><div class="office-hero-detail"><p class="eyebrow">{office.sections.join(' · ')}</p><h1>{office.name}</h1><p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div>{#if boundary}<BoundaryMap map={boundary} className="office-boundary" />{/if}{#if officeImage}<PhotoCredit image={officeImage} />{/if}</header>
       <section class="detail-stats">
         <div><small>TOTAL FILINGS</small><strong>{formatCount(office.filings.length)}</strong></div>
         <div><small>PEOPLE</small><strong>{new Set(candidacies(office.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
@@ -421,7 +436,7 @@
         <div><div class="filed-heading"><p class="eyebrow">Candidate field</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${office.name} candidates`} /></div><div class="candidate-list">
           {#each shownCandidacies as { filing, personId, name, runningMate }}
             <a class="candidate-row" class:running-mate-row={runningMate} href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}>
-              <span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.partyName}{#if runningMate}{' · '}Running mate{:else if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
+              <PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.partyName}{#if runningMate}{' · '}Running mate{:else if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
             </a>
           {:else}<p class="no-records">No matching candidates.</p>
           {/each}
@@ -441,9 +456,9 @@
     </article>
   {:else if place}
     <article class="entity-detail">
-      <Breadcrumbs parent={{ label: 'Places', href: '/places/' }} current={place.name} {navigate} />
+      <Breadcrumbs parent={[{ label: 'Places', href: '/places/' }, ...(placeCounty ? [{ label: placeCounty.name, href: hrefFor('places', placeCounty.id) }] : [])]} current={place.name} {navigate} />
       <header class="detail-hero compact-hero place-hero">
-        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<p class="place-photo-credit">Photo: <a href={placeImage.sourceUrl} target="_blank" rel="noreferrer">{placeImage.title}<span class="sr-only"> (opens in new tab)</span></a> by {placeImage.artist}, {#if placeImage.licenseUrl}<a href={placeImage.licenseUrl} target="_blank" rel="noreferrer">{placeImage.license}<span class="sr-only"> (opens in new tab)</span></a>{:else}{placeImage.license}{/if}, via Wikimedia Commons.</p>{/if}</div>
+        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<PhotoCredit image={placeImage} />{/if}</div>
         {#if placeProfile}
           <section class="place-profile" aria-labelledby="place-profile-title">
             <div class="place-summary">
@@ -451,6 +466,7 @@
               <h2 id="place-profile-title">About {place.name}</h2>
               <p>{placeProfile.summary}</p>
               <a href={placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">Wikipedia <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
+              {#if placeEmblem}<PhotoCredit image={placeEmblem} label={placeEmblem.kind.charAt(0).toUpperCase() + placeEmblem.kind.slice(1)} className="emblem-credit" />{/if}
             </div>
             <div class="place-facts-row" class:has-boundary={!!boundary}>
             <div class="place-facts">
@@ -487,7 +503,7 @@
         <div class="record-heading"><p class="eyebrow">Archived locations</p>{#if place.children.length}<h2>Cities in the archive</h2>{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}<h2 class:office-group-heading={place.children.length > 0}>Area offices</h2>{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
         <div>
           <div class="filed-heading"><p class="eyebrow">Filed candidates</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${place.name} candidates`} /></div>
-          <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><span class="mini-avatar" aria-hidden="true">{peopleById.get(personId)?.initials}</span><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
+          <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
         </div>
       </section>
     </article>
@@ -521,7 +537,7 @@
           <tbody>
             {#each visibleCards as card (card.id)}
               <tr>
-                <th scope="row"><a href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>{#if card.logo}<span class="table-logo" class:inverse-logo={card.id === 'utah-republican-party'} style={card.accent ? `--card-accent:${card.accent}` : ''}><img src={card.logo} alt="" /></span>{:else}<span class="mini-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}<span>{card.title}</span></a></th>
+                <th scope="row"><a href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>{#if card.logo}<span class="table-logo" class:inverse-logo={card.id === 'utah-republican-party'} class:emblem-logo={section === 'places'} style={card.accent ? `--card-accent:${card.accent}` : ''}><img src={card.logo} alt="" /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="mini-avatar" />{:else if section === 'places' || section === 'offices'}<span class="mini-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'places' ? 'location_on' : 'workspace_premium'} /></span>{:else}<span class="mini-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}<span>{card.title}</span></a></th>
                 {#each tableColumns.slice(1) as column (column.key)}
                   <td data-label={column.label} class:numeric={column.key === 'filings'}>
                     {#if column.key === 'years'}
@@ -564,7 +580,7 @@
               </div>
             {/if}
             <a class="card-record-link" href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>
-              {#if card.logo}<span class="card-logo" class:inverse-logo={card.id === 'utah-republican-party'}><img src={card.logo} alt={`${card.title} logo`} /></span>{:else}<span class="card-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}
+              {#if card.logo}<span class="card-logo" class:inverse-logo={card.id === 'utah-republican-party'} class:emblem-logo={section === 'places'}><img src={card.logo} alt={`${card.title} logo`} /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="card-avatar" />{:else if section === 'places' || section === 'offices'}<span class="card-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'places' ? 'location_on' : 'workspace_premium'} /></span>{:else}<span class="card-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}
               {#if !omitColumns.includes('party')}<small>{section === 'people' ? card.columns[1] : card.eyebrow}</small>{/if}<h2>{card.title}</h2><p>{section === 'people' ? card.columns[0] : card.meta}</p>{#if showStatus}<p class="candidate-status">Status: {card.statuses.join(' · ')}</p>{/if}<div class="card-footer"><span>{section === 'people' || filtering ? filingCount(card) : card.count}{#if !omitColumns.includes('years') && section === 'people'} · {card.years.join(', ')}{/if}</span><b>View record <Icon name="arrow_forward" /></b></div>
             </a>
           </article>

@@ -93,6 +93,11 @@
 /places/washingotn                            /places/washington/                                301
 /places/washingotn/*                          /places/washington/:splat                           301
 
+# Corrected city spellings, merged into the official municipality pages
+/places/utah/apline                           /places/utah/alpine/                               301
+/places/salt-lake/milcreek                    /places/salt-lake/millcreek/                       301
+/places/sanpete/mt-pleasant                   /places/sanpete/mount-pleasant/                    301
+
 # Places with no records in the new data: send to the county or places index
 /places/beaver                                /places/                                           301
 /places/utah/cedar-fort                       /places/utah/                                      301

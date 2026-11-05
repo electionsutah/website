@@ -714,19 +714,6 @@
     "inceptionDate": "1851-01-01",
     "inceptionPrecision": 9
   },
-  "salt-lake/milcreek": {
-    "wikipediaTitle": "Millcreek, Utah",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Millcreek%2C_Utah",
-    "summary": "Millcreek is a city in Salt Lake County, Utah, United States, and part of the Salt Lake City metropolitan area. The population as of the 2020 census was 63,380. Prior to its incorporation on December 28, 2016, Millcreek was a census-designated place (CDP) and township.",
-    "wikidataId": "Q1829357",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q1829357",
-    "officialWebsite": "https://www.millcreekut.gov/",
-    "population": 63380,
-    "populationAsOf": "2020-04-01",
-    "populationSource": "Wikidata",
-    "inceptionDate": "2016-12-28",
-    "inceptionPrecision": 11
-  },
   "salt-lake/millcreek": {
     "wikipediaTitle": "Millcreek, Utah",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Millcreek%2C_Utah",
@@ -948,19 +935,6 @@
     "inceptionDate": "1852-00-00",
     "inceptionPrecision": 9
   },
-  "sanpete/mt-pleasant": {
-    "wikipediaTitle": "Mount Pleasant, Utah",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Mount_Pleasant%2C_Utah",
-    "summary": "Mount Pleasant is a city in the U.S. state of Utah. Located in Sanpete County, Mt. Pleasant is known for being home to Wasatch Academy. As of the 2020 census, the city's population was 3,655.",
-    "wikidataId": "Q482399",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q482399",
-    "officialWebsite": "https://www.mpcityut.gov/",
-    "population": 3655,
-    "populationAsOf": "2020-04-01",
-    "populationSource": "Wikidata",
-    "inceptionDate": "1852-00-00",
-    "inceptionPrecision": 9
-  },
   "sevier": {
     "wikipediaTitle": "Sevier County, Utah",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Sevier_County%2C_Utah",
@@ -1151,19 +1125,6 @@
     "wikidataUrl": "https://www.wikidata.org/wiki/Q464598",
     "officialWebsite": "https://www.americanfork.gov/",
     "population": 33337,
-    "populationAsOf": "2020-04-01",
-    "populationSource": "Wikidata",
-    "inceptionDate": "1850-00-00",
-    "inceptionPrecision": 9
-  },
-  "utah/apline": {
-    "wikipediaTitle": "Alpine, Utah",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Alpine%2C_Utah",
-    "summary": "Alpine is a city on the northeastern edge of Utah County, Utah, United States. The population was 10,251 at the time of the 2020 census. Alpine has been one of the many quickly-growing cities of Utah since the 1970s, especially in the 1990s. This city is thirty-two miles southeast of Salt Lake City. It is located on the slopes of the Wasatch Range north of Highland and American Fork. The west side of the city runs above the Wasatch Fault.",
-    "wikidataId": "Q115481",
-    "wikidataUrl": "https://www.wikidata.org/wiki/Q115481",
-    "officialWebsite": "https://www.alpineut.gov/",
-    "population": 10251,
     "populationAsOf": "2020-04-01",
     "populationSource": "Wikidata",
     "inceptionDate": "1850-00-00",
