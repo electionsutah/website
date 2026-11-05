@@ -76,7 +76,7 @@
         <tr><th scope="row">{row.comparison.year}</th><td class="democratic">{share(row.comparison.previous.democraticShare)}</td><td class="republican">{share(row.comparison.previous.republicanShare)}</td><td>{count(row.comparison.previous.total)}</td></tr>
         <tr><th scope="row">2026</th><td class="democratic">{share(row.comparison.current.democraticShare)}</td><td class="republican">{share(row.comparison.current.republicanShare)}</td><td>{count(row.comparison.current.total)}</td></tr>
       </tbody></table>{/if}
-      <p class="shift-popover-sources"><a href={row.source}>2026 source <Icon name="arrow_outward" /></a>{#if row.comparison.previousSource}<a href={row.comparison.previousSource}>{row.comparison.year} source <Icon name="arrow_outward" /></a>{/if}</p>
+      <p class="shift-popover-sources"><a href={row.source} target="_blank" rel="noopener">2026 source <Icon name="arrow_outward" /></a>{#if row.comparison.previousSource}<a href={row.comparison.previousSource} target="_blank" rel="noopener">{row.comparison.year} source <Icon name="arrow_outward" /></a>{/if}</p>
     </div>
   {/each}
   {#if pages > 1}<div class="results-pagination"><button disabled={page === 1} onclick={() => page--}><Icon name="arrow_back" /> Previous shifts</button><span>Page {page} of {pages}</span><button disabled={page === pages} onclick={() => page++}>Next shifts <Icon name="arrow_forward" /></button></div>{/if}
