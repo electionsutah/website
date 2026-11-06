@@ -479,46 +479,69 @@
               {#if placeProfile}<a href={placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">Wikipedia <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>{/if}
               {#if placeEmblem}<PhotoCredit image={placeEmblem} label={placeEmblem.kind.charAt(0).toUpperCase() + placeEmblem.kind.slice(1)} className="emblem-credit" />{/if}
             </div>
-            <div class="place-facts-row" class:has-boundary={!!boundary}>
-            <div class="place-facts" class:has-voters={!!placeVoters}>
-              {#if placeProfile?.population != null}<article class="population-card">
-                <small>{placeProfile.populationAsOf === '2020-04-01' ? '2020 census population' : placeProfile.populationAsOf ? `${placeProfile.populationAsOf.slice(0, 4)} population` : 'Population'}</small>
-                <strong>{placeProfile.population.toLocaleString('en-US')}</strong>
-                <p>{placeProfile.populationSourceUrl ? 'Approximate figure' : 'Reported figure'}{placeProfile.populationAsOf ? ` · ${placeProfile.populationAsOf.slice(0, 4)}` : ''}</p>
-                <a href={placeProfile.populationSourceUrl ?? (placeProfile.populationSource === 'Wikidata' ? placeProfile.wikidataUrl : placeProfile.wikipediaUrl)} target="_blank" rel="noreferrer">{placeProfile.populationSource} <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
-              </article>{/if}
-              {#if placeVoters}
-                <article class="voters-card">
-                  <small>{place.type === 'County' ? 'Active registered voters' : `${placeVoters.name} active voters`}</small>
-                  <strong>{formatCount(placeVoters.active)}</strong>
-                  <p>Lt. Governor's office · {formatDate(voterRegistration.asOf)}</p>
-                  {#if place.type !== 'County'}<p>Countywide context; city registration counts are not published in this report.</p>{/if}
-                  <details class="voter-parties"><summary>Registration by party</summary><dl>{#each Object.entries(placeVoters.parties).sort((a, b) => b[1] - a[1]) as [party, count]}<div><dt>{party}</dt><dd>{formatCount(count)}</dd></div>{/each}</dl></details>
-                  <a href={voterRegistration.sources.statistics} target="_blank" rel="noreferrer">vote.utah.gov <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
+            <div class="place-data-grid">
+              <div class="place-headline-facts">
+                {#if placeProfile?.population != null}
+                  <article>
+                    <small>Population</small>
+                    <strong>{formatCount(placeProfile.population)}</strong>
+                    <p>{place.name}{placeProfile.populationAsOf ? ` · ${placeProfile.populationAsOf.slice(0, 4)}${placeProfile.populationAsOf === '2020-04-01' ? ' census' : ''}` : ''}</p>
+                  </article>
+                {/if}
+                {#if placeVoters}
+                  <article>
+                    <small>Active voters</small>
+                    <strong>{formatCount(placeVoters.active)}</strong>
+                    <p>{placeVoters.name} · {formatDate(voterRegistration.asOf)}</p>
+                  </article>
+                {/if}
+                {#if placeParticipation}
+                  <article>
+                    <small>2024 turnout</small>
+                    <strong>{placeParticipation.turnoutPercent.toFixed(2)}%</strong>
+                    <p>{place.county} County · general election</p>
+                  </article>
+                {/if}
+              </div>
+              <div class="place-profile-body" class:has-boundary={!!boundary}>
+                {#if boundary}<BoundaryMap map={boundary} fit="fill" className="place-boundary" />{/if}
+                <article class="place-town-info">
+                  <div class="place-town-content">
+                    <h3>{place.type === 'County' ? 'County information' : 'Town information'}</h3>
+                    {#if placeProfile?.inceptionDate}
+                      <div class="place-town-fact">
+                        <small>Founded / established</small>
+                        <strong>{formatInception(placeProfile)}</strong>
+                      </div>
+                    {/if}
+                    {#if placeProfile?.officialWebsite}
+                      <div class="place-town-fact">
+                        <small>Official website</small>
+                        <strong><a href={placeProfile.officialWebsite} target="_blank" rel="noreferrer">{new URL(placeProfile.officialWebsite).hostname.replace(/^www\./, '')} <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a></strong>
+                      </div>
+                    {/if}
+                    {#if place.type !== 'County' && (placeVoters || placeParticipation)}<p class="place-county-context">Voter registration and turnout are countywide figures; city figures are not available in these reports.</p>{/if}
+                  </div>
+                  <details class="place-election-details">
+                    <summary>Election details &amp; sources</summary>
+                    <div class="place-source-content">
+                      {#if placeVoters}
+                        <p>Active registration: {formatDate(voterRegistration.asOf)}, Lt. Governor's office.{place.type !== 'County' ? ' City registration counts are not published in this report.' : ''}</p>
+                        <a href={voterRegistration.sources.statistics} target="_blank" rel="noreferrer">Voter registration report <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
+                        <details class="voter-parties"><summary>Registration by party</summary><dl>{#each Object.entries(placeVoters.parties).sort((a, b) => b[1] - a[1]) as [party, count]}<div><dt>{party}</dt><dd>{formatCount(count)}</dd></div>{/each}</dl></details>
+                      {/if}
+                      {#if placeParticipation}
+                        <p>2024 general election turnout: {formatCount(placeParticipation.ballotsCast)} ballots cast / {formatCount(placeParticipation.activeRegistered)} active registered voters. Certified November 25, 2024.{place.type !== 'County' ? ' Countywide context, not city turnout.' : ''}</p>
+                        <a href={voterParticipation.sourceUrl} target="_blank" rel="noreferrer">Certified canvass <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
+                      {/if}
+                      {#if placeProfile?.population != null}
+                        <p>Population: {placeProfile.populationSourceUrl ? 'Approximate figure' : 'Reported figure'}{placeProfile.populationAsOf ? ` · ${placeProfile.populationAsOf.slice(0, 4)}` : ''}. <a href={placeProfile.populationSourceUrl ?? (placeProfile.populationSource === 'Wikidata' ? placeProfile.wikidataUrl : placeProfile.wikipediaUrl)} target="_blank" rel="noreferrer">{placeProfile.populationSource} <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a></p>
+                      {/if}
+                      {#if placeProfile?.inceptionDate}<p>Founded / established: <a href={placeProfile.wikidataUrl} target="_blank" rel="noreferrer">Wikidata <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a></p>{/if}
+                    </div>
+                  </details>
                 </article>
-              {/if}
-              {#if placeParticipation}
-                <article class="participation-card">
-                  <small>2024 general election turnout{place.type !== 'County' ? ` · ${place.county} County` : ''}</small>
-                  <strong>{placeParticipation.turnoutPercent.toFixed(2)}%</strong>
-                  <p>{formatCount(placeParticipation.ballotsCast)} ballots cast / {formatCount(placeParticipation.activeRegistered)} active registered voters in the 2024 canvass.</p>
-                  <p>Certified November 25, 2024.{place.type !== 'County' ? ' Countywide context, not city turnout.' : ''}</p>
-                  <a href={voterParticipation.sourceUrl} target="_blank" rel="noreferrer">Certified canvass <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
-                </article>
-              {/if}
-              {#if placeProfile?.inceptionDate}<article class="inception-card">
-                <small>Founded / established</small>
-                <strong>{formatInception(placeProfile)}</strong>
-                <a href={placeProfile.wikidataUrl} target="_blank" rel="noreferrer">Wikidata <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
-              </article>{/if}
-              {#if placeProfile?.officialWebsite}<article class="website-card">
-                <small>Official Website</small>
-                <strong><a href={placeProfile.officialWebsite} target="_blank" rel="noreferrer">{new URL(placeProfile.officialWebsite).hostname.replace(/^www\./, '')}<span class="sr-only"> (opens in new tab)</span></a></strong>
-                <p>{place.type === 'County' ? 'County government website' : 'Local government website'}</p>
-                <a href={placeProfile.officialWebsite} target="_blank" rel="noreferrer">Visit website <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
-              </article>{/if}
-            </div>
-            {#if boundary}<BoundaryMap map={boundary} fit="fill" className="place-boundary" />{/if}
+              </div>
             </div>
           </section>
       </header>

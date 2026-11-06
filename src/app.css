@@ -313,22 +313,54 @@ main:focus,main h1:focus{outline:0}
 .boundary-map figcaption a{color:var(--color-blue);text-decoration:underline;text-underline-offset:2px}
 .detail-hero.has-boundary{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,1fr);align-items:center}
 .office-boundary .boundary-frame{max-height:420px}
-/* The facts panel is about the same height at every width, so a capped column keeps the map box near the map's shape. */
-.place-facts-row.has-boundary{display:grid;grid-template-columns:minmax(0,1fr) clamp(210px,17vw,260px);gap:var(--space-5);align-items:stretch}
-.place-facts-row.has-boundary .place-facts{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
-.place-facts-row.has-boundary .place-facts article{padding:var(--space-5)}
-/* Counties add registered voters: population | voters, then founded | website. */
-.place-facts.has-voters,.place-facts-row.has-boundary .place-facts.has-voters{grid-template-columns:repeat(2,minmax(0,1fr))}.place-facts.has-voters .inception-card{border-left:0;border-top:1px solid var(--color-rule-strong)}.place-facts.has-voters .website-card{grid-column:auto;border-left:1px solid var(--color-rule-strong)!important}.place-facts.has-voters .website-card>strong{font-size:var(--text-xl)}
-/* Beside a boundary map the column is too narrow for long hostnames, so founded and website span it. */
-@media(min-width:701px) and (max-width:1000px),(min-width:1241px){.place-facts-row.has-boundary .place-facts.has-voters .inception-card,.place-facts-row.has-boundary .place-facts.has-voters .website-card{grid-column:1/-1;border-left:0!important}.place-facts-row.has-boundary .place-facts.has-voters .website-card>strong{font-size:var(--text-2xl)}}
-@media (--bp-mobile){.place-facts.has-voters,.place-facts-row.has-boundary .place-facts.has-voters{grid-template-columns:1fr}.place-facts.has-voters article+article{border-left:0!important;border-top:1px solid var(--color-rule-strong)}}
-/* Map plus caption match the facts panel's full height; the map fits inside, pinned top right with its Utah inset. */
-.place-boundary{display:flex;flex-direction:column}
-.place-boundary .boundary-frame{flex:1 1 0;min-height:220px;aspect-ratio:auto}
-.place-facts-row.has-boundary .population-card>strong,.place-facts-row.has-boundary .voters-card>strong,.place-facts-row.has-boundary .inception-card>strong{font-size:clamp(28px,2.3vw,48px);white-space:nowrap}
-@media (--bp-tablet){.detail-hero.has-boundary{grid-template-columns:1fr}.office-boundary{max-width:560px}}
-/* Too narrow for a side column: stack the map under the facts at its natural portrait shape. */
-@media(max-width:700px),(min-width:1001px) and (max-width:1240px){.place-facts-row.has-boundary{grid-template-columns:1fr}.place-boundary{display:block}.place-boundary .boundary-frame{flex:none;aspect-ratio:var(--aspect);max-height:440px}}
+/* Connected place profile: headline figures, then a map and town information with aligned footers. */
+.place-hero{grid-template-columns:minmax(260px,.8fr) minmax(0,1.6fr)}
+.place-profile{container-type:inline-size;padding:clamp(24px,3.5vw,56px)}
+.place-data-grid{border:1px solid var(--color-rule-strong);background:var(--color-warm-white);min-width:0}
+.place-headline-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr))}
+.place-headline-facts>article:only-child{grid-column:1/-1}
+.place-headline-facts>article{min-width:0;padding:var(--space-5)}
+.place-headline-facts>article+article{border-left:1px solid var(--color-rule-strong)}
+.place-headline-facts small,.place-town-fact small,.place-town-content h3{display:block;color:var(--color-muted);font:700 var(--text-2xs)/1.5 var(--font-sans);letter-spacing:.1em;text-transform:uppercase}
+.place-headline-facts strong{display:block;margin:var(--space-3) 0;font:700 clamp(28px,4.8cqw,48px)/1.1 var(--font-serif);letter-spacing:-.04em;overflow-wrap:anywhere}
+.place-headline-facts p{margin:0;color:var(--color-muted);font:400 var(--text-2xs)/1.6 var(--font-sans)}
+.place-profile-body{border-top:1px solid var(--color-rule-strong)}
+.place-profile-body.has-boundary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:minmax(340px,auto) auto}
+.place-profile-body.has-boundary>.place-boundary,.place-profile-body.has-boundary>.place-town-info{display:grid;grid-template-rows:subgrid;grid-row:span 2}
+.place-boundary{border-right:1px solid var(--color-rule-strong)}
+.place-boundary .boundary-frame{aspect-ratio:auto;min-height:340px;height:clamp(340px,48cqw,440px)}
+.place-boundary .boundary-drawing{top:50%;right:50%;transform:translate(50%,-50%);outline:0}
+.place-town-info{min-width:0}
+.place-town-content{min-width:0;padding:var(--space-5)}
+.place-town-content h3{margin:0 0 var(--space-4)}
+.place-town-fact{padding-top:var(--space-4);margin-top:var(--space-4);border-top:1px solid var(--color-rule-strong)}
+.place-town-fact strong{display:block;margin-top:var(--space-2);font:700 var(--text-2xl)/1.25 var(--font-serif);letter-spacing:-.025em;overflow-wrap:anywhere}
+.place-town-fact a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
+.place-town-fact .icon{font-size:.8em}
+.place-county-context{margin:var(--space-4) 0 0;color:var(--color-muted);font:400 var(--text-2xs)/1.6 var(--font-sans)}
+.place-boundary figcaption,.place-election-details{margin:0;border-top:1px solid var(--color-rule-strong);color:var(--color-muted);font:400 var(--text-2xs)/1.6 var(--font-sans)}
+.place-boundary figcaption{padding:12px}
+.place-election-details>summary{cursor:pointer;color:var(--color-blue);padding:12px var(--space-5);min-height:44px}
+.place-source-content{padding:0 var(--space-5) var(--space-5)}
+.place-source-content p{margin:0 0 var(--space-3)}
+.place-source-content>a{display:inline-block;margin-bottom:var(--space-3)}
+.place-source-content a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
+.place-source-content .icon{font-size:1em}
+.place-source-content .voter-parties{margin:0 0 var(--space-4)}
+.place-source-content .voter-parties>summary{padding:var(--space-2) 0}
+@container(max-width:540px){
+  .place-headline-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .place-headline-facts>article{padding:var(--space-4)}
+  .place-headline-facts>article:last-child:nth-child(odd):not(:first-child){grid-column:1/-1;border-left:0;border-top:1px solid var(--color-rule-strong)}
+  .place-profile-body.has-boundary{grid-template-columns:1fr;grid-template-rows:auto}
+  .place-profile-body.has-boundary>.place-boundary,.place-profile-body.has-boundary>.place-town-info{display:block;grid-row:auto}
+  .place-boundary{border-right:0;border-bottom:1px solid var(--color-rule-strong)}
+  .place-boundary .boundary-frame{min-height:290px;height:290px}
+  .place-town-content{padding:var(--space-4)}
+  .place-election-details>summary{padding-inline:var(--space-4)}
+  .place-source-content{padding-inline:var(--space-4)}
+}
+@media (--bp-tablet){.place-hero{grid-template-columns:1fr}.detail-hero.has-boundary{grid-template-columns:1fr}.office-boundary{max-width:560px}}
 
 /* Place hero photo (Wikidata P18 via Wikimedia Commons), darkened so the text stays readable. */
 /* Buttons: one base and three variants. Instances add layout only (flex, margins, sizing). */
