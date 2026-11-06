@@ -421,7 +421,9 @@ main:focus,main h1:focus{outline:0}
 .place-profile-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-3);margin-bottom:var(--space-5)}
 .place-summary .place-profile-heading h2{margin:0;flex:1;min-width:min(100%,220px)}
 .place-profile-heading .entity-links{flex:none}
-.person-contact>.entity-links{margin-top:var(--space-3)}
+.contact-links-row{display:grid;gap:var(--space-1);padding:var(--space-4)}
+.contact-links-row>small{color:var(--color-muted);font-size:var(--text-2xs);font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.contact-links-row>.entity-links{margin:0 0 0 -8px;min-height:40px}
 .place-tile a:focus-visible,.place-tile summary:focus-visible{outline:3px solid var(--color-blue);outline-offset:3px}
 .tile-photo-credit-content{position:absolute;z-index:4;bottom:100%;left:var(--space-5);right:var(--space-5);margin:0 0 var(--space-2);padding:var(--space-3);background:var(--color-ink);border:1px solid var(--color-subtle);color:var(--color-paper);font-size:var(--text-2xs);overflow-wrap:anywhere}
 .tile-photo-credit-content a{color:inherit;text-decoration:underline;text-underline-offset:2px}
@@ -495,4 +497,37 @@ main:focus,main h1:focus{outline:0}
 @media (--bp-above-mobile){
   .candidate-row{grid-template-columns:66px minmax(0,1fr) auto;gap:var(--space-4);min-height:66px;padding:0 var(--space-4) 0 0}
   .candidate-row .mini-avatar{width:66px;height:66px;font-size:var(--text-base)}
+}
+
+@layer components {
+  .party-caucus-history{margin-top:var(--space-7);padding-top:var(--space-6);border-top:1px solid var(--color-rule-strong);max-width:720px}
+  .party-caucus-history h2{margin:var(--space-2) 0 var(--space-4);font:700 clamp(24px,3vw,34px)/1.15 var(--font-serif);letter-spacing:-.025em}
+  .party-caucus-history>p:not(.eyebrow){margin:var(--space-3) 0;color:var(--color-muted);font:400 var(--text-base)/1.65 var(--font-serif)}
+  .party-caucus-history>p.party-symbol-note{font:400 var(--text-sm)/1.5 var(--font-sans)}
+  .party-caucus-history .source-link{margin-top:var(--space-3);margin-right:var(--space-5);letter-spacing:.03em}
+}
+
+@layer components {
+  .filing-card .filing-party-link{display:inline-flex;align-items:center;gap:var(--space-2-5);max-width:100%;vertical-align:middle}
+  .filing-party-logo{display:inline-flex;align-items:center;justify-content:center;flex:none;width:28px;height:28px}
+  .filing-party-logo img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+  .filing-party-logo.inverse-logo{padding:3px;background:var(--party-color)}
+}
+
+@layer components {
+  .entity-heading-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-3)}
+  .entity-heading-row>h1,.entity-heading-row>h2{flex:1;min-width:min(100%,220px);margin:0}
+  .entity-heading-row>.entity-links{flex:none;margin-left:auto}
+  .party-hero>.party-hero-detail{flex:1;min-width:0;width:100%;max-width:none}
+  .office-hero-detail{flex:1;min-width:0;width:100%}
+  .detail-hero.has-photo .entity-heading-row>h1{color:var(--color-paper)}
+  .detail-hero.has-photo .entity-heading-row .website-icon{color:var(--color-paper)}
+}
+
+@media (max-width:1000px){
+  .detail-hero.has-boundary{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:700px){
+  .party-hero{flex-direction:column;align-items:stretch}
+  .party-hero>.party-hero-detail{flex:auto}
 }

@@ -28,6 +28,21 @@ def contest(identifier, name, candidates, seats=1):
 
 
 class LocalImportTests(unittest.TestCase):
+    def test_fruit_heights_prefixes_match_source_affiliation(self):
+        for ballot_name, party, expected in [
+            ('PIN JEANNE GROBERG', 'PINECONE', 'Jeanne Groberg'),
+            ('PIN R. SHON STEVENSON', 'PINECONE', 'R. Shon Stevenson'),
+            ('SAG BLAKE WINSLOW', 'SAGEBRUSH', 'Blake Winslow'),
+            ('SAG DAVID N. HALE', 'SAGEBRUSH', 'David N. Hale'),
+            ('SAG EILEEN MOSS', 'SAGEBRUSH', 'Eileen Moss'),
+        ]:
+            with self.subTest(name=ballot_name):
+                row = {**option(ballot_name), 'party': {'name': party}}
+                self.assertEqual(importer.candidate_party(row, None), (expected, party.title()))
+        self.assertEqual(importer.candidate_party(option('PIN LEE'), None), ('Pin Lee', ''))
+        row = {**option('PIN LEE'), 'party': {'name': 'SAGEBRUSH'}}
+        self.assertEqual(importer.candidate_party(row, None), ('Pin Lee', 'Sagebrush'))
+
     def run_import(self, items, kind='general'):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / 'candidates.json'

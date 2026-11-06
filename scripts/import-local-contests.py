@@ -62,6 +62,8 @@ PARTIES = {'REPUBLICAN': 'Republican', 'REPUBLICAN PARTY': 'Republican', 'DEMOCR
 NONPARTISAN = {'', 'NONPARTISAN', 'NON-PARTISAN'}
 # Ballot-name prefixes some counties use for the candidate's party ("REP JESSE PLATT").
 NAME_PARTY = {'REP': 'Republican', 'DEM': 'Democratic', 'UNA': 'Unaffiliated', 'CON': 'Constitution', 'LIB': 'Libertarian', 'IAP': 'Independent American', 'FWD': 'Forward', 'GRN': 'Green'}
+# Fruit Heights' nonpartisan caucus labels also appear in 2025 ballot names.
+LOCAL_NAME_PARTY = {'PIN': 'Pinecone', 'SAG': 'Sagebrush'}
 ACRONYMS = {'EMS', 'SSD', 'ID', 'II', 'III', 'IV', 'USU', 'UTA', 'SID', 'MWD', 'WCD', 'SD', 'RSD', 'CWD', 'PID'}
 SMALL = {'and', 'of', 'at', 'the', 'for', 'to', 'in', 'on'}
 # Source spellings of municipality names, corrected before matching.
@@ -249,6 +251,9 @@ def candidate_party(option, contest_party):
     if prefix:
         name = prefix.group(2)
         party = party or NAME_PARTY[prefix.group(1)]
+    local_prefix = re.match(r'^(PIN|SAG)\s+(.+)$', name, flags=re.I)
+    if local_prefix and raw == LOCAL_NAME_PARTY[local_prefix.group(1).upper()].upper():
+        name = local_prefix.group(2)
     return person_case(name), party
 
 

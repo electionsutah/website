@@ -77,6 +77,11 @@ export type Party = {
   logo: string;
   recognized: boolean;
   historical: boolean;
+  localCaucus?: {
+    place: string;
+    history: string;
+    source: string;
+  };
   filings: Filing[];
   years: number[];
 };
@@ -93,6 +98,11 @@ export type Place = {
   children: Place[];
   years: number[];
 };
+
+export function partyLabel(party: Party): string {
+  return party.localCaucus ? `Local nonpartisan caucus · ${party.localCaucus.place}`
+    : party.recognized ? 'Recognized party' : party.historical ? 'Historical party' : 'Election affiliation';
+}
 
 export type ElectionCycle = {
   year: number;
@@ -191,6 +201,8 @@ function partyDetails(rawParty: string, section: string) {
     'United Utah': { name: 'United Utah Party', shortName: 'United Utah', color: '#547682' },
     'United Utah Party': { name: 'United Utah Party', shortName: 'United Utah', color: '#547682' },
     Unaffiliated: { name: 'Unaffiliated', shortName: 'Unaffiliated', color: '#68736f' },
+    Pinecone: { name: 'Pinecone', shortName: 'Pinecone', color: '#805a37' },
+    Sagebrush: { name: 'Sagebrush', shortName: 'Sagebrush', color: '#526c56' },
     '': { name: 'Not reported', shortName: 'Not reported', color: '#5f5e59' }
   };
   return details[rawParty] ?? { name: rawParty || 'Not reported', shortName: rawParty || 'Not reported', color: '#5f5e59' };
@@ -439,7 +451,21 @@ for (const office of officeMap.values()) office.filings.sort((a, b) => b.year - 
 export const offices = naturalSort([...officeMap.values()], (office) => office.name);
 
 const partyMap = new Map<string, Party>();
+const localCaucuses: Record<string, NonNullable<Party['localCaucus']>> = {
+  Pinecone: {
+    place: 'Fruit Heights',
+    history: 'After Fruit Heights incorporated in 1939, the town council chose a nonpartisan caucus system. According to the city’s history, Forest Barker suggested “Pinecone” because pine trees surrounded his property.',
+    source: 'https://www.fruitheights.gov/DocumentCenter/View/2723/caucus2023'
+  },
+  Sagebrush: {
+    place: 'Fruit Heights',
+    history: 'After Fruit Heights incorporated in 1939, the town council chose a nonpartisan caucus system. According to the city’s history, sheepherder Brig Harvey suggested “Sagebrush” for the sagebrush growing on his open land.',
+    source: 'https://www.fruitheights.gov/DocumentCenter/View/2723/caucus2023'
+  }
+};
 const partyLogos: Record<string, string> = {
+  Pinecone: '/party-logos/pinecone.svg',
+  Sagebrush: '/party-logos/sagebrush.svg',
   'Utah Constitution Party': '/party-logos/constitution-party.png',
   'Utah Democratic Party': '/party-logos/utah-democratic-party.webp',
   'Forward Party of Utah': '/party-logos/forward-party-utah.png',
@@ -474,6 +500,7 @@ for (const filing of filings) {
     logo: partyLogos[details.name] ?? '',
     recognized: false,
     historical: details.name === 'United Utah Party',
+    localCaucus: localCaucuses[details.name],
     filings: [],
     years: []
   };

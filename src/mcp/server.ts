@@ -6,7 +6,7 @@ import { z } from 'zod';
 import results2026 from '../../public/data/2026-results.json';
 import results2024 from '../../public/data/2024-results.json';
 import baseline2022 from '../../public/data/2022-shift-baseline.json';
-import { currentDatasetUpdated, offices, officesById, parties, partiesById, people, peopleById, places, placesById, statusLabel, type Filing } from '../lib/entities';
+import { currentDatasetUpdated, offices, officesById, parties, partiesById, partyLabel, people, peopleById, places, placesById, statusLabel, type Filing } from '../lib/entities';
 import { contestTitle } from '../lib/result-people';
 import { tidySnapshot } from '../lib/result-names';
 import { raceSlugs } from '../lib/contest-slugs';
@@ -111,7 +111,7 @@ function record(id: string): { title: string; url: string; text: string; metadat
   if (kind === 'party') {
     const party = partiesById.get(key);
     if (!party) return null;
-    return { title: party.name, url: `${SITE_URL}/parties/${party.id}/`, metadata: { type: 'party' }, text: [`# ${party.name}`, `Recognized in Utah: ${party.recognized ? 'yes' : 'no'}${party.historical ? ' (historical)' : ''}`, party.website && `Website: ${party.website}`, `Candidate filings: ${party.filings.length} across ${party.years.join(', ')}`, '', 'Most recent filings:', ...party.filings.slice().sort((a, b) => b.year - a.year).slice(0, 50).map(filing => `- ${filing.year}: ${filing.name}, ${filing.officeName}`)].filter(Boolean).join('\n') };
+    return { title: party.name, url: `${SITE_URL}/parties/${party.id}/`, metadata: { type: 'party' }, text: [`# ${party.name}`, `Affiliation: ${partyLabel(party)}`, party.localCaucus && `${party.localCaucus.history} Source: ${party.localCaucus.source}`, `Recognized in Utah: ${party.recognized ? 'yes' : 'no'}${party.historical ? ' (historical)' : ''}`, party.website && `Website: ${party.website}`, `Candidate filings: ${party.filings.length} across ${party.years.join(', ')}`, '', 'Most recent filings:', ...party.filings.slice().sort((a, b) => b.year - a.year).slice(0, 50).map(filing => `- ${filing.year}: ${filing.name}, ${filing.officeName}`)].filter(Boolean).join('\n') };
   }
   if (kind === 'place') {
     const place = placesById.get(key);

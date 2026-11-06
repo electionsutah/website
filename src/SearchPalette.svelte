@@ -3,7 +3,7 @@
   import PersonAvatar from './PersonAvatar.svelte';
   import SearchField from './SearchField.svelte';
   import { onMount } from 'svelte';
-  import { elections, offices, parties, people, places } from './lib/entities';
+  import { elections, offices, parties, partyLabel, people, places } from './lib/entities';
   import { formatCount } from './lib/format';
   import { browseUrl, matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
   import { isApplePlatform } from './lib/shortcuts';
@@ -66,7 +66,7 @@
         id: party.id,
         title: party.name,
         text: searchText.parties(party),
-        displayMeta: party.recognized ? `Recognized party · ${party.filings.length} filings` : `${party.filings.length} filings`,
+        displayMeta: `${partyLabel(party)} · ${party.filings.length} filings`,
         href: `/parties/${party.id}/`,
         initials: party.shortName.charAt(0),
         logo: ''
