@@ -38,6 +38,19 @@
   --space-0-5:2px;--space-1:4px;--space-1-5:6px;--space-2:8px;--space-2-5:10px;--space-3:12px;--space-3-5:14px;
   --space-4:16px;--space-4-5:18px;--space-5:20px;--space-6:24px;--space-7:28px;--space-8:32px;
 
+  /* Place profile layout. */
+  --layout-place-photo-share:40%;
+  --size-place-photo-min:260px;
+  --size-place-metric-min:140px;
+  --text-place-metric-max:calc(var(--text-3xl) * 2);--fluid-place-metric-size:4.8cqw;
+  --container-place-stack:540px;
+  --size-place-map-min:340px;--size-place-map-max:440px;--size-place-map-compact:290px;
+  --size-place-profile-padding-max:calc(var(--space-7) * 2);
+  --fluid-place-profile-padding:3.5vw;--fluid-place-map-height:48cqw;
+  --lines-place-intro:3;--leading-place-intro:1.6;
+  /* Shared overlay and control dimensions. */
+  --size-touch-target:44px;--size-popover-max:340px;--border-width-emphasis:3px;
+
   /* Elevation */
   --shadow-sm:0 4px 12px rgba(17,17,16,.08);--shadow-md:0 12px 32px rgba(32,42,50,.18);--shadow-lg:0 28px 80px rgba(0,0,0,.4);
   --shadow-panel:-12px 0 40px rgba(17,17,16,.15);
@@ -313,52 +326,63 @@ main:focus,main h1:focus{outline:0}
 .boundary-map figcaption a{color:var(--color-blue);text-decoration:underline;text-underline-offset:2px}
 .detail-hero.has-boundary{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,1fr);align-items:center}
 .office-boundary .boundary-frame{max-height:420px}
+
+/* Shared native evidence popovers for Labs and place profiles. */
+.evidence-popover{position:fixed;inset:auto;margin:0;width:min(var(--size-popover-max),calc(100vw - var(--space-6)));padding:var(--space-4) var(--space-4-5) var(--space-3-5);border:1px solid var(--color-rule-soft);border-top:var(--border-width-emphasis) solid var(--color-ink);background:var(--color-paper);color:var(--color-ink);box-shadow:var(--shadow-md);font-size:var(--text-base);line-height:1.6;max-height:calc(100dvh - var(--space-6));overflow:auto}
+.evidence-popover header{display:flex;align-items:start;justify-content:space-between;gap:var(--space-3);margin-bottom:var(--space-2)}
+.evidence-popover header strong{font:600 var(--text-lg)/1.3 var(--font-serif)}
+.evidence-popover header button{display:grid;place-items:center;flex:none;width:var(--space-7);height:var(--space-7);margin:calc(-1 * var(--space-1)) calc(-1 * var(--space-1-5)) 0 0;padding:0;border:0;background:none;color:var(--color-muted)}
+.evidence-popover header button:hover{color:var(--color-ink)}
+.evidence-popover p{margin:var(--space-2) 0;color:var(--color-muted)}
+.evidence-popover a{color:var(--color-blue);text-decoration:underline}
+
 /* Connected place profile: headline figures, then a map and town information with aligned footers. */
-.place-hero{grid-template-columns:minmax(260px,.8fr) minmax(0,1.6fr)}
-.place-profile{container-type:inline-size;padding:clamp(24px,3.5vw,56px)}
+.place-hero{grid-template-columns:minmax(var(--size-place-photo-min),var(--layout-place-photo-share)) minmax(0,1fr)}
+.place-profile{container-type:inline-size;padding:clamp(var(--space-6),var(--fluid-place-profile-padding),var(--size-place-profile-padding-max))}
+.place-summary>p.place-intro{line-height:var(--leading-place-intro);min-block-size:calc(var(--lines-place-intro) * 1lh)}
 .place-data-grid{border:1px solid var(--color-rule-strong);background:var(--color-warm-white);min-width:0}
-.place-headline-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr))}
+.place-headline-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--size-place-metric-min)),1fr))}
 .place-headline-facts>article:only-child{grid-column:1/-1}
 .place-headline-facts>article{min-width:0;padding:var(--space-5)}
 .place-headline-facts>article+article{border-left:1px solid var(--color-rule-strong)}
-.place-headline-facts small,.place-town-fact small,.place-town-content h3{display:block;color:var(--color-muted);font:700 var(--text-2xs)/1.5 var(--font-sans);letter-spacing:.1em;text-transform:uppercase}
-.place-headline-facts strong{display:block;margin:var(--space-3) 0;font:700 clamp(28px,4.8cqw,48px)/1.1 var(--font-serif);letter-spacing:-.04em;overflow-wrap:anywhere}
+.place-headline-facts small,.place-town-fact small{display:block;color:var(--color-muted);font:700 var(--text-2xs)/1.5 var(--font-sans);letter-spacing:.1em;text-transform:uppercase}
+.place-headline-facts strong{display:block;margin:var(--space-3) 0;font:700 clamp(var(--text-4xl),var(--fluid-place-metric-size),var(--text-place-metric-max))/1.1 var(--font-serif);letter-spacing:-.04em;overflow-wrap:anywhere}
 .place-headline-facts p{margin:0;color:var(--color-muted);font:400 var(--text-2xs)/1.6 var(--font-sans)}
 .place-profile-body{border-top:1px solid var(--color-rule-strong)}
-.place-profile-body.has-boundary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:minmax(340px,auto) auto}
+.place-profile-body.has-boundary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:minmax(var(--size-place-map-min),auto) auto}
 .place-profile-body.has-boundary>.place-boundary,.place-profile-body.has-boundary>.place-town-info{display:grid;grid-template-rows:subgrid;grid-row:span 2}
 .place-boundary{border-right:1px solid var(--color-rule-strong)}
-.place-boundary .boundary-frame{aspect-ratio:auto;min-height:340px;height:clamp(340px,48cqw,440px)}
+.place-boundary .boundary-frame{aspect-ratio:auto;min-height:var(--size-place-map-min);height:clamp(var(--size-place-map-min),var(--fluid-place-map-height),var(--size-place-map-max))}
 .place-boundary .boundary-drawing{top:50%;right:50%;transform:translate(50%,-50%);outline:0}
 .place-town-info{min-width:0}
 .place-town-content{min-width:0;padding:var(--space-5)}
-.place-town-content h3{margin:0 0 var(--space-4)}
 .place-town-fact{padding-top:var(--space-4);margin-top:var(--space-4);border-top:1px solid var(--color-rule-strong)}
+.place-town-fact:first-child{padding-top:0;margin-top:0;border-top:0}
 .place-town-fact strong{display:block;margin-top:var(--space-2);font:700 var(--text-2xl)/1.25 var(--font-serif);letter-spacing:-.025em;overflow-wrap:anywhere}
 .place-town-fact a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
 .place-town-fact .icon{font-size:.8em}
 .place-county-context{margin:var(--space-4) 0 0;color:var(--color-muted);font:400 var(--text-2xs)/1.6 var(--font-sans)}
 .place-boundary figcaption,.place-election-details{margin:0;border-top:1px solid var(--color-rule-strong);color:var(--color-muted);font:400 var(--text-2xs)/1.6 var(--font-sans)}
-.place-boundary figcaption{padding:12px}
-.place-election-details>summary{cursor:pointer;color:var(--color-blue);padding:12px var(--space-5);min-height:44px}
-.place-source-content{padding:0 var(--space-5) var(--space-5)}
+.place-boundary figcaption{padding:var(--space-3)}
+.place-election-toggle{display:block;cursor:pointer;border:0;background:none;text-align:left;color:var(--color-blue);font:inherit;text-decoration:underline;text-underline-offset:3px;padding:var(--space-3) var(--space-5);min-height:var(--size-touch-target)}
+.place-election-toggle:hover{color:var(--color-ink)}
+.place-source-content{padding:0}
 .place-source-content p{margin:0 0 var(--space-3)}
 .place-source-content>a{display:inline-block;margin-bottom:var(--space-3)}
 .place-source-content a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
 .place-source-content .icon{font-size:1em}
 .place-source-content .voter-parties{margin:0 0 var(--space-4)}
 .place-source-content .voter-parties>summary{padding:var(--space-2) 0}
-@container(max-width:540px){
+@container(max-width:theme(--container-place-stack)){
   .place-headline-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .place-headline-facts>article{padding:var(--space-4)}
   .place-headline-facts>article:last-child:nth-child(odd):not(:first-child){grid-column:1/-1;border-left:0;border-top:1px solid var(--color-rule-strong)}
   .place-profile-body.has-boundary{grid-template-columns:1fr;grid-template-rows:auto}
   .place-profile-body.has-boundary>.place-boundary,.place-profile-body.has-boundary>.place-town-info{display:block;grid-row:auto}
   .place-boundary{border-right:0;border-bottom:1px solid var(--color-rule-strong)}
-  .place-boundary .boundary-frame{min-height:290px;height:290px}
+  .place-boundary .boundary-frame{min-height:var(--size-place-map-compact);height:var(--size-place-map-compact)}
   .place-town-content{padding:var(--space-4)}
-  .place-election-details>summary{padding-inline:var(--space-4)}
-  .place-source-content{padding-inline:var(--space-4)}
+  .place-election-toggle{padding-inline:var(--space-4)}
 }
 @media (--bp-tablet){.place-hero{grid-template-columns:1fr}.detail-hero.has-boundary{grid-template-columns:1fr}.office-boundary{max-width:560px}}
 

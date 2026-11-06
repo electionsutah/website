@@ -1,5 +1,6 @@
 <script lang="ts">
   import Icon from './Icon.svelte';
+  import { anchoredPopover } from './lib/anchored-popover';
   import type { Snapshot } from './lib/results';
   import { count } from './lib/results';
   import { raceComparison, congressCountyComparisons, boundarySource, congressBoundarySource, type HistoricalSnapshot, type ShiftComparison } from './lib/shifts';
@@ -32,26 +33,7 @@
   $: pages = Math.max(1, Math.ceil(ordered.length / 15));
   $: visible = ordered.slice((page - 1) * 15, page * 15) as Row[];
   const share = (value: number | undefined) => value === undefined ? '—' : `${value.toFixed(1)}%`;
-  /** Places a popover under its toggle button and keeps it there while the page scrolls. */
-  function anchored(node: HTMLElement, id: string) {
-    const place = () => {
-      const button = document.querySelector<HTMLElement>(`[popovertarget="${CSS.escape(id)}"]:not([popovertargetaction])`);
-      if (!button) return;
-      const anchor = button.getBoundingClientRect(), gap = 8, margin = 12;
-      const width = node.offsetWidth, height = node.offsetHeight;
-      const left = Math.min(Math.max(margin, anchor.right - width), window.innerWidth - width - margin);
-      const below = anchor.bottom + gap + height <= window.innerHeight - margin || anchor.top - gap - height < margin;
-      node.style.left = `${left}px`;
-      node.style.top = `${below ? anchor.bottom + gap : anchor.top - gap - height}px`;
-    };
-    const toggle = (event: Event) => {
-      const open = (event as ToggleEvent).newState === 'open';
-      if (open) place();
-      for (const type of ['scroll', 'resize']) (open ? addEventListener : removeEventListener)(type, place, true);
-    };
-    node.addEventListener('toggle', toggle);
-    return { destroy() { node.removeEventListener('toggle', toggle); removeEventListener('scroll', place, true); removeEventListener('resize', place, true); } };
-  }
+
 </script>
 
 <section class="shift-section" id="political-shift" aria-labelledby="shift-title">
@@ -69,7 +51,7 @@
   </td></tr>{:else}<tr><td colspan="4">No results match this search.</td></tr>{/each}
   </tbody></table></div>
   {#each visible as row (row.id)}{@const popId = `shift-pop-${row.id}`}
-    <div class="shift-popover" id={popId} popover="auto" use:anchored={popId}>
+    <div class="evidence-popover shift-popover" id={popId} popover="auto" use:anchoredPopover={popId}>
       <header><strong>{row.name}</strong><button popovertarget={popId} popovertargetaction="hide" aria-label="Close"><Icon name="close" /></button></header>
       {#if row.comparison.reason}<p>{row.comparison.reason}</p>{/if}
       {#if row.comparison.previous && row.comparison.current}<table><caption class="sr-only">Vote shares in {row.comparison.year} and 2026</caption><thead><tr><th scope="col">Year</th><th scope="col" class="democratic">D</th><th scope="col" class="republican">R</th><th scope="col">Votes</th></tr></thead><tbody>
