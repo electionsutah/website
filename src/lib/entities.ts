@@ -172,28 +172,28 @@ const nonpartisanSections = new Set(['Municipal Offices', 'School Board Offices'
 
 function partyDetails(rawParty: string, section: string) {
   if (section === 'State Judicial' || (nonpartisanSections.has(section) && !rawParty)) {
-    return { name: 'Nonpartisan', shortName: 'Nonpartisan', color: '#668f7f' };
+    return { name: 'Nonpartisan', shortName: 'Nonpartisan', color: '#55786a' };
   }
   const details: Record<string, { name: string; shortName: string; color: string }> = {
-    Democratic: { name: 'Utah Democratic Party', shortName: 'Democratic', color: '#4d75b7' },
-    Republican: { name: 'Utah Republican Party', shortName: 'Republican', color: '#c94f43' },
-    Forward: { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6' },
-    'Utah Forward': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6' },
-    'Forward Party Utah': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6' },
-    'Forward Party of Utah': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6' },
-    Constitution: { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#a36d38' },
-    'Constitution Party': { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#a36d38' },
-    Green: { name: 'Green Party of Utah', shortName: 'Green', color: '#43845a' },
-    'Green Party of Utah': { name: 'Green Party of Utah', shortName: 'Green', color: '#43845a' },
-    Libertarian: { name: 'Utah Libertarian Party', shortName: 'Libertarian', color: '#c8961d' },
-    'Independent American': { name: 'Independent American Party', shortName: 'Independent American', color: '#5b7f65' },
-    'Independent American Party': { name: 'Independent American Party', shortName: 'Independent American', color: '#5b7f65' },
-    'United Utah': { name: 'United Utah Party', shortName: 'United Utah', color: '#5e8592' },
-    'United Utah Party': { name: 'United Utah Party', shortName: 'United Utah', color: '#5e8592' },
+    Democratic: { name: 'Utah Democratic Party', shortName: 'Democratic', color: '#2675aa' },
+    Republican: { name: 'Utah Republican Party', shortName: 'Republican', color: '#bc443d' },
+    Forward: { name: 'Forward Party of Utah', shortName: 'Forward', color: '#79629d' },
+    'Utah Forward': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#79629d' },
+    'Forward Party Utah': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#79629d' },
+    'Forward Party of Utah': { name: 'Forward Party of Utah', shortName: 'Forward', color: '#79629d' },
+    Constitution: { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#986634' },
+    'Constitution Party': { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#986634' },
+    Green: { name: 'Green Party of Utah', shortName: 'Green', color: '#407d55' },
+    'Green Party of Utah': { name: 'Green Party of Utah', shortName: 'Green', color: '#407d55' },
+    Libertarian: { name: 'Utah Libertarian Party', shortName: 'Libertarian', color: '#886e13' },
+    'Independent American': { name: 'Independent American Party', shortName: 'Independent American', color: '#567860' },
+    'Independent American Party': { name: 'Independent American Party', shortName: 'Independent American', color: '#567860' },
+    'United Utah': { name: 'United Utah Party', shortName: 'United Utah', color: '#547682' },
+    'United Utah Party': { name: 'United Utah Party', shortName: 'United Utah', color: '#547682' },
     Unaffiliated: { name: 'Unaffiliated', shortName: 'Unaffiliated', color: '#68736f' },
-    '': { name: 'Not reported', shortName: 'Not reported', color: '#8b918e' }
+    '': { name: 'Not reported', shortName: 'Not reported', color: '#5f5e59' }
   };
-  return details[rawParty] ?? { name: rawParty || 'Not reported', shortName: rawParty || 'Not reported', color: '#8b918e' };
+  return details[rawParty] ?? { name: rawParty || 'Not reported', shortName: rawParty || 'Not reported', color: '#5f5e59' };
 }
 
 function placeIds(county: string, city: string) {
@@ -451,14 +451,14 @@ const partyLogos: Record<string, string> = {
   'United Utah Party': '/party-logos/united-utah-party.png'
 };
 const recognizedParties = [
-  { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#a36d38', website: 'https://www.constitutionpartyofutah.com/' },
-  { name: 'Utah Democratic Party', shortName: 'Democratic', color: '#4d75b7', website: 'https://www.utahdemocrats.org/' },
-  { name: 'Forward Party of Utah', shortName: 'Forward', color: '#8b5aa6', website: 'https://www.utahforwardparty.org/' },
-  { name: 'Green Party of Utah', shortName: 'Green', color: '#43845a', website: 'https://greenpartyofutah.org/' },
-  { name: 'Independent American Party', shortName: 'Independent American', color: '#5b7f65', website: 'https://iaput.org/' },
-  { name: 'Utah Libertarian Party', shortName: 'Libertarian', color: '#c8961d', website: 'https://www.libertarianutah.org/' },
+  { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#986634', website: 'https://www.constitutionpartyofutah.com/' },
+  { name: 'Utah Democratic Party', shortName: 'Democratic', color: '#2675aa', website: 'https://www.utahdemocrats.org/' },
+  { name: 'Forward Party of Utah', shortName: 'Forward', color: '#79629d', website: 'https://www.utahforwardparty.org/' },
+  { name: 'Green Party of Utah', shortName: 'Green', color: '#407d55', website: 'https://greenpartyofutah.org/' },
+  { name: 'Independent American Party', shortName: 'Independent American', color: '#567860', website: 'https://iaput.org/' },
+  { name: 'Utah Libertarian Party', shortName: 'Libertarian', color: '#886e13', website: 'https://www.libertarianutah.org/' },
   { name: 'Peoples’ Freedom Party', shortName: 'Peoples’ Freedom', color: '#906164', website: 'https://www.instagram.com/peoplesfreedompartyut/' },
-  { name: 'Utah Republican Party', shortName: 'Republican', color: '#c94f43', website: 'https://www.utgop.org/' }
+  { name: 'Utah Republican Party', shortName: 'Republican', color: '#bc443d', website: 'https://www.utgop.org/' }
 ];
 for (const party of recognizedParties) {
   partyMap.set(slug(party.name), { id: slug(party.name), ...party, logo: partyLogos[party.name] ?? '', recognized: true, historical: false, filings: [], years: [] });

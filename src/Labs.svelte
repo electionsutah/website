@@ -10,7 +10,7 @@
   import ResultPersonName from './ResultPersonName.svelte';
   import ResultPartyName from './ResultPartyName.svelte';
   import { resultPerson, retainedJudgeName, personHref, contestTitle } from './lib/result-people';
-  import { count, color, margin, percent, leader, hasSingleLeader, seatsOf, updated, type Snapshot, type Contest } from './lib/results';
+  import { count, color, RESULT_COLORS, margin, percent, leader, hasSingleLeader, seatsOf, updated, type Snapshot, type Contest } from './lib/results';
   import { tidySnapshot } from './lib/result-names';
   import { raceSlugs } from './lib/contest-slugs';
   import './labs.css';
@@ -122,7 +122,7 @@
     <p class="snapshot-note">Saved snapshot · Retrieved {updated(data.fetchedAt)}. Results do not update automatically. Votes may still be counted.</p>
     <section class="congress-section" id="congress" aria-labelledby="congress-title">
       <div class="labs-section-heading"><div><p class="labs-kicker">The race for Congress</p><h2 id="congress-title">Four districts. Every vote.</h2></div><p>County maps show who leads in each part of a district.<br />Hover or select a county to explore.</p></div>
-      <div class="map-legend"><span><i style="background:#2675aa"></i><ResultPartyName name="Democratic" /></span><span><i style="background:#bc443d"></i><ResultPartyName name="Republican" /></span><span><i style="background:#626870"></i>Other</span><span><i style="background:#e8e5df"></i>No contest results / tied</span></div>
+      <div class="map-legend"><span><i style:background={RESULT_COLORS.Democratic}></i><ResultPartyName name="Democratic" /></span><span><i style:background={RESULT_COLORS.Republican}></i><ResultPartyName name="Republican" /></span><span><i style:background={RESULT_COLORS.other}></i>Other</span><span><i style:background={RESULT_COLORS.none}></i>No contest results / tied</span></div>
       <div class="house-grid">{#each house as contest}<div><ResultCard {contest} {countyNames} history={historyData} {historyLoading} /><button class="explore-race" onclick={() => show(contest)}>Explore district {contest.name.match(/\d+/)?.[0]} <Icon name="arrow_forward" /></button></div>{/each}</div>
       <p class="map-note">County boundaries, not district boundaries. Colored counties include only votes cast in this contest; a district may cover part of a county. Leaders are not projected winners.</p>
     </section>

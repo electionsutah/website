@@ -24,10 +24,11 @@
   --color-photo-fallback:#3b3a36;
 
   /* Labs palette */
-  --color-lab-ink:#202a32;--color-lab-navy:#202e39;--color-lab-muted:#60666a;--color-lab-blue:#246187;--color-lab-paper:#fffefa;
-  --color-lab-cream:#faf9f6;--color-lab-sand:#d6d4cf;--color-lab-stone:#c4c6c2;--color-lab-mist:#c7d0d6;--color-lab-pewter:#abb1ae;
-  --color-lab-grey:#a7aeae;--color-lab-slate:#50595e;--color-lab-slate-dark:#4e585e;
-  --color-lab-democratic:#176fa6;--color-lab-republican:#b53330;
+  --color-red-tint:#fae9e7;
+  --color-democratic:#2675aa;--color-republican:#bc443d;
+  --color-highlight:#efc15a;
+  --color-warning:#c27c0e;--color-warning-tint:#fdf0cf;--color-warning-text:#5c3d00;
+  --color-success:#2f7a45;--color-success-tint:#e4f2e7;
 
   /* Type scale (display headings use clamp() and stay local) */
   --text-2xs:11px;--text-xs:12px;--text-sm:13px;--text-base:14px;--text-md:15px;--text-lg:16px;

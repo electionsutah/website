@@ -9,7 +9,7 @@
   import Combobox from './Combobox.svelte';
   import ResultPartyName from './ResultPartyName.svelte';
   import { resultOfficeHref } from './lib/result-links';
-  import { color, type Snapshot } from './lib/results';
+  import { color, RESULT_COLORS, type Snapshot } from './lib/results';
   import { chamberLabel, districtResults, pathBounds, resultState, type LegislativeGeometry, type Chamber } from './lib/legislative-map';
   import { UTAH_BOUNDS, lngLatBounds, maskAround, multiPolygon } from './lib/legislative-geo';
   export let data: Snapshot;
@@ -64,14 +64,16 @@
   let zoom = 1;
   let minZoom = 0;
   const FIT = { padding: 28 };
-  const blankStyle: StyleSpecification = { version: 8, sources: {}, layers: [{ id: 'Background', type: 'background', paint: { 'background-color': '#fffefa' } }] };
+  // MapLibre can't read CSS variables, so resolve design tokens from app.css when the map is built (client only).
+  const token = (name: string) => getComputedStyle(document.documentElement).getPropertyValue(`--color-${name}`).trim();
+  const blankStyle = (): StyleSpecification => ({ version: 8, sources: {}, layers: [{ id: 'Background', type: 'background', paint: { 'background-color': token('paper') } }] });
   const empty = { type: 'FeatureCollection' as const, features: [] };
   $: if (geometry && container && !map) void createMap();
   async function createMap() {
     const [{ Map: MapLibre, setWorkerUrl }, { default: workerUrl }] = await Promise.all([import('maplibre-gl'), import('maplibre-gl/dist/maplibre-gl-worker.mjs?url'), import('maplibre-gl/dist/maplibre-gl.css')]);
     // MapLibre 6 runs its worker from a separate module file; ship it as an asset and point the library at it.
     setWorkerUrl(workerUrl);
-    const instance = new MapLibre({ container, style: key ? `https://api.maptiler.com/maps/dataviz-light/style.json?key=${key}` : blankStyle, bounds: UTAH_BOUNDS, fitBoundsOptions: FIT, attributionControl: { compact: true }, cooperativeGestures: true, dragRotate: false, pitchWithRotate: false, touchPitch: false, maxZoom: 13 });
+    const instance = new MapLibre({ container, style: key ? `https://api.maptiler.com/maps/dataviz-light/style.json?key=${key}` : blankStyle(), bounds: UTAH_BOUNDS, fitBoundsOptions: FIT, attributionControl: { compact: true }, cooperativeGestures: true, dragRotate: false, pitchWithRotate: false, touchPitch: false, maxZoom: 13 });
     instance.touchZoomRotate.disableRotation();
     instance.keyboard.disableRotation();
     map = instance;
@@ -81,16 +83,16 @@
       if (!ready && basemapAvailable) {
         basemapAvailable = false;
         basemapFailed = true;
-        instance.setStyle(blankStyle);
+        instance.setStyle(blankStyle());
       }
     });
     instance.once('load', () => {
       minZoom = instance.getZoom() - .5;
       instance.setMinZoom(minZoom);
       instance.setMaxBounds([[UTAH_BOUNDS[0][0] - 4, UTAH_BOUNDS[0][1] - 3], [UTAH_BOUNDS[1][0] + 4, UTAH_BOUNDS[1][1] + 3]]);
-      // Diagonal stripes for districts with no published result or a tie, as in the legend.
+      // Diagonal stripes for districts with no published result or a tie, as in the legend (--color-page on --color-rule-soft).
       const size = 12, stripes = new Uint8Array(size * size * 4);
-      for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) { const on = (x + y) % 6 < 2, i = (y * size + x) * 4; stripes.set(on ? [250, 249, 246, 230] : [210, 205, 196, 230], i); }
+      for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) { const on = (x + y) % 6 < 2, i = (y * size + x) * 4; stripes.set(on ? [248, 248, 246, 230] : [216, 215, 209, 230], i); }
       instance.addImage('no-result', { width: size, height: size, data: stripes });
       // Draw under roads and labels so places stay readable over the districts.
       const before = instance.getStyle().layers.find(layer => layer.id === 'Road network outline' || layer.type === 'symbol')?.id;
@@ -102,13 +104,13 @@
       instance.addLayer({ id: 'district-pattern', type: 'fill', source: 'districts', filter: ['!', ['has', 'color']], paint: { 'fill-pattern': 'no-result', 'fill-opacity': .9 } }, before);
       if (basemapAvailable) instance.addSource('hillshade', { type: 'raster', tiles: [`https://api.maptiler.com/tiles/hillshade/{z}/{x}/{y}.webp?key=${key}`], tileSize: 512, maxzoom: 12 });
       if (basemapAvailable) instance.addLayer({ id: 'hillshade', type: 'raster', source: 'hillshade', paint: { 'raster-opacity': .55 } }, before);
-      instance.addLayer({ id: 'district-line', type: 'line', source: 'districts', paint: { 'line-color': '#fffefa', 'line-width': ['interpolate', ['linear'], ['zoom'], 5, .6, 10, 1.6], 'line-opacity': .9 } }, labels);
-      instance.addLayer({ id: 'county-line', type: 'line', source: 'counties', layout: { visibility: 'none' }, paint: { 'line-color': '#26363c', 'line-width': 1, 'line-opacity': .55 } }, labels);
-      instance.addLayer({ id: 'county-chosen', type: 'line', source: 'counties', filter: ['==', ['get', 'id'], ''], paint: { 'line-color': '#111110', 'line-width': 2.2 } }, labels);
-      instance.addLayer({ id: 'mask', type: 'fill', source: 'mask', paint: { 'fill-color': '#1d2226', 'fill-opacity': .58 } }, labels);
-      instance.addLayer({ id: 'selected-halo', type: 'line', source: 'districts', filter: ['==', ['get', 'number'], -1], paint: { 'line-color': '#243039', 'line-width': 6 } }, labels);
-      instance.addLayer({ id: 'selected-border', type: 'line', source: 'districts', filter: ['==', ['get', 'number'], -1], paint: { 'line-color': '#efc15a', 'line-width': 3 } }, labels);
-      instance.addLayer({ id: 'hover-border', type: 'line', source: 'districts', filter: ['==', ['get', 'number'], -1], paint: { 'line-color': '#202a32', 'line-width': 1.6 } }, labels);
+      instance.addLayer({ id: 'district-line', type: 'line', source: 'districts', paint: { 'line-color': token('paper'), 'line-width': ['interpolate', ['linear'], ['zoom'], 5, .6, 10, 1.6], 'line-opacity': .9 } }, labels);
+      instance.addLayer({ id: 'county-line', type: 'line', source: 'counties', layout: { visibility: 'none' }, paint: { 'line-color': token('ink'), 'line-width': 1, 'line-opacity': .55 } }, labels);
+      instance.addLayer({ id: 'county-chosen', type: 'line', source: 'counties', filter: ['==', ['get', 'id'], ''], paint: { 'line-color': token('ink'), 'line-width': 2.2 } }, labels);
+      instance.addLayer({ id: 'mask', type: 'fill', source: 'mask', paint: { 'fill-color': token('ink'), 'fill-opacity': .58 } }, labels);
+      instance.addLayer({ id: 'selected-halo', type: 'line', source: 'districts', filter: ['==', ['get', 'number'], -1], paint: { 'line-color': token('ink'), 'line-width': 6 } }, labels);
+      instance.addLayer({ id: 'selected-border', type: 'line', source: 'districts', filter: ['==', ['get', 'number'], -1], paint: { 'line-color': token('highlight'), 'line-width': 3 } }, labels);
+      instance.addLayer({ id: 'hover-border', type: 'line', source: 'districts', filter: ['==', ['get', 'number'], -1], paint: { 'line-color': token('ink'), 'line-width': 1.6 } }, labels);
       const canvas = instance.getCanvas();
       canvas.setAttribute('aria-label', `${chamberLabel(chamber)} district results map. Use the district list to select a district.`);
       canvas.setAttribute('aria-describedby', 'legislative-map-help');
@@ -185,7 +187,7 @@
       </div>
       {#if basemapFailed}<p class="map-note" role="status">The base map is unavailable. District boundaries and election results are still shown.</p>{/if}
       <p class="map-hover-status" aria-live="polite">{hovered ? `${chamberLabel(chamber)} District ${hovered} · ${resultState(hoveredResult)}` : 'Select a district on the map or choose one from the list.'}</p>
-      <div class="map-legend legislative-legend"><span><i style="background:#2675aa"></i><ResultPartyName name="Democratic" /> leader</span><span><i style="background:#bc443d"></i><ResultPartyName name="Republican" /> leader</span><span><i style="background:#79629d"></i><ResultPartyName name="Forward" /> leader</span><span><i style="background:#626870"></i>Other leader</span><span><i class="map-pattern"></i>No result / tied</span></div>
+      <div class="map-legend legislative-legend"><span><i style:background={RESULT_COLORS.Democratic}></i><ResultPartyName name="Democratic" /> leader</span><span><i style:background={RESULT_COLORS.Republican}></i><ResultPartyName name="Republican" /> leader</span><span><i style:background={RESULT_COLORS.Forward}></i><ResultPartyName name="Forward" /> leader</span><span><i style:background={RESULT_COLORS.other}></i>Other leader</span><span><i class="map-pattern"></i>No result / tied</span></div>
       <p class="map-note" id="legislative-map-help">Drag to pan, or use the arrow buttons. Hold Ctrl (⌘ on Mac) and scroll to zoom, or use two fingers on touch screens. Keyboard: +/− to zoom, arrow keys to pan, Home to reset, Escape to clear the selection. District colors show full-district leaders, including when zoomed into a county.</p>
     </div>
     <aside class="legislative-details" aria-label="Selected legislative district">

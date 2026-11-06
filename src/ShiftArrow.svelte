@@ -11,7 +11,7 @@
 
 <span class="shift-arrow" class:democratic={changed && value > 0} class:republican={changed && value < 0}>
   <svg viewBox="0 0 200 30" aria-hidden="true">
-    <line x1="100" y1="3" x2="100" y2="27" stroke="#d8d7d1" stroke-width="1" />
+    <line x1="100" y1="3" x2="100" y2="27" style="stroke:var(--color-rule-soft)" stroke-width="1" />
     {#if changed}<line x1="100" y1="15" x2={end - direction * headLength} y2="15" stroke="currentColor" stroke-width="2" />
       <polygon points={`${end},15 ${end - direction * headLength},9 ${end - direction * headLength},21`} fill="currentColor" />{/if}
     <circle cx="100" cy="15" r="4" fill="currentColor" />

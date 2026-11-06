@@ -1,6 +1,6 @@
 <script lang="ts">
   import boundaries from './data/utah-county-paths.json';
-  import { color, leader, percent, seatsOf, type Contest } from './lib/results';
+  import { color, RESULT_COLORS, leader, percent, seatsOf, type Contest } from './lib/results';
   import { contestTitle } from './lib/result-people';
   export let contest: Contest;
   export let selected = '';
@@ -22,7 +22,7 @@
     <title>{contestTitle(contest)}: county vote leaders</title>
     {#each boundaries as county}
       {@const row = results.get(county.id)}
-      <path class="county" d={county.path} fill={row?.total && leader(row) !== 'Tied' ? color(row.options[0]) : '#e8e5df'}
+      <path class="county" d={county.path} fill={row?.total && leader(row) !== 'Tied' ? color(row.options[0]) : RESULT_COLORS.none}
         class:available={!!row}
         role="button" tabindex={row ? 0 : undefined} aria-disabled={!row} aria-pressed={selected === county.id}
         aria-label={description(county.id, county.name)}

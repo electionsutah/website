@@ -9,15 +9,21 @@ export const percent = (votes: number, total: number) => total ? `${(votes / tot
 export const seatsOf = (contest: { seats?: number }) => Math.max(1, contest.seats ?? 1);
 /** Gap between the last winning position and the first losing one, as a share of votes cast. */
 export const margin = (row: { options: Option[]; total: number }, seats = 1) => row.options.length > seats && row.total ? (row.options[seats - 1].votes - row.options[seats].votes) / row.total * 100 : Infinity;
+/**
+ * Result palette for maps, bars, and legends. Democratic and Republican match
+ * --color-democratic and --color-republican in app.css; none and other match
+ * --color-rule and --color-muted. Change them together.
+ */
+export const RESULT_COLORS = {
+  Democratic: '#2675aa', Republican: '#bc443d', Forward: '#79629d', Libertarian: '#886e13',
+  yes: '#32796c', no: '#a75936', other: '#5f5e59', none: '#e3e2dd'
+} as const;
 export function color(option?: Option) {
-  if (!option) return '#e8e5df';
-  if (option.party === 'Republican') return '#bc443d';
-  if (option.party === 'Democratic') return '#2675aa';
-  if (option.party === 'Forward') return '#79629d';
-  if (option.party === 'Libertarian') return '#997321';
-  if (option.name.toLowerCase() === 'yes') return '#32796c';
-  if (option.name.toLowerCase() === 'no') return '#a75936';
-  return '#626870';
+  if (!option) return RESULT_COLORS.none;
+  if (option.party === 'Republican' || option.party === 'Democratic' || option.party === 'Forward' || option.party === 'Libertarian') return RESULT_COLORS[option.party];
+  const name = option.name.toLowerCase();
+  if (name === 'yes' || name === 'no') return RESULT_COLORS[name];
+  return RESULT_COLORS.other;
 }
 /** True when a single named leader should be shown (one seat, votes reported, no tie). */
 export const hasSingleLeader = (row: { options: Option[]; total: number }, seats = 1) => seats === 1 && !!row.total && !!row.options.length && leader(row) !== 'Tied';
