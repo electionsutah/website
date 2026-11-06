@@ -4,7 +4,17 @@
   // Keep the companion screen accessible in Decap's header across route changes.
   const addSchemaLink = () => {
     const menu = document.querySelector('header nav ul');
-    if (!menu || menu.querySelector('[data-schema-link]')) return;
+    if (!menu) return;
+    // Schema's Media link hands off to Decap's real media-library action.
+    if (window.location.search?.includes('open=media')) {
+      const media = [...menu.querySelectorAll('button')].find(button => button.textContent.trim() === 'Media');
+      if (media) {
+        const url = new URL(window.location.href); url.searchParams.delete('open');
+        window.history.replaceState(null, '', url.href);
+        media.click();
+      }
+    }
+    if (menu.querySelector('[data-schema-link]')) return;
     const item = document.createElement('li');
     const link = document.createElement('a');
     link.href = '/schema'; link.dataset.schemaLink = '';
@@ -231,7 +241,7 @@
   CMS.registerLocale('editor-en', {
     editor: { editorToolbar: { backCollection: 'Editing in %{collectionLabel} collection' } }
   });
-  CMS.init({ config: { ...config, locale: 'editor-en', load_config_file: false } });
+  CMS.init({ config: { ...config, collections: [...config.collections].sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' })), locale: 'editor-en', load_config_file: false } });
 
   let statusSignature = '';
   async function updateStatus() {

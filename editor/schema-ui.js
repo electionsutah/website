@@ -32,7 +32,9 @@
     const paneHeading = element('div', null, { class: 'schema-pane-heading' });
     const paneIntro = element('div', null, { class: 'schema-pane-intro' });
     paneIntro.append(title, element('p', collection.editableScope, { class: 'muted' }));
-    paneHeading.append(paneIntro, save);
+    const paneActions = element('div', null, { class: 'schema-pane-actions' });
+    paneActions.append(save);
+    paneHeading.append(paneIntro, paneActions);
     target.append(paneHeading);
     const label = element('label', 'Collection label');
     const input = element('input', null, { type: 'text', maxlength: '100', required: '', value: collection.label });
@@ -80,14 +82,14 @@
       row.append(controls, identity, labelCell, optionCell); body.append(row);
     });
     table.append(body); tableWrap.append(table); target.append(tableWrap);
-    const reset = element('button', 'Restore this collection’s defaults', { type: 'button' });
+    const reset = element('button', 'Reset', { type: 'button', title: 'Restore this collection’s defaults', 'aria-label': `Reset ${collection.label} schema to defaults` });
     reset.onclick = () => {
       const original = baseline.collections.find(item => item.kind === selected);
       collection.label = original.defaultLabel;
       collection.fields = structuredClone(collection.defaults).map(field => ({ ...field, type: field.options ? 'select' : field.type ?? 'string' }));
       markDirty(); renderNavigation(); renderCollection();
     };
-    target.append(reset);
+    paneActions.prepend(reset);
   }
   async function load() {
     const response = await fetch('/schema-settings.json');

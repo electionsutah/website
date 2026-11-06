@@ -14,7 +14,7 @@ await vm.runInNewContext(await readFile(new URL('./app.js', import.meta.url), 'u
   URL, window: { CMS, createClass: spec => spec, h: (tag, props, ...children) => ({ tag, props: props ?? {}, children: children.flat(Infinity) }), location: { hash: '#/collections/people' }, addEventListener() {} },
   document: { body: { dataset: {} }, querySelector() { return null; }, getElementById: node, createElement: node, createTextNode: text => text },
   MutationObserver: class { observe() {} }, setInterval() {},
-  fetch: async url => ({ json: async () => url === '/schema.json' ? { people: fields } : url === '/status.json' ? { counts: { people: 1, filings: 1, places: 1 }, siteUrl: 'http://localhost' } : {} })
+  fetch: async url => ({ json: async () => url === '/config.json' ? { collections: [] } : url === '/schema.json' ? { people: fields } : url === '/status.json' ? { counts: { people: 1, filings: 1, places: 1 }, siteUrl: 'http://localhost' } : {} })
 });
 let writes = 0;
 const instance = { ...widget, state: widget.getInitialState(), setState(patch) { Object.assign(this.state, patch); }, props: {

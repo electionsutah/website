@@ -1,11 +1,6 @@
 /* Schema layout; shared controls, type, and appearance are in elut.css. */
 * { box-sizing: border-box; }
 body { margin: 0; }
-header { display: flex; align-items: center; gap: var(--space-5); padding: var(--space-2) var(--space-6); }
-.brand { display: flex; align-items: center; gap: var(--space-3); font-size: var(--text-xl); font-weight: 700; text-decoration: none; }
-.brand img { width: var(--editor-logo-width); height: var(--editor-logo-height); object-fit: contain; }
-header nav { display: flex; align-items: center; }
-header nav a { display: inline-flex; gap: var(--space-1); align-items: center; padding: var(--space-4) var(--space-5); text-decoration: none; }
 a { color: var(--color-blue); }
 main { max-width: 1440px; margin: var(--space-7) auto; padding: 0 var(--space-4-5); }
 h1,h2 { display: flex; align-items: center; gap: var(--space-2-5); margin: 0 0 var(--space-2); }
@@ -33,4 +28,4 @@ small { display: block; color: var(--color-muted); font-size: var(--text-xs); ma
 code { font-size: var(--text-xs); }
 .muted, .footnote { color: var(--color-muted); }
 .footnote { margin: var(--space-6) 0; }
-@media(max-width:800px) { .schema-layout { grid-template-columns: 1fr; } #collections { grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); } .page-heading { align-items: start; } header { gap: var(--space-2); padding: var(--space-2) var(--space-4); } header nav a { padding: var(--space-3) var(--space-2); } main { padding: 0 var(--space-2); } #collection { padding: var(--space-4); } }
+@media(max-width:800px) { .schema-layout { grid-template-columns: 1fr; } #collections { grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); } .page-heading { align-items: start; } main { padding: 0 var(--space-2); } #collection { padding: var(--space-4); } }
