@@ -142,7 +142,7 @@ const resolveCounty = (value?: string) => {
 
 export function createServer() {
   const server = new McpServer({ name: 'elections-utah', title: 'Elections Utah', version: '1.0.0', websiteUrl: SITE_URL }, {
-    instructions: `Elections Utah publishes Utah candidate filings (2017–2026) and 2026 general-election results. Use search to find people, offices, parties, places, or contests, then fetch for the full record. Cite the returned URLs. ${resultsStatus()} Always tell users when results are unofficial.`
+    instructions: `Elections Utah publishes Utah candidate filings (2013–2026) and 2026 general-election results. Use search to find people, offices, parties, places, or contests, then fetch for the full record. Cite the returned URLs. ${resultsStatus()} Always tell users when results are unofficial.`
   });
 
   server.registerTool('search', {
@@ -215,7 +215,7 @@ export function createServer() {
   });
 
   server.registerResource('about', 'electionsutah://about', { title: 'About Elections Utah data', mimeType: 'text/markdown' }, async uri => ({
-    contents: [{ uri: uri.href, mimeType: 'text/markdown', text: `# Elections Utah\n\nOpen civic data about Utah elections: ${people.length} people, ${offices.length} offices, ${parties.length} parties, and ${places.length} places from candidate filings (2017–2026, filings last updated ${currentDatasetUpdated}), plus ${snapshot.contests.length} 2026 general-election contests.\n\n${resultsStatus()}\n\nWebsite: ${SITE_URL}\nResults data: ${SITE_URL}/data/2026-results.json` }]
+    contents: [{ uri: uri.href, mimeType: 'text/markdown', text: `# Elections Utah\n\nOpen civic data about Utah elections: ${people.length} people, ${offices.length} offices, ${parties.length} parties, and ${places.length} places from candidate filings (2013–2026, filings last updated ${currentDatasetUpdated}), plus ${snapshot.contests.length} 2026 general-election contests.\n\n${resultsStatus()}\n\nWebsite: ${SITE_URL}\nResults data: ${SITE_URL}/data/2026-results.json` }]
   }));
 
   return server;

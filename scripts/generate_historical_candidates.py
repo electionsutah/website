@@ -119,6 +119,10 @@ def main() -> None:
     output = sorted(deduplicated.values(), key=lambda row: (int(row["year"]), str(row["name"]), str(row["office"])))
     if len(output) != 592:
         raise SystemExit(f"Expected 592 normalized historical filings, found {len(output)}")
+    # Rebuilding the original exports must preserve independently imported cycles.
+    if args.output.exists():
+        preserved = [row for row in json.loads(args.output.read_text()) if int(row["year"]) not in {2017, 2018, 2019}]
+        output = sorted([*preserved, *output], key=lambda row: (int(row["year"]), str(row["name"]), str(row["office"])))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Generated {len(output)} historical filings in {args.output}")

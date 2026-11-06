@@ -1,7 +1,7 @@
 # Elections Utah — multi-year data edition
 
 A responsive, single-page reimagining of the Elections Utah archive, combining
-the original 2017–2019 records with available official State of Utah candidate
+the original 2017–2019 records, pre-2017 canvass rosters, and official State of Utah candidate
 data through the 2026 election cycle.
 
 ## Run locally
@@ -21,7 +21,7 @@ workflow, data connections, and current scope.
 
 ## Included content
 
-- 1,928 searchable filing records from the available 2017–2026 sources
+- Searchable filing and ballot-candidate records from available 2013–2026 sources
 - Individual, cross-linked views for people, offices, political parties,
   counties, cities, and election years
 - Global popout search across every entity type
@@ -40,6 +40,32 @@ congressional special-election filings, and the 2024 candidate-filing workbook.
 Utah did not publish comparable statewide candidate tables for the locally
 administered 2021 and 2025 municipal cycles, so their year pages explain the
 gap and link to the official record directories instead of fabricating rows.
+
+## Pre-2017 coverage
+
+The archive now reaches 2013, adding 826 distinct ballot-candidate records:
+
+- **2016:** 291 records from Utah's primary and general statewide canvasses.
+- **2015:** 106 municipal records from Salt Lake County's primary and general results.
+- **2014:** 269 records from Utah's primary and general statewide canvasses.
+- **2013:** 160 municipal records from Salt Lake County's primary and general results.
+
+Sources: [Utah historical statewide results](https://vote.utah.gov/historical-election-results/)
+and [Salt Lake County historical results](https://www.saltlakecounty.gov/clerk/elections/election-results/).
+Every imported record links directly to its workbook or PDF. These are ballot
+rosters rather than complete filing lists: withdrawn and convention-only
+candidates may be absent. Municipal coverage is limited to the county's mayor
+and council contests. Ballot measures, unnamed write-in totals, and special
+districts are excluded. Primary and general appearances merge by year, name,
+office, and party; the general appearance takes precedence. Status describes
+ballot participation, without inferring winners or elimination. Dates identify
+the source election, not a recovered declaration date.
+
+Refresh with `python3 scripts/import-pre2017-candidates.py`; add `--use-cache`
+to reuse source files in `.firecrawl/pre2017/`. Requires Poppler's `pdftotext`.
+The importer replaces only 2013–2016 records and preserves later cycles.
+Earlier statewide results (back to 1960) and county municipal results (back to
+2001) were located in these indexes but have not yet been normalized.
 
 ## Refreshing the data
 

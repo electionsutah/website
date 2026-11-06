@@ -209,7 +209,7 @@
   </section>
 
   <section class="archive-note">
-    <span>2017–2026</span>
+    <span>2013–2026</span>
     <p>{formatCount(totals.filings)} filing records across Utah’s available election archives, joined into {formatCount(totals.people)} people while preserving every distinct race.</p>
   </section>
 
@@ -240,7 +240,7 @@
     </div>
     <div class="data-grid">
       <article><span>01</span><small>2026</small><h3>Current<br />Listings</h3><p>{formatCount(totals.currentFilings)} federal, legislative, school-board, and judicial-retention records in the Elections Utah schema.</p><div><a href={candidateYamlUrl} download="elections-utah-2026-candidates.yml">YAML <Icon name="download" /></a></div></article>
-      <article><span>02</span><small>2017–24</small><h3>Historical<br />Listings</h3><p>{formatCount(totals.historicalFilings)} normalized records from the original archive and official Utah sources.</p><div><a href={historicalDataUrl} download="elections-utah-2017-2024-candidates.json">JSON <Icon name="download" /></a></div></article>
+      <article><span>02</span><small>2013–24</small><h3>Historical<br />Listings</h3><p>{formatCount(totals.historicalFilings)} normalized records from the original archive and official Utah sources.</p><div><a href={historicalDataUrl} download="elections-utah-2013-2024-candidates.json">JSON <Icon name="download" /></a></div></article>
       <article><span>03</span><small>LIVE</small><h3>Official<br />Source</h3><p>The Utah Lieutenant Governor’s current filing table and downloadable workbook.</p><div><a href="https://vote.utah.gov/2026-candidate-filings/" target="_blank" rel="noreferrer">VIEW <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a><a href="https://vote.utah.gov/wp-content/uploads/2026/06/Candidate-Filing-2026.xlsx" target="_blank" rel="noreferrer">XLSX <Icon name="download" /><span class="sr-only"> (opens in new tab)</span></a></div></article>
     </div>
   </section>
@@ -249,7 +249,7 @@
     <div class="directory-intro">
       <p class="eyebrow">Browse the archive</p>
       <h2>Find the records<br />that <em>matter.</em></h2>
-      <p>Search the combined 2017–2026 archive. Repeat candidates link to one person record with every distinct race listed by year.</p>
+      <p>Search the combined 2013–2026 archive. Repeat candidates link to one person record with every distinct race listed by year.</p>
       <div class="party-list" role="group" aria-label="Political parties">
         {#each partyEntities as party}<a href={`/parties/${party.id}/`} onclick={(event) => open(event, `/parties/${party.id}/`)}>{party.name}</a>{/each}
       </div>

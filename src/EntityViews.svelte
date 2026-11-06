@@ -109,7 +109,7 @@
   const labels = {
     people: { singular: 'Person', plural: 'People', intro: 'Every person in the combined Utah election archive.' },
     offices: { singular: 'Office', plural: 'Offices', intro: 'Municipal, federal, legislative, education, and judicial offices across every archived cycle.' },
-    parties: { singular: 'Party', plural: 'Parties', intro: 'Political affiliations represented across the 2017–2026 filing data.' },
+    parties: { singular: 'Party', plural: 'Parties', intro: 'Political affiliations represented across the 2013–2026 filing data.' },
     places: { singular: 'Place', plural: 'Places', intro: 'Browse archived candidates by their published city and county.' }
   };
 

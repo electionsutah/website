@@ -165,7 +165,7 @@
       {/if}
     {:else}
       <div class="search-start">
-        <p>Search across the combined 2017–2026 directory.</p>
+        <p>Search across the combined 2013–2026 directory.</p>
         <div>{#each groups as group}<a href={group.browseHref} onclick={(event) => open(event, group.browseHref)}><strong>{formatCount(group.items.length)}</strong><span>{group.label}</span></a>{/each}</div>
       </div>
     {/if}

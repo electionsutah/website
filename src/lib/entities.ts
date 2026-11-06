@@ -141,7 +141,65 @@ export function slug(value: string): string {
 
 // Source spellings of the same person that the identity key would otherwise keep apart.
 const identityAliases: Record<string, string> = {
-  josephrbidenjr: 'josephrbiden'
+  josephrbidenjr: 'josephrbiden',
+  aletataylor: 'aletaandersentaylor',
+  johnwestwood: 'johnrwestwood',
+  justinfawson: 'justinlfawson',
+  kathieljohnson: 'kathielynnjohnson',
+  markwoolley: 'marktwoolley',
+  amymorgan: 'amysteedmorgan',
+  angelawalker: 'angelanicolewalker',
+  bradwilson: 'bradrwilson',
+  bradleydaw: 'bradleymdaw',
+  braddaw: 'bradleymdaw',
+  carlalbrecht: 'carlralbrecht',
+  christinefwatkins: 'christinefacerwatkins',
+  codystromberg: 'codywstromberg',
+  davidelse: 'davidaelse',
+  davidfair: 'davidbfair',
+  davidphinkins: 'davidparleyhinkins',
+  davidhinkins: 'davidparleyhinkins',
+  derkptimothy: 'derkpowelltimothy',
+  dirkburton: 'dirksburton',
+  elisemorgan: 'elisedelunamorgan',
+  elizabethweight: 'elizabethlweight',
+  jamesmossjr: "jamesrexmossjr",
+  jeffersonmoss: "jeffersonrmoss",
+  johndougall: "johnfrugaldougall",
+  kayjchristofferson: "kayjefferychristofferson",
+  kimrolfe: "kimvrolfe",
+  kirkpearson: "kirkdpearson",
+  lynnhemingway: "lynnnhemingway"
+};
+
+// Explicitly reviewed names stay stable even when a newer source abbreviates them.
+const preferredPersonNames: Record<string, string> = {
+  aletaandersentaylor: 'Aleta Andersen Taylor',
+  johnrwestwood: 'John R. Westwood',
+  justinlfawson: 'Justin L. Fawson',
+  kathielynnjohnson: 'Kathie Lynn Johnson',
+  marktwoolley: 'Mark T. Woolley',
+  amysteedmorgan: 'Amy Steed Morgan',
+  angelanicolewalker: 'Angela Nicole Walker',
+  bradrwilson: 'Brad R Wilson',
+  bradleymdaw: 'Bradley M. Daw',
+  carlralbrecht: 'Carl R. Albrecht',
+  christinefacerwatkins: 'Christine Facer Watkins',
+  codywstromberg: 'Cody W. Stromberg',
+  davidaelse: 'David A Else',
+  davidbfair: 'David B Fair',
+  davidparleyhinkins: 'David Parley Hinkins',
+  derkpowelltimothy: 'Derk Powell Timothy',
+  dirksburton: 'Dirk S. Burton',
+  elisedelunamorgan: 'Elise Deluna Morgan',
+  elizabethlweight: 'Elizabeth L. Weight',
+  jamesrexmossjr: "James Rex Moss, Jr.",
+  jeffersonrmoss: "Jefferson R Moss",
+  johnfrugaldougall: "John \"Frugal\" Dougall",
+  kayjefferychristofferson: "Kay Jeffery Christofferson",
+  kimvrolfe: "Kim V. Rolfe",
+  kirkdpearson: "Kirk D Pearson",
+  lynnnhemingway: "Lynn N. Hemingway"
 };
 
 export function identityKey(value: string): string {
@@ -430,9 +488,9 @@ for (const { filing, name } of filingPeople) {
   const person = personMap.get(matchKey) ?? { id: slug(name), name, initials: initialsOf(name), filings: [], years: [] };
   person.filings.push(filing);
   if (filing.year >= Math.max(...person.filings.map((item) => item.year))) {
-    person.name = name;
-    person.id = slug(name);
-    person.initials = initialsOf(name);
+    person.name = preferredPersonNames[matchKey] ?? name;
+    person.id = slug(person.name);
+    person.initials = initialsOf(person.name);
   }
   person.years = uniqueNumbers(person.filings.map((item) => item.year));
   personMap.set(matchKey, person);
@@ -599,7 +657,11 @@ const cycleDetails: Omit<ElectionCycle, 'filings'>[] = [
   { year: 2020, title: '2020 regular election', description: 'Primary and general-election candidates recovered from Utah’s official statewide canvass workbooks.', source: 'https://vote.utah.gov/2020-election-records/', sourceLabel: 'Official 2020 election records', availability: 'statewide' },
   { year: 2019, title: '2019 municipal elections', description: 'Municipal filing records retained from the original Elections Utah archive.', source: 'https://vote.utah.gov/2019-election-records/', sourceLabel: 'Official 2019 election records', availability: 'local' },
   { year: 2018, title: '2018 regular election', description: 'Federal, legislative, and state school-board candidate records retained from the original Elections Utah archive.', source: 'https://vote.utah.gov/2018-election-records/', sourceLabel: 'Official 2018 election records', availability: 'statewide' },
-  { year: 2017, title: '2017 municipal and special elections', description: 'Municipal candidate filings and the congressional special-election record retained from the original Elections Utah archive.', source: 'https://vote.utah.gov/historical-election-records-and-documents/', sourceLabel: 'Official historical records index', availability: 'local' }
+  { year: 2017, title: '2017 municipal and special elections', description: 'Municipal candidate filings and the congressional special-election record retained from the original Elections Utah archive.', source: 'https://vote.utah.gov/historical-election-records-and-documents/', sourceLabel: 'Official historical records index', availability: 'local' },
+  { year: 2016, title: '2016 regular election', description: 'Primary and general-election ballot candidates for federal, state, legislative, state school-board, and judicial-retention offices recovered from official statewide canvasses. These ballot rosters do not include every person who filed or withdrew.', source: 'https://vote.utah.gov/historical-election-results/', sourceLabel: 'Official statewide canvasses', availability: 'statewide' },
+  { year: 2015, title: '2015 municipal elections', description: 'Primary and general-election ballot candidates for mayor and council offices in Salt Lake County’s official municipal results. Coverage is limited to Salt Lake County; other counties and candidates absent from the ballots are not included.', source: 'https://www.saltlakecounty.gov/clerk/elections/election-results/', sourceLabel: 'Official Salt Lake County election results', availability: 'local' },
+  { year: 2014, title: '2014 regular election', description: 'Primary and general-election ballot candidates for federal, state, legislative, state school-board, and judicial-retention offices recovered from official statewide canvasses. These ballot rosters do not include every person who filed or withdrew.', source: 'https://vote.utah.gov/historical-election-results/', sourceLabel: 'Official statewide canvasses', availability: 'statewide' },
+  { year: 2013, title: '2013 municipal elections', description: 'Primary and general-election ballot candidates for mayor and council offices in Salt Lake County’s official municipal results. Coverage is limited to Salt Lake County; other counties and candidates absent from the ballots are not included.', source: 'https://www.saltlakecounty.gov/clerk/elections/election-results/', sourceLabel: 'Official Salt Lake County election results', availability: 'local' }
 ];
 
 export const elections: ElectionCycle[] = cycleDetails.map((cycle) => ({
