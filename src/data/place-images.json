@@ -43,6 +43,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Box_Elder_County_Courthouse1.jpg",
   "file": "Box Elder County Courthouse1.jpg"
  },
+ "box-elder/bear-river-city": {
+  "src": "/images/places/box-elder/bear-river-city.webp",
+  "width": 800,
+  "height": 533,
+  "title": "Bear River City Edited",
+  "artist": "Bear_River_City.jpg: GreenGlass1972 derivative work: GreenGlass1972 (talk)",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bear_River_City_Edited.jpg",
+  "file": "Bear River City Edited.jpg"
+ },
  "box-elder/brigham-city": {
   "src": "/images/places/box-elder/brigham-city.webp",
   "width": 1280,
@@ -175,6 +186,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:LoganUtahCourthouse.jpg",
   "file": "LoganUtahCourthouse.jpg"
  },
+ "cache/amalga": {
+  "src": "/images/places/cache/amalga.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Amalga Utah Town Hall",
+  "artist": "Ntsimp",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amalga_Utah_Town_Hall.jpeg",
+  "file": "Amalga Utah Town Hall.jpeg"
+ },
  "cache/clarkston": {
   "src": "/images/places/cache/clarkston.webp",
   "width": 1280,
@@ -229,6 +251,17 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:LoganUtahCourthouse.jpg",
   "file": "LoganUtahCourthouse.jpg"
+ },
+ "cache/mendon": {
+  "src": "/images/places/cache/mendon.webp",
+  "width": 1280,
+  "height": 851,
+  "title": "Mendon Utah Station",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mendon_Utah_Station.jpeg",
+  "file": "Mendon Utah Station.jpeg"
  },
  "cache/newton": {
   "src": "/images/places/cache/newton.webp",
@@ -571,6 +604,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duchesne_County_Courthouse,_Duchesne,_Utah.jpg",
   "file": "Duchesne County Courthouse, Duchesne, Utah.jpg"
  },
+ "duchesne/duchesne": {
+  "src": "/images/places/duchesne/duchesne.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Duchesne Utah",
+  "artist": "Danenlott",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duchesne_Utah.JPG",
+  "file": "Duchesne Utah.JPG"
+ },
  "duchesne/roosevelt": {
   "src": "/images/places/duchesne/roosevelt.webp",
   "width": 1280,
@@ -614,6 +658,17 @@
   "licenseUrl": "",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emery_LDS_Church_Emery_Utah.jpeg",
   "file": "Emery LDS Church Emery Utah.jpeg"
+ },
+ "emery/ferron": {
+  "src": "/images/places/emery/ferron.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "FerronUtah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:FerronUtah.jpeg",
+  "file": "FerronUtah.jpeg"
  },
  "emery/green-river": {
   "src": "/images/places/emery/green-river.webp",
@@ -934,6 +989,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Territorial_Statehouse_in_Fillmore_Utah.jpg",
   "file": "Territorial Statehouse in Fillmore Utah.jpg"
  },
+ "millard/holden": {
+  "src": "/images/places/millard/holden.webp",
+  "width": 960,
+  "height": 1280,
+  "title": "From a Plane",
+  "artist": "Keagan",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:From_a_Plane.jpg",
+  "file": "From a Plane.jpg"
+ },
  "millard/kanosh": {
   "src": "/images/places/millard/kanosh.webp",
   "width": 1280,
@@ -945,6 +1011,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanosh_Utah_town_hall.jpeg",
   "file": "Kanosh Utah town hall.jpeg"
  },
+ "millard/leamington": {
+  "src": "/images/places/millard/leamington.webp",
+  "width": 1024,
+  "height": 768,
+  "title": "Sevier River Leamington Utah",
+  "artist": "w:Flickr user rcstanley",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sevier_River_Leamington_Utah.jpg",
+  "file": "Sevier River Leamington Utah.jpg"
+ },
  "morgan": {
   "src": "/images/places/morgan.webp",
   "width": 851,
@@ -955,6 +1032,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Devils_Slide_Utah.jpg",
   "file": "Devils Slide Utah.jpg"
+ },
+ "morgan/morgan": {
+  "src": "/images/places/morgan/morgan.webp",
+  "width": 1280,
+  "height": 882,
+  "title": "MorganUtah",
+  "artist": "Tricia Simpson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:MorganUtah.jpeg",
+  "file": "MorganUtah.jpeg"
  },
  "piute": {
   "src": "/images/places/piute.webp",
@@ -1087,6 +1175,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bluffdale_Fire_Station.jpg",
   "file": "Bluffdale Fire Station.jpg"
+ },
+ "salt-lake/copperton": {
+  "src": "/images/places/salt-lake/copperton.webp",
+  "width": 727,
+  "height": 516,
+  "title": "Historic Image of Copperton, Utah",
+  "artist": "Image: Copperton, Utah. Street of Copperton, Utah showing the Utah Copper Company archway into the park, as well as a Bingham Stage Line Company bus. Copperton was built as a model mining town for employees of the Utah Copper Company when Bingham became overcrowded. Courtesy of Utah State Historical Society",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Historic_Image_of_Copperton,_Utah.png",
+  "file": "Historic Image of Copperton, Utah.png"
  },
  "salt-lake/cottonwood-heights": {
   "src": "/images/places/salt-lake/cottonwood-heights.webp",
@@ -1308,6 +1407,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blanding_Utah_city_office.jpeg",
   "file": "Blanding Utah city office.jpeg"
  },
+ "san-juan/bluff": {
+  "src": "/images/places/san-juan/bluff.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Bluff, Utah (from east)",
+  "artist": "François5000",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bluff,_Utah_(from_east).jpg",
+  "file": "Bluff, Utah (from east).jpg"
+ },
  "san-juan/monticello": {
   "src": "/images/places/san-juan/monticello.webp",
   "width": 1280,
@@ -1330,6 +1440,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanpete_county_courthouse_utah_9-18-2010.jpg",
   "file": "Sanpete county courthouse utah 9-18-2010.jpg"
  },
+ "sanpete/centerfield": {
+  "src": "/images/places/sanpete/centerfield.webp",
+  "width": 1280,
+  "height": 759,
+  "title": "Centerfield Utah Town Hall",
+  "artist": "No machine-readable author provided. C.Maylett assumed (based on copyright claims).",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Centerfield_Utah_Town_Hall.jpg",
+  "file": "Centerfield Utah Town Hall.jpg"
+ },
  "sanpete/ephraim": {
   "src": "/images/places/sanpete/ephraim.webp",
   "width": 1280,
@@ -1351,6 +1472,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fairview,_Utah_(4).jpg",
   "file": "Fairview, Utah (4).jpg"
+ },
+ "sanpete/fayette": {
+  "src": "/images/places/sanpete/fayette.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Fayette Utah town hall",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fayette_Utah_town_hall.jpeg",
+  "file": "Fayette Utah town hall.jpeg"
  },
  "sanpete/gunnison": {
   "src": "/images/places/sanpete/gunnison.webp",
@@ -1472,6 +1604,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Rock_Schoolhouse_Elsinore_Utah.jpeg",
   "file": "White Rock Schoolhouse Elsinore Utah.jpeg"
+ },
+ "sevier/joseph": {
+  "src": "/images/places/sevier/joseph.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Joseph Utah welcome sign",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Utah_welcome_sign.jpeg",
+  "file": "Joseph Utah welcome sign.jpeg"
  },
  "sevier/koosharem": {
   "src": "/images/places/sevier/koosharem.webp",
@@ -1682,6 +1825,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tooele_Utah_City_Hall.jpeg",
   "file": "Tooele Utah City Hall.jpeg"
  },
+ "tooele/wendover": {
+  "src": "/images/places/tooele/wendover.webp",
+  "width": 640,
+  "height": 480,
+  "title": "Wendover Blvd at Aria Blvd",
+  "artist": "Sascha Brück",
+  "license": "CC BY-SA 2.0 de",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wendover_Blvd_at_Aria_Blvd.jpg",
+  "file": "Wendover Blvd at Aria Blvd.jpg"
+ },
  "uintah": {
   "src": "/images/places/uintah.webp",
   "width": 1280,
@@ -1780,6 +1934,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elk_Ridge,_UT.jpg",
   "file": "Elk Ridge, UT.jpg"
+ },
+ "utah/fairfield": {
+  "src": "/images/places/utah/fairfield.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Old Fairfield (Utah) Schoolhouse",
+  "artist": "Staplegunther at en.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Fairfield_(Utah)_Schoolhouse.jpg",
+  "file": "Old Fairfield (Utah) Schoolhouse.jpg"
  },
  "utah/genola": {
   "src": "/images/places/utah/genola.webp",
@@ -1902,6 +2067,17 @@
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Welcome_to_Salem_(33489846352).jpg",
   "file": "Welcome to Salem (33489846352).jpg"
  },
+ "utah/santaquin": {
+  "src": "/images/places/utah/santaquin.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Chieftain Museum Santaquin Utah",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chieftain_Museum_Santaquin_Utah.jpeg",
+  "file": "Chieftain Museum Santaquin Utah.jpeg"
+ },
  "utah/spanish-fork": {
   "src": "/images/places/utah/spanish-fork.webp",
   "width": 1280,
@@ -2011,6 +2187,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_across_Midway,_Utah_from_SR-222._Apr_16.jpg",
   "file": "East across Midway, Utah from SR-222. Apr 16.jpg"
+ },
+ "wasatch/wallsburg": {
+  "src": "/images/places/wasatch/wallsburg.webp",
+  "width": 1280,
+  "height": 960,
+  "title": "Wallsburg Utah Community Center",
+  "artist": "Ntsimp",
+  "license": "Public domain",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wallsburg_Utah_Community_Center.jpeg",
+  "file": "Wallsburg Utah Community Center.jpeg"
  },
  "washington": {
   "src": "/images/places/washington.webp",
@@ -2176,6 +2363,17 @@
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loa_Tithing_Office_Loa_Utah.jpeg",
   "file": "Loa Tithing Office Loa Utah.jpeg"
+ },
+ "wayne/hanksville": {
+  "src": "/images/places/wayne/hanksville.webp",
+  "width": 1280,
+  "height": 848,
+  "title": "UT-24 in Hanksville, Utah 20110814 1",
+  "artist": "DXR",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:UT-24_in_Hanksville,_Utah_20110814_1.jpg",
+  "file": "UT-24 in Hanksville, Utah 20110814 1.jpg"
  },
  "weber": {
   "src": "/images/places/weber.webp",

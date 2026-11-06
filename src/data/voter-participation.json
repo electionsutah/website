@@ -1,0 +1,160 @@
+{
+ "election": "2024 General Election",
+ "electionDate": "2024-11-05",
+ "certifiedOn": "2024-11-25",
+ "sourceUrl": "https://vote.utah.gov/wp-content/uploads/2025/02/2024-General-Election-Statewide-Canvass-2.pdf",
+ "sourcePage": 3,
+ "denominator": "Active registered voters in the 2024 certified canvass",
+ "state": {
+  "activeRegistered": 1793419,
+  "ballotsCast": 1529138,
+  "turnoutPercent": 85.26
+ },
+ "counties": {
+  "beaver": {
+   "activeRegistered": 3793,
+   "ballotsCast": 3253,
+   "turnoutPercent": 85.76
+  },
+  "box-elder": {
+   "activeRegistered": 33569,
+   "ballotsCast": 29668,
+   "turnoutPercent": 88.38
+  },
+  "cache": {
+   "activeRegistered": 72011,
+   "ballotsCast": 62148,
+   "turnoutPercent": 86.3
+  },
+  "carbon": {
+   "activeRegistered": 11479,
+   "ballotsCast": 9610,
+   "turnoutPercent": 83.72
+  },
+  "daggett": {
+   "activeRegistered": 651,
+   "ballotsCast": 557,
+   "turnoutPercent": 85.56
+  },
+  "davis": {
+   "activeRegistered": 202927,
+   "ballotsCast": 172869,
+   "turnoutPercent": 85.19
+  },
+  "duchesne": {
+   "activeRegistered": 10630,
+   "ballotsCast": 9067,
+   "turnoutPercent": 85.3
+  },
+  "emery": {
+   "activeRegistered": 5885,
+   "ballotsCast": 5077,
+   "turnoutPercent": 86.27
+  },
+  "garfield": {
+   "activeRegistered": 3216,
+   "ballotsCast": 2857,
+   "turnoutPercent": 88.84
+  },
+  "grand": {
+   "activeRegistered": 5872,
+   "ballotsCast": 5371,
+   "turnoutPercent": 91.47
+  },
+  "iron": {
+   "activeRegistered": 32149,
+   "ballotsCast": 28457,
+   "turnoutPercent": 88.52
+  },
+  "juab": {
+   "activeRegistered": 7506,
+   "ballotsCast": 6616,
+   "turnoutPercent": 88.14
+  },
+  "kane": {
+   "activeRegistered": 5106,
+   "ballotsCast": 4560,
+   "turnoutPercent": 89.31
+  },
+  "millard": {
+   "activeRegistered": 7382,
+   "ballotsCast": 6500,
+   "turnoutPercent": 88.05
+  },
+  "morgan": {
+   "activeRegistered": 8149,
+   "ballotsCast": 7005,
+   "turnoutPercent": 85.96
+  },
+  "piute": {
+   "activeRegistered": 1094,
+   "ballotsCast": 977,
+   "turnoutPercent": 89.31
+  },
+  "rich": {
+   "activeRegistered": 1585,
+   "ballotsCast": 1465,
+   "turnoutPercent": 92.43
+  },
+  "salt-lake": {
+   "activeRegistered": 614757,
+   "ballotsCast": 521789,
+   "turnoutPercent": 84.88
+  },
+  "san-juan": {
+   "activeRegistered": 7618,
+   "ballotsCast": 6441,
+   "turnoutPercent": 84.55
+  },
+  "sanpete": {
+   "activeRegistered": 15660,
+   "ballotsCast": 13226,
+   "turnoutPercent": 84.46
+  },
+  "sevier": {
+   "activeRegistered": 12449,
+   "ballotsCast": 11072,
+   "turnoutPercent": 88.94
+  },
+  "summit": {
+   "activeRegistered": 29718,
+   "ballotsCast": 26482,
+   "turnoutPercent": 89.11
+  },
+  "tooele": {
+   "activeRegistered": 41656,
+   "ballotsCast": 34652,
+   "turnoutPercent": 83.19
+  },
+  "uintah": {
+   "activeRegistered": 18490,
+   "ballotsCast": 16036,
+   "turnoutPercent": 86.73
+  },
+  "utah": {
+   "activeRegistered": 368875,
+   "ballotsCast": 308981,
+   "turnoutPercent": 83.76
+  },
+  "wasatch": {
+   "activeRegistered": 21875,
+   "ballotsCast": 18979,
+   "turnoutPercent": 86.76
+  },
+  "washington": {
+   "activeRegistered": 112656,
+   "ballotsCast": 99137,
+   "turnoutPercent": 88.0
+  },
+  "wayne": {
+   "activeRegistered": 1862,
+   "ballotsCast": 1674,
+   "turnoutPercent": 89.9
+  },
+  "weber": {
+   "activeRegistered": 134799,
+   "ballotsCast": 114612,
+   "turnoutPercent": 85.02
+  }
+ }
+}

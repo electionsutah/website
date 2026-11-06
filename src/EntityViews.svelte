@@ -18,6 +18,7 @@
   import PersonAvatar from './PersonAvatar.svelte';
   import personPhotoData from './data/person-photos.json';
   import voterRegistration from './data/voter-registration.json';
+  import voterParticipation from './data/voter-participation.json';
   import {
     activeStatuses,
     candidacies,
@@ -71,7 +72,9 @@
     officialWebsite: string;
     population?: number;
     populationAsOf?: string;
-    populationSource?: 'Wikidata' | 'Wikipedia';
+    populationSource?: string;
+    /** Set when the figure comes from somewhere other than the Wikidata/Wikipedia page. */
+    populationSourceUrl?: string;
     inceptionDate?: string | null;
     inceptionPrecision?: number | null;
   };
@@ -105,11 +108,14 @@
   $: party = section === 'parties' && id ? partiesById.get(id) : undefined;
   $: place = section === 'places' && id ? placesById.get(id) : undefined;
   $: placeProfile = place ? profilesById[place.id] : undefined;
-  $: placeImage = place ? placeImages[place.id] : undefined;
+  $: placeImage = place ? placeImages[place.id] ?? placeImages[place.parentId] : undefined;
+  $: placeImageFallback = !!place && !placeImages[place.id] && !!placeImage;
   $: personPhoto = person ? (personPhotoData as Record<string, PlaceImage & { via: string }>)[person.id] : undefined;
   $: placeEmblem = place ? placeEmblems[place.id] : undefined;
-  // The state publishes active voters by county only; nothing by city or district.
-  $: placeVoters = place?.type === 'County' ? (voterRegistration.counties as Record<string, { active: number }>)[place.id] : undefined;
+  // Municipal pages show explicitly labeled county context; these are never city counts.
+  $: voterCountyId = place ? (place.type === 'County' ? place.id : place.parentId) : '';
+  $: placeVoters = (voterRegistration.counties as Record<string, { name: string; active: number; parties: Record<string, number> }>)[voterCountyId];
+  $: placeParticipation = (voterParticipation.counties as Record<string, { activeRegistered: number; ballotsCast: number; turnoutPercent: number }>)[voterCountyId];
   // Municipal offices (mayor, council) show their city's photo and county offices their county's. District
   // offices list candidates' home cities, which only partly overlap the district, so they keep the plain hero.
   $: officeCity = office?.sections.includes('Municipal office') ? office.placeIds.map((id) => placesById.get(id)).filter((row) => row && row.type !== 'County')
@@ -464,38 +470,48 @@
     <article class="entity-detail">
       <Breadcrumbs parent={[{ label: 'Places', href: '/places/' }, ...(placeCounty ? [{ label: placeCounty.name, href: hrefFor('places', placeCounty.id) }] : [])]} current={place.name} {navigate} />
       <header class="detail-hero compact-hero place-hero">
-        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<PhotoCredit image={placeImage} />{/if}</div>
-        {#if placeProfile}
+        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<PhotoCredit image={placeImage} label={placeImageFallback ? `${place.county} County photo` : 'Photo'} />{/if}</div>
           <section class="place-profile" aria-labelledby="place-profile-title">
             <div class="place-summary">
               <p class="eyebrow">Place profile</p>
               <h2 id="place-profile-title">About {place.name}</h2>
-              <p>{placeProfile.summary}</p>
-              <a href={placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">Wikipedia <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
+              <p>{placeProfile?.summary ?? `${place.name} is represented in the ${place.county} County election archive. A sourced local profile is not yet available.`}</p>
+              {#if placeProfile}<a href={placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">Wikipedia <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>{/if}
               {#if placeEmblem}<PhotoCredit image={placeEmblem} label={placeEmblem.kind.charAt(0).toUpperCase() + placeEmblem.kind.slice(1)} className="emblem-credit" />{/if}
             </div>
             <div class="place-facts-row" class:has-boundary={!!boundary}>
             <div class="place-facts" class:has-voters={!!placeVoters}>
-              {#if placeProfile.population}<article class="population-card">
+              {#if placeProfile?.population != null}<article class="population-card">
                 <small>{placeProfile.populationAsOf === '2020-04-01' ? '2020 census population' : placeProfile.populationAsOf ? `${placeProfile.populationAsOf.slice(0, 4)} population` : 'Population'}</small>
                 <strong>{placeProfile.population.toLocaleString('en-US')}</strong>
-                <p>Reported figure{placeProfile.populationAsOf ? ` · ${placeProfile.populationAsOf.slice(0, 4)}` : ''}</p>
-                <a href={placeProfile.populationSource === 'Wikidata' ? placeProfile.wikidataUrl : placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">{placeProfile.populationSource} <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
+                <p>{placeProfile.populationSourceUrl ? 'Approximate figure' : 'Reported figure'}{placeProfile.populationAsOf ? ` · ${placeProfile.populationAsOf.slice(0, 4)}` : ''}</p>
+                <a href={placeProfile.populationSourceUrl ?? (placeProfile.populationSource === 'Wikidata' ? placeProfile.wikidataUrl : placeProfile.wikipediaUrl)} target="_blank" rel="noreferrer">{placeProfile.populationSource} <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
               </article>{/if}
               {#if placeVoters}
                 <article class="voters-card">
-                  <small>Active registered voters</small>
+                  <small>{place.type === 'County' ? 'Active registered voters' : `${placeVoters.name} active voters`}</small>
                   <strong>{formatCount(placeVoters.active)}</strong>
                   <p>Lt. Governor's office · {formatDate(voterRegistration.asOf)}</p>
+                  {#if place.type !== 'County'}<p>Countywide context; city registration counts are not published in this report.</p>{/if}
+                  <details class="voter-parties"><summary>Registration by party</summary><dl>{#each Object.entries(placeVoters.parties).sort((a, b) => b[1] - a[1]) as [party, count]}<div><dt>{party}</dt><dd>{formatCount(count)}</dd></div>{/each}</dl></details>
                   <a href={voterRegistration.sources.statistics} target="_blank" rel="noreferrer">vote.utah.gov <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
                 </article>
               {/if}
-              {#if placeProfile.inceptionDate}<article class="inception-card">
+              {#if placeParticipation}
+                <article class="participation-card">
+                  <small>2024 general election turnout{place.type !== 'County' ? ` · ${place.county} County` : ''}</small>
+                  <strong>{placeParticipation.turnoutPercent.toFixed(2)}%</strong>
+                  <p>{formatCount(placeParticipation.ballotsCast)} ballots cast / {formatCount(placeParticipation.activeRegistered)} active registered voters in the 2024 canvass.</p>
+                  <p>Certified November 25, 2024.{place.type !== 'County' ? ' Countywide context, not city turnout.' : ''}</p>
+                  <a href={voterParticipation.sourceUrl} target="_blank" rel="noreferrer">Certified canvass <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
+                </article>
+              {/if}
+              {#if placeProfile?.inceptionDate}<article class="inception-card">
                 <small>Founded / established</small>
                 <strong>{formatInception(placeProfile)}</strong>
                 <a href={placeProfile.wikidataUrl} target="_blank" rel="noreferrer">Wikidata <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>
               </article>{/if}
-              {#if placeProfile.officialWebsite}<article class="website-card">
+              {#if placeProfile?.officialWebsite}<article class="website-card">
                 <small>Official Website</small>
                 <strong><a href={placeProfile.officialWebsite} target="_blank" rel="noreferrer">{new URL(placeProfile.officialWebsite).hostname.replace(/^www\./, '')}<span class="sr-only"> (opens in new tab)</span></a></strong>
                 <p>{place.type === 'County' ? 'County government website' : 'Local government website'}</p>
@@ -505,7 +521,6 @@
             {#if boundary}<BoundaryMap map={boundary} fit="fill" className="place-boundary" />{/if}
             </div>
           </section>
-        {/if}
       </header>
       <section class="detail-stats">
         <div><small>OFFICES</small><strong>{place.offices.length}</strong></div>

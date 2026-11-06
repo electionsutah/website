@@ -301,3 +301,13 @@ main:focus,main h1:focus{outline:0}
 /* Officeholder photos fill the avatar box (already cropped square). */
 .photo-avatar{overflow:hidden;padding:0;background:#d8d7d1}.photo-avatar img{display:block;width:100%;height:100%;object-fit:cover}
 .search-result>.photo-avatar{padding:0}
+
+/* Dated county registration and certified election participation on every place page. */
+.voter-parties{margin-top:16px;font-size:12px;color:#5f5e59}
+.voter-parties summary{cursor:pointer;color:#006eb7;font-weight:700}
+.voter-parties dl{margin:12px 0 0}
+.voter-parties dl>div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:5px 0;border-top:1px solid #c8c6c0}
+.voter-parties dd{margin:0;font-variant-numeric:tabular-nums}
+.participation-card{grid-column:1/-1;border-left:0!important;border-top:1px solid #c8c6c0}
+.participation-card>strong{display:block;font:700 clamp(28px,2.3vw,48px)/1 'Source Serif 4',serif;letter-spacing:-.045em}
+.participation-card>p{margin:10px 0 0;color:#5f5e59;font:400 12px/1.45 'Source Serif 4',serif}

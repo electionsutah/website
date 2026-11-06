@@ -1445,7 +1445,7 @@
  "weber/eden": {
   "wikipediaTitle": "Eden, Utah",
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Eden%2C_Utah",
-  "summary": "Eden is a census-designated place in Weber County, Utah, United States. It is home to Powder Mountain ski resort. It lies between the North and Middle Fork of the Ogden River, north of Pineview Reservoir, in the Ogden Valley. The population was 690 at the 2020 census. It has a post office with the ZIP code 84310. Eden is part of the Ogden–Clearfield, Utah Metropolitan Statistical Area, as well as the Ogden Valley census county division",
+  "summary": "Eden is a community in Weber County, Utah, United States, and part of Ogden Valley City, which incorporated in January 2026. It is home to Powder Mountain ski resort and lies between the North and Middle Fork of the Ogden River, north of Pineview Reservoir, in the Ogden Valley. It was previously an unincorporated census-designated place; the population was 690 at the 2020 census. It has a post office with the ZIP code 84310.",
   "wikidataId": "Q5336799",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q5336799",
   "officialWebsite": "https://www.webercountyutah.gov/",
@@ -1484,7 +1484,7 @@
  "weber/liberty": {
   "wikipediaTitle": "Liberty, Utah",
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Liberty%2C_Utah",
-  "summary": "Liberty is a census-designated place in Weber County, Utah, United States. The population was 1,522 at the 2020 census. It is part of the Ogden–Clearfield, Utah Metropolitan Statistical Area, as well as the Ogden Valley census county division.",
+  "summary": "Liberty is a community in Weber County, Utah, United States, and part of Ogden Valley City, which incorporated in January 2026. It was previously an unincorporated census-designated place; the population was 1,522 at the 2020 census. It is part of the Ogden–Clearfield, Utah Metropolitan Statistical Area.",
   "wikidataId": "Q5974828",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q5974828",
   "officialWebsite": "https://www.webercountyutah.gov/",
@@ -1656,12 +1656,13 @@
   "summary": "Howell is a town located in the Blue Creek Valley in northeast Box Elder County, Utah, United States. The population was 240 at the 2020 census.",
   "wikidataId": "Q482480",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482480",
-  "officialWebsite": "",
+  "officialWebsite": "https://howelltown.utah.gov/",
   "population": 240,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1910-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Howell%2C_Utah"
  },
  "box-elder/mantua": {
   "wikipediaTitle": "Mantua, Utah",
@@ -1708,12 +1709,13 @@
   "summary": "Clarkston is a town in Cache County, Utah, United States. The population was 749 at the 2020 census. It is included in the Logan, Utah-Idaho Metropolitan Statistical Area. The community celebration is held in June each year and is known as The Pony Express Days.",
   "wikidataId": "Q482467",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482467",
-  "officialWebsite": "",
+  "officialWebsite": "https://clarkstonutah.gov/",
   "population": 749,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1864-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Clarkston%2C_Utah"
  },
  "cache/hyde-park": {
   "wikipediaTitle": "Hyde Park, Utah",
@@ -1747,12 +1749,13 @@
   "summary": "Newton is a town in Cache County, Utah, United States. It was founded in 1869 by pioneers of the Church of Jesus Christ of Latter-day Saints. The population was 899 at the 2020 census. It is included in the Logan, Utah-Idaho Metropolitan Statistical Area.",
   "wikidataId": "Q482895",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482895",
-  "officialWebsite": "",
+  "officialWebsite": "https://www.newtonutah.gov/",
   "population": 787,
   "populationAsOf": "2012-01-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1869-01-01",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Newton%2C_Utah"
  },
  "cache/providence": {
   "wikipediaTitle": "Providence, Utah",
@@ -1786,12 +1789,13 @@
   "summary": "Trenton is a town in Cache County, Utah, United States. The population was 512 at the 2020 census. It is included in the Logan, Utah-Idaho (partial) Metropolitan Statistical Area.",
   "wikidataId": "Q482687",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482687",
-  "officialWebsite": "",
+  "officialWebsite": "https://trenton-ut.gov/",
   "population": 512,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1870-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Trenton%2C_Utah"
  },
  "cache/wellsville": {
   "wikipediaTitle": "Wellsville, Utah",
@@ -1838,12 +1842,13 @@
   "summary": "Scofield is a town in Carbon County, Utah, United States. The population was 26 at the 2020 census. Scofield's name is frequently applied to the 1900 mine disaster in the Pleasant Valley Coal Company's Winter Quarters mine. The community was named for General Charles W. Scofield, a timber contractor and local mine official. It is the smallest incorporated area in Utah by population.",
   "wikidataId": "Q482489",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482489",
-  "officialWebsite": "",
+  "officialWebsite": "https://www.scofieldtown.org/",
   "population": 26,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1879-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Scofield%2C_Utah"
  },
  "carbon/wellington": {
   "wikipediaTitle": "Wellington, Utah",
@@ -1851,12 +1856,13 @@
   "summary": "Wellington is a city in Carbon County, Utah, United States. The population was 1,605 at the 2020 census. The community was settled in 1878 by a band of thirteen Mormons led by Jefferson Tidwell. The town was named for Justus Wellington Seeley, Jr., of the Emery County Court. Many residents commute to nearby Price for their jobs, or work in one of the various coal mines in the area.",
   "wikidataId": "Q482904",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482904",
-  "officialWebsite": "",
+  "officialWebsite": "https://www.wellingtonutah.gov/",
   "population": 1605,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1878-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Wellington%2C_Utah"
  },
  "daggett": {
   "wikipediaTitle": "Daggett County, Utah",
@@ -1929,12 +1935,13 @@
   "summary": "Castle Dale is a city in northwestern Emery County, Utah, United States. The population was 1,492 at the 2020 census. It is the county seat of Emery County.",
   "wikidataId": "Q130074",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q130074",
-  "officialWebsite": "",
+  "officialWebsite": "http://www.emerycounty.com/castledale/castledale.htm",
   "population": 1492,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1877-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Castle_Dale%2C_Utah"
  },
  "emery/emery": {
   "wikipediaTitle": "Emery, Utah",
@@ -1981,12 +1988,13 @@
   "summary": "Cannonville is a town in Garfield County, Utah, United States, along Utah Scenic Byway 12. As of the 2020 census, the population was 186.",
   "wikidataId": "Q482689",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482689",
-  "officialWebsite": "",
+  "officialWebsite": "https://cannonville.gov/",
   "population": 186,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1874-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Cannonville%2C_Utah"
  },
  "garfield/henrieville": {
   "wikipediaTitle": "Henrieville, Utah",
@@ -2059,12 +2067,13 @@
   "summary": "Paragonah is a town in Iron County, Utah, United States. The population was 536 at the 2020 census.",
   "wikidataId": "Q385536",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q385536",
-  "officialWebsite": "",
+  "officialWebsite": "https://paragonahtown.gov/",
   "population": 536,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1851-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Paragonah%2C_Utah"
  },
  "iron/parowan": {
   "wikipediaTitle": "Parowan, Utah",
@@ -2098,12 +2107,13 @@
   "summary": "Mona is a city in Juab County, Utah, United States. As of the 2020 census it had a population of 1,750. It is part of the Provo–Orem metropolitan area.",
   "wikidataId": "Q483698",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483698",
-  "officialWebsite": "",
+  "officialWebsite": "https://www.monautah.gov/",
   "population": 1750,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1852-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Mona%2C_Utah"
  },
  "juab/nephi": {
   "wikipediaTitle": "Nephi, Utah",
@@ -2150,12 +2160,13 @@
   "summary": "Glendale is a town in Kane County, Utah, United States. The population was 312 at the 2020 census.",
   "wikidataId": "Q482682",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482682",
-  "officialWebsite": "",
+  "officialWebsite": "https://www.glendaletownutah.gov/",
   "population": 312,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1862-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Glendale%2C_Utah"
  },
  "kane/orderville": {
   "wikipediaTitle": "Orderville, Utah",
@@ -2163,12 +2174,13 @@
   "summary": "Orderville is a town in western Kane County, Utah, United States. The population was 598 at the 2020 census. The town was founded and operated under the United Order of the Church of Jesus Christ of Latter-day Saints. This system allowed the community to flourish for some time, but ultimately ended in 1885.",
   "wikidataId": "Q483345",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483345",
-  "officialWebsite": "",
+  "officialWebsite": "https://orderville.utah.gov/",
   "population": 598,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1875-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Orderville%2C_Utah"
  },
  "millard/delta": {
   "wikipediaTitle": "Delta, Utah",
@@ -2189,10 +2201,11 @@
   "summary": "Hinckley is a town in Millard County, Utah, United States, in the middle of the Sevier Desert. Irrigation water from the Sevier River, passing nearby, has been used to turn Hinckley into a farming oasis. The mountains that are common in Utah are seen only in the distance, and beyond the reach of the river, a severe desert prevails. The population was 614 at the 2020 census.",
   "wikidataId": "Q483567",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483567",
-  "officialWebsite": "",
+  "officialWebsite": "https://hinckleytown.utah.gov/",
   "population": 614,
   "populationAsOf": "2020-04-01",
-  "populationSource": "Wikidata"
+  "populationSource": "Wikidata",
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Hinckley%2C_Utah"
  },
  "millard/kanosh": {
   "wikipediaTitle": "Kanosh, Utah",
@@ -2200,12 +2213,13 @@
   "summary": "Kanosh is a town in Millard County, Utah, United States. The population was 508 at the 2020 census.",
   "wikidataId": "Q483427",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483427",
-  "officialWebsite": "",
+  "officialWebsite": "https://www.kanoshtown.com/",
   "population": 508,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1854-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Kanosh%2C_Utah"
  },
  "piute": {
   "wikipediaTitle": "Piute County, Utah",
@@ -2291,12 +2305,13 @@
   "summary": "Laketown is a town in Rich County, Utah, United States. The population was 299 at the 2020 census. The town is named for nearby Bear Lake.",
   "wikidataId": "Q483712",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483712",
-  "officialWebsite": "",
+  "officialWebsite": "https://laketown.utah.gov/",
   "population": 299,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1864-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Laketown%2C_Utah"
  },
  "rich/randolph": {
   "wikipediaTitle": "Randolph, Utah",
@@ -2317,12 +2332,13 @@
   "summary": "Woodruff is a town in Rich County, Utah, United States. The population was 169 at the 2020 census.",
   "wikidataId": "Q482422",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482422",
-  "officialWebsite": "",
+  "officialWebsite": "https://woodruff.utah.gov/",
   "population": 169,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1865-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Woodruff%2C_Utah"
  },
  "salt-lake/brighton": {
   "wikipediaTitle": "Brighton, Utah",
@@ -2330,10 +2346,11 @@
   "summary": "Brighton is a town in eastern Salt Lake County, Utah, United States. It is part of the Salt Lake City, Utah Metropolitan Statistical Area.",
   "wikidataId": "Q66222167",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q66222167",
-  "officialWebsite": "",
+  "officialWebsite": "https://www.brighton.utah.gov/",
   "population": 432,
   "populationAsOf": "2020-04-01",
-  "populationSource": "Wikidata"
+  "populationSource": "Wikidata",
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Brighton%2C_Utah"
  },
  "salt-lake/emigration-canyon": {
   "wikipediaTitle": "Emigration Canyon, Utah",
@@ -2341,10 +2358,11 @@
   "summary": "Emigration Canyon is a city and canyon in Salt Lake County, Utah, United States, located east of Salt Lake City in the Wasatch Range. Beginning at the southern end of the University of Utah, the canyon itself heads east and northeast between Salt Lake City and Morgan County. Its boundaries do not extend to the county line, nor do they encompass all of Emigration Canyon, as parts of it are within Salt Lake City. As of the 2020 census, the population was 1,466.",
   "wikidataId": "Q5371118",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q5371118",
-  "officialWebsite": "",
+  "officialWebsite": "https://emigration.utah.gov/",
   "population": 1466,
   "populationAsOf": "2020-04-01",
-  "populationSource": "Wikidata"
+  "populationSource": "Wikidata",
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Emigration_Canyon%2C_Utah"
  },
  "salt-lake/white-city": {
   "wikipediaTitle": "White City, Utah",
@@ -2454,12 +2472,13 @@
   "summary": "Sterling is a town in Sanpete County, Utah, United States. The population was 274 at the 2020 census.",
   "wikidataId": "Q482691",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482691",
-  "officialWebsite": "",
+  "officialWebsite": "https://sterlingutah.com/",
   "population": 274,
   "populationAsOf": "2012-01-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1873-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://sterlingutah.com/"
  },
  "sanpete/wales": {
   "wikipediaTitle": "Wales, Utah",
@@ -2480,12 +2499,13 @@
   "summary": "Annabella is a town in Sevier County, Utah, United States. The population was 836 at the 2020 census, an increase over the 2010 figure of 795.",
   "wikidataId": "Q483615",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483615",
-  "officialWebsite": "",
+  "officialWebsite": "https://annabella.utah.gov/",
   "population": 836,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1871-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Annabella%2C_Utah"
  },
  "sevier/aurora": {
   "wikipediaTitle": "Aurora, Utah",
@@ -2506,12 +2526,13 @@
   "summary": "Central Valley is a town in Sevier County, Utah, United States. The population was 647 at the 2020 census. Known for years simply as Central, the town was named Central Valley at its incorporation in 2005.",
   "wikidataId": "Q482613",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q482613",
-  "officialWebsite": "",
+  "officialWebsite": "https://centralvalleytownut.com/",
   "population": 647,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1873-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Central_Valley%2C_Utah"
  },
  "sevier/elsinore": {
   "wikipediaTitle": "Elsinore, Utah",
@@ -2519,12 +2540,13 @@
   "summary": "Elsinore is a town in Sevier County, Utah, United States. The population was 802 at the 2020 census.",
   "wikidataId": "Q483651",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483651",
-  "officialWebsite": "",
+  "officialWebsite": "https://www.elsinoreut.com/",
   "population": 802,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1874-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Elsinore%2C_Utah"
  },
  "sevier/koosharem": {
   "wikipediaTitle": "Koosharem, Utah",
@@ -2532,12 +2554,13 @@
   "summary": "Koosharem is a town in Sevier County, Utah, United States. Koosharem is also known as \"Grass Valley\". It generally comprises the area known as Burrville, Utah on the north, south through the valley and through the town of Koosharem and down to the south end with the town of Greenwich, Utah. The valley is made up of private lands nestled within the Fishlake National Forest. Koosharem is situated at the cross-roads for travelers going between Capitol Reef National Park and Bryce Canyon National Park and/or Zion National Park. Koosharem is also the closest town to the famous Fish Lake. The town also serves as an important point along the many trails of the Piute ATV Trail System.",
   "wikidataId": "Q483576",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483576",
-  "officialWebsite": "",
+  "officialWebsite": "https://koosharem.us/",
   "population": 244,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1877-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Koosharem%2C_Utah"
  },
  "sevier/monroe": {
   "wikipediaTitle": "Monroe, Utah",
@@ -2545,12 +2568,13 @@
   "summary": "Monroe is a city in Sevier County, Utah, United States. The population was 2,515 at the 2020 United States Census.",
   "wikidataId": "Q483264",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483264",
-  "officialWebsite": "",
+  "officialWebsite": "https://monroeut.gov/",
   "population": 2515,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1864-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Monroe%2C_Utah"
  },
  "sevier/redmond": {
   "wikipediaTitle": "Redmond, Utah",
@@ -2558,12 +2582,13 @@
   "summary": "Redmond is a town in Sevier County, Utah, United States. The population was 762 at the 2020 census. Redmond was first settled in 1876, and named for red mounds to the west of the town.",
   "wikidataId": "Q129984",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q129984",
-  "officialWebsite": "",
+  "officialWebsite": "https://redmondutah.org/",
   "population": 762,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1875-01-01",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://redmondutah.org/"
  },
  "sevier/salina": {
   "wikipediaTitle": "Salina, Utah",
@@ -2725,12 +2750,13 @@
   "summary": "Goshen is a town in Utah County, Utah, United States. It is part of the Provo–Orem Metropolitan Statistical Area. The population was 978 at the 2020 census.",
   "wikidataId": "Q483358",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483358",
-  "officialWebsite": "",
+  "officialWebsite": "http://www.goshenutah.gov/",
   "population": 978,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1857-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Goshen%2C_Utah"
  },
  "utah/payson": {
   "wikipediaTitle": "Payson, Utah",
@@ -2751,12 +2777,13 @@
   "summary": "Spring Lake is a town in southern Utah County, Utah, United States. It is part of the Provo–Orem Metropolitan Statistical Area. The population was 528 at the 2020 census. It is located just south of Payson and northeast of Santaquin.",
   "wikidataId": "Q3314515",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q3314515",
-  "officialWebsite": "",
+  "officialWebsite": "https://springlakeutah.gov/",
   "population": 528,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1850-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://springlakeutah.gov/"
  },
  "utah/vineyard": {
   "wikipediaTitle": "Vineyard, Utah",
@@ -2790,12 +2817,13 @@
   "summary": "Charleston is a town in Wasatch County, Utah, United States. The population was 436 at the 2020 census.",
   "wikidataId": "Q483478",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q483478",
-  "officialWebsite": "",
+  "officialWebsite": "https://charlestontown.utah.gov/",
   "population": 436,
   "populationAsOf": "2020-04-01",
   "populationSource": "Wikidata",
   "inceptionDate": "1852-00-00",
-  "inceptionPrecision": 9
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Charleston%2C_Utah"
  },
  "wasatch/hideout": {
   "wikipediaTitle": "Hideout, Utah",
@@ -2982,10 +3010,17 @@
  "weber/ogden-valley-city": {
   "wikipediaTitle": "Ogden Valley City, Utah",
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Ogden_Valley_City%2C_Utah",
-  "summary": "Ogden Valley is a city, high mountain valley, and ski resort community in Weber County, Utah, United States. The population was 6,855 at the 2010 census. Planning in the valley is managed by a special county-level planning division, the Ogden Valley Planning Commission. The valley is a popular vacation and tourism destination with three ski resorts, Pineview Reservoir, Causey Reservoir, and national forest lands. Despite its name, the city of Ogden is not located in the Ogden Valley.",
+  "summary": "Ogden Valley City is a city in Weber County, Utah, covering about 64 square miles of the Upper Ogden Valley around Pineview Reservoir, including Liberty, Eden, Nordic Valley, and other formerly unincorporated communities. Residents voted to incorporate in 2025, and the city became official in January 2026; Huntsville remains a separate town.",
   "wikidataId": "Q104857009",
   "wikidataUrl": "https://www.wikidata.org/wiki/Q104857009",
-  "officialWebsite": ""
+  "officialWebsite": "https://ogdenvalley.gov/",
+  "officialWebsiteSource": "https://ogdenvalley.gov/about-ogden-valley-city/",
+  "population": 7200,
+  "populationAsOf": "2026-01-01",
+  "populationSource": "Ogden Valley City (approximate)",
+  "populationSourceUrl": "https://ogdenvalley.gov/name-advisory-committee/",
+  "inceptionDate": "2025-12-00",
+  "inceptionPrecision": 10
  },
  "weber/plain-city": {
   "wikipediaTitle": "Plain City, Utah",
@@ -3051,5 +3086,299 @@
   "populationSource": "Wikidata",
   "inceptionDate": "1850-00-00",
   "inceptionPrecision": 9
+ },
+ "beaver/minersville": {
+  "wikipediaTitle": "Minersville, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Minersville%2C_Utah",
+  "summary": "Minersville is a town in southeastern Beaver County, Utah, United States. The population was 807 at the 2020 census, down from the 2010 figure of 907.",
+  "wikidataId": "Q483354",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483354",
+  "officialWebsite": "http://minersvilletown.com/",
+  "population": 807,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1859-01-01",
+  "inceptionPrecision": 9
+ },
+ "box-elder/bear-river-city": {
+  "wikipediaTitle": "Bear River City, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Bear_River_City%2C_Utah",
+  "summary": "Bear River City is a city in Box Elder County, Utah, United States. The population was 877 at the 2020 census, up from the 2010 figure of 853. Bear River became a city under state law near the end of 2000. Although current state law requires a minimum population of 1000 for cities, Bear River City remains a city.",
+  "wikidataId": "Q483098",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483098",
+  "officialWebsite": "http://www.bearrivercityutah.com/",
+  "population": 877,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1866-00-00",
+  "inceptionPrecision": 9
+ },
+ "cache/amalga": {
+  "wikipediaTitle": "Amalga, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Amalga%2C_Utah",
+  "summary": "Amalga is a town in Cache County, Utah, United States. The population was 482 at the 2020 census. It is included in the Logan, Utah-Idaho (partial) Metropolitan Statistical Area.",
+  "wikidataId": "Q483374",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483374",
+  "officialWebsite": "http://www.amalgatown.com/",
+  "population": 482,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1869-00-00",
+  "inceptionPrecision": 9
+ },
+ "cache/mendon": {
+  "wikipediaTitle": "Mendon, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mendon%2C_Utah",
+  "summary": "Mendon is a city in Cache County, Utah, United States. The population was 1,339 at the 2020 census. It is included in the Logan, Utah-Idaho Metropolitan Statistical Area.",
+  "wikidataId": "Q483241",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483241",
+  "officialWebsite": "http://www.mendoncity.org/",
+  "population": 1339,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1859-01-01",
+  "inceptionPrecision": 9
+ },
+ "daggett/dutch-john": {
+  "wikipediaTitle": "Dutch John, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Dutch_John%2C_Utah",
+  "summary": "Dutch John is a town located in eastern Daggett County, Utah, United States, approximately 4 miles (6 km) northeast of the Flaming Gorge Dam on U.S. Route 191. The population was 141 at the 2020 census.",
+  "wikidataId": "Q5317323",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q5317323",
+  "officialWebsite": "https://dutchjohn.gov/",
+  "population": 141,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1957-00-00",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Dutch_John%2C_Utah"
+ },
+ "duchesne/duchesne": {
+  "wikipediaTitle": "Duchesne, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Duchesne%2C_Utah",
+  "summary": "Duchesne is a city in and the county seat of Duchesne County, Utah, United States. The population was 1,588 at the 2020 census.",
+  "wikidataId": "Q130090",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q130090",
+  "officialWebsite": "http://www.duchesnecity.com/",
+  "population": 1588,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1905-00-00",
+  "inceptionPrecision": 9
+ },
+ "duchesne/tabiona": {
+  "wikipediaTitle": "Tabiona, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Tabiona%2C_Utah",
+  "summary": "Tabiona is a town in Duchesne County, Utah, United States. Located southwest of Tabby Mountain on the Duchesne River. It is eighty-six miles southeast of the Salt Lake City metropolitan area. The population was 143 at the 2020 United States Census.",
+  "wikidataId": "Q482429",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q482429",
+  "officialWebsite": "https://tabionatownut.gov/",
+  "population": 143,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1860-00-00",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Tabiona%2C_Utah"
+ },
+ "emery/ferron": {
+  "wikipediaTitle": "Ferron, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ferron%2C_Utah",
+  "summary": "Ferron is a city in western Emery County, Utah, United States. The population was 1,474 at the 2020 census.",
+  "wikidataId": "Q482700",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q482700",
+  "officialWebsite": "http://www.ferroncity.org",
+  "population": 1474,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1877-01-01",
+  "inceptionPrecision": 9
+ },
+ "millard/holden": {
+  "wikipediaTitle": "Holden, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Holden%2C_Utah",
+  "summary": "Holden is a town in Millard County, Utah, United States. The population was 438 at the 2020 census.",
+  "wikidataId": "Q483669",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483669",
+  "officialWebsite": "http://www.holdenutah.us/",
+  "population": 438,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1855-00-00",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Holden%2C_Utah"
+ },
+ "millard/leamington": {
+  "wikipediaTitle": "Leamington, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Leamington%2C_Utah",
+  "summary": "Leamington is a town in Millard County, Utah. The population was 256 at the time of the 2020 census.",
+  "wikidataId": "Q483490",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483490",
+  "officialWebsite": "https://leamingtontown.gov/",
+  "population": 256,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1871-00-00",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Leamington%2C_Utah"
+ },
+ "morgan/morgan": {
+  "wikipediaTitle": "Morgan, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Morgan%2C_Utah",
+  "summary": "Morgan is a city in and the county seat of Morgan County, Utah, United States. It is part of the Ogden-Clearfield metropolitan area. The area was settled around 1861 and formally incorporated as a city in 1861, and is named after Jedediah Morgan Grant (1816-1856), a leader in the Church of Jesus Christ of Latter-day Saints. As of the 2020 census, the city population was 4,071 people.",
+  "wikidataId": "Q129992",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q129992",
+  "officialWebsite": "http://www.morgancityut.com/",
+  "population": 4071,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1868-00-00",
+  "inceptionPrecision": 9
+ },
+ "salt-lake/copperton": {
+  "wikipediaTitle": "Copperton, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Copperton%2C_Utah",
+  "summary": "Copperton is a town in Salt Lake County, Utah, United States, located at the mouth of Bingham Canyon, approximately 17 miles (27 km) southwest of Salt Lake City. Much of the town is included in the Copperton Historic District, which is listed on the National Register of Historic Places.",
+  "wikidataId": "Q5168859",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q5168859",
+  "officialWebsite": "https://copperton.utah.gov/",
+  "population": 829,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "officialWebsiteSource": "https://copperton.utah.gov/"
+ },
+ "san-juan/bluff": {
+  "wikipediaTitle": "Bluff, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Bluff%2C_Utah",
+  "summary": "Bluff is a town in San Juan County, Utah, United States. The population was 240 at the 2020 census, down from 320 at the 2000 census, of which, at the time, it was a census-designated place. Bluff was incorporated in 2018. Josh Ewing is currently the mayor.",
+  "wikidataId": "Q886112",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q886112",
+  "officialWebsite": "http://bluffutah.org/",
+  "population": 240,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1880-04-06",
+  "inceptionPrecision": 11
+ },
+ "sanpete/centerfield": {
+  "wikipediaTitle": "Centerfield, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Centerfield%2C_Utah",
+  "summary": "Centerfield is a city in southwestern Sanpete County, Utah, United States. The population was 1,341 at the 2020 census. Although Centerfield was a town in 2000, it has since been classified as a fifth-class city by state law. The community was so named because of its location in the center of a wide valley.",
+  "wikidataId": "Q482795",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q482795",
+  "officialWebsite": "http://www.centerfieldcity.org/",
+  "population": 1341,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1869-00-00",
+  "inceptionPrecision": 9
+ },
+ "sanpete/fayette": {
+  "wikipediaTitle": "Fayette, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fayette%2C_Utah",
+  "summary": "Fayette is a town in Sanpete County, Utah, United States. The population was 245 at the 2020 census.",
+  "wikidataId": "Q483439",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483439",
+  "officialWebsite": "https://fayetteutah.gov/",
+  "population": 245,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1861-00-00",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Fayette%2C_Utah"
+ },
+ "sevier/joseph": {
+  "wikipediaTitle": "Joseph, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Joseph%2C_Utah",
+  "summary": "Joseph is a town in Sevier County, Utah, United States. The population was 288 at the 2020 census. The town was named for Joseph Angell Young, an apostle of the Church of Jesus Christ of Latter-day Saints. Joseph was settled in 1871.",
+  "wikidataId": "Q482481",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q482481",
+  "officialWebsite": "https://josephtownutah.gov/",
+  "population": 288,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1871-00-00",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Joseph%2C_Utah"
+ },
+ "tooele/wendover": {
+  "wikipediaTitle": "Wendover, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Wendover%2C_Utah",
+  "summary": "Wendover is a city on the western edge of Tooele County, Utah, United States. The population was 1,115 at the 2020 census.",
+  "wikidataId": "Q255781",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q255781",
+  "officialWebsite": "http://wendovercityutah.com/",
+  "population": 1115,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1906-00-00",
+  "inceptionPrecision": 9
+ },
+ "uintah/ballard": {
+  "wikipediaTitle": "Ballard, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ballard%2C_Utah",
+  "summary": "Ballard is a city in Uintah County, Utah, United States. The population was 801 at the 2010 census, an increase from the 2000 population of 566.",
+  "wikidataId": "Q483104",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483104",
+  "officialWebsite": "http://www.ballardcity.org",
+  "population": 1131,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1905-00-00",
+  "inceptionPrecision": 9
+ },
+ "utah/fairfield": {
+  "wikipediaTitle": "Fairfield, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fairfield%2C_Utah",
+  "summary": "Fairfield is a town in Utah County, Utah, United States. It is part of the Provo–Orem, Utah Metropolitan Statistical Area. It is located in the southwest corner of Cedar Valley about 50 miles (80 km) southwest of Salt Lake City and 5 miles (8.0 km) south of Cedar Fort on Utah State Route 73, west of Utah Lake. The population was 160 at the 2020 census.",
+  "wikidataId": "Q483448",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483448",
+  "officialWebsite": "https://fairfieldtown-ut.gov/",
+  "population": 160,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1855-00-00",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Fairfield%2C_Utah"
+ },
+ "utah/santaquin": {
+  "wikipediaTitle": "Santaquin, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Santaquin%2C_Utah",
+  "summary": "Santaquin is a city in Utah and Juab counties in the U.S. state of Utah. It is part of the Provo–Orem metropolitan area. The population was 13,725 at the 2020 census.",
+  "wikidataId": "Q374692",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q374692",
+  "officialWebsite": "http://www.santaquin.org/",
+  "population": 13725,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1851-00-00",
+  "inceptionPrecision": 9
+ },
+ "wasatch/wallsburg": {
+  "wikipediaTitle": "Wallsburg, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Wallsburg%2C_Utah",
+  "summary": "Wallsburg is a town in Wasatch County, Utah, United States. It is part of the Salt Lake City metropolitan area. The population was 290 at the 2020 census. Wallsburg was established in 1861, and was named for William Madison Wall.",
+  "wikidataId": "Q482471",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q482471",
+  "officialWebsite": "https://wallsburg.gov/",
+  "population": 290,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1862-01-01",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Wallsburg%2C_Utah"
+ },
+ "wayne/hanksville": {
+  "wikipediaTitle": "Hanksville, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Hanksville%2C_Utah",
+  "summary": "Hanksville is a small town in Wayne County, Utah, United States, at the junction of State Routes 24 and 95. The population was 158 at the 2020 census.",
+  "wikidataId": "Q483655",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483655",
+  "officialWebsite": "https://www.hanksvilleutah.gov",
+  "population": 158,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikidata",
+  "inceptionDate": "1882-00-00",
+  "inceptionPrecision": 9,
+  "officialWebsiteSource": "https://en.wikipedia.org/wiki/Hanksville%2C_Utah"
  }
 }

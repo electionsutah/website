@@ -58,9 +58,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--use-cache', action='store_true', help='reuse downloaded originals')
     parser.add_argument('--only', help='a single place key, e.g. salt-lake/bluffdale')
+    parser.add_argument('--missing', action='store_true', help='only fetch missing photos; preserve existing images and credits')
     args = parser.parse_args()
     places = json.loads((ROOT / 'src/data/place-enrichment.json').read_text())
-    keys = [key for key, row in places.items() if row.get('wikidataId') and (not args.only or key == args.only)]
+    index = json.loads(INDEX.read_text()) if INDEX.exists() else {}
+    keys = [key for key, row in places.items() if row.get('wikidataId') and (not args.only or key == args.only)
+            and (not args.missing or key not in index or not (ROOT / 'public' / index[key]['src'].lstrip('/')).exists())]
 
     files = {}
     for group in batches(keys):
@@ -83,7 +86,6 @@ def main():
 
     OUTPUT.mkdir(parents=True, exist_ok=True)
     CACHE.mkdir(parents=True, exist_ok=True)
-    index = json.loads(INDEX.read_text()) if args.only and INDEX.exists() else {}
     skipped = []
     for key in keys:
         name = files.get(key)
