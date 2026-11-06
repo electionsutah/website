@@ -4,6 +4,8 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { createServer } from 'vite';
 import { prepare, root, workspace, syncRecord, validateRecord, json } from './workspace.mjs';
+import { inspectSchema, saveSchema } from './schema.mjs';
+import { elutThemeCss } from './elut-theme.mjs';
 
 const port = Number(process.env.EDITOR_PORT ?? 8080);
 const proxyPort = Number(process.env.EDITOR_PROXY_PORT ?? 8081);
@@ -29,14 +31,15 @@ try {
   state = await prepare(site);
   Object.assign(status, { counts: state.counts, orphans: state.orphans });
   const config = {
+    logo: { src: '/images/logo-editorial-nav.svg', show_in_header: true },
     backend: { name: 'git-gateway', branch: 'editor' },
     local_backend: { url: `${origin}/api/v1` },
     media_folder: 'media', public_folder: '/media',
     publish: true, editor: { preview: false },
-    collections: ['people', 'filings'].map(kind => ({
-      name: kind, label: kind === 'people' ? 'People' : 'Filing records', folder: `content/${kind}`,
+    collections: ['people', 'filings', 'places', 'offices', 'parties'].map(kind => ({
+      name: kind, label: { people: 'People', filings: 'Filings', places: 'Places', offices: 'Offices', parties: 'Parties' }[kind], folder: `content/${kind}`,
       format: 'json', extension: 'json', create: false, delete: false,
-      identifier_field: 'title', summary: '{{title}}', sortable_fields: ['title'],
+      identifier_field: 'title', summary: '{{title}}', sortable_fields: [{ field: 'title', label: 'Title', default_sort: 'asc' }],
       editor: { preview: false }, fields: [
         { name: 'id', widget: 'hidden' }, { name: 'title', widget: 'hidden' },
         { name: 'record', label: 'Repository data', widget: 'repository-record', kind }
@@ -49,6 +52,26 @@ try {
       const host = request.headers.host?.split(':')[0];
       if (!['127.0.0.1', 'localhost'].includes(host)) { response.writeHead(403).end(); return; }
       const path = new URL(request.url, origin).pathname;
+      if (path === '/elut-theme.css' && request.method === 'GET') {
+        response.writeHead(200, { 'Content-Type': 'text/css', 'Cache-Control': 'no-store' }).end(await elutThemeCss()); return;
+      }
+      if (path === '/schema-settings.json') {
+        if (request.method === 'GET') {
+          response.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }).end(json(await inspectSchema(site, state))); return;
+        }
+        if (request.method === 'POST') {
+          if (![origin, `http://localhost:${port}`].includes(request.headers.origin)) { response.writeHead(403).end(); return; }
+          let body = '';
+          for await (const chunk of request) { body += chunk; if (body.length > 128 * 1024) throw new Error('Schema settings are too large'); }
+          const operation = queue.then(async () => {
+            const result = await saveSchema(site, state, JSON.parse(body));
+            for (const collection of config.collections) collection.label = result.collections.find(row => row.kind === collection.name).label;
+            response.writeHead(200, { 'Content-Type': 'application/json' }).end(json(result));
+          });
+          queue = operation.catch(() => {});
+          await operation; return;
+        }
+      }
       if (path === '/api/v1' && request.method === 'POST') {
         if (request.headers.origin && ![origin, `http://localhost:${port}`].includes(request.headers.origin)) { response.writeHead(403).end(); return; }
         let body = '';
@@ -96,14 +119,23 @@ try {
         response.end(json({ valid: true })); return;
       }
       if (request.method !== 'GET') { response.writeHead(405).end(); return; }
+      if (path === '/config.json') {
+        const inspected = await inspectSchema(site, state);
+        for (const collection of config.collections) collection.label = inspected.collections.find(row => row.kind === collection.name).label;
+      }
       const payload = path === '/config.json' ? config : path === '/schema.json' ? state.editorFields : path === '/status.json' ? status : null;
       response.setHeader('Cache-Control', 'no-store');
       if (payload) { response.setHeader('Content-Type', 'application/json'); response.end(json(payload)); return; }
       const asset = path === '/' ? join(root, 'editor/index.html')
-        : ['/app.js', '/editor.css'].includes(path) ? join(root, 'editor', path.slice(1))
+        : path === '/schema' || path === '/schema/' ? join(root, 'editor/schema.html')
+        : ['/images/logo-editorial-blue.svg', '/images/logo-editorial-nav.svg'].includes(path) ? join(root, 'public', path.slice(1))
+        : ['/app.js', '/editor.css', '/schema-ui.js', '/schema.css', '/elut.css'].includes(path) ? join(root, 'editor', path.slice(1))
+        : path === '/fonts/material-symbols-outlined-subset.woff2' ? join(root, 'editor/material-symbols-outlined-subset.woff2')
+        : /^\/fonts\/(?:noto-sans|source-serif-4)-[a-z-]+\.woff2$/.test(path) ? join(root, 'public', path.slice(1))
+        : /^\/icons\/external\/[a-z]+\.svg$/.test(path) ? join(root, 'public', path.slice(1))
         : /^\/vendor\/[\w.-]+\.(js|css|wasm)$/.test(path) ? join(root, 'editor/node_modules/decap-cms/dist', path.slice('/vendor/'.length)) : null;
       if (!asset) { response.writeHead(404).end('Not found'); return; }
-      const type = asset.endsWith('.js') ? 'text/javascript' : asset.endsWith('.css') ? 'text/css' : asset.endsWith('.wasm') ? 'application/wasm' : 'text/html';
+      const type = asset.endsWith('.js') ? 'text/javascript' : asset.endsWith('.css') ? 'text/css' : asset.endsWith('.wasm') ? 'application/wasm' : asset.endsWith('.woff2') ? 'font/woff2' : asset.endsWith('.svg') ? 'image/svg+xml' : 'text/html';
       response.setHeader('Content-Type', type);
       response.end(await readFile(asset));
     } catch (error) {

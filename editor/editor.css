@@ -1,11 +1,62 @@
 #connection { position: fixed; inset: auto 0 0; z-index: 10000; display: flex; gap: 1rem; justify-content: space-between; padding: 10px 20px; background: #183d39; color: #fff; font: 13px/1.5 system-ui, sans-serif; }
 #connection a { color: #fff; white-space: nowrap; }
 #connection.connection-error { background: #932d23; }
+header a[data-schema-link] { display: inline-flex; align-items: center; gap: 4px; color: #7b8290; font-size: 16px; font-weight: 500; line-height: 1.2; text-decoration: none; padding: 12px 20px; }
+header a[data-schema-link]:hover { background: #e5f2f9; }
+header a[data-schema-link]:focus-visible { outline: 3px solid #006eb7; outline-offset: -3px; }
+/* Transparent site-blue logo in Decap's native header logo slot. */
+header li:has(img[src='/images/logo-editorial-blue.svg']) { gap: 12px; padding: 8px 20px 8px 0; flex-shrink: 0; }
+header img[src='/images/logo-editorial-blue.svg'] { box-sizing: border-box; width: 76px; height: 48px; max-height: none; padding: 4px 8px; background: transparent; object-fit: contain; }
+header li:has(img[src='/images/logo-editorial-blue.svg'])::after { content: 'Editor'; color: #31302d; font: 650 18px/1.2 system-ui, sans-serif; }
+/* Center branding and menu controls in the same header row. */
+header nav:has(img[src='/images/logo-editorial-blue.svg'])>ul { align-items: center; }
+header nav:has(img[src='/images/logo-editorial-blue.svg'])>ul>li { display: flex; align-items: center; align-self: stretch; }
+header nav:has(img[src='/images/logo-editorial-blue.svg'])>ul>li>a,
+header nav:has(img[src='/images/logo-editorial-blue.svg'])>ul>li>button { display: inline-flex; flex-direction: row; align-items: center; justify-content: center; min-height: 44px; padding-top: 12px; padding-bottom: 12px; line-height: 1.2; }
+@media (max-width: 600px) {
+  header li:has(img[src='/images/logo-editorial-blue.svg']) { gap: 6px; padding-right: 8px; }
+  header img[src='/images/logo-editorial-blue.svg'] { width: 56px; height: 40px; }
+  header li:has(img[src='/images/logo-editorial-blue.svg'])::after { font-size: 14px; }
+}
+@font-face { font-family: 'Editor Material Symbols'; font-style: normal; font-weight: 400; font-display: block; src: url('/fonts/material-symbols-outlined-subset.woff2') format('woff2'); }
+.editor-symbol { font-family: 'Editor Material Symbols' !important; font-weight: 400; font-style: normal; font-size: 22px; line-height: 1; letter-spacing: normal; text-transform: none; font-feature-settings: 'liga'; white-space: nowrap; color: #006eb7; }
+.editor-label-icon { display: block; width: 24px; height: 24px; object-fit: contain; filter: none; opacity: 1; }
+.editor-field-heading>label, .editor-record-heading, .editor-identity-grid dt { display: flex; align-items: center; gap: 10px; }
+.editor-field-heading>label>.editor-symbol, .editor-label-icon { flex: 0 0 24px; }
+.editor-identity-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 16px; padding: 16px; background: #f4f6f4; }
+.editor-identity-grid dt { font-weight: 650; }
+.editor-identity-grid dd { margin: 8px 0 0 32px; overflow-wrap: anywhere; }
+/* Decorate Decap's existing collection links without replacing their accessible labels. */
+a[href='#/collections/people'], a[href='#/collections/filings'] { display: flex; align-items: center; gap: 10px; }
+a[href='#/collections/people']>svg, a[href='#/collections/filings']>svg { display: none; }
+a[href='#/collections/people']::before, a[href='#/collections/filings']::before { flex: 0 0 24px; font-family: 'Editor Material Symbols'; font-size: 24px; font-weight: 400; line-height: 1; letter-spacing: normal; text-transform: none; font-feature-settings: 'liga'; }
+a[href='#/collections/people']::before { content: 'account_circle'; }
+a[href='#/collections/filings']::before { content: 'archive'; }
+body[data-collection] h1 { display: flex; align-items: center; gap: 10px; }
+body[data-collection] h1::before { font-family: 'Editor Material Symbols'; font-size: 24px; font-weight: 400; line-height: 1; letter-spacing: normal; text-transform: none; font-feature-settings: 'liga'; color: #006eb7; }
+body[data-collection='people'] h1::before { content: 'account_circle'; }
+body[data-collection='filings'] h1::before { content: 'archive'; }
+/* Entry titles in both collection list and card views. */
+a[href^='#/collections/people/entries/'] h2,
+a[href^='#/collections/filings/entries/'] h2 { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto; align-items: center; column-gap: 10px; }
+a[href^='#/collections/people/entries/'] h2::before,
+a[href^='#/collections/filings/entries/'] h2::before { display: grid; place-items: center; font-family: 'Editor Material Symbols'; font-size: 24px; font-weight: 400; line-height: 1; letter-spacing: normal; text-transform: none; font-feature-settings: 'liga'; color: #006eb7; }
+a[href^='#/collections/people/entries/'] h2::before { content: 'account_circle'; }
+a[href^='#/collections/filings/entries/'] h2::before { content: 'archive'; }
+a[href='#/collections/places'] { display: flex; align-items: center; gap: 10px; }
+a[href='#/collections/places']>svg { display: none; }
+a[href='#/collections/places']::before,
+body[data-collection='places'] h1::before,
+a[href^='#/collections/places/entries/'] h2::before { content: 'location_on'; font-family: 'Editor Material Symbols'; font-size: 24px; font-weight: 400; line-height: 1; letter-spacing: normal; text-transform: none; font-feature-settings: 'liga'; color: #006eb7; }
+a[href='#/collections/places']::before { flex: 0 0 24px; }
+a[href^='#/collections/places/entries/'] h2 { display: grid; grid-template-columns: 24px minmax(0,1fr) auto; align-items: center; column-gap: 10px; }
 .repository-record { padding-bottom: 45px; font: 14px/1.6 system-ui, sans-serif; color: #222; }
 .editor-note { background: #eaf2ef; border-left: 3px solid #267568; padding: 14px; }
 .editor-field { padding: 18px 0; border-bottom: 1px solid #d7ddd9; }
 .editor-field.has-override { border-left: 3px solid #267568; padding-left: 12px; }
-.editor-field-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+.editor-field-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+.repository-record .editor-field-heading>label { flex: 1 0 max-content; width: auto; max-width: none; white-space: nowrap; margin: 0; }
+.editor-field-heading>select { flex: 0 0 auto; margin-left: auto; }
 .editor-field label { font-weight: 650; text-transform: capitalize; }
 .editor-field select, .editor-field input, .editor-field textarea { font: inherit; border: 1px solid #87968e; border-radius: 4px; padding: 8px; background: white; color: #202923; }
 .editor-field > input, .editor-field > textarea, .editor-field > select { width: 100%; box-sizing: border-box; }
@@ -21,3 +72,13 @@
 .editor-addresses input { display: block; width: 100%; box-sizing: border-box; }
 .editor-addresses button { padding: 8px 12px; cursor: pointer; }
 @media (max-width: 600px) { .editor-field-heading { align-items: stretch; flex-direction: column; gap: 6px; } #connection { font-size: 11px; padding: 6px; } }
+
+/* Additional entity collection icons. */
+a[href='#/collections/offices'], a[href='#/collections/parties'] { display: flex; align-items: center; gap: 10px; }
+a[href='#/collections/offices']>svg, a[href='#/collections/parties']>svg { display: none; }
+a[href='#/collections/offices']::before, a[href='#/collections/parties']::before,
+body[data-collection='offices'] h1::before, body[data-collection='parties'] h1::before,
+a[href^='#/collections/offices/entries/'] h2::before, a[href^='#/collections/parties/entries/'] h2::before { font-family: 'Editor Material Symbols'; font-size: 24px; font-weight: 400; line-height: 1; letter-spacing: normal; text-transform: none; font-feature-settings: 'liga'; color: #006eb7; }
+a[href='#/collections/offices']::before, body[data-collection='offices'] h1::before, a[href^='#/collections/offices/entries/'] h2::before { content: 'workspace_premium'; }
+a[href='#/collections/parties']::before, body[data-collection='parties'] h1::before, a[href^='#/collections/parties/entries/'] h2::before { content: 'flag'; }
+a[href^='#/collections/offices/entries/'] h2, a[href^='#/collections/parties/entries/'] h2 { display: grid; grid-template-columns: 24px minmax(0,1fr) auto; align-items: center; gap: 10px; }

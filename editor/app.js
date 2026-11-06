@@ -1,9 +1,37 @@
 /* Decap's documented browser globals keep this local editor independent of the site's framework. */
 (async function () {
   const { CMS, createClass, h } = window;
+  // Keep the companion screen accessible in Decap's header across route changes.
+  const addSchemaLink = () => {
+    const menu = document.querySelector('header nav ul');
+    if (!menu || menu.querySelector('[data-schema-link]')) return;
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = '/schema'; link.dataset.schemaLink = '';
+    const icon = document.createElement('span'); icon.className = 'editor-symbol'; icon.setAttribute('aria-hidden', 'true'); icon.textContent = 'schema';
+    link.append(icon, document.createTextNode('Schema'));
+    item.append(link); menu.append(item);
+  };
+  new MutationObserver(addSchemaLink).observe(document.body, { childList: true, subtree: true });
+  const updateCollection = () => {
+    const match = window.location.hash.match(/^#\/collections\/(people|filings|places|offices|parties)(?:\/|$)/);
+    if (match) document.body.dataset.collection = match[1];
+    else delete document.body.dataset.collection;
+  };
+  updateCollection();
+  window.addEventListener('hashchange', updateCollection);
   const [config, schema, initialStatus] = await Promise.all(['/config.json', '/schema.json', '/status.json'].map(url => fetch(url).then(response => response.json())));
   const asObject = value => value?.toJS ? value.toJS() : value;
   const get = (object, path) => path.split('.').reduce((value, key) => value?.[key], object);
+  const symbols = { people: 'account_circle', filings: 'archive', places: 'location_on', offices: 'workspace_premium', parties: 'flag', office: 'workspace_premium', place: 'location_on', election: 'ballot',
+    biography: 'account_circle', priorities: 'view_list', resources: 'language', sourceUrl: 'language', lastVerified: 'search',
+    status: 'check_circle', sourceStatus: 'check_circle', electionType: 'ballot', city: 'location_on', county: 'location_on', state: 'location_on', source: 'archive', lastUpdated: 'history',
+    'contact.website': 'language', 'contact.phone': 'call', 'contact.email': 'send', 'contact.address': 'location_on' };
+  const social = { 'contact.facebook': 'facebook', 'contact.instagram': 'instagram', 'contact.twitter': 'x', 'contact.bluesky': 'bluesky' };
+  for (const platform of ['facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack']) social[platform] = platform;
+  const icon = key => social[key]
+    ? h('img', { className: 'editor-label-icon', src: `/icons/external/${social[key]}.svg`, alt: '', 'aria-hidden': true })
+    : h('span', { className: 'editor-symbol', 'aria-hidden': true }, symbols[key] ?? 'language');
   const addresses = value => Array.isArray(value) ? value : (value ?? '').split('\n').filter(line => line.trim()).map(line => {
     const match = line.match(/^(Campaign office|Mailing):\s*(.+)$/i);
     return { label: match?.[1] ?? 'Address', value: match?.[2] ?? line };
@@ -31,9 +59,14 @@
       const record = asObject(this.props.value);
       if (!record) return h('p', {}, 'No source record. Restart the editor to refresh repository data.');
       const fields = schema[this.props.field.get('kind')];
+      const kind = this.props.field.get('kind');
       return h('div', { className: 'repository-record' },
+        h('h2', { className: 'editor-record-heading' }, icon(kind), kind === 'people' ? 'Person profile' : kind === 'places' ? 'Place contacts and social accounts' : kind === 'offices' ? 'Office contacts' : kind === 'parties' ? 'Party contacts' : 'Election filing'),
+        kind === 'filings' ? h('dl', { className: 'editor-identity-grid' },
+          ...[['people', 'Person', record.source.name], ['office', 'Office', record.source.officeName], ['election', 'Election', record.source.year], ['place', 'Place', [record.source.city, record.source.county, record.source.state].filter(Boolean).join(', ')]].map(([key, label, value]) =>
+            h('div', { key }, h('dt', {}, icon(key), label), h('dd', {}, value || 'Not published')))) : null,
         h('p', { className: 'editor-note' }, 'Choose Override to edit a field, Clear to remove its value, or Use imported value to follow automated updates. Save with Publish at the top.'),
-        record.context.personPath ? h('a', { href: initialStatus.siteUrl + record.context.personPath, target: '_blank', rel: 'noopener' }, 'Open this person on the local site ↗') : null,
+        (record.context.personPath || record.context.placePath || record.context.entityPath) ? h('a', { href: initialStatus.siteUrl + (record.context.personPath || record.context.placePath || record.context.entityPath), target: '_blank', rel: 'noopener' }, 'Open on the local site ↗') : null,
         h('details', { className: 'editor-context' }, h('summary', {}, 'Identity and related records (read only)'), h('pre', {}, JSON.stringify(record.context, null, 2))),
         ...fields.map(field => {
           const path = field.path;
@@ -74,9 +107,9 @@
             : field.options ? h('select', inputProps,
             ...[...new Set(['', ...field.options, value])].map(option => h('option', { key: option, value: option }, option || '(empty)')))
             : ['text', 'lines', 'resources'].includes(field.type) ? h('textarea', { ...inputProps, rows: field.type === 'resources' ? 7 : 4 })
-            : h('input', { ...inputProps, type: field.type === 'date' ? 'date' : field.type === 'url' ? 'url' : 'text' });
+            : h('input', { ...inputProps, type: field.type === 'date' ? 'date' : field.type === 'url' ? 'url' : field.type === 'email' ? 'email' : 'text' });
           return h('section', { key: path, className: `editor-field ${explicit ? 'has-override' : ''}` },
-            h('div', { className: 'editor-field-heading' }, h('label', { htmlFor: id }, field.label),
+            h('div', { className: 'editor-field-heading' }, h('label', { htmlFor: id }, icon(path), field.label),
               h('select', { 'aria-label': `${field.label} value source`, value: mode,
                 onChange: event => {
                   resetDraft();
@@ -103,7 +136,10 @@
     if (!response.ok) throw new Error(result.error || 'Unable to validate this edit.');
     return entry.get('data');
   } });
-  CMS.init({ config: { ...config, load_config_file: false } });
+  CMS.registerLocale('editor-en', {
+    editor: { editorToolbar: { backCollection: 'Editing in %{collectionLabel} collection' } }
+  });
+  CMS.init({ config: { ...config, locale: 'editor-en', load_config_file: false } });
 
   async function updateStatus() {
     const connection = document.getElementById('connection');
@@ -113,7 +149,7 @@
       connection.className = status.error ? 'connection-error' : '';
       const message = status.error ? `Save failed: ${status.error}` : status.lastSaved
         ? `Saved to repository · ${status.record} · ${new Date(status.lastSaved).toLocaleTimeString()}`
-        : `Local repository · ${status.counts.people.toLocaleString()} people · ${status.counts.filings.toLocaleString()} filings`;
+        : `Local repository · ${status.counts.people.toLocaleString()} people · ${status.counts.filings.toLocaleString()} filings · ${status.counts.places.toLocaleString()} places`;
       connection.append(document.createTextNode(message));
       const link = document.createElement('a');
       link.href = status.siteUrl; link.target = '_blank'; link.rel = 'noopener'; link.textContent = 'Open local site ↗';

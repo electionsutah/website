@@ -446,8 +446,9 @@ main:focus,main h1:focus{outline:0}
 @media (max-width:700px){.detail-hero.has-photo{padding-bottom:var(--space-7)}}
 
 /* People without a photo (account_circle) and places without an emblem (location_on): sized to whichever avatar box holds it. */
-.icon-avatar{container-type:size;color:var(--color-slate)}
-.icon-avatar .icon{font-size:78cqmin;vertical-align:0}
+.icon-avatar{--size-avatar-icon:78cqmin;container-type:size;color:var(--color-slate)}
+.icon-avatar .icon{font-size:var(--size-avatar-icon);vertical-align:0}
+.icon-avatar svg.flag-icon{display:block;width:var(--size-avatar-icon);height:var(--size-avatar-icon);vertical-align:0}
 .search-result>.search-logo{background:none}.search-logo img{display:block;width:100%;height:100%;object-fit:contain}
 .emblem-credit{margin:var(--space-4-5) 0 0;color:var(--color-muted);font:400 var(--text-xs)/1.5 var(--font-sans)}.emblem-credit a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 /* Place emblems sit on a white tile the size of the other avatars, so seals and wide logos line up. */
@@ -555,3 +556,6 @@ main:focus,main h1:focus{outline:0}
 .election-card .index-card-content h2{font-size:40px;margin-bottom:var(--space-1)}
 .election-card .index-card-content .card-footer{font-size:var(--text-xs)}
 .election-card .index-card-utilities{padding-inline:var(--space-4)}
+
+/* Logo-free party detail mark shares the centered icon treatment of directory avatars. */
+.party-mark { display: grid; place-items: center; }

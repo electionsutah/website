@@ -14,6 +14,18 @@ site is **http://127.0.0.1:5174**. Ctrl+C stops the editor, the Decap proxy,
 and this companion site. An existing site on port 5173 is left running.
 
 Choose **People** or **Filing records**, search for an entry, then select it.
+For town or county social accounts, choose **Places** and search for its name.
+Select **Override** beside a platform, paste its full account URL, and Publish.
+Use **Clear** to suppress an imported account or **Use imported value** to restore
+it. Only that platform changes; other social and reference links remain intact.
+**Offices**, **Parties**, and **Places** also expose Email, Phone, and repeatable
+Addresses fields under the shared `contact` object. Contacts start empty when
+the entity's enrichment source has none; candidate filing contacts are not
+inferred to be office, party, or town contacts. These values are stored in the
+entity's shared data for downstream consumers; adding contact cards to those
+public detail pages is separate from this schema/editor setup.
+The **Open on the local site** link lets you check the saved result. Existing
+towns and counties are included; creating new places is outside this editor's scope.
 Each field shows its imported value and offers three modes:
 
 - **Use imported value:** follow the repository's source data and future imports.
@@ -26,6 +38,27 @@ the canonical override file has been written. The companion site updates through
 Vite; the public site changes only after the usual build and deployment.
 
 ## Data and persistence
+
+### Schema screen
+
+Open **Schema** in the menu bar or visit `http://127.0.0.1:8080/schema`.
+Contents and Schema share ELUT’s theme. `elut-theme.mjs` reads design tokens
+and font declarations directly from `src/app.css`; `elut.css` applies those
+tokens to the editor. The dark menu uses the site’s white logo and salmon rule,
+with Noto Sans controls, Source Serif headings, blue actions, and warm surfaces.
+No separate font downloads or copied token definitions are maintained.
+Inspect each collection's field paths, types, record counts, storage, and
+relationships. Edit collection/field labels, use the arrow buttons to reorder
+fields, and edit select options one per line. **Save schema** persists the changes
+in `src/data/editor-schema.json`. Return to Contents (or reload an existing editor
+tab) to load the new forms. Settings survive editor restarts and are also used by
+the site's override validation. Option values used by source records or saved
+overrides cannot be removed. Concurrent schema edits are rejected until reloaded.
+Restore a collection's defaults with its reset button, then Save schema.
+
+The screen describes fields exposed by the editor, plus key relationships. It is
+not a complete replacement for the TypeScript entity model: field names, types,
+entity relationships, and migrations remain code changes.
 
 `src/data/editor-overrides.json` is the durable, Git-tracked source of manual
 changes. Its `people` and `filings` maps contain only explicitly overridden
@@ -101,3 +134,8 @@ validation without editing repository source data or saved overrides.
 References: [Decap local proxy](https://decapcms.org/docs/decap-proxy/),
 [custom widgets](https://decapcms.org/docs/custom-widgets/),
 [configuration](https://decapcms.org/docs/configuration-options/).
+
+Editor icons use a local Material Symbols Outlined subset (Google, Apache 2.0),
+including `ballot`, `archive`, `check_circle`, and `history`. Social fields reuse
+the site's exact SVG assets in `public/icons/external/`, at the same 24px size
+and original brand colors; see that directory's attribution and license files.

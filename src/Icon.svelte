@@ -6,6 +6,8 @@
 {#if name === 'copy_content'}
   <!-- Inline outline keeps this icon available without changing the font subset. -->
   <svg class="copy-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z" /></svg>
+{:else if name === 'flag'}
+  <svg class="flag-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m14 6-1-2H4v17h2v-7h5l1 2h7V6h-5Zm3 8h-3.76l-1-2H6V6h5.76l1 2H17v6Z" /></svg>
 {:else if name === 'info'}
   <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 11v6" /><circle cx="12" cy="7.5" r="1" fill="currentColor" stroke="none" /></svg>
 {:else if name === 'verified'}
@@ -15,6 +17,7 @@
 {/if}
 
 <style>
+  .flag-icon { display: inline-block; width: 1.25em; height: 1.25em; flex: none; vertical-align: -.2em; }
   .info-icon { display: block; width: 1.25em; height: 1.25em; flex: none; }
   .verified-icon { display: inline-block; width: 1.25em; height: 1.25em; flex: none; }
   .copy-icon { display: inline-block; width: 1.25em; height: 1.25em; vertical-align: -.2em; }

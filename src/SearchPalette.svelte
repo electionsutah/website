@@ -151,7 +151,7 @@
                 <div>
                   {#each group.visible as item}
                     <a class="search-result" href={item.href} onclick={(event) => open(event, item.href)}>
-                      {#if item.logo}<span class="search-logo" aria-hidden="true"><img src={item.logo} alt="" /></span>{:else if group.label === 'People'}<PersonAvatar personId={item.id} />{:else if group.label === 'Places' || group.label === 'Offices'}<span class="icon-avatar" aria-hidden="true"><Icon name={group.label === 'Places' ? 'location_on' : 'workspace_premium'} /></span>{:else}<span aria-hidden="true">{item.initials}</span>{/if}<div><strong>{item.title}</strong><small>{item.displayMeta}</small></div><b><Icon name="arrow_forward" /></b>
+                      {#if item.logo}<span class="search-logo" aria-hidden="true"><img src={item.logo} alt="" /></span>{:else if group.label === 'People'}<PersonAvatar personId={item.id} />{:else if group.label === 'Places' || group.label === 'Offices' || group.label === 'Parties'}<span class="icon-avatar" aria-hidden="true"><Icon name={group.label === 'Places' ? 'location_on' : group.label === 'Parties' ? 'flag' : 'workspace_premium'} /></span>{:else}<span aria-hidden="true">{item.initials}</span>{/if}<div><strong>{item.title}</strong><small>{item.displayMeta}</small></div><b><Icon name="arrow_forward" /></b>
                     </a>
                   {/each}
                 </div>

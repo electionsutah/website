@@ -1,6 +1,9 @@
 import saved from '../data/editor-overrides.json';
+import schemaSettings from '../data/editor-schema.json';
+import { configureFields } from './editor-schema';
 import type { Contact, Filing, Person } from './entities';
 import type { ContactAddress } from './contact-addresses';
+import { resolveEntityLinks, type EntityLink } from './entity-links';
 
 export type Resource = { label: string; description: string; url: string };
 export type PersonProfile = {
@@ -9,14 +12,24 @@ export type PersonProfile = {
 };
 export type Field = { path: string; label: string; type?: string; options?: string[] };
 export type Changes = Record<string, string | string[] | Resource[] | ContactAddress[]>;
-export type EditorialData = { version: number; people: Record<string, Changes>; filings: Record<string, Changes> };
+export type EditorialData = { version: number; people: Record<string, Changes>; filings: Record<string, Changes>; places?: Record<string, Changes>; offices?: Record<string, Changes>; parties?: Record<string, Changes> };
+export type EntityKind = 'people' | 'filings' | 'places' | 'offices' | 'parties';
 export const editorialData = saved as EditorialData;
 const contactFields: Field[] = [
   ...['website', 'facebook', 'instagram', 'twitter', 'bluesky'].map(key => ({ path: `contact.${key}`, label: key === 'twitter' ? 'X / Twitter' : key, type: 'url' })),
   ...['phone', 'email'].map(key => ({ path: `contact.${key}`, label: key })),
   { path: 'contact.address', label: 'Addresses', type: 'addresses' }
 ];
-export const editorFields: Record<'people' | 'filings', Field[]> = {
+export const placeSocialPlatforms = ['facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'] as const;
+const entityContactFields: Field[] = [
+  { path: 'contact.email', label: 'Email', type: 'email' },
+  { path: 'contact.phone', label: 'Phone' },
+  { path: 'contact.address', label: 'Addresses', type: 'addresses' }
+];
+export const baseEditorFields: Record<EntityKind, Field[]> = {
+  offices: entityContactFields,
+  parties: entityContactFields,
+  places: [...entityContactFields, ...placeSocialPlatforms.map(platform => ({ path: platform, label: platform === 'x' ? 'X / Twitter' : platform, type: 'url' }))],
   people: [
     { path: 'biography', label: 'Biography', type: 'text' },
     { path: 'priorities', label: 'Priorities (one per line)', type: 'lines' },
@@ -33,11 +46,12 @@ export const editorFields: Record<'people' | 'filings', Field[]> = {
     { path: 'lastUpdated', label: 'Filing update date', type: 'date' }, ...contactFields
   ]
 };
+export const editorFields = configureFields(baseEditorFields, schemaSettings);
 
-export function validateChanges(kind: 'people' | 'filings', changes: Changes): void {
+export function validateChanges(kind: EntityKind, changes: Changes, fields = editorFields): void {
   if (!changes || typeof changes !== 'object' || Array.isArray(changes)) throw new Error('Overrides must be an object');
   for (const [path, value] of Object.entries(changes)) {
-    const field = editorFields[kind].find(field => field.path === path);
+    const field = fields[kind].find(field => field.path === path);
     if (!field) throw new Error(`Unsupported ${kind} field: ${path}`);
     if (field.type === 'addresses') {
       if (typeof value !== 'string' && (!Array.isArray(value) || value.some(item => !item || typeof item !== 'object' || typeof (item as ContactAddress).label !== 'string' || typeof (item as ContactAddress).value !== 'string' || !(item as ContactAddress).value.trim()))) throw new Error('Addresses need a label and a nonempty address value');
@@ -47,11 +61,33 @@ export function validateChanges(kind: 'people' | 'filings', changes: Changes): v
       if (!Array.isArray(value) || value.some(item => !item || typeof item !== 'object' || !['label', 'description', 'url'].every(key => typeof (item as Resource)[key as keyof Resource] === 'string') || !safeUrl((item as Resource).url))) throw new Error('Resources need a label, description, and http(s) URL');
     } else {
       if (typeof value !== 'string') throw new Error(`${path} must be text`);
+      if (value && field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) throw new Error(`${path} needs an email address`);
       if (value && field.type === 'url' && !safeUrl(value)) throw new Error(`${path} needs an http(s) URL`);
       if (value && field.type === 'date' && (!/^\d{4}-\d{2}-\d{2}$/.test(value) || !Number.isFinite(Date.parse(value)) || new Date(value).toISOString().slice(0, 10) !== value)) throw new Error(`${path} needs a valid YYYY-MM-DD date`);
       if (value && field.options && !field.options.includes(value)) throw new Error(`Unsupported ${path}: ${value}`);
     }
   }
+}
+
+export function importedPlaceSocial(links: EntityLink[]): Record<string, string> {
+  const resolved = resolveEntityLinks(links);
+  return Object.fromEntries(placeSocialPlatforms.map(platform => [platform, resolved.find(link => link.platform === platform)?.url ?? '']));
+}
+
+export function applyPlaceSocial(links: EntityLink[], changes: Changes = {}): EntityLink[] {
+  validateChanges('places', changes);
+  const socialChanges = Object.entries(changes).filter(([key]) => (placeSocialPlatforms as readonly string[]).includes(key));
+  const overridden = new Set(socialChanges.map(([key]) => key));
+  return [
+    ...links.filter(link => !overridden.has(resolveEntityLinks([link])[0]?.platform ?? '')),
+    ...socialChanges.flatMap(([platform, value]) => value ? [{ platform: platform as EntityLink['platform'], url: value as string }] : [])
+  ];
+}
+
+export function entityContact(kind: 'offices' | 'parties' | 'places', source: Partial<Contact> = {}, changes: Changes = {}): Partial<Contact> {
+  validateChanges(kind, changes);
+  const contactChanges = Object.fromEntries(Object.entries(changes).filter(([key]) => key.startsWith('contact.')));
+  return applyChanges({ contact: source }, contactChanges).contact;
 }
 
 function safeUrl(value: string): boolean {
