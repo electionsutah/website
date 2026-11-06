@@ -32,7 +32,7 @@
     previousValue = value; open = false; query = ''; text = selectedLabel; active = -1;
   }
   $: if (!open) text = selectedLabel;
-  $: activeId = open && filtered[active] ? `${id}-option-${filtered[active].value}` : undefined;
+  $: activeId = open && filtered[active] ? `${id}-option-${active}` : undefined;
   function dismiss() { open = false; query = ''; text = selectedLabel; active = -1; }
   async function show() {
     if (open) return;
@@ -80,7 +80,7 @@
     <div class="combobox-popup">
       <ul role="listbox" id={`${id}-listbox`} aria-labelledby={`${id}-label`}>
         {#each filtered as option, index (option.value)}
-          <li role="option" id={`${id}-option-${option.value}`} aria-selected={value === option.value} tabindex="-1" class:highlighted={index === active}
+          <li role="option" id={`${id}-option-${index}`} aria-selected={value === option.value} tabindex="-1" class:highlighted={index === active}
             onpointerdown={(event) => event.preventDefault()} onclick={() => choose(option.value)} onkeydown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); choose(option.value); } }} onmouseenter={() => active = index}>
             <span><strong>{option.label}</strong>{#if option.description}<small>{option.description}</small>{/if}</span>{#if value === option.value}<span class="combobox-check" aria-hidden="true">✓</span>{/if}
           </li>

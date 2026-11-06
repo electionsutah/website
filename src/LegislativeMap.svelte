@@ -56,6 +56,8 @@
 
   // MapLibre map: MapTiler's OpenMapTiles vector style with hillshade, loaded live (their terms forbid caching tiles).
   const key = import.meta.env.VITE_MAPTILER_KEY as string | undefined;
+  let basemapAvailable = !!key;
+  let basemapFailed = false;
   let container: HTMLDivElement;
   let map: MapLibreMap | null = null;
   let ready = false;
@@ -73,7 +75,16 @@
     instance.touchZoomRotate.disableRotation();
     instance.keyboard.disableRotation();
     map = instance;
-    instance.on('load', () => {
+    instance.on('error', () => {
+      // A rejected style (for example, a restricted API key on localhost) must
+      // not prevent our locally hosted district boundaries and votes loading.
+      if (!ready && basemapAvailable) {
+        basemapAvailable = false;
+        basemapFailed = true;
+        instance.setStyle(blankStyle);
+      }
+    });
+    instance.once('load', () => {
       minZoom = instance.getZoom() - .5;
       instance.setMinZoom(minZoom);
       instance.setMaxBounds([[UTAH_BOUNDS[0][0] - 4, UTAH_BOUNDS[0][1] - 3], [UTAH_BOUNDS[1][0] + 4, UTAH_BOUNDS[1][1] + 3]]);
@@ -89,8 +100,8 @@
       instance.addSource('mask', { type: 'geojson', data: empty });
       instance.addLayer({ id: 'district-fill', type: 'fill', source: 'districts', filter: ['has', 'color'], paint: { 'fill-color': ['get', 'color'], 'fill-opacity': .82 } }, before);
       instance.addLayer({ id: 'district-pattern', type: 'fill', source: 'districts', filter: ['!', ['has', 'color']], paint: { 'fill-pattern': 'no-result', 'fill-opacity': .9 } }, before);
-      if (key) instance.addSource('hillshade', { type: 'raster', tiles: [`https://api.maptiler.com/tiles/hillshade/{z}/{x}/{y}.webp?key=${key}`], tileSize: 512, maxzoom: 12 });
-      if (key) instance.addLayer({ id: 'hillshade', type: 'raster', source: 'hillshade', paint: { 'raster-opacity': .55 } }, before);
+      if (basemapAvailable) instance.addSource('hillshade', { type: 'raster', tiles: [`https://api.maptiler.com/tiles/hillshade/{z}/{x}/{y}.webp?key=${key}`], tileSize: 512, maxzoom: 12 });
+      if (basemapAvailable) instance.addLayer({ id: 'hillshade', type: 'raster', source: 'hillshade', paint: { 'raster-opacity': .55 } }, before);
       instance.addLayer({ id: 'district-line', type: 'line', source: 'districts', paint: { 'line-color': '#fffefa', 'line-width': ['interpolate', ['linear'], ['zoom'], 5, .6, 10, 1.6], 'line-opacity': .9 } }, labels);
       instance.addLayer({ id: 'county-line', type: 'line', source: 'counties', layout: { visibility: 'none' }, paint: { 'line-color': '#26363c', 'line-width': 1, 'line-opacity': .55 } }, labels);
       instance.addLayer({ id: 'county-chosen', type: 'line', source: 'counties', filter: ['==', ['get', 'id'], ''], paint: { 'line-color': '#111110', 'line-width': 2.2 } }, labels);
@@ -159,7 +170,6 @@
 
 <section class="legislative-section" id="statewide-map" aria-labelledby="legislative-title">
   <div class="labs-section-heading"><div><p class="labs-kicker">The state legislature</p><h2 id="legislative-title">Utah, district by district.</h2></div><p>Explore House and Senate results. Zoom into a county, then select a district to see its vote.</p></div>
-  <div class="legislative-toolbar"><div class="chamber-toggle" role="group" aria-label="Legislative chamber"><button aria-pressed={chamber === 'senate'} onclick={() => setChamber('senate')}>Utah Senate</button><button aria-pressed={chamber === 'house'} onclick={() => setChamber('house')}>Utah House</button></div><Combobox id="legislative-county-select" label="Zoom to a county" value={county} options={countyOptions} placeholder="Find a county…" itemLabel="county" itemsLabel="counties" hint="Type a county name." emptyMessage="No matching counties. Try another name." onSelect={(value) => { county = value; chooseCounty(); }} /><label class="county-overlay"><input type="checkbox" bind:checked={showCounties} /> County boundaries</label></div>
   <div class="legislative-summary" role="status"><strong>{results.size} of {chamber === 'house' ? 75 : 29} districts have published 2026 results</strong><span>{#each leaderCounts.filter(row => row.count) as row}<span><ResultPartyName name={row.party} />: <b>{row.count}</b> leading</span>{/each}</span></div>
   {#if loading}<p class="labs-message" role="status">Loading Utah’s legislative map…</p>{:else if error}<div class="labs-message" role="alert"><p>{error}</p><button onclick={loadGeometry}>Retry map</button><a href="#all-results">Browse results</a></div>{:else}
   <div class="legislative-layout">
@@ -168,18 +178,22 @@
       <!-- svelte-ignore a11y_no_static_element_interactions -->
       <div class="legislative-map-stage" onkeydown={onKeydown}>
         <div class="legislative-map-canvas" bind:this={container}></div>
-        <div class="map-zoom-controls" role="group" aria-label="Map zoom controls"><button aria-label="Zoom in" disabled={!ready} onclick={() => map?.zoomIn()}><Icon name="add" /></button><button aria-label="Zoom out" disabled={!ready || zoom <= 1.01} onclick={() => map?.zoomOut()}><Icon name="remove" /></button><button class="map-reset" aria-label="Reset map to all Utah" onclick={reset}><Icon name="zoom_out_map" /></button></div>
-        {#if zoom > 1.01}<div class="map-pan-controls" role="group" aria-label="Pan map"><button aria-label="Pan left" onclick={() => pan(-.2, 0)}><Icon name="arrow_back" /></button><button aria-label="Pan up" onclick={() => pan(0, -.2)}><Icon name="arrow_upward" /></button><button aria-label="Pan down" onclick={() => pan(0, .2)}><Icon name="arrow_downward" /></button><button aria-label="Pan right" onclick={() => pan(.2, 0)}><Icon name="arrow_forward" /></button></div>{/if}
+        <div class="map-zoom-controls" role="group" aria-label="Map zoom controls"><button aria-label="Zoom in" title="Zoom in (+)" disabled={!ready} onclick={() => map?.zoomIn()}><Icon name="add" /></button><button aria-label="Zoom out" title="Zoom out (−)" disabled={!ready || zoom <= 1.01} onclick={() => map?.zoomOut()}><Icon name="remove" /></button><button class="map-reset" aria-label="Reset map to all Utah" title="Reset map to all Utah (Home)" onclick={reset}><Icon name="zoom_out_map" /></button></div>
+        {#if zoom > 1.01}<div class="map-pan-controls" role="group" aria-label="Pan map"><button aria-label="Pan left" title="Pan left (←)" onclick={() => pan(-.2, 0)}><Icon name="arrow_back" /></button><button aria-label="Pan up" title="Pan up (↑)" onclick={() => pan(0, -.2)}><Icon name="arrow_upward" /></button><button aria-label="Pan down" title="Pan down (↓)" onclick={() => pan(0, .2)}><Icon name="arrow_downward" /></button><button aria-label="Pan right" title="Pan right (→)" onclick={() => pan(.2, 0)}><Icon name="arrow_forward" /></button></div>{/if}
         {#if hovered && tip}<div class="map-tooltip" aria-hidden="true" style={`left:${tip.x}px;top:${tip.y}px;transform:translate(${tip.flip ? 'calc(-100% - 14px)' : '14px'}, calc(-100% - 10px))`}><strong>{tipTitle}</strong><span>{resultState(hoveredResult)}</span></div>{/if}
-        {#if key && ready}<a class="maptiler-logo" href="https://www.maptiler.com/" target="_blank" rel="noreferrer"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler" /></a>{/if}
+        {#if basemapAvailable && ready}<a class="maptiler-logo" href="https://www.maptiler.com/" target="_blank" rel="noreferrer"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler" /></a>{/if}
       </div>
+      {#if basemapFailed}<p class="map-note" role="status">The base map is unavailable. District boundaries and election results are still shown.</p>{/if}
       <p class="map-hover-status" aria-live="polite">{hovered ? `${chamberLabel(chamber)} District ${hovered} · ${resultState(hoveredResult)}` : 'Select a district on the map or choose one from the list.'}</p>
       <div class="map-legend legislative-legend"><span><i style="background:#2675aa"></i><ResultPartyName name="Democratic" /> leader</span><span><i style="background:#bc443d"></i><ResultPartyName name="Republican" /> leader</span><span><i style="background:#79629d"></i><ResultPartyName name="Forward" /> leader</span><span><i style="background:#626870"></i>Other leader</span><span><i class="map-pattern"></i>No result / tied</span></div>
       <p class="map-note" id="legislative-map-help">Drag to pan, or use the arrow buttons. Hold Ctrl (⌘ on Mac) and scroll to zoom, or use two fingers on touch screens. Keyboard: +/− to zoom, arrow keys to pan, Home to reset, Escape to clear the selection. District colors show full-district leaders, including when zoomed into a county.</p>
     </div>
     <aside class="legislative-details" aria-label="Selected legislative district">
-      {#if !selectedShape}<div class="district-intro"><p class="labs-kicker">{countyName || 'Start exploring'}</p><h3>{countyName ? 'Your county’s races.' : 'Find your district.'}</h3><p>Select a district for candidate names, vote counts, and a link to the full race.</p></div>{/if}
-      {#key `${chamber}:${county}`}<Combobox id="legislative-district-select" label={county ? 'Choose a race reporting in this county' : 'Choose a district'} value={selected} valueLabel={selected ? `${chamberName} District ${selected}` : ''} options={districtOptions} placeholder="Select a district…" onSelect={(number) => selectDistrict(number, !!number)} />{/key}
+      {#if !selectedShape}<div class="district-intro"><p class="labs-kicker">{countyName || 'Start exploring'}</p><h3>{countyName ? 'Your county’s races.' : 'Find your district.'}</h3></div>{/if}
+      <div class="chamber-toggle" role="group" aria-label="Legislative chamber"><button aria-pressed={chamber === 'senate'} onclick={() => setChamber('senate')}>Utah Senate</button><button aria-pressed={chamber === 'house'} onclick={() => setChamber('house')}>Utah House</button></div>
+      {#if !selectedShape}<p class="district-intro-text">Select a district for candidate names, vote counts, and a link to the full race.</p>{/if}
+      {#key `${chamber}:${county}`}<Combobox id="legislative-district-select" label={county ? `Choose a ${chamberName} district in this county` : `Choose a ${chamberName} district`} value={selected} valueLabel={selected ? `${chamberName} District ${selected}` : ''} options={districtOptions} placeholder="Select a district…" onSelect={(number) => selectDistrict(number, !!number)} />{/key}
+      <div class="legislative-toolbar"><Combobox id="legislative-county-select" label="Zoom to a county" value={county} options={countyOptions} placeholder="Find a county…" itemLabel="county" itemsLabel="counties" hint="Type a county name." emptyMessage="No matching counties. Try another name." onSelect={(value) => { county = value; chooseCounty(); }} /><label class="county-overlay"><input type="checkbox" bind:checked={showCounties} /> County boundaries</label></div>
       {#if selectedShape}<div class="district-detail-heading"><p class="labs-kicker">{chamberLabel(chamber)}</p><h3>{#if districtHref}<a class="result-office-link" href={districtHref}>District {selected}</a>{:else}District {selected}{/if}</h3></div>
         {#if contest && currentResult}<p class="district-total-scope">{countyResult ? `${countyName} votes in this district` : 'Full district results'}</p><p class="district-current-leader">{resultState(contest)} <small>District-wide</small></p><div class="vote-bar" aria-hidden="true">{#each currentResult.options as option}<span style={`width:${currentResult.total ? option.votes / currentResult.total * 100 : 0}%;background:${color(option)}`}></span>{/each}</div>
           {#each currentResult.options as option}<div class="candidate-result"><span class="party-dot" style={`background:${color(option)}`}></span><div><strong><ResultPersonName name={option.name} {contest} /></strong><small><ResultPartyName name={option.party} fallback="Unaffiliated / write-in" /></small></div><b>{#if currentResult.total}<CountUp value={option.votes / currentResult.total * 100} format={formatPercent} />{:else}—{/if}<small><CountUp value={option.votes} /> votes</small></b></div>{/each}

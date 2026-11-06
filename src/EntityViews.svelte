@@ -562,7 +562,7 @@
           <tbody>
             {#each visibleCards as card (card.id)}
               <tr>
-                <th scope="row"><a href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>{#if card.logo}<span class="table-logo" class:inverse-logo={card.id === 'utah-republican-party'} class:emblem-logo={section === 'places'} style={card.accent ? `--card-accent:${card.accent}` : ''}><img src={card.logo} alt="" /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="mini-avatar" />{:else if section === 'places' || section === 'offices'}<span class="mini-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'places' ? 'location_on' : 'workspace_premium'} /></span>{:else}<span class="mini-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}<span>{card.title}</span></a></th>
+                <th scope="row"><a href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>{#if card.logo}<span class="table-logo" class:inverse-logo={card.id === 'utah-republican-party'} class:emblem-logo={section === 'places'} style={card.accent ? `--card-accent:${card.accent}` : ''}><img src={card.logo} alt="" /></span>{:else if section === 'places' && placeImages[card.id]}<span class="mini-avatar photo-avatar"><img src={placeImages[card.id].src} alt="" loading="lazy" decoding="async" /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="mini-avatar" />{:else if section === 'places' || section === 'offices'}<span class="mini-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'places' ? 'location_on' : 'workspace_premium'} /></span>{:else}<span class="mini-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}<span>{card.title}</span></a></th>
                 {#each tableColumns.slice(1) as column (column.key)}
                   <td data-label={column.label} class:numeric={column.key === 'filings'}>
                     {#if column.key === 'years'}
@@ -584,7 +584,8 @@
     {:else}
       <div class="entity-grid" bind:this={resultsList}>
         {#each visibleCards as card}
-          <article class="entity-card" style={card.accent ? `--card-accent:${card.accent}` : ''}>
+          {@const tileImage = section === 'places' ? placeImages[card.id] : undefined}
+          <article class="entity-card" class:place-tile={section === 'places'} class:has-photo={!!tileImage} style={card.accent ? `--card-accent:${card.accent}` : ''} style:--place-photo={tileImage ? `url("${tileImage.src}")` : undefined}>
             {#if section === 'places' && (card.officialWebsite || card.wikidataUrl || card.wikipediaUrl)}
               <div class="place-source-links" role="group" aria-label={`${card.title} reference links`}>
                 {#if card.officialWebsite}
@@ -608,6 +609,12 @@
               {#if card.logo}<span class="card-logo" class:inverse-logo={card.id === 'utah-republican-party'} class:emblem-logo={section === 'places'}><img src={card.logo} alt={`${card.title} logo`} /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="card-avatar" />{:else if section === 'places' || section === 'offices'}<span class="card-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'places' ? 'location_on' : 'workspace_premium'} /></span>{:else}<span class="card-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}
               {#if !omitColumns.includes('party')}<small>{section === 'people' ? card.columns[1] : card.eyebrow}</small>{/if}<h2>{card.title}</h2><p>{section === 'people' ? card.columns[0] : card.meta}</p>{#if showStatus}<p class="candidate-status">Status: {card.statuses.join(' · ')}</p>{/if}<div class="card-footer"><span>{section === 'people' || filtering ? filingCount(card) : card.count}{#if !omitColumns.includes('years') && section === 'people'} · {card.years.join(', ')}{/if}</span><b>View record <Icon name="arrow_forward" /></b></div>
             </a>
+            {#if tileImage}
+              <details class="tile-photo-credit">
+                <summary>Photo credit<span class="sr-only"> for {card.title}</span></summary>
+                <PhotoCredit image={tileImage} className="tile-photo-credit-content" />
+              </details>
+            {/if}
           </article>
         {:else}
           <p class="no-records">No matching {labels[section].plural.toLowerCase()}.</p>

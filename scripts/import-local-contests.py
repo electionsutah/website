@@ -410,24 +410,47 @@ def write_reports(directory, rows):
     years = sorted({row['year'] for row in rows})
     sections = ['County Offices', 'Municipal Offices', 'School Board Offices', 'Special District Offices', 'Unmatched']
     head = ''.join(f'<th>{year}<br><small>{html.escape(section.replace(" Offices", ""))}</small></th>' for year in years for section in sections[:4])
-    body = ''.join(f'<tr><th>{county}</th>' + ''.join(f'<td data-sort="{by_county[county][(year, section)]}">{by_county[county][(year, section)] or "—"}</td>' for year in years for section in sections[:4]) + '</tr>' for county in COUNTIES)
+    def link(path, label):
+        return f'<a href="https://www.electionsutah.org/{html.escape(path, quote=True)}/">{html.escape(str(label))}</a>'
+
+    def office_link(office, label=None):
+        # Match cleanOfficeName in src/lib/entities.ts before building the office route.
+        clean = re.sub(r'\s+\(Multi[- ]County\)', '', office, flags=re.I)
+        clean = clean.replace('Distrct', 'District', 1).replace('Distirct', 'District', 1)
+        clean = re.sub(r'^US Congressional', 'U.S. House', clean)
+        clean = re.sub(r'^(U\.S\. House|State Senate|State House|State School Board) (\d+)', r'\1 District \2', clean)
+        return link(f'offices/{slug(clean)}', office if label is None else label)
+
+    body = ''.join(f'<tr><th>{link(f"places/{slug(county)}", county)}</th>' + ''.join(f'<td data-sort="{by_county[county][(year, section)]}">{link(f"places/{slug(county)}", by_county[county][(year, section)]) if by_county[county][(year, section)] else "—"}</td>' for year in years for section in sections[:4]) + '</tr>' for county in COUNTIES)
     offices = defaultdict(set)
     for row in rows: offices[(row['section'], row['office'])].add(row['rawOffice'])
     # Local candidates who share a name with someone already in the archive are joined into one person on the site.
     def key(value): return re.sub(r'[^a-z0-9]', '', slug(value))
     existing = defaultdict(set)
-    for row in json.loads((ROOT / 'src/data/historical-candidates.json').read_text()): existing[key(row['name'])].add(f"{row['year']} {row['office']}")
-    for row in json.loads((ROOT / 'src/data/2026-candidates.json').read_text()): existing[key(row['name'])].add(f"2026 {row['office']}")
+    historical = json.loads((ROOT / 'src/data/historical-candidates.json').read_text())
+    current = [{**row, 'year': 2026} for row in json.loads((ROOT / 'src/data/2026-candidates.json').read_text())]
+    for row in historical + current: existing[key(row['name'])].add((row['year'], row['office']))
+    # The site chooses the latest spelling, with later filings breaking ties.
+    person_names = {}
+    for row in historical + [r for r in rows if r['section'] != 'Unmatched'] + current:
+        for name in filter(None, (row['name'], row.get('runningMate'))):
+            k = key(name)
+            if k not in person_names or row['year'] >= person_names[k][0]:
+                person_names[k] = (row['year'], name)
+
     shared = defaultdict(set)
     for row in rows:
-        if key(row['name']) in existing: shared[(row['name'], key(row['name']))].add(f"{row['year']} {row['office']}")
-    matches = ''.join(f'<tr><td>{html.escape(name)}</td><td>{html.escape(" · ".join(sorted(existing[k])))}</td><td>{html.escape(" · ".join(sorted(local)))}</td></tr>' for (name, k), local in sorted(shared.items()))
-    mapping = ''.join(f'<tr><td>{html.escape(section)}</td><td>{html.escape(office)}</td><td>{html.escape(" · ".join(sorted(raw)))}</td></tr>' for (section, office), raw in sorted(offices.items()))
+        if key(row['name']) in existing: shared[(row['name'], key(row['name']))].add((row['year'], row['office']))
+    def race_links(records):
+        return ' · '.join(office_link(office, f'{year} {office}') for year, office in sorted(records, key=lambda record: f'{record[0]} {record[1]}'))
+
+    matches = ''.join(f'<tr><td>{link(f"people/{slug(person_names[k][1])}", name)}</td><td>{race_links(existing[k])}</td><td>{race_links(local)}</td></tr>' for (name, k), local in sorted(shared.items()))
+    mapping = ''.join(f'<tr><td>{html.escape(section)}</td><td>{office_link(office) if section != "Unmatched" else html.escape(office)}</td><td>{html.escape(" · ".join(sorted(raw)))}</td></tr>' for (section, office), raw in sorted(offices.items()))
     (directory / 'local-candidates.html').write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Local contests import review</title>
 <style>body{{margin:0;padding:32px;font:13px/1.45 system-ui,sans-serif;color:#1d2226;background:#f2f1ed}}h1{{font:700 28px Georgia,serif;margin:0 0 6px}}h2{{font:700 20px Georgia,serif;margin:28px 0 8px}}p{{color:#5f5e59;max-width:900px}}
 table{{border-collapse:collapse;background:#fff;border:1px solid #c8c6c0}}th,td{{padding:5px 8px;border-bottom:1px solid #e3e1db;text-align:right;white-space:nowrap}}thead th{{background:#1d2226;color:#fff;font-size:11px;position:sticky;top:0}}tbody th{{text-align:left}}
 .map td{{text-align:left;white-space:normal;max-width:520px}}.wrap{{overflow-x:auto}}</style>{SORTABLE}</head><body>
-<h1>Local contests import</h1><p>{len(rows)} candidate records from electionresults.utah.gov (2023 municipal primary through 2026 general). Counts are candidate records per county, year, and office type. The second table shows how each source contest name was normalized into an office name, so naming mistakes are easy to spot. The full list with votes and source links is in local-candidates.csv. Click any column heading to sort.</p>
+<h1>Local contests import</h1><p>{len(rows)} candidate records from electionresults.utah.gov (2023 municipal primary through 2026 general). Counts are candidate records per county, year, and office type. The second table shows how each source contest name was normalized into an office name, so naming mistakes are easy to spot. The full list with votes and source links is in <a href="local-candidates.csv">local-candidates.csv</a>. Click any column heading to sort.</p>
 <div class="wrap"><table><thead><tr><th>County</th>{head}</tr></thead><tbody>{body}</tbody></table></div>
 <h2>Same name as an existing person ({len(shared)})</h2><p>These local candidates share a name with someone already in the archive, so the site joins them into one person. Most are the same people (council members who later ran for the Legislature). Flag any that are different people.</p>
 <div class="wrap"><table class="map"><thead><tr><th>Name</th><th>Existing records</th><th>New local records</th></tr></thead><tbody>{matches}</tbody></table></div>
