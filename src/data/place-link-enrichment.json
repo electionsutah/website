@@ -1488,5 +1488,51 @@
     "canonicalWebsite": "https://www.fruitheights.gov/",
     "sourceTitle": "Fruit Heights City, UT - Official Website | Official Website",
     "sourceStatusCode": 200
+  },
+  "washington/new-harmony": {
+    "verifiedOn": "2026-11-06",
+    "status": "Official website and government records verified",
+    "existingWebsite": "",
+    "canonicalWebsite": "https://newharmony.utah.gov/",
+    "sources": [
+      "https://newharmony.utah.gov/",
+      "https://newharmony.utah.gov/government/",
+      "https://www.utah.gov/pmn/sitemap/publicbody/3995.html"
+    ],
+    "notes": [
+      "Added a verified municipality without fabricating candidate filings.",
+      "The official town homepage publishes no social-account links; unrelated community, fire district, and library accounts are not town accounts.",
+      "Public notices identify New Harmony Town Council and its town-clerk contact."
+    ],
+    "contact": {
+      "phone": "435.590.0268",
+      "email": "dthecker@yahoo.com",
+      "address": [
+        {
+          "label": "Town Council / public notices address",
+          "value": "133 East Center Street, New Harmony, UT 84757"
+        }
+      ]
+    },
+    "links": [
+      {
+        "url": "https://newharmony.utah.gov/",
+        "label": "Official website",
+        "source": "https://newharmony.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://newharmony.utah.gov/government/",
+        "label": "Town government",
+        "source": "https://newharmony.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.utah.gov/pmn/sitemap/publicbody/3995.html",
+        "label": "Council agendas and minutes",
+        "source": "https://www.utah.gov/pmn/sitemap/publicbody/3995.html",
+        "verifiedOn": "2026-11-06"
+      }
+    ]
   }
 }

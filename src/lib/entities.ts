@@ -1,5 +1,6 @@
 import placeLinkEnrichment from '../data/place-link-enrichment.json';
 import placeProfileData from '../data/place-enrichment.json';
+import placeDirectory from '../data/place-directory.json';
 import personLinkEnrichment from '../data/person-link-enrichment.json';
 import partyEnrichment from '../data/party-enrichment.json';
 import officeEnrichment from '../data/office-enrichment.json';
@@ -169,7 +170,14 @@ const identityAliases: Record<string, string> = {
   kayjchristofferson: "kayjefferychristofferson",
   kimrolfe: "kimvrolfe",
   kirkpearson: "kirkdpearson",
-  lynnhemingway: "lynnnhemingway"
+  lynnhemingway: "lynnnhemingway",
+  margaretbourke: "margaretellenbourke",
+  paulglover: "paulcglover",
+  raymondward: "raymondpward",
+  richcunningham: "richlcunningham",
+  robertspendlove: "robertmspendlove",
+  scottbneilson: "scottbrandonneilson",
+  susanduckworth: "susandduckworth"
 };
 
 // Explicitly reviewed names stay stable even when a newer source abbreviates them.
@@ -199,8 +207,21 @@ const preferredPersonNames: Record<string, string> = {
   kayjefferychristofferson: "Kay Jeffery Christofferson",
   kimvrolfe: "Kim V. Rolfe",
   kirkdpearson: "Kirk D Pearson",
-  lynnnhemingway: "Lynn N. Hemingway"
+  lynnnhemingway: "Lynn N. Hemingway",
+  margaretellenbourke: "Margaret Ellen Bourke",
+  paulcglover: "Paul C. Glover",
+  raymondpward: "Raymond P. Ward",
+  richlcunningham: "Rich L. Cunningham",
+  robertmspendlove: "Robert M. Spendlove",
+  scottbrandonneilson: "Scott Brandon Neilson",
+  susandduckworth: "Susan D. Duckworth"
 };
+
+/** Punctuate standalone middle initials without altering source filing names or URL IDs. */
+export function personDisplayName(value: string): string {
+  const words = displayName(value).split(' ');
+  return words.map((word, index) => index > 0 && index < words.length - 1 && /^[A-Za-z]$/.test(word) ? `${word.toUpperCase()}.` : word).join(' ');
+}
 
 export function identityKey(value: string): string {
   const key = slug(value).replaceAll('-', '');
@@ -488,7 +509,7 @@ for (const { filing, name } of filingPeople) {
   const person = personMap.get(matchKey) ?? { id: slug(name), name, initials: initialsOf(name), filings: [], years: [] };
   person.filings.push(filing);
   if (filing.year >= Math.max(...person.filings.map((item) => item.year))) {
-    person.name = preferredPersonNames[matchKey] ?? name;
+    person.name = personDisplayName(preferredPersonNames[matchKey] ?? name);
     person.id = slug(person.name);
     person.initials = initialsOf(person.name);
   }
@@ -628,6 +649,16 @@ for (const filing of filings) {
     city.years = uniqueNumbers(city.filings.map((item) => item.year));
     placeMap.set(cityId, city);
   }
+}
+// Verified municipalities can appear before a candidate roster has been archived.
+for (const entry of placeDirectory) {
+  const parentId = slug(entry.county);
+  const id = `${parentId}/${slug(entry.name)}`;
+  if (!placeMap.has(id)) placeMap.set(id, {
+    id, name: entry.name, type: 'City', county: entry.county, parentId,
+    description: `${entry.name} is a town in ${entry.county} County. No candidate filings are currently archived for this place.`,
+    filings: [], offices: [], children: [], years: []
+  });
 }
 for (const place of placeMap.values()) {
   const profile = (placeProfileData as Record<string, { officialWebsite: string; wikipediaUrl: string; wikidataUrl: string }>)[place.id];

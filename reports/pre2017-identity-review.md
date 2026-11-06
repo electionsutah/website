@@ -1,6 +1,6 @@
 # Candidate identity merge review
 
-Scope: person profiles involving at least one 2013–2016 record. The five strongest pairs have been merged under their fuller names; 21 additional pairs (plus Brad Daw and David Hinkins) have also been merged. The remaining seven pairs await review. John Dougall’s preferred display name is John "Frugal" Dougall. Original source names remain unchanged.
+Scope: person profiles involving at least one 2013–2016 record. The five strongest pairs have been merged under their fuller names; all 28 additional pairs (plus Brad Daw and David Hinkins) have also been merged. All reviewed pairs are approved and merged. Paul C. Glover is the preferred display name. John Dougall’s preferred display name is John "Frugal" Dougall. Original source names remain unchanged.
 
 ## Strongest matches
 
@@ -16,7 +16,7 @@ These five pairs occur in the same office and election year, with compatible nam
 
 ## Additional likely matches
 
-The first 21 rows are approved and merged, with Brad Daw also merged into Bradley M. Daw and David Hinkins into David Parley Hinkins. The remaining seven rows are pending. These pairs share an office and compatible name forms across years. They need identity verification; shared offices alone do not establish identity.
+All 28 rows are approved and merged, with Brad Daw also merged into Bradley M. Daw and David Hinkins into David Parley Hinkins. No reviewed pairs remain pending. These pairs share an office and compatible name forms across years. These identity merges were approved during review; shared offices alone are not used to merge other people automatically.
 
 | Name A | Name B | Shared office |
 |---|---|---|

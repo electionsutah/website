@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { createServer } from 'vite';
 const server = await createServer({ configFile: false, logLevel: 'silent', server: { middlewareMode: true, hmr: false, ws: false } });
 try {
-  const { people, peopleById, filings, identityKey, slug } = await server.ssrLoadModule('/src/lib/entities.ts');
+  const { people, peopleById, filings, identityKey, slug, personDisplayName } = await server.ssrLoadModule('/src/lib/entities.ts');
   for (const [full, short] of [
     ['Aleta Andersen Taylor', 'Aleta Taylor'],
     ['John R. Westwood', 'John Westwood'],
@@ -32,11 +32,18 @@ try {
     ["Kay Jeffery Christofferson", "Kay J. Christofferson"],
     ["Kim V. Rolfe", "Kim Rolfe"],
     ["Kirk D Pearson", "Kirk Pearson"],
-    ["Lynn N. Hemingway", "Lynn Hemingway"]
+    ["Lynn N. Hemingway", "Lynn Hemingway"],
+    ["Margaret Ellen Bourke", "Margaret Bourke"],
+    ["Paul C. Glover", "Paul Glover"],
+    ["Raymond P. Ward", "Raymond Ward"],
+    ["Rich L. Cunningham", "Rich Cunningham"],
+    ["Robert M. Spendlove", "Robert Spendlove"],
+    ["Scott Brandon Neilson", "Scott B. Neilson"],
+    ["Susan D. Duckworth", "Susan Duckworth"]
   ]) {
     assert.equal(identityKey(full), identityKey(short));
     const person = peopleById.get(slug(full));
-    assert.equal(person?.name, full);
+    assert.equal(person?.name, personDisplayName(full));
     assert(slug(short) === slug(full) || !people.some(p => p.id === slug(short)), `${short} must not remain a separate person`);
     for (const name of [full, short]) {
       const sources = filings.filter(f => identityKey(f.name) === identityKey(name) || (f.runningMate && identityKey(f.runningMate) === identityKey(name)));
@@ -46,5 +53,12 @@ try {
     assert(person.filings.some(f => f.name === short || f.runningMate === short), 'Source name must be preserved');
     console.log(`${full}: ${person.filings.length} source filings retained`);
   }
-  assert.notEqual(identityKey('Margaret Bourke'), identityKey('Margaret Ellen Bourke'), 'Pending pairs must remain separate');
+  for (const person of people) {
+    assert(!person.name.split(/\s+/).slice(1, -1).some(word => /^[A-Za-z]$/.test(word)), `Unpunctuated middle initial: ${person.name}`);
+  }
+  assert.equal(personDisplayName('Amanda M C Longwell'), 'Amanda M. C. Longwell');
+  assert.equal(personDisplayName('James R Cheney II'), 'James R. Cheney II');
+  assert.equal(personDisplayName('J Michael Smith'), 'J Michael Smith', 'Leading initials are outside the middle-initial rule');
+  assert.equal(personDisplayName('John "Frugal" Dougall'), 'John "Frugal" Dougall');
+  assert.equal(personDisplayName('Robert M. Spendlove'), 'Robert M. Spendlove');
 } finally { await server.close(); }

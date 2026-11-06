@@ -3380,5 +3380,25 @@
   "inceptionDate": "1882-00-00",
   "inceptionPrecision": 9,
   "officialWebsiteSource": "https://en.wikipedia.org/wiki/Hanksville%2C_Utah"
+ },
+ "washington/new-harmony": {
+  "wikipediaTitle": "New Harmony, Utah",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/New_Harmony,_Utah",
+  "summary": "New Harmony is a town in Washington County, Utah, near the Pine Valley Mountains and Kolob Canyons. Its municipal government uses a five-member council and mayor system.",
+  "wikidataId": "Q483586",
+  "wikidataUrl": "https://www.wikidata.org/wiki/Q483586",
+  "officialWebsite": "https://newharmony.utah.gov/",
+  "population": 236,
+  "populationAsOf": "2020-04-01",
+  "populationSource": "Wikipedia (2020 census)",
+  "populationSourceUrl": "https://en.wikipedia.org/wiki/New_Harmony,_Utah",
+  "inceptionDate": null,
+  "inceptionPrecision": null,
+  "sources": [
+   "https://newharmony.utah.gov/",
+   "https://newharmony.utah.gov/government/",
+   "https://www.wikidata.org/wiki/Q483586"
+  ],
+  "verifiedOn": "2026-11-06"
  }
 }
