@@ -1,0 +1,1492 @@
+{
+  "beaver": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "http://beaver.utah.gov",
+    "sources": [
+      "http://beaver.utah.gov"
+    ],
+    "notes": [
+      "Official homepage redirects to https://www.beaver.utah.gov/. The freshly verified destination replaces the older website in the link collection only.",
+      "Instagram redirect leads to ramblersutah, a tourism brand; withheld from the county government collection.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.beaver.utah.gov/",
+        "label": "Official website",
+        "source": "http://beaver.utah.gov",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/beaverut",
+        "source": "http://beaver.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/@beavercountyutahpublicmeet8388",
+        "source": "http://beaver.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.beaver.utah.gov/",
+    "sourceTitle": "Beaver County, UT - Official Website | Official Website",
+    "sourceStatusCode": 200
+  },
+  "box-elder": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.boxeldercountyut.gov/",
+    "sources": [
+      "https://www.boxeldercountyut.gov/",
+      "https://www.boxeldercountyut.gov/facebook",
+      "https://www.boxeldercountyut.gov/instagram",
+      "https://www.boxeldercountyut.gov/twitter"
+    ],
+    "notes": [
+      "Account destinations were verified through the county’s own redirect shortcuts.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.boxeldercountyut.gov/",
+        "label": "Official website",
+        "source": "https://www.boxeldercountyut.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/BoxCounty/",
+        "source": "https://www.boxeldercountyut.gov/facebook",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://www.instagram.com/boxcounty/",
+        "source": "https://www.boxeldercountyut.gov/instagram",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://x.com/BoxCounty",
+        "source": "https://www.boxeldercountyut.gov/twitter",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      }
+    ],
+    "canonicalWebsite": "https://www.boxeldercountyut.gov/",
+    "sourceTitle": "Box Elder County, UT | Official Website",
+    "sourceStatusCode": 200
+  },
+  "cache": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.cachecounty.gov/",
+    "sources": [
+      "https://www.cachecounty.gov/",
+      "https://www.cachecounty.gov/outreach.html"
+    ],
+    "notes": [
+      "Official communication directory checked; only accounts attributed to the county/city as a whole are included, not department or event accounts.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.cachecounty.gov/",
+        "label": "Official website",
+        "source": "https://www.cachecounty.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/CacheCounty",
+        "source": "https://www.cachecounty.gov/outreach.html",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.facebook.com/CacheCounty/",
+        "source": "https://www.cachecounty.gov/outreach.html",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://instagram.com/cachecounty1857",
+        "source": "https://www.cachecounty.gov/outreach.html",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCa4xvEI8bnIEz3B9zw2teaA",
+        "source": "https://www.cachecounty.gov/outreach.html",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.cachecounty.gov/",
+    "sourceTitle": "Home - Official Site of Cache County, Utah",
+    "sourceStatusCode": 200
+  },
+  "carbon": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website verified",
+    "existingWebsite": "https://www.carbon.utah.gov/",
+    "sources": [
+      "https://www.carbon.utah.gov/"
+    ],
+    "notes": [
+      "No general-government social account verified from the inspected pages. This does not establish that none exists.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.carbon.utah.gov/",
+        "label": "Official website",
+        "source": "https://www.carbon.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      }
+    ],
+    "canonicalWebsite": "https://www.carbon.utah.gov/",
+    "sourceTitle": "Carbon County Utah",
+    "sourceStatusCode": 200
+  },
+  "daggett": {
+    "verifiedOn": "2026-11-06",
+    "status": "Retrieval blocked",
+    "existingWebsite": "http://www.daggettcounty.org",
+    "sources": [
+      "http://www.daggettcounty.org"
+    ],
+    "notes": [
+      "Research service could not retrieve the site. Existing website and reference links are preserved; no new account was verified."
+    ],
+    "links": [],
+    "retrievalIssue": "Research service could not retrieve the site"
+  },
+  "davis": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.daviscountyutah.gov/",
+    "sources": [
+      "https://www.daviscountyutah.gov/",
+      "https://www.daviscountyutah.gov/social-media-connections"
+    ],
+    "notes": [
+      "Official communication directory checked; sheriff, health, tourism, trails, event, and other department accounts are excluded. Only explicitly identified general government accounts are included; the Davis Commission account is labeled with its scope.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.daviscountyutah.gov/",
+        "label": "Official website",
+        "source": "https://www.daviscountyutah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.linkedin.com/company/davis-county-government",
+        "source": "https://www.daviscountyutah.gov/social-media-connections",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/DavisCountyComm",
+        "source": "https://www.daviscountyutah.gov/social-media-connections",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website",
+        "label": "X · County Commission"
+      }
+    ],
+    "canonicalWebsite": "https://www.daviscountyutah.gov/",
+    "sourceTitle": "Davis County Utah - Home",
+    "sourceStatusCode": 200
+  },
+  "duchesne": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://duchesne.utah.gov/",
+    "sources": [
+      "https://duchesne.utah.gov/",
+      "https://duchesne.utah.gov/connect/"
+    ],
+    "notes": [
+      "Official communication directory checked; only accounts attributed to the county/city as a whole are included, not department or event accounts.",
+      "Convention bureau, sheriff, fire/emergency, and event-center Facebook pages excluded. County LinkedIn retained.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://duchesne.utah.gov/",
+        "label": "Official website",
+        "source": "https://duchesne.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.linkedin.com/company/duchesnecounty/",
+        "source": "https://duchesne.utah.gov/connect/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://duchesne.utah.gov/",
+    "sourceTitle": "Welcome - Duchesne County, UT",
+    "sourceStatusCode": 200
+  },
+  "emery": {
+    "verifiedOn": "2026-11-06",
+    "status": "Retrieval blocked",
+    "existingWebsite": "https://www.emerycounty.com/",
+    "sources": [
+      "https://www.emerycounty.com/"
+    ],
+    "notes": [
+      "TLS/certificate retrieval error. Existing website and reference links are preserved; no new account was verified."
+    ],
+    "links": [],
+    "retrievalIssue": "TLS/certificate retrieval error"
+  },
+  "garfield": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.garfield.utah.gov/",
+    "sources": [
+      "https://www.garfield.utah.gov/"
+    ],
+    "notes": [
+      "Official homepage redirects to https://www.garfield.utah.gov/Home. The freshly verified destination replaces the older website in the link collection only.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.garfield.utah.gov/Home",
+        "label": "Official website",
+        "source": "https://www.garfield.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/garfieldcountyutah",
+        "source": "https://www.garfield.utah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/garfieldcountyutah/",
+        "source": "https://www.garfield.utah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.garfield.utah.gov/Home",
+    "sourceTitle": "Home - Garfield County",
+    "sourceStatusCode": 200
+  },
+  "grand": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.grandcountyutah.net/",
+    "sources": [
+      "https://www.grandcountyutah.net/",
+      "https://www.grandcountyutah.net/youtube"
+    ],
+    "notes": [
+      "The Facebook shortcut did not resolve to a verified account. The official YouTube redirect was verified and included.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.grandcountyutah.net/",
+        "label": "Official website",
+        "source": "https://www.grandcountyutah.net/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.youtube.com/c/GrandCountyUtahGovernment",
+        "source": "https://www.grandcountyutah.net/youtube",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      }
+    ],
+    "canonicalWebsite": "https://www.grandcountyutah.net/",
+    "sourceTitle": "Grand County, UT - Official Website | Official Website",
+    "sourceStatusCode": 200
+  },
+  "iron": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.ironcounty.net/",
+    "sources": [
+      "https://www.ironcounty.net/"
+    ],
+    "notes": [
+      "Official homepage redirects to https://ironcountyut.gov/. The freshly verified destination replaces the older website in the link collection only.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://ironcountyut.gov/",
+        "label": "Official website",
+        "source": "https://www.ironcounty.net/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/ironcountyutahus/",
+        "source": "https://www.ironcounty.net/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/@ironcounty6701",
+        "source": "https://www.ironcounty.net/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://ironcountyut.gov/",
+    "sourceTitle": "Iron County",
+    "sourceStatusCode": 200
+  },
+  "juab": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website verified",
+    "existingWebsite": "https://juabcounty.gov/",
+    "sources": [
+      "https://juabcounty.gov/"
+    ],
+    "notes": [
+      "No general-government social account verified from the inspected pages. This does not establish that none exists.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://juabcounty.gov/",
+        "label": "Official website",
+        "source": "https://juabcounty.gov/",
+        "verifiedOn": "2026-11-06"
+      }
+    ],
+    "canonicalWebsite": "https://juabcounty.gov/",
+    "sourceTitle": "JuabCounty.Gov – The Official Website of Juab County Government",
+    "sourceStatusCode": 200
+  },
+  "kane": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://kane.utah.gov/",
+    "sources": [
+      "https://kane.utah.gov/"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://kane.utah.gov/",
+        "label": "Official website",
+        "source": "https://kane.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/KaneCoUtah/",
+        "source": "https://kane.utah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://kane.utah.gov/",
+    "sourceTitle": "Kane County, UT | Official Website",
+    "sourceStatusCode": 200
+  },
+  "millard": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://millardcounty.gov/",
+    "sources": [
+      "https://millardcounty.gov/"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://millardcounty.gov/",
+        "label": "Official website",
+        "source": "https://millardcounty.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/Millard-County-Government-109231680755314",
+        "source": "https://millardcounty.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://millardcounty.gov/",
+    "sourceTitle": "Millard County – Welcome!",
+    "sourceStatusCode": 200
+  },
+  "morgan": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.morgancountyutah.gov/",
+    "sources": [
+      "https://www.morgancountyutah.gov/"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.morgancountyutah.gov/",
+        "label": "Official website",
+        "source": "https://www.morgancountyutah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.youtube.com/@MorganCountyUtah",
+        "source": "https://www.morgancountyutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.facebook.com/profile.php?id=61595221981008",
+        "source": "https://www.morgancountyutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.morgancountyutah.gov/",
+    "sourceTitle": "Local Government Services | Morgan County Utah | Morgan",
+    "sourceStatusCode": 200
+  },
+  "piute": {
+    "verifiedOn": "2026-11-06",
+    "status": "Retrieval blocked",
+    "existingWebsite": "http://piutecounty.org",
+    "sources": [
+      "http://piutecounty.org"
+    ],
+    "notes": [
+      "Research service could not retrieve the site. Existing website and reference links are preserved; no new account was verified."
+    ],
+    "links": [],
+    "retrievalIssue": "Research service could not retrieve the site"
+  },
+  "rich": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website verified",
+    "existingWebsite": "https://www.richcountyut.org/",
+    "sources": [
+      "https://www.richcountyut.org/"
+    ],
+    "notes": [
+      "Official homepage redirects to https://www.richcounty.gov/. The freshly verified destination replaces the older website in the link collection only.",
+      "No general-government social account verified from the inspected pages. This does not establish that none exists.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.richcounty.gov/",
+        "label": "Official website",
+        "source": "https://www.richcountyut.org/",
+        "verifiedOn": "2026-11-06"
+      }
+    ],
+    "canonicalWebsite": "https://www.richcounty.gov/",
+    "sourceTitle": "Rich County Courthouse Utah - Licences, permits, officials, sheriff & plats",
+    "sourceStatusCode": 200
+  },
+  "salt-lake": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website verified",
+    "existingWebsite": "https://www.saltlakecounty.gov/",
+    "sources": [
+      "https://www.saltlakecounty.gov/"
+    ],
+    "notes": [
+      "No general-government social account verified from the inspected pages. This does not establish that none exists.",
+      "Homepage and eConnect page checked; no general county social destination verified in this batch. No mayor-named or department account substituted.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.saltlakecounty.gov/",
+        "label": "Official website",
+        "source": "https://www.saltlakecounty.gov/",
+        "verifiedOn": "2026-11-06"
+      }
+    ],
+    "canonicalWebsite": "https://www.saltlakecounty.gov/",
+    "sourceTitle": "Salt Lake County",
+    "sourceStatusCode": 200
+  },
+  "san-juan": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website verified",
+    "existingWebsite": "https://sanjuancountyut.gov/",
+    "sources": [
+      "https://sanjuancountyut.gov/"
+    ],
+    "notes": [
+      "No general-government social account verified from the inspected pages. This does not establish that none exists.",
+      "Facebook and YouTube shortcuts returned internal pages without verified account destinations; both withheld.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://sanjuancountyut.gov/",
+        "label": "Official website",
+        "source": "https://sanjuancountyut.gov/",
+        "verifiedOn": "2026-11-06"
+      }
+    ],
+    "canonicalWebsite": "https://sanjuancountyut.gov/",
+    "sourceTitle": "San Juan County, UT | Official Website",
+    "sourceStatusCode": 200
+  },
+  "sanpete": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://sanpete.com/",
+    "sources": [
+      "https://sanpete.com/"
+    ],
+    "notes": [
+      "Official homepage redirects to https://www.sanpetecountyutah.gov/. The freshly verified destination replaces the older website in the link collection only.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.sanpetecountyutah.gov/",
+        "label": "Official website",
+        "source": "https://sanpete.com/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/SanpeteInfo",
+        "source": "https://sanpete.com/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.sanpetecountyutah.gov/",
+    "sourceTitle": "Sanpete County, UT | Official Website",
+    "sourceStatusCode": 200
+  },
+  "sevier": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website verified",
+    "existingWebsite": "https://www.sevier.utah.gov/",
+    "sources": [
+      "https://www.sevier.utah.gov/"
+    ],
+    "notes": [
+      "No general-government social account verified from the inspected pages. This does not establish that none exists.",
+      "The inspected homepage links generic Facebook/Instagram roots and a Reddit share endpoint, not identifiable government accounts. These are excluded.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.sevier.utah.gov/",
+        "label": "Official website",
+        "source": "https://www.sevier.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      }
+    ],
+    "canonicalWebsite": "https://www.sevier.utah.gov/",
+    "sourceTitle": "Sevier County, UT",
+    "sourceStatusCode": 200
+  },
+  "summit": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.summitcounty.org/",
+    "sources": [
+      "https://www.summitcounty.org/",
+      "https://www.summitcountyutah.gov/facebook",
+      "https://www.summitcountyutah.gov/instagram",
+      "https://www.summitcountyutah.gov/twitter",
+      "https://www.summitcountyutah.gov/youtube"
+    ],
+    "notes": [
+      "Official homepage redirects to https://www.summitcountyutah.gov/. The freshly verified destination replaces the older website in the link collection only.",
+      "Account destinations were verified through the county’s own redirect shortcuts.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.summitcountyutah.gov/",
+        "label": "Official website",
+        "source": "https://www.summitcounty.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/SummitCountyUT",
+        "source": "https://www.summitcountyutah.gov/facebook",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 301"
+      },
+      {
+        "url": "https://www.instagram.com/SummitCountyUT",
+        "source": "https://www.summitcountyutah.gov/instagram",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://x.com/SummitCountyUT",
+        "source": "https://www.summitcountyutah.gov/twitter",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 301"
+      },
+      {
+        "url": "https://www.youtube.com/user/SummitCountyUtah",
+        "source": "https://www.summitcountyutah.gov/youtube",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 301"
+      }
+    ],
+    "canonicalWebsite": "https://www.summitcountyutah.gov/",
+    "sourceTitle": "Summit County, UT - Official Website | Official Website",
+    "sourceStatusCode": 200
+  },
+  "tooele": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website verified",
+    "existingWebsite": "https://tooeleco.gov/",
+    "sources": [
+      "https://tooeleco.gov/"
+    ],
+    "notes": [
+      "No general-government social account verified from the inspected pages. This does not establish that none exists.",
+      "Tourism Instagram and County Manager Facebook are narrower accounts; not presented as general county accounts.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://tooeleco.gov/",
+        "label": "Official website",
+        "source": "https://tooeleco.gov/",
+        "verifiedOn": "2026-11-06"
+      }
+    ],
+    "canonicalWebsite": "https://tooeleco.gov/",
+    "sourceTitle": "Tooele County",
+    "sourceStatusCode": 200
+  },
+  "uintah": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.uintah.gov/",
+    "sources": [
+      "https://www.uintah.gov/",
+      "https://www.uintah.gov/facebook",
+      "https://www.uintah.gov/instagram",
+      "https://www.uintah.gov/youtube"
+    ],
+    "notes": [
+      "Account destinations were verified through the county’s own redirect shortcuts.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.uintah.gov/",
+        "label": "Official website",
+        "source": "https://www.uintah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/UintahCountyUtah/",
+        "source": "https://www.uintah.gov/facebook",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://www.instagram.com/uintahcountyut/",
+        "source": "https://www.uintah.gov/instagram",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCKaZrt-j4DT0CsXGAHEWluw",
+        "source": "https://www.uintah.gov/youtube",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      }
+    ],
+    "canonicalWebsite": "https://www.uintah.gov/",
+    "sourceTitle": "Uintah County, UT  | Official Website",
+    "sourceStatusCode": 200
+  },
+  "utah": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.utahcounty.gov/",
+    "sources": [
+      "https://www.utahcounty.gov/"
+    ],
+    "notes": [
+      "Instagram is the county commission account explicitly linked by the county; institutional scope preserved in its label.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.utahcounty.gov/",
+        "label": "Official website",
+        "source": "https://www.utahcounty.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/UtahCountyGov/",
+        "source": "https://www.utahcounty.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCkRYDnXVDLGv9792bhWn9Wg",
+        "source": "https://www.utahcounty.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/utahcountycommission/",
+        "source": "https://www.utahcounty.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website",
+        "label": "Instagram · County Commission"
+      },
+      {
+        "url": "https://x.com/utahcountygov",
+        "source": "https://www.utahcounty.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.utahcounty.gov/",
+    "sourceTitle": "Utah County Government",
+    "sourceStatusCode": 200
+  },
+  "wasatch": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.wasatchcounty.gov/",
+    "sources": [
+      "https://www.wasatchcounty.gov/",
+      "https://www.wasatchcounty.gov/facebook",
+      "https://www.wasatchcounty.gov/twitter",
+      "https://www.wasatchcounty.gov/instagram",
+      "https://www.wasatchcounty.gov/youtube"
+    ],
+    "notes": [
+      "Account destinations were verified through the county’s own redirect shortcuts.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.wasatchcounty.gov/",
+        "label": "Official website",
+        "source": "https://www.wasatchcounty.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/WasatchCounty/",
+        "source": "https://www.wasatchcounty.gov/facebook",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://x.com/WasatchCounty",
+        "source": "https://www.wasatchcounty.gov/twitter",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://www.instagram.com/wasatch_county/",
+        "source": "https://www.wasatchcounty.gov/instagram",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://www.youtube.com/@wasatch_county",
+        "source": "https://www.wasatchcounty.gov/youtube",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      }
+    ],
+    "canonicalWebsite": "https://www.wasatchcounty.gov/",
+    "sourceTitle": "Wasatch County, UT | Official Website",
+    "sourceStatusCode": 200
+  },
+  "washington": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.washco.utah.gov/",
+    "sources": [
+      "https://www.washco.utah.gov/"
+    ],
+    "notes": [
+      "Older Facebook alias and individual YouTube playlist omitted in favor of the current footer accounts.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.washco.utah.gov/",
+        "label": "Official website",
+        "source": "https://www.washco.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/washingtoncountyofutah/",
+        "source": "https://www.washco.utah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/washcoutah/",
+        "source": "https://www.washco.utah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/@washcoutah",
+        "source": "https://www.washco.utah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/washingtoncountyofutah/",
+        "source": "https://www.washco.utah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.washco.utah.gov/",
+    "sourceTitle": "Washington County of Utah | County News at your fingertips",
+    "sourceStatusCode": 200
+  },
+  "wayne": {
+    "verifiedOn": "2026-11-06",
+    "status": "Retrieval blocked",
+    "existingWebsite": "http://www.waynecountyutah.org",
+    "sources": [
+      "http://www.waynecountyutah.org"
+    ],
+    "notes": [
+      "TLS/certificate retrieval error. Existing website and reference links are preserved; no new account was verified."
+    ],
+    "links": [],
+    "retrievalIssue": "TLS/certificate retrieval error"
+  },
+  "weber": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.webercountyutah.gov/",
+    "sources": [
+      "https://www.webercountyutah.gov/"
+    ],
+    "notes": [
+      "Public-meeting YouTube @handle used; alternative channel ID omitted to avoid an unverified duplicate alias.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.webercountyutah.gov/",
+        "label": "Official website",
+        "source": "https://www.webercountyutah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.youtube.com/@webercountyutah/streams",
+        "source": "https://www.webercountyutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.facebook.com/Weber-County-205690952944353/",
+        "source": "https://www.webercountyutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/WeberCounty",
+        "source": "https://www.webercountyutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/webercountyut/",
+        "source": "https://www.webercountyutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.webercountyutah.gov/",
+    "sourceTitle": "Weber County",
+    "sourceStatusCode": 200
+  },
+  "salt-lake/salt-lake-city": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.slc.gov/",
+    "sources": [
+      "https://www.slc.gov/"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.slc.gov/",
+        "label": "Official website",
+        "source": "https://www.slc.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/SLCGovernment/",
+        "source": "https://www.slc.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/SLCgov",
+        "source": "https://www.slc.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/user/SLCtvmedia",
+        "source": "https://www.slc.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/slcgov/",
+        "source": "https://www.slc.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.slc.gov/",
+    "sourceTitle": "SLC.gov",
+    "sourceStatusCode": 200
+  },
+  "salt-lake/west-valley-city": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.wvc-ut.gov",
+    "sources": [
+      "https://www.wvc-ut.gov",
+      "https://www.wvc-ut.gov/services/west_valley_city_connect.php"
+    ],
+    "notes": [
+      "Official communication directory checked; only accounts attributed to the county/city as a whole are included, not department or event accounts.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.wvc-ut.gov/",
+        "label": "Official website",
+        "source": "https://www.wvc-ut.gov",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/WestValleyCity",
+        "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/wvcut",
+        "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.linkedin.com/company/west-valley-city",
+        "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/@wvctv2290",
+        "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/WVCUT",
+        "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.wvc-ut.gov/",
+    "sourceTitle": "West Valley City, UT",
+    "sourceStatusCode": 200
+  },
+  "salt-lake/west-jordan": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.westjordan.utah.gov",
+    "sources": [
+      "https://www.westjordan.utah.gov"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.westjordan.utah.gov/",
+        "label": "Official website",
+        "source": "https://www.westjordan.utah.gov",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/WestJordanCityHall",
+        "source": "https://www.westjordan.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/westjordanutah/",
+        "source": "https://www.westjordan.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UC7Up4AfoWj0KebppgTvnLSg/",
+        "source": "https://www.westjordan.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.westjordan.utah.gov/",
+    "sourceTitle": "City of West Jordan, UT",
+    "sourceStatusCode": 200
+  },
+  "utah/provo": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.provo.gov/",
+    "sources": [
+      "https://www.provo.gov/"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.provo.gov/",
+        "label": "Official website",
+        "source": "https://www.provo.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/provocity",
+        "source": "https://www.provo.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/provocity",
+        "source": "https://www.provo.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/provocity",
+        "source": "https://www.provo.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/@ProvoCityGovernment",
+        "source": "https://www.provo.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.linkedin.com/company/provo-city/",
+        "source": "https://www.provo.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.provo.gov/",
+    "sourceTitle": "Provo, UT | Official Website",
+    "sourceStatusCode": 200
+  },
+  "utah/orem": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://orem.gov/",
+    "sources": [
+      "https://orem.gov/"
+    ],
+    "notes": [
+      "LinkedIn company /mycompany route is kept as published by the city; may require authentication.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://orem.gov/",
+        "label": "Official website",
+        "source": "https://orem.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/oremcity/",
+        "source": "https://orem.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/orem_city/",
+        "source": "https://orem.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.linkedin.com/company/city-of-orem/mycompany/",
+        "source": "https://orem.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/@TheCityofOrem",
+        "source": "https://orem.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://orem.gov/",
+    "sourceTitle": "City of Orem – Family City USA",
+    "sourceStatusCode": 200
+  },
+  "salt-lake/sandy": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.sandy.utah.gov",
+    "sources": [
+      "https://www.sandy.utah.gov"
+    ],
+    "notes": [
+      "Numeric Facebook widget destinations and reels excluded in favor of the named city account. YouTube channel featured tab is kept as published.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.sandy.utah.gov/",
+        "label": "Official website",
+        "source": "https://www.sandy.utah.gov",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/sandycityutah",
+        "source": "https://www.sandy.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.facebook.com/SandyCityUtah/",
+        "source": "https://www.sandy.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/@sandycityut/featured",
+        "source": "https://www.sandy.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/sandycityutah/",
+        "source": "https://www.sandy.utah.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.sandy.utah.gov/",
+    "sourceTitle": "Sandy City, UT - Official Website | Official Website",
+    "sourceStatusCode": 200
+  },
+  "washington/st-george": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://sgcityutah.gov/",
+    "sources": [
+      "https://sgcityutah.gov/"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://sgcityutah.gov/",
+        "label": "Official website",
+        "source": "https://sgcityutah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/cityofstgeorge",
+        "source": "https://sgcityutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/Cityofstgeorge",
+        "source": "https://sgcityutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/stgeorgecityutah/",
+        "source": "https://sgcityutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCssI3y3sYbIAySKA8M_8dRw",
+        "source": "https://sgcityutah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://sgcityutah.gov/",
+    "sourceTitle": "City of St. George, UT",
+    "sourceStatusCode": 200
+  },
+  "weber/ogden": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.ogdencity.gov/",
+    "sources": [
+      "https://www.ogdencity.gov/"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.ogdencity.gov/",
+        "label": "Official website",
+        "source": "https://www.ogdencity.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/OgdenCityUtah/",
+        "source": "https://www.ogdencity.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/ogdencityutah",
+        "source": "https://www.ogdencity.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/ogdencityutah/",
+        "source": "https://www.ogdencity.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCnV0ROTi1bSTch6at6lAzcw",
+        "source": "https://www.ogdencity.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.ogdencity.gov/",
+    "sourceTitle": "Ogden, UT | Official Website",
+    "sourceStatusCode": 200
+  },
+  "davis/layton": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.laytoncityutah.gov/LC",
+    "sources": [
+      "https://www.laytoncityutah.gov/LC"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.laytoncityutah.gov/LC",
+        "label": "Official website",
+        "source": "https://www.laytoncityutah.gov/LC",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/laytoncity/",
+        "source": "https://www.laytoncityutah.gov/LC",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/laytonFYI",
+        "source": "https://www.laytoncityutah.gov/LC",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/LaytonCity/",
+        "source": "https://www.laytoncityutah.gov/LC",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.laytoncityutah.gov/LC",
+    "sourceTitle": "Layton City",
+    "sourceStatusCode": 200
+  },
+  "salt-lake/south-jordan": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.sjc.utah.gov/",
+    "sources": [
+      "https://www.sjc.utah.gov/",
+      "https://www.sjc.utah.gov/facebook",
+      "https://www.sjc.utah.gov/instagram",
+      "https://www.sjc.utah.gov/youtube"
+    ],
+    "notes": [
+      "Facebook, Instagram and YouTube destinations verified through city-owned redirect shortcuts; LinkedIn linked directly.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.sjc.utah.gov/",
+        "label": "Official website",
+        "source": "https://www.sjc.utah.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.linkedin.com/company/cityofsouthjordan",
+        "source": "https://www.sjc.utah.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.facebook.com/SouthJordanCity",
+        "source": "https://www.sjc.utah.gov/facebook",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://www.instagram.com/southjordancity/",
+        "source": "https://www.sjc.utah.gov/instagram",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      },
+      {
+        "url": "https://www.youtube.com/@cityofsouthjordan1423",
+        "source": "https://www.sjc.utah.gov/youtube",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+      }
+    ],
+    "canonicalWebsite": "https://www.sjc.utah.gov/",
+    "sourceTitle": "South Jordan, UT | Official Website",
+    "sourceStatusCode": 200
+  },
+  "utah/lehi": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.lehi-ut.gov",
+    "sources": [
+      "https://www.lehi-ut.gov"
+    ],
+    "notes": [
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.lehi-ut.gov/",
+        "label": "Official website",
+        "source": "https://www.lehi-ut.gov",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/lehicity",
+        "source": "https://www.lehi-ut.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://x.com/LehiCity",
+        "source": "https://www.lehi-ut.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/lehi_city/",
+        "source": "https://www.lehi-ut.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UC-BcH5cOFjKCueNOsjOZPQw",
+        "source": "https://www.lehi-ut.gov",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.lehi-ut.gov/",
+    "sourceTitle": "Home | Lehi City",
+    "sourceStatusCode": 200
+  },
+  "salt-lake/millcreek": {
+    "verifiedOn": "2026-11-06",
+    "status": "Retrieval blocked",
+    "existingWebsite": "https://www.millcreekut.gov/",
+    "sources": [
+      "https://www.millcreekut.gov/"
+    ],
+    "notes": [
+      "Research-service proxy tunnel error. Existing website and reference links are preserved; no new account was verified."
+    ],
+    "links": [],
+    "retrievalIssue": "Research-service proxy tunnel error"
+  },
+  "davis/fruit-heights": {
+    "verifiedOn": "2026-11-06",
+    "status": "Website + social verified",
+    "existingWebsite": "https://www.fruitheights.gov/",
+    "sources": [
+      "https://www.fruitheights.gov/"
+    ],
+    "notes": [
+      "Embed/tracking URLs and the numeric Facebook widget alias excluded; named city accounts retained.",
+      "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact."
+    ],
+    "links": [
+      {
+        "url": "https://www.fruitheights.gov/",
+        "label": "Official website",
+        "source": "https://www.fruitheights.gov/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/FruitHeightsCityGovernment",
+        "source": "https://www.fruitheights.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.instagram.com/fruitheightscity/",
+        "source": "https://www.fruitheights.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      },
+      {
+        "url": "https://www.youtube.com/@fruitheightscity9716",
+        "source": "https://www.fruitheights.gov/",
+        "verifiedOn": "2026-11-06",
+        "evidence": "Published on the government website"
+      }
+    ],
+    "canonicalWebsite": "https://www.fruitheights.gov/",
+    "sourceTitle": "Fruit Heights City, UT - Official Website | Official Website",
+    "sourceStatusCode": 200
+  }
+}

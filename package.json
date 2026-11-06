@@ -19,7 +19,8 @@
     "editor": "node editor/dev.mjs",
     "editor:prepare": "node editor/prepare.mjs",
     "check:editor": "node editor/check.mjs",
-    "editor:install": "npm --prefix editor ci"
+    "editor:install": "npm --prefix editor ci",
+    "check:links": "node scripts/check-entity-links.mjs && node scripts/check-office-links.mjs && node scripts/check-party-links.mjs && node scripts/check-person-links.mjs && node scripts/check-place-links.mjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "5.1.1",

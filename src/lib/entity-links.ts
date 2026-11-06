@@ -1,15 +1,18 @@
-export type LinkPlatform = 'website' | 'wikipedia' | 'wikidata' | 'facebook' | 'instagram' | 'x' | 'linkedin' | 'youtube' | 'mastodon' | 'bluesky';
+export type LinkPlatform = 'website' | 'wikipedia' | 'wikidata' | 'facebook' | 'instagram' | 'x' | 'linkedin' | 'youtube' | 'mastodon' | 'bluesky' | 'tiktok' | 'truthsocial' | 'rumble' | 'threads' | 'substack';
 
 export type EntityLink = {
   url: string;
   label?: string;
   platform?: LinkPlatform;
   detail?: string;
+  /** Primary page that publishes this link. */
+  source?: string;
+  verifiedOn?: string;
 };
 
 const labels: Record<LinkPlatform, string> = {
   website: 'Website', wikipedia: 'Wikipedia', wikidata: 'Wikidata', facebook: 'Facebook',
-  instagram: 'Instagram', x: 'X', linkedin: 'LinkedIn', youtube: 'YouTube', mastodon: 'Mastodon', bluesky: 'Bluesky'
+  instagram: 'Instagram', x: 'X', linkedin: 'LinkedIn', youtube: 'YouTube', mastodon: 'Mastodon', bluesky: 'Bluesky', tiktok: 'TikTok', truthsocial: 'Truth Social', rumble: 'Rumble', threads: 'Threads', substack: 'Substack'
 };
 
 function inferPlatform(host: string): LinkPlatform {
@@ -21,6 +24,11 @@ function inferPlatform(host: string): LinkPlatform {
   if (domain('x.com') || domain('twitter.com')) return 'x';
   if (domain('linkedin.com')) return 'linkedin';
   if (domain('youtube.com') || host === 'youtu.be') return 'youtube';
+  if (domain('threads.net') || domain('threads.com')) return 'threads';
+  if (domain('substack.com')) return 'substack';
+  if (domain('tiktok.com')) return 'tiktok';
+  if (domain('truthsocial.com')) return 'truthsocial';
+  if (domain('rumble.com')) return 'rumble';
   if (host === 'bsky.app') return 'bluesky';
   return 'website';
 }
@@ -43,8 +51,8 @@ export function resolveEntityLinks(links: EntityLink[]) {
       else if (platform === 'wikidata') detail = path.at(-1) ?? host;
       else if (platform === 'bluesky') detail = path.at(-1) ? `@${path.at(-1)}` : host;
       else if (platform === 'mastodon') detail = path.at(-1) ? `${path.at(-1)} · ${host}` : host;
-      else if (['instagram', 'x'].includes(platform)) detail = path[0] ? `@${path[0].replace(/^@/, '')}` : host;
-      else if (['facebook', 'linkedin', 'youtube'].includes(platform)) detail = path.join('/') || host;
+      else if (['instagram', 'x', 'tiktok', 'truthsocial', 'threads', 'substack'].includes(platform)) detail = path[0] ? `@${path[0].replace(/^@/, '')}` : host;
+      else if (['facebook', 'linkedin', 'youtube', 'rumble'].includes(platform)) detail = path.join('/') || host;
       return [{ url: url.href, platform, label: link.label || labels[platform], detail: link.detail || detail }];
     } catch {
       return [];
@@ -52,10 +60,17 @@ export function resolveEntityLinks(links: EntityLink[]) {
   });
 }
 
-export function placeEntityLinks(profile?: { officialWebsite: string; wikipediaUrl: string; wikidataUrl: string }): EntityLink[] {
-  return profile ? [
-    { url: profile.officialWebsite, label: 'Official website' },
-    { url: profile.wikipediaUrl },
-    { url: profile.wikidataUrl }
-  ] : [];
+export function placeEntityLinks(
+  profile?: { officialWebsite: string; wikipediaUrl: string; wikidataUrl: string },
+  verified: EntityLink[] = []
+): EntityLink[] {
+  const hasVerifiedWebsite = verified.some(link => link.label === 'Official website');
+  return [
+    ...verified,
+    ...(profile ? [
+      ...(!hasVerifiedWebsite ? [{ url: profile.officialWebsite, label: 'Official website' }] : []),
+      { url: profile.wikipediaUrl },
+      { url: profile.wikidataUrl }
+    ] : [])
+  ];
 }

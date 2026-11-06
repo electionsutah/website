@@ -272,6 +272,7 @@ main:focus,main h1:focus{outline:0}
 .profile-source a{color:var(--color-blue);text-decoration:underline}
 .detail-summary a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
 .contact-heading{flex-wrap:wrap}
+.contact-verification{display:inline-flex;align-items:center;flex-wrap:wrap;gap:var(--space-1)}
 .all-records{flex-wrap:wrap;align-items:center}
 .finder input,.index-tools input{min-width:0}
 

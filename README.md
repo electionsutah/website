@@ -139,6 +139,28 @@ npx @modelcontextprotocol/inspector           # choose Streamable HTTP and that 
 The build also writes `dist/llms.txt` (a guide to the site and its data for AI
 tools) and `dist/data/filings.json` (every candidate filing as JSON).
 
+## Verified website and social links
+
+Source-backed link collections are stored separately from archived filings:
+
+- `src/data/office-enrichment.json` — individual office sites and accounts
+- `src/data/party-enrichment.json` — party websites, accounts, and review dispositions
+- `src/data/person-link-enrichment.json` — individual profiles and campaign accounts
+- `src/data/place-link-enrichment.json` — verified government sites and accounts
+
+Each new link retains its primary source and verification date. These collections
+appear on entity pages, directory tiles, and the MCP connector. Government documents,
+external reference pages, and parent-organization accounts are kept out of a
+subject’s website/social collection. Existing Wikipedia/Wikidata links for places
+remain available as explicitly identified reference links.
+
+Run the link checks with `npm run check:links`. HTML review reports live in
+`reports/`, link subjects to their directory pages, and retain a `3rem` body margin.
+After generating a report and its matching JSON file, run
+`node scripts/decorate-enrichment-reports.mjs` to embed the platform icons. Pass
+individual HTML paths to update only selected reports. Reports are self-contained
+for offline review, including filtering and pagination.
+
 ## Directory routes
 
 Current campaign information is maintained separately in

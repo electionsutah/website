@@ -15,14 +15,26 @@ try {
     { url: 'https://www.linkedin.com/company/example/' },
     { url: 'https://www.youtube.com/@example' },
     { url: 'https://www.facebook.com/example/' },
-    { url: 'https://social.example/@example', platform: 'mastodon' }
+    { url: 'https://social.example/@example', platform: 'mastodon' },
+    { url: 'https://www.tiktok.com/@example' },
+    { url: 'https://truthsocial.com/@example' },
+    { url: 'https://rumble.com/c/example' },
+    { url: 'https://www.threads.net/@example' },
+    { url: 'https://substack.com/@example' }
   ]);
-  assert.deepEqual(links.map(({ platform }) => platform), ['website', 'wikipedia', 'wikidata', 'instagram', 'x', 'bluesky', 'linkedin', 'youtube', 'facebook', 'mastodon']);
+  assert.deepEqual(links.map(({ platform }) => platform), ['website', 'wikipedia', 'wikidata', 'instagram', 'x', 'bluesky', 'linkedin', 'youtube', 'facebook', 'mastodon', 'tiktok', 'truthsocial', 'rumble', 'threads', 'substack']);
   assert.equal(links[0].url, 'https://beaver.utah.gov/');
   assert.equal(links[1].detail, 'Beaver County, Utah');
   assert.equal(links[2].detail, 'Q109284');
   assert.equal(links[3].detail, '@example');
   assert.equal(links[5].detail, '@example.bsky.social');
+  assert.equal(links[10].detail, '@example');
+  assert.equal(links[11].detail, '@example');
+  assert.equal(links[12].detail, 'c/example');
+  assert.equal(links[13].detail, '@example');
+  assert.equal(links[14].detail, '@example');
+  assert.equal(resolveEntityLinks([{ url: 'https://www.threads.com/@example' }])[0].platform, 'threads');
+  for (const host of ['tiktok.com', 'truthsocial.com', 'rumble.com', 'threads.com', 'threads.net', 'substack.com']) assert.equal(resolveEntityLinks([{ url: `https://${host}.unrelated.example/account` }])[0].platform, 'website');
   assert.equal(links[9].detail, '@example · social.example');
   assert.equal(resolveEntityLinks([{ url: 'https://instagram.com.unrelated.example/account' }])[0].platform, 'website', 'Do not brand unrelated hosts as social platforms');
   assert.equal(resolveEntityLinks([{ url: 'javascript:alert(1)' }, { url: 'data:text/html,test' }, { url: 'mailto:person@example.org' }, { url: 'https://user:password@example.org/' }, { url: '' }]).length, 0, 'Omit non-web URLs, credentials and empty values');

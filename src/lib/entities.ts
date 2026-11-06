@@ -1,3 +1,9 @@
+import placeLinkEnrichment from '../data/place-link-enrichment.json';
+import placeProfileData from '../data/place-enrichment.json';
+import personLinkEnrichment from '../data/person-link-enrichment.json';
+import partyEnrichment from '../data/party-enrichment.json';
+import officeEnrichment from '../data/office-enrichment.json';
+import { placeEntityLinks, type EntityLink } from './entity-links';
 import currentRows from '../data/2026-candidates.json';
 import historicalRows from '../data/historical-candidates.json';
 // County, municipal, school-board, and special-district candidates from the state results feed (2024 on).
@@ -45,6 +51,8 @@ export type Filing = {
 };
 
 export type Person = {
+  lastVerified?: string;
+  links?: EntityLink[];
   id: string;
   name: string;
   initials: string;
@@ -60,6 +68,7 @@ export type Office = {
   years: number[];
   placeIds: string[];
   resources: OfficeResource[];
+  links: EntityLink[];
 };
 
 export type OfficeResource = {
@@ -77,6 +86,7 @@ export type Party = {
   logo: string;
   recognized: boolean;
   historical: boolean;
+  links?: EntityLink[];
   localCaucus?: {
     place: string;
     history: string;
@@ -87,6 +97,7 @@ export type Party = {
 };
 
 export type Place = {
+  links?: EntityLink[];
   id: string;
   name: string;
   type: 'County' | 'City';
@@ -424,6 +435,9 @@ for (const { filing, name } of filingPeople) {
   personMap.set(matchKey, person);
 }
 for (const person of personMap.values()) {
+  const enrichment = (personLinkEnrichment as Record<string, { verifiedOn: string; links: EntityLink[] }>)[person.id];
+  person.links = enrichment?.links ?? [];
+  person.lastVerified = [enrichment?.verifiedOn, ...person.links.map(link => link.verifiedOn)].filter(Boolean).sort().at(-1);
   person.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName, undefined, { numeric: true }));
 }
 for (const filing of filings) {
@@ -441,7 +455,8 @@ for (const filing of filings) {
     filings: [],
     years: [],
     placeIds: [],
-    resources: officeResources(filing.officeName)
+    resources: officeResources(filing.officeName),
+    links: (officeEnrichment as Record<string, { links: EntityLink[] }>)[filing.officeId]?.links ?? []
   };
   office.filings.push(filing);
   office.sections = [...new Set(office.filings.map((item) => sectionLabel(item.section)))];
@@ -510,7 +525,12 @@ for (const filing of filings) {
   party.years = uniqueNumbers(party.filings.map((item) => item.year));
   partyMap.set(filing.partyId, party);
 }
-for (const party of partyMap.values()) party.filings.sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
+for (const party of partyMap.values()) {
+  const enrichment = (partyEnrichment as Record<string, { officialWebsite: string; links: EntityLink[] }>)[party.id];
+  party.links = enrichment?.links ?? (party.website ? [{ url: party.website }] : []);
+  if (enrichment) party.website = enrichment.officialWebsite;
+  party.filings.sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
+}
 export const parties = naturalSort([...partyMap.values()], (party) => party.name);
 
 const placeMap = new Map<string, Place>();
@@ -547,6 +567,9 @@ for (const filing of filings) {
   }
 }
 for (const place of placeMap.values()) {
+  const profile = (placeProfileData as Record<string, { officialWebsite: string; wikipediaUrl: string; wikidataUrl: string }>)[place.id];
+  const enrichment = (placeLinkEnrichment as Record<string, { links: EntityLink[] }>)[place.id];
+  place.links = placeEntityLinks(profile, enrichment?.links ?? []);
   place.filings.sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
   place.offices = naturalSort([...new Set(place.filings.map((filing) => filing.officeId))].map((id) => officeMap.get(id)!).filter(Boolean), (office) => office.name);
   if (place.type === 'County') {

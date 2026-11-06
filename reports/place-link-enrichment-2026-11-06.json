@@ -1,0 +1,4061 @@
+{
+  "verifiedOn": "2026-11-06",
+  "reviewStatus": "awaiting approval",
+  "total": 258,
+  "reviewed": 42,
+  "websiteVerified": 37,
+  "retrievalBlocked": 5,
+  "existingWebsites": 254,
+  "socialLinks": 92,
+  "links": 129,
+  "notResearched": 216,
+  "redirectedWebsites": [
+    {
+      "id": "beaver",
+      "before": "http://beaver.utah.gov",
+      "after": "https://www.beaver.utah.gov/"
+    },
+    {
+      "id": "garfield",
+      "before": "https://www.garfield.utah.gov/",
+      "after": "https://www.garfield.utah.gov/Home"
+    },
+    {
+      "id": "iron",
+      "before": "https://www.ironcounty.net/",
+      "after": "https://ironcountyut.gov/"
+    },
+    {
+      "id": "rich",
+      "before": "https://www.richcountyut.org/",
+      "after": "https://www.richcounty.gov/"
+    },
+    {
+      "id": "sanpete",
+      "before": "https://sanpete.com/",
+      "after": "https://www.sanpetecountyutah.gov/"
+    },
+    {
+      "id": "summit",
+      "before": "https://www.summitcounty.org/",
+      "after": "https://www.summitcountyutah.gov/"
+    }
+  ],
+  "records": [
+    {
+      "id": "utah/provo",
+      "name": "Provo",
+      "section": "City · Utah County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.provo.gov/",
+          "label": "Official website",
+          "source": "https://www.provo.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/provocity",
+          "source": "https://www.provo.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/provocity",
+          "source": "https://www.provo.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/provocity",
+          "source": "https://www.provo.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/@ProvoCityGovernment",
+          "source": "https://www.provo.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.linkedin.com/company/provo-city/",
+          "source": "https://www.provo.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.provo.gov/"
+      ],
+      "existingWebsite": "https://www.provo.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/utah/provo/"
+    },
+    {
+      "id": "salt-lake/west-valley-city",
+      "name": "West Valley City",
+      "section": "City · Salt Lake County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.wvc-ut.gov/",
+          "label": "Official website",
+          "source": "https://www.wvc-ut.gov",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/WestValleyCity",
+          "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/wvcut",
+          "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.linkedin.com/company/west-valley-city",
+          "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/@wvctv2290",
+          "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/WVCUT",
+          "source": "https://www.wvc-ut.gov/services/west_valley_city_connect.php",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Official communication directory checked; only accounts attributed to the county/city as a whole are included, not department or event accounts. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.wvc-ut.gov",
+        "https://www.wvc-ut.gov/services/west_valley_city_connect.php"
+      ],
+      "existingWebsite": "https://www.wvc-ut.gov",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/west-valley-city/"
+    },
+    {
+      "id": "cache",
+      "name": "Cache County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.cachecounty.gov/",
+          "label": "Official website",
+          "source": "https://www.cachecounty.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://x.com/CacheCounty",
+          "source": "https://www.cachecounty.gov/outreach.html",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.facebook.com/CacheCounty/",
+          "source": "https://www.cachecounty.gov/outreach.html",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://instagram.com/cachecounty1857",
+          "source": "https://www.cachecounty.gov/outreach.html",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCa4xvEI8bnIEz3B9zw2teaA",
+          "source": "https://www.cachecounty.gov/outreach.html",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Official communication directory checked; only accounts attributed to the county/city as a whole are included, not department or event accounts. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.cachecounty.gov/",
+        "https://www.cachecounty.gov/outreach.html"
+      ],
+      "existingWebsite": "https://www.cachecounty.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/cache/"
+    },
+    {
+      "id": "utah/lehi",
+      "name": "Lehi",
+      "section": "City · Utah County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.lehi-ut.gov/",
+          "label": "Official website",
+          "source": "https://www.lehi-ut.gov",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/lehicity",
+          "source": "https://www.lehi-ut.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/LehiCity",
+          "source": "https://www.lehi-ut.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/lehi_city/",
+          "source": "https://www.lehi-ut.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC-BcH5cOFjKCueNOsjOZPQw",
+          "source": "https://www.lehi-ut.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.lehi-ut.gov"
+      ],
+      "existingWebsite": "https://www.lehi-ut.gov",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/utah/lehi/"
+    },
+    {
+      "id": "weber/ogden",
+      "name": "Ogden",
+      "section": "City · Weber County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.ogdencity.gov/",
+          "label": "Official website",
+          "source": "https://www.ogdencity.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/OgdenCityUtah/",
+          "source": "https://www.ogdencity.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/ogdencityutah",
+          "source": "https://www.ogdencity.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/ogdencityutah/",
+          "source": "https://www.ogdencity.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCnV0ROTi1bSTch6at6lAzcw",
+          "source": "https://www.ogdencity.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.ogdencity.gov/"
+      ],
+      "existingWebsite": "https://www.ogdencity.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/weber/ogden/"
+    },
+    {
+      "id": "utah/orem",
+      "name": "Orem",
+      "section": "City · Utah County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://orem.gov/",
+          "label": "Official website",
+          "source": "https://orem.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/oremcity/",
+          "source": "https://orem.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/orem_city/",
+          "source": "https://orem.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.linkedin.com/company/city-of-orem/mycompany/",
+          "source": "https://orem.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/@TheCityofOrem",
+          "source": "https://orem.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "LinkedIn company /mycompany route is kept as published by the city; may require authentication. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://orem.gov/"
+      ],
+      "existingWebsite": "https://orem.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/utah/orem/"
+    },
+    {
+      "id": "salt-lake/salt-lake-city",
+      "name": "Salt Lake City",
+      "section": "City · Salt Lake County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.slc.gov/",
+          "label": "Official website",
+          "source": "https://www.slc.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/SLCGovernment/",
+          "source": "https://www.slc.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/SLCgov",
+          "source": "https://www.slc.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/user/SLCtvmedia",
+          "source": "https://www.slc.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/slcgov/",
+          "source": "https://www.slc.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.slc.gov/"
+      ],
+      "existingWebsite": "https://www.slc.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/salt-lake-city/"
+    },
+    {
+      "id": "salt-lake/sandy",
+      "name": "Sandy",
+      "section": "City · Salt Lake County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.sandy.utah.gov/",
+          "label": "Official website",
+          "source": "https://www.sandy.utah.gov",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://x.com/sandycityutah",
+          "source": "https://www.sandy.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.facebook.com/SandyCityUtah/",
+          "source": "https://www.sandy.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/@sandycityut/featured",
+          "source": "https://www.sandy.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/sandycityutah/",
+          "source": "https://www.sandy.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Numeric Facebook widget destinations and reels excluded in favor of the named city account. YouTube channel featured tab is kept as published. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.sandy.utah.gov"
+      ],
+      "existingWebsite": "https://www.sandy.utah.gov",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/sandy/"
+    },
+    {
+      "id": "salt-lake/south-jordan",
+      "name": "South Jordan",
+      "section": "City · Salt Lake County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.sjc.utah.gov/",
+          "label": "Official website",
+          "source": "https://www.sjc.utah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.linkedin.com/company/cityofsouthjordan",
+          "source": "https://www.sjc.utah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.facebook.com/SouthJordanCity",
+          "source": "https://www.sjc.utah.gov/facebook",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://www.instagram.com/southjordancity/",
+          "source": "https://www.sjc.utah.gov/instagram",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://www.youtube.com/@cityofsouthjordan1423",
+          "source": "https://www.sjc.utah.gov/youtube",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        }
+      ],
+      "notes": "Facebook, Instagram and YouTube destinations verified through city-owned redirect shortcuts; LinkedIn linked directly. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.sjc.utah.gov/",
+        "https://www.sjc.utah.gov/facebook",
+        "https://www.sjc.utah.gov/instagram",
+        "https://www.sjc.utah.gov/youtube"
+      ],
+      "existingWebsite": "https://www.sjc.utah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/south-jordan/"
+    },
+    {
+      "id": "washington/st-george",
+      "name": "St. George",
+      "section": "City · Washington County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://sgcityutah.gov/",
+          "label": "Official website",
+          "source": "https://sgcityutah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/cityofstgeorge",
+          "source": "https://sgcityutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/Cityofstgeorge",
+          "source": "https://sgcityutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/stgeorgecityutah/",
+          "source": "https://sgcityutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCssI3y3sYbIAySKA8M_8dRw",
+          "source": "https://sgcityutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://sgcityutah.gov/"
+      ],
+      "existingWebsite": "https://sgcityutah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/washington/st-george/"
+    },
+    {
+      "id": "summit",
+      "name": "Summit County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.summitcountyutah.gov/",
+          "label": "Official website",
+          "source": "https://www.summitcounty.org/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/SummitCountyUT",
+          "source": "https://www.summitcountyutah.gov/facebook",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 301"
+        },
+        {
+          "url": "https://www.instagram.com/SummitCountyUT",
+          "source": "https://www.summitcountyutah.gov/instagram",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://x.com/SummitCountyUT",
+          "source": "https://www.summitcountyutah.gov/twitter",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 301"
+        },
+        {
+          "url": "https://www.youtube.com/user/SummitCountyUtah",
+          "source": "https://www.summitcountyutah.gov/youtube",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 301"
+        }
+      ],
+      "notes": "Official homepage redirects to https://www.summitcountyutah.gov/. The freshly verified destination replaces the older website in the link collection only. Account destinations were verified through the county’s own redirect shortcuts. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.summitcounty.org/",
+        "https://www.summitcountyutah.gov/facebook",
+        "https://www.summitcountyutah.gov/instagram",
+        "https://www.summitcountyutah.gov/twitter",
+        "https://www.summitcountyutah.gov/youtube"
+      ],
+      "existingWebsite": "https://www.summitcounty.org/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/summit/"
+    },
+    {
+      "id": "utah",
+      "name": "Utah County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.utahcounty.gov/",
+          "label": "Official website",
+          "source": "https://www.utahcounty.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/UtahCountyGov/",
+          "source": "https://www.utahcounty.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCkRYDnXVDLGv9792bhWn9Wg",
+          "source": "https://www.utahcounty.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/utahcountycommission/",
+          "source": "https://www.utahcounty.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website",
+          "label": "Instagram · County Commission"
+        },
+        {
+          "url": "https://x.com/utahcountygov",
+          "source": "https://www.utahcounty.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Instagram is the county commission account explicitly linked by the county; institutional scope preserved in its label. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.utahcounty.gov/"
+      ],
+      "existingWebsite": "https://www.utahcounty.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/utah/"
+    },
+    {
+      "id": "wasatch",
+      "name": "Wasatch County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.wasatchcounty.gov/",
+          "label": "Official website",
+          "source": "https://www.wasatchcounty.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/WasatchCounty/",
+          "source": "https://www.wasatchcounty.gov/facebook",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://x.com/WasatchCounty",
+          "source": "https://www.wasatchcounty.gov/twitter",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://www.instagram.com/wasatch_county/",
+          "source": "https://www.wasatchcounty.gov/instagram",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://www.youtube.com/@wasatch_county",
+          "source": "https://www.wasatchcounty.gov/youtube",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        }
+      ],
+      "notes": "Account destinations were verified through the county’s own redirect shortcuts. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.wasatchcounty.gov/",
+        "https://www.wasatchcounty.gov/facebook",
+        "https://www.wasatchcounty.gov/twitter",
+        "https://www.wasatchcounty.gov/instagram",
+        "https://www.wasatchcounty.gov/youtube"
+      ],
+      "existingWebsite": "https://www.wasatchcounty.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/wasatch/"
+    },
+    {
+      "id": "washington",
+      "name": "Washington County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.washco.utah.gov/",
+          "label": "Official website",
+          "source": "https://www.washco.utah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/washingtoncountyofutah/",
+          "source": "https://www.washco.utah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/washcoutah/",
+          "source": "https://www.washco.utah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/@washcoutah",
+          "source": "https://www.washco.utah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/washingtoncountyofutah/",
+          "source": "https://www.washco.utah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Older Facebook alias and individual YouTube playlist omitted in favor of the current footer accounts. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.washco.utah.gov/"
+      ],
+      "existingWebsite": "https://www.washco.utah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/washington/"
+    },
+    {
+      "id": "weber",
+      "name": "Weber County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.webercountyutah.gov/",
+          "label": "Official website",
+          "source": "https://www.webercountyutah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.youtube.com/@webercountyutah/streams",
+          "source": "https://www.webercountyutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.facebook.com/Weber-County-205690952944353/",
+          "source": "https://www.webercountyutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/WeberCounty",
+          "source": "https://www.webercountyutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/webercountyut/",
+          "source": "https://www.webercountyutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Public-meeting YouTube @handle used; alternative channel ID omitted to avoid an unverified duplicate alias. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.webercountyutah.gov/"
+      ],
+      "existingWebsite": "https://www.webercountyutah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/weber/"
+    },
+    {
+      "id": "box-elder",
+      "name": "Box Elder County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.boxeldercountyut.gov/",
+          "label": "Official website",
+          "source": "https://www.boxeldercountyut.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/BoxCounty/",
+          "source": "https://www.boxeldercountyut.gov/facebook",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://www.instagram.com/boxcounty/",
+          "source": "https://www.boxeldercountyut.gov/instagram",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://x.com/BoxCounty",
+          "source": "https://www.boxeldercountyut.gov/twitter",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        }
+      ],
+      "notes": "Account destinations were verified through the county’s own redirect shortcuts. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.boxeldercountyut.gov/",
+        "https://www.boxeldercountyut.gov/facebook",
+        "https://www.boxeldercountyut.gov/instagram",
+        "https://www.boxeldercountyut.gov/twitter"
+      ],
+      "existingWebsite": "https://www.boxeldercountyut.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/"
+    },
+    {
+      "id": "davis/fruit-heights",
+      "name": "Fruit Heights",
+      "section": "City · Davis County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.fruitheights.gov/",
+          "label": "Official website",
+          "source": "https://www.fruitheights.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/FruitHeightsCityGovernment",
+          "source": "https://www.fruitheights.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/fruitheightscity/",
+          "source": "https://www.fruitheights.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/@fruitheightscity9716",
+          "source": "https://www.fruitheights.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Embed/tracking URLs and the numeric Facebook widget alias excluded; named city accounts retained. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.fruitheights.gov/"
+      ],
+      "existingWebsite": "https://www.fruitheights.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/davis/fruit-heights/"
+    },
+    {
+      "id": "davis/layton",
+      "name": "Layton",
+      "section": "City · Davis County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.laytoncityutah.gov/LC",
+          "label": "Official website",
+          "source": "https://www.laytoncityutah.gov/LC",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/laytoncity/",
+          "source": "https://www.laytoncityutah.gov/LC",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/laytonFYI",
+          "source": "https://www.laytoncityutah.gov/LC",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/LaytonCity/",
+          "source": "https://www.laytoncityutah.gov/LC",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.laytoncityutah.gov/LC"
+      ],
+      "existingWebsite": "https://www.laytoncityutah.gov/LC",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/davis/layton/"
+    },
+    {
+      "id": "uintah",
+      "name": "Uintah County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.uintah.gov/",
+          "label": "Official website",
+          "source": "https://www.uintah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/UintahCountyUtah/",
+          "source": "https://www.uintah.gov/facebook",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://www.instagram.com/uintahcountyut/",
+          "source": "https://www.uintah.gov/instagram",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCKaZrt-j4DT0CsXGAHEWluw",
+          "source": "https://www.uintah.gov/youtube",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        }
+      ],
+      "notes": "Account destinations were verified through the county’s own redirect shortcuts. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.uintah.gov/",
+        "https://www.uintah.gov/facebook",
+        "https://www.uintah.gov/instagram",
+        "https://www.uintah.gov/youtube"
+      ],
+      "existingWebsite": "https://www.uintah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/uintah/"
+    },
+    {
+      "id": "salt-lake/west-jordan",
+      "name": "West Jordan",
+      "section": "City · Salt Lake County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.westjordan.utah.gov/",
+          "label": "Official website",
+          "source": "https://www.westjordan.utah.gov",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/WestJordanCityHall",
+          "source": "https://www.westjordan.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/westjordanutah/",
+          "source": "https://www.westjordan.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC7Up4AfoWj0KebppgTvnLSg/",
+          "source": "https://www.westjordan.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.westjordan.utah.gov"
+      ],
+      "existingWebsite": "https://www.westjordan.utah.gov",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/west-jordan/"
+    },
+    {
+      "id": "beaver",
+      "name": "Beaver County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.beaver.utah.gov/",
+          "label": "Official website",
+          "source": "http://beaver.utah.gov",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/beaverut",
+          "source": "http://beaver.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/@beavercountyutahpublicmeet8388",
+          "source": "http://beaver.utah.gov",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Official homepage redirects to https://www.beaver.utah.gov/. The freshly verified destination replaces the older website in the link collection only. Instagram redirect leads to ramblersutah, a tourism brand; withheld from the county government collection. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "http://beaver.utah.gov"
+      ],
+      "existingWebsite": "http://beaver.utah.gov",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/beaver/"
+    },
+    {
+      "id": "davis",
+      "name": "Davis County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.daviscountyutah.gov/",
+          "label": "Official website",
+          "source": "https://www.daviscountyutah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.linkedin.com/company/davis-county-government",
+          "source": "https://www.daviscountyutah.gov/social-media-connections",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://x.com/DavisCountyComm",
+          "source": "https://www.daviscountyutah.gov/social-media-connections",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website",
+          "label": "X · County Commission"
+        }
+      ],
+      "notes": "Official communication directory checked; sheriff, health, tourism, trails, event, and other department accounts are excluded. Only explicitly identified general government accounts are included; the Davis Commission account is labeled with its scope. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.daviscountyutah.gov/",
+        "https://www.daviscountyutah.gov/social-media-connections"
+      ],
+      "existingWebsite": "https://www.daviscountyutah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/davis/"
+    },
+    {
+      "id": "garfield",
+      "name": "Garfield County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.garfield.utah.gov/Home",
+          "label": "Official website",
+          "source": "https://www.garfield.utah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/garfieldcountyutah",
+          "source": "https://www.garfield.utah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.instagram.com/garfieldcountyutah/",
+          "source": "https://www.garfield.utah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Official homepage redirects to https://www.garfield.utah.gov/Home. The freshly verified destination replaces the older website in the link collection only. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.garfield.utah.gov/"
+      ],
+      "existingWebsite": "https://www.garfield.utah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/garfield/"
+    },
+    {
+      "id": "iron",
+      "name": "Iron County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://ironcountyut.gov/",
+          "label": "Official website",
+          "source": "https://www.ironcounty.net/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/ironcountyutahus/",
+          "source": "https://www.ironcounty.net/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.youtube.com/@ironcounty6701",
+          "source": "https://www.ironcounty.net/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Official homepage redirects to https://ironcountyut.gov/. The freshly verified destination replaces the older website in the link collection only. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.ironcounty.net/"
+      ],
+      "existingWebsite": "https://www.ironcounty.net/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/iron/"
+    },
+    {
+      "id": "morgan",
+      "name": "Morgan County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.morgancountyutah.gov/",
+          "label": "Official website",
+          "source": "https://www.morgancountyutah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.youtube.com/@MorganCountyUtah",
+          "source": "https://www.morgancountyutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        },
+        {
+          "url": "https://www.facebook.com/profile.php?id=61595221981008",
+          "source": "https://www.morgancountyutah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.morgancountyutah.gov/"
+      ],
+      "existingWebsite": "https://www.morgancountyutah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/morgan/"
+    },
+    {
+      "id": "duchesne",
+      "name": "Duchesne County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://duchesne.utah.gov/",
+          "label": "Official website",
+          "source": "https://duchesne.utah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.linkedin.com/company/duchesnecounty/",
+          "source": "https://duchesne.utah.gov/connect/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Official communication directory checked; only accounts attributed to the county/city as a whole are included, not department or event accounts. Convention bureau, sheriff, fire/emergency, and event-center Facebook pages excluded. County LinkedIn retained. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://duchesne.utah.gov/",
+        "https://duchesne.utah.gov/connect/"
+      ],
+      "existingWebsite": "https://duchesne.utah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/duchesne/"
+    },
+    {
+      "id": "grand",
+      "name": "Grand County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.grandcountyutah.net/",
+          "label": "Official website",
+          "source": "https://www.grandcountyutah.net/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.youtube.com/c/GrandCountyUtahGovernment",
+          "source": "https://www.grandcountyutah.net/youtube",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Government-owned social shortcut resolves to this account via HTTP 302"
+        }
+      ],
+      "notes": "The Facebook shortcut did not resolve to a verified account. The official YouTube redirect was verified and included. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.grandcountyutah.net/",
+        "https://www.grandcountyutah.net/youtube"
+      ],
+      "existingWebsite": "https://www.grandcountyutah.net/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/grand/"
+    },
+    {
+      "id": "kane",
+      "name": "Kane County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://kane.utah.gov/",
+          "label": "Official website",
+          "source": "https://kane.utah.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/KaneCoUtah/",
+          "source": "https://kane.utah.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://kane.utah.gov/"
+      ],
+      "existingWebsite": "https://kane.utah.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/kane/"
+    },
+    {
+      "id": "millard",
+      "name": "Millard County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://millardcounty.gov/",
+          "label": "Official website",
+          "source": "https://millardcounty.gov/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/Millard-County-Government-109231680755314",
+          "source": "https://millardcounty.gov/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://millardcounty.gov/"
+      ],
+      "existingWebsite": "https://millardcounty.gov/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/millard/"
+    },
+    {
+      "id": "sanpete",
+      "name": "Sanpete County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.sanpetecountyutah.gov/",
+          "label": "Official website",
+          "source": "https://sanpete.com/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.facebook.com/SanpeteInfo",
+          "source": "https://sanpete.com/",
+          "verifiedOn": "2026-11-06",
+          "evidence": "Published on the government website"
+        }
+      ],
+      "notes": "Official homepage redirects to https://www.sanpetecountyutah.gov/. The freshly verified destination replaces the older website in the link collection only. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://sanpete.com/"
+      ],
+      "existingWebsite": "https://sanpete.com/",
+      "reviewStatus": "Website + social verified",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/"
+    },
+    {
+      "id": "carbon",
+      "name": "Carbon County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.carbon.utah.gov/",
+          "label": "Official website",
+          "source": "https://www.carbon.utah.gov/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "notes": "No general-government social account verified from the inspected pages. This does not establish that none exists. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.carbon.utah.gov/"
+      ],
+      "existingWebsite": "https://www.carbon.utah.gov/",
+      "reviewStatus": "Website verified",
+      "siteUrl": "https://www.electionsutah.org/places/carbon/"
+    },
+    {
+      "id": "juab",
+      "name": "Juab County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://juabcounty.gov/",
+          "label": "Official website",
+          "source": "https://juabcounty.gov/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "notes": "No general-government social account verified from the inspected pages. This does not establish that none exists. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://juabcounty.gov/"
+      ],
+      "existingWebsite": "https://juabcounty.gov/",
+      "reviewStatus": "Website verified",
+      "siteUrl": "https://www.electionsutah.org/places/juab/"
+    },
+    {
+      "id": "rich",
+      "name": "Rich County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.richcounty.gov/",
+          "label": "Official website",
+          "source": "https://www.richcountyut.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "notes": "Official homepage redirects to https://www.richcounty.gov/. The freshly verified destination replaces the older website in the link collection only. No general-government social account verified from the inspected pages. This does not establish that none exists. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.richcountyut.org/"
+      ],
+      "existingWebsite": "https://www.richcountyut.org/",
+      "reviewStatus": "Website verified",
+      "siteUrl": "https://www.electionsutah.org/places/rich/"
+    },
+    {
+      "id": "salt-lake",
+      "name": "Salt Lake County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.saltlakecounty.gov/",
+          "label": "Official website",
+          "source": "https://www.saltlakecounty.gov/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "notes": "No general-government social account verified from the inspected pages. This does not establish that none exists. Homepage and eConnect page checked; no general county social destination verified in this batch. No mayor-named or department account substituted. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.saltlakecounty.gov/"
+      ],
+      "existingWebsite": "https://www.saltlakecounty.gov/",
+      "reviewStatus": "Website verified",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/"
+    },
+    {
+      "id": "san-juan",
+      "name": "San Juan County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://sanjuancountyut.gov/",
+          "label": "Official website",
+          "source": "https://sanjuancountyut.gov/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "notes": "No general-government social account verified from the inspected pages. This does not establish that none exists. Facebook and YouTube shortcuts returned internal pages without verified account destinations; both withheld. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://sanjuancountyut.gov/"
+      ],
+      "existingWebsite": "https://sanjuancountyut.gov/",
+      "reviewStatus": "Website verified",
+      "siteUrl": "https://www.electionsutah.org/places/san-juan/"
+    },
+    {
+      "id": "sevier",
+      "name": "Sevier County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://www.sevier.utah.gov/",
+          "label": "Official website",
+          "source": "https://www.sevier.utah.gov/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "notes": "No general-government social account verified from the inspected pages. This does not establish that none exists. The inspected homepage links generic Facebook/Instagram roots and a Reddit share endpoint, not identifiable government accounts. These are excluded. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://www.sevier.utah.gov/"
+      ],
+      "existingWebsite": "https://www.sevier.utah.gov/",
+      "reviewStatus": "Website verified",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/"
+    },
+    {
+      "id": "tooele",
+      "name": "Tooele County",
+      "section": "County",
+      "status": "Added",
+      "links": [
+        {
+          "url": "https://tooeleco.gov/",
+          "label": "Official website",
+          "source": "https://tooeleco.gov/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "notes": "No general-government social account verified from the inspected pages. This does not establish that none exists. Tourism Instagram and County Manager Facebook are narrower accounts; not presented as general county accounts. Primary-source endorsement verified; social login, posting activity, and future availability were not tested. Existing Wikipedia and Wikidata reference links remain intact.",
+      "sources": [
+        "https://tooeleco.gov/"
+      ],
+      "existingWebsite": "https://tooeleco.gov/",
+      "reviewStatus": "Website verified",
+      "siteUrl": "https://www.electionsutah.org/places/tooele/"
+    },
+    {
+      "id": "daggett",
+      "name": "Daggett County",
+      "section": "County",
+      "status": "Retrieval blocked",
+      "links": [],
+      "notes": "Research service could not retrieve the site. Existing website and reference links are preserved; no new account was verified.",
+      "sources": [
+        "http://www.daggettcounty.org"
+      ],
+      "existingWebsite": "http://www.daggettcounty.org",
+      "reviewStatus": "Retrieval blocked",
+      "siteUrl": "https://www.electionsutah.org/places/daggett/"
+    },
+    {
+      "id": "emery",
+      "name": "Emery County",
+      "section": "County",
+      "status": "Retrieval blocked",
+      "links": [],
+      "notes": "TLS/certificate retrieval error. Existing website and reference links are preserved; no new account was verified.",
+      "sources": [
+        "https://www.emerycounty.com/"
+      ],
+      "existingWebsite": "https://www.emerycounty.com/",
+      "reviewStatus": "Retrieval blocked",
+      "siteUrl": "https://www.electionsutah.org/places/emery/"
+    },
+    {
+      "id": "salt-lake/millcreek",
+      "name": "Millcreek",
+      "section": "City · Salt Lake County",
+      "status": "Retrieval blocked",
+      "links": [],
+      "notes": "Research-service proxy tunnel error. Existing website and reference links are preserved; no new account was verified.",
+      "sources": [
+        "https://www.millcreekut.gov/"
+      ],
+      "existingWebsite": "https://www.millcreekut.gov/",
+      "reviewStatus": "Retrieval blocked",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/millcreek/"
+    },
+    {
+      "id": "piute",
+      "name": "Piute County",
+      "section": "County",
+      "status": "Retrieval blocked",
+      "links": [],
+      "notes": "Research service could not retrieve the site. Existing website and reference links are preserved; no new account was verified.",
+      "sources": [
+        "http://piutecounty.org"
+      ],
+      "existingWebsite": "http://piutecounty.org",
+      "reviewStatus": "Retrieval blocked",
+      "siteUrl": "https://www.electionsutah.org/places/piute/"
+    },
+    {
+      "id": "wayne",
+      "name": "Wayne County",
+      "section": "County",
+      "status": "Retrieval blocked",
+      "links": [],
+      "notes": "TLS/certificate retrieval error. Existing website and reference links are preserved; no new account was verified.",
+      "sources": [
+        "http://www.waynecountyutah.org"
+      ],
+      "existingWebsite": "http://www.waynecountyutah.org",
+      "reviewStatus": "Retrieval blocked",
+      "siteUrl": "https://www.electionsutah.org/places/wayne/"
+    },
+    {
+      "id": "utah/alpine",
+      "name": "Alpine",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.alpineut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/alpine/"
+    },
+    {
+      "id": "salt-lake/alta",
+      "name": "Alta",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://townofalta.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/alta/"
+    },
+    {
+      "id": "cache/amalga",
+      "name": "Amalga",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.amalgatown.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/amalga/"
+    },
+    {
+      "id": "utah/american-fork",
+      "name": "American Fork",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.americanfork.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/american-fork/"
+    },
+    {
+      "id": "sevier/annabella",
+      "name": "Annabella",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://annabella.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/annabella/"
+    },
+    {
+      "id": "washington/apple-valley",
+      "name": "Apple Valley",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.applevalleyut.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/apple-valley/"
+    },
+    {
+      "id": "sevier/aurora",
+      "name": "Aurora",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.auroracity.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/aurora/"
+    },
+    {
+      "id": "uintah/ballard",
+      "name": "Ballard",
+      "section": "City · Uintah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.ballardcity.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/uintah/ballard/"
+    },
+    {
+      "id": "box-elder/bear-river-city",
+      "name": "Bear River City",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.bearrivercityutah.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/bear-river-city/"
+    },
+    {
+      "id": "beaver/beaver",
+      "name": "Beaver",
+      "section": "City · Beaver County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://beaverutah.net/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/beaver/beaver/"
+    },
+    {
+      "id": "kane/big-water",
+      "name": "Big Water",
+      "section": "City · Kane County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.bigwatertown.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/kane/big-water/"
+    },
+    {
+      "id": "san-juan/blanding",
+      "name": "Blanding",
+      "section": "City · San Juan County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.blanding-ut.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/san-juan/blanding/"
+    },
+    {
+      "id": "san-juan/bluff",
+      "name": "Bluff",
+      "section": "City · San Juan County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://bluffutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/san-juan/bluff/"
+    },
+    {
+      "id": "salt-lake/bluffdale",
+      "name": "Bluffdale",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.bluffdale.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/bluffdale/"
+    },
+    {
+      "id": "garfield/boulder",
+      "name": "Boulder",
+      "section": "City · Garfield County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://boulder.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/garfield/boulder/"
+    },
+    {
+      "id": "davis/bountiful",
+      "name": "Bountiful",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.bountifulutah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/bountiful/"
+    },
+    {
+      "id": "iron/brian-head",
+      "name": "Brian Head",
+      "section": "City · Iron County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.brianheadtown.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/iron/brian-head/"
+    },
+    {
+      "id": "box-elder/brigham-city",
+      "name": "Brigham City",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.bcutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/brigham-city/"
+    },
+    {
+      "id": "salt-lake/brighton",
+      "name": "Brighton",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.brighton.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/brighton/"
+    },
+    {
+      "id": "garfield/cannonville",
+      "name": "Cannonville",
+      "section": "City · Garfield County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://cannonville.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/garfield/cannonville/"
+    },
+    {
+      "id": "emery/castle-dale",
+      "name": "Castle Dale",
+      "section": "City · Emery County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.emerycounty.com/castledale/castledale.htm",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/emery/castle-dale/"
+    },
+    {
+      "id": "iron/cedar-city",
+      "name": "Cedar City",
+      "section": "City · Iron County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.cedarcityut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/iron/cedar-city/"
+    },
+    {
+      "id": "utah/cedar-fort",
+      "name": "Cedar Fort",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.townofcedarfort.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/cedar-fort/"
+    },
+    {
+      "id": "utah/cedar-hills",
+      "name": "Cedar Hills",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.cedarhills.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/cedar-hills/"
+    },
+    {
+      "id": "sanpete/centerfield",
+      "name": "Centerfield",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.centerfieldcity.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/centerfield/"
+    },
+    {
+      "id": "davis/centerville",
+      "name": "Centerville",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.centervilleutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/centerville/"
+    },
+    {
+      "id": "sevier/central-valley",
+      "name": "Central Valley",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://centralvalleytownut.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/central-valley/"
+    },
+    {
+      "id": "wasatch/charleston",
+      "name": "Charleston",
+      "section": "City · Wasatch County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://charlestontown.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/wasatch/charleston/"
+    },
+    {
+      "id": "piute/circleville",
+      "name": "Circleville",
+      "section": "City · Piute County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.circlevilleutah.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/piute/circleville/"
+    },
+    {
+      "id": "cache/clarkston",
+      "name": "Clarkston",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://clarkstonutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/clarkston/"
+    },
+    {
+      "id": "davis/clearfield",
+      "name": "Clearfield",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://clearfield.city/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/clearfield/"
+    },
+    {
+      "id": "davis/clinton",
+      "name": "Clinton",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.clintoncity.net/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/clinton/"
+    },
+    {
+      "id": "summit/coalville",
+      "name": "Coalville",
+      "section": "City · Summit County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.coalville.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/summit/coalville/"
+    },
+    {
+      "id": "salt-lake/copperton",
+      "name": "Copperton",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://copperton.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/copperton/"
+    },
+    {
+      "id": "box-elder/corinne",
+      "name": "Corinne",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.corinnecity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/corinne/"
+    },
+    {
+      "id": "salt-lake/cottonwood-heights",
+      "name": "Cottonwood Heights",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://cottonwoodheights.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/cottonwood-heights/"
+    },
+    {
+      "id": "millard/delta",
+      "name": "Delta",
+      "section": "City · Millard County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.delta.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/millard/delta/"
+    },
+    {
+      "id": "box-elder/deweyville",
+      "name": "Deweyville",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.townofdeweyville.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/deweyville/"
+    },
+    {
+      "id": "salt-lake/draper",
+      "name": "Draper",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.draperutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/draper/"
+    },
+    {
+      "id": "duchesne/duchesne",
+      "name": "Duchesne",
+      "section": "City · Duchesne County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.duchesnecity.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/duchesne/duchesne/"
+    },
+    {
+      "id": "daggett/dutch-john",
+      "name": "Dutch John",
+      "section": "City · Daggett County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://dutchjohn.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/daggett/dutch-john/"
+    },
+    {
+      "id": "utah/eagle-mountain",
+      "name": "Eagle Mountain",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://eaglemountain.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/eagle-mountain/"
+    },
+    {
+      "id": "carbon/east-carbon",
+      "name": "East Carbon",
+      "section": "City · Carbon County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://eastcarboncity.org/Home.aspx",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/carbon/east-carbon/"
+    },
+    {
+      "id": "weber/eden",
+      "name": "Eden",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.webercountyutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/eden/"
+    },
+    {
+      "id": "utah/elk-ridge",
+      "name": "Elk Ridge",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.elkridgecity.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/elk-ridge/"
+    },
+    {
+      "id": "sevier/elsinore",
+      "name": "Elsinore",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.elsinoreut.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/elsinore/"
+    },
+    {
+      "id": "box-elder/elwood",
+      "name": "Elwood",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.elwoodtown.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/elwood/"
+    },
+    {
+      "id": "emery/emery",
+      "name": "Emery",
+      "section": "City · Emery County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.emerycounty.com/emery/emery.htm",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/emery/emery/"
+    },
+    {
+      "id": "salt-lake/emigration-canyon",
+      "name": "Emigration Canyon",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://emigration.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/emigration-canyon/"
+    },
+    {
+      "id": "iron/enoch",
+      "name": "Enoch",
+      "section": "City · Iron County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.cityofenoch.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/iron/enoch/"
+    },
+    {
+      "id": "washington/enterprise",
+      "name": "Enterprise",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.enterpriseutah.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/enterprise/"
+    },
+    {
+      "id": "sanpete/ephraim",
+      "name": "Ephraim",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.ephraimcity.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/ephraim/"
+    },
+    {
+      "id": "tooele/erda",
+      "name": "Erda",
+      "section": "City · Tooele County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://erda.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/tooele/erda/"
+    },
+    {
+      "id": "juab/eureka",
+      "name": "Eureka",
+      "section": "City · Juab County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://eureka.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/juab/eureka/"
+    },
+    {
+      "id": "utah/fairfield",
+      "name": "Fairfield",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://fairfieldtown-ut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/fairfield/"
+    },
+    {
+      "id": "sanpete/fairview",
+      "name": "Fairview",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://fairviewcity.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/fairview/"
+    },
+    {
+      "id": "davis/farmington",
+      "name": "Farmington",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://farmington.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/farmington/"
+    },
+    {
+      "id": "weber/farr-west",
+      "name": "Farr West",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://farrwestcity.net/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/farr-west/"
+    },
+    {
+      "id": "sanpete/fayette",
+      "name": "Fayette",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://fayetteutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/fayette/"
+    },
+    {
+      "id": "emery/ferron",
+      "name": "Ferron",
+      "section": "City · Emery County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.ferroncity.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/emery/ferron/"
+    },
+    {
+      "id": "millard/fillmore",
+      "name": "Fillmore",
+      "section": "City · Millard County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.fillmorecity.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/millard/fillmore/"
+    },
+    {
+      "id": "sanpete/fountain-green",
+      "name": "Fountain Green",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.fountaingreencity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/fountain-green/"
+    },
+    {
+      "id": "summit/francis",
+      "name": "Francis",
+      "section": "City · Summit County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.francisutah.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/summit/francis/"
+    },
+    {
+      "id": "rich/garden-city",
+      "name": "Garden City",
+      "section": "City · Rich County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.gardencityut.us/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/rich/garden-city/"
+    },
+    {
+      "id": "box-elder/garland",
+      "name": "Garland",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.garlandutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/garland/"
+    },
+    {
+      "id": "utah/genola",
+      "name": "Genola",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://genolaut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/genola/"
+    },
+    {
+      "id": "kane/glendale",
+      "name": "Glendale",
+      "section": "City · Kane County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.glendaletownutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/kane/glendale/"
+    },
+    {
+      "id": "utah/goshen",
+      "name": "Goshen",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.goshenutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/goshen/"
+    },
+    {
+      "id": "tooele/grantsville",
+      "name": "Grantsville",
+      "section": "City · Tooele County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.grantsvilleut.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/tooele/grantsville/"
+    },
+    {
+      "id": "emery/green-river",
+      "name": "Green River",
+      "section": "City · Emery County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://greenriver.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/emery/green-river/"
+    },
+    {
+      "id": "sanpete/gunnison",
+      "name": "Gunnison",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.gunnisoncity.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/gunnison/"
+    },
+    {
+      "id": "wayne/hanksville",
+      "name": "Hanksville",
+      "section": "City · Wayne County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.hanksvilleutah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/wayne/hanksville/"
+    },
+    {
+      "id": "weber/harrisville",
+      "name": "Harrisville",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.cityofharrisville.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/harrisville/"
+    },
+    {
+      "id": "wasatch/heber-city",
+      "name": "Heber City",
+      "section": "City · Wasatch County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.heberut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/wasatch/heber-city/"
+    },
+    {
+      "id": "carbon/helper",
+      "name": "Helper",
+      "section": "City · Carbon County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.helpercity.net",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/carbon/helper/"
+    },
+    {
+      "id": "summit/henefer",
+      "name": "Henefer",
+      "section": "City · Summit County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.heneferutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/summit/henefer/"
+    },
+    {
+      "id": "garfield/henrieville",
+      "name": "Henrieville",
+      "section": "City · Garfield County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/garfield/henrieville/"
+    },
+    {
+      "id": "salt-lake/herriman",
+      "name": "Herriman",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.herriman.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/herriman/"
+    },
+    {
+      "id": "wasatch/hideout",
+      "name": "Hideout",
+      "section": "City · Wasatch County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.hideoututah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/wasatch/hideout/"
+    },
+    {
+      "id": "utah/highland",
+      "name": "Highland",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.highlandut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/highland/"
+    },
+    {
+      "id": "washington/hildale",
+      "name": "Hildale",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://hildalecity.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/hildale/"
+    },
+    {
+      "id": "millard/hinckley",
+      "name": "Hinckley",
+      "section": "City · Millard County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://hinckleytown.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/millard/hinckley/"
+    },
+    {
+      "id": "millard/holden",
+      "name": "Holden",
+      "section": "City · Millard County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.holdenutah.us/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/millard/holden/"
+    },
+    {
+      "id": "salt-lake/holladay",
+      "name": "Holladay",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.holladayut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/holladay/"
+    },
+    {
+      "id": "box-elder/honeyville",
+      "name": "Honeyville",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.honeyvillecity.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/honeyville/"
+    },
+    {
+      "id": "weber/hooper",
+      "name": "Hooper",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.hoopercity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/hooper/"
+    },
+    {
+      "id": "box-elder/howell",
+      "name": "Howell",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://howelltown.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/howell/"
+    },
+    {
+      "id": "weber/huntsville",
+      "name": "Huntsville",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://huntsvilleutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/huntsville/"
+    },
+    {
+      "id": "washington/hurricane",
+      "name": "Hurricane",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.cityofhurricane.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/hurricane/"
+    },
+    {
+      "id": "cache/hyde-park",
+      "name": "Hyde Park",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://hydepark.utahlinks.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/hyde-park/"
+    },
+    {
+      "id": "cache/hyrum",
+      "name": "Hyrum",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.hyrumcity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/hyrum/"
+    },
+    {
+      "id": "wasatch/interlaken",
+      "name": "Interlaken",
+      "section": "City · Wasatch County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.town-of-interlaken.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/wasatch/interlaken/"
+    },
+    {
+      "id": "washington/ivins",
+      "name": "Ivins",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://ivinsutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/ivins/"
+    },
+    {
+      "id": "uintah/jensen",
+      "name": "Jensen",
+      "section": "City · Uintah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.uintah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/uintah/jensen/"
+    },
+    {
+      "id": "sevier/joseph",
+      "name": "Joseph",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://josephtownutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/joseph/"
+    },
+    {
+      "id": "piute/junction",
+      "name": "Junction",
+      "section": "City · Piute County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/piute/junction/"
+    },
+    {
+      "id": "summit/kamas",
+      "name": "Kamas",
+      "section": "City · Summit County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.kamascity.net/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/summit/kamas/"
+    },
+    {
+      "id": "kane/kanab",
+      "name": "Kanab",
+      "section": "City · Kane County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://kanab.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/kane/kanab/"
+    },
+    {
+      "id": "iron/kanarraville",
+      "name": "Kanarraville",
+      "section": "City · Iron County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.kanarraville.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/iron/kanarraville/"
+    },
+    {
+      "id": "millard/kanosh",
+      "name": "Kanosh",
+      "section": "City · Millard County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.kanoshtown.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/millard/kanosh/"
+    },
+    {
+      "id": "davis/kaysville",
+      "name": "Kaysville",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.kaysville.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/kaysville/"
+    },
+    {
+      "id": "salt-lake/kearns",
+      "name": "Kearns",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.kearns.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/kearns/"
+    },
+    {
+      "id": "sevier/koosharem",
+      "name": "Koosharem",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://koosharem.us/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/koosharem/"
+    },
+    {
+      "id": "washington/la-verkin",
+      "name": "La Verkin",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.laverkin.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/la-verkin/"
+    },
+    {
+      "id": "tooele/lake-point",
+      "name": "Lake Point",
+      "section": "City · Tooele County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://lakepoint.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/tooele/lake-point/"
+    },
+    {
+      "id": "rich/laketown",
+      "name": "Laketown",
+      "section": "City · Rich County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://laketown.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/rich/laketown/"
+    },
+    {
+      "id": "millard/leamington",
+      "name": "Leamington",
+      "section": "City · Millard County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://leamingtontown.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/millard/leamington/"
+    },
+    {
+      "id": "washington/leeds",
+      "name": "Leeds",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.leedstown.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/leeds/"
+    },
+    {
+      "id": "juab/levan",
+      "name": "Levan",
+      "section": "City · Juab County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://levantown.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/juab/levan/"
+    },
+    {
+      "id": "cache/lewiston",
+      "name": "Lewiston",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.lewiston-ut.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/lewiston/"
+    },
+    {
+      "id": "weber/liberty",
+      "name": "Liberty",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.webercountyutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/liberty/"
+    },
+    {
+      "id": "utah/lindon",
+      "name": "Lindon",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://lindon.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/lindon/"
+    },
+    {
+      "id": "cache/logan",
+      "name": "Logan",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.loganutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/logan/"
+    },
+    {
+      "id": "salt-lake/magna",
+      "name": "Magna",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://magna.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/magna/"
+    },
+    {
+      "id": "daggett/manila",
+      "name": "Manila",
+      "section": "City · Daggett County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.manilautah.us",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/daggett/manila/"
+    },
+    {
+      "id": "sanpete/manti",
+      "name": "Manti",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.manti.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/manti/"
+    },
+    {
+      "id": "box-elder/mantua",
+      "name": "Mantua",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.townofmantua.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/mantua/"
+    },
+    {
+      "id": "utah/mapleton",
+      "name": "Mapleton",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.mapleton.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/mapleton/"
+    },
+    {
+      "id": "weber/marriott-slaterville",
+      "name": "Marriott-Slaterville",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.marriott-slaterville.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/marriott-slaterville/"
+    },
+    {
+      "id": "piute/marysvale",
+      "name": "Marysvale",
+      "section": "City · Piute County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.marysvaleutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/piute/marysvale/"
+    },
+    {
+      "id": "sanpete/mayfield",
+      "name": "Mayfield",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.mayfieldtown.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/mayfield/"
+    },
+    {
+      "id": "cache/mendon",
+      "name": "Mendon",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.mendoncity.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/mendon/"
+    },
+    {
+      "id": "salt-lake/midvale",
+      "name": "Midvale",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.midvale.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/midvale/"
+    },
+    {
+      "id": "wasatch/midway",
+      "name": "Midway",
+      "section": "City · Wasatch County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://midwaycityut.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/wasatch/midway/"
+    },
+    {
+      "id": "beaver/milford",
+      "name": "Milford",
+      "section": "City · Beaver County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.milfordut.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/beaver/milford/"
+    },
+    {
+      "id": "cache/millville",
+      "name": "Millville",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://millvilleut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/millville/"
+    },
+    {
+      "id": "beaver/minersville",
+      "name": "Minersville",
+      "section": "City · Beaver County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://minersvilletown.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/beaver/minersville/"
+    },
+    {
+      "id": "grand/moab",
+      "name": "Moab",
+      "section": "City · Grand County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.moabcity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/grand/moab/"
+    },
+    {
+      "id": "juab/mona",
+      "name": "Mona",
+      "section": "City · Juab County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.monautah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/juab/mona/"
+    },
+    {
+      "id": "sevier/monroe",
+      "name": "Monroe",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://monroeut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/monroe/"
+    },
+    {
+      "id": "san-juan/monticello",
+      "name": "Monticello",
+      "section": "City · San Juan County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.monticelloutah.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/san-juan/monticello/"
+    },
+    {
+      "id": "morgan/morgan",
+      "name": "Morgan",
+      "section": "City · Morgan County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.morgancityut.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/morgan/morgan/"
+    },
+    {
+      "id": "sanpete/moroni",
+      "name": "Moroni",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://moronicity.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/moroni/"
+    },
+    {
+      "id": "sanpete/mount-pleasant",
+      "name": "Mount Pleasant",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.mpcityut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/mount-pleasant/"
+    },
+    {
+      "id": "salt-lake/murray",
+      "name": "Murray",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://murray.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/murray/"
+    },
+    {
+      "id": "uintah/naples",
+      "name": "Naples",
+      "section": "City · Uintah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://naplescityut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/uintah/naples/"
+    },
+    {
+      "id": "juab/nephi",
+      "name": "Nephi",
+      "section": "City · Juab County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://nephi.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/juab/nephi/"
+    },
+    {
+      "id": "cache/newton",
+      "name": "Newton",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.newtonutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/newton/"
+    },
+    {
+      "id": "cache/nibley",
+      "name": "Nibley",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://nibleycity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/nibley/"
+    },
+    {
+      "id": "cache/north-logan",
+      "name": "North Logan",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.northlogancity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/north-logan/"
+    },
+    {
+      "id": "weber/north-ogden",
+      "name": "North Ogden",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.northogdencity.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/north-ogden/"
+    },
+    {
+      "id": "davis/north-salt-lake",
+      "name": "North Salt Lake",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.nslcity.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/north-salt-lake/"
+    },
+    {
+      "id": "salt-lake/north-salt-lake",
+      "name": "North Salt Lake",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.nslcity.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/north-salt-lake/"
+    },
+    {
+      "id": "summit/oakley",
+      "name": "Oakley",
+      "section": "City · Summit County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.oakleycity.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/summit/oakley/"
+    },
+    {
+      "id": "weber/ogden-valley-city",
+      "name": "Ogden Valley City",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://ogdenvalley.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/ogden-valley-city/"
+    },
+    {
+      "id": "emery/orangeville",
+      "name": "Orangeville",
+      "section": "City · Emery County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.ovcity.info/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/emery/orangeville/"
+    },
+    {
+      "id": "kane/orderville",
+      "name": "Orderville",
+      "section": "City · Kane County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://orderville.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/kane/orderville/"
+    },
+    {
+      "id": "garfield/panguitch",
+      "name": "Panguitch",
+      "section": "City · Garfield County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.panguitch.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/garfield/panguitch/"
+    },
+    {
+      "id": "cache/paradise",
+      "name": "Paradise",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://paradise.utah.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/paradise/"
+    },
+    {
+      "id": "iron/paragonah",
+      "name": "Paragonah",
+      "section": "City · Iron County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://paragonahtown.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/iron/paragonah/"
+    },
+    {
+      "id": "summit/park-city",
+      "name": "Park City",
+      "section": "City · Summit County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://parkcity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/summit/park-city/"
+    },
+    {
+      "id": "iron/parowan",
+      "name": "Parowan",
+      "section": "City · Iron County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://parowan.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/iron/parowan/"
+    },
+    {
+      "id": "utah/payson",
+      "name": "Payson",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.paysonutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/payson/"
+    },
+    {
+      "id": "box-elder/perry",
+      "name": "Perry",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.perrycityut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/perry/"
+    },
+    {
+      "id": "weber/plain-city",
+      "name": "Plain City",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://plaincityutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/plain-city/"
+    },
+    {
+      "id": "utah/pleasant-grove",
+      "name": "Pleasant Grove",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.pgcityutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/pleasant-grove/"
+    },
+    {
+      "id": "weber/pleasant-view",
+      "name": "Pleasant View",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.pleasantviewcity.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/pleasant-view/"
+    },
+    {
+      "id": "box-elder/plymouth",
+      "name": "Plymouth",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/plymouth/"
+    },
+    {
+      "id": "carbon/price",
+      "name": "Price",
+      "section": "City · Carbon County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.priceutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/carbon/price/"
+    },
+    {
+      "id": "cache/providence",
+      "name": "Providence",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.providencecity.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/providence/"
+    },
+    {
+      "id": "rich/randolph",
+      "name": "Randolph",
+      "section": "City · Rich County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.townofrandolph.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/rich/randolph/"
+    },
+    {
+      "id": "sevier/redmond",
+      "name": "Redmond",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://redmondutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/redmond/"
+    },
+    {
+      "id": "sevier/richfield",
+      "name": "Richfield",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://richfieldut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/richfield/"
+    },
+    {
+      "id": "cache/richmond",
+      "name": "Richmond",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://richmond-utah.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/richmond/"
+    },
+    {
+      "id": "weber/riverdale",
+      "name": "Riverdale",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.riverdalecity.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/riverdale/"
+    },
+    {
+      "id": "salt-lake/riverton",
+      "name": "Riverton",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.rivertonutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/riverton/"
+    },
+    {
+      "id": "washington/rockville",
+      "name": "Rockville",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://rockvilleutah.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/rockville/"
+    },
+    {
+      "id": "juab/rocky-ridge",
+      "name": "Rocky Ridge",
+      "section": "City · Juab County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.rockyridgetown.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/juab/rocky-ridge/"
+    },
+    {
+      "id": "duchesne/roosevelt",
+      "name": "Roosevelt",
+      "section": "City · Duchesne County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.rooseveltcity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/duchesne/roosevelt/"
+    },
+    {
+      "id": "weber/roy",
+      "name": "Roy",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.royutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/roy/"
+    },
+    {
+      "id": "tooele/rush-valley",
+      "name": "Rush Valley",
+      "section": "City · Tooele County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.rushvalleytown.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/tooele/rush-valley/"
+    },
+    {
+      "id": "utah/salem",
+      "name": "Salem",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.salemutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/salem/"
+    },
+    {
+      "id": "sevier/salina",
+      "name": "Salina",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.salinacity.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/salina/"
+    },
+    {
+      "id": "washington/santa-clara",
+      "name": "Santa Clara",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.santaclarautah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/santa-clara/"
+    },
+    {
+      "id": "utah/santaquin",
+      "name": "Santaquin",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.santaquin.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/santaquin/"
+    },
+    {
+      "id": "utah/saratoga-springs",
+      "name": "Saratoga Springs",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.saratogasprings-ut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/saratoga-springs/"
+    },
+    {
+      "id": "carbon/scofield",
+      "name": "Scofield",
+      "section": "City · Carbon County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.scofieldtown.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/carbon/scofield/"
+    },
+    {
+      "id": "sevier/sigurd",
+      "name": "Sigurd",
+      "section": "City · Sevier County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sevier/sigurd/"
+    },
+    {
+      "id": "cache/smithfield",
+      "name": "Smithfield",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://smithfieldutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/smithfield/"
+    },
+    {
+      "id": "weber/south-ogden",
+      "name": "South Ogden",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.southogdencity.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/south-ogden/"
+    },
+    {
+      "id": "salt-lake/south-salt-lake",
+      "name": "South Salt Lake",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://sslc.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/south-salt-lake/"
+    },
+    {
+      "id": "utah/spanish-fork",
+      "name": "Spanish Fork",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.spanishfork.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/spanish-fork/"
+    },
+    {
+      "id": "sanpete/spring-city",
+      "name": "Spring City",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://springcitycorp.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/spring-city/"
+    },
+    {
+      "id": "utah/spring-lake",
+      "name": "Spring Lake",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://springlakeutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/spring-lake/"
+    },
+    {
+      "id": "washington/springdale",
+      "name": "Springdale",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.springdaletown.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/springdale/"
+    },
+    {
+      "id": "utah/springville",
+      "name": "Springville",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.springvilleutah.gov/\"",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/springville/"
+    },
+    {
+      "id": "tooele/stansbury-park",
+      "name": "Stansbury Park",
+      "section": "City · Tooele County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://stansburypark.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/tooele/stansbury-park/"
+    },
+    {
+      "id": "sanpete/sterling",
+      "name": "Sterling",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://sterlingutah.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/sterling/"
+    },
+    {
+      "id": "davis/sunset",
+      "name": "Sunset",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.sunset-ut.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/sunset/"
+    },
+    {
+      "id": "davis/syracuse",
+      "name": "Syracuse",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://syracuseut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/syracuse/"
+    },
+    {
+      "id": "duchesne/tabiona",
+      "name": "Tabiona",
+      "section": "City · Duchesne County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://tabionatownut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/duchesne/tabiona/"
+    },
+    {
+      "id": "salt-lake/taylorsville",
+      "name": "Taylorsville",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.taylorsvilleut.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/taylorsville/"
+    },
+    {
+      "id": "tooele/tooele",
+      "name": "Tooele",
+      "section": "City · Tooele County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.tooelecity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/tooele/tooele/"
+    },
+    {
+      "id": "washington/toquerville",
+      "name": "Toquerville",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.toquerville.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/toquerville/"
+    },
+    {
+      "id": "box-elder/tremonton",
+      "name": "Tremonton",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://tremontoncity.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/tremonton/"
+    },
+    {
+      "id": "cache/trenton",
+      "name": "Trenton",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://trenton-ut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/trenton/"
+    },
+    {
+      "id": "garfield/tropic",
+      "name": "Tropic",
+      "section": "City · Garfield County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.townoftropicut.gov",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/garfield/tropic/"
+    },
+    {
+      "id": "weber/uintah",
+      "name": "Uintah",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://uintahcity.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/uintah/"
+    },
+    {
+      "id": "uintah/vernal",
+      "name": "Vernal",
+      "section": "City · Uintah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.vernal.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/uintah/vernal/"
+    },
+    {
+      "id": "utah/vineyard",
+      "name": "Vineyard",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.vineyard.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/vineyard/"
+    },
+    {
+      "id": "washington/virgin",
+      "name": "Virgin",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://virginutah.org",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/virgin/"
+    },
+    {
+      "id": "sanpete/wales",
+      "name": "Wales",
+      "section": "City · Sanpete County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.walesutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/sanpete/wales/"
+    },
+    {
+      "id": "wasatch/wallsburg",
+      "name": "Wallsburg",
+      "section": "City · Wasatch County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://wallsburg.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/wasatch/wallsburg/"
+    },
+    {
+      "id": "washington/washington",
+      "name": "Washington",
+      "section": "City · Washington County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.washingtoncity.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/washington/washington/"
+    },
+    {
+      "id": "weber/washington-terrace",
+      "name": "Washington Terrace",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://washingtonterrace.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/washington-terrace/"
+    },
+    {
+      "id": "carbon/wellington",
+      "name": "Wellington",
+      "section": "City · Carbon County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.wellingtonutah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/carbon/wellington/"
+    },
+    {
+      "id": "cache/wellsville",
+      "name": "Wellsville",
+      "section": "City · Cache County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.wellsvillecity.com",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/cache/wellsville/"
+    },
+    {
+      "id": "tooele/wendover",
+      "name": "Wendover",
+      "section": "City · Tooele County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://wendovercityutah.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/tooele/wendover/"
+    },
+    {
+      "id": "davis/west-bountiful",
+      "name": "West Bountiful",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://wbcityut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/west-bountiful/"
+    },
+    {
+      "id": "weber/west-haven",
+      "name": "West Haven",
+      "section": "City · Weber County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://www.westhavenut.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/weber/west-haven/"
+    },
+    {
+      "id": "davis/west-point",
+      "name": "West Point",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.westpointcity.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/west-point/"
+    },
+    {
+      "id": "salt-lake/white-city",
+      "name": "White City",
+      "section": "City · Salt Lake County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.whitecityutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/salt-lake/white-city/"
+    },
+    {
+      "id": "box-elder/willard",
+      "name": "Willard",
+      "section": "City · Box Elder County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://www.willardcity.com/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/box-elder/willard/"
+    },
+    {
+      "id": "utah/woodland-hills",
+      "name": "Woodland Hills",
+      "section": "City · Utah County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "http://woodlandhillsutah.org/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/utah/woodland-hills/"
+    },
+    {
+      "id": "rich/woodruff",
+      "name": "Woodruff",
+      "section": "City · Rich County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://woodruff.utah.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/rich/woodruff/"
+    },
+    {
+      "id": "davis/woods-cross",
+      "name": "Woods Cross",
+      "section": "City · Davis County",
+      "status": "Needs research",
+      "links": [],
+      "notes": "Not researched in this pass. Existing official website, Wikipedia, Wikidata, images, and place data are unchanged. No conclusion is drawn about the existence of government social accounts.",
+      "sources": [],
+      "existingWebsite": "https://woodscross.gov/",
+      "reviewStatus": "Not researched",
+      "siteUrl": "https://www.electionsutah.org/places/davis/woods-cross/"
+    }
+  ]
+}

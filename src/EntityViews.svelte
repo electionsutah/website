@@ -140,16 +140,18 @@
     : person?.name || office?.name || party?.name || place?.name || labels[section].plural;
   $: contactFiling = person?.filings.find((filing) => filing.personId === person.id && filing.contact && Object.values(filing.contact).some(Boolean));
   // Current campaign information has its own source and date; archived contacts stay in the filing data.
-  $: contact = personProfile?.contact ?? contactFiling?.contact;
+  $: verifiedPersonLinks = person?.links ?? [];
+  $: personVerifiedDate = [personProfile?.lastVerified, person?.lastVerified].filter(Boolean).sort().at(-1) ?? '';
+  $: contact = personProfile?.contact ?? contactFiling?.contact ?? (verifiedPersonLinks.length ? {} as Partial<Contact> : undefined);
   $: contactItems = contact ? [
     contact.phone && { label: 'Phone', text: contact.phone, href: `tel:${contact.phone}`, icon: 'call', external: false },
     contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'send', external: false }
   ].filter((item) => !!item) : [];
-  $: contactLinks = contact ? [
+  $: contactLinks = [...verifiedPersonLinks, ...(contact ? [
     { url: contact.website || '' }, { url: contact.facebook || '' },
     { url: contact.instagram || '' }, { url: contact.twitter || '' },
     { url: contact.bluesky || '' }
-  ] satisfies EntityLink[] : [];
+  ] satisfies EntityLink[] : [])];
 
   // Within a scope, each person keeps only the scoped filings, so offices, years, and counts describe that scope.
   function scopedPeople(list: Filing[]): Person[] {
@@ -350,7 +352,7 @@
 
   // Use the same contact precedence as the person's record page.
   function tileLinks(card: (typeof cards)[number]): EntityLink[] {
-    if (section === 'places') return placeEntityLinks(card);
+    if (section === 'places') return placesById.get(card.id)?.links ?? placeEntityLinks(card);
     if (section === 'offices') {
       const office = officesById.get(card.id);
       return (office as (typeof office & { links?: EntityLink[] }))?.links ?? office?.resources.map(({ url, label }) => ({ url, label })) ?? [];
@@ -406,9 +408,9 @@
           <h1>{person.name}</h1>
           <p class="detail-summary">{person.filings.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${person.filings.length} separate filings across ${person.years.join(', ')}.`}</p>
           {#if personPhoto}<PhotoCredit image={personPhoto} className="emblem-credit" />{/if}
-          {#if contact && (personProfile || contactFiling)}
+          {#if contact && (personProfile || contactFiling || verifiedPersonLinks.length)}
             <section class="person-contact" aria-label={`${person.name} contact information`}>
-              <div class="contact-heading"><span>{personProfile ? 'Campaign contact' : 'Public contact'}</span><small>{#if personProfile?.lastVerified}Verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>{:else if contactFiling}{contactFiling.year} filing{/if}</small></div>
+              <div class="contact-heading"><span>{personProfile ? 'Campaign contact' : contactFiling ? 'Public contact' : 'Public links'}</span><small class="contact-verification">{#if personVerifiedDate}<Icon name="verified" /> Verified <time datetime={personVerifiedDate}>{formatDate(personVerifiedDate)}</time>{:else if contactFiling}{contactFiling.year} filing{/if}</small></div>
               <div class="contact-grid">
                 {#each contactAddresses(contact.address) as address}
                   {#if isMailingAddress(address)}
@@ -472,7 +474,7 @@
   {:else if office}
     <article class="entity-detail">
       <Breadcrumbs parent={{ label: 'Offices', href: '/offices/' }} current={office.name} {navigate} />
-      <header class="detail-hero compact-hero" class:has-boundary={!!boundary} class:has-photo={!!officeImage} style:--place-photo={officeImage ? `url("${officeImage.src}")` : undefined}><div class="office-hero-detail"><p class="eyebrow">{office.sections.join(' · ')}</p><div class="entity-heading-row"><h1>{office.name}</h1></div><p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div>{#if boundary}<BoundaryMap map={boundary} className="office-boundary" />{/if}{#if officeImage}<PhotoCredit image={officeImage} />{/if}</header>
+      <header class="detail-hero compact-hero" class:has-boundary={!!boundary} class:has-photo={!!officeImage} style:--place-photo={officeImage ? `url("${officeImage.src}")` : undefined}><div class="office-hero-detail"><p class="eyebrow">{office.sections.join(' · ')}</p><div class="entity-heading-row"><h1>{office.name}</h1><EntityLinks links={office.links} entityName={office.name} /></div><p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div>{#if boundary}<BoundaryMap map={boundary} className="office-boundary" />{/if}{#if officeImage}<PhotoCredit image={officeImage} />{/if}</header>
       <section class="detail-stats">
         <div><small>TOTAL FILINGS</small><strong>{formatCount(office.filings.length)}</strong></div>
         <div><small>PEOPLE</small><strong>{new Set(candidacies(office.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
@@ -493,7 +495,7 @@
   {:else if party}
     <article class="entity-detail" style={`--party-color:${party.color}`}>
       <Breadcrumbs parent={{ label: 'Parties', href: '/parties/' }} current={party.name} {navigate} />
-      <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} ${party.localCaucus ? 'symbol' : 'logo'}`} /></div>{:else}<div class="party-mark" aria-hidden="true">{party.shortName.charAt(0)}</div>{/if}<div class="party-hero-detail"><p class="eyebrow">{partyLabel(party)}</p><div class="entity-heading-row"><h1>{party.name}</h1><EntityLinks links={[{ url: party.website }]} entityName={party.name} /></div><p class="detail-summary">{party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'}</p>
+      <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} ${party.localCaucus ? 'symbol' : 'logo'}`} /></div>{:else}<div class="party-mark" aria-hidden="true">{party.shortName.charAt(0)}</div>{/if}<div class="party-hero-detail"><p class="eyebrow">{partyLabel(party)}</p><div class="entity-heading-row"><h1>{party.name}</h1><EntityLinks links={party.links ?? []} entityName={party.name} /></div><p class="detail-summary">{party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'}</p>
         {#if party.id === 'united-utah-party'}
           <p class="detail-summary"><strong>Historical note:</strong> On April 26, 2025, members approved the merger of the United Utah Party (UUP) with the Utah Forward Party to form the <a href={hrefFor('parties', 'forward-party-of-utah')} onclick={(event) => open(event, hrefFor('parties', 'forward-party-of-utah'))}>Forward Party of Utah</a>.</p>
         {:else if party.id === 'forward-party-of-utah'}
@@ -531,7 +533,7 @@
               <p class="eyebrow compact">Place profile</p>
               <div class="place-profile-heading entity-heading-row">
                 <h2 id="place-profile-title">About {place.name}</h2>
-                <EntityLinks links={placeEntityLinks(placeProfile)} entityName={place.name} />
+                <EntityLinks links={place.links ?? placeEntityLinks(placeProfile)} entityName={place.name} />
               </div>
               <p class="place-intro" use:sentenceExcerpt={placeProfile?.summary ?? `${place.name} is represented in the ${place.county} County election archive. A sourced local profile is not yet available.`}></p>
               {#if placeEmblem}<PhotoCredit image={placeEmblem} label={placeEmblem.kind.charAt(0).toUpperCase() + placeEmblem.kind.slice(1)} className="emblem-credit" />{/if}

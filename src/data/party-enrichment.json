@@ -1,0 +1,286 @@
+{
+  "utah-constitution-party": {
+    "officialWebsite": "https://www.constitutionpartyofutah.com/",
+    "verifiedOn": "2026-11-06",
+    "status": "Verified",
+    "notes": "Two party accounts linked by the party homepage.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.constitutionpartyofutah.com/"
+    ],
+    "links": [
+      {
+        "url": "https://www.constitutionpartyofutah.com/",
+        "label": "Official website",
+        "source": "https://vote.utah.gov/more-information-on-utah-political-parties/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/constitutionpartyofutah/",
+        "source": "https://www.constitutionpartyofutah.com/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/ConstPartyofUT",
+        "source": "https://www.constitutionpartyofutah.com/",
+        "verifiedOn": "2026-11-06"
+      }
+    ]
+  },
+  "utah-democratic-party": {
+    "officialWebsite": "https://www.utahdemocrats.org/",
+    "verifiedOn": "2026-11-06",
+    "status": "Verified",
+    "notes": "Three party accounts linked by the party homepage.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.utahdemocrats.org/"
+    ],
+    "links": [
+      {
+        "url": "https://www.utahdemocrats.org/",
+        "label": "Official website",
+        "source": "https://vote.utah.gov/more-information-on-utah-political-parties/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/utahdemocrats/",
+        "source": "https://www.utahdemocrats.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.instagram.com/utahdemocrats",
+        "source": "https://www.utahdemocrats.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/UtahDemocrats",
+        "source": "https://www.utahdemocrats.org/",
+        "verifiedOn": "2026-11-06"
+      }
+    ]
+  },
+  "forward-party-of-utah": {
+    "officialWebsite": "https://www.utahforwardparty.org/",
+    "verifiedOn": "2026-11-06",
+    "status": "Verified",
+    "notes": "Icon-only links verified in the official homepage link list. Facebook page and community group retained as distinct destinations. Embedded YouTube channel ID omitted as an alias of the displayed party channel.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.utahforwardparty.org/"
+    ],
+    "links": [
+      {
+        "url": "https://www.utahforwardparty.org/",
+        "label": "Official website",
+        "source": "https://vote.utah.gov/more-information-on-utah-political-parties/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://facebook.com/ForwardUtah/",
+        "source": "https://www.utahforwardparty.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/FWDUtah",
+        "source": "https://www.utahforwardparty.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://instagram.com/fwdutah",
+        "source": "https://www.utahforwardparty.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://linkedin.com/company/forwardutah",
+        "source": "https://www.utahforwardparty.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://youtube.com/@UtahForwardParty",
+        "source": "https://www.utahforwardparty.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://facebook.com/groups/fwdutah",
+        "source": "https://www.utahforwardparty.org/",
+        "verifiedOn": "2026-11-06",
+        "label": "Facebook group",
+        "detail": "Forward Utah community group"
+      }
+    ]
+  },
+  "green-party-of-utah": {
+    "officialWebsite": "https://greenpartyofutah.org/",
+    "verifiedOn": "2026-11-06",
+    "status": "Verified",
+    "notes": "Official homepage links the party Facebook page. Numeric Facebook embed URL omitted as a duplicate.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://greenpartyofutah.org/"
+    ],
+    "links": [
+      {
+        "url": "https://greenpartyofutah.org/",
+        "label": "Official website",
+        "source": "https://vote.utah.gov/more-information-on-utah-political-parties/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/greenpartyofutah/",
+        "source": "https://greenpartyofutah.org/",
+        "verifiedOn": "2026-11-06"
+      }
+    ]
+  },
+  "independent-american-party": {
+    "officialWebsite": "https://iaput.org/",
+    "verifiedOn": "2026-11-06",
+    "status": "Verified",
+    "notes": "Website endorsed by the state and identifies itself as the official Utah party site. Homepage and contact page checked; no party social account verified. No national party accounts guessed.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://iaput.org/"
+    ],
+    "links": [
+      {
+        "url": "https://iaput.org/",
+        "label": "Official website",
+        "source": "https://vote.utah.gov/more-information-on-utah-political-parties/",
+        "verifiedOn": "2026-11-06"
+      }
+    ]
+  },
+  "utah-libertarian-party": {
+    "officialWebsite": "https://www.libertarianutah.org/",
+    "verifiedOn": "2026-11-06",
+    "status": "Verified",
+    "notes": "Facebook linked in the homepage and contact page; Twitter linked by the contact page, normalized to X. Candidate Facebook pages and speech videos excluded.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.libertarianutah.org/",
+      "https://www.libertarianutah.org/contact-us/"
+    ],
+    "links": [
+      {
+        "url": "https://www.libertarianutah.org/",
+        "label": "Official website",
+        "source": "https://vote.utah.gov/more-information-on-utah-political-parties/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/LibertarianUtah/",
+        "source": "https://www.libertarianutah.org/contact-us/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/libertarianutah",
+        "source": "https://www.libertarianutah.org/contact-us/",
+        "verifiedOn": "2026-11-06"
+      }
+    ]
+  },
+  "utah-republican-party": {
+    "officialWebsite": "https://www.utgop.org/",
+    "verifiedOn": "2026-11-06",
+    "status": "Verified",
+    "notes": "Icon-only party social links verified in the official homepage link list.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.utgop.org/"
+    ],
+    "links": [
+      {
+        "url": "https://www.utgop.org/",
+        "label": "Official website",
+        "source": "https://vote.utah.gov/more-information-on-utah-political-parties/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.facebook.com/UTGOP",
+        "source": "https://www.utgop.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://x.com/utahgop",
+        "source": "https://www.utgop.org/",
+        "verifiedOn": "2026-11-06"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCoGTmqLg8YVf-2NaNT9W1Vg",
+        "source": "https://www.utgop.org/",
+        "verifiedOn": "2026-11-06"
+      }
+    ]
+  },
+  "peoples-freedom-party": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-06",
+    "status": "State-endorsed social only",
+    "notes": "Existing Instagram account independently endorsed by the state party directory. Direct Instagram inspection is unsupported by the research service, so profile content and activity were not checked. No separate website added.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/"
+    ],
+    "links": [
+      {
+        "url": "https://www.instagram.com/peoplesfreedompartyut/",
+        "source": "https://vote.utah.gov/more-information-on-utah-political-parties/",
+        "verifiedOn": "2026-11-06"
+      }
+    ]
+  },
+  "united-utah-party": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-06",
+    "status": "Historical — withheld",
+    "notes": "Former unitedutah.org website could not be retrieved (proxy tunnel error). Forward’s disclosure page confirms the merger into Forward Party of Utah. No successor site or legacy social account presented as a current United Utah Party account.",
+    "sources": [
+      "https://www.utahforwardparty.org/disclosures"
+    ],
+    "links": []
+  },
+  "pinecone": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-06",
+    "status": "Local caucus — no dedicated account verified",
+    "notes": "Fruit Heights City explains these local nonpartisan caucuses. No dedicated caucus website or social account verified. City election information stays in the sourced history section, not the party link collection.",
+    "sources": [
+      "https://www.fruitheights.gov/313/Elections"
+    ],
+    "links": []
+  },
+  "sagebrush": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-06",
+    "status": "Local caucus — no dedicated account verified",
+    "notes": "Fruit Heights City explains these local nonpartisan caucuses. No dedicated caucus website or social account verified. City election information stays in the sourced history section, not the party link collection.",
+    "sources": [
+      "https://www.fruitheights.gov/313/Elections"
+    ],
+    "links": []
+  },
+  "nonpartisan": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-06",
+    "status": "Not an organization",
+    "notes": "Election affiliation or missing-data category, not a party organization; no website or social account applies.",
+    "sources": [],
+    "links": []
+  },
+  "not-reported": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-06",
+    "status": "Not an organization",
+    "notes": "Election affiliation or missing-data category, not a party organization; no website or social account applies.",
+    "sources": [],
+    "links": []
+  },
+  "unaffiliated": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-06",
+    "status": "Not an organization",
+    "notes": "Election affiliation or missing-data category, not a party organization; no website or social account applies.",
+    "sources": [],
+    "links": []
+  }
+}
