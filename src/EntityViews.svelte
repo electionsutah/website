@@ -14,6 +14,7 @@
   import indexHeaderImages from './data/index-header-images.json';
   import SortHeader from './SortHeader.svelte';
   import placeProfiles from './data/place-enrichment.json';
+  import placeElectionNotes from './data/place-election-notes.json';
   import placeImageData from './data/place-images.json';
   import placeEmblemData from './data/place-emblems.json';
   import personProfiles from './data/person-enrichment.json';
@@ -532,7 +533,7 @@
     <article class="entity-detail">
       <Breadcrumbs parent={[{ label: 'Places', href: '/places/' }, ...(placeCounty ? [{ label: placeCounty.name, href: hrefFor('places', placeCounty.id) }] : [])]} current={place.name} {navigate} />
       <header class="detail-hero compact-hero place-hero">
-        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<PhotoCredit image={placeImage} label={placeImageFallback ? `${place.county} County photo` : 'Photo'} />{/if}</div>
+        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>{#if place.years.length}Archived candidate years: {place.years.slice().reverse().join(', ')}.{:else}No candidate records imported yet.{/if}</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<PhotoCredit image={placeImage} label={placeImageFallback ? `${place.county} County photo` : 'Photo'} />{/if}</div>
           <section class="place-profile" aria-labelledby="place-profile-title">
             <div class="place-summary">
               <p class="eyebrow compact">Place profile</p>
@@ -584,6 +585,10 @@
                     <div class="evidence-popover place-election-popover" id={placePopoverId} popover="auto" use:anchoredPopover={placePopoverId} aria-labelledby={`${placePopoverId}-title`}>
                       <header><strong id={`${placePopoverId}-title`}>Election details &amp; sources · {place.name}</strong><button popovertarget={placePopoverId} popovertargetaction="hide" aria-label="Close election details"><Icon name="close" /></button></header>
                       <div class="place-source-content">
+                        {#each (placeElectionNotes as Record<string, {date: string; title: string; summary: string; source: string}[]>)[place.id] ?? [] as note}
+                          <p><strong>{note.title}</strong> · {note.date}<br />{note.summary}</p>
+                          <a href={note.source} target="_blank" rel="noreferrer">Source record <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
+                        {/each}
                         {#if placeVoters}
                           <p>Active registration: {formatDate(voterRegistration.asOf)}, Lt. Governor's office.{place.type !== 'County' ? ' City registration counts are not published in this report.' : ''}</p>
                           <a href={voterRegistration.sources.statistics} target="_blank" rel="noreferrer">Voter registration report <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
@@ -614,7 +619,7 @@
         <div class="record-heading"><p class="eyebrow compact">Archived locations</p>{#if place.children.length}<h2>Cities in the archive</h2>{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}<h2 class:office-group-heading={place.children.length > 0}>Area offices</h2>{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
         <div>
           <div class="filed-heading"><p class="eyebrow flush">Filed candidates</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${place.name} candidates`} /></div>
-          <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
+          <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">{place.filings.length ? 'No matching candidates.' : 'No candidate records have been imported for this municipality yet. See Election details & sources for the coverage review.'}</p>{/each}</div>
         </div>
       </section>
     </article>

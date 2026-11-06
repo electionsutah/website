@@ -9,6 +9,8 @@ import currentRows from '../data/2026-candidates.json';
 import historicalRows from '../data/historical-candidates.json';
 // County, municipal, school-board, and special-district candidates from the state results feed (2024 on).
 import localRows from '../data/local-candidates.json';
+// Reviewed source records outside the state results feed; kept separate so refreshes preserve them.
+import researchedRows from '../data/researched-candidates.json';
 import candidateDocuments from '../data/candidate-documents.json';
 import { applyFilingChanges, applyPlaceSocial, entityContact, editorialData } from './editorial';
 import type { ContactAddress } from './contact-addresses';
@@ -354,7 +356,7 @@ export function sourceAvailable(url: string): boolean {
 type ArchiveRow = (typeof historicalRows)[number];
 
 export const importedFilings: Filing[] = [
-  ...[...historicalRows, ...(localRows as ArchiveRow[])].map((row) => {
+  ...[...historicalRows, ...(localRows as ArchiveRow[]), ...(researchedRows as ArchiveRow[])].map((row) => {
     const officeName = cleanOfficeName(row.office);
     const party = partyDetails(row.party, row.section);
     const personId = slug(row.name);
@@ -709,5 +711,6 @@ export const totals = {
   filings: filings.length,
   currentFilings: currentRows.length,
   historicalFilings: historicalRows.length,
-  localFilings: localRows.length
+  localFilings: localRows.length,
+  researchedFilings: researchedRows.length
 };

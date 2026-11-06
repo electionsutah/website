@@ -1,0 +1,1050 @@
+{
+  "source": "https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/UtahMunicipalBoundaries/FeatureServer/0/query",
+  "description": "Existing UGRC municipality boundary snapshot used by the local-contest importer; a current-boundary reference, not a historical incorporation timeline. Not every municipality necessarily held an election in each audited year.",
+  "municipalities": [
+    {
+      "name": "Beaver",
+      "county": "Beaver"
+    },
+    {
+      "name": "Milford",
+      "county": "Beaver"
+    },
+    {
+      "name": "Minersville",
+      "county": "Beaver"
+    },
+    {
+      "name": "Bear River City",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Brigham City",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Corinne",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Deweyville",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Elwood",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Fielding",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Garland",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Honeyville",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Howell",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Mantua",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Perry",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Plymouth",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Portage",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Snowville",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Tremonton",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Willard",
+      "county": "Box Elder"
+    },
+    {
+      "name": "Amalga",
+      "county": "Cache"
+    },
+    {
+      "name": "Clarkston",
+      "county": "Cache"
+    },
+    {
+      "name": "Cornish",
+      "county": "Cache"
+    },
+    {
+      "name": "Hyde Park",
+      "county": "Cache"
+    },
+    {
+      "name": "Hyrum",
+      "county": "Cache"
+    },
+    {
+      "name": "Lewiston",
+      "county": "Cache"
+    },
+    {
+      "name": "Logan",
+      "county": "Cache"
+    },
+    {
+      "name": "Mendon",
+      "county": "Cache"
+    },
+    {
+      "name": "Millville",
+      "county": "Cache"
+    },
+    {
+      "name": "Newton",
+      "county": "Cache"
+    },
+    {
+      "name": "Nibley",
+      "county": "Cache"
+    },
+    {
+      "name": "North Logan",
+      "county": "Cache"
+    },
+    {
+      "name": "Paradise",
+      "county": "Cache"
+    },
+    {
+      "name": "Providence",
+      "county": "Cache"
+    },
+    {
+      "name": "Richmond",
+      "county": "Cache"
+    },
+    {
+      "name": "River Heights",
+      "county": "Cache"
+    },
+    {
+      "name": "Smithfield",
+      "county": "Cache"
+    },
+    {
+      "name": "Trenton",
+      "county": "Cache"
+    },
+    {
+      "name": "Wellsville",
+      "county": "Cache"
+    },
+    {
+      "name": "East Carbon",
+      "county": "Carbon"
+    },
+    {
+      "name": "Helper",
+      "county": "Carbon"
+    },
+    {
+      "name": "Price",
+      "county": "Carbon"
+    },
+    {
+      "name": "Scofield",
+      "county": "Carbon"
+    },
+    {
+      "name": "Wellington",
+      "county": "Carbon"
+    },
+    {
+      "name": "Dutch John",
+      "county": "Daggett"
+    },
+    {
+      "name": "Manila",
+      "county": "Daggett"
+    },
+    {
+      "name": "Bountiful",
+      "county": "Davis"
+    },
+    {
+      "name": "Centerville",
+      "county": "Davis"
+    },
+    {
+      "name": "Clearfield",
+      "county": "Davis"
+    },
+    {
+      "name": "Clinton",
+      "county": "Davis"
+    },
+    {
+      "name": "Farmington",
+      "county": "Davis"
+    },
+    {
+      "name": "Fruit Heights",
+      "county": "Davis"
+    },
+    {
+      "name": "Kaysville",
+      "county": "Davis"
+    },
+    {
+      "name": "Layton",
+      "county": "Davis"
+    },
+    {
+      "name": "North Salt Lake",
+      "county": "Davis"
+    },
+    {
+      "name": "South Weber",
+      "county": "Davis"
+    },
+    {
+      "name": "Sunset",
+      "county": "Davis"
+    },
+    {
+      "name": "Syracuse",
+      "county": "Davis"
+    },
+    {
+      "name": "West Bountiful",
+      "county": "Davis"
+    },
+    {
+      "name": "West Point",
+      "county": "Davis"
+    },
+    {
+      "name": "Woods Cross",
+      "county": "Davis"
+    },
+    {
+      "name": "Altamont",
+      "county": "Duchesne"
+    },
+    {
+      "name": "Duchesne",
+      "county": "Duchesne"
+    },
+    {
+      "name": "Myton",
+      "county": "Duchesne"
+    },
+    {
+      "name": "Roosevelt",
+      "county": "Duchesne"
+    },
+    {
+      "name": "Tabiona",
+      "county": "Duchesne"
+    },
+    {
+      "name": "Castle Dale",
+      "county": "Emery"
+    },
+    {
+      "name": "Clawson",
+      "county": "Emery"
+    },
+    {
+      "name": "Cleveland",
+      "county": "Emery"
+    },
+    {
+      "name": "Elmo",
+      "county": "Emery"
+    },
+    {
+      "name": "Emery",
+      "county": "Emery"
+    },
+    {
+      "name": "Ferron",
+      "county": "Emery"
+    },
+    {
+      "name": "Green River",
+      "county": "Emery"
+    },
+    {
+      "name": "Huntington",
+      "county": "Emery"
+    },
+    {
+      "name": "Orangeville",
+      "county": "Emery"
+    },
+    {
+      "name": "Antimony",
+      "county": "Garfield"
+    },
+    {
+      "name": "Boulder",
+      "county": "Garfield"
+    },
+    {
+      "name": "Bryce Canyon City",
+      "county": "Garfield"
+    },
+    {
+      "name": "Cannonville",
+      "county": "Garfield"
+    },
+    {
+      "name": "Escalante",
+      "county": "Garfield"
+    },
+    {
+      "name": "Hatch",
+      "county": "Garfield"
+    },
+    {
+      "name": "Henrieville",
+      "county": "Garfield"
+    },
+    {
+      "name": "Panguitch",
+      "county": "Garfield"
+    },
+    {
+      "name": "Tropic",
+      "county": "Garfield"
+    },
+    {
+      "name": "Castle Valley",
+      "county": "Grand"
+    },
+    {
+      "name": "Moab",
+      "county": "Grand"
+    },
+    {
+      "name": "Brian Head",
+      "county": "Iron"
+    },
+    {
+      "name": "Cedar City",
+      "county": "Iron"
+    },
+    {
+      "name": "Enoch",
+      "county": "Iron"
+    },
+    {
+      "name": "Kanarraville",
+      "county": "Iron"
+    },
+    {
+      "name": "Paragonah",
+      "county": "Iron"
+    },
+    {
+      "name": "Parowan",
+      "county": "Iron"
+    },
+    {
+      "name": "Eureka",
+      "county": "Juab"
+    },
+    {
+      "name": "Levan",
+      "county": "Juab"
+    },
+    {
+      "name": "Mona",
+      "county": "Juab"
+    },
+    {
+      "name": "Nephi",
+      "county": "Juab"
+    },
+    {
+      "name": "Rocky Ridge",
+      "county": "Juab"
+    },
+    {
+      "name": "Santaquin",
+      "county": "Juab"
+    },
+    {
+      "name": "Alton",
+      "county": "Kane"
+    },
+    {
+      "name": "Big Water",
+      "county": "Kane"
+    },
+    {
+      "name": "Glendale",
+      "county": "Kane"
+    },
+    {
+      "name": "Kanab",
+      "county": "Kane"
+    },
+    {
+      "name": "Orderville",
+      "county": "Kane"
+    },
+    {
+      "name": "Delta",
+      "county": "Millard"
+    },
+    {
+      "name": "Fillmore",
+      "county": "Millard"
+    },
+    {
+      "name": "Hinckley",
+      "county": "Millard"
+    },
+    {
+      "name": "Holden",
+      "county": "Millard"
+    },
+    {
+      "name": "Kanosh",
+      "county": "Millard"
+    },
+    {
+      "name": "Leamington",
+      "county": "Millard"
+    },
+    {
+      "name": "Lynndyl",
+      "county": "Millard"
+    },
+    {
+      "name": "Meadow",
+      "county": "Millard"
+    },
+    {
+      "name": "Oak City",
+      "county": "Millard"
+    },
+    {
+      "name": "Scipio",
+      "county": "Millard"
+    },
+    {
+      "name": "Morgan",
+      "county": "Morgan"
+    },
+    {
+      "name": "Circleville",
+      "county": "Piute"
+    },
+    {
+      "name": "Junction",
+      "county": "Piute"
+    },
+    {
+      "name": "Kingston",
+      "county": "Piute"
+    },
+    {
+      "name": "Marysvale",
+      "county": "Piute"
+    },
+    {
+      "name": "Garden City",
+      "county": "Rich"
+    },
+    {
+      "name": "Laketown",
+      "county": "Rich"
+    },
+    {
+      "name": "Randolph",
+      "county": "Rich"
+    },
+    {
+      "name": "Woodruff",
+      "county": "Rich"
+    },
+    {
+      "name": "Alta",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Bluffdale",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Brighton",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Copperton",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Cottonwood Heights",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Draper",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Emigration Canyon",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Herriman",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Holladay",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Kearns",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Magna City",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Midvale",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Millcreek",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Murray",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Riverton",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Salt Lake City",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Sandy",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "South Jordan",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "South Salt Lake",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Taylorsville",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "West Jordan",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "West Valley City",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "White City",
+      "county": "Salt Lake"
+    },
+    {
+      "name": "Blanding",
+      "county": "San Juan"
+    },
+    {
+      "name": "Bluff",
+      "county": "San Juan"
+    },
+    {
+      "name": "Monticello",
+      "county": "San Juan"
+    },
+    {
+      "name": "Centerfield",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Ephraim",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Fairview",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Fayette",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Fountain Green",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Gunnison",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Manti",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Mayfield",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Moroni",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Mount Pleasant",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Spring City",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Sterling",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Wales",
+      "county": "Sanpete"
+    },
+    {
+      "name": "Annabella",
+      "county": "Sevier"
+    },
+    {
+      "name": "Aurora",
+      "county": "Sevier"
+    },
+    {
+      "name": "Central Valley",
+      "county": "Sevier"
+    },
+    {
+      "name": "Elsinore",
+      "county": "Sevier"
+    },
+    {
+      "name": "Glenwood",
+      "county": "Sevier"
+    },
+    {
+      "name": "Joseph",
+      "county": "Sevier"
+    },
+    {
+      "name": "Koosharem",
+      "county": "Sevier"
+    },
+    {
+      "name": "Monroe",
+      "county": "Sevier"
+    },
+    {
+      "name": "Redmond",
+      "county": "Sevier"
+    },
+    {
+      "name": "Richfield",
+      "county": "Sevier"
+    },
+    {
+      "name": "Salina",
+      "county": "Sevier"
+    },
+    {
+      "name": "Sigurd",
+      "county": "Sevier"
+    },
+    {
+      "name": "Coalville",
+      "county": "Summit"
+    },
+    {
+      "name": "Francis",
+      "county": "Summit"
+    },
+    {
+      "name": "Henefer",
+      "county": "Summit"
+    },
+    {
+      "name": "Kamas",
+      "county": "Summit"
+    },
+    {
+      "name": "Oakley",
+      "county": "Summit"
+    },
+    {
+      "name": "Park City",
+      "county": "Summit"
+    },
+    {
+      "name": "Erda",
+      "county": "Tooele"
+    },
+    {
+      "name": "Grantsville",
+      "county": "Tooele"
+    },
+    {
+      "name": "Lake Point",
+      "county": "Tooele"
+    },
+    {
+      "name": "Rush Valley",
+      "county": "Tooele"
+    },
+    {
+      "name": "Stockton",
+      "county": "Tooele"
+    },
+    {
+      "name": "Tooele",
+      "county": "Tooele"
+    },
+    {
+      "name": "Vernon",
+      "county": "Tooele"
+    },
+    {
+      "name": "Wendover",
+      "county": "Tooele"
+    },
+    {
+      "name": "Ballard",
+      "county": "Uintah"
+    },
+    {
+      "name": "Naples",
+      "county": "Uintah"
+    },
+    {
+      "name": "Vernal",
+      "county": "Uintah"
+    },
+    {
+      "name": "Alpine",
+      "county": "Utah"
+    },
+    {
+      "name": "American Fork",
+      "county": "Utah"
+    },
+    {
+      "name": "Bluffdale",
+      "county": "Utah"
+    },
+    {
+      "name": "Cedar Fort",
+      "county": "Utah"
+    },
+    {
+      "name": "Cedar Hills",
+      "county": "Utah"
+    },
+    {
+      "name": "Draper",
+      "county": "Utah"
+    },
+    {
+      "name": "Eagle Mountain",
+      "county": "Utah"
+    },
+    {
+      "name": "Elk Ridge",
+      "county": "Utah"
+    },
+    {
+      "name": "Fairfield",
+      "county": "Utah"
+    },
+    {
+      "name": "Genola",
+      "county": "Utah"
+    },
+    {
+      "name": "Goshen",
+      "county": "Utah"
+    },
+    {
+      "name": "Highland",
+      "county": "Utah"
+    },
+    {
+      "name": "Lehi",
+      "county": "Utah"
+    },
+    {
+      "name": "Lindon",
+      "county": "Utah"
+    },
+    {
+      "name": "Mapleton",
+      "county": "Utah"
+    },
+    {
+      "name": "Orem",
+      "county": "Utah"
+    },
+    {
+      "name": "Payson",
+      "county": "Utah"
+    },
+    {
+      "name": "Pleasant Grove",
+      "county": "Utah"
+    },
+    {
+      "name": "Provo",
+      "county": "Utah"
+    },
+    {
+      "name": "Salem",
+      "county": "Utah"
+    },
+    {
+      "name": "Santaquin",
+      "county": "Utah"
+    },
+    {
+      "name": "Saratoga Springs",
+      "county": "Utah"
+    },
+    {
+      "name": "Spanish Fork",
+      "county": "Utah"
+    },
+    {
+      "name": "Spring Lake",
+      "county": "Utah"
+    },
+    {
+      "name": "Springville",
+      "county": "Utah"
+    },
+    {
+      "name": "Vineyard",
+      "county": "Utah"
+    },
+    {
+      "name": "Woodland Hills",
+      "county": "Utah"
+    },
+    {
+      "name": "Charleston",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Daniel",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Heber City",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Hideout",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Independence",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Interlaken",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Midway",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Park City",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Wallsburg",
+      "county": "Wasatch"
+    },
+    {
+      "name": "Apple Valley",
+      "county": "Washington"
+    },
+    {
+      "name": "Enterprise",
+      "county": "Washington"
+    },
+    {
+      "name": "Hildale",
+      "county": "Washington"
+    },
+    {
+      "name": "Hurricane",
+      "county": "Washington"
+    },
+    {
+      "name": "Ivins",
+      "county": "Washington"
+    },
+    {
+      "name": "La Verkin",
+      "county": "Washington"
+    },
+    {
+      "name": "Leeds",
+      "county": "Washington"
+    },
+    {
+      "name": "New Harmony",
+      "county": "Washington"
+    },
+    {
+      "name": "Rockville",
+      "county": "Washington"
+    },
+    {
+      "name": "Santa Clara",
+      "county": "Washington"
+    },
+    {
+      "name": "Springdale",
+      "county": "Washington"
+    },
+    {
+      "name": "St. George",
+      "county": "Washington"
+    },
+    {
+      "name": "Toquerville",
+      "county": "Washington"
+    },
+    {
+      "name": "Virgin",
+      "county": "Washington"
+    },
+    {
+      "name": "Washington",
+      "county": "Washington"
+    },
+    {
+      "name": "Bicknell",
+      "county": "Wayne"
+    },
+    {
+      "name": "Hanksville",
+      "county": "Wayne"
+    },
+    {
+      "name": "Loa",
+      "county": "Wayne"
+    },
+    {
+      "name": "Lyman",
+      "county": "Wayne"
+    },
+    {
+      "name": "Torrey",
+      "county": "Wayne"
+    },
+    {
+      "name": "Farr West",
+      "county": "Weber"
+    },
+    {
+      "name": "Harrisville",
+      "county": "Weber"
+    },
+    {
+      "name": "Hooper",
+      "county": "Weber"
+    },
+    {
+      "name": "Huntsville",
+      "county": "Weber"
+    },
+    {
+      "name": "Marriott-Slaterville",
+      "county": "Weber"
+    },
+    {
+      "name": "North Ogden",
+      "county": "Weber"
+    },
+    {
+      "name": "Ogden",
+      "county": "Weber"
+    },
+    {
+      "name": "Ogden Valley City",
+      "county": "Weber"
+    },
+    {
+      "name": "Plain City",
+      "county": "Weber"
+    },
+    {
+      "name": "Pleasant View",
+      "county": "Weber"
+    },
+    {
+      "name": "Riverdale",
+      "county": "Weber"
+    },
+    {
+      "name": "Roy",
+      "county": "Weber"
+    },
+    {
+      "name": "South Ogden",
+      "county": "Weber"
+    },
+    {
+      "name": "Uintah",
+      "county": "Weber"
+    },
+    {
+      "name": "Washington Terrace",
+      "county": "Weber"
+    },
+    {
+      "name": "West Haven",
+      "county": "Weber"
+    }
+  ]
+}

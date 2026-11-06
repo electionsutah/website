@@ -1,0 +1,1104 @@
+{
+  "baselineDate": "2026-11-06",
+  "description": "Original 33 municipalities with no municipal candidate records; retained as the investigation cohort even after imports.",
+  "municipalities": [
+    {
+      "id": "box-elder/corinne",
+      "name": "Corinne",
+      "county": "Box Elder",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1028863.html"
+      ],
+      "notes": [
+        "The October 2025 cancellation notice names two candidates elected unopposed. It does not establish a full historical roster."
+      ],
+      "importedRecords": 2,
+      "candidates": [
+        {
+          "name": "Shane D. Baton",
+          "office": "Corinne Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1028863.html"
+        },
+        {
+          "name": "Krista K. Hardman",
+          "office": "Corinne City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1028863.html"
+        }
+      ]
+    },
+    {
+      "id": "box-elder/fielding",
+      "name": "Fielding",
+      "county": "Box Elder",
+      "status": "Cancellation proposed; roster unresolved",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1024615.html"
+      ],
+      "notes": [
+        "Official notice proposes Resolution 10-02-25 to cancel the election because candidates do not exceed seats. Need adopted resolution/minutes and a named candidate list."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "box-elder/portage",
+      "name": "Portage",
+      "county": "Box Elder",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1001569.html"
+      ],
+      "notes": [
+        "The current revision of the June filing notice names Max K. Huggins for mayor. No council names are listed; no later outcome inferred."
+      ],
+      "importedRecords": 1,
+      "candidates": [
+        {
+          "name": "Max K. Huggins",
+          "office": "Portage Mayor",
+          "year": 2025,
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1001569.html"
+        }
+      ]
+    },
+    {
+      "id": "box-elder/snowville",
+      "name": "Snowville",
+      "county": "Box Elder",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/files/1334165.pdf",
+        "https://www.utah.gov/pmn/files/1338227.pdf"
+      ],
+      "notes": [
+        "The adopted October 10 cancellation resolution names the mayor and three council candidates elected without a ballot.",
+        "The county publication ballot also explicitly marks Orlando Scott Ohare as withdrawn from the mayoral race; his candidacy is retained with withdrawn status."
+      ],
+      "importedRecords": 5,
+      "candidates": [
+        {
+          "name": "James D. Beagley",
+          "office": "Snowville Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1334165.pdf"
+        },
+        {
+          "name": "Trisha A. Arbon",
+          "office": "Snowville Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1334165.pdf"
+        },
+        {
+          "name": "Brandon B. Garbanati",
+          "office": "Snowville Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1334165.pdf"
+        },
+        {
+          "name": "LuAnn Johnson",
+          "office": "Snowville Town Council (2-Year Term)",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1334165.pdf"
+        },
+        {
+          "name": "Orlando Scott Ohare",
+          "office": "Snowville Mayor",
+          "year": 2025,
+          "status": "withdrew",
+          "sourceStatus": "Withdrew",
+          "source": "https://www.utah.gov/pmn/files/1338227.pdf"
+        }
+      ]
+    },
+    {
+      "id": "cache/cornish",
+      "name": "Cornish",
+      "county": "Cache",
+      "status": "Cancellation lead; primary source unresolved",
+      "sources": [
+        "https://mytown.theboringparts.com/city/ut-pmn-110/2025/"
+      ],
+      "notes": [
+        "Secondary meeting index reports a 2025 cancellation and three named candidates. Need the original cancellation resolution or county filings before import. The candidate guide lists incumbents only."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "cache/river-heights",
+      "name": "River Heights",
+      "county": "Cache",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://riverheights.gov/wp-content/uploads/2025/11/Minutes-Council-Oct-7-2025.pdf"
+      ],
+      "notes": [
+        "Adopted Resolution 6-2025 cancels the November election and names the mayor and three council candidates elected."
+      ],
+      "importedRecords": 4,
+      "candidates": [
+        {
+          "name": "Blake Wright",
+          "office": "River Heights Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://riverheights.gov/wp-content/uploads/2025/11/Minutes-Council-Oct-7-2025.pdf"
+        },
+        {
+          "name": "Kandi Evans",
+          "office": "River Heights City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://riverheights.gov/wp-content/uploads/2025/11/Minutes-Council-Oct-7-2025.pdf"
+        },
+        {
+          "name": "Janet Mathews",
+          "office": "River Heights City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://riverheights.gov/wp-content/uploads/2025/11/Minutes-Council-Oct-7-2025.pdf"
+        },
+        {
+          "name": "Mark Malmstrom",
+          "office": "River Heights City Council (2-Year Term)",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://riverheights.gov/wp-content/uploads/2025/11/Minutes-Council-Oct-7-2025.pdf"
+        }
+      ]
+    },
+    {
+      "id": "davis/south-weber",
+      "name": "South Weber",
+      "county": "Davis",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://southwebercity.gov/government/elections/"
+      ],
+      "notes": [
+        "The city election page declares the mayor and two council candidates elected following cancellation."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Rod Westbroek",
+          "office": "South Weber Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://southwebercity.gov/government/elections/"
+        },
+        {
+          "name": "Angie Petty",
+          "office": "South Weber City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://southwebercity.gov/government/elections/"
+        },
+        {
+          "name": "Joel Dills",
+          "office": "South Weber City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://southwebercity.gov/government/elections/"
+        }
+      ]
+    },
+    {
+      "id": "duchesne/altamont",
+      "name": "Altamont",
+      "county": "Duchesne",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://altamontutah.gov/elections"
+      ],
+      "notes": [
+        "The town publishes five certified ballot candidates and unofficial 2025 totals. Imported candidate participation only, without winner status or vote totals."
+      ],
+      "importedRecords": 5,
+      "candidates": [
+        {
+          "name": "Philip Scott Allen",
+          "office": "Altamont Mayor",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "year": 2025,
+          "source": "https://altamontutah.gov/elections"
+        },
+        {
+          "name": "Michael Howard Foy",
+          "office": "Altamont Town Council",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "year": 2025,
+          "source": "https://altamontutah.gov/elections"
+        },
+        {
+          "name": "James Edward Helms",
+          "office": "Altamont Town Council",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "year": 2025,
+          "source": "https://altamontutah.gov/elections"
+        },
+        {
+          "name": "Christopher David Baca",
+          "office": "Altamont Town Council (2-Year Term)",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "year": 2025,
+          "source": "https://altamontutah.gov/elections"
+        },
+        {
+          "name": "Russell Roy Sorensen",
+          "office": "Altamont Town Council (2-Year Term)",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "year": 2025,
+          "source": "https://altamontutah.gov/elections"
+        }
+      ]
+    },
+    {
+      "id": "duchesne/myton",
+      "name": "Myton",
+      "county": "Duchesne",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.mytoncityut.gov/wp-content/uploads/2025/08/OFFICIAL-CERTIFIED-MUNICIPAL-PRIMARY-ELECTION-RESULTS.pdf",
+        "https://www.mytoncityut.gov/wp-content/uploads/2025/06/Election-Public-Notice-for-candidates.pdf"
+      ],
+      "notes": [
+        "The city publishes a certified 2025 primary canvass with five council candidates and four advancing to the general election. The filing notice also names two mayoral candidates. Later general-election outcomes remain to be verified."
+      ],
+      "importedRecords": 7,
+      "candidates": [
+        {
+          "name": "Herald J Crapo",
+          "office": "Myton City Council",
+          "year": 2025,
+          "status": "general_election",
+          "sourceStatus": "Certified for general election",
+          "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/08/OFFICIAL-CERTIFIED-MUNICIPAL-PRIMARY-ELECTION-RESULTS.pdf"
+        },
+        {
+          "name": "Wilford Conetah",
+          "office": "Myton City Council",
+          "year": 2025,
+          "status": "general_election",
+          "sourceStatus": "Certified for general election",
+          "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/08/OFFICIAL-CERTIFIED-MUNICIPAL-PRIMARY-ELECTION-RESULTS.pdf"
+        },
+        {
+          "name": "Sherri Stoddard",
+          "office": "Myton City Council",
+          "year": 2025,
+          "status": "general_election",
+          "sourceStatus": "Certified for general election",
+          "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/08/OFFICIAL-CERTIFIED-MUNICIPAL-PRIMARY-ELECTION-RESULTS.pdf"
+        },
+        {
+          "name": "Michael “Chipper” Morris Fenn",
+          "office": "Myton City Council",
+          "year": 2025,
+          "status": "general_election",
+          "sourceStatus": "Certified for general election",
+          "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/08/OFFICIAL-CERTIFIED-MUNICIPAL-PRIMARY-ELECTION-RESULTS.pdf"
+        },
+        {
+          "name": "Kari Jean Smith",
+          "office": "Myton City Council",
+          "year": 2025,
+          "status": "primary_election",
+          "sourceStatus": "Not advancing from primary",
+          "electionType": "primary",
+          "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/08/OFFICIAL-CERTIFIED-MUNICIPAL-PRIMARY-ELECTION-RESULTS.pdf"
+        },
+        {
+          "name": "Kathleen L Cooper",
+          "office": "Myton Mayor",
+          "year": 2025,
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/06/Election-Public-Notice-for-candidates.pdf"
+        },
+        {
+          "name": "Linda Harrington",
+          "office": "Myton Mayor",
+          "year": 2025,
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/06/Election-Public-Notice-for-candidates.pdf"
+        }
+      ]
+    },
+    {
+      "id": "emery/clawson",
+      "name": "Clawson",
+      "county": "Emery",
+      "status": "Cancellation proposed; roster unresolved",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1021915.html"
+      ],
+      "notes": [
+        "September 11 agenda lists approval of cancellation resolution 2025002. An agenda alone does not prove adoption; obtain minutes or resolution and candidate names."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "emery/cleveland",
+      "name": "Cleveland",
+      "county": "Emery",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1022376.html",
+        "https://www.utah.gov/pmn/files/1322142.pdf"
+      ],
+      "notes": [
+        "Visually verified the official notice naming Shawna Horrocks, Whitney Guymon and Kristen Vose elected after the September 2025 cancellation. The notice contains a county template typo; the publishing public body and town address identify Cleveland in Emery County."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Shawna Horrocks",
+          "office": "Cleveland Mayor",
+          "year": 2025,
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "source": "https://www.utah.gov/pmn/files/1322142.pdf"
+        },
+        {
+          "name": "Whitney Guymon",
+          "office": "Cleveland Town Council",
+          "year": 2025,
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "source": "https://www.utah.gov/pmn/files/1322142.pdf"
+        },
+        {
+          "name": "Kristen Vose",
+          "office": "Cleveland Town Council",
+          "year": 2025,
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "source": "https://www.utah.gov/pmn/files/1322142.pdf"
+        }
+      ]
+    },
+    {
+      "id": "emery/elmo",
+      "name": "Elmo",
+      "county": "Emery",
+      "status": "Election administration confirmed; roster unresolved",
+      "sources": [
+        "https://www.utah.gov/pmn/files/1248435.pdf"
+      ],
+      "notes": [
+        "County adopted an interlocal agreement to administer Elmo’s 2025 municipal election. This does not identify candidates or establish whether the election was ultimately held. Need filing list or cancellation resolution."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "emery/huntington",
+      "name": "Huntington",
+      "county": "Emery",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://huntingtonut.com/wp-content/uploads/2026/01/Candidates-2025.pdf"
+      ],
+      "notes": [
+        "Official 2025 filing list identifies one mayor and three council candidates. Filed status is used because this source does not certify election outcomes."
+      ],
+      "importedRecords": 4,
+      "candidates": [
+        {
+          "name": "Leonard L. Norton",
+          "office": "Huntington Mayor",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://huntingtonut.com/wp-content/uploads/2026/01/Candidates-2025.pdf"
+        },
+        {
+          "name": "Judd George Beagley",
+          "office": "Huntington City Council",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://huntingtonut.com/wp-content/uploads/2026/01/Candidates-2025.pdf"
+        },
+        {
+          "name": "Tom Kay",
+          "office": "Huntington City Council",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://huntingtonut.com/wp-content/uploads/2026/01/Candidates-2025.pdf"
+        },
+        {
+          "name": "Devin Lee Wilson",
+          "office": "Huntington City Council (2-Year Term)",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://huntingtonut.com/wp-content/uploads/2026/01/Candidates-2025.pdf"
+        }
+      ]
+    },
+    {
+      "id": "garfield/antimony",
+      "name": "Antimony",
+      "county": "Garfield",
+      "status": "Vacancy notice found; election roster unresolved",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/979757.html"
+      ],
+      "notes": [
+        "The March 2025 notice concerns a council vacancy appointment, not a public election candidate roster. No named election candidates inferred."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "garfield/bryce-canyon-city",
+      "name": "Bryce Canyon City",
+      "county": "Garfield",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1023411.html"
+      ],
+      "notes": [
+        "The official cancellation notice declares three named candidates elected in 2025."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Reuben Shiloh Syrett",
+          "office": "Bryce Canyon City Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023411.html"
+        },
+        {
+          "name": "Gary Syrett",
+          "office": "Bryce Canyon City City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023411.html"
+        },
+        {
+          "name": "Michael Stevens",
+          "office": "Bryce Canyon City City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023411.html"
+        }
+      ]
+    },
+    {
+      "id": "garfield/escalante",
+      "name": "Escalante",
+      "county": "Garfield",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/files/1317575.pdf"
+      ],
+      "notes": [
+        "The September 2 cancellation notice names the mayor and two council candidates elected."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Melani Torgersen",
+          "office": "Escalante Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1317575.pdf"
+        },
+        {
+          "name": "A. Chad Lyman",
+          "office": "Escalante City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1317575.pdf"
+        },
+        {
+          "name": "Sally Orme",
+          "office": "Escalante City Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1317575.pdf"
+        }
+      ]
+    },
+    {
+      "id": "garfield/hatch",
+      "name": "Hatch",
+      "county": "Garfield",
+      "status": "Cancellation confirmed; roster unresolved",
+      "sources": [
+        "https://hatchutah.gov/"
+      ],
+      "notes": [
+        "The official homepage states that Resolution 2025-12 cancelled the November 2025 election and declared unopposed candidates elected. The linked image is a landscape photograph, not a readable resolution. Need the actual resolution or filed candidate list; no names inferred."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "grand/castle-valley",
+      "name": "Castle Valley",
+      "county": "Grand",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://grandcountyutah.gov/DocumentCenter/View/22917/Updated-UOCAVA-Election-Notice-9425"
+      ],
+      "notes": [
+        "The county UOCAVA notice lists three 2025 municipal candidates; no outcome is inferred from this filing-stage source."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Jasmine A. Duncan",
+          "office": "Castle Valley Mayor",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://grandcountyutah.gov/DocumentCenter/View/22917/Updated-UOCAVA-Election-Notice-9425"
+        },
+        {
+          "name": "Robert Malcolm O’Brien",
+          "office": "Castle Valley Town Council",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://grandcountyutah.gov/DocumentCenter/View/22917/Updated-UOCAVA-Election-Notice-9425"
+        },
+        {
+          "name": "Harry L. Holland",
+          "office": "Castle Valley Town Council",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://grandcountyutah.gov/DocumentCenter/View/22917/Updated-UOCAVA-Election-Notice-9425"
+        }
+      ]
+    },
+    {
+      "id": "kane/alton",
+      "name": "Alton",
+      "county": "Kane",
+      "status": "County source located; roster unresolved",
+      "sources": [
+        "https://kane.utah.gov/311/Elections"
+      ],
+      "notes": [
+        "Official county election information identifies Alton as a voting/drop-box location. It does not name municipal candidates. Need town filing or cancellation records; do not infer candidacies from current officials."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "millard/lynndyl",
+      "name": "Lynndyl",
+      "county": "Millard",
+      "status": "Election notice found; roster unresolved",
+      "sources": [
+        "https://lynndyl.utah.gov/2023-lynndyl-town-municipal-election-notice/"
+      ],
+      "notes": [
+        "Official 2023 notice announces two council seats and filing period, but does not name filed candidates. Need declaration list or adopted cancellation records."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "millard/meadow",
+      "name": "Meadow",
+      "county": "Millard",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1023497.html"
+      ],
+      "notes": [
+        "The September cancellation notice names the mayor and two council candidates elected."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Gary Bishop",
+          "office": "Meadow Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023497.html"
+        },
+        {
+          "name": "Jim Beckstrand",
+          "office": "Meadow Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023497.html"
+        },
+        {
+          "name": "Robert H. Beckstrand",
+          "office": "Meadow Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023497.html"
+        }
+      ]
+    },
+    {
+      "id": "millard/oak-city",
+      "name": "Oak City",
+      "county": "Millard",
+      "status": "Cancellation confirmed; roster unresolved",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1026133.html"
+      ],
+      "notes": [
+        "Published minutes record adoption of Resolution 2025-06 cancelling the 2025 election. The reviewed excerpt does not name candidates. The town election page has empty candidate lists."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "millard/scipio",
+      "name": "Scipio",
+      "county": "Millard",
+      "status": "Election notice found; roster unresolved",
+      "sources": [
+        "https://millardcounty.gov/wp-content/uploads/2025/05/Scipio-Town-Election-Notice-UOCAVA-25-1.pdf"
+      ],
+      "notes": [
+        "Official notice identifies mayor and council offices up for election but no candidate names. A secondary agenda index suggests cancellation consideration; adoption and roster remain unverified."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "piute/kingston",
+      "name": "Kingston",
+      "county": "Piute",
+      "status": "Cancellation lead; primary source unresolved",
+      "sources": [
+        "https://muniwatch.org/meetings/cmkqkpt77029bs75n8cov6x70"
+      ],
+      "notes": [
+        "Secondary meeting index lists an October 2025 municipal-election cancellation attachment. Need the original Utah Public Notice attachment and named candidates."
+      ],
+      "importedRecords": 0
+    },
+    {
+      "id": "sevier/glenwood",
+      "name": "Glenwood",
+      "county": "Sevier",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1023135.html"
+      ],
+      "notes": [
+        "The official cancellation notice names the mayor and two council candidates elected."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Phil E. Singleton",
+          "office": "Glenwood Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023135.html"
+        },
+        {
+          "name": "Ben Hill",
+          "office": "Glenwood Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023135.html"
+        },
+        {
+          "name": "Christopher Steven Johnson",
+          "office": "Glenwood Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1023135.html"
+        }
+      ]
+    },
+    {
+      "id": "tooele/stockton",
+      "name": "Stockton",
+      "county": "Tooele",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://electionarchive.tooeleco.gov/eng/docs/",
+        "https://electionarchive.tooeleco.gov/files/serve/75"
+      ],
+      "notes": [
+        "County election archive lists a signed 2019 Stockton municipal canvass. The document is a concrete backfill source; current officeholder pages alone do not establish candidate history.",
+        "Visually verified the signed 2019 canvass: three named ballot candidates in council and mayor contests. Imported participation without inferring seat counts or winners. Later cycles still need research."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Jill McAfee",
+          "office": "Stockton City Council",
+          "year": 2019,
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "source": "https://electionarchive.tooeleco.gov/files/serve/75"
+        },
+        {
+          "name": "Joe Johnston",
+          "office": "Stockton City Council",
+          "year": 2019,
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "source": "https://electionarchive.tooeleco.gov/files/serve/75"
+        },
+        {
+          "name": "Thomas KJ Karjola",
+          "office": "Stockton Mayor",
+          "year": 2019,
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "source": "https://electionarchive.tooeleco.gov/files/serve/75"
+        }
+      ]
+    },
+    {
+      "id": "tooele/vernon",
+      "name": "Vernon",
+      "county": "Tooele",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://vernon.utah.gov/council-meeting-02-06-2025/",
+        "https://electionarchive.tooeleco.gov/files/serve/77"
+      ],
+      "notes": [
+        "Official February minutes identify one mayor and two council seats for 2025, but a mayor’s stated intent to run is not a filed candidacy. The county archive also has 2019 Vernon canvass documents.",
+        "Visually verified the signed 2019 canvass: two candidates for the two-year council contest and two for the four-year contest. Later municipal cycles still need research."
+      ],
+      "importedRecords": 4,
+      "candidates": [
+        {
+          "name": "Robert Scott Livingston",
+          "office": "Vernon Town Council (2-Year Term)",
+          "year": 2019,
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "source": "https://electionarchive.tooeleco.gov/files/serve/77"
+        },
+        {
+          "name": "Rodney R. Manzione",
+          "office": "Vernon Town Council (2-Year Term)",
+          "year": 2019,
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "source": "https://electionarchive.tooeleco.gov/files/serve/77"
+        },
+        {
+          "name": "John Olson",
+          "office": "Vernon Town Council",
+          "year": 2019,
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "source": "https://electionarchive.tooeleco.gov/files/serve/77"
+        },
+        {
+          "name": "Darrell Ekker Holden",
+          "office": "Vernon Town Council",
+          "year": 2019,
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "source": "https://electionarchive.tooeleco.gov/files/serve/77"
+        }
+      ]
+    },
+    {
+      "id": "wasatch/daniel",
+      "name": "Daniel",
+      "county": "Wasatch",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://danielutah.gov/wp-content/uploads/2025/06/2025-ELECTION-CANDIDATES_0001.pdf"
+      ],
+      "notes": [
+        "Official June filing list names five candidates. A later cancellation resolution is indexed on the town site, but its content is currently inaccessible (HTTP 406). These records reflect filing only; later withdrawals/outcomes remain unresolved."
+      ],
+      "importedRecords": 5,
+      "candidates": [
+        {
+          "name": "Scott Kohler",
+          "office": "Daniel Mayor",
+          "year": 2025,
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "source": "https://danielutah.gov/wp-content/uploads/2025/06/2025-ELECTION-CANDIDATES_0001.pdf"
+        },
+        {
+          "name": "Eric Bennett",
+          "office": "Daniel Town Council (2-Year Term)",
+          "year": 2025,
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "source": "https://danielutah.gov/wp-content/uploads/2025/06/2025-ELECTION-CANDIDATES_0001.pdf"
+        },
+        {
+          "name": "Brooke Rose",
+          "office": "Daniel Town Council",
+          "year": 2025,
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "source": "https://danielutah.gov/wp-content/uploads/2025/06/2025-ELECTION-CANDIDATES_0001.pdf"
+        },
+        {
+          "name": "Stefanie Grady",
+          "office": "Daniel Town Council",
+          "year": 2025,
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "source": "https://danielutah.gov/wp-content/uploads/2025/06/2025-ELECTION-CANDIDATES_0001.pdf"
+        },
+        {
+          "name": "Jon Blotter",
+          "office": "Daniel Town Council",
+          "year": 2025,
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "source": "https://danielutah.gov/wp-content/uploads/2025/06/2025-ELECTION-CANDIDATES_0001.pdf"
+        }
+      ]
+    },
+    {
+      "id": "wasatch/independence",
+      "name": "Independence",
+      "county": "Wasatch",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/files/1332495.pdf"
+      ],
+      "notes": [
+        "September 9 adopted minutes record the cancellation, two unopposed council candidates, and withdrawals by Wayne Heaton (mayor) and Rose Heaton (council).",
+        "Withdrawn candidates are preserved as withdrawn, not elected."
+      ],
+      "importedRecords": 4,
+      "candidates": [
+        {
+          "name": "Will Duke",
+          "office": "Independence Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1332495.pdf"
+        },
+        {
+          "name": "Jim Tolbert",
+          "office": "Independence Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1332495.pdf"
+        },
+        {
+          "name": "Wayne Heaton",
+          "office": "Independence Mayor",
+          "status": "withdrew",
+          "sourceStatus": "Withdrew",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1332495.pdf"
+        },
+        {
+          "name": "Rose Heaton",
+          "office": "Independence Town Council",
+          "status": "withdrew",
+          "sourceStatus": "Withdrew",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/files/1332495.pdf"
+        }
+      ]
+    },
+    {
+      "id": "wayne/bicknell",
+      "name": "Bicknell",
+      "county": "Wayne",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://www.utah.gov/pmn/sitemap/notice/1021163.html"
+      ],
+      "notes": [
+        "The cancellation notice names the mayor and two council candidates elected."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Noreen Johnson",
+          "office": "Bicknell Mayor",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1021163.html"
+        },
+        {
+          "name": "Weston Johnson",
+          "office": "Bicknell Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1021163.html"
+        },
+        {
+          "name": "Kerry Stevens",
+          "office": "Bicknell Town Council",
+          "status": "elected",
+          "sourceStatus": "Elected unopposed; election cancelled",
+          "year": 2025,
+          "source": "https://www.utah.gov/pmn/sitemap/notice/1021163.html"
+        }
+      ]
+    },
+    {
+      "id": "wayne/loa",
+      "name": "Loa",
+      "county": "Wayne",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://waynecountyutah.gov/uploads/cody-douglas-grundy.pdf",
+        "https://waynecountyutah.gov/uploads/donald-roy-bone.pdf",
+        "https://waynecountyutah.gov/uploads/kori-g.-brown.pdf"
+      ],
+      "notes": [
+        "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Cody Douglas Grundy",
+          "office": "Loa Mayor",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://waynecountyutah.gov/uploads/cody-douglas-grundy.pdf"
+        },
+        {
+          "name": "Donald Roy Bone",
+          "office": "Loa Town Council",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://waynecountyutah.gov/uploads/donald-roy-bone.pdf"
+        },
+        {
+          "name": "Kori G. Brown",
+          "office": "Loa Town Council (2-Year Term)",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://waynecountyutah.gov/uploads/kori-g.-brown.pdf"
+        }
+      ]
+    },
+    {
+      "id": "wayne/lyman",
+      "name": "Lyman",
+      "county": "Wayne",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://waynecountyutah.gov/uploads/2025-lyman-declaration-of-candidacy-melanie-o.-grundy.pdf",
+        "https://waynecountyutah.gov/uploads/2025-lyman-delaration-of-candidacy-burke-torgerson.pdf"
+      ],
+      "notes": [
+        "The signed August 19 write-in declaration supports a named council candidate. Remaining municipal roster and outcomes need review.",
+        "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified."
+      ],
+      "importedRecords": 2,
+      "candidates": [
+        {
+          "name": "Melanie O. Grundy",
+          "office": "Lyman Town Board",
+          "status": "filed",
+          "sourceStatus": "Write-in candidate filed",
+          "year": 2025,
+          "source": "https://waynecountyutah.gov/uploads/2025-lyman-declaration-of-candidacy-melanie-o.-grundy.pdf"
+        },
+        {
+          "name": "Burke Torgerson",
+          "office": "Lyman Mayor",
+          "status": "filed",
+          "sourceStatus": "Write-in candidate filed",
+          "year": 2025,
+          "source": "https://waynecountyutah.gov/uploads/2025-lyman-delaration-of-candidacy-burke-torgerson.pdf"
+        }
+      ]
+    },
+    {
+      "id": "wayne/torrey",
+      "name": "Torrey",
+      "county": "Wayne",
+      "status": "Candidate records imported",
+      "sources": [
+        "https://waynecountyutah.gov/uploads/mickey-wright.pdf",
+        "https://waynecountyutah.gov/uploads/renee-dawn-reel.pdf",
+        "https://waynecountyutah.gov/uploads/sheila-patricia-kearney.pdf"
+      ],
+      "notes": [
+        "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified."
+      ],
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Mickey Wright",
+          "office": "Torrey Mayor",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://waynecountyutah.gov/uploads/mickey-wright.pdf"
+        },
+        {
+          "name": "Renee Dawn Reel",
+          "office": "Torrey Town Council",
+          "status": "filed",
+          "sourceStatus": "Write-in candidate filed",
+          "year": 2025,
+          "source": "https://waynecountyutah.gov/uploads/renee-dawn-reel.pdf"
+        },
+        {
+          "name": "Sheila Patricia Kearney",
+          "office": "Torrey Town Council",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "year": 2025,
+          "source": "https://waynecountyutah.gov/uploads/sheila-patricia-kearney.pdf"
+        }
+      ]
+    }
+  ],
+  "reviewedOn": "2026-11-06"
+}

@@ -8,6 +8,7 @@ blank cells ("—") always go last. Rows with data-pin stay at the top.
 """
 
 SORTABLE = '''<style>
+body{margin:3rem}
 thead th{cursor:pointer;user-select:none}thead th:hover{text-decoration:underline}
 thead th[aria-sort]::after{margin-left:4px;font-size:9px}thead th[aria-sort=ascending]::after{content:"▲"}thead th[aria-sort=descending]::after{content:"▼"}
 </style>

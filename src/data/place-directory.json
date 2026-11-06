@@ -3,5 +3,60 @@
     "name": "New Harmony",
     "county": "Washington",
     "source": "https://www.wikidata.org/wiki/Q483586"
+  },
+  {
+    "name": "Fielding",
+    "county": "Box Elder",
+    "source": "https://www.utah.gov/pmn/sitemap/notice/1024615.html"
+  },
+  {
+    "name": "Cornish",
+    "county": "Cache",
+    "source": "https://mytown.theboringparts.com/city/ut-pmn-110/2025/"
+  },
+  {
+    "name": "Clawson",
+    "county": "Emery",
+    "source": "https://www.utah.gov/pmn/sitemap/notice/1021915.html"
+  },
+  {
+    "name": "Elmo",
+    "county": "Emery",
+    "source": "https://www.utah.gov/pmn/files/1248435.pdf"
+  },
+  {
+    "name": "Antimony",
+    "county": "Garfield",
+    "source": "https://www.utah.gov/pmn/sitemap/notice/979757.html"
+  },
+  {
+    "name": "Hatch",
+    "county": "Garfield",
+    "source": "https://hatchutah.gov/"
+  },
+  {
+    "name": "Alton",
+    "county": "Kane",
+    "source": "https://kane.utah.gov/311/Elections"
+  },
+  {
+    "name": "Lynndyl",
+    "county": "Millard",
+    "source": "https://lynndyl.utah.gov/2023-lynndyl-town-municipal-election-notice/"
+  },
+  {
+    "name": "Oak City",
+    "county": "Millard",
+    "source": "https://www.utah.gov/pmn/sitemap/notice/1026133.html"
+  },
+  {
+    "name": "Scipio",
+    "county": "Millard",
+    "source": "https://millardcounty.gov/wp-content/uploads/2025/05/Scipio-Town-Election-Notice-UOCAVA-25-1.pdf"
+  },
+  {
+    "name": "Kingston",
+    "county": "Piute",
+    "source": "https://muniwatch.org/meetings/cmkqkpt77029bs75n8cov6x70"
   }
 ]

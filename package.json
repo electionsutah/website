@@ -21,6 +21,8 @@
     "check:editor": "node editor/check.mjs",
     "editor:install": "npm --prefix editor ci",
     "check:profiles": "node scripts/check-entity-profiles.mjs",
+    "check:researched": "node scripts/check-researched-candidates.mjs",
+    "audit:coverage": "node scripts/audit-municipal-coverage.mjs",
     "check:links": "node scripts/check-entity-links.mjs && node scripts/check-office-links.mjs && node scripts/check-party-links.mjs && node scripts/check-person-links.mjs && node scripts/check-place-links.mjs"
   },
   "devDependencies": {

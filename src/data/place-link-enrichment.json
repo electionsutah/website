@@ -1500,9 +1500,9 @@
       "https://www.utah.gov/pmn/sitemap/publicbody/3995.html"
     ],
     "notes": [
-      "Added a verified municipality without fabricating candidate filings.",
       "The official town homepage publishes no social-account links; unrelated community, fire district, and library accounts are not town accounts.",
-      "Public notices identify New Harmony Town Council and its town-clerk contact."
+      "Public notices identify New Harmony Town Council and its town-clerk contact.",
+      "Named municipal candidates from 2017 and 2019 have been imported from contemporary reporting. The 2021 fire district primary is recorded separately from town government. The unnamed 2025 election cancellation and 2024 vacancy appointment are retained as election notes, not inferred public-election filings."
     ],
     "contact": {
       "phone": "435.590.0268",

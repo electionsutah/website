@@ -7,6 +7,17 @@ const server = await createServer({ configFile: false, plugins: [svelte()], logL
   cacheDir: '.firecrawl/check-places-vite', server: { middlewareMode: true, hmr: false, ws: false } });
 try {
   const { places } = await server.ssrLoadModule('/src/lib/entities.ts');
+  const newHarmony = places.find(place => place.id === 'washington/new-harmony');
+  assert(newHarmony, 'Municipalities without imported filings must remain discoverable');
+  assert.equal(newHarmony.parentId, 'washington');
+  assert(places.find(place => place.id === 'washington').children.includes(newHarmony), 'New Harmony belongs in Washington County');
+  assert(newHarmony.links.some(link => link.url === 'https://newharmony.utah.gov/'), 'New Harmony has its verified government website');
+  const directory = JSON.parse(await readFile(new URL('../src/data/place-directory.json', import.meta.url), 'utf8'));
+  for (const entry of directory) {
+    const place = places.find(place => place.name === entry.name && place.county === entry.county);
+    assert(place, `Directory place must have a page: ${entry.name}`);
+    assert(places.find(parent => parent.id === place.parentId)?.children.includes(place), `Missing county listing: ${entry.name}`);
+  }
   const { default: View } = await server.ssrLoadModule('/src/EntityViews.svelte');
   const { render } = await server.ssrLoadModule('svelte/server');
   const { default: profiles } = await server.ssrLoadModule('/src/data/place-enrichment.json');
@@ -30,13 +41,22 @@ try {
     assert(registration.counties[county], `Missing registration: ${place.id}`);
     assert(participation.counties[county], `Missing participation: ${place.id}`);
     const { body } = render(View, { props: { section: 'places', id: place.id, navigate() {} } });
+    if (!place.filings.length) {
+      assert(body.includes('No candidate records imported yet.'), `Empty archive context: ${place.id}`);
+      assert(body.includes('Municipal election coverage review'), `Missing sourced coverage review: ${place.id}`);
+    }
+    if (place.id === 'washington/new-harmony') {
+      assert(body.includes('2025 municipal election cancelled'));
+      assert(body.includes('2024 council vacancy filled'));
+      assert(body.includes('not a public election'));
+    }
     assert(body.includes('place-profile-title'), `Missing facts panel: ${place.id}`);
     assert(body.includes('has-photo'), `Missing hero photo: ${place.id}`);
     assert(body.includes('2024 general election turnout'), `Missing turnout: ${place.id}`);
     assert(body.includes('Registration by party'), `Missing party breakdown: ${place.id}`);
     if (place.type !== 'County') {
       assert(body.includes('Countywide context, not city turnout.'), `Unlabeled county turnout: ${place.id}`);
-      assert(body.includes('city registration counts are not published'), `Unlabeled county registration: ${place.id}`);
+      assert(body.toLowerCase().includes('city registration counts are not published'), `Unlabeled county registration: ${place.id}`);
     }
     report.push({ place: place.id, profile: true, population: profile.population ?? null,
       website: profile.officialWebsite || null, photo: imageKey === place.id ? 'local' : 'county fallback',

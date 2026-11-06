@@ -3400,5 +3400,397 @@
    "https://www.wikidata.org/wiki/Q483586"
   ],
   "verifiedOn": "2026-11-06"
+ },
+ "box-elder/snowville": {
+  "wikipediaTitle": "Snowville, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Snowville is a municipality in Box Elder County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/files/1334165.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "cache/river-heights": {
+  "wikipediaTitle": "River Heights, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "River Heights is a municipality in Cache County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://riverheights.gov/wp-content/uploads/2025/11/Minutes-Council-Oct-7-2025.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "davis/south-weber": {
+  "wikipediaTitle": "South Weber, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "South Weber is a municipality in Davis County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://southwebercity.gov/government/elections/"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "duchesne/altamont": {
+  "wikipediaTitle": "Altamont, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Altamont is a municipality in Duchesne County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://altamontutah.gov/elections"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "duchesne/myton": {
+  "wikipediaTitle": "Myton, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Myton is a municipality in Duchesne County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.mytoncityut.gov/wp-content/uploads/2025/08/OFFICIAL-CERTIFIED-MUNICIPAL-PRIMARY-ELECTION-RESULTS.pdf",
+   "https://www.mytoncityut.gov/wp-content/uploads/2025/06/Election-Public-Notice-for-candidates.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "emery/huntington": {
+  "wikipediaTitle": "Huntington, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Huntington is a municipality in Emery County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://huntingtonut.com/wp-content/uploads/2026/01/Candidates-2025.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "garfield/bryce-canyon-city": {
+  "wikipediaTitle": "Bryce Canyon City, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Bryce Canyon City is a municipality in Garfield County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1023411.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "garfield/escalante": {
+  "wikipediaTitle": "Escalante, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Escalante is a municipality in Garfield County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/files/1317575.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "grand/castle-valley": {
+  "wikipediaTitle": "Castle Valley, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Castle Valley is a municipality in Grand County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://grandcountyutah.gov/DocumentCenter/View/22917/Updated-UOCAVA-Election-Notice-9425"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "millard/meadow": {
+  "wikipediaTitle": "Meadow, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Meadow is a municipality in Millard County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1023497.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "sevier/glenwood": {
+  "wikipediaTitle": "Glenwood, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Glenwood is a municipality in Sevier County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1023135.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "wasatch/independence": {
+  "wikipediaTitle": "Independence, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Independence is a municipality in Wasatch County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/files/1332495.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "wayne/bicknell": {
+  "wikipediaTitle": "Bicknell, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Bicknell is a municipality in Wayne County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1021163.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "wayne/lyman": {
+  "wikipediaTitle": "Lyman, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Lyman is a municipality in Wayne County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://waynecountyutah.gov/uploads/2025-lyman-declaration-of-candidacy-melanie-o.-grundy.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "wayne/loa": {
+  "wikipediaTitle": "Loa, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Loa is a municipality in Wayne County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://waynecountyutah.gov/uploads/cody-douglas-grundy.pdf",
+   "https://waynecountyutah.gov/uploads/donald-roy-bone.pdf",
+   "https://waynecountyutah.gov/uploads/kori-g.-brown.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "wayne/torrey": {
+  "wikipediaTitle": "Torrey, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Torrey is a municipality in Wayne County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://waynecountyutah.gov/uploads/mickey-wright.pdf",
+   "https://waynecountyutah.gov/uploads/renee-dawn-reel.pdf",
+   "https://waynecountyutah.gov/uploads/sheila-patricia-kearney.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "box-elder/portage": {
+  "wikipediaTitle": "Portage, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Portage is a municipality in Box Elder County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1001569.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "emery/cleveland": {
+  "wikipediaTitle": "Cleveland, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Cleveland is a municipality in Emery County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1022376.html",
+   "https://www.utah.gov/pmn/files/1322142.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "tooele/stockton": {
+  "wikipediaTitle": "Stockton, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Stockton is a municipality in Tooele County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://electionarchive.tooeleco.gov/eng/docs/",
+   "https://electionarchive.tooeleco.gov/files/serve/75"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "tooele/vernon": {
+  "wikipediaTitle": "Vernon, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Vernon is a municipality in Tooele County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://vernon.utah.gov/council-meeting-02-06-2025/",
+   "https://electionarchive.tooeleco.gov/files/serve/77"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "wasatch/daniel": {
+  "wikipediaTitle": "Daniel, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Daniel is a municipality in Wasatch County, Utah. Municipal candidate records are documented in the election sources listed below.",
+  "officialWebsite": "",
+  "sources": [
+   "https://danielutah.gov/wp-content/uploads/2025/06/2025-ELECTION-CANDIDATES_0001.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "box-elder/fielding": {
+  "wikipediaTitle": "Fielding, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Fielding is a town in Box Elder County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1024615.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "cache/cornish": {
+  "wikipediaTitle": "Cornish, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Cornish is a town in Cache County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "",
+  "sources": [
+   "https://mytown.theboringparts.com/city/ut-pmn-110/2025/"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "emery/clawson": {
+  "wikipediaTitle": "Clawson, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Clawson is a town in Emery County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1021915.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "emery/elmo": {
+  "wikipediaTitle": "Elmo, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Elmo is a town in Emery County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/files/1248435.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "garfield/antimony": {
+  "wikipediaTitle": "Antimony, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Antimony is a town in Garfield County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/979757.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "garfield/hatch": {
+  "wikipediaTitle": "Hatch, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Hatch is a town in Garfield County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "https://hatchutah.gov/",
+  "sources": [
+   "https://hatchutah.gov/"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "kane/alton": {
+  "wikipediaTitle": "Alton, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Alton is a town in Kane County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "",
+  "sources": [
+   "https://kane.utah.gov/311/Elections"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "millard/lynndyl": {
+  "wikipediaTitle": "Lynndyl, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Lynndyl is a town in Millard County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "https://lynndyl.utah.gov/",
+  "sources": [
+   "https://lynndyl.utah.gov/2023-lynndyl-town-municipal-election-notice/"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "millard/oak-city": {
+  "wikipediaTitle": "Oak City, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Oak City is a town in Millard County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "https://oakcityut.gov/",
+  "sources": [
+   "https://www.utah.gov/pmn/sitemap/notice/1026133.html"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "millard/scipio": {
+  "wikipediaTitle": "Scipio, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Scipio is a town in Millard County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "",
+  "sources": [
+   "https://millardcounty.gov/wp-content/uploads/2025/05/Scipio-Town-Election-Notice-UOCAVA-25-1.pdf"
+  ],
+  "verifiedOn": "2026-11-06"
+ },
+ "piute/kingston": {
+  "wikipediaTitle": "Kingston, Utah",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "summary": "Kingston is a town in Piute County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "officialWebsite": "",
+  "sources": [
+   "https://muniwatch.org/meetings/cmkqkpt77029bs75n8cov6x70"
+  ],
+  "verifiedOn": "2026-11-06"
  }
 }

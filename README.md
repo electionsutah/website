@@ -6,6 +6,12 @@ data through the 2026 election cycle.
 
 ## Run locally
 
+Reviewed candidate records outside the results feed live in `src/data/researched-candidates.json`; the app merges them with the historical and local imports so feed refreshes preserve them. `src/data/place-election-notes.json` retains cancellation and vacancy records separately from election filings, and shows them in the place's existing election details popover.
+
+Run `npm run check:researched` to validate these records and `npm run audit:coverage` to regenerate the HTML, JSON, and Markdown municipal coverage reports in `reports/`. The HTML includes sortable tables, search, gap filtering, and source popovers. The audit uses the checked-in municipality boundary snapshot, groups multi-county municipalities, and flags missing records for research rather than treating them as proof that no election occurred.
+
+`reports/municipal-gap-investigation.json` retains source notes and manually verified candidates for the original 33-place investigation cohort. Run `python3 scripts/import-municipal-gap-findings.py` to merge those candidates idempotently and create sourced place profiles. Search cache files are discovery leads only; the importer reads reviewed records, never raw search hits.
+
 ```bash
 npm install
 npm run dev

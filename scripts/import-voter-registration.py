@@ -169,7 +169,7 @@ def write_reports(directory, data, places):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Utah voter registration review · {data["asOf"]}</title>
 <style>
-body{{margin:0;padding:40px clamp(16px,4vw,48px);font:14px/1.45 system-ui,-apple-system,sans-serif;color:#1d2226;background:#f2f1ed}}
+body{{margin:3rem;padding:40px clamp(16px,4vw,48px);font:14px/1.45 system-ui,-apple-system,sans-serif;color:#1d2226;background:#f2f1ed}}
 h1{{margin:0 0 6px;font:700 30px/1.1 Georgia,serif;letter-spacing:-.02em}}p{{max-width:880px;margin:0 0 10px;color:#5f5e59}}
 .summary{{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}}.summary div{{padding:14px 18px;background:#fff;border:1px solid #c8c6c0;min-width:150px}}
 .summary small{{display:block;color:#5f5e59;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}}.summary strong{{font:700 26px/1.2 Georgia,serif}}

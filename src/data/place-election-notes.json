@@ -1,0 +1,364 @@
+{
+  "washington/new-harmony": [
+    {
+      "date": "2025-09-03",
+      "kind": "election_cancelled",
+      "title": "2025 municipal election cancelled",
+      "summary": "The town cancelled the uncontested November 2025 municipal election and declared those who filed elected. The resolution does not name the candidates; no individual filings or vote totals have been inferred.",
+      "source": "https://www.utah.gov/pmn/files/1318929.pdf"
+    },
+    {
+      "date": "2024-04-03",
+      "kind": "vacancy_appointment",
+      "title": "2024 council vacancy filled",
+      "summary": "Norm Allen and Roxanne Hansen sought the vacant council position. After a tied council vote, Allen was selected by drawing a name and sworn in. This was a vacancy appointment, not a public election.",
+      "source": "https://www.utah.gov/pmn/files/1116955.pdf"
+    }
+  ],
+  "box-elder/corinne": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The October 2025 cancellation notice names two candidates elected unopposed. It does not establish a full historical roster.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1028863.html"
+    }
+  ],
+  "box-elder/snowville": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The adopted October 10 cancellation resolution names the mayor and three council candidates elected without a ballot.",
+      "source": "https://www.utah.gov/pmn/files/1334165.pdf"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The adopted October 10 cancellation resolution names the mayor and three council candidates elected without a ballot. The county publication ballot also explicitly marks Orlando Scott Ohare as withdrawn from the mayoral race; his candidacy is retained with withdrawn status.",
+      "source": "https://www.utah.gov/pmn/files/1338227.pdf"
+    }
+  ],
+  "cache/river-heights": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Adopted Resolution 6-2025 cancels the November election and names the mayor and three council candidates elected.",
+      "source": "https://riverheights.gov/wp-content/uploads/2025/11/Minutes-Council-Oct-7-2025.pdf"
+    }
+  ],
+  "davis/south-weber": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The city election page declares the mayor and two council candidates elected following cancellation.",
+      "source": "https://southwebercity.gov/government/elections/"
+    }
+  ],
+  "duchesne/altamont": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The town publishes five certified ballot candidates and unofficial 2025 totals. Imported candidate participation only, without winner status or vote totals.",
+      "source": "https://altamontutah.gov/elections"
+    }
+  ],
+  "duchesne/myton": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The city publishes a certified 2025 primary canvass with five council candidates and four advancing to the general election. The filing notice also names two mayoral candidates. Later general-election outcomes remain to be verified.",
+      "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/08/OFFICIAL-CERTIFIED-MUNICIPAL-PRIMARY-ELECTION-RESULTS.pdf"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The city publishes a certified 2025 primary canvass with five council candidates and four advancing to the general election. The filing notice also names two mayoral candidates. Later general-election outcomes remain to be verified.",
+      "source": "https://www.mytoncityut.gov/wp-content/uploads/2025/06/Election-Public-Notice-for-candidates.pdf"
+    }
+  ],
+  "emery/huntington": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Official 2025 filing list identifies one mayor and three council candidates. Filed status is used because this source does not certify election outcomes.",
+      "source": "https://huntingtonut.com/wp-content/uploads/2026/01/Candidates-2025.pdf"
+    }
+  ],
+  "garfield/bryce-canyon-city": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The official cancellation notice declares three named candidates elected in 2025.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1023411.html"
+    }
+  ],
+  "garfield/escalante": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The September 2 cancellation notice names the mayor and two council candidates elected.",
+      "source": "https://www.utah.gov/pmn/files/1317575.pdf"
+    }
+  ],
+  "grand/castle-valley": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The county UOCAVA notice lists three 2025 municipal candidates; no outcome is inferred from this filing-stage source.",
+      "source": "https://grandcountyutah.gov/DocumentCenter/View/22917/Updated-UOCAVA-Election-Notice-9425"
+    }
+  ],
+  "millard/meadow": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The September cancellation notice names the mayor and two council candidates elected.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1023497.html"
+    }
+  ],
+  "sevier/glenwood": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The official cancellation notice names the mayor and two council candidates elected.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1023135.html"
+    }
+  ],
+  "wasatch/independence": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "September 9 adopted minutes record the cancellation, two unopposed council candidates, and withdrawals by Wayne Heaton (mayor) and Rose Heaton (council). Withdrawn candidates are preserved as withdrawn, not elected.",
+      "source": "https://www.utah.gov/pmn/files/1332495.pdf"
+    }
+  ],
+  "wayne/bicknell": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The cancellation notice names the mayor and two council candidates elected.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1021163.html"
+    }
+  ],
+  "wayne/lyman": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The signed August 19 write-in declaration supports a named council candidate. Remaining municipal roster and outcomes need review.",
+      "source": "https://waynecountyutah.gov/uploads/2025-lyman-declaration-of-candidacy-melanie-o.-grundy.pdf"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The signed August 19 write-in declaration supports a named council candidate. Remaining municipal roster and outcomes need review. Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified.",
+      "source": "https://waynecountyutah.gov/uploads/2025-lyman-delaration-of-candidacy-burke-torgerson.pdf"
+    }
+  ],
+  "wayne/loa": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified.",
+      "source": "https://waynecountyutah.gov/uploads/cody-douglas-grundy.pdf"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified.",
+      "source": "https://waynecountyutah.gov/uploads/donald-roy-bone.pdf"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified.",
+      "source": "https://waynecountyutah.gov/uploads/kori-g.-brown.pdf"
+    }
+  ],
+  "wayne/torrey": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified.",
+      "source": "https://waynecountyutah.gov/uploads/mickey-wright.pdf"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified.",
+      "source": "https://waynecountyutah.gov/uploads/renee-dawn-reel.pdf"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Signed declarations were visually checked against scans from the official county document index. Filed status only; complete roster and later election outcomes remain to be verified.",
+      "source": "https://waynecountyutah.gov/uploads/sheila-patricia-kearney.pdf"
+    }
+  ],
+  "box-elder/portage": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The current revision of the June filing notice names Max K. Huggins for mayor. No council names are listed; no later outcome inferred.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1001569.html"
+    }
+  ],
+  "emery/cleveland": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Visually verified the official notice naming Shawna Horrocks, Whitney Guymon and Kristen Vose elected after the September 2025 cancellation. The notice contains a county template typo; the publishing public body and town address identify Cleveland in Emery County.",
+      "source": "https://www.utah.gov/pmn/files/1322142.pdf"
+    }
+  ],
+  "tooele/stockton": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "County election archive lists a signed 2019 Stockton municipal canvass. The document is a concrete backfill source; current officeholder pages alone do not establish candidate history. Visually verified the signed 2019 canvass: three named ballot candidates in council and mayor contests. Imported participation without inferring seat counts or winners. Later cycles still need research.",
+      "source": "https://electionarchive.tooeleco.gov/files/serve/75"
+    }
+  ],
+  "tooele/vernon": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Official February minutes identify one mayor and two council seats for 2025, but a mayor’s stated intent to run is not a filed candidacy. The county archive also has 2019 Vernon canvass documents. Visually verified the signed 2019 canvass: two candidates for the two-year council contest and two for the four-year contest. Later municipal cycles still need research.",
+      "source": "https://electionarchive.tooeleco.gov/files/serve/77"
+    }
+  ],
+  "wasatch/daniel": [
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Official June filing list names five candidates. A later cancellation resolution is indexed on the town site, but its content is currently inaccessible (HTTP 406). These records reflect filing only; later withdrawals/outcomes remain unresolved.",
+      "source": "https://danielutah.gov/wp-content/uploads/2025/06/2025-ELECTION-CANDIDATES_0001.pdf"
+    }
+  ],
+  "box-elder/fielding": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "Official notice proposes Resolution 10-02-25 to cancel the election because candidates do not exceed seats. Need adopted resolution/minutes and a named candidate list.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1024615.html"
+    }
+  ],
+  "cache/cornish": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "Secondary meeting index reports a 2025 cancellation and three named candidates. Need the original cancellation resolution or county filings before import. The candidate guide lists incumbents only.",
+      "source": "https://mytown.theboringparts.com/city/ut-pmn-110/2025/"
+    }
+  ],
+  "emery/clawson": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "September 11 agenda lists approval of cancellation resolution 2025002. An agenda alone does not prove adoption; obtain minutes or resolution and candidate names.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1021915.html"
+    }
+  ],
+  "emery/elmo": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "County adopted an interlocal agreement to administer Elmo’s 2025 municipal election. This does not identify candidates or establish whether the election was ultimately held. Need filing list or cancellation resolution.",
+      "source": "https://www.utah.gov/pmn/files/1248435.pdf"
+    }
+  ],
+  "garfield/antimony": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "The March 2025 notice concerns a council vacancy appointment, not a public election candidate roster. No named election candidates inferred.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/979757.html"
+    }
+  ],
+  "garfield/hatch": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "The official homepage states that Resolution 2025-12 cancelled the November 2025 election and declared unopposed candidates elected. The linked image is a landscape photograph, not a readable resolution. Need the actual resolution or filed candidate list; no names inferred.",
+      "source": "https://hatchutah.gov/"
+    }
+  ],
+  "kane/alton": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "Official county election information identifies Alton as a voting/drop-box location. It does not name municipal candidates. Need town filing or cancellation records; do not infer candidacies from current officials.",
+      "source": "https://kane.utah.gov/311/Elections"
+    }
+  ],
+  "millard/lynndyl": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "Official 2023 notice announces two council seats and filing period, but does not name filed candidates. Need declaration list or adopted cancellation records.",
+      "source": "https://lynndyl.utah.gov/2023-lynndyl-town-municipal-election-notice/"
+    }
+  ],
+  "millard/oak-city": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "Published minutes record adoption of Resolution 2025-06 cancelling the 2025 election. The reviewed excerpt does not name candidates. The town election page has empty candidate lists.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1026133.html"
+    }
+  ],
+  "millard/scipio": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "Official notice identifies mayor and council offices up for election but no candidate names. A secondary agenda index suggests cancellation consideration; adoption and roster remain unverified.",
+      "source": "https://millardcounty.gov/wp-content/uploads/2025/05/Scipio-Town-Election-Notice-UOCAVA-25-1.pdf"
+    }
+  ],
+  "piute/kingston": [
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Municipal election coverage review",
+      "summary": "Secondary meeting index lists an October 2025 municipal-election cancellation attachment. Need the original Utah Public Notice attachment and named candidates.",
+      "source": "https://muniwatch.org/meetings/cmkqkpt77029bs75n8cov6x70"
+    }
+  ]
+}
