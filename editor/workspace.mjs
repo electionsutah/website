@@ -18,13 +18,28 @@ export async function atomicJson(path, value) {
 }
 
 export async function prepare(server, directory = workspace, saved = null) {
-  const { importedFilings, people, places, offices, parties } = await server.ssrLoadModule('/src/lib/entities.ts');
-  const { importedProfile, importedPlaceSocial, validateChanges, editorFields } = await server.ssrLoadModule('/src/lib/editorial.ts');
+  const { importedFilings, people, places, offices, parties, placesById, officeResources, importedPartyProperties, importedPlaceDescriptions, importedEntityStructure } = await server.ssrLoadModule('/src/lib/entities.ts');
+  const { importedProfile, importedEntityLinks, validateChanges, editorFields } = await server.ssrLoadModule('/src/lib/editorial.ts');
+  const { validateStructure } = await server.ssrLoadModule('/src/lib/editor-structure.ts');
+  const references = Object.fromEntries(['people', 'offices', 'parties', 'places'].map(kind => [kind, ({people, offices, parties, places})[kind].map(row => ({ id: row.id, label: row.name }))]));
+  references.elections = [...new Set(importedFilings.map(row => row.year))].sort((a,b) => b-a).map(year => ({ id: String(year), label: String(year) }));
+  references.counties = places.filter(row => row.type === 'County').map(row => ({ id: row.id, label: row.name }));
+  const validateReferences = (kind, changes) => {
+    if ('name' in changes && !changes.name.trim()) throw new Error('Entity names cannot be empty');
+    for (const field of editorFields[kind]) if (field.relation && field.path in changes) {
+      const values = Array.isArray(changes[field.path]) ? changes[field.path] : [changes[field.path]];
+      for (const id of values) if (id && !references[field.relation].some(row => row.id === String(id))) throw new Error(`Unknown ${field.relation} reference: ${id}`);
+      if (['personId', 'officeId', 'partyId', 'parentId', 'year'].includes(field.path) && !changes[field.path]) throw new Error(`${field.label} cannot be empty`);
+    }
+  };
+  const validateEditorChanges = (kind, changes) => { validateChanges(kind, changes); validateReferences(kind, changes); };
+  const { importedOfficeProfile, importedPartyProfile } = await server.ssrLoadModule('/src/lib/entity-profiles.ts');
   const { placeEntityLinks } = await server.ssrLoadModule('/src/lib/entity-links.ts');
   const placeProfiles = await readJson(join(root, 'src/data/place-enrichment.json'));
   const placeLinks = await readJson(join(root, 'src/data/place-link-enrichment.json'));
   const officeProfiles = await readJson(join(root, 'src/data/office-enrichment.json'));
   const partyProfiles = await readJson(join(root, 'src/data/party-enrichment.json'));
+  const personLinks = await readJson(join(root, 'src/data/person-link-enrichment.json'));
   const profiles = await readJson(join(root, 'src/data/person-enrichment.json'));
   saved ??= await readJson(overridesPath);
   if (saved.version !== 1 || !saved.people || !saved.filings) throw new Error('Unsupported editorial data format');
@@ -38,7 +53,7 @@ export async function prepare(server, directory = workspace, saved = null) {
   async function add(kind, id, title, source, context) {
     const filename = `${createHash('sha256').update(id).digest('hex').slice(0, 32)}.json`;
     const changes = saved[kind][id] ?? {};
-    validateChanges(kind, changes);
+    validateEditorChanges(kind, changes);
     const record = { id, title, record: { source, context, overrides: changes } };
     const relative = `content/${kind}/${filename}`;
     if (catalog.has(relative)) throw new Error(`Duplicate editor identity: ${id}`);
@@ -46,22 +61,24 @@ export async function prepare(server, directory = workspace, saved = null) {
     known[kind].add(id);
     await atomicJson(join(directory, relative), record);
   }
+  const snapshot = entity => Object.fromEntries(Object.entries(entity).map(([key, value]) => [key, ['filings', 'offices', 'children'].includes(key) && Array.isArray(value) ? value.map(item => item.recordId ?? item.id) : value]));
   for (const person of people) {
-    const baseline = { ...person, filings: person.filings.map(filing => ({ ...originals.get(filing.recordId), personId: filing.personId })) };
-    await add('people', person.id, person.name, importedProfile(baseline, profiles), {
+    const baseline = { ...person, filings: importedEntityStructure.filings.filter(row => row.personId === person.id || row.runningMateId === person.id).map(row => ({ ...originals.get(row.id), personId: row.personId, runningMateId: row.runningMateId })) };
+    await add('people', person.id, person.name, { name: importedEntityStructure.people.find(row => row.id === person.id)?.name, ...importedProfile(baseline, profiles), ...importedEntityLinks(personLinks[person.id]?.links ?? []) }, {
+      entity: snapshot(person),
       personPath: `/people/${person.id}/`,
       filings: person.filings.map(filing => `${filing.year} · ${filing.officeName} · ${filing.recordId}`)
     });
   }
   for (const filing of importedFilings) await add('filings', filing.recordId,
-    `${filing.year} · ${filing.name} · ${filing.officeName}${filing.county ? ` · ${filing.county}` : ''}`, filing, {
-      source: filing.source, identity: filing.recordId
+    `${filing.year} · ${filing.name} · ${filing.officeName}${filing.county ? ` · ${filing.county}` : ''}`, { ...filing, ...importedEntityStructure.filings.find(row => row.id === filing.recordId), placeId: filing.placeIds.at(-1) ?? '' }, {
+      entity: snapshot(filing), source: filing.source, identity: filing.recordId
     });
-  for (const place of places) await add('places', place.id, `${place.name} · ${place.type} · ${place.county}`, { ...importedPlaceSocial(placeEntityLinks(placeProfiles[place.id], placeLinks[place.id]?.links ?? [])), contact: placeLinks[place.id]?.contact ?? placeProfiles[place.id]?.contact ?? {} }, {
-    placePath: `/places/${place.id}/`, identity: place.id, type: place.type, county: place.county
+  for (const place of places) await add('places', place.id, `${place.name} · ${place.type} · ${place.county}`, { ...importedEntityStructure.places.find(row => row.id === place.id), ...importedEntityLinks(placeEntityLinks(placeProfiles[place.id], placeLinks[place.id]?.links ?? [])), contact: placeLinks[place.id]?.contact ?? placeProfiles[place.id]?.contact ?? {}, profile: placeProfiles[place.id] ?? {}, description: importedPlaceDescriptions[place.id] }, {
+    entity: snapshot(place), placePath: `/places/${place.id}/`, identity: place.id, type: place.type, county: place.county
   });
   for (const [kind, entities, profiles] of [['offices', offices, officeProfiles], ['parties', parties, partyProfiles]]) {
-    for (const entity of entities) await add(kind, entity.id, entity.name, { contact: profiles[entity.id]?.contact ?? {} }, { entityPath: `/${kind}/${entity.id}/`, identity: entity.id });
+    for (const entity of entities) await add(kind, entity.id, entity.name, { ...importedEntityStructure[kind].find(row => row.id === entity.id), ...(kind === 'offices' ? { placeIds: entity.placeIds } : {}), contact: profiles[entity.id]?.contact ?? {}, ...importedEntityLinks(profiles[entity.id]?.links ?? (entity.website ? [{ url: entity.website }] : [])), ...(kind === 'offices' ? { resources: officeResources(importedEntityStructure.offices.find(row => row.id === entity.id)?.name ?? entity.name), profile: importedOfficeProfile(entity, placesById) } : { profile: importedPartyProfile(entity), ...importedPartyProperties[entity.id] }) }, { entity: snapshot(entity), entityPath: `/${kind}/${entity.id}/`, identity: entity.id });
   }
   for (const kind of Object.keys(known)) {
     for (const name of await readdir(join(directory, 'content', kind))) {
@@ -71,12 +88,12 @@ export async function prepare(server, directory = workspace, saved = null) {
   const orphans = Object.entries(known).flatMap(([kind, ids]) => Object.keys(saved[kind]).filter(id => !ids.has(id)).map(id => `${kind}/${id}`));
   // Old source identities must be reviewed, never silently reassigned or discarded.
   if (orphans.length) console.warn('Overrides without a current source record (preserved):', orphans);
-  return { catalog, editorFields, validateChanges, counts: { people: people.length, filings: importedFilings.length, places: places.length, offices: offices.length, parties: parties.length }, orphans, directory: resolve(directory) };
+  return { catalog, editorFields, validateChanges: validateEditorChanges, validateReferences, validateStructure: saved => validateStructure(importedEntityStructure, saved), references, counts: { people: people.length, filings: importedFilings.length, places: places.length, offices: offices.length, parties: parties.length }, orphans, directory: resolve(directory) };
 }
 
 /** Read only the permitted override paths; snapshots and identities are never writable input. */
 export function validateRecord(record, entry, validateChanges) {
-  if (record.id !== entry.id || record.title !== entry.title) throw new Error('Record identity is locked');
+  if (record.id !== entry.id || typeof record.title !== 'string' || !record.title.trim()) throw new Error('Record identity is locked');
   validateChanges(entry.kind, record.record?.overrides);
   return record.record.overrides;
 }
@@ -90,6 +107,15 @@ export async function syncRecord(relative, state, destination = overridesPath) {
   saved[entry.kind] ??= {};
   if (Object.keys(changes).length) saved[entry.kind][entry.id] = changes;
   else delete saved[entry.kind][entry.id];
+  state.validateStructure?.(saved);
   await atomicJson(destination, saved);
+  const displayName = changes.name ?? entry.source.name;
+  if (typeof displayName === 'string') {
+    entry.title = displayName;
+    for (const reference of [state.references?.[entry.kind], ...(entry.kind === 'places' ? [state.references?.counties] : [])]) {
+      const row = reference?.find(row => row.id === entry.id);
+      if (row) row.label = displayName;
+    }
+  }
   return entry.title;
 }

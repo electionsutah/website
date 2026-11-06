@@ -20,7 +20,7 @@
   };
   updateCollection();
   window.addEventListener('hashchange', updateCollection);
-  const [config, schema, initialStatus] = await Promise.all(['/config.json', '/schema.json', '/status.json'].map(url => fetch(url).then(response => response.json())));
+  const [config, schema, initialStatus, references] = await Promise.all(['/config.json', '/schema.json', '/status.json', '/references.json'].map(url => fetch(url).then(response => response.json())));
   const asObject = value => value?.toJS ? value.toJS() : value;
   const get = (object, path) => path.split('.').reduce((value, key) => value?.[key], object);
   const symbols = { people: 'account_circle', filings: 'archive', places: 'location_on', offices: 'workspace_premium', parties: 'flag', office: 'workspace_premium', place: 'location_on', election: 'ballot',
@@ -29,6 +29,9 @@
     'contact.website': 'language', 'contact.phone': 'call', 'contact.email': 'send', 'contact.address': 'location_on' };
   const social = { 'contact.facebook': 'facebook', 'contact.instagram': 'instagram', 'contact.twitter': 'x', 'contact.bluesky': 'bluesky' };
   for (const platform of ['facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack']) social[platform] = platform;
+  for (const platform of Object.keys(social).filter(key => !key.includes('.'))) social[`contact.${platform}`] = social[platform];
+  symbols.website = 'language'; symbols.wikipedia = 'language'; symbols.wikidata = 'language'; symbols.links = 'language';
+  Object.assign(symbols, { personId: 'account_circle', runningMateId: 'account_circle', officeId: 'workspace_premium', partyId: 'flag', placeId: 'location_on', placeIds: 'location_on', parentId: 'location_on', year: 'ballot' });
   const icon = key => social[key]
     ? h('img', { className: 'editor-label-icon', src: `/icons/external/${social[key]}.svg`, alt: '', 'aria-hidden': true })
     : h('span', { className: 'editor-symbol', 'aria-hidden': true }, symbols[key] ?? 'language');
@@ -36,8 +39,8 @@
     const match = line.match(/^(Campaign office|Mailing):\s*(.+)$/i);
     return { label: match?.[1] ?? 'Address', value: match?.[2] ?? line };
   });
-  const blank = field => ['lines', 'resources', 'addresses'].includes(field.type) ? [] : '';
-  const format = (value, field) => field.type === 'resources' ? JSON.stringify(value ?? [], null, 2)
+  const blank = field => field.type === 'number' ? null : field.type === 'boolean' ? false : ['lines', 'resources', 'addresses', 'links'].includes(field.type) ? [] : '';
+  const format = (value, field) => ['resources', 'links'].includes(field.type) ? JSON.stringify(value ?? [], null, 2)
     : field.type === 'addresses' ? addresses(value).map(item => `${item.label}: ${item.value}`).join('\n')
     : field.type === 'lines' ? (value ?? []).join('\n') : String(value ?? '');
 
@@ -67,13 +70,13 @@
             h('div', { key }, h('dt', {}, icon(key), label), h('dd', {}, value || 'Not published')))) : null,
         h('p', { className: 'editor-note' }, 'Choose Override to edit a field, Clear to remove its value, or Use imported value to follow automated updates. Save with Publish at the top.'),
         (record.context.personPath || record.context.placePath || record.context.entityPath) ? h('a', { href: initialStatus.siteUrl + (record.context.personPath || record.context.placePath || record.context.entityPath), target: '_blank', rel: 'noopener' }, 'Open on the local site ↗') : null,
-        h('details', { className: 'editor-context' }, h('summary', {}, 'Identity and related records (read only)'), h('pre', {}, JSON.stringify(record.context, null, 2))),
+        h('details', { className: 'editor-context' }, h('summary', {}, 'All entity fields, imported values, and relationships'), h('pre', {}, JSON.stringify({ ...record.context, importedFields: record.source }, null, 2))),
         ...fields.map(field => {
           const path = field.path;
           const source = get(record.source, path) ?? blank(field);
           const explicit = Object.prototype.hasOwnProperty.call(record.overrides, path);
           const value = explicit ? record.overrides[path] : source;
-          const empty = Array.isArray(value) ? value.length === 0 : value === '';
+          const empty = Array.isArray(value) ? value.length === 0 : value === '' || value === null;
           const mode = this.state.modes[path] ?? (!explicit ? 'inherit' : empty ? 'clear' : 'override');
           const id = `${this.props.forID}-${path}`;
           const resetDraft = () => {
@@ -86,9 +89,10 @@
             onChange: event => {
               const text = event.target.value;
               try {
-                const next = field.type === 'resources' ? JSON.parse(text || '[]')
+                const next = field.type === 'boolean' ? text === 'true' : field.type === 'number' ? (text === '' ? null : Number(text)) : ['resources', 'links'].includes(field.type) ? JSON.parse(text || '[]')
                   : field.type === 'lines' ? text.split('\n').map(line => line.trim()).filter(Boolean) : text;
                 if (field.type === 'resources' && (!Array.isArray(next) || next.some(item => !item || !['label', 'description', 'url'].every(key => typeof item[key] === 'string')))) throw new Error('Enter a JSON array of objects with label, description, and url.');
+                if (field.type === 'links' && (!Array.isArray(next) || next.some(item => !item || typeof item.url !== 'string'))) throw new Error('Enter a JSON array of link objects with a url.');
                 const errors = { ...this.state.errors }; delete errors[path];
                 this.setState({ drafts: { ...this.state.drafts, [path]: text }, errors });
                 this.change(path, next);
@@ -97,26 +101,31 @@
               }
             }
           };
-          const input = field.type === 'addresses' ? h('div', { id, className: 'editor-addresses' },
+          const input = field.relation && field.type !== 'lines' ? h('div', {},
+            h('input', { ...inputProps, list: `${id}-choices`, placeholder: 'Search by name or ID' }),
+            h('datalist', { id: `${id}-choices` }, ...(references[field.relation] ?? []).map(row => h('option', { key: row.id, value: row.id }, row.label))),
+            h('small', {}, 'Select an existing entity. Stable IDs preserve links when names change.'))
+            : field.type === 'addresses' ? h('div', { id, className: 'editor-addresses' },
             ...addresses(value).map((address, index, list) => h('fieldset', { key: index, disabled: mode !== 'override' },
               h('legend', {}, `Address ${index + 1}`),
               ...['label', 'value'].map(key => h('label', { key }, key === 'label' ? 'Label' : 'Street or mailing address',
                 h('input', { value: address[key], onChange: event => this.change(path, list.map((item, i) => i === index ? { ...item, [key]: event.target.value } : item)) }))),
               h('button', { type: 'button', onClick: () => this.change(path, list.filter((_, i) => i !== index)) }, 'Remove address'))),
             h('button', { type: 'button', disabled: mode !== 'override', onClick: () => this.change(path, [...addresses(value), { label: 'Address', value: '' }]) }, 'Add address'))
+            : field.type === 'boolean' ? h('select', inputProps, h('option', { value: 'true' }, 'Yes'), h('option', { value: 'false' }, 'No'))
             : field.options ? h('select', inputProps,
             ...[...new Set(['', ...field.options, value])].map(option => h('option', { key: option, value: option }, option || '(empty)')))
-            : ['text', 'lines', 'resources'].includes(field.type) ? h('textarea', { ...inputProps, rows: field.type === 'resources' ? 7 : 4 })
-            : h('input', { ...inputProps, type: field.type === 'date' ? 'date' : field.type === 'url' ? 'url' : field.type === 'email' ? 'email' : 'text' });
+            : ['text', 'lines', 'resources', 'links'].includes(field.type) ? h('textarea', { ...inputProps, rows: ['resources', 'links'].includes(field.type) ? 7 : 4 })
+            : h('input', { ...inputProps, type: field.type === 'date' ? 'date' : field.type === 'url' ? 'url' : field.type === 'email' ? 'email' : field.type === 'number' ? 'number' : 'text' });
           return h('section', { key: path, className: `editor-field ${explicit ? 'has-override' : ''}` },
-            h('div', { className: 'editor-field-heading' }, h('label', { htmlFor: id }, icon(path), field.label),
+            h('div', { className: 'editor-field-heading' }, h('label', { htmlFor: id }, icon(path === 'name' ? kind : path), field.label),
               h('select', { 'aria-label': `${field.label} value source`, value: mode,
                 onChange: event => {
                   resetDraft();
                   this.setState({ modes: { ...this.state.modes, [path]: event.target.value } });
                   this.change(path, event.target.value === 'inherit' ? undefined : event.target.value === 'clear' ? blank(field) : (empty ? source : value));
                 }
-              }, h('option', { value: 'inherit' }, 'Use imported value'), h('option', { value: 'override' }, 'Override'), h('option', { value: 'clear' }, 'Clear'))),
+              }, h('option', { value: 'inherit' }, 'Use imported value'), h('option', { value: 'override' }, 'Override'), !['name', 'personId', 'officeId', 'partyId', 'parentId', 'year'].includes(path) ? h('option', { value: 'clear' }, 'Clear') : null)),
             input,
             h('details', { id: `${id}-source`, className: 'editor-source' }, h('summary', {}, 'Imported value'), h('pre', {}, format(source, field) || '(not published)')),
             this.state.errors[path] ? h('p', { className: 'editor-error', role: 'alert' }, this.state.errors[path]) : null
@@ -128,13 +137,15 @@
   CMS.registerWidget('repository-record', Control);
   CMS.registerEventListener({ name: 'preSave', handler: async ({ entry }) => {
     const record = entry.get('data').toJS();
+    const displayName = record.record.overrides.name ?? record.record.source.name;
+    if (typeof displayName === 'string') record.title = displayName;
     const relative = entry.get('path');
     const response = await fetch('/validate', {
       method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ relative, record })
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || 'Unable to validate this edit.');
-    return entry.get('data');
+    return typeof displayName === 'string' ? entry.get('data').set('title', displayName) : entry.get('data');
   } });
   CMS.registerLocale('editor-en', {
     editor: { editorToolbar: { backCollection: 'Editing in %{collectionLabel} collection' } }

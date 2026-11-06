@@ -18,7 +18,7 @@
   import placeImageData from './data/place-images.json';
   import placeEmblemData from './data/place-emblems.json';
   import personProfiles from './data/person-enrichment.json';
-  import { profileFor, type PersonProfile } from './lib/editorial';
+  import { profileFor, editorProfileFor, type PersonProfile } from './lib/editorial';
   import { contactAddresses, addressMapUrl, isMailingAddress, type ContactAddress } from './lib/contact-addresses';
   import { notify } from './lib/notifications';
 
@@ -99,7 +99,7 @@
     inceptionPrecision?: number | null;
   };
 
-  const profilesById = placeProfiles as Record<string, PlaceProfile>;
+  const profilesById = Object.fromEntries(places.map(place => [place.id, editorProfileFor('places', place.id, (placeProfiles as Record<string, PlaceProfile>)[place.id] ?? { summary: '', officialWebsite: '', wikipediaTitle: '', wikipediaUrl: '', wikidataId: '', wikidataUrl: '' })])) as Record<string, PlaceProfile>;
   /** Wikidata image (P18) per place, from scripts/fetch-place-images.py. */
   type PlaceImage = { src: string; title: string; artist: string; license: string; licenseUrl: string; sourceUrl: string };
   const placeImages = placeImageData as Record<string, PlaceImage>;
@@ -155,7 +155,8 @@
   $: contactLinks = [...verifiedPersonLinks, ...(contact ? [
     { url: contact.website || '' }, { url: contact.facebook || '' },
     { url: contact.instagram || '' }, { url: contact.twitter || '' },
-    { url: contact.bluesky || '' }
+    { url: contact.bluesky || '' },
+    ...['youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'].map(key => ({ url: contact[key as keyof Contact] as string || '', platform: key as EntityLink['platform'] }))
   ] satisfies EntityLink[] : [])];
 
   // Within a scope, each person keeps only the scoped filings, so offices, years, and counts describe that scope.
@@ -186,10 +187,10 @@
     ? (scope ? scopedPeople(scope) : people).map((item) => ({
         id: item.id,
         title: item.name,
-        eyebrow: item.filings[0].partyName,
-        meta: item.filings[0].officeName,
+        eyebrow: (item.filings[0]?.partyName ?? 'No associated filings'),
+        meta: (item.filings[0]?.officeName ?? ''),
         count: `${item.filings.length} filing${item.filings.length === 1 ? '' : 's'} · ${item.years.join(', ')}`,
-        columns: [item.filings[0].officeName, item.filings[0].partyName],
+        columns: [(item.filings[0]?.officeName ?? ''), (item.filings[0]?.partyName ?? 'No associated filings')],
         filings: item.filings,
         text: searchText.people(item),
         years: item.years,
@@ -287,7 +288,7 @@
       const matching = matchingFilings(card.filings, selection);
       // People are described by their most recent filing; when filtering, by the most recent match.
       const displayFiling = filtering && matching.length ? matching[0] : card.filings[0];
-      const columns = section === 'people' ? [displayFiling.officeName, displayFiling.partyName] : card.columns;
+      const columns = section === 'people' ? [displayFiling?.officeName ?? '', displayFiling?.partyName ?? ''] : card.columns;
       const years = filtering ? [...new Set(matching.map((filing) => filing.year))].sort((a, b) => b - a) : card.years;
       const statuses = [...new Set(matching.map((filing) => filing.sourceStatus))];
       return { ...card, matching, displayFiling, columns, years, statuses };

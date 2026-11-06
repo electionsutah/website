@@ -123,7 +123,7 @@ try {
         const inspected = await inspectSchema(site, state);
         for (const collection of config.collections) collection.label = inspected.collections.find(row => row.kind === collection.name).label;
       }
-      const payload = path === '/config.json' ? config : path === '/schema.json' ? state.editorFields : path === '/status.json' ? status : null;
+      const payload = path === '/config.json' ? config : path === '/schema.json' ? state.editorFields : path === '/references.json' ? state.references : path === '/status.json' ? status : null;
       response.setHeader('Cache-Control', 'no-store');
       if (payload) { response.setHeader('Content-Type', 'application/json'); response.end(json(payload)); return; }
       const asset = path === '/' ? join(root, 'editor/index.html')

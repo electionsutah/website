@@ -12,8 +12,9 @@ import localRows from '../data/local-candidates.json';
 // Reviewed source records outside the state results feed; kept separate so refreshes preserve them.
 import researchedRows from '../data/researched-candidates.json';
 import candidateDocuments from '../data/candidate-documents.json';
-import { applyFilingChanges, applyPlaceSocial, entityContact, editorialData } from './editorial';
+import { applyFilingChanges, applyPlaceSocial, applyEntityLinks, entityContact, editorialData } from './editorial';
 import type { ContactAddress } from './contact-addresses';
+import { applyStructure } from './editor-structure';
 
 export type Contact = {
   address: string | ContactAddress[];
@@ -24,6 +25,14 @@ export type Contact = {
   instagram?: string;
   twitter: string;
   bluesky?: string;
+  youtube?: string;
+  linkedin?: string;
+  threads?: string;
+  tiktok?: string;
+  mastodon?: string;
+  truthsocial?: string;
+  rumble?: string;
+  substack?: string;
 };
 
 export type Filing = {
@@ -431,7 +440,7 @@ function uniqueNumbers(values: number[]) {
   return [...new Set(values)].sort((a, b) => b - a);
 }
 
-function officeResources(name: string): OfficeResource[] {
+export function officeResources(name: string): OfficeResource[] {
   const house = name.match(/^State House District (\d+)/);
   if (house) {
     const district = house[1].padStart(2, '0');
@@ -520,7 +529,7 @@ for (const { filing, name } of filingPeople) {
 }
 for (const person of personMap.values()) {
   const enrichment = (personLinkEnrichment as Record<string, { verifiedOn: string; links: EntityLink[] }>)[person.id];
-  person.links = enrichment?.links ?? [];
+  person.links = applyEntityLinks('people', enrichment?.links ?? [], editorialData.people[person.id]);
   person.lastVerified = [enrichment?.verifiedOn, ...person.links.map(link => link.verifiedOn)].filter(Boolean).sort().at(-1);
   person.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName, undefined, { numeric: true }));
 }
@@ -549,7 +558,12 @@ for (const filing of filings) {
   office.placeIds = [...new Set(office.filings.flatMap((item) => item.placeIds))];
   officeMap.set(filing.officeId, office);
 }
-for (const office of officeMap.values()) office.filings.sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
+for (const office of officeMap.values()) {
+  const changes = editorialData.offices?.[office.id];
+  office.links = applyEntityLinks('offices', office.links, changes);
+  if (changes?.resources) office.resources = changes.resources as OfficeResource[];
+  office.filings.sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
+}
 export const offices = naturalSort([...officeMap.values()], (office) => office.name);
 
 const partyMap = new Map<string, Party>();
@@ -610,11 +624,18 @@ for (const filing of filings) {
   party.years = uniqueNumbers(party.filings.map((item) => item.year));
   partyMap.set(filing.partyId, party);
 }
+export const importedPartyProperties: Record<string, Pick<Party, 'shortName' | 'color' | 'logo' | 'recognized' | 'historical'>> = {};
 for (const party of partyMap.values()) {
+  importedPartyProperties[party.id] = { shortName: party.shortName, color: party.color, logo: party.logo, recognized: party.recognized, historical: party.historical };
   const enrichment = (partyEnrichment as Record<string, { officialWebsite: string; links: EntityLink[] }>)[party.id];
   party.contact = entityContact('parties', (partyEnrichment as Record<string, { contact?: Partial<Contact> }>)[party.id]?.contact, editorialData.parties?.[party.id]);
-  party.links = enrichment?.links ?? (party.website ? [{ url: party.website }] : []);
+  party.links = applyEntityLinks('parties', enrichment?.links ?? (party.website ? [{ url: party.website }] : []), editorialData.parties?.[party.id]);
   if (enrichment) party.website = enrichment.officialWebsite;
+  for (const key of ['shortName', 'color', 'logo', 'recognized', 'historical'] as const) {
+    const value = editorialData.parties?.[party.id]?.[key];
+    if (value !== undefined) Object.assign(party, { [key]: value });
+  }
+  if (editorialData.parties?.[party.id]?.website !== undefined) party.website = editorialData.parties[party.id].website as string;
   party.filings.sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
 }
 export const parties = naturalSort([...partyMap.values()], (party) => party.name);
@@ -662,10 +683,13 @@ for (const entry of placeDirectory) {
     filings: [], offices: [], children: [], years: []
   });
 }
+export const importedPlaceDescriptions: Record<string, string> = {};
 for (const place of placeMap.values()) {
+  importedPlaceDescriptions[place.id] = place.description;
   const profile = (placeProfileData as Record<string, { officialWebsite: string; wikipediaUrl: string; wikidataUrl: string }>)[place.id];
   const enrichment = (placeLinkEnrichment as Record<string, { links: EntityLink[] }>)[place.id];
   place.contact = entityContact('places', (placeLinkEnrichment as Record<string, { contact?: Partial<Contact> }>)[place.id]?.contact ?? (placeProfileData as Record<string, { contact?: Partial<Contact> }>)[place.id]?.contact, editorialData.places?.[place.id]);
+  if (editorialData.places?.[place.id]?.description !== undefined) place.description = editorialData.places[place.id].description as string;
   place.links = applyPlaceSocial(placeEntityLinks(profile, enrichment?.links ?? []), editorialData.places?.[place.id]);
   place.filings.sort((a, b) => b.year - a.year || a.name.localeCompare(b.name));
   place.offices = naturalSort([...new Set(place.filings.map((filing) => filing.officeId))].map((id) => officeMap.get(id)!).filter(Boolean), (office) => office.name);
@@ -674,6 +698,15 @@ for (const place of placeMap.values()) {
   }
 }
 export const places = naturalSort([...placeMap.values()], (place) => `${place.type === 'County' ? '0' : '1'}-${place.county}-${place.name}`);
+
+export const importedEntityStructure = {
+  people: people.map(({ id, name }) => ({ id, name })),
+  offices: offices.map(({ id, name }) => ({ id, name })),
+  parties: parties.map(({ id, name }) => ({ id, name })),
+  places: places.map(({ id, name, type, parentId, county }) => ({ id, name, type, parentId, county })),
+  filings: filings.map(({ recordId, personId, runningMateId, officeId, partyId, placeIds, year }) => ({ id: recordId, personId, runningMateId, officeId, partyId, placeIds, year }))
+};
+applyStructure({ people, offices, parties, places, filings }, editorialData);
 
 export const peopleById = new Map(people.map((person) => [person.id, person]));
 export const officesById = new Map(offices.map((office) => [office.id, office]));

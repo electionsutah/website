@@ -37,6 +37,7 @@
     const facts = element('div', null, { class: 'facts' });
     facts.append(element('p', `Collection key: ${collection.kind}`), element('p', `Storage: ${collection.storage}`), element('p', `Identity: ${collection.identity}`));
     for (const relationship of collection.relationships) facts.append(element('p', relationship));
+    if (collection.readOnlyFields?.length) facts.append(element('p', `Read-only / computed fields: ${collection.readOnlyFields.join(', ')}`));
     target.append(facts);
     const tableWrap = element('div', null, { class: 'table-wrap' });
     const table = element('table', null);

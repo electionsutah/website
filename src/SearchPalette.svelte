@@ -40,7 +40,7 @@
         id: person.id,
         title: person.name,
         text: searchText.people(person),
-        displayMeta: person.filings[0].officeName,
+        displayMeta: person.filings[0]?.officeName ?? 'No associated filings',
         href: `/people/${person.id}/`,
         initials: person.initials,
         logo: ''

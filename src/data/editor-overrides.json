@@ -20,5 +20,16 @@
     "piute/junction": {
       "facebook": "https://www.facebook.com/junctionutah"
     }
+  },
+  "offices": {
+    "alpine-city-council": {
+      "website": "https://www.alpineut.gov/178/Mayor-City-Council",
+      "contact.address": [
+        {
+          "label": "Address",
+          "value": "20 N Main Street Alpine, UT 84004"
+        }
+      ]
+    }
   }
 }

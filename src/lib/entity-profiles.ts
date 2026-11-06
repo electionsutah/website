@@ -1,3 +1,4 @@
+import { editorProfileFor } from './editorial';
 import communityData from '../data/office-communities.json';
 import partyProfiles from '../data/party-profiles.json';
 import type { Office, Party, Place } from './entities';
@@ -20,7 +21,7 @@ const judicialCounties: Record<number, string[]> = {
 };
 
 /** Jurisdictions come from office titles and official boundaries, never filing addresses. */
-export function officeProfile(office: Pick<Office, 'id' | 'name' | 'sections'>, places: Map<string, Place>): OfficeProfile {
+export function importedOfficeProfile(office: Pick<Office, 'id' | 'name' | 'sections'>, places: Map<string, Place>): OfficeProfile {
   const { id, name } = office;
   const locate = (member: Member): Community => {
     const matches = [...places.values()].filter(p => p.type === 'City' && municipalKey(p.name) === municipalKey(member.name));
@@ -93,6 +94,14 @@ export function officeProfile(office: Pick<Office, 'id' | 'name' | 'sections'>, 
   return {description:`An elected position serving the ${name.replace(/\s+(?:Board Member|Board of Trustees|Trustee).*$/i,'')} service area.`,scope:name,communities:[],note:'This special-purpose district’s service and electoral boundaries have not yet been verified. Its name alone does not establish which communities are included.',sources:[]};
 }
 
-export function partyProfile(party: Pick<Party, 'id'>): EntityProfile {
+export function importedPartyProfile(party: Pick<Party, 'id'>): EntityProfile {
   return (partyProfiles as Record<string, EntityProfile>)[party.id] ?? {description:'A political affiliation recorded in the Utah election archive.',sources:[]};
+}
+
+export function officeProfile(office: Pick<Office, 'id' | 'name' | 'sections'>, places: Map<string, Place>): OfficeProfile {
+  return editorProfileFor('offices', office.id, importedOfficeProfile(office, places));
+}
+
+export function partyProfile(party: Pick<Party, 'id'>): EntityProfile {
+  return editorProfileFor('parties', party.id, importedPartyProfile(party));
 }

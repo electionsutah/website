@@ -4,40 +4,68 @@ import { configureFields } from './editor-schema';
 import type { Contact, Filing, Person } from './entities';
 import type { ContactAddress } from './contact-addresses';
 import { resolveEntityLinks, type EntityLink } from './entity-links';
+import { structuralPaths } from './editor-structure';
 
 export type Resource = { label: string; description: string; url: string };
 export type PersonProfile = {
   sourceUrl: string; lastVerified: string; biography: string; priorities: string[];
   contact: Partial<Contact>; resources: Resource[];
 };
-export type Field = { path: string; label: string; type?: string; options?: string[] };
-export type Changes = Record<string, string | string[] | Resource[] | ContactAddress[]>;
+export type Field = { path: string; label: string; type?: string; options?: string[]; relation?: EntityKind | 'counties' | 'elections' };
+export type Changes = Record<string, string | number | boolean | null | string[] | Resource[] | ContactAddress[] | EntityLink[]>;
 export type EditorialData = { version: number; people: Record<string, Changes>; filings: Record<string, Changes>; places?: Record<string, Changes>; offices?: Record<string, Changes>; parties?: Record<string, Changes> };
 export type EntityKind = 'people' | 'filings' | 'places' | 'offices' | 'parties';
 export const editorialData = saved as EditorialData;
 const contactFields: Field[] = [
-  ...['website', 'facebook', 'instagram', 'twitter', 'bluesky'].map(key => ({ path: `contact.${key}`, label: key === 'twitter' ? 'X / Twitter' : key, type: 'url' })),
+  ...['website', 'facebook', 'instagram', 'twitter', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'].map(key => ({ path: `contact.${key}`, label: key === 'twitter' ? 'X / Twitter' : key, type: 'url' })),
   ...['phone', 'email'].map(key => ({ path: `contact.${key}`, label: key })),
   { path: 'contact.address', label: 'Addresses', type: 'addresses' }
 ];
 export const placeSocialPlatforms = ['facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'] as const;
+export const entityLinkPlatforms = ['website', 'wikipedia', 'wikidata', ...placeSocialPlatforms] as const;
+const linkFields: Field[] = [
+  ...entityLinkPlatforms.map(platform => ({ path: platform, label: platform === 'x' ? 'X / Twitter' : platform, type: 'url' })),
+  { path: 'links', label: 'All links and source metadata (JSON)', type: 'links' }
+];
 const entityContactFields: Field[] = [
   { path: 'contact.email', label: 'Email', type: 'email' },
   { path: 'contact.phone', label: 'Phone' },
   { path: 'contact.address', label: 'Addresses', type: 'addresses' }
 ];
+const profileFields: Field[] = [
+  { path: 'profile.description', label: 'Description', type: 'text' },
+  { path: 'profile.sources', label: 'Description sources', type: 'links' }
+];
 export const baseEditorFields: Record<EntityKind, Field[]> = {
-  offices: entityContactFields,
-  parties: entityContactFields,
-  places: [...entityContactFields, ...placeSocialPlatforms.map(platform => ({ path: platform, label: platform === 'x' ? 'X / Twitter' : platform, type: 'url' }))],
+  offices: [{ path: 'name', label: 'Office name' }, { path: 'placeIds', label: 'Associated place IDs (one per line)', type: 'lines', relation: 'places' }, ...profileFields, ...entityContactFields, ...linkFields, { path: 'resources', label: 'Office resources', type: 'resources' }],
+  parties: [{ path: 'name', label: 'Party name' }, ...profileFields, { path: 'shortName', label: 'Short name' }, { path: 'color', label: 'Party color', type: 'color' }, { path: 'logo', label: 'Logo URL or local asset path', type: 'asset' }, { path: 'recognized', label: 'Recognized party', type: 'boolean' }, { path: 'historical', label: 'Historical party', type: 'boolean' }, ...entityContactFields, ...linkFields],
+  places: [
+    { path: 'name', label: 'Place name' },
+    { path: 'parentId', label: 'Parent county', relation: 'counties' },
+    { path: 'description', label: 'Directory description', type: 'text' },
+    { path: 'profile.summary', label: 'Profile summary', type: 'text' },
+    ...['wikipediaTitle', 'wikidataId', 'populationAsOf', 'populationSource', 'inceptionDate'].map(key => ({ path: `profile.${key}`, label: key })),
+    { path: 'profile.populationSourceUrl', label: 'Population source URL', type: 'url' },
+    { path: 'profile.population', label: 'Population', type: 'number' },
+    { path: 'profile.inceptionPrecision', label: 'Inception precision', type: 'number' },
+    ...entityContactFields, ...linkFields
+  ],
   people: [
+    { path: 'name', label: 'Person name' },
     { path: 'biography', label: 'Biography', type: 'text' },
     { path: 'priorities', label: 'Priorities (one per line)', type: 'lines' },
     { path: 'resources', label: 'Resources (JSON array of label, description, url)', type: 'resources' },
     { path: 'sourceUrl', label: 'Profile source URL', type: 'url' },
-    { path: 'lastVerified', label: 'Profile verification date', type: 'date' }, ...contactFields
+    { path: 'lastVerified', label: 'Profile verification date', type: 'date' }, ...contactFields,
+    ...linkFields
   ],
   filings: [
+    { path: 'year', label: 'Election year', type: 'number', relation: 'elections' },
+    { path: 'personId', label: 'Candidate', relation: 'people' },
+    { path: 'runningMateId', label: 'Running mate', relation: 'people' },
+    { path: 'officeId', label: 'Office', relation: 'offices' },
+    { path: 'partyId', label: 'Party', relation: 'parties' },
+    { path: 'placeId', label: 'Place', relation: 'places' },
     { path: 'status', label: 'Normalized status', options: ['filed', 'primary_election', 'general_election', 'elected', 'defeated', 'withdrew', 'disqualified'] },
     { path: 'sourceStatus', label: 'Displayed source status' },
     { path: 'electionType', label: 'Election type', options: ['primary', 'general', 'special'] },
@@ -53,7 +81,13 @@ export function validateChanges(kind: EntityKind, changes: Changes, fields = edi
   for (const [path, value] of Object.entries(changes)) {
     const field = fields[kind].find(field => field.path === path);
     if (!field) throw new Error(`Unsupported ${kind} field: ${path}`);
-    if (field.type === 'addresses') {
+    if (field.type === 'boolean') {
+      if (typeof value !== 'boolean') throw new Error(`${path} must be true or false`);
+    } else if (field.type === 'number') {
+      if (value !== null && (typeof value !== 'number' || !Number.isFinite(value) || value < 0)) throw new Error(`${path} must be a nonnegative number or null`);
+    } else if (field.type === 'links') {
+      if (!Array.isArray(value) || value.some(item => !item || typeof item !== 'object' || !safeUrl((item as EntityLink).url) || ((item as EntityLink).platform !== undefined && !(entityLinkPlatforms as readonly string[]).includes((item as EntityLink).platform!)) || ['label', 'detail', 'source', 'verifiedOn'].some(key => key in item && typeof (item as Record<string, unknown>)[key] !== 'string'))) throw new Error('Links need an http(s) URL and optional platform, label, detail, source, and verifiedOn text');
+    } else if (field.type === 'addresses') {
       if (typeof value !== 'string' && (!Array.isArray(value) || value.some(item => !item || typeof item !== 'object' || typeof (item as ContactAddress).label !== 'string' || typeof (item as ContactAddress).value !== 'string' || !(item as ContactAddress).value.trim()))) throw new Error('Addresses need a label and a nonempty address value');
     } else if (field.type === 'lines') {
       if (!Array.isArray(value) || value.some(item => typeof item !== 'string')) throw new Error(`${path} must be a list of strings`);
@@ -61,6 +95,8 @@ export function validateChanges(kind: EntityKind, changes: Changes, fields = edi
       if (!Array.isArray(value) || value.some(item => !item || typeof item !== 'object' || !['label', 'description', 'url'].every(key => typeof (item as Resource)[key as keyof Resource] === 'string') || !safeUrl((item as Resource).url))) throw new Error('Resources need a label, description, and http(s) URL');
     } else {
       if (typeof value !== 'string') throw new Error(`${path} must be text`);
+      if (field.type === 'color' && value && !/^#[0-9a-f]{6}$/i.test(value)) throw new Error(`${path} must be a six-digit hex color`);
+      if (field.type === 'asset' && value && !safeUrl(value) && !/^\/(?!\/)[^\s]*$/.test(value)) throw new Error(`${path} needs an http(s) URL or local asset path`);
       if (value && field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) throw new Error(`${path} needs an email address`);
       if (value && field.type === 'url' && !safeUrl(value)) throw new Error(`${path} needs an http(s) URL`);
       if (value && field.type === 'date' && (!/^\d{4}-\d{2}-\d{2}$/.test(value) || !Number.isFinite(Date.parse(value)) || new Date(value).toISOString().slice(0, 10) !== value)) throw new Error(`${path} needs a valid YYYY-MM-DD date`);
@@ -74,20 +110,42 @@ export function importedPlaceSocial(links: EntityLink[]): Record<string, string>
   return Object.fromEntries(placeSocialPlatforms.map(platform => [platform, resolved.find(link => link.platform === platform)?.url ?? '']));
 }
 
-export function applyPlaceSocial(links: EntityLink[], changes: Changes = {}): EntityLink[] {
-  validateChanges('places', changes);
-  const socialChanges = Object.entries(changes).filter(([key]) => (placeSocialPlatforms as readonly string[]).includes(key));
-  const overridden = new Set(socialChanges.map(([key]) => key));
+export function importedEntityLinks(links: EntityLink[]): Record<string, string | EntityLink[]> {
+  const resolved = resolveEntityLinks(links);
+  return { links, ...Object.fromEntries(entityLinkPlatforms.map(platform => [platform, resolved.find(link => link.platform === platform)?.url ?? ''])) };
+}
+
+export function applyEntityLinks(kind: EntityKind, links: EntityLink[], changes: Changes = {}): EntityLink[] {
+  validateChanges(kind, changes);
+  const source = changes.links as EntityLink[] | undefined ?? links;
+  const edits = Object.entries(changes).filter(([key]) => (entityLinkPlatforms as readonly string[]).includes(key));
+  const overridden = new Set(edits.map(([key]) => key));
   return [
-    ...links.filter(link => !overridden.has(resolveEntityLinks([link])[0]?.platform ?? '')),
-    ...socialChanges.flatMap(([platform, value]) => value ? [{ platform: platform as EntityLink['platform'], url: value as string }] : [])
+    ...source.filter(link => !overridden.has(resolveEntityLinks([link])[0]?.platform ?? '')),
+    ...edits.flatMap(([platform, value]) => value ? [{ platform: platform as EntityLink['platform'], url: value as string }] : [])
   ];
+}
+
+export function applyPlaceSocial(links: EntityLink[], changes: Changes = {}): EntityLink[] {
+  return applyEntityLinks('places', links, changes);
 }
 
 export function entityContact(kind: 'offices' | 'parties' | 'places', source: Partial<Contact> = {}, changes: Changes = {}): Partial<Contact> {
   validateChanges(kind, changes);
   const contactChanges = Object.fromEntries(Object.entries(changes).filter(([key]) => key.startsWith('contact.')));
   return applyChanges({ contact: source }, contactChanges).contact;
+}
+
+export function editorProfileFor<T extends object>(kind: 'offices' | 'parties' | 'places', id: string, source: T, changes = editorialData[kind]?.[id] ?? {}): T {
+  validateChanges(kind, changes);
+  const profileChanges = Object.fromEntries(Object.entries(changes).filter(([key]) => key.startsWith('profile.')));
+  const result = applyChanges({ profile: source }, profileChanges).profile;
+  if (kind === 'places') {
+    for (const [key, target] of [['website', 'officialWebsite'], ['wikipedia', 'wikipediaUrl'], ['wikidata', 'wikidataUrl']]) {
+      if (changes[key] !== undefined) Object.assign(result, { [target]: changes[key] });
+    }
+  }
+  return result;
 }
 
 function safeUrl(value: string): boolean {
@@ -107,7 +165,7 @@ export function applyChanges<T extends object>(source: T, changes: Changes = {})
 
 export function applyFilingChanges(filing: Filing, changes: Changes = {}): Filing {
   validateChanges('filings', changes);
-  const result = applyChanges(filing, changes);
+  const result = applyChanges(filing, Object.fromEntries(Object.entries(changes).filter(([key]) => !structuralPaths.includes(key))));
   // Geography is derived from the corrected location before the entity maps are assembled.
   if ('city' in changes || 'county' in changes) {
     const slug = (value: string) => value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

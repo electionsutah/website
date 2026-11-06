@@ -57,6 +57,53 @@ try {
   assert.equal(reset.collections.find(row => row.kind === 'filings').label, 'Filings');
   assert.throws(() => state.validateChanges('filings', { status: 'pending_review' }));
   const editorial = await server.ssrLoadModule('/src/lib/editorial.ts');
+  const { applyStructure, validateStructure } = await server.ssrLoadModule('/src/lib/editor-structure.ts');
+  const directoryData = await server.ssrLoadModule('/src/lib/entities.ts');
+  const graph = structuredClone(Object.fromEntries(['people', 'offices', 'parties', 'places', 'filings'].map(kind => [kind, directoryData[kind]])));
+  const moved = graph.filings.find(row => !row.runningMateId && row.personId);
+  const oldPersonId = moved.personId;
+  const targetPerson = graph.people.find(row => row.id !== oldPersonId);
+  const targetOffice = graph.offices.find(row => row.id !== moved.officeId);
+  const targetParty = graph.parties.find(row => row.id !== moved.partyId);
+  const targetPlace = graph.places.find(row => row.type === 'City');
+  const renamedId = targetPerson.id;
+  const structural = { version: 1, people: { [targetPerson.id]: { name: 'Edited display name' } }, offices: {}, parties: {}, places: {}, filings: { [moved.recordId]: { personId: targetPerson.id, officeId: targetOffice.id, partyId: targetParty.id, placeId: targetPlace.id } } };
+  applyStructure(graph, structural);
+  assert.equal(targetPerson.id, renamedId, 'Renames preserve stable routes');
+  assert.equal(targetPerson.name, 'Edited display name');
+  assert.equal(moved.personId, targetPerson.id);
+  assert(targetPerson.filings.includes(moved));
+  assert(!graph.people.find(row => row.id === oldPersonId).filings.includes(moved));
+  assert(targetOffice.filings.includes(moved)); assert(targetParty.filings.includes(moved)); assert(targetPlace.filings.includes(moved));
+  assert.equal(moved.officeName, targetOffice.name);
+  assert.equal(moved.partyName, targetParty.name);
+  assert(targetOffice.placeIds.includes(targetPlace.id));
+  assert.throws(() => validateStructure(graph, { ...structural, filings: { [moved.recordId]: { officeId: 'missing-office' } } }), /Unknown/);
+  assert.throws(() => validateStructure(graph, { ...structural, filings: { [moved.recordId]: { personId: targetPerson.id, runningMateId: targetPerson.id } } }), /own running mate/);
+  assert.throws(() => validateStructure(graph, { ...structural, places: { [targetPlace.id]: { parentId: targetPlace.id } } }), /existing county/);
+  for (const kind of ['people', 'offices', 'parties', 'places']) {
+    for (const path of ['website', 'facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'wikipedia', 'wikidata', 'links']) {
+      assert(state.editorFields[kind].some(field => field.path === path), `${kind} is missing ${path}`);
+    }
+    const baseline = [{ url: 'https://example.org', label: 'Official website' }, { url: 'https://facebook.com/imported', source: 'https://example.org', verifiedOn: '2026-11-06' }, { url: 'https://en.wikipedia.org/wiki/Town' }];
+    const result = editorial.applyEntityLinks(kind, baseline, { website: 'https://new.example.org', instagram: 'https://instagram.com/newaccount', facebook: '' });
+    assert(result.some(link => link.url === 'https://new.example.org'));
+    assert(result.some(link => link.url === 'https://instagram.com/newaccount'));
+    assert(!result.some(link => link.url.includes('facebook.com')));
+    assert(result.some(link => link.url.includes('wikipedia.org')));
+    assert.deepEqual(editorial.applyEntityLinks(kind, baseline, {}), baseline);
+    const rich = [{ url: 'https://example.org/one', label: 'One', detail: 'Public resource', source: 'https://example.org', verifiedOn: '2026-11-06' }, { url: 'https://example.org/two', label: 'Two' }];
+    assert.deepEqual(editorial.applyEntityLinks(kind, baseline, { links: rich }), rich, 'Multiple links and source metadata survive');
+  }
+  const { configureFields } = await server.ssrLoadModule('/src/lib/editor-schema.ts');
+  const oldSettings = { version: 1, collections: { offices: { fields: [{ path: 'contact.email', label: 'Office email' }] } } };
+  const expanded = configureFields(editorial.baseEditorFields, oldSettings);
+  assert.equal(expanded.offices[0].label, 'Office email');
+  assert(expanded.offices.some(field => field.path === 'website'), 'Existing schema preferences do not hide new fields');
+  const { importedOfficeProfile, officeProfile } = await server.ssrLoadModule('/src/lib/entity-profiles.ts');
+  assert.equal(typeof importedOfficeProfile, 'function'); assert.equal(typeof officeProfile, 'function');
+  assert.equal(editorial.editorProfileFor('offices', 'test', { description: 'Imported' }, { 'profile.description': 'Manual' }).description, 'Manual');
+  assert.equal(editorial.editorProfileFor('places', 'test', { officialWebsite: 'https://old.example.org' }, { website: 'https://new.example.org' }).officialWebsite, 'https://new.example.org');
   const { contactAddresses, addressMapUrl, isMailingAddress } = await server.ssrLoadModule('/src/lib/contact-addresses.ts');
   const addressList = [{ label: 'Office', value: '825 N 300 W, Salt Lake City, UT' }, { label: 'Mailing', value: 'P.O. Box 522340, Salt Lake City, UT 84152' }];
   editorial.validateChanges('people', { 'contact.address': addressList });
@@ -131,7 +178,7 @@ try {
   for (const kind of ['offices', 'parties', 'places']) {
     const [relative, entry] = [...state.catalog].find(([, row]) => row.kind === kind);
     const record = await readJson(join(directory, relative));
-    const changes = { 'contact.email': 'contact@example.org', 'contact.phone': '801-555-0100', 'contact.address': addressList };
+    const changes = { 'contact.email': 'contact@example.org', 'contact.phone': '801-555-0100', 'contact.address': addressList, website: 'https://example.org/office', youtube: 'https://youtube.com/@testoffice' };
     record.record.overrides = changes;
     validateRecord(record, entry, state.validateChanges);
     await request('persistEntry', { branch: 'editor', entry: { path: relative, slug: entry.filename.slice(0, -5), raw: JSON.stringify(record) }, assets: [], options: { collectionName: kind, commitMessage: 'Check entity contact save', useWorkflow: false, status: 'draft' } });
@@ -144,7 +191,10 @@ try {
     assert.equal(merged.website, 'https://example.org');
     assert.equal(editorial.entityContact(kind, { email: 'old@example.org' }, { 'contact.email': '' }).email, '');
     assert.throws(() => editorial.validateChanges(kind, { 'contact.email': 'invalid email' }));
-    if (kind === 'places') assert.deepEqual(editorial.applyPlaceSocial(originalLinks, changes), originalLinks, 'Place contact fields never become social URLs');
+    const linked = editorial.applyEntityLinks(kind, originalLinks, changes);
+    assert(linked.some(link => link.url === changes.website));
+    assert(linked.some(link => link.url === changes.youtube));
+    assert(!linked.some(link => link.url === changes['contact.email']), 'Contact fields never become social URLs');
     await prepare(server, directory, await readJson(destination));
     assert.deepEqual((await readJson(join(directory, relative))).record.overrides, changes);
   }

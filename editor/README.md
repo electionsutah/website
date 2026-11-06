@@ -94,14 +94,33 @@ from source data and the tracked override file.
 
 ## Current scope
 
+Every collection now exposes its complete source/entity snapshot for inspection.
+Offices, Parties, Places, and People share website, Wikipedia, Wikidata, and all
+supported social-platform inputs, plus an **All links and source metadata** JSON
+list for multiple accounts/resources and per-link evidence. A platform override
+takes precedence over that list for its platform; clearing suppresses it and
+inheritance restores imported values. Filings expose the full contact-platform set.
+
+Names can be edited without changing stable IDs or URLs. Filings can be reassigned
+to existing people, running mates, offices, parties, places, and election years;
+reference inputs offer existing names/IDs. Office place associations and a city's
+parent county can also be changed. Saved structural edits rebuild the shared
+relationship lists and counts. Unknown references, empty required associations,
+self running mates, and invalid parent counties are rejected. IDs and derived
+aggregate lists remain read only. Keep source facts and identity corrections
+distinct when editing: original imported files remain unchanged.
+
+Additional content controls include office resources and descriptions, party
+description/display metadata, and place summary, population, dates, and references.
+
 - People: biography, priorities, resource links, provenance, verification date,
   and contact fields.
 - Filings: status, election type, location, source, update date, and contacts.
 - Resources use a validated JSON array with `label`, `description`, and `url`.
 - Addresses have repeatable label/address inputs and are saved under `contact.address`
   as a list of `{label, value}` objects. Existing single-address strings still work.
-- Names, IDs, office/party relationships, new records, deletion, uploads, and
-  other entity collections are reserved for a later iteration.
+- Changing stable IDs, creating/deleting records, and media uploads remain outside
+  this editor's scope. Entity names and the associations described above are editable.
 - Existing IDs are derived from imported names and office/party labels. If an
   upstream import changes those identifiers, startup reports orphaned overrides
   and preserves them for manual review; it does not guess a new identity.

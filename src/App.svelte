@@ -56,9 +56,9 @@
     id: person.id,
     href: `/people/${person.id}/`,
     name: person.name,
-    meta: `${person.filings[0].year} · ${person.filings[0].officeName} · ${person.filings[0].partyName}`,
+    meta: `${person.filings[0]?.year ?? ''} · ${person.filings[0]?.officeName ?? ''} · ${person.filings[0]?.partyName ?? ''}`,
     text: searchText.people(person),
-    status: person.filings[0].sourceStatus
+    status: person.filings[0]?.sourceStatus ?? ''
   }));
   const homeOffices = officeEntities.map((office) => ({
     id: office.id,

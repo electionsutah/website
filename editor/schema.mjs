@@ -14,6 +14,10 @@ const relationships = {
   parties: ['Party → filings']
 };
 const get = (object, path) => path.split('.').reduce((value, key) => value?.[key], object);
+const leafPaths = (object, prefix = '') => Object.entries(object ?? {}).flatMap(([key, value]) => {
+  const path = prefix ? `${prefix}.${key}` : key;
+  return value && typeof value === 'object' && !Array.isArray(value) ? leafPaths(value, path) : [path];
+});
 
 export async function inspectSchema(server, state, path = schemaPath) {
   const raw = await readFile(path, 'utf8');
@@ -27,8 +31,9 @@ export async function inspectSchema(server, state, path = schemaPath) {
       kind, label: settings.collections[kind]?.label ?? collectionLabels[kind], defaultLabel: collectionLabels[kind],
       count: state.counts[kind], fields: fields.map(field => ({ ...field, type: field.options ? 'select' : field.type ?? 'string' })),
       defaults: baseEditorFields[kind], relationships: relationships[kind],
+      readOnlyFields: [...new Set([...state.catalog.values()].filter(entry => entry.kind === kind).flatMap(entry => [...leafPaths(entry.context.entity), ...leafPaths(entry.source)]))].filter(path => !fields.some(field => field.path === path || field.path.startsWith(`${path}.`))),
       storage: `src/data/editor-overrides.json → ${kind}`, identity: 'Stable record ID (read only)',
-      editableScope: 'Fields exposed in the editor; computed entity properties and imported fields remain defined in code.'
+      editableScope: 'Content, metadata, names, and existing-entity associations are editable. Stable IDs and computed aggregate lists remain read only.'
     }))
   };
 }
@@ -53,6 +58,6 @@ export async function saveSchema(server, state, input, path = schemaPath, savedP
   }
   await atomicJson(path, input.settings);
   state.editorFields = fields;
-  state.validateChanges = (kind, changes) => validateChanges(kind, changes, fields);
+  state.validateChanges = (kind, changes) => { validateChanges(kind, changes, fields); state.validateReferences?.(kind, changes); };
   return inspectSchema(server, state, path);
 }
