@@ -1,6 +1,7 @@
 <script lang="ts">
   import Breadcrumbs from './Breadcrumbs.svelte';
   import Icon from './Icon.svelte';
+  import EntityLinks from './EntityLinks.svelte';
   import IndexControls from './IndexControls.svelte';
   import IndexHeader from './IndexHeader.svelte';
   import indexHeaderImages from './data/index-header-images.json';
@@ -177,13 +178,16 @@
     {:else}
       <div class="entity-grid election-grid">
         {#each sortedCycles as cycle (cycle.year)}
-          <article class="entity-card election-card">
+          <article class="entity-card index-tile election-card">
             <a class="card-record-link" href={`/elections/${cycle.year}/`} onclick={(event) => open(event, `/elections/${cycle.year}/`)}>
+              <div class="index-card-content">
               <small>{coverage(cycle)}</small>
               <h2>{cycle.year}</h2>
               <p>{cycle.title}</p>
               <div class="card-footer"><span>{filingCount(cycle)}</span><b>View year <Icon name="arrow_forward" /></b></div>
+              </div>
             </a>
+            <div class="place-card-utilities index-card-utilities"><EntityLinks links={[{ url: cycle.source, label: cycle.sourceLabel }]} entityName={cycle.title} /></div>
           </article>
         {:else}
           <p class="no-records">No matching election years.</p>

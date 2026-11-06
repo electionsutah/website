@@ -348,6 +348,24 @@
     persistState(stateKey, { selection, view, query, sort });
   }
 
+  // Use the same contact precedence as the person's record page.
+  function tileLinks(card: (typeof cards)[number]): EntityLink[] {
+    if (section === 'places') return placeEntityLinks(card);
+    if (section === 'offices') {
+      const office = officesById.get(card.id);
+      return (office as (typeof office & { links?: EntityLink[] }))?.links ?? office?.resources.map(({ url, label }) => ({ url, label })) ?? [];
+    }
+    if (section === 'parties') {
+      const party = partiesById.get(card.id);
+      return (party as (typeof party & { links?: EntityLink[] }))?.links ?? (party?.website ? [{ url: party.website }] : []);
+    }
+    const person = peopleById.get(card.id);
+    if (!person) return [];
+    const profile = profileFor(person, personProfilesById);
+    const contact = profile?.contact ?? person.filings.find((filing) => filing.personId === person.id && filing.contact && Object.values(filing.contact).some(Boolean))?.contact;
+    return [...((person as typeof person & { links?: EntityLink[] }).links ?? []), ...(contact ? [contact.website, contact.facebook, contact.instagram, contact.twitter, contact.bluesky].map((url) => ({ url: url || '' })) : [])];
+  }
+
   function hrefFor(kind: typeof section, entityId: string) {
     return `/${kind}/${entityId}/`;
   }
@@ -642,8 +660,9 @@
     {:else}
       <div class="entity-grid" bind:this={resultsList}>
         {#each visibleCards as card}
+          {@const links = tileLinks(card)}
           {@const tileImage = section === 'places' ? placeImages[card.id] : undefined}
-          <article class="entity-card" class:place-tile={section === 'places'} class:has-photo={!!tileImage} style={card.accent ? `--card-accent:${card.accent}` : ''} style:--place-photo={tileImage ? `url("${tileImage.src}")` : undefined}>
+          <article class="entity-card index-tile" class:place-tile={section === 'places'} class:has-photo={!!tileImage} style={card.accent ? `--card-accent:${card.accent}` : ''} style:--place-photo={tileImage ? `url("${tileImage.src}")` : undefined}>
             <a class="card-record-link" href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>
               {#if section === 'places'}
                 {#if tileImage}
@@ -658,19 +677,21 @@
                   <div class="card-footer"><span>{filtering ? filingCount(card) : card.count}</span><b>View record <Icon name="arrow_forward" /></b></div>
                 </div>
               {:else}
+              <div class="index-card-content">
               {#if card.logo}<span class="card-logo" class:inverse-logo={card.id === 'utah-republican-party'}><img src={card.logo} alt={`${card.title} logo`} /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="card-avatar" />{:else if section === 'offices'}<span class="card-avatar icon-avatar" aria-hidden="true"><Icon name="workspace_premium" /></span>{:else}<span class="card-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}
               {#if !omitColumns.includes('party')}<small>{section === 'people' ? card.columns[1] : card.eyebrow}</small>{/if}<h2>{card.title}</h2><p>{section === 'people' ? card.columns[0] : card.meta}</p>{#if showStatus}<p class="candidate-status">Status: {card.statuses.join(' · ')}</p>{/if}<div class="card-footer"><span>{section === 'people' || filtering ? filingCount(card) : card.count}{#if !omitColumns.includes('years') && section === 'people'} · {card.years.join(', ')}{/if}</span><b>View record <Icon name="arrow_forward" /></b></div>
+              </div>
               {/if}
             </a>
-            {#if section === 'places'}
-              <div class="place-card-utilities">
+            {#if section === 'places' || resolveEntityLinks(links).length}
+              <div class="place-card-utilities index-card-utilities">
                 {#if tileImage}
                   <details class="tile-photo-credit">
                     <summary>Photo credit<span class="sr-only"> for {card.title}</span></summary>
                     <PhotoCredit image={tileImage} className="tile-photo-credit-content" />
                   </details>
                 {/if}
-                <EntityLinks links={placeEntityLinks(card)} entityName={card.title} />
+                <EntityLinks {links} entityName={card.title} />
               </div>
             {/if}
           </article>
