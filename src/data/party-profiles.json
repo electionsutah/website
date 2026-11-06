@@ -1,0 +1,113 @@
+{
+  "utah-democratic-party": {
+    "description": "Utah’s Democratic Party organizes candidates, volunteers, and voters for elections across the state.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://vote.utah.gov/more-information-on-utah-political-parties/"
+      }
+    ]
+  },
+  "utah-republican-party": {
+    "description": "Utah’s Republican Party organizes candidates, local party organizations, and voters for elections across the state.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://vote.utah.gov/more-information-on-utah-political-parties/"
+      }
+    ]
+  },
+  "utah-constitution-party": {
+    "description": "A Utah political party that nominates candidates under the Constitution Party name.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://vote.utah.gov/more-information-on-utah-political-parties/"
+      }
+    ]
+  },
+  "green-party-of-utah": {
+    "description": "Utah’s Green Party organizes candidates and supporters for participation in state and local elections.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://vote.utah.gov/more-information-on-utah-political-parties/"
+      }
+    ]
+  },
+  "independent-american-party": {
+    "description": "A recognized Utah political party that fields candidates under the Independent American Party name.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://vote.utah.gov/more-information-on-utah-political-parties/"
+      }
+    ]
+  },
+  "utah-libertarian-party": {
+    "description": "Utah’s Libertarian Party organizes candidates and supporters for participation in elections across the state.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://vote.utah.gov/more-information-on-utah-political-parties/"
+      }
+    ]
+  },
+  "forward-party-of-utah": {
+    "description": "A Utah political party formed through the 2025 merger of the Utah Forward Party and United Utah Party.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://www.utahforwardparty.org/disclosures"
+      }
+    ]
+  },
+  "peoples-freedom-party": {
+    "description": "A recognized Utah political party listed in the state’s official political-party directory.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://vote.utah.gov/more-information-on-utah-political-parties/"
+      }
+    ]
+  },
+  "united-utah-party": {
+    "description": "A former Utah political party whose members approved merging with the Utah Forward Party in 2025. Its earlier candidates remain in this archive.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://www.utahforwardparty.org/disclosures"
+      }
+    ]
+  },
+  "pinecone": {
+    "description": "One of Fruit Heights’ two local, nonpartisan nominating caucuses for municipal candidates. It is separate from national political parties.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://www.fruitheights.gov/DocumentCenter/View/2723/caucus2023"
+      }
+    ]
+  },
+  "sagebrush": {
+    "description": "One of Fruit Heights’ two local, nonpartisan nominating caucuses for municipal candidates. It is separate from national political parties.",
+    "sources": [
+      {
+        "label": "Source",
+        "url": "https://www.fruitheights.gov/DocumentCenter/View/2723/caucus2023"
+      }
+    ]
+  },
+  "nonpartisan": {
+    "description": "An election affiliation used for candidates in contests conducted without a political-party nomination, including municipal and judicial elections.",
+    "sources": []
+  },
+  "unaffiliated": {
+    "description": "An affiliation for candidates recorded as running without a political-party affiliation. It does not identify a separate party organization.",
+    "sources": []
+  },
+  "not-reported": {
+    "description": "The source record did not supply a party affiliation. This label does not establish whether the candidate belonged to a political party.",
+    "sources": []
+  }
+}

@@ -10,9 +10,10 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = join(root, 'dist');
 
 const server = await createServer({ root, configFile: false, logLevel: 'silent', server: { middlewareMode: true } });
-let entities, resultsLib, namesLib, slugsLib, peopleLib;
+let entities, resultsLib, namesLib, slugsLib, peopleLib, profilesLib;
 try {
   entities = await server.ssrLoadModule('/src/lib/entities.ts');
+  profilesLib = await server.ssrLoadModule('/src/lib/entity-profiles.ts');
   [resultsLib, namesLib, slugsLib, peopleLib] = await Promise.all(['/src/lib/results.ts', '/src/lib/result-names.ts', '/src/lib/contest-slugs.ts', '/src/lib/result-people.ts'].map((id) => server.ssrLoadModule(id)));
 } finally {
   await server.close();
@@ -45,9 +46,9 @@ const routes = [
   { path: '/people/', title: 'People', description: `${plural(people.length, 'candidate')} who have filed to run for office in Utah, with the offices they sought, their parties, and official sources.`, image: 'people' },
   ...people.map((person) => ({ path: `/people/${person.id}/`, title: person.name, description: personDescription(person), image: 'people', type: 'profile' })),
   { path: '/offices/', title: 'Offices', description: `${plural(offices.length, 'Utah office')}, from U.S. House to local school boards, and every candidate who has filed to run for each one.`, image: 'offices' },
-  ...offices.map((office) => ({ path: `/offices/${office.id}/`, title: office.name, description: `Who has run for ${office.name} in Utah: ${filed(office.filings, office.years)}, with parties, filing status, and official sources.`, image: 'offices' })),
+  ...offices.map((office) => ({ path: `/offices/${office.id}/`, title: office.name, description: `${office.name}: ${profilesLib.officeProfile(office, entities.placesById).description} Candidate filings and communities served.`, image: 'offices' })),
   { path: '/parties/', title: 'Parties', description: 'Utah’s recognized and historical political parties, with their candidates, the offices they sought, and links to official sources.', image: 'parties' },
-  ...parties.map((party) => ({ path: `/parties/${party.id}/`, title: party.name, description: `${party.name}${party.recognized ? ', a recognized Utah political party' : party.historical ? ', a historical Utah political party' : ', a party in Utah elections'}: ${filed(party.filings, party.years)}, with candidates, offices, and official sources.`, image: 'parties' })),
+  ...parties.map((party) => ({ path: `/parties/${party.id}/`, title: party.name, description: `${profilesLib.partyProfile(party).description} Browse candidates and official sources.`, image: 'parties' })),
   { path: '/places/', title: 'Places', description: 'Elections in every Utah county and city, with the local offices on the ballot, the candidates who filed, and links to official sources.', image: 'places' },
   ...places.map((place) => ({ path: `/places/${place.id}/`, title: place.name, description: `Elections in ${place.type === 'City' ? `${place.name}, ${place.county} County` : `${place.name}, Utah`}: ${plural(place.offices.length, 'office')} and ${filed(place.filings, place.years)}, with candidates and official sources.`, image: 'places' })),
   { path: '/docs/', title: 'Documentation', description: 'How to use Elections Utah’s open election data: downloads, the data schema, a glossary, and an MCP connector for AI assistants.', image: 'docs' },

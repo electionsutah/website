@@ -20,6 +20,7 @@
     "editor:prepare": "node editor/prepare.mjs",
     "check:editor": "node editor/check.mjs",
     "editor:install": "npm --prefix editor ci",
+    "check:profiles": "node scripts/check-entity-profiles.mjs",
     "check:links": "node scripts/check-entity-links.mjs && node scripts/check-office-links.mjs && node scripts/check-party-links.mjs && node scripts/check-person-links.mjs && node scripts/check-place-links.mjs"
   },
   "devDependencies": {

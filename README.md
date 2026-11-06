@@ -161,6 +161,28 @@ After generating a report and its matching JSON file, run
 individual HTML paths to update only selected reports. Reports are self-contained
 for offline review, including filtering and pagination.
 
+## Office descriptions and communities
+
+Office and affiliation descriptions are defined in `src/lib/entity-profiles.ts`
+and `src/data/party-profiles.json`. Office communities come from official UGRC
+boundaries, not candidates’ mailing addresses. `src/data/office-communities.json`
+retains GIS source URLs, retrieval dates, and input hashes. Rebuild with:
+
+```sh
+uv run --with shapely --with pyproj python scripts/generate-office-communities.py
+```
+
+Add `--use-cache` to reuse ignored `.firecrawl/office-communities/` downloads.
+Full-resolution polygons are projected to EPSG:26912. Overlaps below one hectare
+are omitted as possible boundary slivers, and municipalities with less than
+99.5% overlap are marked “Partial.” This is a geographic guide, not an address-level
+voting eligibility tool. Municipal names do not enumerate every settlement.
+District dates are displayed; these boundaries are not applied retroactively to
+archived elections. Judicial county coverage follows the Utah Courts district
+map. Unverified local wards, school-board seats, and special-purpose service
+areas are explicitly identified rather than populated from candidate addresses.
+Run `npm run check:profiles` to check coverage and those distinctions.
+
 ## Directory routes
 
 Current campaign information is maintained separately in

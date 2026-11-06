@@ -1,3 +1,4 @@
+import { officeProfile, partyProfile } from '../lib/entity-profiles';
 // Read-only MCP server for Elections Utah. It reuses the site's own data
 // libraries, so tools return the same records the website shows.
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
@@ -106,12 +107,13 @@ function record(id: string): { title: string; url: string; text: string; metadat
   if (kind === 'office') {
     const office = officesById.get(key);
     if (!office) return null;
-    return { title: office.name, url: `${SITE_URL}/offices/${office.id}/`, metadata: { type: 'office' }, text: [`# ${office.name}`, `Sections: ${office.sections.join(', ')}`, `Years with filings: ${office.years.join(', ')}`, ...(office.links.length ? ['', 'Official office links:', ...office.links.map(link => `- ${link.label || 'Social account'}: ${link.url}${link.source ? ` (source: ${link.source}; verified ${link.verifiedOn})` : ''}`)] : []), ...(office.resources.length ? ['', 'Resources:', ...office.resources.map(item => `- ${item.label}: ${item.url}`)] : []), '', 'Candidate filings:', ...office.filings.map(filing => `${filingLine(filing).replace(/^- /, `- ${filing.name}, `)}`)].join('\n') };
+    const profile = officeProfile(office, placesById);
+    return { title: office.name, url: `${SITE_URL}/offices/${office.id}/`, metadata: { type: 'office' }, text: [`# ${office.name}`, profile.description, `Jurisdiction: ${profile.scope}`, profile.note, profile.boundaryPeriod ?? '', `Communities served: ${profile.communities.map(c => c.name + (c.partial ? ' (part)' : '')).join(', ') || profile.scope}`, ...profile.sources.map(source=>`Source: ${source.url}`), `Sections: ${office.sections.join(', ')}`, `Years with filings: ${office.years.join(', ')}`, ...(office.links.length ? ['', 'Official office links:', ...office.links.map(link => `- ${link.label || 'Social account'}: ${link.url}${link.source ? ` (source: ${link.source}; verified ${link.verifiedOn})` : ''}`)] : []), ...(office.resources.length ? ['', 'Resources:', ...office.resources.map(item => `- ${item.label}: ${item.url}`)] : []), '', 'Candidate filings:', ...office.filings.map(filing => `${filingLine(filing).replace(/^- /, `- ${filing.name}, `)}`)].join('\n') };
   }
   if (kind === 'party') {
     const party = partiesById.get(key);
     if (!party) return null;
-    return { title: party.name, url: `${SITE_URL}/parties/${party.id}/`, metadata: { type: 'party' }, text: [`# ${party.name}`, `Affiliation: ${partyLabel(party)}`, party.localCaucus && `${party.localCaucus.history} Source: ${party.localCaucus.source}`, `Recognized in Utah: ${party.recognized ? 'yes' : 'no'}${party.historical ? ' (historical)' : ''}`, party.website && `Website: ${party.website}`, ...(party.links ?? []).map(link => `Official link: ${link.url}${link.source ? ` (source: ${link.source}; verified ${link.verifiedOn})` : ''}`), `Candidate filings: ${party.filings.length} across ${party.years.join(', ')}`, '', 'Most recent filings:', ...party.filings.slice().sort((a, b) => b.year - a.year).slice(0, 50).map(filing => `- ${filing.year}: ${filing.name}, ${filing.officeName}`)].filter(Boolean).join('\n') };
+    return { title: party.name, url: `${SITE_URL}/parties/${party.id}/`, metadata: { type: 'party' }, text: [`# ${party.name}`, partyProfile(party).description, `Affiliation: ${partyLabel(party)}`, party.localCaucus && `${party.localCaucus.history} Source: ${party.localCaucus.source}`, `Recognized in Utah: ${party.recognized ? 'yes' : 'no'}${party.historical ? ' (historical)' : ''}`, party.website && `Website: ${party.website}`, ...(party.links ?? []).map(link => `Official link: ${link.url}${link.source ? ` (source: ${link.source}; verified ${link.verifiedOn})` : ''}`), `Candidate filings: ${party.filings.length} across ${party.years.join(', ')}`, '', 'Most recent filings:', ...party.filings.slice().sort((a, b) => b.year - a.year).slice(0, 50).map(filing => `- ${filing.year}: ${filing.name}, ${filing.officeName}`)].filter(Boolean).join('\n') };
   }
   if (kind === 'place') {
     const place = placesById.get(key);
