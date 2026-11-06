@@ -476,6 +476,14 @@
     <article class="entity-detail" style={`--party-color:${party.color}`}>
       <Breadcrumbs parent={{ label: 'Parties', href: '/parties/' }} current={party.name} {navigate} />
       <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} ${party.localCaucus ? 'symbol' : 'logo'}`} /></div>{:else}<div class="party-mark" aria-hidden="true">{party.shortName.charAt(0)}</div>{/if}<div class="party-hero-detail"><p class="eyebrow">{partyLabel(party)}</p><div class="entity-heading-row"><h1>{party.name}</h1><EntityLinks links={[{ url: party.website }]} entityName={party.name} /></div><p class="detail-summary">{party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'}</p>
+        {#if party.id === 'united-utah-party'}
+          <p class="detail-summary"><strong>Historical note:</strong> On April 26, 2025, members approved the merger of the United Utah Party (UUP) with the Utah Forward Party to form the <a href={hrefFor('parties', 'forward-party-of-utah')} onclick={(event) => open(event, hrefFor('parties', 'forward-party-of-utah'))}>Forward Party of Utah</a>.</p>
+        {:else if party.id === 'forward-party-of-utah'}
+          <p class="detail-summary"><strong>Historical note:</strong> On April 26, 2025, members approved the merger of the <a href={hrefFor('parties', 'united-utah-party')} onclick={(event) => open(event, hrefFor('parties', 'united-utah-party'))}>United Utah Party (UUP)</a> with the Utah Forward Party to form the Forward Party of Utah.</p>
+        {/if}
+        {#if party.id === 'united-utah-party' || party.id === 'forward-party-of-utah'}
+          <a class="source-link" href="https://www.kuer.org/politics-government/2025-04-26/seeing-discontent-in-state-politics-united-utah-and-utah-forward-vote-to-merge" target="_blank" rel="noreferrer">Read KUER’s reporting <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
+        {/if}
         {#if party.localCaucus}
           <section class="party-caucus-history" aria-labelledby="party-history-title">
             <p class="eyebrow compact">A Fruit Heights tradition</p>
