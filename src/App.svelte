@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick } from 'svelte';
   import Icon from './Icon.svelte';
+  import Notifications from './Notifications.svelte';
   import Labs from './Labs.svelte';
   import candidateYamlUrl from './data/2026-candidates.yml?url';
   import historicalDataUrl from './data/historical-candidates.json?url';
@@ -297,3 +298,4 @@
   <p>Open election data for a more informed Utah.</p>
   <div class="footer-links"><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noreferrer">CC0 1.0 Public Domain<span class="sr-only"> (opens in new tab)</span></a><a href={isHome ? '#top' : '/'} onclick={(event) => { if (!isHome) open(event, '/'); }}>{isHome ? 'Back to top' : 'Home'} <Icon name="arrow_upward" /></a></div>
 </footer>
+<Notifications />

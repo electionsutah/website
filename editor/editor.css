@@ -1,0 +1,23 @@
+#connection { position: fixed; inset: auto 0 0; z-index: 10000; display: flex; gap: 1rem; justify-content: space-between; padding: 10px 20px; background: #183d39; color: #fff; font: 13px/1.5 system-ui, sans-serif; }
+#connection a { color: #fff; white-space: nowrap; }
+#connection.connection-error { background: #932d23; }
+.repository-record { padding-bottom: 45px; font: 14px/1.6 system-ui, sans-serif; color: #222; }
+.editor-note { background: #eaf2ef; border-left: 3px solid #267568; padding: 14px; }
+.editor-field { padding: 18px 0; border-bottom: 1px solid #d7ddd9; }
+.editor-field.has-override { border-left: 3px solid #267568; padding-left: 12px; }
+.editor-field-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+.editor-field label { font-weight: 650; text-transform: capitalize; }
+.editor-field select, .editor-field input, .editor-field textarea { font: inherit; border: 1px solid #87968e; border-radius: 4px; padding: 8px; background: white; color: #202923; }
+.editor-field > input, .editor-field > textarea, .editor-field > select { width: 100%; box-sizing: border-box; }
+.editor-field :disabled { background: #f4f6f4; color: #58635e; }
+.editor-field textarea { resize: vertical; }
+.editor-field :focus-visible { outline: 3px solid #267568; outline-offset: 2px; }
+.editor-source, .editor-context { margin: 8px 0; font-size: 12px; }
+.editor-source summary, .editor-context summary { cursor: pointer; }
+.repository-record pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: 10px; background: #f1f3f1; max-height: 250px; overflow: auto; }
+.editor-error { color: #932d23; }
+.editor-addresses fieldset { border: 1px solid #d7ddd9; margin: 10px 0; padding: 12px; }
+.editor-addresses label { display: block; margin-bottom: 10px; }
+.editor-addresses input { display: block; width: 100%; box-sizing: border-box; }
+.editor-addresses button { padding: 8px 12px; cursor: pointer; }
+@media (max-width: 600px) { .editor-field-heading { align-items: stretch; flex-direction: column; gap: 6px; } #connection { font-size: 11px; padding: 6px; } }

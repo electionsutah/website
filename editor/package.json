@@ -1,0 +1,12 @@
+{
+  "name": "elections-utah-local-editor",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "decap-cms": "3.17.3",
+    "decap-server": "3.11.6"
+  }
+}

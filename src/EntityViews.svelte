@@ -15,6 +15,18 @@
   import placeImageData from './data/place-images.json';
   import placeEmblemData from './data/place-emblems.json';
   import personProfiles from './data/person-enrichment.json';
+  import { profileFor, type PersonProfile } from './lib/editorial';
+  import { contactAddresses, addressMapUrl, isMailingAddress, type ContactAddress } from './lib/contact-addresses';
+  import { notify } from './lib/notifications';
+
+  async function copyMailingAddress(address: ContactAddress) {
+    try {
+      await navigator.clipboard.writeText(address.value);
+      notify('Mailing address copied to clipboard.');
+    } catch {
+      notify('Could not copy the address. Select the address text and copy it manually.');
+    }
+  }
   import EntityViews from './EntityViews.svelte';
   import { officeMap, placeMap } from './lib/boundary-maps';
   import BoundaryMap from './BoundaryMap.svelte';
@@ -90,14 +102,6 @@
   const placeImages = placeImageData as Record<string, PlaceImage>;
   /** County and city seals, logos, and flags from Wikimedia Commons (scripts/fetch-place-emblems.py). */
   const placeEmblems = placeEmblemData as Record<string, PlaceImage & { kind: string; file: string }>;
-  type PersonProfile = {
-    sourceUrl: string;
-    lastVerified: string;
-    biography: string;
-    priorities: string[];
-    contact: Partial<Contact>;
-    resources: { label: string; description: string; url: string }[];
-  };
   const personProfilesById = personProfiles as Record<string, PersonProfile>;
 
   const labels = {
@@ -108,7 +112,7 @@
   };
 
   $: person = section === 'people' && id ? peopleById.get(id) : undefined;
-  $: personProfile = person ? personProfilesById[person.id] : undefined;
+  $: personProfile = person ? profileFor(person, personProfilesById) : undefined;
   $: office = section === 'offices' && id ? officesById.get(id) : undefined;
   $: party = section === 'parties' && id ? partiesById.get(id) : undefined;
   $: place = section === 'places' && id ? placesById.get(id) : undefined;
@@ -139,8 +143,7 @@
   $: contact = personProfile?.contact ?? contactFiling?.contact;
   $: contactItems = contact ? [
     contact.phone && { label: 'Phone', text: contact.phone, href: `tel:${contact.phone}`, icon: 'call', external: false },
-    contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'send', external: false },
-    contact.pressEmail && { label: 'Press email', text: contact.pressEmail, href: `mailto:${contact.pressEmail}`, icon: 'send', external: false }
+    contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'send', external: false }
   ].filter((item) => !!item) : [];
   $: contactLinks = contact ? [
     { url: contact.website || '' }, { url: contact.facebook || '' },
@@ -387,10 +390,15 @@
           {#if personPhoto}<PhotoCredit image={personPhoto} className="emblem-credit" />{/if}
           {#if contact && (personProfile || contactFiling)}
             <section class="person-contact" aria-label={`${person.name} contact information`}>
-              <div class="contact-heading"><span>{personProfile ? 'Campaign contact' : 'Public contact'}</span><small>{#if personProfile}Verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>{:else if contactFiling}{contactFiling.year} filing{/if}</small></div>
+              <div class="contact-heading"><span>{personProfile ? 'Campaign contact' : 'Public contact'}</span><small>{#if personProfile?.lastVerified}Verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>{:else if contactFiling}{contactFiling.year} filing{/if}</small></div>
               <div class="contact-grid">
-                {#if contact.address}<a class="contact-item contact-address" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.address)}`} target="_blank" rel="noreferrer"><small>{personProfile ? 'Campaign office' : 'Address'}</small><strong>{contact.address}</strong><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/if}
-                {#if contact.mailingAddress}<div class="contact-item contact-address"><small>Contribution mailing address</small><strong>{contact.mailingAddress}</strong></div>{/if}
+                {#each contactAddresses(contact.address) as address}
+                  {#if isMailingAddress(address)}
+                    <button type="button" class="contact-item contact-address contact-copy" onclick={() => copyMailingAddress(address)} aria-label={`Copy ${address.label || 'mailing address'}: ${address.value}`}><small>{address.label || 'Mailing address'} · Copy address</small><strong>{address.value}</strong><b><Icon name="copy_content" /></b></button>
+                  {:else}
+                  <a class="contact-item contact-address" href={addressMapUrl(address)} target="_blank" rel="noreferrer"><small>{address.label || 'Address'}</small><strong>{address.value}</strong><b><Icon name="arrow_outward" /><span class="sr-only"> (opens Google Maps in new tab)</span></b></a>
+                  {/if}
+                {/each}
                 {#each contactItems as item, index}
                   <a class="contact-item" class:wide={index === contactItems.length - 1 && contactItems.length % 2 === 1} href={item.href} target={item.external ? '_blank' : undefined} rel={item.external ? 'noreferrer' : undefined}><small>{item.label}</small><strong>{item.text}</strong><b><Icon name={item.icon} />{#if item.external}<span class="sr-only"> (opens in new tab)</span>{/if}</b></a>
                 {/each}
@@ -401,7 +409,7 @@
                   <EntityLinks links={contactLinks} entityName={person.name} />
                 </div>
               {/if}
-              {#if personProfile}<a class="contact-source" href={personProfile.sourceUrl} target="_blank" rel="noreferrer">Source: campaign website <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}
+              {#if personProfile?.sourceUrl}<a class="contact-source" href={personProfile.sourceUrl} target="_blank" rel="noreferrer">Source: profile information <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}
             </section>
           {/if}
         </div>
@@ -413,12 +421,12 @@
       </section>
       {#if personProfile}
         <section class="record-section person-profile" aria-labelledby="person-profile-title">
-          <div class="record-heading"><p class="eyebrow compact">Campaign website information</p><h2 id="person-profile-title">About {person.name}</h2></div>
+          <div class="record-heading"><p class="eyebrow compact">Profile information</p><h2 id="person-profile-title">About {person.name}</h2></div>
           <p class="person-biography">{personProfile.biography}</p>
-          <h3>Published campaign priorities</h3>
-          <ul>{#each personProfile.priorities as priority}<li>{priority}</li>{/each}</ul>
+          {#if personProfile.priorities.length}<h3>Published campaign priorities</h3>
+          <ul>{#each personProfile.priorities as priority}<li>{priority}</li>{/each}</ul>{/if}
           <div class="office-resources" role="group" aria-label={`${person.name} campaign resources`}>{#each personProfile.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>
-          <p class="profile-source">Summarized from <a href={personProfile.sourceUrl} target="_blank" rel="noreferrer">the candidate’s campaign website<span class="sr-only"> (opens in new tab)</span></a>, verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>.</p>
+          {#if personProfile.sourceUrl}<p class="profile-source">Source: <a href={personProfile.sourceUrl} target="_blank" rel="noreferrer">profile information<span class="sr-only"> (opens in new tab)</span></a>{#if personProfile.lastVerified}, verified <time datetime={personProfile.lastVerified}>{formatDate(personProfile.lastVerified)}</time>{/if}.</p>{/if}
         </section>
       {/if}
       <section class="record-section">

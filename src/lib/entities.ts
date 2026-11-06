@@ -3,9 +3,11 @@ import historicalRows from '../data/historical-candidates.json';
 // County, municipal, school-board, and special-district candidates from the state results feed (2024 on).
 import localRows from '../data/local-candidates.json';
 import candidateDocuments from '../data/candidate-documents.json';
+import { applyFilingChanges, editorialData } from './editorial';
+import type { ContactAddress } from './contact-addresses';
 
 export type Contact = {
-  address: string;
+  address: string | ContactAddress[];
   phone: string;
   email: string;
   website: string;
@@ -13,8 +15,6 @@ export type Contact = {
   instagram?: string;
   twitter: string;
   bluesky?: string;
-  pressEmail?: string;
-  mailingAddress?: string;
 };
 
 export type Filing = {
@@ -260,7 +260,7 @@ export function sourceAvailable(url: string): boolean {
 
 type ArchiveRow = (typeof historicalRows)[number];
 
-export const filings: Filing[] = [
+export const importedFilings: Filing[] = [
   ...[...historicalRows, ...(localRows as ArchiveRow[])].map((row) => {
     const officeName = cleanOfficeName(row.office);
     const party = partyDetails(row.party, row.section);
@@ -322,7 +322,9 @@ export const filings: Filing[] = [
   })
 ];
 
-export const currentDatasetUpdated = filings.filter((filing) => filing.year === 2026)
+export const filings: Filing[] = importedFilings.map(filing => applyFilingChanges(filing, editorialData.filings[filing.recordId]));
+
+export const currentDatasetUpdated = importedFilings.filter((filing) => filing.year === 2026)
   .map((filing) => filing.lastUpdated).sort().at(-1) ?? '';
 
 function naturalSort<T>(items: T[], getter: (item: T) => string): T[] {

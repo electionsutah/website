@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "people": {
+    "ben-mcadams": {
+      "lastVerified": "2026-11-06",
+      "contact.address": [
+        {
+          "label": "Campaign Office",
+          "value": "McAdams Campaign Office, c/o Utah Democratic Party, 825 N 300 W, C400, Salt Lake City, UT 84103"
+        },
+        {
+          "label": "Mailing Address",
+          "value": "Friends of Ben McAdams, P.O. Box 522340, Salt Lake City, UT 84152"
+        }
+      ]
+    }
+  },
+  "filings": {}
+}

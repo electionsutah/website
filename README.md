@@ -11,6 +11,14 @@ npm install
 npm run dev
 ```
 
+## Local content editor
+
+The Decap proof of concept edits people and filing records alongside automated
+imports, with manual changes preserved in a separate override file. Run
+`npm run editor:install` once, then `npm run editor` and open
+`http://127.0.0.1:8080`. See [editor/README.md](editor/README.md) for the editing
+workflow, data connections, and current scope.
+
 ## Included content
 
 - 1,928 searchable filing records from the available 2017–2026 sources
@@ -138,9 +146,13 @@ Current campaign information is maintained separately in
 profile records its campaign source and verification date, a short biography,
 attributed priorities, contact details, and resource links. Profile contacts
 take precedence on person pages without replacing contacts in archived filings
-or changing the state's candidate status and dataset update date. Use
-`pressEmail` for a published media contact rather than treating it as a general
-campaign email.
+or changing the state's candidate status and dataset update date. All contact
+email addresses use the shared `email` field. Postal and physical addresses use
+the shared `address` field: a list of `{ "label": "Campaign office", "value": "…" }`
+entries when multiple addresses are published. Original single-address strings
+remain supported. Physical addresses open Google Maps; mailing addresses copy
+to the clipboard with a confirmation at the bottom of the viewport. Mailing
+addresses are identified by a mailing/postal label or a P.O. Box value.
 
 The app uses shareable client-side routes that follow the original Elections
 Utah information architecture:

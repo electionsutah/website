@@ -9,3 +9,6 @@ __pycache__
 
 # Public source responses cached during data imports
 .firecrawl/
+
+# Regenerated Decap source snapshots; manual edits live in src/data/editor-overrides.json
+editor/.workspace/

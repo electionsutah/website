@@ -15,7 +15,11 @@
     "check:shifts": "node scripts/check-shifts.mjs",
     "refresh:boundaries": "python3 scripts/import-legislative-boundaries.py",
     "check:map": "node scripts/check-legislative-map.mjs",
-    "mcp": "node scripts/mcp-dev.mjs"
+    "mcp": "node scripts/mcp-dev.mjs",
+    "editor": "node editor/dev.mjs",
+    "editor:prepare": "node editor/prepare.mjs",
+    "check:editor": "node editor/check.mjs",
+    "editor:install": "npm --prefix editor ci"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "5.1.1",
