@@ -12,7 +12,7 @@
   import SearchField from './SearchField.svelte';
   import { currentDatasetUpdated, offices as officeEntities, parties as partyEntities, people as peopleEntities, totals } from './lib/entities';
   import { formatCount, formatDate } from './lib/format';
-  import { browseUrl, matchesQuery, queryTokens, searchText } from './lib/search';
+  import { browseUrl, matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
 
   let menuOpen = false;
   let menuButton: HTMLButtonElement;
@@ -86,7 +86,7 @@
   $: isKnownRoute = isHome || ['people', 'offices', 'parties', 'places', 'elections', 'docs', 'labs'].includes(routeSection);
 
   $: source = directory === 'People' ? homePeople : homeOffices;
-  $: filtered = source.filter((item) => matchesQuery(item.text, queryTokens(query)));
+  $: filtered = rankByTitle(source.filter((item) => matchesQuery(item.text, queryTokens(query))), queryTokens(query), (item) => item.name);
   $: visible = filtered.slice(0, 12);
 
   function navigate(href: string) {

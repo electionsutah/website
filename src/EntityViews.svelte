@@ -44,7 +44,7 @@
     type Person
   } from './lib/entities';
   import { formatCount, formatDate } from './lib/format';
-  import { matchesQuery, queryTokens, searchText } from './lib/search';
+  import { matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
   import { buildFacets, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
 
   export let section: 'people' | 'offices' | 'parties' | 'places';
@@ -283,7 +283,8 @@
     })
     .filter((card) => !filtering || card.matching.length);
   $: facets = buildFacets(searchedCards, selection);
-  $: sortedCards = sortRows(matchedCards, sort, sortValue, (card) => card.title);
+  $: sortedCards = sort ? sortRows(matchedCards, sort, sortValue, (card) => card.title)
+    : rankByTitle(matchedCards, queryTokens(query), (card) => card.title);
   $: visibleCards = sortedCards.slice(0, limit);
 
   function sortValue(card: (typeof matchedCards)[number], key: string): string | number {

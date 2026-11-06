@@ -5,7 +5,7 @@
   import { onMount } from 'svelte';
   import { elections, offices, parties, people, places } from './lib/entities';
   import { formatCount } from './lib/format';
-  import { browseUrl, matchesQuery, queryTokens, searchText } from './lib/search';
+  import { browseUrl, matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
   import { isApplePlatform } from './lib/shortcuts';
   import placeEmblems from './data/place-emblems.json';
 
@@ -89,7 +89,7 @@
 
   $: tokens = queryTokens(query);
   $: results = groups.map((group) => {
-    const matches = tokens.length ? group.items.filter((item) => matchesQuery(item.text, tokens)) : [];
+    const matches = tokens.length ? rankByTitle(group.items.filter((item) => matchesQuery(item.text, tokens)), tokens, (item) => item.title) : [];
     return { ...group, matches, visible: matches.slice(0, 6), viewAllHref: browseUrl(group.browseHref, query) };
   });
   $: total = results.reduce((sum, group) => sum + group.matches.length, 0);

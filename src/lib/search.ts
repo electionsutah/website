@@ -28,6 +28,18 @@ export function matchesQuery(text: string, tokens: string[]) {
   return tokens.every((token) => haystack.includes(token));
 }
 
+/** Prefer an entity's own title over related records; keep existing order within each tier. */
+export function rankByTitle<T>(items: T[], tokens: string[], title: (item: T) => string): T[] {
+  if (!tokens.length) return items;
+  const phrase = tokens.join(' ');
+  return items.map((item) => {
+    const normalized = title(item).toLowerCase().trim().replace(/\s+/g, ' ');
+    const matchedWords = tokens.filter((token) => normalized.includes(token)).length;
+    const rank = normalized === phrase ? 3 : matchedWords === tokens.length ? 2 : matchedWords ? 1 : 0;
+    return { item, rank };
+  }).sort((a, b) => b.rank - a.rank).map(({ item }) => item);
+}
+
 /** Directory index URL that opens with the given search applied. */
 export function browseUrl(path: string, query: string) {
   const trimmed = query.trim();

@@ -8,7 +8,7 @@
   import SortHeader from './SortHeader.svelte';
   import { currentDatasetUpdated, elections, electionsByYear, type ElectionCycle } from './lib/entities';
   import { formatCount, formatDate } from './lib/format';
-  import { matchesQuery, queryTokens, searchText } from './lib/search';
+  import { matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
   import { buildFacets, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
 
   export let id = '';
@@ -54,7 +54,8 @@
     .map((cycle) => ({ ...cycle, matching: matchingFilings(cycle.filings, selection) }))
     .filter((cycle) => !filtering || cycle.matching.length);
   $: facets = buildFacets(searchedCycles, selection);
-  $: sortedCycles = sortRows(matchedCycles, sort, sortValue, (cycle) => String(cycle.year));
+  $: sortedCycles = sort ? sortRows(matchedCycles, sort, sortValue, (cycle) => String(cycle.year))
+    : rankByTitle(matchedCycles, queryTokens(indexQuery), (cycle) => String(cycle.year));
 
   function sortValue(cycle: (typeof matchedCycles)[number], key: string): string | number {
     if (key === 'year') return cycle.year;
