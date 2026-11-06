@@ -2,6 +2,8 @@
   import { tick } from 'svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
   import Icon from './Icon.svelte';
+  import EntityLinks from './EntityLinks.svelte';
+  import { placeEntityLinks, type EntityLink } from './lib/entity-links';
   import { anchoredPopover } from './lib/anchored-popover';
   import { sentenceExcerpt } from './lib/sentence-excerpt';
   import SearchField from './SearchField.svelte';
@@ -137,13 +139,13 @@
   $: contactItems = contact ? [
     contact.phone && { label: 'Phone', text: contact.phone, href: `tel:${contact.phone}`, icon: 'call', external: false },
     contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'send', external: false },
-    contact.pressEmail && { label: 'Press email', text: contact.pressEmail, href: `mailto:${contact.pressEmail}`, icon: 'send', external: false },
-    contact.website && { label: 'Website', text: externalUrl(contact.website), href: externalUrl(contact.website), icon: 'arrow_outward', external: true },
-    contact.facebook && { label: 'Social', text: 'Facebook', href: externalUrl(contact.facebook), icon: 'arrow_outward', external: true },
-    contact.instagram && { label: 'Social', text: 'Instagram', href: externalUrl(contact.instagram), icon: 'arrow_outward', external: true },
-    contact.twitter && { label: 'Social', text: 'X / Twitter', href: externalUrl(contact.twitter), icon: 'arrow_outward', external: true },
-    contact.bluesky && { label: 'Social', text: 'Bluesky', href: externalUrl(contact.bluesky), icon: 'arrow_outward', external: true }
+    contact.pressEmail && { label: 'Press email', text: contact.pressEmail, href: `mailto:${contact.pressEmail}`, icon: 'send', external: false }
   ].filter((item) => !!item) : [];
+  $: contactLinks = contact ? [
+    { url: contact.website || '' }, { url: contact.facebook || '' },
+    { url: contact.instagram || '' }, { url: contact.twitter || '' },
+    { url: contact.bluesky || '' }
+  ] satisfies EntityLink[] : [];
 
   // Within a scope, each person keeps only the scoped filings, so offices, years, and counts describe that scope.
   function scopedPeople(list: Filing[]): Person[] {
@@ -351,10 +353,6 @@
     navigate(href);
   }
 
-  function externalUrl(value: string) {
-    return /^https?:\/\//i.test(value) ? value : `https://${value}`;
-  }
-
   function formatInception(profile: PlaceProfile) {
     if (!profile.inceptionDate) return 'Not listed';
     const [year, month, day] = profile.inceptionDate.split('-').map(Number);
@@ -395,6 +393,7 @@
                   <a class="contact-item" class:wide={index === contactItems.length - 1 && contactItems.length % 2 === 1} href={item.href} target={item.external ? '_blank' : undefined} rel={item.external ? 'noreferrer' : undefined}><small>{item.label}</small><strong>{item.text}</strong><b><Icon name={item.icon} />{#if item.external}<span class="sr-only"> (opens in new tab)</span>{/if}</b></a>
                 {/each}
               </div>
+              <EntityLinks links={contactLinks} entityName={person.name} />
               {#if personProfile}<a class="contact-source" href={personProfile.sourceUrl} target="_blank" rel="noreferrer">Source: campaign website <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}
             </section>
           {/if}
@@ -461,7 +460,7 @@
   {:else if party}
     <article class="entity-detail" style={`--party-color:${party.color}`}>
       <Breadcrumbs parent={{ label: 'Parties', href: '/parties/' }} current={party.name} {navigate} />
-      <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} logo`} /></div>{:else}<div class="party-mark" aria-hidden="true">{party.shortName.charAt(0)}</div>{/if}<div><p class="eyebrow">{party.recognized ? 'Recognized Utah political party' : party.historical ? 'Historical Utah political party' : 'Election affiliation'}</p><h1>{party.name}</h1><p>{party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'}</p>{#if party.website}<a class="source-link" href={party.website} target="_blank" rel="noreferrer">Official party information <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}</div></header>
+      <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} logo`} /></div>{:else}<div class="party-mark" aria-hidden="true">{party.shortName.charAt(0)}</div>{/if}<div><p class="eyebrow">{party.recognized ? 'Recognized Utah political party' : party.historical ? 'Historical Utah political party' : 'Election affiliation'}</p><h1>{party.name}</h1><p>{party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'}</p><EntityLinks links={[{ url: party.website }]} entityName={party.name} /></div></header>
       <section class="detail-stats">
         <div><small>TOTAL FILINGS</small><strong>{formatCount(party.filings.length)}</strong></div>
         <div><small>PEOPLE</small><strong>{new Set(candidacies(party.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
@@ -477,9 +476,11 @@
           <section class="place-profile" aria-labelledby="place-profile-title">
             <div class="place-summary">
               <p class="eyebrow compact">Place profile</p>
-              <h2 id="place-profile-title">About {place.name}</h2>
+              <div class="place-profile-heading">
+                <h2 id="place-profile-title">About {place.name}</h2>
+                <EntityLinks links={placeEntityLinks(placeProfile)} entityName={place.name} />
+              </div>
               <p class="place-intro" use:sentenceExcerpt={placeProfile?.summary ?? `${place.name} is represented in the ${place.county} County election archive. A sourced local profile is not yet available.`}></p>
-              {#if placeProfile}<a href={placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">Read more on Wikipedia <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>{/if}
               {#if placeEmblem}<PhotoCredit image={placeEmblem} label={placeEmblem.kind.charAt(0).toUpperCase() + placeEmblem.kind.slice(1)} className="emblem-credit" />{/if}
             </div>
             <div class="place-data-grid">
@@ -514,12 +515,6 @@
                       <div class="place-town-fact">
                         <small>Founded / established</small>
                         <strong>{formatInception(placeProfile)}</strong>
-                      </div>
-                    {/if}
-                    {#if placeProfile?.officialWebsite}
-                      <div class="place-town-fact">
-                        <small>Official website</small>
-                        <strong><a href={placeProfile.officialWebsite} target="_blank" rel="noreferrer">{new URL(placeProfile.officialWebsite).hostname.replace(/^www\./, '')} <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a></strong>
                       </div>
                     {/if}
                     {#if place.type !== 'County' && (placeVoters || placeParticipation)}<p class="place-county-context">Voter registration and turnout are countywide figures; city figures are not available in these reports.</p>{/if}
@@ -614,34 +609,34 @@
         {#each visibleCards as card}
           {@const tileImage = section === 'places' ? placeImages[card.id] : undefined}
           <article class="entity-card" class:place-tile={section === 'places'} class:has-photo={!!tileImage} style={card.accent ? `--card-accent:${card.accent}` : ''} style:--place-photo={tileImage ? `url("${tileImage.src}")` : undefined}>
-            {#if section === 'places' && (card.officialWebsite || card.wikidataUrl || card.wikipediaUrl)}
-              <div class="place-source-links" role="group" aria-label={`${card.title} reference links`}>
-                {#if card.officialWebsite}
-                  <a href={card.officialWebsite} target="_blank" rel="noreferrer" aria-label={`${card.title} official website (opens in new tab)`} title="Official website">
-                    <Icon name="language" />
-                  </a>
-                {/if}
-                {#if card.wikidataUrl}
-                  <a href={card.wikidataUrl} target="_blank" rel="noreferrer" aria-label={`${card.title} on Wikidata (opens in new tab)`} title="Wikidata">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h2v14H2zM5 5h1v14H5zM7 5h3v14H7zM11 5h1v14h-1zM13 5h2v14h-2zM16 5h1v14h-1zM18 5h4v14h-4z" /></svg>
-                  </a>
-                {/if}
-                {#if card.wikipediaUrl}
-                  <a href={card.wikipediaUrl} target="_blank" rel="noreferrer" aria-label={`${card.title} on Wikipedia (opens in new tab)`} title="Wikipedia">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.1 6.5c.7 0 1.3.4 1.7 1.3L9.5 19h.9l2.3-5.4 2.2 5.4h.9l4.8-11.2c.4-.9.9-1.3 1.6-1.3V5h-5.3v1.5c1.2 0 1.7.3 1.3 1.3l-2.9 7-1.6-3.8 1.4-3.2c.4-.9.9-1.3 1.6-1.3V5h-5v1.5c1.2 0 1.6.4 1.2 1.3l-.2.5-.2-.5c-.4-.9 0-1.3 1.1-1.3V5H7.8v1.5c.7 0 1.2.4 1.6 1.3l2.3 5.3-1.1 2.7-3.4-8c-.4-.9.1-1.3 1.4-1.3V5H3.1z" /></svg>
-                  </a>
-                {/if}
-              </div>
-            {/if}
             <a class="card-record-link" href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>
-              {#if card.logo}<span class="card-logo" class:inverse-logo={card.id === 'utah-republican-party'} class:emblem-logo={section === 'places'}><img src={card.logo} alt={`${card.title} logo`} /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="card-avatar" />{:else if section === 'places' || section === 'offices'}<span class="card-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'places' ? 'location_on' : 'workspace_premium'} /></span>{:else}<span class="card-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}
+              {#if section === 'places'}
+                {#if tileImage}
+                  <span class="place-card-photo" aria-hidden="true"></span>
+                {:else}
+                  <span class="place-card-photo place-card-placeholder" aria-hidden="true"><Icon name="location_on" /></span>
+                {/if}
+                <div class="place-card-content">
+                  {#if card.logo}<span class="card-logo emblem-logo"><img src={card.logo} alt={`${card.title} logo`} /></span>{/if}
+                  <h2>{card.title}</h2>
+                  {#if card.meta.startsWith('City · ')}<p>{card.meta.slice(7)}</p>{/if}
+                  <div class="card-footer"><span>{filtering ? filingCount(card) : card.count}</span><b>View record <Icon name="arrow_forward" /></b></div>
+                </div>
+              {:else}
+              {#if card.logo}<span class="card-logo" class:inverse-logo={card.id === 'utah-republican-party'}><img src={card.logo} alt={`${card.title} logo`} /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="card-avatar" />{:else if section === 'offices'}<span class="card-avatar icon-avatar" aria-hidden="true"><Icon name="workspace_premium" /></span>{:else}<span class="card-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}
               {#if !omitColumns.includes('party')}<small>{section === 'people' ? card.columns[1] : card.eyebrow}</small>{/if}<h2>{card.title}</h2><p>{section === 'people' ? card.columns[0] : card.meta}</p>{#if showStatus}<p class="candidate-status">Status: {card.statuses.join(' · ')}</p>{/if}<div class="card-footer"><span>{section === 'people' || filtering ? filingCount(card) : card.count}{#if !omitColumns.includes('years') && section === 'people'} · {card.years.join(', ')}{/if}</span><b>View record <Icon name="arrow_forward" /></b></div>
+              {/if}
             </a>
-            {#if tileImage}
-              <details class="tile-photo-credit">
-                <summary>Photo credit<span class="sr-only"> for {card.title}</span></summary>
-                <PhotoCredit image={tileImage} className="tile-photo-credit-content" />
-              </details>
+            {#if section === 'places'}
+              <div class="place-card-utilities">
+                {#if tileImage}
+                  <details class="tile-photo-credit">
+                    <summary>Photo credit<span class="sr-only"> for {card.title}</span></summary>
+                    <PhotoCredit image={tileImage} className="tile-photo-credit-content" />
+                  </details>
+                {/if}
+                <EntityLinks links={placeEntityLinks(card)} entityName={card.title} />
+              </div>
             {/if}
           </article>
         {:else}
