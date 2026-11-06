@@ -293,7 +293,7 @@ main:focus,main h1:focus{outline:0}
 @media(max-width:700px),(min-width:1001px) and (max-width:1240px){.place-facts-row.has-boundary{grid-template-columns:1fr}.place-boundary{display:block}.place-boundary .boundary-frame{flex:none;aspect-ratio:var(--aspect);max-height:440px}}
 
 /* Place hero photo (Wikidata P18 via Wikimedia Commons), darkened so the text stays readable. */
-.place-tile.has-photo{background:linear-gradient(180deg,rgba(17,17,16,.5),rgba(17,17,16,.78)),var(--place-photo) center/cover no-repeat #3b3a36;color:#fff}
+.place-tile.has-photo{background:linear-gradient(180deg,rgba(17,17,16,.55),rgba(17,17,16,.8)),var(--place-photo) center/cover no-repeat #3b3a36;color:#fff}
 .place-tile.has-photo .card-record-link{height:100%;padding-bottom:44px}
 .place-tile.has-photo .card-record-link>small,.place-tile.has-photo .card-record-link h2,.place-tile.has-photo .card-record-link>p,.place-tile.has-photo .card-footer,.place-tile.has-photo .card-footer b{color:#fff}
 .place-tile.has-photo .card-footer{border-top-color:rgba(255,255,255,.35)}
@@ -304,7 +304,7 @@ main:focus,main h1:focus{outline:0}
 .tile-photo-credit summary{width:fit-content;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
 .tile-photo-credit-content{position:absolute;bottom:100%;left:0;right:0;margin:0 0 8px;padding:12px;background:#111110;border:1px solid #777;color:#fff;font-size:11px;overflow-wrap:anywhere}
 .tile-photo-credit-content a{color:inherit;text-decoration:underline;text-underline-offset:2px}
-.place-hero-detail.has-photo{position:relative;padding-bottom:clamp(84px,9vw,120px);background:linear-gradient(180deg,rgba(17,17,16,.5),rgba(17,17,16,.78)),var(--place-photo) center/cover no-repeat #3b3a36;color:#fff}
+.place-hero-detail.has-photo{position:relative;padding-bottom:clamp(84px,9vw,120px);background:linear-gradient(180deg,rgba(17,17,16,.55),rgba(17,17,16,.8)),var(--place-photo) center/cover no-repeat #3b3a36;color:#fff}
 .place-hero-detail.has-photo .eyebrow,.place-hero-detail.has-photo h1,.place-hero-detail.has-photo p{color:#fff}
 .place-hero-detail.has-photo .archive-context{color:rgba(255,255,255,.86)}
 .place-hero-detail.has-photo .place-county-link{color:#fff}
@@ -314,7 +314,7 @@ main:focus,main h1:focus{outline:0}
 .breadcrumbs li:not(:last-child){flex-shrink:0}
 
 /* Municipal office hero: the city's photo behind the whole hero, as on place pages. */
-.detail-hero.has-photo{position:relative;padding-bottom:clamp(84px,9vw,120px);background:linear-gradient(180deg,rgba(17,17,16,.5),rgba(17,17,16,.78)),var(--place-photo) center/cover no-repeat #3b3a36;color:#fff}
+.detail-hero.has-photo{position:relative;padding-bottom:clamp(84px,9vw,120px);background:linear-gradient(180deg,rgba(17,17,16,.55),rgba(17,17,16,.8)),var(--place-photo) center/cover no-repeat #3b3a36;color:#fff}
 .detail-hero.has-photo .office-hero-detail>.eyebrow,.detail-hero.has-photo .office-hero-detail>h1,.detail-hero.has-photo .office-hero-detail>p{color:#fff}
 .detail-hero.has-photo .office-hero-detail>.archive-context{color:rgba(255,255,255,.86)}
 .detail-hero.has-photo .boundary-map figcaption,.detail-hero.has-photo .boundary-map figcaption a{color:rgba(255,255,255,.82)}

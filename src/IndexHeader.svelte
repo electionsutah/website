@@ -28,6 +28,6 @@
   .duotone-defs{position:absolute;width:0;height:0;overflow:hidden}
   .has-photo::before,.has-photo::after{content:'';position:absolute;inset:0;pointer-events:none}
   .has-photo::before{z-index:-2;background:var(--index-photo) var(--index-photo-position,center)/cover no-repeat;filter:url(#index-photo-duotone)}
-  .has-photo::after{z-index:-1;background:linear-gradient(180deg,rgba(1,34,58,.3),rgba(1,34,58,.7))}
+  .has-photo::after{z-index:-1;background:linear-gradient(180deg,rgba(1,34,58,.37),rgba(1,34,58,.73))}
   .has-photo h1,.has-photo .eyebrow,.has-photo>p{color:#fff}
 </style>
