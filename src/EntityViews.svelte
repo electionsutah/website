@@ -418,7 +418,7 @@
               <div class="contact-grid">
                 {#each contactAddresses(contact.address) as address}
                   {#if isMailingAddress(address)}
-                    <button type="button" class="contact-item contact-address contact-copy" onclick={() => copyMailingAddress(address)} aria-label={`Copy ${address.label || 'mailing address'}: ${address.value}`}><small>{address.label || 'Mailing address'} · Copy address</small><strong>{address.value}</strong><b><Icon name="copy_content" /></b></button>
+                    <button type="button" class="contact-item contact-address contact-copy" onclick={() => copyMailingAddress(address)} aria-label={`Copy ${address.label || 'mailing address'}: ${address.value}`}><small>{address.label || 'Mailing address'}</small><strong>{address.value}</strong><b><Icon name="copy_content" /></b></button>
                   {:else}
                   <a class="contact-item contact-address" href={addressMapUrl(address)} target="_blank" rel="noreferrer"><small>{address.label || 'Address'}</small><strong>{address.value}</strong><b><Icon name="arrow_outward" /><span class="sr-only"> (opens Google Maps in new tab)</span></b></a>
                   {/if}

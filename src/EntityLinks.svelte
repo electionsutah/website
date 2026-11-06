@@ -63,7 +63,7 @@
   .entity-link{position:relative;display:grid;place-items:center;width:var(--entity-link-size,40px);height:40px;border-radius:4px;text-decoration:none}
   .entity-link:hover,.entity-link:focus-visible{background:var(--color-blue-tint)}
   .entity-link:focus-visible{outline:3px solid var(--color-blue);outline-offset:2px}
-  .entity-link img,.entity-link>svg{display:block;width:24px;height:24px;object-fit:contain}
+  .entity-link img,.entity-link>svg{display:block;width:var(--entity-link-icon-size,24px);height:var(--entity-link-icon-size,24px);object-fit:contain}
   .website-icon{display:grid;place-items:center;width:24px;height:24px;color:var(--color-blue);font-size:24px;line-height:1}
   .website-icon :global(.icon){display:block;font-size:24px;line-height:1}
   .wikipedia-icon{fill:var(--color-ink)}
