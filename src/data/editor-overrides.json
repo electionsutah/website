@@ -19,6 +19,15 @@
   "places": {
     "piute/junction": {
       "facebook": "https://www.facebook.com/junctionutah"
+    },
+    "millard/oak-city": {
+      "facebook": "https://www.facebook.com/townofoakcityutah",
+      "contact.address": [
+        {
+          "label": "Address",
+          "value": "30 West Center PO Box 217, 84649"
+        }
+      ]
     }
   },
   "offices": {
