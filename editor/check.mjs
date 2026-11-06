@@ -81,7 +81,7 @@ try {
   assert.throws(() => validateStructure(graph, { ...structural, filings: { [moved.recordId]: { officeId: 'missing-office' } } }), /Unknown/);
   assert.throws(() => validateStructure(graph, { ...structural, filings: { [moved.recordId]: { personId: targetPerson.id, runningMateId: targetPerson.id } } }), /own running mate/);
   assert.throws(() => validateStructure(graph, { ...structural, places: { [targetPlace.id]: { parentId: targetPlace.id } } }), /existing county/);
-  for (const kind of ['people', 'offices', 'parties', 'places']) {
+  for (const kind of ['offices', 'parties', 'places']) {
     for (const path of ['website', 'facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'wikipedia', 'wikidata', 'links']) {
       assert(state.editorFields[kind].some(field => field.path === path), `${kind} is missing ${path}`);
     }
@@ -96,6 +96,25 @@ try {
     assert.deepEqual(editorial.applyEntityLinks(kind, baseline, { links: rich }), rich, 'Multiple links and source metadata survive');
   }
   const { configureFields } = await server.ssrLoadModule('/src/lib/editor-schema.ts');
+  const legacyPresentation = configureFields(editorial.baseEditorFields, { version: 1, collections: { people: { fields: [{ path: 'contact.facebook', label: 'Facebook' }, { path: 'facebook', label: 'Facebook' }, { path: 'links', label: 'Links' }] } } });
+  assert(!legacyPresentation.people.some(field => field.path === 'contact.facebook' || field.path === 'facebook'));
+  const canonicalFields = editorial.editorFields.people;
+  assert(canonicalFields.some(field => field.path === 'links'));
+  assert(!canonicalFields.some(field => field.path === 'website' || field.path === 'contact.website' || field.path === 'facebook'));
+  const sourceLinks = [{ url: 'https://example.org', platform: 'website', source: 'Verified source', verifiedOn: '2026-11-06' }, { url: 'https://facebook.com/original', platform: 'facebook' }];
+  const migrated = editorial.migratePersonLinks({ 'contact.facebook': 'https://facebook.com/campaign', facebook: 'https://facebook.com/manual', 'contact.website': '', biography: 'Keep me' }, sourceLinks);
+  assert.equal(migrated.biography, 'Keep me');
+  assert.equal(migrated.links.length, 1);
+  assert.equal(migrated.links[0].url, 'https://facebook.com/manual');
+  assert(!('contact.website' in migrated));
+  editorial.validateChanges('people', migrated);
+  const retained = editorial.migratePersonLinks({ 'contact.facebook': 'https://facebook.com/manual' }, sourceLinks);
+  assert.equal(retained.links.find(link => link.platform === 'website').source, 'Verified source');
+  assert.deepEqual(editorial.applyEntityLinks('people', sourceLinks, { links: [] }), [], 'A clear cannot reintroduce contact fallback links');
+  const mockPerson = { id: 'example', filings: [{ personId: 'example', contact: { website: 'https://example.org', facebook: 'https://facebook.com/current' } }] };
+  const importedLinks = editorial.importedPersonLinks(mockPerson, {}, sourceLinks);
+  assert.equal(importedLinks.length, 3, 'Distinct accounts survive while identical URLs are deduplicated');
+  assert.equal(importedLinks[0].source, 'Verified source');
   const oldSettings = { version: 1, collections: { offices: { fields: [{ path: 'contact.email', label: 'Office email' }] } } };
   const expanded = configureFields(editorial.baseEditorFields, oldSettings);
   assert.equal(expanded.offices[0].label, 'Office email');
@@ -131,7 +150,7 @@ try {
     branch: 'editor', entry: { path: relative, slug: entry.filename.slice(0, -5), raw: JSON.stringify(record) }, assets: [],
     options: { collectionName: 'people', commitMessage: 'Local editor check', useWorkflow: false, status: 'draft' }
   });
-  record.record.overrides = { biography: 'Local editor round-trip check.', 'contact.address': addressList, 'contact.website': 'https://example.org/campaign', priorities: [], resources: [{ label: 'Platform', description: 'Published positions', url: 'https://example.org/platform' }] };
+  record.record.overrides = { biography: 'Local editor round-trip check.', 'contact.address': addressList, links: [{ url: 'https://example.org/campaign', platform: 'website' }], priorities: [], resources: [{ label: 'Platform', description: 'Published positions', url: 'https://example.org/platform' }] };
   validateRecord(record, entry, state.validateChanges);
   await persist();
   await syncRecord(relative, state, destination);
@@ -139,7 +158,7 @@ try {
   assert.deepEqual(compiled.people['ben-mcadams'], record.record.overrides);
   let profile = editorial.applyChanges(entry.source, compiled.people['ben-mcadams']);
   assert.equal(profile.biography, 'Local editor round-trip check.');
-  assert.equal(profile.contact.website, 'https://example.org/campaign');
+  assert.equal(profile.links[0].url, 'https://example.org/campaign');
   assert.deepEqual(profile.contact.address, addressList, 'Multiple addresses survive a Decap save');
   assert.equal(profile.contact.email, 'press@benmcadams.com', 'Editing the website preserves the standard email field');
   assert.deepEqual(profile.priorities, [], 'An explicit empty list clears imported priorities');

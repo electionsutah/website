@@ -15,7 +15,10 @@ export function configureFields<T extends Record<string, SchemaField[]>>(base: T
     if (collection.label !== undefined && (typeof collection.label !== 'string' || !collection.label.trim() || collection.label.length > 100)) throw new Error('Collection labels need 1–100 characters');
     if (collection.fields === undefined) continue;
     if (!Array.isArray(collection.fields) || new Set(collection.fields.map(field => field.path)).size !== collection.fields.length) throw new Error(`${kind} must retain every field exactly once`);
-    const fields = collection.fields.map(field => {
+    // Person social/contact shortcuts were consolidated into the links row editor.
+    // Drop only those retired presentation settings; unknown paths still fail below.
+    const retiredPersonLink = (path: string) => kind === 'people' && /^(?:contact\.)?(?:website|facebook|instagram|twitter|x|bluesky|youtube|linkedin|threads|tiktok|mastodon|truthsocial|rumble|substack|wikipedia|wikidata)$/.test(path);
+    const fields = collection.fields.filter(field => !retiredPersonLink(field.path)).map(field => {
       const original = base[kind].find(item => item.path === field.path);
       if (!original || Object.keys(field).some(key => !['path', 'label', 'options'].includes(key))) throw new Error(`Field paths and types cannot be changed: ${field.path}`);
       if (typeof field.label !== 'string' || !field.label.trim() || field.label.length > 160) throw new Error('Field labels need 1–160 characters');

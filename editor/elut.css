@@ -1,3 +1,8 @@
+/* Editor-only dimensions; shared brand tokens are imported from src/app.css. */
+:root { --editor-icon-font: 'Editor Material Symbols'; --editor-icon-size: var(--space-6); --editor-logo-width: 76px; --editor-logo-height: 48px; }
+@font-face { font-family: 'Editor Material Symbols'; font-style: normal; font-weight: 400; font-display: block; src: url('/fonts/material-symbols-outlined-subset.woff2') format('woff2'); }
+.editor-symbol, .schema-symbol { display: inline-grid; place-items: center; flex: 0 0 var(--editor-icon-size); font-family: var(--editor-icon-font) !important; font-weight: 400; font-style: normal; font-size: var(--editor-icon-size); line-height: 1; letter-spacing: normal; text-transform: none; font-feature-settings: 'liga'; white-space: nowrap; color: var(--color-blue); }
+
 /* Shared ELUT theme for Decap Contents, record forms, and the Schema screen. */
 .schema-skip { position: absolute; top: 0; left: var(--space-4); transform: translateY(-150%); padding: var(--space-3); background: var(--color-paper); color: var(--color-blue); z-index: 10001; }
 .schema-skip:focus { transform: translateY(0); }
@@ -21,7 +26,7 @@ body #nc-root { font-family: var(--font-sans); color: var(--color-text); backgro
 #nc-root header svg, #nc-root header .editor-symbol, body .schema-header .schema-symbol { color: var(--color-blue-bright); }
 #nc-root header li:has(img[src='/images/logo-editorial-nav.svg']) { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-5) var(--space-2) 0; }
 #nc-root header li:has(img[src='/images/logo-editorial-nav.svg'])::after { content: 'Editor'; font-size: var(--text-xl); font-weight: 700; }
-#nc-root header img[src='/images/logo-editorial-nav.svg'] { box-sizing: border-box; width: 76px; height: 48px; padding: var(--space-1) var(--space-2); object-fit: contain; background: transparent; }
+#nc-root header img[src='/images/logo-editorial-nav.svg'] { box-sizing: border-box; width: var(--editor-logo-width); height: var(--editor-logo-height); padding: var(--space-1) var(--space-2); object-fit: contain; background: transparent; }
 body #nc-root :focus-visible, body.schema-page :focus-visible { outline: var(--border-width-emphasis) solid var(--color-blue); outline-offset: var(--space-0-5); }
 body #nc-root header :focus-visible, body.schema-page header :focus-visible { outline-color: var(--color-blue-bright); }
 body #nc-root button, body #nc-root input, body #nc-root textarea, body #nc-root select, body.schema-page button { border-radius: 0; box-shadow: none; }
@@ -38,7 +43,6 @@ body .editor-field.has-override { border-left: var(--border-width-emphasis) soli
 body .editor-note { background: var(--color-blue-tint); color: var(--color-blue-dark); border-left-color: var(--color-blue); padding: var(--space-4); }
 body .editor-field label { color: var(--color-muted); font-size: var(--text-xs); font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
 body .editor-field-heading { gap: var(--space-4); margin-bottom: var(--space-2); }
-body .editor-field-heading>label { max-width: 100%; overflow-x: auto; }
 body .editor-identity-grid, body .repository-record pre { background: var(--color-warm-white); color: var(--color-text); }
 body .editor-addresses fieldset { border-color: var(--color-rule-strong); padding: var(--space-3); }
 body .editor-addresses button { color: var(--color-blue); border: 1px solid var(--color-rule-strong); background: var(--color-paper); min-height: var(--size-touch-target); }
@@ -70,3 +74,92 @@ body.schema-page #status.error { border-color: var(--color-red); }
   body .editor-field-heading { flex-direction: column; align-items: stretch; }
   body #connection { flex-wrap: wrap; gap: var(--space-1); }
 }
+
+/* Preserve the icon gutter overridden by shared input padding. */
+body #nc-root aside input { padding-left: calc(var(--size-touch-target) + var(--space-1)); }
+
+/* Find fields without changing or discarding any record values. */
+.editor-record-toolbar { display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); margin-bottom: var(--space-3); }
+.editor-record-toolbar .editor-record-heading { margin: var(--space-2) 0; }
+.editor-field-filters { display: grid; grid-template-columns: minmax(150px,1fr) auto auto; gap: var(--space-2); margin-left: auto; max-width: 100%; }
+.editor-field-filters>label { grid-column: 1 / -1; font: 700 var(--text-xs)/1.4 var(--font-sans); color: var(--color-muted); }
+.editor-filter-search { display: grid; grid-template-columns: var(--size-touch-target) minmax(0,1fr); align-items: center; border: 1px solid var(--color-rule-strong); background: var(--color-paper); }
+.editor-filter-search>.editor-symbol { display: grid; place-items: center; color: var(--color-muted); }
+body #nc-root .editor-filter-search input { border: 0; min-width: 0; width: 100%; padding-left: 0; background: transparent; }
+.editor-filter-search:focus-within { outline: var(--border-width-emphasis) solid var(--color-blue); outline-offset: var(--space-0-5); }
+body #nc-root .editor-filter-search input:focus-visible { outline: none; }
+body #nc-root .editor-field-filters>button { min-height: var(--size-touch-target); padding: var(--space-2) var(--space-3); background: var(--color-paper); color: var(--color-blue); border: 1px solid var(--color-rule-strong); font-size: var(--text-sm); }
+body #nc-root .editor-field-filters>button:disabled { color: var(--color-muted); cursor: default; }
+.editor-filter-count { color: var(--color-muted); font-size: var(--text-xs); margin: 0 0 var(--space-4); }
+.editor-empty-filter { padding: var(--space-5); background: var(--color-warm-white); border: 1px solid var(--color-rule-strong); }
+.repository-record .editor-field[hidden] { display: none !important; }
+@media (max-width:700px) { .editor-field-filters { width: 100%; grid-template-columns: minmax(0,1fr) auto; } .editor-filter-search { grid-column: 1 / -1; } .editor-field-filters>select { min-width: 0; } }
+
+/* Collapsible record sections use the shared ELUT type, spacing, and colors. */
+.editor-field-group { margin-top: var(--space-4); border: 1px solid var(--color-rule-strong); }
+body #nc-root .editor-group-heading { margin: 0; }
+body #nc-root .editor-group-heading>button { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); width: 100%; min-height: var(--size-touch-target); padding: var(--space-3) var(--space-4); border: 0; background: var(--color-warm-white); color: var(--color-text); font: 700 var(--text-sm)/1.4 var(--font-sans); text-align: left; cursor: pointer; }
+body #nc-root .editor-group-heading>button:hover { background: var(--color-blue-tint); }
+.editor-group-heading .editor-symbol { color: var(--color-blue); flex-shrink: 0; }
+.editor-group-count { margin-left: auto; color: var(--color-muted); font-size: var(--text-xs); font-weight: 400; white-space: nowrap; }
+.editor-group-fields { padding: 0 var(--space-4); }
+.repository-record .editor-field-group[hidden], .repository-record .editor-group-fields[hidden] { display: none !important; }
+
+/* Audit corrections: keep controls and content reachable when text or viewport narrows. */
+body #nc-root .repository-record { min-width: 0; }
+body #nc-root .repository-record .editor-field-heading>label { flex: 1 1 auto; min-width: 0; max-width: 100%; overflow: visible; }
+body #nc-root .repository-record input, body #nc-root .repository-record select, body #nc-root .repository-record textarea { max-width: 100%; min-width: 0; }
+body #nc-root .editor-group-heading .editor-error { margin: 0; font-size: var(--text-xs); }
+body #nc-root button { min-height: var(--size-touch-target); }
+body #nc-root .editor-source summary, body #nc-root .editor-context summary { min-height: var(--size-touch-target); padding-block: var(--space-3); }
+body #nc-root .repository-record a { color: var(--color-blue); text-underline-offset: var(--space-0-5); }
+body #nc-root [class*='ToolbarContainer'] { box-shadow: none; border-bottom: 1px solid var(--color-rule-strong); }
+body #nc-root [class*='ControlPaneContainer']:has(.repository-record) { padding-bottom: calc(var(--size-touch-target) * 3); }
+body.schema-page .schema-layout>* { min-width: 0; }
+body.schema-page .schema-header { flex-wrap: wrap; }
+body.schema-page .table-wrap { max-width: 100%; }
+body.schema-page #save:disabled { background: var(--color-warm-white); color: var(--color-muted); opacity: 1; border-color: var(--color-rule-strong); }
+@media(max-width:800px) {
+  body #nc-root [class*='ToolbarSection'] { height: auto; min-height: var(--size-touch-target); }
+  body #nc-root [class*='EditorContainer'] { min-width: 0; display: flex; flex-direction: column; padding-top: 0; }
+  body #nc-root [class*='ToolbarContainer'] { position: relative; min-width: 0; height: auto; flex-wrap: wrap; flex-shrink: 0; }
+  body #nc-root [class*='ToolbarSectionBackLink'] { width: 100%; min-height: var(--size-touch-target); padding: var(--space-2) var(--space-3); }
+  body #nc-root [class*='ToolbarSectionMain'] { padding-block: var(--space-2); min-width: 0; gap: var(--space-2); flex-wrap: wrap; }
+  body #nc-root [class*='EditorContainer']>[class*='-Editor '] { flex: 1; min-height: 0; width: 100%; }
+  body #nc-root .repository-record .editor-field-heading>label { white-space: normal; overflow-wrap: anywhere; }
+  body #nc-root .editor-field-heading>select { margin-left: 0; width: 100%; }
+  body #nc-root .editor-group-fields { padding-inline: var(--space-3); }
+}
+@media(prefers-reduced-motion:reduce) {
+  body #nc-root *, body.schema-page * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
+body #nc-root [class*='ToolbarContainer'] button { background: var(--color-blue-tint); color: var(--color-blue-dark); }
+body #nc-root [class*='ToolbarContainer'] button:hover { background: var(--color-blue-light); }
+body #nc-root [class*='PublishedButton'], body #nc-root [class*='PublishButton'] { background: var(--color-blue); color: var(--color-paper); }
+body #nc-root .repository-record input:not(:disabled), body #nc-root .repository-record select:not(:disabled), body #nc-root .repository-record textarea:not(:disabled), body.schema-page input, body.schema-page textarea, .editor-filter-search { border-color: var(--color-subtle); }
+body #nc-root .editor-record-heading { font-size: var(--text-2xl); line-height: 1.25; }
+body #connection a { color: var(--color-paper); }
+
+/* Structured list controls share the contact-address form treatment. */
+.editor-list fieldset { min-width: 0; margin: var(--space-4) 0; padding: var(--space-4); border: 1px solid var(--color-rule-strong); }
+.editor-list legend { color: var(--color-text); font-weight: 700; font-size: var(--text-sm); }
+body #nc-root .editor-list label { display: block; margin-bottom: var(--space-3); }
+body #nc-root .editor-list input, body #nc-root .editor-list select, body #nc-root .editor-list textarea { display: block; width: 100%; margin-top: var(--space-1); }
+body #nc-root .editor-list button { min-height: var(--size-touch-target); padding: var(--space-2) var(--space-3); border: 1px solid var(--color-subtle); background: var(--color-paper); color: var(--color-blue); }
+body #nc-root .editor-list button:hover:not(:disabled) { background: var(--color-blue-tint); }
+.editor-list-help { font-size: var(--text-sm); color: var(--color-muted); }
+body #nc-root .editor-field-title { display: flex; align-items: center; gap: var(--space-2-5); color: var(--color-muted); font: 700 var(--text-xs)/1.5 var(--font-sans); text-transform: uppercase; letter-spacing: .05em; }
+.editor-field-title .editor-symbol { flex: 0 0 var(--editor-icon-size); }
+
+/* Schema ordering uses the same local icon font as collection and field icons. */
+body.schema-page .schema-order-button { display: inline-flex; align-items: center; justify-content: center; width: var(--size-touch-target); min-height: var(--size-touch-target); padding: var(--space-2); color: var(--color-blue); border-color: var(--color-subtle); vertical-align: middle; }
+body.schema-page .schema-order-button+.schema-order-button { margin-left: var(--space-1); }
+body.schema-page .schema-order-button .schema-symbol { color: inherit; }
+.schema-order-up { transform: rotate(180deg); }
+body.schema-page .schema-order-button:disabled { opacity: 1; color: var(--color-muted); background: var(--color-warm-white); border-color: var(--color-rule-strong); cursor: not-allowed; }
+body.schema-page .schema-type-badge { display: table; margin-top: var(--space-2); padding: var(--space-0-5) var(--space-2); border: 1px solid var(--color-blue-light); background: var(--color-blue-tint); color: var(--color-blue-dark); font: 700 var(--text-xs)/1.5 var(--font-mono); }
+.schema-pane-heading { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; column-gap: var(--space-6); row-gap: var(--space-4); margin-bottom: var(--space-6); }
+.schema-pane-heading h2 { margin: 0; }
+.schema-pane-intro { flex: 1 1 20rem; min-width: 0; max-width: 65ch; }
+.schema-pane-intro p { margin: var(--space-3) 0 0; line-height: 1.6; }
+.schema-pane-heading #save { flex: 0 0 auto; }

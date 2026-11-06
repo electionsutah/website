@@ -152,12 +152,7 @@
     contact.phone && { label: 'Phone', text: contact.phone, href: `tel:${contact.phone}`, icon: 'call', external: false },
     contact.email && { label: 'Email', text: contact.email, href: `mailto:${contact.email}`, icon: 'send', external: false }
   ].filter((item) => !!item) : [];
-  $: contactLinks = [...verifiedPersonLinks, ...(contact ? [
-    { url: contact.website || '' }, { url: contact.facebook || '' },
-    { url: contact.instagram || '' }, { url: contact.twitter || '' },
-    { url: contact.bluesky || '' },
-    ...['youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'].map(key => ({ url: contact[key as keyof Contact] as string || '', platform: key as EntityLink['platform'] }))
-  ] satisfies EntityLink[] : [])];
+  $: contactLinks = verifiedPersonLinks;
 
   // Within a scope, each person keeps only the scoped filings, so offices, years, and counts describe that scope.
   function scopedPeople(list: Filing[]): Person[] {
@@ -369,9 +364,7 @@
     }
     const person = peopleById.get(card.id);
     if (!person) return [];
-    const profile = profileFor(person, personProfilesById);
-    const contact = profile?.contact ?? person.filings.find((filing) => filing.personId === person.id && filing.contact && Object.values(filing.contact).some(Boolean))?.contact;
-    return [...((person as typeof person & { links?: EntityLink[] }).links ?? []), ...(contact ? [contact.website, contact.facebook, contact.instagram, contact.twitter, contact.bluesky].map((url) => ({ url: url || '' })) : [])];
+    return person.links ?? [];
   }
 
   function hrefFor(kind: typeof section, entityId: string) {

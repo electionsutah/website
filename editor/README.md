@@ -62,8 +62,9 @@ entity relationships, and migrations remain code changes.
 
 `src/data/editor-overrides.json` is the durable, Git-tracked source of manual
 changes. Its `people` and `filings` maps contain only explicitly overridden
-fields. Contact paths such as `contact.website` merge into the imported contact
-object. Empty strings and arrays mean clear; removing a key restores inheritance.
+fields. Contact paths such as `contact.email` merge into the imported contact
+object. Person website/social edits use the canonical `links` list; filing
+records keep their historical contact website/social fields. Empty strings and arrays mean clear; removing a key restores inheritance.
 The file starts empty; the proof of concept ships no sample changes to real data.
 
 On startup, `workspace.mjs` reads the site's shared entity library and creates
@@ -158,3 +159,43 @@ Editor icons use a local Material Symbols Outlined subset (Google, Apache 2.0),
 including `ballot`, `archive`, `check_circle`, and `history`. Social fields reuse
 the site's exact SVG assets in `public/icons/external/`, at the same 24px size
 and original brand colors; see that directory's attribution and license files.
+
+### Link and resource editing
+
+People have one **Websites and social accounts** row list. It supplies both
+profile contact cards and People directory cards. Imported profile contact links,
+latest filing contact links when no profile exists, and verified enrichment links
+are combined without repeating identical URLs. Distinct URLs are preserved.
+Explicitly overriding or clearing the list replaces that imported set everywhere;
+there is no hidden contact-link fallback.
+
+Historical filing website/social values remain editable on Filings. Existing
+person contact/platform overrides are converted into the canonical list when the
+workspace is prepared, preserving other accounts and source metadata. The
+conversion is persisted with the next save. Old directory platform overrides take
+precedence if both legacy fields override the same platform.
+
+Offices, parties, and places retain their directory platform shortcuts; those
+shortcuts take precedence over matching directory link records.
+Resources and directory/source link records use rows rather than JSON inputs.
+Choose Override, then Add resource or Add link. Each row has named inputs and a
+Remove button. Links include optional platform, label, description, source, and
+verification date. Existing metadata is preserved when another value is changed.
+A new or incomplete URL stays in the form draft and blocks saving until corrected
+or removed. Filtering and collapsing sections preserve those drafts. Switching a
+field back to Use imported value discards its draft, as with other fields.
+
+Run `node editor/widget-check.mjs` to check structured row editing and recovery.
+
+### Styling ownership
+
+- `src/app.css` owns ELUT brand tokens and text fonts; `elut-theme.mjs` imports
+  them and maps Decap's theme variables to those tokens.
+- `editor/elut.css` owns shared editor appearance, the single Material Symbols
+  font definition, and editor-specific icon/logo dimensions.
+- `editor/editor.css` contains Decap layout and collection-icon adapters.
+- `editor/schema.css` contains Schema layout and table/content formatting.
+
+Use existing ELUT color, type, spacing, and touch-target tokens. Keep content-driven
+breakpoints, table widths, reading widths, and other one-off layout constraints
+local; introduce a named shared dimension when multiple components need it.

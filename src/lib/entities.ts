@@ -1,6 +1,7 @@
 import placeLinkEnrichment from '../data/place-link-enrichment.json';
 import placeProfileData from '../data/place-enrichment.json';
 import placeDirectory from '../data/place-directory.json';
+import personProfileData from '../data/person-enrichment.json';
 import personLinkEnrichment from '../data/person-link-enrichment.json';
 import partyEnrichment from '../data/party-enrichment.json';
 import officeEnrichment from '../data/office-enrichment.json';
@@ -12,7 +13,7 @@ import localRows from '../data/local-candidates.json';
 // Reviewed source records outside the state results feed; kept separate so refreshes preserve them.
 import researchedRows from '../data/researched-candidates.json';
 import candidateDocuments from '../data/candidate-documents.json';
-import { applyFilingChanges, applyPlaceSocial, applyEntityLinks, entityContact, editorialData } from './editorial';
+import { applyFilingChanges, applyPlaceSocial, applyEntityLinks, entityContact, editorialData, importedPersonLinks, migratePersonLinks, type PersonProfile } from './editorial';
 import type { ContactAddress } from './contact-addresses';
 import { applyStructure } from './editor-structure';
 
@@ -527,15 +528,17 @@ for (const { filing, name } of filingPeople) {
   person.years = uniqueNumbers(person.filings.map((item) => item.year));
   personMap.set(matchKey, person);
 }
-for (const person of personMap.values()) {
-  const enrichment = (personLinkEnrichment as Record<string, { verifiedOn: string; links: EntityLink[] }>)[person.id];
-  person.links = applyEntityLinks('people', enrichment?.links ?? [], editorialData.people[person.id]);
-  person.lastVerified = [enrichment?.verifiedOn, ...person.links.map(link => link.verifiedOn)].filter(Boolean).sort().at(-1);
-  person.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName, undefined, { numeric: true }));
-}
 for (const filing of filings) {
   filing.personId = personMap.get(identityKey(filing.name))!.id;
   if (filing.runningMate) filing.runningMateId = personMap.get(identityKey(filing.runningMate))!.id;
+}
+for (const person of personMap.values()) {
+  const enrichment = (personLinkEnrichment as Record<string, { verifiedOn: string; links: EntityLink[] }>)[person.id];
+  person.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName, undefined, { numeric: true }));
+  const sourceLinks = importedPersonLinks(person, personProfileData as Record<string, PersonProfile>, enrichment?.links ?? []);
+  const changes = migratePersonLinks(editorialData.people[person.id], sourceLinks);
+  person.links = applyEntityLinks('people', sourceLinks, changes);
+  person.lastVerified = [enrichment?.verifiedOn, ...person.links.map(link => link.verifiedOn)].filter(Boolean).sort().at(-1);
 }
 export const people = naturalSort([...personMap.values()], (person) => person.name);
 

@@ -19,7 +19,7 @@ export async function atomicJson(path, value) {
 
 export async function prepare(server, directory = workspace, saved = null) {
   const { importedFilings, people, places, offices, parties, placesById, officeResources, importedPartyProperties, importedPlaceDescriptions, importedEntityStructure } = await server.ssrLoadModule('/src/lib/entities.ts');
-  const { importedProfile, importedEntityLinks, validateChanges, editorFields } = await server.ssrLoadModule('/src/lib/editorial.ts');
+  const { importedProfile, importedEntityLinks, importedPersonLinks, migratePersonLinks, validateChanges, editorFields } = await server.ssrLoadModule('/src/lib/editorial.ts');
   const { validateStructure } = await server.ssrLoadModule('/src/lib/editor-structure.ts');
   const references = Object.fromEntries(['people', 'offices', 'parties', 'places'].map(kind => [kind, ({people, offices, parties, places})[kind].map(row => ({ id: row.id, label: row.name }))]));
   references.elections = [...new Set(importedFilings.map(row => row.year))].sort((a,b) => b-a).map(year => ({ id: String(year), label: String(year) }));
@@ -64,7 +64,10 @@ export async function prepare(server, directory = workspace, saved = null) {
   const snapshot = entity => Object.fromEntries(Object.entries(entity).map(([key, value]) => [key, ['filings', 'offices', 'children'].includes(key) && Array.isArray(value) ? value.map(item => item.recordId ?? item.id) : value]));
   for (const person of people) {
     const baseline = { ...person, filings: importedEntityStructure.filings.filter(row => row.personId === person.id || row.runningMateId === person.id).map(row => ({ ...originals.get(row.id), personId: row.personId, runningMateId: row.runningMateId })) };
-    await add('people', person.id, person.name, { name: importedEntityStructure.people.find(row => row.id === person.id)?.name, ...importedProfile(baseline, profiles), ...importedEntityLinks(personLinks[person.id]?.links ?? []) }, {
+    baseline.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName));
+    const sourceLinks = importedPersonLinks(baseline, profiles, personLinks[person.id]?.links ?? []);
+    if (saved.people[person.id]) saved.people[person.id] = migratePersonLinks(saved.people[person.id], sourceLinks);
+    await add('people', person.id, person.name, { name: importedEntityStructure.people.find(row => row.id === person.id)?.name, ...importedProfile(baseline, profiles), links: sourceLinks }, {
       entity: snapshot(person),
       personPath: `/people/${person.id}/`,
       filings: person.filings.map(filing => `${filing.year} · ${filing.officeName} · ${filing.recordId}`)

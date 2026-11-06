@@ -17,15 +17,15 @@ export type EditorialData = { version: number; people: Record<string, Changes>; 
 export type EntityKind = 'people' | 'filings' | 'places' | 'offices' | 'parties';
 export const editorialData = saved as EditorialData;
 const contactFields: Field[] = [
-  ...['website', 'facebook', 'instagram', 'twitter', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'].map(key => ({ path: `contact.${key}`, label: key === 'twitter' ? 'X / Twitter' : key, type: 'url' })),
+  ...['website', 'facebook', 'instagram', 'twitter', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'].map(key => ({ path: `contact.${key}`, label: `Campaign ${key === 'twitter' ? 'X / Twitter' : key}`, type: 'url' })),
   ...['phone', 'email'].map(key => ({ path: `contact.${key}`, label: key })),
   { path: 'contact.address', label: 'Addresses', type: 'addresses' }
 ];
 export const placeSocialPlatforms = ['facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'] as const;
 export const entityLinkPlatforms = ['website', 'wikipedia', 'wikidata', ...placeSocialPlatforms] as const;
 const linkFields: Field[] = [
-  ...entityLinkPlatforms.map(platform => ({ path: platform, label: platform === 'x' ? 'X / Twitter' : platform, type: 'url' })),
-  { path: 'links', label: 'All links and source metadata (JSON)', type: 'links' }
+  ...entityLinkPlatforms.map(platform => ({ path: platform, label: `Directory ${platform === 'x' ? 'X / Twitter' : platform}`, type: 'url' })),
+  { path: 'links', label: 'Directory link records', type: 'links' }
 ];
 const entityContactFields: Field[] = [
   { path: 'contact.email', label: 'Email', type: 'email' },
@@ -54,10 +54,10 @@ export const baseEditorFields: Record<EntityKind, Field[]> = {
     { path: 'name', label: 'Person name' },
     { path: 'biography', label: 'Biography', type: 'text' },
     { path: 'priorities', label: 'Priorities (one per line)', type: 'lines' },
-    { path: 'resources', label: 'Resources (JSON array of label, description, url)', type: 'resources' },
+    { path: 'resources', label: 'Resources', type: 'resources' },
     { path: 'sourceUrl', label: 'Profile source URL', type: 'url' },
-    { path: 'lastVerified', label: 'Profile verification date', type: 'date' }, ...contactFields,
-    ...linkFields
+    { path: 'lastVerified', label: 'Profile verification date', type: 'date' }, ...entityContactFields,
+    { path: 'links', label: 'Websites and social accounts', type: 'links' }
   ],
   filings: [
     { path: 'year', label: 'Election year', type: 'number', relation: 'elections' },
@@ -103,6 +103,40 @@ export function validateChanges(kind: EntityKind, changes: Changes, fields = edi
       if (value && field.options && !field.options.includes(value)) throw new Error(`Unsupported ${path}: ${value}`);
     }
   }
+}
+
+/** Fold current profile/contact imports into the person's one canonical link list. */
+export function importedPersonLinks(person: Person, profiles: Record<string, PersonProfile>, links: EntityLink[] = []): EntityLink[] {
+  const contact = importedProfile(person, profiles).contact;
+  const combined = [...links, ...contactFields.filter(field => field.type === 'url').flatMap(field => {
+    const key = field.path.slice('contact.'.length);
+    const url = contact[key as keyof Contact];
+    return typeof url === 'string' && url ? [{ url, platform: (key === 'twitter' ? 'x' : key) as EntityLink['platform'] }] : [];
+  })];
+  const seen = new Set<string>();
+  return combined.filter(link => {
+    const key = resolveEntityLinks([link])[0]?.url ?? link.url;
+    if (seen.has(key)) return false;
+    seen.add(key); return true;
+  });
+}
+
+/** Compatibility migration: preserve old manual platform edits, including explicit clears. */
+export function migratePersonLinks(changes: Changes = {}, source: EntityLink[] = []): Changes {
+  const legacy = Object.entries(changes).filter(([path]) => path !== 'links' && (
+    (entityLinkPlatforms as readonly string[]).includes(path) || contactFields.some(field => field.type === 'url' && field.path === path)));
+  if (!legacy.length) return changes;
+  let links = (changes.links as EntityLink[] | undefined) ?? source;
+  // Old directory overrides win over old contact overrides when both specify a platform.
+  legacy.sort(([a], [b]) => Number(!a.startsWith('contact.')) - Number(!b.startsWith('contact.')));
+  for (const [path, value] of legacy) {
+    const key = path.replace(/^contact\./, '');
+    const platform = key === 'twitter' ? 'x' : key;
+    links = links.filter(link => resolveEntityLinks([link])[0]?.platform !== platform);
+    if (value) links = [...links, { url: value as string, platform: platform as EntityLink['platform'] }];
+  }
+  const removed = new Set(legacy.map(([path]) => path));
+  return { ...Object.fromEntries(Object.entries(changes).filter(([path]) => !removed.has(path))), links };
 }
 
 export function importedPlaceSocial(links: EntityLink[]): Record<string, string> {
@@ -182,6 +216,7 @@ export function importedProfile(person: Person, profiles: Record<string, PersonP
 export function profileFor(person: Person, profiles: Record<string, PersonProfile>): PersonProfile | undefined {
   const changes = editorialData.people[person.id];
   if (!changes && !profiles[person.id]) return undefined;
-  if (changes) validateChanges('people', changes);
-  return applyChanges(importedProfile(person, profiles), changes);
+  const profileChanges = Object.fromEntries(Object.entries(changes ?? {}).filter(([path]) => !contactFields.some(field => field.type === 'url' && field.path === path) && !(entityLinkPlatforms as readonly string[]).includes(path)));
+  validateChanges('people', profileChanges);
+  return applyChanges(importedProfile(person, profiles), profileChanges);
 }

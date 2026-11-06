@@ -43,13 +43,24 @@
   const format = (value, field) => ['resources', 'links'].includes(field.type) ? JSON.stringify(value ?? [], null, 2)
     : field.type === 'addresses' ? addresses(value).map(item => `${item.label}: ${item.value}`).join('\n')
     : field.type === 'lines' ? (value ?? []).join('\n') : String(value ?? '');
+  const fieldGroup = field => {
+    if (field.relation || field.path === 'name') return 'Identity & associations';
+    if (field.path.startsWith('contact.') && !social[field.path] && field.path !== 'contact.website') return 'Contact details';
+    if (social[field.path] || ['website', 'wikipedia', 'wikidata', 'links', 'contact.website'].includes(field.path)) return 'Websites & social links';
+    if (field.path === 'resources') return 'Resources';
+    return 'Profile & metadata';
+  };
+  const matchesField = (field, query, group) => {
+    const text = `${field.label} ${field.path}`.toLowerCase().replace(/[._-]+/g, ' ');
+    return (!group || fieldGroup(field) === group) && query.toLowerCase().replace(/[._-]+/g, ' ').trim().split(/\s+/).every(term => text.includes(term));
+  };
 
   const Control = createClass({
-    getInitialState() { return { drafts: {}, errors: {}, modes: {} }; },
+    getInitialState() { return { drafts: {}, errors: {}, modes: {}, collapsedGroups: {}, fieldQuery: '', fieldGroup: '' }; },
     componentDidUpdate(previous) {
       const oldContext = asObject(previous.value)?.context;
       const newContext = asObject(this.props.value)?.context;
-      if ((oldContext?.personPath ?? oldContext?.identity) !== (newContext?.personPath ?? newContext?.identity)) this.setState({ drafts: {}, errors: {}, modes: {} });
+      if ((oldContext?.personPath ?? oldContext?.identity) !== (newContext?.personPath ?? newContext?.identity)) this.setState({ drafts: {}, errors: {}, modes: {}, collapsedGroups: {}, fieldQuery: '', fieldGroup: '' });
     },
     isValid() { return Object.keys(this.state.errors).length ? { error: 'Correct the highlighted fields before saving.' } : true; },
     change(path, value) {
@@ -63,15 +74,40 @@
       if (!record) return h('p', {}, 'No source record. Restart the editor to refresh repository data.');
       const fields = schema[this.props.field.get('kind')];
       const kind = this.props.field.get('kind');
-      return h('div', { className: 'repository-record' },
-        h('h2', { className: 'editor-record-heading' }, icon(kind), kind === 'people' ? 'Person profile' : kind === 'places' ? 'Place contacts and social accounts' : kind === 'offices' ? 'Office contacts' : kind === 'parties' ? 'Party contacts' : 'Election filing'),
+      const matchingFields = fields.filter(field => matchesField(field, this.state.fieldQuery, this.state.fieldGroup));
+      const filterId = `${this.props.forID}-field-filter`;
+      const clearFilters = () => this.setState({ fieldQuery: '', fieldGroup: '' });
+      return h('main', { className: 'repository-record', id: 'editor-main', tabIndex: -1, 'aria-label': 'Edit repository record' },
+        h('div', { className: 'editor-record-toolbar' },
+          h('h1', { className: 'editor-record-heading' }, icon(kind), kind === 'people' ? 'Person profile' : kind === 'places' ? 'Place contacts and social accounts' : kind === 'offices' ? 'Office contacts' : kind === 'parties' ? 'Party contacts' : 'Election filing'),
+          h('div', { className: 'editor-field-filters', role: 'search', 'aria-label': 'Find fields in this record' },
+            h('label', { htmlFor: filterId }, 'Find fields'),
+            h('div', { className: 'editor-filter-search' }, h('span', { className: 'editor-symbol', 'aria-hidden': true }, 'search'),
+              h('input', { id: filterId, type: 'search', placeholder: 'Search field names…', value: this.state.fieldQuery, onChange: event => this.setState({ fieldQuery: event.target.value, collapsedGroups: {} }), onKeyDown: event => { if (event.key === 'Escape') { event.preventDefault(); clearFilters(); } } })),
+            h('select', { 'aria-label': 'Filter field section', value: this.state.fieldGroup, onChange: event => this.setState({ fieldGroup: event.target.value, collapsedGroups: {} }) },
+              h('option', { value: '' }, 'All sections'), ...[...new Set(fields.map(fieldGroup))].map(group => h('option', { key: group, value: group }, group))),
+            h('button', { type: 'button', disabled: !this.state.fieldQuery && !this.state.fieldGroup, onClick: clearFilters }, 'Reset'))),
+        h('p', { className: 'editor-filter-count', role: 'status', 'aria-live': 'polite' }, `${matchingFields.length} of ${fields.length} fields match`),
         kind === 'filings' ? h('dl', { className: 'editor-identity-grid' },
           ...[['people', 'Person', record.source.name], ['office', 'Office', record.source.officeName], ['election', 'Election', record.source.year], ['place', 'Place', [record.source.city, record.source.county, record.source.state].filter(Boolean).join(', ')]].map(([key, label, value]) =>
             h('div', { key }, h('dt', {}, icon(key), label), h('dd', {}, value || 'Not published')))) : null,
         h('p', { className: 'editor-note' }, 'Choose Override to edit a field, Clear to remove its value, or Use imported value to follow automated updates. Save with Publish at the top.'),
         (record.context.personPath || record.context.placePath || record.context.entityPath) ? h('a', { href: initialStatus.siteUrl + (record.context.personPath || record.context.placePath || record.context.entityPath), target: '_blank', rel: 'noopener' }, 'Open on the local site ↗') : null,
         h('details', { className: 'editor-context' }, h('summary', {}, 'All entity fields, imported values, and relationships'), h('pre', {}, JSON.stringify({ ...record.context, importedFields: record.source }, null, 2))),
-        ...fields.map(field => {
+        ...[...new Set(fields.map(fieldGroup))].map((group, index) => {
+          const groupFields = fields.filter(field => fieldGroup(field) === group);
+          const matchCount = groupFields.filter(field => matchesField(field, this.state.fieldQuery, this.state.fieldGroup)).length;
+          const expanded = !this.state.collapsedGroups[group];
+          const groupId = `${this.props.forID}-section-${index}`;
+          const errorCount = groupFields.filter(field => this.state.errors[field.path]).length;
+          return h('section', { key: group, className: 'editor-field-group', hidden: matchCount === 0 },
+            h('h2', { className: 'editor-group-heading' },
+              h('button', { type: 'button', 'aria-expanded': expanded, 'aria-controls': groupId,
+                onClick: () => this.setState({ collapsedGroups: { ...this.state.collapsedGroups, [group]: expanded } }) },
+                h('span', { className: 'editor-symbol', 'aria-hidden': true }, expanded ? 'expand_more' : 'chevron_right'),
+                h('span', {}, group), h('span', { className: 'editor-group-count' }, `${matchCount} ${matchCount === 1 ? 'field' : 'fields'}`),
+                errorCount ? h('span', { className: 'editor-error' }, `${errorCount} ${errorCount === 1 ? 'error' : 'errors'}`) : null)),
+            h('div', { id: groupId, hidden: !expanded, className: 'editor-group-fields' }, ...groupFields.map(field => {
           const path = field.path;
           const source = get(record.source, path) ?? blank(field);
           const explicit = Object.prototype.hasOwnProperty.call(record.overrides, path);
@@ -83,16 +119,17 @@
             const drafts = { ...this.state.drafts }, errors = { ...this.state.errors };
             delete drafts[path]; delete errors[path]; this.setState({ drafts, errors });
           };
+          const fieldHelp = field.type === 'url' && (social[path] || ['website', 'contact.website', 'wikipedia', 'wikidata'].includes(path))
+            ? path.startsWith('contact.') ? 'Shown in the campaign contact card.' : 'Shown among directory profile links. This value takes precedence over matching directory link records.'
+            : '';
           const inputProps = {
             id, value: this.state.drafts[path] ?? format(value, field), disabled: mode !== 'override',
-            'aria-invalid': !!this.state.errors[path], 'aria-describedby': `${id}-source`,
+            'aria-invalid': !!this.state.errors[path], 'aria-describedby': `${id}-source${fieldHelp ? ` ${id}-field-help` : ''}${this.state.errors[path] ? ` ${id}-error` : ''}`,
             onChange: event => {
               const text = event.target.value;
               try {
-                const next = field.type === 'boolean' ? text === 'true' : field.type === 'number' ? (text === '' ? null : Number(text)) : ['resources', 'links'].includes(field.type) ? JSON.parse(text || '[]')
+                const next = field.type === 'boolean' ? text === 'true' : field.type === 'number' ? (text === '' ? null : Number(text))
                   : field.type === 'lines' ? text.split('\n').map(line => line.trim()).filter(Boolean) : text;
-                if (field.type === 'resources' && (!Array.isArray(next) || next.some(item => !item || !['label', 'description', 'url'].every(key => typeof item[key] === 'string')))) throw new Error('Enter a JSON array of objects with label, description, and url.');
-                if (field.type === 'links' && (!Array.isArray(next) || next.some(item => !item || typeof item.url !== 'string'))) throw new Error('Enter a JSON array of link objects with a url.');
                 const errors = { ...this.state.errors }; delete errors[path];
                 this.setState({ drafts: { ...this.state.drafts, [path]: text }, errors });
                 this.change(path, next);
@@ -101,7 +138,47 @@
               }
             }
           };
-          const input = field.relation && field.type !== 'lines' ? h('div', {},
+          const isList = ['resources', 'links'].includes(field.type);
+          const rows = isList ? (this.state.drafts[path] ?? value ?? []) : [];
+          const updateRows = next => {
+            const errors = { ...this.state.errors };
+            const invalid = next.findIndex(row => {
+              try { const url = new URL(row.url); return !['http:', 'https:'].includes(url.protocol) || !!url.username || !!url.password; }
+              catch { return true; }
+            });
+            if (invalid >= 0) errors[path] = `Row ${invalid + 1}: enter a complete http:// or https:// URL without a username or password, or remove the row.`;
+            else delete errors[path];
+            this.setState({ drafts: { ...this.state.drafts, [path]: next }, errors });
+            if (invalid < 0) this.change(path, next);
+          };
+          const rowFields = field.type === 'resources'
+            ? [['label', 'Label'], ['description', 'Description'], ['url', 'URL']]
+            : [['url', 'URL'], ['label', 'Label'], ['platform', 'Platform'], ['detail', 'Description'], ['source', 'Source'], ['verifiedOn', 'Verified on']];
+          const input = isList ? h('div', { id, className: 'editor-list', role: 'group', 'aria-label': field.label, 'aria-describedby': `${id}-help` },
+            h('p', { id: `${id}-help`, className: 'editor-list-help' }, field.type === 'resources'
+              ? 'Add a label, description, and complete web address for each resource.'
+              : `Add a complete web address for each link. Labels, platform, description, source, and verification date are optional.${path === 'links' && kind !== 'people' ? ' Directory platform fields take precedence over these records.' : ''}`),
+            rows.length === 0 ? h('p', { className: 'editor-list-help' }, 'No items. Choose Override, then add an item.') : null,
+            ...rows.map((row, index) => h('fieldset', { key: index, disabled: mode !== 'override' },
+              h('legend', {}, `${field.type === 'resources' ? 'Resource' : 'Link'} ${index + 1}`),
+              ...rowFields.map(([key, label]) => {
+                const props = { id: `${id}-${index}-${key}`, value: row[key] ?? '',
+                  'aria-invalid': key === 'url' && !!this.state.errors[path],
+                  'aria-describedby': `${id}-help${this.state.errors[path] ? ` ${id}-error` : ''}`,
+                  onChange: event => {
+                    const updated = { ...row };
+                    if (field.type === 'links' && !event.target.value && key !== 'url') delete updated[key];
+                    else updated[key] = event.target.value;
+                    updateRows(rows.map((item, i) => i === index ? updated : item));
+                  } };
+                return h('label', { key, htmlFor: props.id }, label + (key === 'url' ? ' (required)' : ''),
+                  key === 'platform' ? h('select', props, h('option', { value: '' }, 'Detect from URL'), ...['website', 'wikipedia', 'wikidata', 'facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'].map(platform => h('option', { key: platform, value: platform }, platform)))
+                  : key === 'description' || key === 'detail' ? h('textarea', { ...props, rows: 2 })
+                  : h('input', { ...props, type: key === 'url' ? 'url' : 'text', placeholder: key === 'url' ? 'https://example.org' : key === 'verifiedOn' ? 'YYYY-MM-DD' : undefined }));
+              }),
+              h('button', { type: 'button', 'aria-label': `Remove ${field.type === 'resources' ? 'resource' : 'link'} ${index + 1}`, onClick: () => updateRows(rows.filter((_, i) => i !== index)) }, 'Remove'))),
+            h('button', { type: 'button', disabled: mode !== 'override', onClick: () => updateRows([...rows, field.type === 'resources' ? { label: '', description: '', url: '' } : { url: '' }]) }, field.type === 'resources' ? 'Add resource' : 'Add link'))
+            : field.relation && field.type !== 'lines' ? h('div', {},
             h('input', { ...inputProps, list: `${id}-choices`, placeholder: 'Search by name or ID' }),
             h('datalist', { id: `${id}-choices` }, ...(references[field.relation] ?? []).map(row => h('option', { key: row.id, value: row.id }, row.label))),
             h('small', {}, 'Select an existing entity. Stable IDs preserve links when names change.'))
@@ -115,10 +192,10 @@
             : field.type === 'boolean' ? h('select', inputProps, h('option', { value: 'true' }, 'Yes'), h('option', { value: 'false' }, 'No'))
             : field.options ? h('select', inputProps,
             ...[...new Set(['', ...field.options, value])].map(option => h('option', { key: option, value: option }, option || '(empty)')))
-            : ['text', 'lines', 'resources', 'links'].includes(field.type) ? h('textarea', { ...inputProps, rows: ['resources', 'links'].includes(field.type) ? 7 : 4 })
+            : ['text', 'lines'].includes(field.type) ? h('textarea', { ...inputProps, rows: 4 })
             : h('input', { ...inputProps, type: field.type === 'date' ? 'date' : field.type === 'url' ? 'url' : field.type === 'email' ? 'email' : field.type === 'number' ? 'number' : 'text' });
-          return h('section', { key: path, className: `editor-field ${explicit ? 'has-override' : ''}` },
-            h('div', { className: 'editor-field-heading' }, h('label', { htmlFor: id }, icon(path === 'name' ? kind : path), field.label),
+          return h('section', { key: path, hidden: !matchesField(field, this.state.fieldQuery, this.state.fieldGroup), className: `editor-field ${explicit ? 'has-override' : ''}` },
+            h('div', { className: 'editor-field-heading' }, h(isList || field.type === 'addresses' ? 'span' : 'label', { className: 'editor-field-title', ...(isList || field.type === 'addresses' ? {} : { htmlFor: id }) }, icon(path === 'name' ? kind : path), field.label),
               h('select', { 'aria-label': `${field.label} value source`, value: mode,
                 onChange: event => {
                   resetDraft();
@@ -127,10 +204,14 @@
                 }
               }, h('option', { value: 'inherit' }, 'Use imported value'), h('option', { value: 'override' }, 'Override'), !['name', 'personId', 'officeId', 'partyId', 'parentId', 'year'].includes(path) ? h('option', { value: 'clear' }, 'Clear') : null)),
             input,
+            fieldHelp ? h('p', { id: `${id}-field-help`, className: 'editor-list-help' }, fieldHelp) : null,
             h('details', { id: `${id}-source`, className: 'editor-source' }, h('summary', {}, 'Imported value'), h('pre', {}, format(source, field) || '(not published)')),
-            this.state.errors[path] ? h('p', { className: 'editor-error', role: 'alert' }, this.state.errors[path]) : null
+            this.state.errors[path] ? h('p', { id: `${id}-error`, className: 'editor-error', role: 'alert' }, this.state.errors[path]) : null
           );
-        })
+        })));
+        }),
+        matchingFields.length === 0 ? h('p', { className: 'editor-empty-filter' }, 'No fields match. Try another search or reset the filters.') : null,
+        Object.keys(this.state.errors).length ? h('p', { className: 'editor-error', role: 'alert' }, 'Some fields have validation errors. Expand the marked sections and reset filters to review them before saving.') : null
       );
     }
   });
@@ -152,10 +233,14 @@
   });
   CMS.init({ config: { ...config, locale: 'editor-en', load_config_file: false } });
 
+  let statusSignature = '';
   async function updateStatus() {
     const connection = document.getElementById('connection');
     try {
       const status = await fetch('/status.json').then(response => response.json());
+      const signature = JSON.stringify(status);
+      if (signature === statusSignature && connection.className !== 'connection-error') return;
+      statusSignature = signature;
       connection.replaceChildren();
       connection.className = status.error ? 'connection-error' : '';
       const message = status.error ? `Save failed: ${status.error}` : status.lastSaved

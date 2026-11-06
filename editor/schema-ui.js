@@ -1,6 +1,7 @@
 (async () => {
   const status = document.getElementById('status');
-  const save = document.getElementById('save');
+  const save = document.createElement('button');
+  save.id = 'save'; save.type = 'button'; save.disabled = true; save.textContent = 'Save schema';
   const target = document.getElementById('collection');
   const navigation = document.getElementById('collections');
   let model, baseline, selected, dirty = false;
@@ -16,7 +17,7 @@
   function announce(message, error = false) { status.textContent = message; status.className = error ? 'error' : ''; }
   function renderNavigation() {
     navigation.replaceChildren();
-    for (const collection of model.collections) {
+    for (const collection of [...model.collections].sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' }))) {
       const button = element('button', `${collection.label} (${collection.count.toLocaleString()})`, { type: 'button', 'aria-current': collection.kind === selected ? 'true' : 'false' });
       button.prepend(collectionIcon(collection.kind));
       button.onclick = () => { selected = collection.kind; renderNavigation(); renderCollection(); };
@@ -28,7 +29,11 @@
     target.replaceChildren();
     const title = element('h2', collection.label);
     title.prepend(collectionIcon(collection.kind));
-    target.append(title, element('p', collection.editableScope, { class: 'muted' }));
+    const paneHeading = element('div', null, { class: 'schema-pane-heading' });
+    const paneIntro = element('div', null, { class: 'schema-pane-intro' });
+    paneIntro.append(title, element('p', collection.editableScope, { class: 'muted' }));
+    paneHeading.append(paneIntro, save);
+    target.append(paneHeading);
     const label = element('label', 'Collection label');
     const input = element('input', null, { type: 'text', maxlength: '100', required: '', value: collection.label });
     input.oninput = () => { collection.label = input.value; markDirty(); };
@@ -39,7 +44,7 @@
     for (const relationship of collection.relationships) facts.append(element('p', relationship));
     if (collection.readOnlyFields?.length) facts.append(element('p', `Read-only / computed fields: ${collection.readOnlyFields.join(', ')}`));
     target.append(facts);
-    const tableWrap = element('div', null, { class: 'table-wrap' });
+    const tableWrap = element('div', null, { class: 'table-wrap', role: 'region', 'aria-label': 'Schema fields, scroll horizontally for more columns', tabindex: '0' });
     const table = element('table', null);
     const head = element('thead', null), heading = element('tr', null);
     for (const name of ['Order', 'Field / type', 'Label', 'Select options']) heading.append(element('th', name, { scope: 'col' }));
@@ -47,8 +52,9 @@
     const body = element('tbody', null);
     collection.fields.forEach((field, index) => {
       const row = element('tr', null), controls = element('td', null);
-      for (const [direction, caption, delta] of [['up', '↑', -1], ['down', '↓', 1]]) {
-        const button = element('button', caption, { type: 'button', 'aria-label': `Move ${field.label} ${direction}` });
+      for (const [direction, delta] of [['up', -1], ['down', 1]]) {
+        const button = element('button', null, { type: 'button', class: 'schema-order-button', 'aria-label': `Move ${field.label} ${direction}`, title: `Move ${direction}` });
+        button.append(element('span', 'expand_more', { class: `schema-symbol${direction === 'up' ? ' schema-order-up' : ''}`, 'aria-hidden': 'true' }));
         button.disabled = index + delta < 0 || index + delta >= collection.fields.length;
         button.onclick = () => {
           const next = index + delta;
@@ -59,7 +65,7 @@
         controls.append(button);
       }
       const identity = element('td', null);
-      identity.append(element('code', field.path), element('small', field.type));
+      identity.append(element('code', field.path), element('span', field.type, { class: 'schema-type-badge' }));
       const labelCell = element('td', null);
       const fieldLabel = element('input', null, { type: 'text', maxlength: '160', value: field.label, 'aria-label': `${field.path} label` });
       fieldLabel.oninput = () => { field.label = fieldLabel.value; markDirty(); };
