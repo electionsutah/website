@@ -200,7 +200,7 @@
       <h1>Civic data,<br /><em>made clear.</em></h1>
       <p class="intro">Explore the people, places, offices, and public records that have shaped Utah elections.</p>
       <div class="hero-actions">
-        <button class="primary" aria-haspopup="dialog" onclick={openSearch}>Search the data <span><Icon name="arrow_forward" /></span></button>
+        <button class="btn btn-primary btn-lg hero-search" aria-haspopup="dialog" onclick={openSearch}>Search the data <span><Icon name="arrow_forward" /></span></button>
         <a class="text-button" href="/docs/" onclick={(event) => open(event, '/docs/')}>Read the documentation</a>
       </div>
     </div>

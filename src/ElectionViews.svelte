@@ -129,7 +129,7 @@
       <div><small>AFFILIATIONS</small><strong>{election.filings.length ? partyCount : '—'}</strong></div>
     </section>
     <section class="record-section">
-      <div class="record-heading"><p class="eyebrow">Cycle records</p><h2>Candidates</h2></div>
+      <div class="record-heading"><p class="eyebrow compact">Cycle records</p><h2>Candidates</h2></div>
       {#if election.filings.length}
         {#key election.year}<EntityViews section="people" scope={election.filings} embedded stateId="election-people" omitColumns={['years']} showStatus={election.year === 2026} {navigate} />{/key}
       {:else}

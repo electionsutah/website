@@ -38,7 +38,7 @@
 <style>
   .county-map{width:100%;min-width:0;display:grid;place-items:center}
   svg{display:block;width:100%;max-width:240px;height:auto;overflow:hidden}
-  path.county{stroke:#fff;stroke-width:1;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+  path.county{stroke:var(--color-paper);stroke-width:1;stroke-linejoin:round;vector-effect:non-scaling-stroke}
   path.county:not(.available){pointer-events:none}
   path.county.available{cursor:pointer;outline:none}
   path.county.available:hover{filter:brightness(1.08)}

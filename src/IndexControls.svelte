@@ -59,7 +59,7 @@
   <div class="index-tools">
     <SearchField value={query} label={searchLabel} {onQuery} />
     <div class="index-actions">
-      <button class="filter-toggle" class:open={panelOpen} bind:this={filterToggle} aria-expanded={panelOpen} aria-controls={panelId} aria-haspopup="dialog" onclick={openPanel}>
+      <button class="btn btn-secondary filter-toggle" class:open={panelOpen} bind:this={filterToggle} aria-expanded={panelOpen} aria-controls={panelId} aria-haspopup="dialog" onclick={openPanel}>
         <Icon name="filter_list" /> Filters{#if active.length}<b>{active.length}</b>{/if}
       </button>
       <div class="view-toggle" role="group" aria-label="Layout">
@@ -125,8 +125,8 @@
       {/each}
       </div>
       <div class="filter-panel-footer">
-        <button class="filter-reset" disabled={!active.length} onclick={() => onSelection({})}>Clear all</button>
-        <button class="filter-done" onclick={closePanel}>Show {formatCount(resultCount)} {resultCount === 1 ? 'result' : 'results'}</button>
+        <button class="btn btn-text filter-reset" disabled={!active.length} onclick={() => onSelection({})}>Clear all</button>
+        <button class="btn btn-primary filter-done" onclick={closePanel}>Show {formatCount(resultCount)} {resultCount === 1 ? 'result' : 'results'}</button>
       </div>
     </div>
     </dialog>

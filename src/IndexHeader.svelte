@@ -24,10 +24,10 @@
 </header>
 
 <style>
-  .index-header.has-photo{position:relative;isolation:isolate;min-height:300px;background:#01223a;color:#fff}
+  .index-header.has-photo{position:relative;isolation:isolate;min-height:300px;background:var(--color-navy-deep);color:var(--color-paper)}
   .duotone-defs{position:absolute;width:0;height:0;overflow:hidden}
   .has-photo::before,.has-photo::after{content:'';position:absolute;inset:0;pointer-events:none}
   .has-photo::before{z-index:-2;background:var(--index-photo) var(--index-photo-position,center)/cover no-repeat;filter:url(#index-photo-duotone)}
-  .has-photo::after{z-index:-1;background:linear-gradient(180deg,rgba(1,34,58,.37),rgba(1,34,58,.73))}
-  .has-photo h1,.has-photo .eyebrow,.has-photo>p{color:#fff}
+  .has-photo::after{z-index:-1;background:var(--photo-overlay-blue)}
+  .has-photo h1,.has-photo .eyebrow,.has-photo>p{color:var(--color-paper)}
 </style>

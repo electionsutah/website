@@ -108,7 +108,7 @@
     <Breadcrumbs parent={{ label: 'Documentation', href: '/docs/' }} current="Data schema" {navigate} />
     <header class="docs-hero"><div><p class="eyebrow">Reference</p><h1>Data schema</h1><p>The original Elections Utah person record structure, including identity fields, election-year filings, contact details, documents, endorsements, and source metadata.</p></div></header>
     <section class="docs-content schema-layout">
-      <aside class="docs-aside"><p class="eyebrow">On this page</p><a href="#person">Person</a></aside>
+      <aside class="docs-aside"><p class="eyebrow flush">On this page</p><a href="#person">Person</a></aside>
       <div class="docs-article">
         <h2 id="person">Person</h2>
         <!-- svelte-ignore a11y_no_noninteractive_tabindex (Keyboard users need to reach and scroll the code block.) -->
@@ -123,7 +123,7 @@
     <section class="docs-content glossary-layout">
       <aside class="docs-aside glossary-aside">
         <SearchField className="glossary-search" bind:value={glossaryQuery} placeholder="Filter terms…" label="Filter glossary terms" />
-        <p class="eyebrow" role="status">{filteredGlossary.length} {filteredGlossary.length === 1 ? 'term' : 'terms'}</p>
+        <p class="eyebrow flush" role="status">{filteredGlossary.length} {filteredGlossary.length === 1 ? 'term' : 'terms'}</p>
         {#each filteredGlossary as [term]}<a href={`#${slug(term)}`}>{term}</a>{/each}
       </aside>
       {#if filteredGlossary.length}

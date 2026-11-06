@@ -404,7 +404,7 @@
       </section>
       {#if personProfile}
         <section class="record-section person-profile" aria-labelledby="person-profile-title">
-          <div class="record-heading"><p class="eyebrow">Campaign website information</p><h2 id="person-profile-title">About {person.name}</h2></div>
+          <div class="record-heading"><p class="eyebrow compact">Campaign website information</p><h2 id="person-profile-title">About {person.name}</h2></div>
           <p class="person-biography">{personProfile.biography}</p>
           <h3>Published campaign priorities</h3>
           <ul>{#each personProfile.priorities as priority}<li>{priority}</li>{/each}</ul>
@@ -413,7 +413,7 @@
         </section>
       {/if}
       <section class="record-section">
-        <div class="record-heading"><p class="eyebrow">Candidate history</p><h2>All filings</h2></div>
+        <div class="record-heading"><p class="eyebrow compact">Candidate history</p><h2>All filings</h2></div>
         <div class="filing-list">
           {#each person.filings as filing}
             <div class="filing-card">
@@ -444,8 +444,8 @@
         <div><small>ELECTION YEARS</small><strong>{office.years.length}</strong></div>
       </section>
       <section class="record-section split-detail">
-        <div class="record-heading"><p class="eyebrow">Candidate locations</p><h2>Places</h2>{#if office.placeIds.length}{#each office.placeIds as placeId}<a class="place-callout" href={hrefFor('places', placeId)} onclick={(event) => open(event, hrefFor('places', placeId))}>{placesById.get(placeId)?.name}<span>Browse candidates <Icon name="arrow_forward" /></span></a>{/each}{:else}<p class="missing-place">The source data does not publish city or county values for this office’s candidates.</p>{/if}</div>
-        <div><div class="filed-heading"><p class="eyebrow">Candidate field</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${office.name} candidates`} /></div><div class="candidate-list">
+        <div class="record-heading"><p class="eyebrow compact">Candidate locations</p><h2>Places</h2>{#if office.placeIds.length}{#each office.placeIds as placeId}<a class="place-callout" href={hrefFor('places', placeId)} onclick={(event) => open(event, hrefFor('places', placeId))}>{placesById.get(placeId)?.name}<span>Browse candidates <Icon name="arrow_forward" /></span></a>{/each}{:else}<p class="missing-place">The source data does not publish city or county values for this office’s candidates.</p>{/if}</div>
+        <div><div class="filed-heading"><p class="eyebrow flush">Candidate field</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${office.name} candidates`} /></div><div class="candidate-list">
           {#each shownCandidacies as { filing, personId, name, runningMate }}
             <a class="candidate-row" class:running-mate-row={runningMate} href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}>
               <PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.partyName}{#if runningMate}{' · '}Running mate{:else if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
@@ -464,7 +464,7 @@
         <div><small>PEOPLE</small><strong>{new Set(candidacies(party.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
         <div><small>ELECTION YEARS</small><strong>{party.years.length}</strong></div>
       </section>
-      <section class="record-section"><div class="record-heading"><p class="eyebrow">Candidate history</p><h2>People</h2></div>{#if party.filings.length}{#key party.id}<EntityViews section="people" scope={party.filings} embedded stateId="party-people" omitColumns={['party']} {navigate} />{/key}{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
+      <section class="record-section"><div class="record-heading"><p class="eyebrow compact">Candidate history</p><h2>People</h2></div>{#if party.filings.length}{#key party.id}<EntityViews section="people" scope={party.filings} embedded stateId="party-people" omitColumns={['party']} {navigate} />{/key}{:else}<div class="empty-slate"><strong>No archived candidate filings</strong><p>This party still has an individual directory page because it is recognized by the State of Utah.</p></div>{/if}</section>
     </article>
   {:else if place}
     <article class="entity-detail">
@@ -473,7 +473,7 @@
         <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>Archived candidate years: {place.years.slice().reverse().join(', ')}.</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<PhotoCredit image={placeImage} label={placeImageFallback ? `${place.county} County photo` : 'Photo'} />{/if}</div>
           <section class="place-profile" aria-labelledby="place-profile-title">
             <div class="place-summary">
-              <p class="eyebrow">Place profile</p>
+              <p class="eyebrow compact">Place profile</p>
               <h2 id="place-profile-title">About {place.name}</h2>
               <p>{placeProfile?.summary ?? `${place.name} is represented in the ${place.county} County election archive. A sourced local profile is not yet available.`}</p>
               {#if placeProfile}<a href={placeProfile.wikipediaUrl} target="_blank" rel="noreferrer">Wikipedia <span><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></span></a>{/if}
@@ -528,9 +528,9 @@
         <div><small>ELECTION YEARS</small><strong>{place.years.length}</strong></div>
       </section>
       <section class="record-section split-detail">
-        <div class="record-heading"><p class="eyebrow">Archived locations</p>{#if place.children.length}<h2>Cities in the archive</h2>{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}<h2 class:office-group-heading={place.children.length > 0}>Area offices</h2>{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
+        <div class="record-heading"><p class="eyebrow compact">Archived locations</p>{#if place.children.length}<h2>Cities in the archive</h2>{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}<h2 class:office-group-heading={place.children.length > 0}>Area offices</h2>{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
         <div>
-          <div class="filed-heading"><p class="eyebrow">Filed candidates</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${place.name} candidates`} /></div>
+          <div class="filed-heading"><p class="eyebrow flush">Filed candidates</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${place.name} candidates`} /></div>
           <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">No matching candidates.</p>{/each}</div>
         </div>
       </section>
@@ -621,6 +621,6 @@
         {/each}
       </div>
     {/if}
-    {#if visibleCards.length < sortedCards.length}<button class="load-more" onclick={showMore}>Show more <span>{formatCount(sortedCards.length - visibleCards.length)} remaining</span></button>{/if}
+    {#if visibleCards.length < sortedCards.length}<button class="btn btn-secondary load-more" onclick={showMore}>Show more <span>{formatCount(sortedCards.length - visibleCards.length)} remaining</span></button>{/if}
   </section>
 {/if}

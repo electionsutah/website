@@ -134,7 +134,7 @@
 <div class="search-overlay" role="presentation" onclick={(event) => { if (event.target === event.currentTarget) close(); }}>
   <div class="search-popout" role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="site-search-title" bind:this={dialog} onkeydown={trapFocus}>
     <div class="search-head">
-      <div><p class="eyebrow">Search every election year</p><h2 id="site-search-title">Find a record</h2></div>
+      <div><p class="eyebrow compact">Search every election year</p><h2 id="site-search-title">Find a record</h2></div>
       <button class="search-close" aria-label="Close search" onclick={() => close()}><Icon name="close" /></button>
     </div>
     <SearchField className="global-search-input" bind:input={searchInput} bind:value={query} label="Search a year, person, office, party, or place" shortcut="ESC" />
