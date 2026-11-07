@@ -25,7 +25,7 @@
   let expanded: Partial<Record<FacetKey, boolean>> = {};
   let transitionDuration = 220;
 
-  $: active = facets.flatMap((facet) => facet.values.filter((value) => value.selected).map((value) => ({ key: facet.key, label: facet.label, value: value.value })));
+  $: active = facets.flatMap((facet) => facet.values.filter((value) => value.selected).map((value) => ({ key: facet.key, label: facet.label, value: value.value, count: value.count })));
   $: panelId = `filters-${searchLabel.replace(/\W+/g, '-').toLowerCase()}`;
 
   function closePanel() {
@@ -97,7 +97,7 @@
               <div class="facet-values facet-selected" role="group" aria-label={`Selected ${facet.label.toLowerCase()} filters`}>
                 {#each facet.values.filter((option) => option.selected) as option (option.value)}
                   <button class="facet-chip" aria-label={`Remove ${option.value} filter`} onclick={() => onSelection(toggle(selection, facet.key, option.value))}>
-                    {option.value}<Icon name="close" />
+                    {option.value}<span class="facet-count"><span class="sr-only">, </span>{formatCount(option.count)}<span class="sr-only"> {option.count === 1 ? resultSingular : resultPlural}</span></span><Icon name="close" />
                   </button>
                 {/each}
               </div>
@@ -109,7 +109,7 @@
           <div class="facet-values">
             {#each expanded[facet.key] ? facet.values : facet.values.slice(0, collapsedSize) as option (option.value)}
               <button class="facet-chip" aria-pressed={option.selected} disabled={!option.count && !option.selected} onclick={() => onSelection(toggle(selection, facet.key, option.value))}>
-                {option.value}<span><span class="sr-only">, </span>{formatCount(option.count)}<span class="sr-only"> {option.count === 1 ? resultSingular : resultPlural}</span></span>
+                {option.value}<span class="facet-count"><span class="sr-only">, </span>{formatCount(option.count)}<span class="sr-only"> {option.count === 1 ? resultSingular : resultPlural}</span></span>
               </button>
             {/each}
             {#if facet.values.length > collapsedSize}
@@ -136,7 +136,7 @@
     <div class="active-filters" role="group" aria-label="Active filters">
       {#each active as item (`${item.key}:${item.value}`)}
         <button onclick={() => onSelection(toggle(selection, item.key, item.value))}>
-          <span class="sr-only">Remove filter </span><small>{item.label}<span class="sr-only">:</span></small> {item.value}<Icon name="close" />
+          <span class="sr-only">Remove filter </span><small>{item.label}<span class="sr-only">:</span></small> {item.value}<span class="facet-count"><span class="sr-only">, </span>{formatCount(item.count)}<span class="sr-only"> {item.count === 1 ? resultSingular : resultPlural}</span></span><Icon name="close" />
         </button>
       {/each}
       <button class="clear-filters" onclick={() => onSelection({})}>Clear all</button>
