@@ -732,7 +732,21 @@ const cycleDetails: Omit<ElectionCycle, 'filings'>[] = [
   { year: 2015, title: '2015 municipal elections', description: 'Primary and general-election ballot candidates for mayor and council offices in Salt Lake County’s official municipal results. Coverage is limited to Salt Lake County; other counties and candidates absent from the ballots are not included.', source: 'https://www.saltlakecounty.gov/clerk/elections/election-results/', sourceLabel: 'Official Salt Lake County election results', availability: 'local' },
   { year: 2014, title: '2014 regular election', description: 'Primary and general-election ballot candidates for federal, state, legislative, state school-board, and judicial-retention offices recovered from official statewide canvasses. These ballot rosters do not include every person who filed or withdrew.', source: 'https://vote.utah.gov/historical-election-results/', sourceLabel: 'Official statewide canvasses', availability: 'statewide' },
   { year: 2013, title: '2013 municipal elections', description: 'Primary and general-election ballot candidates for mayor and council offices in Salt Lake County’s official municipal results. Coverage is limited to Salt Lake County; other counties and candidates absent from the ballots are not included.', source: 'https://www.saltlakecounty.gov/clerk/elections/election-results/', sourceLabel: 'Official Salt Lake County election results', availability: 'local' },
-  ...[...new Set(newspaperRows.map(row => row.year))].sort((a, b) => b - a).map(year => ({
+  ...Array.from({ length: 19 }, (_, index) => 2012 - index).map(year => ({
+    year,
+    title: `${year} ${year % 2 ? 'municipal elections' : 'regular election'}`,
+    description: year === 1995
+      ? 'Existing municipal candidate records from contemporary unofficial Deseret News returns across Utah. Coverage follows the published contests; outcomes are unverified.'
+      : year % 2
+        ? 'Primary and general-election mayor and council ballot rosters from official Salt Lake County results. Other counties are not included; some published names are abbreviated.'
+        : year < 2007
+          ? 'Reviewed primary ballots and selected general-election rosters from official state canvasses. Legislative and judicial coverage varies by source; these are not complete statewide filing lists.'
+          : 'Primary and general-election ballot rosters from official statewide canvasses. These are not complete filing lists. Some tickets publish surnames only; justice-court rosters are excluded.',
+    source: year === 1995 ? newspaperRows.find(row => row.year === 1995)!.source : year % 2 ? 'https://www.saltlakecounty.gov/clerk/elections/election-results/' : 'https://vote.utah.gov/historical-election-results/',
+    sourceLabel: year === 1995 ? 'Unofficial contemporary newspaper returns' : year % 2 ? 'Official Salt Lake County election results' : 'Official statewide canvasses',
+    availability: year % 2 ? 'local' as const : 'statewide' as const
+  })),
+  ...[...new Set(newspaperRows.map(row => row.year).filter(year => year < 1994 || year > 2026))].sort((a, b) => b - a).map(year => ({
     year,
     title: `${year} municipal elections`,
     description: 'Municipal candidates across Utah from contemporary unofficial Deseret News returns. Coverage follows the places and contests published in the source; outcomes are unverified.',

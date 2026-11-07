@@ -1,0 +1,301 @@
+[
+  {
+    "year": 2012,
+    "records": 309,
+    "status": "imported",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2012-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+        "ballotEntries": 278
+      },
+      {
+        "key": "2012-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+        "ballotEntries": 49
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 2011,
+    "records": 139,
+    "status": "imported",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2011-general",
+        "url": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2011-11-08-general-election-with-recount-results.pdf",
+        "ballotEntries": 94
+      },
+      {
+        "key": "2011-primary",
+        "url": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2011-09-13-primary-election.pdf",
+        "ballotEntries": 95
+      }
+    ],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 2010,
+    "records": 277,
+    "status": "imported",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Justice-court sheet excluded; surname-only tickets retained as published. Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2010-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2010Gen.xls",
+        "ballotEntries": 267
+      },
+      {
+        "key": "2010-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2010-Primary-Canvass-Reports.xls",
+        "ballotEntries": 20
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 2009,
+    "records": 138,
+    "status": "imported",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2009-general",
+        "url": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2009-11-03-municipal-general-election.pdf",
+        "ballotEntries": 92
+      },
+      {
+        "key": "2009-primary",
+        "url": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2009-09-15-municipal-primary-election.pdf",
+        "ballotEntries": 92
+      }
+    ],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 2008,
+    "records": 314,
+    "status": "partial",
+    "coverage": "Statewide ballot roster",
+    "limitations": "2008 primary and presidential primary remain unparsed. Justice-court sheet excluded; surname-only tickets retained as published. Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2008-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2008Gen.xls",
+        "ballotEntries": 314
+      },
+      {
+        "key": "2008-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/08-Primary-Election-Results.pdf"
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 2007,
+    "records": 148,
+    "status": "imported",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2007-general",
+        "url": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2007-11-06-general-election.pdf",
+        "ballotEntries": 103
+      },
+      {
+        "key": "2007-primary",
+        "url": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2007-09-11-primary-election.pdf",
+        "ballotEntries": 86
+      }
+    ],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 2006,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2006-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2006Gen.pdf"
+      },
+      {
+        "key": "2006-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2006Pri.pdf"
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 2005,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 2004,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2004-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2004Gen.pdf"
+      },
+      {
+        "key": "2004-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2004Pri.pdf"
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 2003,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 2002,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2002-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2002Gen.pdf"
+      },
+      {
+        "key": "2002-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2002Pri.pdf"
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 2001,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 2000,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [
+      {
+        "key": "2000-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2000Gen.pdf"
+      },
+      {
+        "key": "2000-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2000Pri.xls"
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 1999,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 1998,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Scanned canvasses require OCR and review.",
+    "sources": [
+      {
+        "key": "1998-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1998Gen.pdf"
+      },
+      {
+        "key": "1998-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1998Pri.pdf"
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 1997,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 1996,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Scanned canvasses require OCR and review.",
+    "sources": [
+      {
+        "key": "1996-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1996Gen.pdf"
+      },
+      {
+        "key": "1996-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1996Pri.pdf"
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  },
+  {
+    "year": 1995,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Salt Lake County municipal ballot roster",
+    "limitations": "Ballot rosters are not complete filing lists; no outcomes inferred.",
+    "sources": [],
+    "sourceIndex": "https://www.saltlakecounty.gov/clerk/elections/election-results/"
+  },
+  {
+    "year": 1994,
+    "records": 0,
+    "status": "pending",
+    "coverage": "Statewide ballot roster",
+    "limitations": "Scanned canvasses require OCR and review.",
+    "sources": [
+      {
+        "key": "1994-general",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1994Gen.pdf"
+      },
+      {
+        "key": "1994-primary",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1994Pri.pdf"
+      }
+    ],
+    "sourceIndex": "https://vote.utah.gov/historical-election-results/"
+  }
+]

@@ -27,7 +27,7 @@ workflow, data connections, and current scope.
 
 ## Included content
 
-- Searchable filing and ballot-candidate records from available 2013–2026 sources
+- Searchable filing and ballot-candidate records from available 1994–2026 state and county sources, plus earlier newspaper returns
 - Individual, cross-linked views for people, offices, political parties,
   counties, cities, and election years
 - Global popout search across every entity type
@@ -49,7 +49,7 @@ gap and link to the official record directories instead of fabricating rows.
 
 ## Pre-2017 coverage
 
-The archive now reaches 2013, adding 826 distinct ballot-candidate records:
+The 2013–2016 tranche adds 826 distinct ballot-candidate records:
 
 - **2016:** 291 records from Utah's primary and general statewide canvasses.
 - **2015:** 106 municipal records from Salt Lake County's primary and general results.
@@ -70,8 +70,51 @@ the source election, not a recovered declaration date.
 Refresh with `python3 scripts/import-pre2017-candidates.py`; add `--use-cache`
 to reuse source files in `.firecrawl/pre2017/`. Requires Poppler's `pdftotext`.
 The importer replaces only 2013–2016 records and preserves later cycles.
-Earlier statewide results (back to 1960) and county municipal results (back to
-2001) were located in these indexes but have not yet been normalized.
+The indexes also include earlier statewide and county results. See the
+1994–2012 backfill below for imported records and remaining source gaps.
+
+## 1994–2012 backfill
+
+The state/county importer now adds **2,518 distinct candidate/office/year/party
+records across 18 years from 1994 through 2012**. The separate newspaper dataset
+already supplies **1,225 unofficial 1995 records**. Every year in the requested
+range therefore has records, with substantial differences in source coverage.
+
+The first pass reported 1,325 records for 2007–2012. Follow-up work removed two
+misclassified Yes/No responses and six recreation-board candidates incorrectly
+assigned to a preceding council contest, added the
+2008 regular/presidential primaries, and extended reviewed rosters back to 1994.
+The preserved first-pass inventory and current source-by-source gaps are shown in
+[the HTML progress report](reports/historical-backfill-1994-2012.html).
+
+```sh
+uv run --with xlrd python scripts/import-1994-2012-candidates.py --use-cache
+node scripts/report-historical-backfill.mjs
+python3 -m unittest discover -s scripts -p 'test_import*.py'
+```
+
+Requires `curl` and Poppler's `pdftotext` for source downloads and municipal PDF
+extraction, plus `xlrd` for legacy Excel. Downloads live in `.firecrawl/pre2017/`.
+Reviewed older PDF facts are committed in
+`src/data/history/reviewed-canvass-rosters.tsv`, with document keys and page
+numbers. Local OCR was used to aid transcription; raw OCR output is not imported.
+The importer replaces only its covered years and preserves all other cycles and
+the separate newspaper dataset. The 2013–2016 importer remains independent.
+
+**Remaining source work:** selected 1996/1998 judicial entries, the conflicting
+1999 general Salt Lake City District 6 section and August incorporation primary,
+the 2000/2002/2004 general legislative/school-board/judicial rosters, and 2006
+general House coverage. The 2006 official PDF repeats Senate tables where
+multi-county House coverage is expected; county sources will be needed. Details
+and reviewed page numbers are in `reports/historical-backfill-1994-2012.json`.
+
+These are ballot rosters, not complete filing lists. Municipal official coverage
+is limited to Salt Lake County. Older state canvasses vary in legislative scope.
+No outcomes are inferred. Surname-only tickets and source spellings are retained;
+unknown running mates do not become people. Ambiguous or unpublished party
+labels remain blank. Judicial retention is labeled separately from contested
+races, and justice-court sheets are excluded. All 75 House districts are present
+in each of the 2008/2010/2012 statewide general imports.
 
 ## Refreshing the data
 

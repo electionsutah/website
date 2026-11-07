@@ -1,0 +1,10 @@
+{
+  "verifiedOn": "2026-11-06",
+  "importTests": 15,
+  "svelteErrors": 0,
+  "svelteWarnings": 0,
+  "cachedRegeneration": "byte-for-byte identical",
+  "build": "passed",
+  "prerenderedRoutes": 12907,
+  "personMergeChecks": "passed"
+}

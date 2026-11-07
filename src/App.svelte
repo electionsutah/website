@@ -240,7 +240,7 @@
     </div>
     <div class="data-grid">
       <article><span>01</span><small>2026</small><h3>Current<br />Listings</h3><p>{formatCount(totals.currentFilings)} federal, legislative, school-board, and judicial-retention records in the Elections Utah schema.</p><div><a href={candidateYamlUrl} download="elections-utah-2026-candidates.yml">YAML <Icon name="download" /></a></div></article>
-      <article><span>02</span><small>2013–24</small><h3>Historical<br />Listings</h3><p>{formatCount(totals.historicalFilings)} normalized records from the original archive and official Utah sources.</p><div><a href={historicalDataUrl} download="elections-utah-2013-2024-candidates.json">JSON <Icon name="download" /></a></div></article>
+      <article><span>02</span><small>1994–24</small><h3>Historical<br />Listings</h3><p>{formatCount(totals.historicalFilings)} normalized records from the original archive and official Utah sources.</p><div><a href={historicalDataUrl} download="elections-utah-1994-2024-candidates.json">JSON <Icon name="download" /></a></div></article>
       <article><span>03</span><small>LIVE</small><h3>Official<br />Source</h3><p>The Utah Lieutenant Governor’s current filing table and downloadable workbook.</p><div><a href="https://vote.utah.gov/2026-candidate-filings/" target="_blank" rel="noreferrer">VIEW <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a><a href="https://vote.utah.gov/wp-content/uploads/2026/06/Candidate-Filing-2026.xlsx" target="_blank" rel="noreferrer">XLSX <Icon name="download" /><span class="sr-only"> (opens in new tab)</span></a></div></article>
     </div>
   </section>

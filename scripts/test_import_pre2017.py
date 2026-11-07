@@ -35,7 +35,7 @@ ERNEST BURGESS               576    49.83%
 
     def test_published_archive(self):
         rows = json.loads((module.ROOT / 'src/data/historical-candidates.json').read_text())
-        old = [r for r in rows if r['year'] < 2017]
+        old = [r for r in rows if 2013 <= r['year'] < 2017]
         self.assertEqual(len(old), 826)
         identities = [(r['year'], r['id'], r['office'], r['party']) for r in old]
         self.assertEqual(len(identities), len(set(identities)))
