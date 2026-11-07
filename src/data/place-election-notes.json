@@ -349,15 +349,36 @@
       "date": "2026-11-06",
       "kind": "coverage_review",
       "title": "Municipal election coverage review",
-      "summary": "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported.",
+      "summary": "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Recent candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported.",
       "source": "https://kane.utah.gov/DocumentCenter/View/1004/Official-November-4-2025-Summary-Results"
     },
     {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Historical Alton election returns located",
-      "summary": "Expanded research located 21 named candidate appearances in six municipal contests across 1989, 1991, 1993 and 1995 in contemporary Deseret News returns. These unofficial historical returns precede the current 2013–2026 archive and are staged in reports/alton-election-research.json for scope review. The 1993 mayoral tally is tied at 17–17; resolution is unverified. No modern election candidacies are inferred from officeholding.",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Recent candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported. Imported 21 candidate appearances across six contests in 1989, 1991, 1993 and 1995 from unofficial contemporary newspaper returns. The 1993 mayoral tie remains unresolved; recent candidate coverage remains incomplete.",
+      "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Recent candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported. Imported 21 candidate appearances across six contests in 1989, 1991, 1993 and 1995 from unofficial contemporary newspaper returns. The 1993 mayoral tie remains unresolved; recent candidate coverage remains incomplete.",
+      "source": "https://www.deseret.com/1991/11/6/18949937/here-s-election-rundown-outside-of-s-l-county/"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Recent candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported. Imported 21 candidate appearances across six contests in 1989, 1991, 1993 and 1995 from unofficial contemporary newspaper returns. The 1993 mayoral tie remains unresolved; recent candidate coverage remains incomplete.",
       "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Recent candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported. Imported 21 candidate appearances across six contests in 1989, 1991, 1993 and 1995 from unofficial contemporary newspaper returns. The 1993 mayoral tie remains unresolved; recent candidate coverage remains incomplete.",
+      "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/"
     }
   ],
   "millard/lynndyl": [

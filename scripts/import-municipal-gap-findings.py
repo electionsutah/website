@@ -22,7 +22,7 @@ def key(row):
 
 investigation = read('reports/municipal-gap-investigation.json')
 researched = read('src/data/researched-candidates.json')
-existing = {key(row) for name in ['historical-candidates', 'local-candidates', 'researched-candidates'] for row in read(f'src/data/{name}.json')}
+existing = {key(row) for name in ['historical-candidates', 'local-candidates', 'researched-candidates', 'newspaper-candidates'] for row in read(f'src/data/{name}.json')}
 profiles = read('src/data/place-enrichment.json')
 notes = read('src/data/place-election-notes.json')
 added = 0

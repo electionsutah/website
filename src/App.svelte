@@ -209,7 +209,7 @@
   </section>
 
   <section class="archive-note">
-    <span>2013–2026</span>
+    <span>1989–2026</span>
     <p>{formatCount(totals.filings)} filing records across Utah’s available election archives, joined into {formatCount(totals.people)} people while preserving every distinct race.</p>
   </section>
 
@@ -249,7 +249,7 @@
     <div class="directory-intro">
       <p class="eyebrow">Browse the archive</p>
       <h2>Find the records<br />that <em>matter.</em></h2>
-      <p>Search the combined 2013–2026 archive. Repeat candidates link to one person record with every distinct race listed by year.</p>
+      <p>Search selected cycles in the 1989–2026 archive. Repeat candidates link to one person record with every distinct race listed by year.</p>
       <div class="party-list" role="group" aria-label="Political parties">
         {#each partyEntities as party}<a href={`/parties/${party.id}/`} onclick={(event) => open(event, `/parties/${party.id}/`)}>{party.name}</a>{/each}
       </div>

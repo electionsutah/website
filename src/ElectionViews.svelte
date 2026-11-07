@@ -108,7 +108,7 @@
   <section class="entity-not-found">
     <p class="eyebrow">404</p>
     <h1>That election year isn’t here.</h1>
-    <p>Election-year pages cover 2013 through 2026.</p>
+    <p>Election-year pages cover selected cycles from 1989 through 2026.</p>
     <a href="/elections/" onclick={(event) => open(event, '/elections/')}>Browse election years <Icon name="arrow_forward" /></a>
   </section>
 {:else if election}
@@ -141,7 +141,7 @@
   </article>
 {:else}
   <section class="entity-index election-index">
-    <IndexHeader title="Election years" eyebrow="2013–2026 archive" intro="Browse every cycle in the archive. Statewide records are included where Utah published a candidate table, workbook, pamphlet, or canvass. “Not archived” means this site has no candidate dataset for that year." photo={indexHeaderImages.elections} />
+    <IndexHeader title="Election years" eyebrow="1989–2026 archive" intro="Browse every cycle in the archive. Early coverage comes from unofficial newspaper returns for 1989, 1991, 1993 and 1995; the source articles do not cover every jurisdiction. Statewide records are included where Utah published a candidate table, workbook, pamphlet, or canvass. “Not archived” means this site has no candidate dataset for that year." photo={indexHeaderImages.elections} />
     <IndexControls
       {facets}
       {selection}

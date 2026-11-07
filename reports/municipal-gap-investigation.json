@@ -844,7 +844,7 @@
       "id": "kane/alton",
       "name": "Alton",
       "county": "Kane",
-      "status": "Historical newspaper returns found; current archive years unresolved",
+      "status": "Candidate records imported",
       "sources": [
         "https://kane.utah.gov/311/Elections",
         "https://kane.utah.gov/DocumentCenter/View/1004/Official-November-4-2025-Summary-Results",
@@ -855,10 +855,180 @@
         "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/"
       ],
       "notes": [
-        "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported.",
-        "Expanded research located 21 named candidate appearances in six municipal contests across 1989, 1991, 1993 and 1995 in contemporary Deseret News returns. These unofficial historical returns precede the current 2013–2026 archive and are staged in reports/alton-election-research.json for scope review. The 1993 mayoral tally is tied at 17–17; resolution is unverified. No modern election candidacies are inferred from officeholding."
+        "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Recent candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported.",
+        "Imported 21 candidate appearances across six contests in 1989, 1991, 1993 and 1995 from unofficial contemporary newspaper returns. The 1993 mayoral tie remains unresolved; recent candidate coverage remains incomplete."
       ],
-      "importedRecords": 0
+      "importedRecords": 21,
+      "candidates": [
+        {
+          "name": "Orval Palmer",
+          "office": "Mayor",
+          "year": 1989,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+        },
+        {
+          "name": "Joy J. Heaton",
+          "office": "Mayor",
+          "year": 1989,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+        },
+        {
+          "name": "Vane Campbell",
+          "office": "Town Council (4-year term)",
+          "year": 1989,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+        },
+        {
+          "name": "Douglas Heaton",
+          "office": "Town Council (4-year term)",
+          "year": 1989,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+        },
+        {
+          "name": "Ferril Heaton",
+          "office": "Town Council (4-year term)",
+          "year": 1989,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+        },
+        {
+          "name": "Sylvia Young",
+          "office": "Town Council (4-year term)",
+          "year": 1989,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+        },
+        {
+          "name": "Gary Kalpakoff",
+          "office": "Town Council (4-year term)",
+          "year": 1991,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1991/11/6/18949937/here-s-election-rundown-outside-of-s-l-county/"
+        },
+        {
+          "name": "Royce Young",
+          "office": "Town Council (4-year term)",
+          "year": 1991,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1991/11/6/18949937/here-s-election-rundown-outside-of-s-l-county/"
+        },
+        {
+          "name": "Dick Edmunds",
+          "office": "Town Council (4-year term)",
+          "year": 1991,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1991/11/6/18949937/here-s-election-rundown-outside-of-s-l-county/"
+        },
+        {
+          "name": "Raymond Heaton",
+          "office": "Town Council (4-year term)",
+          "year": 1991,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1991/11/6/18949937/here-s-election-rundown-outside-of-s-l-county/"
+        },
+        {
+          "name": "Nancy Roundy",
+          "office": "Town Council (4-year term)",
+          "year": 1991,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1991/11/6/18949937/here-s-election-rundown-outside-of-s-l-county/"
+        },
+        {
+          "name": "Esther Heaton",
+          "office": "Mayor",
+          "year": 1993,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/"
+        },
+        {
+          "name": "Orval Palmer",
+          "office": "Mayor",
+          "year": 1993,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/"
+        },
+        {
+          "name": "Dick Edmunds",
+          "office": "Town Council",
+          "year": 1993,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/"
+        },
+        {
+          "name": "Vane Campbell",
+          "office": "Town Council",
+          "year": 1993,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/"
+        },
+        {
+          "name": "Joy Heaton",
+          "office": "Town Council",
+          "year": 1993,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/"
+        },
+        {
+          "name": "Doug Heaton",
+          "office": "Town Council",
+          "year": 1993,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/"
+        },
+        {
+          "name": "Douglas K. Heaton",
+          "office": "Town Council (4-year term)",
+          "year": 1995,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/"
+        },
+        {
+          "name": "Arthur W. R. Andersen",
+          "office": "Town Council (4-year term)",
+          "year": 1995,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/"
+        },
+        {
+          "name": "Royce Clifton Young",
+          "office": "Town Council (4-year term)",
+          "year": 1995,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/"
+        },
+        {
+          "name": "Kim Cox",
+          "office": "Town Council (4-year term)",
+          "year": 1995,
+          "status": "general_election",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/"
+        }
+      ]
     },
     {
       "id": "millard/lynndyl",

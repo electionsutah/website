@@ -2,12 +2,16 @@
 
 Reference: [UGRC municipality boundaries](https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/UtahMunicipalBoundaries/FeatureServer/0/query). Existing UGRC municipality boundary snapshot used by the local-contest importer; a current-boundary reference, not a historical incorporation timeline. Not every municipality necessarily held an election in each audited year.
 
-Audited 257 distinct municipalities across 261 municipality/county boundary entries. Multi-county municipalities are counted once. 0 have no place page; 1 have no municipal candidate records.
+Audited 257 distinct municipalities across 261 municipality/county boundary entries. Multi-county municipalities are counted once. 0 have no place page; 0 have no municipal candidate records.
 
 These are coverage flags, not proof that elections were held or that no candidates filed. Incorporation dates, uncontested cancellations, and missing source rosters need individual review.
 
 | Election year | Municipalities with records | No records |
 | --- | ---: | ---: |
+| 1989 | 212 | 45 |
+| 1991 | 211 | 46 |
+| 1993 | 225 | 32 |
+| 1995 | 226 | 31 |
 | 2013 | 16 | 241 |
 | 2015 | 16 | 241 |
 | 2017 | 25 | 232 |
@@ -18,7 +22,6 @@ These are coverage flags, not proof that elections were held or that no candidat
 
 ## Municipalities without candidate records
 
-- [Alton](https://www.electionsutah.org/places/kane/alton/), [Kane County](https://www.electionsutah.org/places/kane/) (place page exists)
 
 ## Investigation of the original 33 gaps
 
@@ -247,10 +250,31 @@ Status: Candidate records imported. Imported records: 3.
 
 ### [Alton](https://www.electionsutah.org/places/kane/alton/), [Kane County](https://www.electionsutah.org/places/kane/)
 
-Status: Historical newspaper returns found; current archive years unresolved. Imported records: 0.
+Status: Candidate records imported. Imported records: 21.
 
-- The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported.
-- Expanded research located 21 named candidate appearances in six municipal contests across 1989, 1991, 1993 and 1995 in contemporary Deseret News returns. These unofficial historical returns precede the current 2013–2026 archive and are staged in reports/alton-election-research.json for scope review. The 1993 mayoral tally is tied at 17–17; resolution is unverified. No modern election candidacies are inferred from officeholding.
+- The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Recent candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported.
+- Imported 21 candidate appearances across six contests in 1989, 1991, 1993 and 1995 from unofficial contemporary newspaper returns. The 1993 mayoral tie remains unresolved; recent candidate coverage remains incomplete.
+- [Orval Palmer](https://www.electionsutah.org/people/orval-palmer/) · 1989 · [Mayor](https://www.electionsutah.org/offices/mayor/) · Unofficial newspaper general-election returns
+- [Joy J. Heaton](https://www.electionsutah.org/people/joy-j-heaton/) · 1989 · [Mayor](https://www.electionsutah.org/offices/mayor/) · Unofficial newspaper general-election returns
+- [Vane Campbell](https://www.electionsutah.org/people/vane-campbell/) · 1989 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Douglas Heaton](https://www.electionsutah.org/people/douglas-heaton/) · 1989 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Ferril Heaton](https://www.electionsutah.org/people/ferril-heaton/) · 1989 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Sylvia Young](https://www.electionsutah.org/people/sylvia-young/) · 1989 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Gary Kalpakoff](https://www.electionsutah.org/people/gary-kalpakoff/) · 1991 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Royce Young](https://www.electionsutah.org/people/royce-young/) · 1991 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Dick Edmunds](https://www.electionsutah.org/people/dick-edmunds/) · 1991 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Raymond Heaton](https://www.electionsutah.org/people/raymond-heaton/) · 1991 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Nancy Roundy](https://www.electionsutah.org/people/nancy-roundy/) · 1991 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Esther Heaton](https://www.electionsutah.org/people/esther-heaton/) · 1993 · [Mayor](https://www.electionsutah.org/offices/mayor/) · Unofficial newspaper general-election returns
+- [Orval Palmer](https://www.electionsutah.org/people/orval-palmer/) · 1993 · [Mayor](https://www.electionsutah.org/offices/mayor/) · Unofficial newspaper general-election returns
+- [Dick Edmunds](https://www.electionsutah.org/people/dick-edmunds/) · 1993 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Unofficial newspaper general-election returns
+- [Vane Campbell](https://www.electionsutah.org/people/vane-campbell/) · 1993 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Unofficial newspaper general-election returns
+- [Joy Heaton](https://www.electionsutah.org/people/joy-heaton/) · 1993 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Unofficial newspaper general-election returns
+- [Doug Heaton](https://www.electionsutah.org/people/doug-heaton/) · 1993 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Unofficial newspaper general-election returns
+- [Douglas K. Heaton](https://www.electionsutah.org/people/douglas-k-heaton/) · 1995 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Arthur W. R. Andersen](https://www.electionsutah.org/people/arthur-w-r-andersen/) · 1995 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Royce Clifton Young](https://www.electionsutah.org/people/royce-clifton-young/) · 1995 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
+- [Kim Cox](https://www.electionsutah.org/people/kim-cox/) · 1995 · [Town Council (4-year term)](https://www.electionsutah.org/offices/town-council-4-year-term/) · Unofficial newspaper general-election returns
 - [Source 1](https://kane.utah.gov/311/Elections)
 - [Source 2](https://kane.utah.gov/DocumentCenter/View/1004/Official-November-4-2025-Summary-Results)
 - [Source 3](https://www.utah.gov/pmn/sitemap/publicbody/5997.html)
@@ -456,6 +480,10 @@ Status: Candidate records imported. Imported records: 3.
 
 | Year | Candidate records across all sections |
 | --- | ---: |
+| 1989 | 1220 |
+| 1991 | 1068 |
+| 1993 | 1399 |
+| 1995 | 1229 |
 | 2013 | 160 |
 | 2014 | 269 |
 | 2015 | 106 |

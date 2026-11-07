@@ -1,0 +1,30 @@
+[
+  {
+    "year": 1989,
+    "jurisdictions": 216,
+    "candidateAppearances": 1220,
+    "candidateContests": 478,
+    "measures": 17
+  },
+  {
+    "year": 1991,
+    "jurisdictions": 218,
+    "candidateAppearances": 1068,
+    "candidateContests": 266,
+    "measures": 10
+  },
+  {
+    "year": 1993,
+    "jurisdictions": 231,
+    "candidateAppearances": 1399,
+    "candidateContests": 509,
+    "measures": 20
+  },
+  {
+    "year": 1995,
+    "jurisdictions": 236,
+    "candidateAppearances": 1231,
+    "candidateContests": 287,
+    "measures": 16
+  }
+]

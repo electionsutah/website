@@ -186,13 +186,13 @@
       ]
     }
   ],
-  "imported": false,
+  "imported": true,
   "findings": [
     "Alton has documented municipal election returns: six contests and 21 named candidate appearances across 1989, 1991, 1993 and 1995. These are contemporary newspaper returns, not government-certified canvasses.",
     "The November 1993 mayoral returns report Esther Heaton and Orval Palmer tied at 17 each. A separate contemporary article corroborates the tie; its resolution remains unverified. A 1996 Congressional Record lists Orval Palmer as Alton mayor, which supports later officeholding but does not prove how the 1993 tie was resolved.",
     "All four 1995 council candidates are explicitly write-ins. Name variants across years are retained as published; no automatic identity merge is made.",
-    "These cycles precede the currently imported candidate archive, which begins in 2013. They are staged here as research findings rather than inserted into that archive without updating its scope labels and documentation.",
-    "Recent 2013\u20132025 Alton candidacies remain unresolved in the reviewed county election page, public notice body index, government archive finding aids, newspaper search results and official sample ballots. Search absence is not evidence of no elections."
+    "Imported 21 candidate appearances and six unofficial newspaper result tables for selected Alton cycles in 1989–1995. The archive labels now include this selective historical coverage.",
+    "Recent 2013–2025 Alton candidacies remain unresolved in the reviewed county election page, public notice body index, government archive finding aids, newspaper search results and official sample ballots. Search absence is not evidence of no elections."
   ],
   "governmentSources": [
     "https://www.utah.gov/pmn/sitemap/publicbody/5997.html",
@@ -206,8 +206,7 @@
     "https://www.deseret.com/2004/10/6/19854279/mayoral-write-in-could-rewrite-history/"
   ],
   "nextSteps": [
-    "Expand archive scope and import these 21 candidate appearances with six explicitly unofficial newspaper result tables; do not mix them into official county returns.",
     "Resolve the 1993 mayoral tie through subsequent newspaper coverage or town council minutes.",
-    "Seek the town-held declarations, election canvasses, cancellation resolutions and campaign disclosures for 1997\u20132025. State archival microfilm can support earlier history; finding aids alone do not establish modern candidates."
+    "Seek the town-held declarations, election canvasses, cancellation resolutions and campaign disclosures for 1997–2025. State archival microfilm can support earlier history; finding aids alone do not establish modern candidates."
   ]
 }

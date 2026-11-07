@@ -3738,7 +3738,7 @@
   "wikipediaUrl": "",
   "wikidataId": "",
   "wikidataUrl": "",
-  "summary": "Alton is a town in Kane County, Utah. Its municipal election records are under review; the source notes describe the available evidence and remaining gaps.",
+  "summary": "Alton is a town in Kane County, Utah. Historical municipal candidate records and unofficial newspaper returns are documented for 1989, 1991, 1993 and 1995; recent election coverage remains incomplete.",
   "officialWebsite": "",
   "sources": [
    "https://kane.utah.gov/311/Elections"
@@ -3792,5 +3792,41 @@
    "https://muniwatch.org/meetings/cmkqkpt77029bs75n8cov6x70"
   ],
   "verifiedOn": "2026-11-06"
+ },
+ "carbon/hiawatha": {
+  "summary": "Hiawatha municipal election records in Carbon County, Utah, are documented in contemporary newspaper returns. Coverage is historical and does not establish current municipal boundaries or government status.",
+  "sources": [
+   "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+  ],
+  "verifiedOn": "2026-11-06",
+  "wikipediaTitle": "",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "officialWebsite": ""
+ },
+ "carbon/sunnyside": {
+  "summary": "Sunnyside municipal election records in Carbon County, Utah, are documented in contemporary newspaper returns. Coverage is historical and does not establish current municipal boundaries or government status.",
+  "sources": [
+   "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+  ],
+  "verifiedOn": "2026-11-06",
+  "wikipediaTitle": "",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "officialWebsite": ""
+ },
+ "tooele/ophir": {
+  "summary": "Ophir municipal election records in Tooele County, Utah, are documented in contemporary newspaper returns. Coverage is historical and does not establish current municipal boundaries or government status.",
+  "sources": [
+   "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/"
+  ],
+  "verifiedOn": "2026-11-06",
+  "wikipediaTitle": "",
+  "wikipediaUrl": "",
+  "wikidataId": "",
+  "wikidataUrl": "",
+  "officialWebsite": ""
  }
 }

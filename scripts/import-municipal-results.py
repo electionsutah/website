@@ -30,7 +30,22 @@ for (town, year, office), rows in groups.items():
         totalCandidateVotes=sum(row['votes'] for row in rows), notes=notes,
         options=[dict(name=row['name'], votes=row['votes'], writeIn=row['name'] in write_ins, winner=None) for row in rows]))
 assert sum(c['totalCandidateVotes'] for c in contests) == 602
+alton = json.loads((ROOT / 'reports/alton-election-research.json').read_text())
+for contest in alton['contests']:
+    year, office = contest['year'], contest['office']
+    notes = ['Contemporary Deseret News returns are unofficial. Winner status is not inferred. Name variants are retained as published.']
+    if year == 1993 and office == 'Mayor':
+        notes.append('Esther Heaton and Orval Palmer are tied at 17 votes each. The tie resolution is unverified.')
+    contests.append(dict(contest, id=f'{year}-alton-{slug(office)}', placeId='kane/alton', municipality='Alton',
+        electionDate={1989:'1989-11-07',1991:'1991-11-05',1993:'1993-11-02',1995:'1995-11-07'}[year],
+        totalCandidateVotes=sum(o['votes'] for o in contest['options']), notes=notes))
+assert len(contests) == 14
+assert sum(c['totalCandidateVotes'] for c in contests) == 902
+newspaper = json.loads((ROOT / 'reports/historical-newspaper-elections.json').read_text())['contests']
+# The full-source manifest supersedes the six Alton-only tables.
+contests = [dict(c, kind='candidate') for c in contests if c['official']] + newspaper
+assert len({c['id'] for c in contests}) == len(contests)
 text = json.dumps(contests, indent=2) + '\n'
 for destination in ['src/data/municipal-results.json', 'public/data/municipal-results.json']:
     (ROOT / destination).write_text(text)
-print('Imported 8 municipal contests, 17 candidate results and 602 candidate votes.')
+print(f'Imported {len(contests)} contests from county and newspaper returns.')

@@ -28,7 +28,7 @@ try {
   const fireOffice = [...officesById.values()].find(office => office.name === 'New Harmony Valley Fire SSD Board Member');
   if (fireOffice) siteEntities.set('New Harmony Valley Fire SSD', entityUrl('offices', fireOffice.id));
   const aliases = { 'Magna City': 'Magna', 'Ogden Valley': 'Ogden Valley City' };
-  const years = [2013, 2015, 2017, 2019, 2021, 2023, 2025];
+  const years = [1989, 1991, 1993, 1995, 2013, 2015, 2017, 2019, 2021, 2023, 2025];
   const municipalities = new Map();
   for (const entry of reference.municipalities) {
     const name = aliases[entry.name] ?? entry.name;
