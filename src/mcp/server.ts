@@ -10,6 +10,7 @@ import baseline2022 from '../../public/data/2022-shift-baseline.json';
 import { currentDatasetUpdated, offices, officesById, parties, partiesById, partyLabel, people, peopleById, places, placesById, statusLabel, type Filing } from '../lib/entities';
 import { contestTitle } from '../lib/result-people';
 import { tidySnapshot } from '../lib/result-names';
+import { withPlaceAliases } from '../lib/search';
 import { raceSlugs } from '../lib/contest-slugs';
 import { count, leader, percent, seatsOf, type Contest, type Snapshot } from '../lib/results';
 import { raceComparison, shiftLabel, type HistoricalSnapshot } from '../lib/shifts';
@@ -38,10 +39,10 @@ type Doc = { id: string; kind: Kind; title: string; url: string; text: string };
 const normalize = (value: string) => value.toLowerCase().replace(/\./g, '').normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 
 const docs = ([
-  ...people.map(person => ({ id: `person:${person.id}`, kind: 'person' as const, title: person.name, url: `${SITE_URL}/people/${person.id}/`, text: person.filings.map(filing => `${filing.year} ${filing.officeName} ${filing.partyName} ${filing.county} ${filing.city}`).join(' ') })),
+  ...people.map(person => ({ id: `person:${person.id}`, kind: 'person' as const, title: person.name, url: `${SITE_URL}/people/${person.id}/`, text: person.filings.map(filing => `${filing.year} ${filing.officeName} ${filing.partyName} ${filing.county ? withPlaceAliases(`${filing.county} County`) : ''} ${withPlaceAliases(filing.city)}`).join(' ') })),
   ...offices.map(office => ({ id: `office:${office.id}`, kind: 'office' as const, title: office.name, url: `${SITE_URL}/offices/${office.id}/`, text: office.sections.join(' ') })),
   ...parties.map(party => ({ id: `party:${party.id}`, kind: 'party' as const, title: party.name, url: `${SITE_URL}/parties/${party.id}/`, text: party.shortName })),
-  ...places.map(place => ({ id: `place:${place.id}`, kind: 'place' as const, title: place.type === 'County' ? place.name : `${place.name}, ${place.county}`, url: `${SITE_URL}/places/${place.id}/`, text: `${place.type} ${place.county}` })),
+  ...places.map(place => ({ id: `place:${place.id}`, kind: 'place' as const, title: place.type === 'County' ? place.name : `${place.name}, ${place.county}`, url: `${SITE_URL}/places/${place.id}/`, text: `${withPlaceAliases(place.name)} ${place.type} ${place.county ? withPlaceAliases(`${place.county} County`) : ''}` })),
   ...snapshot.contests.map(contest => ({ id: `contest:${slugs.slug(contest.id)}`, kind: 'contest' as const, title: `2026 results: ${contestLabel(contest)}`, url: contestUrl(contest), text: `${slugs.slug(contest.id)} ${contest.name} ${contest.category} ${contest.options.map(option => `${option.name} ${option.party}`).join(' ')} election results` }))
 ] as Doc[]).map(doc => ({ ...doc, normTitle: normalize(doc.title), normText: normalize(doc.text) }));
 

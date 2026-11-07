@@ -117,10 +117,10 @@ description/display metadata, and place summary, population, dates, and referenc
 - People: biography, priorities, resource links, provenance, verification date,
   and contact fields.
 - Filings: status, election type, location, source, update date, and contacts.
-- Resources use a validated JSON array with `label`, `description`, and `url`.
+- Resources use repeatable label, description, and URL inputs.
 - Addresses have repeatable label/address inputs and are saved under `contact.address`
   as a list of `{label, value}` objects. Existing single-address strings still work.
-- Changing stable IDs, creating/deleting records, and media uploads remain outside
+- Changing stable IDs and creating/deleting records remain outside
   this editor's scope. Entity names and the associations described above are editable.
 - Existing IDs are derived from imported names and office/party labels. If an
   upstream import changes those identifiers, startup reports orphaned overrides
@@ -199,3 +199,51 @@ Run `node editor/widget-check.mjs` to check structured row editing and recovery.
 Use existing ELUT color, type, spacing, and touch-target tokens. Keep content-driven
 breakpoints, table widths, reading widths, and other one-off layout constraints
 local; introduce a named shared dimension when multiple components need it.
+
+### Entity images and uploads
+
+The Images section exposes person portraits, office photos, party logos, and place
+photos and emblems (seal/logo/flag). Existing imported images are previewed. Choose
+Override, then Choose image to use Decap’s media picker, or enter an existing
+local image path or an HTTPS URL. Clear hides the image; Use imported value
+restores it. Place photo clears also suppress the county fallback. Office photos
+retain their existing geographic fallback until explicitly replaced or cleared.
+
+The Media menu and Choose image buttons open the same folder-aware image picker.
+Its Destination folder dropdown lists existing subfolders of `public/images/`,
+including nested place/county folders. Uploads default to `public/images/uploads/`
+and can be directed to any listed folder. Public URLs retain that folder path
+(e.g. `/images/people/portrait.png`). Selecting an existing image opens its folder.
+Original files remain in place and cannot be silently overwritten. Party logos
+outside `images/` can still be previewed and referenced in their image field. Supported
+uploads are PNG, JPEG, WebP, GIF, and AVIF, up to 10 MB. Existing SVG logos can still
+be referenced by path or URL. Filename collisions cannot silently overwrite files,
+and images assigned in saved overrides cannot be deleted through the library.
+The picker offers Copy image URL when opened from Media, or Use image when opened
+from a record. Uploads persist immediately; assigning an image to a record still requires Publish.
+
+Photo/emblem title, creator, license, license URL, and source URL are editable.
+Replacing an image clears the previous image’s credit fields; resetting its source
+restores imported credits. New images without credit data do not claim Wikimedia
+attribution. Party logos use the existing logo field and need no data migration.
+
+Run `node editor/media-library-check.mjs` for folder selection and picker checks,
+`node editor/media-check.mjs` for storage isolation and upload checks, and
+`npm run check:editor` for image-field validation and override behavior.
+
+### Research data across worktrees
+
+When the repository’s default branch is checked out in another worktree, the
+Editor follows a declared set of that worktree’s research inputs: reviewed and
+newspaper candidate files, place election notes/profiles, and both source/public
+municipal-results datasets. Application code is integrated explicitly rather than
+automatically copied. It checks every two seconds, refreshes the
+companion site, and regenerates Editor records/references after a change.
+`EDITOR_RESEARCH_SOURCE` can explicitly select a different source checkout.
+
+The last synchronized hashes live in ignored `.workspace` state. All declared inputs are
+checked before any is copied; independent local edits stop synchronization and
+show a status message. A first-time mismatch requires a reviewed synchronization.
+Editor code, manual overrides, and other research files are never copied by this
+process. The synchronized data remains uncommitted until its owning research
+workflow commits it. Run `node editor/research-sync-check.mjs` to check the guards.

@@ -2,9 +2,26 @@ import type { ElectionCycle, Office, Party, Person, Place } from './entities';
 
 /** Other names people search for a place by, keyed by its official name. */
 const placeAliases: Record<string, string[]> = {
-  'Mount Pleasant': ['Mt Pleasant', 'Mt. Pleasant']
+  'Mount Pleasant': ['Mt Pleasant', 'Mt. Pleasant'],
+  'Salt Lake City': ['SLC'],
+  'West Valley City': ['WVC', 'WVS', 'West Valley'],
+  'South Salt Lake': ['SSL'],
+  'North Salt Lake': ['NSL'],
+  'West Jordan': ['WJ'],
+  'South Jordan': ['SJ', 'SoJo'],
+  'American Fork': ['AF'],
+  'Pleasant Grove': ['PG'],
+  'Spanish Fork': ['SF'],
+  'St. George': ['St George', 'Saint George'],
+  'Salt Lake County': ['SLCo', 'SL Co'],
+  'Utah County': ['UTCo', 'UT Co']
 };
-const withAliases = (name: string) => [name, ...(placeAliases[name] ?? [])].join(' ');
+const placeSearchNames = (name: string) => {
+  const county = name.endsWith(' County') ? name.slice(0, -' County'.length) : '';
+  return [name, ...(placeAliases[name] ?? []), ...(county ? [`${county} Co`, `${county.replace(/\s/g, '')}Co`] : [])];
+};
+export const withPlaceAliases = (name: string) => placeSearchNames(name).join(' ');
+const countySearchText = (county: string) => county ? withPlaceAliases(`${county} County`) : '';
 
 /**
  * Searchable text for each directory, shared by the site-wide search modal and
@@ -12,10 +29,10 @@ const withAliases = (name: string) => [name, ...(placeAliases[name] ?? [])].join
  */
 export const searchText = {
   elections: (election: ElectionCycle) => `${election.year} ${election.title} ${election.description}`,
-  people: (person: Person) => `${person.name} ${person.filings.map((filing) => `${filing.year} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus} ${withAliases(filing.city)} ${filing.county}`).join(' ')}`,
+  people: (person: Person) => `${person.name} ${person.filings.map((filing) => `${filing.year} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus} ${withPlaceAliases(filing.city)} ${countySearchText(filing.county)}`).join(' ')}`,
   offices: (office: Office) => `${office.name} ${office.sections.join(' ')} ${office.filings.map((filing) => `${filing.name} ${filing.year}`).join(' ')}`,
   parties: (party: Party) => `${party.name} ${party.shortName} ${party.localCaucus ? `Local nonpartisan caucus ${party.localCaucus.place}` : ''} ${party.filings.map((filing) => `${filing.name} ${filing.year}`).join(' ')}`,
-  places: (place: Place) => `${withAliases(place.name)} ${place.type} ${place.county} ${place.offices.map((office) => office.name).join(' ')} ${place.filings.map((filing) => filing.name).join(' ')}`
+  places: (place: Place) => `${withPlaceAliases(place.name)} ${place.type} ${countySearchText(place.county)} ${place.offices.map((office) => office.name).join(' ')} ${place.filings.map((filing) => filing.name).join(' ')}`
 };
 
 export function queryTokens(query: string) {
@@ -34,8 +51,10 @@ export function rankByTitle<T>(items: T[], tokens: string[], title: (item: T) =>
   const phrase = tokens.join(' ');
   return items.map((item) => {
     const normalized = title(item).toLowerCase().trim().replace(/\s+/g, ' ');
-    const matchedWords = tokens.filter((token) => normalized.includes(token)).length;
-    const rank = normalized === phrase ? 3 : matchedWords === tokens.length ? 2 : matchedWords ? 1 : 0;
+    const titleText = withPlaceAliases(title(item)).toLowerCase().trim().replace(/\s+/g, ' ');
+    const matchedWords = tokens.filter((token) => titleText.includes(token)).length;
+    const exactName = placeSearchNames(title(item)).some(name => name.toLowerCase().trim().replace(/\s+/g, ' ') === phrase);
+    const rank = normalized === phrase || exactName ? 3 : matchedWords === tokens.length ? 2 : matchedWords ? 1 : 0;
     return { item, rank };
   }).sort((a, b) => b.rank - a.rank).map(({ item }) => item);
 }

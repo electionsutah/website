@@ -34,6 +34,8 @@ export async function prepare(server, directory = workspace, saved = null) {
   };
   const validateEditorChanges = (kind, changes) => { validateChanges(kind, changes); validateReferences(kind, changes); };
   const { importedOfficeProfile, importedPartyProfile } = await server.ssrLoadModule('/src/lib/entity-profiles.ts');
+  const { importedEntityImage, entityImageFor } = await server.ssrLoadModule('/src/lib/entity-images.ts');
+  const { placeImageFor } = await server.ssrLoadModule('/src/lib/place-images.ts');
   const { placeEntityLinks } = await server.ssrLoadModule('/src/lib/entity-links.ts');
   const placeProfiles = await readJson(join(root, 'src/data/place-enrichment.json'));
   const placeLinks = await readJson(join(root, 'src/data/place-link-enrichment.json'));
@@ -67,7 +69,7 @@ export async function prepare(server, directory = workspace, saved = null) {
     baseline.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName));
     const sourceLinks = importedPersonLinks(baseline, profiles, personLinks[person.id]?.links ?? []);
     if (saved.people[person.id]) saved.people[person.id] = migratePersonLinks(saved.people[person.id], sourceLinks);
-    await add('people', person.id, person.name, { name: importedEntityStructure.people.find(row => row.id === person.id)?.name, ...importedProfile(baseline, profiles), links: sourceLinks }, {
+    await add('people', person.id, person.name, { name: importedEntityStructure.people.find(row => row.id === person.id)?.name, ...importedProfile(baseline, profiles), photo: importedEntityImage('people', person.id) ?? {}, links: sourceLinks }, {
       entity: snapshot(person),
       personPath: `/people/${person.id}/`,
       filings: person.filings.map(filing => `${filing.year} · ${filing.officeName} · ${filing.recordId}`)
@@ -77,11 +79,11 @@ export async function prepare(server, directory = workspace, saved = null) {
     `${filing.year} · ${filing.name} · ${filing.officeName}${filing.county ? ` · ${filing.county}` : ''}`, { ...filing, ...importedEntityStructure.filings.find(row => row.id === filing.recordId), placeId: filing.placeIds.at(-1) ?? '' }, {
       entity: snapshot(filing), source: filing.source, identity: filing.recordId
     });
-  for (const place of places) await add('places', place.id, `${place.name} · ${place.type} · ${place.county}`, { ...importedEntityStructure.places.find(row => row.id === place.id), ...importedEntityLinks(placeEntityLinks(placeProfiles[place.id], placeLinks[place.id]?.links ?? [])), contact: placeLinks[place.id]?.contact ?? placeProfiles[place.id]?.contact ?? {}, profile: placeProfiles[place.id] ?? {}, description: importedPlaceDescriptions[place.id] }, {
+  for (const place of places) await add('places', place.id, `${place.name} · ${place.type} · ${place.county}`, { ...importedEntityStructure.places.find(row => row.id === place.id), ...importedEntityLinks(placeEntityLinks(placeProfiles[place.id], placeLinks[place.id]?.links ?? [])), photo: importedEntityImage('places', place.id) ?? entityImageFor('places', place.parentId) ?? {}, emblem: importedEntityImage('places', place.id, 'emblem') ?? {}, contact: placeLinks[place.id]?.contact ?? placeProfiles[place.id]?.contact ?? {}, profile: placeProfiles[place.id] ?? {}, description: importedPlaceDescriptions[place.id] }, {
     entity: snapshot(place), placePath: `/places/${place.id}/`, identity: place.id, type: place.type, county: place.county
   });
   for (const [kind, entities, profiles] of [['offices', offices, officeProfiles], ['parties', parties, partyProfiles]]) {
-    for (const entity of entities) await add(kind, entity.id, entity.name, { ...importedEntityStructure[kind].find(row => row.id === entity.id), ...(kind === 'offices' ? { placeIds: entity.placeIds } : {}), contact: profiles[entity.id]?.contact ?? {}, ...importedEntityLinks(profiles[entity.id]?.links ?? (entity.website ? [{ url: entity.website }] : [])), ...(kind === 'offices' ? { resources: officeResources(importedEntityStructure.offices.find(row => row.id === entity.id)?.name ?? entity.name), profile: importedOfficeProfile(entity, placesById) } : { profile: importedPartyProfile(entity), ...importedPartyProperties[entity.id] }) }, { entity: snapshot(entity), entityPath: `/${kind}/${entity.id}/`, identity: entity.id });
+    for (const entity of entities) await add(kind, entity.id, entity.name, { ...importedEntityStructure[kind].find(row => row.id === entity.id), ...(kind === 'offices' ? { placeIds: entity.placeIds, photo: (() => { const locations = entity.placeIds.map(id => placesById.get(id)).filter(place => place && (entity.sections.includes('Municipal office') ? place.type !== 'County' : entity.sections.includes('County office') && place.type === 'County')); return locations.length === 1 ? placeImageFor({ id: locations[0].id, parentId: '' }) ?? {} : {}; })() } : {}), contact: profiles[entity.id]?.contact ?? {}, ...importedEntityLinks(profiles[entity.id]?.links ?? (entity.website ? [{ url: entity.website }] : [])), ...(kind === 'offices' ? { resources: officeResources(importedEntityStructure.offices.find(row => row.id === entity.id)?.name ?? entity.name), profile: importedOfficeProfile(entity, placesById) } : { profile: importedPartyProfile(entity), ...importedPartyProperties[entity.id] }) }, { entity: snapshot(entity), entityPath: `/${kind}/${entity.id}/`, identity: entity.id });
   }
   for (const kind of Object.keys(known)) {
     for (const name of await readdir(join(directory, 'content', kind))) {

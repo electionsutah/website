@@ -27,7 +27,9 @@
           "label": "Address",
           "value": "30 West Center PO Box 217, 84649"
         }
-      ]
+      ],
+      "contact.phone": "(435) 846-2707",
+      "contact.email": "billing@oakcityut.gov"
     }
   },
   "offices": {

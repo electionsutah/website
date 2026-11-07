@@ -40,6 +40,7 @@
   const social = { 'contact.facebook': 'facebook', 'contact.instagram': 'instagram', 'contact.twitter': 'x', 'contact.bluesky': 'bluesky' };
   for (const platform of ['facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack']) social[platform] = platform;
   for (const platform of Object.keys(social).filter(key => !key.includes('.'))) social[`contact.${platform}`] = social[platform];
+  symbols['photo.src'] = 'account_circle'; symbols['emblem.src'] = 'flag'; symbols.logo = 'flag';
   symbols.website = 'language'; symbols.wikipedia = 'language'; symbols.wikidata = 'language'; symbols.links = 'language';
   Object.assign(symbols, { personId: 'account_circle', runningMateId: 'account_circle', officeId: 'workspace_premium', partyId: 'flag', placeId: 'location_on', placeIds: 'location_on', parentId: 'location_on', year: 'ballot' });
   const icon = key => social[key]
@@ -54,6 +55,7 @@
     : field.type === 'addresses' ? addresses(value).map(item => `${item.label}: ${item.value}`).join('\n')
     : field.type === 'lines' ? (value ?? []).join('\n') : String(value ?? '');
   const fieldGroup = field => {
+    if (field.type === 'image' || /^(photo|emblem)\./.test(field.path)) return 'Images';
     if (field.relation || field.path === 'name') return 'Identity & associations';
     if (field.path.startsWith('contact.') && !social[field.path] && field.path !== 'contact.website') return 'Contact details';
     if (social[field.path] || ['website', 'wikipedia', 'wikidata', 'links', 'contact.website'].includes(field.path)) return 'Websites & social links';
@@ -68,15 +70,40 @@
   const Control = createClass({
     getInitialState() { return { drafts: {}, errors: {}, modes: {}, collapsedGroups: {}, fieldQuery: '', fieldGroup: '' }; },
     componentDidUpdate(previous) {
+      for (const field of schema[this.props.field.get('kind')].filter(field => field.type === 'image')) {
+        const controlID = `${this.props.forID}-${field.path}`;
+        const selected = this.props.mediaPaths?.get(controlID);
+        if (selected) {
+          this.props.onRemoveInsertedMedia(controlID);
+          const drafts = { ...this.state.drafts }; delete drafts[field.path]; this.setState({ drafts });
+          this.change(field.path, Array.isArray(selected) ? selected[0] : selected);
+        }
+      }
       const oldContext = asObject(previous.value)?.context;
       const newContext = asObject(this.props.value)?.context;
       if ((oldContext?.personPath ?? oldContext?.identity) !== (newContext?.personPath ?? newContext?.identity)) this.setState({ drafts: {}, errors: {}, modes: {}, collapsedGroups: {}, fieldQuery: '', fieldGroup: '' });
+    },
+    componentWillUnmount() {
+      for (const field of schema[this.props.field.get('kind')].filter(field => field.type === 'image')) this.props.onRemoveMediaControl?.(`${this.props.forID}-${field.path}`);
     },
     isValid() { return Object.keys(this.state.errors).length ? { error: 'Correct the highlighted fields before saving.' } : true; },
     change(path, value) {
       const record = asObject(this.props.value);
       const overrides = { ...record.overrides };
       if (value === undefined) delete overrides[path]; else overrides[path] = value;
+      if (/^(photo|emblem)\.src$/.test(path)) {
+        const slot = path.split('.')[0];
+        const original = get(record.source, path) ?? '';
+        const previous = record.overrides[path] ?? original;
+        const drafts = { ...this.state.drafts }, errors = { ...this.state.errors }, modes = { ...this.state.modes };
+        delete drafts[path];
+        for (const key of ['title', 'artist', 'license', 'licenseUrl', 'sourceUrl']) {
+          if (value !== previous || value === undefined) { delete drafts[`${slot}.${key}`]; delete errors[`${slot}.${key}`]; delete modes[`${slot}.${key}`]; }
+          if (value === undefined || value === original) delete overrides[`${slot}.${key}`];
+          else if (value !== previous) overrides[`${slot}.${key}`] = '';
+        }
+        this.setState({ drafts, errors, modes });
+      }
       this.props.onChange({ ...record, overrides });
     },
     render() {
@@ -164,7 +191,13 @@
           const rowFields = field.type === 'resources'
             ? [['label', 'Label'], ['description', 'Description'], ['url', 'URL']]
             : [['url', 'URL'], ['label', 'Label'], ['platform', 'Platform'], ['detail', 'Description'], ['source', 'Source'], ['verifiedOn', 'Verified on']];
-          const input = isList ? h('div', { id, className: 'editor-list', role: 'group', 'aria-label': field.label, 'aria-describedby': `${id}-help` },
+          const previewUrl = field.type === 'image' && value ? (typeof value === 'string' && value.startsWith('/images/uploads/') ? this.props.getAsset?.(value)?.toString() ?? value : value) : '';
+          const input = field.type === 'image' ? h('div', { className: 'editor-image', role: 'group', 'aria-label': field.label },
+            previewUrl ? h('img', { src: previewUrl, alt: `${field.label} preview`, loading: 'lazy' }) : h('p', { className: 'editor-list-help' }, 'No image selected.'),
+            h('input', { ...inputProps, type: 'text', placeholder: '/images/uploads/example.webp or https://…' }),
+            h('button', { type: 'button', disabled: mode !== 'override', onClick: () => this.props.onOpenMediaLibrary({ controlID: id, forImage: true, allowMultiple: false, value: value || '', field: this.props.field }) }, 'Choose image'),
+            h('p', { className: 'editor-list-help' }, 'Choose an uploaded image or enter an existing image URL. Use imported value restores the original image. Image credits can be edited below.'))
+            : isList ? h('div', { id, className: 'editor-list', role: 'group', 'aria-label': field.label, 'aria-describedby': `${id}-help` },
             h('p', { id: `${id}-help`, className: 'editor-list-help' }, field.type === 'resources'
               ? 'Add a label, description, and complete web address for each resource.'
               : `Add a complete web address for each link. Labels, platform, description, source, and verification date are optional.${path === 'links' && kind !== 'people' ? ' Directory platform fields take precedence over these records.' : ''}`),
@@ -205,7 +238,7 @@
             : ['text', 'lines'].includes(field.type) ? h('textarea', { ...inputProps, rows: 4 })
             : h('input', { ...inputProps, type: field.type === 'date' ? 'date' : field.type === 'url' ? 'url' : field.type === 'email' ? 'email' : field.type === 'number' ? 'number' : 'text' });
           return h('section', { key: path, hidden: !matchesField(field, this.state.fieldQuery, this.state.fieldGroup), className: `editor-field ${explicit ? 'has-override' : ''}` },
-            h('div', { className: 'editor-field-heading' }, h(isList || field.type === 'addresses' ? 'span' : 'label', { className: 'editor-field-title', ...(isList || field.type === 'addresses' ? {} : { htmlFor: id }) }, icon(path === 'name' ? kind : path), field.label),
+            h('div', { className: 'editor-field-heading' }, h(isList || field.type === 'addresses' ? 'span' : 'label', { className: 'editor-field-title', ...(isList || field.type === 'addresses' ? {} : { htmlFor: id }) }, icon(path === 'name' || path === 'photo.src' ? kind : path), field.label),
               h('select', { 'aria-label': `${field.label} value source`, value: mode,
                 onChange: event => {
                   resetDraft();
@@ -252,8 +285,8 @@
       if (signature === statusSignature && connection.className !== 'connection-error') return;
       statusSignature = signature;
       connection.replaceChildren();
-      connection.className = status.error ? 'connection-error' : '';
-      const message = status.error ? `Save failed: ${status.error}` : status.lastSaved
+      connection.className = status.error || status.researchError ? 'connection-error' : '';
+      const message = status.researchError ? status.researchError : status.error ? `Save failed: ${status.error}` : status.lastSaved
         ? `Saved to repository · ${status.record} · ${new Date(status.lastSaved).toLocaleTimeString()}`
         : `Local repository · ${status.counts.people.toLocaleString()} people · ${status.counts.filings.toLocaleString()} filings · ${status.counts.places.toLocaleString()} places`;
       connection.append(document.createTextNode(message));

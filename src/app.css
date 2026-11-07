@@ -416,8 +416,7 @@ main:focus,main h1:focus{outline:0}
 .place-card-content .card-footer{gap:var(--space-3);flex-wrap:wrap;margin-top:auto;padding-top:var(--space-4);font-size:var(--text-sm);line-height:1.5}
 .place-card-content .card-footer b{display:inline-flex;align-items:center;gap:var(--space-1)}
 .place-card-utilities{position:relative;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-2) var(--space-4);padding:0 var(--space-5) var(--space-3);color:var(--color-muted);font:400 var(--text-xs)/1.5 var(--font-sans)}
-.tile-photo-credit{min-width:0}
-.tile-photo-credit summary{width:fit-content;min-height:32px;display:list-item;align-content:center;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.place-card-utilities .place-election-toggle{padding:0;min-height:32px;color:inherit}
 .place-card-utilities .entity-links{--entity-link-size:28px;--entity-link-icon-size:20px;margin-left:auto}
 .place-tile:hover,.place-tile:focus-within{z-index:3}
 .place-profile-heading{margin-bottom:var(--space-5)}
@@ -426,9 +425,7 @@ main:focus,main h1:focus{outline:0}
 .contact-links-row{display:grid;gap:var(--space-1);padding:var(--space-4)}
 .contact-links-row>small{color:var(--color-muted);font-size:var(--text-2xs);font-weight:700;letter-spacing:.09em;text-transform:uppercase}
 .contact-links-row>.entity-links{margin:0 0 0 -8px;min-height:40px}
-.place-tile a:focus-visible,.place-tile summary:focus-visible{outline:3px solid var(--color-blue);outline-offset:3px}
-.tile-photo-credit-content{position:absolute;z-index:4;bottom:100%;left:var(--space-5);right:var(--space-5);margin:0 0 var(--space-2);padding:var(--space-3);background:var(--color-ink);border:1px solid var(--color-subtle);color:var(--color-paper);font-size:var(--text-2xs);overflow-wrap:anywhere}
-.tile-photo-credit-content a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.place-tile a:focus-visible,.place-tile button:focus-visible{outline:3px solid var(--color-blue);outline-offset:3px}
 .place-hero-detail.has-photo{position:relative;padding-bottom:clamp(84px,9vw,120px)}
 .place-hero-detail.has-photo .eyebrow,.place-hero-detail.has-photo h1,.place-hero-detail.has-photo p{color:var(--color-paper)}
 .place-hero-detail.has-photo .archive-context{color:rgba(255,255,255,.86)}
