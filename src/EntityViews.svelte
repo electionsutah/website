@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick } from 'svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
+  import MunicipalResults from './MunicipalResults.svelte';
   import DescriptionText from './DescriptionText.svelte';
   import Icon from './Icon.svelte';
   import EntityLinks from './EntityLinks.svelte';
@@ -16,8 +17,8 @@
   import SortHeader from './SortHeader.svelte';
   import placeProfiles from './data/place-enrichment.json';
   import placeElectionNotes from './data/place-election-notes.json';
-  import placeImageData from './data/place-images.json';
-  import placeEmblemData from './data/place-emblems.json';
+  import { placeImageFor, hasOwnPlaceImage } from './lib/place-images';
+  import { personImageFor, placeEmblemFor, entityImageFor } from './lib/entity-images';
   import personProfiles from './data/person-enrichment.json';
   import { profileFor, editorProfileFor, type PersonProfile } from './lib/editorial';
   import { contactAddresses, addressMapUrl, isMailingAddress, type ContactAddress } from './lib/contact-addresses';
@@ -36,7 +37,6 @@
   import BoundaryMap from './BoundaryMap.svelte';
   import PhotoCredit from './PhotoCredit.svelte';
   import PersonAvatar from './PersonAvatar.svelte';
-  import personPhotoData from './data/person-photos.json';
   import voterRegistration from './data/voter-registration.json';
   import voterParticipation from './data/voter-participation.json';
   import {
@@ -101,17 +101,13 @@
   };
 
   const profilesById = Object.fromEntries(places.map(place => [place.id, editorProfileFor('places', place.id, (placeProfiles as Record<string, PlaceProfile>)[place.id] ?? { summary: '', officialWebsite: '', wikipediaTitle: '', wikipediaUrl: '', wikidataId: '', wikidataUrl: '' })])) as Record<string, PlaceProfile>;
-  /** Wikidata image (P18) per place, from scripts/fetch-place-images.py. */
-  type PlaceImage = { src: string; title: string; artist: string; license: string; licenseUrl: string; sourceUrl: string };
-  const placeImages = placeImageData as Record<string, PlaceImage>;
   /** County and city seals, logos, and flags from Wikimedia Commons (scripts/fetch-place-emblems.py). */
-  const placeEmblems = placeEmblemData as Record<string, PlaceImage & { kind: string; file: string }>;
   const personProfilesById = personProfiles as Record<string, PersonProfile>;
 
   const labels = {
     people: { singular: 'Person', plural: 'People', intro: 'Every person in the combined Utah election archive.' },
     offices: { singular: 'Office', plural: 'Offices', intro: 'Municipal, federal, legislative, education, and judicial offices across every archived cycle.' },
-    parties: { singular: 'Party', plural: 'Parties', intro: 'Political affiliations represented across the 2013–2026 filing data.' },
+    parties: { singular: 'Party', plural: 'Parties', intro: 'Political affiliations represented across the 1989–2026 filing data.' },
     places: { singular: 'Place', plural: 'Places', intro: 'Browse archived candidates by their published city and county.' }
   };
 
@@ -122,10 +118,10 @@
   $: place = section === 'places' && id ? placesById.get(id) : undefined;
   $: placeProfile = place ? profilesById[place.id] : undefined;
   $: placePopoverId = `place-election-${place?.id ?? ''}`;
-  $: placeImage = place ? placeImages[place.id] ?? placeImages[place.parentId] : undefined;
-  $: placeImageFallback = !!place && !placeImages[place.id] && !!placeImage;
-  $: personPhoto = person ? (personPhotoData as Record<string, PlaceImage & { via: string }>)[person.id] : undefined;
-  $: placeEmblem = place ? placeEmblems[place.id] : undefined;
+  $: placeImage = placeImageFor(place);
+  $: placeImageFallback = !!place && !hasOwnPlaceImage(place.id) && !!placeImage;
+  $: personPhoto = person ? personImageFor(person.id) : undefined;
+  $: placeEmblem = place ? placeEmblemFor(place.id) : undefined;
   // Municipal pages show explicitly labeled county context; these are never city counts.
   $: voterCountyId = place ? (place.type === 'County' ? place.id : place.parentId) : '';
   $: placeVoters = (voterRegistration.counties as Record<string, { name: string; active: number; parties: Record<string, number> }>)[voterCountyId];
@@ -134,7 +130,7 @@
   // offices list candidates' home cities, which only partly overlap the district, so they keep the plain hero.
   $: officeCity = office?.sections.includes('Municipal office') ? office.placeIds.map((id) => placesById.get(id)).filter((row) => row && row.type !== 'County')
     : office?.sections.includes('County office') ? office.placeIds.map((id) => placesById.get(id)).filter((row) => row?.type === 'County') : [];
-  $: officeImage = officeCity.length === 1 ? placeImages[officeCity[0]!.id] : undefined;
+  $: officeImage = office ? entityImageFor('offices', office.id, 'photo', officeCity.length === 1 ? placeImageFor({ id: officeCity[0]!.id, parentId: '' }) : undefined) : undefined;
   // Cities sit under their county in the breadcrumb: Places › Duchesne County › Roosevelt.
   $: placeCounty = place?.type !== 'County' && place?.parentId ? placesById.get(place.parentId) : undefined;
   $: boundary = office ? officeMap(office, placesById) : place ? placeMap(place) : null;
@@ -244,7 +240,7 @@
             text: searchText.places(item),
             years: item.years,
             initials: item.name.replace(/[^A-Z0-9]/g, '').slice(0, 2),
-            logo: placeEmblems[item.id]?.src ?? '',
+            logo: placeEmblemFor(item.id)?.src ?? '',
             accent: '',
             officialWebsite: profilesById[item.id]?.officialWebsite ?? '',
             wikipediaUrl: profilesById[item.id]?.wikipediaUrl ?? '',
@@ -537,7 +533,7 @@
                 <EntityLinks links={place.links ?? placeEntityLinks(placeProfile)} entityName={place.name} />
               </div>
               <p class="place-intro" use:sentenceExcerpt={{ text: placeProfile?.summary ?? `${place.name} is represented in the ${place.county} County election archive. A sourced local profile is not yet available.`, self: hrefFor(section, id), navigate }}></p>
-              {#if placeEmblem}<PhotoCredit image={placeEmblem} label={placeEmblem.kind.charAt(0).toUpperCase() + placeEmblem.kind.slice(1)} className="emblem-credit" />{/if}
+              {#if placeEmblem}<PhotoCredit image={placeEmblem} label={(placeEmblem.kind ?? 'emblem').charAt(0).toUpperCase() + (placeEmblem.kind ?? 'emblem').slice(1)} className="emblem-credit" />{/if}
             </div>
             <div class="place-data-grid">
               <div class="place-headline-facts">
@@ -617,6 +613,7 @@
           <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">{place.filings.length ? 'No matching candidates.' : 'No candidate records have been imported for this municipality yet. See Election details & sources for the coverage review.'}</p>{/each}</div>
         </div>
       </section>
+      <MunicipalResults placeId={place.id} />
     </article>
   {/if}
 {:else}
@@ -644,8 +641,9 @@
           <thead><tr>{#each tableColumns as column (column.key)}<SortHeader key={column.key} label={column.label} {sort} numeric={column.key === 'filings'} onSort={updateSort} />{/each}</tr></thead>
           <tbody>
             {#each visibleCards as card (card.id)}
+              {@const rowImage = section === 'places' ? placeImageFor(placesById.get(card.id)) : undefined}
               <tr>
-                <th scope="row"><a href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>{#if card.logo}<span class="table-logo" class:inverse-logo={card.id === 'utah-republican-party'} class:emblem-logo={section === 'places'} style={card.accent ? `--card-accent:${card.accent}` : ''}><img src={card.logo} alt="" /></span>{:else if section === 'places' && placeImages[card.id]}<span class="mini-avatar photo-avatar"><img src={placeImages[card.id].src} alt="" loading="lazy" decoding="async" /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="mini-avatar" />{:else if section === 'places' || section === 'offices' || section === 'parties'}<span class="mini-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'places' ? 'location_on' : section === 'parties' ? 'flag' : 'workspace_premium'} /></span>{:else}<span class="mini-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}<span>{card.title}</span></a></th>
+                <th scope="row"><a href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>{#if card.logo}<span class="table-logo" class:inverse-logo={card.id === 'utah-republican-party'} class:emblem-logo={section === 'places'} style={card.accent ? `--card-accent:${card.accent}` : ''}><img src={card.logo} alt="" /></span>{:else if rowImage}<span class="mini-avatar photo-avatar"><img src={rowImage.src} alt="" loading="lazy" decoding="async" /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="mini-avatar" />{:else if section === 'places' || section === 'offices' || section === 'parties'}<span class="mini-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'places' ? 'location_on' : section === 'parties' ? 'flag' : 'workspace_premium'} /></span>{:else}<span class="mini-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}<span>{card.title}</span></a></th>
                 {#each tableColumns.slice(1) as column (column.key)}
                   <td data-label={column.label} class:numeric={column.key === 'filings'}>
                     {#if column.key === 'years'}
@@ -668,7 +666,8 @@
       <div class="entity-grid" bind:this={resultsList}>
         {#each visibleCards as card}
           {@const links = tileLinks(card)}
-          {@const tileImage = section === 'places' ? placeImages[card.id] : undefined}
+          {@const tileImage = section === 'places' ? placeImageFor(placesById.get(card.id)) : undefined}
+          {@const photoPopoverId = `place-photo-${card.id.replaceAll('/', '-')}`}
           <article class="entity-card index-tile" class:place-tile={section === 'places'} class:has-photo={!!tileImage} style={card.accent ? `--card-accent:${card.accent}` : ''} style:--place-photo={tileImage ? `url("${tileImage.src}")` : undefined}>
             <a class="card-record-link" href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>
               {#if section === 'places'}
@@ -693,10 +692,11 @@
             {#if section === 'places' || resolveEntityLinks(links).length}
               <div class="place-card-utilities index-card-utilities">
                 {#if tileImage}
-                  <details class="tile-photo-credit">
-                    <summary>Photo credit<span class="sr-only"> for {card.title}</span></summary>
-                    <PhotoCredit image={tileImage} className="tile-photo-credit-content" />
-                  </details>
+                  <button class="place-election-toggle" popovertarget={photoPopoverId}>Photo credit<span class="sr-only"> for {card.title}</span></button>
+                  <div class="evidence-popover" id={photoPopoverId} popover="auto" use:anchoredPopover={photoPopoverId} aria-labelledby={`${photoPopoverId}-title`}>
+                    <header><strong id={`${photoPopoverId}-title`}>Photo credit · {card.title}</strong><button popovertarget={photoPopoverId} popovertargetaction="hide" aria-label="Close photo credit"><Icon name="close" /></button></header>
+                    <PhotoCredit image={tileImage} label={hasOwnPlaceImage(card.id) ? 'Photo' : `${placesById.get(card.id)?.county} County photo`} className="" />
+                  </div>
                 {/if}
                 <EntityLinks {links} entityName={card.title} />
               </div>

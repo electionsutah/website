@@ -561,14 +561,46 @@
       "id": "garfield/hatch",
       "name": "Hatch",
       "county": "Garfield",
-      "status": "Cancellation confirmed; roster unresolved",
+      "status": "Candidate records imported",
       "sources": [
-        "https://hatchutah.gov/"
+        "https://hatchutah.gov/",
+        "https://hatchutah.gov/wp-content/uploads/2021/10/minJune1621.pdf",
+        "https://hatchutah.gov/wp-content/uploads/2025/10/CancelingElectionsPG1_000234.pdf",
+        "https://hatchutah.gov/wp-content/uploads/2025/10/CancelingElectionsPG2_000235.pdf",
+        "https://hatchutah.gov/wp-content/uploads/2025/04/Election-notice-2025.pdf",
+        "https://hatchutah.gov/wp-content/uploads/2025/12/September2025Minutes-APPROVED.pdf"
       ],
       "notes": [
-        "The official homepage states that Resolution 2025-12 cancelled the November 2025 election and declared unopposed candidates elected. The linked image is a landscape photograph, not a readable resolution. Need the actual resolution or filed candidate list; no names inferred."
+        "The June 16, 2021 council minutes, item 5.3, explicitly report Tony Dinges filed for mayor and Jon Spendlove and Kevin Eldredge filed for council. These are imported as filed candidates; the minutes describe cancellation as conditional on no write-in filings and do not establish final results.",
+        "The actual two-page 2025 cancellation resolution was located in the official public media archive. Its main heading is Resolution 2025-12, approved September 24, 2025; its second-page header and approved September minutes use 2025-06. It cancels the November 4, 2025 election and declares unopposed candidates elected, but names no candidates. The 2025 election notice advertises two four-year council seats. The 2025 candidate roster remains unresolved; voting council members and current incumbents are not treated as candidates."
       ],
-      "importedRecords": 0
+      "importedRecords": 3,
+      "candidates": [
+        {
+          "name": "Tony Dinges",
+          "office": "Mayor",
+          "year": 2021,
+          "status": "filed",
+          "sourceStatus": "Filed — June 16, 2021 council election update",
+          "source": "https://hatchutah.gov/wp-content/uploads/2021/10/minJune1621.pdf"
+        },
+        {
+          "name": "Jon Spendlove",
+          "office": "Town Council",
+          "year": 2021,
+          "status": "filed",
+          "sourceStatus": "Filed — June 16, 2021 council election update",
+          "source": "https://hatchutah.gov/wp-content/uploads/2021/10/minJune1621.pdf"
+        },
+        {
+          "name": "Kevin Eldredge",
+          "office": "Town Council",
+          "year": 2021,
+          "status": "filed",
+          "sourceStatus": "Filed — June 16, 2021 council election update",
+          "source": "https://hatchutah.gov/wp-content/uploads/2021/10/minJune1621.pdf"
+        }
+      ]
     },
     {
       "id": "grand/castle-valley",
@@ -678,14 +710,53 @@
       "id": "millard/oak-city",
       "name": "Oak City",
       "county": "Millard",
-      "status": "Cancellation confirmed; roster unresolved",
+      "status": "Candidate records imported",
       "sources": [
-        "https://www.utah.gov/pmn/sitemap/notice/1026133.html"
+        "https://www.utah.gov/pmn/sitemap/notice/1026133.html",
+        "https://www.utah.gov/pmn/sitemap/notice/1001043.html",
+        "https://millardcounty.gov/your-government/elected-officials/clerk/elections/2025-municipal-election-candidates/",
+        "https://millardcounty.gov/wp-content/uploads/2025/09/Oak-City-Resolution-to-cancel-election.pdf",
+        "https://millardcounty.gov/wp-content/uploads/2025/08/Oak-City-David-K-Steele-Withdrawal-8-11-25.pdf"
       ],
       "notes": [
-        "Published minutes record adoption of Resolution 2025-06 cancelling the 2025 election. The reviewed excerpt does not name candidates. The town election page has empty candidate lists."
+        "The June 8, 2025 town filing notice names Kirt Lambert Dutson for mayor and Thomas S. Nielson, David K. Steele, and Shawn Owen Gonder for two four-year council seats. Millard County records Steele’s withdrawal on August 11, 2025.",
+        "Signed Resolution 2025-06, adopted September 18, 2025, cancels the November 4 election and certifies Dutson, Nielson, and Gonder elected unopposed to four-year terms beginning January 2026. The resolution spells Gonder’s first name “Sean”; the town filing notices and county declaration/finance listings use “Shawn”, retained here. No vote totals are implied by the cancellation."
       ],
-      "importedRecords": 0
+      "importedRecords": 4,
+      "candidates": [
+        {
+          "name": "Kirt Lambert Dutson",
+          "office": "Mayor",
+          "year": 2025,
+          "status": "elected",
+          "source": "https://millardcounty.gov/wp-content/uploads/2025/09/Oak-City-Resolution-to-cancel-election.pdf",
+          "sourceStatus": "Elected unopposed — Resolution 2025-06"
+        },
+        {
+          "name": "Thomas S. Nielson",
+          "office": "Town Council",
+          "year": 2025,
+          "status": "elected",
+          "source": "https://millardcounty.gov/wp-content/uploads/2025/09/Oak-City-Resolution-to-cancel-election.pdf",
+          "sourceStatus": "Elected unopposed — Resolution 2025-06"
+        },
+        {
+          "name": "Shawn Owen Gonder",
+          "office": "Town Council",
+          "year": 2025,
+          "status": "elected",
+          "source": "https://millardcounty.gov/wp-content/uploads/2025/09/Oak-City-Resolution-to-cancel-election.pdf",
+          "sourceStatus": "Elected unopposed — Resolution 2025-06; filing records identify Shawn"
+        },
+        {
+          "name": "David K. Steele",
+          "office": "Town Council",
+          "year": 2025,
+          "status": "withdrew",
+          "source": "https://millardcounty.gov/your-government/elected-officials/clerk/elections/2025-municipal-election-candidates/",
+          "sourceStatus": "Withdrew August 11, 2025"
+        }
+      ]
     },
     {
       "id": "millard/scipio",

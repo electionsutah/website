@@ -13,8 +13,8 @@ const server = await createServer({ configFile: false, logLevel: 'error', server
 try {
   const { filings, placesById, officesById } = await server.ssrLoadModule('/src/lib/entities.ts');
   const town = placesById.get('washington/new-harmony');
-  assert.equal(town.filings.length, 6);
-  assert.deepEqual([...town.years].sort(), [2017, 2019]);
+  assert.equal(town.filings.filter(row => row.year >= 2013).length, 6);
+  assert.deepEqual([...town.years].filter(year => year >= 2013).sort(), [2017, 2019]);
   assert(town.filings.every(row => row.section === 'Municipal Offices'));
   const district = officesById.get('new-harmony-valley-fire-ssd-board-member');
   assert.equal(district.filings.length, 7);

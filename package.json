@@ -23,7 +23,10 @@
     "check:profiles": "node scripts/check-entity-profiles.mjs",
     "check:researched": "node scripts/check-researched-candidates.mjs",
     "audit:coverage": "node scripts/audit-municipal-coverage.mjs",
-    "check:links": "node scripts/check-entity-links.mjs && node scripts/check-office-links.mjs && node scripts/check-party-links.mjs && node scripts/check-person-links.mjs && node scripts/check-place-links.mjs"
+    "check:links": "node scripts/check-entity-links.mjs && node scripts/check-office-links.mjs && node scripts/check-party-links.mjs && node scripts/check-person-links.mjs && node scripts/check-place-links.mjs",
+    "check:municipal-results": "node scripts/check-municipal-results.mjs",
+    "refresh:municipal-results": "python3 scripts/import-municipal-results.py",
+    "refresh:newspaper": "python3 scripts/import-newspaper-elections.py --import && python3 scripts/import-municipal-results.py && node scripts/report-newspaper-elections.mjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "5.1.1",

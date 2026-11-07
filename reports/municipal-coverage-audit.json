@@ -1424,6 +1424,26 @@
       "url": "https://www.electionsutah.org/people/sally-orme/"
     },
     {
+      "name": "Tony Dinges",
+      "url": "https://www.electionsutah.org/people/tony-dinges/"
+    },
+    {
+      "name": "Mayor",
+      "url": "https://www.electionsutah.org/offices/mayor/"
+    },
+    {
+      "name": "Jon Spendlove",
+      "url": "https://www.electionsutah.org/people/jon-spendlove/"
+    },
+    {
+      "name": "Town Council",
+      "url": "https://www.electionsutah.org/offices/town-council/"
+    },
+    {
+      "name": "Kevin Eldredge",
+      "url": "https://www.electionsutah.org/people/kevin-eldredge/"
+    },
+    {
       "name": "Jasmine A. Duncan",
       "url": "https://www.electionsutah.org/people/jasmine-a-duncan/"
     },
@@ -1462,6 +1482,22 @@
     {
       "name": "Robert H. Beckstrand",
       "url": "https://www.electionsutah.org/people/robert-h-beckstrand/"
+    },
+    {
+      "name": "Kirt Lambert Dutson",
+      "url": "https://www.electionsutah.org/people/kirt-lambert-dutson/"
+    },
+    {
+      "name": "Thomas S. Nielson",
+      "url": "https://www.electionsutah.org/people/thomas-s-nielson/"
+    },
+    {
+      "name": "Shawn Owen Gonder",
+      "url": "https://www.electionsutah.org/people/shawn-owen-gonder/"
+    },
+    {
+      "name": "David K. Steele",
+      "url": "https://www.electionsutah.org/people/david-k-steele/"
     },
     {
       "name": "Phil E. Singleton",
@@ -1673,7 +1709,7 @@
   "summary": {
     "municipalities": 257,
     "missingPlacePages": 0,
-    "withoutMunicipalFilings": 11,
+    "withoutMunicipalFilings": 9,
     "byYear": {
       "2013": {
         "municipalitiesWithRecords": 16,
@@ -1692,16 +1728,16 @@
         "municipalitiesWithoutRecords": 251
       },
       "2021": {
-        "municipalitiesWithRecords": 0,
-        "municipalitiesWithoutRecords": 257
+        "municipalitiesWithRecords": 1,
+        "municipalitiesWithoutRecords": 256
       },
       "2023": {
         "municipalitiesWithRecords": 175,
         "municipalitiesWithoutRecords": 82
       },
       "2025": {
-        "municipalitiesWithRecords": 213,
-        "municipalitiesWithoutRecords": 44
+        "municipalitiesWithRecords": 214,
+        "municipalitiesWithoutRecords": 43
       }
     }
   },
@@ -1736,9 +1772,9 @@
   },
   "investigationSummary": {
     "cohort": 33,
-    "withImportedRecords": 22,
-    "importedRecords": 76,
-    "unresolved": 11
+    "withImportedRecords": 24,
+    "importedRecords": 83,
+    "unresolved": 9
   },
   "recordInventory": [
     {
@@ -1816,8 +1852,9 @@
     },
     {
       "year": 2021,
-      "filings": 7,
+      "filings": 10,
       "sections": {
+        "Municipal Offices": 3,
         "Special District Offices": 7
       }
     },
@@ -1858,9 +1895,9 @@
     },
     {
       "year": 2025,
-      "filings": 1560,
+      "filings": 1564,
       "sections": {
-        "Municipal Offices": 1412,
+        "Municipal Offices": 1416,
         "School Board Offices": 70,
         "Special District Offices": 78
       }
@@ -3950,13 +3987,13 @@
         }
       ],
       "hasPlacePage": true,
-      "filings": 0,
+      "filings": 3,
       "years": {
         "2013": 0,
         "2015": 0,
         "2017": 0,
         "2019": 0,
-        "2021": 0,
+        "2021": 3,
         "2023": 0,
         "2025": 0
       }
@@ -4761,7 +4798,7 @@
         }
       ],
       "hasPlacePage": true,
-      "filings": 0,
+      "filings": 4,
       "years": {
         "2013": 0,
         "2015": 0,
@@ -4769,7 +4806,7 @@
         "2019": 0,
         "2021": 0,
         "2023": 0,
-        "2025": 0
+        "2025": 4
       }
     },
     {

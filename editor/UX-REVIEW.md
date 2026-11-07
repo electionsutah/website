@@ -102,3 +102,60 @@ rules. Schema spacing/type values use ELUT tokens, and overridden presentation
 defaults were removed from its layout stylesheet. CSS parsing, token-reference
 checks, and widget checks pass. This cleanup did not include another visual
 browser pass.
+
+## Follow-up: entity image fields
+
+People, offices, parties, and places now expose their images with previews and
+Decap's image picker. Photo/emblem credits are editable; new sources clear the old
+credit values, while Use imported value restores them. Clear suppresses place
+photo fallbacks. Shared image resolvers keep person avatars, detail views, and
+place cards consistent with saved overrides.
+
+New uploads use `public/images/uploads/`; imported image locations remain intact.
+A scoped API handles upload-library reads and writes; assigned uploads cannot be
+deleted, collisions cannot overwrite existing files, and writes are limited to the
+upload directory. A direct companion-site route serves new uploads immediately.
+
+Validated with Svelte checks, production build, temporary Decap integration tests,
+widget image-selection/reset checks, media path/collision/deletion checks, and a
+live upload/list/read/delete round trip against :8080 and :5174. Temporary uploads
+were removed and manual overrides were unchanged. These image controls have not
+received a visual browser or screen-reader pass.
+
+## Follow-up: image destination folders
+
+The local media-library adapter now provides a Destination folder selector shared
+by the Media menu and image-field pickers. It discovers existing `public/images/`
+subfolders, including county/place folders, and starts in the current image's
+folder when possible. Menu usage offers Copy image URL; record usage offers Use
+image. The native dialog provides Escape handling, modal focus containment, and
+focus restoration. Original files cannot be overwritten; library deletion remains
+limited to the original uploads folder API.
+
+Picker tests verified folder discovery, chosen-folder uploads, selection, and
+public-path insertion. Live API checks discovered 43 folders and verified test
+uploads in `images/people` and `images/places/cache` on both :8080 and :5174.
+Temporary test files were removed; manual overrides were unchanged. Svelte and
+storage-isolation checks passed. No additional visual-browser pass was performed.
+
+## Follow-up: historical archive integration
+
+Integrated the research worktree's 4,895 newspaper candidate appearances, 151
+reviewed candidates, historical place profiles, and 1,611 municipal result tables.
+Election cycles derive the 1989/1991/1993/1995 entries from the newspaper dataset.
+Preserved Editor/media controls, description links, and manual overrides. Result
+tables use the supplied component-scoped ELUT styles and evidence popovers.
+
+Live :5174 browser checks verified the four year links in both grid and list
+layouts, candidate lists on every historical year page, the public 1,611-table
+JSON endpoint, Alton's six result tables and 21 candidate links, and source-popover
+open/close behavior. Svelte checks, all municipal result render/link/tally tests,
+Editor integration checks, researched-candidate checks, and production build
+passed. Build retains the large-chunk warning and reports one short generic-office
+description. The research coverage report documents partial unofficial newspaper
+coverage and unresolved tallies/outcomes.
+
+The guarded sync now includes reviewed/newspaper candidates, place notes/profiles,
+and source/public municipal results. It rejects mismatched result mirrors during
+an incomplete import. Application code remains explicitly integrated rather than
+mirrored between worktrees. No research source files were edited or pushed.

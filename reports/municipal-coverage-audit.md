@@ -2,7 +2,7 @@
 
 Reference: [UGRC municipality boundaries](https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/UtahMunicipalBoundaries/FeatureServer/0/query). Existing UGRC municipality boundary snapshot used by the local-contest importer; a current-boundary reference, not a historical incorporation timeline. Not every municipality necessarily held an election in each audited year.
 
-Audited 257 distinct municipalities across 261 municipality/county boundary entries. Multi-county municipalities are counted once. 0 have no place page; 11 have no municipal candidate records.
+Audited 257 distinct municipalities across 261 municipality/county boundary entries. Multi-county municipalities are counted once. 0 have no place page; 9 have no municipal candidate records.
 
 These are coverage flags, not proof that elections were held or that no candidates filed. Incorporation dates, uncontested cancellations, and missing source rosters need individual review.
 
@@ -12,9 +12,9 @@ These are coverage flags, not proof that elections were held or that no candidat
 | 2015 | 16 | 241 |
 | 2017 | 24 | 233 |
 | 2019 | 6 | 251 |
-| 2021 | 0 | 257 |
+| 2021 | 1 | 256 |
 | 2023 | 175 | 82 |
-| 2025 | 213 | 44 |
+| 2025 | 214 | 43 |
 
 ## Municipalities without candidate records
 
@@ -23,10 +23,8 @@ These are coverage flags, not proof that elections were held or that no candidat
 - [Clawson](https://www.electionsutah.org/places/emery/clawson/), [Emery County](https://www.electionsutah.org/places/emery/) (place page exists)
 - [Elmo](https://www.electionsutah.org/places/emery/elmo/), [Emery County](https://www.electionsutah.org/places/emery/) (place page exists)
 - [Antimony](https://www.electionsutah.org/places/garfield/antimony/), [Garfield County](https://www.electionsutah.org/places/garfield/) (place page exists)
-- [Hatch](https://www.electionsutah.org/places/garfield/hatch/), [Garfield County](https://www.electionsutah.org/places/garfield/) (place page exists)
 - [Alton](https://www.electionsutah.org/places/kane/alton/), [Kane County](https://www.electionsutah.org/places/kane/) (place page exists)
 - [Lynndyl](https://www.electionsutah.org/places/millard/lynndyl/), [Millard County](https://www.electionsutah.org/places/millard/) (place page exists)
-- [Oak City](https://www.electionsutah.org/places/millard/oak-city/), [Millard County](https://www.electionsutah.org/places/millard/) (place page exists)
 - [Scipio](https://www.electionsutah.org/places/millard/scipio/), [Millard County](https://www.electionsutah.org/places/millard/) (place page exists)
 - [Kingston](https://www.electionsutah.org/places/piute/kingston/), [Piute County](https://www.electionsutah.org/places/piute/) (place page exists)
 
@@ -192,10 +190,19 @@ Status: Candidate records imported. Imported records: 3.
 
 ### [Hatch](https://www.electionsutah.org/places/garfield/hatch/), [Garfield County](https://www.electionsutah.org/places/garfield/)
 
-Status: Cancellation confirmed; roster unresolved. Imported records: 0.
+Status: Candidate records imported. Imported records: 3.
 
-- The official homepage states that Resolution 2025-12 cancelled the November 2025 election and declared unopposed candidates elected. The linked image is a landscape photograph, not a readable resolution. Need the actual resolution or filed candidate list; no names inferred.
+- The June 16, 2021 council minutes, item 5.3, explicitly report Tony Dinges filed for mayor and Jon Spendlove and Kevin Eldredge filed for council. These are imported as filed candidates; the minutes describe cancellation as conditional on no write-in filings and do not establish final results.
+- The actual two-page 2025 cancellation resolution was located in the official public media archive. Its main heading is Resolution 2025-12, approved September 24, 2025; its second-page header and approved September minutes use 2025-06. It cancels the November 4, 2025 election and declares unopposed candidates elected, but names no candidates. The 2025 election notice advertises two four-year council seats. The 2025 candidate roster remains unresolved; voting council members and current incumbents are not treated as candidates.
+- [Tony Dinges](https://www.electionsutah.org/people/tony-dinges/) · 2021 · [Mayor](https://www.electionsutah.org/offices/mayor/) · Filed — June 16, 2021 council election update
+- [Jon Spendlove](https://www.electionsutah.org/people/jon-spendlove/) · 2021 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Filed — June 16, 2021 council election update
+- [Kevin Eldredge](https://www.electionsutah.org/people/kevin-eldredge/) · 2021 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Filed — June 16, 2021 council election update
 - [Source 1](https://hatchutah.gov/)
+- [Source 2](https://hatchutah.gov/wp-content/uploads/2021/10/minJune1621.pdf)
+- [Source 3](https://hatchutah.gov/wp-content/uploads/2025/10/CancelingElectionsPG1_000234.pdf)
+- [Source 4](https://hatchutah.gov/wp-content/uploads/2025/10/CancelingElectionsPG2_000235.pdf)
+- [Source 5](https://hatchutah.gov/wp-content/uploads/2025/04/Election-notice-2025.pdf)
+- [Source 6](https://hatchutah.gov/wp-content/uploads/2025/12/September2025Minutes-APPROVED.pdf)
 
 ### [Castle Valley](https://www.electionsutah.org/places/grand/castle-valley/), [Grand County](https://www.electionsutah.org/places/grand/)
 
@@ -233,10 +240,19 @@ Status: Candidate records imported. Imported records: 3.
 
 ### [Oak City](https://www.electionsutah.org/places/millard/oak-city/), [Millard County](https://www.electionsutah.org/places/millard/)
 
-Status: Cancellation confirmed; roster unresolved. Imported records: 0.
+Status: Candidate records imported. Imported records: 4.
 
-- Published minutes record adoption of Resolution 2025-06 cancelling the 2025 election. The reviewed excerpt does not name candidates. The town election page has empty candidate lists.
+- The June 8, 2025 town filing notice names Kirt Lambert Dutson for mayor and Thomas S. Nielson, David K. Steele, and Shawn Owen Gonder for two four-year council seats. Millard County records Steele’s withdrawal on August 11, 2025.
+- Signed Resolution 2025-06, adopted September 18, 2025, cancels the November 4 election and certifies Dutson, Nielson, and Gonder elected unopposed to four-year terms beginning January 2026. The resolution spells Gonder’s first name “Sean”; the town filing notices and county declaration/finance listings use “Shawn”, retained here. No vote totals are implied by the cancellation.
+- [Kirt Lambert Dutson](https://www.electionsutah.org/people/kirt-lambert-dutson/) · 2025 · [Mayor](https://www.electionsutah.org/offices/mayor/) · Elected unopposed — Resolution 2025-06
+- [Thomas S. Nielson](https://www.electionsutah.org/people/thomas-s-nielson/) · 2025 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Elected unopposed — Resolution 2025-06
+- [Shawn Owen Gonder](https://www.electionsutah.org/people/shawn-owen-gonder/) · 2025 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Elected unopposed — Resolution 2025-06; filing records identify Shawn
+- [David K. Steele](https://www.electionsutah.org/people/david-k-steele/) · 2025 · [Town Council](https://www.electionsutah.org/offices/town-council/) · Withdrew August 11, 2025
 - [Source 1](https://www.utah.gov/pmn/sitemap/notice/1026133.html)
+- [Source 2](https://www.utah.gov/pmn/sitemap/notice/1001043.html)
+- [Source 3](https://millardcounty.gov/your-government/elected-officials/clerk/elections/2025-municipal-election-candidates/)
+- [Source 4](https://millardcounty.gov/wp-content/uploads/2025/09/Oak-City-Resolution-to-cancel-election.pdf)
+- [Source 5](https://millardcounty.gov/wp-content/uploads/2025/08/Oak-City-David-K-Steele-Withdrawal-8-11-25.pdf)
 
 ### [Scipio](https://www.electionsutah.org/places/millard/scipio/), [Millard County](https://www.electionsutah.org/places/millard/)
 
@@ -380,11 +396,11 @@ Status: Candidate records imported. Imported records: 3.
 | 2018 | 372 |
 | 2019 | 24 |
 | 2020 | 313 |
-| 2021 | 7 |
+| 2021 | 10 |
 | 2022 | 208 |
 | 2023 | 1151 |
 | 2024 | 827 |
-| 2025 | 1560 |
+| 2025 | 1564 |
 | 2026 | 866 |
 
 Full per-place and per-year counts and section inventory are in municipal-coverage-audit.json. This audit measures municipal coverage, not completeness within a recorded race or statewide filing-list completeness.

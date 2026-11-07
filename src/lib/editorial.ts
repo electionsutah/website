@@ -36,11 +36,16 @@ const profileFields: Field[] = [
   { path: 'profile.description', label: 'Description', type: 'text' },
   { path: 'profile.sources', label: 'Description sources', type: 'links' }
 ];
+const imageFields = (slot: string, label: string): Field[] => [
+  { path: `${slot}.src`, label, type: 'image' },
+  ...[['title', 'Image title'], ['artist', 'Creator / credit'], ['license', 'License'], ['licenseUrl', 'License URL'], ['sourceUrl', 'Image source URL']].map(([key, name]) => ({ path: `${slot}.${key}`, label: `${label}: ${name}`, type: key.endsWith('Url') ? 'url' : undefined }))
+];
 export const baseEditorFields: Record<EntityKind, Field[]> = {
-  offices: [{ path: 'name', label: 'Office name' }, { path: 'placeIds', label: 'Associated place IDs (one per line)', type: 'lines', relation: 'places' }, ...profileFields, ...entityContactFields, ...linkFields, { path: 'resources', label: 'Office resources', type: 'resources' }],
-  parties: [{ path: 'name', label: 'Party name' }, ...profileFields, { path: 'shortName', label: 'Short name' }, { path: 'color', label: 'Party color', type: 'color' }, { path: 'logo', label: 'Logo URL or local asset path', type: 'asset' }, { path: 'recognized', label: 'Recognized party', type: 'boolean' }, { path: 'historical', label: 'Historical party', type: 'boolean' }, ...entityContactFields, ...linkFields],
+  offices: [{ path: 'name', label: 'Office name' }, ...imageFields('photo', 'Office photo'), { path: 'placeIds', label: 'Associated place IDs (one per line)', type: 'lines', relation: 'places' }, ...profileFields, ...entityContactFields, ...linkFields, { path: 'resources', label: 'Office resources', type: 'resources' }],
+  parties: [{ path: 'name', label: 'Party name' }, ...profileFields, { path: 'shortName', label: 'Short name' }, { path: 'color', label: 'Party color', type: 'color' }, { path: 'logo', label: 'Party logo', type: 'image' }, { path: 'recognized', label: 'Recognized party', type: 'boolean' }, { path: 'historical', label: 'Historical party', type: 'boolean' }, ...entityContactFields, ...linkFields],
   places: [
-    { path: 'name', label: 'Place name' },
+    { path: 'name', label: 'Place name' }, ...imageFields('photo', 'Place photo'), ...imageFields('emblem', 'Seal, logo, or flag'),
+    { path: 'emblem.kind', label: 'Emblem type', options: ['seal', 'logo', 'flag', 'emblem'] },
     { path: 'parentId', label: 'Parent county', relation: 'counties' },
     { path: 'description', label: 'Directory description', type: 'text' },
     { path: 'profile.summary', label: 'Profile summary', type: 'text' },
@@ -51,7 +56,7 @@ export const baseEditorFields: Record<EntityKind, Field[]> = {
     ...entityContactFields, ...linkFields
   ],
   people: [
-    { path: 'name', label: 'Person name' },
+    { path: 'name', label: 'Person name' }, ...imageFields('photo', 'Portrait'),
     { path: 'biography', label: 'Biography', type: 'text' },
     { path: 'priorities', label: 'Priorities (one per line)', type: 'lines' },
     { path: 'resources', label: 'Resources', type: 'resources' },
@@ -96,7 +101,7 @@ export function validateChanges(kind: EntityKind, changes: Changes, fields = edi
     } else {
       if (typeof value !== 'string') throw new Error(`${path} must be text`);
       if (field.type === 'color' && value && !/^#[0-9a-f]{6}$/i.test(value)) throw new Error(`${path} must be a six-digit hex color`);
-      if (field.type === 'asset' && value && !safeUrl(value) && !/^\/(?!\/)[^\s]*$/.test(value)) throw new Error(`${path} needs an http(s) URL or local asset path`);
+      if (['asset', 'image'].includes(field.type ?? '') && value && !safeUrl(value) && !/^\/(?!\/)[^\s]*$/.test(value)) throw new Error(`${path} needs an http(s) URL or local asset path`);
       if (value && field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) throw new Error(`${path} needs an email address`);
       if (value && field.type === 'url' && !safeUrl(value)) throw new Error(`${path} needs an http(s) URL`);
       if (value && field.type === 'date' && (!/^\d{4}-\d{2}-\d{2}$/.test(value) || !Number.isFinite(Date.parse(value)) || new Date(value).toISOString().slice(0, 10) !== value)) throw new Error(`${path} needs a valid YYYY-MM-DD date`);

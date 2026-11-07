@@ -39,9 +39,9 @@ const filed = (filings, years) => (filings.length ? `${plural(filings.length, 'c
 
 /** @type {{ path: string; title: string; description: string; image: string; type?: string }[]} */
 const routes = [
-  { path: '/', title: 'Elections Utah — Open civic data', description: 'Open civic data for Utah elections: candidate filings since 2013, offices, parties, counties and cities, and 2026 results by county.', image: 'default' },
+  { path: '/', title: 'Elections Utah — Open civic data', description: 'Open civic data for Utah elections: candidate records for selected cycles from 1989, offices, parties, counties and cities, and 2026 results by county.', image: 'default' },
   { path: '/labs/', title: '2026 Utah election results — Elections Utah Labs', description: 'Unofficial 2026 Utah general election results for every contest, with county-by-county maps and shifts from past elections.', image: 'labs' },
-  { path: '/elections/', title: 'Election years', description: 'Candidate filings for each Utah election year since 2013, with offices, parties, filing status, and links to official sources.', image: 'elections' },
+  { path: '/elections/', title: 'Election years', description: 'Candidate records for selected Utah election cycles from 1989 through 2026, with offices, parties, filing status, and links to official sources.', image: 'elections' },
   ...elections.map((election) => ({ path: `/elections/${election.year}/`, title: election.title, description: `Candidates in Utah’s ${election.title}: ${plural(election.filings.length, 'candidate filing')}, ${sources}.`, image: 'elections' })),
   { path: '/people/', title: 'People', description: `${plural(people.length, 'candidate')} who have filed to run for office in Utah, with the offices they sought, their parties, and official sources.`, image: 'people' },
   ...people.map((person) => ({ path: `/people/${person.id}/`, title: person.name, description: personDescription(person), image: 'people', type: 'profile' })),
@@ -149,7 +149,7 @@ await writeFile(join(dist, 'data', 'race-previews.json'), JSON.stringify(racePre
 
 const llms = `# Elections Utah
 
-> Open civic data about Utah elections: candidate filings from 2013 to 2026 for ${people.length.toLocaleString('en-US')} people, ${offices.length.toLocaleString('en-US')} offices, ${parties.length} parties, and ${places.length} counties and cities, plus 2026 general-election results by county.
+> Open civic data about Utah elections: candidate records for selected cycles from 1989 to 2026 for ${people.length.toLocaleString('en-US')} people, ${offices.length.toLocaleString('en-US')} offices, ${parties.length} parties, and ${places.length} counties and cities, plus 2026 general-election results by county.
 
 Every page links its official source. 2026 results are unofficial until the state canvass is certified; check the \`official\` and \`asOf\` fields before citing them. Candidate filings were last updated ${currentDatasetUpdated}.
 

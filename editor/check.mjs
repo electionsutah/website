@@ -98,6 +98,27 @@ try {
   const { configureFields } = await server.ssrLoadModule('/src/lib/editor-schema.ts');
   const legacyPresentation = configureFields(editorial.baseEditorFields, { version: 1, collections: { people: { fields: [{ path: 'contact.facebook', label: 'Facebook' }, { path: 'facebook', label: 'Facebook' }, { path: 'links', label: 'Links' }] } } });
   assert(!legacyPresentation.people.some(field => field.path === 'contact.facebook' || field.path === 'facebook'));
+  for (const [kind, path] of [['people', 'photo.src'], ['offices', 'photo.src'], ['places', 'photo.src'], ['places', 'emblem.src'], ['parties', 'logo']]) {
+    assert.equal(state.editorFields[kind].find(field => field.path === path)?.type, 'image', `${kind} exposes ${path} to the image picker`);
+    editorial.validateChanges(kind, { [path]: '/images/uploads/test.png' });
+    assert.throws(() => editorial.validateChanges(kind, { [path]: '//outside.example/image.png' }));
+  }
+  const imageLibrary = await server.ssrLoadModule('/src/lib/entity-images.ts');
+  const imageOverrides = (await server.ssrLoadModule('/src/data/editor-overrides.json')).default;
+  const originalOffices = imageOverrides.offices;
+  try {
+    const original = { src: '/images/original.webp', title: 'Original image', artist: 'Original creator', license: 'Original license', licenseUrl: '', sourceUrl: 'https://example.org/original' };
+    imageOverrides.offices = { ...originalOffices, '__image_test__': { 'photo.src': '/images/uploads/replacement.png' } };
+    let image = imageLibrary.entityImageFor('offices', '__image_test__', 'photo', original);
+    assert.equal(image.src, '/images/uploads/replacement.png');
+    assert.equal(image.artist, '', 'Replacement never inherits a different image’s credit');
+    imageOverrides.offices.__image_test__['photo.artist'] = 'New creator';
+    assert.equal(imageLibrary.entityImageFor('offices', '__image_test__', 'photo', original).artist, 'New creator');
+    imageOverrides.offices.__image_test__['photo.src'] = '';
+    assert.equal(imageLibrary.entityImageFor('offices', '__image_test__', 'photo', original), undefined);
+    delete imageOverrides.offices.__image_test__;
+    assert.equal(imageLibrary.entityImageFor('offices', '__image_test__', 'photo', original).artist, 'Original creator');
+  } finally { imageOverrides.offices = originalOffices; }
   const canonicalFields = editorial.editorFields.people;
   assert(canonicalFields.some(field => field.path === 'links'));
   assert(!canonicalFields.some(field => field.path === 'website' || field.path === 'contact.website' || field.path === 'facebook'));

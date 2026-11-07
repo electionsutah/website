@@ -8,6 +8,7 @@ import officeEnrichment from '../data/office-enrichment.json';
 import { placeEntityLinks, type EntityLink } from './entity-links';
 import currentRows from '../data/2026-candidates.json';
 import historicalRows from '../data/historical-candidates.json';
+import newspaperRows from '../data/newspaper-candidates.json';
 // County, municipal, school-board, and special-district candidates from the state results feed (2024 on).
 import localRows from '../data/local-candidates.json';
 // Reviewed source records outside the state results feed; kept separate so refreshes preserve them.
@@ -366,7 +367,7 @@ export function sourceAvailable(url: string): boolean {
 type ArchiveRow = (typeof historicalRows)[number];
 
 export const importedFilings: Filing[] = [
-  ...[...historicalRows, ...(localRows as ArchiveRow[]), ...(researchedRows as ArchiveRow[])].map((row) => {
+  ...[...historicalRows, ...(localRows as ArchiveRow[]), ...(researchedRows as ArchiveRow[]), ...(newspaperRows as ArchiveRow[])].map((row) => {
     const officeName = cleanOfficeName(row.office);
     const party = partyDetails(row.party, row.section);
     const personId = slug(row.name);
@@ -730,7 +731,15 @@ const cycleDetails: Omit<ElectionCycle, 'filings'>[] = [
   { year: 2016, title: '2016 regular election', description: 'Primary and general-election ballot candidates for federal, state, legislative, state school-board, and judicial-retention offices recovered from official statewide canvasses. These ballot rosters do not include every person who filed or withdrew.', source: 'https://vote.utah.gov/historical-election-results/', sourceLabel: 'Official statewide canvasses', availability: 'statewide' },
   { year: 2015, title: '2015 municipal elections', description: 'Primary and general-election ballot candidates for mayor and council offices in Salt Lake County’s official municipal results. Coverage is limited to Salt Lake County; other counties and candidates absent from the ballots are not included.', source: 'https://www.saltlakecounty.gov/clerk/elections/election-results/', sourceLabel: 'Official Salt Lake County election results', availability: 'local' },
   { year: 2014, title: '2014 regular election', description: 'Primary and general-election ballot candidates for federal, state, legislative, state school-board, and judicial-retention offices recovered from official statewide canvasses. These ballot rosters do not include every person who filed or withdrew.', source: 'https://vote.utah.gov/historical-election-results/', sourceLabel: 'Official statewide canvasses', availability: 'statewide' },
-  { year: 2013, title: '2013 municipal elections', description: 'Primary and general-election ballot candidates for mayor and council offices in Salt Lake County’s official municipal results. Coverage is limited to Salt Lake County; other counties and candidates absent from the ballots are not included.', source: 'https://www.saltlakecounty.gov/clerk/elections/election-results/', sourceLabel: 'Official Salt Lake County election results', availability: 'local' }
+  { year: 2013, title: '2013 municipal elections', description: 'Primary and general-election ballot candidates for mayor and council offices in Salt Lake County’s official municipal results. Coverage is limited to Salt Lake County; other counties and candidates absent from the ballots are not included.', source: 'https://www.saltlakecounty.gov/clerk/elections/election-results/', sourceLabel: 'Official Salt Lake County election results', availability: 'local' },
+  ...[...new Set(newspaperRows.map(row => row.year))].sort((a, b) => b - a).map(year => ({
+    year,
+    title: `${year} municipal elections`,
+    description: 'Municipal candidates across Utah from contemporary unofficial Deseret News returns. Coverage follows the places and contests published in the source; outcomes are unverified.',
+    source: newspaperRows.find(row => row.year === year)!.source,
+    sourceLabel: 'Unofficial contemporary newspaper returns',
+    availability: 'local' as const
+  })),
 ];
 
 export const elections: ElectionCycle[] = cycleDetails.map((cycle) => ({

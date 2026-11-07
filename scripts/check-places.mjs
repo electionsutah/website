@@ -23,6 +23,9 @@ try {
   const { default: profiles } = await server.ssrLoadModule('/src/data/place-enrichment.json');
   const read = async (name) => JSON.parse(await readFile(new URL(`../src/data/${name}.json`, import.meta.url)));
   const [images, registration, participation] = await Promise.all(['place-images', 'voter-registration', 'voter-participation'].map(read));
+  const { placeImageFor } = await server.ssrLoadModule('/src/lib/place-images.ts');
+  assert.equal(placeImageFor(undefined), undefined);
+  assert.equal(placeImageFor({ id: 'missing', parentId: 'missing' }), undefined);
   assert.equal(Object.keys(registration.counties).length, 29);
   assert.equal(Object.keys(participation.counties).length, 29);
   assert.equal(Object.values(registration.counties).reduce((n, row) => n + row.active, 0), registration.state.active);
@@ -35,6 +38,7 @@ try {
     assert(profile?.summary, `Missing profile: ${place.id}`);
     const imageKey = images[place.id] ? place.id : place.parentId;
     const image = images[imageKey];
+    assert.equal(placeImageFor(place)?.src, image?.src, `Index and detail photos must agree: ${place.id}`);
     assert(image?.src && image?.artist && image?.license && image?.sourceUrl, `Missing credited hero: ${place.id}`);
     await access(new URL(`../public${image.src}`, import.meta.url));
     const county = place.type === 'County' ? place.id : place.parentId;
