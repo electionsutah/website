@@ -29,6 +29,8 @@ try {
   for (const field of ['activeRegistered', 'ballotsCast']) {
     assert.equal(Object.values(participation.counties).reduce((n, row) => n + row[field], 0), participation.state[field]);
   }
+  const researched = await read('researched-candidates');
+  let verifiedCandidateLinks = 0;
   const report = [];
   for (const place of places) {
     const profile = profiles[place.id];
@@ -41,6 +43,13 @@ try {
     assert(registration.counties[county], `Missing registration: ${place.id}`);
     assert(participation.counties[county], `Missing participation: ${place.id}`);
     const { body } = render(View, { props: { section: 'places', id: place.id, navigate() {} } });
+    for (const candidate of researched.filter(row => row.city === place.name && row.county === place.county && row.section === 'Municipal Offices')) {
+      const filing = place.filings.find(row => row.year === candidate.year && row.name === candidate.name && row.officeName === candidate.office);
+      assert(filing, `Researched filing missing from place: ${place.id} / ${candidate.name}`);
+      assert(body.includes(candidate.name), `Candidate missing from rendered place: ${place.id} / ${candidate.name}`);
+      assert(body.includes(`href="/people/${filing.personId}/"`), `Candidate profile link missing: ${place.id} / ${candidate.name}`);
+      verifiedCandidateLinks++;
+    }
     if (!place.filings.length) {
       assert(body.includes('No candidate records imported yet.'), `Empty archive context: ${place.id}`);
       assert(body.includes('Municipal election coverage review'), `Missing sourced coverage review: ${place.id}`);
@@ -71,5 +80,5 @@ try {
   } finally { profiles[key] = profile; }
   await mkdir(new URL('../tmp/place-audit/', import.meta.url), { recursive: true });
   await writeFile(new URL('../tmp/place-audit/coverage.json', import.meta.url), JSON.stringify(report, null, 2) + '\n');
-  console.log(`Verified ${report.length} rendered place pages: facts, attributed hero photos, registration, and certified participation. ${report.filter(row => row.photo === 'county fallback').length} county photo fallbacks.`);
+  console.log(`Verified ${verifiedCandidateLinks} researched candidate names and profile links on ${report.length} rendered place pages: facts, attributed hero photos, registration, and certified participation. ${report.filter(row => row.photo === 'county fallback').length} county photo fallbacks.`);
 } finally { await server.close(); }

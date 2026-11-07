@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick } from 'svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
+  import MunicipalResults from './MunicipalResults.svelte';
   import Icon from './Icon.svelte';
   import EntityLinks from './EntityLinks.svelte';
   import OfficeCommunities from './OfficeCommunities.svelte';
@@ -616,6 +617,7 @@
           <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">{place.filings.length ? 'No matching candidates.' : 'No candidate records have been imported for this municipality yet. See Election details & sources for the coverage review.'}</p>{/each}</div>
         </div>
       </section>
+      <MunicipalResults placeId={place.id} />
     </article>
   {/if}
 {:else}

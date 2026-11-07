@@ -264,56 +264,84 @@
   ],
   "box-elder/fielding": [
     {
+      "date": "2025-10-02",
+      "kind": "cancellation",
+      "title": "2025 municipal election cancellation adopted",
+      "summary": "The official June 9, 2025 declaration notice names Charles Leo Earl for mayor; Kelvin (Kelly) Miller Nokes for council; and Shane S. Marsh and Trevor Deleeuw Earl for two-year council terms. Names are retained as published. The October 2, 2025 minutes document approval of Resolution 10-02-25 cancelling the municipal election because candidates did not exceed open seats and there were no ballot items. The reviewed minutes do not individually certify winners; records retain filed status pending the signed resolution or named election certification.",
+      "source": "https://www.utah.gov/pmn/files/1376367.pdf"
+    },
+    {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "Official notice proposes Resolution 10-02-25 to cancel the election because candidates do not exceed seats. Need adopted resolution/minutes and a named candidate list.",
-      "source": "https://www.utah.gov/pmn/sitemap/notice/1024615.html"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The official June 9, 2025 declaration notice names Charles Leo Earl for mayor; Kelvin (Kelly) Miller Nokes for council; and Shane S. Marsh and Trevor Deleeuw Earl for two-year council terms. Names are retained as published. The October 2, 2025 minutes document approval of Resolution 10-02-25 cancelling the municipal election because candidates did not exceed open seats and there were no ballot items. The reviewed minutes do not individually certify winners; records retain filed status pending the signed resolution or named election certification.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1001489.html"
     }
   ],
   "cache/cornish": [
     {
+      "date": "2025-09-03",
+      "kind": "cancellation",
+      "title": "2025 election cancelled; three candidates elected unopposed",
+      "summary": "The official cancellation notice, posted September 4, 2025, states that the council adopted Resolution 25-06 on September 3, 2025, cancelling the November 4 municipal election. It explicitly certifies Matt Leak (mayor), Brad Fisher (council), and Chris Buxton (council) elected. There were two candidates for two at-large council seats, one mayoral candidate, and no ballot propositions. These are unopposed election outcomes; no vote totals are implied.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1020551.html"
+    },
+    {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "Secondary meeting index reports a 2025 cancellation and three named candidates. Need the original cancellation resolution or county filings before import. The candidate guide lists incumbents only.",
-      "source": "https://mytown.theboringparts.com/city/ut-pmn-110/2025/"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The official cancellation notice, posted September 4, 2025, states that the council adopted Resolution 25-06 on September 3, 2025, cancelling the November 4 municipal election. It explicitly certifies Matt Leak (mayor), Brad Fisher (council), and Chris Buxton (council) elected. There were two candidates for two at-large council seats, one mayoral candidate, and no ballot propositions. These are unopposed election outcomes; no vote totals are implied.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1020551.html"
     }
   ],
   "emery/clawson": [
     {
+      "date": "2025-09-11",
+      "kind": "cancellation",
+      "title": "2025 municipal election cancellation approved",
+      "summary": "The council approved Resolution 2025002. Candidate names are not included in the published minutes.",
+      "source": "https://www.utah.gov/pmn/files/1334905.docx"
+    },
+    {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "September 11 agenda lists approval of cancellation resolution 2025002. An agenda alone does not prove adoption; obtain minutes or resolution and candidate names.",
-      "source": "https://www.utah.gov/pmn/sitemap/notice/1021915.html"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Published September 11, 2025 meeting minutes explicitly record approval of Resolution 2025002 cancelling the 2025 election (motion Casey, second Robby, approved). The minutes do not name candidates or certify individual winners. The county town directory lists current officials, not election candidates. No named candidate roster was located in the reviewed county election page or published candidate-document archive; candidate records remain unimported pending declarations or a named cancellation certification. Confirmed missing 2019 mayoral two-year, council two-year, and council four-year contests: five named candidates. Gary Price and Jerry Price are explicitly write-ins. Totals include county canvass adjustments: Gary Price 42+2=44; Bill Wagner 23+2=25. The 2025 cancellation minutes confirm cancellation but still provide no named roster. Historical candidate participation is imported as general-election status rather than inferred winner status. Official vote totals remain in the government-source review; the current results-history importer only handles 2024 state district races and has not imported these municipal result tables.",
+      "source": "https://emery.utah.gov/wp-content/uploads/2023/03/2019-Municipal-General-Election.pdf"
     }
   ],
   "emery/elmo": [
     {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "County adopted an interlocal agreement to administer Elmo’s 2025 municipal election. This does not identify candidates or establish whether the election was ultimately held. Need filing list or cancellation resolution.",
-      "source": "https://www.utah.gov/pmn/files/1248435.pdf"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The official September 9, 2025 agenda lists cancellation of the election, but contains no candidate names or adopted resolution. A January 13, 2026 notice schedules swearing in new mayor Tim Downard, and the January 15 district minutes welcome him as the new mayor. Those records establish the office transition but do not explicitly identify an election candidacy or distinguish election from appointment. No candidate records are inferred. The declaration roster, cancellation adoption, and named outcome certification remain unresolved. Confirmed missing 2017 mayor and council contests: five named candidates. The county document filename and November 7 date identify the general election, but its internal heading incorrectly says Primary. Treat this metadata discrepancy explicitly during import. The four council rows include write-ins Bert Reed and Ella Ekker; a tie at 23 means winner status must not be inferred without seat count and any tie resolution. The 2019 county results include an Elmo precinct for a district bond vote, not an Elmo municipal candidate contest. 2023 county results cover Emery and Ferron only; absence does not prove Elmo had no candidates. Historical candidate participation is imported as general-election status rather than inferred winner status. Official vote totals remain in the government-source review; the current results-history importer only handles 2024 state district races and has not imported these municipal result tables.",
+      "source": "https://emery.utah.gov/wp-content/uploads/2023/03/2017-General-Election.pdf"
     }
   ],
   "garfield/antimony": [
     {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "The March 2025 notice concerns a council vacancy appointment, not a public election candidate roster. No named election candidates inferred.",
-      "source": "https://www.utah.gov/pmn/sitemap/notice/979757.html"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The official January 8, 2026 swearing-in notice explicitly identifies elected officials Kasey King (mayor), Marcus Gleave (board member), and Chuck Wilson (board member). These are recorded for the preceding 2025 municipal election cycle, with board member normalized to Town Council. The notice identifies elected status; it is not proof that the scheduled ceremony occurred, and it supplies no vote totals or term lengths. September 4, 2025 minutes record signatures by Kasey, Chuck, and Marcus on the cancellation resolution and a motion to approve it. That item does not record a second or vote result. The signed resolution itself and a complete original declaration roster remain unlocated; the names and elected status are supported by the later explicit elected-official notice, not inferred from the cancellation signatures or current officeholding. The March vacancy notice concerns appointment and is not imported as an election.",
+      "source": "https://www.utah.gov/pmn/sitemap/notice/1050373.html"
     }
   ],
   "garfield/hatch": [
     {
+      "date": "2025-09-24",
+      "kind": "cancellation",
+      "title": "2025 election cancelled; candidate names unresolved",
+      "summary": "The actual two-page 2025 cancellation resolution was located in the official public media archive. Its main heading is Resolution 2025-12, approved September 24, 2025; its second-page header and approved September minutes use 2025-06. It cancels the November 4, 2025 election and declares unopposed candidates elected, but names no candidates. The 2025 election notice advertises two four-year council seats. The 2025 candidate roster remains unresolved; voting council members and current incumbents are not treated as candidates.",
+      "source": "https://hatchutah.gov/wp-content/uploads/2025/10/CancelingElectionsPG1_000234.pdf"
+    },
+    {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "The official homepage states that Resolution 2025-12 cancelled the November 2025 election and declared unopposed candidates elected. The linked image is a landscape photograph, not a readable resolution. Need the actual resolution or filed candidate list; no names inferred.",
-      "source": "https://hatchutah.gov/"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The June 16, 2021 council minutes, item 5.3, explicitly report Tony Dinges filed for mayor and Jon Spendlove and Kevin Eldredge filed for council. These are imported as filed candidates; the minutes describe cancellation as conditional on no write-in filings and do not establish final results. The actual two-page 2025 cancellation resolution was located in the official public media archive. Its main heading is Resolution 2025-12, approved September 24, 2025; its second-page header and approved September minutes use 2025-06. It cancels the November 4, 2025 election and declares unopposed candidates elected, but names no candidates. The 2025 election notice advertises two four-year council seats. The 2025 candidate roster remains unresolved; voting council members and current incumbents are not treated as candidates.",
+      "source": "https://hatchutah.gov/wp-content/uploads/2021/10/minJune1621.pdf"
     }
   ],
   "kane/alton": [
@@ -321,44 +349,86 @@
       "date": "2026-11-06",
       "kind": "coverage_review",
       "title": "Municipal election coverage review",
-      "summary": "Official county election information identifies Alton as a voting/drop-box location. It does not name municipal candidates. Need town filing or cancellation records; do not infer candidacies from current officials.",
-      "source": "https://kane.utah.gov/311/Elections"
+      "summary": "The county’s official November 4, 2025 summary results contain no Alton municipal contest. Absence from that results report does not establish cancellation, zero candidates, or any individual outcome. Alton’s official public-body directory currently exposes council contact details but no meeting-notice links in its sitemap view. No named declaration list, cancellation certification, or candidate campaign disclosures were located in the reviewed county election page and public-body index. Candidate records remain unresolved; current officials and unrelated candidates named Alton are not imported.",
+      "source": "https://kane.utah.gov/DocumentCenter/View/1004/Official-November-4-2025-Summary-Results"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "coverage_review",
+      "title": "Historical Alton election returns located",
+      "summary": "Expanded research located 21 named candidate appearances in six municipal contests across 1989, 1991, 1993 and 1995 in contemporary Deseret News returns. These unofficial historical returns precede the current 2013–2026 archive and are staged in reports/alton-election-research.json for scope review. The 1993 mayoral tally is tied at 17–17; resolution is unverified. No modern election candidacies are inferred from officeholding.",
+      "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/"
     }
   ],
   "millard/lynndyl": [
     {
+      "date": "2025-10-01",
+      "kind": "cancellation",
+      "title": "2025 municipal election cancellation adopted",
+      "summary": "Signed Resolution 2025-04, adopted October 1, 2025, confirms cancellation of the 2025 municipal general election. One operative sentence retains a 2023 year reference, while its heading, footer, adoption date, and notice instructions identify 2025. It does not name candidates or certify individual winners. The listed council voters are not treated as candidates. The county candidate table contains no Lynndyl names; the reviewed town election archive provides filing instructions but no filed roster.",
+      "source": "https://millardcounty.gov/wp-content/uploads/2025/10/Lynndyl-Resolution-2025-04-Cancellation-of-2025-Municipal-Election.pdf"
+    },
+    {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "Official 2023 notice announces two council seats and filing period, but does not name filed candidates. Need declaration list or adopted cancellation records.",
-      "source": "https://lynndyl.utah.gov/2023-lynndyl-town-municipal-election-notice/"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Signed Resolution 2025-04, adopted October 1, 2025, confirms cancellation of the 2025 municipal general election. One operative sentence retains a 2023 year reference, while its heading, footer, adoption date, and notice instructions identify 2025. It does not name candidates or certify individual winners. The listed council voters are not treated as candidates. The county candidate table contains no Lynndyl names; the reviewed town election archive provides filing instructions but no filed roster. A subsequent official notice calls for interviews and appointment of a mayor on January 7, 2026. Appointment applicants and the later mayor are not inferred to be candidates in the cancelled 2025 election. Candidate records remain unresolved pending declarations, campaign disclosures, or a named election certification. Confirmed missing 2021 mayoral, council two-year, and council four-year contests: seven named candidates. Official municipal results are distinct from county precinct reports. The 2015-uploaded Lynndyl-OR.pdf is actually November 4, 2014 county/state/federal results and must not be imported as a 2015 municipal election. Catalog entries for 2017 cancellation, 2019 cancellation and Amber Lloyd declaration currently return 404; these are leads, not verified source records. The 2025 signed cancellation resolution still names no candidates, and the January 2026 mayoral process is appointment, not a public election. Historical candidate participation is imported as general-election status rather than inferred winner status. Official vote totals remain in the government-source review; the current results-history importer only handles 2024 state district races and has not imported these municipal result tables.",
+      "source": "https://millardcounty.gov/wp-content/uploads/2021/11/Lynndyl-2021-Municipal-Election-Official-Results.pdf"
     }
   ],
   "millard/oak-city": [
     {
+      "date": "2025-09-18",
+      "kind": "cancellation",
+      "title": "2025 election cancelled; three candidates elected unopposed",
+      "summary": "The June 8, 2025 town filing notice names Kirt Lambert Dutson for mayor and Thomas S. Nielson, David K. Steele, and Shawn Owen Gonder for two four-year council seats. Millard County records Steele’s withdrawal on August 11, 2025. Signed Resolution 2025-06, adopted September 18, 2025, cancels the November 4 election and certifies Dutson, Nielson, and Gonder elected unopposed to four-year terms beginning January 2026. The resolution spells Gonder’s first name “Sean”; the town filing notices and county declaration/finance listings use “Shawn”, retained here. No vote totals are implied by the cancellation.",
+      "source": "https://millardcounty.gov/wp-content/uploads/2025/09/Oak-City-Resolution-to-cancel-election.pdf"
+    },
+    {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "Published minutes record adoption of Resolution 2025-06 cancelling the 2025 election. The reviewed excerpt does not name candidates. The town election page has empty candidate lists.",
-      "source": "https://www.utah.gov/pmn/sitemap/notice/1026133.html"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The June 8, 2025 town filing notice names Kirt Lambert Dutson for mayor and Thomas S. Nielson, David K. Steele, and Shawn Owen Gonder for two four-year council seats. Millard County records Steele’s withdrawal on August 11, 2025. Signed Resolution 2025-06, adopted September 18, 2025, cancels the November 4 election and certifies Dutson, Nielson, and Gonder elected unopposed to four-year terms beginning January 2026. The resolution spells Gonder’s first name “Sean”; the town filing notices and county declaration/finance listings use “Shawn”, retained here. No vote totals are implied by the cancellation.",
+      "source": "https://millardcounty.gov/wp-content/uploads/2025/09/Oak-City-Resolution-to-cancel-election.pdf"
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "The June 8, 2025 town filing notice names Kirt Lambert Dutson for mayor and Thomas S. Nielson, David K. Steele, and Shawn Owen Gonder for two four-year council seats. Millard County records Steele’s withdrawal on August 11, 2025. Signed Resolution 2025-06, adopted September 18, 2025, cancels the November 4 election and certifies Dutson, Nielson, and Gonder elected unopposed to four-year terms beginning January 2026. The resolution spells Gonder’s first name “Sean”; the town filing notices and county declaration/finance listings use “Shawn”, retained here. No vote totals are implied by the cancellation.",
+      "source": "https://millardcounty.gov/your-government/elected-officials/clerk/elections/2025-municipal-election-candidates/"
     }
   ],
   "millard/scipio": [
     {
+      "date": "2025-09-18",
+      "kind": "cancellation",
+      "title": "2025 election cancelled; filed candidates declared elected",
+      "summary": "Millard County’s official 2025 candidate table lists Kasey K Brunson for mayor, Porter H Monroe and Bryce Lundy Monroe for four-year council terms, and Robert Thatcher and McCrae Adams Thatcher for two-year council terms. The amended June 6 McCrae Adams Thatcher filing is used; the struck-through earlier listing is not treated as a separate candidate. Robert Thatcher’s declaration explicitly specifies a two-year council term. Signed Resolution 2025-09-18, adopted September 18, 2025, cancels the November 4 election for mayor and four council positions and declares the candidates who filed elected by default. The named roster comes from the county filing table; the resolution supplies the outcome. No vote totals are implied.",
+      "source": "https://millardcounty.gov/wp-content/uploads/2025/09/Scipio-Resoultion-to-cancel-election-9-18-25.pdf"
+    },
+    {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "Official notice identifies mayor and council offices up for election but no candidate names. A secondary agenda index suggests cancellation consideration; adoption and roster remain unverified.",
-      "source": "https://millardcounty.gov/wp-content/uploads/2025/05/Scipio-Town-Election-Notice-UOCAVA-25-1.pdf"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Millard County’s official 2025 candidate table lists Kasey K Brunson for mayor, Porter H Monroe and Bryce Lundy Monroe for four-year council terms, and Robert Thatcher and McCrae Adams Thatcher for two-year council terms. The amended June 6 McCrae Adams Thatcher filing is used; the struck-through earlier listing is not treated as a separate candidate. Robert Thatcher’s declaration explicitly specifies a two-year council term. Signed Resolution 2025-09-18, adopted September 18, 2025, cancels the November 4 election for mayor and four council positions and declares the candidates who filed elected by default. The named roster comes from the county filing table; the resolution supplies the outcome. No vote totals are implied.",
+      "source": "https://millardcounty.gov/your-government/elected-officials/clerk/elections/2025-municipal-election-candidates/"
     }
   ],
   "piute/kingston": [
     {
+      "date": "2025-10-08",
+      "kind": "cancellation",
+      "title": "2025 municipal election cancelled",
+      "summary": "The town’s official cancellation handout includes the October 8, 2025 board decision not to hold the November 4 municipal election due to lack of candidates, with a unanimous recorded vote. The document does not individually certify candidates elected; the imported records retain filed status. Board members voting on cancellation are not inferred to be election candidates. The full roster and named outcome certification remain unresolved.",
+      "source": "https://www.utah.gov/pmn/files/1335679.pdf"
+    },
+    {
       "date": "2026-11-06",
-      "kind": "coverage_review",
-      "title": "Municipal election coverage review",
-      "summary": "Secondary meeting index lists an October 2025 municipal-election cancellation attachment. Need the original Utah Public Notice attachment and named candidates.",
-      "source": "https://muniwatch.org/meetings/cmkqkpt77029bs75n8cov6x70"
+      "kind": "candidate_roster",
+      "title": "Municipal candidate source review",
+      "summary": "Piute County’s 2025 Kingston campaign financial disclosure packet explicitly identifies Carlos Brent Jessen for Town Council Member and Shannon Marie Gleave for Town Board Member. Both signed statements dated June 5, 2025. These document candidacies; both offices are normalized to Town Council. The two-page packet is not represented as a complete candidate roster. The town’s official cancellation handout includes the October 8, 2025 board decision not to hold the November 4 municipal election due to lack of candidates, with a unanimous recorded vote. The document does not individually certify candidates elected; the imported records retain filed status. Board members voting on cancellation are not inferred to be election candidates. The full roster and named outcome certification remain unresolved.",
+      "source": "https://piute.gov/wp-content/uploads/2025/10/Kingston-Financial-Disclosure-Oct.pdf"
     }
   ]
 }

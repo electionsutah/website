@@ -1,0 +1,228 @@
+[
+  {
+    "id": "2017-elmo-mayor",
+    "placeId": "emery/elmo",
+    "municipality": "Elmo",
+    "year": 2017,
+    "electionDate": "2017-11-07",
+    "office": "Mayor",
+    "source": "https://emery.utah.gov/wp-content/uploads/2023/03/2017-General-Election.pdf",
+    "official": true,
+    "seats": 1,
+    "totalCandidateVotes": 66,
+    "notes": [
+      "The county file is published as general-election results dated November 7, 2017, but its internal heading says Primary. No winner status is inferred."
+    ],
+    "options": [
+      {
+        "name": "Randy James Winn",
+        "votes": 66,
+        "writeIn": false,
+        "winner": null
+      }
+    ]
+  },
+  {
+    "id": "2017-elmo-town-council",
+    "placeId": "emery/elmo",
+    "municipality": "Elmo",
+    "year": 2017,
+    "electionDate": "2017-11-07",
+    "office": "Town Council",
+    "source": "https://emery.utah.gov/wp-content/uploads/2023/03/2017-General-Election.pdf",
+    "official": true,
+    "seats": null,
+    "totalCandidateVotes": 119,
+    "notes": [
+      "The county file is published as general-election results dated November 7, 2017, but its internal heading says Primary. No winner status is inferred."
+    ],
+    "options": [
+      {
+        "name": "Stoney Jensen",
+        "votes": 45,
+        "writeIn": false,
+        "winner": null
+      },
+      {
+        "name": "Kristine Laws",
+        "votes": 23,
+        "writeIn": false,
+        "winner": null
+      },
+      {
+        "name": "Bert Reed",
+        "votes": 28,
+        "writeIn": true,
+        "winner": null
+      },
+      {
+        "name": "Ella Ekker",
+        "votes": 23,
+        "writeIn": true,
+        "winner": null
+      }
+    ]
+  },
+  {
+    "id": "2019-clawson-mayor-2-year-term",
+    "placeId": "emery/clawson",
+    "municipality": "Clawson",
+    "year": 2019,
+    "electionDate": "2019-11-05",
+    "office": "Mayor (2-year term)",
+    "source": "https://emery.utah.gov/wp-content/uploads/2023/03/2019-Municipal-General-Election.pdf",
+    "official": true,
+    "seats": 1,
+    "totalCandidateVotes": 44,
+    "notes": [],
+    "options": [
+      {
+        "name": "Gary Price",
+        "votes": 44,
+        "writeIn": true,
+        "winner": null
+      }
+    ]
+  },
+  {
+    "id": "2019-clawson-town-council-2-year-term",
+    "placeId": "emery/clawson",
+    "municipality": "Clawson",
+    "year": 2019,
+    "electionDate": "2019-11-05",
+    "office": "Town Council (2-year term)",
+    "source": "https://emery.utah.gov/wp-content/uploads/2023/03/2019-Municipal-General-Election.pdf",
+    "official": true,
+    "seats": 1,
+    "totalCandidateVotes": 59,
+    "notes": [],
+    "options": [
+      {
+        "name": "Bill Wagner",
+        "votes": 25,
+        "writeIn": false,
+        "winner": null
+      },
+      {
+        "name": "Jerry Price",
+        "votes": 34,
+        "writeIn": true,
+        "winner": null
+      }
+    ]
+  },
+  {
+    "id": "2019-clawson-town-council-4-year-term",
+    "placeId": "emery/clawson",
+    "municipality": "Clawson",
+    "year": 2019,
+    "electionDate": "2019-11-05",
+    "office": "Town Council (4-year term)",
+    "source": "https://emery.utah.gov/wp-content/uploads/2023/03/2019-Municipal-General-Election.pdf",
+    "official": true,
+    "seats": 2,
+    "totalCandidateVotes": 97,
+    "notes": [],
+    "options": [
+      {
+        "name": "Robert Riley",
+        "votes": 50,
+        "writeIn": false,
+        "winner": null
+      },
+      {
+        "name": "Erik Nielsen",
+        "votes": 47,
+        "writeIn": false,
+        "winner": null
+      }
+    ]
+  },
+  {
+    "id": "2021-lynndyl-mayor",
+    "placeId": "millard/lynndyl",
+    "municipality": "Lynndyl",
+    "year": 2021,
+    "electionDate": "2021-11-02",
+    "office": "Mayor",
+    "source": "https://millardcounty.gov/wp-content/uploads/2021/11/Lynndyl-2021-Municipal-Election-Official-Results.pdf",
+    "official": true,
+    "seats": 1,
+    "totalCandidateVotes": 56,
+    "notes": [],
+    "options": [
+      {
+        "name": "Briar Proctor",
+        "votes": 42,
+        "writeIn": false,
+        "winner": null
+      },
+      {
+        "name": "Andrew Dutson",
+        "votes": 14,
+        "writeIn": false,
+        "winner": null
+      }
+    ]
+  },
+  {
+    "id": "2021-lynndyl-town-council-2-year-term",
+    "placeId": "millard/lynndyl",
+    "municipality": "Lynndyl",
+    "year": 2021,
+    "electionDate": "2021-11-02",
+    "office": "Town Council (2-year term)",
+    "source": "https://millardcounty.gov/wp-content/uploads/2021/11/Lynndyl-2021-Municipal-Election-Official-Results.pdf",
+    "official": true,
+    "seats": 1,
+    "totalCandidateVotes": 54,
+    "notes": [],
+    "options": [
+      {
+        "name": "Kathryn Lamb",
+        "votes": 54,
+        "writeIn": false,
+        "winner": null
+      }
+    ]
+  },
+  {
+    "id": "2021-lynndyl-town-council-4-year-term",
+    "placeId": "millard/lynndyl",
+    "municipality": "Lynndyl",
+    "year": 2021,
+    "electionDate": "2021-11-02",
+    "office": "Town Council (4-year term)",
+    "source": "https://millardcounty.gov/wp-content/uploads/2021/11/Lynndyl-2021-Municipal-Election-Official-Results.pdf",
+    "official": true,
+    "seats": 2,
+    "totalCandidateVotes": 107,
+    "notes": [],
+    "options": [
+      {
+        "name": "Spencer Proctor",
+        "votes": 36,
+        "writeIn": false,
+        "winner": null
+      },
+      {
+        "name": "Justin Best",
+        "votes": 15,
+        "writeIn": false,
+        "winner": null
+      },
+      {
+        "name": "Matthew Dutson",
+        "votes": 23,
+        "writeIn": false,
+        "winner": null
+      },
+      {
+        "name": "Matthew Draper",
+        "votes": 33,
+        "writeIn": false,
+        "winner": null
+      }
+    ]
+  }
+]

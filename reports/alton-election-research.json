@@ -1,0 +1,213 @@
+{
+  "reviewedOn": "2026-11-06",
+  "municipality": "Alton",
+  "county": "Kane",
+  "state": "UT",
+  "candidateAppearances": 21,
+  "contests": [
+    {
+      "year": 1989,
+      "office": "Mayor",
+      "seats": 1,
+      "official": false,
+      "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/",
+      "options": [
+        {
+          "name": "Orval Palmer",
+          "votes": 16,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Joy J. Heaton",
+          "votes": 10,
+          "writeIn": false,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "year": 1989,
+      "office": "Town Council (4-year term)",
+      "seats": 2,
+      "official": false,
+      "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/",
+      "options": [
+        {
+          "name": "Vane Campbell",
+          "votes": 21,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Douglas Heaton",
+          "votes": 16,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Ferril Heaton",
+          "votes": 7,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Sylvia Young",
+          "votes": 6,
+          "writeIn": false,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "year": 1991,
+      "office": "Town Council (4-year term)",
+      "seats": 2,
+      "official": false,
+      "source": "https://www.deseret.com/1991/11/6/18949937/here-s-election-rundown-outside-of-s-l-county/",
+      "options": [
+        {
+          "name": "Gary Kalpakoff",
+          "votes": 13,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Royce Young",
+          "votes": 13,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Dick Edmunds",
+          "votes": 10,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Raymond Heaton",
+          "votes": 10,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Nancy Roundy",
+          "votes": 0,
+          "writeIn": false,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "office": "Mayor",
+      "seats": 1,
+      "official": false,
+      "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
+      "options": [
+        {
+          "name": "Esther Heaton",
+          "votes": 17,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Orval Palmer",
+          "votes": 17,
+          "writeIn": false,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "year": 1993,
+      "office": "Town Council",
+      "seats": 2,
+      "official": false,
+      "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
+      "options": [
+        {
+          "name": "Dick Edmunds",
+          "votes": 21,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Vane Campbell",
+          "votes": 17,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Joy Heaton",
+          "votes": 11,
+          "writeIn": false,
+          "winner": null
+        },
+        {
+          "name": "Doug Heaton",
+          "votes": 16,
+          "writeIn": false,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "year": 1995,
+      "office": "Town Council (4-year term)",
+      "seats": 2,
+      "official": false,
+      "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
+      "options": [
+        {
+          "name": "Douglas K. Heaton",
+          "votes": 25,
+          "writeIn": true,
+          "winner": null
+        },
+        {
+          "name": "Arthur W. R. Andersen",
+          "votes": 24,
+          "writeIn": true,
+          "winner": null
+        },
+        {
+          "name": "Royce Clifton Young",
+          "votes": 22,
+          "writeIn": true,
+          "winner": null
+        },
+        {
+          "name": "Kim Cox",
+          "votes": 8,
+          "writeIn": true,
+          "winner": null
+        }
+      ]
+    }
+  ],
+  "imported": false,
+  "findings": [
+    "Alton has documented municipal election returns: six contests and 21 named candidate appearances across 1989, 1991, 1993 and 1995. These are contemporary newspaper returns, not government-certified canvasses.",
+    "The November 1993 mayoral returns report Esther Heaton and Orval Palmer tied at 17 each. A separate contemporary article corroborates the tie; its resolution remains unverified. A 1996 Congressional Record lists Orval Palmer as Alton mayor, which supports later officeholding but does not prove how the 1993 tie was resolved.",
+    "All four 1995 council candidates are explicitly write-ins. Name variants across years are retained as published; no automatic identity merge is made.",
+    "These cycles precede the currently imported candidate archive, which begins in 2013. They are staged here as research findings rather than inserted into that archive without updating its scope labels and documentation.",
+    "Recent 2013\u20132025 Alton candidacies remain unresolved in the reviewed county election page, public notice body index, government archive finding aids, newspaper search results and official sample ballots. Search absence is not evidence of no elections."
+  ],
+  "governmentSources": [
+    "https://www.utah.gov/pmn/sitemap/publicbody/5997.html",
+    "https://archives.utah.gov/research/inventories/series/24273/",
+    "https://archives.utah.gov/research/inventories/series/24185/",
+    "https://kane.utah.gov/311/Elections",
+    "https://www.govinfo.gov/content/pkg/CREC-1996-03-25/pdf/CREC-1996-03-25-pt1-PgS2737-4.pdf"
+  ],
+  "additionalSources": [
+    "https://www.deseret.com/1993/11/3/19074483/1993-not-a-good-year-for-incumbent-mayors/",
+    "https://www.deseret.com/2004/10/6/19854279/mayoral-write-in-could-rewrite-history/"
+  ],
+  "nextSteps": [
+    "Expand archive scope and import these 21 candidate appearances with six explicitly unofficial newspaper result tables; do not mix them into official county returns.",
+    "Resolve the 1993 mayoral tie through subsequent newspaper coverage or town council minutes.",
+    "Seek the town-held declarations, election canvasses, cancellation resolutions and campaign disclosures for 1997\u20132025. State archival microfilm can support earlier history; finding aids alone do not establish modern candidates."
+  ]
+}
