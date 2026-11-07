@@ -1310,14 +1310,14 @@
  },
  "salt-lake/salt-lake-city": {
   "src": "/images/places/salt-lake/salt-lake-city.webp",
-  "width": 1280,
-  "height": 571,
-  "title": "Salt Lake City pan 1",
-  "artist": "Unknown author",
-  "license": "Public domain",
-  "licenseUrl": "",
-  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salt_Lake_City_pan_1.jpg",
-  "file": "Salt Lake City pan 1.jpg"
+  "width": 1600,
+  "height": 1067,
+  "title": "Salt Lake City, May 2012 (resized and converted to WebP)",
+  "artist": "Garrett",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salt_Lake_City,_May_2012.jpg",
+  "file": "Salt Lake City, May 2012.jpg"
  },
  "salt-lake/sandy": {
   "src": "/images/places/salt-lake/sandy.webp",

@@ -11,3 +11,5 @@ Always prefer the existing evidence popover pattern (`evidence-popover` with `an
 ## HTML reports
 
 Always give generated HTML reports a `<body>` margin of `3rem`.
+
+Generated reports must link relevant existing ELUT entities and place source links alongside the claims they support.
