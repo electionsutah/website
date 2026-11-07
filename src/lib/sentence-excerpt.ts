@@ -1,5 +1,24 @@
+import { descriptionLinks } from './description-links';
+
+type Options = { text: string; self: string; navigate: (href: string) => void };
+
 /** Show complete sentences within the intro's token-defined line budget. */
-export function sentenceExcerpt(node: HTMLElement, text: string) {
+export function sentenceExcerpt(node: HTMLElement, options: Options) {
+  let text = options.text;
+  const render = (excerpt: string) => {
+    node.replaceChildren(...descriptionLinks(excerpt, options.self).map(part => {
+      if (!part.href) return document.createTextNode(part.text);
+      const link = document.createElement('a');
+      link.href = part.href;
+      link.textContent = part.text;
+      link.onclick = event => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        options.navigate(part.href!);
+      };
+      return link;
+    }));
+  };
   let frame = 0;
   let destroyed = false;
   const segmenter = new Intl.Segmenter('en', { granularity: 'sentence' });
@@ -45,7 +64,7 @@ export function sentenceExcerpt(node: HTMLElement, text: string) {
     } finally {
       probe.remove();
     }
-    node.textContent = excerpt;
+    render(excerpt);
   };
   const schedule = () => {
     if (destroyed) return;
@@ -60,14 +79,14 @@ export function sentenceExcerpt(node: HTMLElement, text: string) {
       schedule();
     }
   });
-  node.textContent = text;
+  render(text);
   observer.observe(node);
   fit();
   document.fonts.ready.then(schedule);
   document.fonts.addEventListener('loadingdone', schedule);
   window.addEventListener('resize', schedule);
   return {
-    update(nextText: string) { text = nextText; schedule(); },
+    update(next: Options) { options = next; text = next.text; schedule(); },
     destroy() {
       destroyed = true;
       cancelAnimationFrame(frame);

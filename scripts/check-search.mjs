@@ -29,6 +29,21 @@ try {
   assert.deepEqual(rankByTitle(titles, [], (title) => title), titles, 'Blank searches preserve default order');
   assert(matchesQuery('Adam Davis U.S. House', queryTokens('house davis')), 'Words may still match across title and related text');
   assert(!matchesQuery('Adam Davis U.S. House', queryTokens('davis senate')), 'Every query word is still required');
+  for (const [query, name] of [
+    ['SLC', 'Salt Lake City'], ['WVS', 'West Valley City'], ['WVC', 'West Valley City'],
+    ['SLCo', 'Salt Lake County'], ['UTCo', 'Utah County'], ['DavisCo', 'Davis County'],
+    ['Box Elder Co', 'Box Elder County'], ['Mt. Pleasant', 'Mount Pleasant']
+  ]) {
+    const place = entities.places.find(place => place.name === name);
+    assert(place, `${name} must exist`);
+    const tokens = queryTokens(query);
+    const matches = entities.places.filter(place => matchesQuery(searchText.places(place), tokens));
+    assert(matches.includes(place), `${query} must match ${name}`);
+    assert.equal(rankByTitle(matches, tokens, place => place.name)[0].name, name, `${query} must rank its own place ahead of related places`);
+    if (place.filings.length) {
+      assert(entities.people.some(person => matchesQuery(searchText.people(person), tokens)), `${query} must also match candidate locations`);
+    }
+  }
 } finally {
   await server.close();
 }

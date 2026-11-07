@@ -2,6 +2,7 @@
   import type { OfficeProfile } from './lib/entity-profiles';
   import { anchoredPopover } from './lib/anchored-popover';
   import Icon from './Icon.svelte';
+  import DescriptionText from './DescriptionText.svelte';
   export let profile: OfficeProfile;
   export let navigate: (href: string) => void;
   $: popoverId = `jurisdiction-sources-${profile.scope.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
@@ -16,7 +17,7 @@
     <button class="place-election-toggle coverage-toggle" popovertarget={popoverId}><Icon name="info" /><span>Sources &amp; coverage</span></button>
   </div>
   <div class="community-subheading"><p class="community-scope">{profile.scope}</p>{#if profile.boundaryPeriod}<span class="community-badge">{profile.boundaryPeriod}</span>{/if}</div>
-  <p>{profile.note}</p>
+  <p><DescriptionText text={profile.note} {navigate} /></p>
   {#if profile.communities.length}
     <div class="community-grid">
       {#each profile.communities as community}
@@ -26,7 +27,7 @@
   {/if}
   <div class="evidence-popover" id={popoverId} popover="auto" use:anchoredPopover={popoverId} aria-labelledby={`${popoverId}-title`}>
     <header><strong id={`${popoverId}-title`}>Jurisdiction sources &amp; coverage</strong><button popovertarget={popoverId} popovertargetaction="hide" aria-label="Close jurisdiction sources"><Icon name="close" /></button></header>
-    <p>{profile.note}</p>
+    <p><DescriptionText text={profile.note} {navigate} /></p>
     <p>Current boundaries may differ from those in historical elections. Municipal lists are a geographic guide, not a complete list of neighborhoods or settlements. Boundary intersections smaller than one hectare are omitted as possible map slivers. Confirm eligibility for a particular address with the election office.</p>
     {#each profile.sources as source}<a class="coverage-source" href={source.url} target="_blank" rel="noreferrer">{source.label}<span class="sr-only"> (opens in new tab)</span></a>{/each}
   </div>

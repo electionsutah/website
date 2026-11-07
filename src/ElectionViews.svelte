@@ -1,4 +1,5 @@
 <script lang="ts">
+  import DescriptionText from './DescriptionText.svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
   import Icon from './Icon.svelte';
   import EntityLinks from './EntityLinks.svelte';
@@ -118,7 +119,7 @@
       <div>
         <p class="eyebrow">{election.availability === 'special' ? 'Special election' : election.availability === 'local' ? 'Locally administered cycle' : 'Statewide archive'}</p>
         <h1>{election.year}</h1>
-        <p class="detail-summary">{election.description}</p>
+        <p class="detail-summary"><DescriptionText text={election.description} self={`/elections/${election.year}/`} {navigate} /></p>
         <a class="source-link" href={election.source} target="_blank" rel="noreferrer">{election.sourceLabel} <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
         {#if election.year === 2026}
           <p class="archive-context">This filing archive includes withdrawn and defeated candidates as well as candidates advancing to the general election. Check the official source for the latest ballot information.<span>Dataset last updated <time datetime={currentDatasetUpdated}>{formatDate(currentDatasetUpdated)}</time>.</span></p>
@@ -135,7 +136,7 @@
       {#if election.filings.length}
         {#key election.year}<EntityViews section="people" scope={election.filings} embedded stateId="election-people" omitColumns={['years']} showStatus={election.year === 2026} {navigate} />{/key}
       {:else}
-        <div class="empty-slate cycle-empty"><strong>No statewide candidate table published</strong><p>{election.description} Follow the official source above for the records Utah does make available for this cycle.</p></div>
+        <div class="empty-slate cycle-empty"><strong>No statewide candidate table published</strong><p><DescriptionText text={election.description} self={`/elections/${election.year}/`} {navigate} /> Follow the official source above for the records Utah does make available for this cycle.</p></div>
       {/if}
     </section>
   </article>

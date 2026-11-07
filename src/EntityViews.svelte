@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick } from 'svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
+  import DescriptionText from './DescriptionText.svelte';
   import Icon from './Icon.svelte';
   import EntityLinks from './EntityLinks.svelte';
   import OfficeCommunities from './OfficeCommunities.svelte';
@@ -405,7 +406,7 @@
         <div>
           <p class="eyebrow">Person record</p>
           <h1>{person.name}</h1>
-          <p class="detail-summary">{person.filings.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${person.filings.length} separate filings across ${person.years.join(', ')}.`}</p>
+          <p class="detail-summary"><DescriptionText text={person.filings.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${person.filings.length} separate filings across ${person.years.join(', ')}.`} self={hrefFor(section, id)} {navigate} /></p>
           {#if personPhoto}<PhotoCredit image={personPhoto} className="emblem-credit" />{/if}
           {#if contact && (personProfile || contactFiling || verifiedPersonLinks.length)}
             <section class="person-contact" aria-label={`${person.name} contact information`}>
@@ -441,7 +442,7 @@
       {#if personProfile}
         <section class="record-section person-profile" aria-labelledby="person-profile-title">
           <div class="record-heading"><p class="eyebrow compact">Profile information</p><h2 id="person-profile-title">About {person.name}</h2></div>
-          <p class="person-biography">{personProfile.biography}</p>
+          <p class="person-biography"><DescriptionText text={personProfile.biography} self={hrefFor(section, id)} {navigate} /></p>
           {#if personProfile.priorities.length}<h3>Published campaign priorities</h3>
           <ul>{#each personProfile.priorities as priority}<li>{priority}</li>{/each}</ul>{/if}
           <div class="office-resources" role="group" aria-label={`${person.name} campaign resources`}>{#each personProfile.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>
@@ -473,7 +474,7 @@
   {:else if office}
     <article class="entity-detail">
       <Breadcrumbs parent={{ label: 'Offices', href: '/offices/' }} current={office.name} {navigate} />
-      <header class="detail-hero compact-hero" class:has-boundary={!!boundary} class:has-photo={!!officeImage} style:--place-photo={officeImage ? `url("${officeImage.src}")` : undefined}><div class="office-hero-detail"><p class="eyebrow">{office.sections.join(' · ')}</p><div class="entity-heading-row"><h1>{office.name}</h1><EntityLinks links={office.links} entityName={office.name} /></div>{#if selectedOfficeProfile}<p class="detail-summary">{selectedOfficeProfile.description}</p>{/if}<p class="detail-summary">{office.filings.length} filings across {office.years.join(', ')}.</p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div>{#if boundary}<BoundaryMap map={boundary} className="office-boundary" />{/if}{#if officeImage}<PhotoCredit image={officeImage} />{/if}</header>
+      <header class="detail-hero compact-hero" class:has-boundary={!!boundary} class:has-photo={!!officeImage} style:--place-photo={officeImage ? `url("${officeImage.src}")` : undefined}><div class="office-hero-detail"><p class="eyebrow">{office.sections.join(' · ')}</p><div class="entity-heading-row"><h1>{office.name}</h1><EntityLinks links={office.links} entityName={office.name} /></div>{#if selectedOfficeProfile}<p class="detail-summary"><DescriptionText text={selectedOfficeProfile.description} self={hrefFor(section, id)} {navigate} /></p>{/if}<p class="detail-summary"><DescriptionText text={`${office.filings.length} filings across ${office.years.join(', ')}.`} self={hrefFor(section, id)} {navigate} /></p>{#if office.resources.length}<div class="office-resources" role="group" aria-label="Official office resources">{#each office.resources as resource}<a href={resource.url} target="_blank" rel="noreferrer"><strong>{resource.label}</strong><span>{resource.description}</span><b><Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></b></a>{/each}</div>{/if}</div>{#if boundary}<BoundaryMap map={boundary} className="office-boundary" />{/if}{#if officeImage}<PhotoCredit image={officeImage} />{/if}</header>
       <section class="detail-stats">
         <div><small>TOTAL FILINGS</small><strong>{formatCount(office.filings.length)}</strong></div>
         <div><small>PEOPLE</small><strong>{new Set(candidacies(office.filings).map((candidacy) => candidacy.personId)).size}</strong></div>
@@ -495,7 +496,7 @@
   {:else if party}
     <article class="entity-detail" style={`--party-color:${party.color}`}>
       <Breadcrumbs parent={{ label: 'Parties', href: '/parties/' }} current={party.name} {navigate} />
-      <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} ${party.localCaucus ? 'symbol' : 'logo'}`} /></div>{:else}<div class="party-mark" aria-hidden="true"><Icon name="flag" /></div>{/if}<div class="party-hero-detail"><p class="eyebrow">{partyLabel(party)}</p><div class="entity-heading-row"><h1>{party.name}</h1><EntityLinks links={party.links ?? []} entityName={party.name} /></div>{#if selectedPartyProfile}<p class="detail-summary">{selectedPartyProfile.description}</p>{#if selectedPartyProfile.sources.length}<p class="profile-source">{#each selectedPartyProfile.sources as source}<a href={source.url} target="_blank" rel="noreferrer">About this affiliation<span class="sr-only"> (opens in new tab)</span></a>{/each}</p>{/if}{/if}<p class="detail-summary">{party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'}</p>
+      <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} ${party.localCaucus ? 'symbol' : 'logo'}`} /></div>{:else}<div class="party-mark" aria-hidden="true"><Icon name="flag" /></div>{/if}<div class="party-hero-detail"><p class="eyebrow">{partyLabel(party)}</p><div class="entity-heading-row"><h1>{party.name}</h1><EntityLinks links={party.links ?? []} entityName={party.name} /></div>{#if selectedPartyProfile}<p class="detail-summary"><DescriptionText text={selectedPartyProfile.description} self={hrefFor(section, id)} {navigate} /></p>{#if selectedPartyProfile.sources.length}<p class="profile-source">{#each selectedPartyProfile.sources as source}<a href={source.url} target="_blank" rel="noreferrer">About this affiliation<span class="sr-only"> (opens in new tab)</span></a>{/each}</p>{/if}{/if}<p class="detail-summary"><DescriptionText text={party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'} self={hrefFor(section, id)} {navigate} /></p>
         {#if party.id === 'united-utah-party'}
           <p class="detail-summary"><strong>Historical note:</strong> On April 26, 2025, members approved the merger of the United Utah Party (UUP) with the Utah Forward Party to form the <a href={hrefFor('parties', 'forward-party-of-utah')} onclick={(event) => open(event, hrefFor('parties', 'forward-party-of-utah'))}>Forward Party of Utah</a>.</p>
         {:else if party.id === 'forward-party-of-utah'}
@@ -508,7 +509,7 @@
           <section class="party-caucus-history" aria-labelledby="party-history-title">
             <p class="eyebrow compact">A Fruit Heights tradition</p>
             <h2 id="party-history-title">Two rooms, one local election</h2>
-            <p>{party.localCaucus.history}</p>
+            <p><DescriptionText text={party.localCaucus.history} self={hrefFor(section, id)} {navigate} /></p>
             <p>Residents choose the Pinecone or Sagebrush caucus, each of which nominates candidates for city office. These are local nonpartisan groups; neither represents the Democratic or Republican Party.</p>
             <p class="party-symbol-note">Illustration from Fruit Heights City’s May 2023 election guide.</p>
             <a class="source-link" href={party.localCaucus.source} target="_blank" rel="noreferrer">Read the city’s history <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>
@@ -527,7 +528,7 @@
     <article class="entity-detail">
       <Breadcrumbs parent={[{ label: 'Places', href: '/places/' }, ...(placeCounty ? [{ label: placeCounty.name, href: hrefFor('places', placeCounty.id) }] : [])]} current={place.name} {navigate} />
       <header class="detail-hero compact-hero place-hero">
-        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p>{place.description}</p><p class="archive-context"><strong>{#if place.years.length}Archived candidate years: {place.years.slice().reverse().join(', ')}.{:else}No candidate records imported yet.{/if}</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<PhotoCredit image={placeImage} label={placeImageFallback ? `${place.county} County photo` : 'Photo'} />{/if}</div>
+        <div class="place-hero-detail" class:has-photo={!!placeImage} style:--place-photo={placeImage ? `url("${placeImage.src}")` : undefined}><p class="eyebrow">{place.type}{#if place.type === 'City'} · <a class="place-county-link" href={hrefFor('places', place.parentId)} onclick={(event) => open(event, hrefFor('places', place.parentId))}>{placesById.get(place.parentId)?.name ?? `${place.county} County`}</a>{/if}</p><h1>{place.name}</h1><p><DescriptionText text={place.description} self={hrefFor(section, id)} {navigate} /></p><p class="archive-context"><strong>{#if place.years.length}Archived candidate years: <DescriptionText text={`${place.years.slice().reverse().join(', ')}.`} {navigate} />{:else}No candidate records imported yet.{/if}</strong> Office links reflect these filings and their historical districts.</p>{#if placeImage}<PhotoCredit image={placeImage} label={placeImageFallback ? `${place.county} County photo` : 'Photo'} />{/if}</div>
           <section class="place-profile" aria-labelledby="place-profile-title">
             <div class="place-summary">
               <p class="eyebrow compact">Place profile</p>
@@ -535,7 +536,7 @@
                 <h2 id="place-profile-title">About {place.name}</h2>
                 <EntityLinks links={place.links ?? placeEntityLinks(placeProfile)} entityName={place.name} />
               </div>
-              <p class="place-intro" use:sentenceExcerpt={placeProfile?.summary ?? `${place.name} is represented in the ${place.county} County election archive. A sourced local profile is not yet available.`}></p>
+              <p class="place-intro" use:sentenceExcerpt={{ text: placeProfile?.summary ?? `${place.name} is represented in the ${place.county} County election archive. A sourced local profile is not yet available.`, self: hrefFor(section, id), navigate }}></p>
               {#if placeEmblem}<PhotoCredit image={placeEmblem} label={placeEmblem.kind.charAt(0).toUpperCase() + placeEmblem.kind.slice(1)} className="emblem-credit" />{/if}
             </div>
             <div class="place-data-grid">
