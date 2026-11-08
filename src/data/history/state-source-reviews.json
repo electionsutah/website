@@ -1,0 +1,14 @@
+{
+  "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf": {
+    "documentYear": 1960,
+    "documentHeading": "General election held in the State of Utah, Tuesday, November 8, 1960",
+    "evidencePage": 2,
+    "notes": "Page 1 is an abstract; pages 2\u20134 overlap and form one table."
+  },
+  "https://vote.utah.gov/wp-content/uploads/2023/09/1960Pri.pdf": {
+    "documentYear": 1962,
+    "documentHeading": "UTAH PRIMARY ELECTION TUESDAY, SEPTEMBER 11, 1962",
+    "evidencePage": 1,
+    "notes": "Filename begins 1960 but the document itself confirms the index label 1962. The filename is not the election year."
+  }
+}

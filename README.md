@@ -27,7 +27,7 @@ workflow, data connections, and current scope.
 
 ## Included content
 
-- Searchable filing and ballot-candidate records from available 1994–2026 state and county sources, plus earlier newspaper returns
+- Searchable filing and ballot-candidate records from available 1960–2026 state and county sources, plus earlier newspaper returns
 - Individual, cross-linked views for people, offices, political parties,
   counties, cities, and election years
 - Global popout search across every entity type
@@ -72,6 +72,76 @@ to reuse source files in `.firecrawl/pre2017/`. Requires Poppler's `pdftotext`.
 The importer replaces only 2013–2016 records and preserves later cycles.
 The indexes also include earlier statewide and county results. See the
 1994–2012 backfill below for imported records and remaining source gaps.
+
+## Reviewed state PDF rosters, 1960–1992
+
+The [state historical-results index](https://vote.utah.gov/historical-election-results/)
+contains 68 election groups across 1960–2024, including primary, presidential,
+and special elections. The [source inventory](reports/state-election-source-inventory.html)
+distinguishes direct artifact provenance, known existing importer coverage, and
+unimported sources. A document not imported does not imply that its election year
+has no existing candidate records. OCR snapshots for the 28 indexed pre-1994
+sources have been cached for review; raw OCR output is never imported directly.
+
+The reviewed manifest now contains **2,068 candidate/office/election records from
+28 PDFs across every even-year cycle from 1960 through 1992**. This adds 2,028
+records beyond the initial 1960 import. Coverage is partial where the manifest
+lists pending pages, faint names, conflicting labels or abbreviated tickets;
+these counts do not claim complete statewide rosters. Primary and general
+candidacies retain separate keys, and judicial retention entries are labeled.
+
+The first import supplied **40 candidate/office records for 1960**.
+`1960Gen.pdf` page 1 is a separate party/turnout abstract. Pages 2–4 are overlapping
+parts of one wide table. The reconstruction rotates and deskews the scans,
+aligns their header/body and totals rules, and removes repeated columns at the
+seams. The joined table and upright name headers are saved in
+`reports/source-images/`, with panel-level provenance in the matching JSON.
+
+```sh
+uv run --with pillow python scripts/stitch-historical-canvass.py .firecrawl/state-history/1960Gen.pdf
+python3 scripts/import-reviewed-state-rosters.py
+python3 scripts/audit-historical-state-sources.py
+node scripts/report-state-election-sources.mjs
+```
+
+`scripts/render-canvass-review.py` generalizes header review for rotated pages,
+vertical names and side-by-side tables. `scripts/process-historical-canvasses.py`
+generates proposals with independent OCR evidence; it never imports raw OCR.
+The macOS-only `scripts/lib/ocr-canvass.swift` runs accurate Vision OCR on full
+pages plus four overlapping tiles and retains page coordinates. The reviewed
+manifest records scope and unresolved work per document; rerunning the importer
+preserves records from other sources and the current 2026 results.
+
+```sh
+uv run --with pillow python scripts/render-canvass-review.py \
+  .firecrawl/state-history/1980Gen.pdf /tmp/1980-header-review.png \
+  --rotate -90 --top .04 --bottom .34 --names --pages 5 6
+uv run --with pillow python scripts/render-reviewed-state-pdfs.py --source 1962-primary
+python3 scripts/process-historical-canvasses.py
+```
+
+The source auditor reads a Firecrawl index snapshot at
+`.firecrawl/state-history-current.json`. Refresh that snapshot with:
+
+```sh
+firecrawl scrape 'https://vote.utah.gov/historical-election-results/' --format markdown,links -o .firecrawl/state-history-current.json
+```
+
+Reviewed facts live in `src/data/history/reviewed-state-rosters.json`. The importer
+replaces only records owned by those reviewed source documents and preserves
+other imports. Candidate rows link to original PDF pages; presidential running
+mates remain on their tickets. The source's historical Governor office remains
+separate from the modern joint ticket. The four district judges are contested
+candidates, not retention questions. The printed party label “Soc.” is retained
+without guessing a normalized party name. Ballot questions, responses and the
+page-1 party totals do not become candidate records; votes and winners are not
+imported by this roster workflow. The canvass lists selected Senate districts
+and no State House roster, so it does not establish statewide completeness.
+
+The index entry “1962 Primary” links to `1960Pri.pdf`, but the document heading
+confirms **September 11, 1962**. This filename discrepancy is recorded in
+`src/data/history/state-source-reviews.json`; dates are verified from documents,
+not inferred from filenames. Its 12 primary candidate columns are now imported into the 1962 cycle.
 
 ## 1994–2012 backfill
 

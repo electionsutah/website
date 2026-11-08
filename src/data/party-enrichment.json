@@ -282,5 +282,95 @@
     "notes": "Election affiliation or missing-data category, not a party organization; no website or social account applies.",
     "sources": [],
     "links": []
+  },
+  "independent": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "justice": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "natural-law": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "party-for-socialism-and-liberation": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "peace-and-freedom": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "personal-choice": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "reform": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "socialist-workers": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "u-s-taxpayers": {
+    "officialWebsite": "",
+    "verifiedOn": "2026-11-07",
+    "status": "Historical affiliation — accounts withheld",
+    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
   }
 }

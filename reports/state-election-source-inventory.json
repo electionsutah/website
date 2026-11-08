@@ -1,0 +1,1837 @@
+{
+  "indexUrl": "https://vote.utah.gov/historical-election-results/",
+  "retrievedOn": "2026-11-08",
+  "scope": "Source-level audit. A source not imported does not mean the election year has no records. Alternate formats are grouped by election; unrelated primary, special, and presidential contests stay separate.",
+  "elections": [
+    {
+      "yearLabel": 2024,
+      "ocrCached": false,
+      "label": "2024 General",
+      "kind": "general",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 827,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2025/02/2024-General-Election-Statewide-Canvass-2.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2024,
+      "ocrCached": false,
+      "label": "2024 Primary",
+      "kind": "primary",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 827,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2024/07/2024-Primary-Election-State-Canvass-Final-Signed.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2024,
+      "ocrCached": false,
+      "label": "2024 Presidential Primary",
+      "kind": "presidential-primary",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 827,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2024/03/2024-Presidential-Primary-Election-State-Canvass-Signed.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2023,
+      "ocrCached": false,
+      "label": "2023 General Election",
+      "kind": "general",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 1151,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/12/Signed-Certification-of-2023-CD2-Election.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2022,
+      "ocrCached": false,
+      "label": "2022 General Election",
+      "kind": "general",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 208,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2022/12/Signed-2022-General-Election-State-Canvass-Certification.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2022,
+      "ocrCached": false,
+      "label": "2022 Primary Election",
+      "kind": "primary",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 208,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2022/07/2022-Signed-Primary-Election-Statewide-Canvass.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2020,
+      "ocrCached": false,
+      "label": "2020 General Election",
+      "kind": "general",
+      "status": "covered_by_existing_pipeline",
+      "existingRecordsForYear": 313,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "The existing 2020 generator reads these canvass workbooks but its records link to the election-records landing page.",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2020/12/2020-General-Election-Canvass.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        },
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2021/02/2020-General-Election-Statewide-Canvass.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2020,
+      "ocrCached": false,
+      "label": "2020 Regular Primary Election",
+      "kind": "primary",
+      "status": "covered_by_existing_pipeline",
+      "existingRecordsForYear": 313,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "The existing 2020 generator reads these canvass workbooks but its records link to the election-records landing page.",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2020/07/2020-Primary-Election-Canvass.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        },
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2021/02/2020-Primary-Election-State-Canvass.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2020,
+      "ocrCached": false,
+      "label": "2020 Presidential Primary Election",
+      "kind": "presidential-primary",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 313,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2021/03/2020-Presidential-Primary-Election-State-Canvass.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        },
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2021/02/2020-Presidential-Primary-Election-State-Canvass.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2018,
+      "ocrCached": false,
+      "label": "2018 General",
+      "kind": "general",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 372,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        },
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2018,
+      "ocrCached": false,
+      "label": "2018 Primary",
+      "kind": "primary",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 372,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        },
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2017,
+      "ocrCached": false,
+      "label": "2017 Special General",
+      "kind": "special-general",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 214,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2017-General-Election-Statewide-Canvass.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        },
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2017-General-Election-Statewide-Canvass.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2017,
+      "ocrCached": false,
+      "label": "2017 Special Primary",
+      "kind": "special-primary",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 214,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2017-Primary-Election-Canvass-1.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2016,
+      "ocrCached": false,
+      "label": "2016 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 291,
+      "recordsUsingLinkedSources": 262,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2016-General-Election-Statewide-Canvass-3.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        },
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2016-General-Election-Statewide-Canvass.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 262,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2016,
+      "ocrCached": false,
+      "label": "2016 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 291,
+      "recordsUsingLinkedSources": 29,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2016-Primary-Election-State-Canvass-2-1.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 29,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2014,
+      "ocrCached": false,
+      "label": "2014 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 269,
+      "recordsUsingLinkedSources": 260,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2014-General-Canvass-Report-1-1.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 260,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2014,
+      "ocrCached": false,
+      "label": "2014 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 269,
+      "recordsUsingLinkedSources": 9,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2014-Primary-Canvass-Reports-1.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 9,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2012,
+      "ocrCached": false,
+      "label": "2012 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 309,
+      "recordsUsingLinkedSources": 278,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+          "format": "xls",
+          "recordsUsingThisSource": 278,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2012,
+      "ocrCached": false,
+      "label": "2012 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 309,
+      "recordsUsingLinkedSources": 31,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "format": "xlsx",
+          "recordsUsingThisSource": 31,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2010,
+      "ocrCached": false,
+      "label": "2010 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 277,
+      "recordsUsingLinkedSources": 267,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2010Gen.xls",
+          "format": "xls",
+          "recordsUsingThisSource": 267,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2010,
+      "ocrCached": false,
+      "label": "2010 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 277,
+      "recordsUsingLinkedSources": 10,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2010-Primary-Canvass-Reports.xls",
+          "format": "xls",
+          "recordsUsingThisSource": 10,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2008,
+      "ocrCached": false,
+      "label": "2008 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 341,
+      "recordsUsingLinkedSources": 314,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2008Gen.xls",
+          "format": "xls",
+          "recordsUsingThisSource": 314,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2008,
+      "ocrCached": false,
+      "label": "2008 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 341,
+      "recordsUsingLinkedSources": 9,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/08-Primary-Election-Results.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 9,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2008,
+      "ocrCached": false,
+      "label": "2008 Presidential Primary",
+      "kind": "presidential-primary",
+      "status": "source_used",
+      "existingRecordsForYear": 341,
+      "recordsUsingLinkedSources": 18,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2008WSPprimary.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 18,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2007,
+      "ocrCached": false,
+      "label": "2007 Special Primary",
+      "kind": "special-primary",
+      "status": "source_not_imported",
+      "existingRecordsForYear": 140,
+      "recordsUsingLinkedSources": 0,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2007Muni_Special.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 0,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2006,
+      "ocrCached": false,
+      "label": "2006 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 132,
+      "recordsUsingLinkedSources": 103,
+      "remainingKnownWork": [
+        "General single-county House pages 8–18 remain for review.",
+        "Published PDF repeats Senate tables on pages 19–20 where multi-county House coverage is expected; county sources are needed."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2006Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 103,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2006,
+      "ocrCached": false,
+      "label": "2006 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 132,
+      "recordsUsingLinkedSources": 29,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2006Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 29,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2004,
+      "ocrCached": false,
+      "label": "2004 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 75,
+      "recordsUsingLinkedSources": 51,
+      "remainingKnownWork": [
+        "General legislative, school-board and judicial rosters remain for review."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2004Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 51,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2004,
+      "ocrCached": false,
+      "label": "2004 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 75,
+      "recordsUsingLinkedSources": 24,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2004Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 24,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2002,
+      "ocrCached": false,
+      "label": "2002 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 44,
+      "recordsUsingLinkedSources": 15,
+      "remainingKnownWork": [
+        "General legislative, school-board and judicial rosters remain for review."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2002Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 15,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2002,
+      "ocrCached": false,
+      "label": "2002 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 44,
+      "recordsUsingLinkedSources": 29,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2002Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 29,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2000,
+      "ocrCached": false,
+      "label": "2000 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 96,
+      "recordsUsingLinkedSources": 47,
+      "remainingKnownWork": [
+        "General legislative, school-board and judicial rosters remain for review."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2000Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 47,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2000,
+      "ocrCached": false,
+      "label": "2000 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 96,
+      "recordsUsingLinkedSources": 40,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2000Pri.xls",
+          "format": "xls",
+          "recordsUsingThisSource": 40,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 2000,
+      "ocrCached": false,
+      "label": "2000 Presidential Primary",
+      "kind": "presidential-primary",
+      "status": "source_used",
+      "existingRecordsForYear": 96,
+      "recordsUsingLinkedSources": 9,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2000PresPri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 9,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 1998,
+      "ocrCached": false,
+      "label": "1998 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 119,
+      "recordsUsingLinkedSources": 89,
+      "remainingKnownWork": [
+        "One obscured Third Juvenile Court name on page 11 remains unresolved."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1998Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 89,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 1998,
+      "ocrCached": false,
+      "label": "1998 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 119,
+      "recordsUsingLinkedSources": 30,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1998Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 30,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 1996,
+      "ocrCached": false,
+      "label": "1996 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 151,
+      "recordsUsingLinkedSources": 119,
+      "remainingKnownWork": [
+        "Judicial-retention page 17 remains for review."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1996Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 119,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 1996,
+      "ocrCached": false,
+      "label": "1996 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 151,
+      "recordsUsingLinkedSources": 32,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1996Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 32,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 1994,
+      "ocrCached": false,
+      "label": "1994 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 121,
+      "recordsUsingLinkedSources": 79,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1994Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 79,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 1994,
+      "ocrCached": false,
+      "label": "1994 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 121,
+      "recordsUsingLinkedSources": 42,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1994Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 42,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": null,
+          "needsYearVerification": false,
+          "verification": {}
+        }
+      ]
+    },
+    {
+      "yearLabel": 1992,
+      "ocrCached": true,
+      "label": "1992 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 103,
+      "recordsUsingLinkedSources": 77,
+      "remainingKnownWork": [
+        "Corroborate full names and running mates for surname-only presidential and gubernatorial tickets.",
+        "Corroborate full identities for surname-only school-board candidates on pages 20–21.",
+        "Locate separate official coverage for legislative districts absent from the published PDF.",
+        "Corroborate the House 68/73 boundary and the partial Marshall surname in the final House 73 column; Marshall is withheld."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1992Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 77,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1992,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1992,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed full-name Senate, congressional, executive, selected legislative and judicial columns. Presidential and gubernatorial tickets and school board headers are surname-only and await corroboration. Pages 22–23 contain propositions.",
+            "remainingWork": [
+              "Corroborate full names and running mates for surname-only presidential and gubernatorial tickets.",
+              "Corroborate full identities for surname-only school-board candidates on pages 20–21.",
+              "Locate separate official coverage for legislative districts absent from the published PDF.",
+              "Corroborate the House 68/73 boundary and the partial Marshall surname in the final House 73 column; Marshall is withheld."
+            ],
+            "reviewedCandidateColumns": 77
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1992,
+      "ocrCached": true,
+      "label": "1992 Primary",
+      "kind": "primary",
+      "status": "partially_imported",
+      "existingRecordsForYear": 103,
+      "recordsUsingLinkedSources": 26,
+      "remainingKnownWork": [
+        "Corroborate full names and running mates for the six gubernatorial primary tickets on page 2."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1992Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 26,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1992,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1992,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed federal, legislative and attorney-general primary columns. Page 2 gubernatorial tickets use surnames only and remain withheld.",
+            "remainingWork": [
+              "Corroborate full names and running mates for the six gubernatorial primary tickets on page 2."
+            ],
+            "reviewedCandidateColumns": 26
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1990,
+      "ocrCached": true,
+      "label": "1990 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 101,
+      "recordsUsingLinkedSources": 46,
+      "remainingKnownWork": [
+        "Identify courts for the named judicial retention candidates on pages 7–14 before importing them.",
+        "Locate separate official coverage for legislative districts absent from this PDF."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1990Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 46,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1990,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1990,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "All named congressional, Senate, selected House and school-board columns on pages 1–5 reviewed. Judicial pages 7–14 name retention candidates but omit court designations; they remain withheld pending court identification. Page 6 is propositions.",
+            "remainingWork": [
+              "Identify courts for the named judicial retention candidates on pages 7–14 before importing them.",
+              "Locate separate official coverage for legislative districts absent from this PDF."
+            ],
+            "reviewedCandidateColumns": 46
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1990,
+      "ocrCached": true,
+      "label": "1990 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 101,
+      "recordsUsingLinkedSources": 55,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1990Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 55,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1990,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1990,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named primary column in the six-page report, including the supplemental Senate/House table on page 6.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 55
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1988,
+      "ocrCached": true,
+      "label": "1988 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 104,
+      "recordsUsingLinkedSources": 89,
+      "remainingKnownWork": [
+        "Corroborate full names for surname-only presidential and gubernatorial tickets.",
+        "Locate separate official coverage for legislative districts absent from the published PDF."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1988Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 89,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1988,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1988,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed full-name federal, executive, selected legislative, school-board and judicial columns. Presidential and gubernatorial surname-only tickets remain withheld. Pages 15–16 contain ballot questions.",
+            "remainingWork": [
+              "Corroborate full names for surname-only presidential and gubernatorial tickets.",
+              "Locate separate official coverage for legislative districts absent from the published PDF."
+            ],
+            "reviewedCandidateColumns": 89
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1988,
+      "ocrCached": true,
+      "label": "1988 Primary",
+      "kind": "primary",
+      "status": "partially_imported",
+      "existingRecordsForYear": 104,
+      "recordsUsingLinkedSources": 15,
+      "remainingKnownWork": [
+        "Corroborate the conflicting printed September 8/September 6 report dates.",
+        "Resolve two faint school-board names: Randall Harmsen and Lenora (surname unclear).",
+        "Verify H. Lee Cran/Crane spelling at the right scan edge."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1988Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 15,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1988,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1988,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Both pages repeat the same primary header and continue county rows; named columns imported once. Page 1 prints September 8 while page 2 prints September 6.",
+            "remainingWork": [
+              "Corroborate the conflicting printed September 8/September 6 report dates.",
+              "Resolve two faint school-board names: Randall Harmsen and Lenora (surname unclear).",
+              "Verify H. Lee Cran/Crane spelling at the right scan edge."
+            ],
+            "reviewedCandidateColumns": 15
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1986,
+      "ocrCached": true,
+      "label": "1986 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 229,
+      "recordsUsingLinkedSources": 183,
+      "remainingKnownWork": [
+        "Corroborate the conflicting Tom Shiatzu/Shimizu printed name and a few unusually spelled candidate names.",
+        "Find separate official coverage for House districts 63–75, school board and judicial contests absent from this PDF.",
+        "Withheld uncertain spellings: Richard B. Teepest, George A. Chapean, Ronald Urest, Sharell Eapes, Henry J. Dickap..., Stephne Sady, Jeff McDaie, and Pat Mis."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1986Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 183,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1986,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1986,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed all named federal, Senate and House columns on pages 1–19. This published PDF ends its House roster at district 62; page 20 contains propositions. Missing districts, school board and judicial rosters are not inferred.",
+            "remainingWork": [
+              "Corroborate the conflicting Tom Shiatzu/Shimizu printed name and a few unusually spelled candidate names.",
+              "Find separate official coverage for House districts 63–75, school board and judicial contests absent from this PDF.",
+              "Withheld uncertain spellings: Richard B. Teepest, George A. Chapean, Ronald Urest, Sharell Eapes, Henry J. Dickap..., Stephne Sady, Jeff McDaie, and Pat Mis."
+            ],
+            "reviewedCandidateColumns": 183
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1986,
+      "ocrCached": true,
+      "label": "1986 Primary",
+      "kind": "primary",
+      "status": "partially_imported",
+      "existingRecordsForYear": 229,
+      "recordsUsingLinkedSources": 46,
+      "remainingKnownWork": [
+        "Resolve obscured primary date and faint school-board candidate names on pages 5–6."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1986Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 46,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1986,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1986,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed federal and legislative primary columns, plus clear state-board headers. The month/day is obscured in the scan and is left blank.",
+            "remainingWork": [
+              "Resolve obscured primary date and faint school-board candidate names on pages 5–6."
+            ],
+            "reviewedCandidateColumns": 46
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1984,
+      "ocrCached": true,
+      "label": "1984 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 287,
+      "recordsUsingLinkedSources": 239,
+      "remainingKnownWork": [
+        "Corroborate a few faint or unusually printed legislative names; ambiguous columns remain withheld.",
+        "Withheld unclear spellings: Bobby Eldrez, Budger McArthur, Dave Vangwield, Donn Layford, Elaine Howarsen, George Pyffe, Jim Pouland, MaTrice Markham, Marie Marcini, Patricia Bradsen, Randy Carrs, Scott Bereson."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1984Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 239,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1984,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1984,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed federal, executive, legislative, school-board and judicial candidate headers across all 35 pages. Pages 28–29 are ballot questions; retention entries remain distinct from contested judicial columns.",
+            "remainingWork": [
+              "Corroborate a few faint or unusually printed legislative names; ambiguous columns remain withheld.",
+              "Withheld unclear spellings: Bobby Eldrez, Budger McArthur, Dave Vangwield, Donn Layford, Elaine Howarsen, George Pyffe, Jim Pouland, MaTrice Markham, Marie Marcini, Patricia Bradsen, Randy Carrs, Scott Bereson."
+            ],
+            "reviewedCandidateColumns": 239
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1984,
+      "ocrCached": true,
+      "label": "1984 Primary",
+      "kind": "primary",
+      "status": "partially_imported",
+      "existingRecordsForYear": 287,
+      "recordsUsingLinkedSources": 48,
+      "remainingKnownWork": [
+        "Resolve faint House 1 candidate first name, Hersch surname in House 16, and the two House 24 candidate spellings."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1984Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 48,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1984,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1984,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed all clear federal, gubernatorial, Senate, House and school-board primary headers in the seven-page report; faint names are withheld.",
+            "remainingWork": [
+              "Resolve faint House 1 candidate first name, Hersch surname in House 16, and the two House 24 candidate spellings."
+            ],
+            "reviewedCandidateColumns": 48
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1982,
+      "ocrCached": true,
+      "label": "1982 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 369,
+      "recordsUsingLinkedSources": 276,
+      "remainingKnownWork": [
+        "Withheld faint names/labels: Shirl K. Fade, Gary L. Barrow, Bobby Eldrez, Garry Whittie, Kathleen S. Kroter, Lavinia Ludlow Kanig, and the Ninth Circuit Christian surname.",
+        "Corroborate unusual printed party labels and the multiple-candidate Senate 10/11 and 21/22 boundaries."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1982Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 276,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1982,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1982,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed federal, legislative, school-board and judicial headers across all 19 pages. Circuit courts retain their historical circuit numbers; retention questions are labeled separately.",
+            "remainingWork": [
+              "Withheld faint names/labels: Shirl K. Fade, Gary L. Barrow, Bobby Eldrez, Garry Whittie, Kathleen S. Kroter, Lavinia Ludlow Kanig, and the Ninth Circuit Christian surname.",
+              "Corroborate unusual printed party labels and the multiple-candidate Senate 10/11 and 21/22 boundaries."
+            ],
+            "reviewedCandidateColumns": 276
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1982,
+      "ocrCached": true,
+      "label": "1982 Primary",
+      "kind": "primary",
+      "status": "partially_imported",
+      "existingRecordsForYear": 369,
+      "recordsUsingLinkedSources": 93,
+      "remainingKnownWork": [
+        "Confirm the faint Lavinia Ludlow Kanig name and district-6/7 school-board boundary before importing those ambiguous columns."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1982Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 93,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1982,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1982,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed primary candidate columns in the seven-page canvass; side-by-side tables retain their own office headings. School-board columns without party labels remain unspecified.",
+            "remainingWork": [
+              "Confirm the faint Lavinia Ludlow Kanig name and district-6/7 school-board boundary before importing those ambiguous columns."
+            ],
+            "reviewedCandidateColumns": 93
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1980,
+      "ocrCached": true,
+      "label": "1980 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 251,
+      "recordsUsingLinkedSources": 233,
+      "remainingKnownWork": [
+        "Resolve Lee W. Farnsworth’s ambiguous printed House district label (37/38).",
+        "Corroborate party marks for the court-order presidential tickets, Golden C. Sill, and the overlapping Senate 23/25 headings."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1980Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 233,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1980,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1980,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Named candidate columns reviewed across federal, executive, school board, Supreme Court, state Senate and House pages. Page 1 is an abstract and page 4 ballot propositions. The published Governor and Lieutenant Governor columns are separate offices.",
+            "remainingWork": [
+              "Resolve Lee W. Farnsworth’s ambiguous printed House district label (37/38).",
+              "Corroborate party marks for the court-order presidential tickets, Golden C. Sill, and the overlapping Senate 23/25 headings."
+            ],
+            "reviewedCandidateColumns": 233
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1980,
+      "ocrCached": true,
+      "label": "1980 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 251,
+      "recordsUsingLinkedSources": 18,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1980Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 18,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1980,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1980,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate column in the three-page primary canvass. Party labels are absent for the state Senate and school board tables and are not inferred.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 18
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1978,
+      "ocrCached": true,
+      "label": "1978 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 65,
+      "recordsUsingLinkedSources": 65,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1978Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 65,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1978,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1978,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate and judicial retention column; the last scanned page repeats the preceding judicial table and is deduplicated. Printed page order differs from PDF page order; provenance uses PDF page numbers.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 65
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1976,
+      "ocrCached": true,
+      "label": "1976 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 75,
+      "recordsUsingLinkedSources": 75,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1976Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 75,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1976,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1976,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate and retention column on pages 2–4; page 1 is an abstract. President/vice-president pairs and Governor/Lieutenant Governor are separate ballot columns; the latter are retained as separately voted offices. Court-order presidential tickets retain an unspecified party.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 75
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1974,
+      "ocrCached": true,
+      "label": "1974 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 75,
+      "recordsUsingLinkedSources": 55,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1974Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 55,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1974,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1974,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate and judicial retention column on pages 1–3; repeated columns on pages 2 and 4 deduplicated; propositions excluded.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 55
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1974,
+      "ocrCached": true,
+      "label": "1974 Primary",
+      "kind": "primary",
+      "status": "partially_imported",
+      "existingRecordsForYear": 75,
+      "recordsUsingLinkedSources": 20,
+      "remainingKnownWork": [
+        "Resolve faded Senate and congressional primary candidate/party labels."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1974Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 20,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1974,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1974,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed unambiguous House, school board and Supreme Court columns from the single very wide scan. Faded Senate and congressional headers remain under review.",
+            "remainingWork": [
+              "Resolve faded Senate and congressional primary candidate/party labels."
+            ],
+            "reviewedCandidateColumns": 20
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1972,
+      "ocrCached": true,
+      "label": "1972 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 88,
+      "recordsUsingLinkedSources": 88,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1972Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 88,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1972,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1972,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate and judicial retention column in the four-page split canvass; repeated overlapping columns deduplicated.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 88
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1970,
+      "ocrCached": true,
+      "label": "1970 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 86,
+      "recordsUsingLinkedSources": 55,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1970Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 55,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1970,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1970,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate and judicial retention column. Split pages repeat Senate, House and school-board columns; each is imported once. Ballot responses and No Candidate excluded.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 55
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1970,
+      "ocrCached": true,
+      "label": "1970 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 86,
+      "recordsUsingLinkedSources": 31,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1970Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 31,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1970,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1970,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named primary candidate column, including regional school board headings continued from page 2 to page 3.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 31
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1968,
+      "ocrCached": true,
+      "label": "1968 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 57,
+      "recordsUsingLinkedSources": 57,
+      "remainingKnownWork": [
+        "Resolve conflicting party labels for Galen J. Ross and Sherman P. Lloyd in U.S. House District 2."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1968Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 57,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1968,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1968,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed named columns on overlapping pages 2–3. No Candidate presidential cell excluded; Corky Gonzales retained as the named vice-presidential candidate only. Second House district party labels need corroboration.",
+            "remainingWork": [
+              "Resolve conflicting party labels for Galen J. Ross and Sherman P. Lloyd in U.S. House District 2."
+            ],
+            "reviewedCandidateColumns": 57
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1966,
+      "ocrCached": true,
+      "label": "1966 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 48,
+      "recordsUsingLinkedSources": 48,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1966Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 48,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1966,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1966,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate column on overlapping pages 1–2; duplicate overlap removed. Pages 3–4 continue totals and propositions. A printed No Contest cell is excluded.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 48
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1964,
+      "ocrCached": true,
+      "label": "1964 General",
+      "kind": "general",
+      "status": "partially_imported",
+      "existingRecordsForYear": 60,
+      "recordsUsingLinkedSources": 38,
+      "remainingKnownWork": [
+        "Corroborate the reversed First/Second U.S. House district headings before importing those four columns."
+      ],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1964Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 38,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1964,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1964,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Reviewed presidential, Senate, executive, district-attorney, state-Senate and judicial columns. House headings appear reversed; those four candidates are withheld pending corroboration. No winners or totals imported.",
+            "remainingWork": [
+              "Corroborate the reversed First/Second U.S. House district headings before importing those four columns."
+            ],
+            "reviewedCandidateColumns": 38
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1964,
+      "ocrCached": true,
+      "label": "1964 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 60,
+      "recordsUsingLinkedSources": 22,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1964Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 22,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1964,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1964,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate column in the two-page primary canvass.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 22
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1962,
+      "ocrCached": true,
+      "label": "1962 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 30,
+      "recordsUsingLinkedSources": 18,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1962Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 18,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1962,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1962,
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate column on pages 1–2; pages 3–5 contain constitutional amendments, not candidate rosters.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 18
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1962,
+      "ocrCached": true,
+      "label": "1962 Primary",
+      "kind": "primary",
+      "status": "source_used",
+      "existingRecordsForYear": 30,
+      "recordsUsingLinkedSources": 12,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1960Pri.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 12,
+          "filenameYearMismatch": true,
+          "verifiedDocumentYear": 1962,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1962,
+            "documentHeading": "UTAH PRIMARY ELECTION TUESDAY, SEPTEMBER 11, 1962",
+            "evidencePage": 1,
+            "notes": "Filename begins 1960 but the document itself confirms the index label 1962. The filename is not the election year.",
+            "reviewMethod": "Rendered source-page headers checked visually against cached extraction and independent tiled OCR; overlapping repeated columns deduplicated.",
+            "rosterScope": "Every named candidate column in the published one-page primary canvass. The original filename says 1960; the document heading says September 11, 1962.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 12
+          }
+        }
+      ]
+    },
+    {
+      "yearLabel": 1960,
+      "ocrCached": true,
+      "label": "1960 General",
+      "kind": "general",
+      "status": "source_used",
+      "existingRecordsForYear": 40,
+      "recordsUsingLinkedSources": 40,
+      "remainingKnownWork": [],
+      "coverageNote": "",
+      "sources": [
+        {
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf",
+          "format": "pdf",
+          "recordsUsingThisSource": 40,
+          "filenameYearMismatch": false,
+          "verifiedDocumentYear": 1960,
+          "needsYearVerification": false,
+          "verification": {
+            "documentYear": 1960,
+            "documentHeading": "General election held in the State of Utah, Tuesday, November 8, 1960",
+            "evidencePage": 2,
+            "notes": "Page 1 is an abstract; pages 2–4 overlap and form one table.",
+            "reviewMethod": "Rotated, deskewed, aligned and deduplicated overlapping scans; OCR of joined name headers checked against source pixels.",
+            "rosterScope": "Every named candidate column in the published table; this table contains selected Senate districts and no State House roster. No winners or vote totals are imported.",
+            "remainingWork": [],
+            "reviewedCandidateColumns": 40
+          }
+        }
+      ]
+    }
+  ]
+}

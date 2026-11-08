@@ -372,7 +372,10 @@ export const importedFilings: Filing[] = [
     const party = partyDetails(row.party, row.section);
     const personId = slug(row.name);
     return {
-      recordId: `${row.year}-${row.id}-${slug(officeName)}-${slug(party.name)}`,
+      // Preserve established editorial keys; distinguish newly reviewed older primaries.
+      recordId: row.year < 1994 && row.source.startsWith('https://vote.utah.gov/wp-content/uploads/')
+        ? `${row.year}-${row.electionType}-${row.id}-${slug(officeName)}-${slug(party.name)}`
+        : `${row.year}-${row.id}-${slug(officeName)}-${slug(party.name)}`,
       id: row.id,
       name: displayName(row.name),
       year: row.year,
@@ -536,7 +539,8 @@ for (const filing of filings) {
 for (const person of personMap.values()) {
   const enrichment = (personLinkEnrichment as Record<string, { verifiedOn: string; links: EntityLink[] }>)[person.id];
   person.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName, undefined, { numeric: true }));
-  const sourceLinks = importedPersonLinks(person, personProfileData as Record<string, PersonProfile>, enrichment?.links ?? []);
+  // A reviewed link disposition supersedes old campaign contacts recovered with archived filings.
+  const sourceLinks = enrichment ? enrichment.links : importedPersonLinks(person, personProfileData as Record<string, PersonProfile>);
   const changes = migratePersonLinks(editorialData.people[person.id], sourceLinks);
   person.links = applyEntityLinks('people', sourceLinks, changes);
   person.lastVerified = [enrichment?.verifiedOn, ...person.links.map(link => link.verifiedOn)].filter(Boolean).sort().at(-1);
@@ -746,14 +750,19 @@ const cycleDetails: Omit<ElectionCycle, 'filings'>[] = [
     sourceLabel: year === 1995 ? 'Unofficial contemporary newspaper returns' : year % 2 ? 'Official Salt Lake County election results' : 'Official statewide canvasses',
     availability: year % 2 ? 'local' as const : 'statewide' as const
   })),
-  ...[...new Set(newspaperRows.map(row => row.year).filter(year => year < 1994 || year > 2026))].sort((a, b) => b - a).map(year => ({
-    year,
-    title: `${year} municipal elections`,
-    description: 'Municipal candidates across Utah from contemporary unofficial Deseret News returns. Coverage follows the places and contests published in the source; outcomes are unverified.',
-    source: newspaperRows.find(row => row.year === year)!.source,
-    sourceLabel: 'Unofficial contemporary newspaper returns',
-    availability: 'local' as const
-  })),
+  ...[...new Set([...newspaperRows.map(row => row.year), ...historicalRows.map(row => row.year)].filter(year => year < 1994 || year > 2026))].sort((a, b) => b - a).map(year => {
+    const stateCoverage = historicalRows.some(row => row.year === year);
+    return {
+      year,
+      title: `${year} ${stateCoverage ? 'regular election' : 'municipal elections'}`,
+      description: stateCoverage
+        ? 'Reviewed ballot-candidate rosters recovered from official historical state canvasses. Coverage follows the named contests in each document and does not establish a complete statewide filing list.'
+        : 'Municipal candidates across Utah from contemporary unofficial Deseret News returns. Coverage follows the places and contests published in the source; outcomes are unverified.',
+      source: stateCoverage ? 'https://vote.utah.gov/historical-election-results/' : newspaperRows.find(row => row.year === year)!.source,
+      sourceLabel: stateCoverage ? 'Official historical state canvass' : 'Unofficial contemporary newspaper returns',
+      availability: stateCoverage ? 'statewide' as const : 'local' as const
+    };
+  }),
 ];
 
 export const elections: ElectionCycle[] = cycleDetails.map((cycle) => ({

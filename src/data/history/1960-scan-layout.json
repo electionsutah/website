@@ -1,0 +1,22 @@
+{
+  "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf",
+  "abstractPage": 1,
+  "tablePages": [2, 3, 4],
+  "referenceLongEdge": 1300,
+  "clockwiseRotation": 90,
+  "targetBodyTop": 363,
+  "targetTotalsTop": 687,
+  "tableCropTop": 145,
+  "tableCropBottom": 720,
+  "panels": [
+    {"page": 2, "deskewDegrees": -0.8, "cropLeft": 93, "cropRight": 196, "bodyTop": 363, "totalsTop": 687, "keptColumns": "County names only; numeric columns overlap page 3."},
+    {"page": 3, "deskewDegrees": -1.0, "cropLeft": 67, "cropRight": 1221, "bodyTop": 358, "totalsTop": 682, "keptColumns": "Registered voters through Romney M. Child (R), District Attorney, Third District."},
+    {"page": 4, "deskewDegrees": -1.0, "cropLeft": 23, "cropRight": 1276, "bodyTop": 346, "totalsTop": 665, "keptColumns": "Jay E. Banks (D), District Attorney, Third District, through the final initiative response."}
+  ],
+  "notes": [
+    "Pages 2 and 3 substantially overlap. Concatenating all page widths would duplicate most offices and votes.",
+    "Each panel is aligned to the table body and totals rules; only source pixels are joined.",
+    "The Third District Attorney heading straddles the page 3/page 4 seam. Candidate columns are retained exactly once.",
+    "Page 1 is a separate party/turnout abstract and is excluded from the joined candidate table."
+  ]
+}
