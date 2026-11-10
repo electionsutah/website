@@ -36,10 +36,12 @@
         <li class:matching-result={matching}>
           <div class="mini-label" class:matching={matching}>
             <span>{#if candidate}<a href={personHref(candidate)} onclick={(event) => openCandidate(event, personHref(candidate))}>{option.name}</a>{:else}{option.name}{/if}{#if option.party}<span class="mini-party">{' - '}{#if partyHref}<a href={partyHref} onclick={(event) => openCandidate(event, partyHref)}>{option.party}</a>{:else}{option.party}{/if}</span>{/if}</span>
-            {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<strong>{percent(option.votes, contest.total)}</strong>{/if}
+            <div class="mini-totals">
+              <small>{option.votesPublished === false ? 'Votes not published' : `${count(option.votes)} votes`}</small>
+              {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<strong>{percent(option.votes, contest.total)}</strong>{/if}
+            </div>
           </div>
           {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<div class="mini-track" style:--share={`${contest.total ? option.votes / contest.total * 100 : 0}%`}><div class="mini-fill" aria-hidden="true" style:width="var(--share)" style:background={color(option)}></div></div>{/if}
-          <small>{option.votesPublished === false ? 'Votes not published' : `${count(option.votes)} votes`}</small>
         </li>
       {/each}
     </ul>
@@ -64,9 +66,11 @@
   .mini-label a,.mini-actions a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
   ul{list-style:none;padding:0;margin:var(--space-4) 0;display:grid;gap:var(--space-3)}
   .matching-result{background:var(--color-page);padding:var(--space-3);margin-inline:calc(-1 * var(--space-3))}
-  .mini-label{display:flex;justify-content:space-between;gap:var(--space-3);font-size:var(--text-sm)}
+  .mini-label{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-3);font-size:var(--text-sm)}
   .mini-label span{overflow-wrap:anywhere}
-  .mini-label strong{white-space:nowrap;font-variant-numeric:tabular-nums}
+  .mini-label strong{min-width:65px;font-size:var(--text-xl);line-height:1.1;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .mini-totals{display:flex;flex-shrink:0;align-items:baseline;justify-content:flex-end;gap:var(--space-2);text-align:right;font-variant-numeric:tabular-nums}
+  .mini-totals small{white-space:nowrap;font-weight:400}
   .mini-party{font-weight:400;color:var(--color-muted)}
   .mini-party a{color:inherit;font-weight:400}
   .mini-label.matching,.mini-label.matching .mini-party,.mini-label.matching a{font-weight:700}
