@@ -41,8 +41,14 @@ try {
   people.push({id:person.id,name:person.name,year:review.year,beforeCards:review.recordIds.length,afterCards:1,recordsPreserved:history.records.length,stages:events.filter(e=>['Primary','General Election'].includes(e.title)).map(e=>({title:e.title,date:e.date,summary:e.summary,source:e.source})),sources:review.sources});
  }
  assert.equal(people.length,reviews.length);
- assert.equal(people.filter(p=>p.year===2023).length,7);
+ assert.equal(reviews.filter(r=>r.year===2023&&r.sources.some(s=>s.officeId==='u-s-house-district-2')).length,7,'Original congressional cohort remains intact');
  assert(people.filter(p=>p.year===2026).length>=35,'Batch review covers current prefix-label duplicates');
+ const aaron=candidacyHistory(peopleById.get('aaron-wiley').filings).find(h=>h.filing.year===2026);
+ assert.equal(aaron.records.length,2);assert.equal(aaron.filing.status,'defeated','The later primary-ending status is retained');
+ assert.equal(aaron.filing.officeName,'State House District 21');
+ const brandon=candidacyHistory(peopleById.get('brandon-wiseman').filings).filter(h=>h.filing.year===2023);
+ assert.equal(brandon.length,1);assert.equal(brandon[0].records.length,2);assert.equal(brandon[0].filing.officeName,'Minersville Town Council');
+ assert.equal(reviews.filter(r=>r.auditDisposition?.auditId==='post-push-card-audit-2026-11-10').length,30);
  const sources=JSON.parse(await readFile('src/data/reviewed-primary-results.json','utf8'));
  const batches=[];
  for(const [year,count,options] of [[2008,7,14],[2022,14,30]]){

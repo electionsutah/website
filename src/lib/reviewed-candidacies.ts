@@ -14,7 +14,8 @@ export function reviewedCandidacies(records: Filing[]) {
         row.county === evidence.county && row.city === evidence.city && row.status === evidence.status;
     });
     const canonical = matched.find(row => row.recordId === review.canonicalRecordId);
-    const latest = matched.find(row => row.electionType === review.electionType && row.status !== 'filed');
+    const stageRows = matched.filter(row => row.electionType === review.electionType && row.status !== 'filed');
+    const latest = stageRows.find(row => ['defeated', 'disqualified', 'withdrew', 'deceased'].includes(row.status) || /deceased/i.test(row.sourceStatus)) ?? stageRows[0];
     return unchanged && canonical && latest ? [{ review, filing: { ...canonical, electionType: latest.electionType, status: latest.status, sourceStatus: latest.sourceStatus }, records: matched }] : [];
   });
 }

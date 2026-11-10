@@ -25,6 +25,7 @@
     "check:enrichment": "python3 -m unittest discover -s scripts -p test_enrichment_pipeline.py",
     "check:profiles": "node scripts/check-entity-profiles.mjs",
     "check:researched": "node scripts/check-researched-candidates.mjs",
+    "audit:duplicates": "node scripts/audit-filing-duplicates.mjs && node scripts/audit-lingering-cards.mjs",
     "audit:coverage": "node scripts/audit-municipal-coverage.mjs",
     "check:links": "node scripts/check-entity-links.mjs && node scripts/check-office-links.mjs && node scripts/check-party-links.mjs && node scripts/check-person-links.mjs && node scripts/check-place-links.mjs",
     "refresh:municipal-results": "python3 scripts/import-municipal-results.py",

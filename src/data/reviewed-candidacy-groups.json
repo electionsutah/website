@@ -142,7 +142,7 @@
         "city": ""
       }
     ],
-    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed\u2019s unofficial designation. No outcome flag is inferred.",
     "sources": [
       {
         "recordId": "2023-bruce-r-hough-u-s-house-district-2-utah-republican-party",
@@ -265,7 +265,7 @@
         "city": ""
       }
     ],
-    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed\u2019s unofficial designation. No outcome flag is inferred.",
     "sources": [
       {
         "recordId": "2023-celeste-maloy-u-s-house-district-2-utah-republican-party",
@@ -387,7 +387,7 @@
         "city": ""
       }
     ],
-    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed\u2019s unofficial designation. No outcome flag is inferred.",
     "sources": [
       {
         "recordId": "2023-kathleen-riebe-u-s-house-district-2-utah-democratic-party",
@@ -437,7 +437,7 @@
         "city": ""
       }
     ],
-    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed\u2019s unofficial designation. No outcome flag is inferred.",
     "sources": [
       {
         "recordId": "2023-bradley-garth-green-u-s-house-district-2-utah-libertarian-party",
@@ -487,7 +487,7 @@
         "city": ""
       }
     ],
-    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed\u2019s unofficial designation. No outcome flag is inferred.",
     "sources": [
       {
         "recordId": "2023-cassie-easley-u-s-house-district-2-utah-constitution-party",
@@ -537,7 +537,7 @@
         "city": ""
       }
     ],
-    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed\u2019s unofficial designation. No outcome flag is inferred.",
     "sources": [
       {
         "recordId": "2023-january-walker-u-s-house-district-2-united-utah-party",
@@ -2620,6 +2620,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-taylor-j-paden-state-senate-district-13-utah-democratic-party",
     "recordIds": [
+      "2026-primary-taylor-j-paden-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
       "2026-taylor-j-paden-state-senate-district-13-utah-democratic-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afa8-08dec66916b5",
@@ -2633,8 +2634,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-taylor-j-paden-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+        "officeId": "state-senate-district-13-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "taylor-j-paden",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-taylor-j-paden-state-senate-district-13-utah-democratic-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Taylor-J-Paden.pdf",
@@ -2647,7 +2660,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "evan-done-2026-state-senate-district-13-result",
@@ -2657,6 +2675,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-evan-done-state-senate-district-13-utah-democratic-party",
     "recordIds": [
+      "2026-primary-evan-done-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
       "2026-evan-done-state-senate-district-13-utah-democratic-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afa8-08dec66916b5",
@@ -2670,8 +2689,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-evan-done-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+        "officeId": "state-senate-district-13-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "evan-done",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-evan-done-state-senate-district-13-utah-democratic-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Evan-Done.pdf",
@@ -2684,7 +2715,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "tayler-khater-2026-state-senate-district-14-result",
@@ -2694,6 +2730,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-tayler-khater-state-senate-district-14-utah-democratic-party",
     "recordIds": [
+      "2026-primary-tayler-khater-state-senate-district-14-dem-utah-democratic-party-salt-lake-",
       "2026-tayler-khater-state-senate-district-14-utah-democratic-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afeb-08dec66916b5",
@@ -2707,8 +2744,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-tayler-khater-state-senate-district-14-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5",
+        "officeId": "state-senate-district-14-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "tayler-khater",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-tayler-khater-state-senate-district-14-utah-democratic-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S14-Tayler-Khater.pdf",
@@ -2721,7 +2770,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "aaron-wiley-2026-state-house-district-21-result",
@@ -2731,6 +2785,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-aaron-wiley-state-house-district-21-utah-democratic-party",
     "recordIds": [
+      "2026-primary-aaron-wiley-state-house-district-21-dem-utah-democratic-party-salt-lake-",
       "2026-aaron-wiley-state-house-district-21-utah-democratic-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b02a-08dec66916b5",
@@ -2744,8 +2799,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-aaron-wiley-state-house-district-21-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5",
+        "officeId": "state-house-district-21-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "aaron-wiley",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-aaron-wiley-state-house-district-21-utah-democratic-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H21-Aaron-Wiley.pdf",
@@ -2758,7 +2825,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "erin-jemison-2026-state-house-district-34-result",
@@ -2768,6 +2840,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-erin-jemison-state-house-district-34-utah-democratic-party",
     "recordIds": [
+      "2026-primary-erin-jemison-state-house-district-34-dem-utah-democratic-party-salt-lake-",
       "2026-erin-jemison-state-house-district-34-utah-democratic-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b042-08dec66916b5",
@@ -2781,8 +2854,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-erin-jemison-state-house-district-34-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5",
+        "officeId": "state-house-district-34-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "erin-jemison",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-erin-jemison-state-house-district-34-utah-democratic-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H34-Erin-Jemison.pdf",
@@ -2795,7 +2880,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "gloria-vindas-2026-state-house-district-38-result",
@@ -2805,6 +2895,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-gloria-vindas-state-house-district-38-utah-republican-party",
     "recordIds": [
+      "2026-primary-gloria-vindas-state-house-district-38-rep-utah-republican-party-salt-lake-",
       "2026-gloria-vindas-state-house-district-38-utah-republican-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0b3-08dec66916b5",
@@ -2818,8 +2909,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-gloria-vindas-state-house-district-38-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5",
+        "officeId": "state-house-district-38-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "gloria-vindas",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-gloria-vindas-state-house-district-38-utah-republican-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H38-Gloria-Vindas.pdf",
@@ -2832,7 +2935,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "wendy-davis-2026-state-house-district-40-result",
@@ -2842,6 +2950,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-wendy-davis-state-house-district-40-utah-democratic-party",
     "recordIds": [
+      "2026-primary-wendy-davis-state-house-district-40-dem-utah-democratic-party-salt-lake-",
       "2026-wendy-davis-state-house-district-40-utah-democratic-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0cc-08dec66916b5",
@@ -2855,8 +2964,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-wendy-davis-state-house-district-40-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5",
+        "officeId": "state-house-district-40-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "wendy-davis",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-wendy-davis-state-house-district-40-utah-democratic-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H40-Wendy-Davis.pdf",
@@ -2869,7 +2990,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "eryn-a-russo-2026-state-house-district-41-result",
@@ -2879,6 +3005,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-eryn-a-russo-state-house-district-41-utah-republican-party",
     "recordIds": [
+      "2026-primary-eryn-a-russo-state-house-district-41-rep-utah-republican-party-salt-lake-",
       "2026-eryn-a-russo-state-house-district-41-utah-republican-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0e5-08dec66916b5",
@@ -2892,8 +3019,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-eryn-a-russo-state-house-district-41-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5",
+        "officeId": "state-house-district-41-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "eryn-a-russo",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-eryn-a-russo-state-house-district-41-utah-republican-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H41-Eryn-A-Russo.pdf",
@@ -2906,7 +3045,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "scott-stephenson-2026-state-house-district-44-result",
@@ -2916,6 +3060,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-scott-stephenson-state-house-district-44-utah-republican-party",
     "recordIds": [
+      "2026-primary-scott-stephenson-state-house-district-44-rep-utah-republican-party-salt-lake-",
       "2026-scott-stephenson-state-house-district-44-utah-republican-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b10a-08dec66916b5",
@@ -2929,8 +3074,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-scott-stephenson-state-house-district-44-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5",
+        "officeId": "state-house-district-44-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "scott-stephenson",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-scott-stephenson-state-house-district-44-utah-republican-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H44-Scott-Stephenson.pdf",
@@ -2943,7 +3100,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "nik-anderson-2026-state-house-district-48-result",
@@ -2953,6 +3115,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-nik-anderson-state-house-district-48-utah-republican-party",
     "recordIds": [
+      "2026-primary-nik-anderson-state-house-district-48-rep-utah-republican-party-salt-lake-",
       "2026-nik-anderson-state-house-district-48-utah-republican-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b128-08dec66916b5",
@@ -2966,8 +3129,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-nik-anderson-state-house-district-48-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5",
+        "officeId": "state-house-district-48-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "nik-anderson",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-nik-anderson-state-house-district-48-utah-republican-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H48-Nik-Anderson.pdf",
@@ -2980,7 +3155,12 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
   },
   {
     "id": "trina-christensen-2026-state-school-board-district-8-result",
@@ -2990,6 +3170,7 @@
     "electionType": "primary",
     "canonicalRecordId": "2026-trina-christensen-state-school-board-district-8-utah-republican-party",
     "recordIds": [
+      "2026-primary-trina-christensen-state-school-board-district-8-rep-utah-republican-party-salt-lake-",
       "2026-trina-christensen-state-school-board-district-8-utah-republican-party"
     ],
     "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b13f-08dec66916b5",
@@ -3003,8 +3184,20 @@
         "city": ""
       }
     ],
-    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
     "sources": [
+      {
+        "recordId": "2026-primary-trina-christensen-state-school-board-district-8-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5",
+        "officeId": "state-school-board-district-8-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "trina-christensen",
+        "year": 2026,
+        "electionType": "primary"
+      },
       {
         "recordId": "2026-trina-christensen-state-school-board-district-8-utah-republican-party",
         "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE8-Trina-Christensen.pdf",
@@ -3017,6 +3210,1126 @@
         "year": 2026,
         "electionType": "primary"
       }
-    ]
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "andrew-stoddard-2026-state-house-district-40-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "andrew-stoddard",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-andrew-stoddard-state-house-district-40-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-andrew-stoddard-state-house-district-40-dem-utah-democratic-party-salt-lake-",
+      "2026-andrew-stoddard-state-house-district-40-utah-democratic-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-36c4-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-36c4-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0cc-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-36c4-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-36c4-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-andrew-stoddard-state-house-district-40-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5",
+        "officeId": "state-house-district-40-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "andrew-stoddard",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-andrew-stoddard-state-house-district-40-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H40-Andrew-Stoddard.pdf",
+        "officeId": "state-house-district-40",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "andrew-stoddard",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "brandon-wiseman-2023-minersville-town-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "brandon-wiseman",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-brandon-wiseman-minersville-town-council-nonpartisan",
+    "recordIds": [
+      "2023-brandon-wiseman-minersville-town-council-nonpartisan",
+      "2023-general-brandon-wiseman-town-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-brandon-wiseman-minersville-town-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "officeId": "minersville-town-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Minersville",
+        "status": "general_election",
+        "personId": "brandon-wiseman",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-brandon-wiseman-town-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "officeId": "town-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "brandon-wiseman",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "chris-mcconnehey-2026-state-house-district-38-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "chris-mcconnehey",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-chris-mcconnehey-state-house-district-38-utah-republican-party",
+    "recordIds": [
+      "2026-primary-chris-mcconnehey-state-house-district-38-rep-utah-republican-party-salt-lake-",
+      "2026-chris-mcconnehey-state-house-district-38-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-3e81-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-3e81-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0b3-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-3e81-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-3e81-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-chris-mcconnehey-state-house-district-38-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5",
+        "officeId": "state-house-district-38-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "chris-mcconnehey",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-chris-mcconnehey-state-house-district-38-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H38-Chris-McConnehey.pdf",
+        "officeId": "state-house-district-38",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "chris-mcconnehey",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "daniel-cluff-2023-minersville-town-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "daniel-cluff",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-daniel-cluff-minersville-town-council-nonpartisan",
+    "recordIds": [
+      "2023-daniel-cluff-minersville-town-council-nonpartisan",
+      "2023-general-daniel-cluff-town-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-daniel-cluff-minersville-town-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "officeId": "minersville-town-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Minersville",
+        "status": "general_election",
+        "personId": "daniel-cluff",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-daniel-cluff-town-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "officeId": "town-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "daniel-cluff",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "darren-croft-2026-state-house-district-41-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "darren-croft",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-darren-croft-state-house-district-41-utah-republican-party",
+    "recordIds": [
+      "2026-primary-darren-croft-state-house-district-41-rep-utah-republican-party-salt-lake-",
+      "2026-darren-croft-state-house-district-41-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-31e9-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-31e9-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0e5-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-31e9-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-31e9-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-darren-croft-state-house-district-41-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5",
+        "officeId": "state-house-district-41-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "darren-croft",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-darren-croft-state-house-district-41-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H41-Darren-Croft.pdf",
+        "officeId": "state-house-district-41",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "darren-croft",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "dustin-derryberry-2023-beaver-city-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "dustin-derryberry",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-dustin-derryberry-beaver-city-council-nonpartisan",
+    "recordIds": [
+      "2023-dustin-derryberry-beaver-city-council-nonpartisan",
+      "2023-general-dustin-derryberry-city-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-dustin-derryberry-beaver-city-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "beaver-city-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Beaver",
+        "status": "general_election",
+        "personId": "dustin-derryberry",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-dustin-derryberry-city-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "city-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "dustin-derryberry",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "jake-hunsaker-2026-state-house-district-48-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "jake-hunsaker",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-jake-hunsaker-state-house-district-48-utah-republican-party",
+    "recordIds": [
+      "2026-primary-jake-hunsaker-state-house-district-48-rep-utah-republican-party-salt-lake-",
+      "2026-jake-hunsaker-state-house-district-48-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-1024-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-1024-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b128-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-1024-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-1024-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-jake-hunsaker-state-house-district-48-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5",
+        "officeId": "state-house-district-48-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "jake-hunsaker",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-jake-hunsaker-state-house-district-48-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H48-Jake-Hunsaker.pdf",
+        "officeId": "state-house-district-48",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "jake-hunsaker",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "jennifer-marshall-2023-minersville-town-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "jennifer-marshall",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-jennifer-marshall-minersville-town-council-nonpartisan",
+    "recordIds": [
+      "2023-jennifer-marshall-minersville-town-council-nonpartisan",
+      "2023-general-jennifer-marshall-town-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-jennifer-marshall-minersville-town-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "officeId": "minersville-town-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Minersville",
+        "status": "general_election",
+        "personId": "jennifer-marshall",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-jennifer-marshall-town-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "officeId": "town-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "jennifer-marshall",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "jordan-teuscher-2026-state-house-district-44-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "jordan-teuscher",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-jordan-teuscher-state-house-district-44-utah-republican-party",
+    "recordIds": [
+      "2026-primary-jordan-teuscher-state-house-district-44-rep-utah-republican-party-salt-lake-",
+      "2026-jordan-teuscher-state-house-district-44-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-208d-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-208d-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b10a-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-208d-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-208d-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-jordan-teuscher-state-house-district-44-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5",
+        "officeId": "state-house-district-44-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "jordan-teuscher",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-jordan-teuscher-state-house-district-44-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H44-Jordan-Teuscher.pdf",
+        "officeId": "state-house-district-44",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "jordan-teuscher",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "julie-jackson-2026-state-house-district-34-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "julie-jackson",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-julie-jackson-state-house-district-34-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-julie-jackson-state-house-district-34-dem-utah-democratic-party-salt-lake-",
+      "2026-julie-jackson-state-house-district-34-utah-democratic-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-50c3-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-50c3-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b042-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-50c3-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-50c3-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-julie-jackson-state-house-district-34-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5",
+        "officeId": "state-house-district-34-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "julie-jackson",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-julie-jackson-state-house-district-34-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H34-Julie-Jackson.pdf",
+        "officeId": "state-house-district-34",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "julie-jackson",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "kalie-stringer-2023-minersville-town-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "kalie-stringer",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-kalie-stringer-minersville-town-council-nonpartisan",
+    "recordIds": [
+      "2023-kalie-stringer-minersville-town-council-nonpartisan",
+      "2023-general-kalie-stringer-town-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-kalie-stringer-minersville-town-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "officeId": "minersville-town-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Minersville",
+        "status": "general_election",
+        "personId": "kalie-stringer",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-kalie-stringer-town-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+        "officeId": "town-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "kalie-stringer",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "lance-cox-2023-beaver-city-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "lance-cox",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-lance-cox-beaver-city-council-nonpartisan",
+    "recordIds": [
+      "2023-lance-cox-beaver-city-council-nonpartisan",
+      "2023-general-lance-cox-city-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-lance-cox-beaver-city-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "beaver-city-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Beaver",
+        "status": "general_election",
+        "personId": "lance-cox",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-lance-cox-city-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "city-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "lance-cox",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "nicole-mcdermott-2026-state-school-board-district-8-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "nicole-mcdermott",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-nicole-mcdermott-state-school-board-district-8-utah-republican-party",
+    "recordIds": [
+      "2026-primary-nicole-mcdermott-state-school-board-district-8-rep-utah-republican-party-salt-lake-",
+      "2026-nicole-mcdermott-state-school-board-district-8-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-7e98-08df3933fc5b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-7e98-08df3933fc5b",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b13f-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-7e98-08df3933fc5b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-7e98-08df3933fc5b",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-nicole-mcdermott-state-school-board-district-8-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5",
+        "officeId": "state-school-board-district-8-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "nicole-mcdermott",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-nicole-mcdermott-state-school-board-district-8-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-8-Nicole-McDermott.pdf",
+        "officeId": "state-school-board-district-8",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "nicole-mcdermott",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "randy-hunter-2023-beaver-city-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "randy-hunter",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-randy-hunter-beaver-city-council-nonpartisan",
+    "recordIds": [
+      "2023-randy-hunter-beaver-city-council-nonpartisan",
+      "2023-general-randy-hunter-city-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-randy-hunter-beaver-city-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "beaver-city-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Beaver",
+        "status": "general_election",
+        "personId": "randy-hunter",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-randy-hunter-city-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "city-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "randy-hunter",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "russell-j-bradshaw-2023-beaver-city-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "russell-j-bradshaw",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-russell-j-bradshaw-beaver-city-council-nonpartisan",
+    "recordIds": [
+      "2023-russell-j-bradshaw-beaver-city-council-nonpartisan",
+      "2023-general-russell-j-bradshaw-city-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-russell-j-bradshaw-beaver-city-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "beaver-city-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Beaver",
+        "status": "general_election",
+        "personId": "russell-j-bradshaw",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-russell-j-bradshaw-city-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "city-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "russell-j-bradshaw",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "silvia-catten-2026-state-senate-district-13-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "silvia-catten",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-silvia-catten-state-senate-district-13-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-silvia-catten-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
+      "2026-silvia-catten-state-senate-district-13-utah-democratic-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-7393-08df3933fc5b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-7393-08df3933fc5b",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afa8-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-7393-08df3933fc5b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-7393-08df3933fc5b",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-silvia-catten-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+        "officeId": "state-senate-district-13-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "silvia-catten",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-silvia-catten-state-senate-district-13-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Silvia-Catten.pdf",
+        "officeId": "state-senate-district-13",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "silvia-catten",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "stephanie-pitcher-2026-state-senate-district-14-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "stephanie-pitcher",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-stephanie-pitcher-state-senate-district-14-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-stephanie-pitcher-state-senate-district-14-dem-utah-democratic-party-salt-lake-",
+      "2026-stephanie-pitcher-state-senate-district-14-utah-democratic-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-6f89-08df3933fc5b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-6f89-08df3933fc5b",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afeb-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-6f89-08df3933fc5b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-6f89-08df3933fc5b",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-stephanie-pitcher-state-senate-district-14-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5",
+        "officeId": "state-senate-district-14-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "stephanie-pitcher",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-stephanie-pitcher-state-senate-district-14-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S14-Stephanie-Pitcher.pdf",
+        "officeId": "state-senate-district-14",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "stephanie-pitcher",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "stephen-otterstrom-2026-state-house-district-21-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "stephen-otterstrom",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-stephen-otterstrom-state-house-district-21-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-stephen-otterstrom-state-house-district-21-dem-utah-democratic-party-salt-lake-",
+      "2026-stephen-otterstrom-state-house-district-21-utah-democratic-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-8e58-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-8e58-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b02a-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-8e58-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-8e58-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, district and party. The county primary label adds an explicit REP/DEM suffix; the matching source ballot and declaration establish one candidacy. Preserve primary/general milestones and terminal statuses. County reporting scope remains labeled; source records are unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-primary-stephen-otterstrom-state-house-district-21-dem-utah-democratic-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5",
+        "officeId": "state-house-district-21-dem",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "stephen-otterstrom",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-stephen-otterstrom-state-house-district-21-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H21-Stephen-Otterstrom.pdf",
+        "officeId": "state-house-district-21",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "stephen-otterstrom",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "primary-party-suffix",
+      "verifiedOn": "2026-11-10"
+    }
+  },
+  {
+    "id": "tyler-schena-2023-beaver-city-council-label-review",
+    "reviewedOn": "2026-11-10",
+    "personId": "tyler-schena",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-tyler-schena-beaver-city-council-nonpartisan",
+    "recordIds": [
+      "2023-tyler-schena-beaver-city-council-nonpartisan",
+      "2023-general-tyler-schena-city-council-not-reported-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultSource": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-beaver-county-ut-68fa1836-a460-44be-b4bf-515227134cb7",
+        "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "county": "beaver-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "The exact same year, candidate and unique ballot-item URL appear twice under municipal and generic office labels. The canonical municipal record establishes the office and nonpartisan affiliation; the other record omits those labels. Preserve both original records and published source scope on one candidacy.",
+    "sources": [
+      {
+        "recordId": "2023-tyler-schena-beaver-city-council-nonpartisan",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "beaver-city-council",
+        "partyId": "nonpartisan",
+        "county": "Beaver",
+        "city": "Beaver",
+        "status": "general_election",
+        "personId": "tyler-schena",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-tyler-schena-city-council-not-reported-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+        "officeId": "city-council",
+        "partyId": "not-reported",
+        "county": "Beaver",
+        "city": "",
+        "status": "general_election",
+        "personId": "tyler-schena",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ],
+    "auditDisposition": {
+      "auditId": "post-push-card-audit-2026-11-10",
+      "cause": "same-ballot-record-repeat",
+      "verifiedOn": "2026-11-10"
+    }
   }
 ]

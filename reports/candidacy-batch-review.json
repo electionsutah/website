@@ -2227,9 +2227,9 @@
       "id": "taylor-j-paden",
       "name": "Taylor J. Paden",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2239,6 +2239,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-taylor-j-paden-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+          "officeId": "state-senate-district-13-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "taylor-j-paden",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-taylor-j-paden-state-senate-district-13-utah-democratic-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Taylor-J-Paden.pdf",
@@ -2257,9 +2269,9 @@
       "id": "evan-done",
       "name": "Evan Done",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2269,6 +2281,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-evan-done-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+          "officeId": "state-senate-district-13-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "evan-done",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-evan-done-state-senate-district-13-utah-democratic-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Evan-Done.pdf",
@@ -2287,9 +2311,9 @@
       "id": "tayler-khater",
       "name": "Tayler Khater",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2299,6 +2323,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-tayler-khater-state-senate-district-14-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5",
+          "officeId": "state-senate-district-14-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "tayler-khater",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-tayler-khater-state-senate-district-14-utah-democratic-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S14-Tayler-Khater.pdf",
@@ -2317,9 +2353,9 @@
       "id": "aaron-wiley",
       "name": "Aaron Wiley",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2329,6 +2365,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-aaron-wiley-state-house-district-21-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5",
+          "officeId": "state-house-district-21-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "aaron-wiley",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-aaron-wiley-state-house-district-21-utah-democratic-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H21-Aaron-Wiley.pdf",
@@ -2347,9 +2395,9 @@
       "id": "erin-jemison",
       "name": "Erin Jemison",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2359,6 +2407,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-erin-jemison-state-house-district-34-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5",
+          "officeId": "state-house-district-34-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "erin-jemison",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-erin-jemison-state-house-district-34-utah-democratic-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H34-Erin-Jemison.pdf",
@@ -2377,9 +2437,9 @@
       "id": "gloria-vindas",
       "name": "Gloria Vindas",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2389,6 +2449,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-gloria-vindas-state-house-district-38-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5",
+          "officeId": "state-house-district-38-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "gloria-vindas",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-gloria-vindas-state-house-district-38-utah-republican-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H38-Gloria-Vindas.pdf",
@@ -2407,9 +2479,9 @@
       "id": "wendy-davis",
       "name": "Wendy Davis",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2419,6 +2491,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-wendy-davis-state-house-district-40-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5",
+          "officeId": "state-house-district-40-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "wendy-davis",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-wendy-davis-state-house-district-40-utah-democratic-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H40-Wendy-Davis.pdf",
@@ -2437,9 +2521,9 @@
       "id": "eryn-a-russo",
       "name": "Eryn A. Russo",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2449,6 +2533,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-eryn-a-russo-state-house-district-41-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5",
+          "officeId": "state-house-district-41-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "eryn-a-russo",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-eryn-a-russo-state-house-district-41-utah-republican-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H41-Eryn-A-Russo.pdf",
@@ -2467,9 +2563,9 @@
       "id": "scott-stephenson",
       "name": "Scott Stephenson",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2479,6 +2575,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-scott-stephenson-state-house-district-44-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5",
+          "officeId": "state-house-district-44-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "scott-stephenson",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-scott-stephenson-state-house-district-44-utah-republican-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H44-Scott-Stephenson.pdf",
@@ -2497,9 +2605,9 @@
       "id": "nik-anderson",
       "name": "Nik Anderson",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2509,6 +2617,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-nik-anderson-state-house-district-48-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5",
+          "officeId": "state-house-district-48-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "nik-anderson",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-nik-anderson-state-house-district-48-utah-republican-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H48-Nik-Anderson.pdf",
@@ -2527,9 +2647,9 @@
       "id": "trina-christensen",
       "name": "Trina Christensen",
       "year": 2026,
-      "beforeCards": 1,
+      "beforeCards": 2,
       "afterCards": 1,
-      "recordsPreserved": 1,
+      "recordsPreserved": 2,
       "stages": [
         {
           "title": "Primary",
@@ -2539,6 +2659,18 @@
         }
       ],
       "sources": [
+        {
+          "recordId": "2026-primary-trina-christensen-state-school-board-district-8-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5",
+          "officeId": "state-school-board-district-8-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "trina-christensen",
+          "year": 2026,
+          "electionType": "primary"
+        },
         {
           "recordId": "2026-trina-christensen-state-school-board-district-8-utah-republican-party",
           "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE8-Trina-Christensen.pdf",
@@ -2550,6 +2682,864 @@
           "personId": "trina-christensen",
           "year": 2026,
           "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "andrew-stoddard",
+      "name": "Andrew Stoddard",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,254 votes · 51.95% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "9,139 votes · 100.00%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-36c4-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-andrew-stoddard-state-house-district-40-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5",
+          "officeId": "state-house-district-40-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "andrew-stoddard",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-andrew-stoddard-state-house-district-40-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H40-Andrew-Stoddard.pdf",
+          "officeId": "state-house-district-40",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "andrew-stoddard",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "brandon-wiseman",
+      "name": "Brandon Wiseman",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "163 votes · 31.41% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-brandon-wiseman-minersville-town-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+          "officeId": "minersville-town-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Minersville",
+          "status": "general_election",
+          "personId": "brandon-wiseman",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-brandon-wiseman-town-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+          "officeId": "town-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "brandon-wiseman",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "chris-mcconnehey",
+      "name": "Chris McConnehey",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,255 votes · 60.63% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "4,852 votes · 44.53%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-3e81-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-chris-mcconnehey-state-house-district-38-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5",
+          "officeId": "state-house-district-38-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "chris-mcconnehey",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-chris-mcconnehey-state-house-district-38-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H38-Chris-McConnehey.pdf",
+          "officeId": "state-house-district-38",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "chris-mcconnehey",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "daniel-cluff",
+      "name": "Daniel Cluff",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "91 votes · 17.53% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-daniel-cluff-minersville-town-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+          "officeId": "minersville-town-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Minersville",
+          "status": "general_election",
+          "personId": "daniel-cluff",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-daniel-cluff-town-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+          "officeId": "town-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "daniel-cluff",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "darren-croft",
+      "name": "Darren Croft",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,279 votes · 62.46% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "6,583 votes · 33.90%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-31e9-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-darren-croft-state-house-district-41-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5",
+          "officeId": "state-house-district-41-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "darren-croft",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-darren-croft-state-house-district-41-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H41-Darren-Croft.pdf",
+          "officeId": "state-house-district-41",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "darren-croft",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "dustin-derryberry",
+      "name": "Dustin Derryberry",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "84 votes · 4.19% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-dustin-derryberry-beaver-city-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "beaver-city-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Beaver",
+          "status": "general_election",
+          "personId": "dustin-derryberry",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-dustin-derryberry-city-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "city-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "dustin-derryberry",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "jake-hunsaker",
+      "name": "Jake Hunsaker",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,187 votes · 55.42% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "7,373 votes · 51.03%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-1024-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-jake-hunsaker-state-house-district-48-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5",
+          "officeId": "state-house-district-48-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "jake-hunsaker",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-jake-hunsaker-state-house-district-48-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H48-Jake-Hunsaker.pdf",
+          "officeId": "state-house-district-48",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "jake-hunsaker",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "jennifer-marshall",
+      "name": "Jennifer Marshall",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "201 votes · 38.73% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-jennifer-marshall-minersville-town-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+          "officeId": "minersville-town-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Minersville",
+          "status": "general_election",
+          "personId": "jennifer-marshall",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-jennifer-marshall-town-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+          "officeId": "town-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "jennifer-marshall",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "jordan-teuscher",
+      "name": "Jordan Teuscher",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,626 votes · 53.66% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "7,607 votes · 47.38%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-208d-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-jordan-teuscher-state-house-district-44-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5",
+          "officeId": "state-house-district-44-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "jordan-teuscher",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-jordan-teuscher-state-house-district-44-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H44-Jordan-Teuscher.pdf",
+          "officeId": "state-house-district-44",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "jordan-teuscher",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "julie-jackson",
+      "name": "Julie Jackson",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,339 votes · 52.93% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "12,412 votes · 100.00%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-50c3-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-julie-jackson-state-house-district-34-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5",
+          "officeId": "state-house-district-34-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "julie-jackson",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-julie-jackson-state-house-district-34-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H34-Julie-Jackson.pdf",
+          "officeId": "state-house-district-34",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "julie-jackson",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "kalie-stringer",
+      "name": "Kalie Stringer",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "64 votes · 12.33% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-kalie-stringer-minersville-town-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+          "officeId": "minersville-town-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Minersville",
+          "status": "general_election",
+          "personId": "kalie-stringer",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-kalie-stringer-town-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/02a11e99-200a-4a43-8ffe-51ac18cc09a4",
+          "officeId": "town-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "kalie-stringer",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "lance-cox",
+      "name": "Lance Cox",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "596 votes · 29.70% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-lance-cox-beaver-city-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "beaver-city-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Beaver",
+          "status": "general_election",
+          "personId": "lance-cox",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-lance-cox-city-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "city-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "lance-cox",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "nicole-mcdermott",
+      "name": "Nicole McDermott",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "5,780 votes · 58.82% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "26,547 votes · 46.73%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-7e98-08df3933fc5b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-nicole-mcdermott-state-school-board-district-8-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5",
+          "officeId": "state-school-board-district-8-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "nicole-mcdermott",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-nicole-mcdermott-state-school-board-district-8-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-8-Nicole-McDermott.pdf",
+          "officeId": "state-school-board-district-8",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "nicole-mcdermott",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "randy-hunter",
+      "name": "Randy Hunter",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "456 votes · 22.72% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-randy-hunter-beaver-city-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "beaver-city-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Beaver",
+          "status": "general_election",
+          "personId": "randy-hunter",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-randy-hunter-city-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "city-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "randy-hunter",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "russell-j-bradshaw",
+      "name": "Russell J. Bradshaw",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "416 votes · 20.73% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-russell-j-bradshaw-beaver-city-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "beaver-city-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Beaver",
+          "status": "general_election",
+          "personId": "russell-j-bradshaw",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-russell-j-bradshaw-city-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "city-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "russell-j-bradshaw",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "silvia-catten",
+      "name": "Silvia Catten",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "3,968 votes · 44.08% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "25,340 votes · 77.06%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-7393-08df3933fc5b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-silvia-catten-state-senate-district-13-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+          "officeId": "state-senate-district-13-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "silvia-catten",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-silvia-catten-state-senate-district-13-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Silvia-Catten.pdf",
+          "officeId": "state-senate-district-13",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "silvia-catten",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "stephanie-pitcher",
+      "name": "Stephanie Pitcher",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "10,125 votes · 77.61% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "38,580 votes · 100.00%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-6f89-08df3933fc5b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-stephanie-pitcher-state-senate-district-14-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5",
+          "officeId": "state-senate-district-14-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "stephanie-pitcher",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-stephanie-pitcher-state-senate-district-14-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S14-Stephanie-Pitcher.pdf",
+          "officeId": "state-senate-district-14",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "stephanie-pitcher",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "stephen-otterstrom",
+      "name": "Stephen Otterstrom",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,514 votes · 59.26% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "8,367 votes · 100.00%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-8e58-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-stephen-otterstrom-state-house-district-21-dem-utah-democratic-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5",
+          "officeId": "state-house-district-21-dem",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "stephen-otterstrom",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-stephen-otterstrom-state-house-district-21-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H21-Stephen-Otterstrom.pdf",
+          "officeId": "state-house-district-21",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "stephen-otterstrom",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "tyler-schena",
+      "name": "Tyler Schena",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "455 votes · 22.67% · Beaver County report",
+          "source": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-tyler-schena-beaver-city-council-nonpartisan",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "beaver-city-council",
+          "partyId": "nonpartisan",
+          "county": "Beaver",
+          "city": "Beaver",
+          "status": "general_election",
+          "personId": "tyler-schena",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-tyler-schena-city-council-not-reported-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/2023-Nov-General/ballot-items/68fa1836-a460-44be-b4bf-515227134cb7",
+          "officeId": "city-council",
+          "partyId": "not-reported",
+          "county": "Beaver",
+          "city": "",
+          "status": "general_election",
+          "personId": "tyler-schena",
+          "year": 2023,
+          "electionType": "general"
         }
       ]
     }
@@ -2570,6 +3560,6 @@
       "scope": "All statewide/multi-county contests in the certified document; single-county canvasses are separate."
     }
   ],
-  "duplicateCardsRemoved": 66,
+  "duplicateCardsRemoved": 96,
   "scope": "Reviewed 2023 congressional and 2026 party-prefix candidacies, plus all published contests in the 2008 regular-primary and 2022 statewide/multi-county primary canvasses. Each merged group has exact source-record membership and validated stage/office/party context. No broad fuzzy identity merge or unavailable-results claim is made."
 }
