@@ -411,6 +411,27 @@ remain pending even when their Excel counterpart has been imported. Adding a
 source adapter must preserve its full candidate/options list, provenance, stage,
 missing-vote semantics and independently published totals before replacing output.
 
+### Candidacy timeline and event dates
+
+Person history cards group exact person/year/office/party matches into a single
+candidacy with separate Filed, Primary, and General Election milestones. Conflicting
+locations and duplicate stage records remain separate for review. Source records and
+editor keys are preserved. A primary milestone requires recorded participation;
+party affiliation alone does not establish a primary appearance, and nonpartisan
+races omit the partisan-primary milestone.
+
+Deceased, Defeated, Disqualified, and Withdrew close the timeline when recorded.
+The original Deceased source status takes precedence over its legacy Withdrew
+normalization. Outcomes are never inferred from vote rankings.
+
+Verified `filingDate`, `electionDate`, and terminal `statusDate` fields are optional.
+Dates render at their supplied year/month/day precision; absent dates are omitted.
+Result milestones use the contest or snapshot election date, never `lastUpdated`.
+The year badge links to the corresponding election page.
+
+Run `npm run check:candidacy-history` for grouping, milestone, result-matching,
+source-preservation, and date checks.
+
 ## Election results lab
 
 `/labs/` is an editorial-style explorer for the **2026 general election**. Its

@@ -2,8 +2,8 @@
   import { tick } from 'svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
   import MunicipalResults from './MunicipalResults.svelte';
-  import FilingResults from './FilingResults.svelte';
-  import { hasFilingResults } from './lib/filing-results';
+  import CandidacyCard from './CandidacyCard.svelte';
+  import { candidacyHistory } from './lib/candidacy-history';
   import DescriptionText from './DescriptionText.svelte';
   import Icon from './Icon.svelte';
   import EntityLinks from './EntityLinks.svelte';
@@ -114,6 +114,7 @@
   };
 
   $: person = section === 'people' && id ? peopleById.get(id) : undefined;
+  $: personCandidacies = person ? candidacyHistory(person.filings) : [];
   $: personProfile = person ? profileFor(person, personProfilesById) : undefined;
   $: office = section === 'offices' && id ? officesById.get(id) : undefined;
   $: party = section === 'parties' && id ? partiesById.get(id) : undefined;
@@ -173,7 +174,7 @@
     candidateQueryFor = candidateRecord;
     candidateQuery = '';
   }
-  $: shownCandidacies = candidacies(office?.filings ?? place?.filings ?? [])
+  $: shownCandidacies = candidacies(candidacyHistory(office?.filings ?? place?.filings ?? []).map(history => history.filing))
     // Match on both ticket names so a ticket's rows stay together.
     .filter(({ filing }) => matchesQuery(`${filing.name} ${filing.runningMate} ${filing.year} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus}`, queryTokens(candidateQuery)));
 
@@ -404,7 +405,7 @@
         <div>
           <p class="eyebrow">Person record</p>
           <h1>{person.name}</h1>
-          <p class="detail-summary"><DescriptionText text={person.filings.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${person.filings.length} separate filings across ${person.years.join(', ')}.`} self={hrefFor(section, id)} {navigate} /></p>
+          <p class="detail-summary"><DescriptionText text={personCandidacies.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${personCandidacies.length} recorded candidacies across ${person.years.join(', ')}.`} self={hrefFor(section, id)} {navigate} /></p>
           {#if personPhoto}<PhotoCredit image={personPhoto} className="emblem-credit" />{/if}
           {#if contact && (personProfile || contactFiling || verifiedPersonLinks.length)}
             <section class="person-contact" aria-label={`${person.name} contact information`}>
@@ -433,7 +434,7 @@
         </div>
       </header>
       <section class="detail-stats">
-        <div><small>FILINGS</small><strong>{formatCount(person.filings.length)}</strong></div>
+        <div><small>CANDIDACIES</small><strong>{formatCount(personCandidacies.length)}</strong></div>
         <div><small>ELECTION YEARS</small><strong>{person.years.length}</strong></div>
         <div><small>LATEST CYCLE</small><strong>{person.years[0]}</strong></div>
       </section>
@@ -448,26 +449,11 @@
         </section>
       {/if}
       <section class="record-section">
-        <div class="record-heading"><p class="eyebrow compact">Candidate history</p><h2>All filings</h2></div>
+        <div class="record-heading"><p class="eyebrow compact">Candidate history</p><h2>All candidacies</h2></div>
         <div class="filing-list">
-          {#each person.filings as filing}
-            <div class="filing-card">
-              <div class="filing-info">
-              <div class="filing-heading">
-                <div class="filing-cycle"><time class="filing-year" datetime={String(filing.year)}>{filing.year}</time><small>{sectionLabel(filing.section)}{#if filing.runningMateId === person.id}{' · '}{runningMateRole(filing)} candidate{/if}</small></div>
-                <h3><a href={hrefFor('offices', filing.officeId)} onclick={(event) => open(event, hrefFor('offices', filing.officeId))}>{filing.officeName}</a></h3>
-              </div>
-              <dl>
-                {#if filing.runningMate}<div class="ticket-row"><dt>Running mate</dt><dd>{#if filing.runningMateId === person.id}<a href={hrefFor('people', filing.personId)} onclick={(event) => open(event, hrefFor('people', filing.personId))}>{filing.name}</a>{:else}<a href={hrefFor('people', filing.runningMateId)} onclick={(event) => open(event, hrefFor('people', filing.runningMateId))}>{filing.runningMate}</a>{/if}</dd></div>{/if}
-                <div><dt>Party</dt><dd><a class="filing-party-link" href={hrefFor('parties', filing.partyId)} onclick={(event) => open(event, hrefFor('parties', filing.partyId))}>{#if partiesById.get(filing.partyId)?.logo}<span class="filing-party-logo" class:inverse-logo={filing.partyId === 'utah-republican-party'} style:--party-color={partiesById.get(filing.partyId)?.color}><img src={partiesById.get(filing.partyId)?.logo} alt="" loading="lazy" decoding="async" /></span>{/if}<span>{filing.partyName}</span></a></dd></div>
-                <div><dt>Place</dt><dd>{#if filing.placeIds.length}{#each filing.placeIds as placeId, index}{#if index}<span class="place-separator" aria-hidden="true">/</span>{/if}<a href={hrefFor('places', placeId)} onclick={(event) => open(event, hrefFor('places', placeId))}>{placesById.get(placeId)?.name}</a>{/each}{:else}Not published{/if}</dd></div>
-                <div><dt>Status</dt><dd>{filing.sourceStatus}</dd></div>
-                <div><dt>Normalized status</dt><dd>{statusLabel(filing.status)}</dd></div>
-              </dl>
-              {#if filing.source && !sourceAvailable(filing.source)}<p class="source-note">Original source no longer online<span>{new URL(filing.source).hostname.replace(/^www\./, '')}</span></p>{:else if filing.source}<a class="source-link" href={filing.source} target="_blank" rel="noreferrer">{sourceLinkLabel(filing.source)} <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}
-              </div>
-              {#if hasFilingResults(filing)}{#key filing.recordId}<FilingResults {filing} {navigate} />{/key}{/if}
-            </div>
+          {#each personCandidacies as history}
+            {@const filing = history.filing}
+            {#key filing.recordId}<CandidacyCard {history} {navigate} personId={person.id} />{/key}
           {/each}
         </div>
       </section>

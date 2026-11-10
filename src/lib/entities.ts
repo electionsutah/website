@@ -62,6 +62,10 @@ export type Filing = {
   runningMateId: string;
   source: string;
   lastUpdated: string;
+  /** Verified event dates; never inferred from lastUpdated. */
+  filingDate?: string;
+  electionDate?: string;
+  statusDate?: string;
   contact?: Contact;
 };
 
@@ -416,6 +420,9 @@ export const importedFilings: Filing[] = [
       runningMateId: slug(row.runningMate ?? ''),
       source: candidateDocument(row.year, row) ?? row.source,
       lastUpdated: row.lastUpdated,
+      statusDate: (row as { statusDate?: string }).statusDate,
+      filingDate: (row as { filingDate?: string }).filingDate,
+      electionDate: (row as { electionDate?: string }).electionDate,
       contact: row.contact
     } satisfies Filing;
   }),
@@ -445,7 +452,10 @@ export const importedFilings: Filing[] = [
       runningMate: '',
       runningMateId: '',
       source: candidateDocument(2026, row) ?? 'https://vote.utah.gov/2026-candidate-filings/',
-      lastUpdated: '2026-07-20'
+      lastUpdated: '2026-07-20',
+      statusDate: (row as { statusDate?: string }).statusDate,
+      filingDate: (row as { filingDate?: string }).filingDate,
+      electionDate: (row as { electionDate?: string }).electionDate
     } satisfies Filing;
   })
 ];

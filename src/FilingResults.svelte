@@ -1,13 +1,16 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import TimelineDate from './TimelineDate.svelte';
   import { identityKey, type Filing } from './lib/entities';
   import { resultsForFiling } from './lib/filing-results';
+  import type { FilingResult } from './lib/candidacy-history';
   import { resultPerson, personHref } from './lib/result-people';
   import { resultPartyHref } from './lib/result-links';
   import { color, count, percent, updated, type Snapshot, type Contest } from './lib/results';
 
   export let filing: Filing;
   export let navigate: (href: string) => void;
+  export let onresult: ((result: FilingResult) => void) | undefined = undefined;
   function openCandidate(event: MouseEvent, href: string) {
     if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
@@ -18,7 +21,7 @@
   let contest: Contest | undefined;
   onMount(() => {
     let active = true;
-    resultsForFiling(filing).then(result => { if (active && result) { snapshot = result.snapshot; contest = result.contest; } })
+    resultsForFiling(filing).then(result => { if (active && result) { snapshot = result.snapshot; contest = result.contest; onresult?.(result); } })
       .catch(() => { if (active) failed = true; });
     return () => { active = false; };
   });
@@ -27,7 +30,7 @@
 
 {#if contest && snapshot}
   <section class="filing-results" aria-label={`${filing.year} ${contest.electionType ?? "general"} election results for ${filing.officeName}`}>
-    <div class="mini-heading"><h4>{contest.electionType === 'presidential-primary' ? 'Presidential primary' : contest.electionType === 'primary' ? 'Primary election' : 'General election'} results</h4><div class="mini-actions"><a href={contest.source} target="_blank" rel="noreferrer">{(contest.official ?? snapshot.official) ? 'Official' : 'Unofficial'}<span class="sr-only"> results source (opens in new tab)</span></a></div></div>
+    <div class="mini-heading"><div class="mini-title"><TimelineDate value={contest.electionDate || snapshot.electionDate || filing.electionDate} /><h4>{contest.electionType === 'presidential-primary' ? 'Presidential primary' : contest.electionType === 'primary' ? 'Primary election' : 'General election'} results</h4></div><div class="mini-actions"><a href={contest.source} target="_blank" rel="noreferrer">{(contest.official ?? snapshot.official) ? 'Official' : 'Unofficial'}<span class="sr-only"> results source (opens in new tab)</span></a></div></div>
     <ul>
       {#each contest.options as option}
         {@const candidate = resultPerson(option.name, contest)}
@@ -59,7 +62,9 @@
 <style>
   .filing-results{min-width:0;padding-top:var(--space-5);border-top:1px solid var(--color-rule)}
   @media(min-width:900px){.filing-results{padding-top:0;padding-left:var(--space-6);border-top:0;border-left:1px solid var(--color-rule)}}
-  .mini-heading{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:var(--space-2)}
+  .mini-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-2)}
+  .mini-title{display:flex;align-items:center;gap:var(--space-3);min-width:0;flex:1}
+  .mini-title :global(.timeline-date){flex:none}
   h4{margin:0;font:700 var(--text-xs) var(--font-sans);letter-spacing:.08em;text-transform:uppercase}
   .mini-actions,small,p{font-size:var(--text-xs);color:var(--color-muted)}
   .mini-actions{display:flex;align-items:baseline;gap:var(--space-3)}
@@ -74,7 +79,7 @@
   .mini-party{font-weight:400;color:var(--color-muted)}
   .mini-party a{color:inherit;font-weight:400}
   .mini-label.matching,.mini-label.matching .mini-party,.mini-label.matching a{font-weight:700}
-  .mini-track{height:6px;background:var(--color-rule);margin:6px 0 3px}
+  .mini-track{height:12px;background:var(--color-rule);margin:6px 0 3px}
   .mini-fill{height:100%}
   .mini-source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--space-2);line-height:1.5;margin-bottom:0}
   .mini-unavailable{font-size:var(--text-sm);color:var(--color-muted)}

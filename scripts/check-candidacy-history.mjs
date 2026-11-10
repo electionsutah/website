@@ -1,0 +1,82 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { createServer } from 'vite';
+const server = await createServer({ configFile:false, logLevel:'silent', server:{ middlewareMode:true, hmr:false, ws:false } });
+try {
+  const { people, peopleById, filings } = await server.ssrLoadModule('/src/lib/entities.ts');
+  const { candidacyHistory, candidacyEvents } = await server.ssrLoadModule('/src/lib/candidacy-history.ts');
+  const { timelineDate } = await server.ssrLoadModule('/src/lib/timeline-date.ts');
+  const { tidySnapshot } = await server.ssrLoadModule('/src/lib/result-names.ts');
+  const { resultForFiling } = await server.ssrLoadModule('/src/lib/filing-results.ts');
+  const person = peopleById.get('abrian-b-velarde');
+  const before = JSON.stringify(person.filings);
+  const history = candidacyHistory(person.filings);
+  assert.equal(history.length,1);
+  assert.equal(history[0].records.length,2);
+  assert.equal(history[0].filing.city,'Magna');
+  assert.equal(history[0].filing.county,'Salt Lake');
+  assert.equal(history[0].filing.status,'general_election');
+  assert.equal(JSON.stringify(person.filings),before,'Display grouping does not mutate source records or editor IDs');
+  const snapshot=tidySnapshot(JSON.parse(await readFile('public/data/results/2018-general.json','utf8')));
+  const contest=resultForFiling(history[0].filing,snapshot);
+  assert.ok(contest,'Consolidated card still finds exact results');
+  const events=candidacyEvents(history[0],{snapshot,contest});
+  assert.deepEqual(events.map(event=>event.title),['Filed','General Election']);
+  assert.equal(events[0].date,undefined,'lastUpdated is not a filing date');
+  assert.equal(events[1].date,'2018-11-06');
+  assert.match(events[1].summary,/1,225 votes/);
+  assert.match(events[0].source,/Velarde\.pdf/);
+  assert.match(events[1].source,/Canvass/);
+  const withDate={...history[0],records:history[0].records.map(row=>({...row,...(row.status==='filed'?{filingDate:'2018-03-12'}:{})}))};
+  assert.equal(candidacyEvents(withDate,{snapshot,contest})[0].date,'2018-03-12');
+  assert.equal(timelineDate('2018-11-06').label,'November 6, 2018');
+  assert.equal(timelineDate('2024-02-29').day,'29');
+  assert.equal(timelineDate('2018-03').label,'March 2018');
+  assert.equal(timelineDate('2018').label,'2018');
+  for(const invalid of [undefined,null,'','not a date','2018-02-29','2018-04-31','2018-13','0000','2018-06-13T00:00:00Z'])assert.equal(timelineDate(invalid),undefined);
+  const template=history[0].filing;
+  const primary={...template,status:'primary_election',electionType:'primary'};
+  const general={...template,status:'general_election',electionType:'general'};
+  const filed={...template,status:'filed',electionType:'primary'};
+  assert.equal(candidacyHistory([primary,general]).length,1,'Explicit primary and general appearances become distinct milestones');
+  assert.deepEqual(candidacyEvents(candidacyHistory([filed,primary,general])[0]).map(event=>event.title),['Filed','Primary','General Election']);
+  assert.equal(candidacyHistory([filed,primary,general])[0].records.length,3,'All stage source records are retained');
+  assert.equal(candidacyHistory([filed,{...general,county:'Davis'}]).length,2,'Conflicting geography stays unmerged');
+  assert.equal(candidacyHistory([filed,{...general,partyId:'different-party'}]).length,2);
+  assert.equal(candidacyHistory([filed,{...general,officeId:'different-seat'}]).length,2);
+  const merged=people.flatMap(person=>candidacyHistory(person.filings).filter(history=>history.records.length>1));
+  assert.ok(merged.length >= 214,'Reviewed exact pairs and exact multistage candidacies consolidate');
+  assert.equal(candidacyHistory([{...primary,status:'defeated',sourceStatus:'Out in Primary'},general]).length,2,'Conflicting primary defeat and general appearance need review');
+  assert.equal(candidacyHistory([primary,{...primary,recordId:'another'}]).length,2,'Duplicate stage records still require review');
+  for (const [status,title] of [['deceased','Deceased'],['defeated','Defeated'],['disqualified','Disqualified'],['withdrew','Withdrew']]) {
+    const row={...filed,status,sourceStatus:title,statusDate:'2018-04-10'};
+    const events=candidacyEvents({filing:row,records:[row]});
+    assert.deepEqual(events.map(event=>event.title),['Filed',title]);
+    assert.equal(events.at(-1).date,'2018-04-10');
+    assert.equal(events.at(-1).terminal,true);
+  }
+  const deceased={...filed,status:'withdrew',sourceStatus:'Deceased'};
+  assert.equal(candidacyEvents({filing:deceased,records:[deceased]}).at(-1).title,'Deceased');
+  const nonpartisan={...primary,partyId:'nonpartisan'};
+  assert.deepEqual(candidacyEvents({filing:nonpartisan,records:[nonpartisan]}).map(event=>event.title),['Filed']);
+  assert.deepEqual(candidacyEvents({filing:general,records:[general]}).map(event=>event.title),['Filed','General Election'],'No primary participation inferred from party alone');
+  const datasets=JSON.parse(await readFile('src/data/result-index.json','utf8'));
+  const snapshots=new Map();
+  let matches=0;
+  for (const group of merged) {
+    const stage=group.filing.electionType;
+    const dataset=datasets.find(row=>row.year===group.filing.year && row.electionType===stage);
+    if (!dataset) continue;
+    if (!snapshots.has(dataset.url)) snapshots.set(dataset.url,tidySnapshot(JSON.parse(await readFile(`public${dataset.url}`,'utf8'))));
+    const snapshot=snapshots.get(dataset.url);
+    const matched=resultForFiling(group.filing,snapshot);
+    if (!matched) continue;
+    matches++;
+    const events=candidacyEvents(group,{contest:matched,snapshot});
+    if (stage === 'general' || group.filing.partyId !== 'nonpartisan') assert.ok(events.some(event=>timelineDate(event.date)),`${group.filing.name}: ballot event gets a valid source date`);
+  }
+  assert.ok(matches>=214,'Reviewed groups retain exact result matches');
+
+  assert.equal(filings.length,people.flatMap(person=>person.filings.filter(row=>row.personId===person.id)).length,'All original filing records remain present');
+  console.log(`${merged.length} exact candidacies grouped; ${matches} result matches; stage, terminal status, source preservation, geography and date checks passed.`);
+} finally {await server.close();}
