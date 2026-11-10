@@ -3842,26 +3842,63 @@
     ]
   },
   "norm-thurston": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-09",
     "identityEvidence": [
       {
         "publishedName": "Norm Thurston",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Norm Thurston",
+        "match": "Campaign contact page links his Facebook and LinkedIn accounts; BallotReady identifies the District 62 representative and lists his Instagram account.",
+        "source": "https://www.normthurston.com/contact/"
+      },
+      {
+        "publishedName": "Rep. Norm Thurston",
+        "match": "Legislative email signature in published 2022 meeting materials identifies his campaign website and Twitter handle @normthurston.",
+        "source": "https://www.utah.gov/pmn/files/874539.pdf"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.normthurston.com/contact/",
+      "https://www.ballotready.org/people/norm-thurston",
+      "https://www.utah.gov/pmn/files/874539.pdf"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Campaign website is linked by the party’s 2026 candidate directory. Facebook and LinkedIn are linked directly from the campaign contact page. Instagram is listed by BallotReady; direct profile content could not be fetched. Twitter/X is supported by his legislative email signature in 2022 public meeting materials; current activity was not verified."
     ],
     "links": [
       {
         "url": "https://www.normthurston.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-09"
+      },
+      {
+        "url": "https://www.facebook.com/norm462",
+        "label": "Facebook",
+        "source": "https://www.normthurston.com/contact/",
+        "verifiedOn": "2026-11-09"
+      },
+      {
+        "url": "https://www.linkedin.com/in/norman-thurston-4ba2426/",
+        "label": "LinkedIn",
+        "source": "https://www.normthurston.com/contact/",
+        "verifiedOn": "2026-11-09"
+      },
+      {
+        "url": "https://www.instagram.com/normthurston62/",
+        "label": "Instagram",
+        "source": "https://www.ballotready.org/people/norm-thurston",
+        "verifiedOn": "2026-11-09"
+      },
+      {
+        "url": "https://x.com/normthurston",
+        "label": "X (Twitter)",
+        "source": "https://www.utah.gov/pmn/files/874539.pdf",
+        "verifiedOn": "2026-11-09"
       }
     ]
   },
