@@ -41,6 +41,9 @@ const districtOffices: [RegExp, string][] = [
 ];
 
 export function officeMap(office: Office, placesById: Map<string, Place>): BoundaryMap | null {
+  if (office.id === 'u-s-senate') {
+    return { ...utahOutline, title: 'Utah', note: 'Statewide U.S. Senate jurisdiction — all 29 Utah counties.', locator: false };
+  }
   for (const [pattern, layer] of districtOffices) {
     const match = office.id.match(pattern);
     if (match) return find(layer, match[1]);
