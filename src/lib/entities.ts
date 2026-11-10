@@ -291,6 +291,9 @@ export function cleanOfficeName(value: string): string {
 // Offices that are elected on nonpartisan ballots; candidates without a party read as nonpartisan.
 const nonpartisanSections = new Set(['Municipal Offices', 'School Board Offices', 'Special District Offices']);
 
+// Preserve existing party routes and filing IDs when expanding historical labels.
+const partyIdForName = (name: string) => name === 'Natural Law Party' ? 'natural-law' : slug(name);
+
 function partyDetails(rawParty: string, section: string) {
   if (section === 'State Judicial' || (nonpartisanSections.has(section) && !rawParty)) {
     return { name: 'Nonpartisan', shortName: 'Nonpartisan', color: '#55786a' };
@@ -306,6 +309,8 @@ function partyDetails(rawParty: string, section: string) {
     'Constitution Party': { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#986634' },
     Green: { name: 'Green Party of Utah', shortName: 'Green', color: '#407d55' },
     'Green Party of Utah': { name: 'Green Party of Utah', shortName: 'Green', color: '#407d55' },
+    'Natural Law': { name: 'Natural Law Party', shortName: 'Natural Law', color: '#5f5e59' },
+    'Natural Law Party': { name: 'Natural Law Party', shortName: 'Natural Law', color: '#5f5e59' },
     Libertarian: { name: 'Utah Libertarian Party', shortName: 'Libertarian', color: '#886e13' },
     'Independent American': { name: 'Independent American Party', shortName: 'Independent American', color: '#567860' },
     'Independent American Party': { name: 'Independent American Party', shortName: 'Independent American', color: '#567860' },
@@ -395,10 +400,10 @@ export const importedFilings: Filing[] = [
     return {
       // Preserve established editorial keys; distinguish newly reviewed older primaries.
       recordId: supplementalSet.has(row)
-        ? `${row.year}-${row.electionType}-${row.id}-${slug(officeName)}-${slug(party.name)}-${slug(row.county)}-${slug(row.city)}`
+        ? `${row.year}-${row.electionType}-${row.id}-${slug(officeName)}-${partyIdForName(party.name)}-${slug(row.county)}-${slug(row.city)}`
         : (row.year < 1994 && row.source.startsWith('https://vote.utah.gov/wp-content/uploads/'))
-        ? `${row.year}-${row.electionType}-${row.id}-${slug(officeName)}-${slug(party.name)}`
-        : `${row.year}-${row.id}-${slug(officeName)}-${slug(party.name)}`,
+        ? `${row.year}-${row.electionType}-${row.id}-${slug(officeName)}-${partyIdForName(party.name)}`
+        : `${row.year}-${row.id}-${slug(officeName)}-${partyIdForName(party.name)}`,
       id: row.id,
       name: displayName(row.name),
       year: row.year,
@@ -406,7 +411,7 @@ export const importedFilings: Filing[] = [
       officeName,
       officeId: slug(officeName),
       partyName: party.name,
-      partyId: slug(party.name),
+      partyId: partyIdForName(party.name),
       rawParty: row.party,
       status: row.status,
       sourceStatus: displayStatus(row.sourceStatus),
@@ -431,7 +436,7 @@ export const importedFilings: Filing[] = [
     const party = partyDetails(row.party, row.section);
     const personId = slug(row.name);
     return {
-      recordId: `2026-${row.id}-${slug(officeName)}-${slug(party.name)}`,
+      recordId: `2026-${row.id}-${slug(officeName)}-${partyIdForName(party.name)}`,
       id: row.id,
       name: displayName(row.name),
       year: 2026,
@@ -439,7 +444,7 @@ export const importedFilings: Filing[] = [
       officeName,
       officeId: slug(officeName),
       partyName: party.name,
-      partyId: slug(party.name),
+      partyId: partyIdForName(party.name),
       rawParty: row.party,
       status: row.status,
       sourceStatus: displayStatus(row.sourceStatus),
@@ -617,6 +622,7 @@ const localCaucuses: Record<string, NonNullable<Party['localCaucus']>> = {
   }
 };
 const partyLogos: Record<string, string> = {
+  'Natural Law Party': '/party-logos/natural-law-party.png',
   Pinecone: '/party-logos/pinecone.svg',
   Sagebrush: '/party-logos/sagebrush.svg',
   'Utah Constitution Party': '/party-logos/constitution-party.png',
@@ -640,7 +646,7 @@ const recognizedParties = [
   { name: 'Utah Republican Party', shortName: 'Republican', color: '#bc443d', website: 'https://www.utgop.org/' }
 ];
 for (const party of recognizedParties) {
-  partyMap.set(slug(party.name), { id: slug(party.name), ...party, logo: partyLogos[party.name] ?? '', recognized: true, historical: false, filings: [], years: [] });
+  partyMap.set(partyIdForName(party.name), { id: partyIdForName(party.name), ...party, logo: partyLogos[party.name] ?? '', recognized: true, historical: false, filings: [], years: [] });
 }
 for (const filing of filings) {
   const details = partyDetails(filing.rawParty, filing.section);
@@ -652,7 +658,7 @@ for (const filing of filings) {
     website: '',
     logo: partyLogos[details.name] ?? '',
     recognized: false,
-    historical: details.name === 'United Utah Party',
+    historical: ['United Utah Party', 'Natural Law Party'].includes(details.name),
     localCaucus: localCaucuses[details.name],
     filings: [],
     years: []

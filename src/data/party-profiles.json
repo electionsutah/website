@@ -109,5 +109,22 @@
   "not-reported": {
     "description": "The source record did not supply a party affiliation. This label does not establish whether the candidate belonged to a political party.",
     "sources": []
+  },
+  "natural-law": {
+    "description": "A historical political party in Utah, recorded as “Natural Law” in the election archive. In 1996, its Utah candidates included Catherine Carter for the 2nd Congressional District, Randall Tolpinrud for the 1st Congressional District, and Robert C. Lesh and William Scott Shields for governor and lieutenant governor.",
+    "sources": [
+      {
+        "label": "Deseret News — Utah Natural Law Party candidates (June 22, 1996)",
+        "url": "https://www.deseret.com/1996/6/22/19250334/natural-law-party-draws-on-strengths-of-other-parties-and-promotes-ounce-of-prevention/"
+      },
+      {
+        "label": "Wikipedia — Natural Law Party (United States)",
+        "url": "https://en.wikipedia.org/wiki/Natural_Law_Party_(United_States)"
+      },
+      {
+        "label": "Ballotpedia — Natural Law Party",
+        "url": "https://ballotpedia.org/Natural_Law_Party"
+      }
+    ]
   }
 }

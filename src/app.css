@@ -270,8 +270,10 @@ main:focus,main h1:focus{outline:0}
 .person-profile h3{margin:var(--space-7) 0 var(--space-3);font:700 var(--text-3xl) var(--font-serif)}
 .person-profile ul{max-width:800px;margin:0;padding-left:var(--space-5);list-style:disc;color:var(--color-muted);font-size:var(--text-base);line-height:1.8}
 .profile-source{margin:var(--space-5) 0 0;color:var(--color-muted);font-size:var(--text-xs);line-height:1.6}
+.party-sources-toggle{border:0;background:none;padding:0;min-height:var(--size-touch-target);color:var(--color-blue-dark);font:inherit;text-align:left;text-decoration:underline;cursor:pointer}
 .profile-source a{color:var(--color-blue);text-decoration:underline}
 .detail-summary a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
+.party-hero .detail-summary a{color:var(--color-blue-dark)}
 .contact-heading{flex-wrap:wrap}
 .contact-verification{display:inline-flex;align-items:center;flex-wrap:wrap;gap:var(--space-1)}
 .all-records{flex-wrap:wrap;align-items:center}
@@ -338,6 +340,9 @@ main:focus,main h1:focus{outline:0}
 .evidence-popover header button:hover{color:var(--color-ink)}
 .evidence-popover p{margin:var(--space-2) 0;color:var(--color-muted)}
 .evidence-popover a{color:var(--color-blue);text-decoration:underline}
+.evidence-source-list{margin:var(--space-2) 0;padding-inline-start:var(--space-5);list-style:disc}
+.evidence-source-list>li{padding-inline-start:var(--space-1);overflow-wrap:anywhere}
+.evidence-source-list>li+li{margin-top:var(--space-2)}
 
 /* Connected place profile: headline figures, then a map and town information with aligned footers. */
 .place-hero{grid-template-columns:minmax(var(--size-place-photo-min),var(--layout-place-photo-share)) minmax(0,1fr)}

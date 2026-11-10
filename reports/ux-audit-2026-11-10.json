@@ -1,0 +1,536 @@
+{
+  "date": "2026-11-10",
+  "target": "Local working tree on localhost:5173",
+  "browser": "Synaptic Code preview, Chromium 152",
+  "scope": "8 representative routes at 320, 768, 1440 CSS pixels; additional Labs, glossary, and Shields spot checks",
+  "baseline": "WCAG 2.2 AA product quality target; partial expert audit, not a conformance certification",
+  "notes": [
+    "Images with complete=false and naturalWidth=0 at initial load were lazy, not established failures. Scrolling loaded sampled Moore, Lisonbee, and Maloy photos at naturalWidth=400.",
+    "At innerWidth=320, clientWidth=305 and body/scrollWidth=320. At 768 and 1440, clientWidth=scrollWidth=753 and 1425 respectively.",
+    "No axe, Lighthouse, full HTML/CSS validator, screen reader, physical device, or production performance audit was run.",
+    "App code was not modified by this audit."
+  ],
+  "results": [
+    {
+      "bodyScroll": 320,
+      "client": 305,
+      "h1": [
+        "Civic data,made clear."
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 320,
+      "text": "UTAH'S OPEN ELECTION ARCHIVE\n\nCivic data,\nmade clear.\n\nExplore the people, places, offices, and public records that have shaped Utah elections.\n\nSearch the data\narrow_forward\nRead the documentation\nCC0\nPUBLIC DOMAIN\nCIVIC DATA\n1989–2026\n\n17,729 filing records across Utah’s available election archives, joined into 12,439 people while preserving every distinct race.\n\n2026 ELECTION CYCLE\n\nElection\nmilestones\nGENERAL ELECTION\nNOV 03\n2026\nJAN 02–08\nCa",
+      "title": "Elections Utah — Open civic data",
+      "unlabeled": [],
+      "url": "/",
+      "viewport": 320,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 320,
+      "client": 305,
+      "h1": [
+        "Parties"
+      ],
+      "logo": [
+        {
+          "height": 62,
+          "natural": 156,
+          "src": "/party-logos/natural-law-party.png",
+          "width": 62,
+          "x": 45
+        }
+      ],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 320,
+      "text": "ELECTION ARCHIVE\n\nParties\n\nPolitical affiliations represented across the 1989–2026 filing data.\n\nsearch\nfilter_list\nFilters\ngrid_view\nview_list\n23 OF 23 PARTIES\nRECOGNIZED PARTY\nForward Party of Utah\n\n33 offices\n\n33 filings\nView record\narrow_forward\nlanguage\nRECOGNIZED PARTY\nGreen Party of Utah\n\n8 offices\n\n20 filings\nView record\narrow_forward\nlanguage\nELECTION AFFILIATION\nIndependent\n\n4 offices\n\n5 filings\nView record\narrow_forward\nRECOGNIZED PART",
+      "title": "Parties — Elections Utah",
+      "unlabeled": [],
+      "url": "/parties/",
+      "viewport": 320,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 320,
+      "client": 305,
+      "h1": [
+        "Natural Law Party"
+      ],
+      "logo": [
+        {
+          "height": 115,
+          "natural": 156,
+          "src": "/party-logos/natural-law-party.png",
+          "width": 115,
+          "x": 44
+        }
+      ],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 320,
+      "text": "PARTIES\nchevron_right\nNATURAL LAW PARTY\n\nHISTORICAL PARTY\n\nNatural Law Party\n\nA historical political party in Utah, recorded as “Natural Law” in the election archive. In 1996, its Utah candidates included Catherine Carter for the 2nd Congressional District, Randall Tolpinrud for the 1st Congressional District, and Robert C. Lesh and William Scott Shields for governor and lieutenant governor.\n\nAbout this affiliation & sources\n\n10 candidate filings",
+      "title": "Natural Law Party — Elections Utah",
+      "unlabeled": [],
+      "url": "/parties/natural-law/",
+      "viewport": 320,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 320,
+      "client": 305,
+      "h1": [
+        "Catherine Carter"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 320,
+      "text": "PEOPLE\nchevron_right\nCATHERINE CARTER\naccount_circle\n\nPERSON RECORD\n\nCatherine Carter\n\nOne recorded candidacy in 1996.\n\nCANDIDACIES\n1\nELECTION YEARS\n1\nLATEST CYCLE\n1996\n\nCANDIDATE HISTORY\n\nAll candidacies\n1996\nFEDERAL OFFICE\nU.S. House District 2\nParty\nNatural Law Party\nCandidate Timeline\nFiled\nCandidacy source record\narrow_outward\n(opens in new tab)\nGeneral Election\nBallot source record\narrow_outward\n(opens in new tab)",
+      "title": "Catherine Carter — Elections Utah",
+      "unlabeled": [],
+      "url": "/people/catherine-carter/",
+      "viewport": 320,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 320,
+      "client": 305,
+      "h1": [
+        "U.S. House District 2"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 320,
+      "text": "OFFICES\nchevron_right\nU.S. HOUSE DISTRICT 2\n\nFEDERAL OFFICE · STATE OFFICE\n\nU.S. House District 2\n\nA seat in the U.S. House of Representatives, representing a Utah congressional district in federal lawmaking.\n\n189 filings across 2026, 2024, 2023, 2022, 2020, 2018, 2016, 2014, 2012, 2010, 2008, 2006, 2004, 2002, 2000, 1998, 1996, 1994, 1992, 1990, 1988, 1986, 1984, 1982, 1980, 1978, 1976, 1974, 1972, 1970, 1966, 1962, 1960.\n\nCONGRESSIONAL DISTRICT",
+      "title": "U.S. House District 2 — Elections Utah",
+      "unlabeled": [],
+      "url": "/offices/u-s-house-district-2/",
+      "viewport": 320,
+      "unverifiedImagesAtInitialLoad": [
+        "/images/people/blake-d-moore.webp",
+        "/images/people/karianne-lisonbee.webp",
+        "/images/people/celeste-maloy.webp",
+        "/images/people/celeste-maloy.webp"
+      ]
+    },
+    {
+      "bodyScroll": 320,
+      "client": 305,
+      "h1": [
+        "Salt Lake County"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 320,
+      "text": "PLACES\nchevron_right\nSALT LAKE COUNTY\n\nCOUNTY\n\nSalt Lake County\n\nSalt Lake County candidate records from the Elections Utah archive.\n\nArchived candidate years: 1989, 1991, 1993, 1995, 1997, 1999, 2001, 2003, 2005, 2007, 2009, 2011, 2013, 2015, 2017, 2018, 2023, 2024, 2025, 2026. Office links reflect these filings and their historical districts.\n\nPhoto: Matheson Court House Salt Lake City UT - panoramio\n(opens in new tab)\nby Chanilim714, CC BY-SA ",
+      "title": "Salt Lake County — Elections Utah",
+      "unlabeled": [],
+      "url": "/places/salt-lake/",
+      "viewport": 320,
+      "unverifiedImagesAtInitialLoad": [
+        "/images/people/celeste-maloy.webp",
+        "/images/people/angela-romero.webp",
+        "/images/people/carol-spackman-moss.webp",
+        "/images/people/craig-hall.webp",
+        "/images/people/jim-dunnigan.webp",
+        "/images/people/ken-ivory.webp",
+        "/images/people/sandra-hollins.webp",
+        "/images/people/steve-eliason.webp"
+      ]
+    },
+    {
+      "bodyScroll": 320,
+      "client": 305,
+      "h1": [
+        "1996"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 320,
+      "text": "ELECTION YEARS\nchevron_right\n1996\n\nSTATEWIDE ARCHIVE\n\n1996\n\nReviewed primary ballots and selected general-election rosters from official state canvasses. Legislative and judicial coverage varies by source; these are not complete statewide filing lists.\n\nOFFICIAL STATEWIDE CANVASSES arrow_outward\n(OPENS IN NEW TAB)\nARCHIVED FILINGS\n151\nOFFICES\n51\nAFFILIATIONS\n11\n\nCYCLE RECORDS\n\nCandidates\nsearch\nfilter_list\nFilters\ngrid_view\nview_list\n171 OF 171 P",
+      "title": "1996 regular election — Elections Utah",
+      "unlabeled": [],
+      "url": "/elections/1996/",
+      "viewport": 320,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 320,
+      "client": 305,
+      "h1": [
+        "Understand theproject."
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 320,
+      "text": "DOCUMENTATION\n\nUnderstand the\nproject.\n\nWelcome to the Elections Utah documentation. This section introduces the project’s goals, explains how its records are structured, and shows how to help.\n\n01 · STRUCTURE\nData schema\n\nSee the fields that make up a person record and each year’s election filing.\n\nEXPLORE SCHEMA arrow_forward\n02 · DEFINITIONS\nGlossary\n\nLearn the election and reporting terminology used throughout the project.\n\nBROWSE TERMS arrow",
+      "title": "Documentation — Elections Utah",
+      "unlabeled": [],
+      "url": "/docs/",
+      "viewport": 320,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 753,
+      "client": 753,
+      "h1": [
+        "Civic data,made clear."
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 753,
+      "text": "UTAH'S OPEN ELECTION ARCHIVE\n\nCivic data,\nmade clear.\n\nExplore the people, places, offices, and public records that have shaped Utah elections.\n\nSearch the data\narrow_forward\nRead the documentation\nCC0\nPUBLIC DOMAIN\nCIVIC DATA\n1989–2026\n\n17,729 filing records across Utah’s available election archives, joined into 12,439 people while preserving every distinct race.\n\n2026 ELECTION CYCLE\n\nElection\nmilestones\nGENERAL ELECTION\nNOV 03\n2026\nJAN 02–08\nCa",
+      "title": "Elections Utah — Open civic data",
+      "unlabeled": [],
+      "url": "/",
+      "viewport": 768,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 753,
+      "client": 753,
+      "h1": [
+        "Parties"
+      ],
+      "logo": [
+        {
+          "height": 62,
+          "natural": 156,
+          "src": "/party-logos/natural-law-party.png",
+          "width": 62,
+          "x": 405
+        }
+      ],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 753,
+      "text": "ELECTION ARCHIVE\n\nParties\n\nPolitical affiliations represented across the 1989–2026 filing data.\n\nsearch\nfilter_list\nFilters\ngrid_view\nview_list\n23 OF 23 PARTIES\nRECOGNIZED PARTY\nForward Party of Utah\n\n33 offices\n\n33 filings\nView record\narrow_forward\nlanguage\nRECOGNIZED PARTY\nGreen Party of Utah\n\n8 offices\n\n20 filings\nView record\narrow_forward\nlanguage\nELECTION AFFILIATION\nIndependent\n\n4 offices\n\n5 filings\nView record\narrow_forward\nRECOGNIZED PART",
+      "title": "Parties — Elections Utah",
+      "unlabeled": [],
+      "url": "/parties/",
+      "viewport": 768,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 753,
+      "client": 753,
+      "h1": [
+        "Natural Law Party"
+      ],
+      "logo": [
+        {
+          "height": 115,
+          "natural": 156,
+          "src": "/party-logos/natural-law-party.png",
+          "width": 115,
+          "x": 69
+        }
+      ],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 753,
+      "text": "PARTIES\nchevron_right\nNATURAL LAW PARTY\n\nHISTORICAL PARTY\n\nNatural Law Party\n\nA historical political party in Utah, recorded as “Natural Law” in the election archive. In 1996, its Utah candidates included Catherine Carter for the 2nd Congressional District, Randall Tolpinrud for the 1st Congressional District, and Robert C. Lesh and William Scott Shields for governor and lieutenant governor.\n\nAbout this affiliation & sources\n\n10 candidate filings",
+      "title": "Natural Law Party — Elections Utah",
+      "unlabeled": [],
+      "url": "/parties/natural-law/",
+      "viewport": 768,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 753,
+      "client": 753,
+      "h1": [
+        "Catherine Carter"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 753,
+      "text": "PEOPLE\nchevron_right\nCATHERINE CARTER\naccount_circle\n\nPERSON RECORD\n\nCatherine Carter\n\nOne recorded candidacy in 1996.\n\nCANDIDACIES\n1\nELECTION YEARS\n1\nLATEST CYCLE\n1996\n\nCANDIDATE HISTORY\n\nAll candidacies\n1996\nFEDERAL OFFICE\nU.S. House District 2\nParty\nNatural Law Party\nCandidate Timeline\nFiled\nCandidacy source record\narrow_outward\n(opens in new tab)\nGeneral Election\nBallot source record\narrow_outward\n(opens in new tab)",
+      "title": "Catherine Carter — Elections Utah",
+      "unlabeled": [],
+      "url": "/people/catherine-carter/",
+      "viewport": 768,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 753,
+      "client": 753,
+      "h1": [
+        "U.S. House District 2"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 753,
+      "text": "OFFICES\nchevron_right\nU.S. HOUSE DISTRICT 2\n\nFEDERAL OFFICE · STATE OFFICE\n\nU.S. House District 2\n\nA seat in the U.S. House of Representatives, representing a Utah congressional district in federal lawmaking.\n\n189 filings across 2026, 2024, 2023, 2022, 2020, 2018, 2016, 2014, 2012, 2010, 2008, 2006, 2004, 2002, 2000, 1998, 1996, 1994, 1992, 1990, 1988, 1986, 1984, 1982, 1980, 1978, 1976, 1974, 1972, 1970, 1966, 1962, 1960.\n\nCONGRESSIONAL DISTRICT",
+      "title": "U.S. House District 2 — Elections Utah",
+      "unlabeled": [],
+      "url": "/offices/u-s-house-district-2/",
+      "viewport": 768,
+      "unverifiedImagesAtInitialLoad": [
+        "/images/people/blake-d-moore.webp",
+        "/images/people/karianne-lisonbee.webp",
+        "/images/people/celeste-maloy.webp",
+        "/images/people/celeste-maloy.webp"
+      ]
+    },
+    {
+      "bodyScroll": 753,
+      "client": 753,
+      "h1": [
+        "Salt Lake County"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 753,
+      "text": "PLACES\nchevron_right\nSALT LAKE COUNTY\n\nCOUNTY\n\nSalt Lake County\n\nSalt Lake County candidate records from the Elections Utah archive.\n\nArchived candidate years: 1989, 1991, 1993, 1995, 1997, 1999, 2001, 2003, 2005, 2007, 2009, 2011, 2013, 2015, 2017, 2018, 2023, 2024, 2025, 2026. Office links reflect these filings and their historical districts.\n\nPhoto: Matheson Court House Salt Lake City UT - panoramio\n(opens in new tab)\nby Chanilim714, CC BY-SA ",
+      "title": "Salt Lake County — Elections Utah",
+      "unlabeled": [],
+      "url": "/places/salt-lake/",
+      "viewport": 768,
+      "unverifiedImagesAtInitialLoad": [
+        "/images/people/celeste-maloy.webp",
+        "/images/people/angela-romero.webp",
+        "/images/people/carol-spackman-moss.webp",
+        "/images/people/craig-hall.webp",
+        "/images/people/jim-dunnigan.webp",
+        "/images/people/ken-ivory.webp",
+        "/images/people/sandra-hollins.webp",
+        "/images/people/steve-eliason.webp"
+      ]
+    },
+    {
+      "bodyScroll": 753,
+      "client": 753,
+      "h1": [
+        "1996"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 753,
+      "text": "ELECTION YEARS\nchevron_right\n1996\n\nSTATEWIDE ARCHIVE\n\n1996\n\nReviewed primary ballots and selected general-election rosters from official state canvasses. Legislative and judicial coverage varies by source; these are not complete statewide filing lists.\n\nOFFICIAL STATEWIDE CANVASSES arrow_outward\n(OPENS IN NEW TAB)\nARCHIVED FILINGS\n151\nOFFICES\n51\nAFFILIATIONS\n11\n\nCYCLE RECORDS\n\nCandidates\nsearch\nfilter_list\nFilters\ngrid_view\nview_list\n171 OF 171 P",
+      "title": "1996 regular election — Elections Utah",
+      "unlabeled": [],
+      "url": "/elections/1996/",
+      "viewport": 768,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 753,
+      "client": 753,
+      "h1": [
+        "Understand theproject."
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 753,
+      "text": "DOCUMENTATION\n\nUnderstand the\nproject.\n\nWelcome to the Elections Utah documentation. This section introduces the project’s goals, explains how its records are structured, and shows how to help.\n\n01 · STRUCTURE\nData schema\n\nSee the fields that make up a person record and each year’s election filing.\n\nEXPLORE SCHEMA arrow_forward\n02 · DEFINITIONS\nGlossary\n\nLearn the election and reporting terminology used throughout the project.\n\nBROWSE TERMS arrow",
+      "title": "Documentation — Elections Utah",
+      "unlabeled": [],
+      "url": "/docs/",
+      "viewport": 768,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 1425,
+      "client": 1425,
+      "h1": [
+        "Civic data,made clear."
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 1425,
+      "text": "UTAH'S OPEN ELECTION ARCHIVE\n\nCivic data,\nmade clear.\n\nExplore the people, places, offices, and public records that have shaped Utah elections.\n\nSearch the data\narrow_forward\nRead the documentation\nCC0\nPUBLIC DOMAIN\nCIVIC DATA\n1989–2026\n\n17,729 filing records across Utah’s available election archives, joined into 12,439 people while preserving every distinct race.\n\n2026 ELECTION CYCLE\n\nElection\nmilestones\nGENERAL ELECTION\nNOV 03\n2026\nJAN 02–08\nCa",
+      "title": "Elections Utah — Open civic data",
+      "unlabeled": [],
+      "url": "/",
+      "viewport": 1440,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 1425,
+      "client": 1425,
+      "h1": [
+        "Parties"
+      ],
+      "logo": [
+        {
+          "height": 62,
+          "natural": 156,
+          "src": "/party-logos/natural-law-party.png",
+          "width": 62,
+          "x": 947
+        }
+      ],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 1425,
+      "text": "ELECTION ARCHIVE\n\nParties\n\nPolitical affiliations represented across the 1989–2026 filing data.\n\nsearch\nfilter_list\nFilters\ngrid_view\nview_list\n23 OF 23 PARTIES\nRECOGNIZED PARTY\nForward Party of Utah\n\n33 offices\n\n33 filings\nView record\narrow_forward\nlanguage\nRECOGNIZED PARTY\nGreen Party of Utah\n\n8 offices\n\n20 filings\nView record\narrow_forward\nlanguage\nELECTION AFFILIATION\nIndependent\n\n4 offices\n\n5 filings\nView record\narrow_forward\nRECOGNIZED PART",
+      "title": "Parties — Elections Utah",
+      "unlabeled": [],
+      "url": "/parties/",
+      "viewport": 1440,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 1425,
+      "client": 1425,
+      "h1": [
+        "Natural Law Party"
+      ],
+      "logo": [
+        {
+          "height": 156,
+          "natural": 156,
+          "src": "/party-logos/natural-law-party.png",
+          "width": 156,
+          "x": 138
+        }
+      ],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 1425,
+      "text": "PARTIES\nchevron_right\nNATURAL LAW PARTY\n\nHISTORICAL PARTY\n\nNatural Law Party\n\nA historical political party in Utah, recorded as “Natural Law” in the election archive. In 1996, its Utah candidates included Catherine Carter for the 2nd Congressional District, Randall Tolpinrud for the 1st Congressional District, and Robert C. Lesh and William Scott Shields for governor and lieutenant governor.\n\nAbout this affiliation & sources\n\n10 candidate filings",
+      "title": "Natural Law Party — Elections Utah",
+      "unlabeled": [],
+      "url": "/parties/natural-law/",
+      "viewport": 1440,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 1425,
+      "client": 1425,
+      "h1": [
+        "Catherine Carter"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 1425,
+      "text": "PEOPLE\nchevron_right\nCATHERINE CARTER\naccount_circle\n\nPERSON RECORD\n\nCatherine Carter\n\nOne recorded candidacy in 1996.\n\nCANDIDACIES\n1\nELECTION YEARS\n1\nLATEST CYCLE\n1996\n\nCANDIDATE HISTORY\n\nAll candidacies\n1996\nFEDERAL OFFICE\nU.S. House District 2\nParty\nNatural Law Party\nCandidate Timeline\nFiled\nCandidacy source record\narrow_outward\n(opens in new tab)\nGeneral Election\nBallot source record\narrow_outward\n(opens in new tab)",
+      "title": "Catherine Carter — Elections Utah",
+      "unlabeled": [],
+      "url": "/people/catherine-carter/",
+      "viewport": 1440,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 1425,
+      "client": 1425,
+      "h1": [
+        "U.S. House District 2"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 1425,
+      "text": "OFFICES\nchevron_right\nU.S. HOUSE DISTRICT 2\n\nFEDERAL OFFICE · STATE OFFICE\n\nU.S. House District 2\n\nA seat in the U.S. House of Representatives, representing a Utah congressional district in federal lawmaking.\n\n189 filings across 2026, 2024, 2023, 2022, 2020, 2018, 2016, 2014, 2012, 2010, 2008, 2006, 2004, 2002, 2000, 1998, 1996, 1994, 1992, 1990, 1988, 1986, 1984, 1982, 1980, 1978, 1976, 1974, 1972, 1970, 1966, 1962, 1960.\n\nCONGRESSIONAL DISTRICT",
+      "title": "U.S. House District 2 — Elections Utah",
+      "unlabeled": [],
+      "url": "/offices/u-s-house-district-2/",
+      "viewport": 1440,
+      "unverifiedImagesAtInitialLoad": [
+        "/images/people/karianne-lisonbee.webp",
+        "/images/people/celeste-maloy.webp",
+        "/images/people/celeste-maloy.webp"
+      ]
+    },
+    {
+      "bodyScroll": 1425,
+      "client": 1425,
+      "h1": [
+        "Salt Lake County"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 1425,
+      "text": "PLACES\nchevron_right\nSALT LAKE COUNTY\n\nCOUNTY\n\nSalt Lake County\n\nSalt Lake County candidate records from the Elections Utah archive.\n\nArchived candidate years: 1989, 1991, 1993, 1995, 1997, 1999, 2001, 2003, 2005, 2007, 2009, 2011, 2013, 2015, 2017, 2018, 2023, 2024, 2025, 2026. Office links reflect these filings and their historical districts.\n\nPhoto: Matheson Court House Salt Lake City UT - panoramio\n(opens in new tab)\nby Chanilim714, CC BY-SA ",
+      "title": "Salt Lake County — Elections Utah",
+      "unlabeled": [],
+      "url": "/places/salt-lake/",
+      "viewport": 1440,
+      "unverifiedImagesAtInitialLoad": [
+        "/images/people/celeste-maloy.webp",
+        "/images/people/angela-romero.webp",
+        "/images/people/carol-spackman-moss.webp",
+        "/images/people/craig-hall.webp",
+        "/images/people/jim-dunnigan.webp",
+        "/images/people/ken-ivory.webp",
+        "/images/people/sandra-hollins.webp",
+        "/images/people/steve-eliason.webp"
+      ]
+    },
+    {
+      "bodyScroll": 1425,
+      "client": 1425,
+      "h1": [
+        "1996"
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 1425,
+      "text": "ELECTION YEARS\nchevron_right\n1996\n\nSTATEWIDE ARCHIVE\n\n1996\n\nReviewed primary ballots and selected general-election rosters from official state canvasses. Legislative and judicial coverage varies by source; these are not complete statewide filing lists.\n\nOFFICIAL STATEWIDE CANVASSES arrow_outward\n(OPENS IN NEW TAB)\nARCHIVED FILINGS\n151\nOFFICES\n51\nAFFILIATIONS\n11\n\nCYCLE RECORDS\n\nCandidates\nsearch\nfilter_list\nFilters\ngrid_view\nview_list\n171 OF 171 P",
+      "title": "1996 regular election — Elections Utah",
+      "unlabeled": [],
+      "url": "/elections/1996/",
+      "viewport": 1440,
+      "unverifiedImagesAtInitialLoad": []
+    },
+    {
+      "bodyScroll": 1425,
+      "client": 1425,
+      "h1": [
+        "Understand theproject."
+      ],
+      "logo": [],
+      "main": 1,
+      "nested": 0,
+      "overflow": [],
+      "scroll": 1425,
+      "text": "DOCUMENTATION\n\nUnderstand the\nproject.\n\nWelcome to the Elections Utah documentation. This section introduces the project’s goals, explains how its records are structured, and shows how to help.\n\n01 · STRUCTURE\nData schema\n\nSee the fields that make up a person record and each year’s election filing.\n\nEXPLORE SCHEMA arrow_forward\n02 · DEFINITIONS\nGlossary\n\nLearn the election and reporting terminology used throughout the project.\n\nBROWSE TERMS arrow",
+      "title": "Documentation — Elections Utah",
+      "unlabeled": [],
+      "url": "/docs/",
+      "viewport": 1440,
+      "unverifiedImagesAtInitialLoad": []
+    }
+  ]
+}

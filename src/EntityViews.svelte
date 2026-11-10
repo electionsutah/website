@@ -78,8 +78,9 @@
   export let omitColumns: string[] = [];
   export let showStatus = false;
 
+  const initialEntityLimit = 250;
   let query = '';
-  let limit = 36;
+  let limit = initialEntityLimit;
   let selection: Selection = {};
   let view: 'grid' | 'list' = 'list';
   let sort: Sort | null = null;
@@ -142,6 +143,7 @@
     ? 'Record not found'
     : person?.name || office?.name || party?.name || place?.name || labels[section].plural;
   $: selectedOfficeProfile = office ? officeProfile(office, placesById) : undefined;
+  $: partySourcesPopoverId = `party-sources-${party?.id ?? ''}`;
   $: selectedPartyProfile = party ? partyProfile(party) : undefined;
   $: contactFiling = person?.filings.find((filing) => filing.personId === person.id && filing.contact && Object.values(filing.contact).some(Boolean));
   // Current campaign information has its own source and date; archived contacts stay in the filing data.
@@ -273,7 +275,7 @@
     query = state.query;
     view = state.view;
     sort = state.sort;
-    limit = 36;
+    limit = initialEntityLimit;
   }
 
   $: searchedCards = cards.filter((card) => matchesQuery(card.text, queryTokens(query)));
@@ -331,7 +333,7 @@
 
   function updateSelection(next: Selection) {
     selection = next;
-    limit = 36;
+    limit = initialEntityLimit;
     persistState(stateKey, { selection, view, query, sort });
   }
 
@@ -347,7 +349,7 @@
 
   function updateQuery(next: string) {
     query = next;
-    limit = 36;
+    limit = initialEntityLimit;
     persistState(stateKey, { selection, view, query, sort });
   }
 
@@ -487,7 +489,13 @@
   {:else if party}
     <article class="entity-detail" style={`--party-color:${party.color}`}>
       <Breadcrumbs parent={{ label: 'Parties', href: '/parties/' }} current={party.name} {navigate} />
-      <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} ${party.localCaucus ? 'symbol' : 'logo'}`} /></div>{:else}<div class="party-mark" aria-hidden="true"><Icon name="flag" /></div>{/if}<div class="party-hero-detail"><p class="eyebrow">{partyLabel(party)}</p><div class="entity-heading-row"><h1>{party.name}</h1><EntityLinks links={party.links ?? []} entityName={party.name} /></div>{#if selectedPartyProfile}<p class="detail-summary"><DescriptionText text={selectedPartyProfile.description} self={hrefFor(section, id)} {navigate} /></p>{#if selectedPartyProfile.sources.length}<p class="profile-source">{#each selectedPartyProfile.sources as source}<a href={source.url} target="_blank" rel="noreferrer">About this affiliation<span class="sr-only"> (opens in new tab)</span></a>{/each}</p>{/if}{/if}<p class="detail-summary"><DescriptionText text={party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'} self={hrefFor(section, id)} {navigate} /></p>
+      <header class="detail-hero party-hero">{#if party.logo}<div class="party-logo" class:inverse-logo={party.id === 'utah-republican-party'}><img src={party.logo} alt={`${party.name} ${party.localCaucus ? 'symbol' : 'logo'}`} /></div>{:else}<div class="party-mark" aria-hidden="true"><Icon name="flag" /></div>{/if}<div class="party-hero-detail"><p class="eyebrow">{partyLabel(party)}</p><div class="entity-heading-row"><h1>{party.name}</h1><EntityLinks links={party.links ?? []} entityName={party.name} /></div>{#if selectedPartyProfile}<p class="detail-summary"><DescriptionText text={selectedPartyProfile.description} self={hrefFor(section, id)} {navigate} /></p>{#if selectedPartyProfile.sources.length}<div class="profile-source">
+            <button class="party-sources-toggle" popovertarget={partySourcesPopoverId}>About this affiliation &amp; sources</button>
+            <div class="evidence-popover" id={partySourcesPopoverId} popover="auto" use:anchoredPopover={partySourcesPopoverId} aria-labelledby={`${partySourcesPopoverId}-title`}>
+              <header><strong id={`${partySourcesPopoverId}-title`}>Sources · {party.name}</strong><button popovertarget={partySourcesPopoverId} popovertargetaction="hide" aria-label="Close party sources"><Icon name="close" /></button></header>
+              <ul class="evidence-source-list">{#each selectedPartyProfile.sources as source}<li><a href={source.url} target="_blank" rel="noreferrer">{source.label === 'Source' ? new URL(source.url).hostname.replace(/^www\./, '') : source.label}<span class="sr-only"> (opens in new tab)</span></a></li>{/each}</ul>
+            </div>
+          </div>{/if}{/if}<p class="detail-summary"><DescriptionText text={party.filings.length ? `${party.filings.length} candidate filings across ${party.years.join(', ')}.` : 'No candidates from this party appear in the archived filing datasets.'} self={hrefFor(section, id)} {navigate} /></p>
         {#if party.id === 'united-utah-party'}
           <p class="detail-summary"><strong>Historical note:</strong> On April 26, 2025, members approved the merger of the United Utah Party (UUP) with the Utah Forward Party to form the <a href={hrefFor('parties', 'forward-party-of-utah')} onclick={(event) => open(event, hrefFor('parties', 'forward-party-of-utah'))}>Forward Party of Utah</a>.</p>
         {:else if party.id === 'forward-party-of-utah'}

@@ -305,11 +305,14 @@
   },
   "natural-law": {
     "officialWebsite": "",
-    "verifiedOn": "2026-11-07",
+    "verifiedOn": "2026-11-10",
     "status": "Historical affiliation — accounts withheld",
-    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "notes": "Historical ballot label “Natural Law” is displayed as “Natural Law Party.” Contemporary Utah reporting identifies the party and its 1996 candidates. No current Utah organization website or social account has been verified.",
     "sources": [
-      "https://vote.utah.gov/historical-election-results/"
+      "https://vote.utah.gov/historical-election-results/",
+      "https://www.deseret.com/1996/6/22/19250334/natural-law-party-draws-on-strengths-of-other-parties-and-promotes-ounce-of-prevention/",
+      "https://en.wikipedia.org/wiki/Natural_Law_Party_(United_States)",
+      "https://ballotpedia.org/Natural_Law_Party"
     ],
     "links": []
   },
