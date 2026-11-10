@@ -1039,7 +1039,7 @@
     ]
   },
   "andrew-stoddard": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-09",
     "identityEvidence": [
       {
         "publishedName": "Andrew Stoddard",
@@ -1050,28 +1050,53 @@
         "publishedName": "Andrew Stoddard",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Andrew Stoddard",
+        "match": "Campaign homepage identifies the incumbent representative elected in 2018 and directly links his Facebook, Instagram, and X accounts.",
+        "source": "https://www.voteandrewstoddard.com/"
       }
     ],
     "sources": [
       "https://house.utleg.gov/house-members/",
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.voteandrewstoddard.com/"
     ],
     "notes": [
       "Roster-endorsed government profile. Institutional header/footer social accounts were not copied to the person. Source roster defines the current role; archived filings are unchanged.",
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Facebook, Instagram, and X URLs were verified from outbound social links in the campaign homepage HTML. The campaign currently links Instagram @repastoddard; this takes precedence over directory listings of @rep.astoddard. Account activity was not independently checked."
     ],
     "links": [
       {
         "url": "https://house.utleg.gov/rep/STODDA",
         "label": "Official legislative profile",
         "source": "https://house.utleg.gov/house-members/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-09"
       },
       {
         "url": "https://voteandrewstoddard.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-09"
+      },
+      {
+        "url": "https://www.facebook.com/voteandrewstoddard",
+        "label": "Facebook",
+        "source": "https://www.voteandrewstoddard.com/",
+        "verifiedOn": "2026-11-09"
+      },
+      {
+        "url": "https://www.instagram.com/repastoddard/",
+        "label": "Instagram",
+        "source": "https://www.voteandrewstoddard.com/",
+        "verifiedOn": "2026-11-09"
+      },
+      {
+        "url": "https://x.com/repastoddard",
+        "label": "X (Twitter)",
+        "source": "https://www.voteandrewstoddard.com/",
+        "verifiedOn": "2026-11-09"
       }
     ]
   },
