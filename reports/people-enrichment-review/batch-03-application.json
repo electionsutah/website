@@ -1,0 +1,131 @@
+{
+  "batchId": "batch-03",
+  "contentHash": "098942c562ca9c4a571b99560663b14c9c71d73d776854b811480f7f3a2e95f4",
+  "approvedOn": "2026-11-10",
+  "approval": "User approved Batch 3 in conversation",
+  "applied": [
+    {
+      "personId": "eric-last",
+      "url": "https://instagram.com/ericlast4utah",
+      "source": "https://ericlast.com/",
+      "reviewId": "b3ee4b0b4bc9"
+    },
+    {
+      "personId": "eric-last",
+      "url": "https://threads.com/@ericlast4utah",
+      "source": "https://ericlast.com/",
+      "reviewId": "85a65f15ae66"
+    },
+    {
+      "personId": "eric-last",
+      "url": "https://facebook.com/profile.php?id=61587108901980",
+      "source": "https://ericlast.com/",
+      "reviewId": "fb889201e32e"
+    },
+    {
+      "personId": "fred-c-cox",
+      "url": "https://x.com/fredcox4utah",
+      "source": "https://fredcox4utah.com/",
+      "reviewId": "5bdddb4619e8"
+    },
+    {
+      "personId": "garret-rushforth",
+      "url": "https://instagram.com/rushforth4utah",
+      "source": "https://voterushforth.com/about",
+      "reviewId": "1f796abe168f"
+    },
+    {
+      "personId": "iva-williams",
+      "url": "https://instagram.com/elect.iva",
+      "source": "https://www.electivawilliams.com/",
+      "reviewId": "63802253c9c0"
+    },
+    {
+      "personId": "james-rich",
+      "url": "https://instagram.com/move.forwardwith.us",
+      "source": "https://move.forwardwith.us/",
+      "reviewId": "3920a1606048"
+    },
+    {
+      "personId": "james-rich",
+      "url": "https://youtube.com/@MoveForwardWithUs",
+      "source": "https://move.forwardwith.us/",
+      "reviewId": "2d3c4189ac4b"
+    },
+    {
+      "personId": "jay-blain",
+      "url": "https://x.com/jbpascal",
+      "source": "https://www.jayblain.com/",
+      "reviewId": "60607e1596da"
+    },
+    {
+      "personId": "jay-blain",
+      "url": "https://linkedin.com/in/jay-blain-ab658724",
+      "source": "https://www.jayblain.com/",
+      "reviewId": "5fc726aaa58f"
+    },
+    {
+      "personId": "jeffrey-anderson",
+      "url": "https://facebook.com/profile.php?id=61588558991700",
+      "source": "https://jeffandersonforutahhouse.com/",
+      "reviewId": "258653b15164"
+    },
+    {
+      "personId": "jennifer-smith",
+      "url": "https://instagram.com/smith4slc_schoolboard",
+      "source": "https://www.smithforslcschoolboard.com/",
+      "reviewId": "7e20e26b4f30"
+    },
+    {
+      "personId": "jess-birtcher",
+      "url": "https://instagram.com/yes2jesshd44",
+      "source": "https://www.yes2jesshd44.com/",
+      "reviewId": "6ffaf871325f"
+    },
+    {
+      "personId": "jess-birtcher",
+      "url": "https://facebook.com/yes2jesshd44",
+      "source": "https://www.yes2jesshd44.com/",
+      "reviewId": "40365ec3e71c"
+    },
+    {
+      "personId": "jill-f-koford",
+      "url": "https://x.com/JillKoford",
+      "source": "https://www.votekoford.com/",
+      "reviewId": "acdc92396494"
+    },
+    {
+      "personId": "jill-f-koford",
+      "url": "https://facebook.com/VoteKoford",
+      "source": "https://www.votekoford.com/",
+      "reviewId": "d1d9ace8a59f"
+    },
+    {
+      "personId": "jill-f-koford",
+      "url": "https://instagram.com/votekoford",
+      "source": "https://www.votekoford.com/",
+      "reviewId": "fa82191fd3b2"
+    },
+    {
+      "personId": "jill-f-koford",
+      "url": "https://linkedin.com/in/jill-koford-346358130",
+      "source": "https://www.votekoford.com/",
+      "reviewId": "e64fad9cfc06"
+    }
+  ],
+  "excluded": [
+    {
+      "personId": "garret-rushforth",
+      "url": "https://x.com/jituux",
+      "reason": "Threads-labeled footer points to unrelated-looking X handle; person ownership not established"
+    }
+  ],
+  "normalizations": [
+    {
+      "personId": "jay-blain",
+      "original": "https://x.com/@jbpascal",
+      "normalized": "https://x.com/jbpascal",
+      "reason": "Normalize X handle path and serialize URL"
+    }
+  ]
+}

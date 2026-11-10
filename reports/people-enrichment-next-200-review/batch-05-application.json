@@ -1,0 +1,123 @@
+{
+  "batchId": "batch-05",
+  "contentHash": "4e6594e13c2d309952bff5177499eefd92568b5607fe07dad216fc0f5dbef27f",
+  "approvedOn": "2026-11-10",
+  "approval": "Explicit user approval in conversation",
+  "applied": [
+    {
+      "personId": "kacee-weaver",
+      "url": "https://facebook.com/profile.php?id=61586007654873",
+      "source": "https://kaceeforutahschools.com/",
+      "reviewId": "f94a1873882e"
+    },
+    {
+      "personId": "kacee-weaver",
+      "url": "https://instagram.com/mskaceesclass",
+      "source": "https://kaceeforutahschools.com/",
+      "reviewId": "79edd27c49ed"
+    },
+    {
+      "personId": "kendra-penry",
+      "url": "https://instagram.com/electkendrapenry",
+      "source": "https://www.kendraforutah.com/",
+      "reviewId": "ccd4f578889c"
+    },
+    {
+      "personId": "kendra-penry",
+      "url": "https://facebook.com/profile.php?id=61586127689861",
+      "source": "https://www.kendraforutah.com/",
+      "reviewId": "1d60c0e12c8f"
+    },
+    {
+      "personId": "kendra-penry",
+      "url": "https://linkedin.com/in/kendra-penry-clutter-0b40b716",
+      "source": "https://www.kendraforutah.com/",
+      "reviewId": "8bb245e12d69"
+    },
+    {
+      "personId": "lacey-peterson",
+      "url": "https://instagram.com/vote_laceypeterson",
+      "source": "https://www.laceypetersoncampaign.org/",
+      "reviewId": "903044748365"
+    },
+    {
+      "personId": "linda-hanks",
+      "url": "https://instagram.com/votelindahanks",
+      "source": "https://www.linda4stateschoolboard.com/",
+      "reviewId": "79ca9a6e386f"
+    },
+    {
+      "personId": "lisa-shepherd",
+      "url": "https://facebook.com/lisamshepherd",
+      "source": "https://lisa61.com/",
+      "reviewId": "498056fe4e1a"
+    },
+    {
+      "personId": "logan-j-monson",
+      "url": "https://facebook.com/profile.php?id=61554357322615",
+      "source": "https://www.votemonson.com/",
+      "reviewId": "817ab069d298"
+    },
+    {
+      "personId": "luke-maynes",
+      "url": "https://facebook.com/lukemaynesforslco3",
+      "source": "https://www.lukeforcountycouncil.com/",
+      "reviewId": "6c030f440c09"
+    },
+    {
+      "personId": "luke-maynes",
+      "url": "https://instagram.com/lukemaynesforslco3",
+      "source": "https://www.lukeforcountycouncil.com/",
+      "reviewId": "03503700f4ec"
+    },
+    {
+      "personId": "matt-macpherson",
+      "url": "https://facebook.com/UtahVote4Matt",
+      "source": "https://www.electmattmacpherson.com/",
+      "reviewId": "e6c8bbbda73c"
+    },
+    {
+      "personId": "matt-macpherson",
+      "url": "https://instagram.com/utahvote4matt",
+      "source": "https://www.electmattmacpherson.com/",
+      "reviewId": "1010a50513d0"
+    },
+    {
+      "personId": "matt-macpherson",
+      "url": "https://x.com/UtahVote4Matt",
+      "source": "https://www.electmattmacpherson.com/",
+      "reviewId": "c7827ed0af43"
+    },
+    {
+      "personId": "mike-petersen",
+      "url": "https://facebook.com/restoreyourvoiceutah",
+      "source": "https://votemikepetersen.com/",
+      "reviewId": "55bd68288181"
+    },
+    {
+      "personId": "mike-petersen",
+      "url": "https://x.com/RepMikePetersen",
+      "source": "https://votemikepetersen.com/",
+      "reviewId": "e73fd4b70bb8"
+    },
+    {
+      "personId": "mike-petersen",
+      "url": "https://youtube.com/@voteformikepetersen",
+      "source": "https://votemikepetersen.com/",
+      "reviewId": "21f0308794ed"
+    },
+    {
+      "personId": "mike-petersen",
+      "url": "https://linkedin.com/in/mike-petersen-phd-0b401a4",
+      "source": "https://votemikepetersen.com/",
+      "reviewId": "f4c4bce69254"
+    },
+    {
+      "personId": "monique-i-ketcham",
+      "url": "https://facebook.com/profile.php?id=61586507513241",
+      "source": "https://monique4office.com/",
+      "reviewId": "e6c8f8a2d4a4"
+    }
+  ],
+  "excluded": []
+}

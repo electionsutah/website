@@ -1,0 +1,165 @@
+{
+  "batchId": "batch-06",
+  "contentHash": "9a6931042b9be6ccc46275d96ae278319c830e36df209451c4dbb7004464225d",
+  "approvedOn": "2026-11-10",
+  "approval": "Explicit user approval in conversation",
+  "applied": [
+    {
+      "personId": "paul-cutler",
+      "url": "https://facebook.com/CutlerLegislature",
+      "source": "https://votepaulcutler.com/",
+      "reviewId": "6fa9683ff108"
+    },
+    {
+      "personId": "paul-cutler",
+      "url": "https://instagram.com/parttimepolitician",
+      "source": "https://votepaulcutler.com/",
+      "reviewId": "94059771ac2d"
+    },
+    {
+      "personId": "paul-cutler",
+      "url": "https://linkedin.com/in/paul-cutler-364182",
+      "source": "https://votepaulcutler.com/",
+      "reviewId": "791f24d841cd"
+    },
+    {
+      "personId": "paul-cutler",
+      "url": "https://x.com/parttimepolpaul",
+      "source": "https://votepaulcutler.com/",
+      "reviewId": "4227ba14682b"
+    },
+    {
+      "personId": "paul-cutler",
+      "url": "https://youtube.com/channel/UCuEOACsPXlClDKUVkKHLfDw",
+      "source": "https://votepaulcutler.com/",
+      "reviewId": "9115ad643a0a"
+    },
+    {
+      "personId": "scott-sandall",
+      "url": "https://facebook.com/votescottsandalldistrict17",
+      "source": "https://www.votescottsandall.com/",
+      "reviewId": "6825d46cac91"
+    },
+    {
+      "personId": "scott-troxel",
+      "url": "https://threads.com/@scotrox",
+      "source": "https://troxelforutah.com/",
+      "reviewId": "9a0a09c61f8a"
+    },
+    {
+      "personId": "scott-troxel",
+      "url": "https://instagram.com/scotrox",
+      "source": "https://troxelforutah.com/",
+      "reviewId": "dee63fd234b6"
+    },
+    {
+      "personId": "scott-troxel",
+      "url": "https://facebook.com/scotrox",
+      "source": "https://troxelforutah.com/",
+      "reviewId": "2059791aee41"
+    },
+    {
+      "personId": "sergio-sotelo",
+      "url": "https://instagram.com/electsergiosotelo",
+      "source": "https://www.electsergiosotelo.com/",
+      "reviewId": "eadaa379d797"
+    },
+    {
+      "personId": "sergio-sotelo",
+      "url": "https://facebook.com/profile.php?id=61577704186714",
+      "source": "https://www.electsergiosotelo.com/",
+      "reviewId": "607b0799a8ce"
+    },
+    {
+      "personId": "sim-gill",
+      "url": "https://facebook.com/SimGillDA",
+      "source": "https://www.votesim.com/",
+      "reviewId": "268098d63785"
+    },
+    {
+      "personId": "sim-gill",
+      "url": "https://x.com/simgillda",
+      "source": "https://www.votesim.com/",
+      "reviewId": "cdc5c5136e72"
+    },
+    {
+      "personId": "sim-gill",
+      "url": "https://instagram.com/simgillda",
+      "source": "https://www.votesim.com/",
+      "reviewId": "e3492e714245"
+    },
+    {
+      "personId": "steve-eliason",
+      "url": "https://facebook.com/VoteSteveEliason",
+      "source": "https://steveeliasonforutah.com/",
+      "reviewId": "1420ce3fead2"
+    },
+    {
+      "personId": "travis-hysell",
+      "url": "https://facebook.com/travis.hysell",
+      "source": "https://www.votehysell.com/",
+      "reviewId": "1c160fd89742"
+    },
+    {
+      "personId": "travis-hysell",
+      "url": "https://instagram.com/travisforutah",
+      "source": "https://www.votehysell.com/",
+      "reviewId": "9d642441a02a"
+    },
+    {
+      "personId": "trevor-lee",
+      "url": "https://facebook.com/VoteTrevorLee",
+      "source": "https://votetrevorlee.com/",
+      "reviewId": "0ce79a15f1ab"
+    },
+    {
+      "personId": "trevor-lee",
+      "url": "https://instagram.com/trevorlee451",
+      "source": "https://votetrevorlee.com/",
+      "reviewId": "e08cfd8a9ef3"
+    },
+    {
+      "personId": "trevor-lee",
+      "url": "https://x.com/votetrevorlee",
+      "source": "https://votetrevorlee.com/",
+      "reviewId": "2036b8682e2c"
+    },
+    {
+      "personId": "trevor-lee",
+      "url": "https://linkedin.com/in/trevor-lee-025b64a1",
+      "source": "https://votetrevorlee.com/",
+      "reviewId": "1e13e31ab206"
+    },
+    {
+      "personId": "tucker-smith",
+      "url": "https://x.com/tuckerforutah",
+      "source": "https://tuckersmithforutah.com/",
+      "reviewId": "6af68eb89ffa"
+    },
+    {
+      "personId": "tucker-smith",
+      "url": "https://youtube.com/@TuckerSmithforUtah",
+      "source": "https://tuckersmithforutah.com/",
+      "reviewId": "6072432dfaba"
+    },
+    {
+      "personId": "tucker-smith",
+      "url": "https://instagram.com/tuckersmithforutah",
+      "source": "https://tuckersmithforutah.com/",
+      "reviewId": "8f711f53ed0d"
+    },
+    {
+      "personId": "tucker-smith",
+      "url": "https://linkedin.com/company/tucker-smith-for-utah",
+      "source": "https://tuckersmithforutah.com/",
+      "reviewId": "982fdf997a1a"
+    },
+    {
+      "personId": "tucker-smith",
+      "url": "https://tiktok.com/@tuckersmithforutah",
+      "source": "https://tuckersmithforutah.com/",
+      "reviewId": "f322ff2edd6c"
+    }
+  ],
+  "excluded": []
+}

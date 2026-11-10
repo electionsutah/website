@@ -1,0 +1,985 @@
+{
+  "id": "batch-01",
+  "status": "pending_user_approval",
+  "generatedAt": "2026-11-10T15:35:38.787987+00:00",
+  "runSource": "reports/people-enrichment-rerun.json",
+  "people": [
+    {
+      "id": "alan-jimenez",
+      "name": "Alan Jimenez",
+      "entityUrl": "https://www.electionsutah.org/people/alan-jimenez/",
+      "existingLinks": [
+        {
+          "url": "https://alanforutah.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 61"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/HD-61-Alan-Jimenez.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/alanforutah",
+          "entityId": "alan-jimenez",
+          "sourceUrl": "https://alanforutah.com/",
+          "anchorText": "JSON-LD sameAs Alan Jimenez for Utah House District 61",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "61",
+                "house"
+              ]
+            ],
+            "excerpt": " Alan Jimenez for Utah House District 61 Skip to content Return your ballot by 8 p.m. Nov 3. Find a drop box → AJ Alan Jimenez UTAH HOUSE · DISTRICT 61 ES Donate Menu Vote Meet Alan Priorities District 61 Get Involved Español Donate Alan Jimenez Utah House · District 61 West Provo & Southwest Orem Utah House · District 61 · West Provo & Southwest O"
+          },
+          "fetchedAt": "2026-11-10T15:35:13.951670+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "5af6ff0c61b4"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/alanforutah",
+          "entityId": "alan-jimenez",
+          "sourceUrl": "https://alanforutah.com/",
+          "anchorText": "JSON-LD sameAs Alan Jimenez for Utah House District 61",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "61",
+                "house"
+              ]
+            ],
+            "excerpt": " Alan Jimenez for Utah House District 61 Skip to content Return your ballot by 8 p.m. Nov 3. Find a drop box → AJ Alan Jimenez UTAH HOUSE · DISTRICT 61 ES Donate Menu Vote Meet Alan Priorities District 61 Get Involved Español Donate Alan Jimenez Utah House · District 61 West Provo & Southwest Orem Utah House · District 61 · West Provo & Southwest O"
+          },
+          "fetchedAt": "2026-11-10T15:35:13.951670+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e15201bf4f7e"
+        }
+      ]
+    },
+    {
+      "id": "amanda-finlayson",
+      "name": "Amanda Finlayson",
+      "entityUrl": "https://www.electionsutah.org/people/amanda-finlayson/",
+      "existingLinks": [
+        {
+          "url": "https://afinlayson4slcschools.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "Salt Lake School Board District 4"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/General11032026/ballot-items/01000000-68b8-edcd-85f1-08df2650840f"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/afinlayson4slcschools",
+          "entityId": "amanda-finlayson",
+          "sourceUrl": "https://afinlayson4slcschools.com/",
+          "anchorText": "Instagram Social Link",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "4",
+                "board",
+                "lake",
+                "salt",
+                "school"
+              ]
+            ],
+            "excerpt": "About About Priorities Precinct 4 Donate Register to Vote What's On Your Ballot More About Priorities Precinct 4 Donate Register to Vote What's On Your Ballot About Priorities Precinct 4 Donate Register to Vote What's On Your Ballot Running to Represent Precinct 4 on the SLC School District Board Running to Represent Precinct 4 on the SLC School Di"
+          },
+          "fetchedAt": "2026-11-10T15:29:14.460610+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "091cfa0bafbd"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/amanda-k-f-slc",
+          "entityId": "amanda-finlayson",
+          "sourceUrl": "https://afinlayson4slcschools.com/",
+          "anchorText": "LinkedIn Social Link",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "4",
+                "board",
+                "lake",
+                "salt",
+                "school"
+              ]
+            ],
+            "excerpt": "About About Priorities Precinct 4 Donate Register to Vote What's On Your Ballot More About Priorities Precinct 4 Donate Register to Vote What's On Your Ballot About Priorities Precinct 4 Donate Register to Vote What's On Your Ballot Running to Represent Precinct 4 on the SLC School District Board Running to Represent Precinct 4 on the SLC School Di"
+          },
+          "fetchedAt": "2026-11-10T15:29:14.460610+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "c7215157fb05"
+        }
+      ]
+    },
+    {
+      "id": "anita-dalrymple",
+      "name": "Anita Dalrymple",
+      "entityUrl": "https://www.electionsutah.org/people/anita-dalrymple/",
+      "existingLinks": [
+        {
+          "url": "https://anitadalrymple4utah.vote/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 28"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H28-Anita-Dalrymple.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/anita.dalrymple.2025",
+          "entityId": "anita-dalrymple",
+          "sourceUrl": "https://anitadalrymple4utah.vote/",
+          "anchorText": "Follow Anita",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "28",
+                "house"
+              ]
+            ],
+            "excerpt": "Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple for Utah Anita Dalrymple Utah House District 28 Committed To Fighting Corruption Term Limits Campaign Contrib"
+          },
+          "fetchedAt": "2026-11-10T15:29:15.316610+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1c4d4f6929cd"
+        }
+      ]
+    },
+    {
+      "id": "anna-graff",
+      "name": "Anna Graff",
+      "entityUrl": "https://www.electionsutah.org/people/anna-graff/",
+      "existingLinks": [
+        {
+          "url": "https://www.electannagraff.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 12"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H12-Anna-Graff.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/electannagraff",
+          "entityId": "anna-graff",
+          "sourceUrl": "https://www.electannagraff.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "12",
+                "house"
+              ]
+            ],
+            "excerpt": " Anna Graff for House District 12 0 Skip to Content Home About Volunteer Upcoming Events Endorsements Contact Donate Open Menu Close Menu Donate Home About Volunteer Upcoming Events Endorsements Contact Open Menu Close Menu Home About Volunteer Upcoming Events Endorsements Contact Donate Hi, I’m Anna. Here’s Why I’m Running. “What about everyone el"
+          },
+          "fetchedAt": "2026-11-10T15:29:15.716158+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "60f20895d450"
+        },
+        {
+          "platform": "threads",
+          "url": "https://threads.com/@annagraff801",
+          "entityId": "anna-graff",
+          "sourceUrl": "https://www.electannagraff.com/",
+          "anchorText": "Threads",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "12",
+                "house"
+              ]
+            ],
+            "excerpt": " Anna Graff for House District 12 0 Skip to Content Home About Volunteer Upcoming Events Endorsements Contact Donate Open Menu Close Menu Donate Home About Volunteer Upcoming Events Endorsements Contact Open Menu Close Menu Home About Volunteer Upcoming Events Endorsements Contact Donate Hi, I’m Anna. Here’s Why I’m Running. “What about everyone el"
+          },
+          "fetchedAt": "2026-11-10T15:29:15.716158+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "21b35d707ad4"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/ElectAnnaGraff",
+          "entityId": "anna-graff",
+          "sourceUrl": "https://www.electannagraff.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "12",
+                "house"
+              ]
+            ],
+            "excerpt": " Anna Graff for House District 12 0 Skip to Content Home About Volunteer Upcoming Events Endorsements Contact Donate Open Menu Close Menu Donate Home About Volunteer Upcoming Events Endorsements Contact Open Menu Close Menu Home About Volunteer Upcoming Events Endorsements Contact Donate Hi, I’m Anna. Here’s Why I’m Running. “What about everyone el"
+          },
+          "fetchedAt": "2026-11-10T15:29:15.716158+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "84c136196891"
+        }
+      ]
+    },
+    {
+      "id": "annette-mcrae",
+      "name": "Annette McRae",
+      "entityUrl": "https://www.electionsutah.org/people/annette-mcrae/",
+      "existingLinks": [
+        {
+          "url": "https://mcraeforsenate.com/",
+          "label": "Campaign website",
+          "source": "https://www.utahforwardparty.org/candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State Senate District 20"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/S20-Annette-McRae.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/McRaeForUtah",
+          "entityId": "annette-mcrae",
+          "sourceUrl": "https://mcraeforsenate.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "20",
+                "senate"
+              ]
+            ],
+            "excerpt": " Annette McRae for Utah Senate District 20 – Forward Party candidate for Utah Senate District 20 — water, energy, housing, and transportation for Summit, Wasatch, Duchesne, Uintah, and Daggett counties. Skip to content Annette McRae for Utah Senate District 20 Home About Plan District 20 At Work Get Involved Donate Annette McRae for Utah Senate Dis"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.558461+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "fe307e888b0a"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/mcraeforutah",
+          "entityId": "annette-mcrae",
+          "sourceUrl": "https://mcraeforsenate.com/",
+          "anchorText": "X",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "20",
+                "senate"
+              ]
+            ],
+            "excerpt": " Annette McRae for Utah Senate District 20 – Forward Party candidate for Utah Senate District 20 — water, energy, housing, and transportation for Summit, Wasatch, Duchesne, Uintah, and Daggett counties. Skip to content Annette McRae for Utah Senate District 20 Home About Plan District 20 At Work Get Involved Donate Annette McRae for Utah Senate Dis"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.558461+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e49c94df8d36"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/mcraeforsenate",
+          "entityId": "annette-mcrae",
+          "sourceUrl": "https://mcraeforsenate.com/",
+          "anchorText": "@mcraeforsenate",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "20",
+                "senate"
+              ]
+            ],
+            "excerpt": " Annette McRae for Utah Senate District 20 – Forward Party candidate for Utah Senate District 20 — water, energy, housing, and transportation for Summit, Wasatch, Duchesne, Uintah, and Daggett counties. Skip to content Annette McRae for Utah Senate District 20 Home About Plan District 20 At Work Get Involved Donate Annette McRae for Utah Senate Dis"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.558461+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "0e4a28ea0769"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://tiktok.com/@mommacrae",
+          "entityId": "annette-mcrae",
+          "sourceUrl": "https://mcraeforsenate.com/",
+          "anchorText": "@mommacrae",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "20",
+                "senate"
+              ]
+            ],
+            "excerpt": " Annette McRae for Utah Senate District 20 – Forward Party candidate for Utah Senate District 20 — water, energy, housing, and transportation for Summit, Wasatch, Duchesne, Uintah, and Daggett counties. Skip to content Annette McRae for Utah Senate District 20 Home About Plan District 20 At Work Get Involved Donate Annette McRae for Utah Senate Dis"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.558461+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "fa7407d21b20"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/themommacrae",
+          "entityId": "annette-mcrae",
+          "sourceUrl": "https://mcraeforsenate.com/",
+          "anchorText": "LinkedIn",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "20",
+                "senate"
+              ]
+            ],
+            "excerpt": " Annette McRae for Utah Senate District 20 – Forward Party candidate for Utah Senate District 20 — water, energy, housing, and transportation for Summit, Wasatch, Duchesne, Uintah, and Daggett counties. Skip to content Annette McRae for Utah Senate District 20 Home About Plan District 20 At Work Get Involved Donate Annette McRae for Utah Senate Dis"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.558461+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "139045183764"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/mcraeforsenate",
+          "entityId": "annette-mcrae",
+          "sourceUrl": "https://mcraeforsenate.com/",
+          "anchorText": "@mcraeforsenate",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "20",
+                "senate"
+              ]
+            ],
+            "excerpt": " Annette McRae for Utah Senate District 20 – Forward Party candidate for Utah Senate District 20 — water, energy, housing, and transportation for Summit, Wasatch, Duchesne, Uintah, and Daggett counties. Skip to content Annette McRae for Utah Senate District 20 Home About Plan District 20 At Work Get Involved Donate Annette McRae for Utah Senate Dis"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.558461+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "32107906ced2"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/McRaeForsenate",
+          "entityId": "annette-mcrae",
+          "sourceUrl": "https://mcraeforsenate.com/",
+          "anchorText": "McRaeForSenate",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "20",
+                "senate"
+              ]
+            ],
+            "excerpt": " Annette McRae for Utah Senate District 20 – Forward Party candidate for Utah Senate District 20 — water, energy, housing, and transportation for Summit, Wasatch, Duchesne, Uintah, and Daggett counties. Skip to content Annette McRae for Utah Senate District 20 Home About Plan District 20 At Work Get Involved Donate Annette McRae for Utah Senate Dis"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.558461+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "c23e37e49890"
+        }
+      ]
+    },
+    {
+      "id": "anthony-loubet",
+      "name": "Anthony Loubet",
+      "entityUrl": "https://www.electionsutah.org/people/anthony-loubet/",
+      "existingLinks": [
+        {
+          "url": "https://www.anthonyloubet.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 27"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H27-Anthony-Loubet.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/AnthonyLoubetUT",
+          "entityId": "anthony-loubet",
+          "sourceUrl": "https://www.anthonyloubet.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "27",
+                "house"
+              ]
+            ],
+            "excerpt": " Anthony Loubet for HD27 0 Skip to Content Home About Priorities Results Where to Vote Contact English Donate Open Menu Close Menu English Donate Home About Priorities Results Where to Vote Contact Open Menu Close Menu Home About Priorities Results Where to Vote Contact English Back Donate West Jordan ★ Kearns ★ West Valley City ★ Magna ★ Copperton"
+          },
+          "fetchedAt": "2026-11-10T15:29:15.894760+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "4641bdea4046"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/anthonyloubetut",
+          "entityId": "anthony-loubet",
+          "sourceUrl": "https://www.anthonyloubet.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "27",
+                "house"
+              ]
+            ],
+            "excerpt": " Anthony Loubet for HD27 0 Skip to Content Home About Priorities Results Where to Vote Contact English Donate Open Menu Close Menu English Donate Home About Priorities Results Where to Vote Contact Open Menu Close Menu Home About Priorities Results Where to Vote Contact English Back Donate West Jordan ★ Kearns ★ West Valley City ★ Magna ★ Copperton"
+          },
+          "fetchedAt": "2026-11-10T15:29:15.894760+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "36534c6523aa"
+        }
+      ]
+    },
+    {
+      "id": "ashlee-matthews",
+      "name": "Ashlee Matthews",
+      "entityUrl": "https://www.electionsutah.org/people/ashlee-matthews/",
+      "existingLinks": [
+        {
+          "url": "https://house.utleg.gov/rep/MATTHA",
+          "label": "Official legislative profile",
+          "source": "https://house.utleg.gov/house-members/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://ashleeforutah.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 37"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H37-Ashlee-Matthews.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/AshleeforUtah",
+          "entityId": "ashlee-matthews",
+          "sourceUrl": "https://www.ashleeforutah.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "37",
+                "house"
+              ]
+            ],
+            "excerpt": " Ashlee Matthews | Reelect Ashlee for District 37 Home About Me District 37 Boundaries Endorsements Issues & Priorities Contact Volunteer DONATE Select Page REP. ASHLEE MATTHEWS STANDS FOR WORKING FAMILIES I’M ASHLEE MATTHEWS, AND I’M PROUD TO REPRESENT THE HARDWORKING FAMILIES OF HOUSE DISTRICT 37. Every year, more Utahns tell me the same thing: t"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.927564+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1f40b643bb94"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/100456098248154",
+          "entityId": "ashlee-matthews",
+          "sourceUrl": "https://www.ashleeforutah.com/",
+          "anchorText": "This content isn't available right now",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "37",
+                "house"
+              ]
+            ],
+            "excerpt": " Ashlee Matthews | Reelect Ashlee for District 37 Home About Me District 37 Boundaries Endorsements Issues & Priorities Contact Volunteer DONATE Select Page REP. ASHLEE MATTHEWS STANDS FOR WORKING FAMILIES I’M ASHLEE MATTHEWS, AND I’M PROUD TO REPRESENT THE HARDWORKING FAMILIES OF HOUSE DISTRICT 37. Every year, more Utahns tell me the same thing: t"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.927564+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "9577ffaed438"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/photo.php",
+          "entityId": "ashlee-matthews",
+          "sourceUrl": "https://www.ashleeforutah.com/",
+          "anchorText": "View on Facebook View on Facebook (opens in a new tab)",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "37",
+                "house"
+              ]
+            ],
+            "excerpt": " Ashlee Matthews | Reelect Ashlee for District 37 Home About Me District 37 Boundaries Endorsements Issues & Priorities Contact Volunteer DONATE Select Page REP. ASHLEE MATTHEWS STANDS FOR WORKING FAMILIES I’M ASHLEE MATTHEWS, AND I’M PROUD TO REPRESENT THE HARDWORKING FAMILIES OF HOUSE DISTRICT 37. Every year, more Utahns tell me the same thing: t"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.927564+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "59fbf766d361"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/113431180365167",
+          "entityId": "ashlee-matthews",
+          "sourceUrl": "https://www.ashleeforutah.com/",
+          "anchorText": "Artesanías Mi México",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "37",
+                "house"
+              ]
+            ],
+            "excerpt": " Ashlee Matthews | Reelect Ashlee for District 37 Home About Me District 37 Boundaries Endorsements Issues & Priorities Contact Volunteer DONATE Select Page REP. ASHLEE MATTHEWS STANDS FOR WORKING FAMILIES I’M ASHLEE MATTHEWS, AND I’M PROUD TO REPRESENT THE HARDWORKING FAMILIES OF HOUSE DISTRICT 37. Every year, more Utahns tell me the same thing: t"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.927564+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e7df49209f0f"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/4702314249832056",
+          "entityId": "ashlee-matthews",
+          "sourceUrl": "https://www.ashleeforutah.com/",
+          "anchorText": "#ChooseKearns",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "37",
+                "house"
+              ]
+            ],
+            "excerpt": " Ashlee Matthews | Reelect Ashlee for District 37 Home About Me District 37 Boundaries Endorsements Issues & Priorities Contact Volunteer DONATE Select Page REP. ASHLEE MATTHEWS STANDS FOR WORKING FAMILIES I’M ASHLEE MATTHEWS, AND I’M PROUD TO REPRESENT THE HARDWORKING FAMILIES OF HOUSE DISTRICT 37. Every year, more Utahns tell me the same thing: t"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.927564+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "076001e44c10"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/389460791151415",
+          "entityId": "ashlee-matthews",
+          "sourceUrl": "https://www.ashleeforutah.com/",
+          "anchorText": "#ShopSmall",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "37",
+                "house"
+              ]
+            ],
+            "excerpt": " Ashlee Matthews | Reelect Ashlee for District 37 Home About Me District 37 Boundaries Endorsements Issues & Priorities Contact Volunteer DONATE Select Page REP. ASHLEE MATTHEWS STANDS FOR WORKING FAMILIES I’M ASHLEE MATTHEWS, AND I’M PROUD TO REPRESENT THE HARDWORKING FAMILIES OF HOUSE DISTRICT 37. Every year, more Utahns tell me the same thing: t"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.927564+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "80eae4276ff1"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/492545704143315",
+          "entityId": "ashlee-matthews",
+          "sourceUrl": "https://www.ashleeforutah.com/",
+          "anchorText": "#shoplocal",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "37",
+                "house"
+              ]
+            ],
+            "excerpt": " Ashlee Matthews | Reelect Ashlee for District 37 Home About Me District 37 Boundaries Endorsements Issues & Priorities Contact Volunteer DONATE Select Page REP. ASHLEE MATTHEWS STANDS FOR WORKING FAMILIES I’M ASHLEE MATTHEWS, AND I’M PROUD TO REPRESENT THE HARDWORKING FAMILIES OF HOUSE DISTRICT 37. Every year, more Utahns tell me the same thing: t"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.927564+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "046b4c83c8f3"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AshleeUT38",
+          "entityId": "ashlee-matthews",
+          "sourceUrl": "https://www.ashleeforutah.com/",
+          "anchorText": "X",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "37",
+                "house"
+              ]
+            ],
+            "excerpt": " Ashlee Matthews | Reelect Ashlee for District 37 Home About Me District 37 Boundaries Endorsements Issues & Priorities Contact Volunteer DONATE Select Page REP. ASHLEE MATTHEWS STANDS FOR WORKING FAMILIES I’M ASHLEE MATTHEWS, AND I’M PROUD TO REPRESENT THE HARDWORKING FAMILIES OF HOUSE DISTRICT 37. Every year, more Utahns tell me the same thing: t"
+          },
+          "fetchedAt": "2026-11-10T15:35:14.927564+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "851dd07941ab"
+        }
+      ]
+    },
+    {
+      "id": "bianca-mittendorf",
+      "name": "Bianca Mittendorf",
+      "entityUrl": "https://www.electionsutah.org/people/bianca-mittendorf/",
+      "existingLinks": [
+        {
+          "url": "https://www.electbianca.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 7"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H7-Bianca-Mittendorf.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/elect_bianca_hd7",
+          "entityId": "bianca-mittendorf",
+          "sourceUrl": "https://www.electbianca.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "7",
+                "house"
+              ]
+            ],
+            "excerpt": " Bianca for House District 7 | Vote for Responsible Leadership Today 0 Skip to Content Bianca for House District 7 Home About Platform Volunteer Contact Donate Open Menu Close Menu Bianca for House District 7 Home About Platform Volunteer Contact Donate Open Menu Close Menu Home About Platform Volunteer Contact Donate Hi, it’s Bianca! People Powere"
+          },
+          "fetchedAt": "2026-11-10T15:29:17.161844+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "cfcfddaab00b"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/electbiancahd7",
+          "entityId": "bianca-mittendorf",
+          "sourceUrl": "https://www.electbianca.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "7",
+                "house"
+              ]
+            ],
+            "excerpt": " Bianca for House District 7 | Vote for Responsible Leadership Today 0 Skip to Content Bianca for House District 7 Home About Platform Volunteer Contact Donate Open Menu Close Menu Bianca for House District 7 Home About Platform Volunteer Contact Donate Open Menu Close Menu Home About Platform Volunteer Contact Donate Hi, it’s Bianca! People Powere"
+          },
+          "fetchedAt": "2026-11-10T15:29:17.161844+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "42f2d9cf1821"
+        },
+        {
+          "platform": "threads",
+          "url": "https://threads.com/@elect_bianca_hd7",
+          "entityId": "bianca-mittendorf",
+          "sourceUrl": "https://www.electbianca.com/",
+          "anchorText": "Threads",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "7",
+                "house"
+              ]
+            ],
+            "excerpt": " Bianca for House District 7 | Vote for Responsible Leadership Today 0 Skip to Content Bianca for House District 7 Home About Platform Volunteer Contact Donate Open Menu Close Menu Bianca for House District 7 Home About Platform Volunteer Contact Donate Open Menu Close Menu Home About Platform Volunteer Contact Donate Hi, it’s Bianca! People Powere"
+          },
+          "fetchedAt": "2026-11-10T15:29:17.161844+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "833895a2e758"
+        }
+      ]
+    },
+    {
+      "id": "bob-j-stevenson",
+      "name": "Bob J. Stevenson",
+      "entityUrl": "https://www.electionsutah.org/people/bob-j-stevenson/",
+      "existingLinks": [
+        {
+          "url": "https://www.electbobstevenson.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "REP State House District 16",
+        "State House District 16"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H16-Bob-J-Stevenson.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/electbobstevenson",
+          "entityId": "bob-j-stevenson",
+          "sourceUrl": "https://www.electbobstevenson.com/",
+          "anchorText": "JSON-LD sameAs Bob Stevenson",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "16",
+                "house"
+              ],
+              [
+                "16",
+                "house"
+              ]
+            ],
+            "excerpt": " Bob Stevenson - House District 16 | Republican Skip to content Bob Stevenson For Utah House of Representatives | District 16 Facebook page opens in new window Bob Stevenson House District 16 | Republican Home News Meet Bob Priorities Press Release Contact Yard Signs Donate Home News Meet Bob Priorities Press Release Contact Yard Signs Donate Bob S"
+          },
+          "fetchedAt": "2026-11-10T15:35:15.376513+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "cc7ec8060fe5"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/@BobStevensonUtah",
+          "entityId": "bob-j-stevenson",
+          "sourceUrl": "https://www.electbobstevenson.com/",
+          "anchorText": "YouTube page opens in new window YouTube page opens in new window",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "16",
+                "house"
+              ],
+              [
+                "16",
+                "house"
+              ]
+            ],
+            "excerpt": " Bob Stevenson - House District 16 | Republican Skip to content Bob Stevenson For Utah House of Representatives | District 16 Facebook page opens in new window Bob Stevenson House District 16 | Republican Home News Meet Bob Priorities Press Release Contact Yard Signs Donate Home News Meet Bob Priorities Press Release Contact Yard Signs Donate Bob S"
+          },
+          "fetchedAt": "2026-11-10T15:35:15.376513+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "420d917e294b"
+        }
+      ]
+    },
+    {
+      "id": "braeden-j-oswald",
+      "name": "Braeden J. Oswald",
+      "entityUrl": "https://www.electionsutah.org/people/braeden-j-oswald/",
+      "existingLinks": [
+        {
+          "url": "https://votebraedenoswald.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 24"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H24-Braeden-J.-Oswald.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/braeden.j.oswald",
+          "entityId": "braeden-j-oswald",
+          "sourceUrl": "https://votebraedenoswald.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "24",
+                "house"
+              ]
+            ],
+            "excerpt": " Braeden Oswald: Utah State House of Representatives District 24 0 Skip to Content About Braeden Braeden's Plan Contact Volunteer Donate Privacy Policy English Open Menu Close Menu About Braeden Braeden's Plan Contact Volunteer Donate Privacy Policy English Open Menu Close Menu About Braeden Braeden's Plan Contact Volunteer Donate Privacy Policy En"
+          },
+          "fetchedAt": "2026-11-10T15:29:18.462282+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1f008a5c6200"
+        }
+      ]
+    }
+  ],
+  "contentHash": "b78efa21a22d12c631114a2a6f19c01a16c401eb95713459f6e86196ca061eeb"
+}

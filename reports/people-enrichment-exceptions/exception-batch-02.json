@@ -1,0 +1,1082 @@
+{
+  "id": "exception-batch-02",
+  "status": "pending_user_approval",
+  "category": "historical_person_review",
+  "proposalCount": 30,
+  "peopleCount": 10,
+  "proposals": [
+    {
+      "personId": "gay-lynn-bennion",
+      "name": "Gay Lynn Bennion",
+      "platform": "instagram",
+      "url": "https://instagram.com/electgaylynnhd41",
+      "entityId": "gay-lynn-bennion",
+      "sourceUrl": "https://www.gaylynnbennion.co/",
+      "anchorText": "Instagram",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "cottonwood",
+            "heights",
+            "mayor"
+          ]
+        ],
+        "excerpt": " Gay Lynn Bennion for Cottonwood Heights | Vote for Responsible Leadership Today 0 Skip to Content About Endorsements Contact Issues Donate Open Menu Close Menu About Endorsements Contact Issues Donate Open Menu Close Menu About Endorsements Contact Issues Donate Hi, it\u2019s Gay Lynn. For the past five years, I\u2019ve proudly represented Cottonwood Height"
+      },
+      "fetchedAt": "2026-11-10T19:40:50.170393+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "a39ed61fa44d",
+      "triageId": "64ec2fcc6b33",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2025,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/gay-lynn-bennion/",
+      "offices": [
+        "Cottonwood Heights Mayor"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "gay-lynn-bennion",
+      "name": "Gay Lynn Bennion",
+      "platform": "facebook",
+      "url": "https://facebook.com/GayLynnHD41",
+      "entityId": "gay-lynn-bennion",
+      "sourceUrl": "https://www.gaylynnbennion.co/",
+      "anchorText": "Facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "cottonwood",
+            "heights",
+            "mayor"
+          ]
+        ],
+        "excerpt": " Gay Lynn Bennion for Cottonwood Heights | Vote for Responsible Leadership Today 0 Skip to Content About Endorsements Contact Issues Donate Open Menu Close Menu About Endorsements Contact Issues Donate Open Menu Close Menu About Endorsements Contact Issues Donate Hi, it\u2019s Gay Lynn. For the past five years, I\u2019ve proudly represented Cottonwood Height"
+      },
+      "fetchedAt": "2026-11-10T19:40:50.170393+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "f406fec23a0e",
+      "triageId": "fdbb6f324254",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2025,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/gay-lynn-bennion/",
+      "offices": [
+        "Cottonwood Heights Mayor"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "brad-r-wilson",
+      "name": "Brad R. Wilson",
+      "platform": "facebook",
+      "url": "https://facebook.com/electbradwilson",
+      "entityId": "brad-r-wilson",
+      "sourceUrl": "https://electbradwilson.com/",
+      "anchorText": "JSON-LD sameAs Brad Wilson for U.S. Senate",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Brad Wilson for U.S. Senate Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Donate Volunteer Facebook X Instagram YouTube Tested. Trusted. Utah Conservative. \u201cOur nation is at a crossroads. Our freedoms are under attack and we need a conservative fighter with the guts "
+      },
+      "fetchedAt": "2026-11-10T19:40:51.950019+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "e5fb01a4b8be",
+      "triageId": "749ad5e22952",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/brad-r-wilson/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "brad-r-wilson",
+      "name": "Brad R. Wilson",
+      "platform": "x",
+      "url": "https://x.com/bradwilsonut",
+      "entityId": "brad-r-wilson",
+      "sourceUrl": "https://electbradwilson.com/",
+      "anchorText": "X",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Brad Wilson for U.S. Senate Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Donate Volunteer Facebook X Instagram YouTube Tested. Trusted. Utah Conservative. \u201cOur nation is at a crossroads. Our freedoms are under attack and we need a conservative fighter with the guts "
+      },
+      "fetchedAt": "2026-11-10T19:40:51.950019+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "8f8abd7d60d2",
+      "triageId": "7ca4a2fcf6c8",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/brad-r-wilson/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "brad-r-wilson",
+      "name": "Brad R. Wilson",
+      "platform": "instagram",
+      "url": "https://instagram.com/bradwilsonut",
+      "entityId": "brad-r-wilson",
+      "sourceUrl": "https://electbradwilson.com/",
+      "anchorText": "Instagram",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Brad Wilson for U.S. Senate Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Donate Volunteer Facebook X Instagram YouTube Tested. Trusted. Utah Conservative. \u201cOur nation is at a crossroads. Our freedoms are under attack and we need a conservative fighter with the guts "
+      },
+      "fetchedAt": "2026-11-10T19:40:51.950019+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "3094f72ba38f",
+      "triageId": "94cefdb7a6b1",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/brad-r-wilson/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "brad-r-wilson",
+      "name": "Brad R. Wilson",
+      "platform": "youtube",
+      "url": "https://youtube.com/@ElectBradWilsonUT",
+      "entityId": "brad-r-wilson",
+      "sourceUrl": "https://electbradwilson.com/",
+      "anchorText": "YouTube",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Brad Wilson for U.S. Senate Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Donate Volunteer Facebook X Instagram YouTube Tested. Trusted. Utah Conservative. \u201cOur nation is at a crossroads. Our freedoms are under attack and we need a conservative fighter with the guts "
+      },
+      "fetchedAt": "2026-11-10T19:40:51.950019+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "8a7500e38f9d",
+      "triageId": "1470f4902310",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/brad-r-wilson/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "brad-r-wilson",
+      "name": "Brad R. Wilson",
+      "platform": "x",
+      "url": "https://x.com/electbradwilson",
+      "entityId": "brad-r-wilson",
+      "sourceUrl": "https://electbradwilson.com/",
+      "anchorText": "JSON-LD sameAs Brad Wilson for U.S. Senate",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Brad Wilson for U.S. Senate Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Home Meet Brad Brad\u2019s Values News Events Endorsements Volunteer Donate Volunteer Facebook X Instagram YouTube Tested. Trusted. Utah Conservative. \u201cOur nation is at a crossroads. Our freedoms are under attack and we need a conservative fighter with the guts "
+      },
+      "fetchedAt": "2026-11-10T19:40:51.950019+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "e43392aff43f",
+      "triageId": "dce487fcfeb3",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/brad-r-wilson/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "david-c-atkin",
+      "name": "David C. Atkin",
+      "platform": "x",
+      "url": "https://x.com/utahhouse21",
+      "entityId": "david-c-atkin",
+      "sourceUrl": "https://davidcatkin.com/",
+      "anchorText": "X",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "21",
+            "house"
+          ]
+        ],
+        "excerpt": "I Offer Hope for the Future of Utah - David C Atkin Utah House 21 (801)953-0932 Home Blog Contact Us Privacy Policy More Home Blog Contact Us Privacy Policy (801)953-0932 Home Blog Contact Us Privacy Policy ALL MUST VOTE IT'S CRITICAL FOR A CHANGE! ALL MUST VOTE IT'S CRITICAL FOR A CHANGE! ALL MUST VOTE IT'S CRITICAL FOR A CHANGE! ALL MUST VOTE IT'"
+      },
+      "fetchedAt": "2026-11-10T19:40:56.205930+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "e05796608cdc",
+      "triageId": "32c858da5a23",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/david-c-atkin/",
+      "offices": [
+        "State House District 21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "john-curtis",
+      "name": "John Curtis",
+      "platform": "facebook",
+      "url": "https://facebook.com/JohnCurtisCampaign",
+      "entityId": "john-curtis",
+      "sourceUrl": "https://www.johncurtis.org/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " John Curtis Skip to content Donate Home Issues News Events Endorse John Donate Republican John Curtis Gets Things Done for Utah Sign Up for Updates First Name (Required) Last Name (Required) Phone Email (Required) Text Opt-in By checking this box and providing your mobile number, you agree to receive SMS messages from the John Curtis campaign for "
+      },
+      "fetchedAt": "2026-11-10T19:40:58.384098+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "78c09a001257",
+      "triageId": "ea6cd697480b",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/john-curtis/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "john-curtis",
+      "name": "John Curtis",
+      "platform": "x",
+      "url": "https://x.com/CurtisUT",
+      "entityId": "john-curtis",
+      "sourceUrl": "https://www.johncurtis.org/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " John Curtis Skip to content Donate Home Issues News Events Endorse John Donate Republican John Curtis Gets Things Done for Utah Sign Up for Updates First Name (Required) Last Name (Required) Phone Email (Required) Text Opt-in By checking this box and providing your mobile number, you agree to receive SMS messages from the John Curtis campaign for "
+      },
+      "fetchedAt": "2026-11-10T19:40:58.384098+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "091210cf9cad",
+      "triageId": "27a34d27ef19",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/john-curtis/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "john-curtis",
+      "name": "John Curtis",
+      "platform": "instagram",
+      "url": "https://instagram.com/curtisut",
+      "entityId": "john-curtis",
+      "sourceUrl": "https://www.johncurtis.org/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " John Curtis Skip to content Donate Home Issues News Events Endorse John Donate Republican John Curtis Gets Things Done for Utah Sign Up for Updates First Name (Required) Last Name (Required) Phone Email (Required) Text Opt-in By checking this box and providing your mobile number, you agree to receive SMS messages from the John Curtis campaign for "
+      },
+      "fetchedAt": "2026-11-10T19:40:58.384098+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "37bbf9ed3107",
+      "triageId": "043123c97fcd",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/john-curtis/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "john-curtis",
+      "name": "John Curtis",
+      "platform": "youtube",
+      "url": "https://youtube.com/channel/UCk_P28leCyEhBj3YTyohE4Q",
+      "entityId": "john-curtis",
+      "sourceUrl": "https://www.johncurtis.org/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " John Curtis Skip to content Donate Home Issues News Events Endorse John Donate Republican John Curtis Gets Things Done for Utah Sign Up for Updates First Name (Required) Last Name (Required) Phone Email (Required) Text Opt-in By checking this box and providing your mobile number, you agree to receive SMS messages from the John Curtis campaign for "
+      },
+      "fetchedAt": "2026-11-10T19:40:58.384098+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "3da5dcf52c36",
+      "triageId": "50d956821703",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/john-curtis/",
+      "offices": [
+        "U.S. Senate"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "jordan-daniel-teuscher",
+      "name": "Jordan Daniel Teuscher",
+      "platform": "facebook",
+      "url": "https://facebook.com/1008033952552086",
+      "entityId": "jordan-daniel-teuscher",
+      "sourceUrl": "https://jordanteuscher.com/",
+      "anchorText": "Representative Jordan Teuscher 2 months ago",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "44",
+            "house"
+          ]
+        ],
+        "excerpt": " Jordan Teuscher | Utah House District 44 Skip to content Toggle Navigation HOME ABOUT JORDAN ABOUT JORDAN VIDEOS PRINCIPLES ACCOMPLISHMENTS LEGISLATIVE ACCOMPLISHMENTS ENDORSEMENTS 2026 LEGISLATIVE ACCOMPLISHMENTS 2025 LEGISLATIVE ACCOMPLISHMENTS 2024 LEGISLATIVE ACCOMPLISHMENTS 2023 LEGISLATIVE ACCOMPLISHMENTS 2022 LEGISLATIVE ACCOMPLISHMENTS 202"
+      },
+      "fetchedAt": "2026-11-10T19:40:58.971935+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "b877a32e8d8d",
+      "triageId": "34f4a083bc55",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/jordan-daniel-teuscher/",
+      "offices": [
+        "State House District 44"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "jordan-daniel-teuscher",
+      "name": "Jordan Daniel Teuscher",
+      "platform": "facebook",
+      "url": "https://facebook.com/4831417890276559",
+      "entityId": "jordan-daniel-teuscher",
+      "sourceUrl": "https://jordanteuscher.com/",
+      "anchorText": "Luke Searle",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "44",
+            "house"
+          ]
+        ],
+        "excerpt": " Jordan Teuscher | Utah House District 44 Skip to content Toggle Navigation HOME ABOUT JORDAN ABOUT JORDAN VIDEOS PRINCIPLES ACCOMPLISHMENTS LEGISLATIVE ACCOMPLISHMENTS ENDORSEMENTS 2026 LEGISLATIVE ACCOMPLISHMENTS 2025 LEGISLATIVE ACCOMPLISHMENTS 2024 LEGISLATIVE ACCOMPLISHMENTS 2023 LEGISLATIVE ACCOMPLISHMENTS 2022 LEGISLATIVE ACCOMPLISHMENTS 202"
+      },
+      "fetchedAt": "2026-11-10T19:40:58.971935+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "d1ec56925a5e",
+      "triageId": "a70d10ab35a7",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/jordan-daniel-teuscher/",
+      "offices": [
+        "State House District 44"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "jordan-daniel-teuscher",
+      "name": "Jordan Daniel Teuscher",
+      "platform": "facebook",
+      "url": "https://facebook.com/jordanforutah",
+      "entityId": "jordan-daniel-teuscher",
+      "sourceUrl": "https://jordanteuscher.com/",
+      "anchorText": "facebook Facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "44",
+            "house"
+          ]
+        ],
+        "excerpt": " Jordan Teuscher | Utah House District 44 Skip to content Toggle Navigation HOME ABOUT JORDAN ABOUT JORDAN VIDEOS PRINCIPLES ACCOMPLISHMENTS LEGISLATIVE ACCOMPLISHMENTS ENDORSEMENTS 2026 LEGISLATIVE ACCOMPLISHMENTS 2025 LEGISLATIVE ACCOMPLISHMENTS 2024 LEGISLATIVE ACCOMPLISHMENTS 2023 LEGISLATIVE ACCOMPLISHMENTS 2022 LEGISLATIVE ACCOMPLISHMENTS 202"
+      },
+      "fetchedAt": "2026-11-10T19:40:58.971935+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "5c01fdc87a4b",
+      "triageId": "58bc9ec5488f",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/jordan-daniel-teuscher/",
+      "offices": [
+        "State House District 44"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "jordan-daniel-teuscher",
+      "name": "Jordan Daniel Teuscher",
+      "platform": "x",
+      "url": "https://x.com/jordanteuscher",
+      "entityId": "jordan-daniel-teuscher",
+      "sourceUrl": "https://jordanteuscher.com/",
+      "anchorText": "twitter X",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "44",
+            "house"
+          ]
+        ],
+        "excerpt": " Jordan Teuscher | Utah House District 44 Skip to content Toggle Navigation HOME ABOUT JORDAN ABOUT JORDAN VIDEOS PRINCIPLES ACCOMPLISHMENTS LEGISLATIVE ACCOMPLISHMENTS ENDORSEMENTS 2026 LEGISLATIVE ACCOMPLISHMENTS 2025 LEGISLATIVE ACCOMPLISHMENTS 2024 LEGISLATIVE ACCOMPLISHMENTS 2023 LEGISLATIVE ACCOMPLISHMENTS 2022 LEGISLATIVE ACCOMPLISHMENTS 202"
+      },
+      "fetchedAt": "2026-11-10T19:40:58.971935+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "cf6d0de49c5b",
+      "triageId": "1c0d3cd6598e",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/jordan-daniel-teuscher/",
+      "offices": [
+        "State House District 44"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "jordan-daniel-teuscher",
+      "name": "Jordan Daniel Teuscher",
+      "platform": "instagram",
+      "url": "https://instagram.com/jordanteuscher",
+      "entityId": "jordan-daniel-teuscher",
+      "sourceUrl": "https://jordanteuscher.com/",
+      "anchorText": "instagram Instagram",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "44",
+            "house"
+          ]
+        ],
+        "excerpt": " Jordan Teuscher | Utah House District 44 Skip to content Toggle Navigation HOME ABOUT JORDAN ABOUT JORDAN VIDEOS PRINCIPLES ACCOMPLISHMENTS LEGISLATIVE ACCOMPLISHMENTS ENDORSEMENTS 2026 LEGISLATIVE ACCOMPLISHMENTS 2025 LEGISLATIVE ACCOMPLISHMENTS 2024 LEGISLATIVE ACCOMPLISHMENTS 2023 LEGISLATIVE ACCOMPLISHMENTS 2022 LEGISLATIVE ACCOMPLISHMENTS 202"
+      },
+      "fetchedAt": "2026-11-10T19:40:58.971935+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "5799cb31ae0d",
+      "triageId": "244637abe8c8",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/jordan-daniel-teuscher/",
+      "offices": [
+        "State House District 44"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "kyle-w-erb",
+      "name": "Kyle W. Erb",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/in/kyleerb",
+      "entityId": "kyle-w-erb",
+      "sourceUrl": "https://kyleerb.com/",
+      "anchorText": "LinkedIn",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Kyle Erb - Systems and operations leadership Skip to content Kyle Erb Professional Personal Passions Now Salt Lake County, Utah Kyle Erb Systems and operations leadership for multi-location teams. I help people and tools work the same direction: clear process, practical tooling, and teams that know what good looks like. This site is a simple home "
+      },
+      "fetchedAt": "2026-11-10T19:41:02.576227+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "8eadb4085838",
+      "triageId": "721cb3e78aa3",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/kyle-w-erb/",
+      "offices": [
+        "State Senate District 10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "miles-pomeroy",
+      "name": "Miles Pomeroy",
+      "platform": "instagram",
+      "url": "https://instagram.com/moderatemiles",
+      "entityId": "miles-pomeroy",
+      "sourceUrl": "https://moderatemiles.com/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [],
+          [
+            "treasurer"
+          ]
+        ],
+        "excerpt": " Miles Pomeroy for State Treasurer Home Platform Donate DONATE MODERATE MILES POMEROY STATE TREASURER UTAH FORWARD PARTY Meet Miles Pomeroy 14 year Herriman resident Father of 3 Married to a Marriage Therapist Software Engineer Utah Forward Party Candidate Meet the Forward Party We aim to find pragmatic, collaborative solutions focused on data, not"
+      },
+      "fetchedAt": "2026-11-10T19:41:06.569824+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "521c8fb52e0e",
+      "triageId": "bd52c85aec39",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/miles-pomeroy/",
+      "offices": [
+        "State House District 49",
+        "State Treasurer"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "miles-pomeroy",
+      "name": "Miles Pomeroy",
+      "platform": "x",
+      "url": "https://x.com/moderate_miles",
+      "entityId": "miles-pomeroy",
+      "sourceUrl": "https://moderatemiles.com/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [],
+          [
+            "treasurer"
+          ]
+        ],
+        "excerpt": " Miles Pomeroy for State Treasurer Home Platform Donate DONATE MODERATE MILES POMEROY STATE TREASURER UTAH FORWARD PARTY Meet Miles Pomeroy 14 year Herriman resident Father of 3 Married to a Marriage Therapist Software Engineer Utah Forward Party Candidate Meet the Forward Party We aim to find pragmatic, collaborative solutions focused on data, not"
+      },
+      "fetchedAt": "2026-11-10T19:41:06.569824+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "4dc603fbfe54",
+      "triageId": "d0093d4a66d2",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/miles-pomeroy/",
+      "offices": [
+        "State House District 49",
+        "State Treasurer"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "oran-stainbrook",
+      "name": "Oran Stainbrook",
+      "platform": "facebook",
+      "url": "https://facebook.com/oranforutah",
+      "entityId": "oran-stainbrook",
+      "sourceUrl": "https://oranforutah.com/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "26",
+            "senate"
+          ]
+        ],
+        "excerpt": " Home - Oran for Utah Home Platform My Story Podcast Register to Vote Utah deserves true public servants. Support the only Independent running in District 26! Donate Carbon Emery Grand San Juan Utah Wasatch Meet Oran Stainbrook Born and raised in Utah, I have a Bachelor\u2019s degree in Architecture and am currently enrolled in a Master\u2019s program for Pu"
+      },
+      "fetchedAt": "2026-11-10T19:41:08.222651+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "f8ae3615a026",
+      "triageId": "2b9768b31923",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/oran-stainbrook/",
+      "offices": [
+        "State Senate District 26"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "oran-stainbrook",
+      "name": "Oran Stainbrook",
+      "platform": "instagram",
+      "url": "https://instagram.com/oranstainbrook",
+      "entityId": "oran-stainbrook",
+      "sourceUrl": "https://oranforutah.com/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "26",
+            "senate"
+          ]
+        ],
+        "excerpt": " Home - Oran for Utah Home Platform My Story Podcast Register to Vote Utah deserves true public servants. Support the only Independent running in District 26! Donate Carbon Emery Grand San Juan Utah Wasatch Meet Oran Stainbrook Born and raised in Utah, I have a Bachelor\u2019s degree in Architecture and am currently enrolled in a Master\u2019s program for Pu"
+      },
+      "fetchedAt": "2026-11-10T19:41:08.222651+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "181f01afd1bf",
+      "triageId": "447cbba25451",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2024,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/oran-stainbrook/",
+      "offices": [
+        "State Senate District 26"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "daniel-craig-friend",
+      "name": "Daniel Craig Friend",
+      "platform": "facebook",
+      "url": "https://facebook.com/friendforutah",
+      "entityId": "daniel-craig-friend",
+      "sourceUrl": "https://friendforutah.com/",
+      "anchorText": "Follow on Facebook Follow",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "62",
+            "house"
+          ]
+        ],
+        "excerpt": " Vote Friend For Utah | House District 62 Meet Daniel Issues Endorsements In the News Register to Vote Contact Get Involved Search for: 9 Get Involved \uf1ea Dan in the News \uf4ad Get in Touch \uf4fc Meet Daniel \uf080 Issues \uf1ea Daniel in the News \uf0ea Blog & Podcast \uf2b5 Get Involved \uf4ad Get in Touch \uf4b9 Make a Donation \uf772 Register to Vote DONATE FRIEND FOR UTAH BETTER SCHOOLS "
+      },
+      "fetchedAt": "2026-11-10T19:41:21.726226+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "9f0d710e6d58",
+      "triageId": "6386a8ef315e",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2022,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/daniel-craig-friend/",
+      "offices": [
+        "State House District 62"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "daniel-craig-friend",
+      "name": "Daniel Craig Friend",
+      "platform": "x",
+      "url": "https://x.com/friendforutah",
+      "entityId": "daniel-craig-friend",
+      "sourceUrl": "https://friendforutah.com/",
+      "anchorText": "Follow on Twitter Follow",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "62",
+            "house"
+          ]
+        ],
+        "excerpt": " Vote Friend For Utah | House District 62 Meet Daniel Issues Endorsements In the News Register to Vote Contact Get Involved Search for: 9 Get Involved \uf1ea Dan in the News \uf4ad Get in Touch \uf4fc Meet Daniel \uf080 Issues \uf1ea Daniel in the News \uf0ea Blog & Podcast \uf2b5 Get Involved \uf4ad Get in Touch \uf4b9 Make a Donation \uf772 Register to Vote DONATE FRIEND FOR UTAH BETTER SCHOOLS "
+      },
+      "fetchedAt": "2026-11-10T19:41:21.726226+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "3f26e38336a9",
+      "triageId": "e85fcefa6bbf",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2022,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/daniel-craig-friend/",
+      "offices": [
+        "State House District 62"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "daniel-craig-friend",
+      "name": "Daniel Craig Friend",
+      "platform": "tiktok",
+      "url": "https://tiktok.com/@friendforutah",
+      "entityId": "daniel-craig-friend",
+      "sourceUrl": "https://friendforutah.com/",
+      "anchorText": "Follow on TikTok Follow",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "62",
+            "house"
+          ]
+        ],
+        "excerpt": " Vote Friend For Utah | House District 62 Meet Daniel Issues Endorsements In the News Register to Vote Contact Get Involved Search for: 9 Get Involved \uf1ea Dan in the News \uf4ad Get in Touch \uf4fc Meet Daniel \uf080 Issues \uf1ea Daniel in the News \uf0ea Blog & Podcast \uf2b5 Get Involved \uf4ad Get in Touch \uf4b9 Make a Donation \uf772 Register to Vote DONATE FRIEND FOR UTAH BETTER SCHOOLS "
+      },
+      "fetchedAt": "2026-11-10T19:41:21.726226+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "743e911021cc",
+      "triageId": "2253013b62c4",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2022,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/daniel-craig-friend/",
+      "offices": [
+        "State House District 62"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "daniel-craig-friend",
+      "name": "Daniel Craig Friend",
+      "platform": "instagram",
+      "url": "https://instagram.com/friendforutah",
+      "entityId": "daniel-craig-friend",
+      "sourceUrl": "https://friendforutah.com/",
+      "anchorText": "Follow on Instagram Follow",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "62",
+            "house"
+          ]
+        ],
+        "excerpt": " Vote Friend For Utah | House District 62 Meet Daniel Issues Endorsements In the News Register to Vote Contact Get Involved Search for: 9 Get Involved \uf1ea Dan in the News \uf4ad Get in Touch \uf4fc Meet Daniel \uf080 Issues \uf1ea Daniel in the News \uf0ea Blog & Podcast \uf2b5 Get Involved \uf4ad Get in Touch \uf4b9 Make a Donation \uf772 Register to Vote DONATE FRIEND FOR UTAH BETTER SCHOOLS "
+      },
+      "fetchedAt": "2026-11-10T19:41:21.726226+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "15c274ba3515",
+      "triageId": "3ef017400b72",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2022,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/daniel-craig-friend/",
+      "offices": [
+        "State House District 62"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "daniel-craig-friend",
+      "name": "Daniel Craig Friend",
+      "platform": "youtube",
+      "url": "https://youtube.com/channel/UCqazMmmAQk3XI8-nnWc0epg",
+      "entityId": "daniel-craig-friend",
+      "sourceUrl": "https://friendforutah.com/",
+      "anchorText": "Follow on Youtube Follow",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "62",
+            "house"
+          ]
+        ],
+        "excerpt": " Vote Friend For Utah | House District 62 Meet Daniel Issues Endorsements In the News Register to Vote Contact Get Involved Search for: 9 Get Involved \uf1ea Dan in the News \uf4ad Get in Touch \uf4fc Meet Daniel \uf080 Issues \uf1ea Daniel in the News \uf0ea Blog & Podcast \uf2b5 Get Involved \uf4ad Get in Touch \uf4b9 Make a Donation \uf772 Register to Vote DONATE FRIEND FOR UTAH BETTER SCHOOLS "
+      },
+      "fetchedAt": "2026-11-10T19:41:21.726226+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "ca333e938caf",
+      "triageId": "188bc6030860",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2022,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/daniel-craig-friend/",
+      "offices": [
+        "State House District 62"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "karen-mayne",
+      "name": "Karen Mayne",
+      "platform": "x",
+      "url": "https://x.com/KarenMayneUT12",
+      "entityId": "karen-mayne",
+      "sourceUrl": "https://karenmaynecom.wordpress.com/",
+      "anchorText": "Twitter",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "12",
+            "senate"
+          ]
+        ],
+        "excerpt": " Karen Mayne \u2013 Utah State Senator District 12 Skip to content Home Blog About Newsletter Karen is Your Voice of Reason For the past two years, Karen has served as a member of Senate leadership. Serving on the powerful Executive Appropriations Committee funding prioritized programs, balancing the budget, and reduced state government. During the 2010"
+      },
+      "fetchedAt": "2026-11-10T19:41:26.606700+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "c89bd7a84e8a",
+      "triageId": "a8d05cefefde",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2022,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/karen-mayne/",
+      "offices": [
+        "State Senate District 12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "karen-mayne",
+      "name": "Karen Mayne",
+      "platform": "facebook",
+      "url": "https://facebook.com/karen.mayne",
+      "entityId": "karen-mayne",
+      "sourceUrl": "https://karenmaynecom.wordpress.com/",
+      "anchorText": "Facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "12",
+            "senate"
+          ]
+        ],
+        "excerpt": " Karen Mayne \u2013 Utah State Senator District 12 Skip to content Home Blog About Newsletter Karen is Your Voice of Reason For the past two years, Karen has served as a member of Senate leadership. Serving on the powerful Executive Appropriations Committee funding prioritized programs, balancing the budget, and reduced state government. During the 2010"
+      },
+      "fetchedAt": "2026-11-10T19:41:26.606700+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "debf8e341557",
+      "triageId": "b40c94cd488f",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2022,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/karen-mayne/",
+      "offices": [
+        "State Senate District 12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "karen-mayne",
+      "name": "Karen Mayne",
+      "platform": "instagram",
+      "url": "https://instagram.com/karen.mayne",
+      "entityId": "karen-mayne",
+      "sourceUrl": "https://karenmaynecom.wordpress.com/",
+      "anchorText": "Instagram",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "12",
+            "senate"
+          ]
+        ],
+        "excerpt": " Karen Mayne \u2013 Utah State Senator District 12 Skip to content Home Blog About Newsletter Karen is Your Voice of Reason For the past two years, Karen has served as a member of Senate leadership. Serving on the powerful Executive Appropriations Committee funding prioritized programs, balancing the budget, and reduced state government. During the 2010"
+      },
+      "fetchedAt": "2026-11-10T19:41:26.606700+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "154ede685bdc",
+      "triageId": "715205bd6432",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2022,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/karen-mayne/",
+      "offices": [
+        "State Senate District 12"
+      ],
+      "status": "pending_review"
+    }
+  ],
+  "contentHash": "cc062bddcfe8e340a712ffd2f0df9569ed581f8c361d21961c52e8850817d8d4"
+}

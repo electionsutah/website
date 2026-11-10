@@ -1,0 +1,380 @@
+{
+  "id": "exception-batch-01",
+  "status": "pending_user_approval",
+  "category": "current_person_review",
+  "proposalCount": 11,
+  "peopleCount": 5,
+  "proposals": [
+    {
+      "personId": "sara-snow",
+      "name": "Sara Snow",
+      "platform": "facebook",
+      "url": "https://facebook.com/SaraForUtah",
+      "entityId": "sara-snow",
+      "sourceUrl": "https://saraforutah.com/",
+      "anchorText": "Facebook Social Link",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": "Sara For Utah Sara For Utah WHO ARE YOU VOTING FOR Sara For Utah WHO ARE YOU VOTING FOR More Sara For Utah WHO ARE YOU VOTING FOR Sara For Utah WHO ARE YOU VOTING FOR Help Me Fight for Utah\u2019s Future CLICK HERE TO DONATE I'm Sara Snow and I'm running for Utah HD29 I believe most Utahns are not interested in partisan fights or politics. They want res"
+      },
+      "fetchedAt": "2026-11-10T19:40:39.280453+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "89e3d2dc526f",
+      "triageId": "f6f4eb5ddab0",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/sara-snow/",
+      "offices": [
+        "State House District 29"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "sara-snow",
+      "name": "Sara Snow",
+      "platform": "instagram",
+      "url": "https://instagram.com/saraforutah",
+      "entityId": "sara-snow",
+      "sourceUrl": "https://saraforutah.com/",
+      "anchorText": "Instagram Social Link",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": "Sara For Utah Sara For Utah WHO ARE YOU VOTING FOR Sara For Utah WHO ARE YOU VOTING FOR More Sara For Utah WHO ARE YOU VOTING FOR Sara For Utah WHO ARE YOU VOTING FOR Help Me Fight for Utah\u2019s Future CLICK HERE TO DONATE I'm Sara Snow and I'm running for Utah HD29 I believe most Utahns are not interested in partisan fights or politics. They want res"
+      },
+      "fetchedAt": "2026-11-10T19:40:39.280453+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "78d3abb8532d",
+      "triageId": "46eef04d7752",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/sara-snow/",
+      "offices": [
+        "State House District 29"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "sara-snow",
+      "name": "Sara Snow",
+      "platform": "x",
+      "url": "https://x.com/saraforutah",
+      "entityId": "sara-snow",
+      "sourceUrl": "https://saraforutah.com/",
+      "anchorText": "X",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": "Sara For Utah Sara For Utah WHO ARE YOU VOTING FOR Sara For Utah WHO ARE YOU VOTING FOR More Sara For Utah WHO ARE YOU VOTING FOR Sara For Utah WHO ARE YOU VOTING FOR Help Me Fight for Utah\u2019s Future CLICK HERE TO DONATE I'm Sara Snow and I'm running for Utah HD29 I believe most Utahns are not interested in partisan fights or politics. They want res"
+      },
+      "fetchedAt": "2026-11-10T19:40:39.280453+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "be4afb0c4a97",
+      "triageId": "6234822177a7",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/sara-snow/",
+      "offices": [
+        "State House District 29"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "stephen-l-whyte",
+      "name": "Stephen L. Whyte",
+      "platform": "facebook",
+      "url": "https://facebook.com/profile.php?id=100074002696040",
+      "entityId": "stephen-l-whyte",
+      "sourceUrl": "https://votestephenwhyte.com/",
+      "anchorText": "Facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Stephen Whyte 0 Skip to Content About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE Open Menu Close Menu About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE Open Menu Close Menu About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE A CONSERVATIVE, PRINCIPLED LEADE"
+      },
+      "fetchedAt": "2026-11-10T19:40:44.834596+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "4f5583c7f660",
+      "triageId": "3d6d58152c49",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/stephen-l-whyte/",
+      "offices": [
+        "State House District 63"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "stephen-l-whyte",
+      "name": "Stephen L. Whyte",
+      "platform": "instagram",
+      "url": "https://instagram.com/stephenlwhyte",
+      "entityId": "stephen-l-whyte",
+      "sourceUrl": "https://votestephenwhyte.com/",
+      "anchorText": "Instagram",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Stephen Whyte 0 Skip to Content About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE Open Menu Close Menu About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE Open Menu Close Menu About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE A CONSERVATIVE, PRINCIPLED LEADE"
+      },
+      "fetchedAt": "2026-11-10T19:40:44.834596+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "2bcb7efe4eb8",
+      "triageId": "5a4081e1cd7b",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/stephen-l-whyte/",
+      "offices": [
+        "State House District 63"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "stephen-l-whyte",
+      "name": "Stephen L. Whyte",
+      "platform": "youtube",
+      "url": "https://youtube.com/@repwhyte796",
+      "entityId": "stephen-l-whyte",
+      "sourceUrl": "https://votestephenwhyte.com/",
+      "anchorText": "YouTube",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Stephen Whyte 0 Skip to Content About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE Open Menu Close Menu About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE Open Menu Close Menu About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE A CONSERVATIVE, PRINCIPLED LEADE"
+      },
+      "fetchedAt": "2026-11-10T19:40:44.834596+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "a24d68e3e173",
+      "triageId": "a6e35d9073ca",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/stephen-l-whyte/",
+      "offices": [
+        "State House District 63"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "stephen-l-whyte",
+      "name": "Stephen L. Whyte",
+      "platform": "x",
+      "url": "https://x.com/RepWhyte",
+      "entityId": "stephen-l-whyte",
+      "sourceUrl": "https://votestephenwhyte.com/",
+      "anchorText": "X",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Stephen Whyte 0 Skip to Content About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE Open Menu Close Menu About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE Open Menu Close Menu About Working For You Issues Team Work Newsletter Media Volunteer Contact DONATE A CONSERVATIVE, PRINCIPLED LEADE"
+      },
+      "fetchedAt": "2026-11-10T19:40:44.834596+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "59892a11dc0e",
+      "triageId": "ccd4ba3fb8d0",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/stephen-l-whyte/",
+      "offices": [
+        "State House District 63"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "stephen-otterstrom",
+      "name": "Stephen Otterstrom",
+      "platform": "instagram",
+      "url": "https://instagram.com/stephenforslc",
+      "entityId": "stephen-otterstrom",
+      "sourceUrl": "https://www.stephenforslc.com/",
+      "anchorText": "Instagram",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          [],
+          []
+        ],
+        "excerpt": " Stephen Otterstrom for SLC Sign In My Account Espa\u00f1ol Platform Endorsements Voting Information Contact Donate Back P\u00e1gina Principal Plataforma Legislaci\u00f3n propuesta Endosos Contacto Back Legislation My Platform Sign In My Account Espa\u00f1ol P\u00e1gina Principal Plataforma Legislaci\u00f3n propuesta Endosos Contacto Platform Legislation My Platform Endorsement"
+      },
+      "fetchedAt": "2026-11-10T19:40:45.083359+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "7cb4e453e65d",
+      "triageId": "e2661feb69b5",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/stephen-otterstrom/",
+      "offices": [
+        "State House District 21",
+        "STATE HOUSE DISTRICT 21 (DEM)"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "stephen-otterstrom",
+      "name": "Stephen Otterstrom",
+      "platform": "facebook",
+      "url": "https://facebook.com/stephenforslc",
+      "entityId": "stephen-otterstrom",
+      "sourceUrl": "https://www.stephenforslc.com/",
+      "anchorText": "Facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          [],
+          []
+        ],
+        "excerpt": " Stephen Otterstrom for SLC Sign In My Account Espa\u00f1ol Platform Endorsements Voting Information Contact Donate Back P\u00e1gina Principal Plataforma Legislaci\u00f3n propuesta Endosos Contacto Back Legislation My Platform Sign In My Account Espa\u00f1ol P\u00e1gina Principal Plataforma Legislaci\u00f3n propuesta Endosos Contacto Platform Legislation My Platform Endorsement"
+      },
+      "fetchedAt": "2026-11-10T19:40:45.083359+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "b63faec003af",
+      "triageId": "37e8cfe6825e",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/stephen-otterstrom/",
+      "offices": [
+        "State House District 21",
+        "STATE HOUSE DISTRICT 21 (DEM)"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "travis-hysell",
+      "name": "Travis Hysell",
+      "platform": "youtube",
+      "url": "https://youtube.com/@travishysell1069",
+      "entityId": "travis-hysell",
+      "sourceUrl": "https://www.votehysell.com/",
+      "anchorText": "TikTok",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "55",
+            "house"
+          ]
+        ],
+        "excerpt": " Travis Hysell \u2013 HOUSE DISTRICT 55 Skip to content Travis Hysell HOUSE DISTRICT 55 Menu About Me Access to Quality Health Care Affordable Housing & Cost of Living Common Decency in Politics Frontpage Good Jobs for Working Families Strong Public Schools Building a better Utah TOGETHER Construction Worker \u2022 Volunteer \u2022 Dad I\u2019m running because every U"
+      },
+      "fetchedAt": "2026-11-10T19:40:47.332073+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "c49e8ca06496",
+      "triageId": "fd88ea84ba7c",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership. Anchor is mislabeled TikTok; destination is YouTube.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/travis-hysell/",
+      "offices": [
+        "State House District 55"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "walt-brooks",
+      "name": "Walt Brooks",
+      "platform": "facebook",
+      "url": "https://facebook.com/Walt-Brooks-for-State-Rep-75-1677413619164925",
+      "entityId": "walt-brooks",
+      "sourceUrl": "https://waltbrooks.com/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Walt Brooks for State Representative Home About Walt News Previous Newsletters On the Issues Photo Gallery Contact Thank you for the opportunity to serve as your representative. Over the past five terms, I'm proud that we've been able to pass legislation protecting the unborn, reducing regulations, securing 2nd Amendment rights, increasing transpa"
+      },
+      "fetchedAt": "2026-11-10T19:40:48.727568+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "eaec44ff5911",
+      "triageId": "21f116dacfc3",
+      "category": "current_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Review source context, redirects and account ownership.",
+      "latestFilingYear": 2026,
+      "historical": false,
+      "entityUrl": "https://www.electionsutah.org/people/walt-brooks/",
+      "offices": [
+        "State House District 75"
+      ],
+      "status": "pending_review"
+    }
+  ],
+  "contentHash": "d9ddd7a43f12573b1aa6d20904e2f16e22a779166eda318f160a61d63330b221"
+}

@@ -1,0 +1,155 @@
+{
+  "batchId": "batch-02",
+  "contentHash": "9c5b7aea1d57b4c68e9a35b437213060118d2b4855d3529d92d0e0f3da69ad56",
+  "approvedOn": "2026-11-10",
+  "approval": "User approved Batch 2 in conversation",
+  "applied": [
+    {
+      "personId": "brandon-young",
+      "url": "https://facebook.com/profile.php?id=61577546979131",
+      "source": "https://www.youngforhouse.com/",
+      "reviewId": "e77072ec6b1a"
+    },
+    {
+      "personId": "brandon-young",
+      "url": "https://instagram.com/bydirector",
+      "source": "https://www.youngforhouse.com/",
+      "reviewId": "766f66315d5f"
+    },
+    {
+      "personId": "brett-nielsen",
+      "url": "https://instagram.com/brettforutah",
+      "source": "https://www.brettforutah.com/",
+      "reviewId": "e4b17e75e1c0"
+    },
+    {
+      "personId": "brett-nielsen",
+      "url": "https://tiktok.com/@brettforutah",
+      "source": "https://www.brettforutah.com/",
+      "reviewId": "22fc951939f4"
+    },
+    {
+      "personId": "brett-nielsen",
+      "url": "https://facebook.com/brettforutah",
+      "source": "https://www.brettforutah.com/",
+      "reviewId": "7a5f33491502"
+    },
+    {
+      "personId": "brett-nielsen",
+      "url": "https://threads.com/@brettforutah",
+      "source": "https://www.brettforutah.com/",
+      "reviewId": "e72d1b11fc26"
+    },
+    {
+      "personId": "brooks-benson",
+      "url": "https://facebook.com/profile.php?id=100068498047572",
+      "source": "https://brooksbenson4utah.com/",
+      "reviewId": "e880c9f9f9db"
+    },
+    {
+      "personId": "brooks-benson",
+      "url": "https://instagram.com/brooksbenson4utahsenate",
+      "source": "https://brooksbenson4utah.com/",
+      "reviewId": "6bc544b313bf"
+    },
+    {
+      "personId": "cabot-w-nelson",
+      "url": "https://facebook.com/cabotnelson",
+      "source": "https://votecabotnelson.com/",
+      "reviewId": "e61eadd3e1d0"
+    },
+    {
+      "personId": "cabot-w-nelson",
+      "url": "https://x.com/cabotnelson",
+      "source": "https://votecabotnelson.com/",
+      "reviewId": "d5a89f4b3d68"
+    },
+    {
+      "personId": "cal-roberts",
+      "url": "https://facebook.com/calroberts.housedistrict46",
+      "source": "https://www.votecalroberts.com/",
+      "reviewId": "f4a8bf0784fb"
+    },
+    {
+      "personId": "cal-roberts",
+      "url": "https://linkedin.com/in/cal-roberts-a9761244",
+      "source": "https://www.votecalroberts.com/",
+      "reviewId": "1ee252990bc5"
+    },
+    {
+      "personId": "cal-roberts",
+      "url": "https://instagram.com/calroberts.housedistrict46",
+      "source": "https://www.votecalroberts.com/",
+      "reviewId": "f1d47838fdcd"
+    },
+    {
+      "personId": "cal-roberts",
+      "url": "https://substack.com/@calroberts46",
+      "source": "https://www.votecalroberts.com/",
+      "reviewId": "4f5c517d0dd9"
+    },
+    {
+      "personId": "clint-okerlund",
+      "url": "https://facebook.com/profile.php?id=61556878780395",
+      "source": "https://www.electclint.com/",
+      "reviewId": "9ff9d053ac6c"
+    },
+    {
+      "personId": "clint-okerlund",
+      "url": "https://instagram.com/electclint",
+      "source": "https://www.electclint.com/",
+      "reviewId": "619b2e0bfac2"
+    },
+    {
+      "personId": "cory-maloy",
+      "url": "https://facebook.com/RepCoryMaloy",
+      "source": "https://corymaloy.com/",
+      "reviewId": "48459f732114"
+    },
+    {
+      "personId": "cory-maloy",
+      "url": "https://linkedin.com/in/acorymaloy",
+      "source": "https://corymaloy.com/",
+      "reviewId": "523839a8cdc1"
+    },
+    {
+      "personId": "darren-croft",
+      "url": "https://facebook.com/Darren.Croft.House41",
+      "source": "https://darrencroft.org/",
+      "reviewId": "bb7e0d54b906"
+    },
+    {
+      "personId": "darren-croft",
+      "url": "https://instagram.com/Darren.Croft.House41",
+      "source": "https://darrencroft.org/",
+      "reviewId": "5f85df4f7deb"
+    },
+    {
+      "personId": "david-shallenberger",
+      "url": "https://facebook.com/david4utah",
+      "source": "https://www.david4utah.com/",
+      "reviewId": "156214b890c2"
+    },
+    {
+      "personId": "david-shallenberger",
+      "url": "https://instagram.com/david4utah",
+      "source": "https://www.david4utah.com/",
+      "reviewId": "e4a39c0f11e1"
+    },
+    {
+      "personId": "daylene-ann-redhorse",
+      "url": "https://facebook.com/profile.php?id=61591553882329",
+      "source": "https://www.votedaylene.com/",
+      "reviewId": "f803b9caf19b"
+    }
+  ],
+  "excluded": [],
+  "normalizations": [
+    {
+      "personId": "cabot-w-nelson",
+      "original": "https://x.com/cabotnelson ",
+      "normalized": "https://x.com/cabotnelson",
+      "reason": "Trim URL whitespace and serialize URL"
+    }
+  ]
+}

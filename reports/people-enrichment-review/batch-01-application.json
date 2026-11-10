@@ -1,0 +1,191 @@
+{
+  "batchId": "batch-01",
+  "contentHash": "b78efa21a22d12c631114a2a6f19c01a16c401eb95713459f6e86196ca061eeb",
+  "approvedOn": "2026-11-10",
+  "approval": "User approved Batch 1 in conversation",
+  "applied": [
+    {
+      "personId": "alan-jimenez",
+      "url": "https://facebook.com/alanforutah",
+      "source": "https://alanforutah.com/",
+      "reviewId": "5af6ff0c61b4"
+    },
+    {
+      "personId": "alan-jimenez",
+      "url": "https://instagram.com/alanforutah",
+      "source": "https://alanforutah.com/",
+      "reviewId": "e15201bf4f7e"
+    },
+    {
+      "personId": "amanda-finlayson",
+      "url": "https://instagram.com/afinlayson4slcschools",
+      "source": "https://afinlayson4slcschools.com/",
+      "reviewId": "091cfa0bafbd"
+    },
+    {
+      "personId": "amanda-finlayson",
+      "url": "https://linkedin.com/in/amanda-k-f-slc",
+      "source": "https://afinlayson4slcschools.com/",
+      "reviewId": "c7215157fb05"
+    },
+    {
+      "personId": "anita-dalrymple",
+      "url": "https://facebook.com/anita.dalrymple.2025",
+      "source": "https://anitadalrymple4utah.vote/",
+      "reviewId": "1c4d4f6929cd"
+    },
+    {
+      "personId": "anna-graff",
+      "url": "https://instagram.com/electannagraff",
+      "source": "https://www.electannagraff.com/",
+      "reviewId": "60f20895d450"
+    },
+    {
+      "personId": "anna-graff",
+      "url": "https://threads.com/@annagraff801",
+      "source": "https://www.electannagraff.com/",
+      "reviewId": "21b35d707ad4"
+    },
+    {
+      "personId": "anna-graff",
+      "url": "https://facebook.com/ElectAnnaGraff",
+      "source": "https://www.electannagraff.com/",
+      "reviewId": "84c136196891"
+    },
+    {
+      "personId": "annette-mcrae",
+      "url": "https://facebook.com/McRaeForUtah",
+      "source": "https://mcraeforsenate.com/",
+      "reviewId": "fe307e888b0a"
+    },
+    {
+      "personId": "annette-mcrae",
+      "url": "https://x.com/mcraeforutah",
+      "source": "https://mcraeforsenate.com/",
+      "reviewId": "e49c94df8d36"
+    },
+    {
+      "personId": "annette-mcrae",
+      "url": "https://instagram.com/mcraeforsenate",
+      "source": "https://mcraeforsenate.com/",
+      "reviewId": "0e4a28ea0769"
+    },
+    {
+      "personId": "annette-mcrae",
+      "url": "https://tiktok.com/@mommacrae",
+      "source": "https://mcraeforsenate.com/",
+      "reviewId": "fa7407d21b20"
+    },
+    {
+      "personId": "annette-mcrae",
+      "url": "https://linkedin.com/in/themommacrae",
+      "source": "https://mcraeforsenate.com/",
+      "reviewId": "139045183764"
+    },
+    {
+      "personId": "annette-mcrae",
+      "url": "https://x.com/mcraeforsenate",
+      "source": "https://mcraeforsenate.com/",
+      "reviewId": "32107906ced2"
+    },
+    {
+      "personId": "annette-mcrae",
+      "url": "https://facebook.com/McRaeForsenate",
+      "source": "https://mcraeforsenate.com/",
+      "reviewId": "c23e37e49890"
+    },
+    {
+      "personId": "anthony-loubet",
+      "url": "https://facebook.com/AnthonyLoubetUT",
+      "source": "https://www.anthonyloubet.com/",
+      "reviewId": "4641bdea4046"
+    },
+    {
+      "personId": "anthony-loubet",
+      "url": "https://instagram.com/anthonyloubetut",
+      "source": "https://www.anthonyloubet.com/",
+      "reviewId": "36534c6523aa"
+    },
+    {
+      "personId": "ashlee-matthews",
+      "url": "https://facebook.com/AshleeforUtah",
+      "source": "https://www.ashleeforutah.com/",
+      "reviewId": "1f40b643bb94"
+    },
+    {
+      "personId": "ashlee-matthews",
+      "url": "https://facebook.com/100456098248154",
+      "source": "https://www.ashleeforutah.com/",
+      "reviewId": "9577ffaed438"
+    },
+    {
+      "personId": "ashlee-matthews",
+      "url": "https://x.com/AshleeUT38",
+      "source": "https://www.ashleeforutah.com/",
+      "reviewId": "851dd07941ab"
+    },
+    {
+      "personId": "bianca-mittendorf",
+      "url": "https://instagram.com/elect_bianca_hd7",
+      "source": "https://www.electbianca.com/",
+      "reviewId": "cfcfddaab00b"
+    },
+    {
+      "personId": "bianca-mittendorf",
+      "url": "https://facebook.com/electbiancahd7",
+      "source": "https://www.electbianca.com/",
+      "reviewId": "42f2d9cf1821"
+    },
+    {
+      "personId": "bianca-mittendorf",
+      "url": "https://threads.com/@elect_bianca_hd7",
+      "source": "https://www.electbianca.com/",
+      "reviewId": "833895a2e758"
+    },
+    {
+      "personId": "bob-j-stevenson",
+      "url": "https://facebook.com/electbobstevenson",
+      "source": "https://www.electbobstevenson.com/",
+      "reviewId": "cc7ec8060fe5"
+    },
+    {
+      "personId": "bob-j-stevenson",
+      "url": "https://youtube.com/@BobStevensonUtah",
+      "source": "https://www.electbobstevenson.com/",
+      "reviewId": "420d917e294b"
+    },
+    {
+      "personId": "braeden-j-oswald",
+      "url": "https://instagram.com/braeden.j.oswald",
+      "source": "https://votebraedenoswald.com/",
+      "reviewId": "1f008a5c6200"
+    }
+  ],
+  "excluded": [
+    {
+      "personId": "ashlee-matthews",
+      "url": "https://facebook.com/photo.php",
+      "reason": "Photo endpoint, not an account"
+    },
+    {
+      "personId": "ashlee-matthews",
+      "url": "https://facebook.com/113431180365167",
+      "reason": "Embedded-feed link labeled Artesanías Mi México; unrelated business"
+    },
+    {
+      "personId": "ashlee-matthews",
+      "url": "https://facebook.com/4702314249832056",
+      "reason": "Embedded-feed topic link labeled #ChooseKearns"
+    },
+    {
+      "personId": "ashlee-matthews",
+      "url": "https://facebook.com/389460791151415",
+      "reason": "Embedded-feed topic link labeled #ShopSmall"
+    },
+    {
+      "personId": "ashlee-matthews",
+      "url": "https://facebook.com/492545704143315",
+      "reason": "Embedded-feed topic link labeled #shoplocal"
+    }
+  ]
+}

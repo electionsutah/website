@@ -1,0 +1,208 @@
+{
+  "id": "exception-batch-03",
+  "status": "pending_user_approval",
+  "category": "historical_person_review",
+  "proposalCount": 6,
+  "peopleCount": 1,
+  "proposals": [
+    {
+      "personId": "cheryl-nunn",
+      "name": "Cheryl Nunn",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/in/cherylnunn",
+      "entityId": "cheryl-nunn",
+      "sourceUrl": "https://www.cherylnunn.com/",
+      "anchorText": "JSON-LD sameAs Cheryl Nunn, MBAe\u2122",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Home - Cheryl Nunn, MBAe\u2122 Skip to content Home New? Start Here Services Insights About Request a Consultation Request a Consultation Main Menu About Beneficios de elegir un masaje er\u00f3tico en Barcelona para combatir el estr\u00e9s Biography Biz Insights Campaign Finance Reform Cheryl Nunn on News & Social Media Claves para una buena relaci\u00f3n con una esc"
+      },
+      "fetchedAt": "2026-11-10T19:41:28.720982+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "c9ad7814c583",
+      "triageId": "5e291ed02935",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2020,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/cheryl-nunn/",
+      "offices": [
+        "State House District 16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "cheryl-nunn",
+      "name": "Cheryl Nunn",
+      "platform": "x",
+      "url": "https://x.com/CherylNunn",
+      "entityId": "cheryl-nunn",
+      "sourceUrl": "https://www.cherylnunn.com/",
+      "anchorText": "X",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Home - Cheryl Nunn, MBAe\u2122 Skip to content Home New? Start Here Services Insights About Request a Consultation Request a Consultation Main Menu About Beneficios de elegir un masaje er\u00f3tico en Barcelona para combatir el estr\u00e9s Biography Biz Insights Campaign Finance Reform Cheryl Nunn on News & Social Media Claves para una buena relaci\u00f3n con una esc"
+      },
+      "fetchedAt": "2026-11-10T19:41:28.720982+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "3a386f4a9731",
+      "triageId": "3be5f7ece8ea",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2020,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/cheryl-nunn/",
+      "offices": [
+        "State House District 16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "cheryl-nunn",
+      "name": "Cheryl Nunn",
+      "platform": "facebook",
+      "url": "https://facebook.com/cheryl.nunn1",
+      "entityId": "cheryl-nunn",
+      "sourceUrl": "https://www.cherylnunn.com/",
+      "anchorText": "Facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Home - Cheryl Nunn, MBAe\u2122 Skip to content Home New? Start Here Services Insights About Request a Consultation Request a Consultation Main Menu About Beneficios de elegir un masaje er\u00f3tico en Barcelona para combatir el estr\u00e9s Biography Biz Insights Campaign Finance Reform Cheryl Nunn on News & Social Media Claves para una buena relaci\u00f3n con una esc"
+      },
+      "fetchedAt": "2026-11-10T19:41:28.720982+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "7b9cc2712262",
+      "triageId": "5167aba78ad2",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2020,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/cheryl-nunn/",
+      "offices": [
+        "State House District 16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "cheryl-nunn",
+      "name": "Cheryl Nunn",
+      "platform": "facebook",
+      "url": "https://facebook.com/CherylNunn16",
+      "entityId": "cheryl-nunn",
+      "sourceUrl": "https://www.cherylnunn.com/",
+      "anchorText": "JSON-LD sameAs Cheryl Nunn, MBAe\u2122",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Home - Cheryl Nunn, MBAe\u2122 Skip to content Home New? Start Here Services Insights About Request a Consultation Request a Consultation Main Menu About Beneficios de elegir un masaje er\u00f3tico en Barcelona para combatir el estr\u00e9s Biography Biz Insights Campaign Finance Reform Cheryl Nunn on News & Social Media Claves para una buena relaci\u00f3n con una esc"
+      },
+      "fetchedAt": "2026-11-10T19:41:28.720982+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "4b2aaaefab66",
+      "triageId": "e4b57c2019ca",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2020,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/cheryl-nunn/",
+      "offices": [
+        "State House District 16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "cheryl-nunn",
+      "name": "Cheryl Nunn",
+      "platform": "instagram",
+      "url": "https://instagram.com/cheryl_nunn",
+      "entityId": "cheryl-nunn",
+      "sourceUrl": "https://www.cherylnunn.com/",
+      "anchorText": "JSON-LD sameAs Cheryl Nunn, MBAe\u2122",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Home - Cheryl Nunn, MBAe\u2122 Skip to content Home New? Start Here Services Insights About Request a Consultation Request a Consultation Main Menu About Beneficios de elegir un masaje er\u00f3tico en Barcelona para combatir el estr\u00e9s Biography Biz Insights Campaign Finance Reform Cheryl Nunn on News & Social Media Claves para una buena relaci\u00f3n con una esc"
+      },
+      "fetchedAt": "2026-11-10T19:41:28.720982+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "e9edb632c46f",
+      "triageId": "3af002d259d3",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2020,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/cheryl-nunn/",
+      "offices": [
+        "State House District 16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "personId": "cheryl-nunn",
+      "name": "Cheryl Nunn",
+      "platform": "youtube",
+      "url": "https://youtube.com/c/CherylNunn_0",
+      "entityId": "cheryl-nunn",
+      "sourceUrl": "https://www.cherylnunn.com/",
+      "anchorText": "JSON-LD sameAs Cheryl Nunn, MBAe\u2122",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Home - Cheryl Nunn, MBAe\u2122 Skip to content Home New? Start Here Services Insights About Request a Consultation Request a Consultation Main Menu About Beneficios de elegir un masaje er\u00f3tico en Barcelona para combatir el estr\u00e9s Biography Biz Insights Campaign Finance Reform Cheryl Nunn on News & Social Media Claves para una buena relaci\u00f3n con una esc"
+      },
+      "fetchedAt": "2026-11-10T19:41:28.720982+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "2245d4264a97",
+      "triageId": "08a801382783",
+      "category": "historical_person_review",
+      "triageReason": "Primary page contains the person\u2019s name. Earlier filing-year record; verify continuity and current-versus-archival context.",
+      "latestFilingYear": 2020,
+      "historical": true,
+      "entityUrl": "https://www.electionsutah.org/people/cheryl-nunn/",
+      "offices": [
+        "State House District 16"
+      ],
+      "status": "pending_review"
+    }
+  ],
+  "contentHash": "8a5d667622f304b1fccb50a3c1f6b20811dc6efa91029410b253540e0fd7f8f9"
+}

@@ -1,0 +1,680 @@
+{
+  "id": "batch-03",
+  "status": "pending_user_approval",
+  "generatedAt": "2026-11-10T15:35:38.787987+00:00",
+  "runSource": "reports/people-enrichment-rerun.json",
+  "people": [
+    {
+      "id": "eric-last",
+      "name": "Eric Last",
+      "entityUrl": "https://www.electionsutah.org/people/eric-last/",
+      "existingLinks": [
+        {
+          "url": "https://ericlast.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 17"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H17-Eric-Last.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/ericlast4utah",
+          "entityId": "eric-last",
+          "sourceUrl": "https://ericlast.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "17",
+                "house"
+              ]
+            ],
+            "excerpt": " ERIC LAST 0 Skip to Content ERIC LAST About Priorities Volunteer Donate Open Menu Close Menu ERIC LAST About Priorities Volunteer Donate Open Menu Close Menu About Priorities Volunteer Donate Volunteer Opportunities We are looking for supporters who are willing to display a campaign sign in their yard. Click on the “Volunteer” tab above and fill o"
+          },
+          "fetchedAt": "2026-11-10T15:29:26.864558+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "b3ee4b0b4bc9"
+        },
+        {
+          "platform": "threads",
+          "url": "https://threads.com/@ericlast4utah",
+          "entityId": "eric-last",
+          "sourceUrl": "https://ericlast.com/",
+          "anchorText": "Threads",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "17",
+                "house"
+              ]
+            ],
+            "excerpt": " ERIC LAST 0 Skip to Content ERIC LAST About Priorities Volunteer Donate Open Menu Close Menu ERIC LAST About Priorities Volunteer Donate Open Menu Close Menu About Priorities Volunteer Donate Volunteer Opportunities We are looking for supporters who are willing to display a campaign sign in their yard. Click on the “Volunteer” tab above and fill o"
+          },
+          "fetchedAt": "2026-11-10T15:29:26.864558+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "85a65f15ae66"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61587108901980",
+          "entityId": "eric-last",
+          "sourceUrl": "https://ericlast.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "17",
+                "house"
+              ]
+            ],
+            "excerpt": " ERIC LAST 0 Skip to Content ERIC LAST About Priorities Volunteer Donate Open Menu Close Menu ERIC LAST About Priorities Volunteer Donate Open Menu Close Menu About Priorities Volunteer Donate Volunteer Opportunities We are looking for supporters who are willing to display a campaign sign in their yard. Click on the “Volunteer” tab above and fill o"
+          },
+          "fetchedAt": "2026-11-10T15:29:26.864558+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "fb889201e32e"
+        }
+      ]
+    },
+    {
+      "id": "fred-c-cox",
+      "name": "Fred C. Cox",
+      "entityUrl": "https://www.electionsutah.org/people/fred-c-cox/",
+      "existingLinks": [
+        {
+          "url": "fredcox4utah.com",
+          "platform": "website"
+        }
+      ],
+      "offices": [
+        "State House District 30"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H30-Fred-C.-Cox.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "x",
+          "url": "https://x.com/fredcox4utah",
+          "entityId": "fred-c-cox",
+          "sourceUrl": "https://fredcox4utah.com/",
+          "anchorText": "twitter",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "30",
+                "house"
+              ]
+            ],
+            "excerpt": " Fred C. Cox - for Utah House District 30 HOME ISSUES ENDORSEMENTS BIO EVENTS CONTACT DONATE Fred C. Cox, 2026 Candidate for Utah House District 30, Former Member, Utah House of Representatives, 2016, 2015, 2012, 2011. Past Radio Advertisement Fred C. Cox: Vote for someone that has been and will continue to be an advocate. I have scheduled the foll"
+          },
+          "fetchedAt": "2026-11-10T15:29:28.611698+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "5bdddb4619e8"
+        }
+      ]
+    },
+    {
+      "id": "garret-rushforth",
+      "name": "Garret Rushforth",
+      "entityUrl": "https://www.electionsutah.org/people/garret-rushforth/",
+      "existingLinks": [
+        {
+          "url": "https://voterushforth.com/about",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State Senate District 7"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/S7-Garret-Rushforth.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/rushforth4utah",
+          "entityId": "garret-rushforth",
+          "sourceUrl": "https://voterushforth.com/about",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "7",
+                "senate"
+              ]
+            ],
+            "excerpt": " voterushforth.com About Issues Contact Donate Now About Issues Contact Donate Now About Me Garret Rushforth Candidate: SD 7 Who am I? My name is Garret Rushforth. I am a native of Centerville. I’ve called Utah home for my entire life. I was raised by two of the hardest working parents anyone could ask to have. The oldest of seven children, I learn"
+          },
+          "fetchedAt": "2026-11-10T15:29:29.015415+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1f796abe168f"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/jituux",
+          "entityId": "garret-rushforth",
+          "sourceUrl": "https://voterushforth.com/about",
+          "anchorText": "Threads",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "7",
+                "senate"
+              ]
+            ],
+            "excerpt": " voterushforth.com About Issues Contact Donate Now About Issues Contact Donate Now About Me Garret Rushforth Candidate: SD 7 Who am I? My name is Garret Rushforth. I am a native of Centerville. I’ve called Utah home for my entire life. I was raised by two of the hardest working parents anyone could ask to have. The oldest of seven children, I learn"
+          },
+          "fetchedAt": "2026-11-10T15:29:29.015415+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "4ed43f443579"
+        }
+      ]
+    },
+    {
+      "id": "iva-williams",
+      "name": "Iva Williams",
+      "entityUrl": "https://www.electionsutah.org/people/iva-williams/",
+      "existingLinks": [
+        {
+          "url": "https://electivawilliams.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 42"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H42-Iva-Williams.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/elect.iva",
+          "entityId": "iva-williams",
+          "sourceUrl": "https://www.electivawilliams.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "42"
+              ]
+            ],
+            "excerpt": " Elect Iva Williams 0 Skip to Content About Priorities Endorsements Get Involved Contact Volunteer Calendar Donate Open Menu Close Menu About Priorities Endorsements Get Involved Contact Volunteer Calendar Donate Open Menu Close Menu About Priorities Endorsements Folder: Get Involved Back Contact Volunteer Calendar Donate I’m not interested in poli"
+          },
+          "fetchedAt": "2026-11-10T15:29:32.689165+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "63802253c9c0"
+        }
+      ]
+    },
+    {
+      "id": "james-rich",
+      "name": "James Rich",
+      "entityUrl": "https://www.electionsutah.org/people/james-rich/",
+      "existingLinks": [
+        {
+          "url": "https://move.forwardwith.us/",
+          "label": "Campaign website",
+          "source": "https://www.utahforwardparty.org/candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 6"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H6-James-Rich.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/move.forwardwith.us",
+          "entityId": "james-rich",
+          "sourceUrl": "https://move.forwardwith.us/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "6",
+                "house"
+              ]
+            ],
+            "excerpt": " James Rich for Utah House District 6 James Rich for Utah House District 6 Home Donate Issues About James People and Places Events Videos Contact Why Vote for James Rich? James Rich is a candidate who values people. The way we treat each other is important. James is running to show the good in others and build bridges. He wants to help Utahns succe"
+          },
+          "fetchedAt": "2026-11-10T15:35:21.635266+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "3920a1606048"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/@MoveForwardWithUs",
+          "entityId": "james-rich",
+          "sourceUrl": "https://move.forwardwith.us/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "6",
+                "house"
+              ]
+            ],
+            "excerpt": " James Rich for Utah House District 6 James Rich for Utah House District 6 Home Donate Issues About James People and Places Events Videos Contact Why Vote for James Rich? James Rich is a candidate who values people. The way we treat each other is important. James is running to show the good in others and build bridges. He wants to help Utahns succe"
+          },
+          "fetchedAt": "2026-11-10T15:35:21.635266+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "2d3c4189ac4b"
+        }
+      ]
+    },
+    {
+      "id": "jay-blain",
+      "name": "Jay Blain",
+      "entityUrl": "https://www.electionsutah.org/people/jay-blain/",
+      "existingLinks": [
+        {
+          "url": "https://www.jayblain.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "Granite School Board District 6"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/General11032026/ballot-items/01000000-68b8-edcd-8396-08df2650840f",
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b1a5-08dec66916b5"
+      ],
+      "candidates": [
+        {
+          "platform": "x",
+          "url": "https://x.com/@jbpascal",
+          "entityId": "jay-blain",
+          "sourceUrl": "https://www.jayblain.com/",
+          "anchorText": "Go to Twitter page",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "6",
+                "board",
+                "granite",
+                "school"
+              ]
+            ],
+            "excerpt": "Vote Jay Blain for Granite School District 6 | Blain Forward Home About Support Contact Home About Support Contact Vote Jay Blain For Granite School Board District 6 Committed to Granite District's future and your voice. Meet Jay Blain Dedicated to Granite School District, Jay brings experience, knowledge, and values to public education. He can app"
+          },
+          "fetchedAt": "2026-11-10T15:29:35.249849+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "60607e1596da"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/jay-blain-ab658724",
+          "entityId": "jay-blain",
+          "sourceUrl": "https://www.jayblain.com/",
+          "anchorText": "Go to Linkedin-in page",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "6",
+                "board",
+                "granite",
+                "school"
+              ]
+            ],
+            "excerpt": "Vote Jay Blain for Granite School District 6 | Blain Forward Home About Support Contact Home About Support Contact Vote Jay Blain For Granite School Board District 6 Committed to Granite District's future and your voice. Meet Jay Blain Dedicated to Granite School District, Jay brings experience, knowledge, and values to public education. He can app"
+          },
+          "fetchedAt": "2026-11-10T15:29:35.249849+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "5fc726aaa58f"
+        }
+      ]
+    },
+    {
+      "id": "jeffrey-anderson",
+      "name": "Jeffrey Anderson",
+      "entityUrl": "https://www.electionsutah.org/people/jeffrey-anderson/",
+      "existingLinks": [
+        {
+          "url": "https://jeffandersonforutahhouse.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 13"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H13-Jeffrey-Anderson.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61588558991700",
+          "entityId": "jeffrey-anderson",
+          "sourceUrl": "https://jeffandersonforutahhouse.com/",
+          "anchorText": "Facebook Social Link",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "13",
+                "house"
+              ]
+            ],
+            "excerpt": "Jeff Anderson for Utah House Jeffrey Garn Anderson Jeffrey Garn Anderson Jeffrey Garn Anderson Jeffrey Garn Anderson Stay tuned for updates on our initiatives. Sign up for notification of meet and greet Who I Am I am Jeffrey G. Anderson . My wife Donna and I live in Clinton and raised our family in Davis County. Our children and grandchildren all l"
+          },
+          "fetchedAt": "2026-11-10T15:29:36.190623+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "258653b15164"
+        }
+      ]
+    },
+    {
+      "id": "jennifer-smith",
+      "name": "Jennifer Smith",
+      "entityUrl": "https://www.electionsutah.org/people/jennifer-smith/",
+      "existingLinks": [
+        {
+          "url": "https://www.smithforslcschoolboard.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "Salt Lake School Board District 6"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/General11032026/ballot-items/01000000-68b8-edcd-868c-08df2650840f"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/smith4slc_schoolboard",
+          "entityId": "jennifer-smith",
+          "sourceUrl": "https://www.smithforslcschoolboard.com/",
+          "anchorText": "@smith4slc_schoolboard",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "6",
+                "board",
+                "lake",
+                "salt",
+                "school"
+              ]
+            ],
+            "excerpt": " Smith for SLC School Board 0 Ballots mail Oct 13 - Election Day Nov 3 - Check your registration here! Skip to Content Smith for SLC School Board Meet Jennifer Priorities Precinct 6 Follow Contact Donate Open Menu Close Menu Smith for SLC School Board Meet Jennifer Priorities Precinct 6 Follow Contact Donate Open Menu Close Menu Meet Jennifer Prior"
+          },
+          "fetchedAt": "2026-11-10T15:29:36.711521+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "7e20e26b4f30"
+        }
+      ]
+    },
+    {
+      "id": "jess-birtcher",
+      "name": "Jess Birtcher",
+      "entityUrl": "https://www.electionsutah.org/people/jess-birtcher/",
+      "existingLinks": [
+        {
+          "url": "https://yes2jesshd44.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 44"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H44-Jess-Birtcher.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/yes2jesshd44",
+          "entityId": "jess-birtcher",
+          "sourceUrl": "https://www.yes2jesshd44.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "44",
+                "house"
+              ]
+            ],
+            "excerpt": " Welcome to Jess Birtcher for HD44 Campaign Jess Birtcher for HD44 Home Priorities About Jess Get Involved Events Contact Endorsements Donate Home Priorities About Jess Get Involved Events Contact Endorsements Donate Welcome to Jess Birtcher for HD44 Campaign Utah House District 44 Next up...Meet & Greet Bingham Creek Regional Park 10200 South 4800"
+          },
+          "fetchedAt": "2026-11-10T15:35:23.562433+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "6ffaf871325f"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/yes2jesshd44",
+          "entityId": "jess-birtcher",
+          "sourceUrl": "https://www.yes2jesshd44.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "44",
+                "house"
+              ]
+            ],
+            "excerpt": " Welcome to Jess Birtcher for HD44 Campaign Jess Birtcher for HD44 Home Priorities About Jess Get Involved Events Contact Endorsements Donate Home Priorities About Jess Get Involved Events Contact Endorsements Donate Welcome to Jess Birtcher for HD44 Campaign Utah House District 44 Next up...Meet & Greet Bingham Creek Regional Park 10200 South 4800"
+          },
+          "fetchedAt": "2026-11-10T15:35:23.562433+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "40365ec3e71c"
+        }
+      ]
+    },
+    {
+      "id": "jill-f-koford",
+      "name": "Jill F. Koford",
+      "entityUrl": "https://www.electionsutah.org/people/jill-f-koford/",
+      "existingLinks": [
+        {
+          "url": "https://www.votekoford.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State Senate District 5"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/S5-Jill-F.-Koford.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "x",
+          "url": "https://x.com/JillKoford",
+          "entityId": "jill-f-koford",
+          "sourceUrl": "https://www.votekoford.com/",
+          "anchorText": "Twitter",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "5",
+                "senate"
+              ]
+            ],
+            "excerpt": " Jill Koford for Senate District 5 | Empower Your Voice – Join Now 0 Skip to Content Home Core Beliefs Priorities Results Join My Newsletter Newsletters September 2026 Newsletter August 2026 Newsletter July 2026 Newsletter June 2026 Newsletter April 2026 Newsletter 2026 Session Newsletter - Week 7 2026 Session Newsletter - Week 6 2026 Session Newsl"
+          },
+          "fetchedAt": "2026-11-10T15:29:37.015896+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "acdc92396494"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/VoteKoford",
+          "entityId": "jill-f-koford",
+          "sourceUrl": "https://www.votekoford.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "5",
+                "senate"
+              ]
+            ],
+            "excerpt": " Jill Koford for Senate District 5 | Empower Your Voice – Join Now 0 Skip to Content Home Core Beliefs Priorities Results Join My Newsletter Newsletters September 2026 Newsletter August 2026 Newsletter July 2026 Newsletter June 2026 Newsletter April 2026 Newsletter 2026 Session Newsletter - Week 7 2026 Session Newsletter - Week 6 2026 Session Newsl"
+          },
+          "fetchedAt": "2026-11-10T15:29:37.015896+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "d1d9ace8a59f"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/votekoford",
+          "entityId": "jill-f-koford",
+          "sourceUrl": "https://www.votekoford.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "5",
+                "senate"
+              ]
+            ],
+            "excerpt": " Jill Koford for Senate District 5 | Empower Your Voice – Join Now 0 Skip to Content Home Core Beliefs Priorities Results Join My Newsletter Newsletters September 2026 Newsletter August 2026 Newsletter July 2026 Newsletter June 2026 Newsletter April 2026 Newsletter 2026 Session Newsletter - Week 7 2026 Session Newsletter - Week 6 2026 Session Newsl"
+          },
+          "fetchedAt": "2026-11-10T15:29:37.015896+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "fa82191fd3b2"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/jill-koford-346358130",
+          "entityId": "jill-f-koford",
+          "sourceUrl": "https://www.votekoford.com/",
+          "anchorText": "LinkedIn",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "5",
+                "senate"
+              ]
+            ],
+            "excerpt": " Jill Koford for Senate District 5 | Empower Your Voice – Join Now 0 Skip to Content Home Core Beliefs Priorities Results Join My Newsletter Newsletters September 2026 Newsletter August 2026 Newsletter July 2026 Newsletter June 2026 Newsletter April 2026 Newsletter 2026 Session Newsletter - Week 7 2026 Session Newsletter - Week 6 2026 Session Newsl"
+          },
+          "fetchedAt": "2026-11-10T15:29:37.015896+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e64fad9cfc06"
+        }
+      ]
+    }
+  ],
+  "contentHash": "098942c562ca9c4a571b99560663b14c9c71d73d776854b811480f7f3a2e95f4"
+}

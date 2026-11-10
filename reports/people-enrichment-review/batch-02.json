@@ -1,0 +1,789 @@
+{
+  "id": "batch-02",
+  "status": "pending_user_approval",
+  "generatedAt": "2026-11-10T15:35:38.787987+00:00",
+  "runSource": "reports/people-enrichment-rerun.json",
+  "people": [
+    {
+      "id": "brandon-young",
+      "name": "Brandon Young",
+      "entityUrl": "https://www.electionsutah.org/people/brandon-young/",
+      "existingLinks": [
+        {
+          "url": "https://www.youngforhouse.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 14"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H14-Brandon-Young.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61577546979131",
+          "entityId": "brandon-young",
+          "sourceUrl": "https://www.youngforhouse.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "14",
+                "house"
+              ]
+            ],
+            "excerpt": " Brandon Young | A New Hope for our Future 0 Skip to Content Home FAQ Contact Events Donate Open Menu Close Menu Home FAQ Contact Events Donate Open Menu Close Menu Home FAQ Contact Events Donate platform Video A Better Economy. Stronger Education. Accountable Government. Utah families deserve an economy that works for them, schools that prepare th"
+          },
+          "fetchedAt": "2026-11-10T15:29:18.668076+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e77072ec6b1a"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/bydirector",
+          "entityId": "brandon-young",
+          "sourceUrl": "https://www.youngforhouse.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "14",
+                "house"
+              ]
+            ],
+            "excerpt": " Brandon Young | A New Hope for our Future 0 Skip to Content Home FAQ Contact Events Donate Open Menu Close Menu Home FAQ Contact Events Donate Open Menu Close Menu Home FAQ Contact Events Donate platform Video A Better Economy. Stronger Education. Accountable Government. Utah families deserve an economy that works for them, schools that prepare th"
+          },
+          "fetchedAt": "2026-11-10T15:29:18.668076+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "766f66315d5f"
+        }
+      ]
+    },
+    {
+      "id": "brett-nielsen",
+      "name": "Brett Nielsen",
+      "entityUrl": "https://www.electionsutah.org/people/brett-nielsen/",
+      "existingLinks": [
+        {
+          "url": "https://brettforutah.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 51"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H51-Brett-Nielsen.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/brettforutah",
+          "entityId": "brett-nielsen",
+          "sourceUrl": "https://www.brettforutah.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "51",
+                "house"
+              ]
+            ],
+            "excerpt": " Brett Nielsen for Utah House District 51 | Brett For Utah 0 Skip to Content Home About Articles and Stances SLT Article Candidate Questionnaire LWV Candidate Questionnaire Ballotpedia Candidate Questionnaire Network of Utah Moderates Candidate Comparison Brett’s Political Origin Story - by Caroline Gleich Open Menu Close Menu Home About Articles a"
+          },
+          "fetchedAt": "2026-11-10T15:29:18.928078+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e4b17e75e1c0"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://tiktok.com/@brettforutah",
+          "entityId": "brett-nielsen",
+          "sourceUrl": "https://www.brettforutah.com/",
+          "anchorText": "TikTok",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "51",
+                "house"
+              ]
+            ],
+            "excerpt": " Brett Nielsen for Utah House District 51 | Brett For Utah 0 Skip to Content Home About Articles and Stances SLT Article Candidate Questionnaire LWV Candidate Questionnaire Ballotpedia Candidate Questionnaire Network of Utah Moderates Candidate Comparison Brett’s Political Origin Story - by Caroline Gleich Open Menu Close Menu Home About Articles a"
+          },
+          "fetchedAt": "2026-11-10T15:29:18.928078+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "22fc951939f4"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/brettforutah",
+          "entityId": "brett-nielsen",
+          "sourceUrl": "https://www.brettforutah.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "51",
+                "house"
+              ]
+            ],
+            "excerpt": " Brett Nielsen for Utah House District 51 | Brett For Utah 0 Skip to Content Home About Articles and Stances SLT Article Candidate Questionnaire LWV Candidate Questionnaire Ballotpedia Candidate Questionnaire Network of Utah Moderates Candidate Comparison Brett’s Political Origin Story - by Caroline Gleich Open Menu Close Menu Home About Articles a"
+          },
+          "fetchedAt": "2026-11-10T15:29:18.928078+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "7a5f33491502"
+        },
+        {
+          "platform": "threads",
+          "url": "https://threads.com/@brettforutah",
+          "entityId": "brett-nielsen",
+          "sourceUrl": "https://www.brettforutah.com/",
+          "anchorText": "Threads",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "51",
+                "house"
+              ]
+            ],
+            "excerpt": " Brett Nielsen for Utah House District 51 | Brett For Utah 0 Skip to Content Home About Articles and Stances SLT Article Candidate Questionnaire LWV Candidate Questionnaire Ballotpedia Candidate Questionnaire Network of Utah Moderates Candidate Comparison Brett’s Political Origin Story - by Caroline Gleich Open Menu Close Menu Home About Articles a"
+          },
+          "fetchedAt": "2026-11-10T15:29:18.928078+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e72d1b11fc26"
+        }
+      ]
+    },
+    {
+      "id": "brooks-benson",
+      "name": "Brooks Benson",
+      "entityUrl": "https://www.electionsutah.org/people/brooks-benson/",
+      "existingLinks": [
+        {
+          "url": "https://brooksbenson4utah.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State Senate District 11"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/S11-Brooks-Benson.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=100068498047572",
+          "entityId": "brooks-benson",
+          "sourceUrl": "https://brooksbenson4utah.com/",
+          "anchorText": "JSON-LD sameAs Brooks Benson",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Brooks Benson · Republican Nominee · Utah State Senate District 11 ★ REPUBLICAN NOMINEE · 73% First-Ballot Convention Victory · Utah State Senate District 11 ★ B BROOKS BENSON NEW ENERGY FOR UTAH About Brooks Issues & Solutions Why I'm Running Get Involved DONATE Republican Nominee · Utah State Senate District 11 On to November. 73% first-ballot v"
+          },
+          "fetchedAt": "2026-11-10T15:29:19.811734+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e880c9f9f9db"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/brooksbenson4utahsenate",
+          "entityId": "brooks-benson",
+          "sourceUrl": "https://brooksbenson4utah.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Brooks Benson · Republican Nominee · Utah State Senate District 11 ★ REPUBLICAN NOMINEE · 73% First-Ballot Convention Victory · Utah State Senate District 11 ★ B BROOKS BENSON NEW ENERGY FOR UTAH About Brooks Issues & Solutions Why I'm Running Get Involved DONATE Republican Nominee · Utah State Senate District 11 On to November. 73% first-ballot v"
+          },
+          "fetchedAt": "2026-11-10T15:29:19.811734+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "6bc544b313bf"
+        }
+      ]
+    },
+    {
+      "id": "cabot-w-nelson",
+      "name": "Cabot W. Nelson",
+      "entityUrl": "https://www.electionsutah.org/people/cabot-w-nelson/",
+      "existingLinks": [
+        {
+          "url": "https://votecabotnelson.com/",
+          "label": "Campaign website",
+          "source": "https://www.utahforwardparty.org/candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 23"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H23-Cabot-W-Nelson.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/cabotnelson",
+          "entityId": "cabot-w-nelson",
+          "sourceUrl": "https://votecabotnelson.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "23",
+                "house"
+              ]
+            ],
+            "excerpt": " Cabot Nelson for HD 23 Home About Cabot Issues Values Contact Donate About Cabot Issues Values Contact Donate Cabot Nelson House District 23 Not Left. Not Right. FORWARD. About Me I am a native Utahn, having grown up in West Valley City and currently reside in the Sugar House neighborhood of Salt Lake City with my wife and two school aged boys. 20"
+          },
+          "fetchedAt": "2026-11-10T15:29:19.832787+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e61eadd3e1d0"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/cabotnelson ",
+          "entityId": "cabot-w-nelson",
+          "sourceUrl": "https://votecabotnelson.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "23",
+                "house"
+              ]
+            ],
+            "excerpt": " Cabot Nelson for HD 23 Home About Cabot Issues Values Contact Donate About Cabot Issues Values Contact Donate Cabot Nelson House District 23 Not Left. Not Right. FORWARD. About Me I am a native Utahn, having grown up in West Valley City and currently reside in the Sugar House neighborhood of Salt Lake City with my wife and two school aged boys. 20"
+          },
+          "fetchedAt": "2026-11-10T15:29:19.832787+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "d5a89f4b3d68"
+        }
+      ]
+    },
+    {
+      "id": "cal-roberts",
+      "name": "Cal Roberts",
+      "entityUrl": "https://www.electionsutah.org/people/cal-roberts/",
+      "existingLinks": [
+        {
+          "url": "https://www.votecalroberts.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 46"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H46-Cal-Roberts.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/calroberts.housedistrict46",
+          "entityId": "cal-roberts",
+          "sourceUrl": "https://www.votecalroberts.com/",
+          "anchorText": "Follow on Facebook Follow",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "46",
+                "house"
+              ]
+            ],
+            "excerpt": " Cal Roberts For State House 46 | Cal Roberts Republican Home Interviews Cal in the News Donate Select Page For Utah State House District 46 FIGHTING FOR DRAPER AND BLUFFDALE  SMALL BUSINESS AND LOW TAXES  OPTIONS IN EDUCATION AND PARENT CONTROL  LOCAL CONTROL  EFFICIENT, EFFECTIVE GOVERNMENT  \"ALL THE ABOVE\" ENERGY POLICY  THE RIGHT TO LIFE "
+          },
+          "fetchedAt": "2026-11-10T15:35:16.580563+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "f4a8bf0784fb"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/cal-roberts-a9761244",
+          "entityId": "cal-roberts",
+          "sourceUrl": "https://www.votecalroberts.com/",
+          "anchorText": "Follow on LinkedIn Follow",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "46",
+                "house"
+              ]
+            ],
+            "excerpt": " Cal Roberts For State House 46 | Cal Roberts Republican Home Interviews Cal in the News Donate Select Page For Utah State House District 46 FIGHTING FOR DRAPER AND BLUFFDALE  SMALL BUSINESS AND LOW TAXES  OPTIONS IN EDUCATION AND PARENT CONTROL  LOCAL CONTROL  EFFICIENT, EFFECTIVE GOVERNMENT  \"ALL THE ABOVE\" ENERGY POLICY  THE RIGHT TO LIFE "
+          },
+          "fetchedAt": "2026-11-10T15:35:16.580563+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1ee252990bc5"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/calroberts.housedistrict46",
+          "entityId": "cal-roberts",
+          "sourceUrl": "https://www.votecalroberts.com/",
+          "anchorText": "Follow on Instagram Follow",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "46",
+                "house"
+              ]
+            ],
+            "excerpt": " Cal Roberts For State House 46 | Cal Roberts Republican Home Interviews Cal in the News Donate Select Page For Utah State House District 46 FIGHTING FOR DRAPER AND BLUFFDALE  SMALL BUSINESS AND LOW TAXES  OPTIONS IN EDUCATION AND PARENT CONTROL  LOCAL CONTROL  EFFICIENT, EFFECTIVE GOVERNMENT  \"ALL THE ABOVE\" ENERGY POLICY  THE RIGHT TO LIFE "
+          },
+          "fetchedAt": "2026-11-10T15:35:16.580563+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "f1d47838fdcd"
+        },
+        {
+          "platform": "substack",
+          "url": "https://substack.com/@calroberts46",
+          "entityId": "cal-roberts",
+          "sourceUrl": "https://www.votecalroberts.com/",
+          "anchorText": "Follow on RSS Follow",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "46",
+                "house"
+              ]
+            ],
+            "excerpt": " Cal Roberts For State House 46 | Cal Roberts Republican Home Interviews Cal in the News Donate Select Page For Utah State House District 46 FIGHTING FOR DRAPER AND BLUFFDALE  SMALL BUSINESS AND LOW TAXES  OPTIONS IN EDUCATION AND PARENT CONTROL  LOCAL CONTROL  EFFICIENT, EFFECTIVE GOVERNMENT  \"ALL THE ABOVE\" ENERGY POLICY  THE RIGHT TO LIFE "
+          },
+          "fetchedAt": "2026-11-10T15:35:16.580563+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "4f5c517d0dd9"
+        }
+      ]
+    },
+    {
+      "id": "clint-okerlund",
+      "name": "Clint Okerlund",
+      "entityUrl": "https://www.electionsutah.org/people/clint-okerlund/",
+      "existingLinks": [
+        {
+          "url": "https://www.electclint.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 42"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H42-Clint-Okerlund.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61556878780395",
+          "entityId": "clint-okerlund",
+          "sourceUrl": "https://www.electclint.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "42",
+                "house"
+              ]
+            ],
+            "excerpt": " Re-Elect Clint Okerlund 0 Skip to Content Home Meet Clint Priorities Endorsements Events Contact Volunteer Donate Open Menu Close Menu Home Meet Clint Priorities Endorsements Events Contact Volunteer Donate Open Menu Close Menu Home Meet Clint Priorities Endorsements Events Contact Volunteer Donate A Message From Clint: I love Sandy and I want it "
+          },
+          "fetchedAt": "2026-11-10T15:29:22.431183+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "9ff9d053ac6c"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/electclint",
+          "entityId": "clint-okerlund",
+          "sourceUrl": "https://www.electclint.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "42",
+                "house"
+              ]
+            ],
+            "excerpt": " Re-Elect Clint Okerlund 0 Skip to Content Home Meet Clint Priorities Endorsements Events Contact Volunteer Donate Open Menu Close Menu Home Meet Clint Priorities Endorsements Events Contact Volunteer Donate Open Menu Close Menu Home Meet Clint Priorities Endorsements Events Contact Volunteer Donate A Message From Clint: I love Sandy and I want it "
+          },
+          "fetchedAt": "2026-11-10T15:29:22.431183+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "619b2e0bfac2"
+        }
+      ]
+    },
+    {
+      "id": "cory-maloy",
+      "name": "Cory Maloy",
+      "entityUrl": "https://www.electionsutah.org/people/cory-maloy/",
+      "existingLinks": [
+        {
+          "url": "https://www.corymaloy.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 52"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H52-Cory-Maloy.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/RepCoryMaloy",
+          "entityId": "cory-maloy",
+          "sourceUrl": "https://corymaloy.com/",
+          "anchorText": "Cory Maloy on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "52",
+                "house"
+              ]
+            ],
+            "excerpt": " Cory Maloy | Utah House District 52 Meet Cory The Record Issues Founding Docs The 52 Report Donate Stand With Cory in November Meet Cory The Record Issues Founding Docs The 52 Report Donate Contact Stand With Cory in November Representative Cory Maloy Utah Values. Firmly Defended. Experience and results. That’s the difference. Stand With Cory in N"
+          },
+          "fetchedAt": "2026-11-10T15:35:18.554163+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "48459f732114"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/acorymaloy",
+          "entityId": "cory-maloy",
+          "sourceUrl": "https://corymaloy.com/",
+          "anchorText": "Cory Maloy on LinkedIn",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "52",
+                "house"
+              ]
+            ],
+            "excerpt": " Cory Maloy | Utah House District 52 Meet Cory The Record Issues Founding Docs The 52 Report Donate Stand With Cory in November Meet Cory The Record Issues Founding Docs The 52 Report Donate Contact Stand With Cory in November Representative Cory Maloy Utah Values. Firmly Defended. Experience and results. That’s the difference. Stand With Cory in N"
+          },
+          "fetchedAt": "2026-11-10T15:35:18.554163+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "523839a8cdc1"
+        }
+      ]
+    },
+    {
+      "id": "darren-croft",
+      "name": "Darren Croft",
+      "entityUrl": "https://www.electionsutah.org/people/darren-croft/",
+      "existingLinks": [
+        {
+          "url": "https://darrencroft.org/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 41",
+        "STATE HOUSE DISTRICT 41 (REP)"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H41-Darren-Croft.pdf",
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/Darren.Croft.House41",
+          "entityId": "darren-croft",
+          "sourceUrl": "https://darrencroft.org/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "41",
+                "house"
+              ],
+              [
+                "41",
+                "house"
+              ]
+            ],
+            "excerpt": " Darren Croft for Utah House District 41 Skip to content Menu Menu Home Top 3 About Issues Endorsements News Contact Contribute DARREN CROFT State House District 41 Republican Nominee Optimizing Government for Utah Families Listens. Works. Solves. Why I’m Running My wife and I love this community and want to do more to give back. I can now dedicate"
+          },
+          "fetchedAt": "2026-11-10T15:35:18.634628+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "bb7e0d54b906"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/Darren.Croft.House41",
+          "entityId": "darren-croft",
+          "sourceUrl": "https://darrencroft.org/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "41",
+                "house"
+              ],
+              [
+                "41",
+                "house"
+              ]
+            ],
+            "excerpt": " Darren Croft for Utah House District 41 Skip to content Menu Menu Home Top 3 About Issues Endorsements News Contact Contribute DARREN CROFT State House District 41 Republican Nominee Optimizing Government for Utah Families Listens. Works. Solves. Why I’m Running My wife and I love this community and want to do more to give back. I can now dedicate"
+          },
+          "fetchedAt": "2026-11-10T15:35:18.634628+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "5f85df4f7deb"
+        }
+      ]
+    },
+    {
+      "id": "david-shallenberger",
+      "name": "David Shallenberger",
+      "entityUrl": "https://www.electionsutah.org/people/david-shallenberger/",
+      "existingLinks": [
+        {
+          "url": "https://house.utleg.gov/rep/SHALLD",
+          "label": "Official legislative profile",
+          "source": "https://house.utleg.gov/house-members/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.david4utah.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 58"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H58-David-Shallenberger.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/david4utah",
+          "entityId": "david-shallenberger",
+          "sourceUrl": "https://www.david4utah.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "58",
+                "house"
+              ]
+            ],
+            "excerpt": " Dave Shallenberger Utah House 58 0 Skip to Content Dave Shallenberger Utah House 58 Home Convention About David Issues Get Involved Open Menu Close Menu Dave Shallenberger Utah House 58 Home Convention About David Issues Get Involved Open Menu Close Menu Home Convention About David Issues Get Involved David Shallenberger Shares Your Cares and is r"
+          },
+          "fetchedAt": "2026-11-10T15:29:25.066931+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "156214b890c2"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/david4utah",
+          "entityId": "david-shallenberger",
+          "sourceUrl": "https://www.david4utah.com/",
+          "anchorText": "instagram-unauth",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "58",
+                "house"
+              ]
+            ],
+            "excerpt": " Dave Shallenberger Utah House 58 0 Skip to Content Dave Shallenberger Utah House 58 Home Convention About David Issues Get Involved Open Menu Close Menu Dave Shallenberger Utah House 58 Home Convention About David Issues Get Involved Open Menu Close Menu Home Convention About David Issues Get Involved David Shallenberger Shares Your Cares and is r"
+          },
+          "fetchedAt": "2026-11-10T15:29:25.066931+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e4a39c0f11e1"
+        }
+      ]
+    },
+    {
+      "id": "daylene-ann-redhorse",
+      "name": "Daylene Ann Redhorse",
+      "entityUrl": "https://www.electionsutah.org/people/daylene-ann-redhorse/",
+      "existingLinks": [
+        {
+          "url": "https://www.votedaylene.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "San Juan County Clerk/Auditor"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/san-juan-county-ut/elections/General11032026/ballot-items/01000000-2962-0a33-1c9e-08df2a44542d"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61591553882329",
+          "entityId": "daylene-ann-redhorse",
+          "sourceUrl": "https://www.votedaylene.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "clerk",
+                "county",
+                "juan",
+                "san"
+              ]
+            ],
+            "excerpt": " Daylene Redhorse for San Juan County Clerk Daylene Redhorse San Juan County Clerk ☰ Donate Meet Daylene Priorities Contact How to Vote DAYLENE REDHORSE For San Juan County Clerk Donate Volunteer Am I Registered? See My Priorities → Yá'át'ééh — Meet Daylene Daylene Redhorse Born and raised on the Navajo Nation, I've dedicated my life to serving com"
+          },
+          "fetchedAt": "2026-11-10T15:29:25.101861+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "f803b9caf19b"
+        }
+      ]
+    }
+  ],
+  "contentHash": "9c5b7aea1d57b4c68e9a35b437213060118d2b4855d3529d92d0e0f3da69ad56"
+}

@@ -1,0 +1,2300 @@
+{
+  "generatedAt": "2026-11-10T15:35:38.787987+00:00",
+  "status": "pending_user_approval",
+  "summary": {
+    "people": 100,
+    "statuses": {
+      "ambiguous": 46,
+      "blocked": 30,
+      "historical": 0,
+      "no_account_found": 16,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 8,
+      "verified": 0
+    },
+    "accountProposals": 132,
+    "productionChanges": 0,
+    "requests": 108,
+    "cacheHits": 0,
+    "conditional304": 68,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "batches": [
+    {
+      "id": "batch-01",
+      "contentHash": "b78efa21a22d12c631114a2a6f19c01a16c401eb95713459f6e86196ca061eeb",
+      "people": 10,
+      "accounts": 31,
+      "status": "applied_with_exclusions",
+      "appliedAccounts": 26,
+      "excludedAccounts": 5,
+      "applicationReport": "people-enrichment-review/batch-01-application.json"
+    },
+    {
+      "id": "batch-02",
+      "contentHash": "9c5b7aea1d57b4c68e9a35b437213060118d2b4855d3529d92d0e0f3da69ad56",
+      "people": 10,
+      "accounts": 23,
+      "status": "applied",
+      "appliedAccounts": 23,
+      "excludedAccounts": 0,
+      "applicationReport": "people-enrichment-review/batch-02-application.json"
+    },
+    {
+      "id": "batch-03",
+      "contentHash": "098942c562ca9c4a571b99560663b14c9c71d73d776854b811480f7f3a2e95f4",
+      "people": 10,
+      "accounts": 19,
+      "status": "applied_with_exclusions",
+      "appliedAccounts": 18,
+      "excludedAccounts": 1,
+      "applicationReport": "people-enrichment-review/batch-03-application.json"
+    },
+    {
+      "id": "batch-04",
+      "contentHash": "4e51ac02f52a04cca319981804f8f35b0fe09e55fb0c7cc33bfb2d522f8f1dac",
+      "people": 5,
+      "accounts": 19,
+      "status": "applied_with_exclusions",
+      "appliedAccounts": 10,
+      "excludedAccounts": 9,
+      "applicationReport": "people-enrichment-review/batch-04-application.json"
+    }
+  ],
+  "exceptions": [
+    {
+      "personId": "aaron-wiley",
+      "name": "Aaron Wiley",
+      "platform": "facebook",
+      "url": "https://facebook.com/TeePubliccom-865099700332025",
+      "entityId": "aaron-wiley",
+      "sourceUrl": "https://www.xtremeairacademy.com/all-star-cheer/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          [],
+          []
+        ],
+        "excerpt": " Kembartogel : Bandar Situs Togel Online Link Togel Resmi Live Macau - SGP - HK FREE US Shipping for Orders $70+ Shop Selamat datang di Bandar Situs Togel Online Terpercaya Clear Search Search Enter your favorite topic or theme and click here to find it. Account 0 Cart BUAT AKUN Explore Categories Popular Products Shop All Designs TOGEL TOGEL ONLIN"
+      },
+      "fetchedAt": "2026-11-10T15:29:13.962939+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "6a0f1f85a49d"
+    },
+    {
+      "personId": "aaron-wiley",
+      "name": "Aaron Wiley",
+      "platform": "instagram",
+      "url": "https://instagram.com/teepublic",
+      "entityId": "aaron-wiley",
+      "sourceUrl": "https://www.xtremeairacademy.com/all-star-cheer/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          [],
+          []
+        ],
+        "excerpt": " Kembartogel : Bandar Situs Togel Online Link Togel Resmi Live Macau - SGP - HK FREE US Shipping for Orders $70+ Shop Selamat datang di Bandar Situs Togel Online Terpercaya Clear Search Search Enter your favorite topic or theme and click here to find it. Account 0 Cart BUAT AKUN Explore Categories Popular Products Shop All Designs TOGEL TOGEL ONLIN"
+      },
+      "fetchedAt": "2026-11-10T15:29:13.962939+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "9df8021ee194"
+    },
+    {
+      "personId": "aaron-wiley",
+      "name": "Aaron Wiley",
+      "platform": "tiktok",
+      "url": "https://tiktok.com/@teepublic",
+      "entityId": "aaron-wiley",
+      "sourceUrl": "https://www.xtremeairacademy.com/all-star-cheer/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          [],
+          []
+        ],
+        "excerpt": " Kembartogel : Bandar Situs Togel Online Link Togel Resmi Live Macau - SGP - HK FREE US Shipping for Orders $70+ Shop Selamat datang di Bandar Situs Togel Online Terpercaya Clear Search Search Enter your favorite topic or theme and click here to find it. Account 0 Cart BUAT AKUN Explore Categories Popular Products Shop All Designs TOGEL TOGEL ONLIN"
+      },
+      "fetchedAt": "2026-11-10T15:29:13.962939+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "50fe291fbb39"
+    },
+    {
+      "personId": "aaron-wiley",
+      "name": "Aaron Wiley",
+      "platform": "x",
+      "url": "https://x.com/TeePublic",
+      "entityId": "aaron-wiley",
+      "sourceUrl": "https://www.xtremeairacademy.com/all-star-cheer/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          [],
+          []
+        ],
+        "excerpt": " Kembartogel : Bandar Situs Togel Online Link Togel Resmi Live Macau - SGP - HK FREE US Shipping for Orders $70+ Shop Selamat datang di Bandar Situs Togel Online Terpercaya Clear Search Search Enter your favorite topic or theme and click here to find it. Account 0 Cart BUAT AKUN Explore Categories Popular Products Shop All Designs TOGEL TOGEL ONLIN"
+      },
+      "fetchedAt": "2026-11-10T15:29:13.962939+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "9ac73a2454f3"
+    },
+    {
+      "personId": "allison-e-goulais",
+      "name": "Allison E. Goulais",
+      "platform": "instagram",
+      "url": "https://instagram.com/voteallisong",
+      "entityId": "allison-e-goulais",
+      "sourceUrl": "https://www.voteallison.org/",
+      "anchorText": "Instagram",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "cache",
+            "logan"
+          ]
+        ],
+        "excerpt": " Allie for Cache 0 Skip to Content Allie for Cache About Donate Endorsements Contact Open Menu Close Menu Allie for Cache About Donate Endorsements Contact Open Menu Close Menu About Donate Endorsements Contact Empowering Economic Growth through Strategic Support Learn More The Issues Water Conservation Budget & use of funds Transparency Housing an"
+      },
+      "fetchedAt": "2026-11-10T15:29:14.285926+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "4e4e40919f94"
+    },
+    {
+      "personId": "angela-choberka",
+      "name": "Angela Choberka",
+      "platform": "facebook",
+      "url": "https://facebook.com/choberkaogdencity1",
+      "entityId": "angela-choberka",
+      "sourceUrl": "https://www.angelachoberka.com/",
+      "anchorText": "facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": "Angela Choberka Skip navigation menu Meet Angela Issues Get Involved Events Contact Donate Email Email Phone Phone ZIP Code ZIP Code Submit By providing your mobile phone number, you are giving your consent to receive calls and SMS/MMS messages to that number from the Committee to Elect Angela Choberka. Msg frequency varies. You may reply STOP to o"
+      },
+      "fetchedAt": "2026-11-10T15:29:14.824954+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "950ee964122c"
+    },
+    {
+      "personId": "angela-choberka",
+      "name": "Angela Choberka",
+      "platform": "instagram",
+      "url": "https://instagram.com/angelachoberkaforutah",
+      "entityId": "angela-choberka",
+      "sourceUrl": "https://www.angelachoberka.com/",
+      "anchorText": "instagram",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": "Angela Choberka Skip navigation menu Meet Angela Issues Get Involved Events Contact Donate Email Email Phone Phone ZIP Code ZIP Code Submit By providing your mobile phone number, you are giving your consent to receive calls and SMS/MMS messages to that number from the Committee to Elect Angela Choberka. Msg frequency varies. You may reply STOP to o"
+      },
+      "fetchedAt": "2026-11-10T15:29:14.824954+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "4c615f3a2004"
+    },
+    {
+      "personId": "angela-choberka",
+      "name": "Angela Choberka",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/in/angela-choberka-8b812017",
+      "entityId": "angela-choberka",
+      "sourceUrl": "https://www.angelachoberka.com/",
+      "anchorText": "linkedin",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": "Angela Choberka Skip navigation menu Meet Angela Issues Get Involved Events Contact Donate Email Email Phone Phone ZIP Code ZIP Code Submit By providing your mobile phone number, you are giving your consent to receive calls and SMS/MMS messages to that number from the Committee to Elect Angela Choberka. Msg frequency varies. You may reply STOP to o"
+      },
+      "fetchedAt": "2026-11-10T15:29:14.824954+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "cb1e7bd65d0d"
+    },
+    {
+      "personId": "angela-choberka",
+      "name": "Angela Choberka",
+      "platform": "threads",
+      "url": "https://threads.com/@angelachoberkaforutah",
+      "entityId": "angela-choberka",
+      "sourceUrl": "https://www.angelachoberka.com/",
+      "anchorText": "threads",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": "Angela Choberka Skip navigation menu Meet Angela Issues Get Involved Events Contact Donate Email Email Phone Phone ZIP Code ZIP Code Submit By providing your mobile phone number, you are giving your consent to receive calls and SMS/MMS messages to that number from the Committee to Elect Angela Choberka. Msg frequency varies. You may reply STOP to o"
+      },
+      "fetchedAt": "2026-11-10T15:29:14.824954+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "fd480029cae9"
+    },
+    {
+      "personId": "benyde-walker",
+      "name": "Benyde Walker",
+      "platform": "instagram",
+      "url": "https://instagram.com/benydewalker",
+      "entityId": "benyde-walker",
+      "sourceUrl": "https://www.benydewalker.com/",
+      "anchorText": "Instagram",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          []
+        ],
+        "excerpt": " Benyde Walker | Get Involved Today 0 Skip to Content Home Key Issues About Contact Volunteer Donate Open Menu Close Menu Home Key Issues About Contact Volunteer Donate Open Menu Close Menu Home Key Issues About Contact Volunteer Donate Rooted in community. Driven by family. Fighting for fairness. Donate Equal Education regardless of wealth Afforda"
+      },
+      "fetchedAt": "2026-11-10T15:29:16.787647+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "6a99a8e6b250"
+    },
+    {
+      "personId": "brady-brammer",
+      "name": "Brady Brammer",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/company/utah-senate",
+      "entityId": "brady-brammer",
+      "sourceUrl": "https://senate.utah.gov/sen/BRAMMB/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:15.560206+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "be484326f6fb"
+    },
+    {
+      "personId": "brady-brammer",
+      "name": "Brady Brammer",
+      "platform": "facebook",
+      "url": "https://facebook.com/utahsenate",
+      "entityId": "brady-brammer",
+      "sourceUrl": "https://senate.utah.gov/sen/BRAMMB/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:15.560206+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "3bc62623d028"
+    },
+    {
+      "personId": "brady-brammer",
+      "name": "Brady Brammer",
+      "platform": "x",
+      "url": "https://x.com/utahsenate",
+      "entityId": "brady-brammer",
+      "sourceUrl": "https://senate.utah.gov/sen/BRAMMB/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:15.560206+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "566083185815"
+    },
+    {
+      "personId": "brady-brammer",
+      "name": "Brady Brammer",
+      "platform": "instagram",
+      "url": "https://instagram.com/utahsenate",
+      "entityId": "brady-brammer",
+      "sourceUrl": "https://senate.utah.gov/sen/BRAMMB/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:15.560206+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "debb5b818f29"
+    },
+    {
+      "personId": "brady-brammer",
+      "name": "Brady Brammer",
+      "platform": "youtube",
+      "url": "https://youtube.com/channel/UCdiJ78NlHsdQN44Sq9nf0uA",
+      "entityId": "brady-brammer",
+      "sourceUrl": "https://senate.utah.gov/sen/BRAMMB/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:15.560206+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "d54f801786f1"
+    },
+    {
+      "personId": "cj-christina-hernandez",
+      "name": "“CJ” Christina Hernandez",
+      "platform": "facebook",
+      "url": "https://facebook.com/profile.php?id=61585113681133",
+      "entityId": "cj-christina-hernandez",
+      "sourceUrl": "https://www.cjforsenate.com/",
+      "anchorText": "JSON-LD sameAs CJ for UT Senate",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "5",
+            "senate"
+          ],
+          [
+            "5",
+            "senate"
+          ]
+        ],
+        "excerpt": " CJ for Senate Skip to main content Home Volunteer About Platform Events Endorsements EN/ES Donate Why I'm Running I’m running to give back to the COMMUNITY that shaped me . I was raised in Weber County by a single mother who taught in our public schools, and today my husband and I are raising a blended family of five young adults. I know the chall"
+      },
+      "fetchedAt": "2026-11-10T15:35:17.965824+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "98c1437088d6"
+    },
+    {
+      "personId": "cj-christina-hernandez",
+      "name": "“CJ” Christina Hernandez",
+      "platform": "instagram",
+      "url": "https://instagram.com/cjforutsenate",
+      "entityId": "cj-christina-hernandez",
+      "sourceUrl": "https://www.cjforsenate.com/",
+      "anchorText": "JSON-LD sameAs CJ for UT Senate",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "5",
+            "senate"
+          ],
+          [
+            "5",
+            "senate"
+          ]
+        ],
+        "excerpt": " CJ for Senate Skip to main content Home Volunteer About Platform Events Endorsements EN/ES Donate Why I'm Running I’m running to give back to the COMMUNITY that shaped me . I was raised in Weber County by a single mother who taught in our public schools, and today my husband and I are raising a blended family of five young adults. I know the chall"
+      },
+      "fetchedAt": "2026-11-10T15:35:17.965824+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "5c6ce85eb38a"
+    },
+    {
+      "personId": "cj-christina-hernandez",
+      "name": "“CJ” Christina Hernandez",
+      "platform": "tiktok",
+      "url": "https://tiktok.com/@cjin.ut",
+      "entityId": "cj-christina-hernandez",
+      "sourceUrl": "https://www.cjforsenate.com/",
+      "anchorText": "JSON-LD sameAs CJ for UT Senate",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "5",
+            "senate"
+          ],
+          [
+            "5",
+            "senate"
+          ]
+        ],
+        "excerpt": " CJ for Senate Skip to main content Home Volunteer About Platform Events Endorsements EN/ES Donate Why I'm Running I’m running to give back to the COMMUNITY that shaped me . I was raised in Weber County by a single mother who taught in our public schools, and today my husband and I are raising a blended family of five young adults. I know the chall"
+      },
+      "fetchedAt": "2026-11-10T15:35:17.965824+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "d7cab48c97c0"
+    },
+    {
+      "personId": "cj-christina-hernandez",
+      "name": "“CJ” Christina Hernandez",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/in/christina-cj-hernandez",
+      "entityId": "cj-christina-hernandez",
+      "sourceUrl": "https://www.cjforsenate.com/",
+      "anchorText": "JSON-LD sameAs CJ Hernandez",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "5",
+            "senate"
+          ],
+          [
+            "5",
+            "senate"
+          ]
+        ],
+        "excerpt": " CJ for Senate Skip to main content Home Volunteer About Platform Events Endorsements EN/ES Donate Why I'm Running I’m running to give back to the COMMUNITY that shaped me . I was raised in Weber County by a single mother who taught in our public schools, and today my husband and I are raising a blended family of five young adults. I know the chall"
+      },
+      "fetchedAt": "2026-11-10T15:35:17.965824+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "da50c2463c77"
+    },
+    {
+      "personId": "daniel-mccay",
+      "name": "Daniel McCay",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/company/utah-senate",
+      "entityId": "daniel-mccay",
+      "sourceUrl": "https://senate.utah.gov/sen/MCCAYD/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:18.591136+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "8d4a945286b1"
+    },
+    {
+      "personId": "daniel-mccay",
+      "name": "Daniel McCay",
+      "platform": "facebook",
+      "url": "https://facebook.com/utahsenate",
+      "entityId": "daniel-mccay",
+      "sourceUrl": "https://senate.utah.gov/sen/MCCAYD/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:18.591136+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "e46cb3eb598f"
+    },
+    {
+      "personId": "daniel-mccay",
+      "name": "Daniel McCay",
+      "platform": "x",
+      "url": "https://x.com/utahsenate",
+      "entityId": "daniel-mccay",
+      "sourceUrl": "https://senate.utah.gov/sen/MCCAYD/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:18.591136+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "34ca725e1d87"
+    },
+    {
+      "personId": "daniel-mccay",
+      "name": "Daniel McCay",
+      "platform": "instagram",
+      "url": "https://instagram.com/utahsenate",
+      "entityId": "daniel-mccay",
+      "sourceUrl": "https://senate.utah.gov/sen/MCCAYD/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:18.591136+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "ff62524ec4f1"
+    },
+    {
+      "personId": "daniel-mccay",
+      "name": "Daniel McCay",
+      "platform": "youtube",
+      "url": "https://youtube.com/channel/UCdiJ78NlHsdQN44Sq9nf0uA",
+      "entityId": "daniel-mccay",
+      "sourceUrl": "https://senate.utah.gov/sen/MCCAYD/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ],
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:18.591136+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "aa70433cfc37"
+    },
+    {
+      "personId": "erin-longacre",
+      "name": "Erin Longacre",
+      "platform": "facebook",
+      "url": "https://facebook.com/UtahPublicEducation",
+      "entityId": "erin-longacre",
+      "sourceUrl": "https://schools.utah.gov/board/members/utah/erinlongacre",
+      "anchorText": "Facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "7",
+            "board",
+            "school",
+            "term"
+          ]
+        ],
+        "excerpt": " Erin Longacre Menu Close Menu Translate Arabic Chinese (Simplified) Chinese (Traditional) Armenian Bosnian Croation English French German Italian Kurdish Pashto Portuguese Russian Serbian Spanish Sundanese Swahili Thai Ukrainian Urdu Vietnamese Contact Us Connect with the Superintendent Educator Licensing Public Education Hotline Public Comments O"
+      },
+      "fetchedAt": "2026-11-10T15:35:19.961952+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "24dbbed6a912"
+    },
+    {
+      "personId": "erin-longacre",
+      "name": "Erin Longacre",
+      "platform": "youtube",
+      "url": "https://youtube.com/@USBE-Media",
+      "entityId": "erin-longacre",
+      "sourceUrl": "https://schools.utah.gov/board/members/utah/erinlongacre",
+      "anchorText": "YouTube",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "7",
+            "board",
+            "school",
+            "term"
+          ]
+        ],
+        "excerpt": " Erin Longacre Menu Close Menu Translate Arabic Chinese (Simplified) Chinese (Traditional) Armenian Bosnian Croation English French German Italian Kurdish Pashto Portuguese Russian Serbian Spanish Sundanese Swahili Thai Ukrainian Urdu Vietnamese Contact Us Connect with the Superintendent Educator Licensing Public Education Hotline Public Comments O"
+      },
+      "fetchedAt": "2026-11-10T15:35:19.961952+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "c1a0cc66a829"
+    },
+    {
+      "personId": "erin-longacre",
+      "name": "Erin Longacre",
+      "platform": "x",
+      "url": "https://x.com/utboardofed",
+      "entityId": "erin-longacre",
+      "sourceUrl": "https://schools.utah.gov/board/members/utah/erinlongacre",
+      "anchorText": "Twitter",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "7",
+            "board",
+            "school",
+            "term"
+          ]
+        ],
+        "excerpt": " Erin Longacre Menu Close Menu Translate Arabic Chinese (Simplified) Chinese (Traditional) Armenian Bosnian Croation English French German Italian Kurdish Pashto Portuguese Russian Serbian Spanish Sundanese Swahili Thai Ukrainian Urdu Vietnamese Contact Us Connect with the Superintendent Educator Licensing Public Education Hotline Public Comments O"
+      },
+      "fetchedAt": "2026-11-10T15:35:19.961952+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "040369a48426"
+    },
+    {
+      "personId": "evan-j-vickers",
+      "name": "Evan J. Vickers",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/company/utah-senate",
+      "entityId": "evan-j-vickers",
+      "sourceUrl": "https://senate.utah.gov/sen/VICKEEJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:20.092692+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "5ffe2d49b097"
+    },
+    {
+      "personId": "evan-j-vickers",
+      "name": "Evan J. Vickers",
+      "platform": "facebook",
+      "url": "https://facebook.com/utahsenate",
+      "entityId": "evan-j-vickers",
+      "sourceUrl": "https://senate.utah.gov/sen/VICKEEJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:20.092692+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "f5d9417a4a9e"
+    },
+    {
+      "personId": "evan-j-vickers",
+      "name": "Evan J. Vickers",
+      "platform": "x",
+      "url": "https://x.com/utahsenate",
+      "entityId": "evan-j-vickers",
+      "sourceUrl": "https://senate.utah.gov/sen/VICKEEJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:20.092692+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "e92de6b1a275"
+    },
+    {
+      "personId": "evan-j-vickers",
+      "name": "Evan J. Vickers",
+      "platform": "instagram",
+      "url": "https://instagram.com/utahsenate",
+      "entityId": "evan-j-vickers",
+      "sourceUrl": "https://senate.utah.gov/sen/VICKEEJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:20.092692+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "233df5da3ad6"
+    },
+    {
+      "personId": "evan-j-vickers",
+      "name": "Evan J. Vickers",
+      "platform": "youtube",
+      "url": "https://youtube.com/channel/UCdiJ78NlHsdQN44Sq9nf0uA",
+      "entityId": "evan-j-vickers",
+      "sourceUrl": "https://senate.utah.gov/sen/VICKEEJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:20.092692+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "9b420026ff19"
+    },
+    {
+      "personId": "jen-plumb",
+      "name": "Jen Plumb",
+      "platform": "linkedin",
+      "url": "https://linkedin.com/company/utah-senate",
+      "entityId": "jen-plumb",
+      "sourceUrl": "https://senate.utah.gov/sen/PLUMBJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:22.716955+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "58a2622a5751"
+    },
+    {
+      "personId": "jen-plumb",
+      "name": "Jen Plumb",
+      "platform": "facebook",
+      "url": "https://facebook.com/utahsenate",
+      "entityId": "jen-plumb",
+      "sourceUrl": "https://senate.utah.gov/sen/PLUMBJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:22.716955+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "2ec143e8fe29"
+    },
+    {
+      "personId": "jen-plumb",
+      "name": "Jen Plumb",
+      "platform": "x",
+      "url": "https://x.com/utahsenate",
+      "entityId": "jen-plumb",
+      "sourceUrl": "https://senate.utah.gov/sen/PLUMBJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:22.716955+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "888426f97eb9"
+    },
+    {
+      "personId": "jen-plumb",
+      "name": "Jen Plumb",
+      "platform": "instagram",
+      "url": "https://instagram.com/utahsenate",
+      "entityId": "jen-plumb",
+      "sourceUrl": "https://senate.utah.gov/sen/PLUMBJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:22.716955+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "3d1f083dc271"
+    },
+    {
+      "personId": "jen-plumb",
+      "name": "Jen Plumb",
+      "platform": "youtube",
+      "url": "https://youtube.com/channel/UCdiJ78NlHsdQN44Sq9nf0uA",
+      "entityId": "jen-plumb",
+      "sourceUrl": "https://senate.utah.gov/sen/PLUMBJ/",
+      "anchorText": "",
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "senate"
+          ]
+        ],
+        "excerpt": " Senator | Utah Senate Skip to main content About Press Pictures Jobs Utah Senate About Press Jobs Senators Senate Roster Leadership Financial Reports and Conflicts of Interest Committees Resources About Utah Issues Bills District Maps Legislative Calendar Follow the Senate Staff Taxpayer Receipt Pictures Newsroom Newsroom Majority Newsroom Minorit"
+      },
+      "fetchedAt": "2026-11-10T15:35:22.716955+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "662875996a4f"
+    },
+    {
+      "personId": "jennie-earl",
+      "name": "Jennie Earl",
+      "platform": "facebook",
+      "url": "https://facebook.com/UtahPublicEducation",
+      "entityId": "jennie-earl",
+      "sourceUrl": "https://schools.utah.gov/board/members/utah/jennieearl",
+      "anchorText": "Facebook",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "board",
+            "school"
+          ]
+        ],
+        "excerpt": " Jennie Earl Menu Close Menu Translate Arabic Chinese (Simplified) Chinese (Traditional) Armenian Bosnian Croation English French German Italian Kurdish Pashto Portuguese Russian Serbian Spanish Sundanese Swahili Thai Ukrainian Urdu Vietnamese Contact Us Connect with the Superintendent Educator Licensing Public Education Hotline Public Comments Org"
+      },
+      "fetchedAt": "2026-11-10T15:35:22.903636+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "b7e5f1c397cc"
+    },
+    {
+      "personId": "jennie-earl",
+      "name": "Jennie Earl",
+      "platform": "youtube",
+      "url": "https://youtube.com/@USBE-Media",
+      "entityId": "jennie-earl",
+      "sourceUrl": "https://schools.utah.gov/board/members/utah/jennieearl",
+      "anchorText": "YouTube",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "board",
+            "school"
+          ]
+        ],
+        "excerpt": " Jennie Earl Menu Close Menu Translate Arabic Chinese (Simplified) Chinese (Traditional) Armenian Bosnian Croation English French German Italian Kurdish Pashto Portuguese Russian Serbian Spanish Sundanese Swahili Thai Ukrainian Urdu Vietnamese Contact Us Connect with the Superintendent Educator Licensing Public Education Hotline Public Comments Org"
+      },
+      "fetchedAt": "2026-11-10T15:35:22.903636+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "395d94f42529"
+    },
+    {
+      "personId": "jennie-earl",
+      "name": "Jennie Earl",
+      "platform": "x",
+      "url": "https://x.com/utboardofed",
+      "entityId": "jennie-earl",
+      "sourceUrl": "https://schools.utah.gov/board/members/utah/jennieearl",
+      "anchorText": "Twitter",
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "board",
+            "school"
+          ]
+        ],
+        "excerpt": " Jennie Earl Menu Close Menu Translate Arabic Chinese (Simplified) Chinese (Traditional) Armenian Bosnian Croation English French German Italian Kurdish Pashto Portuguese Russian Serbian Spanish Sundanese Swahili Thai Ukrainian Urdu Vietnamese Contact Us Connect with the Superintendent Educator Licensing Public Education Hotline Public Comments Org"
+      },
+      "fetchedAt": "2026-11-10T15:35:22.903636+00:00",
+      "evidenceDate": null,
+      "disposition": "ambiguous",
+      "reason": "Identity/context, institutional ownership or redirect needs review",
+      "primaryIdentityMatched": false,
+      "reviewId": "a0f5445690b9"
+    }
+  ],
+  "unresolvedPeople": [
+    {
+      "id": "abigail-treasure",
+      "name": "Abigail Treasure",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://atreasure4ut.com/",
+          "fetchedAt": "2026-11-10T15:29:13.965297+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.atreasure4ut.com/",
+          "etag": "W/\"81dbb03db9e8b1ca886e90a0d126f308\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:14.132150+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:13.946443+00:00"
+        }
+      ]
+    },
+    {
+      "id": "aileen-hampton",
+      "name": "Aileen Hampton",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://voteforaileen.org/",
+          "fetchedAt": "2026-11-10T15:35:13.948887+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.voteforaileen.org/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "114f86c8891cf0f95830d8558968f742e337f59fbde1e35adae632c41c70ce4a",
+          "bodyFile": ".firecrawl/enrichment/cache/114f86c8891cf0f95830d8558968f742e337f59fbde1e35adae632c41c70ce4a.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:13.948887+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:14.050059+00:00"
+        }
+      ]
+    },
+    {
+      "id": "alan-wessman",
+      "name": "Alan Wessman",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://electawessman.com/",
+          "fetchedAt": "2026-11-10T15:35:13.954130+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://electawessman.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "78cc6e5e2b8437344a7cb4aadd3dcd2fb0ad349143902e0ff325ab6eeaed540e",
+          "bodyFile": ".firecrawl/enrichment/cache/78cc6e5e2b8437344a7cb4aadd3dcd2fb0ad349143902e0ff325ab6eeaed540e.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:13.954130+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:14.319610+00:00"
+        }
+      ]
+    },
+    {
+      "id": "ali-cloward",
+      "name": "Ali Cloward",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://aliforauditor.com/",
+          "fetchedAt": "2026-11-10T15:29:13.972717+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://aliforauditor.com/",
+          "etag": "\"32532833d3923c2701267db47b8ba607-ssl\"",
+          "lastModified": null,
+          "contentHash": "aad1e9062c9bab013914360bd9892ba4c32b34f5faff390f099797d5d12ba0c5",
+          "bodyFile": ".firecrawl/enrichment/cache/aad1e9062c9bab013914360bd9892ba4c32b34f5faff390f099797d5d12ba0c5.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:13.972717+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:14.161507+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:13.958210+00:00"
+        }
+      ]
+    },
+    {
+      "id": "alvin-thurgood",
+      "name": "Alvin Thurgood",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://electalvinthurgood.com/",
+          "fetchedAt": "2026-11-10T15:35:14.056117+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://electalvinthurgood.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "fb142d3a9e4a6a1cea4d4b97cc0cd9d00d1cb618786d07047ec1b0305c55744a",
+          "bodyFile": ".firecrawl/enrichment/cache/fb142d3a9e4a6a1cea4d4b97cc0cd9d00d1cb618786d07047ec1b0305c55744a.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:14.056117+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:14.116506+00:00"
+        }
+      ]
+    },
+    {
+      "id": "amber-shill",
+      "name": "Amber Shill",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://electamber.com/",
+          "fetchedAt": "2026-11-10T15:29:14.481508+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.electamber.com/",
+          "etag": "W/\"29099cfe3701864036629259a98fe297\"",
+          "lastModified": null,
+          "contentHash": "20d5ad4e720d2ff228e623b62e3f3ea2a8ffd8369e825f2a9bfa56f3423063e0",
+          "bodyFile": ".firecrawl/enrichment/cache/20d5ad4e720d2ff228e623b62e3f3ea2a8ffd8369e825f2a9bfa56f3423063e0.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:14.481508+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:14.592416+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:14.132772+00:00"
+        },
+        {
+          "url": "https://electamber.com/contact",
+          "fetchedAt": "2026-11-10T15:29:15.597356+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.electamber.com/contact",
+          "etag": "W/\"40d6f3ad5c66da3202cf59e5ee726b5a--gzip\"",
+          "lastModified": null,
+          "contentHash": "a1186d730ff5402e9a7d7d1fb9092fc0e2ef75708a4d8cb4ecb8cbccfd7caddf",
+          "bodyFile": ".firecrawl/enrichment/cache/a1186d730ff5402e9a7d7d1fb9092fc0e2ef75708a4d8cb4ecb8cbccfd7caddf.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:15.597356+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:14.922538+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:14.597991+00:00"
+        }
+      ]
+    },
+    {
+      "id": "amber-stone",
+      "name": "Amber Stone",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://amberrae312.wixsite.com/vote-for-amber-stone",
+          "fetchedAt": "2026-11-10T15:29:14.516766+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://amberrae312.wixsite.com/vote-for-amber-stone",
+          "etag": "W/\"54582d8547171da4f5c2fe025d9196d5\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:14.221573+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:14.163800+00:00"
+        }
+      ]
+    },
+    {
+      "id": "angela-romero",
+      "name": "Angela Romero",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://angelaromero.com/",
+          "fetchedAt": "2026-11-10T15:29:15.017050+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.angelaromero.com/",
+          "etag": "W/\"f9cd9c9e068646ca0ffbe7e98b7ba0ec\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:14.557597+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:14.323288+00:00"
+        }
+      ]
+    },
+    {
+      "id": "anne-berbert",
+      "name": "Anne Berbert",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://voteanneberbert.com/",
+          "fetchedAt": "2026-11-10T15:29:15.726445+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.voteanneberbert.com/",
+          "etag": "W/\"5e7aad7703ef131046a618b845207349\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:14.732996+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:14.518555+00:00"
+        }
+      ]
+    },
+    {
+      "id": "annie-romano",
+      "name": "Annie Romano",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://annieromanoforschoolboard.com/",
+          "fetchedAt": "2026-11-10T15:29:15.847927+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.annieromanoforschoolboard.com/",
+          "etag": "W/\"d21e0f5fdbf6f05f9418a5e49bb9d5bb\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:14.930192+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:14.733619+00:00"
+        }
+      ]
+    },
+    {
+      "id": "araueni-olivares",
+      "name": "Araueni Olivares",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://votearaueni.com/",
+          "fetchedAt": "2026-11-10T15:35:14.829898+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://votearaueni.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "c1491c6eadf2325f85ed8f25b4cd8e367c8fba49c1b300341c58445ce975bca7",
+          "bodyFile": ".firecrawl/enrichment/cache/c1491c6eadf2325f85ed8f25b4cd8e367c8fba49c1b300341c58445ce975bca7.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:14.829898+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:15.324713+00:00"
+        }
+      ]
+    },
+    {
+      "id": "ariel-defay",
+      "name": "Ariel Defay",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://arieldefay.com/",
+          "fetchedAt": "2026-11-10T15:29:16.390628+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.arieldefay.com/",
+          "etag": "W/\"3a366523905936d391c96996dd78d0a9\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:15.182595+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:14.919120+00:00"
+        }
+      ]
+    },
+    {
+      "id": "ashley-anderson",
+      "name": "Ashley Anderson",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://ashleyforschoolboard.com/about-ashley",
+          "fetchedAt": "2026-11-10T15:29:16.635193+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.ashleyforschoolboard.com/about-ashley",
+          "etag": "W/\"77fd536c05d4acf22febd78e420d74a2\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:15.295628+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:14.931579+00:00"
+        }
+      ]
+    },
+    {
+      "id": "barbara-j-haggerty",
+      "name": "Barbara J. Haggerty",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://haggertyforutah.com/",
+          "fetchedAt": "2026-11-10T15:35:15.096630+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://haggertyforutah.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "a3f5c6a568c150cf8512393b233e78048025ee0c0f4efacee8faebc63ee5c702",
+          "bodyFile": ".firecrawl/enrichment/cache/a3f5c6a568c150cf8512393b233e78048025ee0c0f4efacee8faebc63ee5c702.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:15.096630+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:15.906635+00:00"
+        },
+        {
+          "url": "https://haggertyforutah.com/about",
+          "fetchedAt": "2026-11-10T15:35:15.910520+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://haggertyforutah.com/about",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "70e0a2253acc2aab0d3bb23107493e5a0ba4d7c1c8946187d7d705557c08cc72",
+          "bodyFile": ".firecrawl/enrichment/cache/70e0a2253acc2aab0d3bb23107493e5a0ba4d7c1c8946187d7d705557c08cc72.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:15.910520+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:16.607000+00:00"
+        }
+      ]
+    },
+    {
+      "id": "bo-folsom",
+      "name": "Bo Folsom",
+      "status": "retrieval_failed",
+      "fetches": [
+        {
+          "url": "https://bo4kane.com/",
+          "fetchedAt": "2026-11-10T15:35:15.325855+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "error": "Transport failure or request/size budget exceeded",
+          "nextReviewAt": "2026-11-17T15:35:33.355821+00:00"
+        }
+      ]
+    },
+    {
+      "id": "breanne-mashek",
+      "name": "Breanne Mashek",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://breannemashek.com/",
+          "fetchedAt": "2026-11-10T15:35:16.033220+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://breannemashek.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "e6305eb35902f303c7ff26eee1b9063f3445a18caeaecf2fad1181f3451f06b0",
+          "bodyFile": ".firecrawl/enrichment/cache/e6305eb35902f303c7ff26eee1b9063f3445a18caeaecf2fad1181f3451f06b0.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:16.033220+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:16.207259+00:00"
+        },
+        {
+          "url": "https://breannemashek.com/about",
+          "fetchedAt": "2026-11-10T15:35:16.215015+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://breannemashek.com/about/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "59ac931af7f8a6010cbbf0c063ec365e45ffc815561b61284ca6956fbe5b1bd4",
+          "bodyFile": ".firecrawl/enrichment/cache/59ac931af7f8a6010cbbf0c063ec365e45ffc815561b61284ca6956fbe5b1bd4.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:16.215015+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:16.503527+00:00"
+        }
+      ]
+    },
+    {
+      "id": "candice-b-pierucci",
+      "name": "Candice B. Pierucci",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://candicepierucci.com/",
+          "fetchedAt": "2026-11-10T15:35:16.610051+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 403,
+          "finalUrl": "https://candicepierucci.com/",
+          "etag": null,
+          "lastModified": null,
+          "nextReviewAt": "2026-11-17T15:35:16.677994+00:00"
+        }
+      ]
+    },
+    {
+      "id": "carl-ingwell",
+      "name": "Carl Ingwell",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://carlforhd67.com/",
+          "fetchedAt": "2026-11-10T15:35:16.678979+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://carlforhd67.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "a426f11d229ed86cee4302e7ac607a34f13a3d010418422957ae112c590ac361",
+          "bodyFile": ".firecrawl/enrichment/cache/a426f11d229ed86cee4302e7ac607a34f13a3d010418422957ae112c590ac361.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:16.678979+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:17.499262+00:00"
+        }
+      ]
+    },
+    {
+      "id": "casey-saxton",
+      "name": "Casey Saxton",
+      "status": "retrieval_failed",
+      "fetches": [
+        {
+          "url": "https://caseysaxton.com/",
+          "fetchedAt": "2026-11-10T15:35:16.755865+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "httpStatus": 404,
+          "finalUrl": "https://caseysaxton.com/",
+          "etag": null,
+          "lastModified": null,
+          "nextReviewAt": "2026-11-17T15:35:16.971506+00:00"
+        }
+      ]
+    },
+    {
+      "id": "casey-snider",
+      "name": "Casey Snider",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://caseysnider.com/",
+          "fetchedAt": "2026-11-10T15:29:20.418534+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.caseysnider.com/",
+          "etag": "W/\"02e6c6b2a4faf3ee3ab1d1d4c9676640\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:17.217006+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:16.972683+00:00"
+        }
+      ]
+    },
+    {
+      "id": "cathy-callow-heusser",
+      "name": "Cathy Callow-Heusser",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "http://vote4cathy.com/",
+          "fetchedAt": "2026-11-10T15:35:17.218958+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://vote4cathy.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "44c5af46eb94474b3a3e2f7ac2a5e9cf5f852a04722f3562d3cbb28df554108f",
+          "bodyFile": ".firecrawl/enrichment/cache/44c5af46eb94474b3a3e2f7ac2a5e9cf5f852a04722f3562d3cbb28df554108f.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:17.218958+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:18.234247+00:00"
+        }
+      ]
+    },
+    {
+      "id": "celeste-t-johnson",
+      "name": "Celeste T. Johnson",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://celestejohnsonforutah.com/",
+          "fetchedAt": "2026-11-10T15:29:21.117927+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.celestejohnsonforutah.com/",
+          "etag": "\"f1cd751d1331ff712919c44127290f23\"",
+          "lastModified": null,
+          "contentHash": "87c69dc85c85da0065a09cdbee89e73d16b04b162dae0df28c37e837dc6d2bf8",
+          "bodyFile": ".firecrawl/enrichment/cache/87c69dc85c85da0065a09cdbee89e73d16b04b162dae0df28c37e837dc6d2bf8.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:21.117927+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:17.712109+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:17.504780+00:00"
+        },
+        {
+          "url": "https://celestejohnsonforutah.com/about",
+          "fetchedAt": "2026-11-10T15:29:21.727464+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.celestejohnsonforutah.com/about",
+          "etag": "\"04d4cdaa7d22740e33da77ecaf8e2dc6\"",
+          "lastModified": null,
+          "contentHash": "6879bcac278d214c6cb233dc98d90cc56f95772025123f5a224ca266ef6a8d4f",
+          "bodyFile": ".firecrawl/enrichment/cache/6879bcac278d214c6cb233dc98d90cc56f95772025123f5a224ca266ef6a8d4f.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:21.727464+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:17.929835+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:17.718347+00:00"
+        }
+      ]
+    },
+    {
+      "id": "chris-mcconnehey",
+      "name": "Chris McConnehey",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://wjchris.com/",
+          "fetchedAt": "2026-11-10T15:29:21.796684+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.wjchris.com/",
+          "etag": "W/\"42390669a6e7e14b22f3a7c4e3d6caf8\"",
+          "lastModified": null,
+          "contentHash": "a42d7e93afbd14e67b834197eb7eed00ceae421e16d2fbc1c9b0679df5c71532",
+          "bodyFile": ".firecrawl/enrichment/cache/a42d7e93afbd14e67b834197eb7eed00ceae421e16d2fbc1c9b0679df5c71532.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:21.796684+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:18.283715+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:17.871366+00:00"
+        },
+        {
+          "url": "https://wjchris.com/about",
+          "fetchedAt": "2026-11-10T15:29:22.703546+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.wjchris.com/about",
+          "etag": "W/\"1871cf94438ea40c8591fc5efdd50357\"",
+          "lastModified": null,
+          "contentHash": "21c9c0a90d7be014b9c445f312b4bef2c71da190e8f7b6a673bfc9145a4feda1",
+          "bodyFile": ".firecrawl/enrichment/cache/21c9c0a90d7be014b9c445f312b4bef2c71da190e8f7b6a673bfc9145a4feda1.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:22.703546+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:18.627586+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:18.291290+00:00"
+        }
+      ]
+    },
+    {
+      "id": "christie-babalis",
+      "name": "Christie Babalis",
+      "status": "retrieval_failed",
+      "fetches": [
+        {
+          "url": "https://votebabalis.com/",
+          "fetchedAt": "2026-11-10T15:35:17.933895+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "error": "Transport failure or request/size budget exceeded",
+          "nextReviewAt": "2026-11-17T15:35:17.964861+00:00"
+        }
+      ]
+    },
+    {
+      "id": "claudia-bigler",
+      "name": "Claudia Bigler",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://cachechildrenschoir.org/artistic-director",
+          "fetchedAt": "2026-11-10T15:29:22.001982+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://cachechildrenschoir.org/artistic-director",
+          "etag": "W/\"266170f41720f2985c434cecad96ecd9--gzip\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:18.291107+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:18.101590+00:00"
+        }
+      ]
+    },
+    {
+      "id": "colin-smith",
+      "name": "Colin Smith",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://forwardwithcolin.org/",
+          "fetchedAt": "2026-11-10T15:29:22.877474+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.forwardwithcolin.org/",
+          "etag": "W/\"d49aa106b6feefd09533386ee67a7be5\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:18.525124+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:18.294540+00:00"
+        }
+      ]
+    },
+    {
+      "id": "colin-w-jack",
+      "name": "Colin W. Jack",
+      "status": "retrieval_failed",
+      "fetches": [
+        {
+          "url": "https://colinwjack.com/",
+          "fetchedAt": "2026-11-10T15:35:18.525869+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "error": "Transport failure or request/size budget exceeded",
+          "nextReviewAt": "2026-11-17T15:35:18.553081+00:00"
+        }
+      ]
+    },
+    {
+      "id": "dave-calder",
+      "name": "Dave Calder",
+      "status": "retrieval_failed",
+      "fetches": [
+        {
+          "url": "https://votedavecalder.com/",
+          "fetchedAt": "2026-11-10T15:29:23.757813+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "httpStatus": 404,
+          "finalUrl": "https://www.votedavecalder.com/",
+          "etag": "\"wwgo8787c9i4e\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:19.266653+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:18.704024+00:00"
+        }
+      ]
+    },
+    {
+      "id": "dave-parke",
+      "name": "Dave Parke",
+      "status": "retrieval_failed",
+      "fetches": [
+        {
+          "url": "https://electdaveparke.com/",
+          "fetchedAt": "2026-11-10T15:35:18.792822+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "error": "Transport failure or request/size budget exceeded",
+          "nextReviewAt": "2026-11-17T15:35:36.820453+00:00"
+        }
+      ]
+    },
+    {
+      "id": "david-chappell",
+      "name": "David Chappell",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://davidforutah.com/",
+          "fetchedAt": "2026-11-10T15:29:24.667000+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://davidforutah.com/",
+          "etag": "W/\"acadf921710c6ecd36376771edfb2258--gzip\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:18.988892+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:18.815149+00:00"
+        }
+      ]
+    },
+    {
+      "id": "doug-fiefia",
+      "name": "Doug Fiefia",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://dougfiefia.com/",
+          "fetchedAt": "2026-11-10T15:35:19.267291+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 403,
+          "finalUrl": "https://dougfiefia.com/",
+          "etag": "\"6ad722c3-34\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-11-17T15:35:19.351640+00:00"
+        }
+      ]
+    },
+    {
+      "id": "doug-owens",
+      "name": "Doug Owens",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://dougowens.com/",
+          "fetchedAt": "2026-11-10T15:29:26.307892+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.dougowens.com/",
+          "etag": "W/\"0afb41ba07d0fb211e354666d34d822e\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:19.855997+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:19.336732+00:00"
+        }
+      ]
+    },
+    {
+      "id": "doug-welton",
+      "name": "Doug Welton",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://dougweltonforutah.com/",
+          "fetchedAt": "2026-11-10T15:29:26.445906+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://dougweltonforutah.com/",
+          "etag": "W/\"922251f826ccda41a27f3801a4cfd178\"",
+          "lastModified": null,
+          "contentHash": "8adc196e605666b6d9e3eb067467fae3e118dffe8f6671ef6af0e906038e9c5b",
+          "bodyFile": ".firecrawl/enrichment/cache/8adc196e605666b6d9e3eb067467fae3e118dffe8f6671ef6af0e906038e9c5b.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:26.445906+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:19.515924+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:19.352183+00:00"
+        },
+        {
+          "url": "https://dougweltonforutah.com/about-doug",
+          "fetchedAt": "2026-11-10T15:29:27.750419+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://dougweltonforutah.com/about-doug",
+          "etag": "W/\"bc1ea20a84c93785fcc6bef03010bb85--gzip\"",
+          "lastModified": null,
+          "contentHash": "b3be79432e71f1c870c8d0aae451b47cf399c782d7c2486cabcb6b816e317ff5",
+          "bodyFile": ".firecrawl/enrichment/cache/b3be79432e71f1c870c8d0aae451b47cf399c782d7c2486cabcb6b816e317ff5.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:27.750419+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:19.717407+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:19.523902+00:00"
+        }
+      ]
+    },
+    {
+      "id": "drew-howells",
+      "name": "Drew Howells",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://howells4utah.com/",
+          "fetchedAt": "2026-11-10T15:29:26.470210+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.howells4utah.com/",
+          "etag": "W/\"d34cf2bcfcfea77188c20c9076d20091\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:19.960869+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:19.725071+00:00"
+        }
+      ]
+    },
+    {
+      "id": "erik-r-craythorne",
+      "name": "Erik R. Craythorne",
+      "status": "retrieval_failed",
+      "fetches": [
+        {
+          "url": "https://erik4utah.com/",
+          "fetchedAt": "2026-11-10T15:35:19.860425+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "httpStatus": 406,
+          "finalUrl": "https://erik4utah.com/",
+          "etag": null,
+          "lastModified": null,
+          "nextReviewAt": "2026-11-17T15:35:19.985916+00:00"
+        }
+      ]
+    },
+    {
+      "id": "eva-m-weldon",
+      "name": "Eva M. Weldon",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://weldon4utah.com/",
+          "fetchedAt": "2026-11-10T15:35:19.986762+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.weldon4utah.com/",
+          "etag": "W/\"5a4717a9224896e140edf1810ea73b69--gzip\"",
+          "lastModified": null,
+          "contentHash": "c005eac6e53aa98c9c0dfdba0b054e2c5fb3414af25015933b419947887b7d89",
+          "bodyFile": ".firecrawl/enrichment/cache/c005eac6e53aa98c9c0dfdba0b054e2c5fb3414af25015933b419947887b7d89.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:35:19.986762+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:20.508805+00:00"
+        },
+        {
+          "url": "https://weldon4utah.com/about",
+          "fetchedAt": "2026-11-10T15:29:30.007126+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.weldon4utah.com/about",
+          "etag": "W/\"786b13613a8e46dfef0272b4248cf63c--gzip\"",
+          "lastModified": null,
+          "contentHash": "550d30cdfaa09e45eecc1d839cd2efabacdff8de1c15e24264e876819e99e269",
+          "bodyFile": ".firecrawl/enrichment/cache/550d30cdfaa09e45eecc1d839cd2efabacdff8de1c15e24264e876819e99e269.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:30.007126+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:20.849022+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:20.513986+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gail-koske",
+      "name": "Gail Koske",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://gailforcommissioner.com/",
+          "fetchedAt": "2026-11-10T15:29:28.869978+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.gailforcommissioner.com/",
+          "etag": "W/\"6c93703c27c051fca718d455308e5f31\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:20.760292+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:20.542892+00:00"
+        }
+      ]
+    },
+    {
+      "id": "glenn-d-webb",
+      "name": "Glenn D. Webb",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://webb4utah.com/",
+          "fetchedAt": "2026-11-10T15:29:29.763318+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.webb4utah.com/",
+          "etag": "W/\"713fc1bd89419756254ed815bf023988\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:20.870412+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:20.661787+00:00"
+        }
+      ]
+    },
+    {
+      "id": "grant-amjad-miller",
+      "name": "Grant Amjad Miller",
+      "status": "retrieval_failed",
+      "fetches": [
+        {
+          "url": "https://grantmillerforhouse24.com/",
+          "fetchedAt": "2026-11-10T15:35:20.761193+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "error": "Transport failure or request/size budget exceeded",
+          "nextReviewAt": "2026-11-17T15:35:38.787172+00:00"
+        }
+      ]
+    },
+    {
+      "id": "grant-pace",
+      "name": "Grant Pace",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://grantpaceforutah.com/",
+          "fetchedAt": "2026-11-10T15:29:30.908616+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.grantpaceforutah.com/",
+          "etag": "W/\"e418e58a4441dd868426b58ad6214fbe\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:21.173150+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:20.854455+00:00"
+        }
+      ]
+    },
+    {
+      "id": "hoang-nguyen",
+      "name": "Hoang Nguyen",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://hoangforhouse.com/",
+          "fetchedAt": "2026-11-10T15:35:20.871250+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 403,
+          "finalUrl": "https://hoangforhouse.com/",
+          "etag": "\"6ad722c3-34\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-11-17T15:35:20.986394+00:00"
+        }
+      ]
+    },
+    {
+      "id": "j-lowry-snow",
+      "name": "J. Lowry Snow",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://jlowrysnow.com/",
+          "fetchedAt": "2026-11-10T15:29:33.190907+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://jlowrysnow.com/",
+          "etag": "\"53a6bee93920dc677fcee58211ad2253\"",
+          "lastModified": null,
+          "contentHash": "1c48e32ffe3dbacb032893aac85e0cc80a2e9689cf8d019e3866e5b09c8498e2",
+          "bodyFile": ".firecrawl/enrichment/cache/1c48e32ffe3dbacb032893aac85e0cc80a2e9689cf8d019e3866e5b09c8498e2.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:33.190907+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:21.324367+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:21.174451+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jackie-larson",
+      "name": "Jackie Larson",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://electjackielarson.com/",
+          "fetchedAt": "2026-11-10T15:29:33.717189+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.electjackielarson.com/",
+          "etag": "W/\"e3be7d9db7c8aa4d7be27702b1275ae6\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:21.632712+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:21.336180+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jake-fitisemanu",
+      "name": "Jake Fitisemanu",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://jakeforutah.com/",
+          "fetchedAt": "2026-11-10T15:35:21.339184+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.jakeforutah.com/",
+          "etag": "W/\"afd42f2b665e6d72d84af47f5f40b531--gzip\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-11-17T15:35:21.927911+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jared-neal",
+      "name": "Jared Neal",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://nealforutah.com/",
+          "fetchedAt": "2026-11-10T15:29:34.755302+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.nealforutah.com/",
+          "etag": "W/\"39f41f061993d01177d53cfe22e3e657\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:21.948967+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:21.721554+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jason-b-kyle",
+      "name": "Jason B. Kyle",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://jasonbkyle.com/",
+          "fetchedAt": "2026-11-10T15:29:34.776209+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.jasonbkyle.com/",
+          "etag": "W/\"c574f3c5a01ccb57bf0bb018cf0bbfec\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:22.166135+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:21.929045+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jason-e-thompson",
+      "name": "Jason E. Thompson",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://electjasonthompson.com/",
+          "fetchedAt": "2026-11-10T15:29:35.245127+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.electjasonthompson.com/",
+          "etag": "W/\"aa733a55b6a0cf105b8e94f5fc9ac2a7--gzip\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:22.362318+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:21.949876+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jeanne-marie-bowen",
+      "name": "Jeanne Marie Bowen",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://votebowen.weebly.com/",
+          "fetchedAt": "2026-11-10T15:35:22.363419+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://votebowen.weebly.com/",
+          "etag": null,
+          "lastModified": null,
+          "nextReviewAt": "2026-11-17T15:35:22.489757+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jen-dailey-provost",
+      "name": "Jen Dailey-Provost",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "http://jenforutah.com/",
+          "fetchedAt": "2026-11-10T15:29:36.294468+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://jenforutah.com/",
+          "etag": "W/\"a0ed42c69594531d00484beafd64dd7c\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:22.902446+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:22.621443+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jim-dunnigan",
+      "name": "Jim Dunnigan",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://electdunnigan.com/",
+          "fetchedAt": "2026-11-10T15:29:37.028590+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.electdunnigan.com/",
+          "etag": "W/\"ace8bce4606914ba2839197b87ae1faf\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:24.289137+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:23.890457+00:00"
+        }
+      ]
+    },
+    {
+      "id": "john-arthur",
+      "name": "John Arthur",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://votejohnarthur.com/",
+          "fetchedAt": "2026-11-10T15:29:37.794953+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.votejohnarthur.com/",
+          "etag": "W/\"db10c54bdf297b2d00d6fe7c8b2a7400\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:24.566417+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:24.233667+00:00"
+        }
+      ]
+    },
+    {
+      "id": "joseph-elison",
+      "name": "Joseph Elison",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://elisonforutah.com/",
+          "fetchedAt": "2026-11-10T15:29:38.614252+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.elisonforutah.com/",
+          "etag": "W/\"cd15e8f8aafc4d22f3f1154b807c48c0\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:24.895659+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:24.686883+00:00"
+        }
+      ]
+    },
+    {
+      "id": "joseph-kerry",
+      "name": "Joseph Kerry",
+      "status": "blocked",
+      "fetches": [
+        {
+          "url": "https://josephkerry.com/",
+          "fetchedAt": "2026-11-10T15:29:38.822739+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://www.josephkerry.com/",
+          "etag": "W/\"4b62c5c246a7a3f2de62e1091b541654\"",
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T15:35:24.895460+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:24.699354+00:00"
+        }
+      ]
+    },
+    {
+      "id": "jr-bird",
+      "name": "JR Bird",
+      "status": "no_account_found",
+      "fetches": [
+        {
+          "url": "https://jrbird.org/",
+          "fetchedAt": "2026-11-10T15:29:39.947839+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://jrbird.org/",
+          "etag": "W/\"b6d49895f1e992ef8e279e39d4d42efb--gzip\"",
+          "lastModified": null,
+          "contentHash": "7a4cc69872b498deded1ba571236bab856ac2f98e53c938220a4eaed9bd4ee43",
+          "bodyFile": ".firecrawl/enrichment/cache/7a4cc69872b498deded1ba571236bab856ac2f98e53c938220a4eaed9bd4ee43.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:39.947839+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:25.099566+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:24.896718+00:00"
+        },
+        {
+          "url": "https://jrbird.org/home",
+          "fetchedAt": "2026-11-10T15:29:40.765636+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://jrbird.org/home",
+          "etag": "W/\"d1880d6ebcbd5d4a3af7113985b74811--gzip\"",
+          "lastModified": null,
+          "contentHash": "f3aeed486fd5c6ddf3fd086534df330d06d6adcf1ca075277f20c0bb675f976a",
+          "bodyFile": ".firecrawl/enrichment/cache/f3aeed486fd5c6ddf3fd086534df330d06d6adcf1ca075277f20c0bb675f976a.html",
+          "lastSuccessfulFetchAt": "2026-11-10T15:29:40.765636+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T15:35:25.305975+00:00",
+          "lastCheckedAt": "2026-11-10T15:35:25.108846+00:00"
+        }
+      ]
+    }
+  ],
+  "productionChanges": 77
+}

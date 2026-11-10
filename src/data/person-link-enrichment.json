@@ -647,7 +647,7 @@
     ]
   },
   "matt-macpherson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Matt MacPherson",
@@ -658,28 +658,62 @@
         "publishedName": "Matt MacPherson",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Matt MacPherson",
+        "match": "Campaign page identifies Matt MacPherson and State House District 26 and publishes the approved social account link.",
+        "source": "https://www.electmattmacpherson.com/"
       }
     ],
     "sources": [
       "https://house.utleg.gov/house-members/",
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.electmattmacpherson.com/"
     ],
     "notes": [
       "Roster-endorsed government profile. Institutional header/footer social accounts were not copied to the person. Source roster defines the current role; archived filings are unchanged.",
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://house.utleg.gov/rep/MACPHM",
         "label": "Official legislative profile",
         "source": "https://house.utleg.gov/house-members/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
       },
       {
         "url": "https://www.electmattmacpherson.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/UtahVote4Matt",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.electmattmacpherson.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:31.845220+00:00",
+        "reviewId": "e6c8bbbda73c"
+      },
+      {
+        "url": "https://instagram.com/utahvote4matt",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.electmattmacpherson.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:31.845220+00:00",
+        "reviewId": "1010a50513d0"
+      },
+      {
+        "url": "https://x.com/UtahVote4Matt",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://www.electmattmacpherson.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:31.845220+00:00",
+        "reviewId": "c7827ed0af43"
       }
     ]
   },
@@ -941,7 +975,7 @@
     ]
   },
   "ashlee-matthews": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Ashlee Matthews",
@@ -952,28 +986,62 @@
         "publishedName": "Ashlee Matthews",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Ashlee Matthews",
+        "match": "Campaign page identifies Ashlee Matthews and State House District 37 and publishes the approved social account link.",
+        "source": "https://www.ashleeforutah.com/"
       }
     ],
     "sources": [
       "https://house.utleg.gov/house-members/",
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.ashleeforutah.com/"
     ],
     "notes": [
       "Roster-endorsed government profile. Institutional header/footer social accounts were not copied to the person. Source roster defines the current role; archived filings are unchanged.",
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://house.utleg.gov/rep/MATTHA",
         "label": "Official legislative profile",
         "source": "https://house.utleg.gov/house-members/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
       },
       {
         "url": "https://ashleeforutah.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/AshleeforUtah",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.ashleeforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.927564+00:00",
+        "reviewId": "1f40b643bb94"
+      },
+      {
+        "url": "https://facebook.com/100456098248154",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.ashleeforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.927564+00:00",
+        "reviewId": "9577ffaed438"
+      },
+      {
+        "url": "https://x.com/AshleeUT38",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://www.ashleeforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.927564+00:00",
+        "reviewId": "851dd07941ab"
       }
     ]
   },
@@ -1138,7 +1206,7 @@
     ]
   },
   "steve-eliason": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Steve Eliason",
@@ -1149,28 +1217,44 @@
         "publishedName": "Steve Eliason",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Steve Eliason",
+        "match": "Campaign page identifies Steve Eliason and State House District 43 and publishes the approved social account link.",
+        "source": "https://steveeliasonforutah.com/"
       }
     ],
     "sources": [
       "https://house.utleg.gov/house-members/",
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://steveeliasonforutah.com/"
     ],
     "notes": [
       "Roster-endorsed government profile. Institutional header/footer social accounts were not copied to the person. Source roster defines the current role; archived filings are unchanged.",
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://house.utleg.gov/rep/ELIASS",
         "label": "Official legislative profile",
         "source": "https://house.utleg.gov/house-members/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
       },
       {
         "url": "https://steveeliasonforutah.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/VoteSteveEliason",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://steveeliasonforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:45.152496+00:00",
+        "reviewId": "1420ce3fead2"
       }
     ]
   },
@@ -1482,7 +1566,7 @@
     ]
   },
   "david-shallenberger": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "David Shallenberger",
@@ -1493,28 +1577,53 @@
         "publishedName": "David Shallenberger",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "David Shallenberger",
+        "match": "Campaign page identifies David Shallenberger and State House District 58 and publishes the approved social account link.",
+        "source": "https://www.david4utah.com/"
       }
     ],
     "sources": [
       "https://house.utleg.gov/house-members/",
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.david4utah.com/"
     ],
     "notes": [
       "Roster-endorsed government profile. Institutional header/footer social accounts were not copied to the person. Source roster defines the current role; archived filings are unchanged.",
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://house.utleg.gov/rep/SHALLD",
         "label": "Official legislative profile",
         "source": "https://house.utleg.gov/house-members/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
       },
       {
         "url": "https://www.david4utah.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/david4utah",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.david4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:25.066931+00:00",
+        "reviewId": "156214b890c2"
+      },
+      {
+        "url": "https://instagram.com/david4utah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.david4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:25.066931+00:00",
+        "reviewId": "e4a39c0f11e1"
       }
     ]
   },
@@ -1556,7 +1665,7 @@
     ]
   },
   "lisa-shepherd": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Lisa Shepherd",
@@ -1567,28 +1676,44 @@
         "publishedName": "Lisa Shepherd",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Lisa Shepherd",
+        "match": "Campaign page identifies Lisa Shepherd and State House District 61 and publishes the approved social account link.",
+        "source": "https://lisa61.com/"
       }
     ],
     "sources": [
       "https://house.utleg.gov/house-members/",
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://lisa61.com/"
     ],
     "notes": [
       "Roster-endorsed government profile. Institutional header/footer social accounts were not copied to the person. Source roster defines the current role; archived filings are unchanged.",
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://house.utleg.gov/rep/SHEPHL",
         "label": "Official legislative profile",
         "source": "https://house.utleg.gov/house-members/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
       },
       {
         "url": "https://lisa61.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/lisamshepherd",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://lisa61.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:30.668874+00:00",
+        "reviewId": "498056fe4e1a"
       }
     ]
   },
@@ -3147,50 +3272,109 @@
     ]
   },
   "scott-sandall": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Scott Sandall",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Scott Sandall",
+        "match": "Campaign page identifies Scott Sandall and State Senate District 1 and publishes the approved social account link.",
+        "source": "https://www.votescottsandall.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.votescottsandall.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.votescottsandall.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/votescottsandalldistrict17",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.votescottsandall.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:39.871144+00:00",
+        "reviewId": "6825d46cac91"
       }
     ]
   },
   "jill-f-koford": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Jill Koford",
         "match": "Same given name and surname; unique identity in the exact 2026 race (middle-name variation)",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Jill F. Koford",
+        "match": "Campaign page identifies Jill F. Koford and State Senate District 5 and publishes the approved social account link.",
+        "source": "https://www.votekoford.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.votekoford.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.votekoford.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://x.com/JillKoford",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://www.votekoford.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:37.015896+00:00",
+        "reviewId": "acdc92396494"
+      },
+      {
+        "url": "https://facebook.com/VoteKoford",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.votekoford.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:37.015896+00:00",
+        "reviewId": "d1d9ace8a59f"
+      },
+      {
+        "url": "https://instagram.com/votekoford",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.votekoford.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:37.015896+00:00",
+        "reviewId": "fa82191fd3b2"
+      },
+      {
+        "url": "https://linkedin.com/in/jill-koford-346358130",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://www.votekoford.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:37.015896+00:00",
+        "reviewId": "e64fad9cfc06"
       }
     ]
   },
@@ -3243,26 +3427,51 @@
     ]
   },
   "brooks-benson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Brooks Benson",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Brooks Benson",
+        "match": "Campaign page identifies Brooks Benson and State Senate District 11 and publishes the approved social account link.",
+        "source": "https://brooksbenson4utah.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://brooksbenson4utah.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://brooksbenson4utah.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=100068498047572",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://brooksbenson4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:19.811734+00:00",
+        "reviewId": "e880c9f9f9db"
+      },
+      {
+        "url": "https://instagram.com/brooksbenson4utahsenate",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://brooksbenson4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:19.811734+00:00",
+        "reviewId": "6bc544b313bf"
       }
     ]
   },
@@ -3315,26 +3524,69 @@
     ]
   },
   "mike-petersen": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Mike Petersen",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Mike Petersen",
+        "match": "Campaign page identifies Mike Petersen and State House District 2 and publishes the approved social account link.",
+        "source": "https://votemikepetersen.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://votemikepetersen.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.votemikepetersen.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/restoreyourvoiceutah",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://votemikepetersen.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:32.950922+00:00",
+        "reviewId": "55bd68288181"
+      },
+      {
+        "url": "https://x.com/RepMikePetersen",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://votemikepetersen.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:32.950922+00:00",
+        "reviewId": "e73fd4b70bb8"
+      },
+      {
+        "url": "https://youtube.com/@voteformikepetersen",
+        "platform": "youtube",
+        "label": "YouTube",
+        "source": "https://votemikepetersen.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:32.950922+00:00",
+        "reviewId": "21f0308794ed"
+      },
+      {
+        "url": "https://linkedin.com/in/mike-petersen-phd-0b401a4",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://votemikepetersen.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:32.950922+00:00",
+        "reviewId": "f4c4bce69254"
       }
     ]
   },
@@ -3363,50 +3615,118 @@
     ]
   },
   "john-taylor": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "John Taylor",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "John Taylor",
+        "match": "Campaign page identifies John Taylor and REP State House District 14 / State House District 14 and publishes the approved social account link.",
+        "source": "https://www.johntaylor4utah.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.johntaylor4utah.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-04 (4e51ac02f52a) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.johntaylor4utah.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://x.com/toolmanjtaylor",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://www.johntaylor4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:38.538540+00:00",
+        "reviewId": "7bc47ad1b939"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61584419274500",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.johntaylor4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:38.538540+00:00",
+        "reviewId": "c21d566afd53"
+      },
+      {
+        "url": "https://instagram.com/johntaylor4utah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.johntaylor4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:38.538540+00:00",
+        "reviewId": "8fb28d3f1713"
+      },
+      {
+        "url": "https://truthsocial.com/@johntaylor4utah",
+        "platform": "truthsocial",
+        "label": "truthsocial",
+        "source": "https://www.johntaylor4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:38.538540+00:00",
+        "reviewId": "cd5476011e5d"
       }
     ]
   },
   "bob-j-stevenson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Bob Stevenson",
         "match": "Same given name and surname; unique identity in the exact 2026 race (middle-name variation)",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Bob J. Stevenson",
+        "match": "Campaign page identifies Bob J. Stevenson and REP State House District 16 / State House District 16 and publishes the approved social account link.",
+        "source": "https://www.electbobstevenson.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.electbobstevenson.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.electbobstevenson.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/electbobstevenson",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.electbobstevenson.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:15.376513+00:00",
+        "reviewId": "cc7ec8060fe5"
+      },
+      {
+        "url": "https://youtube.com/@BobStevensonUtah",
+        "platform": "youtube",
+        "label": "Youtube",
+        "source": "https://www.electbobstevenson.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:15.376513+00:00",
+        "reviewId": "420d917e294b"
       }
     ]
   },
@@ -3435,26 +3755,78 @@
     ]
   },
   "paul-cutler": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Paul Cutler",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Paul Cutler",
+        "match": "Campaign page identifies Paul Cutler and State House District 18 and publishes the approved social account link.",
+        "source": "https://votepaulcutler.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://votepaulcutler.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://votepaulcutler.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/CutlerLegislature",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://votepaulcutler.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:34.799684+00:00",
+        "reviewId": "6fa9683ff108"
+      },
+      {
+        "url": "https://instagram.com/parttimepolitician",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://votepaulcutler.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:34.799684+00:00",
+        "reviewId": "94059771ac2d"
+      },
+      {
+        "url": "https://linkedin.com/in/paul-cutler-364182",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://votepaulcutler.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:34.799684+00:00",
+        "reviewId": "791f24d841cd"
+      },
+      {
+        "url": "https://x.com/parttimepolpaul",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://votepaulcutler.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:34.799684+00:00",
+        "reviewId": "4227ba14682b"
+      },
+      {
+        "url": "https://youtube.com/channel/UCuEOACsPXlClDKUVkKHLfDw",
+        "platform": "youtube",
+        "label": "YouTube",
+        "source": "https://votepaulcutler.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:34.799684+00:00",
+        "reviewId": "9115ad643a0a"
       }
     ]
   },
@@ -3483,50 +3855,91 @@
     ]
   },
   "braeden-j-oswald": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Braeden Oswald",
         "match": "Same given name and surname; unique identity in the exact 2026 race (middle-name variation)",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Braeden J. Oswald",
+        "match": "Campaign page identifies Braeden J. Oswald and State House District 24 and publishes the approved social account link.",
+        "source": "https://votebraedenoswald.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://votebraedenoswald.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://votebraedenoswald.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/braeden.j.oswald",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://votebraedenoswald.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:18.462282+00:00",
+        "reviewId": "1f008a5c6200"
       }
     ]
   },
   "anthony-loubet": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Anthony Loubet",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Anthony Loubet",
+        "match": "Campaign page identifies Anthony Loubet and State House District 27 and publishes the approved social account link.",
+        "source": "https://www.anthonyloubet.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.anthonyloubet.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.anthonyloubet.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/AnthonyLoubetUT",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.anthonyloubet.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:15.894760+00:00",
+        "reviewId": "4641bdea4046"
+      },
+      {
+        "url": "https://instagram.com/anthonyloubetut",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.anthonyloubet.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:15.894760+00:00",
+        "reviewId": "36534c6523aa"
       }
     ]
   },
@@ -3627,26 +4040,42 @@
     ]
   },
   "monique-i-ketcham": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Monique Ketcham",
         "match": "Same given name and surname; unique identity in the exact 2026 race (middle-name variation)",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Monique I. Ketcham",
+        "match": "Campaign page identifies Monique I. Ketcham and State House District 35 and publishes the approved social account link.",
+        "source": "https://monique4office.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://monique4office.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://monique4office.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61586507513241",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://monique4office.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:33.639072+00:00",
+        "reviewId": "e6c8f8a2d4a4"
       }
     ]
   },
@@ -3723,98 +4152,216 @@
     ]
   },
   "darren-croft": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Darren Croft",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Darren Croft",
+        "match": "Campaign page identifies Darren Croft and State House District 41 / STATE HOUSE DISTRICT 41 (REP) and publishes the approved social account link.",
+        "source": "https://darrencroft.org/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://darrencroft.org/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://darrencroft.org/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/Darren.Croft.House41",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://darrencroft.org/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:18.634628+00:00",
+        "reviewId": "bb7e0d54b906"
+      },
+      {
+        "url": "https://instagram.com/Darren.Croft.House41",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://darrencroft.org/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:18.634628+00:00",
+        "reviewId": "5f85df4f7deb"
       }
     ]
   },
   "clint-okerlund": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Clint Okerlund",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Clint Okerlund",
+        "match": "Campaign page identifies Clint Okerlund and State House District 42 and publishes the approved social account link.",
+        "source": "https://www.electclint.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.electclint.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.electclint.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61556878780395",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.electclint.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:22.431183+00:00",
+        "reviewId": "9ff9d053ac6c"
+      },
+      {
+        "url": "https://instagram.com/electclint",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.electclint.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:22.431183+00:00",
+        "reviewId": "619b2e0bfac2"
       }
     ]
   },
   "cal-roberts": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Cal Roberts",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Cal Roberts",
+        "match": "Campaign page identifies Cal Roberts and State House District 46 and publishes the approved social account link.",
+        "source": "https://www.votecalroberts.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.votecalroberts.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.votecalroberts.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/calroberts.housedistrict46",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.votecalroberts.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:16.580563+00:00",
+        "reviewId": "f4a8bf0784fb"
+      },
+      {
+        "url": "https://linkedin.com/in/cal-roberts-a9761244",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://www.votecalroberts.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:16.580563+00:00",
+        "reviewId": "1ee252990bc5"
+      },
+      {
+        "url": "https://instagram.com/calroberts.housedistrict46",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.votecalroberts.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:16.580563+00:00",
+        "reviewId": "f1d47838fdcd"
+      },
+      {
+        "url": "https://substack.com/@calroberts46",
+        "platform": "substack",
+        "label": "Substack",
+        "source": "https://www.votecalroberts.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:16.580563+00:00",
+        "reviewId": "4f5c517d0dd9"
       }
     ]
   },
   "cory-maloy": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Cory Maloy",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Cory Maloy",
+        "match": "Campaign page identifies Cory Maloy and State House District 52 and publishes the approved social account link.",
+        "source": "https://corymaloy.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://corymaloy.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.corymaloy.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/RepCoryMaloy",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://corymaloy.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:18.554163+00:00",
+        "reviewId": "48459f732114"
+      },
+      {
+        "url": "https://linkedin.com/in/acorymaloy",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://corymaloy.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:18.554163+00:00",
+        "reviewId": "523839a8cdc1"
       }
     ]
   },
@@ -3952,26 +4499,42 @@
     ]
   },
   "logan-j-monson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Logan Monson",
         "match": "Same given name and surname; unique identity in the exact 2026 race (middle-name variation)",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Logan J. Monson",
+        "match": "Campaign page identifies Logan J. Monson and REP State House District 69 / State House District 69 and publishes the approved social account link.",
+        "source": "https://www.votemonson.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.votemonson.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.votemonson.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61554357322615",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.votemonson.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:31.056369+00:00",
+        "reviewId": "817ab069d298"
       }
     ]
   },
@@ -4048,26 +4611,42 @@
     ]
   },
   "linda-hanks": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Linda Hanks",
         "match": "Exact normalized name",
         "source": "https://www.utgop.org/general_election_candidates_2026"
+      },
+      {
+        "publishedName": "Linda Hanks",
+        "match": "Campaign page identifies Linda Hanks and REP State School Board District 14 / State School Board District 14 and publishes the approved social account link.",
+        "source": "https://www.linda4stateschoolboard.com/"
       }
     ],
     "sources": [
-      "https://www.utgop.org/general_election_candidates_2026"
+      "https://www.utgop.org/general_election_candidates_2026",
+      "https://www.linda4stateschoolboard.com/"
     ],
     "notes": [
-      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source."
+      "Website linked by the party’s 2026 candidate directory. Most campaign endpoints have not been independently fetched in this batch; the listed party endorsement is the verification source.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.linda4stateschoolboard.com/",
         "label": "Campaign website",
         "source": "https://www.utgop.org/general_election_candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/votelindahanks",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.linda4stateschoolboard.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:30.572623+00:00",
+        "reviewId": "79ca9a6e386f"
       }
     ]
   },
@@ -4096,26 +4675,42 @@
     ]
   },
   "josh-smith": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Josh Smith",
         "match": "Exact normalized name",
         "source": "https://www.utahforwardparty.org/candidates_2026"
+      },
+      {
+        "publishedName": "Josh Smith",
+        "match": "Campaign page identifies Josh Smith and State Senate District 6 and publishes the approved social account link.",
+        "source": "https://www.electjoshsmith.com/"
       }
     ],
     "sources": [
-      "https://www.utahforwardparty.org/candidates_2026"
+      "https://www.utahforwardparty.org/candidates_2026",
+      "https://www.electjoshsmith.com/"
     ],
     "notes": [
-      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted."
+      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted.",
+      "Social account additions approved in batch-04 (4e51ac02f52a) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.electjoshsmith.com/",
         "label": "Campaign website",
         "source": "https://www.utahforwardparty.org/candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61561841812613",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.electjoshsmith.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:39.023130+00:00",
+        "reviewId": "4c36ad76f0a7"
       }
     ]
   },
@@ -4168,26 +4763,96 @@
     ]
   },
   "annette-mcrae": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Annette McRae",
         "match": "Exact normalized name",
         "source": "https://www.utahforwardparty.org/candidates_2026"
+      },
+      {
+        "publishedName": "Annette McRae",
+        "match": "Campaign page identifies Annette McRae and State Senate District 20 and publishes the approved social account link.",
+        "source": "https://mcraeforsenate.com/"
       }
     ],
     "sources": [
-      "https://www.utahforwardparty.org/candidates_2026"
+      "https://www.utahforwardparty.org/candidates_2026",
+      "https://mcraeforsenate.com/"
     ],
     "notes": [
-      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted."
+      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://mcraeforsenate.com/",
         "label": "Campaign website",
         "source": "https://www.utahforwardparty.org/candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/McRaeForUtah",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://mcraeforsenate.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.558461+00:00",
+        "reviewId": "fe307e888b0a"
+      },
+      {
+        "url": "https://x.com/mcraeforutah",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://mcraeforsenate.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.558461+00:00",
+        "reviewId": "e49c94df8d36"
+      },
+      {
+        "url": "https://instagram.com/mcraeforsenate",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://mcraeforsenate.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.558461+00:00",
+        "reviewId": "0e4a28ea0769"
+      },
+      {
+        "url": "https://tiktok.com/@mommacrae",
+        "platform": "tiktok",
+        "label": "Tiktok",
+        "source": "https://mcraeforsenate.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.558461+00:00",
+        "reviewId": "fa7407d21b20"
+      },
+      {
+        "url": "https://linkedin.com/in/themommacrae",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://mcraeforsenate.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.558461+00:00",
+        "reviewId": "139045183764"
+      },
+      {
+        "url": "https://x.com/mcraeforsenate",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://mcraeforsenate.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.558461+00:00",
+        "reviewId": "32107906ced2"
+      },
+      {
+        "url": "https://facebook.com/McRaeForsenate",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://mcraeforsenate.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:14.558461+00:00",
+        "reviewId": "c23e37e49890"
       }
     ]
   },
@@ -4240,26 +4905,51 @@
     ]
   },
   "james-rich": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "James Rich",
         "match": "Exact normalized name",
         "source": "https://www.utahforwardparty.org/candidates_2026"
+      },
+      {
+        "publishedName": "James Rich",
+        "match": "Campaign page identifies James Rich and State House District 6 and publishes the approved social account link.",
+        "source": "https://move.forwardwith.us/"
       }
     ],
     "sources": [
-      "https://www.utahforwardparty.org/candidates_2026"
+      "https://www.utahforwardparty.org/candidates_2026",
+      "https://move.forwardwith.us/"
     ],
     "notes": [
-      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted."
+      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://move.forwardwith.us/",
         "label": "Campaign website",
         "source": "https://www.utahforwardparty.org/candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/move.forwardwith.us",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://move.forwardwith.us/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:21.635266+00:00",
+        "reviewId": "3920a1606048"
+      },
+      {
+        "url": "https://youtube.com/@MoveForwardWithUs",
+        "platform": "youtube",
+        "label": "YouTube",
+        "source": "https://move.forwardwith.us/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:21.635266+00:00",
+        "reviewId": "2d3c4189ac4b"
       }
     ]
   },
@@ -4335,26 +5025,51 @@
     ]
   },
   "cabot-w-nelson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Cabot Nelson",
         "match": "Same given name and surname; unique identity in the exact 2026 race (middle-name variation)",
         "source": "https://www.utahforwardparty.org/candidates_2026"
+      },
+      {
+        "publishedName": "Cabot W. Nelson",
+        "match": "Campaign page identifies Cabot W. Nelson and State House District 23 and publishes the approved social account link.",
+        "source": "https://votecabotnelson.com/"
       }
     ],
     "sources": [
-      "https://www.utahforwardparty.org/candidates_2026"
+      "https://www.utahforwardparty.org/candidates_2026",
+      "https://votecabotnelson.com/"
     ],
     "notes": [
-      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted."
+      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://votecabotnelson.com/",
         "label": "Campaign website",
         "source": "https://www.utahforwardparty.org/candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/cabotnelson",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://votecabotnelson.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:19.832787+00:00",
+        "reviewId": "e61eadd3e1d0"
+      },
+      {
+        "url": "https://x.com/cabotnelson",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://votecabotnelson.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:19.832787+00:00",
+        "reviewId": "d5a89f4b3d68"
       }
     ]
   },
@@ -4407,50 +5122,109 @@
     ]
   },
   "sergio-sotelo": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Sergio Sotelo",
         "match": "Exact normalized name",
         "source": "https://www.utahforwardparty.org/candidates_2026"
+      },
+      {
+        "publishedName": "Sergio Sotelo",
+        "match": "Campaign page identifies Sergio Sotelo and State House District 38 and publishes the approved social account link.",
+        "source": "https://www.electsergiosotelo.com/"
       }
     ],
     "sources": [
-      "https://www.utahforwardparty.org/candidates_2026"
+      "https://www.utahforwardparty.org/candidates_2026",
+      "https://www.electsergiosotelo.com/"
     ],
     "notes": [
-      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted."
+      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted.",
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.electsergiosotelo.com/",
         "label": "Campaign website",
         "source": "https://www.utahforwardparty.org/candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/electsergiosotelo",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.electsergiosotelo.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:40.147810+00:00",
+        "reviewId": "eadaa379d797"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61577704186714",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.electsergiosotelo.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:40.147810+00:00",
+        "reviewId": "607b0799a8ce"
       }
     ]
   },
   "john-boyd": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "John Boyd",
         "match": "Exact normalized name",
         "source": "https://www.utahforwardparty.org/candidates_2026"
+      },
+      {
+        "publishedName": "John Boyd",
+        "match": "Campaign page identifies John Boyd and State House District 53 and publishes the approved social account link.",
+        "source": "https://johnboydforutah.com/"
       }
     ],
     "sources": [
-      "https://www.utahforwardparty.org/candidates_2026"
+      "https://www.utahforwardparty.org/candidates_2026",
+      "https://johnboydforutah.com/"
     ],
     "notes": [
-      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted."
+      "Website endorsed in the party’s 2026 candidate directory; no party-wide social accounts copied. Endpoint not individually fetched in this batch unless separately noted.",
+      "Social account additions approved in batch-04 (4e51ac02f52a) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.johnboydforutah.com/",
         "label": "Campaign website",
         "source": "https://www.utahforwardparty.org/candidates_2026",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/johnboyd4utah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://johnboydforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:24.289956+00:00",
+        "reviewId": "3ed56faf1adb"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61585370650743",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://johnboydforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:24.289956+00:00",
+        "reviewId": "4bbd04e93de5"
+      },
+      {
+        "url": "https://linkedin.com/in/mjohnboyd",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://johnboydforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:24.289956+00:00",
+        "reviewId": "e79be55d0f33"
       }
     ]
   },
@@ -4959,50 +5733,118 @@
     ]
   },
   "kendra-penry": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Kendra Penry",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Kendra Penry",
+        "match": "Campaign page identifies Kendra Penry and State House District 5 and publishes the approved social account link.",
+        "source": "https://www.kendraforutah.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.kendraforutah.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.kendraforutah.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/electkendrapenry",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.kendraforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:28.310897+00:00",
+        "reviewId": "ccd4f578889c"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61586127689861",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.kendraforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:28.310897+00:00",
+        "reviewId": "1d60c0e12c8f"
+      },
+      {
+        "url": "https://linkedin.com/in/kendra-penry-clutter-0b40b716",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://www.kendraforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:28.310897+00:00",
+        "reviewId": "8bb245e12d69"
       }
     ]
   },
   "bianca-mittendorf": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Bianca Mittendorf",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Bianca Mittendorf",
+        "match": "Campaign page identifies Bianca Mittendorf and State House District 7 and publishes the approved social account link.",
+        "source": "https://www.electbianca.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.electbianca.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.electbianca.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/elect_bianca_hd7",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.electbianca.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:17.161844+00:00",
+        "reviewId": "cfcfddaab00b"
+      },
+      {
+        "url": "https://facebook.com/electbiancahd7",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.electbianca.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:17.161844+00:00",
+        "reviewId": "42f2d9cf1821"
+      },
+      {
+        "url": "https://threads.com/@elect_bianca_hd7",
+        "platform": "threads",
+        "label": "Threads",
+        "source": "https://www.electbianca.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:17.161844+00:00",
+        "reviewId": "833895a2e758"
       }
     ]
   },
@@ -5103,74 +5945,149 @@
     ]
   },
   "anna-graff": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Anna Graff",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Anna Graff",
+        "match": "Campaign page identifies Anna Graff and State House District 12 and publishes the approved social account link.",
+        "source": "https://www.electannagraff.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.electannagraff.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.electannagraff.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/electannagraff",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.electannagraff.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:15.716158+00:00",
+        "reviewId": "60f20895d450"
+      },
+      {
+        "url": "https://threads.com/@annagraff801",
+        "platform": "threads",
+        "label": "Threads",
+        "source": "https://www.electannagraff.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:15.716158+00:00",
+        "reviewId": "21b35d707ad4"
+      },
+      {
+        "url": "https://facebook.com/ElectAnnaGraff",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.electannagraff.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:15.716158+00:00",
+        "reviewId": "84c136196891"
       }
     ]
   },
   "jeffrey-anderson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Jeffrey Anderson",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Jeffrey Anderson",
+        "match": "Campaign page identifies Jeffrey Anderson and State House District 13 and publishes the approved social account link.",
+        "source": "https://jeffandersonforutahhouse.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://jeffandersonforutahhouse.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://jeffandersonforutahhouse.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61588558991700",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://jeffandersonforutahhouse.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:36.190623+00:00",
+        "reviewId": "258653b15164"
       }
     ]
   },
   "brandon-young": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Brandon Young",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Brandon Young",
+        "match": "Campaign page identifies Brandon Young and State House District 14 and publishes the approved social account link.",
+        "source": "https://www.youngforhouse.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.youngforhouse.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.youngforhouse.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61577546979131",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.youngforhouse.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:18.668076+00:00",
+        "reviewId": "e77072ec6b1a"
+      },
+      {
+        "url": "https://instagram.com/bydirector",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.youngforhouse.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:18.668076+00:00",
+        "reviewId": "766f66315d5f"
       }
     ]
   },
@@ -5223,50 +6140,118 @@
     ]
   },
   "eric-last": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Eric Last",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Eric Last",
+        "match": "Campaign page identifies Eric Last and State House District 17 and publishes the approved social account link.",
+        "source": "https://ericlast.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://ericlast.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://ericlast.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/ericlast4utah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://ericlast.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:26.864558+00:00",
+        "reviewId": "b3ee4b0b4bc9"
+      },
+      {
+        "url": "https://threads.com/@ericlast4utah",
+        "platform": "threads",
+        "label": "Threads",
+        "source": "https://ericlast.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:26.864558+00:00",
+        "reviewId": "85a65f15ae66"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61587108901980",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://ericlast.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:26.864558+00:00",
+        "reviewId": "fb889201e32e"
       }
     ]
   },
   "scott-troxel": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Scott Troxel",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Scott Troxel",
+        "match": "Campaign page identifies Scott Troxel and State House District 18 and publishes the approved social account link.",
+        "source": "https://troxelforutah.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://troxelforutah.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://troxelforutah.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://threads.com/@scotrox",
+        "platform": "threads",
+        "label": "Threads",
+        "source": "https://troxelforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:39.972197+00:00",
+        "reviewId": "9a0a09c61f8a"
+      },
+      {
+        "url": "https://instagram.com/scotrox",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://troxelforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:39.972197+00:00",
+        "reviewId": "dee63fd234b6"
+      },
+      {
+        "url": "https://facebook.com/scotrox",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://troxelforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:39.972197+00:00",
+        "reviewId": "2059791aee41"
       }
     ]
   },
@@ -5367,26 +6352,42 @@
     ]
   },
   "anita-dalrymple": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Anita Dalrymple",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Anita Dalrymple",
+        "match": "Campaign page identifies Anita Dalrymple and State House District 28 and publishes the approved social account link.",
+        "source": "https://anitadalrymple4utah.vote/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://anitadalrymple4utah.vote/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://anitadalrymple4utah.vote/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/anita.dalrymple.2025",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://anitadalrymple4utah.vote/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:15.316610+00:00",
+        "reviewId": "1c4d4f6929cd"
       }
     ]
   },
@@ -5463,50 +6464,91 @@
     ]
   },
   "iva-williams": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Iva Williams",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Iva Williams",
+        "match": "Campaign page identifies Iva Williams and State House District 42 and publishes the approved social account link.",
+        "source": "https://www.electivawilliams.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.electivawilliams.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://electivawilliams.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/elect.iva",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.electivawilliams.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:32.689165+00:00",
+        "reviewId": "63802253c9c0"
       }
     ]
   },
   "jess-birtcher": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Jess Birtcher",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Jess Birtcher",
+        "match": "Campaign page identifies Jess Birtcher and State House District 44 and publishes the approved social account link.",
+        "source": "https://www.yes2jesshd44.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.yes2jesshd44.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://yes2jesshd44.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/yes2jesshd44",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.yes2jesshd44.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:23.562433+00:00",
+        "reviewId": "6ffaf871325f"
+      },
+      {
+        "url": "https://facebook.com/yes2jesshd44",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.yes2jesshd44.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:23.562433+00:00",
+        "reviewId": "40365ec3e71c"
       }
     ]
   },
@@ -5607,26 +6649,69 @@
     ]
   },
   "brett-nielsen": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Brett Nielsen",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Brett Nielsen",
+        "match": "Campaign page identifies Brett Nielsen and State House District 51 and publishes the approved social account link.",
+        "source": "https://www.brettforutah.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.brettforutah.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://brettforutah.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/brettforutah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.brettforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:18.928078+00:00",
+        "reviewId": "e4b17e75e1c0"
+      },
+      {
+        "url": "https://tiktok.com/@brettforutah",
+        "platform": "tiktok",
+        "label": "TikTok",
+        "source": "https://www.brettforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:18.928078+00:00",
+        "reviewId": "22fc951939f4"
+      },
+      {
+        "url": "https://facebook.com/brettforutah",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.brettforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:18.928078+00:00",
+        "reviewId": "7a5f33491502"
+      },
+      {
+        "url": "https://threads.com/@brettforutah",
+        "platform": "threads",
+        "label": "Threads",
+        "source": "https://www.brettforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:18.928078+00:00",
+        "reviewId": "e72d1b11fc26"
       }
     ]
   },
@@ -5703,26 +6788,51 @@
     ]
   },
   "travis-hysell": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Travis Hysell",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Travis Hysell",
+        "match": "Campaign page identifies Travis Hysell and State House District 55 and publishes the approved social account link.",
+        "source": "https://www.votehysell.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.votehysell.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://votehysell.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/travis.hysell",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.votehysell.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:47.332073+00:00",
+        "reviewId": "1c160fd89742"
+      },
+      {
+        "url": "https://instagram.com/travisforutah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.votehysell.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:47.332073+00:00",
+        "reviewId": "9d642441a02a"
       }
     ]
   },
@@ -5775,26 +6885,51 @@
     ]
   },
   "alan-jimenez": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Alan Jimenez",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Alan Jimenez",
+        "match": "Campaign page identifies Alan Jimenez and State House District 61 and publishes the approved social account link.",
+        "source": "https://alanforutah.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://alanforutah.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://alanforutah.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/alanforutah",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://alanforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:13.951670+00:00",
+        "reviewId": "5af6ff0c61b4"
+      },
+      {
+        "url": "https://instagram.com/alanforutah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://alanforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:35:13.951670+00:00",
+        "reviewId": "e15201bf4f7e"
       }
     ]
   },
@@ -6063,26 +7198,42 @@
     ]
   },
   "garret-rushforth": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Garret Rushforth",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Garret Rushforth",
+        "match": "Campaign page identifies Garret Rushforth and State Senate District 7 and publishes the approved social account link.",
+        "source": "https://voterushforth.com/about"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://voterushforth.com/about"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://voterushforth.com/about",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/rushforth4utah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://voterushforth.com/about",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:29.015415+00:00",
+        "reviewId": "1f796abe168f"
       }
     ]
   },
@@ -6159,26 +7310,78 @@
     ]
   },
   "tucker-smith": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Tucker Smith",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Tucker Smith",
+        "match": "Campaign page identifies Tucker Smith and State Senate District 23 and publishes the approved social account link.",
+        "source": "https://tuckersmithforutah.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://tuckersmithforutah.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.tuckersmithforutah.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://x.com/tuckerforutah",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://tuckersmithforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:48.224538+00:00",
+        "reviewId": "6af68eb89ffa"
+      },
+      {
+        "url": "https://youtube.com/@TuckerSmithforUtah",
+        "platform": "youtube",
+        "label": "YouTube",
+        "source": "https://tuckersmithforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:48.224538+00:00",
+        "reviewId": "6072432dfaba"
+      },
+      {
+        "url": "https://instagram.com/tuckersmithforutah",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://tuckersmithforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:48.224538+00:00",
+        "reviewId": "8f711f53ed0d"
+      },
+      {
+        "url": "https://linkedin.com/company/tucker-smith-for-utah",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://tuckersmithforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:48.224538+00:00",
+        "reviewId": "982fdf997a1a"
+      },
+      {
+        "url": "https://tiktok.com/@tuckersmithforutah",
+        "platform": "tiktok",
+        "label": "TikTok",
+        "source": "https://tuckersmithforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:48.224538+00:00",
+        "reviewId": "f322ff2edd6c"
       }
     ]
   },
@@ -6231,26 +7434,51 @@
     ]
   },
   "kacee-weaver": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Kacee Weaver",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Kacee Weaver",
+        "match": "Campaign page identifies Kacee Weaver and State School Board District 2 and publishes the approved social account link.",
+        "source": "https://kaceeforutahschools.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://kaceeforutahschools.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://kaceeforutahschools.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61586007654873",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://kaceeforutahschools.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:27.012614+00:00",
+        "reviewId": "f94a1873882e"
+      },
+      {
+        "url": "https://instagram.com/mskaceesclass",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://kaceeforutahschools.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:27.012614+00:00",
+        "reviewId": "79edd27c49ed"
       }
     ]
   },
@@ -6279,26 +7507,42 @@
     ]
   },
   "lacey-peterson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Lacey Peterson",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Lacey Peterson",
+        "match": "Campaign page identifies Lacey Peterson and State School Board District 11 and publishes the approved social account link.",
+        "source": "https://www.laceypetersoncampaign.org/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.laceypetersoncampaign.org/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.laceypetersoncampaign.org/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/vote_laceypeterson",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.laceypetersoncampaign.org/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:29.588275+00:00",
+        "reviewId": "903044748365"
       }
     ]
   },
@@ -6447,26 +7691,60 @@
     ]
   },
   "sim-gill": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Sim Gill",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Sim Gill",
+        "match": "Campaign page identifies Sim Gill and Salt Lake County District Attorney and publishes the approved social account link.",
+        "source": "https://www.votesim.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.votesim.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://www.votesim.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/SimGillDA",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.votesim.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:41.641122+00:00",
+        "reviewId": "268098d63785"
+      },
+      {
+        "url": "https://x.com/simgillda",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://www.votesim.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:41.641122+00:00",
+        "reviewId": "cdc5c5136e72"
+      },
+      {
+        "url": "https://instagram.com/simgillda",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.votesim.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:41.641122+00:00",
+        "reviewId": "e3492e714245"
       }
     ]
   },
@@ -6519,50 +7797,91 @@
     ]
   },
   "jiro-johnson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Jiro Johnson",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Jiro Johnson",
+        "match": "Campaign page identifies Jiro Johnson and Salt Lake County Council District 1 and publishes the approved social account link.",
+        "source": "https://www.jiroforsaltlake.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.jiroforsaltlake.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-04 (4e51ac02f52a) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://jiroforsaltlake.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/jiroforslco",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.jiroforsaltlake.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:37.588328+00:00",
+        "reviewId": "3c61993ac6f2"
       }
     ]
   },
   "luke-maynes": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Luke Maynes",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Luke Maynes",
+        "match": "Campaign page identifies Luke Maynes and Salt Lake County Council District 3 and publishes the approved social account link.",
+        "source": "https://www.lukeforcountycouncil.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.lukeforcountycouncil.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social accounts approved in batch-05 (4e6594e13c2d) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
     ],
     "links": [
       {
         "url": "https://lukeforcountycouncil.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/lukemaynesforslco3",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.lukeforcountycouncil.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:31.567556+00:00",
+        "reviewId": "6c030f440c09"
+      },
+      {
+        "url": "https://instagram.com/lukemaynesforslco3",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.lukeforcountycouncil.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:31.567556+00:00",
+        "reviewId": "03503700f4ec"
       }
     ]
   },
@@ -6615,26 +7934,51 @@
     ]
   },
   "jay-blain": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Jay Blain",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Jay Blain",
+        "match": "Campaign page identifies Jay Blain and Granite School Board District 6 and publishes the approved social account link.",
+        "source": "https://www.jayblain.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.jayblain.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.jayblain.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://x.com/jbpascal",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://www.jayblain.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:35.249849+00:00",
+        "reviewId": "60607e1596da"
+      },
+      {
+        "url": "https://linkedin.com/in/jay-blain-ab658724",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://www.jayblain.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:35.249849+00:00",
+        "reviewId": "5fc726aaa58f"
       }
     ]
   },
@@ -6687,26 +8031,51 @@
     ]
   },
   "amanda-finlayson": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Amanda Finlayson",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Amanda Finlayson",
+        "match": "Campaign page identifies Amanda Finlayson and Salt Lake School Board District 4 and publishes the approved social account link.",
+        "source": "https://afinlayson4slcschools.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://afinlayson4slcschools.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-01 (b78efa21a22d) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://afinlayson4slcschools.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/afinlayson4slcschools",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://afinlayson4slcschools.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:14.460610+00:00",
+        "reviewId": "091cfa0bafbd"
+      },
+      {
+        "url": "https://linkedin.com/in/amanda-k-f-slc",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://afinlayson4slcschools.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:14.460610+00:00",
+        "reviewId": "c7215157fb05"
       }
     ]
   },
@@ -6759,50 +8128,82 @@
     ]
   },
   "jennifer-smith": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Jennifer Smith",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Jennifer Smith",
+        "match": "Campaign page identifies Jennifer Smith and Salt Lake School Board District 6 and publishes the approved social account link.",
+        "source": "https://www.smithforslcschoolboard.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.smithforslcschoolboard.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.smithforslcschoolboard.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://instagram.com/smith4slc_schoolboard",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://www.smithforslcschoolboard.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:36.711521+00:00",
+        "reviewId": "7e20e26b4f30"
       }
     ]
   },
   "daylene-ann-redhorse": {
-    "verifiedOn": "2026-11-06",
+    "verifiedOn": "2026-11-10",
     "identityEvidence": [
       {
         "publishedName": "Daylene Ann Redhorse",
         "match": "Exact normalized name",
         "source": "https://www.organizeutah.org/"
+      },
+      {
+        "publishedName": "Daylene Ann Redhorse",
+        "match": "Campaign page identifies Daylene Ann Redhorse and San Juan County Clerk/Auditor and publishes the approved social account link.",
+        "source": "https://www.votedaylene.com/"
       }
     ],
     "sources": [
-      "https://www.organizeutah.org/"
+      "https://www.organizeutah.org/",
+      "https://www.votedaylene.com/"
     ],
     "notes": [
-      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check."
+      "Candidate page linked by the Utah Democratic Party (via its Our Candidates link). Exact-name match or same-name/same-2026-race corroboration. Most endpoints not separately fetched; this is directory endorsement, not an activity check.",
+      "Social account additions approved in batch-02 (9c5b7aea1d57) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
     ],
     "links": [
       {
         "url": "https://www.votedaylene.com/",
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
-        "verifiedOn": "2026-11-06"
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/profile.php?id=61591553882329",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://www.votedaylene.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:25.101861+00:00",
+        "reviewId": "f803b9caf19b"
       }
     ]
   },
@@ -7115,6 +8516,132 @@
         "label": "Campaign website",
         "source": "https://www.organizeutah.org/",
         "verifiedOn": "2026-11-06"
+      }
+    ]
+  },
+  "fred-c-cox": {
+    "verifiedOn": "2026-11-10",
+    "identityEvidence": [
+      {
+        "publishedName": "Fred C. Cox",
+        "match": "Campaign page identifies Fred C. Cox and State House District 30 and publishes the approved social account link.",
+        "source": "https://fredcox4utah.com/"
+      }
+    ],
+    "sources": [
+      "https://fredcox4utah.com/"
+    ],
+    "notes": [
+      "Social account additions approved in batch-03 (098942c562ca) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
+    ],
+    "links": [
+      {
+        "url": "https://fredcox4utah.com/",
+        "platform": "website",
+        "source": "https://fredcox4utah.com/",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://x.com/fredcox4utah",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://fredcox4utah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:28.611698+00:00",
+        "reviewId": "5bdddb4619e8"
+      }
+    ]
+  },
+  "john-knotwell": {
+    "verifiedOn": "2026-11-10",
+    "identityEvidence": [
+      {
+        "publishedName": "John Knotwell",
+        "match": "Campaign page identifies John Knotwell and State Senate District 11 and publishes the approved social account link.",
+        "source": "https://johnknotwell.com/"
+      }
+    ],
+    "sources": [
+      "https://johnknotwell.com/"
+    ],
+    "notes": [
+      "Social account additions approved in batch-04 (4e51ac02f52a) on 2026-11-10. Sources were retrieved on 2026-11-10; endorsement, not posting activity, was checked. Existing links were retained."
+    ],
+    "links": [
+      {
+        "url": "http://www.johnknotwell.com/",
+        "platform": "website",
+        "source": "https://johnknotwell.com/",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/407231955959632",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://johnknotwell.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T15:29:38.339779+00:00",
+        "reviewId": "83253c673774"
+      }
+    ]
+  },
+  "trevor-lee": {
+    "verifiedOn": "2026-11-10",
+    "identityEvidence": [
+      {
+        "publishedName": "Trevor Lee",
+        "match": "Campaign page identifies Trevor Lee and REP State House District 16 / State House District 16 and publishes the approved social account link.",
+        "source": "https://votetrevorlee.com/"
+      }
+    ],
+    "sources": [
+      "https://votetrevorlee.com/"
+    ],
+    "notes": [
+      "Social accounts approved in batch-06 (9a6931042b9b) on 2026-11-10. Primary-page endorsement checked; current posting activity not checked. Existing links retained."
+    ],
+    "links": [
+      {
+        "url": "https://votetrevorlee.com/",
+        "platform": "website",
+        "source": "https://votetrevorlee.com/",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://facebook.com/VoteTrevorLee",
+        "platform": "facebook",
+        "label": "Facebook",
+        "source": "https://votetrevorlee.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:47.668257+00:00",
+        "reviewId": "0ce79a15f1ab"
+      },
+      {
+        "url": "https://instagram.com/trevorlee451",
+        "platform": "instagram",
+        "label": "Instagram",
+        "source": "https://votetrevorlee.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:47.668257+00:00",
+        "reviewId": "e08cfd8a9ef3"
+      },
+      {
+        "url": "https://x.com/votetrevorlee",
+        "platform": "x",
+        "label": "X (Twitter)",
+        "source": "https://votetrevorlee.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:47.668257+00:00",
+        "reviewId": "2036b8682e2c"
+      },
+      {
+        "url": "https://linkedin.com/in/trevor-lee-025b64a1",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "source": "https://votetrevorlee.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T19:40:47.668257+00:00",
+        "reviewId": "1e13e31ab206"
       }
     ]
   }

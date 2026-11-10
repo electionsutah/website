@@ -1,0 +1,116 @@
+{
+  "batchId": "batch-04",
+  "contentHash": "4e51ac02f52a04cca319981804f8f35b0fe09e55fb0c7cc33bfb2d522f8f1dac",
+  "approvedOn": "2026-11-10",
+  "approval": "User approved Batch 4 in conversation",
+  "applied": [
+    {
+      "personId": "jiro-johnson",
+      "url": "https://instagram.com/jiroforslco",
+      "source": "https://www.jiroforsaltlake.com/",
+      "reviewId": "3c61993ac6f2"
+    },
+    {
+      "personId": "john-boyd",
+      "url": "https://instagram.com/johnboyd4utah",
+      "source": "https://johnboydforutah.com/",
+      "reviewId": "3ed56faf1adb"
+    },
+    {
+      "personId": "john-boyd",
+      "url": "https://facebook.com/profile.php?id=61585370650743",
+      "source": "https://johnboydforutah.com/",
+      "reviewId": "4bbd04e93de5"
+    },
+    {
+      "personId": "john-boyd",
+      "url": "https://linkedin.com/in/mjohnboyd",
+      "source": "https://johnboydforutah.com/",
+      "reviewId": "e79be55d0f33"
+    },
+    {
+      "personId": "john-knotwell",
+      "url": "https://facebook.com/407231955959632",
+      "source": "https://johnknotwell.com/",
+      "reviewId": "83253c673774"
+    },
+    {
+      "personId": "john-taylor",
+      "url": "https://x.com/toolmanjtaylor",
+      "source": "https://www.johntaylor4utah.com/",
+      "reviewId": "7bc47ad1b939"
+    },
+    {
+      "personId": "john-taylor",
+      "url": "https://facebook.com/profile.php?id=61584419274500",
+      "source": "https://www.johntaylor4utah.com/",
+      "reviewId": "c21d566afd53"
+    },
+    {
+      "personId": "john-taylor",
+      "url": "https://instagram.com/johntaylor4utah",
+      "source": "https://www.johntaylor4utah.com/",
+      "reviewId": "8fb28d3f1713"
+    },
+    {
+      "personId": "john-taylor",
+      "url": "https://truthsocial.com/@johntaylor4utah",
+      "source": "https://www.johntaylor4utah.com/",
+      "reviewId": "cd5476011e5d"
+    },
+    {
+      "personId": "josh-smith",
+      "url": "https://facebook.com/profile.php?id=61561841812613",
+      "source": "https://www.electjoshsmith.com/",
+      "reviewId": "4c36ad76f0a7"
+    }
+  ],
+  "excluded": [
+    {
+      "personId": "john-knotwell",
+      "url": "https://facebook.com/407231955959632_1330551635555119",
+      "reason": "Individual Facebook post, not an account"
+    },
+    {
+      "personId": "john-knotwell",
+      "url": "https://facebook.com/407231955959632_1330113262265623",
+      "reason": "Individual Facebook post, not an account"
+    },
+    {
+      "personId": "john-knotwell",
+      "url": "https://facebook.com/407231955959632_1329035782373371",
+      "reason": "Individual Facebook post, not an account"
+    },
+    {
+      "personId": "john-knotwell",
+      "url": "https://facebook.com/407231955959632_1316981133578836",
+      "reason": "Individual Facebook post, not an account"
+    },
+    {
+      "personId": "john-knotwell",
+      "url": "https://facebook.com/1416795205071201",
+      "reason": "Hashtag/topic link #TeamKnotwell, not a person account"
+    },
+    {
+      "personId": "john-knotwell",
+      "url": "https://facebook.com/407231955959632_1312745167335766",
+      "reason": "Individual Facebook post, not an account"
+    },
+    {
+      "personId": "john-knotwell",
+      "url": "https://facebook.com/407231955959632_1311688600774756",
+      "reason": "Individual Facebook post, not an account"
+    },
+    {
+      "personId": "josh-smith",
+      "url": "https://x.com/FWDUtah",
+      "reason": "Forward Utah party account, not Josh Smith’s personal account"
+    },
+    {
+      "personId": "josh-smith",
+      "url": "https://instagram.com/fwdutah",
+      "reason": "Forward Utah party account, not Josh Smith’s personal account"
+    }
+  ],
+  "normalizations": []
+}

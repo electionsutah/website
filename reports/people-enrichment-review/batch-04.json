@@ -1,0 +1,589 @@
+{
+  "id": "batch-04",
+  "status": "pending_user_approval",
+  "generatedAt": "2026-11-10T15:35:38.787987+00:00",
+  "runSource": "reports/people-enrichment-rerun.json",
+  "people": [
+    {
+      "id": "jiro-johnson",
+      "name": "Jiro Johnson",
+      "entityUrl": "https://www.electionsutah.org/people/jiro-johnson/",
+      "existingLinks": [
+        {
+          "url": "https://jiroforsaltlake.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "Salt Lake County Council District 1"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/General11032026/ballot-items/01000000-68b8-edcd-8002-08df2650840f"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/jiroforslco",
+          "entityId": "jiro-johnson",
+          "sourceUrl": "https://www.jiroforsaltlake.com/",
+          "anchorText": "instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "1",
+                "council",
+                "county",
+                "lake",
+                "salt"
+              ]
+            ],
+            "excerpt": "Jiro Johnson For SL County Skip navigation menu Home About Issues Contact Events Donate Re-elect to Salt Lake County Council District 1 Home About Issues Contact Events Donate Re-elect to Salt Lake County Council District 1 A Public Defender Fighting for You Sometimes you do need a lawyer. The criminal justice system is being used to split families"
+          },
+          "fetchedAt": "2026-11-10T15:29:37.588328+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "3c61993ac6f2"
+        }
+      ]
+    },
+    {
+      "id": "john-boyd",
+      "name": "John Boyd",
+      "entityUrl": "https://www.electionsutah.org/people/john-boyd/",
+      "existingLinks": [
+        {
+          "url": "https://www.johnboydforutah.com/",
+          "label": "Campaign website",
+          "source": "https://www.utahforwardparty.org/candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 53"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H53-John-Boyd.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/johnboyd4utah",
+          "entityId": "john-boyd",
+          "sourceUrl": "https://johnboydforutah.com/",
+          "anchorText": "Follow us on Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "53",
+                "house"
+              ]
+            ],
+            "excerpt": " John Boyd for Utah House District 53 Contribute JB in the News Policy Hot Takes Endorsement Videos Yard Signs 10k Doors Contact/Follow Follow me on Instagram // Facebook I'm running as an independent-minded Forward Party candidate (District 53 - East Lehi/AF), to bring back innovative and respectful policy dialogue, and reduce 2-party polarization"
+          },
+          "fetchedAt": "2026-11-10T15:35:24.289956+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "3ed56faf1adb"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61585370650743",
+          "entityId": "john-boyd",
+          "sourceUrl": "https://johnboydforutah.com/",
+          "anchorText": "Join us on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "53",
+                "house"
+              ]
+            ],
+            "excerpt": " John Boyd for Utah House District 53 Contribute JB in the News Policy Hot Takes Endorsement Videos Yard Signs 10k Doors Contact/Follow Follow me on Instagram // Facebook I'm running as an independent-minded Forward Party candidate (District 53 - East Lehi/AF), to bring back innovative and respectful policy dialogue, and reduce 2-party polarization"
+          },
+          "fetchedAt": "2026-11-10T15:35:24.289956+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "4bbd04e93de5"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/mjohnboyd",
+          "entityId": "john-boyd",
+          "sourceUrl": "https://johnboydforutah.com/",
+          "anchorText": "Join us on LinkedIn",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "53",
+                "house"
+              ]
+            ],
+            "excerpt": " John Boyd for Utah House District 53 Contribute JB in the News Policy Hot Takes Endorsement Videos Yard Signs 10k Doors Contact/Follow Follow me on Instagram // Facebook I'm running as an independent-minded Forward Party candidate (District 53 - East Lehi/AF), to bring back innovative and respectful policy dialogue, and reduce 2-party polarization"
+          },
+          "fetchedAt": "2026-11-10T15:35:24.289956+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e79be55d0f33"
+        }
+      ]
+    },
+    {
+      "id": "john-knotwell",
+      "name": "John Knotwell",
+      "entityUrl": "https://www.electionsutah.org/people/john-knotwell/",
+      "existingLinks": [
+        {
+          "url": "http://www.johnknotwell.com/",
+          "platform": "website"
+        }
+      ],
+      "offices": [
+        "State Senate District 11"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/S11-John-Knotwell.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/407231955959632",
+          "entityId": "john-knotwell",
+          "sourceUrl": "https://johnknotwell.com/",
+          "anchorText": "John Knotwell 7 months ago",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Home - John Knotwell for State Senate Skip to the content John Knotwell for State Senate Menu Home Meet John Issues Join the Team Donate Close Menu Home Meet John Issues Join the Team Donate Home MEET JOHN “The legislature talks about over a billion dollars in tax relief. That’s good, but families need relief they can actually feel – relief from s"
+          },
+          "fetchedAt": "2026-11-10T15:29:38.339779+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "83253c673774"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/407231955959632_1330551635555119",
+          "entityId": "john-knotwell",
+          "sourceUrl": "https://johnknotwell.com/",
+          "anchorText": "View on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Home - John Knotwell for State Senate Skip to the content John Knotwell for State Senate Menu Home Meet John Issues Join the Team Donate Close Menu Home Meet John Issues Join the Team Donate Home MEET JOHN “The legislature talks about over a billion dollars in tax relief. That’s good, but families need relief they can actually feel – relief from s"
+          },
+          "fetchedAt": "2026-11-10T15:29:38.339779+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "2e866a8326b5"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/407231955959632_1330113262265623",
+          "entityId": "john-knotwell",
+          "sourceUrl": "https://johnknotwell.com/",
+          "anchorText": "View on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Home - John Knotwell for State Senate Skip to the content John Knotwell for State Senate Menu Home Meet John Issues Join the Team Donate Close Menu Home Meet John Issues Join the Team Donate Home MEET JOHN “The legislature talks about over a billion dollars in tax relief. That’s good, but families need relief they can actually feel – relief from s"
+          },
+          "fetchedAt": "2026-11-10T15:29:38.339779+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "8b4402baa901"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/407231955959632_1329035782373371",
+          "entityId": "john-knotwell",
+          "sourceUrl": "https://johnknotwell.com/",
+          "anchorText": "View on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Home - John Knotwell for State Senate Skip to the content John Knotwell for State Senate Menu Home Meet John Issues Join the Team Donate Close Menu Home Meet John Issues Join the Team Donate Home MEET JOHN “The legislature talks about over a billion dollars in tax relief. That’s good, but families need relief they can actually feel – relief from s"
+          },
+          "fetchedAt": "2026-11-10T15:29:38.339779+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "04c90b471bfc"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/407231955959632_1316981133578836",
+          "entityId": "john-knotwell",
+          "sourceUrl": "https://johnknotwell.com/",
+          "anchorText": "View on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Home - John Knotwell for State Senate Skip to the content John Knotwell for State Senate Menu Home Meet John Issues Join the Team Donate Close Menu Home Meet John Issues Join the Team Donate Home MEET JOHN “The legislature talks about over a billion dollars in tax relief. That’s good, but families need relief they can actually feel – relief from s"
+          },
+          "fetchedAt": "2026-11-10T15:29:38.339779+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "00ea9d2341da"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/1416795205071201",
+          "entityId": "john-knotwell",
+          "sourceUrl": "https://johnknotwell.com/",
+          "anchorText": "#TeamKnotwell",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Home - John Knotwell for State Senate Skip to the content John Knotwell for State Senate Menu Home Meet John Issues Join the Team Donate Close Menu Home Meet John Issues Join the Team Donate Home MEET JOHN “The legislature talks about over a billion dollars in tax relief. That’s good, but families need relief they can actually feel – relief from s"
+          },
+          "fetchedAt": "2026-11-10T15:29:38.339779+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "112d1041b8b1"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/407231955959632_1312745167335766",
+          "entityId": "john-knotwell",
+          "sourceUrl": "https://johnknotwell.com/",
+          "anchorText": "View on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Home - John Knotwell for State Senate Skip to the content John Knotwell for State Senate Menu Home Meet John Issues Join the Team Donate Close Menu Home Meet John Issues Join the Team Donate Home MEET JOHN “The legislature talks about over a billion dollars in tax relief. That’s good, but families need relief they can actually feel – relief from s"
+          },
+          "fetchedAt": "2026-11-10T15:29:38.339779+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "f4ff21c58687"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/407231955959632_1311688600774756",
+          "entityId": "john-knotwell",
+          "sourceUrl": "https://johnknotwell.com/",
+          "anchorText": "View on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "senate"
+              ]
+            ],
+            "excerpt": " Home - John Knotwell for State Senate Skip to the content John Knotwell for State Senate Menu Home Meet John Issues Join the Team Donate Close Menu Home Meet John Issues Join the Team Donate Home MEET JOHN “The legislature talks about over a billion dollars in tax relief. That’s good, but families need relief they can actually feel – relief from s"
+          },
+          "fetchedAt": "2026-11-10T15:29:38.339779+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "73af9cbc5be4"
+        }
+      ]
+    },
+    {
+      "id": "john-taylor",
+      "name": "John Taylor",
+      "entityUrl": "https://www.electionsutah.org/people/john-taylor/",
+      "existingLinks": [
+        {
+          "url": "https://www.johntaylor4utah.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "REP State House District 14",
+        "State House District 14"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6",
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H14-John-Taylor.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "x",
+          "url": "https://x.com/toolmanjtaylor",
+          "entityId": "john-taylor",
+          "sourceUrl": "https://www.johntaylor4utah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "14",
+                "house"
+              ],
+              [
+                "14",
+                "house"
+              ]
+            ],
+            "excerpt": " JohnTaylor4Utah 0 Skip to Content Home Bio Issues Contact Donate Endorsements Calendar DONATE Open Menu Close Menu Home Bio Issues Contact Donate Endorsements Calendar DONATE Open Menu Close Menu Home Bio Issues Contact Donate Endorsements Calendar DONATE Trusted Conservative Voice for common sense solutions John’s extensive leadership roles have "
+          },
+          "fetchedAt": "2026-11-10T15:29:38.538540+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "7bc47ad1b939"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61584419274500",
+          "entityId": "john-taylor",
+          "sourceUrl": "https://www.johntaylor4utah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "14",
+                "house"
+              ],
+              [
+                "14",
+                "house"
+              ]
+            ],
+            "excerpt": " JohnTaylor4Utah 0 Skip to Content Home Bio Issues Contact Donate Endorsements Calendar DONATE Open Menu Close Menu Home Bio Issues Contact Donate Endorsements Calendar DONATE Open Menu Close Menu Home Bio Issues Contact Donate Endorsements Calendar DONATE Trusted Conservative Voice for common sense solutions John’s extensive leadership roles have "
+          },
+          "fetchedAt": "2026-11-10T15:29:38.538540+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "c21d566afd53"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/johntaylor4utah",
+          "entityId": "john-taylor",
+          "sourceUrl": "https://www.johntaylor4utah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "14",
+                "house"
+              ],
+              [
+                "14",
+                "house"
+              ]
+            ],
+            "excerpt": " JohnTaylor4Utah 0 Skip to Content Home Bio Issues Contact Donate Endorsements Calendar DONATE Open Menu Close Menu Home Bio Issues Contact Donate Endorsements Calendar DONATE Open Menu Close Menu Home Bio Issues Contact Donate Endorsements Calendar DONATE Trusted Conservative Voice for common sense solutions John’s extensive leadership roles have "
+          },
+          "fetchedAt": "2026-11-10T15:29:38.538540+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "8fb28d3f1713"
+        },
+        {
+          "platform": "truthsocial",
+          "url": "https://truthsocial.com/@johntaylor4utah",
+          "entityId": "john-taylor",
+          "sourceUrl": "https://www.johntaylor4utah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "14",
+                "house"
+              ],
+              [
+                "14",
+                "house"
+              ]
+            ],
+            "excerpt": " JohnTaylor4Utah 0 Skip to Content Home Bio Issues Contact Donate Endorsements Calendar DONATE Open Menu Close Menu Home Bio Issues Contact Donate Endorsements Calendar DONATE Open Menu Close Menu Home Bio Issues Contact Donate Endorsements Calendar DONATE Trusted Conservative Voice for common sense solutions John’s extensive leadership roles have "
+          },
+          "fetchedAt": "2026-11-10T15:29:38.538540+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "cd5476011e5d"
+        }
+      ]
+    },
+    {
+      "id": "josh-smith",
+      "name": "Josh Smith",
+      "entityUrl": "https://www.electionsutah.org/people/josh-smith/",
+      "existingLinks": [
+        {
+          "url": "https://www.electjoshsmith.com/",
+          "label": "Campaign website",
+          "source": "https://www.utahforwardparty.org/candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State Senate District 6"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/S6-Joshua-Smith.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61561841812613",
+          "entityId": "josh-smith",
+          "sourceUrl": "https://www.electjoshsmith.com/",
+          "anchorText": "Events",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "6",
+                "senate"
+              ]
+            ],
+            "excerpt": " Elect Josh Smith | Political Site Josh Smith Senate District 6 Forward Party Get Involved Events Contact Donate Josh Smith Principled Politics Pragmatic Solutions Meet Josh I am a sixth generation Utahn, born and raised in Ogden area. After graduating from Weber State University with a degree in Applied Math and Computer Science, I married my swee"
+          },
+          "fetchedAt": "2026-11-10T15:29:39.023130+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "4c36ad76f0a7"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/FWDUtah",
+          "entityId": "josh-smith",
+          "sourceUrl": "https://www.electjoshsmith.com/",
+          "anchorText": "X",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "6",
+                "senate"
+              ]
+            ],
+            "excerpt": " Elect Josh Smith | Political Site Josh Smith Senate District 6 Forward Party Get Involved Events Contact Donate Josh Smith Principled Politics Pragmatic Solutions Meet Josh I am a sixth generation Utahn, born and raised in Ogden area. After graduating from Weber State University with a degree in Applied Math and Computer Science, I married my swee"
+          },
+          "fetchedAt": "2026-11-10T15:29:39.023130+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "f4eaedb634dc"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/fwdutah",
+          "entityId": "josh-smith",
+          "sourceUrl": "https://www.electjoshsmith.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "6",
+                "senate"
+              ]
+            ],
+            "excerpt": " Elect Josh Smith | Political Site Josh Smith Senate District 6 Forward Party Get Involved Events Contact Donate Josh Smith Principled Politics Pragmatic Solutions Meet Josh I am a sixth generation Utahn, born and raised in Ogden area. After graduating from Weber State University with a degree in Applied Math and Computer Science, I married my swee"
+          },
+          "fetchedAt": "2026-11-10T15:29:39.023130+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "bc6614e22565"
+        }
+      ]
+    }
+  ],
+  "contentHash": "4e51ac02f52a04cca319981804f8f35b0fe09e55fb0c7cc33bfb2d522f8f1dac"
+}

@@ -1,0 +1,851 @@
+{
+  "id": "batch-06",
+  "status": "pending_user_approval",
+  "generatedAt": "2026-11-10T19:42:20.692985+00:00",
+  "runSource": "reports/people-enrichment-next-200-screened.json",
+  "people": [
+    {
+      "id": "paul-cutler",
+      "name": "Paul Cutler",
+      "entityUrl": "https://www.electionsutah.org/people/paul-cutler/",
+      "existingLinks": [
+        {
+          "url": "https://votepaulcutler.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 18"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H18-Paul-Cutler-1.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/CutlerLegislature",
+          "entityId": "paul-cutler",
+          "sourceUrl": "https://votepaulcutler.com/",
+          "anchorText": "Facebook Social Link",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "18",
+                "house"
+              ]
+            ],
+            "excerpt": "Paul Cutler, Utah State Legislature House District 18 Home Events & Contact Info More Home Events & Contact Info Home Events & Contact Info Paul Cutler, Utah State House district 18 Welcome! Welcome! Welcome! Welcome! Thanks for taking time to research the issues and learn about the Utah State legislature. Contact Paul Learn More About the Issues L"
+          },
+          "fetchedAt": "2026-11-10T19:40:34.799684+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "6fa9683ff108"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/parttimepolitician",
+          "entityId": "paul-cutler",
+          "sourceUrl": "https://votepaulcutler.com/",
+          "anchorText": "Instagram Social Link",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "18",
+                "house"
+              ]
+            ],
+            "excerpt": "Paul Cutler, Utah State Legislature House District 18 Home Events & Contact Info More Home Events & Contact Info Home Events & Contact Info Paul Cutler, Utah State House district 18 Welcome! Welcome! Welcome! Welcome! Thanks for taking time to research the issues and learn about the Utah State legislature. Contact Paul Learn More About the Issues L"
+          },
+          "fetchedAt": "2026-11-10T19:40:34.799684+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "94059771ac2d"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/paul-cutler-364182",
+          "entityId": "paul-cutler",
+          "sourceUrl": "https://votepaulcutler.com/",
+          "anchorText": "LinkedIn Social Link",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "18",
+                "house"
+              ]
+            ],
+            "excerpt": "Paul Cutler, Utah State Legislature House District 18 Home Events & Contact Info More Home Events & Contact Info Home Events & Contact Info Paul Cutler, Utah State House district 18 Welcome! Welcome! Welcome! Welcome! Thanks for taking time to research the issues and learn about the Utah State legislature. Contact Paul Learn More About the Issues L"
+          },
+          "fetchedAt": "2026-11-10T19:40:34.799684+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "791f24d841cd"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/parttimepolpaul",
+          "entityId": "paul-cutler",
+          "sourceUrl": "https://votepaulcutler.com/",
+          "anchorText": "X",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "18",
+                "house"
+              ]
+            ],
+            "excerpt": "Paul Cutler, Utah State Legislature House District 18 Home Events & Contact Info More Home Events & Contact Info Home Events & Contact Info Paul Cutler, Utah State House district 18 Welcome! Welcome! Welcome! Welcome! Thanks for taking time to research the issues and learn about the Utah State legislature. Contact Paul Learn More About the Issues L"
+          },
+          "fetchedAt": "2026-11-10T19:40:34.799684+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "4227ba14682b"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/channel/UCuEOACsPXlClDKUVkKHLfDw",
+          "entityId": "paul-cutler",
+          "sourceUrl": "https://votepaulcutler.com/",
+          "anchorText": "YouTube Social Link",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "18",
+                "house"
+              ]
+            ],
+            "excerpt": "Paul Cutler, Utah State Legislature House District 18 Home Events & Contact Info More Home Events & Contact Info Home Events & Contact Info Paul Cutler, Utah State House district 18 Welcome! Welcome! Welcome! Welcome! Thanks for taking time to research the issues and learn about the Utah State legislature. Contact Paul Learn More About the Issues L"
+          },
+          "fetchedAt": "2026-11-10T19:40:34.799684+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "9115ad643a0a"
+        }
+      ]
+    },
+    {
+      "id": "scott-sandall",
+      "name": "Scott Sandall",
+      "entityUrl": "https://www.electionsutah.org/people/scott-sandall/",
+      "existingLinks": [
+        {
+          "url": "https://www.votescottsandall.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State Senate District 1"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/S1-Scott-Sandall.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/votescottsandalldistrict17",
+          "entityId": "scott-sandall",
+          "sourceUrl": "https://www.votescottsandall.com/",
+          "anchorText": "Vote Scott Sandall Senate District 17 on Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "1",
+                "senate"
+              ]
+            ],
+            "excerpt": " Scott Sandall for Utah Senate | Support Conservative Values Today 0 Skip to Content Home Meet Scott Important Issues Volunteer Newsletters 2026 Session Week One 2026 Session Week Two 2026 Session Week Three Contact Open Menu Close Menu Home Meet Scott Important Issues Volunteer Newsletters 2026 Session Week One 2026 Session Week Two 2026 Session W"
+          },
+          "fetchedAt": "2026-11-10T19:40:39.871144+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "6825d46cac91"
+        }
+      ]
+    },
+    {
+      "id": "scott-troxel",
+      "name": "Scott Troxel",
+      "entityUrl": "https://www.electionsutah.org/people/scott-troxel/",
+      "existingLinks": [
+        {
+          "url": "https://troxelforutah.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 18"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H18-Scott-Troxel.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "threads",
+          "url": "https://threads.com/@scotrox",
+          "entityId": "scott-troxel",
+          "sourceUrl": "https://troxelforutah.com/",
+          "anchorText": "Threads",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "18",
+                "house"
+              ]
+            ],
+            "excerpt": " Home - Scott Troxel for Utah State House District 18 Threads Instagram Facebook Home Platform About Get Involved Donate Scott Troxel for Utah State House District 18 Putting Families and Affordability First in Utah I’m running for Utah State House District 18 to make life more affordable, strengthen public schools, and ensure government works for "
+          },
+          "fetchedAt": "2026-11-10T19:40:39.972197+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "9a0a09c61f8a"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/scotrox",
+          "entityId": "scott-troxel",
+          "sourceUrl": "https://troxelforutah.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "18",
+                "house"
+              ]
+            ],
+            "excerpt": " Home - Scott Troxel for Utah State House District 18 Threads Instagram Facebook Home Platform About Get Involved Donate Scott Troxel for Utah State House District 18 Putting Families and Affordability First in Utah I’m running for Utah State House District 18 to make life more affordable, strengthen public schools, and ensure government works for "
+          },
+          "fetchedAt": "2026-11-10T19:40:39.972197+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "dee63fd234b6"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/scotrox",
+          "entityId": "scott-troxel",
+          "sourceUrl": "https://troxelforutah.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "18",
+                "house"
+              ]
+            ],
+            "excerpt": " Home - Scott Troxel for Utah State House District 18 Threads Instagram Facebook Home Platform About Get Involved Donate Scott Troxel for Utah State House District 18 Putting Families and Affordability First in Utah I’m running for Utah State House District 18 to make life more affordable, strengthen public schools, and ensure government works for "
+          },
+          "fetchedAt": "2026-11-10T19:40:39.972197+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "2059791aee41"
+        }
+      ]
+    },
+    {
+      "id": "sergio-sotelo",
+      "name": "Sergio Sotelo",
+      "entityUrl": "https://www.electionsutah.org/people/sergio-sotelo/",
+      "existingLinks": [
+        {
+          "url": "https://www.electsergiosotelo.com/",
+          "label": "Campaign website",
+          "source": "https://www.utahforwardparty.org/candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 38"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/08/H38-Sergio-Sotelo.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/electsergiosotelo",
+          "entityId": "sergio-sotelo",
+          "sourceUrl": "https://www.electsergiosotelo.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "38",
+                "house"
+              ]
+            ],
+            "excerpt": " Sergio Sotelo for State House District 38 0 Skip to Content Home Issues Endorsements Contact DONATE Open Menu Close Menu Home Issues Endorsements Contact DONATE Open Menu Close Menu Home Issues Endorsements Contact DONATE About Sergio Sotelo knows the value of a dollar. When he was 14 years old, he got his first job at the neighborhood grocery sto"
+          },
+          "fetchedAt": "2026-11-10T19:40:40.147810+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "eadaa379d797"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61577704186714",
+          "entityId": "sergio-sotelo",
+          "sourceUrl": "https://www.electsergiosotelo.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "38",
+                "house"
+              ]
+            ],
+            "excerpt": " Sergio Sotelo for State House District 38 0 Skip to Content Home Issues Endorsements Contact DONATE Open Menu Close Menu Home Issues Endorsements Contact DONATE Open Menu Close Menu Home Issues Endorsements Contact DONATE About Sergio Sotelo knows the value of a dollar. When he was 14 years old, he got his first job at the neighborhood grocery sto"
+          },
+          "fetchedAt": "2026-11-10T19:40:40.147810+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "607b0799a8ce"
+        }
+      ]
+    },
+    {
+      "id": "sim-gill",
+      "name": "Sim Gill",
+      "entityUrl": "https://www.electionsutah.org/people/sim-gill/",
+      "existingLinks": [
+        {
+          "url": "https://www.votesim.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "Salt Lake County District Attorney"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/General11032026/ballot-items/01000000-68b8-edcd-810b-08df2650840f",
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b18c-08dec66916b5"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/SimGillDA",
+          "entityId": "sim-gill",
+          "sourceUrl": "https://www.votesim.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "attorney",
+                "county",
+                "lake",
+                "salt"
+              ]
+            ],
+            "excerpt": " Vote Sim Gill 0 Skip to Content HOME ENDORSEMENTS VOLUNTEER DONATE Open Menu Close Menu DONATE HOME ENDORSEMENTS VOLUNTEER Open Menu Close Menu HOME ENDORSEMENTS VOLUNTEER DONATE Showing up for you. Fighting for what’s right. RE-ELECT SIM GILL ELECTION DAY IS NOVEMBER 3 Mail your ballot by October 29 Take it to a drop box by 8 PM on Election Day V"
+          },
+          "fetchedAt": "2026-11-10T19:40:41.641122+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "268098d63785"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/simgillda",
+          "entityId": "sim-gill",
+          "sourceUrl": "https://www.votesim.com/",
+          "anchorText": "Twitter",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "attorney",
+                "county",
+                "lake",
+                "salt"
+              ]
+            ],
+            "excerpt": " Vote Sim Gill 0 Skip to Content HOME ENDORSEMENTS VOLUNTEER DONATE Open Menu Close Menu DONATE HOME ENDORSEMENTS VOLUNTEER Open Menu Close Menu HOME ENDORSEMENTS VOLUNTEER DONATE Showing up for you. Fighting for what’s right. RE-ELECT SIM GILL ELECTION DAY IS NOVEMBER 3 Mail your ballot by October 29 Take it to a drop box by 8 PM on Election Day V"
+          },
+          "fetchedAt": "2026-11-10T19:40:41.641122+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "cdc5c5136e72"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/simgillda",
+          "entityId": "sim-gill",
+          "sourceUrl": "https://www.votesim.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "attorney",
+                "county",
+                "lake",
+                "salt"
+              ]
+            ],
+            "excerpt": " Vote Sim Gill 0 Skip to Content HOME ENDORSEMENTS VOLUNTEER DONATE Open Menu Close Menu DONATE HOME ENDORSEMENTS VOLUNTEER Open Menu Close Menu HOME ENDORSEMENTS VOLUNTEER DONATE Showing up for you. Fighting for what’s right. RE-ELECT SIM GILL ELECTION DAY IS NOVEMBER 3 Mail your ballot by October 29 Take it to a drop box by 8 PM on Election Day V"
+          },
+          "fetchedAt": "2026-11-10T19:40:41.641122+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e3492e714245"
+        }
+      ]
+    },
+    {
+      "id": "steve-eliason",
+      "name": "Steve Eliason",
+      "entityUrl": "https://www.electionsutah.org/people/steve-eliason/",
+      "existingLinks": [
+        {
+          "url": "https://house.utleg.gov/rep/ELIASS",
+          "label": "Official legislative profile",
+          "source": "https://house.utleg.gov/house-members/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://steveeliasonforutah.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 43"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H43-Steve-Eliason.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/VoteSteveEliason",
+          "entityId": "steve-eliason",
+          "sourceUrl": "https://steveeliasonforutah.com/",
+          "anchorText": "Representative Steve Eliason",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "43",
+                "house"
+              ]
+            ],
+            "excerpt": " Steve Eliason for Utah House 0 Skip to Content Home Meet Steve Priorities Endorsements DONATE Open Menu Close Menu Home Meet Steve Priorities Endorsements DONATE Open Menu Close Menu Home Meet Steve Priorities Endorsements DONATE Getting Things Done for Utah and for You. Steve Eliason is a lifelong community member who has devoted his life to publ"
+          },
+          "fetchedAt": "2026-11-10T19:40:45.152496+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1420ce3fead2"
+        }
+      ]
+    },
+    {
+      "id": "travis-hysell",
+      "name": "Travis Hysell",
+      "entityUrl": "https://www.electionsutah.org/people/travis-hysell/",
+      "existingLinks": [
+        {
+          "url": "https://votehysell.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 55"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H55-Travis-Hysell.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/travis.hysell",
+          "entityId": "travis-hysell",
+          "sourceUrl": "https://www.votehysell.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "55",
+                "house"
+              ]
+            ],
+            "excerpt": " Travis Hysell – HOUSE DISTRICT 55 Skip to content Travis Hysell HOUSE DISTRICT 55 Menu About Me Access to Quality Health Care Affordable Housing & Cost of Living Common Decency in Politics Frontpage Good Jobs for Working Families Strong Public Schools Building a better Utah TOGETHER Construction Worker • Volunteer • Dad I’m running because every U"
+          },
+          "fetchedAt": "2026-11-10T19:40:47.332073+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1c160fd89742"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/travisforutah",
+          "entityId": "travis-hysell",
+          "sourceUrl": "https://www.votehysell.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "55",
+                "house"
+              ]
+            ],
+            "excerpt": " Travis Hysell – HOUSE DISTRICT 55 Skip to content Travis Hysell HOUSE DISTRICT 55 Menu About Me Access to Quality Health Care Affordable Housing & Cost of Living Common Decency in Politics Frontpage Good Jobs for Working Families Strong Public Schools Building a better Utah TOGETHER Construction Worker • Volunteer • Dad I’m running because every U"
+          },
+          "fetchedAt": "2026-11-10T19:40:47.332073+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "9d642441a02a"
+        }
+      ]
+    },
+    {
+      "id": "trevor-lee",
+      "name": "Trevor Lee",
+      "entityUrl": "https://www.electionsutah.org/people/trevor-lee/",
+      "existingLinks": [
+        {
+          "url": "VoteTrevorLee.com",
+          "platform": "website"
+        }
+      ],
+      "offices": [
+        "REP State House District 16",
+        "State House District 16"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H16-Trevor-Lee.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/VoteTrevorLee",
+          "entityId": "trevor-lee",
+          "sourceUrl": "https://votetrevorlee.com/",
+          "anchorText": "JSON-LD sameAs Trevor Lee",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "16",
+                "house"
+              ],
+              [
+                "16",
+                "house"
+              ]
+            ],
+            "excerpt": " Trevor Lee for Utah House District 16 Transparent conservative leadership for Utah House District 16 Facebook Instagram X LinkedIn Home About My Record Issues Endorsements Events Volunteer Contact Donate Now Menu Home About My Record Issues Endorsements Events Volunteer Contact // Re-Elect Trevor Lee Conservative Results. Total Transparency. 100% "
+          },
+          "fetchedAt": "2026-11-10T19:40:47.668257+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "0ce79a15f1ab"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/trevorlee451",
+          "entityId": "trevor-lee",
+          "sourceUrl": "https://votetrevorlee.com/",
+          "anchorText": "JSON-LD sameAs Trevor Lee",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "16",
+                "house"
+              ],
+              [
+                "16",
+                "house"
+              ]
+            ],
+            "excerpt": " Trevor Lee for Utah House District 16 Transparent conservative leadership for Utah House District 16 Facebook Instagram X LinkedIn Home About My Record Issues Endorsements Events Volunteer Contact Donate Now Menu Home About My Record Issues Endorsements Events Volunteer Contact // Re-Elect Trevor Lee Conservative Results. Total Transparency. 100% "
+          },
+          "fetchedAt": "2026-11-10T19:40:47.668257+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e08cfd8a9ef3"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/votetrevorlee",
+          "entityId": "trevor-lee",
+          "sourceUrl": "https://votetrevorlee.com/",
+          "anchorText": "JSON-LD sameAs Trevor Lee",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "16",
+                "house"
+              ],
+              [
+                "16",
+                "house"
+              ]
+            ],
+            "excerpt": " Trevor Lee for Utah House District 16 Transparent conservative leadership for Utah House District 16 Facebook Instagram X LinkedIn Home About My Record Issues Endorsements Events Volunteer Contact Donate Now Menu Home About My Record Issues Endorsements Events Volunteer Contact // Re-Elect Trevor Lee Conservative Results. Total Transparency. 100% "
+          },
+          "fetchedAt": "2026-11-10T19:40:47.668257+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "2036b8682e2c"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/trevor-lee-025b64a1",
+          "entityId": "trevor-lee",
+          "sourceUrl": "https://votetrevorlee.com/",
+          "anchorText": "JSON-LD sameAs Trevor Lee",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "16",
+                "house"
+              ],
+              [
+                "16",
+                "house"
+              ]
+            ],
+            "excerpt": " Trevor Lee for Utah House District 16 Transparent conservative leadership for Utah House District 16 Facebook Instagram X LinkedIn Home About My Record Issues Endorsements Events Volunteer Contact Donate Now Menu Home About My Record Issues Endorsements Events Volunteer Contact // Re-Elect Trevor Lee Conservative Results. Total Transparency. 100% "
+          },
+          "fetchedAt": "2026-11-10T19:40:47.668257+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1e13e31ab206"
+        }
+      ]
+    },
+    {
+      "id": "tucker-smith",
+      "name": "Tucker Smith",
+      "entityUrl": "https://www.electionsutah.org/people/tucker-smith/",
+      "existingLinks": [
+        {
+          "url": "https://www.tuckersmithforutah.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State Senate District 23"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/S23-Tucker-Smith.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "x",
+          "url": "https://x.com/tuckerforutah",
+          "entityId": "tucker-smith",
+          "sourceUrl": "https://tuckersmithforutah.com/",
+          "anchorText": "Follow us on Twitter",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "23",
+                "senate"
+              ]
+            ],
+            "excerpt": " Tucker Smith for Utah State Senate | District 23 | People First Home Issues Events News Opportunities About Tucker Contribute Building a Utah Where Everyone Thrives Running for Fairness, Access, and Opportunity in District 23 Tucker Smith is running for State Senate to put people first . In District 23, families deserve more than just a seat at th"
+          },
+          "fetchedAt": "2026-11-10T19:40:48.224538+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "6af68eb89ffa"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/@TuckerSmithforUtah",
+          "entityId": "tucker-smith",
+          "sourceUrl": "https://tuckersmithforutah.com/",
+          "anchorText": "Watch our Videos on YouTube",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "23",
+                "senate"
+              ]
+            ],
+            "excerpt": " Tucker Smith for Utah State Senate | District 23 | People First Home Issues Events News Opportunities About Tucker Contribute Building a Utah Where Everyone Thrives Running for Fairness, Access, and Opportunity in District 23 Tucker Smith is running for State Senate to put people first . In District 23, families deserve more than just a seat at th"
+          },
+          "fetchedAt": "2026-11-10T19:40:48.224538+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "6072432dfaba"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/tuckersmithforutah",
+          "entityId": "tucker-smith",
+          "sourceUrl": "https://tuckersmithforutah.com/",
+          "anchorText": "Follow us on Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "23",
+                "senate"
+              ]
+            ],
+            "excerpt": " Tucker Smith for Utah State Senate | District 23 | People First Home Issues Events News Opportunities About Tucker Contribute Building a Utah Where Everyone Thrives Running for Fairness, Access, and Opportunity in District 23 Tucker Smith is running for State Senate to put people first . In District 23, families deserve more than just a seat at th"
+          },
+          "fetchedAt": "2026-11-10T19:40:48.224538+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "8f711f53ed0d"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/company/tucker-smith-for-utah",
+          "entityId": "tucker-smith",
+          "sourceUrl": "https://tuckersmithforutah.com/",
+          "anchorText": "Join us on LinkedIn",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "23",
+                "senate"
+              ]
+            ],
+            "excerpt": " Tucker Smith for Utah State Senate | District 23 | People First Home Issues Events News Opportunities About Tucker Contribute Building a Utah Where Everyone Thrives Running for Fairness, Access, and Opportunity in District 23 Tucker Smith is running for State Senate to put people first . In District 23, families deserve more than just a seat at th"
+          },
+          "fetchedAt": "2026-11-10T19:40:48.224538+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "982fdf997a1a"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://tiktok.com/@tuckersmithforutah",
+          "entityId": "tucker-smith",
+          "sourceUrl": "https://tuckersmithforutah.com/",
+          "anchorText": "Follow us on TikTok",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "23",
+                "senate"
+              ]
+            ],
+            "excerpt": " Tucker Smith for Utah State Senate | District 23 | People First Home Issues Events News Opportunities About Tucker Contribute Building a Utah Where Everyone Thrives Running for Fairness, Access, and Opportunity in District 23 Tucker Smith is running for State Senate to put people first . In District 23, families deserve more than just a seat at th"
+          },
+          "fetchedAt": "2026-11-10T19:40:48.224538+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "f322ff2edd6c"
+        }
+      ]
+    }
+  ],
+  "contentHash": "9a6931042b9be6ccc46275d96ae278319c830e36df209451c4dbb7004464225d"
+}

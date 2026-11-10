@@ -1,0 +1,704 @@
+{
+  "id": "batch-05",
+  "status": "pending_user_approval",
+  "generatedAt": "2026-11-10T19:42:20.692985+00:00",
+  "runSource": "reports/people-enrichment-next-200-screened.json",
+  "people": [
+    {
+      "id": "kacee-weaver",
+      "name": "Kacee Weaver",
+      "entityUrl": "https://www.electionsutah.org/people/kacee-weaver/",
+      "existingLinks": [
+        {
+          "url": "https://kaceeforutahschools.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State School Board District 2"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-2-Kacee-Weaver.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61586007654873",
+          "entityId": "kacee-weaver",
+          "sourceUrl": "https://kaceeforutahschools.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "board",
+                "school"
+              ]
+            ],
+            "excerpt": " Kacee Weaver for State School Board Meet Kacee Candidate Statement News Volunteer Contribute Kacee's Resume Support Our Campaign Make a Contribution Today Click Here to Contribute Join the Campaign Become a Volunteer Click Here to Sign Up Show Your Support! Request a Yard Sign Click Here to Request a Sign Need Voting Information? Register & Find Y"
+          },
+          "fetchedAt": "2026-11-10T19:40:27.012614+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "f94a1873882e"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/mskaceesclass",
+          "entityId": "kacee-weaver",
+          "sourceUrl": "https://kaceeforutahschools.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "board",
+                "school"
+              ]
+            ],
+            "excerpt": " Kacee Weaver for State School Board Meet Kacee Candidate Statement News Volunteer Contribute Kacee's Resume Support Our Campaign Make a Contribution Today Click Here to Contribute Join the Campaign Become a Volunteer Click Here to Sign Up Show Your Support! Request a Yard Sign Click Here to Request a Sign Need Voting Information? Register & Find Y"
+          },
+          "fetchedAt": "2026-11-10T19:40:27.012614+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "79edd27c49ed"
+        }
+      ]
+    },
+    {
+      "id": "kendra-penry",
+      "name": "Kendra Penry",
+      "entityUrl": "https://www.electionsutah.org/people/kendra-penry/",
+      "existingLinks": [
+        {
+          "url": "https://www.kendraforutah.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 5"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H5-Kendra-Penry-1.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/electkendrapenry",
+          "entityId": "kendra-penry",
+          "sourceUrl": "https://www.kendraforutah.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "5"
+              ]
+            ],
+            "excerpt": " Kendra Penry for HD 5 | Vote for Responsible Leadership Today 0 Skip to Content Newsletter Signup About Me Events America's Potluck Contact Donate Open Menu Close Menu Newsletter Signup About Me Events America's Potluck Contact Donate Open Menu Close Menu Newsletter Signup About Me Events America's Potluck Contact Donate Small Towns Deserve Big Le"
+          },
+          "fetchedAt": "2026-11-10T19:40:28.310897+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "ccd4f578889c"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61586127689861",
+          "entityId": "kendra-penry",
+          "sourceUrl": "https://www.kendraforutah.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "5"
+              ]
+            ],
+            "excerpt": " Kendra Penry for HD 5 | Vote for Responsible Leadership Today 0 Skip to Content Newsletter Signup About Me Events America's Potluck Contact Donate Open Menu Close Menu Newsletter Signup About Me Events America's Potluck Contact Donate Open Menu Close Menu Newsletter Signup About Me Events America's Potluck Contact Donate Small Towns Deserve Big Le"
+          },
+          "fetchedAt": "2026-11-10T19:40:28.310897+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1d60c0e12c8f"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/kendra-penry-clutter-0b40b716",
+          "entityId": "kendra-penry",
+          "sourceUrl": "https://www.kendraforutah.com/",
+          "anchorText": "LinkedIn",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "5"
+              ]
+            ],
+            "excerpt": " Kendra Penry for HD 5 | Vote for Responsible Leadership Today 0 Skip to Content Newsletter Signup About Me Events America's Potluck Contact Donate Open Menu Close Menu Newsletter Signup About Me Events America's Potluck Contact Donate Open Menu Close Menu Newsletter Signup About Me Events America's Potluck Contact Donate Small Towns Deserve Big Le"
+          },
+          "fetchedAt": "2026-11-10T19:40:28.310897+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "8bb245e12d69"
+        }
+      ]
+    },
+    {
+      "id": "lacey-peterson",
+      "name": "Lacey Peterson",
+      "entityUrl": "https://www.electionsutah.org/people/lacey-peterson/",
+      "existingLinks": [
+        {
+          "url": "https://www.laceypetersoncampaign.org/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State School Board District 11"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-11-Lacey-Peterson.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/vote_laceypeterson",
+          "entityId": "lacey-peterson",
+          "sourceUrl": "https://www.laceypetersoncampaign.org/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "11",
+                "board",
+                "school"
+              ]
+            ],
+            "excerpt": "Vote Lacey Peterson | Utah SSB-11 Skip to Content Meet Lacey Priorities Where They Stand Get Involved Donate Donate Open menu Utah State Board of Education – District 11 Serving Pleasant Grove, American Fork, Lehi, Highland, Cedar Hills, Alpine, Bluffdale, Herriman, and Draper . Utah students need a therapist at the table. Lacey Peterson is a licen"
+          },
+          "fetchedAt": "2026-11-10T19:40:29.588275+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "903044748365"
+        }
+      ]
+    },
+    {
+      "id": "linda-hanks",
+      "name": "Linda Hanks",
+      "entityUrl": "https://www.electionsutah.org/people/linda-hanks/",
+      "existingLinks": [
+        {
+          "url": "https://www.linda4stateschoolboard.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "REP State School Board District 14",
+        "State School Board District 14"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10",
+        "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-14-Linda-Hanks.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/votelindahanks",
+          "entityId": "linda-hanks",
+          "sourceUrl": "https://www.linda4stateschoolboard.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "board",
+                "school"
+              ],
+              [
+                "board",
+                "school"
+              ]
+            ],
+            "excerpt": " Linda Hanks for State Board 0 Skip to Content Home Meet Linda Issues Endorsements Events DONATE Open Menu Close Menu Home Meet Linda Issues Endorsements Events DONATE Open Menu Close Menu Home Meet Linda Issues Endorsements Events DONATE Positive Conservative Leadership for our Rural Schools Linda Hanks brings the proven experience educating, part"
+          },
+          "fetchedAt": "2026-11-10T19:40:30.572623+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "79ca9a6e386f"
+        }
+      ]
+    },
+    {
+      "id": "lisa-shepherd",
+      "name": "Lisa Shepherd",
+      "entityUrl": "https://www.electionsutah.org/people/lisa-shepherd/",
+      "existingLinks": [
+        {
+          "url": "https://house.utleg.gov/rep/SHEPHL",
+          "label": "Official legislative profile",
+          "source": "https://house.utleg.gov/house-members/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://lisa61.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 61"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H61-Lisa-Shepherd.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/lisamshepherd",
+          "entityId": "lisa-shepherd",
+          "sourceUrl": "https://lisa61.com/",
+          "anchorText": "Facebook Social Link",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "61",
+                "house"
+              ]
+            ],
+            "excerpt": "Home Home About Lisa Why Lisa? Education/Experience Lisa's Story HD61 Updates Issues Principles/Issues Utah Constitution UCRP Platform District 61 Demographics HD61 Precinct Maps OREM HD61 Precinct Maps PROVO State House 61 Map Donate Volunteer Contact Privacy Policy More Home About Lisa Why Lisa? Education/Experience Lisa's Story HD61 Updates Issu"
+          },
+          "fetchedAt": "2026-11-10T19:40:30.668874+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "498056fe4e1a"
+        }
+      ]
+    },
+    {
+      "id": "logan-j-monson",
+      "name": "Logan J. Monson",
+      "entityUrl": "https://www.electionsutah.org/people/logan-j-monson/",
+      "existingLinks": [
+        {
+          "url": "https://www.votemonson.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "REP State House District 69",
+        "State House District 69"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1",
+        "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-cee7-08df2b02c31b",
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H69-Logan-J.-Monson.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61554357322615",
+          "entityId": "logan-j-monson",
+          "sourceUrl": "https://www.votemonson.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "69",
+                "house"
+              ],
+              [
+                "69",
+                "house"
+              ]
+            ],
+            "excerpt": " Logan Monson For Utah House District 69 0 Skip to Content Home Meet Logan Legislative Newsletter Newsletters September 2026 Newsletter August 2026 Newsletter July 2026 Newsletter June 2026 Newsletter May 2026 Newsletter April 2026 Newsletter 2026 Session Newsletter - Week 7 2026 Session Newsletter - Week 6 2026 Session Newsletter - Week 5 2026 Ses"
+          },
+          "fetchedAt": "2026-11-10T19:40:31.056369+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "817ab069d298"
+        }
+      ]
+    },
+    {
+      "id": "luke-maynes",
+      "name": "Luke Maynes",
+      "entityUrl": "https://www.electionsutah.org/people/luke-maynes/",
+      "existingLinks": [
+        {
+          "url": "https://lukeforcountycouncil.com/",
+          "label": "Campaign website",
+          "source": "https://www.organizeutah.org/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "Salt Lake County Council District 3"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/General11032026/ballot-items/01000000-68b8-edcd-804b-08df2650840f"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/lukemaynesforslco3",
+          "entityId": "luke-maynes",
+          "sourceUrl": "https://www.lukeforcountycouncil.com/",
+          "anchorText": "(opens in a new tab)",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "3",
+                "council",
+                "county",
+                "lake",
+                "salt"
+              ]
+            ],
+            "excerpt": " Luke Maynes for County Council Skip to content About Platform Endorsements Volunteer Donate (opens in a new tab) (opens in a new tab) Investing in a County You Can Afford Salt Lake County families deserve better than a County Council that asks them to pay more in property taxes while cutting services residents rely on. You shouldn't be forced to p"
+          },
+          "fetchedAt": "2026-11-10T19:40:31.567556+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "6c030f440c09"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/lukemaynesforslco3",
+          "entityId": "luke-maynes",
+          "sourceUrl": "https://www.lukeforcountycouncil.com/",
+          "anchorText": "(opens in a new tab)",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "3",
+                "council",
+                "county",
+                "lake",
+                "salt"
+              ]
+            ],
+            "excerpt": " Luke Maynes for County Council Skip to content About Platform Endorsements Volunteer Donate (opens in a new tab) (opens in a new tab) Investing in a County You Can Afford Salt Lake County families deserve better than a County Council that asks them to pay more in property taxes while cutting services residents rely on. You shouldn't be forced to p"
+          },
+          "fetchedAt": "2026-11-10T19:40:31.567556+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "03503700f4ec"
+        }
+      ]
+    },
+    {
+      "id": "matt-macpherson",
+      "name": "Matt MacPherson",
+      "entityUrl": "https://www.electionsutah.org/people/matt-macpherson/",
+      "existingLinks": [
+        {
+          "url": "https://house.utleg.gov/rep/MACPHM",
+          "label": "Official legislative profile",
+          "source": "https://house.utleg.gov/house-members/",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "url": "https://www.electmattmacpherson.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 26"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H26-Matt-MacPherson.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/UtahVote4Matt",
+          "entityId": "matt-macpherson",
+          "sourceUrl": "https://www.electmattmacpherson.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "26",
+                "house"
+              ]
+            ],
+            "excerpt": " Matt MacPherson for House District 26 0 Skip to Content About Results Issues My Legislation 2026 General Session 2025 General Session 2024 General Session In the News My Endorsements Contact English Donate Open Menu Close Menu About Results Issues My Legislation 2026 General Session 2025 General Session 2024 General Session In the News My Endorsem"
+          },
+          "fetchedAt": "2026-11-10T19:40:31.845220+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e6c8bbbda73c"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/utahvote4matt",
+          "entityId": "matt-macpherson",
+          "sourceUrl": "https://www.electmattmacpherson.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "26",
+                "house"
+              ]
+            ],
+            "excerpt": " Matt MacPherson for House District 26 0 Skip to Content About Results Issues My Legislation 2026 General Session 2025 General Session 2024 General Session In the News My Endorsements Contact English Donate Open Menu Close Menu About Results Issues My Legislation 2026 General Session 2025 General Session 2024 General Session In the News My Endorsem"
+          },
+          "fetchedAt": "2026-11-10T19:40:31.845220+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "1010a50513d0"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/UtahVote4Matt",
+          "entityId": "matt-macpherson",
+          "sourceUrl": "https://www.electmattmacpherson.com/",
+          "anchorText": "X",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "26",
+                "house"
+              ]
+            ],
+            "excerpt": " Matt MacPherson for House District 26 0 Skip to Content About Results Issues My Legislation 2026 General Session 2025 General Session 2024 General Session In the News My Endorsements Contact English Donate Open Menu Close Menu About Results Issues My Legislation 2026 General Session 2025 General Session 2024 General Session In the News My Endorsem"
+          },
+          "fetchedAt": "2026-11-10T19:40:31.845220+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "c7827ed0af43"
+        }
+      ]
+    },
+    {
+      "id": "mike-petersen",
+      "name": "Mike Petersen",
+      "entityUrl": "https://www.electionsutah.org/people/mike-petersen/",
+      "existingLinks": [
+        {
+          "url": "https://www.votemikepetersen.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 2"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H2-Mike-Petersen.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/restoreyourvoiceutah",
+          "entityId": "mike-petersen",
+          "sourceUrl": "https://votemikepetersen.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "2",
+                "house"
+              ]
+            ],
+            "excerpt": " A Voice for You! Home Meet Mike Introduction Video Policy Positions Endorsements News Election Day is Tuesday, November 3! Utah votes by mail. Return your ballot by mail or at a drop box, and check your registration and drop-box locations at vote.utah.gov. Thank you for your support! Find my ballot info Mike Petersen for Utah House District 2 Work"
+          },
+          "fetchedAt": "2026-11-10T19:40:32.950922+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "55bd68288181"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/RepMikePetersen",
+          "entityId": "mike-petersen",
+          "sourceUrl": "https://votemikepetersen.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "2",
+                "house"
+              ]
+            ],
+            "excerpt": " A Voice for You! Home Meet Mike Introduction Video Policy Positions Endorsements News Election Day is Tuesday, November 3! Utah votes by mail. Return your ballot by mail or at a drop box, and check your registration and drop-box locations at vote.utah.gov. Thank you for your support! Find my ballot info Mike Petersen for Utah House District 2 Work"
+          },
+          "fetchedAt": "2026-11-10T19:40:32.950922+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e73fd4b70bb8"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/@voteformikepetersen",
+          "entityId": "mike-petersen",
+          "sourceUrl": "https://votemikepetersen.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "2",
+                "house"
+              ]
+            ],
+            "excerpt": " A Voice for You! Home Meet Mike Introduction Video Policy Positions Endorsements News Election Day is Tuesday, November 3! Utah votes by mail. Return your ballot by mail or at a drop box, and check your registration and drop-box locations at vote.utah.gov. Thank you for your support! Find my ballot info Mike Petersen for Utah House District 2 Work"
+          },
+          "fetchedAt": "2026-11-10T19:40:32.950922+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "21f0308794ed"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://linkedin.com/in/mike-petersen-phd-0b401a4",
+          "entityId": "mike-petersen",
+          "sourceUrl": "https://votemikepetersen.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "2",
+                "house"
+              ]
+            ],
+            "excerpt": " A Voice for You! Home Meet Mike Introduction Video Policy Positions Endorsements News Election Day is Tuesday, November 3! Utah votes by mail. Return your ballot by mail or at a drop box, and check your registration and drop-box locations at vote.utah.gov. Thank you for your support! Find my ballot info Mike Petersen for Utah House District 2 Work"
+          },
+          "fetchedAt": "2026-11-10T19:40:32.950922+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "f4c4bce69254"
+        }
+      ]
+    },
+    {
+      "id": "monique-i-ketcham",
+      "name": "Monique I. Ketcham",
+      "entityUrl": "https://www.electionsutah.org/people/monique-i-ketcham/",
+      "existingLinks": [
+        {
+          "url": "https://monique4office.com/",
+          "label": "Campaign website",
+          "source": "https://www.utgop.org/general_election_candidates_2026",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "offices": [
+        "State House District 35"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2026/01/H35-Monique-I.-Ketcham.pdf"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/profile.php?id=61586507513241",
+          "entityId": "monique-i-ketcham",
+          "sourceUrl": "https://monique4office.com/",
+          "anchorText": "Facebook",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "35",
+                "house"
+              ]
+            ],
+            "excerpt": " Monique Ketcham - Utah House District 35 Monique Ketcham Blog Endorsements Volunteer Donate Candidate for Utah House • District 35 Common-sense leadership for Utah families. I am running for Utah House District 35 to deliver thoughtful, principled leadership focused on real solutions for our community. I believe in a balanced approach to governanc"
+          },
+          "fetchedAt": "2026-11-10T19:40:33.639072+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true,
+          "reviewId": "e6c8f8a2d4a4"
+        }
+      ]
+    }
+  ],
+  "contentHash": "4e6594e13c2d309952bff5177499eefd92568b5607fe07dad216fc0f5dbef27f"
+}
