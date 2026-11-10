@@ -3,11 +3,40 @@ from unittest.mock import patch
 import tempfile
 from pathlib import Path
 import hashlib
+import gzip
 import json
 from datetime import datetime, timedelta, timezone
 from enrichment_pipeline import canonical, account, Page, identity, discover, Fetcher
 
 class Controls(unittest.TestCase):
+    def test_archived_primary_url_preserves_embedded_scheme(self):
+        archived='https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/'
+        self.assertEqual(canonical(archived),archived.rstrip('/'))
+        self.assertEqual(canonical('https://example.com//about///social/'),'https://example.com/about/social')
+    def test_compressed_primary_page_is_parsed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            def transport(command,**kwargs):
+                self.assertIn('--compressed',command)
+                Path(command[command.index('-D')+1]).write_text('HTTP/2 200\nContent-Encoding: gzip\n')
+                Path(command[command.index('-o')+1]).write_bytes(gzip.compress(b'<html>Jane Doe<a href="https://instagram.com/janedoe">Instagram</a></html>'))
+                return type('Response',(),{'returncode':0,'stdout':'200\nhttps://example.com/'})()
+            with patch('enrichment_pipeline.ROOT',root),patch('enrichment_pipeline.subprocess.run',side_effect=transport):
+                result=Fetcher(root/'cache').fetch('https://example.com/')
+            self.assertEqual(result['status'],'verified')
+            page=Page((root/result['bodyFile']).read_text())
+            self.assertEqual(account(page.links[0][0])['url'],'https://instagram.com/janedoe')
+    def test_compressed_page_cannot_exceed_decoded_budget(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            def transport(command,**kwargs):
+                Path(command[command.index('-D')+1]).write_text('HTTP/2 200\nContent-Encoding: gzip\n')
+                Path(command[command.index('-o')+1]).write_bytes(gzip.compress(b'<html>'+b'x'*3000000+b'</html>'))
+                return type('Response',(),{'returncode':0,'stdout':'200\nhttps://example.com/'})()
+            with patch('enrichment_pipeline.ROOT',root),patch('enrichment_pipeline.subprocess.run',side_effect=transport):
+                result=Fetcher(root/'cache').fetch('https://example.com/')
+            self.assertEqual(result['status'],'retrieval_failed')
+            self.assertIn('Decoded response exceeds size budget',result['error'])
     def test_negative_cache_prevents_network_retry(self):
         with tempfile.TemporaryDirectory() as directory:
             cache=Path(directory); url='https://example.com/'

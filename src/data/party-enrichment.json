@@ -295,13 +295,23 @@
   },
   "justice": {
     "officialWebsite": "",
-    "verifiedOn": "2026-11-07",
-    "status": "Historical affiliation — accounts withheld",
-    "notes": "This affiliation appears in imported historical ballot records. No current organization website or social account has been verified for this historical label.",
+    "verifiedOn": "2026-11-10",
+    "status": "Historical — archived official website verified",
+    "notes": "Historical ballot label “Justice” is displayed as “Justice Party.” The 2012 Utah canvass and party history identify its candidates. The August 15, 2022 official-site capture identifies Justice Party/Justice Movement and references its 2012 campaign. The archive is a historical reference; no current organization website, contact details, or social account has been verified. Encyclopedia references are reviewed separately in party-reference-links.json.",
     "sources": [
-      "https://vote.utah.gov/historical-election-results/"
+      "https://vote.utah.gov/historical-election-results/",
+      "https://web.archive.org/web/20220815033923/https://www.justiceparty.us/"
     ],
-    "links": []
+    "links": [
+      {
+        "url": "https://web.archive.org/web/20220815033923/https://www.justiceparty.us/",
+        "platform": "website",
+        "label": "Official website — archived August 15, 2022",
+        "detail": "justiceparty.us · historical Wayback Machine snapshot",
+        "source": "https://web.archive.org/web/20220815033923/https://www.justiceparty.us/",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
   },
   "natural-law": {
     "officialWebsite": "",

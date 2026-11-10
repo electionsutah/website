@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-11-10T21:26:09.244442+00:00",
+  "selection": "User-requested Becky Edwards historical campaign account discovery from the source-published website, archived 20230903180637. Manual ownership review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 0,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 1,
+      "verified": 0
+    },
+    "accountProposals": 0,
+    "productionChanges": 0,
+    "requests": 1,
+    "cacheHits": 0,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "becky-edwards",
+      "name": "Becky Edwards",
+      "kind": "people",
+      "entityUrl": "https://www.electionsutah.org/people/becky-edwards/",
+      "websites": [
+        "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/"
+      ],
+      "latestYear": 2023,
+      "historical": true,
+      "existingLinks": [],
+      "manualOverride": false,
+      "offices": [
+        "U.S. House District 2",
+        "State House District 20",
+        "U.S. Senate"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2023/06/Edwards-CD2_amended.pdf",
+        "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)",
+        "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)"
+      ],
+      "status": "retrieval_failed",
+      "candidates": [],
+      "fetches": [
+        {
+          "url": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com",
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "etag": null,
+          "lastModified": null,
+          "error": "Not an HTML document",
+          "nextReviewAt": "2026-11-17T21:26:09.243600+00:00"
+        }
+      ],
+      "manualReviewRequired": true,
+      "identityEvidence": null
+    }
+  ]
+}

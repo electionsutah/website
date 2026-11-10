@@ -1,12 +1,15 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import TimelineDate from './TimelineDate.svelte';
+  import CountUp from './CountUp.svelte';
+  import { revealVoteBar } from './lib/vote-animation';
+  const formatPercent = (value: number) => `${value.toFixed(2)}%`;
   import { identityKey, type Filing } from './lib/entities';
   import { resultsForFiling } from './lib/filing-results';
   import type { FilingResult } from './lib/candidacy-history';
   import { resultPerson, personHref } from './lib/result-people';
   import { resultPartyHref } from './lib/result-links';
-  import { color, count, percent, updated, type Snapshot, type Contest } from './lib/results';
+  import { color, count, updated, type Snapshot, type Contest } from './lib/results';
 
   export let filing: Filing;
   export let navigate: (href: string) => void;
@@ -41,10 +44,10 @@
             <span>{#if candidate}<a href={personHref(candidate)} onclick={(event) => openCandidate(event, personHref(candidate))}>{option.name}</a>{:else}{option.name}{/if}{#if option.party}<span class="mini-party">{' - '}{#if partyHref}<a href={partyHref} onclick={(event) => openCandidate(event, partyHref)}>{option.party}</a>{:else}{option.party}{/if}</span>{/if}</span>
             <div class="mini-totals">
               <small>{option.votesPublished === false ? 'Votes not published' : `${count(option.votes)} votes`}</small>
-              {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<strong>{percent(option.votes, contest.total)}</strong>{/if}
+              {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<strong>{#if contest.total}<CountUp value={option.votes / contest.total * 100} format={formatPercent} />{:else}—{/if}</strong>{/if}
             </div>
           </div>
-          {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<div class="mini-track" style:--share={`${contest.total ? option.votes / contest.total * 100 : 0}%`}><div class="mini-fill" aria-hidden="true" style:width="var(--share)" style:background={color(option)}></div></div>{/if}
+          {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<div class="mini-track" style:--share={`${contest.total ? option.votes / contest.total * 100 : 0}%`}><div class="mini-fill" aria-hidden="true" use:revealVoteBar={`${contest.id}:${option.name}:${option.votes}:${contest.total}`} style:width="var(--share)" style:background={color(option)}></div></div>{/if}
         </li>
       {/each}
     </ul>
@@ -80,7 +83,7 @@
   .mini-party a{color:inherit;font-weight:400}
   .mini-label.matching,.mini-label.matching .mini-party,.mini-label.matching a{font-weight:700}
   .mini-track{height:12px;background:var(--color-rule);margin:6px 0 3px}
-  .mini-fill{height:100%}
+  .mini-fill{height:100%;transform-origin:left center;transform:scaleX(var(--vote-progress,1))}
   .mini-source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--space-2);line-height:1.5;margin-bottom:0}
   .mini-unavailable{font-size:var(--text-sm);color:var(--color-muted)}
 </style>

@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-11-10T21:25:01.011644+00:00",
+  "selection": "User-requested single-person discovery for Becky Edwards; campaign URL published by the Utah-politician Wikipedia article, corroborated against the existing Utah House District 20 and 2023 U.S. House District 2 records. Historical identity review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 0,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 1,
+      "verified": 0
+    },
+    "accountProposals": 0,
+    "productionChanges": 0,
+    "requests": 1,
+    "cacheHits": 0,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "becky-edwards",
+      "name": "Becky Edwards",
+      "kind": "people",
+      "entityUrl": "https://www.electionsutah.org/people/becky-edwards/",
+      "websites": [
+        "https://beckyforutah.com/"
+      ],
+      "latestYear": 2023,
+      "historical": true,
+      "existingLinks": [],
+      "manualOverride": false,
+      "offices": [
+        "U.S. House District 2",
+        "State House District 20",
+        "U.S. Senate"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2023/06/Edwards-CD2_amended.pdf",
+        "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)"
+      ],
+      "status": "retrieval_failed",
+      "candidates": [],
+      "fetches": [
+        {
+          "url": "https://beckyforutah.com/",
+          "fetchedAt": "2026-11-10T21:24:42.992028+00:00",
+          "status": "retrieval_failed",
+          "backend": "direct",
+          "error": "Transport failure or request/size budget exceeded",
+          "nextReviewAt": "2026-11-17T21:25:01.010691+00:00"
+        }
+      ],
+      "manualReviewRequired": true,
+      "identityEvidence": null
+    }
+  ]
+}

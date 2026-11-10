@@ -1,0 +1,223 @@
+{
+  "generatedAt": "2026-11-10T21:27:23.240299+00:00",
+  "selection": "User-requested Becky Edwards historical campaign account discovery from the source-published website, archived 20230903180637. Manual ownership review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 1,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 5,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 1,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "becky-edwards",
+      "name": "Becky Edwards",
+      "kind": "people",
+      "entityUrl": "https://www.electionsutah.org/people/becky-edwards/",
+      "websites": [
+        "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/"
+      ],
+      "latestYear": 2023,
+      "historical": true,
+      "existingLinks": [],
+      "manualOverride": false,
+      "offices": [
+        "U.S. House District 2",
+        "State House District 20",
+        "U.S. Senate"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2023/06/Edwards-CD2_amended.pdf",
+        "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)",
+        "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)"
+      ],
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/BeckyForUtah",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": " Becky Edwards for Congress | Commitment to Utah DONATE Facebook Twitter Instagram Meet Becky Priorities #TeamBecky Volunteer Request a Yard Sign Newsletter Contact Honoring Those Who Serve Help Becky recognize those who serve our communities VIDEO MESSAGE I believe in better politics DONATE Commitment to Utah Prioritizing Public Service, Utah Valu"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/beckyforutah",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": " Becky Edwards for Congress | Commitment to Utah DONATE Facebook Twitter Instagram Meet Becky Priorities #TeamBecky Volunteer Request a Yard Sign Newsletter Contact Honoring Those Who Serve Help Becky recognize those who serve our communities VIDEO MESSAGE I believe in better politics DONATE Commitment to Utah Prioritizing Public Service, Utah Valu"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/beckyforutah",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": " Becky Edwards for Congress | Commitment to Utah DONATE Facebook Twitter Instagram Meet Becky Priorities #TeamBecky Volunteer Request a Yard Sign Newsletter Contact Honoring Those Who Serve Help Becky recognize those who serve our communities VIDEO MESSAGE I believe in better politics DONATE Commitment to Utah Prioritizing Public Service, Utah Valu"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/BeckyForUtah",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": " Becky Edwards for Congress | Commitment to Utah DONATE Facebook Twitter Instagram Meet Becky Priorities #TeamBecky Volunteer Request a Yard Sign Newsletter Contact Honoring Those Who Serve Help Becky recognize those who serve our communities VIDEO MESSAGE I believe in better politics DONATE Commitment to Utah Prioritizing Public Service, Utah Valu"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/@BeckyEdwardsforCongress",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": " Becky Edwards for Congress | Commitment to Utah DONATE Facebook Twitter Instagram Meet Becky Priorities #TeamBecky Volunteer Request a Yard Sign Newsletter Contact Honoring Those Who Serve Help Becky recognize those who serve our communities VIDEO MESSAGE I believe in better politics DONATE Commitment to Utah Prioritizing Public Service, Utah Valu"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        }
+      ],
+      "fetches": [
+        {
+          "url": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com",
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "etag": null,
+          "lastModified": null,
+          "nextReviewAt": "2026-12-10T21:27:23.178124+00:00",
+          "contentHash": "a19c416ac1308f6182dc7dc655f4592702702d5153857b1dcfc33390117176f7",
+          "bodyFile": ".firecrawl/enrichment/cache/a19c416ac1308f6182dc7dc655f4592702702d5153857b1dcfc33390117176f7.html",
+          "lastSuccessfulFetchAt": "2026-11-10T21:26:07.861596+00:00",
+          "recoveredFromCachedTransportBody": true,
+          "recoveryReason": "Retained HTTP 200 gzip body decoded locally; original parser did not decompress it.",
+          "evidenceDate": "2023-09-03",
+          "cacheHit": true
+        }
+      ],
+      "manualReviewRequired": true,
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "house"
+          ],
+          [
+            "20",
+            "house"
+          ],
+          []
+        ],
+        "excerpt": " Becky Edwards for Congress | Commitment to Utah DONATE Facebook Twitter Instagram Meet Becky Priorities #TeamBecky Volunteer Request a Yard Sign Newsletter Contact Honoring Those Who Serve Help Becky recognize those who serve our communities VIDEO MESSAGE I believe in better politics DONATE Commitment to Utah Prioritizing Public Service, Utah Valu"
+      }
+    }
+  ]
+}

@@ -13,9 +13,26 @@
           "value": "Friends of Ben McAdams, P.O. Box 522340, Salt Lake City, UT 84152"
         }
       ]
+    },
+    "shields": {
+      "name": "William Scott Shields",
+      "biography": "William Scott Shields was the Natural Law Party candidate for lieutenant governor of Utah on the 1996 ticket with Robert C. Lesh. The official canvass abbreviates this ticket as “Lesh & Shields”; contemporary Utah reporting supplies his full name. The canvass reports 2,969 votes for the joint ticket.",
+      "sourceUrl": "https://www.deseret.com/1996/6/22/19250334/natural-law-party-draws-on-strengths-of-other-parties-and-promotes-ounce-of-prevention/",
+      "lastVerified": "2026-11-10",
+      "resources": [
+        {
+          "label": "Official 1996 election result — Lesh & Shields",
+          "description": "The Utah general-election canvass lists 2,969 votes for the joint Natural Law governor/lieutenant-governor ticket.",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1996Gen.pdf#page=5"
+        }
+      ]
     }
   },
-  "filings": {},
+  "filings": {
+    "1996-lesh-governor-lieutenant-governor-natural-law": {
+      "runningMateId": "shields"
+    }
+  },
   "places": {
     "piute/junction": {
       "facebook": "https://www.facebook.com/junctionutah"

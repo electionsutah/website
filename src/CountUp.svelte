@@ -1,16 +1,24 @@
 <script lang="ts">
   import { onDestroy, onMount } from 'svelte';
+  import { VOTE_ANIMATION_DURATION, voteEase } from './lib/vote-animation';
   /** Number to show. Counts up from zero the first time it scrolls into view, then eases between later values. */
   export let value: number;
   export let format: (value: number) => string = (n) => Math.round(n).toLocaleString('en-US');
-  export let duration = 1100;
+  export let duration = VOTE_ANIMATION_DURATION;
   let element: HTMLSpanElement;
   let shown = 0;
   let seen = false;
   let frame = 0;
   let observer: IntersectionObserver | undefined;
+  let motion: MediaQueryList | undefined;
+  const preferenceChanged = () => {
+    if (!motion?.matches) return;
+    cancelAnimationFrame(frame);
+    observer?.disconnect();
+    seen = true;
+    shown = value;
+  };
   const reduced = () => typeof window === 'undefined' || !window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const ease = (t: number) => 1 - Math.pow(1 - t, 3);
 
   function animate(from: number, to: number, time: number) {
     cancelAnimationFrame(frame);
@@ -18,13 +26,15 @@
     const start = performance.now();
     const step = (now: number) => {
       const t = Math.min(1, (now - start) / time);
-      shown = from + (to - from) * ease(t);
+      shown = from + (to - from) * voteEase(t);
       if (t < 1) frame = requestAnimationFrame(step);
     };
     frame = requestAnimationFrame(step);
   }
 
   onMount(() => {
+    motion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+    motion?.addEventListener?.('change', preferenceChanged);
     if (reduced() || !('IntersectionObserver' in window)) { seen = true; shown = value; return; }
     observer = new IntersectionObserver((entries) => {
       if (!entries.some(entry => entry.isIntersecting)) return;
@@ -34,7 +44,7 @@
     }, { threshold: 0.4 });
     observer.observe(element);
   });
-  onDestroy(() => { observer?.disconnect(); cancelAnimationFrame(frame); });
+  onDestroy(() => { observer?.disconnect(); cancelAnimationFrame(frame); motion?.removeEventListener?.('change', preferenceChanged); });
 
   // After the first reveal, changes (e.g. picking a county) ease from the current number.
   let last = value;

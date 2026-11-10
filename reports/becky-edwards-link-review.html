@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>People enrichment review batches</title><style>:root{--space-2:8px;--space-3:12px;--space-4:16px;--space-4-5:18px;--space-3-5:14px;--space-6:24px;--space-7:28px;--space-1:4px;--space-1-5:6px;--size-popover-max:480px;--border-width-emphasis:3px;--color-rule-soft:var(--border,#ccc);--color-ink:var(--foreground,#222);--color-paper:var(--popover,#fff);--color-muted:var(--muted-foreground,#666);--color-blue:var(--primary,#176ba0);--shadow-md:0 6px 24px #0003;--text-base:14px;--text-lg:18px;--font-serif:Georgia,serif}body{margin:3rem;font:15px/1.6 var(--font-sans,system-ui);color:var(--foreground,#222)}a{color:var(--primary,#176ba0);overflow-wrap:anywhere}article{border-bottom:1px solid var(--border,#ccc);padding:18px 0}li{margin:10px 0}button{font:inherit;cursor:pointer}code{overflow-wrap:anywhere}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:8px;border-bottom:1px solid var(--border,#ccc)}.track{height:10px;background:var(--secondary,#ddd)}.track span{display:block;height:10px;background:var(--chart-1,#287bad)}.evidence-popover{position:fixed;inset:auto;margin:0;width:min(var(--size-popover-max),calc(100vw - var(--space-6)));padding:var(--space-4) var(--space-4-5) var(--space-3-5);border:1px solid var(--color-rule-soft);border-top:var(--border-width-emphasis) solid var(--color-ink);background:var(--color-paper);color:var(--color-ink);box-shadow:var(--shadow-md);font-size:var(--text-base);line-height:1.6;max-height:600px;overflow:auto}
+.evidence-popover header{display:flex;align-items:start;justify-content:space-between;gap:var(--space-3);margin-bottom:var(--space-2)}
+.evidence-popover header strong{font:600 var(--text-lg)/1.3 var(--font-serif)}
+.evidence-popover header button{display:grid;place-items:center;flex:none;width:var(--space-7);height:var(--space-7);margin:calc(-1 * var(--space-1)) calc(-1 * var(--space-1-5)) 0 0;padding:0;border:0;background:none;color:var(--color-muted)}
+.evidence-popover header button:hover{color:var(--color-ink)}
+.evidence-popover p{margin:var(--space-2) 0;color:var(--color-muted)}
+.evidence-popover a{color:var(--color-blue);text-decoration:underline}</style></head><body><main><h1>People enrichment review batches</h1><p><strong>batch-01 applied:</strong> 7 accounts across 1 people. <a href="becky-edwards-link-review/batch-01-application.json">Application audit</a>.</p><p><a href="https://www.electionsutah.org/people/becky-edwards/">Becky Edwards’s ELUT page</a> currently has no saved links. The local importer recovered four distinct social accounts from her <a href="https://web.archive.org/web/20230903180637/https://beckyforutah.com/">September 3, 2023 campaign site</a>: Facebook, X, Instagram, and YouTube. The proposed batch also includes that archived website and her exact Wikipedia and Wikidata references.</p><p><strong>Seven links ready for review; zero published person-record changes.</strong> The five campaign links are historical. The live campaign domain failed retrieval; the older legislative snapshot returned an error page. No personally owned LinkedIn account was verified; a similarly named communications professional was excluded. An Instagram case-only duplicate was removed. PAC accounts, donation forms, and individual posts/videos are excluded.</p><p>The local importer was corrected to preserve embedded archive URL schemes and decode gzip responses within its existing size budget. The retained HTTP response was decoded and replayed from cache without refetching it. The <code>--backend direct</code> workflow was used; no Firecrawl credits or authentication changes were involved.</p><p><a href="../AGENTS.md">AGENTS.md</a> requires: “Historical matches, mislabeled X/Threads links, and hashtag links remain investigation-only” and “Apply only the user's explicitly approved batch, with fingerprint verification and a separate application audit.” Batch-01 is immutable and awaits that approval.</p><p>1-person discovery cohort. User-requested Becky Edwards link import. Archived campaign ownership and exact Wikimedia identity reviewed; seven links await explicit user batch approval. No live campaign website or current account activity is claimed. Approved batches have been applied; see application audits. Approve by batch ID; each batch has a fixed fingerprint and explicit link URLs. Weak identity matches are held outside approval batches.</p><p><a href="becky-edwards-reviewed-links.html">Full rerun report</a> · <a href="becky-edwards-link-review.json">Review manifest</a></p><p>Original live discovery: 0 requests and 1 cache hits; subsequent screening used cached evidence only. <a href="becky-edwards-archived-campaign-replay.json">Live discovery evidence</a></p><p>historical: 1</p><div class="track"><span style="width:100%"></span></div><h2>Approval batches</h2><p>1 people with 7 proposals passed automated primary-page identity checks. 0 proposals failed those checks and remain investigation-only; none are silently discarded.</p><table><thead><tr><th>Batch</th><th>People</th><th>Links</th><th>Disposition</th></tr></thead><tbody><tr><td><a href="becky-edwards-link-review/batch-01.html">batch-01</a></td><td>1</td><td>7</td><td>Applied</td></tr></tbody></table><h2>Investigation-only proposals</h2><ul></ul></main><script type="module">function anchoredPopover(node, id) {
+  const place = () => {
+    if (!node.matches(":popover-open")) return;
+    const button = document.querySelector(`[popovertarget="${CSS.escape(id)}"]:not([popovertargetaction])`);
+    if (!button) return;
+    const style = getComputedStyle(node);
+    const gap = parseFloat(style.getPropertyValue("--space-2"));
+    const margin = parseFloat(style.getPropertyValue("--space-3"));
+    const anchor = button.getBoundingClientRect();
+    const width = node.offsetWidth, height = node.offsetHeight;
+    const left = Math.max(margin, Math.min(anchor.right - width, window.innerWidth - width - margin));
+    const below = anchor.bottom + gap + height <= window.innerHeight - margin || anchor.top - gap - height < margin;
+    const top = below ? anchor.bottom + gap : anchor.top - gap - height;
+    node.style.left = `${left}px`;
+    node.style.top = `${Math.max(margin, Math.min(top, window.innerHeight - height - margin))}px`;
+  };
+  const toggle = (event) => {
+    const open = event.newState === "open";
+    if (open) place();
+    for (const type of ["scroll", "resize"]) (open ? addEventListener : removeEventListener)(type, place, true);
+  };
+  const observer = new ResizeObserver(place);
+  observer.observe(node);
+  node.addEventListener("toggle", toggle);
+  return {
+    update(nextId) {
+      if (nextId !== id && node.matches(":popover-open")) node.hidePopover();
+      id = nextId;
+    },
+    destroy() {
+      observer.disconnect();
+      node.removeEventListener("toggle", toggle);
+      removeEventListener("scroll", place, true);
+      removeEventListener("resize", place, true);
+    }
+  };
+}
+
+
+for(const node of document.querySelectorAll('.evidence-popover'))anchoredPopover(node,node.id);</script></body></html>

@@ -32,14 +32,14 @@ try {
     const url=new URL(c.url.trim()).href;
     if(/facebook\.com\/(?:\d+_\d+|photo\.php)|\/status\/|\/posts\/|\/intent\//.test(url))throw Error(`Not an account: ${url}`);
     if(entry.links.some(l=>new URL(l.url.includes('://')?l.url:'https://'+l.url).href===url))throw Error('Duplicate account');
-    entry.links.push({url,platform:c.platform,label:labels[c.platform]??c.platform,source:c.sourceUrl,verifiedOn:date,evidenceFetchedAt:c.fetchedAt,reviewId:c.reviewId});
+    entry.links.push({url,platform:c.platform,label:c.label??labels[c.platform]??c.platform,...(c.detail?{detail:c.detail}:{}),source:c.sourceUrl,verifiedOn:date,evidenceFetchedAt:c.fetchedAt,...(c.evidenceDate?{evidenceDate:c.evidenceDate}:{}),...(c.disposition?{disposition:c.disposition}:{}),reviewId:c.reviewId});
     if(!entry.sources.includes(c.sourceUrl))entry.sources.push(c.sourceUrl);
-    const evidence={publishedName:p.name,match:`Campaign page identifies ${p.name} and ${p.offices.join(' / ')} and publishes the approved social account link.`,source:c.sourceUrl};
+    const evidence={publishedName:p.name,match:c.identityEvidence?.excerpt??`Reviewed source identifies ${p.name} and ${p.offices.join(' / ')} and supports the approved link.`,source:c.sourceUrl};
     if(!entry.identityEvidence.some(e=>e.source===evidence.source&&e.match===evidence.match))entry.identityEvidence.push(evidence);
     audit.applied.push({personId:p.id,url,source:c.sourceUrl,reviewId:c.reviewId});
    }
    entry.verifiedOn=date;for(const l of entry.links)l.verifiedOn=date;
-   entry.notes.push(`Social accounts approved in ${batch.id} (${contentHash.slice(0,12)}) on ${date}. Primary-page endorsement checked; current posting activity not checked. Existing links retained.`);
+   entry.notes.push(`Links approved in ${batch.id} (${contentHash.slice(0,12)}) on ${date}. Source identity and endorsement reviewed; historical evidence dates and labels retained. Current account activity not checked. Existing links retained.`);
    data[p.id]=entry;
   }
   audits.push({path,auditPath,audit,batch});

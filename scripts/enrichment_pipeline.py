@@ -9,6 +9,8 @@ Raw HTML/cache stay in ignored .firecrawl/enrichment. --offline replays cache on
 import argparse
 import concurrent.futures
 import hashlib
+import gzip
+import io
 from functools import lru_cache
 import html
 from html.parser import HTMLParser
@@ -39,7 +41,8 @@ def canonical(value, base=None):
             if not ipaddress.ip_address(host).is_global: return None
         except ValueError: pass
         host={'twitter.com':'x.com','fb.com':'facebook.com','threads.net':'threads.com'}.get(host,host)
-        path=re.sub('/+','/',u.path).rstrip('/') or '/'
+        # Wayback paths embed the original URL; keep its http(s):// separator intact.
+        path=re.sub(r'(?<!:)/{2,}','/',u.path).rstrip('/') or '/'
         query=urlencode([(k,v) for k,v in parse_qsl(u.query) if not k.lower().startswith('utm_') and k.lower() not in ('fbclid','gclid','hl','ref','ref_src')])
         # Preserve transport for fetch keys; account normalization explicitly uses HTTPS.
         return urlunsplit((u.scheme,host+(f':{u.port}' if u.port else ''),path,query,''))
@@ -138,7 +141,7 @@ class Fetcher:
                 effective=url; code=200; headers={}
             else:
                 head=self.cache/(key+'.headers'); body=self.cache/(key+'.body')
-                command=['curl','--silent','--show-error','--location','--max-redirs','4','--proto','=https,http','--proto-redir','=https,http','--max-time','18','--max-filesize','3000000','-A','ElectionsUtah/1.0 public account discovery','-D',str(head),'-o',str(body),'-w','%{http_code}\n%{url_effective}',url]
+                command=['curl','--silent','--show-error','--compressed','--location','--max-redirs','4','--proto','=https,http','--proto-redir','=https,http','--max-time','18','--max-filesize','3000000','-A','ElectionsUtah/1.0 public account discovery','-D',str(head),'-o',str(body),'-w','%{http_code}\n%{url_effective}',url]
                 if prior:
                     for field,header in [('etag','If-None-Match'),('lastModified','If-Modified-Since')]:
                         if prior.get(field): command[1:1]=['-H',f'{header}: {prior[field]}']
@@ -149,7 +152,11 @@ class Fetcher:
                 if code==304 and prior:
                     with LOCK:self.stats['conditional304']+=1
                     result=dict(prior,lastCheckedAt=fetched,nextReviewAt=(now()+timedelta(days=30)).isoformat());meta.write_text(json.dumps(result,indent=2));return result
-                text=body.read_text(errors='replace') if body.exists() else ''
+                raw=body.read_bytes() if body.exists() else b''
+                if raw.startswith(b'\x1f\x8b'):
+                    with gzip.GzipFile(fileobj=io.BytesIO(raw)) as compressed: raw=compressed.read(3000001)
+                if len(raw)>3000000: raise RuntimeError('Decoded response exceeds size budget')
+                text=raw.decode('utf-8',errors='replace')
             result.update(httpStatus=code,finalUrl=effective,etag=headers.get('etag'),lastModified=headers.get('last-modified'))
             if code in (401,403,429): result['status']='blocked'
             elif code!=200: result['status']='retrieval_failed'

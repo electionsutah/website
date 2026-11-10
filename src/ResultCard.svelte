@@ -2,6 +2,7 @@
   import Icon from './Icon.svelte';
   import CountyMap from './CountyMap.svelte';
   import CountUp from './CountUp.svelte';
+  import { revealVoteBar } from './lib/vote-animation';
   const formatPercent = (value: number) => `${value.toFixed(2)}%`;
   import ShiftArrow from './ShiftArrow.svelte';
   import { raceComparison, type HistoricalSnapshot } from './lib/shifts';
@@ -37,7 +38,7 @@
     <div class="card-results">
       <p class="result-area" aria-live="polite">{active ? countyNames.get(active.id) : contest.county ? countyNames.get(contest.county) : 'District total'}</p>
       <p class="leader-label">{leader(result, seats)}</p>{#if seats > 1}<p class="multi-seat-note">Vote for {seats}. The top {seats} candidates win. Each voter could pick up to {seats}, so shares are of all votes cast, not of voters.</p>{/if}
-      <div class="vote-bar" aria-hidden="true">{#each result.options as option}<span style={`width:${result.total ? option.votes / result.total * 100 : 0}%;background:${color(option)}`}></span>{/each}</div>
+      <div class="vote-bar" aria-hidden="true" use:revealVoteBar={result}>{#each result.options as option}<span style={`width:${result.total ? option.votes / result.total * 100 : 0}%;background:${color(option)}`}></span>{/each}</div>
       <div class="candidate-results">
         {#each options as option}
           <div class="candidate-result"><span class="party-dot" style={`background:${color(option)}`}></span><div><strong><ResultPersonName name={option.name} {contest} /></strong><small><ResultPartyName name={option.party} /></small></div><b>{#if result.total}<CountUp value={option.votes / result.total * 100} format={formatPercent} />{:else}—{/if}<small><CountUp value={option.votes} /> votes</small></b></div>

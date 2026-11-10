@@ -8644,5 +8644,117 @@
         "reviewId": "1e13e31ab206"
       }
     ]
+  },
+  "becky-edwards": {
+    "verifiedOn": "2026-11-10",
+    "identityEvidence": [
+      {
+        "publishedName": "Becky Edwards",
+        "match": "Becky Edwards for Congress | Commitment to Utah. . Marriage and Family Therapy, BYU Masters of Social Work, BYU Utah State Representative, House District 20 Principled and Balanced Conservative Republican Hard-working and outcome-driven MEET BECKY About Becky Lawmaker & Fiscal C",
+        "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/"
+      },
+      {
+        "publishedName": "Becky Edwards",
+        "match": "Wikimedia article and Q16210030 sitelink identify Becky Edwards, Utah House District 20 representative, with a 2023 U.S. House District 2 campaign.",
+        "source": "https://www.wikidata.org/wiki/Q16210030"
+      },
+      {
+        "publishedName": "Becky Edwards",
+        "match": "Wikimedia article and Q16210030 sitelink identify Becky Edwards, Utah House District 20 representative, with a 2023 U.S. House District 2 campaign.",
+        "source": "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)"
+      }
+    ],
+    "sources": [
+      "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+      "https://www.wikidata.org/wiki/Q16210030",
+      "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)"
+    ],
+    "notes": [
+      "Links approved in batch-01 (e74ec118a24f) on 2026-11-10. Source identity and endorsement reviewed; historical evidence dates and labels retained. Current account activity not checked. Existing links retained."
+    ],
+    "links": [
+      {
+        "url": "https://facebook.com/BeckyForUtah",
+        "platform": "facebook",
+        "label": "Facebook — 2023 campaign",
+        "detail": "Published by Becky Edwards’s archived September 3, 2023 campaign site; current account ownership/activity not checked.",
+        "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T21:26:07.861596+00:00",
+        "evidenceDate": "2023-09-03",
+        "disposition": "historical",
+        "reviewId": "895011400e73"
+      },
+      {
+        "url": "https://x.com/beckyforutah",
+        "platform": "x",
+        "label": "X — 2023 campaign",
+        "detail": "Published by Becky Edwards’s archived September 3, 2023 campaign site; current account ownership/activity not checked.",
+        "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T21:26:07.861596+00:00",
+        "evidenceDate": "2023-09-03",
+        "disposition": "historical",
+        "reviewId": "eb3ab89dae60"
+      },
+      {
+        "url": "https://instagram.com/beckyforutah",
+        "platform": "instagram",
+        "label": "Instagram — 2023 campaign",
+        "detail": "Published by Becky Edwards’s archived September 3, 2023 campaign site; current account ownership/activity not checked.",
+        "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T21:26:07.861596+00:00",
+        "evidenceDate": "2023-09-03",
+        "disposition": "historical",
+        "reviewId": "bb65688e14a2"
+      },
+      {
+        "url": "https://youtube.com/@BeckyEdwardsforCongress",
+        "platform": "youtube",
+        "label": "YouTube — 2023 campaign",
+        "detail": "Published by Becky Edwards’s archived September 3, 2023 campaign site; current account ownership/activity not checked.",
+        "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T21:26:07.861596+00:00",
+        "evidenceDate": "2023-09-03",
+        "disposition": "historical",
+        "reviewId": "601e465eb150"
+      },
+      {
+        "url": "https://web.archive.org/web/20230903180637/https://beckyforutah.com/",
+        "platform": "website",
+        "label": "Campaign website — archived September 3, 2023",
+        "detail": "Historical Becky Edwards for Congress website; live domain failed retrieval.",
+        "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T21:26:07.861596+00:00",
+        "evidenceDate": "2023-09-03",
+        "disposition": "historical",
+        "reviewId": "232b9e8d712a"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Becky Edwards (Utah politician), former Utah House District 20 representative",
+        "source": "https://www.wikidata.org/wiki/Q16210030",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T21:26:07.861596+00:00",
+        "disposition": "verified",
+        "reviewId": "92acee8aa40a"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q16210030",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Q16210030 · Becky Edwards, Utah politician",
+        "source": "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)",
+        "verifiedOn": "2026-11-10",
+        "evidenceFetchedAt": "2026-11-10T21:26:07.861596+00:00",
+        "disposition": "verified",
+        "reviewId": "629eaccb83da"
+      }
+    ]
   }
 }

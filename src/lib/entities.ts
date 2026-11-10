@@ -4,6 +4,7 @@ import placeDirectory from '../data/place-directory.json';
 import personProfileData from '../data/person-enrichment.json';
 import personLinkEnrichment from '../data/person-link-enrichment.json';
 import partyEnrichment from '../data/party-enrichment.json';
+import partyReferenceLinks from '../data/party-reference-links.json';
 import officeEnrichment from '../data/office-enrichment.json';
 import { placeEntityLinks, type EntityLink } from './entity-links';
 import currentRows from '../data/2026-candidates.json';
@@ -292,7 +293,8 @@ export function cleanOfficeName(value: string): string {
 const nonpartisanSections = new Set(['Municipal Offices', 'School Board Offices', 'Special District Offices']);
 
 // Preserve existing party routes and filing IDs when expanding historical labels.
-const partyIdForName = (name: string) => name === 'Natural Law Party' ? 'natural-law' : slug(name);
+const historicalPartyIds: Record<string, string> = { 'Natural Law Party': 'natural-law', 'Justice Party': 'justice' };
+const partyIdForName = (name: string) => historicalPartyIds[name] ?? slug(name);
 
 function partyDetails(rawParty: string, section: string) {
   if (section === 'State Judicial' || (nonpartisanSections.has(section) && !rawParty)) {
@@ -309,6 +311,8 @@ function partyDetails(rawParty: string, section: string) {
     'Constitution Party': { name: 'Utah Constitution Party', shortName: 'Constitution', color: '#986634' },
     Green: { name: 'Green Party of Utah', shortName: 'Green', color: '#407d55' },
     'Green Party of Utah': { name: 'Green Party of Utah', shortName: 'Green', color: '#407d55' },
+    Justice: { name: 'Justice Party', shortName: 'Justice', color: '#5f5e59' },
+    'Justice Party': { name: 'Justice Party', shortName: 'Justice', color: '#5f5e59' },
     'Natural Law': { name: 'Natural Law Party', shortName: 'Natural Law', color: '#5f5e59' },
     'Natural Law Party': { name: 'Natural Law Party', shortName: 'Natural Law', color: '#5f5e59' },
     Libertarian: { name: 'Utah Libertarian Party', shortName: 'Libertarian', color: '#886e13' },
@@ -623,6 +627,7 @@ const localCaucuses: Record<string, NonNullable<Party['localCaucus']>> = {
 };
 const partyLogos: Record<string, string> = {
   'Natural Law Party': '/party-logos/natural-law-party.png',
+  'Justice Party': '/party-logos/justice-party.png',
   Pinecone: '/party-logos/pinecone.svg',
   Sagebrush: '/party-logos/sagebrush.svg',
   'Utah Constitution Party': '/party-logos/constitution-party.png',
@@ -658,7 +663,7 @@ for (const filing of filings) {
     website: '',
     logo: partyLogos[details.name] ?? '',
     recognized: false,
-    historical: ['United Utah Party', 'Natural Law Party'].includes(details.name),
+    historical: ['United Utah Party', 'Natural Law Party', 'Justice Party'].includes(details.name),
     localCaucus: localCaucuses[details.name],
     filings: [],
     years: []
@@ -672,7 +677,8 @@ for (const party of partyMap.values()) {
   importedPartyProperties[party.id] = { shortName: party.shortName, color: party.color, logo: party.logo, recognized: party.recognized, historical: party.historical };
   const enrichment = (partyEnrichment as Record<string, { officialWebsite: string; links: EntityLink[] }>)[party.id];
   party.contact = entityContact('parties', (partyEnrichment as Record<string, { contact?: Partial<Contact> }>)[party.id]?.contact, editorialData.parties?.[party.id]);
-  party.links = applyEntityLinks('parties', enrichment?.links ?? (party.website ? [{ url: party.website }] : []), editorialData.parties?.[party.id]);
+  const references = (partyReferenceLinks as Record<string, { links: EntityLink[] }>)[party.id];
+  party.links = applyEntityLinks('parties', [...(enrichment?.links ?? (party.website ? [{ url: party.website }] : [])), ...(references?.links ?? [])], editorialData.parties?.[party.id]);
   if (enrichment) party.website = enrichment.officialWebsite;
   for (const key of ['shortName', 'color', 'logo', 'recognized', 'historical'] as const) {
     const value = editorialData.parties?.[party.id]?.[key];

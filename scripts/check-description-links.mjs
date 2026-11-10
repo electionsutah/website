@@ -13,6 +13,19 @@ try {
   assert(!descriptionLinks('120260 or x2024 or 20240').some(part => part.href));
   const markup = '<script>alert("2026")</script>';
   assert.equal(descriptionLinks(markup).map(part => part.text).join(''), markup);
+  const { peopleById, filings, importedFilings } = await server.ssrLoadModule('/src/lib/entities.ts');
+  const shields = peopleById.get('shields');
+  assert.equal(shields.name, 'William Scott Shields', 'Use the sourced full name without changing the established person route');
+  assert.deepEqual(descriptionLinks('William Scott Shields'), [{ text: 'William Scott Shields', href: '/people/shields/' }], 'Link the entire reviewed name instead of just the surname');
+  const ticketId = '1996-lesh-governor-lieutenant-governor-natural-law';
+  const ticket = filings.find(f => f.recordId === ticketId);
+  assert.equal(ticket.runningMateId, shields.id);
+  assert.equal(ticket.runningMate, shields.name);
+  assert.equal(ticket.year, 1996);
+  assert.equal(ticket.partyId, 'natural-law');
+  assert.equal(ticket.officeName, 'Governor & Lieutenant Governor');
+  assert.equal(importedFilings.find(f => f.recordId === ticketId).runningMate, 'Shields', 'Keep the imported source abbreviation intact');
+  assert(!shields.filings.some(f => f.personId === 'marilyn-shields' || f.personId === 'valaree-allen-shields'), 'Do not merge unrelated Shields candidates');
   console.log('Description links: election years, entity routes, self links, word boundaries, and preserved text passed');
 } finally {
   await server.close();

@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-11-10T21:27:23.240299+00:00",
+  "status": "pending_user_approval",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 0,
+      "blocked": 0,
+      "historical": 1,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 7,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 1,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "batches": [
+    {
+      "id": "batch-01",
+      "contentHash": "e74ec118a24f7178f5bae3838f1f373d24b5ca90c2c95f969e4c18950810b2a2",
+      "people": 1,
+      "accounts": 7,
+      "status": "applied",
+      "appliedAccounts": 7,
+      "excludedAccounts": 0,
+      "applicationReport": "becky-edwards-link-review/batch-01-application.json"
+    }
+  ],
+  "exceptions": [],
+  "unresolvedPeople": [],
+  "productionChanges": 7,
+  "discoverySource": "reports/becky-edwards-archived-campaign-replay.json",
+  "discoverySummary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 1,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 5,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 1,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  }
+}

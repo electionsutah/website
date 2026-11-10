@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-11-10T21:26:11.944976+00:00",
+  "selection": "User-requested Becky Edwards historical legislative account discovery from the source-published website, archived 20180110092624. Manual ownership review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 0,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 1,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 0,
+    "productionChanges": 0,
+    "requests": 1,
+    "cacheHits": 0,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "becky-edwards",
+      "name": "Becky Edwards",
+      "kind": "people",
+      "entityUrl": "https://www.electionsutah.org/people/becky-edwards/",
+      "websites": [
+        "https://web.archive.org/web/20180110092624id_/http://www.utahbecky.com:80/"
+      ],
+      "latestYear": 2023,
+      "historical": true,
+      "existingLinks": [],
+      "manualOverride": false,
+      "offices": [
+        "U.S. House District 2",
+        "State House District 20",
+        "U.S. Senate"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2023/06/Edwards-CD2_amended.pdf",
+        "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)",
+        "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)"
+      ],
+      "status": "no_account_found",
+      "candidates": [],
+      "fetches": [
+        {
+          "url": "https://web.archive.org/web/20180110092624id_/http://www.utahbecky.com:80",
+          "fetchedAt": "2026-11-10T21:26:10.594369+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://web.archive.org/web/20180110092624id_/http://www.utahbecky.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "84628fd14fe5c3ae99eb6fe63604e44eafe2831686dd40e8611a0c5f4b02163b",
+          "bodyFile": ".firecrawl/enrichment/cache/84628fd14fe5c3ae99eb6fe63604e44eafe2831686dd40e8611a0c5f4b02163b.html",
+          "lastSuccessfulFetchAt": "2026-11-10T21:26:10.594369+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-10T21:26:11.943802+00:00"
+        }
+      ],
+      "manualReviewRequired": true,
+      "identityEvidence": {
+        "nameMatched": false,
+        "officeContextMatched": false,
+        "matchedOfficeTerms": [
+          [],
+          [],
+          []
+        ],
+        "excerpt": "There was an error processing your request."
+      }
+    }
+  ]
+}

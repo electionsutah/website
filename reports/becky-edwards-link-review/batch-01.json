@@ -1,0 +1,236 @@
+{
+  "id": "batch-01",
+  "status": "pending_user_approval",
+  "generatedAt": "2026-11-10T21:27:23.240299+00:00",
+  "runSource": "reports/becky-edwards-reviewed-links.json",
+  "people": [
+    {
+      "id": "becky-edwards",
+      "name": "Becky Edwards",
+      "entityUrl": "https://www.electionsutah.org/people/becky-edwards/",
+      "existingLinks": [],
+      "offices": [
+        "U.S. House District 2",
+        "State House District 20",
+        "U.S. Senate"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2023/06/Edwards-CD2_amended.pdf",
+        "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)",
+        "https://www.wikidata.org/wiki/Q16210030",
+        "https://web.archive.org/web/20230903180637/https://beckyforutah.com/"
+      ],
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/BeckyForUtah",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": "Becky Edwards for Congress | Commitment to Utah. . Marriage and Family Therapy, BYU Masters of Social Work, BYU Utah State Representative, House District 20 Principled and Balanced Conservative Republican Hard-working and outcome-driven MEET BECKY About Becky Lawmaker & Fiscal C"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": "2023-09-03",
+          "disposition": "historical",
+          "reason": "Manual identity review: campaign name, congressional campaign title, Utah House District 20 service, and date match the existing person. Historical ownership application still requires explicit user batch approval.",
+          "primaryIdentityMatched": true,
+          "label": "Facebook — 2023 campaign",
+          "detail": "Published by Becky Edwards’s archived September 3, 2023 campaign site; current account ownership/activity not checked.",
+          "manualIdentityReview": {
+            "entityId": "becky-edwards",
+            "name": "Becky Edwards",
+            "office": "Utah House District 20; 2023 U.S. House District 2",
+            "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+            "requiresUserApproval": true
+          },
+          "reviewId": "895011400e73"
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/beckyforutah",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": "Becky Edwards for Congress | Commitment to Utah. . Marriage and Family Therapy, BYU Masters of Social Work, BYU Utah State Representative, House District 20 Principled and Balanced Conservative Republican Hard-working and outcome-driven MEET BECKY About Becky Lawmaker & Fiscal C"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": "2023-09-03",
+          "disposition": "historical",
+          "reason": "Manual identity review: campaign name, congressional campaign title, Utah House District 20 service, and date match the existing person. Historical ownership application still requires explicit user batch approval.",
+          "primaryIdentityMatched": true,
+          "label": "X — 2023 campaign",
+          "detail": "Published by Becky Edwards’s archived September 3, 2023 campaign site; current account ownership/activity not checked.",
+          "manualIdentityReview": {
+            "entityId": "becky-edwards",
+            "name": "Becky Edwards",
+            "office": "Utah House District 20; 2023 U.S. House District 2",
+            "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+            "requiresUserApproval": true
+          },
+          "reviewId": "eb3ab89dae60"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/beckyforutah",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "Instagram",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": "Becky Edwards for Congress | Commitment to Utah. . Marriage and Family Therapy, BYU Masters of Social Work, BYU Utah State Representative, House District 20 Principled and Balanced Conservative Republican Hard-working and outcome-driven MEET BECKY About Becky Lawmaker & Fiscal C"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": "2023-09-03",
+          "disposition": "historical",
+          "reason": "Manual identity review: campaign name, congressional campaign title, Utah House District 20 service, and date match the existing person. Historical ownership application still requires explicit user batch approval.",
+          "primaryIdentityMatched": true,
+          "label": "Instagram — 2023 campaign",
+          "detail": "Published by Becky Edwards’s archived September 3, 2023 campaign site; current account ownership/activity not checked.",
+          "manualIdentityReview": {
+            "entityId": "becky-edwards",
+            "name": "Becky Edwards",
+            "office": "Utah House District 20; 2023 U.S. House District 2",
+            "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+            "requiresUserApproval": true
+          },
+          "reviewId": "bb65688e14a2"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/@BeckyEdwardsforCongress",
+          "entityId": "becky-edwards",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ],
+              [
+                "20",
+                "house"
+              ],
+              []
+            ],
+            "excerpt": "Becky Edwards for Congress | Commitment to Utah. . Marriage and Family Therapy, BYU Masters of Social Work, BYU Utah State Representative, House District 20 Principled and Balanced Conservative Republican Hard-working and outcome-driven MEET BECKY About Becky Lawmaker & Fiscal C"
+          },
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": "2023-09-03",
+          "disposition": "historical",
+          "reason": "Manual identity review: campaign name, congressional campaign title, Utah House District 20 service, and date match the existing person. Historical ownership application still requires explicit user batch approval.",
+          "primaryIdentityMatched": true,
+          "label": "YouTube — 2023 campaign",
+          "detail": "Published by Becky Edwards’s archived September 3, 2023 campaign site; current account ownership/activity not checked.",
+          "manualIdentityReview": {
+            "entityId": "becky-edwards",
+            "name": "Becky Edwards",
+            "office": "Utah House District 20; 2023 U.S. House District 2",
+            "source": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+            "requiresUserApproval": true
+          },
+          "reviewId": "601e465eb150"
+        },
+        {
+          "entityId": "becky-edwards",
+          "url": "https://web.archive.org/web/20230903180637/https://beckyforutah.com/",
+          "platform": "website",
+          "label": "Campaign website — archived September 3, 2023",
+          "detail": "Historical Becky Edwards for Congress website; live domain failed retrieval.",
+          "sourceUrl": "https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/",
+          "anchorText": "Campaign website — archived September 3, 2023",
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": "2023-09-03",
+          "primaryIdentityMatched": true,
+          "disposition": "historical",
+          "reason": "Exact Utah politician identity reviewed against House District 20 and 2023 congressional records; pending batch approval.",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "excerpt": "Becky Edwards for Congress | Commitment to Utah. . Marriage and Family Therapy, BYU Masters of Social Work, BYU Utah State Representative, House District 20 Principled and Balanced Conservative Republican Hard-working and outcome-driven MEET BECKY About Becky Lawmaker & Fiscal C"
+          },
+          "reviewId": "232b9e8d712a"
+        },
+        {
+          "entityId": "becky-edwards",
+          "url": "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)",
+          "platform": "wikipedia",
+          "label": "Wikipedia",
+          "detail": "Becky Edwards (Utah politician), former Utah House District 20 representative",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q16210030",
+          "anchorText": "Wikipedia",
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": null,
+          "primaryIdentityMatched": true,
+          "disposition": "verified",
+          "reason": "Exact Utah politician identity reviewed against House District 20 and 2023 congressional records; pending batch approval.",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "excerpt": "Wikimedia article and Q16210030 sitelink identify Becky Edwards, Utah House District 20 representative, with a 2023 U.S. House District 2 campaign."
+          },
+          "reviewId": "92acee8aa40a"
+        },
+        {
+          "entityId": "becky-edwards",
+          "url": "https://www.wikidata.org/wiki/Q16210030",
+          "platform": "wikidata",
+          "label": "Wikidata",
+          "detail": "Q16210030 · Becky Edwards, Utah politician",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Becky_Edwards_(Utah_politician)",
+          "anchorText": "Wikidata",
+          "fetchedAt": "2026-11-10T21:26:07.861596+00:00",
+          "evidenceDate": null,
+          "primaryIdentityMatched": true,
+          "disposition": "verified",
+          "reason": "Exact Utah politician identity reviewed against House District 20 and 2023 congressional records; pending batch approval.",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "excerpt": "Wikimedia article and Q16210030 sitelink identify Becky Edwards, Utah House District 20 representative, with a 2023 U.S. House District 2 campaign."
+          },
+          "reviewId": "629eaccb83da"
+        }
+      ]
+    }
+  ],
+  "contentHash": "e74ec118a24f7178f5bae3838f1f373d24b5ca90c2c95f969e4c18950810b2a2"
+}

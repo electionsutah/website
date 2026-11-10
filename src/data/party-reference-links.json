@@ -1,0 +1,570 @@
+{
+  "utah-constitution-party": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "national-context",
+    "identityEvidence": "Both Utah article titles redirect to the national party; no dedicated Utah Wikidata item was found. These are labeled national-party references, not Utah entity identifiers.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.constitutionpartyofutah.com/",
+      "https://en.wikipedia.org/wiki/Constitution_Party_(United_States)",
+      "https://www.wikidata.org/wiki/Q1128321",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Constitution_Party_(United_States)",
+        "platform": "wikipedia",
+        "label": "Wikipedia — national party",
+        "detail": "National Constitution Party; not a separate Utah-party record",
+        "source": "https://www.wikidata.org/wiki/Q1128321",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q1128321",
+        "platform": "wikidata",
+        "label": "Wikidata — national party",
+        "detail": "National Constitution Party; not a separate Utah-party record · Q1128321",
+        "source": "https://en.wikipedia.org/wiki/Constitution_Party_(United_States)",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "utah-democratic-party": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "The article identifies the Utah Democratic organization; Wikidata P856 matches the existing party website.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.utahdemocrats.org/",
+      "https://en.wikipedia.org/wiki/Utah_Democratic_Party",
+      "https://www.wikidata.org/wiki/Q7902341",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Utah_Democratic_Party",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Utah Democratic Party",
+        "source": "https://www.wikidata.org/wiki/Q7902341",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q7902341",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Utah Democratic Party · Q7902341",
+        "source": "https://en.wikipedia.org/wiki/Utah_Democratic_Party",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "forward-party-of-utah": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "The article identifies the Utah party and 2025 merger, corroborated by the official disclosure page. Wikidata still labels its shared history United Utah Party.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.utahforwardparty.org/",
+      "https://en.wikipedia.org/wiki/Forward_Party_of_Utah",
+      "https://www.wikidata.org/wiki/Q39329619",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Forward_Party_of_Utah",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Forward Party of Utah",
+        "source": "https://www.wikidata.org/wiki/Q39329619",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q39329619",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Forward Party of Utah · Q39329619",
+        "source": "https://en.wikipedia.org/wiki/Forward_Party_of_Utah",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "green-party-of-utah": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "no_account_found",
+    "relation": "directory-context",
+    "identityEvidence": "Green Party of Utah redirects to the state-party directory, whose Utah row is present. No dedicated Utah Wikidata item was found; the list’s Q28154727 is not a party and is excluded.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://greenpartyofutah.org/",
+      "https://en.wikipedia.org/wiki/List_of_state_Green_Parties_in_the_United_States",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/List_of_state_Green_Parties_in_the_United_States",
+        "platform": "wikipedia",
+        "label": "Wikipedia — state-party directory",
+        "detail": "Directory containing Green Party of Utah; not a standalone party article",
+        "source": "https://en.wikipedia.org/wiki/List_of_state_Green_Parties_in_the_United_States",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "independent-american-party": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "The Utah-specific article identifies the party founded in 1993 and its Utah Senate candidacy; do not use the separate national Independent American Party.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://iaput.org/",
+      "https://en.wikipedia.org/wiki/Utah_Independent_American_Party",
+      "https://www.wikidata.org/wiki/Q131538243",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Utah_Independent_American_Party",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Utah Independent American Party",
+        "source": "https://www.wikidata.org/wiki/Q131538243",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q131538243",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Utah Independent American Party · Q131538243",
+        "source": "https://en.wikipedia.org/wiki/Utah_Independent_American_Party",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "utah-libertarian-party": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "The article identifies the Utah affiliate; Wikidata P856 matches libertarianutah.org.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.libertarianutah.org/",
+      "https://www.libertarianutah.org/contact-us/",
+      "https://en.wikipedia.org/wiki/Libertarian_Party_of_Utah",
+      "https://www.wikidata.org/wiki/Q6541399",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Libertarian_Party_of_Utah",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Libertarian Party of Utah",
+        "source": "https://www.wikidata.org/wiki/Q6541399",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q6541399",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Libertarian Party of Utah · Q6541399",
+        "source": "https://en.wikipedia.org/wiki/Libertarian_Party_of_Utah",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "utah-republican-party": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "The article identifies the Utah Republican organization; Wikidata P856 matches utgop.org.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/",
+      "https://www.utgop.org/",
+      "https://en.wikipedia.org/wiki/Utah_Republican_Party",
+      "https://www.wikidata.org/wiki/Q7902394",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Utah_Republican_Party",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Utah Republican Party",
+        "source": "https://www.wikidata.org/wiki/Q7902394",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q7902394",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Utah Republican Party · Q7902394",
+        "source": "https://en.wikipedia.org/wiki/Utah_Republican_Party",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "peoples-freedom-party": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "no_account_found",
+    "wikidataStatus": "no_account_found",
+    "relation": "no-match-found",
+    "identityEvidence": "Utah Peoples’ Freedom Party has no matching article/item in the bounded title and alternate-name searches; Russian, Nepalese, Burmese and disambiguation records rejected.",
+    "sources": [
+      "https://vote.utah.gov/more-information-on-utah-political-parties/"
+    ],
+    "links": []
+  },
+  "united-utah-party": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "historical",
+    "wikidataStatus": "historical",
+    "relation": "historical-name",
+    "identityEvidence": "United Utah Party redirects to this article after its 2025 merger. The shared Wikidata item still labels the organization United Utah Party. Links are explicitly historical; no successor website or social account is assigned.",
+    "sources": [
+      "https://www.utahforwardparty.org/disclosures",
+      "https://en.wikipedia.org/wiki/Forward_Party_of_Utah",
+      "https://www.wikidata.org/wiki/Q39329619",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Forward_Party_of_Utah",
+        "platform": "wikipedia",
+        "label": "Wikipedia — historical party",
+        "detail": "United Utah Party history; article now titled Forward Party of Utah",
+        "source": "https://www.wikidata.org/wiki/Q39329619",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q39329619",
+        "platform": "wikidata",
+        "label": "Wikidata — historical party",
+        "detail": "United Utah Party history; article now titled Forward Party of Utah · Q39329619",
+        "source": "https://en.wikipedia.org/wiki/Forward_Party_of_Utah",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "pinecone": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "no_account_found",
+    "wikidataStatus": "no_account_found",
+    "relation": "no-match-found",
+    "identityEvidence": "Fruit Heights local nonpartisan caucus, confirmed by the existing city evidence. No dedicated article/item found in the bounded exact and alternate-name searches; unrelated namesakes excluded.",
+    "sources": [
+      "https://www.fruitheights.gov/313/Elections"
+    ],
+    "links": []
+  },
+  "sagebrush": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "no_account_found",
+    "wikidataStatus": "no_account_found",
+    "relation": "no-match-found",
+    "identityEvidence": "Fruit Heights local nonpartisan caucus, confirmed by the existing city evidence. No dedicated article/item found in the bounded exact and alternate-name searches; unrelated namesakes excluded.",
+    "sources": [
+      "https://www.fruitheights.gov/313/Elections"
+    ],
+    "links": []
+  },
+  "nonpartisan": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "not_applicable",
+    "wikidataStatus": "not_applicable",
+    "relation": "not-an-organization",
+    "identityEvidence": "An affiliation or missing-data category, not a distinct party organization. No organization article or QID assigned.",
+    "sources": [],
+    "links": []
+  },
+  "not-reported": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "not_applicable",
+    "wikidataStatus": "not_applicable",
+    "relation": "not-an-organization",
+    "identityEvidence": "An affiliation or missing-data category, not a distinct party organization. No organization article or QID assigned.",
+    "sources": [],
+    "links": []
+  },
+  "unaffiliated": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "not_applicable",
+    "wikidataStatus": "not_applicable",
+    "relation": "not-an-organization",
+    "identityEvidence": "An affiliation or missing-data category, not a distinct party organization. No organization article or QID assigned.",
+    "sources": [],
+    "links": []
+  },
+  "independent": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "not_applicable",
+    "wikidataStatus": "not_applicable",
+    "relation": "not-an-organization",
+    "identityEvidence": "An affiliation or missing-data category, not a distinct party organization. No organization article or QID assigned.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/"
+    ],
+    "links": []
+  },
+  "justice": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "The article identifies Rocky Anderson and the 2012 presidential ticket; the official 2012 Utah canvass records Anderson, Daniel Geery, and Ty Markham under Justice.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/",
+      "https://en.wikipedia.org/wiki/Justice_Party_(United_States)",
+      "https://www.wikidata.org/wiki/Q6317052",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Justice_Party_(United_States)",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Justice Party (United States)",
+        "source": "https://www.wikidata.org/wiki/Q6317052",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q6317052",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Justice Party (United States) · Q6317052",
+        "source": "https://en.wikipedia.org/wiki/Justice_Party_(United_States)",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "natural-law": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "National party identified by the 1996 and 2000 Hagelin presidential tickets; contemporary Utah reporting names the matching Utah congressional and gubernatorial candidates.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/",
+      "https://www.deseret.com/1996/6/22/19250334/natural-law-party-draws-on-strengths-of-other-parties-and-promotes-ounce-of-prevention/",
+      "https://en.wikipedia.org/wiki/Natural_Law_Party_(United_States)",
+      "https://ballotpedia.org/Natural_Law_Party",
+      "https://www.wikidata.org/wiki/Q6517143",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1960Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Natural_Law_Party_(United_States)",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Natural Law Party (United States)",
+        "source": "https://www.wikidata.org/wiki/Q6517143",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q6517143",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Natural Law Party (United States) · Q6517143",
+        "source": "https://en.wikipedia.org/wiki/Natural_Law_Party_(United_States)",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "party-for-socialism-and-liberation": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "Imported 2008 Utah canvass lists the La Riva presidential ticket under this party, consistent with the United States party.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/",
+      "https://en.wikipedia.org/wiki/Party_for_Socialism_and_Liberation",
+      "https://www.wikidata.org/wiki/Q4026915",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/2008Gen.xls"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Party_for_Socialism_and_Liberation",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Party for Socialism and Liberation",
+        "source": "https://www.wikidata.org/wiki/Q4026915",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q4026915",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Party for Socialism and Liberation · Q4026915",
+        "source": "https://en.wikipedia.org/wiki/Party_for_Socialism_and_Liberation",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "peace-and-freedom": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "Imported 2008 Utah canvass lists Nader under Peace and Freedom; the article documents the United States party, not an overseas namesake.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/",
+      "https://en.wikipedia.org/wiki/Peace_and_Freedom_Party",
+      "https://www.wikidata.org/wiki/Q3098914",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/2008Gen.xls"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Peace_and_Freedom_Party",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Peace and Freedom Party",
+        "source": "https://www.wikidata.org/wiki/Q3098914",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q3098914",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Peace and Freedom Party · Q3098914",
+        "source": "https://en.wikipedia.org/wiki/Peace_and_Freedom_Party",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "personal-choice": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "The article identifies the 2004 Utah-ballot party, matching the archive’s 2004 candidates and presidential ticket.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/",
+      "https://en.wikipedia.org/wiki/Personal_Choice_Party",
+      "https://www.wikidata.org/wiki/Q7170486",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/2004Gen.pdf#page=3"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Personal_Choice_Party",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Personal Choice Party",
+        "source": "https://www.wikidata.org/wiki/Q7170486",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q7170486",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Personal Choice Party · Q7170486",
+        "source": "https://en.wikipedia.org/wiki/Personal_Choice_Party",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "reform": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "The article identifies the American party founded by Perot; the archive has Perot in 1996 and Buchanan in 2000.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/",
+      "https://en.wikipedia.org/wiki/Reform_Party_of_the_United_States_of_America",
+      "https://www.wikidata.org/wiki/Q1893430",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1996Gen.pdf#page=1"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Reform_Party_of_the_United_States_of_America",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Reform Party of the United States of America",
+        "source": "https://www.wikidata.org/wiki/Q1893430",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q1893430",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Reform Party of the United States of America · Q1893430",
+        "source": "https://en.wikipedia.org/wiki/Reform_Party_of_the_United_States_of_America",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "socialist-workers": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "verified",
+    "wikidataStatus": "verified",
+    "relation": "exact",
+    "identityEvidence": "United States party identified by matching historical Harris presidential tickets and Utah congressional candidates; overseas namesakes excluded.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/",
+      "https://en.wikipedia.org/wiki/Socialist_Workers_Party_(United_States)",
+      "https://www.wikidata.org/wiki/Q581177",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1994Gen.pdf#page=2"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Socialist_Workers_Party_(United_States)",
+        "platform": "wikipedia",
+        "label": "Wikipedia",
+        "detail": "Socialist Workers Party (United States)",
+        "source": "https://www.wikidata.org/wiki/Q581177",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q581177",
+        "platform": "wikidata",
+        "label": "Wikidata",
+        "detail": "Socialist Workers Party (United States) · Q581177",
+        "source": "https://en.wikipedia.org/wiki/Socialist_Workers_Party_(United_States)",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  },
+  "u-s-taxpayers": {
+    "reviewedOn": "2026-11-10",
+    "wikipediaStatus": "historical",
+    "wikidataStatus": "historical",
+    "relation": "historical-name",
+    "identityEvidence": "U.S. Taxpayers was the national party’s name before 1999; the archive lists Phillips in 1996. References explicitly identify the former name.",
+    "sources": [
+      "https://vote.utah.gov/historical-election-results/",
+      "https://en.wikipedia.org/wiki/Constitution_Party_(United_States)",
+      "https://www.wikidata.org/wiki/Q1128321",
+      "https://vote.utah.gov/wp-content/uploads/2023/09/1996Gen.pdf#page=1"
+    ],
+    "links": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Constitution_Party_(United_States)",
+        "platform": "wikipedia",
+        "label": "Wikipedia — historical party",
+        "detail": "U.S. Taxpayers Party, renamed Constitution Party in 1999",
+        "source": "https://www.wikidata.org/wiki/Q1128321",
+        "verifiedOn": "2026-11-10"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q1128321",
+        "platform": "wikidata",
+        "label": "Wikidata — historical party",
+        "detail": "U.S. Taxpayers Party, renamed Constitution Party in 1999 · Q1128321",
+        "source": "https://en.wikipedia.org/wiki/Constitution_Party_(United_States)",
+        "verifiedOn": "2026-11-10"
+      }
+    ]
+  }
+}

@@ -514,7 +514,7 @@ main:focus,main h1:focus{outline:0}
 }
 
 @layer components {
-  .filing-card .filing-party-link{display:inline-flex;align-items:center;gap:var(--space-2-5);max-width:100%;vertical-align:middle}
+  .filing-card .filing-party-link{display:inline-flex;align-items:center;gap:var(--space-2-5);max-width:100%;vertical-align:middle;color:var(--color-blue);font-size:var(--text-base);font-weight:600;text-decoration:underline;text-underline-offset:3px}
   .filing-party-logo{display:inline-flex;align-items:center;justify-content:center;flex:none;width:28px;height:28px}
   .filing-party-logo img{display:block;max-width:100%;max-height:100%;object-fit:contain}
   .filing-party-logo.inverse-logo{padding:3px;background:var(--party-color)}
@@ -547,6 +547,9 @@ main:focus,main h1:focus{outline:0}
 .index-tile .card-record-link{flex:1;min-height:0;padding:0}
 .index-card-content{display:flex;flex-direction:column;flex:1;min-width:0;padding:var(--space-5);gap:var(--space-2)}
 .index-card-content>small{color:var(--color-muted);font-size:var(--text-2xs);font-weight:700;letter-spacing:.11em;text-transform:uppercase;overflow-wrap:anywhere}
+.index-card-content>.card-party{display:flex;align-items:center;gap:var(--space-2);min-width:0}
+.index-card-content>.candidate-status{display:flex;align-items:baseline;flex-wrap:wrap;gap:var(--space-2)}
+.status-badge{display:inline-block;padding:2px var(--space-2);border:1px solid var(--color-rule-soft);border-radius:3px;background:var(--color-warm-white);color:var(--color-text);font:700 var(--text-2xs)/1.5 var(--font-sans)}
 .index-card-content h2{margin:0 0 var(--space-4);line-height:1.15;overflow-wrap:anywhere}
 .index-card-content>p{margin:0;color:var(--color-muted);font:400 var(--text-sm)/1.5 var(--font-sans);overflow-wrap:anywhere}
 .index-card-content .card-avatar,.index-card-content .card-logo{margin-bottom:var(--space-3)}
@@ -591,4 +594,9 @@ main:focus,main h1:focus{outline:0}
   .person-hero-panels:not(.has-contact) .detail-stats{grid-template-columns:1fr;gap:0}
   .person-hero-panels:not(.has-contact) .detail-stats>div{border-bottom:1px solid var(--color-muted)}
   .person-hero-panels:not(.has-contact) .detail-stats>div:last-child{border-bottom:0}
+}
+
+/* Result bars reveal in place without changing chart or page layout. */
+@layer components {
+  .vote-bar{transform-origin:left center;transform:scaleX(var(--vote-progress,1))}
 }
