@@ -288,6 +288,17 @@ def existing_sources():
     return output
 
 
+def reviewed_primary_sources():
+    """Reviewed full ballots from official documents; never fill missing API cells."""
+    rows=json.loads((ROOT/'src/data/reviewed-primary-results.json').read_text())
+    for row in rows:
+        assert row['official'] and row['electionType']=='primary' and type(row['reviewedSelection']) is bool
+        assert row['sourcePage']>0 and len(row['sourceSha256'])==64
+        validate_contest(row)
+        assert row['votesPublished'] and row['optionTotalsReconcile'], row['id']
+    return rows
+
+
 def deduplicate(contests):
     # Same-publication/API overlap: compare exact source URL and election stage, not similar names.
     merged={}
@@ -338,9 +349,18 @@ def candidate_rows(contests):
 
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--use-cache',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--use-cache',action='store_true')
+    parser.add_argument('--reviewed-only',action='store_true',help='Apply reviewed document results to existing normalized snapshots without network requests')
+    args=parser.parse_args()
     CACHE.mkdir(parents=True,exist_ok=True)
-    contests=deduplicate([*workbook_sources(args.use_cache),*api_sources(args.use_cache),*municipal_pdf_sources(args.use_cache),*existing_sources()])
+    reviewed=reviewed_primary_sources()
+    if args.reviewed_only:
+        reviewed_ids={row['id'] for row in reviewed}
+        existing_index=json.loads((ROOT/'src/data/result-index.json').read_text())
+        contests=[c for row in existing_index for c in json.loads((ROOT/'public'/row['url'].lstrip('/')).read_text())['contests'] if c['id'] not in reviewed_ids]
+        contests.extend(reviewed)
+    else:
+        contests=deduplicate([*workbook_sources(args.use_cache),*api_sources(args.use_cache),*municipal_pdf_sources(args.use_cache),*existing_sources(),*reviewed])
     groups=defaultdict(list)
     for c in contests:groups[(c['year'],c['electionType'])].append(c)
     # Validate the full run before replacing any previously good output.
@@ -357,9 +377,10 @@ def main():
     # Keep the availability index available synchronously to avoid unsupported-year fetches.
     atomic_json(ROOT/'src/data/result-index.json',index)
     inventory=json.loads((ROOT/'reports/state-election-source-inventory.json').read_text())
-    imported={c['source'] for c in contests}
-    pending=[dict(year=e['yearLabel'],election=e['label'],source=s['url'],status='Vote extraction pending; roster coverage is separate') for e in inventory['elections'] for s in e['sources'] if s['url'] not in imported]
-    atomic_json(ROOT/'reports/result-import-coverage.json',dict(datasets=index,scope='All listed options from supported adapters. Historic PDF rosters are separate from verified vote extraction; municipal PDF adapters cover reviewed mayor/council contests only.',unpublishedContests=[dict(id=c['id'],source=c['source'],year=c['year'],electionType=c['electionType']) for c in contests if not c['votesPublished']],sourceDiscrepancies=[dict(id=c['id'],name=c['name'],source=c['source'],year=c['year'],electionType=c['electionType']) for c in contests if c.get('optionTotalsReconcile') is False or c.get('countyTotalsReconcile') is False],pendingSources=pending))
+    imported={c['source'].split('#')[0] for c in contests if not c.get('reviewedSelection')}
+    partial={c['source'].split('#')[0] for c in contests if c.get('reviewedSelection')}
+    pending=[dict(year=e['yearLabel'],election=e['label'],source=s['url'],status='Selected contest imported; remaining document contests pending vote extraction' if s['url'] in partial else 'Vote extraction pending; roster coverage is separate') for e in inventory['elections'] for s in e['sources'] if s['url'] not in imported]
+    atomic_json(ROOT/'reports/result-import-coverage.json',dict(datasets=index,scope='All listed options from supported adapters. Reviewed official primary selections include full candidate ballots for their named contests only. Historic PDF rosters are separate from verified vote extraction; municipal PDF adapters cover reviewed mayor/council contests only.',unpublishedContests=[dict(id=c['id'],source=c['source'],year=c['year'],electionType=c['electionType']) for c in contests if not c['votesPublished']],sourceDiscrepancies=[dict(id=c['id'],name=c['name'],source=c['source'],year=c['year'],electionType=c['electionType']) for c in contests if c.get('optionTotalsReconcile') is False or c.get('countyTotalsReconcile') is False],pendingSources=pending))
     print(f'Normalized {len(contests)} contests, {sum(len(c["options"]) for c in contests)} listed options across {len(groups)} election/stage datasets. {sum(not c["votesPublished"] for c in contests)} contests retain unpublished votes as null.')
     for r in index:print(r)
 

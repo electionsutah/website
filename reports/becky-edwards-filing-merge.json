@@ -1,0 +1,192 @@
+{
+  "personId": "becky-edwards",
+  "reviewId": "becky-edwards-2023-cd2-primary",
+  "reviewedOn": "2026-11-10",
+  "sourceRecords": 16,
+  "originalSourceRecords": 14,
+  "beforeCards": 12,
+  "afterCards": 7,
+  "primaryEvidence": [
+    {
+      "year": 2008,
+      "votes": 1413,
+      "total": 2710,
+      "percent": "52.14",
+      "source": "https://vote.utah.gov/wp-content/uploads/2023/09/08-Primary-Election-Results.pdf",
+      "official": true
+    },
+    {
+      "year": 2010,
+      "votes": 2043,
+      "total": 3523,
+      "percent": "57.99",
+      "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2010-Primary-Canvass-Reports.xls",
+      "official": true
+    },
+    {
+      "year": 2016,
+      "votes": 2487,
+      "total": 4778,
+      "percent": "52.05",
+      "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2016-Primary-Election-State-Canvass-2-1.xlsx",
+      "official": true
+    },
+    {
+      "year": 2022,
+      "votes": 123617,
+      "total": 416703,
+      "percent": "29.67",
+      "source": "https://vote.utah.gov/wp-content/uploads/2022/07/2022-Signed-Primary-Election-Statewide-Canvass.pdf#page=2",
+      "official": true
+    },
+    {
+      "year": 2023,
+      "votes": 30560,
+      "total": 93410,
+      "percent": "32.72",
+      "source": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152",
+      "official": true
+    }
+  ],
+  "primary2023": {
+    "beforeCards": 7,
+    "afterCards": 1,
+    "resultContestId": "2023-primary-reviewed-us-house-2",
+    "votesPublished": true
+  },
+  "preservedRecordIds": [
+    "2023-becky-edwards-u-s-house-district-2-utah-republican-party",
+    "2023-primary-becky-edwards-rep-u-s-house-district-2-utah-republican-party-davis-",
+    "2023-primary-becky-edwards-republican-u-s-house-not-reported-iron-",
+    "2023-primary-becky-edwards-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+    "2023-primary-becky-edwards-republican-for-u-s-house-district-2-not-reported-tooele-",
+    "2023-primary-becky-edwards-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+    "2023-primary-becky-edwards-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-",
+    "2022-primary-becky-edwards-u-s-senate-utah-republican-party--",
+    "2016-becky-edwards-state-house-district-20-utah-republican-party",
+    "2016-primary-becky-edwards-state-house-district-20-utah-republican-party--",
+    "2014-becky-edwards-state-house-district-20-utah-republican-party",
+    "2012-becky-edwards-state-house-district-20-utah-republican-party",
+    "2010-becky-edwards-state-house-district-20-utah-republican-party",
+    "2010-primary-becky-edwards-state-house-district-20-utah-republican-party--",
+    "2008-becky-edwards-state-house-district-20-utah-republican-party",
+    "2008-primary-becky-edwards-state-house-district-20-utah-republican-party--"
+  ],
+  "evidence": {
+    "id": "becky-edwards-2023-cd2-primary",
+    "reviewedOn": "2026-11-10",
+    "personId": "becky-edwards",
+    "year": 2023,
+    "electionType": "primary",
+    "canonicalRecordId": "2023-becky-edwards-u-s-house-district-2-utah-republican-party",
+    "recordIds": [
+      "2023-becky-edwards-u-s-house-district-2-utah-republican-party",
+      "2023-primary-becky-edwards-rep-u-s-house-district-2-utah-republican-party-davis-",
+      "2023-primary-becky-edwards-republican-u-s-house-not-reported-iron-",
+      "2023-primary-becky-edwards-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+      "2023-primary-becky-edwards-republican-for-u-s-house-district-2-not-reported-tooele-",
+      "2023-primary-becky-edwards-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+      "2023-primary-becky-edwards-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-"
+    ],
+    "resultContestId": "2023-primary-reviewed-us-house-2",
+    "resultSource": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152",
+    "reason": "The declaration identifies Becky Edwards and U.S. House District 2. Six cached September 5, 2023 primary feeds list the identical Becky Edwards / Celeste Maloy / Bruce R Hough ballot. County names identify reporting feeds, not separate candidacies or residence. The FEC official election compilation, PDF page 152, supplies full-district primary totals; missing parties and malformed office labels remain intact in source records. This reviewed exception groups only these exact record IDs. The Demo feed is retained as roster evidence; published FEC totals are used for results. No general-election participation is inferred.",
+    "sources": [
+      {
+        "recordId": "2023-becky-edwards-u-s-house-district-2-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Edwards-CD2_amended.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-rep-u-s-house-district-2-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/4bacd436-01db-4617-a0e5-b92490fa185e",
+        "officeId": "rep-u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-republican-u-s-house-not-reported-iron-",
+        "url": "https://electionresults.utah.gov/results/public/iron-county-ut/elections/primary09052023_Demo/ballot-items/8b1870a9-552c-43b3-a0ba-fd7bdc2125c8",
+        "officeId": "republican-u-s-house",
+        "partyId": "not-reported",
+        "county": "Iron",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/primary09052023_Demo/ballot-items/8c708c16-87ee-465f-b18a-39a625a1dda4",
+        "officeId": "republican-u-s-house-district-2-u-s-house-district",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-republican-for-u-s-house-district-2-not-reported-tooele-",
+        "url": "https://electionresults.utah.gov/results/public/tooele-county-ut/elections/primary09052023_Demo/ballot-items/e21e3f72-0edf-415d-9118-c1f1307f2ed0",
+        "officeId": "republican-for-u-s-house-district-2",
+        "partyId": "not-reported",
+        "county": "Tooele",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/primary09052023_Demo/ballot-items/a3070e64-4859-4783-9a6e-1cd40c08504f",
+        "officeId": "u-s-house-district-2-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/primary09052023_Demo/ballot-items/6d4c6d98-5d5c-4fc6-b423-faea64a2b44f",
+        "officeId": "united-states-house-of-representatives-br-district-2",
+        "partyId": "utah-republican-party",
+        "county": "Beaver",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      }
+    ],
+    "resultSourcePage": 152,
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "2023-primary-reviewed-us-house-2",
+        "source": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152",
+        "county": null,
+        "city": ""
+      }
+    ]
+  },
+  "checks": "Passed: exact membership, fail-closed context checks, retained sources/IDs, distinct election years/stages, statewide result selection, all five official primary counts and dates, no inferred residence or outcomes."
+}

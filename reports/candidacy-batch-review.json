@@ -1,0 +1,2575 @@
+{
+  "currentPrimaryBallotsMatched": 244,
+  "nonpartisanPrimaryCounts": 1569,
+  "reviewedOn": "2026-11-10",
+  "people": [
+    {
+      "id": "becky-edwards",
+      "name": "Becky Edwards",
+      "year": 2023,
+      "beforeCards": 7,
+      "afterCards": 1,
+      "recordsPreserved": 7,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2023-09-05",
+          "summary": "30,560 votes · 32.72%",
+          "source": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-becky-edwards-u-s-house-district-2-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Edwards-CD2_amended.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "becky-edwards",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-becky-edwards-rep-u-s-house-district-2-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/4bacd436-01db-4617-a0e5-b92490fa185e",
+          "officeId": "rep-u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "becky-edwards",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-becky-edwards-republican-u-s-house-not-reported-iron-",
+          "url": "https://electionresults.utah.gov/results/public/iron-county-ut/elections/primary09052023_Demo/ballot-items/8b1870a9-552c-43b3-a0ba-fd7bdc2125c8",
+          "officeId": "republican-u-s-house",
+          "partyId": "not-reported",
+          "county": "Iron",
+          "city": "",
+          "status": "primary_election",
+          "personId": "becky-edwards",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-becky-edwards-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/primary09052023_Demo/ballot-items/8c708c16-87ee-465f-b18a-39a625a1dda4",
+          "officeId": "republican-u-s-house-district-2-u-s-house-district",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "becky-edwards",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-becky-edwards-republican-for-u-s-house-district-2-not-reported-tooele-",
+          "url": "https://electionresults.utah.gov/results/public/tooele-county-ut/elections/primary09052023_Demo/ballot-items/e21e3f72-0edf-415d-9118-c1f1307f2ed0",
+          "officeId": "republican-for-u-s-house-district-2",
+          "partyId": "not-reported",
+          "county": "Tooele",
+          "city": "",
+          "status": "primary_election",
+          "personId": "becky-edwards",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-becky-edwards-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/primary09052023_Demo/ballot-items/a3070e64-4859-4783-9a6e-1cd40c08504f",
+          "officeId": "u-s-house-district-2-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "becky-edwards",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-becky-edwards-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/primary09052023_Demo/ballot-items/6d4c6d98-5d5c-4fc6-b423-faea64a2b44f",
+          "officeId": "united-states-house-of-representatives-br-district-2",
+          "partyId": "utah-republican-party",
+          "county": "Beaver",
+          "city": "",
+          "status": "primary_election",
+          "personId": "becky-edwards",
+          "year": 2023,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "bruce-r-hough",
+      "name": "Bruce R. Hough",
+      "year": 2023,
+      "beforeCards": 7,
+      "afterCards": 1,
+      "recordsPreserved": 7,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2023-09-05",
+          "summary": "26,562 votes · 28.44%",
+          "source": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-bruce-r-hough-u-s-house-district-2-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Hough-CD2.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "bruce-r-hough",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-bruce-r-hough-rep-u-s-house-district-2-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/4bacd436-01db-4617-a0e5-b92490fa185e",
+          "officeId": "rep-u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "bruce-r-hough",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-bruce-r-hough-republican-u-s-house-not-reported-iron-",
+          "url": "https://electionresults.utah.gov/results/public/iron-county-ut/elections/primary09052023_Demo/ballot-items/8b1870a9-552c-43b3-a0ba-fd7bdc2125c8",
+          "officeId": "republican-u-s-house",
+          "partyId": "not-reported",
+          "county": "Iron",
+          "city": "",
+          "status": "primary_election",
+          "personId": "bruce-r-hough",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-bruce-r-hough-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/primary09052023_Demo/ballot-items/8c708c16-87ee-465f-b18a-39a625a1dda4",
+          "officeId": "republican-u-s-house-district-2-u-s-house-district",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "bruce-r-hough",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-bruce-r-hough-republican-for-u-s-house-district-2-not-reported-tooele-",
+          "url": "https://electionresults.utah.gov/results/public/tooele-county-ut/elections/primary09052023_Demo/ballot-items/e21e3f72-0edf-415d-9118-c1f1307f2ed0",
+          "officeId": "republican-for-u-s-house-district-2",
+          "partyId": "not-reported",
+          "county": "Tooele",
+          "city": "",
+          "status": "primary_election",
+          "personId": "bruce-r-hough",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-bruce-r-hough-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/primary09052023_Demo/ballot-items/a3070e64-4859-4783-9a6e-1cd40c08504f",
+          "officeId": "u-s-house-district-2-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "bruce-r-hough",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-bruce-r-hough-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/primary09052023_Demo/ballot-items/6d4c6d98-5d5c-4fc6-b423-faea64a2b44f",
+          "officeId": "united-states-house-of-representatives-br-district-2",
+          "partyId": "utah-republican-party",
+          "county": "Beaver",
+          "city": "",
+          "status": "primary_election",
+          "personId": "bruce-r-hough",
+          "year": 2023,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "celeste-maloy",
+      "name": "Celeste Maloy",
+      "year": 2023,
+      "beforeCards": 8,
+      "afterCards": 1,
+      "recordsPreserved": 8,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2023-09-05",
+          "summary": "36,288 votes · 38.85%",
+          "source": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152"
+        },
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "89,866 votes · 56.83%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-celeste-maloy-u-s-house-district-2-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Maloy-CD2.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "celeste-maloy",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-general-celeste-maloy-u-s-house-of-representatives-district-2-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "celeste-maloy",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-primary-celeste-maloy-rep-u-s-house-district-2-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/4bacd436-01db-4617-a0e5-b92490fa185e",
+          "officeId": "rep-u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "celeste-maloy",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-celeste-maloy-republican-u-s-house-not-reported-iron-",
+          "url": "https://electionresults.utah.gov/results/public/iron-county-ut/elections/primary09052023_Demo/ballot-items/8b1870a9-552c-43b3-a0ba-fd7bdc2125c8",
+          "officeId": "republican-u-s-house",
+          "partyId": "not-reported",
+          "county": "Iron",
+          "city": "",
+          "status": "primary_election",
+          "personId": "celeste-maloy",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-celeste-maloy-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/primary09052023_Demo/ballot-items/8c708c16-87ee-465f-b18a-39a625a1dda4",
+          "officeId": "republican-u-s-house-district-2-u-s-house-district",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "celeste-maloy",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-celeste-maloy-republican-for-u-s-house-district-2-not-reported-tooele-",
+          "url": "https://electionresults.utah.gov/results/public/tooele-county-ut/elections/primary09052023_Demo/ballot-items/e21e3f72-0edf-415d-9118-c1f1307f2ed0",
+          "officeId": "republican-for-u-s-house-district-2",
+          "partyId": "not-reported",
+          "county": "Tooele",
+          "city": "",
+          "status": "primary_election",
+          "personId": "celeste-maloy",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-celeste-maloy-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+          "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/primary09052023_Demo/ballot-items/a3070e64-4859-4783-9a6e-1cd40c08504f",
+          "officeId": "u-s-house-district-2-rep",
+          "partyId": "utah-republican-party",
+          "county": "Salt Lake",
+          "city": "",
+          "status": "primary_election",
+          "personId": "celeste-maloy",
+          "year": 2023,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2023-primary-celeste-maloy-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-",
+          "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/primary09052023_Demo/ballot-items/6d4c6d98-5d5c-4fc6-b423-faea64a2b44f",
+          "officeId": "united-states-house-of-representatives-br-district-2",
+          "partyId": "utah-republican-party",
+          "county": "Beaver",
+          "city": "",
+          "status": "primary_election",
+          "personId": "celeste-maloy",
+          "year": 2023,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "kathleen-riebe",
+      "name": "Kathleen Riebe",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "52,949 votes · 33.49%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-kathleen-riebe-u-s-house-district-2-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Riebe-CD2.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "kathleen-riebe",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-kathleen-riebe-u-s-house-of-representatives-district-2-utah-democratic-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "kathleen-riebe",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "bradley-garth-green",
+      "name": "Bradley Garth Green",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "4,528 votes · 2.86%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-bradley-garth-green-u-s-house-district-2-utah-libertarian-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Green-CD2.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "utah-libertarian-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "bradley-garth-green",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-bradley-garth-green-u-s-house-of-representatives-district-2-utah-libertarian-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "utah-libertarian-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "bradley-garth-green",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "cassie-easley",
+      "name": "Cassie Easley",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "3,678 votes · 2.33%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-cassie-easley-u-s-house-district-2-utah-constitution-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Easley-CD2.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "utah-constitution-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "cassie-easley",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-cassie-easley-u-s-house-of-representatives-district-2-utah-constitution-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "utah-constitution-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "cassie-easley",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "january-walker",
+      "name": "January Walker",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "2,856 votes · 1.81%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-january-walker-u-s-house-district-2-united-utah-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Walker-CD2_amended.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "united-utah-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "january-walker",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-january-walker-u-s-house-of-representatives-district-2-united-utah-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "united-utah-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "january-walker",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "alexis-wheeler",
+      "name": "Alexis Wheeler",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,080 votes · 35.44%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-alexis-wheeler-rep-state-house-district-29-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f",
+          "officeId": "rep-state-house-district-29",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "alexis-wheeler",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-alexis-wheeler-state-house-district-29-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H29-Alexis-Wheeler.pdf",
+          "officeId": "state-house-district-29",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "alexis-wheeler",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "ben-mcadams",
+      "name": "Ben McAdams",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "29,737 votes · 51.90%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "174,492 votes · 70.06%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-2072-08df2b02c31c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-ben-mcadams-dem-u-s-house-district-1-utah-democratic-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+          "officeId": "dem-u-s-house-district-1",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "ben-mcadams",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-ben-mcadams-u-s-house-district-1-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD1-Ben-McAdams.pdf",
+          "officeId": "u-s-house-district-1",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "ben-mcadams",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "blake-d-moore",
+      "name": "Blake D. Moore",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "52,673 votes · 56.67%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "127,089 votes · 50.04%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-28a3-08df2b02c31c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-blake-d-moore-rep-u-s-house-district-2-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469",
+          "officeId": "rep-u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "blake-d-moore",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-blake-d-moore-u-s-house-district-2-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD2-Blake-D.-Moore.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "blake-d-moore",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "bob-j-stevenson",
+      "name": "Bob J. Stevenson",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "3,453 votes · 65.16% · Davis County report",
+          "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "6,580 votes · 52.06%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-a729-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-bob-j-stevenson-rep-state-house-district-16-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+          "officeId": "rep-state-house-district-16",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "bob-j-stevenson",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-bob-j-stevenson-state-house-district-16-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H16-Bob-J-Stevenson.pdf",
+          "officeId": "state-house-district-16",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "bob-j-stevenson",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "braden-hess",
+      "name": "Braden Hess",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "4,074 votes · 22.74%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-braden-hess-rep-state-senate-district-7-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+          "officeId": "rep-state-senate-district-7",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "braden-hess",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-braden-hess-state-senate-district-7-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S7-Braden-Hess.pdf",
+          "officeId": "state-senate-district-7",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "braden-hess",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "brady-brammer",
+      "name": "Brady Brammer",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "8,034 votes · 56.90% · Utah County report",
+          "source": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "22,047 votes · 57.69%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-68b4-08df3933fc5b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-brady-brammer-rep-republican-for-senate-district-21-utah-republican-party-utah-",
+          "url": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6",
+          "officeId": "rep-republican-for-senate-district-21",
+          "partyId": "utah-republican-party",
+          "county": "Utah",
+          "city": "",
+          "status": "primary_election",
+          "personId": "brady-brammer",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-brady-brammer-state-senate-district-21-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S21-Brady-Brammer.pdf",
+          "officeId": "state-senate-district-21",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "brady-brammer",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "celeste-maloy",
+      "name": "Celeste Maloy",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "67,135 votes · 65.71%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "144,134 votes · 57.00%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-3148-08df2b02c31c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-celeste-maloy-rep-u-s-house-district-3-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b",
+          "officeId": "rep-u-s-house-district-3",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "celeste-maloy",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-celeste-maloy-u-s-house-district-3-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD3-Celeste-Maloy.pdf",
+          "officeId": "u-s-house-district-3",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "celeste-maloy",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "dakota-wurth",
+      "name": "Dakota Wurth",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,580 votes · 42.70%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-dakota-wurth-dem-state-senate-district-5-utah-democratic-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848",
+          "officeId": "dem-state-senate-district-5",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "dakota-wurth",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-dakota-wurth-state-senate-district-5-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S5-Dakota-Wurth.pdf",
+          "officeId": "state-senate-district-5",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "dakota-wurth",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "daniel-gardner",
+      "name": "Daniel Gardner",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,592 votes · 36.39%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-daniel-gardner-rep-state-house-district-69-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1",
+          "officeId": "rep-state-house-district-69",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "daniel-gardner",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-daniel-gardner-state-house-district-69-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H69-Daniel-Gardner.pdf",
+          "officeId": "state-house-district-69",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "daniel-gardner",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "daniel-mccay",
+      "name": "Daniel McCay",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "3,088 votes · 30.50%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-daniel-mccay-rep-state-senate-district-18-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a",
+          "officeId": "rep-state-senate-district-18",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "daniel-mccay",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-daniel-mccay-state-senate-district-18-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S18-Daniel-McCay.pdf",
+          "officeId": "state-senate-district-18",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "daniel-mccay",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "jeffrey-pierce",
+      "name": "Jeffrey Pierce",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,770 votes · 44.92%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-jeffrey-pierce-rep-state-house-district-59-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687",
+          "officeId": "rep-state-house-district-59",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "jeffrey-pierce",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-jeffrey-pierce-state-house-district-59-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H59-Jeffrey-Pierce.pdf",
+          "officeId": "state-house-district-59",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "jeffrey-pierce",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "john-taylor",
+      "name": "John Taylor",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,277 votes · 56.66% · Davis County report",
+          "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "6,278 votes · 56.05%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-b6bb-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-john-taylor-rep-state-house-district-14-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6",
+          "officeId": "rep-state-house-district-14",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "john-taylor",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-john-taylor-state-house-district-14-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H14-John-Taylor.pdf",
+          "officeId": "state-house-district-14",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "john-taylor",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "kara-toone",
+      "name": "Kara Toone",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,742 votes · 43.34% · Davis County report",
+          "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-kara-toone-rep-state-house-district-14-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6",
+          "officeId": "rep-state-house-district-14",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "kara-toone",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-kara-toone-state-house-district-14-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H14-Kara-Toone.pdf",
+          "officeId": "state-house-district-14",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "kara-toone",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "karianne-lisonbee",
+      "name": "Karianne Lisonbee",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "40,271 votes · 43.33%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-karianne-lisonbee-rep-u-s-house-district-2-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469",
+          "officeId": "rep-u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "karianne-lisonbee",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-karianne-lisonbee-u-s-house-district-2-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD2-Karianne-Lisonbee.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "karianne-lisonbee",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "kelly-smith",
+      "name": "Kelly Smith",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "6,086 votes · 43.10% · Utah County report",
+          "source": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-kelly-smith-rep-republican-for-senate-district-21-utah-republican-party-utah-",
+          "url": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6",
+          "officeId": "rep-republican-for-senate-district-21",
+          "partyId": "utah-republican-party",
+          "county": "Utah",
+          "city": "",
+          "status": "primary_election",
+          "personId": "kelly-smith",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-kelly-smith-state-senate-district-21-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S21-Kelly-Smith.pdf",
+          "officeId": "state-senate-district-21",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "kelly-smith",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "liban-mohamed",
+      "name": "Liban Mohamed",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "9,542 votes · 16.65%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-liban-mohamed-dem-u-s-house-district-1-utah-democratic-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+          "officeId": "dem-u-s-house-district-1",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "liban-mohamed",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-liban-mohamed-u-s-house-district-1-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD1-Liban-Mohamed.pdf",
+          "officeId": "u-s-house-district-1",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "liban-mohamed",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "lili-bitner",
+      "name": "Lili Bitner",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "4,986 votes · 70.36% · Davis County report",
+          "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "8,710 votes · 59.71%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-a273-08df3933fc5c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-lili-bitner-rep-state-house-district-17-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6",
+          "officeId": "rep-state-house-district-17",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "lili-bitner",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-lili-bitner-state-house-district-17-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/HD-17-Lilian-Bitner.pdf",
+          "officeId": "state-house-district-17",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "lili-bitner",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "michael-farrell",
+      "name": "Michael Farrell",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,245 votes · 3.92%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-michael-farrell-dem-u-s-house-district-1-utah-democratic-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+          "officeId": "dem-u-s-house-district-1",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "michael-farrell",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-michael-farrell-u-s-house-district-1-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD1-Michael-Farrell.pdf",
+          "officeId": "u-s-house-district-1",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "michael-farrell",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "nate-blouin",
+      "name": "Nate Blouin",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "15,771 votes · 27.53%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-nate-blouin-dem-u-s-house-district-1-utah-democratic-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+          "officeId": "dem-u-s-house-district-1",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "nate-blouin",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-nate-blouin-u-s-house-district-1-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD1-Nate-Blouin.pdf",
+          "officeId": "u-s-house-district-1",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "nate-blouin",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "nichole-beecher-isom",
+      "name": "Nichole Beecher Isom",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "9,830 votes · 31.23%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-nichole-beecher-isom-rep-state-school-board-district-14-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10",
+          "officeId": "rep-state-school-board-district-14",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "nichole-beecher-isom",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-nichole-beecher-isom-state-school-board-district-14-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE14-Nichole-Beecher-Isom.pdf",
+          "officeId": "state-school-board-district-14",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "nichole-beecher-isom",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "phil-lyman",
+      "name": "Phil Lyman",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "35,034 votes · 34.29%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-phil-lyman-rep-u-s-house-district-3-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b",
+          "officeId": "rep-u-s-house-district-3",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "phil-lyman",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-phil-lyman-u-s-house-district-3-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD3-Phil-Lyman.pdf",
+          "officeId": "u-s-house-district-3",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "phil-lyman",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "robert-wanlass",
+      "name": "Robert Wanlass",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "3,445 votes · 29.36% · Davis County report",
+          "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-robert-wanlass-rep-state-senate-district-6-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6",
+          "officeId": "rep-state-senate-district-6",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "robert-wanlass",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-robert-wanlass-state-senate-district-6-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S6-Robert-Wanlass.pdf",
+          "officeId": "state-senate-district-6",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "robert-wanlass",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "sam-barlow",
+      "name": "Sam Barlow",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,100 votes · 29.64% · Davis County report",
+          "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-sam-barlow-rep-state-house-district-17-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6",
+          "officeId": "rep-state-house-district-17",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "sam-barlow",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-sam-barlow-state-house-district-17-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H17-Samuel-Barlow.pdf",
+          "officeId": "state-house-district-17",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "sam-barlow",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "stuart-adams",
+      "name": "Stuart Adams",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "6,113 votes · 34.13%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-stuart-adams-rep-state-senate-district-7-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+          "officeId": "rep-state-senate-district-7",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "stuart-adams",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-stuart-adams-state-senate-district-7-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S7-J.-Stuart-Adams.pdf",
+          "officeId": "state-senate-district-7",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "stuart-adams",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "tami-tran",
+      "name": "Tami Tran",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "8,289 votes · 70.64% · Davis County report",
+          "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "18,178 votes · 57.22%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-5834-08df3933fc5b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-tami-tran-rep-state-senate-district-6-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6",
+          "officeId": "rep-state-senate-district-6",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "tami-tran",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-tami-tran-state-senate-district-6-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S6-Tamara-Tran.pdf",
+          "officeId": "state-senate-district-6",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "tami-tran",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "terry-l-hutchinson",
+      "name": "Terry L. Hutchinson",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "10,020 votes · 49.32%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-terry-l-hutchinson-rep-state-school-board-district-11-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48",
+          "officeId": "rep-state-school-board-district-11",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "terry-l-hutchinson",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-terry-l-hutchinson-state-school-board-district-11-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-11-Terry-L.-Hutchinson.pdf",
+          "officeId": "state-school-board-district-11",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "terry-l-hutchinson",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "trevor-lee",
+      "name": "Trevor Lee",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,846 votes · 34.84% · Davis County report",
+          "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-trevor-lee-rep-state-house-district-16-utah-republican-party-davis-",
+          "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+          "officeId": "rep-state-house-district-16",
+          "partyId": "utah-republican-party",
+          "county": "Davis",
+          "city": "",
+          "status": "primary_election",
+          "personId": "trevor-lee",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-trevor-lee-state-house-district-16-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H16-Trevor-Lee.pdf",
+          "officeId": "state-house-district-16",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "trevor-lee",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "yvonne-h-jensen",
+      "name": "Yvonne H. Jensen",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,218 votes · 32.24%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-yvonne-h-jensen-rep-state-house-district-67-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1",
+          "officeId": "rep-state-house-district-67",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "yvonne-h-jensen",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-yvonne-h-jensen-state-house-district-67-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H67-Yvonne-H-Jensen.pdf",
+          "officeId": "state-house-district-67",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "yvonne-h-jensen",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "cj-christina-hernandez",
+      "name": "“CJ” Christina Hernandez",
+      "year": 2026,
+      "beforeCards": 3,
+      "afterCards": 1,
+      "recordsPreserved": 3,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,120 votes · 57.30%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "17,198 votes · 55.81%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1533-08df2b02c31c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-cj-christina-hernandez-state-senate-district-5-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S5-CJ-Christina-Hernandez.pdf",
+          "officeId": "state-senate-district-5",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "cj-christina-hernandez",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-general-cj-christina-hernandez-state-senate-district-5-utah-democratic-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1533-08df2b02c31c",
+          "officeId": "state-senate-district-5",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "cj-christina-hernandez",
+          "year": 2026,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2026-primary-cj-christina-hernandez-dem-state-senate-district-5-utah-democratic-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848",
+          "officeId": "dem-state-senate-district-5",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "cj-christina-hernandez",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "doug-fiefia",
+      "name": "Doug Fiefia",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "7,038 votes · 69.50%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "20,205 votes · 59.46%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-01c3-08df2b02c31c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-doug-fiefia-rep-state-senate-district-18-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a",
+          "officeId": "rep-state-senate-district-18",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "doug-fiefia",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-doug-fiefia-state-senate-district-18-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S18-Doug-Fiefia.pdf",
+          "officeId": "state-senate-district-18",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "doug-fiefia",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "jr-bird",
+      "name": "JR Bird",
+      "year": 2026,
+      "beforeCards": 3,
+      "afterCards": 1,
+      "recordsPreserved": 3,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "4,662 votes · 67.76%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "9,207 votes · 75.45%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-c4b0-08df2b02c31b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-general-jr-bird-state-house-district-67-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-c4b0-08df2b02c31b",
+          "officeId": "state-house-district-67",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "jr-bird",
+          "year": 2026,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2026-primary-jr-bird-rep-state-house-district-67-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1",
+          "officeId": "rep-state-house-district-67",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "jr-bird",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-jr-bird-state-house-district-67-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H67-JR-Bird.pdf",
+          "officeId": "state-house-district-67",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "jr-bird",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "linda-hanks",
+      "name": "Linda Hanks",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "21,646 votes · 68.77%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "54,814 votes · 100.00%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-ead6-08df2b02c31b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-linda-hanks-rep-state-school-board-district-14-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10",
+          "officeId": "rep-state-school-board-district-14",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "linda-hanks",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-linda-hanks-state-school-board-district-14-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-14-Linda-Hanks.pdf",
+          "officeId": "state-school-board-district-14",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "linda-hanks",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "logan-j-monson",
+      "name": "Logan J. Monson",
+      "year": 2026,
+      "beforeCards": 3,
+      "afterCards": 1,
+      "recordsPreserved": 3,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "4,530 votes · 63.61%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "8,858 votes · 57.83%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-cee7-08df2b02c31b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-general-logan-j-monson-state-house-district-69-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-cee7-08df2b02c31b",
+          "officeId": "state-house-district-69",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "logan-j-monson",
+          "year": 2026,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2026-primary-logan-j-monson-rep-state-house-district-69-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1",
+          "officeId": "rep-state-house-district-69",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "logan-j-monson",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-logan-j-monson-state-house-district-69-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H69-Logan-J.-Monson.pdf",
+          "officeId": "state-house-district-69",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "logan-j-monson",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "luke-searle",
+      "name": "Luke Searle",
+      "year": 2026,
+      "beforeCards": 3,
+      "afterCards": 1,
+      "recordsPreserved": 3,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "3,397 votes · 55.08%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "8,848 votes · 49.11%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-b418-08df2b02c31b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-general-luke-searle-state-house-district-59-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-b418-08df2b02c31b",
+          "officeId": "state-house-district-59",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "luke-searle",
+          "year": 2026,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2026-primary-luke-searle-rep-state-house-district-59-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687",
+          "officeId": "rep-state-house-district-59",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "luke-searle",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-luke-searle-state-house-district-59-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H59-Luke-Searle.pdf",
+          "officeId": "state-house-district-59",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "luke-searle",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "sheldon-birch",
+      "name": "Sheldon Birch",
+      "year": 2026,
+      "beforeCards": 3,
+      "afterCards": 1,
+      "recordsPreserved": 3,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "3,789 votes · 64.56%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "9,069 votes · 67.31%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-a6b3-08df2b02c31b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-general-sheldon-birch-state-house-district-29-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-a6b3-08df2b02c31b",
+          "officeId": "state-house-district-29",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "sheldon-birch",
+          "year": 2026,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2026-primary-sheldon-birch-rep-state-house-district-29-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f",
+          "officeId": "rep-state-house-district-29",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "sheldon-birch",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-sheldon-birch-state-house-district-29-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H29-Sheldon-Birch.pdf",
+          "officeId": "state-house-district-29",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "sheldon-birch",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "stephanie-hollist",
+      "name": "Stephanie Hollist",
+      "year": 2026,
+      "beforeCards": 3,
+      "afterCards": 1,
+      "recordsPreserved": 3,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "7,726 votes · 43.13%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "22,451 votes · 57.31%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1a19-08df2b02c31c"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-general-stephanie-hollist-state-senate-district-7-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1a19-08df2b02c31c",
+          "officeId": "state-senate-district-7",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "stephanie-hollist",
+          "year": 2026,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2026-primary-stephanie-hollist-rep-state-senate-district-7-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+          "officeId": "rep-state-senate-district-7",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "stephanie-hollist",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-stephanie-hollist-state-senate-district-7-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S7-Stephanie-Hollist.pdf",
+          "officeId": "state-senate-district-7",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "stephanie-hollist",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "tracy-j-nuttall",
+      "name": "Tracy J. Nuttall",
+      "year": 2026,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "10,297 votes · 50.68%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48"
+        },
+        {
+          "title": "General Election",
+          "date": "2026-11-03",
+          "summary": "42,494 votes · 64.36%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-e5d4-08df2b02c31b"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-primary-tracy-j-nuttall-rep-state-school-board-district-11-utah-republican-party--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48",
+          "officeId": "rep-state-school-board-district-11",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "tracy-j-nuttall",
+          "year": 2026,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2026-tracy-j-nuttall-state-school-board-district-11-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-11-Tracy-J.-Nutall.pdf",
+          "officeId": "state-school-board-district-11",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "tracy-j-nuttall",
+          "year": 2026,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "taylor-j-paden",
+      "name": "Taylor J. Paden",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,083 votes · 23.14% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-taylor-j-paden-state-senate-district-13-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Taylor-J-Paden.pdf",
+          "officeId": "state-senate-district-13",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "taylor-j-paden",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "evan-done",
+      "name": "Evan Done",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,950 votes · 32.77% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-evan-done-state-senate-district-13-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Evan-Done.pdf",
+          "officeId": "state-senate-district-13",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "evan-done",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "tayler-khater",
+      "name": "Tayler Khater",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,921 votes · 22.39% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-tayler-khater-state-senate-district-14-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S14-Tayler-Khater.pdf",
+          "officeId": "state-senate-district-14",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "tayler-khater",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "aaron-wiley",
+      "name": "Aaron Wiley",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,041 votes · 40.74% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-aaron-wiley-state-house-district-21-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H21-Aaron-Wiley.pdf",
+          "officeId": "state-house-district-21",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "aaron-wiley",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "erin-jemison",
+      "name": "Erin Jemison",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,080 votes · 47.07% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-erin-jemison-state-house-district-34-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H34-Erin-Jemison.pdf",
+          "officeId": "state-house-district-34",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "erin-jemison",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "gloria-vindas",
+      "name": "Gloria Vindas",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "815 votes · 39.37% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-gloria-vindas-state-house-district-38-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H38-Gloria-Vindas.pdf",
+          "officeId": "state-house-district-38",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "gloria-vindas",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "wendy-davis",
+      "name": "Wendy Davis",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,160 votes · 48.05% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-wendy-davis-state-house-district-40-utah-democratic-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H40-Wendy-Davis.pdf",
+          "officeId": "state-house-district-40",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "wendy-davis",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "eryn-a-russo",
+      "name": "Eryn A. Russo",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,370 votes · 37.54% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-eryn-a-russo-state-house-district-41-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H41-Eryn-A-Russo.pdf",
+          "officeId": "state-house-district-41",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "eryn-a-russo",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "scott-stephenson",
+      "name": "Scott Stephenson",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "2,268 votes · 46.34% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-scott-stephenson-state-house-district-44-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H44-Scott-Stephenson.pdf",
+          "officeId": "state-house-district-44",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "scott-stephenson",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "nik-anderson",
+      "name": "Nik Anderson",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "1,759 votes · 44.58% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-nik-anderson-state-house-district-48-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H48-Nik-Anderson.pdf",
+          "officeId": "state-house-district-48",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "nik-anderson",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "trina-christensen",
+      "name": "Trina Christensen",
+      "year": 2026,
+      "beforeCards": 1,
+      "afterCards": 1,
+      "recordsPreserved": 1,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2026-06-23",
+          "summary": "4,047 votes · 41.18% · Salt Lake County report",
+          "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2026-trina-christensen-state-school-board-district-8-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE8-Trina-Christensen.pdf",
+          "officeId": "state-school-board-district-8",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "defeated",
+          "personId": "trina-christensen",
+          "year": 2026,
+          "electionType": "primary"
+        }
+      ]
+    }
+  ],
+  "ballotBatches": [
+    {
+      "year": 2008,
+      "contests": 7,
+      "ballotCandidates": 14,
+      "source": "https://vote.utah.gov/wp-content/uploads/2023/09/08-Primary-Election-Results.pdf",
+      "scope": "Complete regular-primary document."
+    },
+    {
+      "year": 2022,
+      "contests": 14,
+      "ballotCandidates": 30,
+      "source": "https://vote.utah.gov/wp-content/uploads/2022/07/2022-Signed-Primary-Election-Statewide-Canvass.pdf#page=2",
+      "scope": "All statewide/multi-county contests in the certified document; single-county canvasses are separate."
+    }
+  ],
+  "duplicateCardsRemoved": 66,
+  "scope": "Reviewed 2023 congressional and 2026 party-prefix candidacies, plus all published contests in the 2008 regular-primary and 2022 statewide/multi-county primary canvasses. Each merged group has exact source-record membership and validated stage/office/party context. No broad fuzzy identity merge or unavailable-results claim is made."
+}

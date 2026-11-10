@@ -32,7 +32,7 @@
     "refresh:newspaper": "python3 scripts/import-newspaper-elections.py --import && python3 scripts/import-municipal-results.py && node scripts/report-newspaper-elections.mjs",
     "refresh:all-results": "uv run --with xlrd python scripts/import-all-results.py",
     "check:results": "python3 -m unittest discover -s scripts -p test_result_contract.py && node scripts/check-filing-results.mjs",
-    "check:candidacy-history": "node scripts/check-candidacy-history.mjs"
+    "check:candidacy-history": "node scripts/check-candidacy-history.mjs && node scripts/check-reviewed-candidacies.mjs && node scripts/check-candidacy-batches.mjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "5.1.1",

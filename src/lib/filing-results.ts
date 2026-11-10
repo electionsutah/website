@@ -3,6 +3,7 @@ import { resultPerson, retainedJudgeName } from './result-people';
 import { tidySnapshot } from './result-names';
 import type { Contest, Snapshot } from './results';
 import index from '../data/result-index.json';
+import { reviewedResultFor } from './reviewed-candidacies';
 
 const snapshots = new Map<string, Promise<Snapshot>>();
 const stageFor = (filing: Filing) => filing.status === 'filed' ? 'general' : filing.electionType;
@@ -40,14 +41,32 @@ export async function resultsForFiling(filing: Filing): Promise<{ snapshot: Snap
 /** Match a ballot appearance by year, stage, exact office, geography and identity. */
 export function resultForFiling(filing: Filing, snapshot: Snapshot): Contest | undefined {
   if (filing.year !== Number(snapshot.electionDate.slice(0, 4))) return;
-  const officeKey = (name: string) => identityKey(cleanOfficeName(name));
+  const review = reviewedResultFor(filing);
+  if (review) {
+    const reviewed = snapshot.contests.filter(contest => contest.id === review.resultContestId &&
+      contest.source === review.resultSource && (contest.county ?? null) === review.county && (contest.city ?? '') === review.city &&
+      (contest.electionType ?? 'general') === filing.electionType &&
+      contest.options.some(option => identityKey(option.name) === identityKey(filing.name)));
+    return reviewed.length === 1 ? reviewed[0] : undefined;
+  }
+  const primary = filing.electionType.includes('primary');
+  const officeKey = (name: string) => identityKey(cleanOfficeName(primary ? name.replace(/^(?:REP|DEM)\s+/i, '') : name));
   const matches = snapshot.contests.filter(contest => {
     const stage = contest.electionType ?? 'general';
     if (stage !== filing.electionType && !(filing.status === 'filed' && stage === 'general')) return false;
+    const partyCode = primary && /^(REP|DEM)\s+/i.exec(contest.name)?.[1].toUpperCase();
+    if (partyCode && filing.partyId !== (partyCode === 'REP' ? 'utah-republican-party' : 'utah-democratic-party')) return false;
     const county = snapshot.counties.find(row => row.id === contest.county);
     const countyName = county?.name ?? '';
     const names = [contest.name, countyName ? `${countyName} ${contest.name.replace(/^County\s+/i, '')}` : '', contest.city ? `${contest.city} ${contest.name}` : ''];
-    if (!names.some(name => officeKey(name) === officeKey(filing.officeName))) return false;
+    const exactOffice = names.some(name => officeKey(name) === officeKey(filing.officeName));
+    // A source-specific ballot item sometimes omits the filing roster's term annotation.
+    // Only bridge that omission when the exact ballot URL, stage, geography and candidate agree.
+    const term = /\s*\(\d+[ -]year term\)$/i;
+    const sameBallotSource = filing.source === contest.source && /^https:\/\/electionresults\.utah\.gov\/.*\/ballot-items\//.test(contest.source);
+    const omittedTerm = sameBallotSource && !(term.test(filing.officeName) && term.test(contest.name)) &&
+      names.some(name => officeKey(name.replace(term, '')) === officeKey(filing.officeName.replace(term, '')));
+    if (!exactOffice && !omittedTerm) return false;
     if (contest.county && identityKey(filing.county.replace(/ County$/i, '')) !== identityKey(countyName.replace(/ County$/i, ''))) return false;
     if (contest.city && identityKey(contest.city) !== identityKey(filing.city)) return false;
     const judge = contest.judgeName ?? retainedJudgeName(contest);

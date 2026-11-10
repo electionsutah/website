@@ -58,7 +58,7 @@ try {
   const deceased={...filed,status:'withdrew',sourceStatus:'Deceased'};
   assert.equal(candidacyEvents({filing:deceased,records:[deceased]}).at(-1).title,'Deceased');
   const nonpartisan={...primary,partyId:'nonpartisan'};
-  assert.deepEqual(candidacyEvents({filing:nonpartisan,records:[nonpartisan]}).map(event=>event.title),['Filed']);
+  assert.deepEqual(candidacyEvents({filing:nonpartisan,records:[nonpartisan]}).map(event=>event.title),['Filed','Primary'],'Explicit nonpartisan primary ballots retain their milestone');
   assert.deepEqual(candidacyEvents({filing:general,records:[general]}).map(event=>event.title),['Filed','General Election'],'No primary participation inferred from party alone');
   const datasets=JSON.parse(await readFile('src/data/result-index.json','utf8'));
   const snapshots=new Map();

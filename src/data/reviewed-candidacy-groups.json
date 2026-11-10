@@ -1,0 +1,3022 @@
+[
+  {
+    "id": "becky-edwards-2023-cd2-primary",
+    "reviewedOn": "2026-11-10",
+    "personId": "becky-edwards",
+    "year": 2023,
+    "electionType": "primary",
+    "canonicalRecordId": "2023-becky-edwards-u-s-house-district-2-utah-republican-party",
+    "recordIds": [
+      "2023-becky-edwards-u-s-house-district-2-utah-republican-party",
+      "2023-primary-becky-edwards-rep-u-s-house-district-2-utah-republican-party-davis-",
+      "2023-primary-becky-edwards-republican-u-s-house-not-reported-iron-",
+      "2023-primary-becky-edwards-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+      "2023-primary-becky-edwards-republican-for-u-s-house-district-2-not-reported-tooele-",
+      "2023-primary-becky-edwards-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+      "2023-primary-becky-edwards-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-"
+    ],
+    "resultContestId": "2023-primary-reviewed-us-house-2",
+    "resultSource": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152",
+    "reason": "The declaration identifies Becky Edwards and U.S. House District 2. Six cached September 5, 2023 primary feeds list the identical Becky Edwards / Celeste Maloy / Bruce R Hough ballot. County names identify reporting feeds, not separate candidacies or residence. The FEC official election compilation, PDF page 152, supplies full-district primary totals; missing parties and malformed office labels remain intact in source records. This reviewed exception groups only these exact record IDs. The Demo feed is retained as roster evidence; published FEC totals are used for results. No general-election participation is inferred.",
+    "sources": [
+      {
+        "recordId": "2023-becky-edwards-u-s-house-district-2-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Edwards-CD2_amended.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-rep-u-s-house-district-2-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/4bacd436-01db-4617-a0e5-b92490fa185e",
+        "officeId": "rep-u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-republican-u-s-house-not-reported-iron-",
+        "url": "https://electionresults.utah.gov/results/public/iron-county-ut/elections/primary09052023_Demo/ballot-items/8b1870a9-552c-43b3-a0ba-fd7bdc2125c8",
+        "officeId": "republican-u-s-house",
+        "partyId": "not-reported",
+        "county": "Iron",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/primary09052023_Demo/ballot-items/8c708c16-87ee-465f-b18a-39a625a1dda4",
+        "officeId": "republican-u-s-house-district-2-u-s-house-district",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-republican-for-u-s-house-district-2-not-reported-tooele-",
+        "url": "https://electionresults.utah.gov/results/public/tooele-county-ut/elections/primary09052023_Demo/ballot-items/e21e3f72-0edf-415d-9118-c1f1307f2ed0",
+        "officeId": "republican-for-u-s-house-district-2",
+        "partyId": "not-reported",
+        "county": "Tooele",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/primary09052023_Demo/ballot-items/a3070e64-4859-4783-9a6e-1cd40c08504f",
+        "officeId": "u-s-house-district-2-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-becky-edwards-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/primary09052023_Demo/ballot-items/6d4c6d98-5d5c-4fc6-b423-faea64a2b44f",
+        "officeId": "united-states-house-of-representatives-br-district-2",
+        "partyId": "utah-republican-party",
+        "county": "Beaver",
+        "city": "",
+        "status": "primary_election",
+        "personId": "becky-edwards",
+        "year": 2023,
+        "electionType": "primary"
+      }
+    ],
+    "resultSourcePage": 152,
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "2023-primary-reviewed-us-house-2",
+        "source": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152",
+        "county": null,
+        "city": ""
+      }
+    ]
+  },
+  {
+    "id": "bruce-r-hough-2023-cd2",
+    "reviewedOn": "2026-11-10",
+    "personId": "bruce-r-hough",
+    "year": 2023,
+    "electionType": "primary",
+    "canonicalRecordId": "2023-bruce-r-hough-u-s-house-district-2-utah-republican-party",
+    "recordIds": [
+      "2023-bruce-r-hough-u-s-house-district-2-utah-republican-party",
+      "2023-primary-bruce-r-hough-rep-u-s-house-district-2-utah-republican-party-davis-",
+      "2023-primary-bruce-r-hough-republican-u-s-house-not-reported-iron-",
+      "2023-primary-bruce-r-hough-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+      "2023-primary-bruce-r-hough-republican-for-u-s-house-district-2-not-reported-tooele-",
+      "2023-primary-bruce-r-hough-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+      "2023-primary-bruce-r-hough-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-"
+    ],
+    "resultContestId": "2023-primary-reviewed-us-house-2",
+    "resultSource": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "2023-primary-reviewed-us-house-2",
+        "source": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "sources": [
+      {
+        "recordId": "2023-bruce-r-hough-u-s-house-district-2-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Hough-CD2.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "bruce-r-hough",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-bruce-r-hough-rep-u-s-house-district-2-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/4bacd436-01db-4617-a0e5-b92490fa185e",
+        "officeId": "rep-u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "bruce-r-hough",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-bruce-r-hough-republican-u-s-house-not-reported-iron-",
+        "url": "https://electionresults.utah.gov/results/public/iron-county-ut/elections/primary09052023_Demo/ballot-items/8b1870a9-552c-43b3-a0ba-fd7bdc2125c8",
+        "officeId": "republican-u-s-house",
+        "partyId": "not-reported",
+        "county": "Iron",
+        "city": "",
+        "status": "primary_election",
+        "personId": "bruce-r-hough",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-bruce-r-hough-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/primary09052023_Demo/ballot-items/8c708c16-87ee-465f-b18a-39a625a1dda4",
+        "officeId": "republican-u-s-house-district-2-u-s-house-district",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "bruce-r-hough",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-bruce-r-hough-republican-for-u-s-house-district-2-not-reported-tooele-",
+        "url": "https://electionresults.utah.gov/results/public/tooele-county-ut/elections/primary09052023_Demo/ballot-items/e21e3f72-0edf-415d-9118-c1f1307f2ed0",
+        "officeId": "republican-for-u-s-house-district-2",
+        "partyId": "not-reported",
+        "county": "Tooele",
+        "city": "",
+        "status": "primary_election",
+        "personId": "bruce-r-hough",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-bruce-r-hough-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/primary09052023_Demo/ballot-items/a3070e64-4859-4783-9a6e-1cd40c08504f",
+        "officeId": "u-s-house-district-2-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "bruce-r-hough",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-bruce-r-hough-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/primary09052023_Demo/ballot-items/6d4c6d98-5d5c-4fc6-b423-faea64a2b44f",
+        "officeId": "united-states-house-of-representatives-br-district-2",
+        "partyId": "utah-republican-party",
+        "county": "Beaver",
+        "city": "",
+        "status": "primary_election",
+        "personId": "bruce-r-hough",
+        "year": 2023,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "celeste-maloy-2023-cd2",
+    "reviewedOn": "2026-11-10",
+    "personId": "celeste-maloy",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-celeste-maloy-u-s-house-district-2-utah-republican-party",
+    "recordIds": [
+      "2023-celeste-maloy-u-s-house-district-2-utah-republican-party",
+      "2023-general-celeste-maloy-u-s-house-of-representatives-district-2-utah-republican-party--",
+      "2023-primary-celeste-maloy-rep-u-s-house-district-2-utah-republican-party-davis-",
+      "2023-primary-celeste-maloy-republican-u-s-house-not-reported-iron-",
+      "2023-primary-celeste-maloy-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+      "2023-primary-celeste-maloy-republican-for-u-s-house-district-2-not-reported-tooele-",
+      "2023-primary-celeste-maloy-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+      "2023-primary-celeste-maloy-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-"
+    ],
+    "resultContestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "2023-primary-reviewed-us-house-2",
+        "source": "https://www.fec.gov/resources/cms-content/documents/federalelections2022.pdf#page=152",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "sources": [
+      {
+        "recordId": "2023-celeste-maloy-u-s-house-district-2-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Maloy-CD2.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "celeste-maloy",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-general-celeste-maloy-u-s-house-of-representatives-district-2-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "officeId": "u-s-house-of-representatives-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "celeste-maloy",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-primary-celeste-maloy-rep-u-s-house-district-2-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/4bacd436-01db-4617-a0e5-b92490fa185e",
+        "officeId": "rep-u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "celeste-maloy",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-celeste-maloy-republican-u-s-house-not-reported-iron-",
+        "url": "https://electionresults.utah.gov/results/public/iron-county-ut/elections/primary09052023_Demo/ballot-items/8b1870a9-552c-43b3-a0ba-fd7bdc2125c8",
+        "officeId": "republican-u-s-house",
+        "partyId": "not-reported",
+        "county": "Iron",
+        "city": "",
+        "status": "primary_election",
+        "personId": "celeste-maloy",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-celeste-maloy-republican-u-s-house-district-2-u-s-house-district-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/primary09052023_Demo/ballot-items/8c708c16-87ee-465f-b18a-39a625a1dda4",
+        "officeId": "republican-u-s-house-district-2-u-s-house-district",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "celeste-maloy",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-celeste-maloy-republican-for-u-s-house-district-2-not-reported-tooele-",
+        "url": "https://electionresults.utah.gov/results/public/tooele-county-ut/elections/primary09052023_Demo/ballot-items/e21e3f72-0edf-415d-9118-c1f1307f2ed0",
+        "officeId": "republican-for-u-s-house-district-2",
+        "partyId": "not-reported",
+        "county": "Tooele",
+        "city": "",
+        "status": "primary_election",
+        "personId": "celeste-maloy",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-celeste-maloy-u-s-house-district-2-rep-utah-republican-party-salt-lake-",
+        "url": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/primary09052023_Demo/ballot-items/a3070e64-4859-4783-9a6e-1cd40c08504f",
+        "officeId": "u-s-house-district-2-rep",
+        "partyId": "utah-republican-party",
+        "county": "Salt Lake",
+        "city": "",
+        "status": "primary_election",
+        "personId": "celeste-maloy",
+        "year": 2023,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2023-primary-celeste-maloy-united-states-house-of-representatives-br-district-2-utah-republican-party-beaver-",
+        "url": "https://electionresults.utah.gov/results/public/beaver-county-ut/elections/primary09052023_Demo/ballot-items/6d4c6d98-5d5c-4fc6-b423-faea64a2b44f",
+        "officeId": "united-states-house-of-representatives-br-district-2",
+        "partyId": "utah-republican-party",
+        "county": "Beaver",
+        "city": "",
+        "status": "primary_election",
+        "personId": "celeste-maloy",
+        "year": 2023,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "kathleen-riebe-2023-cd2",
+    "reviewedOn": "2026-11-10",
+    "personId": "kathleen-riebe",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-kathleen-riebe-u-s-house-district-2-utah-democratic-party",
+    "recordIds": [
+      "2023-kathleen-riebe-u-s-house-district-2-utah-democratic-party",
+      "2023-general-kathleen-riebe-u-s-house-of-representatives-district-2-utah-democratic-party--"
+    ],
+    "resultContestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "sources": [
+      {
+        "recordId": "2023-kathleen-riebe-u-s-house-district-2-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Riebe-CD2.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "kathleen-riebe",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-kathleen-riebe-u-s-house-of-representatives-district-2-utah-democratic-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "officeId": "u-s-house-of-representatives-district-2",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "kathleen-riebe",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "bradley-garth-green-2023-cd2",
+    "reviewedOn": "2026-11-10",
+    "personId": "bradley-garth-green",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-bradley-garth-green-u-s-house-district-2-utah-libertarian-party",
+    "recordIds": [
+      "2023-bradley-garth-green-u-s-house-district-2-utah-libertarian-party",
+      "2023-general-bradley-garth-green-u-s-house-of-representatives-district-2-utah-libertarian-party--"
+    ],
+    "resultContestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "sources": [
+      {
+        "recordId": "2023-bradley-garth-green-u-s-house-district-2-utah-libertarian-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Green-CD2.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-libertarian-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "bradley-garth-green",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-bradley-garth-green-u-s-house-of-representatives-district-2-utah-libertarian-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "officeId": "u-s-house-of-representatives-district-2",
+        "partyId": "utah-libertarian-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "bradley-garth-green",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "cassie-easley-2023-cd2",
+    "reviewedOn": "2026-11-10",
+    "personId": "cassie-easley",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-cassie-easley-u-s-house-district-2-utah-constitution-party",
+    "recordIds": [
+      "2023-cassie-easley-u-s-house-district-2-utah-constitution-party",
+      "2023-general-cassie-easley-u-s-house-of-representatives-district-2-utah-constitution-party--"
+    ],
+    "resultContestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "sources": [
+      {
+        "recordId": "2023-cassie-easley-u-s-house-district-2-utah-constitution-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Easley-CD2.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-constitution-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "cassie-easley",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-cassie-easley-u-s-house-of-representatives-district-2-utah-constitution-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "officeId": "u-s-house-of-representatives-district-2",
+        "partyId": "utah-constitution-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "cassie-easley",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "january-walker-2023-cd2",
+    "reviewedOn": "2026-11-10",
+    "personId": "january-walker",
+    "year": 2023,
+    "electionType": "general",
+    "canonicalRecordId": "2023-january-walker-u-s-house-district-2-united-utah-party",
+    "recordIds": [
+      "2023-january-walker-u-s-house-district-2-united-utah-party",
+      "2023-general-january-walker-u-s-house-of-representatives-district-2-united-utah-party--"
+    ],
+    "resultContestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Reviewed 2023 special-election ballot cohort. The declaration supplies the candidate and canonical district identity; state/county feeds repeat the same candidate in this exact contest. Preserve primary and general as distinct milestones on one candidacy; county reporting scopes are not residence. Primary totals use the official FEC compilation; general totals retain the source feed’s unofficial designation. No outcome flag is inferred.",
+    "sources": [
+      {
+        "recordId": "2023-january-walker-u-s-house-district-2-united-utah-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Walker-CD2_amended.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "united-utah-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "january-walker",
+        "year": 2023,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2023-general-january-walker-u-s-house-of-representatives-district-2-united-utah-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "officeId": "u-s-house-of-representatives-district-2",
+        "partyId": "united-utah-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "january-walker",
+        "year": 2023,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "alexis-wheeler-2026-state-house-district-29",
+    "reviewedOn": "2026-11-10",
+    "personId": "alexis-wheeler",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-alexis-wheeler-state-house-district-29-utah-republican-party",
+    "recordIds": [
+      "2026-primary-alexis-wheeler-rep-state-house-district-29-utah-republican-party--",
+      "2026-alexis-wheeler-state-house-district-29-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-2973-08dec58dbc9f",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-2973-08dec58dbc9f",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-alexis-wheeler-rep-state-house-district-29-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f",
+        "officeId": "rep-state-house-district-29",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "alexis-wheeler",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-alexis-wheeler-state-house-district-29-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H29-Alexis-Wheeler.pdf",
+        "officeId": "state-house-district-29",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "alexis-wheeler",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "ben-mcadams-2026-u-s-house-district-1",
+    "reviewedOn": "2026-11-10",
+    "personId": "ben-mcadams",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-ben-mcadams-u-s-house-district-1-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-ben-mcadams-dem-u-s-house-district-1-utah-democratic-party--",
+      "2026-ben-mcadams-u-s-house-district-1-utah-democratic-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-2072-08df2b02c31c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-2072-08df2b02c31c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-0e42-08dec58cc163",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-2072-08df2b02c31c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-2072-08df2b02c31c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-ben-mcadams-dem-u-s-house-district-1-utah-democratic-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+        "officeId": "dem-u-s-house-district-1",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "ben-mcadams",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-ben-mcadams-u-s-house-district-1-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD1-Ben-McAdams.pdf",
+        "officeId": "u-s-house-district-1",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "ben-mcadams",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "blake-d-moore-2026-u-s-house-district-2",
+    "reviewedOn": "2026-11-10",
+    "personId": "blake-d-moore",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-blake-d-moore-u-s-house-district-2-utah-republican-party",
+    "recordIds": [
+      "2026-primary-blake-d-moore-rep-u-s-house-district-2-utah-republican-party--",
+      "2026-blake-d-moore-u-s-house-district-2-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-28a3-08df2b02c31c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-28a3-08df2b02c31c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-2bcd-08dec58ce469",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-28a3-08df2b02c31c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-28a3-08df2b02c31c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-blake-d-moore-rep-u-s-house-district-2-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469",
+        "officeId": "rep-u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "blake-d-moore",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-blake-d-moore-u-s-house-district-2-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD2-Blake-D.-Moore.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "blake-d-moore",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "bob-j-stevenson-2026-state-house-district-16",
+    "reviewedOn": "2026-11-10",
+    "personId": "bob-j-stevenson",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-bob-j-stevenson-state-house-district-16-utah-republican-party",
+    "recordIds": [
+      "2026-primary-bob-j-stevenson-rep-state-house-district-16-utah-republican-party-davis-",
+      "2026-bob-j-stevenson-state-house-district-16-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-a729-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-a729-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-davis-county-ut-01000000-427c-109d-b998-08debb709fd6",
+        "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+        "county": "davis-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-a729-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-a729-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-bob-j-stevenson-rep-state-house-district-16-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+        "officeId": "rep-state-house-district-16",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "bob-j-stevenson",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-bob-j-stevenson-state-house-district-16-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H16-Bob-J-Stevenson.pdf",
+        "officeId": "state-house-district-16",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "bob-j-stevenson",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "braden-hess-2026-state-senate-district-7",
+    "reviewedOn": "2026-11-10",
+    "personId": "braden-hess",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-braden-hess-state-senate-district-7-utah-republican-party",
+    "recordIds": [
+      "2026-primary-braden-hess-rep-state-senate-district-7-utah-republican-party--",
+      "2026-braden-hess-state-senate-district-7-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-9c43-08dec58d6937",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-9c43-08dec58d6937",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-braden-hess-rep-state-senate-district-7-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+        "officeId": "rep-state-senate-district-7",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "braden-hess",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-braden-hess-state-senate-district-7-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S7-Braden-Hess.pdf",
+        "officeId": "state-senate-district-7",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "braden-hess",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "brady-brammer-2026-state-senate-district-21",
+    "reviewedOn": "2026-11-10",
+    "personId": "brady-brammer",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-brady-brammer-state-senate-district-21-utah-republican-party",
+    "recordIds": [
+      "2026-primary-brady-brammer-rep-republican-for-senate-district-21-utah-republican-party-utah-",
+      "2026-brady-brammer-state-senate-district-21-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-68b4-08df3933fc5b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-68b4-08df3933fc5b",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-utah-county-ut-01000000-569c-1594-d403-08deccba80e6",
+        "source": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6",
+        "county": "utah-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-68b4-08df3933fc5b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-68b4-08df3933fc5b",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-brady-brammer-rep-republican-for-senate-district-21-utah-republican-party-utah-",
+        "url": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6",
+        "officeId": "rep-republican-for-senate-district-21",
+        "partyId": "utah-republican-party",
+        "county": "Utah",
+        "city": "",
+        "status": "primary_election",
+        "personId": "brady-brammer",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-brady-brammer-state-senate-district-21-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S21-Brady-Brammer.pdf",
+        "officeId": "state-senate-district-21",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "brady-brammer",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "celeste-maloy-2026-u-s-house-district-3",
+    "reviewedOn": "2026-11-10",
+    "personId": "celeste-maloy",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-celeste-maloy-u-s-house-district-3-utah-republican-party",
+    "recordIds": [
+      "2026-primary-celeste-maloy-rep-u-s-house-district-3-utah-republican-party--",
+      "2026-celeste-maloy-u-s-house-district-3-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-3148-08df2b02c31c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-3148-08df2b02c31c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-fee0-08dec58cff3b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-3148-08df2b02c31c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-3148-08df2b02c31c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-celeste-maloy-rep-u-s-house-district-3-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b",
+        "officeId": "rep-u-s-house-district-3",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "celeste-maloy",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-celeste-maloy-u-s-house-district-3-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD3-Celeste-Maloy.pdf",
+        "officeId": "u-s-house-district-3",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "celeste-maloy",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "dakota-wurth-2026-state-senate-district-5",
+    "reviewedOn": "2026-11-10",
+    "personId": "dakota-wurth",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-dakota-wurth-state-senate-district-5-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-dakota-wurth-dem-state-senate-district-5-utah-democratic-party--",
+      "2026-dakota-wurth-state-senate-district-5-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-d357-fcd2-7d23-08dec58d2848",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-d357-fcd2-7d23-08dec58d2848",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-dakota-wurth-dem-state-senate-district-5-utah-democratic-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848",
+        "officeId": "dem-state-senate-district-5",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "dakota-wurth",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-dakota-wurth-state-senate-district-5-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S5-Dakota-Wurth.pdf",
+        "officeId": "state-senate-district-5",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "dakota-wurth",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "daniel-gardner-2026-state-house-district-69",
+    "reviewedOn": "2026-11-10",
+    "personId": "daniel-gardner",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-daniel-gardner-state-house-district-69-utah-republican-party",
+    "recordIds": [
+      "2026-primary-daniel-gardner-rep-state-house-district-69-utah-republican-party--",
+      "2026-daniel-gardner-state-house-district-69-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-2c16-08dec58f36a1",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-2c16-08dec58f36a1",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-daniel-gardner-rep-state-house-district-69-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1",
+        "officeId": "rep-state-house-district-69",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "daniel-gardner",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-daniel-gardner-state-house-district-69-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H69-Daniel-Gardner.pdf",
+        "officeId": "state-house-district-69",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "daniel-gardner",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "daniel-mccay-2026-state-senate-district-18",
+    "reviewedOn": "2026-11-10",
+    "personId": "daniel-mccay",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-daniel-mccay-state-senate-district-18-utah-republican-party",
+    "recordIds": [
+      "2026-primary-daniel-mccay-rep-state-senate-district-18-utah-republican-party--",
+      "2026-daniel-mccay-state-senate-district-18-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-d357-fcd2-c5a5-08dec58d419a",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-d357-fcd2-c5a5-08dec58d419a",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-daniel-mccay-rep-state-senate-district-18-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a",
+        "officeId": "rep-state-senate-district-18",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "daniel-mccay",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-daniel-mccay-state-senate-district-18-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S18-Daniel-McCay.pdf",
+        "officeId": "state-senate-district-18",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "daniel-mccay",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "jeffrey-pierce-2026-state-house-district-59",
+    "reviewedOn": "2026-11-10",
+    "personId": "jeffrey-pierce",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-jeffrey-pierce-state-house-district-59-utah-republican-party",
+    "recordIds": [
+      "2026-primary-jeffrey-pierce-rep-state-house-district-59-utah-republican-party--",
+      "2026-jeffrey-pierce-state-house-district-59-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-d357-fcd2-7989-08dec58ed687",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-d357-fcd2-7989-08dec58ed687",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-jeffrey-pierce-rep-state-house-district-59-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687",
+        "officeId": "rep-state-house-district-59",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "jeffrey-pierce",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-jeffrey-pierce-state-house-district-59-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H59-Jeffrey-Pierce.pdf",
+        "officeId": "state-house-district-59",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "jeffrey-pierce",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "john-taylor-2026-state-house-district-14",
+    "reviewedOn": "2026-11-10",
+    "personId": "john-taylor",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-john-taylor-state-house-district-14-utah-republican-party",
+    "recordIds": [
+      "2026-primary-john-taylor-rep-state-house-district-14-utah-republican-party-davis-",
+      "2026-john-taylor-state-house-district-14-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-b6bb-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-b6bb-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-davis-county-ut-01000000-427c-109d-b481-08debb709fd6",
+        "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6",
+        "county": "davis-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-b6bb-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-b6bb-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-john-taylor-rep-state-house-district-14-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6",
+        "officeId": "rep-state-house-district-14",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "john-taylor",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-john-taylor-state-house-district-14-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H14-John-Taylor.pdf",
+        "officeId": "state-house-district-14",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "john-taylor",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "kara-toone-2026-state-house-district-14",
+    "reviewedOn": "2026-11-10",
+    "personId": "kara-toone",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-kara-toone-state-house-district-14-utah-republican-party",
+    "recordIds": [
+      "2026-primary-kara-toone-rep-state-house-district-14-utah-republican-party-davis-",
+      "2026-kara-toone-state-house-district-14-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-davis-county-ut-01000000-427c-109d-b481-08debb709fd6",
+    "resultSource": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-davis-county-ut-01000000-427c-109d-b481-08debb709fd6",
+        "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6",
+        "county": "davis-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-kara-toone-rep-state-house-district-14-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b481-08debb709fd6",
+        "officeId": "rep-state-house-district-14",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "kara-toone",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-kara-toone-state-house-district-14-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H14-Kara-Toone.pdf",
+        "officeId": "state-house-district-14",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "kara-toone",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "karianne-lisonbee-2026-u-s-house-district-2",
+    "reviewedOn": "2026-11-10",
+    "personId": "karianne-lisonbee",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-karianne-lisonbee-u-s-house-district-2-utah-republican-party",
+    "recordIds": [
+      "2026-primary-karianne-lisonbee-rep-u-s-house-district-2-utah-republican-party--",
+      "2026-karianne-lisonbee-u-s-house-district-2-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-2bcd-08dec58ce469",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-2bcd-08dec58ce469",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-karianne-lisonbee-rep-u-s-house-district-2-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2bcd-08dec58ce469",
+        "officeId": "rep-u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "karianne-lisonbee",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-karianne-lisonbee-u-s-house-district-2-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD2-Karianne-Lisonbee.pdf",
+        "officeId": "u-s-house-district-2",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "karianne-lisonbee",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "kelly-smith-2026-state-senate-district-21",
+    "reviewedOn": "2026-11-10",
+    "personId": "kelly-smith",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-kelly-smith-state-senate-district-21-utah-republican-party",
+    "recordIds": [
+      "2026-primary-kelly-smith-rep-republican-for-senate-district-21-utah-republican-party-utah-",
+      "2026-kelly-smith-state-senate-district-21-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-utah-county-ut-01000000-569c-1594-d403-08deccba80e6",
+    "resultSource": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-utah-county-ut-01000000-569c-1594-d403-08deccba80e6",
+        "source": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6",
+        "county": "utah-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-kelly-smith-rep-republican-for-senate-district-21-utah-republican-party-utah-",
+        "url": "https://electionresults.utah.gov/results/public/utah-county-ut/elections/Primary06232026/ballot-items/01000000-569c-1594-d403-08deccba80e6",
+        "officeId": "rep-republican-for-senate-district-21",
+        "partyId": "utah-republican-party",
+        "county": "Utah",
+        "city": "",
+        "status": "primary_election",
+        "personId": "kelly-smith",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-kelly-smith-state-senate-district-21-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S21-Kelly-Smith.pdf",
+        "officeId": "state-senate-district-21",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "kelly-smith",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "liban-mohamed-2026-u-s-house-district-1",
+    "reviewedOn": "2026-11-10",
+    "personId": "liban-mohamed",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-liban-mohamed-u-s-house-district-1-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-liban-mohamed-dem-u-s-house-district-1-utah-democratic-party--",
+      "2026-liban-mohamed-u-s-house-district-1-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-0e42-08dec58cc163",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-0e42-08dec58cc163",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-liban-mohamed-dem-u-s-house-district-1-utah-democratic-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+        "officeId": "dem-u-s-house-district-1",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "liban-mohamed",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-liban-mohamed-u-s-house-district-1-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD1-Liban-Mohamed.pdf",
+        "officeId": "u-s-house-district-1",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "liban-mohamed",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "lili-bitner-2026-state-house-district-17",
+    "reviewedOn": "2026-11-10",
+    "personId": "lili-bitner",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-lili-bitner-state-house-district-17-utah-republican-party",
+    "recordIds": [
+      "2026-primary-lili-bitner-rep-state-house-district-17-utah-republican-party-davis-",
+      "2026-lili-bitner-state-house-district-17-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-a273-08df3933fc5c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-a273-08df3933fc5c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-davis-county-ut-01000000-427c-109d-c012-08debb709fd6",
+        "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6",
+        "county": "davis-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-a273-08df3933fc5c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-a273-08df3933fc5c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-lili-bitner-rep-state-house-district-17-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6",
+        "officeId": "rep-state-house-district-17",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "lili-bitner",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-lili-bitner-state-house-district-17-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/HD-17-Lilian-Bitner.pdf",
+        "officeId": "state-house-district-17",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "lili-bitner",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "michael-farrell-2026-u-s-house-district-1",
+    "reviewedOn": "2026-11-10",
+    "personId": "michael-farrell",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-michael-farrell-u-s-house-district-1-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-michael-farrell-dem-u-s-house-district-1-utah-democratic-party--",
+      "2026-michael-farrell-u-s-house-district-1-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-0e42-08dec58cc163",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-0e42-08dec58cc163",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-michael-farrell-dem-u-s-house-district-1-utah-democratic-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+        "officeId": "dem-u-s-house-district-1",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "michael-farrell",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-michael-farrell-u-s-house-district-1-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD1-Michael-Farrell.pdf",
+        "officeId": "u-s-house-district-1",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "michael-farrell",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "nate-blouin-2026-u-s-house-district-1",
+    "reviewedOn": "2026-11-10",
+    "personId": "nate-blouin",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-nate-blouin-u-s-house-district-1-utah-democratic-party",
+    "recordIds": [
+      "2026-primary-nate-blouin-dem-u-s-house-district-1-utah-democratic-party--",
+      "2026-nate-blouin-u-s-house-district-1-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-0e42-08dec58cc163",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-0e42-08dec58cc163",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-nate-blouin-dem-u-s-house-district-1-utah-democratic-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-0e42-08dec58cc163",
+        "officeId": "dem-u-s-house-district-1",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "nate-blouin",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-nate-blouin-u-s-house-district-1-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD1-Nate-Blouin.pdf",
+        "officeId": "u-s-house-district-1",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "nate-blouin",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "nichole-beecher-isom-2026-state-school-board-district-14",
+    "reviewedOn": "2026-11-10",
+    "personId": "nichole-beecher-isom",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-nichole-beecher-isom-state-school-board-district-14-utah-republican-party",
+    "recordIds": [
+      "2026-primary-nichole-beecher-isom-rep-state-school-board-district-14-utah-republican-party--",
+      "2026-nichole-beecher-isom-state-school-board-district-14-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-c885-08dec58f7a10",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-c885-08dec58f7a10",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-nichole-beecher-isom-rep-state-school-board-district-14-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10",
+        "officeId": "rep-state-school-board-district-14",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "nichole-beecher-isom",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-nichole-beecher-isom-state-school-board-district-14-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE14-Nichole-Beecher-Isom.pdf",
+        "officeId": "state-school-board-district-14",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "nichole-beecher-isom",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "phil-lyman-2026-u-s-house-district-3",
+    "reviewedOn": "2026-11-10",
+    "personId": "phil-lyman",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-phil-lyman-u-s-house-district-3-utah-republican-party",
+    "recordIds": [
+      "2026-primary-phil-lyman-rep-u-s-house-district-3-utah-republican-party--",
+      "2026-phil-lyman-u-s-house-district-3-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-fee0-08dec58cff3b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-fee0-08dec58cff3b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-phil-lyman-rep-u-s-house-district-3-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-fee0-08dec58cff3b",
+        "officeId": "rep-u-s-house-district-3",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "phil-lyman",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-phil-lyman-u-s-house-district-3-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/03/CD3-Phil-Lyman.pdf",
+        "officeId": "u-s-house-district-3",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "phil-lyman",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "robert-wanlass-2026-state-senate-district-6",
+    "reviewedOn": "2026-11-10",
+    "personId": "robert-wanlass",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-robert-wanlass-state-senate-district-6-utah-republican-party",
+    "recordIds": [
+      "2026-primary-robert-wanlass-rep-state-senate-district-6-utah-republican-party-davis-",
+      "2026-robert-wanlass-state-senate-district-6-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-davis-county-ut-01000000-427c-109d-9105-08debb709fd6",
+    "resultSource": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-davis-county-ut-01000000-427c-109d-9105-08debb709fd6",
+        "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6",
+        "county": "davis-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-robert-wanlass-rep-state-senate-district-6-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6",
+        "officeId": "rep-state-senate-district-6",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "robert-wanlass",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-robert-wanlass-state-senate-district-6-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S6-Robert-Wanlass.pdf",
+        "officeId": "state-senate-district-6",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "robert-wanlass",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "sam-barlow-2026-state-house-district-17",
+    "reviewedOn": "2026-11-10",
+    "personId": "sam-barlow",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-sam-barlow-state-house-district-17-utah-republican-party",
+    "recordIds": [
+      "2026-primary-sam-barlow-rep-state-house-district-17-utah-republican-party-davis-",
+      "2026-sam-barlow-state-house-district-17-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-davis-county-ut-01000000-427c-109d-c012-08debb709fd6",
+    "resultSource": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-davis-county-ut-01000000-427c-109d-c012-08debb709fd6",
+        "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6",
+        "county": "davis-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-sam-barlow-rep-state-house-district-17-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-c012-08debb709fd6",
+        "officeId": "rep-state-house-district-17",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "sam-barlow",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-sam-barlow-state-house-district-17-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H17-Samuel-Barlow.pdf",
+        "officeId": "state-house-district-17",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "sam-barlow",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "stuart-adams-2026-state-senate-district-7",
+    "reviewedOn": "2026-11-10",
+    "personId": "stuart-adams",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-stuart-adams-state-senate-district-7-utah-republican-party",
+    "recordIds": [
+      "2026-primary-stuart-adams-rep-state-senate-district-7-utah-republican-party--",
+      "2026-stuart-adams-state-senate-district-7-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-9c43-08dec58d6937",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-9c43-08dec58d6937",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-stuart-adams-rep-state-senate-district-7-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+        "officeId": "rep-state-senate-district-7",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "stuart-adams",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-stuart-adams-state-senate-district-7-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S7-J.-Stuart-Adams.pdf",
+        "officeId": "state-senate-district-7",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "stuart-adams",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "tami-tran-2026-state-senate-district-6",
+    "reviewedOn": "2026-11-10",
+    "personId": "tami-tran",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-tami-tran-state-senate-district-6-utah-republican-party",
+    "recordIds": [
+      "2026-primary-tami-tran-rep-state-senate-district-6-utah-republican-party-davis-",
+      "2026-tami-tran-state-senate-district-6-utah-republican-party"
+    ],
+    "resultContestId": "b4e60000-c0a3-7204-5834-08df3933fc5b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-5834-08df3933fc5b",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-davis-county-ut-01000000-427c-109d-9105-08debb709fd6",
+        "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6",
+        "county": "davis-county-ut",
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "b4e60000-c0a3-7204-5834-08df3933fc5b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-5834-08df3933fc5b",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-tami-tran-rep-state-senate-district-6-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-9105-08debb709fd6",
+        "officeId": "rep-state-senate-district-6",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "tami-tran",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-tami-tran-state-senate-district-6-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S6-Tamara-Tran.pdf",
+        "officeId": "state-senate-district-6",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "tami-tran",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "terry-l-hutchinson-2026-state-school-board-district-11",
+    "reviewedOn": "2026-11-10",
+    "personId": "terry-l-hutchinson",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-terry-l-hutchinson-state-school-board-district-11-utah-republican-party",
+    "recordIds": [
+      "2026-primary-terry-l-hutchinson-rep-state-school-board-district-11-utah-republican-party--",
+      "2026-terry-l-hutchinson-state-school-board-district-11-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-d357-fcd2-1e92-08dec58f0f48",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-d357-fcd2-1e92-08dec58f0f48",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-terry-l-hutchinson-rep-state-school-board-district-11-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48",
+        "officeId": "rep-state-school-board-district-11",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "terry-l-hutchinson",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-terry-l-hutchinson-state-school-board-district-11-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-11-Terry-L.-Hutchinson.pdf",
+        "officeId": "state-school-board-district-11",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "terry-l-hutchinson",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "trevor-lee-2026-state-house-district-16",
+    "reviewedOn": "2026-11-10",
+    "personId": "trevor-lee",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-trevor-lee-state-house-district-16-utah-republican-party",
+    "recordIds": [
+      "2026-primary-trevor-lee-rep-state-house-district-16-utah-republican-party-davis-",
+      "2026-trevor-lee-state-house-district-16-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-davis-county-ut-01000000-427c-109d-b998-08debb709fd6",
+    "resultSource": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-davis-county-ut-01000000-427c-109d-b998-08debb709fd6",
+        "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+        "county": "davis-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-trevor-lee-rep-state-house-district-16-utah-republican-party-davis-",
+        "url": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary06232026/ballot-items/01000000-427c-109d-b998-08debb709fd6",
+        "officeId": "rep-state-house-district-16",
+        "partyId": "utah-republican-party",
+        "county": "Davis",
+        "city": "",
+        "status": "primary_election",
+        "personId": "trevor-lee",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-trevor-lee-state-house-district-16-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H16-Trevor-Lee.pdf",
+        "officeId": "state-house-district-16",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "trevor-lee",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "yvonne-h-jensen-2026-state-house-district-67",
+    "reviewedOn": "2026-11-10",
+    "personId": "yvonne-h-jensen",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-yvonne-h-jensen-state-house-district-67-utah-republican-party",
+    "recordIds": [
+      "2026-primary-yvonne-h-jensen-rep-state-house-district-67-utah-republican-party--",
+      "2026-yvonne-h-jensen-state-house-district-67-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-Utah-01000000-b2af-048e-3ac9-08dec58f0ef1",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-3ac9-08dec58f0ef1",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-yvonne-h-jensen-rep-state-house-district-67-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1",
+        "officeId": "rep-state-house-district-67",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "yvonne-h-jensen",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-yvonne-h-jensen-state-house-district-67-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H67-Yvonne-H-Jensen.pdf",
+        "officeId": "state-house-district-67",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "yvonne-h-jensen",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "cj-christina-hernandez-2026-state-senate-district-5",
+    "reviewedOn": "2026-11-10",
+    "personId": "cj-christina-hernandez",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-cj-christina-hernandez-state-senate-district-5-utah-democratic-party",
+    "recordIds": [
+      "2026-cj-christina-hernandez-state-senate-district-5-utah-democratic-party",
+      "2026-general-cj-christina-hernandez-state-senate-district-5-utah-democratic-party--",
+      "2026-primary-cj-christina-hernandez-dem-state-senate-district-5-utah-democratic-party--"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-1533-08df2b02c31c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1533-08df2b02c31c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-d357-fcd2-7d23-08dec58d2848",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-1533-08df2b02c31c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1533-08df2b02c31c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-cj-christina-hernandez-state-senate-district-5-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S5-CJ-Christina-Hernandez.pdf",
+        "officeId": "state-senate-district-5",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "cj-christina-hernandez",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-general-cj-christina-hernandez-state-senate-district-5-utah-democratic-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1533-08df2b02c31c",
+        "officeId": "state-senate-district-5",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "cj-christina-hernandez",
+        "year": 2026,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2026-primary-cj-christina-hernandez-dem-state-senate-district-5-utah-democratic-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7d23-08dec58d2848",
+        "officeId": "dem-state-senate-district-5",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "cj-christina-hernandez",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "doug-fiefia-2026-state-senate-district-18",
+    "reviewedOn": "2026-11-10",
+    "personId": "doug-fiefia",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-doug-fiefia-state-senate-district-18-utah-republican-party",
+    "recordIds": [
+      "2026-primary-doug-fiefia-rep-state-senate-district-18-utah-republican-party--",
+      "2026-doug-fiefia-state-senate-district-18-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-01c3-08df2b02c31c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-01c3-08df2b02c31c",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-d357-fcd2-c5a5-08dec58d419a",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-01c3-08df2b02c31c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-01c3-08df2b02c31c",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-doug-fiefia-rep-state-senate-district-18-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-c5a5-08dec58d419a",
+        "officeId": "rep-state-senate-district-18",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "doug-fiefia",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-doug-fiefia-state-senate-district-18-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S18-Doug-Fiefia.pdf",
+        "officeId": "state-senate-district-18",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "doug-fiefia",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "jr-bird-2026-state-house-district-67",
+    "reviewedOn": "2026-11-10",
+    "personId": "jr-bird",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-general-jr-bird-state-house-district-67-utah-republican-party--",
+    "recordIds": [
+      "2026-general-jr-bird-state-house-district-67-utah-republican-party--",
+      "2026-primary-jr-bird-rep-state-house-district-67-utah-republican-party--",
+      "2026-jr-bird-state-house-district-67-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-c4b0-08df2b02c31b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-c4b0-08df2b02c31b",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-c4b0-08df2b02c31b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-c4b0-08df2b02c31b",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-3ac9-08dec58f0ef1",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-general-jr-bird-state-house-district-67-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-c4b0-08df2b02c31b",
+        "officeId": "state-house-district-67",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "jr-bird",
+        "year": 2026,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2026-primary-jr-bird-rep-state-house-district-67-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-3ac9-08dec58f0ef1",
+        "officeId": "rep-state-house-district-67",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "jr-bird",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-jr-bird-state-house-district-67-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H67-JR-Bird.pdf",
+        "officeId": "state-house-district-67",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "jr-bird",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "linda-hanks-2026-state-school-board-district-14",
+    "reviewedOn": "2026-11-10",
+    "personId": "linda-hanks",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-linda-hanks-state-school-board-district-14-utah-republican-party",
+    "recordIds": [
+      "2026-primary-linda-hanks-rep-state-school-board-district-14-utah-republican-party--",
+      "2026-linda-hanks-state-school-board-district-14-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-ead6-08df2b02c31b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-ead6-08df2b02c31b",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-c885-08dec58f7a10",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-ead6-08df2b02c31b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-ead6-08df2b02c31b",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-linda-hanks-rep-state-school-board-district-14-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-c885-08dec58f7a10",
+        "officeId": "rep-state-school-board-district-14",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "linda-hanks",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-linda-hanks-state-school-board-district-14-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-14-Linda-Hanks.pdf",
+        "officeId": "state-school-board-district-14",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "linda-hanks",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "logan-j-monson-2026-state-house-district-69",
+    "reviewedOn": "2026-11-10",
+    "personId": "logan-j-monson",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-general-logan-j-monson-state-house-district-69-utah-republican-party--",
+    "recordIds": [
+      "2026-general-logan-j-monson-state-house-district-69-utah-republican-party--",
+      "2026-primary-logan-j-monson-rep-state-house-district-69-utah-republican-party--",
+      "2026-logan-j-monson-state-house-district-69-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-cee7-08df2b02c31b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-cee7-08df2b02c31b",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-cee7-08df2b02c31b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-cee7-08df2b02c31b",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-2c16-08dec58f36a1",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-general-logan-j-monson-state-house-district-69-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-cee7-08df2b02c31b",
+        "officeId": "state-house-district-69",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "logan-j-monson",
+        "year": 2026,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2026-primary-logan-j-monson-rep-state-house-district-69-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2c16-08dec58f36a1",
+        "officeId": "rep-state-house-district-69",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "logan-j-monson",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-logan-j-monson-state-house-district-69-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H69-Logan-J.-Monson.pdf",
+        "officeId": "state-house-district-69",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "logan-j-monson",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "luke-searle-2026-state-house-district-59",
+    "reviewedOn": "2026-11-10",
+    "personId": "luke-searle",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-general-luke-searle-state-house-district-59-utah-republican-party--",
+    "recordIds": [
+      "2026-general-luke-searle-state-house-district-59-utah-republican-party--",
+      "2026-primary-luke-searle-rep-state-house-district-59-utah-republican-party--",
+      "2026-luke-searle-state-house-district-59-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-b418-08df2b02c31b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-b418-08df2b02c31b",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-b418-08df2b02c31b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-b418-08df2b02c31b",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-d357-fcd2-7989-08dec58ed687",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-general-luke-searle-state-house-district-59-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-b418-08df2b02c31b",
+        "officeId": "state-house-district-59",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "luke-searle",
+        "year": 2026,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2026-primary-luke-searle-rep-state-house-district-59-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-7989-08dec58ed687",
+        "officeId": "rep-state-house-district-59",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "luke-searle",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-luke-searle-state-house-district-59-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H59-Luke-Searle.pdf",
+        "officeId": "state-house-district-59",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "luke-searle",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "sheldon-birch-2026-state-house-district-29",
+    "reviewedOn": "2026-11-10",
+    "personId": "sheldon-birch",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-general-sheldon-birch-state-house-district-29-utah-republican-party--",
+    "recordIds": [
+      "2026-general-sheldon-birch-state-house-district-29-utah-republican-party--",
+      "2026-primary-sheldon-birch-rep-state-house-district-29-utah-republican-party--",
+      "2026-sheldon-birch-state-house-district-29-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-a6b3-08df2b02c31b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-a6b3-08df2b02c31b",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-a6b3-08df2b02c31b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-a6b3-08df2b02c31b",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-2973-08dec58dbc9f",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-general-sheldon-birch-state-house-district-29-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-a6b3-08df2b02c31b",
+        "officeId": "state-house-district-29",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "sheldon-birch",
+        "year": 2026,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2026-primary-sheldon-birch-rep-state-house-district-29-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-2973-08dec58dbc9f",
+        "officeId": "rep-state-house-district-29",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "sheldon-birch",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-sheldon-birch-state-house-district-29-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H29-Sheldon-Birch.pdf",
+        "officeId": "state-house-district-29",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "sheldon-birch",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "stephanie-hollist-2026-state-senate-district-7",
+    "reviewedOn": "2026-11-10",
+    "personId": "stephanie-hollist",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-general-stephanie-hollist-state-senate-district-7-utah-republican-party--",
+    "recordIds": [
+      "2026-general-stephanie-hollist-state-senate-district-7-utah-republican-party--",
+      "2026-primary-stephanie-hollist-rep-state-senate-district-7-utah-republican-party--",
+      "2026-stephanie-hollist-state-senate-district-7-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-1a19-08df2b02c31c",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1a19-08df2b02c31c",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-1a19-08df2b02c31c",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1a19-08df2b02c31c",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-b2af-048e-9c43-08dec58d6937",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-general-stephanie-hollist-state-senate-district-7-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1a19-08df2b02c31c",
+        "officeId": "state-senate-district-7",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "stephanie-hollist",
+        "year": 2026,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2026-primary-stephanie-hollist-rep-state-senate-district-7-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-b2af-048e-9c43-08dec58d6937",
+        "officeId": "rep-state-senate-district-7",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "stephanie-hollist",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-stephanie-hollist-state-senate-district-7-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S7-Stephanie-Hollist.pdf",
+        "officeId": "state-senate-district-7",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "stephanie-hollist",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "tracy-j-nuttall-2026-state-school-board-district-11",
+    "reviewedOn": "2026-11-10",
+    "personId": "tracy-j-nuttall",
+    "year": 2026,
+    "electionType": "general",
+    "canonicalRecordId": "2026-tracy-j-nuttall-state-school-board-district-11-utah-republican-party",
+    "recordIds": [
+      "2026-primary-tracy-j-nuttall-rep-state-school-board-district-11-utah-republican-party--",
+      "2026-tracy-j-nuttall-state-school-board-district-11-utah-republican-party"
+    ],
+    "resultContestId": "18bd0000-4292-09ee-e5d4-08df2b02c31b",
+    "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-e5d4-08df2b02c31b",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-Utah-01000000-d357-fcd2-1e92-08dec58f0f48",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "18bd0000-4292-09ee-e5d4-08df2b02c31b",
+        "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-e5d4-08df2b02c31b",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Same known person, year, exact district/office and party; the primary feed repeats the canonical office with an explicit REP/DEM label. Each stage has one uniquely matched published ballot containing the same candidate. County-reported totals retain their published scope; no counties are combined and no residence is inferred. Source records and distinct offices remain intact.",
+    "sources": [
+      {
+        "recordId": "2026-primary-tracy-j-nuttall-rep-state-school-board-district-11-utah-republican-party--",
+        "url": "https://electionresults.utah.gov/results/public/Utah/elections/Primary06232026/ballot-items/01000000-d357-fcd2-1e92-08dec58f0f48",
+        "officeId": "rep-state-school-board-district-11",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "tracy-j-nuttall",
+        "year": 2026,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2026-tracy-j-nuttall-state-school-board-district-11-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-11-Tracy-J.-Nutall.pdf",
+        "officeId": "state-school-board-district-11",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "tracy-j-nuttall",
+        "year": 2026,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "taylor-j-paden-2026-state-senate-district-13-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "taylor-j-paden",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-taylor-j-paden-state-senate-district-13-utah-democratic-party",
+    "recordIds": [
+      "2026-taylor-j-paden-state-senate-district-13-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afa8-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afa8-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-taylor-j-paden-state-senate-district-13-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Taylor-J-Paden.pdf",
+        "officeId": "state-senate-district-13",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "taylor-j-paden",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "evan-done-2026-state-senate-district-13-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "evan-done",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-evan-done-state-senate-district-13-utah-democratic-party",
+    "recordIds": [
+      "2026-evan-done-state-senate-district-13-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afa8-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afa8-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afa8-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-evan-done-state-senate-district-13-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Evan-Done.pdf",
+        "officeId": "state-senate-district-13",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "evan-done",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "tayler-khater-2026-state-senate-district-14-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "tayler-khater",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-tayler-khater-state-senate-district-14-utah-democratic-party",
+    "recordIds": [
+      "2026-tayler-khater-state-senate-district-14-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afeb-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-afeb-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-afeb-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-tayler-khater-state-senate-district-14-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/S14-Tayler-Khater.pdf",
+        "officeId": "state-senate-district-14",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "tayler-khater",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "aaron-wiley-2026-state-house-district-21-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "aaron-wiley",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-aaron-wiley-state-house-district-21-utah-democratic-party",
+    "recordIds": [
+      "2026-aaron-wiley-state-house-district-21-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b02a-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b02a-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b02a-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-aaron-wiley-state-house-district-21-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H21-Aaron-Wiley.pdf",
+        "officeId": "state-house-district-21",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "aaron-wiley",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "erin-jemison-2026-state-house-district-34-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "erin-jemison",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-erin-jemison-state-house-district-34-utah-democratic-party",
+    "recordIds": [
+      "2026-erin-jemison-state-house-district-34-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b042-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b042-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b042-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-erin-jemison-state-house-district-34-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H34-Erin-Jemison.pdf",
+        "officeId": "state-house-district-34",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "erin-jemison",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "gloria-vindas-2026-state-house-district-38-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "gloria-vindas",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-gloria-vindas-state-house-district-38-utah-republican-party",
+    "recordIds": [
+      "2026-gloria-vindas-state-house-district-38-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0b3-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0b3-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0b3-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-gloria-vindas-state-house-district-38-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H38-Gloria-Vindas.pdf",
+        "officeId": "state-house-district-38",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "gloria-vindas",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "wendy-davis-2026-state-house-district-40-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "wendy-davis",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-wendy-davis-state-house-district-40-utah-democratic-party",
+    "recordIds": [
+      "2026-wendy-davis-state-house-district-40-utah-democratic-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0cc-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0cc-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0cc-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-wendy-davis-state-house-district-40-utah-democratic-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H40-Wendy-Davis.pdf",
+        "officeId": "state-house-district-40",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "wendy-davis",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "eryn-a-russo-2026-state-house-district-41-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "eryn-a-russo",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-eryn-a-russo-state-house-district-41-utah-republican-party",
+    "recordIds": [
+      "2026-eryn-a-russo-state-house-district-41-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0e5-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b0e5-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b0e5-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-eryn-a-russo-state-house-district-41-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H41-Eryn-A-Russo.pdf",
+        "officeId": "state-house-district-41",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "eryn-a-russo",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "scott-stephenson-2026-state-house-district-44-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "scott-stephenson",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-scott-stephenson-state-house-district-44-utah-republican-party",
+    "recordIds": [
+      "2026-scott-stephenson-state-house-district-44-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b10a-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b10a-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b10a-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-scott-stephenson-state-house-district-44-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H44-Scott-Stephenson.pdf",
+        "officeId": "state-house-district-44",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "scott-stephenson",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "nik-anderson-2026-state-house-district-48-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "nik-anderson",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-nik-anderson-state-house-district-48-utah-republican-party",
+    "recordIds": [
+      "2026-nik-anderson-state-house-district-48-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b128-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b128-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b128-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-nik-anderson-state-house-district-48-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/H48-Nik-Anderson.pdf",
+        "officeId": "state-house-district-48",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "nik-anderson",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  },
+  {
+    "id": "trina-christensen-2026-state-school-board-district-8-result",
+    "reviewedOn": "2026-11-10",
+    "personId": "trina-christensen",
+    "year": 2026,
+    "electionType": "primary",
+    "canonicalRecordId": "2026-trina-christensen-state-school-board-district-8-utah-republican-party",
+    "recordIds": [
+      "2026-trina-christensen-state-school-board-district-8-utah-republican-party"
+    ],
+    "resultContestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b13f-08dec66916b5",
+    "resultSource": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "Primary06232026-salt-lake-county-ut-01000000-a5b2-6746-b13f-08dec66916b5",
+        "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary06232026/ballot-items/01000000-a5b2-6746-b13f-08dec66916b5",
+        "county": "salt-lake-county-ut",
+        "city": ""
+      }
+    ],
+    "reason": "Result link review only: exact known candidate, year, district and explicit primary party label agree. The sole imported match is a county-reported ballot; its published scope is labeled, and no county totals are combined or residence inferred. The original filing remains unchanged.",
+    "sources": [
+      {
+        "recordId": "2026-trina-christensen-state-school-board-district-8-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE8-Trina-Christensen.pdf",
+        "officeId": "state-school-board-district-8",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "defeated",
+        "personId": "trina-christensen",
+        "year": 2026,
+        "electionType": "primary"
+      }
+    ]
+  }
+]

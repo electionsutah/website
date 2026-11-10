@@ -1,19 +1,25 @@
-import { identityKey, partiesById, type Filing } from './entities';
+import { identityKey, type Filing } from './entities';
 import { resultPerson } from './result-people';
 import { count, percent, type Contest, type Snapshot } from './results';
+import { reviewedCandidacies } from './reviewed-candidacies';
 
-export type CandidacyHistory = { filing: Filing; records: Filing[] };
+export type CandidacyHistory = { filing: Filing; records: Filing[]; reviewId?: string };
 export type FilingResult = { contest: Contest; snapshot: Snapshot };
 export type CandidacyEvent = { title: string; date?: string; placeIds: string[]; source: string; sourceLabel: string; summary?: string; terminal?: boolean };
 
 /** Exact identity only: retain each source and stage within the same candidacy. */
 export function candidacyHistory(records: Filing[]): CandidacyHistory[] {
+  const consolidated = new Map<Filing, CandidacyHistory>();
+  for (const group of reviewedCandidacies(records)) {
+    const history = { filing: group.filing, records: group.records, reviewId: group.review.id };
+    for (const row of group.records) consolidated.set(row, history);
+  }
   const byIdentity = new Map<string, Filing[]>();
   for (const row of records) {
+    if (consolidated.has(row)) continue;
     const key = JSON.stringify([row.personId, row.year, row.officeId, row.partyId]);
     byIdentity.set(key, [...(byIdentity.get(key) ?? []), row]);
   }
-  const consolidated = new Map<Filing, CandidacyHistory>();
   for (const rows of byIdentity.values()) {
     if (rows.length < 2) continue;
     // Conflicting places or duplicate stage records need review, not an automatic merge.
@@ -46,9 +52,6 @@ export function terminalStatus(row: Filing): string | undefined {
 function stageOrder(row: Filing) {
   return terminalStatus(row) ? 3 : row.status === 'filed' ? 0 : row.electionType.includes('primary') ? 1 : 2;
 }
-function partisan(row: Filing) {
-  return !['nonpartisan', 'unaffiliated', 'independent', 'unknown'].includes(row.partyId) && !partiesById.get(row.partyId)?.localCaucus && row.section !== 'State Judicial';
-}
 
 /** Event dates come only from explicit event metadata, never lastUpdated. */
 export function candidacyEvents(history: CandidacyHistory, result?: FilingResult, otherResults: FilingResult[] = []): CandidacyEvent[] {
@@ -58,8 +61,7 @@ export function candidacyEvents(history: CandidacyHistory, result?: FilingResult
   const results = [...otherResults, ...(result ? [result] : [])];
   const stages = ['presidential-primary', 'primary', 'general'];
   for (const stage of stages) {
-    // A party affiliation alone never establishes participation in a primary.
-    if (stage.includes('primary') && !partisan(history.filing)) continue;
+    // Participation comes from an explicit ballot record or matched result, including nonpartisan primaries.
     const matchingResult = results.find(item => (item.contest.electionType ?? 'general') === stage);
     const ballot = history.records.find(row => row.electionType === stage &&
       (['primary_election', 'general_election', 'elected'].includes(row.status) ||
@@ -69,7 +71,8 @@ export function candidacyEvents(history: CandidacyHistory, result?: FilingResult
     const option = matchingResult?.contest.options.find(option => resultPerson(option.name, matchingResult.contest)?.id === row.personId || identityKey(option.name) === identityKey(row.name));
     const published = matchingResult?.contest.votesPublished !== false && option?.votesPublished !== false;
     const validShares = published && !!matchingResult?.contest.total && matchingResult?.contest.optionTotalsReconcile !== false && matchingResult?.contest.totalBasis !== 'listed named-candidate votes';
-    const summary = option && published ? `${count(option.votes)} votes${validShares && matchingResult ? ` · ${percent(option.votes, matchingResult.contest.total)}` : ''}` : undefined;
+    const reportCounty = matchingResult?.snapshot.counties.find(county => county.id === matchingResult.contest.county)?.name;
+    const summary = option && published ? `${count(option.votes)} votes${validShares && matchingResult ? ` · ${percent(option.votes, matchingResult.contest.total)}` : ''}${reportCounty ? ` · ${reportCounty} report` : ''}` : undefined;
     events.push({ title: stage === 'primary' ? 'Primary' : stage === 'presidential-primary' ? 'Presidential primary' : 'General Election',
       date: matchingResult?.contest.electionDate || matchingResult?.snapshot.electionDate || row.electionDate,
       placeIds: [], source: matchingResult?.contest.source || row.source,
