@@ -232,6 +232,8 @@ def utah_outline(state):
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / 'utah.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {view.width} {view.height}" width="{view.width}" height="{view.height}">'
         f'<path d="{view.path(state, 0.4)}" fill="{COLORS["land"]}" stroke="{COLORS["inset"]}" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>\n')
+    (OUT / 'utah-highlight.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {view.width} {view.height}" width="{view.width}" height="{view.height}" role="img"><title>Utah statewide boundary</title>'
+        f'<path d="{view.path(state, 0.4)}" fill="{COLORS["fill"]}" stroke="{COLORS["edge"]}" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>\n')
     return {'bounds': [round(v / UNIT, 8) for v in box], 'size': [view.width, view.height]}
 
 def main():
