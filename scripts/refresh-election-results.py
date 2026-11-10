@@ -7,6 +7,7 @@ our last good snapshot. County breakdowns come from the statewide publication;
 local-only contests come from the county publications.
 """
 import argparse
+from result_contract import validate_contest, atomic_json
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
@@ -107,14 +108,13 @@ def main():
         item['countyTotalsReconcile'] = sum(x['total'] for x in item['counties']) == item['total']
         if not item['countyTotalsReconcile']:
             print(f"County breakdown flagged (source totals differ): {item['name']}")
+    for item in contests: validate_contest(item)
     snapshot = {'source': SOURCE, 'election': '2026 General Election', 'electionDate': '2026-11-03',
                 'asOf': state['election']['asOf'], 'official': state['election']['isOfficialResults'],
                 'fetchedAt': datetime.fromtimestamp(min(file.stat().st_mtime for file in used), timezone.utc).isoformat(), 'counties': counties, 'contests': contests}
     output = ROOT / 'public/data/2026-results.json'
     output.parent.mkdir(parents=True, exist_ok=True)
-    temporary = output.with_suffix('.tmp')
-    temporary.write_text(json.dumps(snapshot, separators=(',', ':')) + '\n')
-    temporary.replace(output)
+    atomic_json(output, snapshot)
     print(f"Imported {len(contests)} contests ({len(rows)} statewide, {len(contests)-len(rows)} local) across {len(counties)} counties. State publication: {snapshot['asOf']}")
 
 if __name__ == '__main__': main()

@@ -8,6 +8,7 @@ import officeEnrichment from '../data/office-enrichment.json';
 import { placeEntityLinks, type EntityLink } from './entity-links';
 import currentRows from '../data/2026-candidates.json';
 import historicalRows from '../data/historical-candidates.json';
+import resultRows from '../data/result-candidates.json';
 import newspaperRows from '../data/newspaper-candidates.json';
 // County, municipal, school-board, and special-district candidates from the state results feed (2024 on).
 import localRows from '../data/local-candidates.json';
@@ -366,14 +367,32 @@ export function sourceAvailable(url: string): boolean {
 
 type ArchiveRow = (typeof historicalRows)[number];
 
+// Preserve editorial/filing records; add every newly discovered ballot candidate and stage.
+const archiveRows = [...historicalRows, ...(localRows as ArchiveRow[]), ...(researchedRows as ArchiveRow[]), ...(newspaperRows as ArchiveRow[])];
+const resultKey = (row: { year: number; name: string; office: string; party: string; county?: string; city?: string }) =>
+  JSON.stringify([row.year, identityKey(row.name), identityKey(cleanOfficeName(row.office)), identityKey(row.county ?? ''), identityKey(row.city ?? '')]);
+const existingStages = new Map<string, Set<string>>();
+for (const row of [...archiveRows, ...currentRows.map(row => ({ ...row, year: 2026, electionType: row.status === 'general_election' ? 'general' : 'primary' }))]) {
+  const stages = existingStages.get(resultKey(row)) ?? new Set<string>();
+  stages.add(row.status === 'filed' ? '*' : row.electionType);
+  existingStages.set(resultKey(row), stages);
+}
+const supplementalResults = (resultRows as ArchiveRow[]).filter(row => {
+  const stages = existingStages.get(resultKey(row));
+  return !stages?.has('*') && !stages?.has(row.electionType);
+});
+const supplementalSet = new Set(supplementalResults);
+
 export const importedFilings: Filing[] = [
-  ...[...historicalRows, ...(localRows as ArchiveRow[]), ...(researchedRows as ArchiveRow[]), ...(newspaperRows as ArchiveRow[])].map((row) => {
+  ...[...archiveRows, ...supplementalResults].map((row) => {
     const officeName = cleanOfficeName(row.office);
     const party = partyDetails(row.party, row.section);
     const personId = slug(row.name);
     return {
       // Preserve established editorial keys; distinguish newly reviewed older primaries.
-      recordId: row.year < 1994 && row.source.startsWith('https://vote.utah.gov/wp-content/uploads/')
+      recordId: supplementalSet.has(row)
+        ? `${row.year}-${row.electionType}-${row.id}-${slug(officeName)}-${slug(party.name)}-${slug(row.county)}-${slug(row.city)}`
+        : (row.year < 1994 && row.source.startsWith('https://vote.utah.gov/wp-content/uploads/'))
         ? `${row.year}-${row.electionType}-${row.id}-${slug(officeName)}-${slug(party.name)}`
         : `${row.year}-${row.id}-${slug(officeName)}-${slug(party.name)}`,
       id: row.id,

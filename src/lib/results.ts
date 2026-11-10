@@ -1,7 +1,7 @@
-export interface Option { id: string; name: string; votes: number; party: string; winner: boolean | null }
+export interface Option { id: string; name: string; votes: number; party: string; winner: boolean | null; votesPublished?: boolean }
 export interface Reporting { reportingUnits: number; totalUnits: number; asOf: string }
 export interface CountyResult { id: string; total: number; options: Option[]; reporting: Reporting | null }
-export interface Contest { id: string; name: string; category: string; county: string | null; seats?: number; countyTotalsReconcile?: boolean; total: number; reporting: Reporting | null; options: Option[]; source: string; counties: CountyResult[] }
+export interface Contest { official?: boolean; asOf?: string; year?: number; electionType?: string; judgeName?: string; kind?: string; city?: string; party?: string; votesPublished?: boolean; optionTotalsReconcile?: boolean; totalBasis?: string; notes?: string[]; id: string; name: string; category: string; county: string | null; seats?: number; countyTotalsReconcile?: boolean; total: number; reporting: Reporting | null; options: Option[]; source: string; counties: CountyResult[] }
 export interface Snapshot { source: string; election: string; electionDate: string; asOf: string; official: boolean; fetchedAt: string; counties: {id: string; name: string; asOf: string | null}[]; contests: Contest[] }
 export const count = (value: number) => value.toLocaleString('en-US');
 export const percent = (votes: number, total: number) => total ? `${(votes / total * 100).toFixed(2)}%` : '—';

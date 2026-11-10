@@ -395,7 +395,7 @@ def main():
             }
     rows = sorted(records.values(), key=lambda r: (r['year'], r['county'], r['office'], r['name']))
     unmatched = [r for r in rows if r['section'] == 'Unmatched']
-    output = [{key: value for key, value in row.items() if key not in {'votes', 'contestVotes', 'seats', 'rawOffice'}} for row in rows if row['section'] != 'Unmatched']
+    output = [{key: value for key, value in row.items() if key != 'rawOffice'} for row in rows if row['section'] != 'Unmatched']
     OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=1) + '\n')
     print(f'Saved {len(output)} local filings from {len(contests)} contests; skipped {dict(skipped)}; {len(unmatched)} unmatched rows.')
     print('  by section:', dict(Counter(r['section'] for r in output)))

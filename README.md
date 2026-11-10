@@ -369,6 +369,48 @@ model: county routes use `/places/{county-id}/`, and city routes use
 city or county values, so those filings correctly show “Not published” instead
 of being assigned to an electoral district as a place.
 
+## Unified candidate and vote imports
+
+Run `npm run refresh:all-results` to fetch the registered official workbooks and
+state/county API publications and normalize them alongside reviewed municipal
+returns. This uses `uv` with `xlrd` for legacy Excel and Poppler's `pdftotext` for
+reviewed municipal PDFs. For reproducible regeneration from the source cache:
+
+```sh
+npm run refresh:all-results -- --use-cache
+npm run check:results
+```
+
+The shared contract is `scripts/result_contract.py`; adapters are in
+`scripts/import-all-results.py`. Every supported source retains all listed ballot
+options, including named write-ins and true zeroes. Votes not published are
+`null`; summaries never turn them into zero votes. Candidate records and totals
+are distinct: measures and aggregate write-ins stay in results without becoming
+people. Primary, general, and presidential-primary appearances stay separate.
+Ranked-choice rounds are retained, with first-round votes used in the compact
+card and explicitly labeled. Certification comes from the publication, and the
+shared pipeline does not infer winners from vote ranking or the age of a source.
+
+The generated dataset index is `public/data/results/index.json`. Filing cards
+load its year/stage snapshots, including certified 2018 and 2020 canvass totals,
+the available 2022 baseline, earlier Excel canvasses and municipal returns.
+`src/data/result-candidates.json` adds ballot candidates absent from existing
+filing datasets; it does not replace reviewed records or editorial overrides.
+Legacy records marked only “Filed” can show an exact general-ballot match without
+changing their original filing status. The current-results refresh also rebuilds
+these indexed outputs so the lab and filing cards use the same saved publication.
+
+`reports/result-import-coverage.json` records imported datasets, unpublished
+votes, inconsistent source totals and source artifacts awaiting adapters. Coverage
+is limited to each source: the 2022 baseline has 13 multi-county contests;
+reviewed municipal PDF parsers cover Salt Lake County mayor/council races and
+withhold percentage bars when aggregate write-ins were not extracted. Older
+reviewed state PDFs currently supply candidate rosters, not verified vote totals;
+raw OCR is never promoted to votes automatically. Alternative PDF versions can
+remain pending even when their Excel counterpart has been imported. Adding a
+source adapter must preserve its full candidate/options list, provenance, stage,
+missing-vote semantics and independently published totals before replacing output.
+
 ## Election results lab
 
 `/labs/` is an editorial-style explorer for the **2026 general election**. Its

@@ -173,7 +173,7 @@ def municipal_records(key, text):
             if not office or name.lower().startswith(('precincts counted', 'precincts reporting', 'registered voters', 'ballots cast', 'times counted', 'number of', 'total votes', 'prcnts counted')): continue
             if re.fullmatch(r'(?:write[- ]?in(?: votes)?|no other candidate|for|against|yes|no)', name, re.I): continue
             name = re.sub(r'\s*\(WRITE[- ]IN\)$', '', name, flags=re.I)
-            output.append(base.record(key, name, office, city=city))
+            output.append(dict(base.record(key, name, office, city=city), votes=int(candidate[2].replace(',', ''))))
             continue
         if line == 'Back To Top':
             office = ''

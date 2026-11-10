@@ -557,3 +557,8 @@ main:focus,main h1:focus{outline:0}
 
 /* Logo-free party detail mark shares the centered icon treatment of directory avatars. */
 .party-mark { display: grid; place-items: center; }
+
+/* Result-bearing filing cards span the list and split at roomy widths. */
+.filing-card:has(> .filing-results){grid-column:1 / -1;display:grid;gap:var(--space-6);align-items:start}
+.filing-info{min-width:0}
+@media(min-width:900px){.filing-card:has(> .filing-results){grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}

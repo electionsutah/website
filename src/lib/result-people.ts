@@ -3,7 +3,7 @@ import type { Contest } from './results';
 
 // Keep ballot responses and write-in aggregates out of person reconciliation.
 const ballotResponses = new Set(['yes', 'no', 'for', 'against', 'writein', 'writeins', 'adjudicatedwriteins']);
-type Race = Pick<Contest, 'name' | 'county'>;
+type Race = Pick<Contest, 'name' | 'county' | 'year'>;
 
 /** Use the directory's actual IDs and identity rules, never a guessed URL slug. */
 export function createResultPersonResolver(directory: Person[]) {
@@ -18,14 +18,15 @@ export function createResultPersonResolver(directory: Person[]) {
     }
   }
   return (name: string, race: Race): Person | undefined => {
-    const key = identityKey(name);
+    const candidateName = ['U.S. President & Vice President', 'Governor & Lieutenant Governor'].includes(cleanOfficeName(race.name)) ? name.split(/,\s+| & /)[0] : name;
+    const key = identityKey(candidateName);
     if (!key || ballotResponses.has(key)) return undefined;
     const matches = [...(byName.get(key)?.values() ?? [])];
     if (matches.length === 1) return matches[0];
     // Only disambiguate identical names with a filing in this election and race.
     // 2026 filings carry no county, so county-level races stay unlinked rather than risk a wrong match.
     const contextual = matches.filter(person => person.filings.some(filing =>
-      filing.year === 2026 && identityKey(cleanOfficeName(filing.officeName)) === identityKey(cleanOfficeName(race.name)) &&
+      filing.year === (race.year ?? 2026) && identityKey(cleanOfficeName(filing.officeName)) === identityKey(cleanOfficeName(race.name)) &&
       (!race.county || `${filing.county.toLowerCase().replaceAll(' ', '-')}-county-ut` === race.county)
     ));
     return contextual.length === 1 ? contextual[0] : undefined;

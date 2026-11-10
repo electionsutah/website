@@ -2,6 +2,8 @@
   import { tick } from 'svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
   import MunicipalResults from './MunicipalResults.svelte';
+  import FilingResults from './FilingResults.svelte';
+  import { hasFilingResults } from './lib/filing-results';
   import DescriptionText from './DescriptionText.svelte';
   import Icon from './Icon.svelte';
   import EntityLinks from './EntityLinks.svelte';
@@ -450,6 +452,7 @@
         <div class="filing-list">
           {#each person.filings as filing}
             <div class="filing-card">
+              <div class="filing-info">
               <div class="filing-heading">
                 <div class="filing-cycle"><time class="filing-year" datetime={String(filing.year)}>{filing.year}</time><small>{sectionLabel(filing.section)}{#if filing.runningMateId === person.id}{' · '}{runningMateRole(filing)} candidate{/if}</small></div>
                 <h3><a href={hrefFor('offices', filing.officeId)} onclick={(event) => open(event, hrefFor('offices', filing.officeId))}>{filing.officeName}</a></h3>
@@ -462,6 +465,8 @@
                 <div><dt>Normalized status</dt><dd>{statusLabel(filing.status)}</dd></div>
               </dl>
               {#if filing.source && !sourceAvailable(filing.source)}<p class="source-note">Original source no longer online<span>{new URL(filing.source).hostname.replace(/^www\./, '')}</span></p>{:else if filing.source}<a class="source-link" href={filing.source} target="_blank" rel="noreferrer">{sourceLinkLabel(filing.source)} <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}
+              </div>
+              {#if hasFilingResults(filing)}{#key filing.recordId}<FilingResults {filing} {navigate} />{/key}{/if}
             </div>
           {/each}
         </div>
@@ -479,7 +484,7 @@
       {#if selectedOfficeProfile}<OfficeCommunities profile={selectedOfficeProfile} {navigate} />{/if}
       <section class="record-section split-detail">
         <div class="record-heading"><p class="eyebrow compact">Candidate locations</p><h2>Places</h2>{#if office.placeIds.length}{#each office.placeIds as placeId}<a class="place-callout" href={hrefFor('places', placeId)} onclick={(event) => open(event, hrefFor('places', placeId))}>{placesById.get(placeId)?.name}<span>Browse candidates <Icon name="arrow_forward" /></span></a>{/each}{:else}<p class="missing-place">The source data does not publish city or county values for this office’s candidates.</p>{/if}</div>
-        <div><div class="filed-heading"><p class="eyebrow flush">Candidate field</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${office.name} candidates`} /></div><div class="candidate-list">
+        <div><div class="filed-heading"><p class="eyebrow flush">Candidates</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${office.name} candidates`} /></div><div class="candidate-list">
           {#each shownCandidacies as { filing, personId, name, runningMate }}
             <a class="candidate-row" class:running-mate-row={runningMate} href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}>
               <PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.partyName}{#if runningMate}{' · '}Running mate{:else if filing.runningMate}{' · '}with {filing.runningMate}{/if}</small></span><b class:inactive={!activeStatuses.has(filing.status)}>{filing.sourceStatus}</b>
@@ -609,7 +614,7 @@
       <section class="record-section split-detail">
         <div class="record-heading"><p class="eyebrow compact">Archived locations</p>{#if place.children.length}<h2>Cities in the archive</h2>{#each place.children as city}<a class="office-link" href={hrefFor('places', city.id)} onclick={(event) => open(event, hrefFor('places', city.id))}>{city.name}<span>{city.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}{/if}<h2 class:office-group-heading={place.children.length > 0}>Area offices</h2>{#each place.offices as item}<a class="office-link" href={hrefFor('offices', item.id)} onclick={(event) => open(event, hrefFor('offices', item.id))}>{item.name}<span>{item.filings.length} filings <Icon name="arrow_forward" /></span></a>{/each}</div>
         <div>
-          <div class="filed-heading"><p class="eyebrow flush">Filed candidates</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${place.name} candidates`} /></div>
+          <div class="filed-heading"><p class="eyebrow flush">Candidates</p><SearchField bind:value={candidateQuery} placeholder="Search candidates…" label={`Search ${place.name} candidates`} /></div>
           <div class="candidate-list">{#each shownCandidacies as { filing, personId, name, runningMate }}<a class="candidate-row" href={hrefFor('people', personId)} onclick={(event) => open(event, hrefFor('people', personId))}><PersonAvatar {personId} className="mini-avatar" /><span><strong>{name}</strong><small>{filing.year} · {filing.officeName}{#if runningMate}{' · '}Running mate{/if}</small></span><b>{filing.partyName}</b></a>{:else}<p class="no-records">{place.filings.length ? 'No matching candidates.' : 'No candidate records have been imported for this municipality yet. See Election details & sources for the coverage review.'}</p>{/each}</div>
         </div>
       </section>

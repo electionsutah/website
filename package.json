@@ -10,7 +10,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build && node scripts/prerender-routes.mjs",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "refresh:results": "python3 scripts/refresh-election-results.py",
+    "refresh:results": "python3 scripts/refresh-election-results.py && uv run --with xlrd python scripts/import-all-results.py --use-cache",
     "refresh:history": "python3 scripts/import-result-history.py",
     "check:shifts": "node scripts/check-shifts.mjs",
     "refresh:boundaries": "python3 scripts/import-legislative-boundaries.py",
@@ -26,7 +26,9 @@
     "check:links": "node scripts/check-entity-links.mjs && node scripts/check-office-links.mjs && node scripts/check-party-links.mjs && node scripts/check-person-links.mjs && node scripts/check-place-links.mjs",
     "refresh:municipal-results": "python3 scripts/import-municipal-results.py",
     "check:municipal-results": "node scripts/check-municipal-results.mjs",
-    "refresh:newspaper": "python3 scripts/import-newspaper-elections.py --import && python3 scripts/import-municipal-results.py && node scripts/report-newspaper-elections.mjs"
+    "refresh:newspaper": "python3 scripts/import-newspaper-elections.py --import && python3 scripts/import-municipal-results.py && node scripts/report-newspaper-elections.mjs",
+    "refresh:all-results": "uv run --with xlrd python scripts/import-all-results.py",
+    "check:results": "python3 -m unittest discover -s scripts -p test_result_contract.py && node scripts/check-filing-results.mjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "5.1.1",

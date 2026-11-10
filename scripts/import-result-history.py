@@ -5,6 +5,7 @@ python3 scripts/import-result-history.py [--use-cache]
 Raw API responses are kept in the ignored .firecrawl/history/ directory.
 """
 import argparse
+from result_contract import validate_contest, atomic_json
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import importlib.util
@@ -61,7 +62,7 @@ def main():
         if not item['countyTotalsReconcile']:
             print(f"County breakdown withheld from shift comparisons: {item['name']} (source totals differ)")
         assert len({x['id'] for x in item['counties']}) == len(item['counties']), item['name']
-        return item
+        return validate_contest(item)
     # District races supply direct comparisons; all four U.S. House races supply
     # countywide aggregates that remain usable after congressional redistricting.
     rows = [row for row in state['ballotItems'] if shared.text(row['name']).strip().startswith(('U.S. House', 'State House', 'State Senate', 'State School Board'))]
@@ -71,9 +72,7 @@ def main():
               'asOf': state['election']['asOf'], 'fetchedAt': datetime.fromtimestamp(min(file.stat().st_mtime for file in used), timezone.utc).isoformat(),
               'counties': counties, 'contests': contests}
     file = ROOT / 'public/data/2024-results.json'
-    temporary = file.with_suffix('.tmp')
-    temporary.write_text(json.dumps(output, separators=(',', ':')) + '\n')
-    temporary.replace(file)
+    atomic_json(file, output)
     print(f"Imported {len(contests)} certified 2024 district races; any inconsistent county breakdowns are explicitly flagged.")
 
 if __name__ == '__main__': main()

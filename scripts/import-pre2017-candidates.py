@@ -128,7 +128,7 @@ def municipal_records(key, text):
         if not match or not office: continue
         name = match[1].strip().lstrip('*').strip()
         if name.lower() == 'write-in votes' or name.startswith(('Times Counted', 'Precincts Reporting')): continue
-        output.append(record(key, name, office, city=city))
+        output.append(dict(record(key, name, office, city=city), votes=int(match[2].replace(',', ''))))
     assert output, key
     return output
 
