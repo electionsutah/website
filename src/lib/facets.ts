@@ -9,7 +9,7 @@ import { statusLabel, type Filing } from './entities';
  * list of filings. An entry matches when at least one of its filings satisfies
  * every selected facet: values within a facet are OR'd, facets are AND'd.
  */
-export type FacetKey = 'year' | 'electionType' | 'section' | 'status' | 'party' | 'county' | 'city' | 'contact';
+export type FacetKey = 'year' | 'electionType' | 'section' | 'status' | 'party' | 'county' | 'city' | 'contact' | 'photo';
 
 export type Selection = Partial<Record<FacetKey, string[]>>;
 
@@ -56,7 +56,14 @@ const definitions: FacetDefinition[] = [
   }
 ];
 
-export const facetKeys = definitions.map((definition) => definition.key);
+export const facetKeys: FacetKey[] = [...definitions.map((definition) => definition.key), 'photo'];
+
+type FacetEntry = { filings: Filing[]; hasPhoto?: boolean };
+
+/** Photo availability belongs to the person, rather than an individual filing. */
+export function matchesPhoto(entry: FacetEntry, selection: Selection) {
+  return !selection.photo?.length || (entry.hasPhoto !== undefined && selection.photo.includes(entry.hasPhoto ? 'Has photo' : 'No photo'));
+}
 
 // Facet values per filing, computed once; filtering runs on every click.
 const valueCache = new WeakMap<Filing, string[][]>();
@@ -93,13 +100,14 @@ export function matchingFilings(filings: Filing[], selection: Selection) {
  * selected facets. Values that would leave nothing are hidden unless selected,
  * so every option shown narrows the results instead of emptying them.
  */
-export function buildFacets(entries: { filings: Filing[] }[], selection: Selection, keys: FacetKey[] = facetKeys): Facet[] {
-  return definitions
+export function buildFacets(entries: FacetEntry[], selection: Selection, keys: FacetKey[] = facetKeys): Facet[] {
+  const facets = definitions
     .filter((definition) => keys.includes(definition.key))
     .map((definition) => {
       const index = definitions.indexOf(definition);
       const counts = new Map<string, number>();
       for (const entry of entries) {
+        if (!matchesPhoto(entry, selection)) continue;
         const values = new Set<string>();
         for (const filing of entry.filings) {
           if (filingMatches(filing, selection, definition.key)) for (const value of filingValues(filing)[index]) values.add(value);
@@ -117,6 +125,15 @@ export function buildFacets(entries: { filings: Filing[] }[], selection: Selecti
     })
     // A facet with a single possible value cannot narrow anything.
     .filter((facet) => facet.values.length > 1 || facet.values.some((value) => value.selected));
+  if (keys.includes('photo') && entries.some((entry) => entry.hasPhoto !== undefined)) {
+    const values = ['Has photo', 'No photo'].map((value) => ({
+      value,
+      count: entries.filter((entry) => entry.hasPhoto === (value === 'Has photo') && matchingFilings(entry.filings, selection).length > 0).length,
+      selected: selection.photo?.includes(value) ?? false
+    }));
+    facets.push({ key: 'photo', label: 'Photo', schemaField: 'photo', values });
+  }
+  return facets;
 }
 
 export function toggle(selection: Selection, key: FacetKey, value: string): Selection {
@@ -174,7 +191,7 @@ function parseView(value: unknown): View | null {
 }
 
 /** Drop saved values the data no longer contains, so old settings can't strand a page on zero results. */
-function knownSelection(selection: Selection, entries: { filings: Filing[] }[]): Selection {
+function knownSelection(selection: Selection, entries: FacetEntry[]): Selection {
   const known = definitions.map(() => new Set<string>());
   for (const entry of entries) for (const filing of entry.filings) filingValues(filing).forEach((values, index) => values.forEach((value) => known[index].add(value)));
   const result: Selection = {};
@@ -182,6 +199,8 @@ function knownSelection(selection: Selection, entries: { filings: Filing[] }[]):
     const values = (selection[definition.key] ?? []).filter((value) => typeof value === 'string' && known[index].has(value));
     if (values.length) result[definition.key] = values;
   });
+  const photos = (selection.photo ?? []).filter((value) => entries.some((entry) => entry.hasPhoto !== undefined && value === (entry.hasPhoto ? 'Has photo' : 'No photo')));
+  if (photos.length) result.photo = photos;
   return result;
 }
 
@@ -210,7 +229,7 @@ export function sortRows<T>(rows: T[], sort: Sort | null, value: (row: T, key: s
   });
 }
 
-export function restoreState(page: string, entries: { filings: Filing[] }[], sortKeys: string[] = [], fallbackView: View = defaultView(entries.length)): IndexState {
+export function restoreState(page: string, entries: FacetEntry[], sortKeys: string[] = [], fallbackView: View = defaultView(entries.length)): IndexState {
   const params = new URLSearchParams(window.location.search);
   const stored = readStorage();
   const saved = stored.pages[page];

@@ -64,7 +64,7 @@
   } from './lib/entities';
   import { formatCount, formatDate } from './lib/format';
   import { matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
-  import { buildFacets, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
+  import { buildFacets, matchesPhoto, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
 
   export let section: 'people' | 'offices' | 'parties' | 'places';
   export let id = '';
@@ -183,6 +183,7 @@
   $: cards = section === 'people'
     ? (scope ? scopedPeople(scope) : people).map((item) => ({
         id: item.id,
+        hasPhoto: !!personImageFor(item.id),
         title: item.name,
         eyebrow: (item.filings[0]?.partyName ?? 'No associated filings'),
         meta: (item.filings[0]?.officeName ?? ''),
@@ -279,8 +280,9 @@
   }
 
   $: searchedCards = cards.filter((card) => matchesQuery(card.text, queryTokens(query)));
-  $: filtering = isActive(selection);
+  $: filtering = isActive({ ...selection, photo: [] });
   $: matchedCards = searchedCards
+    .filter((card) => matchesPhoto(card, selection))
     .map((card) => {
       const matching = matchingFilings(card.filings, selection);
       // People are described by their most recent filing; when filtering, by the most recent match.
