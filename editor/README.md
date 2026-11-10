@@ -9,7 +9,9 @@ npm run editor
 ```
 
 Open **http://127.0.0.1:8080**. If Decap shows a login screen, choose the local
-repository login; no GitHub account or credentials are needed. The companion
+repository login; no GitHub account or credentials are needed. The
+Editor explicitly uses Decap's local proxy backend, so it never falls back to a
+hosted email/password login when the proxy is starting or unavailable. The companion
 site is **http://127.0.0.1:5174**. Ctrl+C stops the editor, the Decap proxy,
 and this companion site. An existing site on port 5173 is left running.
 
@@ -240,6 +242,11 @@ municipal-results datasets. Application code is integrated explicitly rather tha
 automatically copied. It checks every two seconds, refreshes the
 companion site, and regenerates Editor records/references after a change.
 `EDITOR_RESEARCH_SOURCE` can explicitly select a different source checkout.
+Deleted or prunable default-branch worktrees are ignored: the Editor uses the
+current checkout's research inputs instead. It rechecks the source every two
+seconds, so removing a temporary worktree does not leave synchronization pointing
+at a stale path. Local research changes still regenerate records and references;
+an explicitly configured source remains authoritative and reports errors if missing.
 
 The last synchronized hashes live in ignored `.workspace` state. All declared inputs are
 checked before any is copied; independent local edits stop synchronization and

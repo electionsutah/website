@@ -1,4 +1,5 @@
 import { execFileSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { readFile, writeFile, rename, mkdir } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
@@ -11,16 +12,21 @@ export const researchFiles = [
 const arrayInputs = new Set(researchFiles.filter(path => !path.endsWith('place-election-notes.json') && !path.endsWith('place-enrichment.json')));
 const hash = text => createHash('sha256').update(text).digest('hex');
 
-/** Follow only the declared research inputs in the default-branch worktree. */
+export function researchWorktree(root, branch, porcelain) {
+  const match = porcelain.split('\0\0').find(entry => entry.split('\0').includes(`branch refs/heads/${branch}`));
+  const source = match?.split('\0').find(line => line.startsWith('worktree '))?.slice(9);
+  // Git retains registrations for deleted temporary worktrees until they are pruned.
+  return source && existsSync(join(source, '.git')) && !match.split('\0').some(line => line.startsWith('prunable')) ? resolve(source) : resolve(root);
+}
+
+/** Follow a live default-branch worktree, otherwise use this checkout's inputs. */
 export function researchSource(root) {
   if (process.env.EDITOR_RESEARCH_SOURCE) return resolve(process.env.EDITOR_RESEARCH_SOURCE);
   try {
     const branch = execFileSync('git', ['symbolic-ref', 'refs/remotes/origin/HEAD'], { cwd: root, encoding: 'utf8' }).trim().replace(/^refs\/remotes\/origin\//, '');
-    const worktrees = execFileSync('git', ['worktree', 'list', '--porcelain', '-z'], { cwd: root, encoding: 'utf8' }).split('\0\0');
-    const match = worktrees.find(entry => entry.split('\0').includes(`branch refs/heads/${branch}`));
-    const source = match?.split('\0').find(line => line.startsWith('worktree '))?.slice(9);
-    return source && resolve(source) !== resolve(root) ? source : null;
-  } catch { return null; }
+    const worktrees = execFileSync('git', ['worktree', 'list', '--porcelain', '-z'], { cwd: root, encoding: 'utf8' });
+    return researchWorktree(root, branch, worktrees);
+  } catch { return resolve(root); }
 }
 async function atomic(path, text) {
   await writeFile(`${path}.tmp`, text); await rename(`${path}.tmp`, path);
@@ -49,8 +55,8 @@ export async function createResearchSync(root, source, baselinePath) {
         throw new Error(`Research sync stopped: ${file.path} has local edits or needs an initial reviewed synchronization.`);
       }
     }
-    const changed = files.filter(file => file.local !== file.incoming);
-    for (const file of changed) { await mkdir(resolve(root, file.path, '..'), { recursive: true }); await atomic(join(root, file.path), file.incoming); }
+    const changed = files.filter(file => file.local !== file.incoming || resolve(root) === resolve(source) && baseline && hash(file.incoming) !== baseline.hashes[file.path]);
+    for (const file of changed.filter(file => file.local !== file.incoming)) { await mkdir(resolve(root, file.path, '..'), { recursive: true }); await atomic(join(root, file.path), file.incoming); }
     const nextBaseline = { source: resolve(source), hashes: Object.fromEntries(files.map(file => [file.path, hash(file.incoming)])) };
     if (JSON.stringify(baseline) !== JSON.stringify(nextBaseline)) {
       await mkdir(resolve(baselinePath, '..'), { recursive: true });

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile, readFile, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
-import { researchFiles, createResearchSync } from './research-sync.mjs';
+import { researchFiles, createResearchSync, researchWorktree } from './research-sync.mjs';
 const directory = await mkdtemp(join(tmpdir(), 'elut-research-sync-'));
 const local = join(directory, 'editor'), source = join(directory, 'research');
 const candidates = JSON.stringify([{ id: 'first' }]), notes = JSON.stringify({ town: ['Original'] });
@@ -17,6 +17,17 @@ try {
     }
   }
   await writeFile(join(local, 'src/data/editor-overrides.json'), 'manual edits stay here');
+  await writeFile(join(source, '.git'), 'gitdir: test');
+  const porcelain = path => `worktree ${path}\0branch refs/heads/master\0\0`;
+  assert.equal(researchWorktree(local, 'master', porcelain(source)), source);
+  assert.equal(researchWorktree(local, 'master', porcelain(join(directory, 'deleted'))), local);
+  assert.equal(researchWorktree(local, 'master', `worktree ${source}\0branch refs/heads/master\0prunable missing gitdir\0\0`), local);
+  assert.equal(researchWorktree(local, 'master', ''), local);
+  const selfSync = await createResearchSync(local, local, join(local, '.workspace/self-baseline.json'));
+  assert.deepEqual(await selfSync(), []);
+  await writeFile(join(local, researchFiles[1]), JSON.stringify({ town: ['Local research update'] }));
+  assert.deepEqual(await selfSync(), [researchFiles[1]], 'Local fallback still detects changes for editor refresh');
+  await writeFile(join(local, researchFiles[1]), notes);
   const sync = await createResearchSync(local, source, join(local, '.workspace/baseline.json'));
   assert.deepEqual(await sync(), []);
   const added = JSON.stringify([{ id: 'first' }, { id: 'new' }]);

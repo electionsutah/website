@@ -32,6 +32,7 @@ try {
   await atomicJson(testSchemaPath, { version: 1, collections: {} });
   let inspection = await inspectSchema(server, state, testSchemaPath);
   const filingSchema = inspection.collections.find(row => row.kind === 'filings');
+  assert(filingSchema.fields.find(field => field.path === 'electionType').options.includes('presidential-primary'), 'Imported presidential primaries must remain editable');
   const reordered = filingSchema.fields.map(field => ({ path: field.path, label: field.label, ...(field.options ? { options: [...field.options] } : {}) })).reverse();
   reordered.find(field => field.path === 'status').label = 'Filing status';
   reordered.find(field => field.path === 'status').options.push('pending_review');

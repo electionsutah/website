@@ -50,8 +50,7 @@ try {
   Object.assign(status, { counts: state.counts, orphans: state.orphans });
   const config = {
     logo: { src: '/images/logo-editorial-nav.svg', show_in_header: true },
-    backend: { name: 'git-gateway', branch: 'editor' },
-    local_backend: { url: `${origin}/api/v1` },
+    backend: { name: 'proxy', proxy_url: `${origin}/api/v1` },
     media_folder: mediaFolder, public_folder: publicFolder, media_library: { name: 'local-images' },
     publish: true, editor: { preview: false },
     collections: ['people', 'filings', 'places', 'offices', 'parties'].map(kind => ({
@@ -111,7 +110,7 @@ try {
           }
         }
         const execute = async () => {
-          for (const asset of message.params.assets ?? []) await persistUpload(root, asset);
+          for (const asset of message.params?.assets ?? []) await persistUpload(root, asset);
           if (persist) { message.params.assets = []; body = JSON.stringify(message); }
           const upstream = await fetch(`http://127.0.0.1:${proxyPort}/api/v1`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body });
           const result = await upstream.text();
@@ -178,17 +177,24 @@ try {
   });
   proxy.once('exit', code => { if (!stopping) { console.error(`Decap proxy exited (${code}).`); void stop(1); } });
   await site.listen();
-  const source = researchSource(root);
+  let source = researchSource(root);
   if (source) {
     status.researchSource = source;
-    const sync = await createResearchSync(root, source, join(workspace, 'research-sync-baseline.json'));
+    let sync = await createResearchSync(root, source, join(workspace, 'research-sync-baseline.json'));
     let refreshing = false, lastError = '';
     const refresh = async () => {
       if (refreshing || stopping) return;
       refreshing = true;
       const operation = queue.then(async () => {
+        const nextSource = researchSource(root);
+        const sourceChanged = nextSource !== source;
+        if (sourceChanged) {
+          sync = await createResearchSync(root, nextSource, join(workspace, 'research-sync-baseline.json'));
+          source = nextSource;
+          status.researchSource = source;
+        }
         const changed = await sync();
-        if (!changed.length && !lastError) return;
+        if (!changed.length && !lastError && !sourceChanged) return;
         site.moduleGraph.invalidateAll();
         state = await prepare(site);
         Object.assign(status, { counts: state.counts, orphans: state.orphans, error: null, lastSaved: null, researchError: null, researchSource: source, researchUpdated: new Date().toISOString() });

@@ -73,7 +73,7 @@ export const baseEditorFields: Record<EntityKind, Field[]> = {
     { path: 'placeId', label: 'Place', relation: 'places' },
     { path: 'status', label: 'Normalized status', options: ['filed', 'primary_election', 'general_election', 'elected', 'defeated', 'withdrew', 'disqualified'] },
     { path: 'sourceStatus', label: 'Displayed source status' },
-    { path: 'electionType', label: 'Election type', options: ['primary', 'general', 'special'] },
+    { path: 'electionType', label: 'Election type', options: ['primary', 'presidential-primary', 'general', 'special'] },
     { path: 'city', label: 'City' }, { path: 'county', label: 'County' }, { path: 'state', label: 'State' },
     { path: 'source', label: 'Filing source URL', type: 'url' },
     { path: 'lastUpdated', label: 'Filing update date', type: 'date' }, ...contactFields

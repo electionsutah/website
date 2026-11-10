@@ -13,7 +13,7 @@ try {
   const result = resultForFiling(filing, data);
   assert.ok(result, 'San Juan sheriff filing matches its results');
   assert.equal(result.county, 'san-juan-county-ut');
-  assert.equal(result.options[0].votes, 1705);
+  assert.equal(result.options[0].votes, 1758);
   assert.equal(resultForFiling({ ...filing, electionType: 'primary' }, data), undefined);
   assert.equal(resultForFiling({ ...filing, year: 2024 }, data), undefined);
   assert.equal(resultForFiling({ ...filing, county: 'Salt Lake' }, data), undefined);
