@@ -400,13 +400,17 @@
   {:else if person}
     <article class="entity-detail">
       <Breadcrumbs parent={{ label: 'People', href: '/people/' }} current={person.name} {navigate} />
-      <header class="detail-hero">
-        <PersonAvatar personId={person.id} className="detail-avatar" tag="div" />
-        <div>
-          <p class="eyebrow">Person record</p>
-          <h1>{person.name}</h1>
-          <p class="detail-summary"><DescriptionText text={personCandidacies.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${personCandidacies.length} recorded candidacies across ${person.years.join(', ')}.`} self={hrefFor(section, id)} {navigate} /></p>
-          {#if personPhoto}<PhotoCredit image={personPhoto} className="emblem-credit" />{/if}
+      <header class="detail-hero person-hero">
+        <div class="person-hero-heading">
+          <PersonAvatar personId={person.id} className="detail-avatar" tag="div" />
+          <div>
+            <p class="eyebrow">Person record</p>
+            <h1>{person.name}</h1>
+            <p class="detail-summary"><DescriptionText text={personCandidacies.length === 1 ? `One recorded candidacy in ${person.years[0]}.` : `${personCandidacies.length} recorded candidacies across ${person.years.join(', ')}.`} self={hrefFor(section, id)} {navigate} /></p>
+            {#if personPhoto}<PhotoCredit image={personPhoto} className="emblem-credit" />{/if}
+          </div>
+        </div>
+        <div class="person-hero-panels" class:has-contact={!!(contact && (personProfile || contactFiling || verifiedPersonLinks.length))}>
           {#if contact && (personProfile || contactFiling || verifiedPersonLinks.length)}
             <section class="person-contact" aria-label={`${person.name} contact information`}>
               <div class="contact-heading"><span>{personProfile ? 'Campaign contact' : contactFiling ? 'Public contact' : 'Public links'}</span><small class="contact-verification">{#if personVerifiedDate}<Icon name="verified" /> Verified <time datetime={personVerifiedDate}>{formatDate(personVerifiedDate)}</time>{:else if contactFiling}{contactFiling.year} filing{/if}</small></div>
@@ -431,13 +435,13 @@
               {#if personProfile?.sourceUrl}<a class="contact-source" href={personProfile.sourceUrl} target="_blank" rel="noreferrer">Source: profile information <Icon name="arrow_outward" /><span class="sr-only"> (opens in new tab)</span></a>{/if}
             </section>
           {/if}
+          <section class="detail-stats" aria-label="Candidacy summary">
+            <div><small>CANDIDACIES</small><strong>{formatCount(personCandidacies.length)}</strong></div>
+            <div><small>ELECTION YEARS</small><strong>{person.years.length}</strong></div>
+            <div><small>LATEST CYCLE</small><strong>{person.years[0]}</strong></div>
+          </section>
         </div>
       </header>
-      <section class="detail-stats">
-        <div><small>CANDIDACIES</small><strong>{formatCount(personCandidacies.length)}</strong></div>
-        <div><small>ELECTION YEARS</small><strong>{person.years.length}</strong></div>
-        <div><small>LATEST CYCLE</small><strong>{person.years[0]}</strong></div>
-      </section>
       {#if personProfile}
         <section class="record-section person-profile" aria-labelledby="person-profile-title">
           <div class="record-heading"><p class="eyebrow compact">Profile information</p><h2 id="person-profile-title">About {person.name}</h2></div>

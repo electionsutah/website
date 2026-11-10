@@ -564,3 +564,26 @@ main:focus,main h1:focus{outline:0}
 @media(min-width:900px){.filing-card:has(> .filing-results){grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
 
 .filing-cycle a.filing-year{color:var(--color-paper);text-decoration:none;cursor:pointer}.filing-cycle a.filing-year:hover{text-decoration:underline;text-underline-offset:4px}.filing-cycle a.filing-year:focus-visible{outline:3px solid var(--color-ink);outline-offset:4px}
+
+/* Person identity sits above contact details and a compact record summary. */
+.detail-hero.person-hero{display:flex;flex-direction:column;align-items:stretch;gap:var(--space-8)}
+.detail-hero.person-hero>.person-hero-heading,.detail-hero.person-hero>.person-hero-panels{max-width:none;min-width:0}
+.person-hero-heading{display:flex;align-items:flex-start;gap:var(--space-7)}
+.person-hero-heading>div:last-child{min-width:0}
+.person-hero-heading h1{overflow-wrap:anywhere}
+.person-hero-panels{display:grid;gap:var(--space-6);align-items:start}
+.person-hero-panels .person-contact{margin-top:0;min-width:0}
+.person-hero-panels .detail-stats{grid-template-columns:1fr;padding:0 var(--space-6);min-width:0}
+.person-hero-panels .detail-stats>div{padding:var(--space-5) 0;gap:var(--space-4);border-right:0;border-bottom:1px solid var(--color-muted)}
+.person-hero-panels .detail-stats>div:last-child{border-bottom:0}
+.person-hero-panels:not(.has-contact) .detail-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-6)}
+.person-hero-panels:not(.has-contact) .detail-stats>div{border-bottom:0}
+@media(min-width:900px){.person-hero-panels.has-contact{grid-template-columns:minmax(0,3fr) minmax(220px,1fr);align-items:stretch}}
+@media(max-width:700px){
+  .person-hero-heading{gap:var(--space-4)}
+  .person-hero-heading .detail-avatar{width:64px;height:64px;font-size:var(--text-2xl)}
+  .person-hero-heading h1{font-size:clamp(28px,7vw,49px)}
+  .person-hero-panels:not(.has-contact) .detail-stats{grid-template-columns:1fr;gap:0}
+  .person-hero-panels:not(.has-contact) .detail-stats>div{border-bottom:1px solid var(--color-muted)}
+  .person-hero-panels:not(.has-contact) .detail-stats>div:last-child{border-bottom:0}
+}
