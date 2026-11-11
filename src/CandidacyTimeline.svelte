@@ -17,7 +17,7 @@
 
 <ol class="candidacy-timeline" aria-label="Candidacy timeline">
   {#each events as event, index}
-    <li class:matching-result={index === events.length - 1} class:terminal={event.terminal} class:dated={!!timelineDate(event.date)}>
+    <li class:matching-result={index === events.length - 1} class:general-election={event.electionType === 'general'} class:terminal={event.terminal} class:dated={!!timelineDate(event.date)}>
       <div class="event-marker"><TimelineDate value={event.date} /></div>
       <div class="event-content">
         <div class="event-heading">
@@ -37,18 +37,19 @@
   li:last-child{padding-bottom:0}
   li:not(:last-child)::before{content:'';position:absolute;left:calc(23px + var(--space-3));top:10px;bottom:-10px;width:1px;background:var(--color-rule-strong)}
   .event-marker{position:relative;min-height:14px;display:grid;align-content:start}
-  li:not(.dated) .event-marker::after{content:'';position:relative;width:9px;height:9px;margin:6px auto 0;border-radius:50%;background:var(--color-blue);box-shadow:0 0 0 4px var(--color-paper)}
+  li:not(.dated) .event-marker::after{content:'';position:relative;width:9px;height:9px;margin:var(--space-1-5) auto 0;border-radius:50%;background:var(--color-blue);box-shadow:0 0 0 4px var(--color-paper)}
   li.terminal .event-content{background:var(--color-page);box-shadow:0 0 0 var(--space-3) var(--color-page)}
   li.matching-result{background:var(--color-blue-tint);padding-block:var(--space-3)}
   li.matching-result .event-content{background:transparent;box-shadow:none}
+  li.general-election{background:var(--color-general-election-highlight);padding-block:var(--space-3)}
   li.terminal:not(.dated) .event-marker::after{background:var(--color-muted);border-radius:0}
   .event-content{min-width:0}.event-content h5{margin:0;font:700 var(--text-base)/1.4 var(--font-sans)}
   .event-heading{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:var(--space-1) var(--space-3);margin-bottom:var(--space-2)}
   .event-heading .event-votes{margin:0;margin-left:auto;text-align:right}
   p{margin:var(--space-1) 0 var(--space-2);font-size:var(--text-sm);color:var(--color-muted)}
   a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
-  .event-source{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px;font-size:var(--text-xs)}
+  .event-source{display:inline-flex;flex-wrap:wrap;align-items:center;gap:var(--space-1);font-size:var(--text-xs)}
   a.event-source{text-decoration:none}
   .event-source-label{text-decoration:underline;text-underline-offset:3px}
-  .event-source :global(.icon){font-size:14px}.event-votes{font-variant-numeric:tabular-nums}
+  .event-source :global(.icon){font-size:var(--text-base)}.event-votes{font-variant-numeric:tabular-nums}
 </style>

@@ -33,7 +33,7 @@
 </script>
 
 {#if contest && snapshot}
-  <section class="filing-results" aria-label={`${filing.year} ${contest.electionType ?? "general"} election results for ${filing.officeName}`}>
+  <section class="filing-results" class:general-election={(contest.electionType ?? 'general') === 'general'} aria-label={`${filing.year} ${contest.electionType ?? "general"} election results for ${filing.officeName}`}>
     <div class="mini-heading"><div class="mini-title"><TimelineDate value={contest.electionDate || snapshot.electionDate || filing.electionDate} /><h4>{contest.electionType === 'presidential-primary' ? 'Presidential primary' : contest.electionType === 'primary' ? 'Primary election' : 'General election'} results</h4></div><div class="mini-actions"><a href={contest.source} target="_blank" rel="noreferrer">{(contest.official ?? snapshot.official) ? 'Official' : 'Unofficial'}<span class="sr-only"> results source (opens in new tab)</span></a></div></div>
     {#if contest.county}<p class="mini-scope">{snapshot.counties.find(county => county.id === contest?.county)?.name ?? contest.county} report{#if contest.city}{' · '}{contest.city}{/if}</p>{/if}
     <ul>
@@ -80,6 +80,7 @@
   .mini-label a,.mini-actions a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
   ul{list-style:none;padding:0;margin:var(--space-4) 0;display:grid;gap:var(--space-3)}
   .matching-result{background:var(--color-blue-tint);padding:var(--space-3);margin-inline:calc(-1 * var(--space-3))}
+  .general-election .matching-result{background:var(--color-general-election-highlight)}
   li{display:grid;grid-template-columns:24px minmax(0,1fr);align-items:center;gap:var(--space-3)}
   .winner-marker{grid-column:1;grid-row:1;display:flex;align-items:center;color:var(--color-success)}
   .result-row-content{grid-column:2;grid-row:1;min-width:0}
@@ -93,7 +94,7 @@
   .mini-party a{color:inherit;font-weight:400}
   .mini-scope{margin:var(--space-2) 0;color:var(--color-muted);font-size:var(--text-xs)}
   .mini-label.matching,.mini-label.matching .mini-party,.mini-label.matching a{font-weight:700}
-  .mini-track{height:12px;background:var(--color-rule);margin:6px 0 3px}
+  .mini-track{height:12px;background:var(--color-rule);margin:var(--space-1-5) 0 3px}
   .mini-fill{height:100%;transform-origin:left center;transform:scaleX(var(--vote-progress,1))}
   .mini-source{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--space-2);line-height:1.5;margin-bottom:0}
   .mini-unavailable{font-size:var(--text-sm);color:var(--color-muted)}

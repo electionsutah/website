@@ -5,7 +5,7 @@ import { reviewedCandidacies } from './reviewed-candidacies';
 
 export type CandidacyHistory = { filing: Filing; records: Filing[]; reviewId?: string };
 export type FilingResult = { contest: Contest; snapshot: Snapshot };
-export type CandidacyEvent = { title: string; date?: string; placeIds: string[]; source: string; sourceLabel: string; summary?: string; terminal?: boolean };
+export type CandidacyEvent = { title: string; electionType?: string; date?: string; placeIds: string[]; source: string; sourceLabel: string; summary?: string; terminal?: boolean };
 
 /** Exact identity only: retain each source and stage within the same candidacy. */
 export function candidacyHistory(records: Filing[]): CandidacyHistory[] {
@@ -74,6 +74,7 @@ export function candidacyEvents(history: CandidacyHistory, result?: FilingResult
     const reportCounty = matchingResult?.snapshot.counties.find(county => county.id === matchingResult.contest.county)?.name;
     const summary = option && published ? `${count(option.votes)} votes${validShares && matchingResult ? ` · ${percent(option.votes, matchingResult.contest.total)}` : ''}${reportCounty ? ` · ${reportCounty} report` : ''}` : undefined;
     events.push({ title: stage === 'primary' ? 'Primary' : stage === 'presidential-primary' ? 'Presidential primary' : 'General Election',
+      electionType: stage,
       date: matchingResult?.contest.electionDate || matchingResult?.snapshot.electionDate || row.electionDate,
       placeIds: [], source: matchingResult?.contest.source || row.source,
       sourceLabel: matchingResult ? ((matchingResult.contest.official ?? matchingResult.snapshot.official) ? 'Official results' : 'Unofficial results') : 'Ballot source record', summary });

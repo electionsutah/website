@@ -59,15 +59,15 @@
 {/if}
 
 <style>
-  .entity-links{display:flex;align-items:center;flex-wrap:wrap;gap:2px}
+  .entity-links{display:flex;align-items:center;flex-wrap:wrap;gap:var(--space-0-5)}
   .entity-link{position:relative;display:grid;place-items:center;width:var(--entity-link-size,40px);height:40px;border-radius:4px;text-decoration:none}
   .entity-link:hover,.entity-link:focus-visible{background:var(--color-blue-tint)}
   .entity-link:focus-visible{outline:3px solid var(--color-blue);outline-offset:2px}
   .entity-link img,.entity-link>svg{display:block;width:var(--entity-link-icon-size,24px);height:var(--entity-link-icon-size,24px);object-fit:contain}
-  .website-icon{display:grid;place-items:center;width:24px;height:24px;color:var(--color-blue);font-size:24px;line-height:1}
-  .website-icon :global(.icon){display:block;font-size:24px;line-height:1}
+  .website-icon{display:grid;place-items:center;width:24px;height:24px;color:var(--color-blue);font-size:var(--text-3xl);line-height:1}
+  .website-icon :global(.icon){display:block;font-size:var(--text-3xl);line-height:1}
   .wikipedia-icon{fill:var(--color-ink)}
-  .entity-link-tooltip{position:absolute;z-index:20;bottom:calc(100% + 8px);left:50%;transform:translateX(calc(-50% + var(--tooltip-shift)));width:max-content;max-width:min(300px,calc(100vw - 24px));padding:8px 12px;background:var(--color-ink);color:var(--color-paper);border-radius:4px;box-shadow:var(--shadow-md);font:400 12px/1.5 var(--font-sans);text-align:left;overflow-wrap:anywhere}
+  .entity-link-tooltip{position:absolute;z-index:20;bottom:calc(100% + 8px);left:50%;transform:translateX(calc(-50% + var(--tooltip-shift)));width:max-content;max-width:min(300px,calc(100vw - 24px));padding:var(--space-2) var(--space-3);background:var(--color-ink);color:var(--color-paper);border-radius:4px;box-shadow:var(--shadow-md);font:400 var(--text-xs)/1.5 var(--font-sans);text-align:left;overflow-wrap:anywhere}
   .entity-link-tooltip[hidden]{display:none}
   .entity-link-tooltip:after{content:'';position:absolute;left:0;right:0;top:100%;height:10px}
   .entity-link-tooltip.below{bottom:auto;top:calc(100% + 8px)}

@@ -52,7 +52,7 @@
     .with-minimap{grid-template-columns:minmax(0,1fr) 96px;column-gap:var(--space-3)}
     .filing-minimap img{height:104px}
     .filing-cycle{gap:var(--space-2)}
-    .filing-year{font-size:24px;padding:var(--space-2)}
+    .filing-year{font-size:var(--text-3xl);padding:var(--space-2)}
     .filing-cycle small{flex-basis:100%;overflow-wrap:anywhere}
     .filing-heading h3{font-size:var(--text-2xl)}
   }
