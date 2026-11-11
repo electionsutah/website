@@ -76,6 +76,7 @@ export const baseEditorFields: Record<EntityKind, Field[]> = {
     { path: 'electionType', label: 'Election type', options: ['primary', 'presidential-primary', 'general', 'special'] },
     { path: 'city', label: 'City' }, { path: 'county', label: 'County' }, { path: 'state', label: 'State' },
     { path: 'source', label: 'Filing source URL', type: 'url' },
+    { path: 'filingDate', label: 'Filing date', type: 'date' },
     { path: 'lastUpdated', label: 'Filing update date', type: 'date' }, ...contactFields
   ]
 };

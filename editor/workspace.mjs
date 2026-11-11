@@ -8,6 +8,12 @@ export const workspace = join(root, 'editor/.workspace');
 export const overridesPath = join(root, 'src/data/editor-overrides.json');
 export const json = value => `${JSON.stringify(value, null, 2)}\n`;
 export const readJson = async path => JSON.parse(await readFile(path, 'utf8'));
+export function filingRecordLabel(filing) {
+  if (filing.status === 'filed') return 'Declaration of candidacy';
+  if (['withdrew', 'disqualified', 'deceased'].includes(filing.status)) return 'Candidacy status record';
+  return ({ general: 'General-election result record', primary: 'Primary-election result record', 'presidential-primary': 'Presidential-primary result record' })[filing.electionType] ?? 'Election source record';
+}
+const filingEditorUrl = id => `#/collections/filings/entries/${createHash('sha256').update(id).digest('hex').slice(0, 32)}`;
 
 export async function atomicJson(path, value) {
   const text = json(value);
@@ -21,6 +27,12 @@ export async function prepare(server, directory = workspace, saved = null) {
   const { importedFilings, people, places, offices, parties, placesById, officeResources, importedPartyProperties, importedPlaceDescriptions, importedEntityStructure } = await server.ssrLoadModule('/src/lib/entities.ts');
   const { importedProfile, importedEntityLinks, importedPersonLinks, migratePersonLinks, validateChanges, editorFields } = await server.ssrLoadModule('/src/lib/editorial.ts');
   const { validateStructure } = await server.ssrLoadModule('/src/lib/editor-structure.ts');
+  const { candidacyHistory } = await server.ssrLoadModule('/src/lib/candidacy-history.ts');
+  const relatedRecords = new Map();
+  for (const person of people) for (const history of candidacyHistory(person.filings)) {
+    const records = history.records.map(filing => ({ recordId: filing.recordId, label: filingRecordLabel(filing), status: filing.sourceStatus, source: filing.source, editorUrl: filingEditorUrl(filing.recordId) }));
+    for (const filing of history.records) relatedRecords.set(filing.recordId, records);
+  }
   const references = Object.fromEntries(['people', 'offices', 'parties', 'places'].map(kind => [kind, ({people, offices, parties, places})[kind].map(row => ({ id: row.id, label: row.name }))]));
   references.elections = [...new Set(importedFilings.map(row => row.year))].sort((a,b) => b-a).map(year => ({ id: String(year), label: String(year) }));
   references.counties = places.filter(row => row.type === 'County').map(row => ({ id: row.id, label: row.name }));
@@ -76,8 +88,9 @@ export async function prepare(server, directory = workspace, saved = null) {
     });
   }
   for (const filing of importedFilings) await add('filings', filing.recordId,
-    `${filing.year} · ${filing.name} · ${filing.officeName}${filing.county ? ` · ${filing.county}` : ''}`, { ...filing, ...importedEntityStructure.filings.find(row => row.id === filing.recordId), placeId: filing.placeIds.at(-1) ?? '' }, {
-      entity: snapshot(filing), source: filing.source, identity: filing.recordId
+    `${filing.year} · ${filing.name} · ${filing.officeName} · ${filingRecordLabel(filing)}${filing.county ? ` · ${filing.county}` : ''}`, { ...filing, ...importedEntityStructure.filings.find(row => row.id === filing.recordId), placeId: filing.placeIds.at(-1) ?? '' }, {
+      entity: snapshot(filing), source: filing.source, identity: filing.recordId,
+      recordType: filingRecordLabel(filing), relatedRecords: relatedRecords.get(filing.recordId) ?? []
     });
   for (const place of places) await add('places', place.id, `${place.name} · ${place.type} · ${place.county}`, { ...importedEntityStructure.places.find(row => row.id === place.id), ...importedEntityLinks(placeEntityLinks(placeProfiles[place.id], placeLinks[place.id]?.links ?? [])), photo: importedEntityImage('places', place.id) ?? entityImageFor('places', place.parentId) ?? {}, emblem: importedEntityImage('places', place.id, 'emblem') ?? {}, contact: placeLinks[place.id]?.contact ?? placeProfiles[place.id]?.contact ?? {}, profile: placeProfiles[place.id] ?? {}, description: importedPlaceDescriptions[place.id] }, {
     entity: snapshot(place), placePath: `/places/${place.id}/`, identity: place.id, type: place.type, county: place.county
@@ -107,14 +120,20 @@ export async function syncRecord(relative, state, destination = overridesPath) {
   const entry = state.catalog.get(relative);
   if (!entry) throw new Error(`Unknown editor record: ${relative}`);
   const record = await readJson(join(state.directory, relative));
-  const changes = validateRecord(record, entry, state.validateChanges);
+  const changes = { ...validateRecord(record, entry, state.validateChanges) };
+  if (entry.kind === 'filings' && Object.keys(changes).some(path => path !== 'lastUpdated')) {
+    const today = new Date();
+    changes.lastUpdated = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  }
   const saved = await readJson(destination);
   saved[entry.kind] ??= {};
   if (Object.keys(changes).length) saved[entry.kind][entry.id] = changes;
   else delete saved[entry.kind][entry.id];
   state.validateStructure?.(saved);
   await atomicJson(destination, saved);
-  const displayName = changes.name ?? entry.source.name;
+  record.record.overrides = changes;
+  await atomicJson(join(state.directory, relative), record);
+  const displayName = entry.kind === 'filings' ? entry.title : changes.name ?? entry.source.name;
   if (typeof displayName === 'string') {
     entry.title = displayName;
     for (const reference of [state.references?.[entry.kind], ...(entry.kind === 'places' ? [state.references?.counties] : [])]) {

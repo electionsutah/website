@@ -35,7 +35,7 @@
   const get = (object, path) => path.split('.').reduce((value, key) => value?.[key], object);
   const symbols = { people: 'account_circle', filings: 'archive', places: 'location_on', offices: 'workspace_premium', parties: 'flag', office: 'workspace_premium', place: 'location_on', election: 'ballot',
     biography: 'account_circle', priorities: 'view_list', resources: 'language', sourceUrl: 'language', lastVerified: 'search',
-    status: 'check_circle', sourceStatus: 'check_circle', electionType: 'ballot', city: 'location_on', county: 'location_on', state: 'location_on', source: 'archive', lastUpdated: 'history',
+    status: 'check_circle', sourceStatus: 'check_circle', electionType: 'ballot', city: 'location_on', county: 'location_on', state: 'location_on', source: 'archive', filingDate: 'history', lastUpdated: 'history',
     'contact.website': 'language', 'contact.phone': 'call', 'contact.email': 'send', 'contact.address': 'location_on' };
   const social = { 'contact.facebook': 'facebook', 'contact.instagram': 'instagram', 'contact.twitter': 'x', 'contact.bluesky': 'bluesky' };
   for (const platform of ['facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack']) social[platform] = platform;
@@ -116,7 +116,7 @@
       const clearFilters = () => this.setState({ fieldQuery: '', fieldGroup: '' });
       return h('main', { className: 'repository-record', id: 'editor-main', tabIndex: -1, 'aria-label': 'Edit repository record' },
         h('div', { className: 'editor-record-toolbar' },
-          h('h1', { className: 'editor-record-heading' }, icon(kind), kind === 'people' ? 'Person profile' : kind === 'places' ? 'Place contacts and social accounts' : kind === 'offices' ? 'Office contacts' : kind === 'parties' ? 'Party contacts' : 'Election filing'),
+          h('h1', { className: 'editor-record-heading' }, icon(kind), kind === 'people' ? 'Person profile' : kind === 'places' ? 'Place contacts and social accounts' : kind === 'offices' ? 'Office contacts' : kind === 'parties' ? 'Party contacts' : record.context.recordType ?? 'Election source record'),
           h('div', { className: 'editor-field-filters', role: 'search', 'aria-label': 'Find fields in this record' },
             h('label', { htmlFor: filterId }, 'Find fields'),
             h('div', { className: 'editor-filter-search' }, h('span', { className: 'editor-symbol', 'aria-hidden': true }, 'search'),
@@ -129,6 +129,12 @@
           ...[['people', 'Person', record.source.name], ['office', 'Office', record.source.officeName], ['election', 'Election', record.source.year], ['place', 'Place', [record.source.city, record.source.county, record.source.state].filter(Boolean).join(', ')]].map(([key, label, value]) =>
             h('div', { key }, h('dt', {}, icon(key), label), h('dd', {}, value || 'Not published')))) : null,
         h('p', { className: 'editor-note' }, 'Choose Override to edit a field, Clear to remove its value, or Use imported value to follow automated updates. Save with Publish at the top.'),
+        kind === 'filings' && record.context.relatedRecords?.length ? h('section', { className: 'editor-related-records', 'aria-label': 'Candidacy source records' },
+          h('h2', {}, 'Candidacy source records'),
+          h('p', {}, 'This form edits one source record. Set the filing date on the declaration of candidacy record.'),
+          h('ul', {}, ...record.context.relatedRecords.map(related => h('li', { key: related.recordId },
+            related.recordId === record.context.identity ? h('strong', {}, `${related.label} (current record)`) : h('a', { href: related.editorUrl }, related.label),
+            ' · ', h('a', { href: related.source, target: '_blank', rel: 'noopener' }, 'View source'))))) : null,
         (record.context.personPath || record.context.placePath || record.context.entityPath) ? h('a', { href: initialStatus.siteUrl + (record.context.personPath || record.context.placePath || record.context.entityPath), target: '_blank', rel: 'noopener' }, 'Open on the local site ↗') : null,
         h('details', { className: 'editor-context' }, h('summary', {}, 'All entity fields, imported values, and relationships'), h('pre', {}, JSON.stringify({ ...record.context, importedFields: record.source }, null, 2))),
         ...[...new Set(fields.map(fieldGroup))].map((group, index) => {
@@ -261,15 +267,20 @@
   CMS.registerWidget('repository-record', Control);
   CMS.registerEventListener({ name: 'preSave', handler: async ({ entry }) => {
     const record = entry.get('data').toJS();
-    const displayName = record.record.overrides.name ?? record.record.source.name;
-    if (typeof displayName === 'string') record.title = displayName;
     const relative = entry.get('path');
+    if (relative.startsWith('content/filings/') && Object.keys(record.record.overrides).some(path => path !== 'lastUpdated')) {
+      const today = new Date();
+      record.record.overrides.lastUpdated = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+    }
+    const displayName = relative.startsWith('content/filings/') ? record.title : record.record.overrides.name ?? record.record.source.name;
+    if (typeof displayName === 'string') record.title = displayName;
     const response = await fetch('/validate', {
       method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ relative, record })
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || 'Unable to validate this edit.');
-    return typeof displayName === 'string' ? entry.get('data').set('title', displayName) : entry.get('data');
+    let data = entry.get('data').setIn(['record', 'overrides'], record.record.overrides);
+    return typeof displayName === 'string' ? data.set('title', displayName) : data;
   } });
   CMS.registerLocale('editor-en', {
     editor: { editorToolbar: { backCollection: 'Editing in %{collectionLabel} collection' } }

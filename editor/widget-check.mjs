@@ -4,6 +4,7 @@ import vm from 'node:vm';
 
 // Exercise the browser widget without a DOM or repository writes.
 let widget;
+let preSave;
 const fields = [
   { path: 'photo.src', label: 'Portrait', type: 'image' },
   { path: 'photo.artist', label: 'Portrait creator' },
@@ -11,12 +12,12 @@ const fields = [
   { path: 'links', label: 'Websites and social accounts', type: 'links' }
 ];
 const node = () => ({ append() {}, replaceChildren() {}, setAttribute() {} });
-const CMS = { registerWidget(name, control) { widget = control; }, registerEventListener() {}, registerLocale() {}, init() {} };
+const CMS = { registerWidget(name, control) { widget = control; }, registerEventListener(event) { if (event.name === 'preSave') preSave = event.handler; }, registerLocale() {}, init() {} };
 await vm.runInNewContext(await readFile(new URL('./app.js', import.meta.url), 'utf8'), {
   URL, window: { CMS, createClass: spec => spec, h: (tag, props, ...children) => ({ tag, props: props ?? {}, children: children.flat(Infinity) }), location: { hash: '#/collections/people' }, addEventListener() {} },
   document: { body: { dataset: {} }, querySelector() { return null; }, getElementById: node, createElement: node, createTextNode: text => text },
   MutationObserver: class { observe() {} }, setInterval() {},
-  fetch: async url => ({ json: async () => url === '/config.json' ? { collections: [] } : url === '/schema.json' ? { people: fields } : url === '/status.json' ? { counts: { people: 1, filings: 1, places: 1 }, siteUrl: 'http://localhost' } : {} })
+  fetch: async url => ({ ok: true, json: async () => url === '/config.json' ? { collections: [] } : url === '/schema.json' ? { people: fields, filings: fields } : url === '/status.json' ? { counts: { people: 1, filings: 1, places: 1 }, siteUrl: 'http://localhost' } : {} })
 });
 let writes = 0;
 const instance = { ...widget, state: widget.getInitialState(), setState(patch) { Object.assign(this.state, patch); }, props: {
@@ -73,4 +74,34 @@ assert(!('photo.src' in instance.props.value.overrides));
 assert(!('photo.artist' in instance.props.value.overrides));
 assert.equal(input('record-photo.src').props.value, '/images/people/original.webp');
 assert.ok(writes > 0);
+const immutable = value => ({
+  toJS: () => structuredClone(value),
+  set: (key, next) => immutable({ ...value, [key]: next }),
+  setIn: ([parent, key], next) => immutable({ ...value, [parent]: { ...value[parent], [key]: next } })
+});
+const save = async (path, overrides) => (await preSave({ entry: { get: key => key === 'path' ? path : immutable({ title: '2018 · Original · General-election result record', record: { source: { name: 'Original' }, overrides } }) } })).toJS();
+const savedFiling = await save('content/filings/test.json', { filingDate: '2026-03-12', lastUpdated: '2000-01-01' });
+const today = new Date();
+const localDate = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+assert.equal(savedFiling.record.overrides.lastUpdated, localDate, 'Decap saves the automatic timestamp with the edited value');
+assert.equal(savedFiling.record.overrides.filingDate, '2026-03-12');
+assert.equal(savedFiling.title, '2018 · Original · General-election result record', 'Saving retains the descriptive filing title');
+assert.equal((await save('content/filings/test.json', { 'contact.email': '' })).record.overrides.lastUpdated, localDate, 'Explicit clears count as overrides');
+assert.deepEqual((await save('content/filings/test.json', {})).record.overrides, {}, 'No automatic override when following imported values');
+assert.equal((await save('content/people/test.json', { name: 'Updated' })).record.overrides.lastUpdated, undefined, 'Filing timestamps are not added to other collections');
 console.log('PASS: canonical link group, structured rows, URL validation/recovery, draft retention, deletion, and metadata preservation');
+
+const filingInstance = { ...instance, state: widget.getInitialState(), props: { ...instance.props,
+  field: { get: () => 'filings' }, value: { source: { name: 'Ben McAdams', year: 2018 }, overrides: {}, context: {
+    identity: 'general', recordType: 'General-election result record', relatedRecords: [
+      { recordId: 'general', label: 'General-election result record', source: 'https://example.org/canvass.xlsx', editorUrl: '#/collections/filings/entries/general' },
+      { recordId: 'declaration', label: 'Declaration of candidacy', source: 'https://example.org/declaration.pdf', editorUrl: '#/collections/filings/entries/declaration' }
+    ]
+  } }
+} };
+const filingTree = filingInstance.render();
+assert(find(filingTree, n => n.tag === 'h1' && n.children.includes('General-election result record')).length);
+assert(find(filingTree, n => n.tag === 'a' && n.props.href === '#/collections/filings/entries/declaration' && n.children.includes('Declaration of candidacy')).length);
+assert(find(filingTree, n => n.tag === 'a' && n.props.href === 'https://example.org/declaration.pdf').length);
+assert(find(filingTree, n => n.tag === 'strong' && n.children.includes('General-election result record (current record)')).length);
+console.log('PASS: filing headings, related declaration navigation, current-record marker, and source links');

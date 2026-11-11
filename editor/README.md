@@ -39,6 +39,21 @@ local repository; it does not commit, push, or deploy. The footer confirms when
 the canonical override file has been written. The companion site updates through
 Vite; the public site changes only after the usual build and deployment.
 
+For a date found in a declaration PDF, open its **Filing record**, choose
+**Override** beside **Filing date**, and enter the date. This saves `filingDate`,
+which supplies `event.date` for the timeline’s **Filed** date badge. For a
+consolidated candidacy, edit the declaration record (status **Filed**).
+Use **Filing source URL** to retain the PDF evidence. **Filing update date** is
+separate metadata and does not set the timeline date.
+Saving a filing with any overrides automatically sets **Filing update date**
+(`lastUpdated`) to today in the editor machine’s local timezone. This also
+applies to explicit clears. Restoring every field to its imported value does
+not add an automatic date override.
+Filing list titles and form headings identify declarations, primary results,
+general-election results, and status records. **Candidacy source records** links
+the records grouped on the public timeline, with a separate **View source** link
+for each. The same source URLs appear in the expanded entity JSON.
+
 ## Data and persistence
 
 ### Schema screen
