@@ -79,17 +79,17 @@
       </div>
       <div class="filter-panel-body">
       {#each facets as facet (facet.key)}
-        {#if facet.key === 'county' || facet.key === 'city'}
+        {#if facet.key === 'year' || facet.key === 'county' || facet.key === 'city'}
           <div class="facet facet-combobox">
             <Combobox
               id={`${panelId}-${facet.key}`}
               label={facet.label}
-              options={facet.values.filter((option) => !option.selected && option.count > 0).map((option) => ({ value: option.value, label: option.value, description: `${formatCount(option.count)} ${option.count === 1 ? resultSingular : resultPlural}` })).sort((a, b) => a.label.localeCompare(b.label))}
-              placeholder={facet.key === 'county' ? 'Search counties…' : 'Search cities…'}
-              itemLabel={facet.key}
-              itemsLabel={facet.key === 'county' ? 'counties' : 'cities'}
+              options={facet.values.filter((option) => !option.selected && option.count > 0).map((option) => ({ value: option.value, label: option.value, description: `${formatCount(option.count)} ${option.count === 1 ? resultSingular : resultPlural}` })).sort((a, b) => facet.key === 'year' ? Number(b.value) - Number(a.value) : a.label.localeCompare(b.label))}
+              placeholder={facet.key === 'year' ? 'Search election years…' : facet.key === 'county' ? 'Search counties…' : 'Search cities…'}
+              itemLabel={facet.key === 'year' ? 'election year' : facet.key}
+              itemsLabel={facet.key === 'year' ? 'election years' : facet.key === 'county' ? 'counties' : 'cities'}
               hint="Type to search. Select one or more."
-              emptyMessage={`No matching ${facet.key === 'county' ? 'counties' : 'cities'} available.`}
+              emptyMessage={`No matching ${facet.key === 'year' ? 'election years' : facet.key === 'county' ? 'counties' : 'cities'} available.`}
               clearable={false}
               onSelect={(value) => { if (value) onSelection(toggle(selection, facet.key, value)); }}
             />

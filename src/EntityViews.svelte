@@ -674,7 +674,7 @@
           {@const cardParty = section === 'people' && card.displayFiling ? partiesById.get(card.displayFiling.partyId) : undefined}
           {@const tileImage = section === 'places' ? placeImageFor(placesById.get(card.id)) : undefined}
           {@const photoPopoverId = `place-photo-${card.id.replaceAll('/', '-')}`}
-          <article class="entity-card index-tile" class:place-tile={section === 'places'} class:has-photo={!!tileImage} style={card.accent ? `--card-accent:${card.accent}` : ''} style:--place-photo={tileImage ? `url("${tileImage.src}")` : undefined}>
+          <article class="entity-card index-tile" class:place-tile={section === 'places'} class:person-tile={section === 'people'} class:has-photo={!!tileImage} style={card.accent ? `--card-accent:${card.accent}` : ''} style:--place-photo={tileImage ? `url("${tileImage.src}")` : undefined}>
             <a class="card-record-link" href={hrefFor(section, card.id)} onclick={(event) => open(event, hrefFor(section, card.id))}>
               {#if section === 'places'}
                 {#if tileImage}
@@ -692,7 +692,7 @@
               <div class="index-card-content">
               {#if card.logo}<span class="card-logo" class:inverse-logo={card.id === 'utah-republican-party'}><img src={card.logo} alt={`${card.title} logo`} /></span>{:else}{#if section === 'people'}<PersonAvatar personId={card.id} className="card-avatar" />{:else if section === 'offices' || section === 'parties'}<span class="card-avatar icon-avatar" aria-hidden="true"><Icon name={section === 'parties' ? 'flag' : 'workspace_premium'} /></span>{:else}<span class="card-avatar" aria-hidden="true">{card.initials || card.title.charAt(0)}</span>{/if}{/if}
               {#if section !== 'people' && !omitColumns.includes('party')}<small>{card.eyebrow}</small>{/if}
-              <h2>{card.title}</h2>{#if section === 'people' && !omitColumns.includes('party')}<small class="card-party">{#if cardParty?.logo}<span class="filing-party-logo" class:inverse-logo={cardParty.id === 'utah-republican-party'} style:--party-color={cardParty.color}><img src={cardParty.logo} alt="" loading="lazy" decoding="async" /></span>{/if}<span>{card.columns[1]}</span></small>{/if}<p>{section === 'people' ? card.columns[0] : card.meta}</p>{#if showStatus}<p class="candidate-status"><span class="status-badge">Status</span> {card.statuses.join(' · ')}</p>{/if}<div class="card-footer"><span>{section === 'people' || filtering ? filingCount(card) : card.count}{#if !omitColumns.includes('years') && section === 'people'} · {card.years.join(', ')}{/if}</span><b>View record <Icon name="arrow_forward" /></b></div>
+              <h2>{card.title}</h2>{#if section === 'people' && !omitColumns.includes('party')}<small class="card-party">{#if cardParty?.logo}<span class="filing-party-logo" class:inverse-logo={cardParty.id === 'utah-republican-party'} style:--party-color={cardParty.color}><img src={cardParty.logo} alt="" loading="lazy" decoding="async" /></span>{/if}<span>{card.columns[1]}</span></small>{/if}<p>{section === 'people' ? card.columns[0] : card.meta}</p>{#if showStatus}<p class="candidate-status"><span class="status-badge">Status</span> {card.statuses.join(' · ')}</p>{/if}<div class="card-footer"><span>{section === 'people' || filtering ? filingCount(card) : card.count}</span><b>View record <Icon name="arrow_forward" /></b></div>
               </div>
               {/if}
             </a>
