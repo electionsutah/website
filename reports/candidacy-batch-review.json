@@ -3770,6 +3770,384 @@
           "electionType": "general"
         }
       ]
+    },
+    {
+      "id": "joylin-lincoln",
+      "name": "Joylin Lincoln",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2018-06-26",
+          "summary": "4,363 votes · 16.25%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2018-joylin-lincoln-state-school-board-district-9-unaffiliated",
+          "url": "https://web.archive.org/web/20190228163421/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%20of%20Education%209%20-%20Joylin%20Lincoln.pdf",
+          "officeId": "state-school-board-district-9",
+          "partyId": "unaffiliated",
+          "county": "Utah",
+          "city": "Saratoga Springs",
+          "status": "filed",
+          "personId": "joylin-lincoln",
+          "year": 2018,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2018-primary-joylin-lincoln-state-school-board-district-9-not-reported--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "officeId": "state-school-board-district-9",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "joylin-lincoln",
+          "year": 2018,
+          "electionType": "primary"
+        }
+      ]
+    },
+    {
+      "id": "mark-a-huntsman",
+      "name": "Mark A. Huntsman",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "48,448 votes · 100.00%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2018-mark-a-huntsman-state-school-board-district-14-unaffiliated",
+          "url": "https://web.archive.org/web/20200213004353/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%2014%20-%20Mark%20A.%20Huntsman.pdf",
+          "officeId": "state-school-board-district-14",
+          "partyId": "unaffiliated",
+          "county": "Millard",
+          "city": "Fillmore",
+          "status": "filed",
+          "personId": "mark-a-huntsman",
+          "year": 2018,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2018-general-mark-a-huntsman-state-school-board-district-14-not-reported--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "officeId": "state-school-board-district-14",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "mark-a-huntsman",
+          "year": 2018,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "patrick-d-riley",
+      "name": "Patrick D. Riley",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "22,937 votes · 35.03%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2018-patrick-d-riley-state-school-board-district-5-unaffiliated",
+          "url": "https://web.archive.org/web/20200213004334/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Patrick%20D.%20Riley.pdf",
+          "officeId": "state-school-board-district-5",
+          "partyId": "unaffiliated",
+          "county": "Davis",
+          "city": "Centerville",
+          "status": "filed",
+          "personId": "patrick-d-riley",
+          "year": 2018,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2018-general-patrick-d-riley-state-school-board-district-5-not-reported--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "officeId": "state-school-board-district-5",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "patrick-d-riley",
+          "year": 2018,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "scott-l-hansen",
+      "name": "Scott L. Hansen",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "28,811 votes · 60.49%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2018-scott-l-hansen-state-school-board-district-2-unaffiliated",
+          "url": "https://web.archive.org/web/20200213004322/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Scott%20L.%20Hansen.pdf",
+          "officeId": "state-school-board-district-2",
+          "partyId": "unaffiliated",
+          "county": "Weber",
+          "city": "Liberty",
+          "status": "filed",
+          "personId": "scott-l-hansen",
+          "year": 2018,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2018-general-scott-l-hansen-state-school-board-district-2-not-reported--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "officeId": "state-school-board-district-2",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "scott-l-hansen",
+          "year": 2018,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "terryl-warner",
+      "name": "Terryl Warner",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "21,618 votes · 39.41%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2018-terryl-warner-state-school-board-district-1-unaffiliated",
+          "url": "https://web.archive.org/web/20190228163411/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%201%20-%20Terryl%20Warner.pdf",
+          "officeId": "state-school-board-district-1",
+          "partyId": "unaffiliated",
+          "county": "Cache",
+          "city": "Hyrum",
+          "status": "filed",
+          "personId": "terryl-warner",
+          "year": 2018,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2018-general-terryl-warner-state-school-board-district-1-not-reported--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "officeId": "state-school-board-district-1",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "terryl-warner",
+          "year": 2018,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "thomas-e-nedreberg",
+      "name": "Thomas E. Nedreberg",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "11,133 votes · 26.19%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2018-thomas-e-nedreberg-state-school-board-district-3-unaffiliated",
+          "url": "https://web.archive.org/web/20200213004329/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Thomas%20E.%20Nedreberg.pdf",
+          "officeId": "state-school-board-district-3",
+          "partyId": "unaffiliated",
+          "county": "Juab",
+          "city": "Eureka",
+          "status": "filed",
+          "personId": "thomas-e-nedreberg",
+          "year": 2018,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2018-general-thomas-e-nedreberg-state-school-board-district-3-not-reported--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "officeId": "state-school-board-district-3",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "thomas-e-nedreberg",
+          "year": 2018,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "joe-buchman",
+      "name": "Joe Buchman",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "1,281 votes · 0.81%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-joe-buchman-u-s-house-district-2-unaffiliated",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Buchman-CD2.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "unaffiliated",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "joe-buchman",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-joe-buchman-u-s-house-of-representatives-district-2-not-reported--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "joe-buchman",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "perry-t-myers",
+      "name": "Perry T. Myers",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "2,276 votes · 1.44%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-perry-t-myers-u-s-house-district-2-unaffiliated",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Myers-CD2.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "unaffiliated",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "perry-t-myers",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-general-perry-t-myers-u-s-house-of-representatives-district-2-not-reported--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "perry-t-myers",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "jonathan-la-rele-peterson",
+      "name": "Jonathan La Rele Peterson",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "2 votes · 0.00%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2023-general-jonathan-la-rele-peterson-u-s-house-of-representatives-district-2-not-reported--",
+          "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "jonathan-la-rele-peterson",
+          "year": 2023,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2023-jonathan-larele-peterson-u-s-house-district-2-unaffiliated",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/08/Jonathan-Peterson-CD2-Public.pdf",
+          "officeId": "u-s-house-district-2",
+          "partyId": "unaffiliated",
+          "county": "",
+          "city": "",
+          "status": "filed",
+          "personId": "jonathan-la-rele-peterson",
+          "year": 2023,
+          "electionType": "general"
+        }
+      ]
     }
   ],
   "ballotBatches": [
@@ -3788,6 +4166,6 @@
       "scope": "All statewide/multi-county contests in the certified document; single-county canvasses are separate."
     }
   ],
-  "duplicateCardsRemoved": 102,
+  "duplicateCardsRemoved": 111,
   "scope": "Reviewed 2023 congressional and 2026 party-prefix candidacies, plus all published contests in the 2008 regular-primary and 2022 statewide/multi-county primary canvasses. Each merged group has exact source-record membership and validated stage/office/party context. No broad fuzzy identity merge or unavailable-results claim is made."
 }

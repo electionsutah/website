@@ -1,0 +1,74 @@
+{
+  "batchId": "duplicate-cards-02",
+  "contentHash": "7f7d4509f5df6a06070a97b6b596ddfeda1ab7aaa0997a4384997c75355ac636",
+  "approvedBy": "User",
+  "approval": "Batch 02 is approved",
+  "appliedOn": "2026-11-11T04:08:16.384Z",
+  "people": 6,
+  "sourceRecordsRetained": 12,
+  "cardsBefore": 12,
+  "cardsAfter": 6,
+  "affiliationPolicy": "Prefer a matching source-imported named party/affiliation over not-reported; preserve raw values and review conflicting named affiliations.",
+  "cases": [
+    {
+      "caseId": "DC-03745e837b1b",
+      "personId": "joylin-lincoln",
+      "groupId": "joylin-lincoln-2018-school-board-review",
+      "recordIds": [
+        "2018-joylin-lincoln-state-school-board-district-9-unaffiliated",
+        "2018-primary-joylin-lincoln-state-school-board-district-9-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-b8bc2326f50b",
+      "personId": "mark-a-huntsman",
+      "groupId": "mark-a-huntsman-2018-school-board-review",
+      "recordIds": [
+        "2018-mark-a-huntsman-state-school-board-district-14-unaffiliated",
+        "2018-general-mark-a-huntsman-state-school-board-district-14-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-7da038829085",
+      "personId": "patrick-d-riley",
+      "groupId": "patrick-d-riley-2018-school-board-review",
+      "recordIds": [
+        "2018-patrick-d-riley-state-school-board-district-5-unaffiliated",
+        "2018-general-patrick-d-riley-state-school-board-district-5-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-dfb5c2918fbb",
+      "personId": "scott-l-hansen",
+      "groupId": "scott-l-hansen-2018-school-board-review",
+      "recordIds": [
+        "2018-scott-l-hansen-state-school-board-district-2-unaffiliated",
+        "2018-general-scott-l-hansen-state-school-board-district-2-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-2b4d72199ed4",
+      "personId": "terryl-warner",
+      "groupId": "terryl-warner-2018-school-board-review",
+      "recordIds": [
+        "2018-terryl-warner-state-school-board-district-1-unaffiliated",
+        "2018-general-terryl-warner-state-school-board-district-1-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-62b6d7bb9f43",
+      "personId": "thomas-e-nedreberg",
+      "groupId": "thomas-e-nedreberg-2018-school-board-review",
+      "recordIds": [
+        "2018-thomas-e-nedreberg-state-school-board-district-3-unaffiliated",
+        "2018-general-thomas-e-nedreberg-state-school-board-district-3-not-reported--"
+      ]
+    }
+  ],
+  "validation": {
+    "candidacyHistory": "passed",
+    "sourcePreservation": "12 original records retained",
+    "affiliation": "All six display source-imported Unaffiliated; original Not reported values retained",
+    "ballotStages": "Joylin Lincoln: primary; other five: general; all published votes and dates checked"
+  }
+}

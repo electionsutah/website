@@ -1,0 +1,52 @@
+{
+  "batchId": "duplicate-cards-03",
+  "contentHash": "bf197eeb64106652faf972e24b0ce1f13b6c2ca87f06621ac755dcc0f5ac22f5",
+  "approvedBy": "User",
+  "approval": "Batch 03 is approved",
+  "appliedOn": "2026-11-11T04:18:37.859Z",
+  "people": 3,
+  "sourceRecordsRetained": 6,
+  "cardsBefore": 6,
+  "cardsAfter": 3,
+  "affiliationPolicy": "Prefer a matching source-imported named party/affiliation over not-reported; preserve raw values and review conflicting named affiliations.",
+  "cases": [
+    {
+      "caseId": "DC-f1119eea5eb2",
+      "personId": "joe-buchman",
+      "groupId": "joe-buchman-2023-congressional-review",
+      "recordIds": [
+        "2023-joe-buchman-u-s-house-district-2-unaffiliated",
+        "2023-general-joe-buchman-u-s-house-of-representatives-district-2-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-30b283673808",
+      "personId": "perry-t-myers",
+      "groupId": "perry-t-myers-2023-congressional-review",
+      "recordIds": [
+        "2023-perry-t-myers-u-s-house-district-2-unaffiliated",
+        "2023-general-perry-t-myers-u-s-house-of-representatives-district-2-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-925174265248",
+      "personId": "jonathan-la-rele-peterson",
+      "groupId": "jonathan-la-rele-peterson-2023-congressional-review",
+      "recordIds": [
+        "2023-general-jonathan-la-rele-peterson-u-s-house-of-representatives-district-2-not-reported--",
+        "2023-jonathan-larele-peterson-u-s-house-district-2-unaffiliated"
+      ]
+    }
+  ],
+  "validation": {
+    "candidacyChecks": "passed",
+    "votesPreserved": {
+      "joe-buchman": 1281,
+      "perry-t-myers": 2276,
+      "jonathan-la-rele-peterson": 2
+    },
+    "sources": "Six original source records retained; Peterson Write-In label preserved",
+    "resultsDesignation": "Unofficial",
+    "affiliation": "Unaffiliated"
+  }
+}

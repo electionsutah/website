@@ -1,0 +1,325 @@
+{
+  "version": 1,
+  "batchId": "duplicate-cards-03",
+  "title": "2023 congressional declaration/results consolidation",
+  "preparedOn": "2026-11-11",
+  "scope": "3 known people; 3 cards removed from display; 6 source records retained. Prefer the named source affiliation to Not reported. No production changes until this exact batch is approved.",
+  "cases": [
+    {
+      "caseId": "DC-f1119eea5eb2",
+      "personId": "joe-buchman",
+      "name": "Joe Buchman",
+      "office": "U.S. House District 2",
+      "officeId": "u-s-house-district-2",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2023-joe-buchman-u-s-house-district-2-unaffiliated",
+          "personId": "joe-buchman",
+          "year": 2023,
+          "electionType": "general",
+          "officeId": "u-s-house-district-2",
+          "partyId": "unaffiliated",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/06/Buchman-CD2.pdf"
+        },
+        {
+          "recordId": "2023-general-joe-buchman-u-s-house-of-representatives-district-2-not-reported--",
+          "personId": "joe-buchman",
+          "year": 2023,
+          "electionType": "general",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "proposedGroup": {
+        "id": "joe-buchman-2023-congressional-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "joe-buchman",
+        "year": 2023,
+        "electionType": "general",
+        "canonicalRecordId": "2023-joe-buchman-u-s-house-district-2-unaffiliated",
+        "recordIds": [
+          "2023-joe-buchman-u-s-house-district-2-unaffiliated",
+          "2023-general-joe-buchman-u-s-house-of-representatives-district-2-not-reported--"
+        ],
+        "resultContestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2023-joe-buchman-u-s-house-district-2-unaffiliated",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Buchman-CD2.pdf",
+            "officeId": "u-s-house-district-2",
+            "partyId": "unaffiliated",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "joe-buchman",
+            "year": 2023,
+            "electionType": "general"
+          },
+          {
+            "recordId": "2023-general-joe-buchman-u-s-house-of-representatives-district-2-not-reported--",
+            "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "officeId": "u-s-house-of-representatives-district-2",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "joe-buchman",
+            "year": 2023,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/06/Buchman-CD2.pdf",
+          "sourceLabel": "Candidacy source record"
+        },
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "1,281 votes · 0.81%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "sourceLabel": "Unofficial results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label. Keep the results feed labeled unofficial; retain any Write-In designation in source evidence.",
+      "contentHash": "daf8ae50f1839ca0676127e377804ddf37cda43194f909c4435dc016b68bb453"
+    },
+    {
+      "caseId": "DC-30b283673808",
+      "personId": "perry-t-myers",
+      "name": "Perry T. Myers",
+      "office": "U.S. House District 2",
+      "officeId": "u-s-house-district-2",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2023-perry-t-myers-u-s-house-district-2-unaffiliated",
+          "personId": "perry-t-myers",
+          "year": 2023,
+          "electionType": "general",
+          "officeId": "u-s-house-district-2",
+          "partyId": "unaffiliated",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/06/Myers-CD2.pdf"
+        },
+        {
+          "recordId": "2023-general-perry-t-myers-u-s-house-of-representatives-district-2-not-reported--",
+          "personId": "perry-t-myers",
+          "year": 2023,
+          "electionType": "general",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        }
+      ],
+      "proposedGroup": {
+        "id": "perry-t-myers-2023-congressional-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "perry-t-myers",
+        "year": 2023,
+        "electionType": "general",
+        "canonicalRecordId": "2023-perry-t-myers-u-s-house-district-2-unaffiliated",
+        "recordIds": [
+          "2023-perry-t-myers-u-s-house-district-2-unaffiliated",
+          "2023-general-perry-t-myers-u-s-house-of-representatives-district-2-not-reported--"
+        ],
+        "resultContestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2023-perry-t-myers-u-s-house-district-2-unaffiliated",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/06/Myers-CD2.pdf",
+            "officeId": "u-s-house-district-2",
+            "partyId": "unaffiliated",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "perry-t-myers",
+            "year": 2023,
+            "electionType": "general"
+          },
+          {
+            "recordId": "2023-general-perry-t-myers-u-s-house-of-representatives-district-2-not-reported--",
+            "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "officeId": "u-s-house-of-representatives-district-2",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "perry-t-myers",
+            "year": 2023,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/06/Myers-CD2.pdf",
+          "sourceLabel": "Candidacy source record"
+        },
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "2,276 votes · 1.44%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "sourceLabel": "Unofficial results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label. Keep the results feed labeled unofficial; retain any Write-In designation in source evidence.",
+      "contentHash": "f6b47c1ad3b147e094a8acbe78bb9f74c88010ad6fe9a7226891326e1698bc7b"
+    },
+    {
+      "caseId": "DC-925174265248",
+      "personId": "jonathan-la-rele-peterson",
+      "name": "Jonathan La Rele Peterson",
+      "office": "U.S. House District 2",
+      "officeId": "u-s-house-district-2",
+      "year": 2023,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2023-general-jonathan-la-rele-peterson-u-s-house-of-representatives-district-2-not-reported--",
+          "personId": "jonathan-la-rele-peterson",
+          "year": 2023,
+          "electionType": "general",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf"
+        },
+        {
+          "recordId": "2023-jonathan-larele-peterson-u-s-house-district-2-unaffiliated",
+          "personId": "jonathan-la-rele-peterson",
+          "year": 2023,
+          "electionType": "general",
+          "officeId": "u-s-house-district-2",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Write-In",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/08/Jonathan-Peterson-CD2-Public.pdf"
+        }
+      ],
+      "proposedGroup": {
+        "id": "jonathan-la-rele-peterson-2023-congressional-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "jonathan-la-rele-peterson",
+        "year": 2023,
+        "electionType": "general",
+        "canonicalRecordId": "2023-jonathan-larele-peterson-u-s-house-district-2-unaffiliated",
+        "recordIds": [
+          "2023-general-jonathan-la-rele-peterson-u-s-house-of-representatives-district-2-not-reported--",
+          "2023-jonathan-larele-peterson-u-s-house-district-2-unaffiliated"
+        ],
+        "resultContestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "resultSource": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2023-Nov-General-Utah-cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2023-general-jonathan-la-rele-peterson-u-s-house-of-representatives-district-2-not-reported--",
+            "url": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+            "officeId": "u-s-house-of-representatives-district-2",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "jonathan-la-rele-peterson",
+            "year": 2023,
+            "electionType": "general"
+          },
+          {
+            "recordId": "2023-jonathan-larele-peterson-u-s-house-district-2-unaffiliated",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/08/Jonathan-Peterson-CD2-Public.pdf",
+            "officeId": "u-s-house-district-2",
+            "partyId": "unaffiliated",
+            "county": "",
+            "city": "",
+            "status": "filed",
+            "personId": "jonathan-la-rele-peterson",
+            "year": 2023,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/08/Jonathan-Peterson-CD2-Public.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2023-11-21",
+          "summary": "2 votes · 0.00%",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "sourceLabel": "Unofficial results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label. Keep the results feed labeled unofficial; retain any Write-In designation in source evidence.",
+      "contentHash": "d3ff7b7f2ed8c48ccb9c5b3a518856e4204a9c365d36f1c2ac14b16b889b5935"
+    }
+  ],
+  "contentHash": "bf197eeb64106652faf972e24b0ce1f13b6c2ca87f06621ac755dcc0f5ac22f5"
+}

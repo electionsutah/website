@@ -28,6 +28,13 @@ try {
   if(person.id==='michael-farrell')assert(histories.some(h=>h.filing.year===2026&&h.filing.officeId==='state-house-district-23'),'A distinct office is never folded into the congressional race');
   assert.equal(new Set(histories.flatMap(h=>h.records)).size,person.filings.length);
   const main=resultForFiling(history.filing,history.filing.electionType==='general'?general:primary);assert(main);
+  if(review.id.endsWith('-2023-congressional-review')){
+   assert.equal(history.filing.partyId,'unaffiliated');
+   assert.equal(main.official,false,'Imported general results retain their unofficial designation');
+   const expected={'joe-buchman':1281,'perry-t-myers':2276,'jonathan-la-rele-peterson':2};
+   assert.equal(main.options.find(o=>identityKey(o.name)===identityKey(person.name))?.votes,expected[person.id]);
+   if(person.id==='jonathan-la-rele-peterson')assert(history.records.some(r=>r.sourceStatus==='Write-In'),'Original write-in designation survives consolidation');
+  }
   const other=[];
   for(const stage of new Set(review.resultLinks.map(link=>link.electionType))){
    const row=history.records.find(row=>row.electionType===stage&&row.status!=='filed')??history.records.find(row=>row.electionType===stage);
@@ -45,7 +52,7 @@ try {
   people.push({id:person.id,name:person.name,year:review.year,beforeCards:review.recordIds.length,afterCards:1,recordsPreserved:history.records.length,stages:events.filter(e=>['Primary','General Election'].includes(e.title)).map(e=>({title:e.title,date:e.date,summary:e.summary,source:e.source})),sources:review.sources});
  }
  assert.equal(people.length,reviews.length);
- assert.equal(reviews.filter(r=>r.year===2023&&r.sources.some(s=>s.officeId==='u-s-house-district-2')).length,7,'Original congressional cohort remains intact');
+ assert.equal(reviews.filter(r=>r.year===2023&&!r.id.endsWith('-2023-congressional-review')&&r.sources.some(s=>s.officeId==='u-s-house-district-2')).length,7,'Original congressional cohort remains intact');
  assert(people.filter(p=>p.year===2026).length>=35,'Batch review covers current prefix-label duplicates');
  const aaron=candidacyHistory(peopleById.get('aaron-wiley').filings).find(h=>h.filing.year===2026);
  assert.equal(aaron.records.length,2);assert.equal(aaron.filing.status,'defeated','The later primary-ending status is retained');

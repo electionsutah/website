@@ -1,0 +1,640 @@
+{
+  "version": 1,
+  "batchId": "duplicate-cards-02",
+  "title": "2018 school-board declaration/canvass consolidation",
+  "preparedOn": "2026-11-11",
+  "scope": "6 known people; 6 cards removed from display; 12 source records retained. Prefer the named source affiliation to Not reported. No production changes until this exact batch is approved.",
+  "cases": [
+    {
+      "caseId": "DC-03745e837b1b",
+      "personId": "joylin-lincoln",
+      "name": "Joylin Lincoln",
+      "office": "State School Board District 9",
+      "officeId": "state-school-board-district-9",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-joylin-lincoln-state-school-board-district-9-unaffiliated",
+          "personId": "joylin-lincoln",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-9",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Utah",
+          "city": "Saratoga Springs",
+          "source": "https://web.archive.org/web/20190228163421/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%20of%20Education%209%20-%20Joylin%20Lincoln.pdf"
+        },
+        {
+          "recordId": "2018-primary-joylin-lincoln-state-school-board-district-9-not-reported--",
+          "personId": "joylin-lincoln",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-9",
+          "partyId": "not-reported",
+          "status": "primary_election",
+          "sourceStatus": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "joylin-lincoln-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "joylin-lincoln",
+        "year": 2018,
+        "electionType": "primary",
+        "canonicalRecordId": "2018-joylin-lincoln-state-school-board-district-9-unaffiliated",
+        "recordIds": [
+          "2018-joylin-lincoln-state-school-board-district-9-unaffiliated",
+          "2018-primary-joylin-lincoln-state-school-board-district-9-not-reported--"
+        ],
+        "resultContestId": "2018-primary-state-board-of-education-2",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "primary",
+            "contestId": "2018-primary-state-board-of-education-2",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-joylin-lincoln-state-school-board-district-9-unaffiliated",
+            "url": "https://web.archive.org/web/20190228163421/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%20of%20Education%209%20-%20Joylin%20Lincoln.pdf",
+            "officeId": "state-school-board-district-9",
+            "partyId": "unaffiliated",
+            "county": "Utah",
+            "city": "Saratoga Springs",
+            "status": "filed",
+            "personId": "joylin-lincoln",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-primary-joylin-lincoln-state-school-board-district-9-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-9",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "primary_election",
+            "personId": "joylin-lincoln",
+            "year": 2018,
+            "electionType": "primary"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20190228163421/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%20of%20Education%209%20-%20Joylin%20Lincoln.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "Primary",
+          "date": "2018-06-26",
+          "summary": "4,363 votes · 16.25%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "3599da3d9d87b5e28d57fd7fe1a933596a140150bf40bdd8b0bc1b8a1ff3b3b2"
+    },
+    {
+      "caseId": "DC-b8bc2326f50b",
+      "personId": "mark-a-huntsman",
+      "name": "Mark A. Huntsman",
+      "office": "State School Board District 14",
+      "officeId": "state-school-board-district-14",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-mark-a-huntsman-state-school-board-district-14-unaffiliated",
+          "personId": "mark-a-huntsman",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-14",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Millard",
+          "city": "Fillmore",
+          "source": "https://web.archive.org/web/20200213004353/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%2014%20-%20Mark%20A.%20Huntsman.pdf"
+        },
+        {
+          "recordId": "2018-general-mark-a-huntsman-state-school-board-district-14-not-reported--",
+          "personId": "mark-a-huntsman",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-14",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "mark-a-huntsman-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "mark-a-huntsman",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-mark-a-huntsman-state-school-board-district-14-unaffiliated",
+        "recordIds": [
+          "2018-mark-a-huntsman-state-school-board-district-14-unaffiliated",
+          "2018-general-mark-a-huntsman-state-school-board-district-14-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-13",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-13",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-mark-a-huntsman-state-school-board-district-14-unaffiliated",
+            "url": "https://web.archive.org/web/20200213004353/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%2014%20-%20Mark%20A.%20Huntsman.pdf",
+            "officeId": "state-school-board-district-14",
+            "partyId": "unaffiliated",
+            "county": "Millard",
+            "city": "Fillmore",
+            "status": "filed",
+            "personId": "mark-a-huntsman",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-mark-a-huntsman-state-school-board-district-14-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-14",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "mark-a-huntsman",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20200213004353/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%2014%20-%20Mark%20A.%20Huntsman.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "48,448 votes · 100.00%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "206749d3e2cb7aa152125175565f40421db210780d860f4b4b18ee5380730750"
+    },
+    {
+      "caseId": "DC-7da038829085",
+      "personId": "patrick-d-riley",
+      "name": "Patrick D. Riley",
+      "office": "State School Board District 5",
+      "officeId": "state-school-board-district-5",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-patrick-d-riley-state-school-board-district-5-unaffiliated",
+          "personId": "patrick-d-riley",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-5",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Davis",
+          "city": "Centerville",
+          "source": "https://web.archive.org/web/20200213004334/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Patrick%20D.%20Riley.pdf"
+        },
+        {
+          "recordId": "2018-general-patrick-d-riley-state-school-board-district-5-not-reported--",
+          "personId": "patrick-d-riley",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-5",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "patrick-d-riley-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "patrick-d-riley",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-patrick-d-riley-state-school-board-district-5-unaffiliated",
+        "recordIds": [
+          "2018-patrick-d-riley-state-school-board-district-5-unaffiliated",
+          "2018-general-patrick-d-riley-state-school-board-district-5-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-8",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-8",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-patrick-d-riley-state-school-board-district-5-unaffiliated",
+            "url": "https://web.archive.org/web/20200213004334/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Patrick%20D.%20Riley.pdf",
+            "officeId": "state-school-board-district-5",
+            "partyId": "unaffiliated",
+            "county": "Davis",
+            "city": "Centerville",
+            "status": "filed",
+            "personId": "patrick-d-riley",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-patrick-d-riley-state-school-board-district-5-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-5",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "patrick-d-riley",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20200213004334/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Patrick%20D.%20Riley.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "22,937 votes · 35.03%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "c33f3dfdb4efdda9438cf1234d4a9f489131a2afa47238811bab1216767c4f68"
+    },
+    {
+      "caseId": "DC-dfb5c2918fbb",
+      "personId": "scott-l-hansen",
+      "name": "Scott L. Hansen",
+      "office": "State School Board District 2",
+      "officeId": "state-school-board-district-2",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-scott-l-hansen-state-school-board-district-2-unaffiliated",
+          "personId": "scott-l-hansen",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-2",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Weber",
+          "city": "Liberty",
+          "source": "https://web.archive.org/web/20200213004322/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Scott%20L.%20Hansen.pdf"
+        },
+        {
+          "recordId": "2018-general-scott-l-hansen-state-school-board-district-2-not-reported--",
+          "personId": "scott-l-hansen",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-2",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "scott-l-hansen-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "scott-l-hansen",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-scott-l-hansen-state-school-board-district-2-unaffiliated",
+        "recordIds": [
+          "2018-scott-l-hansen-state-school-board-district-2-unaffiliated",
+          "2018-general-scott-l-hansen-state-school-board-district-2-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-4",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-4",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-scott-l-hansen-state-school-board-district-2-unaffiliated",
+            "url": "https://web.archive.org/web/20200213004322/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Scott%20L.%20Hansen.pdf",
+            "officeId": "state-school-board-district-2",
+            "partyId": "unaffiliated",
+            "county": "Weber",
+            "city": "Liberty",
+            "status": "filed",
+            "personId": "scott-l-hansen",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-scott-l-hansen-state-school-board-district-2-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-2",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "scott-l-hansen",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20200213004322/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Scott%20L.%20Hansen.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "28,811 votes · 60.49%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "6929518d4ad9be3ba266e12433f1b87dffbe7e06f08ac27a8981afc453fb70ae"
+    },
+    {
+      "caseId": "DC-2b4d72199ed4",
+      "personId": "terryl-warner",
+      "name": "Terryl Warner",
+      "office": "State School Board District 1",
+      "officeId": "state-school-board-district-1",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-terryl-warner-state-school-board-district-1-unaffiliated",
+          "personId": "terryl-warner",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-1",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Cache",
+          "city": "Hyrum",
+          "source": "https://web.archive.org/web/20190228163411/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%201%20-%20Terryl%20Warner.pdf"
+        },
+        {
+          "recordId": "2018-general-terryl-warner-state-school-board-district-1-not-reported--",
+          "personId": "terryl-warner",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-1",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "terryl-warner-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "terryl-warner",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-terryl-warner-state-school-board-district-1-unaffiliated",
+        "recordIds": [
+          "2018-terryl-warner-state-school-board-district-1-unaffiliated",
+          "2018-general-terryl-warner-state-school-board-district-1-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-2",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-2",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-terryl-warner-state-school-board-district-1-unaffiliated",
+            "url": "https://web.archive.org/web/20190228163411/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%201%20-%20Terryl%20Warner.pdf",
+            "officeId": "state-school-board-district-1",
+            "partyId": "unaffiliated",
+            "county": "Cache",
+            "city": "Hyrum",
+            "status": "filed",
+            "personId": "terryl-warner",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-terryl-warner-state-school-board-district-1-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-1",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "terryl-warner",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20190228163411/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%201%20-%20Terryl%20Warner.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "21,618 votes · 39.41%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "61bc6cba016abdc2c394d80a8afc2bc049ed4f25734bbee29204979411d6d077"
+    },
+    {
+      "caseId": "DC-62b6d7bb9f43",
+      "personId": "thomas-e-nedreberg",
+      "name": "Thomas E. Nedreberg",
+      "office": "State School Board District 3",
+      "officeId": "state-school-board-district-3",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-thomas-e-nedreberg-state-school-board-district-3-unaffiliated",
+          "personId": "thomas-e-nedreberg",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-3",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Juab",
+          "city": "Eureka",
+          "source": "https://web.archive.org/web/20200213004329/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Thomas%20E.%20Nedreberg.pdf"
+        },
+        {
+          "recordId": "2018-general-thomas-e-nedreberg-state-school-board-district-3-not-reported--",
+          "personId": "thomas-e-nedreberg",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-3",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "thomas-e-nedreberg-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "thomas-e-nedreberg",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-thomas-e-nedreberg-state-school-board-district-3-unaffiliated",
+        "recordIds": [
+          "2018-thomas-e-nedreberg-state-school-board-district-3-unaffiliated",
+          "2018-general-thomas-e-nedreberg-state-school-board-district-3-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-6",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-6",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-thomas-e-nedreberg-state-school-board-district-3-unaffiliated",
+            "url": "https://web.archive.org/web/20200213004329/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Thomas%20E.%20Nedreberg.pdf",
+            "officeId": "state-school-board-district-3",
+            "partyId": "unaffiliated",
+            "county": "Juab",
+            "city": "Eureka",
+            "status": "filed",
+            "personId": "thomas-e-nedreberg",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-thomas-e-nedreberg-state-school-board-district-3-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-3",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "thomas-e-nedreberg",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20200213004329/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Thomas%20E.%20Nedreberg.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "11,133 votes · 26.19%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "816b950e78210455aeeb5b89acec37936fde463be2e48d52b52dd3035aa6b458"
+    }
+  ],
+  "contentHash": "7f7d4509f5df6a06070a97b6b596ddfeda1ab7aaa0997a4384997c75355ac636"
+}
