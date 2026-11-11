@@ -342,3 +342,7 @@
 # Legacy section names
 /office/*                                     /offices/:splat                                    301
 /party/*                                      /parties/:splat                                    301
+
+# North Salt Lake is in Davis County; preserve the former duplicate URL.
+/places/salt-lake/north-salt-lake     /places/davis/north-salt-lake/     301
+/places/salt-lake/north-salt-lake/    /places/davis/north-salt-lake/     301

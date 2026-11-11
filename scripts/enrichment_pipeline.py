@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Bounded primary-site account discovery. Writes proposals, never edits entity data.
 
+python3 scripts/enrichment_pipeline.py --entity people/ENTITY_ID
 python3 scripts/enrichment_pipeline.py --seeds .firecrawl/enrichment/people-seeds.json
 Raw HTML/cache stay in ignored .firecrawl/enrichment. --offline replays cache only.
 --refresh uses conditional requests. --backend firecrawl uses FIRECRAWL_API_KEY;
@@ -18,6 +19,7 @@ import ipaddress
 import json
 from pathlib import Path
 import re
+import shlex
 import subprocess
 import threading
 from datetime import datetime, timedelta, timezone
@@ -192,8 +194,8 @@ def discover(seed,fetcher,max_pages=2):
             # Generic institutional seeds and cross-domain redirects never establish person ownership.
             institutional=bool(re.search(r'\.gov$|utgop\.org$|organizeutah\.org$|utahdemocrats\.org$|utahforwardparty\.org$',dest))
             label_platform=next((platform for label,platform in [('threads','threads'),('tiktok','tiktok'),('youtube','youtube'),('instagram','instagram'),('facebook','facebook'),('linkedin','linkedin'),('twitter','x')] if label in anchor.lower()),None)
-            safe=evidence['nameMatched'] and evidence['officeContextMatched'] and not institutional and not redirected and not seed.get('historical',False) and not anchor.strip().startswith('#') and (label_platform is None or label_platform==candidate['platform']) and candidate['url'].lower() not in party_accounts()
-            candidates[candidate['url']]={**candidate,'entityId':seed['id'],'sourceUrl':final,'anchorText':re.sub(r'\s+',' ',anchor).strip()[:160],'identityEvidence':evidence,'fetchedAt':result['fetchedAt'],'evidenceDate':None,'disposition':'ambiguous','reason':'Primary-site candidate; ownership needs review' if safe else 'Historical identity, page context, institutional ownership, redirect or account label needs review','primaryIdentityMatched':safe}
+            safe=seed.get('kind','people')=='people' and evidence['nameMatched'] and evidence['officeContextMatched'] and not institutional and not redirected and not seed.get('historical',False) and not anchor.strip().startswith('#') and (label_platform is None or label_platform==candidate['platform']) and candidate['url'].lower() not in party_accounts()
+            candidates[candidate['url']]={**candidate,'entityId':seed['id'],'sourceUrl':final,'anchorText':re.sub(r'\s+',' ',anchor).strip()[:160],'identityEvidence':evidence,'fetchedAt':result['fetchedAt'],'evidenceDate':None,'disposition':'ambiguous','reason':'Primary-site candidate; ownership needs review' if safe else 'Entity ownership, historical identity, page context, institutional ownership, redirect or account label needs review','primaryIdentityMatched':safe}
         if not candidates:
             for href,anchor in page.links:
                 target=urljoin(final,href); u=urlsplit(target)
@@ -215,15 +217,41 @@ def report(result,path):
         accounts='<br>'.join(link(c['url'],c['platform'])+' — '+link(c['sourceUrl'],'source')+' · '+esc(c['reason']) for c in r['candidates'])
         rows.append(f'<tr><td>{link(r["entityUrl"],r["name"])}</td><td>{esc(r["status"])}</td><td>{accounts or "—"}</td><td>{evidence}</td></tr>')
     bars=''.join(f'<div class="bar"><span>{esc(k)}: {v}</span><div style="width:{100*v/max(1,len(result["people"]))}%"></div></div>' for k,v in result['summary']['statuses'].items() if v)
-    out='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>People enrichment trial</title><style>body{margin:3rem;font:15px/1.6 var(--font-sans,system-ui);color:var(--foreground,#222)}a{color:var(--primary,#176ba0)}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:10px;text-align:left;border-bottom:1px solid var(--border,#ccc);vertical-align:top}.scroll{overflow:auto}.bar{margin:12px 0}.bar div{height:10px;min-width:2px;background:var(--chart-1,#287bad)}code{overflow-wrap:anywhere}</style></head><body><h1>People enrichment trial</h1><p>'+esc(result['selection'])+'</p><p>'+esc(f"{len(result['people'])} people · {result['summary']['accountProposals']} account proposals · {result['summary']['requests']} network requests · {result['summary']['cacheHits']} cache hits · {result['summary']['modelCalls']} model calls")+'</p><p>Account URLs are review proposals; no production data was changed. A successful fetch is not verified person ownership. No account activity checks. Search, directories and Wikidata discovery are deferred; this bounded trial exercises primary-site extraction and cache controls.</p><p>Reproduce: <code>npm run enrich:people:prepare -- 100</code>, then <code>npm run enrich:people</code>. Replay with <code>npm run enrich:people -- --offline --output reports/people-enrichment-replay.json</code>. Validate controls with <code>npm run check:enrichment</code>.</p><p>Source: '+link(path.with_suffix('.json').name,'machine-readable trial evidence')+'</p>'+bars+'<div class="scroll"><table><thead><tr><th>Person</th><th>Outcome</th><th>Account proposals and sources</th><th>Fetch evidence</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table></div></body></html>'
+    out='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Entity enrichment trial</title><style>body{margin:3rem;font:15px/1.6 var(--font-sans,system-ui);color:var(--foreground,#222)}a{color:var(--primary,#176ba0)}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:10px;text-align:left;border-bottom:1px solid var(--border,#ccc);vertical-align:top}.scroll{overflow:auto}.bar{margin:12px 0}.bar div{height:10px;min-width:2px;background:var(--chart-1,#287bad)}code{overflow-wrap:anywhere}</style></head><body><h1>Entity enrichment trial</h1><p>'+esc(result['selection'])+'</p><p>'+esc(f"{len(result['people'])} entities · {result['summary']['accountProposals']} account proposals · {result['summary']['requests']} network requests · {result['summary']['cacheHits']} cache hits · {result['summary']['modelCalls']} model calls")+'</p><p>Account URLs are review proposals; no production data was changed. A successful fetch is not verified entity ownership. No account activity checks. Search, directories and Wikidata discovery are deferred; this bounded trial exercises primary-site extraction and cache controls.</p><p>Reproduce: <code>'+esc(result.get('reproduce','See pipeline --help for seed-file options.'))+'</code>. Add <code>--offline</code> for cache replay or <code>--refresh</code> for conditional revalidation.</p><p>Source: '+link(path.with_suffix('.json').name,'machine-readable trial evidence')+'</p>'+bars+'<div class="scroll"><table><thead><tr><th>Entity</th><th>Outcome</th><th>Account proposals and sources</th><th>Fetch evidence</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table></div></body></html>'
     path.write_text(out)
 
+def load_entity(selector):
+    if not re.fullmatch(r'(people|parties|places|offices)/[a-z0-9-]+(?:/[a-z0-9-]+)*',selector):
+        raise ValueError('Use --entity KIND/ID, where KIND is people, parties, places, or offices')
+    result=subprocess.run(['node',str(ROOT/'scripts/prepare-entity-enrichment.mjs'),selector],cwd=ROOT,capture_output=True,text=True,timeout=120)
+    if result.returncode: raise ValueError(result.stderr.strip() or 'Entity resolution failed')
+    return json.loads(result.stdout)
+
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--seeds',required=True);parser.add_argument('--offline',action='store_true');parser.add_argument('--refresh',action='store_true');parser.add_argument('--backend',choices=['direct','firecrawl'],default='direct');parser.add_argument('--workers',type=int,default=6);parser.add_argument('--max-pages',type=int,default=2);parser.add_argument('--output',default='reports/people-enrichment-trial.json');args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__)
+    source=parser.add_mutually_exclusive_group(required=True)
+    source.add_argument('--seeds',help='Prepared cohort JSON file')
+    source.add_argument('--entity',metavar='KIND/ID',help='Existing people, parties, places, or offices entity; requires installed Node dependencies')
+    parser.add_argument('--offline',action='store_true')
+    parser.add_argument('--refresh',action='store_true')
+    parser.add_argument('--backend',choices=['direct','firecrawl'],default='direct')
+    parser.add_argument('--workers',type=int,default=6)
+    parser.add_argument('--max-pages',type=int,default=2)
+    parser.add_argument('--output',help='JSON output path; a companion HTML report is also written')
+    args=parser.parse_args()
     if not 1<=args.workers<=8 or not 1<=args.max_pages<=3:parser.error('workers must be 1–8 and max-pages 1–3')
-    seeds=json.loads(Path(args.seeds).read_text()); fetcher=Fetcher(ROOT/'.firecrawl/enrichment/cache',args.offline,args.refresh,args.backend)
+    try:
+        seeds=load_entity(args.entity) if args.entity else json.loads(Path(args.seeds).read_text())
+    except (ValueError,OSError,subprocess.TimeoutExpired) as error:
+        parser.error(str(error))
+    if not args.output:
+        args.output=f'reports/{args.entity.replace("/","-")}-enrichment.json' if args.entity else 'reports/people-enrichment-trial.json'
+    fetcher=Fetcher(ROOT/'.firecrawl/enrichment/cache',args.offline,args.refresh,args.backend)
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool: people=list(pool.map(lambda seed:discover(seed,fetcher,args.max_pages),seeds['seeds']))
     statuses={s:sum(p['status']==s for p in people) for s in sorted(STATES)}
     result={'generatedAt':stamp(),'selection':seeds['selection'],'summary':{'people':len(people),'statuses':statuses,'accountProposals':sum(len(p['candidates']) for p in people),'productionChanges':0,**fetcher.stats,'backend':args.backend,'modelCalls':0},'people':people}
+    command=['python3','scripts/enrichment_pipeline.py','--entity' if args.entity else '--seeds',args.entity or args.seeds,'--backend',args.backend,'--max-pages',str(args.max_pages),'--workers',str(args.workers),'--output',args.output]
+    command += (['--offline'] if args.offline else []) + (['--refresh'] if args.refresh else [])
+    result['reproduce']=shlex.join(command)
     output=ROOT/args.output;output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(result,indent=2)+'\n');report(result,output.with_suffix('.html'));print(json.dumps(result['summary']))
 if __name__=='__main__':main()

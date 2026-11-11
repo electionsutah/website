@@ -6,9 +6,27 @@ import hashlib
 import gzip
 import json
 from datetime import datetime, timedelta, timezone
-from enrichment_pipeline import canonical, account, Page, identity, discover, Fetcher
+from enrichment_pipeline import canonical, account, Page, identity, discover, Fetcher, load_entity
 
 class Controls(unittest.TestCase):
+    def test_entity_selector_preserves_nested_place_id(self):
+        with patch('enrichment_pipeline.subprocess.run') as run:
+            run.return_value = type('Response', (), {'returncode': 0, 'stdout': '{"seeds": []}'})()
+            self.assertEqual(load_entity('places/utah/alpine'), {'seeds': []})
+            self.assertEqual(run.call_args.args[0][-1], 'places/utah/alpine')
+
+    def test_entity_selector_rejects_unknown_kind_and_path_traversal(self):
+        with patch('enrichment_pipeline.subprocess.run') as run:
+            for selector in ('elections/2026', 'people/../secret', 'people/', 'people/foo bar'):
+                with self.assertRaises(ValueError): load_entity(selector)
+            run.assert_not_called()
+
+    def test_unknown_entity_surfaces_resolver_error(self):
+        with patch('enrichment_pipeline.subprocess.run') as run:
+            run.return_value = type('Response', (), {'returncode': 1, 'stderr': 'Unknown entity: people/missing'})()
+            with self.assertRaisesRegex(ValueError, 'Unknown entity'):
+                load_entity('people/missing')
+
     def test_archived_primary_url_preserves_embedded_scheme(self):
         archived='https://web.archive.org/web/20230903180637id_/https://beckyforutah.com/'
         self.assertEqual(canonical(archived),archived.rstrip('/'))

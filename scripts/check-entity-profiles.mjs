@@ -2,9 +2,24 @@ import assert from 'node:assert/strict';
 import {createServer} from 'vite';
 const server=await createServer({configFile:false,logLevel:'silent',server:{middlewareMode:true,hmr:false,ws:false}});
 try {
- const {offices,officesById,parties,placesById}=await server.ssrLoadModule('/src/lib/entities.ts');
+ const {offices,officesById,parties,placesById,places,filings,importedFilings}=await server.ssrLoadModule('/src/lib/entities.ts');
  const {officeProfile,partyProfile}=await server.ssrLoadModule('/src/lib/entity-profiles.ts');
  const get=id=>officeProfile(officesById.get(id),placesById);
+ // Keep the historical source geography while presenting one canonical municipality.
+ const northSaltLake=places.filter(p=>p.name==='North Salt Lake');
+ assert.deepEqual(northSaltLake.map(p=>p.id),['davis/north-salt-lake']);
+ const corrected=importedFilings.filter(f=>f.city==='North Salt Lake'&&f.county==='Salt Lake');
+ assert(corrected.length>0);
+ for(const original of corrected){
+  const filing=filings.find(f=>f.recordId===original.recordId);
+  assert.equal(filing.county,'Davis');
+  assert.deepEqual(filing.placeIds,['davis','davis/north-salt-lake']);
+  assert(northSaltLake[0].filings.includes(filing));
+  assert(!placesById.get('salt-lake').filings.includes(filing));
+ }
+ const {descriptionLinks}=await server.ssrLoadModule('/src/lib/description-links.ts');
+ assert.deepEqual(descriptionLinks('North Salt Lake'),[{text:'North Salt Lake',href:'/places/davis/north-salt-lake/'}]);
+
  for(const office of offices){const p=officeProfile(office,placesById);assert(p.description&&p.scope&&p.note,office.id);for(const c of p.communities) if(c.placeId)assert(placesById.has(c.placeId));}
  for(const party of parties)assert(partyProfile(party).description.length>40,party.id);
  const house=get('state-house-district-18');
