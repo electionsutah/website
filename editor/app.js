@@ -223,7 +223,13 @@
                 return h('label', { key, htmlFor: props.id }, label + (key === 'url' ? ' (required)' : ''),
                   key === 'platform' ? h('select', props, h('option', { value: '' }, 'Detect from URL'), ...['website', 'wikipedia', 'wikidata', 'facebook', 'instagram', 'x', 'bluesky', 'youtube', 'linkedin', 'threads', 'tiktok', 'mastodon', 'truthsocial', 'rumble', 'substack'].map(platform => h('option', { key: platform, value: platform }, platform)))
                   : key === 'description' || key === 'detail' ? h('textarea', { ...props, rows: 2 })
-                  : h('input', { ...props, type: key === 'url' ? 'url' : 'text', placeholder: key === 'url' ? 'https://example.org' : key === 'verifiedOn' ? 'YYYY-MM-DD' : undefined }));
+                  : key === 'verifiedOn' ? h('div', { className: 'editor-date-control' },
+                    h('input', { ...props, type: 'date' }),
+                    h('button', { type: 'button', 'aria-label': `Set link ${index + 1} verification date to today`, onClick: () => {
+                      const today = new Date();
+                      props.onChange({ target: { value: `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}` } });
+                    } }, 'Today'))
+                  : h('input', { ...props, type: key === 'url' ? 'url' : 'text', placeholder: key === 'url' ? 'https://example.org' : undefined }));
               }),
               h('button', { type: 'button', 'aria-label': `Remove ${field.type === 'resources' ? 'resource' : 'link'} ${index + 1}`, onClick: () => updateRows(rows.filter((_, i) => i !== index)) }, 'Remove'))),
             h('button', { type: 'button', disabled: mode !== 'override', onClick: () => updateRows([...rows, field.type === 'resources' ? { label: '', description: '', url: '' } : { url: '' }]) }, field.type === 'resources' ? 'Add resource' : 'Add link'))
@@ -242,7 +248,13 @@
             : field.options ? h('select', inputProps,
             ...[...new Set(['', ...field.options, value])].map(option => h('option', { key: option, value: option }, option || '(empty)')))
             : ['text', 'lines'].includes(field.type) ? h('textarea', { ...inputProps, rows: 4 })
-            : h('input', { ...inputProps, type: field.type === 'date' ? 'date' : field.type === 'url' ? 'url' : field.type === 'email' ? 'email' : field.type === 'number' ? 'number' : 'text' });
+            : field.type === 'date' ? h('div', { className: 'editor-date-control' },
+              h('input', { ...inputProps, type: 'date' }),
+              h('button', { type: 'button', disabled: mode !== 'override', 'aria-label': `Set ${field.label} to today`, onClick: () => {
+                const today = new Date();
+                inputProps.onChange({ target: { value: `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}` } });
+              } }, 'Today'))
+            : h('input', { ...inputProps, type: field.type === 'url' ? 'url' : field.type === 'email' ? 'email' : field.type === 'number' ? 'number' : 'text' });
           return h('section', { key: path, hidden: !matchesField(field, this.state.fieldQuery, this.state.fieldGroup), className: `editor-field ${explicit ? 'has-override' : ''}` },
             h('div', { className: 'editor-field-heading' }, h(isList || field.type === 'addresses' ? 'span' : 'label', { className: 'editor-field-title', ...(isList || field.type === 'addresses' ? {} : { htmlFor: id }) }, icon(path === 'name' || path === 'photo.src' ? kind : path), field.label),
               h('select', { 'aria-label': `${field.label} value source`, value: mode,

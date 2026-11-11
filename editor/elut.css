@@ -146,6 +146,7 @@ body #nc-root .editor-list label { display: block; margin-bottom: var(--space-3)
 body #nc-root .editor-list input, body #nc-root .editor-list select, body #nc-root .editor-list textarea { display: block; width: 100%; margin-top: var(--space-1); }
 body #nc-root .editor-list button { min-height: var(--size-touch-target); padding: var(--space-2) var(--space-3); border: 1px solid var(--color-subtle); background: var(--color-paper); color: var(--color-blue); }
 body #nc-root .editor-list button:hover:not(:disabled) { background: var(--color-blue-tint); }
+body #nc-root .repository-record .editor-field button:disabled { color: var(--color-muted); background: var(--color-warm-white); border-color: var(--color-rule); cursor: not-allowed; }
 .editor-list-help { font-size: var(--text-sm); color: var(--color-muted); }
 body #nc-root .editor-field-title { display: flex; align-items: center; gap: var(--space-2-5); color: var(--color-muted); font: 700 var(--text-xs)/1.5 var(--font-sans); text-transform: uppercase; letter-spacing: .05em; }
 .editor-field-title .editor-symbol { flex: 0 0 var(--editor-icon-size); }

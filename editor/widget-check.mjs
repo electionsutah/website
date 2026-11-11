@@ -8,6 +8,7 @@ let preSave;
 const fields = [
   { path: 'photo.src', label: 'Portrait', type: 'image' },
   { path: 'photo.artist', label: 'Portrait creator' },
+  { path: 'lastVerified', label: 'Profile verification date', type: 'date' },
   { path: 'resources', label: 'Resources', type: 'resources' },
   { path: 'links', label: 'Websites and social accounts', type: 'links' }
 ];
@@ -33,11 +34,23 @@ const input = id => all(n => n.props.id === id)[0];
 const field = path => all(n => n.tag === 'section' && n.props.key === path)[0];
 const button = (path, caption) => find(field(path), n => n.tag === 'button' && n.children.includes(caption))[0];
 assert.equal(all(n => n.props.role === 'group' && n.props['aria-label'] === 'Websites and social accounts').length, 1);
+const inheritedLinks = { ...instance, props: { ...instance.props, value: { ...instance.props.value, overrides: {} } } };
+assert.equal(find(inheritedLinks.render(), n => n.tag === 'button' && n.children.includes('Add link'))[0].props.disabled, true, 'Add link is disabled until Override is selected');
+assert.equal(button('links', 'Add link').props.disabled, false, 'Add link is enabled for overridden links');
 assert.equal(all(n => n.tag === 'textarea').length, 2); // Resource and link descriptions, not JSON.
 input('record-links-0-label').props.onChange({ target: { value: 'Official site' } });
 assert.equal(instance.props.value.overrides.links[0].source, 'Published source');
 assert.equal(instance.props.value.overrides.links[0].extraMetadata, 'preserved');
 assert.equal(instance.props.value.overrides.links[0].verifiedOn, '2026-11-06');
+assert.equal(input('record-links-0-verifiedOn').props.type, 'date', 'Link verification dates use the calendar selector');
+input('record-links-0-verifiedOn').props.onChange({ target: { value: '2026-03-12' } });
+assert.equal(instance.props.value.overrides.links[0].verifiedOn, '2026-03-12');
+find(field('links'), n => n.props['aria-label'] === 'Set link 1 verification date to today')[0].props.onClick();
+const verificationToday = new Date();
+assert.equal(instance.props.value.overrides.links[0].verifiedOn, `${verificationToday.getFullYear()}-${String(verificationToday.getMonth() + 1).padStart(2, '0')}-${String(verificationToday.getDate()).padStart(2, '0')}`);
+input('record-links-0-verifiedOn').props.onChange({ target: { value: '' } });
+assert(!('verifiedOn' in instance.props.value.overrides.links[0]), 'Clearing a verification date removes the optional value');
+assert.equal(instance.props.value.overrides.links[0].extraMetadata, 'preserved');
 button('resources', 'Add resource').props.onClick();
 assert.notEqual(instance.isValid(), true);
 assert.equal(instance.props.value.overrides.resources.length, 1); // Incomplete row is only a draft.
@@ -74,6 +87,16 @@ assert(!('photo.src' in instance.props.value.overrides));
 assert(!('photo.artist' in instance.props.value.overrides));
 assert.equal(input('record-photo.src').props.value, '/images/people/original.webp');
 assert.ok(writes > 0);
+assert.equal(button('lastVerified', 'Today').props.disabled, true, 'Today respects imported-value mode');
+const dateMode = find(field('lastVerified'), n => n.tag === 'select')[0];
+dateMode.props.onChange({ target: { value: 'override' } });
+assert.equal(button('lastVerified', 'Today').props.disabled, false);
+input('record-lastVerified').props.onChange({ target: { value: '2000-01-01' } });
+button('lastVerified', 'Today').props.onClick();
+const selectedToday = new Date();
+const selectedLocalDate = `${selectedToday.getFullYear()}-${String(selectedToday.getMonth() + 1).padStart(2, '0')}-${String(selectedToday.getDate()).padStart(2, '0')}`;
+assert.equal(instance.props.value.overrides.lastVerified, selectedLocalDate);
+assert.equal(input('record-lastVerified').props.value, selectedLocalDate, 'Today replaces the displayed draft and saved override together');
 const immutable = value => ({
   toJS: () => structuredClone(value),
   set: (key, next) => immutable({ ...value, [key]: next }),
