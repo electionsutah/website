@@ -20,13 +20,17 @@ try {
   const person=peopleById.get(review.personId);const original=JSON.stringify(person.filings);
   const histories=candidacyHistory(person.filings);const matched=histories.filter(h=>h.reviewId===review.id);assert.equal(matched.length,1);
   const history=matched[0];assert.equal(history.records.length,review.recordIds.length);
+  if(review.id.endsWith('-2018-school-board-review')){
+   assert.equal(history.filing.partyId,'unaffiliated','Named imported affiliation takes precedence over Not reported');
+   assert(history.records.some(row=>row.partyId==='not-reported'),'Original missing affiliation remains on its source record');
+  }
   if(review.year===2023)assert.equal(candidacyHistory(person.filings.filter(f=>f.year===2023)).length,1,`${person.name}: one 2023 candidacy`);
   if(person.id==='michael-farrell')assert(histories.some(h=>h.filing.year===2026&&h.filing.officeId==='state-house-district-23'),'A distinct office is never folded into the congressional race');
   assert.equal(new Set(histories.flatMap(h=>h.records)).size,person.filings.length);
   const main=resultForFiling(history.filing,history.filing.electionType==='general'?general:primary);assert(main);
   const other=[];
-  for(const stage of new Set(history.records.map(row=>row.electionType))){
-   const row=history.records.find(row=>row.electionType===stage);
+  for(const stage of new Set(review.resultLinks.map(link=>link.electionType))){
+   const row=history.records.find(row=>row.electionType===stage&&row.status!=='filed')??history.records.find(row=>row.electionType===stage);
    const result=resultForFiling(row,stage==='general'?general:primary);assert(result,`${person.name}: ${stage} result`);
    const option=result.options.find(option=>identityKey(option.name)===identityKey(person.name));assert(option&&option.votes>=0);
    if(stage==='primary'&&review.year===2023)assert.equal(result.official,true);

@@ -1,0 +1,66 @@
+{
+  "batchId": "duplicate-cards-01",
+  "contentHash": "298aa580386c6a5c4ae720262dc1a4b3564b0adfe0cbb2bdd36fa44ca4ec249f",
+  "approvedBy": "User",
+  "approval": "Batch 01 is approved",
+  "appliedOn": "2026-11-11T00:50:11.970Z",
+  "people": 5,
+  "sourceRecordsRetained": 11,
+  "cardsBefore": 10,
+  "cardsAfter": 5,
+  "affiliationPolicy": "Prefer a matching source-imported named party/affiliation over not-reported; preserve raw values and review conflicting named affiliations.",
+  "cases": [
+    {
+      "caseId": "DC-5798e9c5254f",
+      "personId": "brittney-cummins",
+      "groupId": "brittney-cummins-2018-school-board-review",
+      "recordIds": [
+        "2018-brittney-cummins-state-school-board-district-6-unaffiliated",
+        "2018-general-brittney-cummins-state-school-board-district-6-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-1703811298cd",
+      "personId": "cindy-davis",
+      "groupId": "cindy-davis-2018-school-board-review",
+      "recordIds": [
+        "2018-cindy-davis-state-school-board-district-9-unaffiliated",
+        "2018-general-cindy-davis-state-school-board-district-9-not-reported--",
+        "2018-primary-cindy-davis-state-school-board-district-9-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-65a70f76d236",
+      "personId": "craig-k-pitts",
+      "groupId": "craig-k-pitts-2018-school-board-review",
+      "recordIds": [
+        "2018-craig-k-pitts-state-school-board-district-2-unaffiliated",
+        "2018-general-craig-k-pitts-state-school-board-district-2-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-072527ac2331",
+      "personId": "laura-collier-belnap",
+      "groupId": "laura-collier-belnap-2018-school-board-review",
+      "recordIds": [
+        "2018-laura-collier-belnap-state-school-board-district-5-unaffiliated",
+        "2018-general-laura-collier-belnap-state-school-board-district-5-not-reported--"
+      ]
+    },
+    {
+      "caseId": "DC-7ca17d7e0504",
+      "personId": "linda-b-hansen",
+      "groupId": "linda-b-hansen-2018-school-board-review",
+      "recordIds": [
+        "2018-linda-b-hansen-state-school-board-district-3-unaffiliated",
+        "2018-general-linda-b-hansen-state-school-board-district-3-not-reported--"
+      ]
+    }
+  ],
+  "validation": {
+    "candidacyHistory": "passed",
+    "batchRegression": "passed; named affiliation and original values checked",
+    "svelte": "0 errors, 0 warnings",
+    "productionBuild": "passed; 14,434 routes prerendered"
+  }
+}

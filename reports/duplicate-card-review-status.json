@@ -1,0 +1,2252 @@
+{
+  "version": 1,
+  "updatedOn": "2026-11-11",
+  "approvalPolicy": "Only an explicit approval of an immutable batch authorizes application. Preserve manifests and append application audit events; do not count a disappeared audit flag as approval.",
+  "cases": {
+    "DC-cb4dbb473d91": {
+      "id": "DC-cb4dbb473d91",
+      "personIds": [
+        "dave-bierschied"
+      ],
+      "name": "Dave Bierschied",
+      "year": 2026,
+      "office": "Grand School Board District 5",
+      "rows": [
+        {
+          "recordId": "2026-dave-bierschied-grand-school-board-district-5-nonpartisan",
+          "office": "Grand School Board District 5",
+          "officeId": "grand-school-board-district-5",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/grand-county-ut/elections/General11032026/ballot-items/01000000-7238-21d5-1271-08df29714149",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "Grand",
+          "city": "",
+          "personId": "dave-bierschied",
+          "name": "Dave Bierschied",
+          "year": 2026
+        },
+        {
+          "recordId": "2026-general-dave-bierschied-grand-school-board-district-5-nonpartisan-san-juan-",
+          "office": "Grand School Board District 5",
+          "officeId": "grand-school-board-district-5",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/san-juan-county-ut/elections/General11032026/ballot-items/01000000-2962-0a33-20e7-08df2a44542d",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "San Juan",
+          "city": "",
+          "personId": "dave-bierschied",
+          "name": "Dave Bierschied",
+          "year": 2026
+        }
+      ],
+      "categories": [
+        "exact",
+        "identity"
+      ],
+      "status": "needs_identity_review",
+      "recommendation": "Compare primary identity documents before changing person IDs or parsing a ticket.",
+      "reason": "Same identity and office, but published location fields conflict; verify residence versus jurisdiction.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-f725482f164f": {
+      "id": "DC-f725482f164f",
+      "personIds": [
+        "dennis-jones"
+      ],
+      "name": "Dennis Jones",
+      "year": 1995,
+      "office": "Town Council (4-Year Term)",
+      "rows": [
+        {
+          "recordId": "1995-dennis-jones-emery-elmo-town-council-4-year-term-nonpartisan",
+          "office": "Town Council (4-Year Term)",
+          "officeId": "town-council-4-year-term",
+          "party": "Nonpartisan",
+          "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
+          "stage": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "county": "Emery",
+          "city": "Elmo",
+          "personId": "dennis-jones",
+          "name": "Dennis Jones",
+          "year": 1995
+        },
+        {
+          "recordId": "1995-dennis-jones-duchesne-tabiona-town-council-4-year-term-nonpartisan",
+          "office": "Town Council (4-Year Term)",
+          "officeId": "town-council-4-year-term",
+          "party": "Nonpartisan",
+          "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
+          "stage": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "county": "Duchesne",
+          "city": "Tabiona",
+          "personId": "dennis-jones",
+          "name": "Dennis Jones",
+          "year": 1995
+        }
+      ],
+      "categories": [
+        "exact",
+        "identity"
+      ],
+      "status": "needs_identity_review",
+      "recommendation": "Compare primary identity documents before changing person IDs or parsing a ticket.",
+      "reason": "Same identity and office, but published location fields conflict; verify residence versus jurisdiction.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-58ac7b5c033e": {
+      "id": "DC-58ac7b5c033e",
+      "personIds": [
+        "katherine-williams"
+      ],
+      "name": "Katherine Williams",
+      "year": 2026,
+      "office": "Grand School Board District 1",
+      "rows": [
+        {
+          "recordId": "2026-katherine-williams-grand-school-board-district-1-nonpartisan",
+          "office": "Grand School Board District 1",
+          "officeId": "grand-school-board-district-1",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/grand-county-ut/elections/General11032026/ballot-items/01000000-7238-21d5-11de-08df29714149",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "Grand",
+          "city": "",
+          "personId": "katherine-williams",
+          "name": "Katherine Williams",
+          "year": 2026
+        },
+        {
+          "recordId": "2026-general-katherine-williams-grand-school-board-district-1-nonpartisan-san-juan-",
+          "office": "Grand School Board District 1",
+          "officeId": "grand-school-board-district-1",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/san-juan-county-ut/elections/General11032026/ballot-items/01000000-2962-0a33-209a-08df2a44542d",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "San Juan",
+          "city": "",
+          "personId": "katherine-williams",
+          "name": "Katherine Williams",
+          "year": 2026
+        }
+      ],
+      "categories": [
+        "exact",
+        "identity"
+      ],
+      "status": "needs_identity_review",
+      "recommendation": "Compare primary identity documents before changing person IDs or parsing a ticket.",
+      "reason": "Same identity and office, but published location fields conflict; verify residence versus jurisdiction.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-5798e9c5254f": {
+      "id": "DC-5798e9c5254f",
+      "personIds": [
+        "brittney-cummins"
+      ],
+      "name": "Brittney Cummins",
+      "year": 2018,
+      "office": "State School Board District 6",
+      "rows": [
+        {
+          "recordId": "2018-brittney-cummins-state-school-board-district-6-unaffiliated",
+          "office": "State School Board District 6",
+          "officeId": "state-school-board-district-6",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20190228163414/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%206%20-%20Brittney%20Cummins.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Salt Lake",
+          "city": "West Valley City",
+          "personId": "brittney-cummins",
+          "name": "Brittney Cummins",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-brittney-cummins-state-school-board-district-6-not-reported--",
+          "office": "State School Board District 6",
+          "officeId": "state-school-board-district-6",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "brittney-cummins",
+          "name": "Brittney Cummins",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "applied",
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11",
+      "batchId": "duplicate-cards-01",
+      "appliedOn": "2026-11-11T00:50:11.970Z"
+    },
+    "DC-c1d169ab6dab": {
+      "id": "DC-c1d169ab6dab",
+      "personIds": [
+        "cary-g-peterson"
+      ],
+      "name": "Cary G. Peterson",
+      "year": 1980,
+      "office": "State Senate District 28",
+      "rows": [
+        {
+          "recordId": "1980-primary-cary-g-peterson-state-senate-district-28-not-reported",
+          "office": "State Senate District 28",
+          "officeId": "state-senate-district-28",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1980Pri.pdf#page=2",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "cary-g-peterson",
+          "name": "Cary G. Peterson",
+          "year": 1980
+        },
+        {
+          "recordId": "1980-general-cary-g-peterson-state-senate-district-28-utah-republican-party",
+          "office": "State Senate District 28",
+          "officeId": "state-senate-district-28",
+          "party": "Utah Republican Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1980Gen.pdf#page=6",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "cary-g-peterson",
+          "name": "Cary G. Peterson",
+          "year": 1980
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_evidence",
+      "recommendation": "Investigate before merging.",
+      "reason": "Resolve the recorded identity, affiliation, stage or reporting-scope ambiguity first.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-0b5ca42dbe24": {
+      "id": "DC-0b5ca42dbe24",
+      "personIds": [
+        "chris-cannon"
+      ],
+      "name": "Chris Cannon",
+      "year": 2006,
+      "office": "U.S. House District 3",
+      "rows": [
+        {
+          "recordId": "2006-chris-cannon-u-s-house-district-3-not-reported",
+          "office": "U.S. House District 3",
+          "officeId": "u-s-house-district-3",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2006Pri.pdf#page=2",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "chris-cannon",
+          "name": "Chris Cannon",
+          "year": 2006
+        },
+        {
+          "recordId": "2006-chris-cannon-u-s-house-district-3-utah-republican-party",
+          "office": "U.S. House District 3",
+          "officeId": "u-s-house-district-3",
+          "party": "Utah Republican Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2006Gen.pdf#page=2",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "chris-cannon",
+          "name": "Chris Cannon",
+          "year": 2006
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_evidence",
+      "recommendation": "Investigate before merging.",
+      "reason": "Resolve the recorded identity, affiliation, stage or reporting-scope ambiguity first.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-9b2b30c11d03": {
+      "id": "DC-9b2b30c11d03",
+      "personIds": [
+        "chris-douglas-mietchen"
+      ],
+      "name": "Chris Douglas Mietchen",
+      "year": 2025,
+      "office": "Sigurd Council",
+      "rows": [
+        {
+          "recordId": "2025-chris-douglas-mietchen-sigurd-council-nonpartisan",
+          "office": "Sigurd Council",
+          "officeId": "sigurd-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-4a87-08de1007d770",
+          "stage": "general",
+          "status": "Defeated",
+          "county": "Sevier",
+          "city": "Sigurd",
+          "personId": "chris-douglas-mietchen",
+          "name": "Chris Douglas Mietchen",
+          "year": 2025
+        },
+        {
+          "recordId": "2025-chris-douglas-mietchen-sigurd-town-council-nonpartisan",
+          "office": "Sigurd Town Council",
+          "officeId": "sigurd-town-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/Primary08122025/ballot-items/01000000-041e-c676-e64a-08ddce22b085",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Sevier",
+          "city": "Sigurd",
+          "personId": "chris-douglas-mietchen",
+          "name": "Chris Douglas Mietchen",
+          "year": 2025
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Reconcile primary-ending status, then review office-label consolidation.",
+      "reason": "The imported primary record says Out in Primary while the same candidate also appears on the general ballot. Do not silently retain that contradiction or infer advancement from a default winner flag.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-1703811298cd": {
+      "id": "DC-1703811298cd",
+      "personIds": [
+        "cindy-davis"
+      ],
+      "name": "Cindy Davis",
+      "year": 2018,
+      "office": "State School Board District 9",
+      "rows": [
+        {
+          "recordId": "2018-cindy-davis-state-school-board-district-9-unaffiliated",
+          "office": "State School Board District 9",
+          "officeId": "state-school-board-district-9",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20190228163424/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%209%20-%20Cindy%20Davis.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Utah",
+          "city": "American Fork",
+          "personId": "cindy-davis",
+          "name": "Cindy Davis",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-cindy-davis-state-school-board-district-9-not-reported--",
+          "office": "State School Board District 9",
+          "officeId": "state-school-board-district-9",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "cindy-davis",
+          "name": "Cindy Davis",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "applied",
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11",
+      "batchId": "duplicate-cards-01",
+      "appliedOn": "2026-11-11T00:50:11.970Z"
+    },
+    "DC-65a70f76d236": {
+      "id": "DC-65a70f76d236",
+      "personIds": [
+        "craig-k-pitts"
+      ],
+      "name": "Craig K. Pitts",
+      "year": 2018,
+      "office": "State School Board District 2",
+      "rows": [
+        {
+          "recordId": "2018-craig-k-pitts-state-school-board-district-2-unaffiliated",
+          "office": "State School Board District 2",
+          "officeId": "state-school-board-district-2",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20200213004326/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Craig%20K.%20Pitts.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Weber",
+          "city": "Ogden",
+          "personId": "craig-k-pitts",
+          "name": "Craig K. Pitts",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-craig-k-pitts-state-school-board-district-2-not-reported--",
+          "office": "State School Board District 2",
+          "officeId": "state-school-board-district-2",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "craig-k-pitts",
+          "name": "Craig K. Pitts",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "applied",
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11",
+      "batchId": "duplicate-cards-01",
+      "appliedOn": "2026-11-11T00:50:11.970Z"
+    },
+    "DC-fe90b619d368": {
+      "id": "DC-fe90b619d368",
+      "personIds": [
+        "fred-hayes"
+      ],
+      "name": "Fred Hayes",
+      "year": 2026,
+      "office": "State Senate District 1",
+      "rows": [
+        {
+          "recordId": "2026-fred-hayes-state-senate-district-1-not-reported",
+          "office": "State Senate District 1",
+          "officeId": "state-senate-district-1",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2026/06/S1-Fred-Hayes-WriteIn.pdf",
+          "stage": "primary",
+          "status": "Disqualified",
+          "county": "",
+          "city": "",
+          "personId": "fred-hayes",
+          "name": "Fred Hayes",
+          "year": 2026
+        },
+        {
+          "recordId": "2026-fred-hayes-state-senate-district-1-utah-republican-party",
+          "office": "State Senate District 1",
+          "officeId": "state-senate-district-1",
+          "party": "Utah Republican Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2026/01/S1-Fred-Hayes.pdf",
+          "stage": "primary",
+          "status": "Out in Convention",
+          "county": "",
+          "city": "",
+          "personId": "fred-hayes",
+          "name": "Fred Hayes",
+          "year": 2026
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Resolve competing terminal statuses or filing attempts before merging.",
+      "reason": "Disqualified, Withdrew, and Out in Convention describe different events. The available timeline dates and source status chronology need review.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-e88f8e2fb4b3": {
+      "id": "DC-e88f8e2fb4b3",
+      "personIds": [
+        "janett-borg"
+      ],
+      "name": "Janett Borg",
+      "year": 2025,
+      "office": "Sigurd Council",
+      "rows": [
+        {
+          "recordId": "2025-janett-borg-sigurd-council-nonpartisan",
+          "office": "Sigurd Council",
+          "officeId": "sigurd-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-4a87-08de1007d770",
+          "stage": "general",
+          "status": "Defeated",
+          "county": "Sevier",
+          "city": "Sigurd",
+          "personId": "janett-borg",
+          "name": "Janett Borg",
+          "year": 2025
+        },
+        {
+          "recordId": "2025-janett-borg-sigurd-town-council-nonpartisan",
+          "office": "Sigurd Town Council",
+          "officeId": "sigurd-town-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/Primary08122025/ballot-items/01000000-041e-c676-e64a-08ddce22b085",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Sevier",
+          "city": "Sigurd",
+          "personId": "janett-borg",
+          "name": "Janett Borg",
+          "year": 2025
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Reconcile primary-ending status, then review office-label consolidation.",
+      "reason": "The imported primary record says Out in Primary while the same candidate also appears on the general ballot. Do not silently retain that contradiction or infer advancement from a default winner flag.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-fdacc8dd281c": {
+      "id": "DC-fdacc8dd281c",
+      "personIds": [
+        "jeremy-friedbaum"
+      ],
+      "name": "Jeremy Friedbaum",
+      "year": 1998,
+      "office": "U.S. House District 3",
+      "rows": [
+        {
+          "recordId": "1998-jeremy-friedbaum-u-s-house-district-3-not-reported",
+          "office": "U.S. House District 3",
+          "officeId": "u-s-house-district-3",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1998Gen.pdf#page=2",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "jeremy-friedbaum",
+          "name": "Jeremy Friedbaum",
+          "year": 1998
+        },
+        {
+          "recordId": "1998-jeremy-friedbaum-u-s-house-district-3-utah-republican-party",
+          "office": "U.S. House District 3",
+          "officeId": "u-s-house-district-3",
+          "party": "Utah Republican Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1998Pri.pdf#page=1",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "jeremy-friedbaum",
+          "name": "Jeremy Friedbaum",
+          "year": 1998
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_evidence",
+      "recommendation": "Investigate before merging.",
+      "reason": "Resolve the recorded identity, affiliation, stage or reporting-scope ambiguity first.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-f1119eea5eb2": {
+      "id": "DC-f1119eea5eb2",
+      "personIds": [
+        "joe-buchman"
+      ],
+      "name": "Joe Buchman",
+      "year": 2023,
+      "office": "U.S. House District 2",
+      "rows": [
+        {
+          "recordId": "2023-joe-buchman-u-s-house-district-2-unaffiliated",
+          "office": "U.S. House District 2",
+          "officeId": "u-s-house-district-2",
+          "party": "Unaffiliated",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/06/Buchman-CD2.pdf",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "joe-buchman",
+          "name": "Joe Buchman",
+          "year": 2023
+        },
+        {
+          "recordId": "2023-general-joe-buchman-u-s-house-of-representatives-district-2-not-reported--",
+          "office": "U.S. House of Representatives District 2",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "party": "Not reported",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "joe-buchman",
+          "name": "Joe Buchman",
+          "year": 2023
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge declaration and general-ballot evidence; retain any write-in designation.",
+      "reason": "Same known candidate, year and office. Confirmed ballot evidence controls the election stage; a declaration stored under primary must not invent primary participation.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-03dc92701d89": {
+      "id": "DC-03dc92701d89",
+      "personIds": [
+        "john-frugal-dougall"
+      ],
+      "name": "John \"Frugal\" Dougall",
+      "year": 2012,
+      "office": "State Auditor",
+      "rows": [
+        {
+          "recordId": "2012-john-dougall-state-auditor-not-reported",
+          "office": "State Auditor",
+          "officeId": "state-auditor",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "john-frugal-dougall",
+          "name": "John \"Frugal\" Dougall",
+          "year": 2012
+        },
+        {
+          "recordId": "2012-john-dougall-state-auditor-utah-republican-party",
+          "office": "State Auditor",
+          "officeId": "state-auditor",
+          "party": "Utah Republican Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "john-frugal-dougall",
+          "name": "John \"Frugal\" Dougall",
+          "year": 2012
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_evidence",
+      "recommendation": "Investigate before merging.",
+      "reason": "Resolve the recorded identity, affiliation, stage or reporting-scope ambiguity first.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-597e3c9604e5": {
+      "id": "DC-597e3c9604e5",
+      "personIds": [
+        "john-swallow"
+      ],
+      "name": "John Swallow",
+      "year": 2012,
+      "office": "Attorney General",
+      "rows": [
+        {
+          "recordId": "2012-john-swallow-attorney-general-not-reported",
+          "office": "Attorney General",
+          "officeId": "attorney-general",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "john-swallow",
+          "name": "John Swallow",
+          "year": 2012
+        },
+        {
+          "recordId": "2012-john-swallow-attorney-general-utah-republican-party",
+          "office": "Attorney General",
+          "officeId": "attorney-general",
+          "party": "Utah Republican Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "john-swallow",
+          "name": "John Swallow",
+          "year": 2012
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_evidence",
+      "recommendation": "Investigate before merging.",
+      "reason": "Resolve the recorded identity, affiliation, stage or reporting-scope ambiguity first.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-925174265248": {
+      "id": "DC-925174265248",
+      "personIds": [
+        "jonathan-la-rele-peterson"
+      ],
+      "name": "Jonathan La Rele Peterson",
+      "year": 2023,
+      "office": "U.S. House of Representatives District 2",
+      "rows": [
+        {
+          "recordId": "2023-general-jonathan-la-rele-peterson-u-s-house-of-representatives-district-2-not-reported--",
+          "office": "U.S. House of Representatives District 2",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "party": "Not reported",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "jonathan-la-rele-peterson",
+          "name": "Jonathan La Rele Peterson",
+          "year": 2023
+        },
+        {
+          "recordId": "2023-jonathan-larele-peterson-u-s-house-district-2-unaffiliated",
+          "office": "U.S. House District 2",
+          "officeId": "u-s-house-district-2",
+          "party": "Unaffiliated",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/08/Jonathan-Peterson-CD2-Public.pdf",
+          "stage": "general",
+          "status": "Write-In",
+          "county": "",
+          "city": "",
+          "personId": "jonathan-la-rele-peterson",
+          "name": "Jonathan La Rele Peterson",
+          "year": 2023
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge declaration and general-ballot evidence; retain any write-in designation.",
+      "reason": "Same known candidate, year and office. Confirmed ballot evidence controls the election stage; a declaration stored under primary must not invent primary participation.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-03745e837b1b": {
+      "id": "DC-03745e837b1b",
+      "personIds": [
+        "joylin-lincoln"
+      ],
+      "name": "Joylin Lincoln",
+      "year": 2018,
+      "office": "State School Board District 9",
+      "rows": [
+        {
+          "recordId": "2018-joylin-lincoln-state-school-board-district-9-unaffiliated",
+          "office": "State School Board District 9",
+          "officeId": "state-school-board-district-9",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20190228163421/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%20of%20Education%209%20-%20Joylin%20Lincoln.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Utah",
+          "city": "Saratoga Springs",
+          "personId": "joylin-lincoln",
+          "name": "Joylin Lincoln",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-primary-joylin-lincoln-state-school-board-district-9-not-reported--",
+          "office": "State School Board District 9",
+          "officeId": "state-school-board-district-9",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "joylin-lincoln",
+          "name": "Joylin Lincoln",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge into one candidacy, preserving declaration and evidenced ballot stages.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-3324486f0e01": {
+      "id": "DC-3324486f0e01",
+      "personIds": [
+        "kami-alvarez"
+      ],
+      "name": "Kami Alvarez",
+      "year": 2018,
+      "office": "State School Board District 9",
+      "rows": [
+        {
+          "recordId": "2018-kami-alvarez-state-school-board-district-9-unaffiliated",
+          "office": "State School Board District 9",
+          "officeId": "state-school-board-district-9",
+          "party": "Unaffiliated",
+          "source": "",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Utah",
+          "city": "Saratoga Springs",
+          "personId": "kami-alvarez",
+          "name": "Kami Alvarez",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-primary-kami-alvarez-state-school-board-district-9-not-reported--",
+          "office": "State School Board District 9",
+          "officeId": "state-school-board-district-9",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "kami-alvarez",
+          "name": "Kami Alvarez",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_evidence",
+      "recommendation": "Hold: recover the missing declaration reference.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-79faffd509fb": {
+      "id": "DC-79faffd509fb",
+      "personIds": [
+        "kason-bret-merchant"
+      ],
+      "name": "Kason Bret Merchant",
+      "year": 2025,
+      "office": "Redmond Council",
+      "rows": [
+        {
+          "recordId": "2025-kason-bret-merchant-redmond-council-nonpartisan",
+          "office": "Redmond Council",
+          "officeId": "redmond-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-4739-08de1007d770",
+          "stage": "general",
+          "status": "Defeated",
+          "county": "Sevier",
+          "city": "Redmond",
+          "personId": "kason-bret-merchant",
+          "name": "Kason Bret Merchant",
+          "year": 2025
+        },
+        {
+          "recordId": "2025-kason-bret-merchant-redmond-town-council-nonpartisan",
+          "office": "Redmond Town Council",
+          "officeId": "redmond-town-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/Primary08122025/ballot-items/01000000-041e-c676-e12b-08ddce22b085",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Sevier",
+          "city": "Redmond",
+          "personId": "kason-bret-merchant",
+          "name": "Kason Bret Merchant",
+          "year": 2025
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Reconcile primary-ending status, then review office-label consolidation.",
+      "reason": "The imported primary record says Out in Primary while the same candidate also appears on the general ballot. Do not silently retain that contradiction or infer advancement from a default winner flag.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-38f4c05e7f68": {
+      "id": "DC-38f4c05e7f68",
+      "personIds": [
+        "kayla-golda-mae-tanner"
+      ],
+      "name": "Kayla Golda-Mae Tanner",
+      "year": 2025,
+      "office": "Sigurd Council",
+      "rows": [
+        {
+          "recordId": "2025-kayla-golda-mae-tanner-sigurd-council-nonpartisan",
+          "office": "Sigurd Council",
+          "officeId": "sigurd-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-4a87-08de1007d770",
+          "stage": "general",
+          "status": "Elected",
+          "county": "Sevier",
+          "city": "Sigurd",
+          "personId": "kayla-golda-mae-tanner",
+          "name": "Kayla Golda-Mae Tanner",
+          "year": 2025
+        },
+        {
+          "recordId": "2025-kayla-golda-mae-tanner-sigurd-town-council-nonpartisan",
+          "office": "Sigurd Town Council",
+          "officeId": "sigurd-town-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/Primary08122025/ballot-items/01000000-041e-c676-e64a-08ddce22b085",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Sevier",
+          "city": "Sigurd",
+          "personId": "kayla-golda-mae-tanner",
+          "name": "Kayla Golda-Mae Tanner",
+          "year": 2025
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Reconcile primary-ending status, then review office-label consolidation.",
+      "reason": "The imported primary record says Out in Primary while the same candidate also appears on the general ballot. Do not silently retain that contradiction or infer advancement from a default winner flag.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-5ded70123cc5": {
+      "id": "DC-5ded70123cc5",
+      "personIds": [
+        "kevin-sean-havey"
+      ],
+      "name": "Kevin Sean Havey",
+      "year": 2025,
+      "office": "Redmond Council",
+      "rows": [
+        {
+          "recordId": "2025-kevin-sean-havey-redmond-council-nonpartisan",
+          "office": "Redmond Council",
+          "officeId": "redmond-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-4739-08de1007d770",
+          "stage": "general",
+          "status": "Defeated",
+          "county": "Sevier",
+          "city": "Redmond",
+          "personId": "kevin-sean-havey",
+          "name": "Kevin Sean Havey",
+          "year": 2025
+        },
+        {
+          "recordId": "2025-kevin-sean-havey-redmond-town-council-nonpartisan",
+          "office": "Redmond Town Council",
+          "officeId": "redmond-town-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/Primary08122025/ballot-items/01000000-041e-c676-e12b-08ddce22b085",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Sevier",
+          "city": "Redmond",
+          "personId": "kevin-sean-havey",
+          "name": "Kevin Sean Havey",
+          "year": 2025
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Reconcile primary-ending status, then review office-label consolidation.",
+      "reason": "The imported primary record says Out in Primary while the same candidate also appears on the general ballot. Do not silently retain that contradiction or infer advancement from a default winner flag.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-072527ac2331": {
+      "id": "DC-072527ac2331",
+      "personIds": [
+        "laura-collier-belnap"
+      ],
+      "name": "Laura Collier Belnap",
+      "year": 2018,
+      "office": "State School Board District 5",
+      "rows": [
+        {
+          "recordId": "2018-laura-collier-belnap-state-school-board-district-5-unaffiliated",
+          "office": "State School Board District 5",
+          "officeId": "state-school-board-district-5",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20190228163413/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Laura%20Collier%20Belnap.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Davis",
+          "city": "Bountiful",
+          "personId": "laura-collier-belnap",
+          "name": "Laura Collier Belnap",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-laura-collier-belnap-state-school-board-district-5-not-reported--",
+          "office": "State School Board District 5",
+          "officeId": "state-school-board-district-5",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "laura-collier-belnap",
+          "name": "Laura Collier Belnap",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "applied",
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11",
+      "batchId": "duplicate-cards-01",
+      "appliedOn": "2026-11-11T00:50:11.970Z"
+    },
+    "DC-7ca17d7e0504": {
+      "id": "DC-7ca17d7e0504",
+      "personIds": [
+        "linda-b-hansen"
+      ],
+      "name": "Linda B. Hansen",
+      "year": 2018,
+      "office": "State School Board District 3",
+      "rows": [
+        {
+          "recordId": "2018-linda-b-hansen-state-school-board-district-3-unaffiliated",
+          "office": "State School Board District 3",
+          "officeId": "state-school-board-district-3",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20200213004327/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Linda%20B.%20Hansen.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Salt Lake",
+          "city": "West Valley City",
+          "personId": "linda-b-hansen",
+          "name": "Linda B. Hansen",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-linda-b-hansen-state-school-board-district-3-not-reported--",
+          "office": "State School Board District 3",
+          "officeId": "state-school-board-district-3",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "linda-b-hansen",
+          "name": "Linda B. Hansen",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "applied",
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11",
+      "batchId": "duplicate-cards-01",
+      "appliedOn": "2026-11-11T00:50:11.970Z"
+    },
+    "DC-b8bc2326f50b": {
+      "id": "DC-b8bc2326f50b",
+      "personIds": [
+        "mark-a-huntsman"
+      ],
+      "name": "Mark A. Huntsman",
+      "year": 2018,
+      "office": "State School Board District 14",
+      "rows": [
+        {
+          "recordId": "2018-mark-a-huntsman-state-school-board-district-14-unaffiliated",
+          "office": "State School Board District 14",
+          "officeId": "state-school-board-district-14",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20200213004353/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%2014%20-%20Mark%20A.%20Huntsman.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Millard",
+          "city": "Fillmore",
+          "personId": "mark-a-huntsman",
+          "name": "Mark A. Huntsman",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-mark-a-huntsman-state-school-board-district-14-not-reported--",
+          "office": "State School Board District 14",
+          "officeId": "state-school-board-district-14",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "mark-a-huntsman",
+          "name": "Mark A. Huntsman",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge into one candidacy, preserving declaration and evidenced ballot stages.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-fd641889b9c1": {
+      "id": "DC-fd641889b9c1",
+      "personIds": [
+        "michele-visarraga"
+      ],
+      "name": "Michele Visarraga",
+      "year": 2025,
+      "office": "Sigurd Council",
+      "rows": [
+        {
+          "recordId": "2025-michele-visarraga-sigurd-council-nonpartisan",
+          "office": "Sigurd Council",
+          "officeId": "sigurd-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-4a87-08de1007d770",
+          "stage": "general",
+          "status": "Elected",
+          "county": "Sevier",
+          "city": "Sigurd",
+          "personId": "michele-visarraga",
+          "name": "Michele Visarraga",
+          "year": 2025
+        },
+        {
+          "recordId": "2025-michele-visarraga-sigurd-town-council-nonpartisan",
+          "office": "Sigurd Town Council",
+          "officeId": "sigurd-town-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/Primary08122025/ballot-items/01000000-041e-c676-e64a-08ddce22b085",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Sevier",
+          "city": "Sigurd",
+          "personId": "michele-visarraga",
+          "name": "Michele Visarraga",
+          "year": 2025
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Reconcile primary-ending status, then review office-label consolidation.",
+      "reason": "The imported primary record says Out in Primary while the same candidate also appears on the general ballot. Do not silently retain that contradiction or infer advancement from a default winner flag.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-0b7c81f5d3c4": {
+      "id": "DC-0b7c81f5d3c4",
+      "personIds": [
+        "nichole-thurston"
+      ],
+      "name": "Nichole Thurston",
+      "year": 2025,
+      "office": "Redmond Council",
+      "rows": [
+        {
+          "recordId": "2025-nichole-thurston-redmond-council-nonpartisan",
+          "office": "Redmond Council",
+          "officeId": "redmond-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-4739-08de1007d770",
+          "stage": "general",
+          "status": "Elected",
+          "county": "Sevier",
+          "city": "Redmond",
+          "personId": "nichole-thurston",
+          "name": "Nichole Thurston",
+          "year": 2025
+        },
+        {
+          "recordId": "2025-nichole-thurston-redmond-town-council-nonpartisan",
+          "office": "Redmond Town Council",
+          "officeId": "redmond-town-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/Primary08122025/ballot-items/01000000-041e-c676-e12b-08ddce22b085",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Sevier",
+          "city": "Redmond",
+          "personId": "nichole-thurston",
+          "name": "Nichole Thurston",
+          "year": 2025
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Reconcile primary-ending status, then review office-label consolidation.",
+      "reason": "The imported primary record says Out in Primary while the same candidate also appears on the general ballot. Do not silently retain that contradiction or infer advancement from a default winner flag.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-7da038829085": {
+      "id": "DC-7da038829085",
+      "personIds": [
+        "patrick-d-riley"
+      ],
+      "name": "Patrick D. Riley",
+      "year": 2018,
+      "office": "State School Board District 5",
+      "rows": [
+        {
+          "recordId": "2018-patrick-d-riley-state-school-board-district-5-unaffiliated",
+          "office": "State School Board District 5",
+          "officeId": "state-school-board-district-5",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20200213004334/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Patrick%20D.%20Riley.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Davis",
+          "city": "Centerville",
+          "personId": "patrick-d-riley",
+          "name": "Patrick D. Riley",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-patrick-d-riley-state-school-board-district-5-not-reported--",
+          "office": "State School Board District 5",
+          "officeId": "state-school-board-district-5",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "patrick-d-riley",
+          "name": "Patrick D. Riley",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge into one candidacy, preserving declaration and evidenced ballot stages.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-e5a585dd3f5d": {
+      "id": "DC-e5a585dd3f5d",
+      "personIds": [
+        "paul-lloyd-selleneit"
+      ],
+      "name": "Paul Lloyd Selleneit",
+      "year": 1982,
+      "office": "State House District 18",
+      "rows": [
+        {
+          "recordId": "1982-general-paul-lloyd-selleneit-state-house-district-18-not-reported",
+          "office": "State House District 18",
+          "officeId": "state-house-district-18",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1982Gen.pdf#page=6",
+          "stage": "general",
+          "status": "General Election Candidate; published party label: WI",
+          "county": "",
+          "city": "",
+          "personId": "paul-lloyd-selleneit",
+          "name": "Paul Lloyd Selleneit",
+          "year": 1982
+        },
+        {
+          "recordId": "1982-primary-paul-lloyd-selleneit-state-house-district-18-utah-republican-party",
+          "office": "State House District 18",
+          "officeId": "state-house-district-18",
+          "party": "Utah Republican Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1982Pri.pdf#page=2",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "paul-lloyd-selleneit",
+          "name": "Paul Lloyd Selleneit",
+          "year": 1982
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_evidence",
+      "recommendation": "Hold primary and general write-in paths for stage/affiliation review.",
+      "reason": "The general record explicitly carries the WI label; do not carry the primary party into the general ballot without evidence.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-30b283673808": {
+      "id": "DC-30b283673808",
+      "personIds": [
+        "perry-t-myers"
+      ],
+      "name": "Perry T. Myers",
+      "year": 2023,
+      "office": "U.S. House District 2",
+      "rows": [
+        {
+          "recordId": "2023-perry-t-myers-u-s-house-district-2-unaffiliated",
+          "office": "U.S. House District 2",
+          "officeId": "u-s-house-district-2",
+          "party": "Unaffiliated",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/06/Myers-CD2.pdf",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "perry-t-myers",
+          "name": "Perry T. Myers",
+          "year": 2023
+        },
+        {
+          "recordId": "2023-general-perry-t-myers-u-s-house-of-representatives-district-2-not-reported--",
+          "office": "U.S. House of Representatives District 2",
+          "officeId": "u-s-house-of-representatives-district-2",
+          "party": "Not reported",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "perry-t-myers",
+          "name": "Perry T. Myers",
+          "year": 2023
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge declaration and general-ballot evidence; retain any write-in designation.",
+      "reason": "Same known candidate, year and office. Confirmed ballot evidence controls the election stage; a declaration stored under primary must not invent primary participation.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-7c57bc8d9bf4": {
+      "id": "DC-7c57bc8d9bf4",
+      "personIds": [
+        "robert-johnson"
+      ],
+      "name": "Robert Johnson",
+      "year": 1995,
+      "office": "Town Council (4-Year Term)",
+      "rows": [
+        {
+          "recordId": "1995-robert-johnson-summit-oakley-town-council-4-year-term-nonpartisan",
+          "office": "Town Council (4-Year Term)",
+          "officeId": "town-council-4-year-term",
+          "party": "Nonpartisan",
+          "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
+          "stage": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "county": "Summit",
+          "city": "Oakley",
+          "personId": "robert-johnson",
+          "name": "Robert Johnson",
+          "year": 1995
+        },
+        {
+          "recordId": "1995-robert-johnson-sevier-salina-city-council-4-year-term-nonpartisan",
+          "office": "City Council (4-Year Term)",
+          "officeId": "city-council-4-year-term",
+          "party": "Nonpartisan",
+          "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
+          "stage": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "county": "Sevier",
+          "city": "Salina",
+          "personId": "robert-johnson",
+          "name": "Robert Johnson",
+          "year": 1995
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "keep_separate",
+      "recommendation": "Keep the municipal candidacies separate; investigate a possible person-profile collision.",
+      "reason": "The published municipalities and counties differ. A shared name is not identity evidence for consolidation.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-dfb5c2918fbb": {
+      "id": "DC-dfb5c2918fbb",
+      "personIds": [
+        "scott-l-hansen"
+      ],
+      "name": "Scott L. Hansen",
+      "year": 2018,
+      "office": "State School Board District 2",
+      "rows": [
+        {
+          "recordId": "2018-scott-l-hansen-state-school-board-district-2-unaffiliated",
+          "office": "State School Board District 2",
+          "officeId": "state-school-board-district-2",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20200213004322/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Scott%20L.%20Hansen.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Weber",
+          "city": "Liberty",
+          "personId": "scott-l-hansen",
+          "name": "Scott L. Hansen",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-scott-l-hansen-state-school-board-district-2-not-reported--",
+          "office": "State School Board District 2",
+          "officeId": "state-school-board-district-2",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "scott-l-hansen",
+          "name": "Scott L. Hansen",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge into one candidacy, preserving declaration and evidenced ballot stages.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-8ef231b8caac": {
+      "id": "DC-8ef231b8caac",
+      "personIds": [
+        "seth-stewart"
+      ],
+      "name": "Seth Stewart",
+      "year": 2026,
+      "office": "State Senate District 21",
+      "rows": [
+        {
+          "recordId": "2026-seth-stewart-state-senate-district-21-not-reported",
+          "office": "State Senate District 21",
+          "officeId": "state-senate-district-21",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2026/01/S21-Seth-Stewart.pdf",
+          "stage": "primary",
+          "status": "Disqualified",
+          "county": "",
+          "city": "",
+          "personId": "seth-stewart",
+          "name": "Seth Stewart",
+          "year": 2026
+        },
+        {
+          "recordId": "2026-seth-stewart-state-senate-district-21-utah-republican-party",
+          "office": "State Senate District 21",
+          "officeId": "state-senate-district-21",
+          "party": "Utah Republican Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2026/01/S21-Seth-Stewart.pdf",
+          "stage": "primary",
+          "status": "Withdrew",
+          "county": "",
+          "city": "",
+          "personId": "seth-stewart",
+          "name": "Seth Stewart",
+          "year": 2026
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Resolve competing terminal statuses or filing attempts before merging.",
+      "reason": "Disqualified, Withdrew, and Out in Convention describe different events. The available timeline dates and source status chronology need review.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-7da6922845e0": {
+      "id": "DC-7da6922845e0",
+      "personIds": [
+        "terry-williams"
+      ],
+      "name": "Terry Williams",
+      "year": 1986,
+      "office": "U.S. Senate",
+      "rows": [
+        {
+          "recordId": "1986-general-terry-williams-u-s-senate-not-reported",
+          "office": "U.S. Senate",
+          "officeId": "u-s-senate",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1986Gen.pdf#page=1",
+          "stage": "general",
+          "status": "General Election Candidate; published party label: WI",
+          "county": "",
+          "city": "",
+          "personId": "terry-williams",
+          "name": "Terry Williams",
+          "year": 1986
+        },
+        {
+          "recordId": "1986-primary-terry-williams-u-s-senate-utah-democratic-party",
+          "office": "U.S. Senate",
+          "officeId": "u-s-senate",
+          "party": "Utah Democratic Party",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1986Pri.pdf#page=1",
+          "stage": "primary",
+          "status": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "terry-williams",
+          "name": "Terry Williams",
+          "year": 1986
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_evidence",
+      "recommendation": "Hold primary and general write-in paths for stage/affiliation review.",
+      "reason": "The general record explicitly carries the WI label; do not carry the primary party into the general ballot without evidence.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-2b4d72199ed4": {
+      "id": "DC-2b4d72199ed4",
+      "personIds": [
+        "terryl-warner"
+      ],
+      "name": "Terryl Warner",
+      "year": 2018,
+      "office": "State School Board District 1",
+      "rows": [
+        {
+          "recordId": "2018-terryl-warner-state-school-board-district-1-unaffiliated",
+          "office": "State School Board District 1",
+          "officeId": "state-school-board-district-1",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20190228163411/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%201%20-%20Terryl%20Warner.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Cache",
+          "city": "Hyrum",
+          "personId": "terryl-warner",
+          "name": "Terryl Warner",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-terryl-warner-state-school-board-district-1-not-reported--",
+          "office": "State School Board District 1",
+          "officeId": "state-school-board-district-1",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "terryl-warner",
+          "name": "Terryl Warner",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge into one candidacy, preserving declaration and evidenced ballot stages.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-62b6d7bb9f43": {
+      "id": "DC-62b6d7bb9f43",
+      "personIds": [
+        "thomas-e-nedreberg"
+      ],
+      "name": "Thomas E. Nedreberg",
+      "year": 2018,
+      "office": "State School Board District 3",
+      "rows": [
+        {
+          "recordId": "2018-thomas-e-nedreberg-state-school-board-district-3-unaffiliated",
+          "office": "State School Board District 3",
+          "officeId": "state-school-board-district-3",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20200213004329/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Thomas%20E.%20Nedreberg.pdf",
+          "stage": "primary",
+          "status": "Filed",
+          "county": "Juab",
+          "city": "Eureka",
+          "personId": "thomas-e-nedreberg",
+          "name": "Thomas E. Nedreberg",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-thomas-e-nedreberg-state-school-board-district-3-not-reported--",
+          "office": "State School Board District 3",
+          "officeId": "state-school-board-district-3",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "thomas-e-nedreberg",
+          "name": "Thomas E. Nedreberg",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge into one candidacy, preserving declaration and evidenced ballot stages.",
+      "reason": "Same known person, year and district. The declaration and canvass encode affiliation differently (Unaffiliated / Not reported). Preserve both imported labels; do not fill a missing party value by inference.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-ea552f3cb25d": {
+      "id": "DC-ea552f3cb25d",
+      "personIds": [
+        "travis-paul-jensen"
+      ],
+      "name": "Travis Paul Jensen",
+      "year": 2025,
+      "office": "Redmond Council",
+      "rows": [
+        {
+          "recordId": "2025-travis-paul-jensen-redmond-council-nonpartisan",
+          "office": "Redmond Council",
+          "officeId": "redmond-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-4739-08de1007d770",
+          "stage": "general",
+          "status": "Elected",
+          "county": "Sevier",
+          "city": "Redmond",
+          "personId": "travis-paul-jensen",
+          "name": "Travis Paul Jensen",
+          "year": 2025
+        },
+        {
+          "recordId": "2025-travis-paul-jensen-redmond-town-council-nonpartisan",
+          "office": "Redmond Town Council",
+          "officeId": "redmond-town-council",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/sevier-county-ut/elections/Primary08122025/ballot-items/01000000-041e-c676-e12b-08ddce22b085",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Sevier",
+          "city": "Redmond",
+          "personId": "travis-paul-jensen",
+          "name": "Travis Paul Jensen",
+          "year": 2025
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "needs_status_review",
+      "recommendation": "Reconcile primary-ending status, then review office-label consolidation.",
+      "reason": "The imported primary record says Out in Primary while the same candidate also appears on the general ballot. Do not silently retain that contradiction or infer advancement from a default winner flag.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-03b1d289873f": {
+      "id": "DC-03b1d289873f",
+      "personIds": [
+        "vance-hansen"
+      ],
+      "name": "Vance Hansen",
+      "year": 2018,
+      "office": "State Senate District 2",
+      "rows": [
+        {
+          "recordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
+          "office": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "party": "Unaffiliated",
+          "source": "https://web.archive.org/web/20190228162525/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Vance%20Hansen.pdf",
+          "stage": "primary",
+          "status": "Write-In",
+          "county": "Salt Lake",
+          "city": "Salt Lake City",
+          "personId": "vance-hansen",
+          "name": "Vance Hansen",
+          "year": 2018
+        },
+        {
+          "recordId": "2018-general-vance-hansen-state-senate-district-2-not-reported--",
+          "office": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "party": "Not reported",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "stage": "general",
+          "status": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "personId": "vance-hansen",
+          "name": "Vance Hansen",
+          "year": 2018
+        }
+      ],
+      "categories": [
+        "labels"
+      ],
+      "status": "ready_for_review",
+      "recommendation": "Merge declaration and general-ballot evidence; retain any write-in designation.",
+      "reason": "Same known candidate, year and office. Confirmed ballot evidence controls the election stage; a declaration stored under primary must not invent primary participation.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-b02db405962f": {
+      "id": "DC-b02db405962f",
+      "personIds": [
+        "tommy-williams",
+        "tommy-williams-archie-a-williams-iii"
+      ],
+      "name": "Tommy Williams / Tommy Williams Archie A. Williams III",
+      "year": 2024,
+      "office": "Governor & Lieutenant Governor",
+      "rows": [
+        {
+          "recordId": "2024-tommy-williams-governor-lieutenant-governor-independent-american-party",
+          "personId": "tommy-williams",
+          "name": "Tommy Williams",
+          "year": 2024,
+          "office": "Governor & Lieutenant Governor",
+          "officeId": "governor-lieutenant-governor",
+          "party": "Independent American Party",
+          "electionType": "general",
+          "status": "Out in General",
+          "sourceStatus": "Out in General",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/2024-candidate-filings/",
+          "placeIds": [],
+          "stage": "general"
+        },
+        {
+          "recordId": "2024-general-tommy-williams-archie-a-williams-iii-governor-lieutenant-governor-independent-american-party--",
+          "personId": "tommy-williams-archie-a-williams-iii",
+          "name": "Tommy Williams Archie A. Williams III",
+          "year": 2024,
+          "office": "Governor & Lieutenant Governor",
+          "officeId": "governor-lieutenant-governor",
+          "party": "Independent American Party",
+          "electionType": "general",
+          "status": "General Election Candidate",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11052024/ballot-items/88e40000-968a-0c37-fd62-08dce9374086",
+          "placeIds": [],
+          "stage": "general"
+        }
+      ],
+      "categories": [
+        "identity"
+      ],
+      "status": "needs_identity_review",
+      "recommendation": "Compare primary identity documents before changing person IDs or parsing a ticket.",
+      "reason": "A combined ticket label appears to have become a person name; review candidate/running-mate parsing before any identity merge.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-f64b853589e9": {
+      "id": "DC-f64b853589e9",
+      "personIds": [
+        "derek-kitchen",
+        "derek-lloyd-kitchen"
+      ],
+      "name": "Derek Kitchen / Derek Lloyd Kitchen",
+      "year": 2018,
+      "office": "State Senate District 2",
+      "rows": [
+        {
+          "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+          "personId": "derek-kitchen",
+          "name": "Derek Kitchen",
+          "year": 2018,
+          "office": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "party": "Utah Democratic Party",
+          "electionType": "primary",
+          "status": "Filed",
+          "sourceStatus": "Filed",
+          "county": "Salt Lake",
+          "city": "Salt Lake City",
+          "source": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
+          "placeIds": [
+            "salt-lake",
+            "salt-lake/salt-lake-city"
+          ],
+          "stage": "primary"
+        },
+        {
+          "recordId": "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+          "personId": "derek-lloyd-kitchen",
+          "name": "Derek Lloyd Kitchen",
+          "year": 2018,
+          "office": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "party": "Utah Democratic Party",
+          "electionType": "general",
+          "status": "General Election Candidate",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "placeIds": [],
+          "stage": "general"
+        }
+      ],
+      "categories": [
+        "identity"
+      ],
+      "status": "ready_identity_review",
+      "recommendation": "Review a person alias and three-record timeline consolidation together.",
+      "reason": "The archived declaration URL names Derek Lloyd Kitchen and Senate District 2. The primary/general canvasses use the expanded name; old routes and source IDs must remain supported.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-b13f832fc4a6": {
+      "id": "DC-b13f832fc4a6",
+      "personIds": [
+        "derek-kitchen",
+        "derek-lloyd-kitchen"
+      ],
+      "name": "Derek Kitchen / Derek Lloyd Kitchen",
+      "year": 2018,
+      "office": "State Senate District 2",
+      "rows": [
+        {
+          "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+          "personId": "derek-kitchen",
+          "name": "Derek Kitchen",
+          "year": 2018,
+          "office": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "party": "Utah Democratic Party",
+          "electionType": "primary",
+          "status": "Filed",
+          "sourceStatus": "Filed",
+          "county": "Salt Lake",
+          "city": "Salt Lake City",
+          "source": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
+          "placeIds": [
+            "salt-lake",
+            "salt-lake/salt-lake-city"
+          ],
+          "stage": "primary"
+        },
+        {
+          "recordId": "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+          "personId": "derek-lloyd-kitchen",
+          "name": "Derek Lloyd Kitchen",
+          "year": 2018,
+          "office": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "party": "Utah Democratic Party",
+          "electionType": "primary",
+          "status": "Primary Election Candidate",
+          "sourceStatus": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "placeIds": [],
+          "stage": "primary"
+        }
+      ],
+      "categories": [
+        "identity"
+      ],
+      "status": "ready_identity_review",
+      "recommendation": "Review a person alias and three-record timeline consolidation together.",
+      "reason": "The archived declaration URL names Derek Lloyd Kitchen and Senate District 2. The primary/general canvasses use the expanded name; old routes and source IDs must remain supported.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-1ad9ba429db1": {
+      "id": "DC-1ad9ba429db1",
+      "personIds": [
+        "barry-evans-short",
+        "barry-evan-short"
+      ],
+      "name": "Barry Evans Short / Barry Evan Short",
+      "year": 2022,
+      "office": "State Senate District 28",
+      "rows": [
+        {
+          "recordId": "2022-barry-evans-short-state-senate-district-28-utah-libertarian-party",
+          "personId": "barry-evans-short",
+          "name": "Barry Evans Short",
+          "year": 2022,
+          "office": "State Senate District 28",
+          "officeId": "state-senate-district-28",
+          "party": "Utah Libertarian Party",
+          "electionType": "general",
+          "status": "General Election Candidate",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://web.archive.org/web/20220628205211/https://voteinfo.utah.gov/wp-content/uploads/sites/42/2022/03/Short-Senate-8-Website-1.pdf",
+          "placeIds": [],
+          "stage": "general"
+        },
+        {
+          "recordId": "2022-general-barry-evan-short-state-senate-district-28-utah-libertarian-party--",
+          "personId": "barry-evan-short",
+          "name": "Barry Evan Short",
+          "year": 2022,
+          "office": "State Senate District 28",
+          "officeId": "state-senate-district-28",
+          "party": "Utah Libertarian Party",
+          "electionType": "general",
+          "status": "General Election Candidate",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2022/12/Signed-2022-General-Election-State-Canvass-Certification.pdf",
+          "placeIds": [],
+          "stage": "general"
+        }
+      ],
+      "categories": [
+        "identity"
+      ],
+      "status": "needs_identity_review",
+      "recommendation": "Compare primary identity documents before changing person IDs or parsing a ticket.",
+      "reason": "Different profiles; one or two character edits, with a shared first or last name and contest context. Could be different candidates.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-24ecadbf860a": {
+      "id": "DC-24ecadbf860a",
+      "personIds": [
+        "evan-bullard",
+        "m-evan-bullard"
+      ],
+      "name": "Evan Bullard / M. Evan Bullard",
+      "year": 2024,
+      "office": "U.S. House District 4",
+      "rows": [
+        {
+          "recordId": "2024-evan-bullard-u-s-house-district-4-unaffiliated",
+          "personId": "evan-bullard",
+          "name": "Evan Bullard",
+          "year": 2024,
+          "office": "U.S. House District 4",
+          "officeId": "u-s-house-district-4",
+          "party": "Unaffiliated",
+          "electionType": "general",
+          "status": "Withdrew",
+          "sourceStatus": "Withdrew",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2024/01/Withdrawal-Bullard-Evan-CD4.pdf",
+          "placeIds": [],
+          "stage": "general"
+        },
+        {
+          "recordId": "2024-m-evan-bullard-u-s-house-district-4-unaffiliated",
+          "personId": "m-evan-bullard",
+          "name": "M. Evan Bullard",
+          "year": 2024,
+          "office": "U.S. House District 4",
+          "officeId": "u-s-house-district-4",
+          "party": "Unaffiliated",
+          "electionType": "general",
+          "status": "Out in General",
+          "sourceStatus": "Out in General",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2024/06/M.-Evan-Bullard-CD4.pdf",
+          "placeIds": [],
+          "stage": "general"
+        }
+      ],
+      "categories": [
+        "identity"
+      ],
+      "status": "needs_identity_review",
+      "recommendation": "Compare primary identity documents before changing person IDs or parsing a ticket.",
+      "reason": "Different profiles; one or two character edits, with a shared first or last name and contest context. Could be different candidates.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-778185b873a8": {
+      "id": "DC-778185b873a8",
+      "personIds": [
+        "john-fultz",
+        "jan-fultz"
+      ],
+      "name": "John Fultz / Jan Fultz",
+      "year": 1993,
+      "office": "Council",
+      "rows": [
+        {
+          "recordId": "1993-john-fultz-tooele-ophir-council-nonpartisan",
+          "personId": "john-fultz",
+          "name": "John Fultz",
+          "year": 1993,
+          "office": "Council",
+          "officeId": "council",
+          "party": "Nonpartisan",
+          "electionType": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "county": "Tooele",
+          "city": "Ophir",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
+          "placeIds": [
+            "tooele",
+            "tooele/ophir"
+          ],
+          "stage": "general"
+        },
+        {
+          "recordId": "1993-jan-fultz-tooele-ophir-council-nonpartisan",
+          "personId": "jan-fultz",
+          "name": "Jan Fultz",
+          "year": 1993,
+          "office": "Council",
+          "officeId": "council",
+          "party": "Nonpartisan",
+          "electionType": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "county": "Tooele",
+          "city": "Ophir",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
+          "placeIds": [
+            "tooele",
+            "tooele/ophir"
+          ],
+          "stage": "general"
+        }
+      ],
+      "categories": [
+        "identity"
+      ],
+      "status": "keep_separate",
+      "recommendation": "Keep distinct people/records unless a source correction establishes identity.",
+      "reason": "Short-name similarity within one newspaper return does not prove that the candidates are the same person.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-a708a272b635": {
+      "id": "DC-a708a272b635",
+      "personIds": [
+        "kay-s-jensen",
+        "jay-jensen"
+      ],
+      "name": "Kay S. Jensen / Jay Jensen",
+      "year": 1993,
+      "office": "Council",
+      "rows": [
+        {
+          "recordId": "1993-kay-s-jensen-salt-lake-north-salt-lake-council-nonpartisan",
+          "personId": "kay-s-jensen",
+          "name": "Kay S. Jensen",
+          "year": 1993,
+          "office": "Council",
+          "officeId": "council",
+          "party": "Nonpartisan",
+          "electionType": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "county": "Salt Lake",
+          "city": "North Salt Lake",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
+          "placeIds": [
+            "salt-lake",
+            "salt-lake/north-salt-lake"
+          ],
+          "stage": "general"
+        },
+        {
+          "recordId": "1993-jay-jensen-salt-lake-north-salt-lake-council-nonpartisan",
+          "personId": "jay-jensen",
+          "name": "Jay Jensen",
+          "year": 1993,
+          "office": "Council",
+          "officeId": "council",
+          "party": "Nonpartisan",
+          "electionType": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "county": "Salt Lake",
+          "city": "North Salt Lake",
+          "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
+          "placeIds": [
+            "salt-lake",
+            "salt-lake/north-salt-lake"
+          ],
+          "stage": "general"
+        }
+      ],
+      "categories": [
+        "identity"
+      ],
+      "status": "keep_separate",
+      "recommendation": "Keep distinct people/records unless a source correction establishes identity.",
+      "reason": "Short-name similarity within one newspaper return does not prove that the candidates are the same person.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-46684352e5aa": {
+      "id": "DC-46684352e5aa",
+      "personIds": [
+        "sam-snyder",
+        "tom-snyder"
+      ],
+      "name": "Sam Snyder / Tom Snyder",
+      "year": 1989,
+      "office": "Mayor",
+      "rows": [
+        {
+          "recordId": "1989-sam-snyder-uintah-vernal-mayor-nonpartisan",
+          "personId": "sam-snyder",
+          "name": "Sam Snyder",
+          "year": 1989,
+          "office": "Mayor",
+          "officeId": "mayor",
+          "party": "Nonpartisan",
+          "electionType": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "county": "Uintah",
+          "city": "Vernal",
+          "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/",
+          "placeIds": [
+            "uintah",
+            "uintah/vernal"
+          ],
+          "stage": "general"
+        },
+        {
+          "recordId": "1989-tom-snyder-uintah-vernal-mayor-nonpartisan",
+          "personId": "tom-snyder",
+          "name": "Tom Snyder",
+          "year": 1989,
+          "office": "Mayor",
+          "officeId": "mayor",
+          "party": "Nonpartisan",
+          "electionType": "general",
+          "status": "Unofficial newspaper general-election returns",
+          "sourceStatus": "Unofficial newspaper general-election returns",
+          "county": "Uintah",
+          "city": "Vernal",
+          "source": "https://www.deseret.com/1989/11/8/18833467/here-s-a-look-at-how-utahns-cast-their-ballots-in-228-cities-and-towns/",
+          "placeIds": [
+            "uintah",
+            "uintah/vernal"
+          ],
+          "stage": "general"
+        }
+      ],
+      "categories": [
+        "identity"
+      ],
+      "status": "keep_separate",
+      "recommendation": "Keep distinct people/records unless a source correction establishes identity.",
+      "reason": "Short-name similarity within one newspaper return does not prove that the candidates are the same person.",
+      "firstSeenOn": "2026-11-11"
+    },
+    "DC-740619f495c1": {
+      "id": "DC-740619f495c1",
+      "personIds": [
+        "charlene-a-vandyke"
+      ],
+      "name": "Charlene A. Vandyke",
+      "year": 2024,
+      "office": "Wayne School Board District 2",
+      "rows": [
+        {
+          "recordId": "2024-charlene-a-van-dyke-wayne-school-board-district-2-nonpartisan",
+          "office": "Wayne School Board District 2",
+          "officeId": "wayne-school-board-district-2",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/wayne-county-ut/elections/General11052024/ballot-items/01000000-b224-daec-b80c-08dcea1130d8",
+          "stage": "general",
+          "status": "Elected",
+          "county": "Wayne",
+          "city": ""
+        },
+        {
+          "recordId": "2024-charlene-a-vandyke-wayne-school-board-district-2-nonpartisan",
+          "office": "Wayne School Board District 2",
+          "officeId": "wayne-school-board-district-2",
+          "party": "Nonpartisan",
+          "source": "https://electionresults.utah.gov/results/public/wayne-county-ut/elections/Primary06252024/ballot-items/d2029012-a9d8-4371-98c4-fe0c8e2c0280",
+          "stage": "primary",
+          "status": "Out in Primary",
+          "county": "Wayne",
+          "city": ""
+        }
+      ],
+      "categories": [
+        "exact"
+      ],
+      "status": "not_in_latest_audit",
+      "recommendation": "No approval needed in this review batch.",
+      "reason": "This case disappeared after a pre-existing source/status correction. It is not counted as an approved or applied proposal in this workflow.",
+      "firstSeenOn": "2026-11-11",
+      "lastCheckedOn": "2026-11-11"
+    }
+  },
+  "batches": {
+    "duplicate-cards-01": {
+      "id": "duplicate-cards-01",
+      "title": "2018 school-board declaration/canvass consolidation",
+      "status": "applied",
+      "contentHash": "298aa580386c6a5c4ae720262dc1a4b3564b0adfe0cbb2bdd36fa44ca4ec249f",
+      "manifest": "duplicate-card-approvals/batch-01.json",
+      "report": "duplicate-card-approvals/batch-01.html",
+      "cases": [
+        "DC-5798e9c5254f",
+        "DC-1703811298cd",
+        "DC-65a70f76d236",
+        "DC-072527ac2331",
+        "DC-7ca17d7e0504"
+      ]
+    }
+  },
+  "events": [
+    {
+      "type": "batch_prepared",
+      "on": "2026-11-11",
+      "batchId": "duplicate-cards-01",
+      "contentHash": "298aa580386c6a5c4ae720262dc1a4b3564b0adfe0cbb2bdd36fa44ca4ec249f",
+      "productionChanges": 0
+    },
+    {
+      "type": "batch_approved",
+      "on": "2026-11-11T00:50:11.970Z",
+      "batchId": "duplicate-cards-01",
+      "contentHash": "298aa580386c6a5c4ae720262dc1a4b3564b0adfe0cbb2bdd36fa44ca4ec249f",
+      "approval": "Batch 01 is approved"
+    },
+    {
+      "type": "batch_applied",
+      "on": "2026-11-11T00:50:11.970Z",
+      "batchId": "duplicate-cards-01",
+      "contentHash": "298aa580386c6a5c4ae720262dc1a4b3564b0adfe0cbb2bdd36fa44ca4ec249f",
+      "audit": "duplicate-card-approvals/batch-01-application.json"
+    }
+  ],
+  "affiliationPolicy": "Prefer a matching source-imported named party/affiliation over not-reported; preserve raw values and review conflicting named affiliations."
+}

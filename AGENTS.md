@@ -6,6 +6,8 @@ Use Synaptic Code’s `preview_*` browser tools for browser checks. Do not launc
 
 ## Sources and notes
 
+When consolidating a verified matching candidacy, prefer its source-imported named party/affiliation over `not-reported`. Preserve every original source value; conflicting named affiliations require review rather than inference.
+
 Always prefer the existing evidence popover pattern (`evidence-popover` with `anchoredPopover`) over `<details>` for sources and notes anywhere on the site. Reuse its shared styles, anchored positioning, and close control.
 
 ## HTML reports

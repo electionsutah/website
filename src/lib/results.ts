@@ -7,6 +7,17 @@ export const count = (value: number) => value.toLocaleString('en-US');
 export const percent = (votes: number, total: number) => total ? `${(votes / total * 100).toFixed(2)}%` : '—';
 /** Winners elected in a contest ("Vote for N"); 1 unless the source says otherwise. */
 export const seatsOf = (contest: { seats?: number }) => Math.max(1, contest.seats ?? 1);
+/** Mark published leaders without treating a vote lead as a certified outcome. */
+export function resultStanding(contest: Contest, option: Option): 'Winner' | 'Leading' | undefined {
+  if (option.winner === true) return 'Winner';
+  if (!contest.total || contest.votesPublished === false || option.votesPublished === false ||
+    contest.optionTotalsReconcile === false || contest.totalBasis === 'listed named-candidate votes' ||
+    contest.totalBasis === 'first-round votes' || contest.options.some(row => row.winner === true)) return;
+  const published = contest.options.filter(row => row.votesPublished !== false);
+  const ahead = published.filter(row => row.votes > option.votes).length;
+  const tied = published.filter(row => row.votes === option.votes).length;
+  if (option.votes > 0 && ahead + tied <= seatsOf(contest)) return 'Leading';
+}
 /** Gap between the last winning position and the first losing one, as a share of votes cast. */
 export const margin = (row: { options: Option[]; total: number }, seats = 1) => row.options.length > seats && row.total ? (row.options[seats - 1].votes - row.options[seats].votes) / row.total * 100 : Infinity;
 /**

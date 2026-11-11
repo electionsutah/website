@@ -4,6 +4,7 @@ import { tidySnapshot } from './result-names';
 import type { Contest, Snapshot } from './results';
 import index from '../data/result-index.json';
 import { reviewedResultFor } from './reviewed-candidacies';
+import { formatOfficeName } from './office-names';
 
 const snapshots = new Map<string, Promise<Snapshot>>();
 const stageFor = (filing: Filing) => filing.status === 'filed' ? 'general' : filing.electionType;
@@ -50,7 +51,7 @@ export function resultForFiling(filing: Filing, snapshot: Snapshot): Contest | u
     return reviewed.length === 1 ? reviewed[0] : undefined;
   }
   const primary = filing.electionType.includes('primary');
-  const officeKey = (name: string) => identityKey(cleanOfficeName(primary ? name.replace(/^(?:REP|DEM)\s+/i, '') : name));
+  const officeKey = (name: string) => identityKey(formatOfficeName(cleanOfficeName(primary ? name.replace(/^(?:REP|DEM)\s+/i, '') : name)));
   const matches = snapshot.contests.filter(contest => {
     const stage = contest.electionType ?? 'general';
     if (stage !== filing.electionType && !(filing.status === 'filed' && stage === 'general')) return false;

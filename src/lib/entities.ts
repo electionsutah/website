@@ -19,6 +19,7 @@ import candidateDocuments from '../data/candidate-documents.json';
 import { applyFilingChanges, applyPlaceSocial, applyEntityLinks, entityContact, editorialData, importedPersonLinks, migratePersonLinks, type PersonProfile } from './editorial';
 import type { ContactAddress } from './contact-addresses';
 import { applyStructure } from './editor-structure';
+import { formatOfficeName } from './office-names';
 
 export type Contact = {
   address: string | ContactAddress[];
@@ -46,6 +47,7 @@ export type Filing = {
   year: number;
   electionType: string;
   officeName: string;
+  rawOfficeName?: string;
   officeId: string;
   partyName: string;
   partyId: string;
@@ -412,7 +414,8 @@ export const importedFilings: Filing[] = [
       name: displayName(row.name),
       year: row.year,
       electionType: row.electionType,
-      officeName,
+      officeName: formatOfficeName(officeName),
+      rawOfficeName: row.office,
       officeId: slug(officeName),
       partyName: party.name,
       partyId: partyIdForName(party.name),
@@ -445,7 +448,8 @@ export const importedFilings: Filing[] = [
       name: displayName(row.name),
       year: 2026,
       electionType: row.status === 'general_election' ? 'general' : 'primary',
-      officeName,
+      officeName: formatOfficeName(officeName),
+      rawOfficeName: row.office,
       officeId: slug(officeName),
       partyName: party.name,
       partyId: partyIdForName(party.name),
@@ -756,6 +760,9 @@ export const importedEntityStructure = {
   filings: filings.map(({ recordId, personId, runningMateId, officeId, partyId, placeIds, year }) => ({ id: recordId, personId, runningMateId, officeId, partyId, placeIds, year }))
 };
 applyStructure({ people, offices, parties, places, filings }, editorialData);
+// Apply the same display rule to editorial office names and their related filings.
+for (const office of offices) office.name = formatOfficeName(office.name);
+for (const filing of filings) filing.officeName = formatOfficeName(filing.officeName);
 
 export const peopleById = new Map(people.map((person) => [person.id, person]));
 export const officesById = new Map(offices.map((office) => [office.id, office]));

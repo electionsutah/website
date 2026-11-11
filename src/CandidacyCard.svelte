@@ -24,6 +24,9 @@
   });
   let result: FilingResult | undefined;
   $: filing = history.filing;
+  $: resultFilings = [...history.records]
+    .sort((a, b) => ['presidential-primary', 'primary', 'general'].indexOf(a.electionType) - ['presidential-primary', 'primary', 'general'].indexOf(b.electionType))
+    .filter((row, index, rows) => row.status !== 'filed' && hasFilingResults(row) && rows.findIndex(candidate => candidate.status !== 'filed' && hasFilingResults(candidate) && candidate.electionType === row.electionType) === index);
   $: sourcesId = `candidacy-sources-${filing.recordId}-${personId}`;
   function open(event: MouseEvent, href: string) {
     if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -46,11 +49,19 @@
       </div>
     {/if}
   </div>
-  {#if hasFilingResults(filing)}<FilingResults {filing} {navigate} onresult={(next) => result = next} />{/if}
+  {#if resultFilings.length}
+    <div class="candidacy-results">
+      {#each resultFilings as stage (stage.recordId)}
+        <FilingResults filing={stage} {navigate} onresult={(next) => { if (stage.electionType === filing.electionType) result = next; }} />
+      {/each}
+    </div>
+  {/if}
 </div>
 
 <style>
   .filing-info{--timeline-marker-width:48px;--timeline-column-gap:var(--space-3);container-type:inline-size}
+  .candidacy-results{min-width:0;display:grid;gap:var(--space-6)}
+  .candidacy-results :global(.filing-results + .filing-results){padding-top:var(--space-5);border-top:1px solid var(--color-rule)}
   .timeline-heading{margin:var(--space-5) 0 0;padding-top:var(--space-5);border-top:1px solid var(--color-rule);font:700 var(--text-base)/1.4 var(--font-sans)}
   .candidacy-sources{display:inline-flex;align-items:center;gap:var(--space-1);margin-top:var(--space-4);padding:var(--space-1) 0;border:0;background:none;color:var(--color-blue-dark);font:600 var(--text-xs)/1.5 var(--font-sans);text-decoration:underline;text-underline-offset:3px}
   .evidence-source-list small{overflow-wrap:anywhere}

@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import TimelineDate from './TimelineDate.svelte';
   import CountUp from './CountUp.svelte';
+  import Icon from './Icon.svelte';
   import { revealVoteBar } from './lib/vote-animation';
   const formatPercent = (value: number) => `${value.toFixed(2)}%`;
   import { identityKey, type Filing } from './lib/entities';
@@ -9,7 +10,7 @@
   import type { FilingResult } from './lib/candidacy-history';
   import { resultPerson, personHref } from './lib/result-people';
   import { resultPartyHref } from './lib/result-links';
-  import { color, count, updated, type Snapshot, type Contest } from './lib/results';
+  import { color, count, updated, resultStanding, type Snapshot, type Contest } from './lib/results';
 
   export let filing: Filing;
   export let navigate: (href: string) => void;
@@ -40,15 +41,19 @@
         {@const candidate = resultPerson(option.name, contest)}
         {@const partyHref = resultPartyHref(option.party)}
         {@const matching = candidate?.id === filing.personId || identityKey(option.name.split(', ')[0]) === identityKey(filing.name)}
+        {@const standing = resultStanding(contest, option)}
         <li class:matching-result={matching}>
+          {#if standing}<span class="winner-marker" title={standing}><Icon name="check_circle" /><span class="sr-only">{standing}</span></span>{/if}
+          <div class="result-row-content">
           <div class="mini-label" class:matching={matching}>
-            <span>{#if candidate}<a href={personHref(candidate)} onclick={(event) => openCandidate(event, personHref(candidate))}>{option.name}</a>{:else}{option.name}{/if}{#if option.party}<span class="mini-party">{' - '}{#if partyHref}<a href={partyHref} onclick={(event) => openCandidate(event, partyHref)}>{option.party}</a>{:else}{option.party}{/if}</span>{/if}</span>
+            <span>{#if candidate}<a href={personHref(candidate)} onclick={(event) => openCandidate(event, personHref(candidate))}>{option.name}</a>{:else}{option.name}{/if}{#if option.party}<span class="mini-party-separator">{' - '}</span><span class="mini-party">{#if partyHref}<a href={partyHref} onclick={(event) => openCandidate(event, partyHref)}>{option.party}</a>{:else}{option.party}{/if}</span>{/if}</span>
             <div class="mini-totals">
               <small>{option.votesPublished === false ? 'Votes not published' : `${count(option.votes)} votes`}</small>
               {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<strong>{#if contest.total}<CountUp value={option.votes / contest.total * 100} format={formatPercent} />{:else}—{/if}</strong>{/if}
             </div>
           </div>
           {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<div class="mini-track" style:--share={`${contest.total ? option.votes / contest.total * 100 : 0}%`}><div class="mini-fill" aria-hidden="true" use:revealVoteBar={`${contest.id}:${option.name}:${option.votes}:${contest.total}`} style:width="var(--share)" style:background={color(option)}></div></div>{/if}
+          </div>
         </li>
       {/each}
     </ul>
@@ -75,12 +80,16 @@
   .mini-label a,.mini-actions a{color:var(--color-blue);text-decoration:underline;text-underline-offset:3px}
   ul{list-style:none;padding:0;margin:var(--space-4) 0;display:grid;gap:var(--space-3)}
   .matching-result{background:var(--color-blue-tint);padding:var(--space-3);margin-inline:calc(-1 * var(--space-3))}
+  li{display:grid;grid-template-columns:24px minmax(0,1fr);align-items:center;gap:var(--space-3)}
+  .winner-marker{grid-column:1;grid-row:1;display:flex;align-items:center;color:var(--color-success)}
+  .result-row-content{grid-column:2;grid-row:1;min-width:0}
   .mini-label{display:flex;align-items:baseline;justify-content:space-between;gap:var(--space-3);font-size:var(--text-sm)}
   .mini-label span{overflow-wrap:anywhere}
   .mini-label strong{min-width:65px;font-size:var(--text-xl);line-height:1.1;white-space:nowrap;font-variant-numeric:tabular-nums}
   .mini-totals{display:flex;flex-shrink:0;align-items:baseline;justify-content:flex-end;gap:var(--space-2);text-align:right;font-variant-numeric:tabular-nums}
   .mini-totals small{white-space:nowrap;font-weight:400}
   .mini-party{font-weight:400;color:var(--color-muted)}
+  .mini-party-separator{font-weight:400;color:var(--color-muted);text-decoration:none}
   .mini-party a{color:inherit;font-weight:400}
   .mini-scope{margin:var(--space-2) 0;color:var(--color-muted);font-size:var(--text-xs)}
   .mini-label.matching,.mini-label.matching .mini-party,.mini-label.matching a{font-weight:700}

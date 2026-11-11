@@ -44,7 +44,7 @@
       "people": 10
     }
   ],
-  "alreadyGroupedCandidacies": 1753,
+  "alreadyGroupedCandidacies": 1758,
   "separateStagePairsExcluded": 1472,
   "review": [
     {
@@ -99,7 +99,7 @@
           "personId": "dennis-jones",
           "name": "Dennis Jones",
           "year": 1995,
-          "office": "Town Council (4-year term)",
+          "office": "Town Council (4-Year Term)",
           "officeId": "town-council-4-year-term",
           "party": "Nonpartisan",
           "electionType": "general",
@@ -118,7 +118,7 @@
           "personId": "dennis-jones",
           "name": "Dennis Jones",
           "year": 1995,
-          "office": "Town Council (4-year term)",
+          "office": "Town Council (4-Year Term)",
           "officeId": "town-council-4-year-term",
           "party": "Nonpartisan",
           "electionType": "general",

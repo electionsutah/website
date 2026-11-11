@@ -9,6 +9,14 @@ try {
   const { tidySnapshot } = await server.ssrLoadModule('/src/lib/result-names.ts');
   const { resultForFiling } = await server.ssrLoadModule('/src/lib/filing-results.ts');
   const person = peopleById.get('abrian-b-velarde');
+  const charlene = candidacyHistory(peopleById.get('charlene-a-vandyke').filings);
+  assert.equal(charlene.length, 1, 'Wayne primary and general belong to one candidacy');
+  assert.deepEqual(charlene[0].records.map(row => row.electionType), ['primary', 'general']);
+  assert.deepEqual(candidacyEvents(charlene[0]).map(event => event.title), ['Filed', 'Primary', 'General Election']);
+  for (const row of charlene[0].records) {
+    const snapshot = tidySnapshot(JSON.parse(await readFile(`public/data/results/2024-${row.electionType}.json`, 'utf8')));
+    assert.ok(resultForFiling(row, snapshot), `Charlene retains ${row.electionType} canvass`);
+  }
   const before = JSON.stringify(person.filings);
   const history = candidacyHistory(person.filings);
   assert.equal(history.length,1);

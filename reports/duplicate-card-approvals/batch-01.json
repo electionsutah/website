@@ -1,0 +1,575 @@
+{
+  "version": 1,
+  "batchId": "duplicate-cards-01",
+  "title": "2018 school-board declaration/canvass consolidation",
+  "preparedOn": "2026-11-11",
+  "scope": "Five known people; five cards removed from display; eleven source records retained. No production changes until this exact batch is approved.",
+  "cases": [
+    {
+      "caseId": "DC-5798e9c5254f",
+      "personId": "brittney-cummins",
+      "name": "Brittney Cummins",
+      "office": "State School Board District 6",
+      "officeId": "state-school-board-district-6",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-brittney-cummins-state-school-board-district-6-unaffiliated",
+          "personId": "brittney-cummins",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-6",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Salt Lake",
+          "city": "West Valley City",
+          "source": "https://web.archive.org/web/20190228163414/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%206%20-%20Brittney%20Cummins.pdf"
+        },
+        {
+          "recordId": "2018-general-brittney-cummins-state-school-board-district-6-not-reported--",
+          "personId": "brittney-cummins",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-6",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "brittney-cummins-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "brittney-cummins",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-brittney-cummins-state-school-board-district-6-unaffiliated",
+        "recordIds": [
+          "2018-brittney-cummins-state-school-board-district-6-unaffiliated",
+          "2018-general-brittney-cummins-state-school-board-district-6-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-10",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-10",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-brittney-cummins-state-school-board-district-6-unaffiliated",
+            "url": "https://web.archive.org/web/20190228163414/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%206%20-%20Brittney%20Cummins.pdf",
+            "officeId": "state-school-board-district-6",
+            "partyId": "unaffiliated",
+            "county": "Salt Lake",
+            "city": "West Valley City",
+            "status": "filed",
+            "personId": "brittney-cummins",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-brittney-cummins-state-school-board-district-6-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-6",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "brittney-cummins",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20190228163414/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%206%20-%20Brittney%20Cummins.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "39,316 votes · 100.00%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "da669371fa2c273164c12f526a661c2787343513ddac9531b6136e6c374103d2"
+    },
+    {
+      "caseId": "DC-1703811298cd",
+      "personId": "cindy-davis",
+      "name": "Cindy Davis",
+      "office": "State School Board District 9",
+      "officeId": "state-school-board-district-9",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 3,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-cindy-davis-state-school-board-district-9-unaffiliated",
+          "personId": "cindy-davis",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-9",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Utah",
+          "city": "American Fork",
+          "source": "https://web.archive.org/web/20190228163424/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%209%20-%20Cindy%20Davis.pdf"
+        },
+        {
+          "recordId": "2018-general-cindy-davis-state-school-board-district-9-not-reported--",
+          "personId": "cindy-davis",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-9",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        },
+        {
+          "recordId": "2018-primary-cindy-davis-state-school-board-district-9-not-reported--",
+          "personId": "cindy-davis",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-9",
+          "partyId": "not-reported",
+          "status": "primary_election",
+          "sourceStatus": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "cindy-davis-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "cindy-davis",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-cindy-davis-state-school-board-district-9-unaffiliated",
+        "recordIds": [
+          "2018-cindy-davis-state-school-board-district-9-unaffiliated",
+          "2018-general-cindy-davis-state-school-board-district-9-not-reported--",
+          "2018-primary-cindy-davis-state-school-board-district-9-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-11",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-11",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          },
+          {
+            "electionType": "primary",
+            "contestId": "2018-primary-state-board-of-education-2",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-cindy-davis-state-school-board-district-9-unaffiliated",
+            "url": "https://web.archive.org/web/20190228163424/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%209%20-%20Cindy%20Davis.pdf",
+            "officeId": "state-school-board-district-9",
+            "partyId": "unaffiliated",
+            "county": "Utah",
+            "city": "American Fork",
+            "status": "filed",
+            "personId": "cindy-davis",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-cindy-davis-state-school-board-district-9-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-9",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "cindy-davis",
+            "year": 2018,
+            "electionType": "general"
+          },
+          {
+            "recordId": "2018-primary-cindy-davis-state-school-board-district-9-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-9",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "primary_election",
+            "personId": "cindy-davis",
+            "year": 2018,
+            "electionType": "primary"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20190228163424/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%209%20-%20Cindy%20Davis.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "Primary",
+          "date": "2018-06-26",
+          "summary": "13,824 votes · 51.48%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "37,594 votes · 67.64%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "095467955cd464ddca929792e89e8cd66fde8d4e7e0ae96ee479064a2777c213"
+    },
+    {
+      "caseId": "DC-65a70f76d236",
+      "personId": "craig-k-pitts",
+      "name": "Craig K. Pitts",
+      "office": "State School Board District 2",
+      "officeId": "state-school-board-district-2",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-craig-k-pitts-state-school-board-district-2-unaffiliated",
+          "personId": "craig-k-pitts",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-2",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Weber",
+          "city": "Ogden",
+          "source": "https://web.archive.org/web/20200213004326/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Craig%20K.%20Pitts.pdf"
+        },
+        {
+          "recordId": "2018-general-craig-k-pitts-state-school-board-district-2-not-reported--",
+          "personId": "craig-k-pitts",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-2",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "craig-k-pitts-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "craig-k-pitts",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-craig-k-pitts-state-school-board-district-2-unaffiliated",
+        "recordIds": [
+          "2018-craig-k-pitts-state-school-board-district-2-unaffiliated",
+          "2018-general-craig-k-pitts-state-school-board-district-2-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-4",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-4",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-craig-k-pitts-state-school-board-district-2-unaffiliated",
+            "url": "https://web.archive.org/web/20200213004326/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Craig%20K.%20Pitts.pdf",
+            "officeId": "state-school-board-district-2",
+            "partyId": "unaffiliated",
+            "county": "Weber",
+            "city": "Ogden",
+            "status": "filed",
+            "personId": "craig-k-pitts",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-craig-k-pitts-state-school-board-district-2-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-2",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "craig-k-pitts",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20200213004326/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Craig%20K.%20Pitts.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "18,819 votes · 39.51%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "fe0002a5467100bcd293ef39befeaa26c7c1c1496f0ef3b0a9e23f1bc410c398"
+    },
+    {
+      "caseId": "DC-072527ac2331",
+      "personId": "laura-collier-belnap",
+      "name": "Laura Collier Belnap",
+      "office": "State School Board District 5",
+      "officeId": "state-school-board-district-5",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-laura-collier-belnap-state-school-board-district-5-unaffiliated",
+          "personId": "laura-collier-belnap",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-5",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Davis",
+          "city": "Bountiful",
+          "source": "https://web.archive.org/web/20190228163413/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Laura%20Collier%20Belnap.pdf"
+        },
+        {
+          "recordId": "2018-general-laura-collier-belnap-state-school-board-district-5-not-reported--",
+          "personId": "laura-collier-belnap",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-5",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "laura-collier-belnap-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "laura-collier-belnap",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-laura-collier-belnap-state-school-board-district-5-unaffiliated",
+        "recordIds": [
+          "2018-laura-collier-belnap-state-school-board-district-5-unaffiliated",
+          "2018-general-laura-collier-belnap-state-school-board-district-5-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-8",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-8",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-laura-collier-belnap-state-school-board-district-5-unaffiliated",
+            "url": "https://web.archive.org/web/20190228163413/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Laura%20Collier%20Belnap.pdf",
+            "officeId": "state-school-board-district-5",
+            "partyId": "unaffiliated",
+            "county": "Davis",
+            "city": "Bountiful",
+            "status": "filed",
+            "personId": "laura-collier-belnap",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-laura-collier-belnap-state-school-board-district-5-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-5",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "laura-collier-belnap",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20190228163413/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Laura%20Collier%20Belnap.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "42,538 votes · 64.97%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "6524c849642187a86f5ac17074edf1491b5334ffe6f67d400366ee0147b2f84b"
+    },
+    {
+      "caseId": "DC-7ca17d7e0504",
+      "personId": "linda-b-hansen",
+      "name": "Linda B. Hansen",
+      "office": "State School Board District 3",
+      "officeId": "state-school-board-district-3",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-linda-b-hansen-state-school-board-district-3-unaffiliated",
+          "personId": "linda-b-hansen",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-school-board-district-3",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "county": "Salt Lake",
+          "city": "West Valley City",
+          "source": "https://web.archive.org/web/20200213004327/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Linda%20B.%20Hansen.pdf"
+        },
+        {
+          "recordId": "2018-general-linda-b-hansen-state-school-board-district-3-not-reported--",
+          "personId": "linda-b-hansen",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-school-board-district-3",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "linda-b-hansen-2018-school-board-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "linda-b-hansen",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-linda-b-hansen-state-school-board-district-3-unaffiliated",
+        "recordIds": [
+          "2018-linda-b-hansen-state-school-board-district-3-unaffiliated",
+          "2018-general-linda-b-hansen-state-school-board-district-3-not-reported--"
+        ],
+        "resultContestId": "2018-general-state-school-board-6",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-state-school-board-6",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "User-reviewed declaration/canvass consolidation: exact known candidate, year and district agree. The declaration and canvasses encode affiliation differently; preserve all source labels and do not infer primary participation from the declaration alone.",
+        "sources": [
+          {
+            "recordId": "2018-linda-b-hansen-state-school-board-district-3-unaffiliated",
+            "url": "https://web.archive.org/web/20200213004327/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Linda%20B.%20Hansen.pdf",
+            "officeId": "state-school-board-district-3",
+            "partyId": "unaffiliated",
+            "county": "Salt Lake",
+            "city": "West Valley City",
+            "status": "filed",
+            "personId": "linda-b-hansen",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-linda-b-hansen-state-school-board-district-3-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-school-board-district-3",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "linda-b-hansen",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20200213004327/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Linda%20B.%20Hansen.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "31,380 votes · 73.81%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "recommendation": "Approve display consolidation only. Retain every record, ID, result, source link and imported party label.",
+      "contentHash": "7b7f360bb90eead9fc25f3d4cf869a09f19f01e0efcc0a6562fba35de6d9dfc8"
+    }
+  ],
+  "contentHash": "298aa580386c6a5c4ae720262dc1a4b3564b0adfe0cbb2bdd36fa44ca4ec249f"
+}

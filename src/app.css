@@ -567,9 +567,9 @@ main:focus,main h1:focus{outline:0}
 .party-mark { display: grid; place-items: center; }
 
 /* Result-bearing filing cards span the list and split at roomy widths. */
-.filing-card:has(> .filing-results){grid-column:1 / -1;display:grid;gap:var(--space-6);align-items:start}
+.filing-card:has(> .candidacy-results){grid-column:1 / -1;display:grid;gap:var(--space-6);align-items:start}
 .filing-info{min-width:0}
-@media(min-width:900px){.filing-card:has(> .filing-results){grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media(min-width:900px){.filing-card:has(> .candidacy-results){grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
 
 .filing-cycle a.filing-year{color:var(--color-paper);text-decoration:none;cursor:pointer}.filing-cycle a.filing-year:hover{text-decoration:underline;text-underline-offset:4px}.filing-cycle a.filing-year:focus-visible{outline:3px solid var(--color-ink);outline-offset:4px}
 

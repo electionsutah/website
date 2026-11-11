@@ -14,9 +14,13 @@ export function reviewedCandidacies(records: Filing[]) {
         row.county === evidence.county && row.city === evidence.city && row.status === evidence.status;
     });
     const canonical = matched.find(row => row.recordId === review.canonicalRecordId);
+    // Within an explicitly reviewed candidacy, prefer a reported affiliation to a missing value.
+    // Conflicting named affiliations remain a review decision; source records are never rewritten.
+    const reported = matched.filter(row => row.partyId !== 'not-reported');
+    const affiliation = canonical?.partyId === 'not-reported' && new Set(reported.map(row => row.partyId)).size === 1 ? reported[0] : canonical;
     const stageRows = matched.filter(row => row.electionType === review.electionType && row.status !== 'filed');
     const latest = stageRows.find(row => ['defeated', 'disqualified', 'withdrew', 'deceased'].includes(row.status) || /deceased/i.test(row.sourceStatus)) ?? stageRows[0];
-    return unchanged && canonical && latest ? [{ review, filing: { ...canonical, electionType: latest.electionType, status: latest.status, sourceStatus: latest.sourceStatus }, records: matched }] : [];
+    return unchanged && canonical && latest ? [{ review, filing: { ...canonical, partyId: affiliation!.partyId, partyName: affiliation!.partyName, electionType: latest.electionType, status: latest.status, sourceStatus: latest.sourceStatus }, records: matched }] : [];
   });
 }
 

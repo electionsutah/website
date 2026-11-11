@@ -391,21 +391,21 @@
       ]
     }
   ],
-  "generatedOn": "2026-11-10",
-  "baseCommit": "cd229ba97cd94c0dc43761752cfe81c712b985ab",
-  "reviewManifestSha256": "9bb21aa93acde0dd2fa7535d87562c5fa26786a33a6ac8ef1a8e45689492c9d3",
+  "generatedOn": "2026-11-11",
+  "baseCommit": "d5170d448035f22896ba8951ae14f9b4681ef81a",
+  "reviewManifestSha256": "065042761cb2cf60a8fe3b8578b1affb6090aaa7e3efa56d2b5fc12c594f010d",
   "scope": "The same candidacy grouping functions used by person detail cards and office/place candidate rows. Every person, office and place scope is audited; party/election embedded People grids use one card per person ID. Label and identity findings are candidates for review, not automatic merges.",
   "counts": {
     "people": 12448,
-    "personCards": 16173,
+    "personCards": 16167,
     "offices": 1606,
     "places": 294,
     "parties": 23,
     "scopesChecked": 1900,
-    "reviewScopeIntersections": 15,
+    "reviewScopeIntersections": 20,
     "confirmedScopedDuplicates": 0,
-    "exactKeyPairs": 4,
-    "labelVariantPairs": 34,
+    "exactKeyPairs": 3,
+    "labelVariantPairs": 29,
     "identityReviewPairs": 11,
     "duplicateIndexIds": {
       "people": 0,
@@ -416,36 +416,6 @@
   },
   "scoped": [],
   "exact": [
-    {
-      "personId": "charlene-a-vandyke",
-      "name": "Charlene A. Vandyke",
-      "year": 2024,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2024-charlene-a-van-dyke-wayne-school-board-district-2-nonpartisan",
-          "office": "Wayne School Board District 2",
-          "officeId": "wayne-school-board-district-2",
-          "party": "Nonpartisan",
-          "source": "https://electionresults.utah.gov/results/public/wayne-county-ut/elections/General11052024/ballot-items/01000000-b224-daec-b80c-08dcea1130d8",
-          "stage": "general",
-          "status": "Elected",
-          "county": "Wayne",
-          "city": ""
-        },
-        {
-          "recordId": "2024-charlene-a-vandyke-wayne-school-board-district-2-nonpartisan",
-          "office": "Wayne School Board District 2",
-          "officeId": "wayne-school-board-district-2",
-          "party": "Nonpartisan",
-          "source": "https://electionresults.utah.gov/results/public/wayne-county-ut/elections/Primary06252024/ballot-items/d2029012-a9d8-4371-98c4-fe0c8e2c0280",
-          "stage": "primary",
-          "status": "Out in Primary",
-          "county": "Wayne",
-          "city": ""
-        }
-      ]
-    },
     {
       "personId": "dave-bierschied",
       "name": "Dave Bierschied",
@@ -484,7 +454,7 @@
       "rows": [
         {
           "recordId": "1995-dennis-jones-emery-elmo-town-council-4-year-term-nonpartisan",
-          "office": "Town Council (4-year term)",
+          "office": "Town Council (4-Year Term)",
           "officeId": "town-council-4-year-term",
           "party": "Nonpartisan",
           "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
@@ -495,7 +465,7 @@
         },
         {
           "recordId": "1995-dennis-jones-duchesne-tabiona-town-council-4-year-term-nonpartisan",
-          "office": "Town Council (4-year term)",
+          "office": "Town Council (4-Year Term)",
           "officeId": "town-council-4-year-term",
           "party": "Nonpartisan",
           "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
@@ -538,36 +508,6 @@
     }
   ],
   "labels": [
-    {
-      "personId": "brittney-cummins",
-      "name": "Brittney Cummins",
-      "year": 2018,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2018-brittney-cummins-state-school-board-district-6-unaffiliated",
-          "office": "State School Board District 6",
-          "officeId": "state-school-board-district-6",
-          "party": "Unaffiliated",
-          "source": "https://web.archive.org/web/20190228163414/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%206%20-%20Brittney%20Cummins.pdf",
-          "stage": "primary",
-          "status": "Filed",
-          "county": "Salt Lake",
-          "city": "West Valley City"
-        },
-        {
-          "recordId": "2018-general-brittney-cummins-state-school-board-district-6-not-reported--",
-          "office": "State School Board District 6",
-          "officeId": "state-school-board-district-6",
-          "party": "Not reported",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
-          "stage": "general",
-          "status": "General Election Candidate",
-          "county": "",
-          "city": ""
-        }
-      ]
-    },
     {
       "personId": "cary-g-peterson",
       "name": "Cary G. Peterson",
@@ -655,66 +595,6 @@
           "status": "Out in Primary",
           "county": "Sevier",
           "city": "Sigurd"
-        }
-      ]
-    },
-    {
-      "personId": "cindy-davis",
-      "name": "Cindy Davis",
-      "year": 2018,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2018-cindy-davis-state-school-board-district-9-unaffiliated",
-          "office": "State School Board District 9",
-          "officeId": "state-school-board-district-9",
-          "party": "Unaffiliated",
-          "source": "https://web.archive.org/web/20190228163424/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20Board%20of%20Education%209%20-%20Cindy%20Davis.pdf",
-          "stage": "primary",
-          "status": "Filed",
-          "county": "Utah",
-          "city": "American Fork"
-        },
-        {
-          "recordId": "2018-general-cindy-davis-state-school-board-district-9-not-reported--",
-          "office": "State School Board District 9",
-          "officeId": "state-school-board-district-9",
-          "party": "Not reported",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
-          "stage": "general",
-          "status": "General Election Candidate",
-          "county": "",
-          "city": ""
-        }
-      ]
-    },
-    {
-      "personId": "craig-k-pitts",
-      "name": "Craig K. Pitts",
-      "year": 2018,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2018-craig-k-pitts-state-school-board-district-2-unaffiliated",
-          "office": "State School Board District 2",
-          "officeId": "state-school-board-district-2",
-          "party": "Unaffiliated",
-          "source": "https://web.archive.org/web/20200213004326/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%202%20-%20Craig%20K.%20Pitts.pdf",
-          "stage": "primary",
-          "status": "Filed",
-          "county": "Weber",
-          "city": "Ogden"
-        },
-        {
-          "recordId": "2018-general-craig-k-pitts-state-school-board-district-2-not-reported--",
-          "office": "State School Board District 2",
-          "officeId": "state-school-board-district-2",
-          "party": "Not reported",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
-          "stage": "general",
-          "status": "General Election Candidate",
-          "county": "",
-          "city": ""
         }
       ]
     },
@@ -827,7 +707,7 @@
         },
         {
           "recordId": "2023-general-joe-buchman-u-s-house-of-representatives-district-2-not-reported--",
-          "office": "U.S. HOUSE OF REPRESENTATIVES DISTRICT 2",
+          "office": "U.S. House of Representatives District 2",
           "officeId": "u-s-house-of-representatives-district-2",
           "party": "Not reported",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
@@ -906,7 +786,7 @@
       "rows": [
         {
           "recordId": "2023-general-jonathan-la-rele-peterson-u-s-house-of-representatives-district-2-not-reported--",
-          "office": "U.S. HOUSE OF REPRESENTATIVES DISTRICT 2",
+          "office": "U.S. House of Representatives District 2",
           "officeId": "u-s-house-of-representatives-district-2",
           "party": "Not reported",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
@@ -1079,66 +959,6 @@
       ]
     },
     {
-      "personId": "laura-collier-belnap",
-      "name": "Laura Collier Belnap",
-      "year": 2018,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2018-laura-collier-belnap-state-school-board-district-5-unaffiliated",
-          "office": "State School Board District 5",
-          "officeId": "state-school-board-district-5",
-          "party": "Unaffiliated",
-          "source": "https://web.archive.org/web/20190228163413/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%205%20-%20Laura%20Collier%20Belnap.pdf",
-          "stage": "primary",
-          "status": "Filed",
-          "county": "Davis",
-          "city": "Bountiful"
-        },
-        {
-          "recordId": "2018-general-laura-collier-belnap-state-school-board-district-5-not-reported--",
-          "office": "State School Board District 5",
-          "officeId": "state-school-board-district-5",
-          "party": "Not reported",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
-          "stage": "general",
-          "status": "General Election Candidate",
-          "county": "",
-          "city": ""
-        }
-      ]
-    },
-    {
-      "personId": "linda-b-hansen",
-      "name": "Linda B. Hansen",
-      "year": 2018,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2018-linda-b-hansen-state-school-board-district-3-unaffiliated",
-          "office": "State School Board District 3",
-          "officeId": "state-school-board-district-3",
-          "party": "Unaffiliated",
-          "source": "https://web.archive.org/web/20200213004327/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/SSB/State%20School%20Board%203%20-%20Linda%20B.%20Hansen.pdf",
-          "stage": "primary",
-          "status": "Filed",
-          "county": "Salt Lake",
-          "city": "West Valley City"
-        },
-        {
-          "recordId": "2018-general-linda-b-hansen-state-school-board-district-3-not-reported--",
-          "office": "State School Board District 3",
-          "officeId": "state-school-board-district-3",
-          "party": "Not reported",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
-          "stage": "general",
-          "status": "General Election Candidate",
-          "county": "",
-          "city": ""
-        }
-      ]
-    },
-    {
       "personId": "mark-a-huntsman",
       "name": "Mark A. Huntsman",
       "year": 2018,
@@ -1307,7 +1127,7 @@
         },
         {
           "recordId": "2023-general-perry-t-myers-u-s-house-of-representatives-district-2-not-reported--",
-          "office": "U.S. HOUSE OF REPRESENTATIVES DISTRICT 2",
+          "office": "U.S. House of Representatives District 2",
           "officeId": "u-s-house-of-representatives-district-2",
           "party": "Not reported",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/2023-Nov-General/ballot-items/cd77ae72-a61c-4e7f-b260-63c61da8bdaf",
@@ -1326,7 +1146,7 @@
       "rows": [
         {
           "recordId": "1995-robert-johnson-summit-oakley-town-council-4-year-term-nonpartisan",
-          "office": "Town Council (4-year term)",
+          "office": "Town Council (4-Year Term)",
           "officeId": "town-council-4-year-term",
           "party": "Nonpartisan",
           "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
@@ -1337,7 +1157,7 @@
         },
         {
           "recordId": "1995-robert-johnson-sevier-salina-city-council-4-year-term-nonpartisan",
-          "office": "City Council (4-year term)",
+          "office": "City Council (4-Year Term)",
           "officeId": "city-council-4-year-term",
           "party": "Nonpartisan",
           "source": "https://www.deseret.com/1995/11/8/19203302/complete-but-unofficial-election-results/",
@@ -1612,7 +1432,7 @@
           "personId": "dennis-jones",
           "name": "Dennis Jones",
           "year": 1995,
-          "office": "Town Council (4-year term)",
+          "office": "Town Council (4-Year Term)",
           "officeId": "town-council-4-year-term",
           "party": "Nonpartisan",
           "electionType": "general",
@@ -1631,7 +1451,7 @@
           "personId": "dennis-jones",
           "name": "Dennis Jones",
           "year": 1995,
-          "office": "Town Council (4-year term)",
+          "office": "Town Council (4-Year Term)",
           "officeId": "town-council-4-year-term",
           "party": "Nonpartisan",
           "electionType": "general",

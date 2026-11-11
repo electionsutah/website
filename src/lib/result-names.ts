@@ -1,5 +1,6 @@
 import { resultPerson } from './result-people';
 import type { Contest, Option, Snapshot } from './results';
+import { formatOfficeName } from './office-names';
 
 // County feeds publish many names in all caps ("COUNTY CLERK", "REP JANE DOE").
 // Recase those for display; strings that already use mixed case are left alone.
@@ -58,7 +59,7 @@ export function tidySnapshot(snapshot: Snapshot): Snapshot {
     ...snapshot,
     contests: snapshot.contests.map(contest => {
       const tidy = (option: Option) => tidyOption(option, contest);
-      return { ...contest, name: contestName(recase(contest.name), contest.county ? countyNames.get(contest.county) : undefined), options: contest.options.map(tidy), counties: contest.counties.map(row => ({ ...row, options: row.options.map(tidy) })) };
+      return { ...contest, name: contestName(contest.kind === 'candidate' ? formatOfficeName(contest.name) : recase(contest.name), contest.county ? countyNames.get(contest.county) : undefined), options: contest.options.map(tidy), counties: contest.counties.map(row => ({ ...row, options: row.options.map(tidy) })) };
     })
   };
 }

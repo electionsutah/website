@@ -23,6 +23,7 @@
     "enrich:people:prepare": "node scripts/prepare-person-enrichment.mjs",
     "enrich:people": "python3 scripts/enrichment_pipeline.py --seeds .firecrawl/enrichment/people-seeds.json",
     "check:enrichment": "python3 -m unittest discover -s scripts -p test_enrichment_pipeline.py",
+    "check:office-names": "node scripts/check-office-names.mjs",
     "check:profiles": "node scripts/check-entity-profiles.mjs",
     "check:researched": "node scripts/check-researched-candidates.mjs",
     "audit:duplicates": "node scripts/audit-filing-duplicates.mjs && node scripts/audit-lingering-cards.mjs",
