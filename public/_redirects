@@ -1,6 +1,12 @@
 # Old Jekyll-site URLs mapped to their equivalents in the Vite app.
 # Old pages with no equivalent are left to return 404.
 
+# User-confirmed Derek Kitchen profile aliases.
+/people/derek-l-kitchen                       /people/derek-kitchen/                           301
+/people/derek-l-kitchen/                      /people/derek-kitchen/                           301
+/people/derek-lloyd-kitchen                   /people/derek-kitchen/                           301
+/people/derek-lloyd-kitchen/                  /people/derek-kitchen/                           301
+
 /docs/schema                                  /docs/data-schema/                                 301
 /about                                        /                                                  301
 /data                                         /                                                  301

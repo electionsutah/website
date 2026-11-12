@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-11-12T04:34:45.092906+00:00",
+  "selection": "Explicit entity people/bret-millburn; resolved existing evidence only; ownership review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 1,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 1,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 1,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "bret-millburn",
+      "kind": "people",
+      "name": "Bret Millburn",
+      "entityUrl": "https://www.electionsutah.org/people/bret-millburn/",
+      "websites": [
+        "https://bretmillburn.com/"
+      ],
+      "existingLinks": [],
+      "manualOverride": false,
+      "editorialOverride": null,
+      "latestYear": 2026,
+      "historical": false,
+      "offices": [
+        "Davis County Commission Seat B"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/davis-county-ut/elections/General11032026/ballot-items/01000000-6996-338b-8685-08df257507b7"
+      ],
+      "recordedWebsites": [],
+      "websiteInput": {
+        "url": "https://www.bretmillburn.com/",
+        "canonicalUrl": "https://bretmillburn.com/",
+        "source": "user-supplied CLI input",
+        "disposition": "ambiguous",
+        "note": "Candidate website; ownership has not been verified"
+      },
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/p/Bret-Millburn-for-Davis-County-Commissioner-100063706731852",
+          "entityId": "bret-millburn",
+          "sourceUrl": "https://bretmillburn.com/",
+          "anchorText": "",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "commission",
+                "county",
+                "davis"
+              ]
+            ],
+            "excerpt": " Home | Bret Millburn for Davis County Commissioner People over politics. Experience over partisanship. Results over rhetoric. Home About Issues Bret Events Supporters Get Involved Donate Experience Matters. Davis County needs someone who already understands how county government works. Bret Millburn brings proven leadership and decades of public s"
+          },
+          "fetchedAt": "2026-11-12T04:25:54.253270+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Primary-site candidate; ownership needs review",
+          "primaryIdentityMatched": true
+        }
+      ],
+      "fetches": [
+        {
+          "url": "https://bretmillburn.com/",
+          "fetchedAt": "2026-11-12T04:25:54.253270+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://bretmillburn.com/",
+          "etag": null,
+          "lastModified": null,
+          "contentHash": "d4419a3c4a2bd31ba226f0db3136e58b38e639a3561878b0a39d85973f7efe61",
+          "bodyFile": ".firecrawl/enrichment/cache/d4419a3c4a2bd31ba226f0db3136e58b38e639a3561878b0a39d85973f7efe61.html",
+          "lastSuccessfulFetchAt": "2026-11-12T04:25:54.253270+00:00",
+          "evidenceDate": null,
+          "nextReviewAt": "2026-12-12T04:25:54.544800+00:00",
+          "cacheHit": true
+        }
+      ],
+      "manualReviewRequired": true,
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "commission",
+            "county",
+            "davis"
+          ]
+        ],
+        "excerpt": " Home | Bret Millburn for Davis County Commissioner People over politics. Experience over partisanship. Results over rhetoric. Home About Issues Bret Events Supporters Get Involved Donate Experience Matters. Davis County needs someone who already understands how county government works. Bret Millburn brings proven leadership and decades of public s"
+      }
+    }
+  ],
+  "reproduce": "python3 scripts/enrichment_pipeline.py --entity people/bret-millburn --backend direct --max-pages 2 --workers 6 --output reports/people-bret-millburn-enrichment.json --website https://www.bretmillburn.com/ --offline"
+}

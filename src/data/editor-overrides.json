@@ -26,11 +26,36 @@
           "url": "https://vote.utah.gov/wp-content/uploads/2023/09/1996Gen.pdf#page=5"
         }
       ]
+    },
+    "john-frugal-dougall": {
+      "lastVerified": "2026-11-11",
+      "links": [
+        {
+          "url": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+          "label": "Official Website",
+          "platform": "website",
+          "verifiedOn": "2026-11-11"
+        },
+        {
+          "url": "https://www.facebook.com/votefrugal",
+          "label": "Facebook Page",
+          "verifiedOn": "2026-11-11",
+          "platform": "facebook"
+        }
+      ]
     }
   },
   "filings": {
+    "2018-vance-hansen-state-senate-district-2-unaffiliated": {
+      "filingDate": "2018-03-09",
+      "lastUpdated": "2026-11-11"
+    },
     "1996-lesh-governor-lieutenant-governor-natural-law": {
       "runningMateId": "shields"
+    },
+    "2018-ben-mcadams-u-s-house-district-4-utah-democratic-party": {
+      "filingDate": "2018-03-09",
+      "lastUpdated": "2026-11-10"
     },
     "2018-chris-stewart-u-s-house-district-2-utah-republican-party": {
       "county": "Davis"

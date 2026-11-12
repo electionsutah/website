@@ -1,0 +1,271 @@
+{
+  "confirmedBy": "User",
+  "confirmation": "All three Derek Kitchen filings/people are the same individual; user researched this person in depth previously.",
+  "confirmedOn": "2026-11-11T16:03:22.006Z",
+  "canonicalPersonId": "derek-kitchen",
+  "aliases": [
+    "derek-l-kitchen",
+    "derek-lloyd-kitchen"
+  ],
+  "before": [
+    {
+      "id": "derek-kitchen",
+      "name": "Derek Kitchen",
+      "cards": 2,
+      "records": [
+        {
+          "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+          "id": "derek-kitchen",
+          "name": "Derek Kitchen",
+          "year": 2018,
+          "electionType": "primary",
+          "officeName": "State Senate District 2",
+          "rawOfficeName": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "partyName": "Utah Democratic Party",
+          "partyId": "utah-democratic-party",
+          "rawParty": "Democratic",
+          "status": "filed",
+          "sourceStatus": "Filed",
+          "section": "State Senate",
+          "city": "Salt Lake City",
+          "county": "Salt Lake",
+          "state": "UT",
+          "placeIds": [
+            "salt-lake",
+            "salt-lake/salt-lake-city"
+          ],
+          "personId": "derek-kitchen",
+          "runningMate": "",
+          "runningMateId": "",
+          "source": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
+          "lastUpdated": "2018-04-01"
+        },
+        {
+          "recordId": "2015-derek-kitchen-salt-lake-city-council-district-4-nonpartisan",
+          "id": "derek-kitchen",
+          "name": "Derek Kitchen",
+          "year": 2015,
+          "electionType": "general",
+          "officeName": "Salt Lake City Council District 4",
+          "rawOfficeName": "Salt Lake City Council District 4",
+          "officeId": "salt-lake-city-council-district-4",
+          "partyName": "Nonpartisan",
+          "partyId": "nonpartisan",
+          "rawParty": "",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "section": "Municipal Offices",
+          "city": "Salt Lake City",
+          "county": "Salt Lake",
+          "state": "UT",
+          "placeIds": [
+            "salt-lake",
+            "salt-lake/salt-lake-city"
+          ],
+          "personId": "derek-kitchen",
+          "runningMate": "",
+          "runningMateId": "",
+          "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2015-11-03-municipal-general-election.pdf",
+          "lastUpdated": "2015-11-03"
+        },
+        {
+          "recordId": "2015-primary-derek-kitchen-salt-lake-city-council-district-4-nonpartisan-salt-lake-salt-lake-city",
+          "id": "derek-kitchen",
+          "name": "Derek Kitchen",
+          "year": 2015,
+          "electionType": "primary",
+          "officeName": "Salt Lake City Council District 4",
+          "rawOfficeName": "Salt Lake City Council District 4",
+          "officeId": "salt-lake-city-council-district-4",
+          "partyName": "Nonpartisan",
+          "partyId": "nonpartisan",
+          "rawParty": "",
+          "status": "primary_election",
+          "sourceStatus": "Primary Election Candidate",
+          "section": "Municipal Offices",
+          "city": "Salt Lake City",
+          "county": "Salt Lake",
+          "state": "UT",
+          "placeIds": [
+            "salt-lake",
+            "salt-lake/salt-lake-city"
+          ],
+          "personId": "derek-kitchen",
+          "runningMate": "",
+          "runningMateId": "",
+          "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2015-08-11-municipal-primary-election.pdf",
+          "lastUpdated": "2015-08-11"
+        }
+      ]
+    },
+    {
+      "id": "derek-l-kitchen",
+      "name": "Derek L. Kitchen",
+      "cards": 1,
+      "records": [
+        {
+          "recordId": "2026-derek-l-kitchen-u-s-house-district-1-utah-democratic-party",
+          "id": "derek-l-kitchen",
+          "name": "Derek L Kitchen",
+          "year": 2026,
+          "electionType": "primary",
+          "officeName": "U.S. House District 1",
+          "rawOfficeName": "U.S. House District 1",
+          "officeId": "u-s-house-district-1",
+          "partyName": "Utah Democratic Party",
+          "partyId": "utah-democratic-party",
+          "rawParty": "Democratic",
+          "status": "withdrew",
+          "sourceStatus": "Withdrew",
+          "section": "Federal Offices",
+          "city": "",
+          "county": "",
+          "state": "UT",
+          "placeIds": [],
+          "personId": "derek-l-kitchen",
+          "runningMate": "",
+          "runningMateId": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2026/03/Kitchen-Statement.pdf",
+          "lastUpdated": "2026-07-20"
+        }
+      ]
+    },
+    {
+      "id": "derek-lloyd-kitchen",
+      "name": "Derek Lloyd Kitchen",
+      "cards": 1,
+      "records": [
+        {
+          "recordId": "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+          "id": "derek-lloyd-kitchen",
+          "name": "Derek Lloyd Kitchen",
+          "year": 2018,
+          "electionType": "general",
+          "officeName": "State Senate District 2",
+          "rawOfficeName": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "partyName": "Utah Democratic Party",
+          "partyId": "utah-democratic-party",
+          "rawParty": "Democratic",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "section": "State Senate",
+          "city": "",
+          "county": "",
+          "state": "UT",
+          "placeIds": [],
+          "personId": "derek-lloyd-kitchen",
+          "runningMate": "",
+          "runningMateId": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "lastUpdated": "2018-11-06"
+        },
+        {
+          "recordId": "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+          "id": "derek-lloyd-kitchen",
+          "name": "Derek Lloyd Kitchen",
+          "year": 2018,
+          "electionType": "primary",
+          "officeName": "State Senate District 2",
+          "rawOfficeName": "State Senate District 2",
+          "officeId": "state-senate-district-2",
+          "partyName": "Utah Democratic Party",
+          "partyId": "utah-democratic-party",
+          "rawParty": "Democratic",
+          "status": "primary_election",
+          "sourceStatus": "Primary Election Candidate",
+          "section": "State Senate",
+          "city": "",
+          "county": "",
+          "state": "UT",
+          "placeIds": [],
+          "personId": "derek-lloyd-kitchen",
+          "runningMate": "",
+          "runningMateId": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "lastUpdated": "2018-06-26"
+        }
+      ]
+    }
+  ],
+  "unrelatedDraperRecordIds": [
+    "2024-derek-l-draper-u-s-house-district-1-utah-republican-party",
+    "2023-derek-l-draper-pleasant-view-council-at-large-nonpartisan"
+  ],
+  "results": [
+    {
+      "stage": "general",
+      "votes": 32930,
+      "total": 42961,
+      "date": "2018-11-06",
+      "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+    },
+    {
+      "stage": "primary",
+      "votes": 5493,
+      "total": 10436,
+      "date": "2018-06-26",
+      "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx"
+    }
+  ],
+  "groupId": "derek-kitchen-2018-user-confirmed-identity",
+  "appliedOn": "2026-11-11T16:03:54.727Z",
+  "approvedScope": {
+    "confirmation": "All three Derek Kitchen filings/people are the same individual; user researched this person in depth previously.",
+    "canonicalPersonId": "derek-kitchen",
+    "aliases": [
+      "derek-l-kitchen",
+      "derek-lloyd-kitchen"
+    ],
+    "recordIds": [
+      "2015-derek-kitchen-salt-lake-city-council-district-4-nonpartisan",
+      "2015-primary-derek-kitchen-salt-lake-city-council-district-4-nonpartisan-salt-lake-salt-lake-city",
+      "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+      "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+      "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+      "2026-derek-l-kitchen-u-s-house-district-1-utah-democratic-party"
+    ],
+    "merged2018RecordIds": [
+      "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+      "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+      "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--"
+    ]
+  },
+  "contentHash": "f8956b14ee1dc4732070277944e54cb36dea87fe160a06bc9a9028495891ba78",
+  "after": {
+    "canonicalPersonId": "derek-kitchen",
+    "profiles": 1,
+    "sourceRecordsRetained": 6,
+    "candidacyCards": 3,
+    "years": [
+      2026,
+      2018,
+      2015
+    ],
+    "merged2018Records": 3,
+    "oldProfileRedirects": [
+      {
+        "from": "/people/derek-l-kitchen/",
+        "to": "/people/derek-kitchen/"
+      },
+      {
+        "from": "/people/derek-lloyd-kitchen/",
+        "to": "/people/derek-kitchen/"
+      }
+    ]
+  },
+  "validation": {
+    "candidacyChecks": "Passed for all 92 reviewed candidacies; alias identity, six-record preservation, separate years, 2026 withdrawal, and unrelated Derek Draper checked",
+    "profiles": "Passed",
+    "svelte": "0 errors; 0 warnings",
+    "productionBuild": "Passed",
+    "provenance": "User identity confirmation; exact 2018 declaration and official primary/general canvasses retained",
+    "aliasSearch": "Passed: canonical name and both aliases resolve to one Derek Kitchen result in shared site-wide/directory search, including scoped People lists",
+    "aliasSearchSvelte": "0 errors; 0 warnings"
+  },
+  "searchAliases": [
+    "Derek L. Kitchen",
+    "Derek Lloyd Kitchen"
+  ]
+}

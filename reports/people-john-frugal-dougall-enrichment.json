@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-11-11T16:20:36.387752+00:00",
+  "selection": "Explicit entity people/john-frugal-dougall; resolved existing evidence only; ownership review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 1,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 0,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 0,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "john-frugal-dougall",
+      "kind": "people",
+      "name": "John \"Frugal\" Dougall",
+      "entityUrl": "https://www.electionsutah.org/people/john-frugal-dougall/",
+      "websites": [
+        "https://web.archive.org/web/20250118224934/https://www.votefrugal.com"
+      ],
+      "existingLinks": [
+        {
+          "url": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+          "platform": "website",
+          "label": "Official Website",
+          "detail": "web.archive.org"
+        },
+        {
+          "url": "https://www.facebook.com/votefrugal",
+          "platform": "facebook",
+          "label": "Facebook Page",
+          "detail": "votefrugal"
+        }
+      ],
+      "manualOverride": true,
+      "latestYear": 2024,
+      "historical": true,
+      "offices": [
+        "U.S. House District 3"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2024/01/Dougall-John-CD3.pdf"
+      ],
+      "recordedWebsites": [
+        "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/"
+      ],
+      "websiteInput": {
+        "url": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+        "canonicalUrl": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com",
+        "source": "user-supplied CLI input",
+        "disposition": "ambiguous",
+        "note": "Candidate website; ownership has not been verified"
+      },
+      "status": "ambiguous",
+      "candidates": [],
+      "fetches": [],
+      "manualReviewRequired": true,
+      "reason": "Editorial override present; preserve it and review manually"
+    }
+  ],
+  "reproduce": "python3 scripts/enrichment_pipeline.py --entity people/john-frugal-dougall --backend direct --max-pages 2 --workers 6 --output reports/people-john-frugal-dougall-enrichment.json --website https://web.archive.org/web/20250118224934/https://www.votefrugal.com/"
+}

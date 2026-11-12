@@ -1,0 +1,63 @@
+{
+  "investigatedAt": "2026-11-12T04:26:24.229698+00:00",
+  "entityId": "bret-millburn",
+  "entityUrl": "https://www.electionsutah.org/people/bret-millburn/",
+  "officeUrl": "https://www.electionsutah.org/offices/davis-county-commission-seat-b/",
+  "scope": "2026 general-election ballot affiliation; not voter registration or lifetime party identity",
+  "disposition": "retain_source_imported_affiliation",
+  "importedAffiliation": "Unaffiliated",
+  "primaryEvidence": [
+    {
+      "source": "https://www.daviscountyutah.gov/Sitefinity/WebsiteTemplates/ClerkAuditor/2026%20General%20Notice.pdf",
+      "sourceDate": "2026-08-31",
+      "page": 4,
+      "office": "County Commissioner Seat B",
+      "publishedName": "BRET MILLBURN",
+      "publishedAffiliation": "UNAFFILIATED"
+    },
+    {
+      "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/General11032026/ballot-items/01000000-6996-338b-8685-08df257507b7",
+      "publishedName": "UNA BRET MILLBURN",
+      "publishedAffiliation": "UNAFFILIATED",
+      "type": "cached_official_results_API"
+    },
+    {
+      "source": "https://votesearch.utah.gov/cb/642065281.pdf",
+      "publishedName": "Bret Millburn",
+      "publishedWebsite": "https://bretmillburn.com/"
+    }
+  ],
+  "websiteDiscovery": {
+    "candidate": "https://www.bretmillburn.com/",
+    "corroborationSource": "https://votesearch.utah.gov/cb/642065281.pdf",
+    "productionApplied": true
+  },
+  "pipeline": {
+    "report": "people-bret-millburn-enrichment.html",
+    "people": 1,
+    "statuses": {
+      "ambiguous": 1,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 1,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 1,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "unresolved": [
+    "Instagram endorsement post could not be retrieved. User clarified it was not evidence of Democratic candidacy."
+  ],
+  "productionChanges": 4,
+  "contactReview": "bret-millburn-contact-review.json",
+  "affiliationChanges": 0,
+  "instagramApproval": "bret-millburn-instagram-approval.json"
+}

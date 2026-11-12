@@ -602,7 +602,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "127,089 votes · 50.04%",
+          "summary": "127,143 votes · 50.02%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-28a3-08df2b02c31c"
         }
       ],
@@ -740,7 +740,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "22,047 votes · 57.69%",
+          "summary": "22,171 votes · 57.29%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/b4e60000-c0a3-7204-68b4-08df3933fc5b"
         }
       ],
@@ -788,7 +788,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "144,134 votes · 57.00%",
+          "summary": "145,261 votes · 56.70%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-3148-08df2b02c31c"
         }
       ],
@@ -1736,7 +1736,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "17,198 votes · 55.81%",
+          "summary": "17,239 votes · 55.83%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-1533-08df2b02c31c"
         }
       ],
@@ -1796,7 +1796,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "20,205 votes · 59.46%",
+          "summary": "20,216 votes · 59.44%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-01c3-08df2b02c31c"
         }
       ],
@@ -1904,7 +1904,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "54,814 votes · 100.00%",
+          "summary": "55,006 votes · 100.00%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-ead6-08df2b02c31b"
         }
       ],
@@ -1952,7 +1952,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "8,858 votes · 57.83%",
+          "summary": "9,425 votes · 58.13%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-cee7-08df2b02c31b"
         }
       ],
@@ -2072,7 +2072,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "9,069 votes · 67.31%",
+          "summary": "9,167 votes · 66.98%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-a6b3-08df2b02c31b"
         }
       ],
@@ -2192,7 +2192,7 @@
         {
           "title": "General Election",
           "date": "2026-11-03",
-          "summary": "42,494 votes · 64.36%",
+          "summary": "42,763 votes · 64.12%",
           "source": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026/ballot-items/18bd0000-4292-09ee-e5d4-08df2b02c31b"
         }
       ],
@@ -4148,6 +4148,204 @@
           "electionType": "general"
         }
       ]
+    },
+    {
+      "id": "vance-hansen",
+      "name": "Vance Hansen",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "1 votes · 0.00%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
+          "url": "https://web.archive.org/web/20190228162525/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Vance%20Hansen.pdf",
+          "officeId": "state-senate-district-2",
+          "partyId": "unaffiliated",
+          "county": "Salt Lake",
+          "city": "Salt Lake City",
+          "status": "filed",
+          "personId": "vance-hansen",
+          "year": 2018,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2018-general-vance-hansen-state-senate-district-2-not-reported--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "officeId": "state-senate-district-2",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "vance-hansen",
+          "year": 2018,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "john-frugal-dougall",
+      "name": "John \"Frugal\" Dougall",
+      "year": 2012,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2012-06-26",
+          "summary": "115,807 votes · 53.96%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx"
+        },
+        {
+          "title": "General Election",
+          "date": "2012-11-06",
+          "summary": "634,373 votes · 65.46%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2012-john-dougall-state-auditor-not-reported",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "officeId": "state-auditor",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "john-frugal-dougall",
+          "year": 2012,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2012-john-dougall-state-auditor-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+          "officeId": "state-auditor",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "john-frugal-dougall",
+          "year": 2012,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "john-swallow",
+      "name": "John Swallow",
+      "year": 2012,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordsPreserved": 2,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2012-06-26",
+          "summary": "156,644 votes · 67.95%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx"
+        },
+        {
+          "title": "General Election",
+          "date": "2012-11-06",
+          "summary": "638,492 votes · 64.70%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2012-john-swallow-attorney-general-not-reported",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "officeId": "attorney-general",
+          "partyId": "not-reported",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "john-swallow",
+          "year": 2012,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2012-john-swallow-attorney-general-utah-republican-party",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+          "officeId": "attorney-general",
+          "partyId": "utah-republican-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "john-swallow",
+          "year": 2012,
+          "electionType": "general"
+        }
+      ]
+    },
+    {
+      "id": "derek-kitchen",
+      "name": "Derek Kitchen",
+      "year": 2018,
+      "beforeCards": 3,
+      "afterCards": 1,
+      "recordsPreserved": 3,
+      "stages": [
+        {
+          "title": "Primary",
+          "date": "2018-06-26",
+          "summary": "5,493 votes · 52.64%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "32,930 votes · 76.65%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "sources": [
+        {
+          "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+          "url": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
+          "officeId": "state-senate-district-2",
+          "partyId": "utah-democratic-party",
+          "county": "Salt Lake",
+          "city": "Salt Lake City",
+          "status": "filed",
+          "personId": "derek-kitchen",
+          "year": 2018,
+          "electionType": "primary"
+        },
+        {
+          "recordId": "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "officeId": "state-senate-district-2",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "general_election",
+          "personId": "derek-kitchen",
+          "year": 2018,
+          "electionType": "general"
+        },
+        {
+          "recordId": "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+          "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+          "officeId": "state-senate-district-2",
+          "partyId": "utah-democratic-party",
+          "county": "",
+          "city": "",
+          "status": "primary_election",
+          "personId": "derek-kitchen",
+          "year": 2018,
+          "electionType": "primary"
+        }
+      ]
     }
   ],
   "ballotBatches": [
@@ -4166,6 +4364,6 @@
       "scope": "All statewide/multi-county contests in the certified document; single-county canvasses are separate."
     }
   ],
-  "duplicateCardsRemoved": 111,
+  "duplicateCardsRemoved": 116,
   "scope": "Reviewed 2023 congressional and 2026 party-prefix candidacies, plus all published contests in the 2008 regular-primary and 2022 statewide/multi-county primary canvasses. Each merged group has exact source-record membership and validated stage/office/party context. No broad fuzzy identity merge or unavailable-results claim is made."
 }

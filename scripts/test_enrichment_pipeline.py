@@ -11,6 +11,12 @@ from datetime import datetime, timedelta, timezone
 from enrichment_pipeline import canonical, account, Page, identity, discover, Fetcher, load_entity, supply_website, print_outcomes, report, challenge_page, outcome_label
 
 class Controls(unittest.TestCase):
+    def test_facebook_named_numeric_page_is_not_a_post(self):
+        url='https://www.facebook.com/p/Bret-Millburn-for-Davis-County-Commissioner-100063706731852/'
+        self.assertEqual(account(url)['platform'],'facebook')
+        for value in ('https://facebook.com/p/123','https://facebook.com/p/Campaign-100063706731852/posts/123','https://instagram.com/p/100063706731852/'):
+            self.assertIsNone(account(value))
+
     def test_cached_false_block_is_reclassified_without_requests(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);cache=root/'cache';cache.mkdir()

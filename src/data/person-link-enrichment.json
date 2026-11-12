@@ -8756,5 +8756,60 @@
         "reviewId": "629eaccb83da"
       }
     ]
+  },
+  "bret-millburn": {
+    "verifiedOn": "2026-11-12",
+    "identityEvidence": [
+      {
+        "publishedName": "Bret Millburn",
+        "match": "Official candidate statement identifies Davis County commission candidacy and publishes the campaign website and commissionermillburn@gmail.com.",
+        "source": "https://votesearch.utah.gov/cb/642065281.pdf"
+      },
+      {
+        "publishedName": "Bret Millburn",
+        "match": "Campaign homepage identifies Bret Millburn and Davis County commission candidacy, and links to the exact supplied Facebook page.",
+        "source": "https://bretmillburn.com/"
+      },
+      {
+        "publishedName": "Bret Millburn",
+        "match": "User reviewed Instagram account @bretmillburn and explicitly confirmed it should be added to this person. Automated retrieval was unavailable.",
+        "source": "https://www.instagram.com/bretmillburn/"
+      }
+    ],
+    "sources": [
+      "https://votesearch.utah.gov/cb/642065281.pdf",
+      "https://bretmillburn.com/",
+      "https://www.instagram.com/bretmillburn/"
+    ],
+    "notes": [
+      "User supplied campaign Facebook page and email; corroborated against primary evidence. Instagram was subsequently approved by explicit user ownership review. No party affiliation change. Current social account activity was not checked.",
+      "Instagram ownership approved explicitly by the user on 2026-11-12. Current account activity was not independently checked."
+    ],
+    "links": [
+      {
+        "url": "https://bretmillburn.com/",
+        "platform": "website",
+        "label": "Campaign website",
+        "source": "https://votesearch.utah.gov/cb/642065281.pdf",
+        "verifiedOn": "2026-11-12"
+      },
+      {
+        "url": "https://www.facebook.com/p/Bret-Millburn-for-Davis-County-Commissioner-100063706731852/",
+        "platform": "facebook",
+        "label": "Campaign Facebook page",
+        "source": "https://bretmillburn.com/",
+        "verifiedOn": "2026-11-12"
+      },
+      {
+        "url": "https://www.instagram.com/bretmillburn/",
+        "platform": "instagram",
+        "label": "Campaign Instagram",
+        "source": "https://www.instagram.com/bretmillburn/",
+        "verifiedOn": "2026-11-12",
+        "reviewedOn": "2026-11-12",
+        "verificationMethod": "explicit_user_ownership_review",
+        "ownershipEvidence": "User reviewed the account and explicitly requested its addition."
+      }
+    ]
   }
 }

@@ -44,6 +44,24 @@ try {
    other.push({contest:result,snapshot:stage==='general'?general:primary});
   }
   const events=candidacyEvents(history,undefined,other);
+  if(['john-frugal-dougall-2012-affiliation-review','john-swallow-2012-affiliation-review'].includes(review.id)){
+   assert.equal(history.filing.partyId,'utah-republican-party');
+   assert(history.records.some(r=>r.partyId==='not-reported'),'Missing imported stage affiliation is preserved');
+   assert.deepEqual(events.map(e=>e.title),['Filed','Primary','General Election']);
+   const expected=person.id==='john-frugal-dougall'?[115807,634373]:[156644,638492];
+   for(const [index,stage] of ['primary','general'].entries()){
+    const result=other.find(r=>r.contest.electionType===stage)?.contest;
+    assert(result?.official&&result.votesPublished);
+    assert.equal(result.options.find(o=>identityKey(o.name)===identityKey(person.name))?.votes,expected[index]);
+   }
+  }
+  if(review.id==='vance-hansen-2018-affiliation-review'){
+   assert.equal(history.filing.partyId,'unaffiliated');
+   assert.equal(events[0].date,'2018-03-09','User-supplied declaration date reaches the consolidated timeline');
+   assert.deepEqual(events.map(e=>e.title),['Filed','General Election'],'Write-in declaration does not invent a primary ballot');
+   assert(history.records.some(r=>r.sourceStatus==='Write-In'));
+   assert.equal(main.options.find(o=>identityKey(o.name)===identityKey(person.name))?.votes,1);
+  }
   const terminal=[...history.records].reverse().find(row=>terminalStatus(row));
   assert.deepEqual(events.map(e=>e.title),['Filed',...(review.resultLinks.some(r=>r.electionType==='primary')?['Primary']:[]),...(review.resultLinks.some(r=>r.electionType==='general')?['General Election']:[]),...(terminal?[terminalStatus(terminal)]:[])]);
   assert(events.filter(e=>['Primary','General Election'].includes(e.title)).every(e=>e.summary&&e.date),'Every actual ballot milestone has counts and a date');
@@ -52,6 +70,17 @@ try {
   people.push({id:person.id,name:person.name,year:review.year,beforeCards:review.recordIds.length,afterCards:1,recordsPreserved:history.records.length,stages:events.filter(e=>['Primary','General Election'].includes(e.title)).map(e=>({title:e.title,date:e.date,summary:e.summary,source:e.source})),sources:review.sources});
  }
  assert.equal(people.length,reviews.length);
+ const kitchen=peopleById.get('derek-kitchen');
+ assert(kitchen&&!peopleById.has('derek-l-kitchen')&&!peopleById.has('derek-lloyd-kitchen'),'Confirmed aliases appear as one person');
+ assert.equal(kitchen.filings.length,6,'All six source records across the three aliases retained');
+ assert.deepEqual(kitchen.years,[2026,2018,2015]);
+ const kitchenHistory=candidacyHistory(kitchen.filings);
+ assert.equal(kitchenHistory.length,3,'Distinct 2015, 2018, and 2026 candidacies remain separate');
+ const kitchen2018=kitchenHistory.find(h=>h.filing.year===2018);
+ assert.equal(kitchen2018.records.length,3);
+ assert.equal(kitchenHistory.find(h=>h.filing.year===2026).filing.status,'withdrew');
+ assert.equal(peopleById.get('derek-l-draper').filings.length,2,'Derek Draper remains a distinct person');
+ for(const alias of ['derek-l-kitchen','derek-lloyd-kitchen'])assert((await readFile('public/_redirects','utf8')).includes(`/people/${alias}/`),'Old profile route redirects to canonical profile');
  assert.equal(reviews.filter(r=>r.year===2023&&!r.id.endsWith('-2023-congressional-review')&&r.sources.some(s=>s.officeId==='u-s-house-district-2')).length,7,'Original congressional cohort remains intact');
  assert(people.filter(p=>p.year===2026).length>=35,'Batch review covers current prefix-label duplicates');
  const aaron=candidacyHistory(peopleById.get('aaron-wiley').filings).find(h=>h.filing.year===2026);

@@ -392,21 +392,21 @@
     }
   ],
   "generatedOn": "2026-11-11",
-  "baseCommit": "1bb76f081414718ce2fc0c3e041d20b0b3dc4159",
-  "reviewManifestSha256": "3356e21d67dbdbf7a78cfa4640a8e961f744ca2754701e793ca21bc79c207d64",
+  "baseCommit": "e59ca45ca890f023314880f067e7d27565359c8c",
+  "reviewManifestSha256": "c5d76d0ba5179e7808a1c1249e75c3e62ea1d56821ecc56b6fb96330f5c800fc",
   "scope": "The same candidacy grouping functions used by person detail cards and office/place candidate rows. Every person, office and place scope is audited; party/election embedded People grids use one card per person ID. Label and identity findings are candidates for review, not automatic merges.",
   "counts": {
-    "people": 12448,
-    "personCards": 16158,
+    "people": 12446,
+    "personCards": 16154,
     "offices": 1606,
-    "places": 294,
+    "places": 293,
     "parties": 23,
-    "scopesChecked": 1900,
-    "reviewScopeIntersections": 26,
+    "scopesChecked": 1899,
+    "reviewScopeIntersections": 30,
     "confirmedScopedDuplicates": 0,
     "exactKeyPairs": 3,
-    "labelVariantPairs": 20,
-    "identityReviewPairs": 11,
+    "labelVariantPairs": 17,
+    "identityReviewPairs": 9,
     "duplicateIndexIds": {
       "people": 0,
       "offices": 0,
@@ -683,66 +683,6 @@
           "source": "https://vote.utah.gov/wp-content/uploads/2023/09/1998Pri.pdf#page=1",
           "stage": "primary",
           "status": "Primary Election Candidate",
-          "county": "",
-          "city": ""
-        }
-      ]
-    },
-    {
-      "personId": "john-frugal-dougall",
-      "name": "John \"Frugal\" Dougall",
-      "year": 2012,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2012-john-dougall-state-auditor-not-reported",
-          "office": "State Auditor",
-          "officeId": "state-auditor",
-          "party": "Not reported",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
-          "stage": "primary",
-          "status": "Primary Election Candidate",
-          "county": "",
-          "city": ""
-        },
-        {
-          "recordId": "2012-john-dougall-state-auditor-utah-republican-party",
-          "office": "State Auditor",
-          "officeId": "state-auditor",
-          "party": "Utah Republican Party",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
-          "stage": "general",
-          "status": "General Election Candidate",
-          "county": "",
-          "city": ""
-        }
-      ]
-    },
-    {
-      "personId": "john-swallow",
-      "name": "John Swallow",
-      "year": 2012,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2012-john-swallow-attorney-general-not-reported",
-          "office": "Attorney General",
-          "officeId": "attorney-general",
-          "party": "Not reported",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
-          "stage": "primary",
-          "status": "Primary Election Candidate",
-          "county": "",
-          "city": ""
-        },
-        {
-          "recordId": "2012-john-swallow-attorney-general-utah-republican-party",
-          "office": "Attorney General",
-          "officeId": "attorney-general",
-          "party": "Utah Republican Party",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
-          "stage": "general",
-          "status": "General Election Candidate",
           "county": "",
           "city": ""
         }
@@ -1077,36 +1017,6 @@
           "city": "Redmond"
         }
       ]
-    },
-    {
-      "personId": "vance-hansen",
-      "name": "Vance Hansen",
-      "year": 2018,
-      "geographyConflict": false,
-      "rows": [
-        {
-          "recordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Unaffiliated",
-          "source": "https://web.archive.org/web/20190228162525/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Vance%20Hansen.pdf",
-          "stage": "primary",
-          "status": "Write-In",
-          "county": "Salt Lake",
-          "city": "Salt Lake City"
-        },
-        {
-          "recordId": "2018-general-vance-hansen-state-senate-district-2-not-reported--",
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Not reported",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
-          "stage": "general",
-          "status": "General Election Candidate",
-          "county": "",
-          "city": ""
-        }
-      ]
     }
   ],
   "identityReview": [
@@ -1281,90 +1191,6 @@
       "id": "FD-0004"
     },
     {
-      "tier": 5,
-      "reason": "Different profiles; same first/last name and compatible missing or expanded middle initials in the same contest context.",
-      "rows": [
-        {
-          "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
-          "personId": "derek-kitchen",
-          "name": "Derek Kitchen",
-          "year": 2018,
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Utah Democratic Party",
-          "electionType": "primary",
-          "status": "filed",
-          "sourceStatus": "Filed",
-          "county": "Salt Lake",
-          "city": "Salt Lake City",
-          "source": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
-          "placeIds": [
-            "salt-lake",
-            "salt-lake/salt-lake-city"
-          ]
-        },
-        {
-          "recordId": "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
-          "personId": "derek-lloyd-kitchen",
-          "name": "Derek Lloyd Kitchen",
-          "year": 2018,
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Utah Democratic Party",
-          "electionType": "general",
-          "status": "general_election",
-          "sourceStatus": "General Election Candidate",
-          "county": "",
-          "city": "",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
-          "placeIds": []
-        }
-      ],
-      "id": "FD-0005"
-    },
-    {
-      "tier": 5,
-      "reason": "Different profiles; same first/last name and compatible missing or expanded middle initials in the same contest context.",
-      "rows": [
-        {
-          "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
-          "personId": "derek-kitchen",
-          "name": "Derek Kitchen",
-          "year": 2018,
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Utah Democratic Party",
-          "electionType": "primary",
-          "status": "filed",
-          "sourceStatus": "Filed",
-          "county": "Salt Lake",
-          "city": "Salt Lake City",
-          "source": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
-          "placeIds": [
-            "salt-lake",
-            "salt-lake/salt-lake-city"
-          ]
-        },
-        {
-          "recordId": "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
-          "personId": "derek-lloyd-kitchen",
-          "name": "Derek Lloyd Kitchen",
-          "year": 2018,
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Utah Democratic Party",
-          "electionType": "primary",
-          "status": "primary_election",
-          "sourceStatus": "Primary Election Candidate",
-          "county": "",
-          "city": "",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
-          "placeIds": []
-        }
-      ],
-      "id": "FD-0006"
-    },
-    {
       "tier": 6,
       "reason": "Different profiles; one or two character edits, with a shared first or last name and contest context. Could be different candidates.",
       "rows": [
@@ -1402,7 +1228,7 @@
         }
       ],
       "editDistance": 1,
-      "id": "FD-0007"
+      "id": "FD-0005"
     },
     {
       "tier": 6,
@@ -1442,7 +1268,7 @@
         }
       ],
       "editDistance": 1,
-      "id": "FD-0008"
+      "id": "FD-0006"
     },
     {
       "tier": 6,
@@ -1488,7 +1314,7 @@
         }
       ],
       "editDistance": 2,
-      "id": "FD-0009"
+      "id": "FD-0007"
     },
     {
       "tier": 6,
@@ -1505,12 +1331,12 @@
           "electionType": "general",
           "status": "general_election",
           "sourceStatus": "Unofficial newspaper general-election returns",
-          "county": "Salt Lake",
+          "county": "Davis",
           "city": "North Salt Lake",
           "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
           "placeIds": [
-            "salt-lake",
-            "salt-lake/north-salt-lake"
+            "davis",
+            "davis/north-salt-lake"
           ]
         },
         {
@@ -1524,17 +1350,17 @@
           "electionType": "general",
           "status": "general_election",
           "sourceStatus": "Unofficial newspaper general-election returns",
-          "county": "Salt Lake",
+          "county": "Davis",
           "city": "North Salt Lake",
           "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
           "placeIds": [
-            "salt-lake",
-            "salt-lake/north-salt-lake"
+            "davis",
+            "davis/north-salt-lake"
           ]
         }
       ],
       "editDistance": 2,
-      "id": "FD-0010"
+      "id": "FD-0008"
     },
     {
       "tier": 6,
@@ -1580,7 +1406,7 @@
         }
       ],
       "editDistance": 2,
-      "id": "FD-0011"
+      "id": "FD-0009"
     }
   ]
 }

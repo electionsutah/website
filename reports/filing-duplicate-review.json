@@ -34,8 +34,8 @@
     {
       "tier": 5,
       "label": "Middle-name / initial variants",
-      "pairs": 2,
-      "people": 2
+      "pairs": 0,
+      "people": 0
     },
     {
       "tier": 6,
@@ -44,7 +44,7 @@
       "people": 10
     }
   ],
-  "alreadyGroupedCandidacies": 1767,
+  "alreadyGroupedCandidacies": 1770,
   "separateStagePairsExcluded": 1472,
   "review": [
     {
@@ -218,90 +218,6 @@
       "id": "FD-0004"
     },
     {
-      "tier": 5,
-      "reason": "Different profiles; same first/last name and compatible missing or expanded middle initials in the same contest context.",
-      "rows": [
-        {
-          "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
-          "personId": "derek-kitchen",
-          "name": "Derek Kitchen",
-          "year": 2018,
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Utah Democratic Party",
-          "electionType": "primary",
-          "status": "filed",
-          "sourceStatus": "Filed",
-          "county": "Salt Lake",
-          "city": "Salt Lake City",
-          "source": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
-          "placeIds": [
-            "salt-lake",
-            "salt-lake/salt-lake-city"
-          ]
-        },
-        {
-          "recordId": "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
-          "personId": "derek-lloyd-kitchen",
-          "name": "Derek Lloyd Kitchen",
-          "year": 2018,
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Utah Democratic Party",
-          "electionType": "general",
-          "status": "general_election",
-          "sourceStatus": "General Election Candidate",
-          "county": "",
-          "city": "",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
-          "placeIds": []
-        }
-      ],
-      "id": "FD-0005"
-    },
-    {
-      "tier": 5,
-      "reason": "Different profiles; same first/last name and compatible missing or expanded middle initials in the same contest context.",
-      "rows": [
-        {
-          "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
-          "personId": "derek-kitchen",
-          "name": "Derek Kitchen",
-          "year": 2018,
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Utah Democratic Party",
-          "electionType": "primary",
-          "status": "filed",
-          "sourceStatus": "Filed",
-          "county": "Salt Lake",
-          "city": "Salt Lake City",
-          "source": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
-          "placeIds": [
-            "salt-lake",
-            "salt-lake/salt-lake-city"
-          ]
-        },
-        {
-          "recordId": "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
-          "personId": "derek-lloyd-kitchen",
-          "name": "Derek Lloyd Kitchen",
-          "year": 2018,
-          "office": "State Senate District 2",
-          "officeId": "state-senate-district-2",
-          "party": "Utah Democratic Party",
-          "electionType": "primary",
-          "status": "primary_election",
-          "sourceStatus": "Primary Election Candidate",
-          "county": "",
-          "city": "",
-          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
-          "placeIds": []
-        }
-      ],
-      "id": "FD-0006"
-    },
-    {
       "tier": 6,
       "reason": "Different profiles; one or two character edits, with a shared first or last name and contest context. Could be different candidates.",
       "rows": [
@@ -339,7 +255,7 @@
         }
       ],
       "editDistance": 1,
-      "id": "FD-0007"
+      "id": "FD-0005"
     },
     {
       "tier": 6,
@@ -379,7 +295,7 @@
         }
       ],
       "editDistance": 1,
-      "id": "FD-0008"
+      "id": "FD-0006"
     },
     {
       "tier": 6,
@@ -425,7 +341,7 @@
         }
       ],
       "editDistance": 2,
-      "id": "FD-0009"
+      "id": "FD-0007"
     },
     {
       "tier": 6,
@@ -442,12 +358,12 @@
           "electionType": "general",
           "status": "general_election",
           "sourceStatus": "Unofficial newspaper general-election returns",
-          "county": "Salt Lake",
+          "county": "Davis",
           "city": "North Salt Lake",
           "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
           "placeIds": [
-            "salt-lake",
-            "salt-lake/north-salt-lake"
+            "davis",
+            "davis/north-salt-lake"
           ]
         },
         {
@@ -461,17 +377,17 @@
           "electionType": "general",
           "status": "general_election",
           "sourceStatus": "Unofficial newspaper general-election returns",
-          "county": "Salt Lake",
+          "county": "Davis",
           "city": "North Salt Lake",
           "source": "https://www.deseret.com/1993/11/3/19074478/voters-in-all-228-incorporated-cities-go-to-polls/",
           "placeIds": [
-            "salt-lake",
-            "salt-lake/north-salt-lake"
+            "davis",
+            "davis/north-salt-lake"
           ]
         }
       ],
       "editDistance": 2,
-      "id": "FD-0010"
+      "id": "FD-0008"
     },
     {
       "tier": 6,
@@ -517,7 +433,7 @@
         }
       ],
       "editDistance": 2,
-      "id": "FD-0011"
+      "id": "FD-0009"
     }
   ]
 }

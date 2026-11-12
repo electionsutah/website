@@ -29,7 +29,7 @@ const countySearchText = (county: string) => county ? withPlaceAliases(`${county
  */
 export const searchText = {
   elections: (election: ElectionCycle) => `${election.year} ${election.title} ${election.description}`,
-  people: (person: Person) => `${person.name} ${person.filings.map((filing) => `${filing.year} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus} ${withPlaceAliases(filing.city)} ${countySearchText(filing.county)}`).join(' ')}`,
+  people: (person: Person) => `${person.name} ${(person.aliases ?? []).join(' ')} ${person.filings.map((filing) => `${filing.year} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus} ${withPlaceAliases(filing.city)} ${countySearchText(filing.county)}`).join(' ')}`,
   offices: (office: Office) => `${office.name} ${office.sections.join(' ')} ${office.filings.map((filing) => `${filing.name} ${filing.year}`).join(' ')}`,
   parties: (party: Party) => `${party.name} ${party.shortName} ${party.localCaucus ? `Local nonpartisan caucus ${party.localCaucus.place}` : ''} ${party.filings.map((filing) => `${filing.name} ${filing.year}`).join(' ')}`,
   places: (place: Place) => `${withPlaceAliases(place.name)} ${place.type} ${countySearchText(place.county)} ${place.offices.map((office) => office.name).join(' ')} ${place.filings.map((filing) => filing.name).join(' ')}`

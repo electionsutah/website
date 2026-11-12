@@ -1,0 +1,12 @@
+{
+  "approvedAt": "2026-11-12T04:38:45.965464+00:00",
+  "entityId": "bret-millburn",
+  "url": "https://www.instagram.com/bretmillburn/",
+  "platform": "instagram",
+  "approval": "User: I reviewed his Instagram account. Add it.",
+  "verificationMethod": "explicit_user_ownership_review",
+  "automatedRetrieval": "unavailable",
+  "beforeHash": "8e6cc5126f2dc4027747fe3b82adf01e1e11aa6056da65d8d709e5043614fdfe",
+  "afterHash": "2af68f1e14a81531a37ec903370f5c6d6c7d1212a0abd79368f988b2deb19f2f",
+  "contentHash": "6979acc5f857f608531a3571ba437b23eab6cc49a4f795d87d7329c6f0a6a573"
+}

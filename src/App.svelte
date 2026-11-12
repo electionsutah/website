@@ -26,6 +26,7 @@
   const legacySegments: Record<string, string> = { party: 'parties', office: 'offices' };
 
   function canonicalPath(pathname: string) {
+    if (/^\/people\/derek-(?:l|lloyd)-kitchen\/?$/.test(pathname)) return '/people/derek-kitchen/';
     if (/^\/places\/salt-lake\/north-salt-lake\/?$/.test(pathname)) return '/places/davis/north-salt-lake/';
     return pathname.replace(/^\/([^/]+)/, (segment, name: string) => legacySegments[name] ? `/${legacySegments[name]}` : segment);
   }

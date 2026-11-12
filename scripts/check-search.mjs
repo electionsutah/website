@@ -5,6 +5,13 @@ const server = await createServer({ configFile: false, logLevel: 'silent', serve
 try {
   const { matchesQuery, queryTokens, rankByTitle, searchText } = await server.ssrLoadModule('/src/lib/search.ts');
   const entities = await server.ssrLoadModule('/src/lib/entities.ts');
+  const kitchen = entities.peopleById.get('derek-kitchen');
+  assert.equal(kitchen.name, 'Derek Kitchen');
+  for (const query of ['Derek Kitchen', 'Derek L. Kitchen', 'Derek L Kitchen', 'Derek Lloyd Kitchen']) {
+    const matches = entities.people.filter(person => matchesQuery(searchText.people(person), queryTokens(query)));
+    assert.deepEqual(matches.map(person => person.id), ['derek-kitchen'], `${query}: one canonical search result`);
+    assert(matchesQuery(searchText.people({ ...kitchen, filings: kitchen.filings.filter(filing => filing.year === 2015) }), queryTokens(query)), 'Aliases stay searchable within scoped People lists');
+  }
   const tokens = queryTokens('  DAVIS  ');
   for (const category of ['people', 'offices', 'parties', 'places', 'elections']) {
     const title = (item) => category === 'elections' ? String(item.year) : item.name;

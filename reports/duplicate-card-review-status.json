@@ -520,11 +520,13 @@
       "categories": [
         "labels"
       ],
-      "status": "needs_evidence",
-      "recommendation": "Investigate before merging.",
-      "reason": "Resolve the recorded identity, affiliation, stage or reporting-scope ambiguity first.",
+      "status": "applied",
+      "recommendation": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties.",
+      "reason": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties.",
       "firstSeenOn": "2026-11-11",
-      "lastSeenOn": "2026-11-11"
+      "lastSeenOn": "2026-11-11",
+      "batchId": "duplicate-cards-05",
+      "appliedOn": "2026-11-11T15:42:26.483Z"
     },
     "DC-597e3c9604e5": {
       "id": "DC-597e3c9604e5",
@@ -567,11 +569,13 @@
       "categories": [
         "labels"
       ],
-      "status": "needs_evidence",
-      "recommendation": "Investigate before merging.",
-      "reason": "Resolve the recorded identity, affiliation, stage or reporting-scope ambiguity first.",
+      "status": "applied",
+      "recommendation": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties.",
+      "reason": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties.",
       "firstSeenOn": "2026-11-11",
-      "lastSeenOn": "2026-11-11"
+      "lastSeenOn": "2026-11-11",
+      "batchId": "duplicate-cards-05",
+      "appliedOn": "2026-11-11T15:42:26.483Z"
     },
     "DC-925174265248": {
       "id": "DC-925174265248",
@@ -1229,11 +1233,13 @@
       "categories": [
         "labels"
       ],
-      "status": "ready_for_review",
-      "recommendation": "Merge declaration and general-ballot evidence; retain any write-in designation.",
-      "reason": "Same known candidate, year and office. Confirmed ballot evidence controls the election stage; a declaration stored under primary must not invent primary participation.",
+      "status": "applied",
+      "recommendation": "The declaration is imported under primary with status Filed and source label Write-In. It is filing evidence, not a primary ballot. Consolidate with the official general canvass; retain Filed and General Election only, the Unaffiliated affiliation, and original Write-In source evidence.",
+      "reason": "The declaration is imported under primary with status Filed and source label Write-In. It is filing evidence, not a primary ballot. Consolidate with the official general canvass; retain Filed and General Election only, the Unaffiliated affiliation, and original Write-In source evidence. Applied with user-supplied filing date 2018-03-09; date provenance is recorded in the application audit.",
       "firstSeenOn": "2026-11-11",
-      "lastSeenOn": "2026-11-11"
+      "lastSeenOn": "2026-11-11",
+      "batchId": "duplicate-cards-04",
+      "appliedOn": "2026-11-11T15:39:14.102Z"
     },
     "DC-b02db405962f": {
       "id": "DC-b02db405962f",
@@ -1340,11 +1346,13 @@
       "categories": [
         "identity"
       ],
-      "status": "ready_identity_review",
-      "recommendation": "Review a person alias and three-record timeline consolidation together.",
-      "reason": "The archived declaration URL names Derek Lloyd Kitchen and Senate District 2. The primary/general canvasses use the expanded name; old routes and source IDs must remain supported.",
+      "status": "applied",
+      "recommendation": "Applied: one person, one 2018 Senate candidacy, with all six imported records retained across three election years.",
+      "reason": "User explicitly confirmed Derek Kitchen, Derek L. Kitchen, and Derek Lloyd Kitchen are the same individual based on prior in-depth research. Consolidate the exact 2018 Senate District 2 declaration and primary/general canvasses; retain every source spelling, source record, and stage result. Preserve 2015 municipal and 2026 congressional candidacies separately.",
       "firstSeenOn": "2026-11-11",
-      "lastSeenOn": "2026-11-11"
+      "lastSeenOn": "2026-11-11",
+      "batchId": "derek-kitchen-identity",
+      "appliedOn": "2026-11-11T16:03:54.727Z"
     },
     "DC-b13f832fc4a6": {
       "id": "DC-b13f832fc4a6",
@@ -1397,11 +1405,13 @@
       "categories": [
         "identity"
       ],
-      "status": "ready_identity_review",
-      "recommendation": "Review a person alias and three-record timeline consolidation together.",
-      "reason": "The archived declaration URL names Derek Lloyd Kitchen and Senate District 2. The primary/general canvasses use the expanded name; old routes and source IDs must remain supported.",
+      "status": "applied",
+      "recommendation": "Applied: one person, one 2018 Senate candidacy, with all six imported records retained across three election years.",
+      "reason": "User explicitly confirmed Derek Kitchen, Derek L. Kitchen, and Derek Lloyd Kitchen are the same individual based on prior in-depth research. Consolidate the exact 2018 Senate District 2 declaration and primary/general canvasses; retain every source spelling, source record, and stage result. Preserve 2015 municipal and 2026 congressional candidacies separately.",
       "firstSeenOn": "2026-11-11",
-      "lastSeenOn": "2026-11-11"
+      "lastSeenOn": "2026-11-11",
+      "batchId": "derek-kitchen-identity",
+      "appliedOn": "2026-11-11T16:03:54.727Z"
     },
     "DC-1ad9ba429db1": {
       "id": "DC-1ad9ba429db1",
@@ -2322,6 +2332,41 @@
         "DC-30b283673808",
         "DC-925174265248"
       ]
+    },
+    "duplicate-cards-04": {
+      "id": "duplicate-cards-04",
+      "title": "2018 Vance Hansen write-in candidacy",
+      "status": "applied",
+      "contentHash": "597a9b09e343510a76187b01162931779066a328f19bb44bf469f47e4e1abb36",
+      "manifest": "duplicate-card-approvals/batch-04.json",
+      "report": "duplicate-card-approvals/batch-04.html",
+      "cases": [
+        "DC-03b1d289873f"
+      ]
+    },
+    "duplicate-cards-05": {
+      "id": "duplicate-cards-05",
+      "title": "2012 primary/general candidacies with missing affiliations",
+      "status": "applied",
+      "contentHash": "4bf16673ff1469c2f18ac49e73cb3fa73b764fcf6cbb79740ae8a72670f2ed37",
+      "manifest": "duplicate-card-approvals/batch-05.json",
+      "report": "duplicate-card-approvals/batch-05.html",
+      "cases": [
+        "DC-03dc92701d89",
+        "DC-597e3c9604e5"
+      ]
+    },
+    "derek-kitchen-identity": {
+      "id": "derek-kitchen-identity",
+      "title": "User-confirmed Derek Kitchen identity and 2018 candidacy",
+      "status": "applied",
+      "contentHash": "f8956b14ee1dc4732070277944e54cb36dea87fe160a06bc9a9028495891ba78",
+      "manifest": "duplicate-card-approvals/derek-kitchen-identity-application.json",
+      "report": "duplicate-card-approvals/derek-kitchen-identity.html",
+      "cases": [
+        "DC-f64b853589e9",
+        "DC-b13f832fc4a6"
+      ]
     }
   },
   "events": [
@@ -2387,6 +2432,70 @@
       "batchId": "duplicate-cards-03",
       "contentHash": "bf197eeb64106652faf972e24b0ce1f13b6c2ca87f06621ac755dcc0f5ac22f5",
       "audit": "duplicate-card-approvals/batch-03-application.json"
+    },
+    {
+      "type": "batch_prepared",
+      "on": "2026-11-11",
+      "batchId": "duplicate-cards-04",
+      "contentHash": "597a9b09e343510a76187b01162931779066a328f19bb44bf469f47e4e1abb36",
+      "productionChanges": 0
+    },
+    {
+      "type": "batch_prepared",
+      "on": "2026-11-11",
+      "batchId": "duplicate-cards-05",
+      "contentHash": "4bf16673ff1469c2f18ac49e73cb3fa73b764fcf6cbb79740ae8a72670f2ed37",
+      "productionChanges": 0
+    },
+    {
+      "type": "batch_approved",
+      "on": "2026-11-11T15:39:14.102Z",
+      "batchId": "duplicate-cards-04",
+      "contentHash": "597a9b09e343510a76187b01162931779066a328f19bb44bf469f47e4e1abb36",
+      "approval": "Batch 04 is approved"
+    },
+    {
+      "type": "batch_applied",
+      "on": "2026-11-11T15:39:14.102Z",
+      "batchId": "duplicate-cards-04",
+      "contentHash": "597a9b09e343510a76187b01162931779066a328f19bb44bf469f47e4e1abb36",
+      "audit": "duplicate-card-approvals/batch-04-application.json"
+    },
+    {
+      "type": "filing_date_updated",
+      "on": "2026-11-11T15:39:19.165Z",
+      "batchId": "duplicate-cards-04",
+      "recordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
+      "field": "filingDate",
+      "value": "2018-03-09",
+      "provenance": "User supplied the filing date when approving batch 04 on 2026-11-11",
+      "approval": "Batch 04 is approved and you can update his filing record with the date 2018-03-09"
+    },
+    {
+      "type": "batch_approved",
+      "on": "2026-11-11T15:42:26.483Z",
+      "batchId": "duplicate-cards-05",
+      "contentHash": "4bf16673ff1469c2f18ac49e73cb3fa73b764fcf6cbb79740ae8a72670f2ed37",
+      "approval": "Batch 05 is approved"
+    },
+    {
+      "type": "batch_applied",
+      "on": "2026-11-11T15:42:26.483Z",
+      "batchId": "duplicate-cards-05",
+      "contentHash": "4bf16673ff1469c2f18ac49e73cb3fa73b764fcf6cbb79740ae8a72670f2ed37",
+      "audit": "duplicate-card-approvals/batch-05-application.json"
+    },
+    {
+      "type": "identity_confirmed_and_applied",
+      "on": "2026-11-11T16:03:54.727Z",
+      "batchId": "derek-kitchen-identity",
+      "confirmation": "All three Derek Kitchen filings/people are the same individual; user researched this person in depth previously.",
+      "contentHash": "f8956b14ee1dc4732070277944e54cb36dea87fe160a06bc9a9028495891ba78",
+      "canonicalPersonId": "derek-kitchen",
+      "aliases": [
+        "derek-l-kitchen",
+        "derek-lloyd-kitchen"
+      ]
     }
   ]
 }

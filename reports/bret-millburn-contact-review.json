@@ -1,0 +1,40 @@
+{
+  "reviewedAt": "2026-11-12T04:35:03.915578+00:00",
+  "entityId": "bret-millburn",
+  "entityUrl": "https://www.electionsutah.org/people/bret-millburn/",
+  "beforeHashes": {
+    "src/data/person-enrichment.json": "32905f2199540382bc039be93be860e3e338c5bf000c7177d4709871f64a13cd",
+    "src/data/person-link-enrichment.json": "74e4ea251a5d394afb1803207745c2cd93e417e9cf8ec7e43abec200a059b66b"
+  },
+  "accepted": [
+    {
+      "field": "website",
+      "value": "https://bretmillburn.com/",
+      "source": "https://votesearch.utah.gov/cb/642065281.pdf"
+    },
+    {
+      "field": "facebook",
+      "value": "https://www.facebook.com/p/Bret-Millburn-for-Davis-County-Commissioner-100063706731852/",
+      "source": "https://bretmillburn.com/"
+    },
+    {
+      "field": "email",
+      "value": "commissionermillburn@gmail.com",
+      "source": "https://votesearch.utah.gov/cb/642065281.pdf"
+    },
+    {
+      "field": "instagram",
+      "value": "https://www.instagram.com/bretmillburn/",
+      "source": "https://www.instagram.com/bretmillburn/",
+      "verificationMethod": "explicit_user_ownership_review",
+      "approvalAudit": "bret-millburn-instagram-approval.json"
+    }
+  ],
+  "pending": [],
+  "endorsementPost": {
+    "url": "https://www.instagram.com/reels/DfNAj5ASkfK/",
+    "status": "retrieval_failed",
+    "claim": "Possible Democratic endorsement reported by user; not independently confirmed."
+  },
+  "affiliationDisposition": "Retain Unaffiliated for the 2026 ballot; user clarified the post was not evidence of Democratic candidacy."
+}

@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "batchId": "duplicate-cards-04",
+  "title": "2018 Vance Hansen write-in candidacy",
+  "preparedOn": "2026-11-11",
+  "scope": "1 candidacies; 2 cards to 1; all 2 source records retained. No production changes until explicit approval.",
+  "cases": [
+    {
+      "caseId": "DC-03b1d289873f",
+      "personId": "vance-hansen",
+      "name": "Vance Hansen",
+      "office": "State Senate District 2",
+      "officeId": "state-senate-district-2",
+      "year": 2018,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
+          "personId": "vance-hansen",
+          "year": 2018,
+          "electionType": "primary",
+          "officeId": "state-senate-district-2",
+          "partyId": "unaffiliated",
+          "status": "filed",
+          "sourceStatus": "Write-In",
+          "county": "Salt Lake",
+          "city": "Salt Lake City",
+          "source": "https://web.archive.org/web/20190228162525/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Vance%20Hansen.pdf"
+        },
+        {
+          "recordId": "2018-general-vance-hansen-state-senate-district-2-not-reported--",
+          "personId": "vance-hansen",
+          "year": 2018,
+          "electionType": "general",
+          "officeId": "state-senate-district-2",
+          "partyId": "not-reported",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx"
+        }
+      ],
+      "proposedGroup": {
+        "id": "vance-hansen-2018-affiliation-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "vance-hansen",
+        "year": 2018,
+        "electionType": "general",
+        "canonicalRecordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
+        "recordIds": [
+          "2018-vance-hansen-state-senate-district-2-unaffiliated",
+          "2018-general-vance-hansen-state-senate-district-2-not-reported--"
+        ],
+        "resultContestId": "2018-general-single-county-senate-2",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "resultLinks": [
+          {
+            "electionType": "general",
+            "contestId": "2018-general-single-county-senate-2",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "The declaration is imported under primary with status Filed and source label Write-In. It is filing evidence, not a primary ballot. Consolidate with the official general canvass; retain Filed and General Election only, the Unaffiliated affiliation, and original Write-In source evidence.",
+        "sources": [
+          {
+            "recordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
+            "url": "https://web.archive.org/web/20190228162525/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Vance%20Hansen.pdf",
+            "officeId": "state-senate-district-2",
+            "partyId": "unaffiliated",
+            "county": "Salt Lake",
+            "city": "Salt Lake City",
+            "status": "filed",
+            "personId": "vance-hansen",
+            "year": 2018,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2018-general-vance-hansen-state-senate-district-2-not-reported--",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+            "officeId": "state-senate-district-2",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "vance-hansen",
+            "year": 2018,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://web.archive.org/web/20190228162525/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Vance%20Hansen.pdf",
+          "sourceLabel": "Declaration of candidacy"
+        },
+        {
+          "title": "General Election",
+          "date": "2018-11-06",
+          "summary": "1 votes · 0.00%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "displayAffiliation": "Unaffiliated",
+      "recommendation": "The declaration is imported under primary with status Filed and source label Write-In. It is filing evidence, not a primary ballot. Consolidate with the official general canvass; retain Filed and General Election only, the Unaffiliated affiliation, and original Write-In source evidence.",
+      "contentHash": "1536c78b420cc0f59b72c72278177685e6f67a1a80c26cbf5490a747aa7bfadf"
+    }
+  ],
+  "contentHash": "597a9b09e343510a76187b01162931779066a328f19bb44bf469f47e4e1abb36"
+}

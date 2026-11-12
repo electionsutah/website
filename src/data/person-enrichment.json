@@ -49,5 +49,15 @@
         "url": "https://secure.actblue.com/donate/bm-website"
       }
     ]
+  },
+  "bret-millburn": {
+    "sourceUrl": "https://votesearch.utah.gov/cb/642065281.pdf",
+    "lastVerified": "2026-11-12",
+    "biography": "",
+    "priorities": [],
+    "contact": {
+      "email": "commissionermillburn@gmail.com"
+    },
+    "resources": []
   }
 }

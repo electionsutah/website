@@ -65,7 +65,8 @@ def account(value, base=None):
     u=urlsplit(url); host=u.hostname; platform=next((v for h,v in PLATFORMS.items() if host==h or host.endswith('.'+h)),None)
     if not platform: return None
     parts=[p for p in u.path.split('/') if p]
-    if not parts or any(p.lower() in DENIED for p in parts): return None
+    facebook_page=platform=='facebook' and len(parts)==2 and parts[0]=='p' and bool(re.fullmatch(r'[A-Za-z0-9-]+-\d{6,}',parts[1]))
+    if not parts or any(p.lower() in DENIED for p in (parts[1:] if facebook_page else parts)): return None
     if platform=='facebook' and re.fullmatch(r'\d+_\d+',parts[0]): return None
     query=dict(parse_qsl(u.query))
     if platform=='facebook' and parts[0]=='profile.php':
@@ -75,7 +76,7 @@ def account(value, base=None):
         if platform=='linkedin' and (len(parts)!=2 or parts[0] not in ('in','company')): return None
         if platform=='youtube' and not (len(parts)==1 and parts[0].startswith('@') or len(parts)==2 and parts[0] in ('channel','user','c')): return None
         if platform=='bluesky' and (len(parts)!=2 or parts[0]!='profile'): return None
-        if platform not in ('linkedin','youtube','bluesky','rumble') and len(parts)!=1: return None
+        if platform not in ('linkedin','youtube','bluesky','rumble') and not facebook_page and len(parts)!=1: return None
         if platform=='rumble' and not (len(parts)==2 and parts[0] in ('c','user')): return None
         path='/'+('/'.join(parts)); q=''
     return {'platform':platform,'url':urlunsplit(('https',host.removeprefix('m.').removeprefix('mobile.'),path,q,''))}

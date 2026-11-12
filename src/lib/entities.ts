@@ -73,6 +73,7 @@ export type Filing = {
 };
 
 export type Person = {
+  aliases?: string[];
   lastVerified?: string;
   links?: EntityLink[];
   id: string;
@@ -163,6 +164,9 @@ export function slug(value: string): string {
 
 // Source spellings of the same person that the identity key would otherwise keep apart.
 const identityAliases: Record<string, string> = {
+  // User-confirmed aliases; retain the imported source spellings and record IDs.
+  dereklkitchen: 'derekkitchen',
+  dereklloydkitchen: 'derekkitchen',
   josephrbidenjr: 'josephrbiden',
   aletataylor: 'aletaandersentaylor',
   johnwestwood: 'johnrwestwood',
@@ -203,6 +207,7 @@ const identityAliases: Record<string, string> = {
 
 // Explicitly reviewed names stay stable even when a newer source abbreviates them.
 const preferredPersonNames: Record<string, string> = {
+  derekkitchen: 'Derek Kitchen',
   aletaandersentaylor: 'Aleta Andersen Taylor',
   johnrwestwood: 'John R. Westwood',
   justinlfawson: 'Justin L. Fawson',
@@ -579,6 +584,7 @@ for (const filing of filings) {
   if (filing.runningMate) filing.runningMateId = personMap.get(identityKey(filing.runningMate))!.id;
 }
 for (const person of personMap.values()) {
+  person.aliases = [...new Set(person.filings.map(filing => personDisplayName(filing.personId === person.id ? filing.name : filing.runningMate)))].filter(name => name && name !== person.name);
   const enrichment = (personLinkEnrichment as Record<string, { verifiedOn: string; links: EntityLink[] }>)[person.id];
   person.filings.sort((a, b) => b.year - a.year || a.officeName.localeCompare(b.officeName, undefined, { numeric: true }));
   // A reviewed link disposition supersedes old campaign contacts recovered with archived filings.

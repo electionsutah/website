@@ -1,0 +1,49 @@
+{
+  "batchId": "duplicate-cards-05",
+  "contentHash": "4bf16673ff1469c2f18ac49e73cb3fa73b764fcf6cbb79740ae8a72670f2ed37",
+  "approvedBy": "User",
+  "approval": "Batch 05 is approved",
+  "appliedOn": "2026-11-11T15:42:26.483Z",
+  "people": 2,
+  "sourceRecordsRetained": 4,
+  "cardsBefore": 4,
+  "cardsAfter": 2,
+  "affiliationPolicy": "Prefer a matching source-imported named party/affiliation over not-reported; preserve raw values and review conflicting named affiliations.",
+  "cases": [
+    {
+      "caseId": "DC-03dc92701d89",
+      "personId": "john-frugal-dougall",
+      "groupId": "john-frugal-dougall-2012-affiliation-review",
+      "recordIds": [
+        "2012-john-dougall-state-auditor-not-reported",
+        "2012-john-dougall-state-auditor-utah-republican-party"
+      ]
+    },
+    {
+      "caseId": "DC-597e3c9604e5",
+      "personId": "john-swallow",
+      "groupId": "john-swallow-2012-affiliation-review",
+      "recordIds": [
+        "2012-john-swallow-attorney-general-not-reported",
+        "2012-john-swallow-attorney-general-utah-republican-party"
+      ]
+    }
+  ],
+  "validation": {
+    "candidacyChecks": "passed for all 91 reviewed candidacies",
+    "sourceRecords": "All four original records and their affiliations retained",
+    "displayAffiliation": "Utah Republican Party",
+    "officialVotesPreserved": {
+      "john-frugal-dougall": {
+        "primary": 115807,
+        "general": 634373
+      },
+      "john-swallow": {
+        "primary": 156644,
+        "general": 638492
+      }
+    },
+    "milestones": "Filed, Primary, General Election",
+    "livingReport": "All five approved batches applied; 17 cases total"
+  }
+}

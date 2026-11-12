@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "batchId": "duplicate-cards-05",
+  "title": "2012 primary/general candidacies with missing affiliations",
+  "preparedOn": "2026-11-11",
+  "scope": "2 candidacies; 4 cards to 2; all 4 source records retained. No production changes until explicit approval.",
+  "cases": [
+    {
+      "caseId": "DC-03dc92701d89",
+      "personId": "john-frugal-dougall",
+      "name": "John \"Frugal\" Dougall",
+      "office": "State Auditor",
+      "officeId": "state-auditor",
+      "year": 2012,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2012-john-dougall-state-auditor-not-reported",
+          "personId": "john-frugal-dougall",
+          "year": 2012,
+          "electionType": "primary",
+          "officeId": "state-auditor",
+          "partyId": "not-reported",
+          "status": "primary_election",
+          "sourceStatus": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx"
+        },
+        {
+          "recordId": "2012-john-dougall-state-auditor-utah-republican-party",
+          "personId": "john-frugal-dougall",
+          "year": 2012,
+          "electionType": "general",
+          "officeId": "state-auditor",
+          "partyId": "utah-republican-party",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls"
+        }
+      ],
+      "proposedGroup": {
+        "id": "john-frugal-dougall-2012-affiliation-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "john-frugal-dougall",
+        "year": 2012,
+        "electionType": "general",
+        "canonicalRecordId": "2012-john-dougall-state-auditor-utah-republican-party",
+        "recordIds": [
+          "2012-john-dougall-state-auditor-not-reported",
+          "2012-john-dougall-state-auditor-utah-republican-party"
+        ],
+        "resultContestId": "2012-general-constitutional-14",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+        "resultLinks": [
+          {
+            "electionType": "primary",
+            "contestId": "2012-primary-primary-multi-county-races-18",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+            "county": null,
+            "city": ""
+          },
+          {
+            "electionType": "general",
+            "contestId": "2012-general-constitutional-14",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties.",
+        "sources": [
+          {
+            "recordId": "2012-john-dougall-state-auditor-not-reported",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+            "officeId": "state-auditor",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "primary_election",
+            "personId": "john-frugal-dougall",
+            "year": 2012,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2012-john-dougall-state-auditor-utah-republican-party",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+            "officeId": "state-auditor",
+            "partyId": "utah-republican-party",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "john-frugal-dougall",
+            "year": 2012,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "sourceLabel": "Candidacy source record"
+        },
+        {
+          "title": "Primary",
+          "date": "2012-06-26",
+          "summary": "115,807 votes · 53.96%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "sourceLabel": "Official results"
+        },
+        {
+          "title": "General Election",
+          "date": "2012-11-06",
+          "summary": "634,373 votes · 65.46%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "displayAffiliation": "Utah Republican Party",
+      "recommendation": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties.",
+      "contentHash": "91d3ae9bc637fcda2106386158bcb885c79de211918fcbdc9cffcc134311e207"
+    },
+    {
+      "caseId": "DC-597e3c9604e5",
+      "personId": "john-swallow",
+      "name": "John Swallow",
+      "office": "Attorney General",
+      "officeId": "attorney-general",
+      "year": 2012,
+      "beforeCards": 2,
+      "afterCards": 1,
+      "recordCount": 2,
+      "sourceSnapshots": [
+        {
+          "recordId": "2012-john-swallow-attorney-general-not-reported",
+          "personId": "john-swallow",
+          "year": 2012,
+          "electionType": "primary",
+          "officeId": "attorney-general",
+          "partyId": "not-reported",
+          "status": "primary_election",
+          "sourceStatus": "Primary Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx"
+        },
+        {
+          "recordId": "2012-john-swallow-attorney-general-utah-republican-party",
+          "personId": "john-swallow",
+          "year": 2012,
+          "electionType": "general",
+          "officeId": "attorney-general",
+          "partyId": "utah-republican-party",
+          "status": "general_election",
+          "sourceStatus": "General Election Candidate",
+          "county": "",
+          "city": "",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls"
+        }
+      ],
+      "proposedGroup": {
+        "id": "john-swallow-2012-affiliation-review",
+        "reviewedOn": "2026-11-11",
+        "personId": "john-swallow",
+        "year": 2012,
+        "electionType": "general",
+        "canonicalRecordId": "2012-john-swallow-attorney-general-utah-republican-party",
+        "recordIds": [
+          "2012-john-swallow-attorney-general-not-reported",
+          "2012-john-swallow-attorney-general-utah-republican-party"
+        ],
+        "resultContestId": "2012-general-constitutional-11",
+        "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+        "resultLinks": [
+          {
+            "electionType": "primary",
+            "contestId": "2012-primary-primary-multi-county-races-16",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+            "county": null,
+            "city": ""
+          },
+          {
+            "electionType": "general",
+            "contestId": "2012-general-constitutional-11",
+            "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+            "county": null,
+            "city": ""
+          }
+        ],
+        "reason": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties.",
+        "sources": [
+          {
+            "recordId": "2012-john-swallow-attorney-general-not-reported",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+            "officeId": "attorney-general",
+            "partyId": "not-reported",
+            "county": "",
+            "city": "",
+            "status": "primary_election",
+            "personId": "john-swallow",
+            "year": 2012,
+            "electionType": "primary"
+          },
+          {
+            "recordId": "2012-john-swallow-attorney-general-utah-republican-party",
+            "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+            "officeId": "attorney-general",
+            "partyId": "utah-republican-party",
+            "county": "",
+            "city": "",
+            "status": "general_election",
+            "personId": "john-swallow",
+            "year": 2012,
+            "electionType": "general"
+          }
+        ]
+      },
+      "proposedEvents": [
+        {
+          "title": "Filed",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "sourceLabel": "Candidacy source record"
+        },
+        {
+          "title": "Primary",
+          "date": "2012-06-26",
+          "summary": "156,644 votes · 67.95%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+          "sourceLabel": "Official results"
+        },
+        {
+          "title": "General Election",
+          "date": "2012-11-06",
+          "summary": "638,492 votes · 64.70%",
+          "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+          "sourceLabel": "Official results"
+        }
+      ],
+      "displayAffiliation": "Utah Republican Party",
+      "recommendation": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties.",
+      "contentHash": "c5c64ec516a996fe105e625538db46bb5b484b69bb1870d2da67277fcc25ccb9"
+    }
+  ],
+  "contentHash": "4bf16673ff1469c2f18ac49e73cb3fa73b764fcf6cbb79740ae8a72670f2ed37"
+}

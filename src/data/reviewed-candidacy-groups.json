@@ -5051,5 +5051,239 @@
         "electionType": "general"
       }
     ]
+  },
+  {
+    "id": "vance-hansen-2018-affiliation-review",
+    "reviewedOn": "2026-11-11",
+    "personId": "vance-hansen",
+    "year": 2018,
+    "electionType": "general",
+    "canonicalRecordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
+    "recordIds": [
+      "2018-vance-hansen-state-senate-district-2-unaffiliated",
+      "2018-general-vance-hansen-state-senate-district-2-not-reported--"
+    ],
+    "resultContestId": "2018-general-single-county-senate-2",
+    "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2018-general-single-county-senate-2",
+        "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "The declaration is imported under primary with status Filed and source label Write-In. It is filing evidence, not a primary ballot. Consolidate with the official general canvass; retain Filed and General Election only, the Unaffiliated affiliation, and original Write-In source evidence. Approved batch duplicate-cards-04. Prefer the source-imported named affiliation over Not reported; retain all raw source values.",
+    "sources": [
+      {
+        "recordId": "2018-vance-hansen-state-senate-district-2-unaffiliated",
+        "url": "https://web.archive.org/web/20190228162525/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Vance%20Hansen.pdf",
+        "officeId": "state-senate-district-2",
+        "partyId": "unaffiliated",
+        "county": "Salt Lake",
+        "city": "Salt Lake City",
+        "status": "filed",
+        "personId": "vance-hansen",
+        "year": 2018,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2018-general-vance-hansen-state-senate-district-2-not-reported--",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "officeId": "state-senate-district-2",
+        "partyId": "not-reported",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "vance-hansen",
+        "year": 2018,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "john-frugal-dougall-2012-affiliation-review",
+    "reviewedOn": "2026-11-11",
+    "personId": "john-frugal-dougall",
+    "year": 2012,
+    "electionType": "general",
+    "canonicalRecordId": "2012-john-dougall-state-auditor-utah-republican-party",
+    "recordIds": [
+      "2012-john-dougall-state-auditor-not-reported",
+      "2012-john-dougall-state-auditor-utah-republican-party"
+    ],
+    "resultContestId": "2012-general-constitutional-14",
+    "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "2012-primary-primary-multi-county-races-18",
+        "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "2012-general-constitutional-14",
+        "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties. Approved batch duplicate-cards-05. Prefer the source-imported named affiliation over Not reported; retain all raw source values.",
+    "sources": [
+      {
+        "recordId": "2012-john-dougall-state-auditor-not-reported",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+        "officeId": "state-auditor",
+        "partyId": "not-reported",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "john-frugal-dougall",
+        "year": 2012,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2012-john-dougall-state-auditor-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+        "officeId": "state-auditor",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "john-frugal-dougall",
+        "year": 2012,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "john-swallow-2012-affiliation-review",
+    "reviewedOn": "2026-11-11",
+    "personId": "john-swallow",
+    "year": 2012,
+    "electionType": "general",
+    "canonicalRecordId": "2012-john-swallow-attorney-general-utah-republican-party",
+    "recordIds": [
+      "2012-john-swallow-attorney-general-not-reported",
+      "2012-john-swallow-attorney-general-utah-republican-party"
+    ],
+    "resultContestId": "2012-general-constitutional-11",
+    "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+    "resultLinks": [
+      {
+        "electionType": "primary",
+        "contestId": "2012-primary-primary-multi-county-races-16",
+        "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "general",
+        "contestId": "2012-general-constitutional-11",
+        "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "Each pair has the same established person ID, year, and office, with an explicit primary and general ballot record. One source reports Utah Republican Party and the other Not reported. Prefer the named imported affiliation for the consolidated card; retain the original affiliation on each stage record. This does not fill a missing stage affiliation or resolve conflicting named parties. Approved batch duplicate-cards-05. Prefer the source-imported named affiliation over Not reported; retain all raw source values.",
+    "sources": [
+      {
+        "recordId": "2012-john-swallow-attorney-general-not-reported",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-Primary-Canvass-Reports-1.xlsx",
+        "officeId": "attorney-general",
+        "partyId": "not-reported",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "john-swallow",
+        "year": 2012,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2012-john-swallow-attorney-general-utah-republican-party",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2012-General-Canvass-Report.xls",
+        "officeId": "attorney-general",
+        "partyId": "utah-republican-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "john-swallow",
+        "year": 2012,
+        "electionType": "general"
+      }
+    ]
+  },
+  {
+    "id": "derek-kitchen-2018-user-confirmed-identity",
+    "reviewedOn": "2026-11-11",
+    "personId": "derek-kitchen",
+    "year": 2018,
+    "electionType": "general",
+    "canonicalRecordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+    "recordIds": [
+      "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+      "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+      "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--"
+    ],
+    "resultContestId": "2018-general-single-county-senate-2",
+    "resultSource": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+    "resultLinks": [
+      {
+        "electionType": "general",
+        "contestId": "2018-general-single-county-senate-2",
+        "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "county": null,
+        "city": ""
+      },
+      {
+        "electionType": "primary",
+        "contestId": "2018-primary-utah-leg-single-county-2",
+        "source": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+        "county": null,
+        "city": ""
+      }
+    ],
+    "reason": "User explicitly confirmed Derek Kitchen, Derek L. Kitchen, and Derek Lloyd Kitchen are the same individual based on prior in-depth research. Consolidate the exact 2018 Senate District 2 declaration and primary/general canvasses; retain every source spelling, source record, and stage result. Preserve 2015 municipal and 2026 congressional candidacies separately.",
+    "sources": [
+      {
+        "recordId": "2018-derek-kitchen-state-senate-district-2-utah-democratic-party",
+        "url": "https://web.archive.org/web/20190228162527/https://elections.utah.gov/Media/Default/2018%20Election/Declarations%20of%20Candidacy/Utah%20Senate/Senate%202%20-%20Derek%20Lloyd%20Kitchen.pdf",
+        "officeId": "state-senate-district-2",
+        "partyId": "utah-democratic-party",
+        "county": "Salt Lake",
+        "city": "Salt Lake City",
+        "status": "filed",
+        "personId": "derek-kitchen",
+        "year": 2018,
+        "electionType": "primary"
+      },
+      {
+        "recordId": "2018-general-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-General-Election-Canvass-1.xlsx",
+        "officeId": "state-senate-district-2",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "general_election",
+        "personId": "derek-kitchen",
+        "year": 2018,
+        "electionType": "general"
+      },
+      {
+        "recordId": "2018-primary-derek-lloyd-kitchen-state-senate-district-2-utah-democratic-party--",
+        "url": "https://vote.utah.gov/wp-content/uploads/2023/09/2018-Primary-Election-State-Canvass-1.xlsx",
+        "officeId": "state-senate-district-2",
+        "partyId": "utah-democratic-party",
+        "county": "",
+        "city": "",
+        "status": "primary_election",
+        "personId": "derek-kitchen",
+        "year": 2018,
+        "electionType": "primary"
+      }
+    ]
   }
 ]
