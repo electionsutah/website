@@ -1,4 +1,6 @@
 import unittest
+import io
+from contextlib import redirect_stderr
 from unittest.mock import patch
 import tempfile
 from pathlib import Path
@@ -6,9 +8,79 @@ import hashlib
 import gzip
 import json
 from datetime import datetime, timedelta, timezone
-from enrichment_pipeline import canonical, account, Page, identity, discover, Fetcher, load_entity
+from enrichment_pipeline import canonical, account, Page, identity, discover, Fetcher, load_entity, supply_website, print_outcomes, report, challenge_page, outcome_label
 
 class Controls(unittest.TestCase):
+    def test_cached_false_block_is_reclassified_without_requests(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);cache=root/'cache';cache.mkdir()
+            url='https://example.com/';key=hashlib.sha256(url.encode()).hexdigest()
+            (cache/(key+'.body')).write_text('<html><title>Campaign</title><script>{"features":["captcha"]}</script><a href="https://x.com/candidate">X</a></html>')
+            (cache/(key+'.json')).write_text(json.dumps({'url':url,'status':'blocked','httpStatus':200,'fetchedAt':'2026-11-01T00:00:00Z','nextReviewAt':'2099-01-01T00:00:00Z'}))
+            with patch('enrichment_pipeline.ROOT',root),patch('enrichment_pipeline.subprocess.run',side_effect=AssertionError('network request')):
+                fetcher=Fetcher(cache,offline=True);result=fetcher.fetch(url)
+            self.assertEqual(result['status'],'verified')
+            self.assertEqual(result['fetchedAt'],'2026-11-01T00:00:00Z')
+            self.assertTrue((root/result['bodyFile']).exists())
+            self.assertEqual(fetcher.stats['requests'],0)
+
+    def test_review_labels_distinguish_accounts_from_override_holds(self):
+        record={'status':'ambiguous','candidates':[{'url':'https://x.com/example'}]}
+        self.assertEqual(outcome_label(record),'Found accounts — ownership review required')
+        self.assertEqual(record['status'],'ambiguous')
+        self.assertEqual(outcome_label({'status':'ambiguous','candidates':[]}), 'Manual review required')
+
+    def test_archived_accounts_preserve_archive_evidence(self):
+        url='https://web.archive.org/web/20250118224934/https://www.twitter.com/VoteFrugal'
+        candidate=account(url)
+        self.assertEqual(candidate['url'],'https://x.com/VoteFrugal')
+        self.assertEqual(candidate['archivedAccountUrl'],url)
+        self.assertIsNone(account('https://web.archive.org/web/20250118224934/https://www.facebook.com/share'))
+        self.assertIsNone(account('https://example.com/web/20250118224934/https://x.com/person'))
+
+    def test_captcha_script_feature_is_not_a_challenge(self):
+        page='<html><head><title>John &quot;Frugal&quot; Dougall for Congress</title><script>{"siteFeatures":["captcha"]}</script></head><body>John Dougall for Congress</body></html>'
+        self.assertFalse(challenge_page(page))
+
+    def test_visible_browser_challenge_is_blocked(self):
+        self.assertTrue(challenge_page('<html><body>Verify you are human</body></html>'))
+        self.assertTrue(challenge_page('<html><head><title>CAPTCHA verification</title></head></html>'))
+
+    def test_missing_website_queues_discovery_without_fetching(self):
+        seed={'id':'jane','name':'Jane Doe','kind':'people','websites':[],
+              'sources':['https://example.com/filing.pdf'],'offices':['Mayor']}
+        class NoFetch:
+            def fetch(self,url): raise AssertionError('Must not fetch without a website')
+        record=discover(seed,NoFetch())
+        self.assertEqual(record['status'],'not_attempted')
+        self.assertEqual(record['websiteDiscovery']['sourceUrls'],seed['sources'])
+        self.assertIn('Mayor',record['websiteDiscovery']['suggestedQuery'])
+        output=io.StringIO()
+        with redirect_stderr(output): print_outcomes({'people':[record]},Path('/tmp/result.json'))
+        self.assertIn('No primary website seed',output.getvalue())
+        self.assertIn('--website URL',output.getvalue())
+        self.assertIn('/tmp/result.html',output.getvalue())
+
+    def test_supplied_website_preserves_recorded_evidence_and_override(self):
+        seed={'id':'jane','name':'Jane Doe','websites':['https://old.example.com/'],
+              'manualOverride':True,'historical':True,'existingLinks':[{'url':'https://x.com/jane'}]}
+        supplied=supply_website({'seeds':[seed]},'https://campaign.example.com/?utm_source=test')['seeds'][0]
+        self.assertEqual(supplied['recordedWebsites'],['https://old.example.com/'])
+        self.assertEqual(supplied['websites'],['https://campaign.example.com/'])
+        self.assertEqual(supplied['websiteInput']['disposition'],'ambiguous')
+        self.assertTrue(supplied['historical'])
+        self.assertEqual(supplied['existingLinks'],[{'url':'https://x.com/jane'}])
+        # Supplying a website cannot bypass an existing editorial override.
+        class NoFetch:
+            def fetch(self,url): raise AssertionError('Must preserve override')
+        result=discover(supplied,NoFetch())
+        self.assertEqual(result['status'],'ambiguous')
+        self.assertIn('Editorial override',result['reason'])
+
+    def test_supplied_website_rejects_local_and_account_urls(self):
+        for url in ('file:///tmp/test.html','http://localhost/','http://127.0.0.1/','https://x.com/jane'):
+            with self.assertRaises(ValueError): supply_website({'seeds':[{}]},url)
+
     def test_entity_selector_preserves_nested_place_id(self):
         with patch('enrichment_pipeline.subprocess.run') as run:
             run.return_value = type('Response', (), {'returncode': 0, 'stdout': '{"seeds": []}'})()

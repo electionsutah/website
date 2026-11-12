@@ -602,3 +602,79 @@ query simplifies to 0.0005 degrees (roughly 50 metres), and the projection match
 the existing county map. This is a visualization, not an address/district lookup.
 Official boundary sources: [House](https://gis.utah.gov/products/sgid/political/state-house-districts/)
 and [Senate](https://gis.utah.gov/products/sgid/political/state-senate-districts/).
+
+### Enrich one existing entity
+
+Run primary-site social-account discovery with an existing entity ID:
+
+```bash
+python3 scripts/enrichment_pipeline.py --entity places/davis/north-salt-lake
+```
+
+When no website is recorded, the run reports `not_attempted`, queues website
+discovery with a suggested query and existing filing sources, and makes no
+network requests. This is a manual discovery handoff, not an automatic web search.
+After finding and reviewing a candidate website, supply it for this run:
+
+```bash
+python3 scripts/enrichment_pipeline.py --entity people/john-frugal-dougall --website 'https://YOUR-REVIEWED-WEBSITE/'
+```
+
+The supplied website is recorded as unverified input; it does not update saved
+entity links or bypass editorial overrides and historical ownership review.
+The terminal explains per-entity outcomes and prints the JSON and HTML output
+paths. JSON summary output stays on stdout; diagnostic messages go to stderr.
+Use `--offline` to replay cached pages or `--refresh` to revalidate them.
+
+### Interactive ownership review and historical approvals
+
+Review an existing run without fetching its pages again:
+
+```bash
+python3 scripts/enrichment_pipeline.py --review reports/people-john-frugal-dougall-enrichment.json
+```
+
+Or append `--interactive` to a people discovery command to enter review after
+extraction. Interactive application currently supports people only; other entity
+types remain discovery-only.
+
+The terminal walks through four steps: review each account (approve, reject,
+or hold), classify source evidence, preview approved changes, then apply and
+validate only after typing the exact `APPLY <fingerprint>` confirmation. Empty
+answers hold links or stop before application. No links are published merely
+by starting review. Inspect the cited primary page and filing evidence before
+approving; the CLI prints evidence but does not independently verify ownership.
+
+Historical people and Wayback sources require the explicit `HISTORICAL`
+confirmation and a written ownership explanation. Archive capture dates are
+stored as snapshot dates, separately from retrieval and review dates. Historical
+links receive historical labels and dispositions; approval establishes historical
+source endorsement, not current account ownership or activity.
+
+Each session writes separate JSON and HTML reviews and an immutable change plan
+under `reports/account-review-*`. The reviewed discovery run, proposed changes,
+and current data are fingerprinted. Changes to evidence, links or production data
+invalidate the plan; rerun `--review` to prepare a new one. Unreviewed editorial overrides,
+invalid account URLs and duplicate links stop application. Existing links remain
+intact. Approved links normally go to `src/data/person-link-enrichment.json`, with
+source evidence and a separate application audit. `npm run check:links` runs after
+application; failed checks restore the prior data when it has not been changed by
+another writer, and record the rollback in the audit. Rejected and held links stay
+in the review and audit, never in production data.
+
+Interactive discovery now shows existing editorial overrides and asks whether to
+continue read-only extraction. Review separately asks whether approved additions
+may be appended to that override. This preserves its existing links and other
+fields, including intentional exclusions; it never replaces the override with
+imported data. Already recorded account URLs are skipped after canonicalization.
+For override-backed people, the exact plan names `editor-overrides.json` as its
+destination and fingerprints that file. Mixed override/non-override cohorts must
+be reviewed separately. Without `--interactive`, overrides still hold discovery
+for manual review. A run with no retrieved accounts offers a website retry rather
+than entering an empty approval loop.
+
+Interactive output uses terminal colors for steps, prompts, sources and outcomes;
+redirected output stays plain. Set `NO_COLOR=1` to disable styling. Interactive
+runs show a short discovery summary rather than the machine-readable JSON line;
+non-interactive runs retain JSON on stdout. Old false-blocked HTTP 200 responses
+with retained HTML are reclassified locally using the current challenge detector.

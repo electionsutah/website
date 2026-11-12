@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bounded primary-site account discovery. Writes proposals, never edits entity data.
+"""Bounded primary-site account discovery. Writes proposals by default; interactive application requires explicit approval.
 
 python3 scripts/enrichment_pipeline.py --entity people/ENTITY_ID
 python3 scripts/enrichment_pipeline.py --seeds .firecrawl/enrichment/people-seeds.json
@@ -20,6 +20,8 @@ import json
 from pathlib import Path
 import re
 import shlex
+import sys
+from enrichment_console import color
 import subprocess
 import threading
 from datetime import datetime, timedelta, timezone
@@ -53,6 +55,13 @@ def canonical(value, base=None):
 def account(value, base=None):
     url=canonical(value,base)
     if not url: return None
+    archived=urlsplit(url)
+    if archived.hostname=='web.archive.org':
+        original=re.fullmatch(r'/web/\d{1,14}(?:[a-z]+_)?/(https?://.+)',archived.path)
+        if original:
+            target=original[1]+(('?'+archived.query) if archived.query else '')
+            candidate=account(target)
+            return {**candidate,'archivedAccountUrl':url} if candidate else None
     u=urlsplit(url); host=u.hostname; platform=next((v for h,v in PLATFORMS.items() if host==h or host.endswith('.'+h)),None)
     if not platform: return None
     parts=[p for p in u.path.split('/') if p]
@@ -116,6 +125,14 @@ def identity(seed,page):
     context_ok=any(c for c in contexts)
     return {'nameMatched':name_ok,'officeContextMatched':context_ok,'matchedOfficeTerms':contexts,'excerpt':re.sub(r'\s+',' ',text)[:350]}
 
+def challenge_page(text):
+    # Feature names in JavaScript (e.g. Wix's captcha module) are not challenges.
+    visible=' '.join(Page(text).text)
+    title=re.search(r'<title[^>]*>(.*?)</title>',text,re.I|re.S)
+    title=html.unescape(re.sub(r'<[^>]+>',' ',title[1])) if title else ''
+    return bool(re.search(r'just a moment|verify you are human|checking your browser',visible,re.I)
+                or re.search(r'captcha|security verification|access denied',title,re.I))
+
 class Fetcher:
     def __init__(self,cache,offline=False,refresh=False,backend='direct'):
         self.cache=cache;cache.mkdir(parents=True,exist_ok=True);self.offline=offline;self.refresh=refresh;self.backend=backend;self.stats={'requests':0,'cacheHits':0,'conditional304':0};self.locks={}
@@ -127,6 +144,23 @@ class Fetcher:
         with lock: return self._fetch(url,key)
     def _fetch(self,url,key):
         meta=self.cache/(key+'.json'); prior=json.loads(meta.read_text()) if meta.exists() else None
+        # Older detector versions mistook embedded captcha feature names for challenges.
+        # Reclassify retained responses locally; keep the original retrieval timestamp.
+        retained=self.cache/(key+'.body')
+        if prior and not self.refresh and prior.get('status')=='blocked' and prior.get('httpStatus')==200 and retained.exists():
+            try:
+                raw=retained.read_bytes()
+                if raw.startswith(b'\x1f\x8b'):
+                    with gzip.GzipFile(fileobj=io.BytesIO(raw)) as compressed: raw=compressed.read(3000001)
+                text=raw.decode('utf-8',errors='replace')
+                if len(raw)<=3000000 and ('<html' in text.lower() or '<a ' in text.lower()) and not challenge_page(text):
+                    digest=hashlib.sha256(text.encode()).hexdigest(); dest=self.cache/(digest+'.html')
+                    if not dest.exists(): dest.write_text(text)
+                    prior.update(status='verified',bodyFile=str(dest.relative_to(ROOT)),contentHash=digest,
+                                 lastSuccessfulFetchAt=prior.get('fetchedAt'),reclassifiedAt=stamp(),evidenceDate=None)
+                    prior.pop('error',None)
+                    meta.write_text(json.dumps(prior,indent=2))
+            except (OSError,EOFError): pass
         if prior and not self.refresh and (self.offline or prior['nextReviewAt']>stamp()):
             with LOCK:self.stats['cacheHits']+=1
             return dict(prior,cacheHit=True)
@@ -163,7 +197,7 @@ class Fetcher:
             if code in (401,403,429): result['status']='blocked'
             elif code!=200: result['status']='retrieval_failed'
             elif '<html' not in text.lower() and '<a ' not in text.lower(): result['error']='Not an HTML document'
-            elif re.search(r'just a moment|verify you are human|checking your browser|captcha',text[:15000],re.I): result['status']='blocked'
+            elif challenge_page(text): result.update(status='blocked',error='Retrieved HTML appears to be a browser verification or access challenge')
             else:
                 digest=hashlib.sha256(text.encode()).hexdigest(); dest=self.cache/(digest+'.html')
                 if not dest.exists(): dest.write_text(text)
@@ -176,9 +210,13 @@ class Fetcher:
 
 def discover(seed,fetcher,max_pages=2):
     record={**seed,'status':'not_attempted','candidates':[],'fetches':[],'manualReviewRequired':True}
-    if seed.get('manualOverride'): return dict(record,status='ambiguous',reason='Editorial override present; preserve it and review manually')
+    if seed.get('manualOverride') and not seed.get('interactiveDiscovery'): return dict(record,status='ambiguous',reason='Editorial override present; preserve it and review manually')
     urls=seed.get('websites',[])[:1]
-    if not urls:return dict(record,status='not_applicable',reason='No primary website seed')
+    if not urls:
+        query=' '.join([seed['name'],'Utah',*seed.get('offices',[]),'official website'])
+        return dict(record,status='not_attempted',reason='No primary website seed; website discovery required',websiteDiscovery={
+            'status':'not_attempted','suggestedQuery':query,'sourceUrls':seed.get('sources',[]),
+            'nextStep':'Review existing filing sources and authoritative directories, then search unresolved gaps. Supply a reviewed candidate with --entity KIND/ID --website URL. Historical ownership still requires review.'})
     seen=set(); candidates={}; evidence=None
     while urls and len(record['fetches'])<max_pages:
         url=urls.pop(0); key=canonical(url)
@@ -208,6 +246,11 @@ def discover(seed,fetcher,max_pages=2):
     elif record['fetches']:record['status']=record['fetches'][-1]['status']
     return record
 
+def outcome_label(record):
+    if record['status']=='ambiguous':
+        return 'Found accounts — ownership review required' if record.get('candidates') else 'Manual review required'
+    return record['status']
+
 def report(result,path):
     esc=lambda x:html.escape(str(x),quote=True)
     link=lambda url,label:f'<a href="{esc(url)}">{esc(label)}</a>'
@@ -215,8 +258,16 @@ def report(result,path):
     for r in result['people']:
         evidence=' '.join(link(f.get('finalUrl',f['url']),f.get('httpStatus',f['status'])) for f in r['fetches'])
         accounts='<br>'.join(link(c['url'],c['platform'])+' — '+link(c['sourceUrl'],'source')+' · '+esc(c['reason']) for c in r['candidates'])
-        rows.append(f'<tr><td>{link(r["entityUrl"],r["name"])}</td><td>{esc(r["status"])}</td><td>{accounts or "—"}</td><td>{evidence}</td></tr>')
-    bars=''.join(f'<div class="bar"><span>{esc(k)}: {v}</span><div style="width:{100*v/max(1,len(result["people"]))}%"></div></div>' for k,v in result['summary']['statuses'].items() if v)
+        outcome=esc(outcome_label(r))+'<br>'+esc(r.get('reason',''))
+        discovery=r.get('websiteDiscovery')
+        if discovery:
+            outcome+='<br>Website discovery: '+esc(discovery['suggestedQuery'])+'<br>'+esc(discovery['nextStep'])
+            outcome+='<br>'+' '.join(link(url,'Filing source') for url in discovery['sourceUrls'])
+        if r.get('websiteInput'):
+            outcome+='<br>User-supplied candidate website (ownership unverified): '+link(r['websiteInput']['url'],r['websiteInput']['url'])
+        evidence+='<br>'.join(esc(f.get('error','')) for f in r['fetches'] if f.get('error'))
+        rows.append(f'<tr><td>{link(r["entityUrl"],r["name"])}</td><td>{outcome}</td><td>{accounts or "—"}</td><td>{evidence}</td></tr>')
+    bars=''.join(f'<div class="bar"><span>{esc(outcome_label({'status':k}))}: {v}</span><div style="width:{100*v/max(1,len(result["people"]))}%"></div></div>' for k,v in result['summary']['statuses'].items() if v)
     out='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Entity enrichment trial</title><style>body{margin:3rem;font:15px/1.6 var(--font-sans,system-ui);color:var(--foreground,#222)}a{color:var(--primary,#176ba0)}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:10px;text-align:left;border-bottom:1px solid var(--border,#ccc);vertical-align:top}.scroll{overflow:auto}.bar{margin:12px 0}.bar div{height:10px;min-width:2px;background:var(--chart-1,#287bad)}code{overflow-wrap:anywhere}</style></head><body><h1>Entity enrichment trial</h1><p>'+esc(result['selection'])+'</p><p>'+esc(f"{len(result['people'])} entities · {result['summary']['accountProposals']} account proposals · {result['summary']['requests']} network requests · {result['summary']['cacheHits']} cache hits · {result['summary']['modelCalls']} model calls")+'</p><p>Account URLs are review proposals; no production data was changed. A successful fetch is not verified entity ownership. No account activity checks. Search, directories and Wikidata discovery are deferred; this bounded trial exercises primary-site extraction and cache controls.</p><p>Reproduce: <code>'+esc(result.get('reproduce','See pipeline --help for seed-file options.'))+'</code>. Add <code>--offline</code> for cache replay or <code>--refresh</code> for conditional revalidation.</p><p>Source: '+link(path.with_suffix('.json').name,'machine-readable trial evidence')+'</p>'+bars+'<div class="scroll"><table><thead><tr><th>Entity</th><th>Outcome</th><th>Account proposals and sources</th><th>Fetch evidence</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table></div></body></html>'
     path.write_text(out)
 
@@ -227,11 +278,37 @@ def load_entity(selector):
     if result.returncode: raise ValueError(result.stderr.strip() or 'Entity resolution failed')
     return json.loads(result.stdout)
 
+def supply_website(seeds,url):
+    normalized=canonical(url)
+    if not normalized or account(url):
+        raise ValueError('--website must be a public HTTP(S) website URL, not a social account URL')
+    if len(seeds['seeds'])!=1: raise ValueError('--website requires exactly one entity')
+    seed=seeds['seeds'][0]
+    seed['recordedWebsites']=list(seed.get('websites',[]))
+    seed['websites']=[normalized]
+    seed['websiteInput']={'url':url,'canonicalUrl':normalized,'source':'user-supplied CLI input','disposition':'ambiguous','note':'Candidate website; ownership has not been verified'}
+    return seeds
+
+def print_outcomes(result,output):
+    for record in result['people']:
+        message=f"{record.get('kind','people')}/{record['id']}: {outcome_label(record)}"
+        if record.get('reason'): message+=' — '+record['reason']
+        print(color(message,'warning' if record['status'] in ('ambiguous','blocked','retrieval_failed') else 'step',sys.stderr),file=sys.stderr)
+        if record.get('websiteDiscovery'):
+            print('  Search suggestion: '+record['websiteDiscovery']['suggestedQuery'],file=sys.stderr)
+            print('  After reviewing ownership, rerun with --website URL.',file=sys.stderr)
+        for fetch in record.get('fetches',[]):
+            if fetch.get('error'): print('  '+fetch['url']+': '+fetch['error'],file=sys.stderr)
+    print(f'JSON evidence: {output}\nHTML report: {output.with_suffix(".html")}',file=sys.stderr)
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     source=parser.add_mutually_exclusive_group(required=True)
     source.add_argument('--seeds',help='Prepared cohort JSON file')
+    source.add_argument('--review',metavar='RUN.json',help='Interactively review a saved discovery run without refetching')
     source.add_argument('--entity',metavar='KIND/ID',help='Existing people, parties, places, or offices entity; requires installed Node dependencies')
+    parser.add_argument('--interactive',action='store_true',help='Review, preview, explicitly apply, and validate after discovery (people only)')
+    parser.add_argument('--website',help='Candidate website for --entity only; preserves recorded links and overrides, does not verify ownership')
     parser.add_argument('--offline',action='store_true')
     parser.add_argument('--refresh',action='store_true')
     parser.add_argument('--backend',choices=['direct','firecrawl'],default='direct')
@@ -239,11 +316,27 @@ def main():
     parser.add_argument('--max-pages',type=int,default=2)
     parser.add_argument('--output',help='JSON output path; a companion HTML report is also written')
     args=parser.parse_args()
+    if args.review and (args.website or args.interactive or args.refresh or args.offline): parser.error('--review cannot be combined with discovery options')
+    if args.review:
+        from enrichment_review import interactive_review
+        try: interactive_review(ROOT/args.review)
+        except (ValueError,OSError) as error: parser.error(str(error))
+        return
+    if args.interactive and not sys.stdin.isatty(): parser.error('--interactive requires a terminal')
+    if args.website and not args.entity: parser.error('--website requires --entity')
     if not 1<=args.workers<=8 or not 1<=args.max_pages<=3:parser.error('workers must be 1–8 and max-pages 1–3')
     try:
         seeds=load_entity(args.entity) if args.entity else json.loads(Path(args.seeds).read_text())
+        if args.website: seeds=supply_website(seeds,args.website)
     except (ValueError,OSError,subprocess.TimeoutExpired) as error:
         parser.error(str(error))
+    if args.interactive:
+        from enrichment_review import confirm_discovery
+        try:
+            if not confirm_discovery(seeds): return
+        except (EOFError,KeyboardInterrupt):
+            print('Stopped before discovery; no changes applied.',file=sys.stderr)
+            return
     if not args.output:
         args.output=f'reports/{args.entity.replace("/","-")}-enrichment.json' if args.entity else 'reports/people-enrichment-trial.json'
     fetcher=Fetcher(ROOT/'.firecrawl/enrichment/cache',args.offline,args.refresh,args.backend)
@@ -251,7 +344,14 @@ def main():
     statuses={s:sum(p['status']==s for p in people) for s in sorted(STATES)}
     result={'generatedAt':stamp(),'selection':seeds['selection'],'summary':{'people':len(people),'statuses':statuses,'accountProposals':sum(len(p['candidates']) for p in people),'productionChanges':0,**fetcher.stats,'backend':args.backend,'modelCalls':0},'people':people}
     command=['python3','scripts/enrichment_pipeline.py','--entity' if args.entity else '--seeds',args.entity or args.seeds,'--backend',args.backend,'--max-pages',str(args.max_pages),'--workers',str(args.workers),'--output',args.output]
+    command += (['--website',args.website] if args.website else [])
     command += (['--offline'] if args.offline else []) + (['--refresh'] if args.refresh else [])
     result['reproduce']=shlex.join(command)
-    output=ROOT/args.output;output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(result,indent=2)+'\n');report(result,output.with_suffix('.html'));print(json.dumps(result['summary']))
+    output=ROOT/args.output;output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(result,indent=2)+'\n');report(result,output.with_suffix('.html'));print_outcomes(result,output)
+    if not args.interactive: print(json.dumps(result['summary']))
+    else: print(color(f"Discovery: {len(people)} entities · {result['summary']['accountProposals']} proposals · {fetcher.stats['requests']} requests · {fetcher.stats['cacheHits']} cache hits",'step',sys.stderr),file=sys.stderr)
+    if args.interactive:
+        from enrichment_review import interactive_review
+        try: interactive_review(output)
+        except (ValueError,OSError) as error: parser.error(str(error))
 if __name__=='__main__':main()

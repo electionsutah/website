@@ -23,7 +23,7 @@ try {
   const latestYear = entity.years.length ? Math.max(...entity.years) : null;
   const seed = {
     id, kind, name: entity.name, entityUrl: `https://www.electionsutah.org/${kind}/${id}/`,
-    websites, existingLinks: links, manualOverride: !!override,
+    websites, existingLinks: links, manualOverride: !!override, editorialOverride: override ?? null,
     latestYear, historical: kind === 'people' ? !entity.years.includes(2026) : !!entity.historical,
     offices: kind === 'people' ? [...new Set(entity.filings.filter(f => f.year === latestYear).map(f => f.officeName))] : [],
     sources: [...new Set(entity.filings.filter(f => f.year === latestYear).map(f => f.source))]

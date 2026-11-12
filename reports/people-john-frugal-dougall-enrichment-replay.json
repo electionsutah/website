@@ -1,0 +1,177 @@
+{
+  "generatedAt": "2026-11-11T15:47:45.126687+00:00",
+  "selection": "Explicit entity people/john-frugal-dougall; resolved existing evidence only; ownership review required. Offline reclassification of the saved HTTP 200 response; no network requests.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 1,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 4,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 1,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "john-frugal-dougall",
+      "kind": "people",
+      "name": "John \"Frugal\" Dougall",
+      "entityUrl": "https://www.electionsutah.org/people/john-frugal-dougall/",
+      "websites": [
+        "https://web.archive.org/web/20250118224934/https://www.votefrugal.com"
+      ],
+      "existingLinks": [],
+      "manualOverride": false,
+      "latestYear": 2024,
+      "historical": true,
+      "offices": [
+        "U.S. House District 3"
+      ],
+      "sources": [
+        "https://vote.utah.gov/wp-content/uploads/2024/01/Dougall-John-CD3.pdf"
+      ],
+      "recordedWebsites": [],
+      "websiteInput": {
+        "url": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+        "canonicalUrl": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com",
+        "source": "user-supplied CLI input",
+        "disposition": "ambiguous",
+        "note": "Candidate website; ownership has not been verified"
+      },
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/votefrugal",
+          "archivedAccountUrl": "https://web.archive.org/web/20250118224934/https://www.facebook.com/votefrugal",
+          "entityId": "john-frugal-dougall",
+          "sourceUrl": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+          "anchorText": "Untitled (66)",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ]
+            ],
+            "excerpt": " John \"Frugal\" Dougall for Congress top of page CHIP IN NOW TO SEND FRUGAL DOUGALL TO CONGRESS HOME ABOUT ISSUES BUDGET TOOL JOIN NEWS DONATE STORE JOHN FRUGAL DOUGALL MAINSTREAM NOT MAGA GET #FRUGAL UPDATES JOIN By providing your information, you agree to the terms & privacy policy for recurring and autodialed campaign & donation messages from Fri"
+          },
+          "fetchedAt": "2026-11-11T15:47:42.574458+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Entity ownership, historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/VoteFrugal",
+          "archivedAccountUrl": "https://web.archive.org/web/20250118224934/https://www.twitter.com/VoteFrugal",
+          "entityId": "john-frugal-dougall",
+          "sourceUrl": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+          "anchorText": "Untitled (62)",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ]
+            ],
+            "excerpt": " John \"Frugal\" Dougall for Congress top of page CHIP IN NOW TO SEND FRUGAL DOUGALL TO CONGRESS HOME ABOUT ISSUES BUDGET TOOL JOIN NEWS DONATE STORE JOHN FRUGAL DOUGALL MAINSTREAM NOT MAGA GET #FRUGAL UPDATES JOIN By providing your information, you agree to the terms & privacy policy for recurring and autodialed campaign & donation messages from Fri"
+          },
+          "fetchedAt": "2026-11-11T15:47:42.574458+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Entity ownership, historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/votefrugal",
+          "archivedAccountUrl": "https://web.archive.org/web/20250118224934/https://www.instagram.com/votefrugal",
+          "entityId": "john-frugal-dougall",
+          "sourceUrl": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+          "anchorText": "Untitled (64)",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ]
+            ],
+            "excerpt": " John \"Frugal\" Dougall for Congress top of page CHIP IN NOW TO SEND FRUGAL DOUGALL TO CONGRESS HOME ABOUT ISSUES BUDGET TOOL JOIN NEWS DONATE STORE JOHN FRUGAL DOUGALL MAINSTREAM NOT MAGA GET #FRUGAL UPDATES JOIN By providing your information, you agree to the terms & privacy policy for recurring and autodialed campaign & donation messages from Fri"
+          },
+          "fetchedAt": "2026-11-11T15:47:42.574458+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Entity ownership, historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/frugaldougall",
+          "archivedAccountUrl": "https://web.archive.org/web/20250118224934/https://www.twitter.com/frugaldougall",
+          "entityId": "john-frugal-dougall",
+          "sourceUrl": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+          "anchorText": "Untitled (65)",
+          "identityEvidence": {
+            "nameMatched": true,
+            "officeContextMatched": true,
+            "matchedOfficeTerms": [
+              [
+                "house"
+              ]
+            ],
+            "excerpt": " John \"Frugal\" Dougall for Congress top of page CHIP IN NOW TO SEND FRUGAL DOUGALL TO CONGRESS HOME ABOUT ISSUES BUDGET TOOL JOIN NEWS DONATE STORE JOHN FRUGAL DOUGALL MAINSTREAM NOT MAGA GET #FRUGAL UPDATES JOIN By providing your information, you agree to the terms & privacy policy for recurring and autodialed campaign & donation messages from Fri"
+          },
+          "fetchedAt": "2026-11-11T15:47:42.574458+00:00",
+          "evidenceDate": null,
+          "disposition": "ambiguous",
+          "reason": "Entity ownership, historical identity, page context, institutional ownership, redirect or account label needs review",
+          "primaryIdentityMatched": false
+        }
+      ],
+      "fetches": [
+        {
+          "url": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com",
+          "fetchedAt": "2026-11-11T15:47:42.574458+00:00",
+          "status": "verified",
+          "backend": "direct",
+          "httpStatus": 200,
+          "finalUrl": "https://web.archive.org/web/20250118224934/https://www.votefrugal.com/",
+          "etag": null,
+          "lastModified": null,
+          "nextReviewAt": "2026-11-18T15:47:45.125906+00:00",
+          "bodyFile": ".firecrawl/enrichment/cache/db3802a51342a56b945add54e3d7cbe06c696fcd0e9d01036e25896c30b8a605.body",
+          "cacheHit": true,
+          "replayedFromSavedResponse": true
+        }
+      ],
+      "manualReviewRequired": true,
+      "identityEvidence": {
+        "nameMatched": true,
+        "officeContextMatched": true,
+        "matchedOfficeTerms": [
+          [
+            "house"
+          ]
+        ],
+        "excerpt": " John \"Frugal\" Dougall for Congress top of page CHIP IN NOW TO SEND FRUGAL DOUGALL TO CONGRESS HOME ABOUT ISSUES BUDGET TOOL JOIN NEWS DONATE STORE JOHN FRUGAL DOUGALL MAINSTREAM NOT MAGA GET #FRUGAL UPDATES JOIN By providing your information, you agree to the terms & privacy policy for recurring and autodialed campaign & donation messages from Fri"
+      }
+    }
+  ],
+  "reproduce": "Replay was performed from the saved .body response; for a fresh retrieval rerun the original command with --refresh.",
+  "replayNote": "Original captured response and fetch time preserved; reprocessed locally with corrected challenge detection and archived-account extraction."
+}
