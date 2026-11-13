@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, rename, unlink, writeFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { invalidateCollectionIndex } from './entry-index.mjs';
 
 export const root = fileURLToPath(new URL('../', import.meta.url));
 export const workspace = join(root, 'editor/.workspace');
@@ -13,8 +14,14 @@ export function filingRecordLabel(filing) {
   if (['withdrew', 'disqualified', 'deceased'].includes(filing.status)) return 'Candidacy status record';
   return ({ general: 'General-election result record', primary: 'Primary-election result record', 'presidential-primary': 'Presidential-primary result record' })[filing.electionType] ?? 'Election source record';
 }
-const filingEditorUrl = id => `#/collections/filings/entries/${createHash('sha256').update(id).digest('hex').slice(0, 32)}`;
-const personEditorUrl = id => `#/collections/people/entries/${createHash('sha256').update(id).digest('hex').slice(0, 32)}`;
+// A document navigation remounts Decap's editor; hash-only entry-to-entry
+// navigation reuses its mounted draft and can leave the previous form visible.
+const editorUrl = (kind, id) => {
+  const slug = createHash('sha256').update(id).digest('hex').slice(0, 32);
+  return `?entry=${kind}-${slug}#/collections/${kind}/entries/${slug}`;
+};
+const filingEditorUrl = id => editorUrl('filings', id);
+const personEditorUrl = id => editorUrl('people', id);
 
 export async function atomicJson(path, value) {
   const text = json(value);
@@ -150,5 +157,6 @@ export async function syncRecord(relative, state, destination = overridesPath) {
       if (row) row.label = displayName;
     }
   }
+  invalidateCollectionIndex(state, entry.kind);
   return entry.title;
 }

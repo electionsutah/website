@@ -4,6 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { createServer } from 'vite';
 import { prepare, root, workspace, syncRecord, validateRecord, json } from './workspace.mjs';
+import { collectionIndex } from './entry-index.mjs';
 import { inspectSchema, saveSchema } from './schema.mjs';
 import { elutThemeCss } from './elut-theme.mjs';
 import { researchSource, createResearchSync } from './research-sync.mjs';
@@ -94,6 +95,10 @@ try {
         let body = '';
         for await (const chunk of request) { body += chunk; if (body.length > 32 * 1024 * 1024) throw new Error('Request is too large'); }
         const message = JSON.parse(body);
+        if (message.action === 'entriesByFolder') {
+          response.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }).end(collectionIndex(state, message.params));
+          return;
+        }
         if (mediaActions.has(message.action)) {
           const operation = queue.then(() => handleMedia(root, message.action, message.params));
           queue = operation.catch(() => {});

@@ -9,6 +9,8 @@ import { createServer } from 'vite';
 import { prepare, syncRecord, validateRecord, atomicJson, readJson, root, overridesPath } from './workspace.mjs';
 import { inspectSchema, saveSchema } from './schema.mjs';
 import { elutThemeCss } from './elut-theme.mjs';
+import { collectionIndex } from './entry-index.mjs';
+import './entry-index-check.mjs';
 
 const require = createRequire(import.meta.url);
 const { runDevServer } = require('@decap/cli/dev');
@@ -181,6 +183,10 @@ try {
   assert.equal((await request('info')).type, 'local_fs');
   const [relative, entry] = [...state.catalog].find(([, row]) => row.kind === 'people' && row.id === 'ben-mcadams');
   const record = await readJson(join(directory, relative));
+  const listed = JSON.parse(collectionIndex(state, { folder: 'content/people', extension: 'json' })).find(row => row.file.path === relative);
+  assert.deepEqual(JSON.parse(listed.data), { id: entry.id, title: entry.title });
+  assert((await request('getEntry', { branch: 'master', path: relative })).data.includes('connectedFilings'), 'Opening a compact index entry still retrieves the complete editor record');
+  assert(benGeneral.context.connectedPeople[0].editorUrl.startsWith('?entry='), 'Connected entries remount Decap rather than reusing a stale draft');
   const persist = async () => request('persistEntry', {
     branch: 'editor', entry: { path: relative, slug: entry.filename.slice(0, -5), raw: JSON.stringify(record) }, assets: [],
     options: { collectionName: 'people', commitMessage: 'Local editor check', useWorkflow: false, status: 'draft' }

@@ -57,6 +57,12 @@ Person forms list **Connected filings** with the election year, office, and
 record type. Filing forms link back through **Connected people**, identifying
 the candidate and any running mate. These links open the corresponding editor
 entry; save your changes before navigating away.
+Connected-entry links reload the editor document so Decap opens the destination
+draft instead of retaining the previous form. Collection browsing uses a cached
+title-only index; full imported values, relationships, and overrides are fetched
+only for the opened entry. Saving invalidates that collection’s index, and
+regeneration replaces all indexes. The normal unsaved-change warning remains
+active when following these links.
 
 ## Data and persistence
 
