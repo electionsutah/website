@@ -1,0 +1,585 @@
+{
+  "rows": [
+    {
+      "id": "forward-party-of-utah",
+      "name": "Forward Party of Utah",
+      "color": "#79629d",
+      "options": {
+        "tint": {
+          "reference": "#79629d",
+          "background": "#e7e3ed",
+          "foreground": "#26333b",
+          "contrast": 10.257752303588111
+        },
+        "solid": {
+          "reference": "#79629d",
+          "background": "#79629d",
+          "foreground": "#ffffff",
+          "contrast": 5.189122751600103
+        },
+        "accent": {
+          "reference": "#79629d",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "green-party-of-utah",
+      "name": "Green Party of Utah",
+      "color": "#407d55",
+      "options": {
+        "tint": {
+          "reference": "#407d55",
+          "background": "#dde8e0",
+          "foreground": "#26333b",
+          "contrast": 10.31033429331246
+        },
+        "solid": {
+          "reference": "#407d55",
+          "background": "#407d55",
+          "foreground": "#ffffff",
+          "contrast": 4.903541027920757
+        },
+        "accent": {
+          "reference": "#407d55",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "independent",
+      "name": "Independent",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "independent-american-party",
+      "name": "Independent American Party",
+      "color": "#567860",
+      "options": {
+        "tint": {
+          "reference": "#567860",
+          "background": "#e1e7e2",
+          "foreground": "#26333b",
+          "contrast": 10.332960520984381
+        },
+        "solid": {
+          "reference": "#567860",
+          "background": "#567860",
+          "foreground": "#ffffff",
+          "contrast": 4.939804156664101
+        },
+        "accent": {
+          "reference": "#567860",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "justice",
+      "name": "Justice Party",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "natural-law",
+      "name": "Natural Law Party",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "nonpartisan",
+      "name": "Nonpartisan",
+      "color": "#55786a",
+      "options": {
+        "tint": {
+          "reference": "#55786a",
+          "background": "#e0e7e4",
+          "foreground": "#26333b",
+          "contrast": 10.326807891723622
+        },
+        "solid": {
+          "reference": "#55786a",
+          "background": "#55786a",
+          "foreground": "#ffffff",
+          "contrast": 4.905431692287736
+        },
+        "accent": {
+          "reference": "#55786a",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "not-reported",
+      "name": "Not reported",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "party-for-socialism-and-liberation",
+      "name": "Party for Socialism and Liberation",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "peace-and-freedom",
+      "name": "Peace and Freedom",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "peoples-freedom-party",
+      "name": "Peoples’ Freedom Party",
+      "color": "#906164",
+      "options": {
+        "tint": {
+          "reference": "#906164",
+          "background": "#ebe3e3",
+          "foreground": "#26333b",
+          "contrast": 10.270706422125688
+        },
+        "solid": {
+          "reference": "#906164",
+          "background": "#906164",
+          "foreground": "#ffffff",
+          "contrast": 5.1473665391596635
+        },
+        "accent": {
+          "reference": "#906164",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "personal-choice",
+      "name": "Personal Choice",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "pinecone",
+      "name": "Pinecone",
+      "color": "#805a37",
+      "options": {
+        "tint": {
+          "reference": "#805a37",
+          "background": "#e8e1db",
+          "foreground": "#26333b",
+          "contrast": 10.020482687738975
+        },
+        "solid": {
+          "reference": "#805a37",
+          "background": "#805a37",
+          "foreground": "#ffffff",
+          "contrast": 6.112697695634223
+        },
+        "accent": {
+          "reference": "#805a37",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "reform",
+      "name": "Reform",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "sagebrush",
+      "name": "Sagebrush",
+      "color": "#526c56",
+      "options": {
+        "tint": {
+          "reference": "#526c56",
+          "background": "#e0e5e1",
+          "foreground": "#26333b",
+          "contrast": 10.168892957379633
+        },
+        "solid": {
+          "reference": "#526c56",
+          "background": "#526c56",
+          "foreground": "#ffffff",
+          "contrast": 5.772133284411527
+        },
+        "accent": {
+          "reference": "#526c56",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "socialist-workers",
+      "name": "Socialist Workers",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "u-s-taxpayers",
+      "name": "U.S. Taxpayers",
+      "color": "#5f5e59",
+      "options": {
+        "tint": {
+          "reference": "#5f5e59",
+          "background": "#e2e2e1",
+          "foreground": "#26333b",
+          "contrast": 10.00528914888342
+        },
+        "solid": {
+          "reference": "#5f5e59",
+          "background": "#5f5e59",
+          "foreground": "#ffffff",
+          "contrast": 6.497696802961936
+        },
+        "accent": {
+          "reference": "#5f5e59",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "unaffiliated",
+      "name": "Unaffiliated",
+      "color": "#68736f",
+      "options": {
+        "tint": {
+          "reference": "#68736f",
+          "background": "#e4e6e5",
+          "foreground": "#26333b",
+          "contrast": 10.344619561697437
+        },
+        "solid": {
+          "reference": "#68736f",
+          "background": "#68736f",
+          "foreground": "#ffffff",
+          "contrast": 4.917521252011756
+        },
+        "accent": {
+          "reference": "#68736f",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "united-utah-party",
+      "name": "United Utah Party",
+      "color": "#547682",
+      "options": {
+        "tint": {
+          "reference": "#547682",
+          "background": "#e0e6e9",
+          "foreground": "#26333b",
+          "contrast": 10.292660071680979
+        },
+        "solid": {
+          "reference": "#547682",
+          "background": "#547682",
+          "foreground": "#ffffff",
+          "contrast": 4.894331302116168
+        },
+        "accent": {
+          "reference": "#547682",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "utah-constitution-party",
+      "name": "Utah Constitution Party",
+      "color": "#986634",
+      "options": {
+        "tint": {
+          "reference": "#986634",
+          "background": "#ece3da",
+          "foreground": "#26333b",
+          "contrast": 10.231993971113209
+        },
+        "solid": {
+          "reference": "#986634",
+          "background": "#986634",
+          "foreground": "#ffffff",
+          "contrast": 4.900570731464643
+        },
+        "accent": {
+          "reference": "#986634",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "utah-democratic-party",
+      "name": "Utah Democratic Party",
+      "color": "#2675aa",
+      "options": {
+        "tint": {
+          "reference": "#2675aa",
+          "background": "#d8e6f0",
+          "foreground": "#26333b",
+          "contrast": 10.18886332476106
+        },
+        "solid": {
+          "reference": "#2675aa",
+          "background": "#2675aa",
+          "foreground": "#ffffff",
+          "contrast": 4.99122303519089
+        },
+        "accent": {
+          "reference": "#2675aa",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "utah-libertarian-party",
+      "name": "Utah Libertarian Party",
+      "color": "#886e13",
+      "options": {
+        "tint": {
+          "reference": "#886e13",
+          "background": "#eae5d5",
+          "foreground": "#26333b",
+          "contrast": 10.294022539526486
+        },
+        "solid": {
+          "reference": "#886e13",
+          "background": "#886e13",
+          "foreground": "#ffffff",
+          "contrast": 4.898960528756941
+        },
+        "accent": {
+          "reference": "#886e13",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    },
+    {
+      "id": "utah-republican-party",
+      "name": "Utah Republican Party",
+      "color": "#bc443d",
+      "options": {
+        "tint": {
+          "reference": "#bc443d",
+          "background": "#f3dddc",
+          "foreground": "#26333b",
+          "contrast": 9.997530506573417
+        },
+        "solid": {
+          "reference": "#bc443d",
+          "background": "#bc443d",
+          "foreground": "#ffffff",
+          "contrast": 5.207679173299785
+        },
+        "accent": {
+          "reference": "#bc443d",
+          "background": "#f5f5f3",
+          "foreground": "#26333b",
+          "contrast": 11.881723253328861
+        }
+      }
+    }
+  ],
+  "checks": {
+    "allIconContrastAtLeast4_5": true,
+    "latestYearSelection": true,
+    "ambiguousTieNeutral": true,
+    "latestDerekAffiliation": true
+  }
+}

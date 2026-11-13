@@ -63,6 +63,7 @@
     type Person
   } from './lib/entities';
   import { formatCount, formatDate } from './lib/format';
+  import { sortByElectionYearAndSurname, surnameSortKey } from './lib/people-sort';
   import { matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
   import { buildFacets, matchesPhoto, isActive, matchingFilings, nextSort, persistState, restoreState, sortRows, type Selection, type Sort } from './lib/facets';
 
@@ -176,8 +177,8 @@
     candidateQueryFor = candidateRecord;
     candidateQuery = '';
   }
-  $: shownCandidacies = candidacies(candidacyHistory(office?.filings ?? place?.filings ?? []).map(history => history.filing))
-    // Match on both ticket names so a ticket's rows stay together.
+  $: shownCandidacies = sortByElectionYearAndSurname(candidacies(candidacyHistory(office?.filings ?? place?.filings ?? []).map(history => history.filing)), row => row.filing.year, row => peopleById.get(row.personId)?.name ?? row.name)
+    // Match both ticket names so searching either member includes the ticket.
     .filter(({ filing }) => matchesQuery(`${filing.name} ${filing.runningMate} ${filing.year} ${filing.officeName} ${filing.partyName} ${filing.sourceStatus}`, queryTokens(candidateQuery)));
 
   $: cards = section === 'people'
@@ -294,12 +295,13 @@
     })
     .filter((card) => !filtering || card.matching.length);
   $: facets = buildFacets(searchedCards, selection);
-  $: sortedCards = sort ? sortRows(matchedCards, sort, sortValue, (card) => card.title)
-    : rankByTitle(matchedCards, queryTokens(query), (card) => card.title);
+  $: defaultCards = section === 'people' ? sortByElectionYearAndSurname(matchedCards, card => card.years[0] ?? 0, card => card.title) : matchedCards;
+  $: sortedCards = sort ? sortRows(matchedCards, sort, sortValue, (card) => section === 'people' ? surnameSortKey(card.title) : card.title)
+    : rankByTitle(defaultCards, queryTokens(query), (card) => card.title);
   $: visibleCards = sortedCards.slice(0, limit);
 
   function sortValue(card: (typeof matchedCards)[number], key: string): string | number {
-    if (key === 'name') return card.title;
+    if (key === 'name') return section === 'people' ? surnameSortKey(card.title) : card.title;
     if (key === 'years') return card.years[0] ?? 0;
     if (key === 'filings') return card.matching.length;
     if (key === 'status') return card.statuses.join(' · ');
@@ -638,7 +640,7 @@
       onView={updateView}
       onQuery={updateQuery}
     />
-    {#if section === 'people'}<p class="index-note">People are counted once in this list, including running mates. A filing is one archived candidacy or ticket record; one person can appear in several filings.</p>{/if}
+    {#if section === 'people'}<p class="index-note">Default order: newest election year, then surname. People are counted once in this list, including running mates. A filing is one archived candidacy or ticket record; one person can appear in several filings.</p>{/if}
     {#if view === 'list'}
       <div class="entity-table-wrap" bind:this={resultsList}>
         <table class="entity-table">

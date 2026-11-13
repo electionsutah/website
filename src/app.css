@@ -621,3 +621,8 @@ main:focus,main h1:focus{outline:0}
 .person-tile .card-party,.person-tile .candidate-status{justify-content:center}
 .person-tile .card-footer{text-align:left}
 .person-tile .card-footer b{white-space:nowrap}
+
+/* Latest-candidacy affiliation colors apply only to people without photographs. */
+.affiliation-avatar.icon-avatar{background:var(--avatar-background);color:var(--avatar-foreground)}
+.search-result>.affiliation-avatar{background:var(--avatar-background);color:var(--avatar-foreground)}
+@media (forced-colors:active){.affiliation-avatar.icon-avatar{background:Canvas;color:CanvasText}}

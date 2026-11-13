@@ -1,11 +1,14 @@
 <script lang="ts">
   import Icon from './Icon.svelte';
   import { tick } from 'svelte';
+  import { rankByTitle } from './lib/search';
   export let id: string;
   export let label: string;
   export let value = '';
   export let valueLabel = '';
   export let options: { value: string; label: string; description?: string; searchText?: string }[] = [];
+  /** Prefer visible option labels over matches found only in supporting metadata. */
+  export let rankLabelMatches = false;
   export let placeholder = 'Type to search…';
   export let clearable = true;
   export let itemLabel = 'district';
@@ -23,11 +26,14 @@
   const normalize = (text: string) => text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   $: selectedLabel = options.find(option => option.value === value)?.label || valueLabel || value;
   $: numericValues = options.length > 0 && options.every(option => /^\d+$/.test(option.value));
-  $: filtered = options.filter(option => {
+  $: matches = options.filter(option => {
     const search = normalize(query);
     if (numericValues && /^\d+$/.test(search)) return option.value.startsWith(search);
     return search.split(/\s+/).every(token => normalize(`${option.label} ${option.description || ''} ${option.searchText || ''}`).includes(token));
   });
+  $: filtered = rankLabelMatches
+    ? rankByTitle(matches, normalize(query).split(/\s+/).filter(Boolean), option => normalize(option.label))
+    : matches;
   $: if (value !== previousValue) {
     previousValue = value; open = false; query = ''; text = selectedLabel; active = -1;
   }
