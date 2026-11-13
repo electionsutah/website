@@ -111,19 +111,25 @@
       if (!record) return h('p', {}, 'No source record. Restart the editor to refresh repository data.');
       const fields = schema[this.props.field.get('kind')];
       const kind = this.props.field.get('kind');
+      const recordType = kind === 'people' ? 'Person profile' : kind === 'places' ? 'Place contacts and social accounts' : kind === 'offices' ? 'Office contacts' : kind === 'parties' ? 'Party contacts' : record.context.recordType ?? 'Election source record';
+      const entityTitle = kind === 'filings'
+        ? record.context.title ?? [record.source.year, record.source.name, record.source.officeName, recordType, record.source.county].filter(Boolean).join(' · ')
+        : record.overrides.name ?? record.context.entity?.name ?? record.source.name ?? record.context.title ?? recordType;
       const matchingFields = fields.filter(field => matchesField(field, this.state.fieldQuery, this.state.fieldGroup));
       const filterId = `${this.props.forID}-field-filter`;
       const clearFilters = () => this.setState({ fieldQuery: '', fieldGroup: '' });
       return h('main', { className: 'repository-record', id: 'editor-main', tabIndex: -1, 'aria-label': 'Edit repository record' },
         h('div', { className: 'editor-record-toolbar' },
-          h('h1', { className: 'editor-record-heading' }, icon(kind), kind === 'people' ? 'Person profile' : kind === 'places' ? 'Place contacts and social accounts' : kind === 'offices' ? 'Office contacts' : kind === 'parties' ? 'Party contacts' : record.context.recordType ?? 'Election source record'),
-          h('div', { className: 'editor-field-filters', role: 'search', 'aria-label': 'Find fields in this record' },
+          h('div', { className: 'editor-record-title' },
+            h('h1', { className: 'editor-record-heading' }, icon(kind), entityTitle),
+            h('p', { className: 'editor-record-subtitle' }, recordType))),
+        h('div', { className: 'editor-field-filters', role: 'search', 'aria-label': 'Find fields in this record' },
             h('label', { htmlFor: filterId }, 'Find fields'),
             h('div', { className: 'editor-filter-search' }, h('span', { className: 'editor-symbol', 'aria-hidden': true }, 'search'),
               h('input', { id: filterId, type: 'search', placeholder: 'Search field names…', value: this.state.fieldQuery, onChange: event => this.setState({ fieldQuery: event.target.value, collapsedGroups: {} }), onKeyDown: event => { if (event.key === 'Escape') { event.preventDefault(); clearFilters(); } } })),
             h('select', { 'aria-label': 'Filter field section', value: this.state.fieldGroup, onChange: event => this.setState({ fieldGroup: event.target.value, collapsedGroups: {} }) },
               h('option', { value: '' }, 'All sections'), ...[...new Set(fields.map(fieldGroup))].map(group => h('option', { key: group, value: group }, group))),
-            h('button', { type: 'button', disabled: !this.state.fieldQuery && !this.state.fieldGroup, onClick: clearFilters }, 'Reset'))),
+            h('button', { type: 'button', disabled: !this.state.fieldQuery && !this.state.fieldGroup, onClick: clearFilters }, 'Reset')),
         h('p', { className: 'editor-filter-count', role: 'status', 'aria-live': 'polite' }, `${matchingFields.length} of ${fields.length} fields match`),
         kind === 'filings' ? h('dl', { className: 'editor-identity-grid' },
           ...[['people', 'Person', record.source.name], ['office', 'Office', record.source.officeName], ['election', 'Election', record.source.year], ['place', 'Place', [record.source.city, record.source.county, record.source.state].filter(Boolean).join(', ')]].map(([key, label, value]) =>

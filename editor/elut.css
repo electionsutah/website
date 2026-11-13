@@ -35,6 +35,7 @@ body #nc-root :disabled { color: var(--color-muted); background: var(--color-war
 body #nc-root .sidebar-active { color: var(--color-blue); background: var(--color-blue-tint); border-left-color: var(--color-blue); }
 #nc-root aside { border: 1px solid var(--color-rule-strong); border-radius: 0; box-shadow: none; background: var(--color-paper); }
 #nc-root li:has(>a[href*='/entries/']) { border: 1px solid var(--color-rule-strong); border-radius: 0; box-shadow: none; background: var(--color-paper); }
+#nc-root .repository-record li:has(>a[href*='/entries/']) { border: 0; box-shadow: none; background: transparent; }
 #nc-root li>a[href*='/entries/']:hover { background: var(--color-warm-white); }
 #nc-root a[href*='/entries/'] h2 { font-size: var(--text-lg); line-height: 1.4; letter-spacing: 0; overflow-wrap: anywhere; }
 body .repository-record { color: var(--color-text); font: 400 var(--text-base)/1.6 var(--font-sans); }
@@ -81,7 +82,7 @@ body #nc-root aside input { padding-left: calc(var(--size-touch-target) + var(--
 /* Find fields without changing or discarding any record values. */
 .editor-record-toolbar { display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); margin-bottom: var(--space-3); }
 .editor-record-toolbar .editor-record-heading { margin: var(--space-2) 0; }
-.editor-field-filters { display: grid; grid-template-columns: minmax(150px,1fr) auto auto; gap: var(--space-2); margin-left: auto; max-width: 100%; }
+.editor-field-filters { display: grid; grid-template-columns: minmax(150px,1fr) auto auto; gap: var(--space-2); width: 100%; max-width: 100%; margin-bottom: var(--space-3); }
 .editor-field-filters>label { grid-column: 1 / -1; font: 700 var(--text-xs)/1.4 var(--font-sans); color: var(--color-muted); }
 .editor-filter-search { display: grid; grid-template-columns: var(--size-touch-target) minmax(0,1fr); align-items: center; border: 1px solid var(--color-rule-strong); background: var(--color-paper); }
 .editor-filter-search>.editor-symbol { display: grid; place-items: center; color: var(--color-muted); }

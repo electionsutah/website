@@ -79,6 +79,7 @@ export async function prepare(server, directory = workspace, saved = null) {
   const known = { people: new Set(), filings: new Set(), places: new Set(), offices: new Set(), parties: new Set() };
   for (const kind of Object.keys(known)) await mkdir(join(directory, 'content', kind), { recursive: true });
   async function add(kind, id, title, source, context) {
+    context = { ...context, title };
     const filename = `${createHash('sha256').update(id).digest('hex').slice(0, 32)}.json`;
     const changes = saved[kind][id] ?? {};
     validateEditorChanges(kind, changes);

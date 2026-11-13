@@ -18,7 +18,7 @@ await vm.runInNewContext(await readFile(new URL('./app.js', import.meta.url), 'u
   URL, window: { CMS, createClass: spec => spec, h: (tag, props, ...children) => ({ tag, props: props ?? {}, children: children.flat(Infinity) }), location: { hash: '#/collections/people' }, addEventListener() {} },
   document: { body: { dataset: {} }, querySelector() { return null; }, getElementById: node, createElement: node, createTextNode: text => text },
   MutationObserver: class { observe() {} }, setInterval() {},
-  fetch: async url => ({ ok: true, json: async () => url === '/config.json' ? { collections: [] } : url === '/schema.json' ? { people: fields, filings: fields } : url === '/status.json' ? { counts: { people: 1, filings: 1, places: 1 }, siteUrl: 'http://localhost' } : {} })
+  fetch: async url => ({ ok: true, json: async () => url === '/config.json' ? { collections: [] } : url === '/schema.json' ? { people: fields, filings: fields, offices: fields } : url === '/status.json' ? { counts: { people: 1, filings: 1, places: 1 }, siteUrl: 'http://localhost' } : {} })
 });
 let writes = 0;
 const instance = { ...widget, state: widget.getInitialState(), setState(patch) { Object.assign(this.state, patch); }, props: {
@@ -115,7 +115,7 @@ assert.equal((await save('content/people/test.json', { name: 'Updated' })).recor
 console.log('PASS: canonical link group, structured rows, URL validation/recovery, draft retention, deletion, and metadata preservation');
 
 const filingInstance = { ...instance, state: widget.getInitialState(), props: { ...instance.props,
-  field: { get: () => 'filings' }, value: { source: { name: 'Ben McAdams', year: 2018 }, overrides: {}, context: {
+  field: { get: () => 'filings' }, value: { source: { name: 'Ben McAdams', year: 2018, officeName: 'U.S. House District 4' }, overrides: {}, context: {
     identity: 'general', recordType: 'General-election result record', connectedPeople: [{ id: 'ben-mcadams', name: 'Ben McAdams', role: 'Candidate', editorUrl: '#/collections/people/entries/ben' }], relatedRecords: [
       { recordId: 'general', label: 'General-election result record', source: 'https://example.org/canvass.xlsx', editorUrl: '#/collections/filings/entries/general' },
       { recordId: 'declaration', label: 'Declaration of candidacy', source: 'https://example.org/declaration.pdf', editorUrl: '#/collections/filings/entries/declaration' }
@@ -123,10 +123,23 @@ const filingInstance = { ...instance, state: widget.getInitialState(), props: { 
   } }
 } };
 const filingTree = filingInstance.render();
+const headingToolbar = find(filingTree, n => n.props.className === 'editor-record-toolbar')[0];
+assert.equal(find(headingToolbar, n => n.props.role === 'search').length, 0, 'Heading uses its own full-width row');
+const searchPosition = filingTree.children.findIndex(n => n?.props?.role === 'search');
+const identityPosition = filingTree.children.findIndex(n => n?.props?.className === 'editor-identity-grid');
+assert(searchPosition > 0 && searchPosition < identityPosition, 'Field filters appear above the entity details grid');
 assert(find(filingTree, n => n.tag === 'a' && n.props.href === '#/collections/people/entries/ben' && n.children.includes('Ben McAdams')).length);
 const personInstance = { ...instance, props: { ...instance.props, value: { ...instance.props.value, context: { connectedFilings: [{ recordId: 'general', label: '2018 · U.S. House District 4 · General-election result record', editorUrl: '#/collections/filings/entries/general' }] } } } };
 assert(find(personInstance.render(), n => n.tag === 'a' && n.props.href === '#/collections/filings/entries/general').length);
-assert(find(filingTree, n => n.tag === 'h1' && n.children.includes('General-election result record')).length);
+assert(find(filingTree, n => n.tag === 'h1' && n.children.includes('2018 · Ben McAdams · U.S. House District 4 · General-election result record')).length);
+assert(find(filingTree, n => n.tag === 'p' && n.props.className === 'editor-record-subtitle' && n.children.includes('General-election result record')).length);
+const namedPerson = { ...personInstance, props: { ...personInstance.props, value: { ...personInstance.props.value, source: { name: 'Ben McAdams' } } } };
+assert(find(namedPerson.render(), n => n.tag === 'h1' && n.children.includes('Ben McAdams')).length);
+assert(find(namedPerson.render(), n => n.tag === 'p' && n.props.className === 'editor-record-subtitle' && n.children.includes('Person profile')).length);
+namedPerson.props.value.overrides.name = 'Updated name';
+assert(find(namedPerson.render(), n => n.tag === 'h1' && n.children.includes('Updated name')).length);
+const namedOffice = { ...namedPerson, props: { ...namedPerson.props, field: { get: () => 'offices' }, value: { source: { name: 'Alpine City Council' }, overrides: {}, context: {} } } };
+assert(find(namedOffice.render(), n => n.tag === 'h1' && n.children.includes('Alpine City Council')).length);
 assert(find(filingTree, n => n.tag === 'a' && n.props.href === '#/collections/filings/entries/declaration' && n.children.includes('Declaration of candidacy')).length);
 assert(find(filingTree, n => n.tag === 'a' && n.props.href === 'https://example.org/declaration.pdf').length);
 assert(find(filingTree, n => n.tag === 'strong' && n.children.includes('General-election result record (current record)')).length);
