@@ -38,6 +38,9 @@ try {
   assert(relatedDeclaration.source.endsWith('Ben%20McAdams.pdf'));
   assert(relatedDeclaration.editorUrl.endsWith(benDeclaration.filename.replace(/\.json$/, '')));
   assert.equal(benGeneral.context.relatedRecords.length, 2, 'Only the exact consolidated candidacy is linked');
+  const benPerson = [...state.catalog.values()].find(row => row.kind === 'people' && row.id === 'ben-mcadams');
+  assert(benPerson.context.connectedFilings.some(row => row.recordId === benDeclaration.id && row.editorUrl.endsWith(benDeclaration.filename.replace(/\.json$/, ''))));
+  assert(benGeneral.context.connectedPeople.some(row => row.id === benPerson.id && row.role === 'Candidate' && row.editorUrl.endsWith(benPerson.filename.replace(/\.json$/, ''))));
   const testSchemaPath = join(directory, 'schema.json');
   await atomicJson(testSchemaPath, { version: 1, collections: {} });
   let inspection = await inspectSchema(server, state, testSchemaPath);

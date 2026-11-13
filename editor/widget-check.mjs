@@ -116,13 +116,16 @@ console.log('PASS: canonical link group, structured rows, URL validation/recover
 
 const filingInstance = { ...instance, state: widget.getInitialState(), props: { ...instance.props,
   field: { get: () => 'filings' }, value: { source: { name: 'Ben McAdams', year: 2018 }, overrides: {}, context: {
-    identity: 'general', recordType: 'General-election result record', relatedRecords: [
+    identity: 'general', recordType: 'General-election result record', connectedPeople: [{ id: 'ben-mcadams', name: 'Ben McAdams', role: 'Candidate', editorUrl: '#/collections/people/entries/ben' }], relatedRecords: [
       { recordId: 'general', label: 'General-election result record', source: 'https://example.org/canvass.xlsx', editorUrl: '#/collections/filings/entries/general' },
       { recordId: 'declaration', label: 'Declaration of candidacy', source: 'https://example.org/declaration.pdf', editorUrl: '#/collections/filings/entries/declaration' }
     ]
   } }
 } };
 const filingTree = filingInstance.render();
+assert(find(filingTree, n => n.tag === 'a' && n.props.href === '#/collections/people/entries/ben' && n.children.includes('Ben McAdams')).length);
+const personInstance = { ...instance, props: { ...instance.props, value: { ...instance.props.value, context: { connectedFilings: [{ recordId: 'general', label: '2018 · U.S. House District 4 · General-election result record', editorUrl: '#/collections/filings/entries/general' }] } } } };
+assert(find(personInstance.render(), n => n.tag === 'a' && n.props.href === '#/collections/filings/entries/general').length);
 assert(find(filingTree, n => n.tag === 'h1' && n.children.includes('General-election result record')).length);
 assert(find(filingTree, n => n.tag === 'a' && n.props.href === '#/collections/filings/entries/declaration' && n.children.includes('Declaration of candidacy')).length);
 assert(find(filingTree, n => n.tag === 'a' && n.props.href === 'https://example.org/declaration.pdf').length);

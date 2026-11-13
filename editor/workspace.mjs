@@ -14,6 +14,7 @@ export function filingRecordLabel(filing) {
   return ({ general: 'General-election result record', primary: 'Primary-election result record', 'presidential-primary': 'Presidential-primary result record' })[filing.electionType] ?? 'Election source record';
 }
 const filingEditorUrl = id => `#/collections/filings/entries/${createHash('sha256').update(id).digest('hex').slice(0, 32)}`;
+const personEditorUrl = id => `#/collections/people/entries/${createHash('sha256').update(id).digest('hex').slice(0, 32)}`;
 
 export async function atomicJson(path, value) {
   const text = json(value);
@@ -29,6 +30,12 @@ export async function prepare(server, directory = workspace, saved = null) {
   const { validateStructure } = await server.ssrLoadModule('/src/lib/editor-structure.ts');
   const { candidacyHistory } = await server.ssrLoadModule('/src/lib/candidacy-history.ts');
   const relatedRecords = new Map();
+  const filingPeople = new Map();
+  for (const person of people) for (const filing of person.filings) {
+    const links = filingPeople.get(filing.recordId) ?? [];
+    links.push({ id: person.id, name: person.name, role: filing.personId === person.id ? 'Candidate' : 'Running mate', editorUrl: personEditorUrl(person.id) });
+    filingPeople.set(filing.recordId, links);
+  }
   for (const person of people) for (const history of candidacyHistory(person.filings)) {
     const records = history.records.map(filing => ({ recordId: filing.recordId, label: filingRecordLabel(filing), status: filing.sourceStatus, source: filing.source, editorUrl: filingEditorUrl(filing.recordId) }));
     for (const filing of history.records) relatedRecords.set(filing.recordId, records);
@@ -84,13 +91,15 @@ export async function prepare(server, directory = workspace, saved = null) {
     await add('people', person.id, person.name, { name: importedEntityStructure.people.find(row => row.id === person.id)?.name, ...importedProfile(baseline, profiles), photo: importedEntityImage('people', person.id) ?? {}, links: sourceLinks }, {
       entity: snapshot(person),
       personPath: `/people/${person.id}/`,
+      connectedFilings: person.filings.map(filing => ({ recordId: filing.recordId, label: `${filing.year} · ${filing.officeName} · ${filingRecordLabel(filing)}`, editorUrl: filingEditorUrl(filing.recordId) })),
       filings: person.filings.map(filing => `${filing.year} · ${filing.officeName} · ${filing.recordId}`)
     });
   }
   for (const filing of importedFilings) await add('filings', filing.recordId,
     `${filing.year} · ${filing.name} · ${filing.officeName} · ${filingRecordLabel(filing)}${filing.county ? ` · ${filing.county}` : ''}`, { ...filing, ...importedEntityStructure.filings.find(row => row.id === filing.recordId), placeId: filing.placeIds.at(-1) ?? '' }, {
       entity: snapshot(filing), source: filing.source, identity: filing.recordId,
-      recordType: filingRecordLabel(filing), relatedRecords: relatedRecords.get(filing.recordId) ?? []
+      recordType: filingRecordLabel(filing), relatedRecords: relatedRecords.get(filing.recordId) ?? [],
+      connectedPeople: filingPeople.get(filing.recordId) ?? []
     });
   for (const place of places) await add('places', place.id, `${place.name} · ${place.type} · ${place.county}`, { ...importedEntityStructure.places.find(row => row.id === place.id), ...importedEntityLinks(placeEntityLinks(placeProfiles[place.id], placeLinks[place.id]?.links ?? [])), photo: importedEntityImage('places', place.id) ?? entityImageFor('places', place.parentId) ?? {}, emblem: importedEntityImage('places', place.id, 'emblem') ?? {}, contact: placeLinks[place.id]?.contact ?? placeProfiles[place.id]?.contact ?? {}, profile: placeProfiles[place.id] ?? {}, description: importedPlaceDescriptions[place.id] }, {
     entity: snapshot(place), placePath: `/places/${place.id}/`, identity: place.id, type: place.type, county: place.county

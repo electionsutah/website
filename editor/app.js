@@ -129,6 +129,12 @@
           ...[['people', 'Person', record.source.name], ['office', 'Office', record.source.officeName], ['election', 'Election', record.source.year], ['place', 'Place', [record.source.city, record.source.county, record.source.state].filter(Boolean).join(', ')]].map(([key, label, value]) =>
             h('div', { key }, h('dt', {}, icon(key), label), h('dd', {}, value || 'Not published')))) : null,
         h('p', { className: 'editor-note' }, 'Choose Override to edit a field, Clear to remove its value, or Use imported value to follow automated updates. Save with Publish at the top.'),
+        kind === 'people' && record.context.connectedFilings?.length ? h('nav', { 'aria-label': 'Connected filings' },
+          h('h2', {}, 'Connected filings'),
+          h('ul', {}, ...record.context.connectedFilings.map(filing => h('li', { key: filing.recordId }, h('a', { href: filing.editorUrl }, filing.label))))) : null,
+        kind === 'filings' && record.context.connectedPeople?.length ? h('nav', { 'aria-label': 'Connected people' },
+          h('h2', {}, 'Connected people'),
+          h('ul', {}, ...record.context.connectedPeople.map(person => h('li', { key: person.id }, `${person.role}: `, h('a', { href: person.editorUrl }, person.name))))) : null,
         kind === 'filings' && record.context.relatedRecords?.length ? h('section', { className: 'editor-related-records', 'aria-label': 'Candidacy source records' },
           h('h2', {}, 'Candidacy source records'),
           h('p', {}, 'This form edits one source record. Set the filing date on the declaration of candidacy record.'),

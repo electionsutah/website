@@ -53,6 +53,10 @@ Filing list titles and form headings identify declarations, primary results,
 general-election results, and status records. **Candidacy source records** links
 the records grouped on the public timeline, with a separate **View source** link
 for each. The same source URLs appear in the expanded entity JSON.
+Person forms list **Connected filings** with the election year, office, and
+record type. Filing forms link back through **Connected people**, identifying
+the candidate and any running mate. These links open the corresponding editor
+entry; save your changes before navigating away.
 
 ## Data and persistence
 
