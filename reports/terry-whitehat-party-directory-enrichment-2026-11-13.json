@@ -1,0 +1,130 @@
+{
+  "generatedAt": "2026-11-13T23:40:22.292597+00:00",
+  "selection": "Explicit entity people/terry-whitehat; resolved existing evidence only; ownership review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 1,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 0,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 0,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "terry-whitehat",
+      "kind": "people",
+      "name": "Terry Whitehat",
+      "entityUrl": "https://www.electionsutah.org/people/terry-whitehat/",
+      "websites": [
+        "https://sanjuanutahdems.com/ourcandidates"
+      ],
+      "existingLinks": [
+        {
+          "url": "https://goodparty.org/people/terry-whitehat-3a10b4da",
+          "platform": "website",
+          "label": "GoodParty.org",
+          "detail": "Terry Whitehat — Candidate for San Juan County Commission - District 2"
+        }
+      ],
+      "manualOverride": true,
+      "editorialOverride": {
+        "links": [
+          {
+            "url": "https://goodparty.org/people/terry-whitehat-3a10b4da",
+            "label": "GoodParty.org",
+            "platform": "website",
+            "verifiedOn": "2026-11-13",
+            "detail": "Terry Whitehat — Candidate for San Juan County Commission - District 2"
+          }
+        ]
+      },
+      "latestYear": 2026,
+      "historical": false,
+      "offices": [
+        "San Juan County Commission District 2"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/san-juan-county-ut/elections/General11032026/ballot-items/01000000-2962-0a33-1985-08df2a44542d"
+      ],
+      "recordedWebsites": [
+        "https://goodparty.org/people/terry-whitehat-3a10b4da"
+      ],
+      "websiteInput": {
+        "url": "https://www.sanjuanutahdems.com/ourcandidates",
+        "canonicalUrl": "https://sanjuanutahdems.com/ourcandidates",
+        "source": "user-supplied CLI input",
+        "disposition": "ambiguous",
+        "note": "Candidate website; ownership has not been verified"
+      },
+      "status": "ambiguous",
+      "candidates": [],
+      "fetches": [],
+      "manualReviewRequired": true,
+      "reason": "Editorial override present; preserve it and review manually"
+    }
+  ],
+  "reproduce": "python3 scripts/enrichment_pipeline.py --entity people/terry-whitehat --backend direct --max-pages 2 --workers 6 --output reports/terry-whitehat-party-directory-enrichment-2026-11-13.json --website https://www.sanjuanutahdems.com/ourcandidates",
+  "manualReview": {
+    "reviewedAt": "2026-11-13T23:41:05.334403+00:00",
+    "outcome": "Candidate-directory identity match; shared party website, not a personal campaign website",
+    "reference": {
+      "url": "https://www.sanjuanutahdems.com/ourcandidates",
+      "label": "San Juan County Democrats — candidate profile",
+      "disposition": "verified",
+      "scope": "Reference-page identity only; no account ownership approval"
+    },
+    "evidence": {
+      "name": "Terry Whitehat",
+      "office": "San Juan Commissioner, District 2",
+      "affiliation": "Democrat",
+      "community": "Navajo Mountain",
+      "excerpt": "My name is Terry Whitehat and I am running as a Democrat for San Juan Commissioner in District 2."
+    },
+    "fetch": {
+      "url": "https://sanjuanutahdems.com/ourcandidates",
+      "fetchedAt": "2026-11-13T23:41:05.334403+00:00",
+      "status": "verified",
+      "backend": "direct",
+      "httpStatus": 200,
+      "finalUrl": "https://www.sanjuanutahdems.com/ourcandidates",
+      "etag": "W/\"75ffb5b1ff39e092e58702c4dfae4543--gzip\"",
+      "lastModified": null,
+      "contentHash": "7a4cbcf5cc0f03ffaf5f88254190ca9d58bf12ccfdedf96c26ea9ce9fde87b89",
+      "bodyFile": ".firecrawl/enrichment/cache/7a4cbcf5cc0f03ffaf5f88254190ca9d58bf12ccfdedf96c26ea9ce9fde87b89.html",
+      "lastSuccessfulFetchAt": "2026-11-13T23:41:05.334403+00:00",
+      "evidenceDate": null,
+      "nextReviewAt": "2026-12-13T23:41:06.178306+00:00"
+    },
+    "candidateOwnedAccountsFound": 0,
+    "existingGoodPartyLinkPreserved": true,
+    "productionChanges": 0,
+    "providerOutcome": {
+      "firecrawl": "insufficient_credits",
+      "creditsUsed": null,
+      "directManualRequests": 1
+    }
+  },
+  "application": {
+    "approvedBy": "User",
+    "approval": "Update Terry’s links with that new entry",
+    "appliedAt": "2026-11-13T23:45:19.416Z",
+    "entityId": "terry-whitehat",
+    "addedUrl": "https://www.sanjuanutahdems.com/ourcandidates",
+    "label": "San Juan County Democrats — candidate profile",
+    "preservedUrl": "https://goodparty.org/people/terry-whitehat-3a10b4da",
+    "productionChanges": 1,
+    "validation": "Both links resolve on the existing Terry Whitehat profile"
+  }
+}

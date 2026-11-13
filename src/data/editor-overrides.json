@@ -43,6 +43,25 @@
           "platform": "facebook"
         }
       ]
+    },
+    "terry-whitehat": {
+      "links": [
+        {
+          "url": "https://www.sanjuanutahdems.com/ourcandidates",
+          "label": "San Juan County Democrats — candidate profile",
+          "platform": "website",
+          "verifiedOn": "2026-11-13",
+          "source": "https://www.sanjuanutahdems.com/ourcandidates",
+          "detail": "Party-hosted profile for Terry Whitehat, San Juan County Commissioner District 2; shared directory, not a personal campaign website."
+        },
+        {
+          "url": "https://goodparty.org/people/terry-whitehat-3a10b4da",
+          "label": "GoodParty.org",
+          "platform": "website",
+          "verifiedOn": "2026-11-13",
+          "detail": "Terry Whitehat — Candidate for San Juan County Commission - District 2"
+        }
+      ]
     }
   },
   "filings": {

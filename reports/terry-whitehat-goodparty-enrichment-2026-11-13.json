@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-11-13T22:50:39.343567+00:00",
+  "selection": "Explicit entity people/terry-whitehat; resolved existing evidence only; ownership review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 0,
+      "blocked": 1,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 0,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 0,
+    "productionChanges": 0,
+    "requests": 1,
+    "cacheHits": 0,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "terry-whitehat",
+      "kind": "people",
+      "name": "Terry Whitehat",
+      "entityUrl": "https://www.electionsutah.org/people/terry-whitehat/",
+      "websites": [
+        "https://goodparty.org/people/terry-whitehat-3a10b4da"
+      ],
+      "existingLinks": [],
+      "manualOverride": false,
+      "editorialOverride": null,
+      "latestYear": 2026,
+      "historical": false,
+      "offices": [
+        "San Juan County Commission District 2"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/san-juan-county-ut/elections/General11032026/ballot-items/01000000-2962-0a33-1985-08df2a44542d"
+      ],
+      "recordedWebsites": [],
+      "websiteInput": {
+        "url": "https://goodparty.org/people/terry-whitehat-3a10b4da",
+        "canonicalUrl": "https://goodparty.org/people/terry-whitehat-3a10b4da",
+        "source": "user-supplied CLI input",
+        "disposition": "ambiguous",
+        "note": "Candidate website; ownership has not been verified"
+      },
+      "status": "blocked",
+      "candidates": [],
+      "fetches": [
+        {
+          "url": "https://goodparty.org/people/terry-whitehat-3a10b4da",
+          "fetchedAt": "2026-11-13T22:50:39.050002+00:00",
+          "status": "blocked",
+          "backend": "direct",
+          "httpStatus": 429,
+          "finalUrl": "https://goodparty.org/people/terry-whitehat-3a10b4da",
+          "etag": null,
+          "lastModified": null,
+          "nextReviewAt": "2026-11-20T22:50:39.343015+00:00"
+        }
+      ],
+      "manualReviewRequired": true,
+      "identityEvidence": null
+    }
+  ],
+  "reproduce": "python3 scripts/enrichment_pipeline.py --entity people/terry-whitehat --backend direct --max-pages 2 --workers 6 --output reports/terry-whitehat-goodparty-enrichment-2026-11-13.json --website https://goodparty.org/people/terry-whitehat-3a10b4da"
+}

@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-11-13T22:47:07.671272+00:00",
+  "selection": "Explicit entity people/terry-whitehat; resolved existing evidence only; ownership review required.",
+  "summary": {
+    "people": 1,
+    "statuses": {
+      "ambiguous": 0,
+      "blocked": 0,
+      "historical": 0,
+      "no_account_found": 0,
+      "not_applicable": 0,
+      "not_attempted": 1,
+      "retrieval_failed": 0,
+      "verified": 0
+    },
+    "accountProposals": 0,
+    "productionChanges": 0,
+    "requests": 0,
+    "cacheHits": 0,
+    "conditional304": 0,
+    "backend": "direct",
+    "modelCalls": 0
+  },
+  "people": [
+    {
+      "id": "terry-whitehat",
+      "kind": "people",
+      "name": "Terry Whitehat",
+      "entityUrl": "https://www.electionsutah.org/people/terry-whitehat/",
+      "websites": [],
+      "existingLinks": [],
+      "manualOverride": false,
+      "editorialOverride": null,
+      "latestYear": 2026,
+      "historical": false,
+      "offices": [
+        "San Juan County Commission District 2"
+      ],
+      "sources": [
+        "https://electionresults.utah.gov/results/public/san-juan-county-ut/elections/General11032026/ballot-items/01000000-2962-0a33-1985-08df2a44542d"
+      ],
+      "status": "not_attempted",
+      "candidates": [],
+      "fetches": [],
+      "manualReviewRequired": true,
+      "reason": "No primary website seed; website discovery required",
+      "websiteDiscovery": {
+        "status": "not_attempted",
+        "suggestedQuery": "Terry Whitehat Utah San Juan County Commission District 2 official website",
+        "sourceUrls": [
+          "https://electionresults.utah.gov/results/public/san-juan-county-ut/elections/General11032026/ballot-items/01000000-2962-0a33-1985-08df2a44542d"
+        ],
+        "nextStep": "Review existing filing sources and authoritative directories, then search unresolved gaps. Supply a reviewed candidate with --entity KIND/ID --website URL. Historical ownership still requires review."
+      }
+    }
+  ],
+  "reproduce": "python3 scripts/enrichment_pipeline.py --entity people/terry-whitehat --backend direct --max-pages 2 --workers 6 --output reports/terry-whitehat-enrichment-2026-11-13.json"
+}
