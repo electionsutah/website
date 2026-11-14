@@ -7,7 +7,7 @@ import { z } from 'zod';
 import results2026 from '../../public/data/2026-results.json';
 import results2024 from '../../public/data/2024-results.json';
 import baseline2022 from '../../public/data/2022-shift-baseline.json';
-import { currentDatasetUpdated, offices, officesById, parties, partiesById, partyLabel, people, peopleById, places, placesById, statusLabel, type Filing } from '../lib/entities';
+import { archiveYearRange, currentDatasetUpdated, offices, officesById, parties, partiesById, partyLabel, people, peopleById, places, placesById, statusLabel, type Filing } from '../lib/entities';
 import { contestTitle } from '../lib/result-people';
 import { tidySnapshot } from '../lib/result-names';
 import { withPlaceAliases } from '../lib/search';
@@ -143,7 +143,7 @@ const resolveCounty = (value?: string) => {
 
 export function createServer() {
   const server = new McpServer({ name: 'elections-utah', title: 'Elections Utah', version: '1.0.0', websiteUrl: SITE_URL }, {
-    instructions: `Elections Utah publishes Utah candidate records (selected cycles, 1989–2026) and 2026 general-election results. Use search to find people, offices, parties, places, or contests, then fetch for the full record. Cite the returned URLs. ${resultsStatus()} Always tell users when results are unofficial.`
+    instructions: `Elections Utah publishes Utah candidate records (selected cycles, ${archiveYearRange}) and 2026 general-election results. Use search to find people, offices, parties, places, or contests, then fetch for the full record. Cite the returned URLs. ${resultsStatus()} Always tell users when results are unofficial.`
   });
 
   server.registerTool('search', {
@@ -216,7 +216,7 @@ export function createServer() {
   });
 
   server.registerResource('about', 'electionsutah://about', { title: 'About Elections Utah data', mimeType: 'text/markdown' }, async uri => ({
-    contents: [{ uri: uri.href, mimeType: 'text/markdown', text: `# Elections Utah\n\nOpen civic data about Utah elections: ${people.length} people, ${offices.length} offices, ${parties.length} parties, and ${places.length} places from candidate records (selected cycles, 1989–2026, filings last updated ${currentDatasetUpdated}), plus ${snapshot.contests.length} 2026 general-election contests.\n\n${resultsStatus()}\n\nWebsite: ${SITE_URL}\nResults data: ${SITE_URL}/data/2026-results.json` }]
+    contents: [{ uri: uri.href, mimeType: 'text/markdown', text: `# Elections Utah\n\nOpen civic data about Utah elections: ${people.length} people, ${offices.length} offices, ${parties.length} parties, and ${places.length} places from candidate records (selected cycles, ${archiveYearRange}, filings last updated ${currentDatasetUpdated}), plus ${snapshot.contests.length} 2026 general-election contests.\n\n${resultsStatus()}\n\nWebsite: ${SITE_URL}\nResults data: ${SITE_URL}/data/2026-results.json` }]
   }));
 
   return server;

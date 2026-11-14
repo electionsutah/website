@@ -11,7 +11,7 @@
   import SearchPalette from './SearchPalette.svelte';
   import { isSearchShortcut } from './lib/shortcuts';
   import SearchField from './SearchField.svelte';
-  import { currentDatasetUpdated, offices as officeEntities, parties as partyEntities, people as peopleEntities, totals } from './lib/entities';
+  import { archiveYearRange, currentDatasetUpdated, offices as officeEntities, parties as partyEntities, people as peopleEntities, totals } from './lib/entities';
   import { formatCount, formatDate } from './lib/format';
   import { browseUrl, matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
 
@@ -211,7 +211,7 @@
   </section>
 
   <section class="archive-note">
-    <span>1989–2026</span>
+    <span>{archiveYearRange}</span>
     <p>{formatCount(totals.filings)} filing records across Utah’s available election archives, joined into {formatCount(totals.people)} people while preserving every distinct race.</p>
   </section>
 
@@ -251,7 +251,7 @@
     <div class="directory-intro">
       <p class="eyebrow">Browse the archive</p>
       <h2>Find the records<br />that <em>matter.</em></h2>
-      <p>Search selected cycles in the 1989–2026 archive. Repeat candidates link to one person record with every distinct race listed by year.</p>
+      <p>Search selected cycles in the {archiveYearRange} archive. Repeat candidates link to one person record with every distinct race listed by year.</p>
       <div class="party-list" role="group" aria-label="Political parties">
         {#each partyEntities as party}<a href={`/parties/${party.id}/`} onclick={(event) => open(event, `/parties/${party.id}/`)}>{party.name}</a>{/each}
       </div>

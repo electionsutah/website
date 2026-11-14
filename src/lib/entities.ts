@@ -825,6 +825,10 @@ export const elections: ElectionCycle[] = cycleDetails.map((cycle) => ({
 }));
 export const electionsByYear = new Map(elections.map((election) => [election.year, election]));
 
+// Derive public-facing coverage from actual records, not the calendar or a fixed label.
+const archiveYears = uniqueNumbers(filings.map(filing => filing.year));
+export const archiveYearRange = `${archiveYears.at(-1)}–${archiveYears[0]}`;
+
 export const totals = {
   people: people.length,
   offices: offices.length,

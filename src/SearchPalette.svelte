@@ -3,7 +3,7 @@
   import PersonAvatar from './PersonAvatar.svelte';
   import SearchField from './SearchField.svelte';
   import { onMount } from 'svelte';
-  import { elections, offices, parties, partyLabel, people, places } from './lib/entities';
+  import { archiveYearRange, elections, offices, parties, partyLabel, people, places } from './lib/entities';
   import { formatCount } from './lib/format';
   import { browseUrl, matchesQuery, queryTokens, rankByTitle, searchText } from './lib/search';
   import { isApplePlatform } from './lib/shortcuts';
@@ -165,7 +165,7 @@
       {/if}
     {:else}
       <div class="search-start">
-        <p>Search across the combined 1989–2026 directory.</p>
+        <p>Search selected election cycles in the {archiveYearRange} directory.</p>
         <div>{#each groups as group}<a href={group.browseHref} onclick={(event) => open(event, group.browseHref)}><strong>{formatCount(group.items.length)}</strong><span>{group.label}</span></a>{/each}</div>
       </div>
     {/if}
