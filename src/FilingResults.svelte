@@ -23,6 +23,8 @@
   let snapshot: Snapshot | null = null;
   let failed = false;
   let contest: Contest | undefined;
+  $: countScaled = contest?.totalBasis === 'listed named-candidate votes';
+  $: barMaximum = contest ? (countScaled ? Math.max(0, ...contest.options.filter(option => option.votesPublished !== false).map(option => option.votes)) : contest.total) : 0;
   onMount(() => {
     let active = true;
     resultsForFiling(filing).then(result => { if (active && result) { snapshot = result.snapshot; contest = result.contest; onresult?.(result); } })
@@ -36,6 +38,7 @@
   <section class="filing-results" class:general-election={(contest.electionType ?? 'general') === 'general'} aria-label={`${filing.year} ${contest.electionType ?? "general"} election results for ${filing.officeName}`}>
     <div class="mini-heading"><div class="mini-title"><TimelineDate value={contest.electionDate || snapshot.electionDate || filing.electionDate} /><h4>{contest.electionType === 'presidential-primary' ? 'Presidential primary' : contest.electionType === 'primary' ? 'Primary election' : 'General election'} results</h4></div><div class="mini-actions"><a href={contest.source} target="_blank" rel="noreferrer">{(contest.official ?? snapshot.official) ? 'Official' : 'Unofficial'}<span class="sr-only"> results source (opens in new tab)</span></a></div></div>
     {#if contest.county}<p class="mini-scope">{snapshot.counties.find(county => county.id === contest?.county)?.name ?? contest.county} report{#if contest.city}{' · '}{contest.city}{/if}</p>{/if}
+    {#if countScaled}<p class="mini-scale">Bars compare published vote counts; the leading candidate sets the scale.</p>{/if}
     <ul>
       {#each contest.options as option}
         {@const candidate = resultPerson(option.name, contest)}
@@ -52,7 +55,7 @@
               {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<strong>{#if contest.total}<CountUp value={option.votes / contest.total * 100} format={formatPercent} />{:else}—{/if}</strong>{/if}
             </div>
           </div>
-          {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && contest.totalBasis !== 'listed named-candidate votes'}<div class="mini-track" style:--share={`${contest.total ? option.votes / contest.total * 100 : 0}%`}><div class="mini-fill" aria-hidden="true" use:revealVoteBar={`${contest.id}:${option.name}:${option.votes}:${contest.total}`} style:width="var(--share)" style:background={color(option)}></div></div>{/if}
+          {#if contest.votesPublished !== false && contest.optionTotalsReconcile !== false && option.votesPublished !== false}<div class="mini-track" aria-hidden="true" style:--share={`${barMaximum ? option.votes / barMaximum * 100 : 0}%`}><div class="mini-fill" use:revealVoteBar={`${contest.id}:${option.name}:${option.votes}:${barMaximum}`} style:width="var(--share)" style:background={color(option)}></div></div>{/if}
           </div>
         </li>
       {/each}
