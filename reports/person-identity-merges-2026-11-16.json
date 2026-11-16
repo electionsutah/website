@@ -1,0 +1,1292 @@
+{
+  "confirmedBy": "User",
+  "confirmedOn": "2026-11-16",
+  "confirmation": "Merge the five reviewed pairs into the explicitly requested full names.",
+  "reviewManifest": "person-identity-review-2026-11-14.json",
+  "reviewManifestSha256": "2071d03358e76d44f4fddd9c6de9882792279ec790bad7a2fa5bf5a961fca52c",
+  "sourceFieldsPreserved": true,
+  "merges": [
+    {
+      "canonicalPersonId": "f-joseph-irish",
+      "name": "F. Joseph Irish",
+      "before": [
+        {
+          "id": "f-irish",
+          "name": "F. Irish",
+          "initials": "FI",
+          "filings": [
+            {
+              "recordId": "2005-f-irish-salt-lake-city-council-district-1-nonpartisan",
+              "id": "f-irish",
+              "name": "F. Irish",
+              "year": 2005,
+              "electionType": "general",
+              "officeName": "Salt Lake City Council District 1",
+              "rawOfficeName": "Salt Lake City Council District 1",
+              "officeId": "salt-lake-city-council-district-1",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "general_election",
+              "sourceStatus": "General Election Candidate",
+              "section": "Municipal Offices",
+              "city": "Salt Lake City",
+              "county": "Salt Lake",
+              "state": "UT",
+              "placeIds": [
+                "salt-lake",
+                "salt-lake/salt-lake-city"
+              ],
+              "personId": "f-irish",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2005-11-08-municipal-general-election.pdf",
+              "lastUpdated": "2005-11-08",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2005
+          ],
+          "aliases": [],
+          "links": []
+        },
+        {
+          "id": "f-joseph-irish",
+          "name": "F. Joseph Irish",
+          "initials": "FJ",
+          "filings": [
+            {
+              "recordId": "2009-f-joseph-irish-salt-lake-city-council-district-1-nonpartisan",
+              "id": "f-joseph-irish",
+              "name": "F. Joseph Irish",
+              "year": 2009,
+              "electionType": "primary",
+              "officeName": "Salt Lake City Council District 1",
+              "rawOfficeName": "Salt Lake City Council District 1",
+              "officeId": "salt-lake-city-council-district-1",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "primary_election",
+              "sourceStatus": "Primary Election Candidate",
+              "section": "Municipal Offices",
+              "city": "Salt Lake City",
+              "county": "Salt Lake",
+              "state": "UT",
+              "placeIds": [
+                "salt-lake",
+                "salt-lake/salt-lake-city"
+              ],
+              "personId": "f-joseph-irish",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2009-09-15-municipal-primary-election.pdf",
+              "lastUpdated": "2009-09-15",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            },
+            {
+              "recordId": "2005-f-joseph-irish-salt-lake-city-council-district-1-nonpartisan",
+              "id": "f-joseph-irish",
+              "name": "F. Joseph Irish",
+              "year": 2005,
+              "electionType": "primary",
+              "officeName": "Salt Lake City Council District 1",
+              "rawOfficeName": "Salt Lake City Council District 1",
+              "officeId": "salt-lake-city-council-district-1",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "primary_election",
+              "sourceStatus": "Primary Election Candidate",
+              "section": "Municipal Offices",
+              "city": "Salt Lake City",
+              "county": "Salt Lake",
+              "state": "UT",
+              "placeIds": [
+                "salt-lake",
+                "salt-lake/salt-lake-city"
+              ],
+              "personId": "f-joseph-irish",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2005-10-04-municipal-primary-election.pdf",
+              "lastUpdated": "2005-10-04",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            },
+            {
+              "recordId": "2003-f-joseph-irish-salt-lake-city-mayor-nonpartisan",
+              "id": "f-joseph-irish",
+              "name": "F. Joseph Irish",
+              "year": 2003,
+              "electionType": "primary",
+              "officeName": "Salt Lake City Mayor",
+              "rawOfficeName": "Salt Lake City Mayor",
+              "officeId": "salt-lake-city-mayor",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "primary_election",
+              "sourceStatus": "Primary Election Candidate",
+              "section": "Municipal Offices",
+              "city": "Salt Lake City",
+              "county": "Salt Lake",
+              "state": "UT",
+              "placeIds": [
+                "salt-lake",
+                "salt-lake/salt-lake-city"
+              ],
+              "personId": "f-joseph-irish",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2003-10-07-municipal-primary-election.pdf",
+              "lastUpdated": "2003-10-07",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2009,
+            2005,
+            2003
+          ],
+          "aliases": [],
+          "links": []
+        }
+      ],
+      "after": {
+        "id": "f-joseph-irish",
+        "name": "F. Joseph Irish",
+        "initials": "FJ",
+        "filings": [
+          {
+            "recordId": "2009-f-joseph-irish-salt-lake-city-council-district-1-nonpartisan",
+            "id": "f-joseph-irish",
+            "name": "F. Joseph Irish",
+            "year": 2009,
+            "electionType": "primary",
+            "officeName": "Salt Lake City Council District 1",
+            "rawOfficeName": "Salt Lake City Council District 1",
+            "officeId": "salt-lake-city-council-district-1",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "primary_election",
+            "sourceStatus": "Primary Election Candidate",
+            "section": "Municipal Offices",
+            "city": "Salt Lake City",
+            "county": "Salt Lake",
+            "state": "UT",
+            "placeIds": [
+              "salt-lake",
+              "salt-lake/salt-lake-city"
+            ],
+            "personId": "f-joseph-irish",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2009-09-15-municipal-primary-election.pdf",
+            "lastUpdated": "2009-09-15",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          },
+          {
+            "recordId": "2005-f-irish-salt-lake-city-council-district-1-nonpartisan",
+            "id": "f-irish",
+            "name": "F. Irish",
+            "year": 2005,
+            "electionType": "general",
+            "officeName": "Salt Lake City Council District 1",
+            "rawOfficeName": "Salt Lake City Council District 1",
+            "officeId": "salt-lake-city-council-district-1",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "general_election",
+            "sourceStatus": "General Election Candidate",
+            "section": "Municipal Offices",
+            "city": "Salt Lake City",
+            "county": "Salt Lake",
+            "state": "UT",
+            "placeIds": [
+              "salt-lake",
+              "salt-lake/salt-lake-city"
+            ],
+            "personId": "f-joseph-irish",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2005-11-08-municipal-general-election.pdf",
+            "lastUpdated": "2005-11-08",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          },
+          {
+            "recordId": "2005-f-joseph-irish-salt-lake-city-council-district-1-nonpartisan",
+            "id": "f-joseph-irish",
+            "name": "F. Joseph Irish",
+            "year": 2005,
+            "electionType": "primary",
+            "officeName": "Salt Lake City Council District 1",
+            "rawOfficeName": "Salt Lake City Council District 1",
+            "officeId": "salt-lake-city-council-district-1",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "primary_election",
+            "sourceStatus": "Primary Election Candidate",
+            "section": "Municipal Offices",
+            "city": "Salt Lake City",
+            "county": "Salt Lake",
+            "state": "UT",
+            "placeIds": [
+              "salt-lake",
+              "salt-lake/salt-lake-city"
+            ],
+            "personId": "f-joseph-irish",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2005-10-04-municipal-primary-election.pdf",
+            "lastUpdated": "2005-10-04",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          },
+          {
+            "recordId": "2003-f-joseph-irish-salt-lake-city-mayor-nonpartisan",
+            "id": "f-joseph-irish",
+            "name": "F. Joseph Irish",
+            "year": 2003,
+            "electionType": "primary",
+            "officeName": "Salt Lake City Mayor",
+            "rawOfficeName": "Salt Lake City Mayor",
+            "officeId": "salt-lake-city-mayor",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "primary_election",
+            "sourceStatus": "Primary Election Candidate",
+            "section": "Municipal Offices",
+            "city": "Salt Lake City",
+            "county": "Salt Lake",
+            "state": "UT",
+            "placeIds": [
+              "salt-lake",
+              "salt-lake/salt-lake-city"
+            ],
+            "personId": "f-joseph-irish",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://www.saltlakecounty.gov/globalassets/1-site-files/clerk/elections/election-results/historical-election-results/2003-10-07-municipal-primary-election.pdf",
+            "lastUpdated": "2003-10-07",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          }
+        ],
+        "years": [
+          2009,
+          2005,
+          2003
+        ],
+        "aliases": [
+          "F. Irish"
+        ],
+        "links": []
+      }
+    },
+    {
+      "canonicalPersonId": "gary-steven-widders",
+      "name": "Gary Steven Widders",
+      "before": [
+        {
+          "id": "gary-steven-widders",
+          "name": "Gary Steven Widders",
+          "initials": "GS",
+          "filings": [
+            {
+              "recordId": "2025-gary-steven-widders-north-salt-lake-city-council-nonpartisan",
+              "id": "gary-steven-widders",
+              "name": "Gary Steven Widders",
+              "year": 2025,
+              "electionType": "primary",
+              "officeName": "North Salt Lake City Council",
+              "rawOfficeName": "North Salt Lake City Council",
+              "officeId": "north-salt-lake-city-council",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Out in Primary",
+              "section": "Municipal Offices",
+              "city": "North Salt Lake",
+              "county": "Davis",
+              "state": "UT",
+              "placeIds": [
+                "davis",
+                "davis/north-salt-lake"
+              ],
+              "personId": "gary-steven-widders",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary08122025/ballot-items/01000000-7609-9634-4bb2-08ddc54bd3c6",
+              "lastUpdated": "2025-08-12",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            },
+            {
+              "recordId": "2023-gary-steven-widders-north-salt-lake-city-council-nonpartisan",
+              "id": "gary-steven-widders",
+              "name": "Gary Steven Widders",
+              "year": 2023,
+              "electionType": "primary",
+              "officeName": "North Salt Lake City Council",
+              "rawOfficeName": "North Salt Lake City Council",
+              "officeId": "north-salt-lake-city-council",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Out in Primary",
+              "section": "Municipal Offices",
+              "city": "North Salt Lake",
+              "county": "Davis",
+              "state": "UT",
+              "placeIds": [
+                "davis",
+                "davis/north-salt-lake"
+              ],
+              "personId": "gary-steven-widders",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/8b84131c-c72f-4085-beea-00c9563be6e1",
+              "lastUpdated": "2023-09-05",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2025,
+            2023
+          ],
+          "aliases": [],
+          "links": []
+        },
+        {
+          "id": "gary-widders",
+          "name": "Gary Widders",
+          "initials": "GW",
+          "filings": [
+            {
+              "recordId": "2026-gary-widders-state-school-board-district-4-utah-republican-party",
+              "id": "gary-widders",
+              "name": "Gary Widders",
+              "year": 2026,
+              "electionType": "primary",
+              "officeName": "State School Board District 4",
+              "rawOfficeName": "State School Board District 4 (Multi-County)",
+              "officeId": "state-school-board-district-4",
+              "partyName": "Utah Republican Party",
+              "partyId": "utah-republican-party",
+              "rawParty": "Republican",
+              "status": "defeated",
+              "sourceStatus": "Out in Convention",
+              "section": "State School Board",
+              "city": "",
+              "county": "",
+              "state": "UT",
+              "placeIds": [],
+              "personId": "gary-widders",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-4-Gary-Widders.pdf",
+              "lastUpdated": "2026-07-20"
+            },
+            {
+              "recordId": "2025-gary-widders-north-salt-lake-city-council-nonpartisan",
+              "id": "gary-widders",
+              "name": "Gary Widders",
+              "year": 2025,
+              "electionType": "general",
+              "officeName": "North Salt Lake City Council",
+              "rawOfficeName": "North Salt Lake City Council",
+              "officeId": "north-salt-lake-city-council",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Defeated (Write-in)",
+              "section": "Municipal Offices",
+              "city": "North Salt Lake",
+              "county": "Davis",
+              "state": "UT",
+              "placeIds": [
+                "davis",
+                "davis/north-salt-lake"
+              ],
+              "personId": "gary-widders",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/General11042025/ballot-items/01000000-e857-63d6-8b89-08de10041b5b",
+              "lastUpdated": "2025-11-04",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2026,
+            2025
+          ],
+          "aliases": [],
+          "links": []
+        }
+      ],
+      "after": {
+        "id": "gary-steven-widders",
+        "name": "Gary Steven Widders",
+        "initials": "GS",
+        "filings": [
+          {
+            "recordId": "2026-gary-widders-state-school-board-district-4-utah-republican-party",
+            "id": "gary-widders",
+            "name": "Gary Widders",
+            "year": 2026,
+            "electionType": "primary",
+            "officeName": "State School Board District 4",
+            "rawOfficeName": "State School Board District 4 (Multi-County)",
+            "officeId": "state-school-board-district-4",
+            "partyName": "Utah Republican Party",
+            "partyId": "utah-republican-party",
+            "rawParty": "Republican",
+            "status": "defeated",
+            "sourceStatus": "Out in Convention",
+            "section": "State School Board",
+            "city": "",
+            "county": "",
+            "state": "UT",
+            "placeIds": [],
+            "personId": "gary-steven-widders",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://vote.utah.gov/wp-content/uploads/2026/01/USBE-4-Gary-Widders.pdf",
+            "lastUpdated": "2026-07-20"
+          },
+          {
+            "recordId": "2025-gary-steven-widders-north-salt-lake-city-council-nonpartisan",
+            "id": "gary-steven-widders",
+            "name": "Gary Steven Widders",
+            "year": 2025,
+            "electionType": "primary",
+            "officeName": "North Salt Lake City Council",
+            "rawOfficeName": "North Salt Lake City Council",
+            "officeId": "north-salt-lake-city-council",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Out in Primary",
+            "section": "Municipal Offices",
+            "city": "North Salt Lake",
+            "county": "Davis",
+            "state": "UT",
+            "placeIds": [
+              "davis",
+              "davis/north-salt-lake"
+            ],
+            "personId": "gary-steven-widders",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/Primary08122025/ballot-items/01000000-7609-9634-4bb2-08ddc54bd3c6",
+            "lastUpdated": "2025-08-12",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          },
+          {
+            "recordId": "2025-gary-widders-north-salt-lake-city-council-nonpartisan",
+            "id": "gary-widders",
+            "name": "Gary Widders",
+            "year": 2025,
+            "electionType": "general",
+            "officeName": "North Salt Lake City Council",
+            "rawOfficeName": "North Salt Lake City Council",
+            "officeId": "north-salt-lake-city-council",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Defeated (Write-in)",
+            "section": "Municipal Offices",
+            "city": "North Salt Lake",
+            "county": "Davis",
+            "state": "UT",
+            "placeIds": [
+              "davis",
+              "davis/north-salt-lake"
+            ],
+            "personId": "gary-steven-widders",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/General11042025/ballot-items/01000000-e857-63d6-8b89-08de10041b5b",
+            "lastUpdated": "2025-11-04",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          },
+          {
+            "recordId": "2023-gary-steven-widders-north-salt-lake-city-council-nonpartisan",
+            "id": "gary-steven-widders",
+            "name": "Gary Steven Widders",
+            "year": 2023,
+            "electionType": "primary",
+            "officeName": "North Salt Lake City Council",
+            "rawOfficeName": "North Salt Lake City Council",
+            "officeId": "north-salt-lake-city-council",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Out in Primary",
+            "section": "Municipal Offices",
+            "city": "North Salt Lake",
+            "county": "Davis",
+            "state": "UT",
+            "placeIds": [
+              "davis",
+              "davis/north-salt-lake"
+            ],
+            "personId": "gary-steven-widders",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/davis-county-ut/elections/primary09052023_Demo/ballot-items/8b84131c-c72f-4085-beea-00c9563be6e1",
+            "lastUpdated": "2023-09-05",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          }
+        ],
+        "years": [
+          2026,
+          2025,
+          2023
+        ],
+        "aliases": [
+          "Gary Widders"
+        ],
+        "links": []
+      }
+    },
+    {
+      "canonicalPersonId": "genevieve-elena-guerrero",
+      "name": "Genevieve Elena Guerrero",
+      "before": [
+        {
+          "id": "genevieve-elena-guerrero",
+          "name": "Genevieve Elena Guerrero",
+          "initials": "GE",
+          "filings": [
+            {
+              "recordId": "2025-genevieve-elena-guerrero-east-carbon-mayor-nonpartisan",
+              "id": "genevieve-elena-guerrero",
+              "name": "Genevieve Elena Guerrero",
+              "year": 2025,
+              "electionType": "primary",
+              "officeName": "East Carbon Mayor",
+              "rawOfficeName": "East Carbon Mayor",
+              "officeId": "east-carbon-mayor",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Out in Primary",
+              "section": "Municipal Offices",
+              "city": "East Carbon",
+              "county": "Carbon",
+              "state": "UT",
+              "placeIds": [
+                "carbon",
+                "carbon/east-carbon"
+              ],
+              "personId": "genevieve-elena-guerrero",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/carbon-county-ut/elections/Primary08122025/ballot-items/01000000-e53f-12d1-2e13-08ddd4576639",
+              "lastUpdated": "2025-08-12",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "aliases": [],
+          "links": []
+        },
+        {
+          "id": "genevieve-guerrero",
+          "name": "Genevieve Guerrero",
+          "initials": "GG",
+          "filings": [
+            {
+              "recordId": "2025-genevieve-guerrero-east-carbon-mayor-nonpartisan",
+              "id": "genevieve-guerrero",
+              "name": "Genevieve Guerrero",
+              "year": 2025,
+              "electionType": "general",
+              "officeName": "East Carbon Mayor",
+              "rawOfficeName": "East Carbon Mayor",
+              "officeId": "east-carbon-mayor",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Defeated (Write-in)",
+              "section": "Municipal Offices",
+              "city": "East Carbon",
+              "county": "Carbon",
+              "state": "UT",
+              "placeIds": [
+                "carbon",
+                "carbon/east-carbon"
+              ],
+              "personId": "genevieve-guerrero",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/carbon-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-d21c-08de1003b9ec",
+              "lastUpdated": "2025-11-04",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "aliases": [],
+          "links": []
+        }
+      ],
+      "after": {
+        "id": "genevieve-elena-guerrero",
+        "name": "Genevieve Elena Guerrero",
+        "initials": "GE",
+        "filings": [
+          {
+            "recordId": "2025-genevieve-elena-guerrero-east-carbon-mayor-nonpartisan",
+            "id": "genevieve-elena-guerrero",
+            "name": "Genevieve Elena Guerrero",
+            "year": 2025,
+            "electionType": "primary",
+            "officeName": "East Carbon Mayor",
+            "rawOfficeName": "East Carbon Mayor",
+            "officeId": "east-carbon-mayor",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Out in Primary",
+            "section": "Municipal Offices",
+            "city": "East Carbon",
+            "county": "Carbon",
+            "state": "UT",
+            "placeIds": [
+              "carbon",
+              "carbon/east-carbon"
+            ],
+            "personId": "genevieve-elena-guerrero",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/carbon-county-ut/elections/Primary08122025/ballot-items/01000000-e53f-12d1-2e13-08ddd4576639",
+            "lastUpdated": "2025-08-12",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          },
+          {
+            "recordId": "2025-genevieve-guerrero-east-carbon-mayor-nonpartisan",
+            "id": "genevieve-guerrero",
+            "name": "Genevieve Guerrero",
+            "year": 2025,
+            "electionType": "general",
+            "officeName": "East Carbon Mayor",
+            "rawOfficeName": "East Carbon Mayor",
+            "officeId": "east-carbon-mayor",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Defeated (Write-in)",
+            "section": "Municipal Offices",
+            "city": "East Carbon",
+            "county": "Carbon",
+            "state": "UT",
+            "placeIds": [
+              "carbon",
+              "carbon/east-carbon"
+            ],
+            "personId": "genevieve-elena-guerrero",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/carbon-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-d21c-08de1003b9ec",
+            "lastUpdated": "2025-11-04",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          }
+        ],
+        "years": [
+          2025
+        ],
+        "aliases": [
+          "Genevieve Guerrero"
+        ],
+        "links": []
+      }
+    },
+    {
+      "canonicalPersonId": "mackenzie-renee-burnett",
+      "name": "Mackenzie Renee Burnett",
+      "before": [
+        {
+          "id": "mackenzie-burnett",
+          "name": "Mackenzie Burnett",
+          "initials": "MB",
+          "filings": [
+            {
+              "recordId": "2025-mackenzie-burnett-east-carbon-mayor-nonpartisan",
+              "id": "mackenzie-burnett",
+              "name": "Mackenzie Burnett",
+              "year": 2025,
+              "electionType": "general",
+              "officeName": "East Carbon Mayor",
+              "rawOfficeName": "East Carbon Mayor",
+              "officeId": "east-carbon-mayor",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Defeated (Write-in)",
+              "section": "Municipal Offices",
+              "city": "East Carbon",
+              "county": "Carbon",
+              "state": "UT",
+              "placeIds": [
+                "carbon",
+                "carbon/east-carbon"
+              ],
+              "personId": "mackenzie-burnett",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/carbon-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-d21c-08de1003b9ec",
+              "lastUpdated": "2025-11-04",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "aliases": [],
+          "links": []
+        },
+        {
+          "id": "mackenzie-renee-burnett",
+          "name": "Mackenzie Renee Burnett",
+          "initials": "MR",
+          "filings": [
+            {
+              "recordId": "2025-mackenzie-renee-burnett-east-carbon-mayor-nonpartisan",
+              "id": "mackenzie-renee-burnett",
+              "name": "Mackenzie Renee Burnett",
+              "year": 2025,
+              "electionType": "primary",
+              "officeName": "East Carbon Mayor",
+              "rawOfficeName": "East Carbon Mayor",
+              "officeId": "east-carbon-mayor",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Out in Primary",
+              "section": "Municipal Offices",
+              "city": "East Carbon",
+              "county": "Carbon",
+              "state": "UT",
+              "placeIds": [
+                "carbon",
+                "carbon/east-carbon"
+              ],
+              "personId": "mackenzie-renee-burnett",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/carbon-county-ut/elections/Primary08122025/ballot-items/01000000-e53f-12d1-2e13-08ddd4576639",
+              "lastUpdated": "2025-08-12",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "aliases": [],
+          "links": []
+        }
+      ],
+      "after": {
+        "id": "mackenzie-renee-burnett",
+        "name": "Mackenzie Renee Burnett",
+        "initials": "MR",
+        "filings": [
+          {
+            "recordId": "2025-mackenzie-burnett-east-carbon-mayor-nonpartisan",
+            "id": "mackenzie-burnett",
+            "name": "Mackenzie Burnett",
+            "year": 2025,
+            "electionType": "general",
+            "officeName": "East Carbon Mayor",
+            "rawOfficeName": "East Carbon Mayor",
+            "officeId": "east-carbon-mayor",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Defeated (Write-in)",
+            "section": "Municipal Offices",
+            "city": "East Carbon",
+            "county": "Carbon",
+            "state": "UT",
+            "placeIds": [
+              "carbon",
+              "carbon/east-carbon"
+            ],
+            "personId": "mackenzie-renee-burnett",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/carbon-county-ut/elections/General11042025/ballot-items/01000000-7202-99e0-d21c-08de1003b9ec",
+            "lastUpdated": "2025-11-04",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          },
+          {
+            "recordId": "2025-mackenzie-renee-burnett-east-carbon-mayor-nonpartisan",
+            "id": "mackenzie-renee-burnett",
+            "name": "Mackenzie Renee Burnett",
+            "year": 2025,
+            "electionType": "primary",
+            "officeName": "East Carbon Mayor",
+            "rawOfficeName": "East Carbon Mayor",
+            "officeId": "east-carbon-mayor",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Out in Primary",
+            "section": "Municipal Offices",
+            "city": "East Carbon",
+            "county": "Carbon",
+            "state": "UT",
+            "placeIds": [
+              "carbon",
+              "carbon/east-carbon"
+            ],
+            "personId": "mackenzie-renee-burnett",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/carbon-county-ut/elections/Primary08122025/ballot-items/01000000-e53f-12d1-2e13-08ddd4576639",
+            "lastUpdated": "2025-08-12",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          }
+        ],
+        "years": [
+          2025
+        ],
+        "aliases": [
+          "Mackenzie Burnett"
+        ],
+        "links": []
+      }
+    },
+    {
+      "canonicalPersonId": "ryan-l-mahoney",
+      "name": "Ryan L. Mahoney",
+      "before": [
+        {
+          "id": "ryan-l-mahoney",
+          "name": "Ryan L. Mahoney",
+          "initials": "RL",
+          "filings": [
+            {
+              "recordId": "2026-ryan-l-mahoney-state-senate-district-13-utah-republican-party",
+              "id": "ryan-l-mahoney",
+              "name": "Ryan L. Mahoney",
+              "year": 2026,
+              "electionType": "general",
+              "officeName": "State Senate District 13",
+              "rawOfficeName": "State Senate District 13",
+              "officeId": "state-senate-district-13",
+              "partyName": "Utah Republican Party",
+              "partyId": "utah-republican-party",
+              "rawParty": "Republican",
+              "status": "general_election",
+              "sourceStatus": "General Election Candidate",
+              "section": "State Senate",
+              "city": "",
+              "county": "",
+              "state": "UT",
+              "placeIds": [],
+              "personId": "ryan-l-mahoney",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Ryan-L.-Mahoney.pdf",
+              "lastUpdated": "2026-07-20"
+            },
+            {
+              "recordId": "2025-ryan-l-mahoney-west-valley-city-council-at-large-nonpartisan",
+              "id": "ryan-l-mahoney",
+              "name": "Ryan L Mahoney",
+              "year": 2025,
+              "electionType": "primary",
+              "officeName": "West Valley City Council at Large",
+              "rawOfficeName": "West Valley City Council at Large",
+              "officeId": "west-valley-city-council-at-large",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Out in Primary",
+              "section": "Municipal Offices",
+              "city": "West Valley City",
+              "county": "Salt Lake",
+              "state": "UT",
+              "placeIds": [
+                "salt-lake",
+                "salt-lake/west-valley-city"
+              ],
+              "personId": "ryan-l-mahoney",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary08122025/ballot-items/01000000-f68e-f20e-e10d-08ddc54b72c7",
+              "lastUpdated": "2025-08-12",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2026,
+            2025
+          ],
+          "aliases": [],
+          "links": [
+            {
+              "url": "https://ryanmahoney4utah.godaddysites.com/",
+              "label": "Campaign website",
+              "source": "https://www.utgop.org/general_election_candidates_2026",
+              "verifiedOn": "2026-11-06"
+            }
+          ],
+          "lastVerified": "2026-11-06"
+        },
+        {
+          "id": "ryan-mahoney",
+          "name": "Ryan Mahoney",
+          "initials": "RM",
+          "filings": [
+            {
+              "recordId": "2025-ryan-mahoney-west-valley-city-council-at-large-nonpartisan",
+              "id": "ryan-mahoney",
+              "name": "Ryan Mahoney",
+              "year": 2025,
+              "electionType": "general",
+              "officeName": "West Valley City Council at Large",
+              "rawOfficeName": "West Valley City Council at Large",
+              "officeId": "west-valley-city-council-at-large",
+              "partyName": "Nonpartisan",
+              "partyId": "nonpartisan",
+              "rawParty": "",
+              "status": "defeated",
+              "sourceStatus": "Defeated (Write-in)",
+              "section": "Municipal Offices",
+              "city": "West Valley City",
+              "county": "Salt Lake",
+              "state": "UT",
+              "placeIds": [
+                "salt-lake",
+                "salt-lake/west-valley-city"
+              ],
+              "personId": "ryan-mahoney",
+              "runningMate": "",
+              "runningMateId": "",
+              "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/General11042025/ballot-items/01000000-c08d-3c43-85ef-08de10a3a257",
+              "lastUpdated": "2025-11-04",
+              "contact": {
+                "address": "",
+                "phone": "",
+                "email": "",
+                "website": "",
+                "facebook": "",
+                "twitter": ""
+              }
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "aliases": [],
+          "links": []
+        }
+      ],
+      "after": {
+        "id": "ryan-l-mahoney",
+        "name": "Ryan L. Mahoney",
+        "initials": "RL",
+        "filings": [
+          {
+            "recordId": "2026-ryan-l-mahoney-state-senate-district-13-utah-republican-party",
+            "id": "ryan-l-mahoney",
+            "name": "Ryan L. Mahoney",
+            "year": 2026,
+            "electionType": "general",
+            "officeName": "State Senate District 13",
+            "rawOfficeName": "State Senate District 13",
+            "officeId": "state-senate-district-13",
+            "partyName": "Utah Republican Party",
+            "partyId": "utah-republican-party",
+            "rawParty": "Republican",
+            "status": "general_election",
+            "sourceStatus": "General Election Candidate",
+            "section": "State Senate",
+            "city": "",
+            "county": "",
+            "state": "UT",
+            "placeIds": [],
+            "personId": "ryan-l-mahoney",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://vote.utah.gov/wp-content/uploads/2026/01/S13-Ryan-L.-Mahoney.pdf",
+            "lastUpdated": "2026-07-20"
+          },
+          {
+            "recordId": "2025-ryan-l-mahoney-west-valley-city-council-at-large-nonpartisan",
+            "id": "ryan-l-mahoney",
+            "name": "Ryan L Mahoney",
+            "year": 2025,
+            "electionType": "primary",
+            "officeName": "West Valley City Council at Large",
+            "rawOfficeName": "West Valley City Council at Large",
+            "officeId": "west-valley-city-council-at-large",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Out in Primary",
+            "section": "Municipal Offices",
+            "city": "West Valley City",
+            "county": "Salt Lake",
+            "state": "UT",
+            "placeIds": [
+              "salt-lake",
+              "salt-lake/west-valley-city"
+            ],
+            "personId": "ryan-l-mahoney",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/Primary08122025/ballot-items/01000000-f68e-f20e-e10d-08ddc54b72c7",
+            "lastUpdated": "2025-08-12",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          },
+          {
+            "recordId": "2025-ryan-mahoney-west-valley-city-council-at-large-nonpartisan",
+            "id": "ryan-mahoney",
+            "name": "Ryan Mahoney",
+            "year": 2025,
+            "electionType": "general",
+            "officeName": "West Valley City Council at Large",
+            "rawOfficeName": "West Valley City Council at Large",
+            "officeId": "west-valley-city-council-at-large",
+            "partyName": "Nonpartisan",
+            "partyId": "nonpartisan",
+            "rawParty": "",
+            "status": "defeated",
+            "sourceStatus": "Defeated (Write-in)",
+            "section": "Municipal Offices",
+            "city": "West Valley City",
+            "county": "Salt Lake",
+            "state": "UT",
+            "placeIds": [
+              "salt-lake",
+              "salt-lake/west-valley-city"
+            ],
+            "personId": "ryan-l-mahoney",
+            "runningMate": "",
+            "runningMateId": "",
+            "source": "https://electionresults.utah.gov/results/public/salt-lake-county-ut/elections/General11042025/ballot-items/01000000-c08d-3c43-85ef-08de10a3a257",
+            "lastUpdated": "2025-11-04",
+            "contact": {
+              "address": "",
+              "phone": "",
+              "email": "",
+              "website": "",
+              "facebook": "",
+              "twitter": ""
+            }
+          }
+        ],
+        "years": [
+          2026,
+          2025
+        ],
+        "aliases": [
+          "Ryan Mahoney"
+        ],
+        "links": [
+          {
+            "url": "https://ryanmahoney4utah.godaddysites.com/",
+            "label": "Campaign website",
+            "source": "https://www.utgop.org/general_election_candidates_2026",
+            "verifiedOn": "2026-11-06"
+          }
+        ],
+        "lastVerified": "2026-11-06"
+      }
+    }
+  ]
+}

@@ -4,6 +4,11 @@ const server = await createServer({ configFile: false, logLevel: 'silent', serve
 try {
   const { people, peopleById, filings, identityKey, slug, personDisplayName } = await server.ssrLoadModule('/src/lib/entities.ts');
   for (const [full, short] of [
+    ['F. Joseph Irish', 'F. Irish'],
+    ['Gary Steven Widders', 'Gary Widders'],
+    ['Genevieve Elena Guerrero', 'Genevieve Guerrero'],
+    ['Mackenzie Renee Burnett', 'Mackenzie Burnett'],
+    ['Ryan L. Mahoney', 'Ryan Mahoney'],
     ['Aleta Andersen Taylor', 'Aleta Taylor'],
     ['John R. Westwood', 'John Westwood'],
     ['Justin L. Fawson', 'Justin Fawson'],
